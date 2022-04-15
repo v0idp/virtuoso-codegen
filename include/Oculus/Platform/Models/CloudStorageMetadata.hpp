@@ -86,21 +86,21 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String Bucket
-    [[deprecated]] ::StringW& dyn_Bucket();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Bucket();
     // Get instance field reference: public readonly System.Int64 Counter
-    [[deprecated]] int64_t& dyn_Counter();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_Counter();
     // Get instance field reference: public readonly System.UInt32 DataSize
-    [[deprecated]] uint& dyn_DataSize();
+    [[deprecated("Use field access instead!")]] uint& dyn_DataSize();
     // Get instance field reference: public readonly System.String ExtraData
-    [[deprecated]] ::StringW& dyn_ExtraData();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ExtraData();
     // Get instance field reference: public readonly System.String Key
-    [[deprecated]] ::StringW& dyn_Key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Key();
     // Get instance field reference: public readonly System.UInt64 SaveTime
-    [[deprecated]] uint64_t& dyn_SaveTime();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SaveTime();
     // Get instance field reference: public readonly Oculus.Platform.CloudStorageDataStatus Status
-    [[deprecated]] ::Oculus::Platform::CloudStorageDataStatus& dyn_Status();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::CloudStorageDataStatus& dyn_Status();
     // Get instance field reference: public readonly System.String VersionHandle
-    [[deprecated]] ::StringW& dyn_VersionHandle();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_VersionHandle();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x925204
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

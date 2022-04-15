@@ -131,33 +131,33 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Single m_PrevActionTime
-    [[deprecated]] float& dyn_m_PrevActionTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PrevActionTime();
     // Get instance field reference: private UnityEngine.Vector2 m_LastMoveVector
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_LastMoveVector();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_LastMoveVector();
     // Get instance field reference: private System.Int32 m_ConsecutiveMoveCount
-    [[deprecated]] int& dyn_m_ConsecutiveMoveCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ConsecutiveMoveCount();
     // Get instance field reference: private UnityEngine.Vector2 m_LastMousePosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_LastMousePosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_LastMousePosition();
     // Get instance field reference: private UnityEngine.Vector2 m_MousePosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_MousePosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_MousePosition();
     // Get instance field reference: private UnityEngine.GameObject m_CurrentFocusedGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_CurrentFocusedGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_CurrentFocusedGameObject();
     // Get instance field reference: private UnityEngine.EventSystems.PointerEventData m_InputPointerEvent
-    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData*& dyn_m_InputPointerEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::PointerEventData*& dyn_m_InputPointerEvent();
     // Get instance field reference: private System.String m_HorizontalAxis
-    [[deprecated]] ::StringW& dyn_m_HorizontalAxis();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_HorizontalAxis();
     // Get instance field reference: private System.String m_VerticalAxis
-    [[deprecated]] ::StringW& dyn_m_VerticalAxis();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_VerticalAxis();
     // Get instance field reference: private System.String m_SubmitButton
-    [[deprecated]] ::StringW& dyn_m_SubmitButton();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_SubmitButton();
     // Get instance field reference: private System.String m_CancelButton
-    [[deprecated]] ::StringW& dyn_m_CancelButton();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_CancelButton();
     // Get instance field reference: private System.Single m_InputActionsPerSecond
-    [[deprecated]] float& dyn_m_InputActionsPerSecond();
+    [[deprecated("Use field access instead!")]] float& dyn_m_InputActionsPerSecond();
     // Get instance field reference: private System.Single m_RepeatDelay
-    [[deprecated]] float& dyn_m_RepeatDelay();
+    [[deprecated("Use field access instead!")]] float& dyn_m_RepeatDelay();
     // Get instance field reference: private System.Boolean m_ForceModuleActive
-    [[deprecated]] bool& dyn_m_ForceModuleActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ForceModuleActive();
     // public UnityEngine.EventSystems.StandaloneInputModule/UnityEngine.EventSystems.InputMode get_inputMode()
     // Offset: 0x16CFA6C
     ::UnityEngine::EventSystems::StandaloneInputModule::InputMode get_inputMode();
@@ -254,11 +254,6 @@ namespace UnityEngine::EventSystems {
     // Base method: System.Void PointerInputModule::.ctor()
     // Base method: System.Void BaseInputModule::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StandaloneInputModule* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::StandaloneInputModule::.ctor");

@@ -221,33 +221,33 @@ namespace Mono::Net::Security {
     // Set static field: static private System.Int32 nextId
     static void _set_nextId(int value);
     // Get instance field reference: private Mono.Net.Security.MobileTlsContext xobileTlsContext
-    [[deprecated]] ::Mono::Net::Security::MobileTlsContext*& dyn_xobileTlsContext();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::MobileTlsContext*& dyn_xobileTlsContext();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo lastException
-    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_lastException();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_lastException();
     // Get instance field reference: private Mono.Net.Security.AsyncProtocolRequest asyncHandshakeRequest
-    [[deprecated]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncHandshakeRequest();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncHandshakeRequest();
     // Get instance field reference: private Mono.Net.Security.AsyncProtocolRequest asyncReadRequest
-    [[deprecated]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncReadRequest();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncReadRequest();
     // Get instance field reference: private Mono.Net.Security.AsyncProtocolRequest asyncWriteRequest
-    [[deprecated]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncWriteRequest();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncWriteRequest();
     // Get instance field reference: private Mono.Net.Security.BufferOffsetSize2 readBuffer
-    [[deprecated]] ::Mono::Net::Security::BufferOffsetSize2*& dyn_readBuffer();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::BufferOffsetSize2*& dyn_readBuffer();
     // Get instance field reference: private Mono.Net.Security.BufferOffsetSize2 writeBuffer
-    [[deprecated]] ::Mono::Net::Security::BufferOffsetSize2*& dyn_writeBuffer();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::BufferOffsetSize2*& dyn_writeBuffer();
     // Get instance field reference: private System.Object ioLock
-    [[deprecated]] ::Il2CppObject*& dyn_ioLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_ioLock();
     // Get instance field reference: private System.Int32 closeRequested
-    [[deprecated]] int& dyn_closeRequested();
+    [[deprecated("Use field access instead!")]] int& dyn_closeRequested();
     // Get instance field reference: private System.Boolean shutdown
-    [[deprecated]] bool& dyn_shutdown();
+    [[deprecated("Use field access instead!")]] bool& dyn_shutdown();
     // Get instance field reference: private readonly System.Net.Security.SslStream <SslStream>k__BackingField
-    [[deprecated]] ::System::Net::Security::SslStream*& dyn_$SslStream$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::Security::SslStream*& dyn_$SslStream$k__BackingField();
     // Get instance field reference: private readonly Mono.Security.Interface.MonoTlsSettings <Settings>k__BackingField
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_$Settings$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_$Settings$k__BackingField();
     // Get instance field reference: private readonly Mono.Security.Interface.MonoTlsProvider <Provider>k__BackingField
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_$Provider$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_$Provider$k__BackingField();
     // Get instance field reference: readonly System.Int32 ID
-    [[deprecated]] int& dyn_ID();
+    [[deprecated("Use field access instead!")]] int& dyn_ID();
     // public Mono.Security.Interface.MonoTlsSettings get_Settings()
     // Offset: 0x10FBFFC
     ::Mono::Security::Interface::MonoTlsSettings* get_Settings();
@@ -267,6 +267,9 @@ namespace Mono::Net::Security {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::Security::MobileAuthenticatedStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MobileAuthenticatedStream*, creationType>(innerStream, leaveInnerStreamOpen, owner, settings, provider)));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x10FDE34
+    static void _cctor();
     // System.Void CheckThrow(System.Boolean authSuccessCheck, System.Boolean shutdownCheck)
     // Offset: 0x10FC00C
     void CheckThrow(bool authSuccessCheck, bool shutdownCheck);
@@ -374,11 +377,6 @@ namespace Mono::Net::Security {
     // Implemented from: System.IO.Stream
     // Base method: System.Int32 Stream::get_WriteTimeout()
     int get_WriteTimeout();
-    // static private System.Void .cctor()
-    // Offset: 0x10FDE34
-    // Implemented from: System.IO.Stream
-    // Base method: System.Void Stream::.cctor()
-    static void _cctor();
     // public override System.IAsyncResult BeginRead(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback asyncCallback, System.Object asyncState)
     // Offset: 0x10FC5C0
     // Implemented from: System.IO.Stream
@@ -481,6 +479,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::S
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Mono::Net::Security::MobileAuthenticatedStream::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Mono::Net::Security::MobileAuthenticatedStream::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Mono::Net::Security::MobileAuthenticatedStream*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: Mono::Net::Security::MobileAuthenticatedStream::CheckThrow
 // Il2CppName: CheckThrow
 template<>
@@ -768,14 +774,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Mono::Net::Security::MobileAuthenticatedStream::*)()>(&Mono::Net::Security::MobileAuthenticatedStream::get_WriteTimeout)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Mono::Net::Security::MobileAuthenticatedStream*), "get_WriteTimeout", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: Mono::Net::Security::MobileAuthenticatedStream::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Mono::Net::Security::MobileAuthenticatedStream::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Mono::Net::Security::MobileAuthenticatedStream*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Mono::Net::Security::MobileAuthenticatedStream::BeginRead

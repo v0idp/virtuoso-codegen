@@ -177,41 +177,41 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: System.Data.PropertyCollection _extendedProperties
-    [[deprecated]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
+    [[deprecated("Use field access instead!")]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
     // Get instance field reference: System.String _relationName
-    [[deprecated]] ::StringW& dyn__relationName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__relationName();
     // Get instance field reference: private System.Data.DataKey _childKey
-    [[deprecated]] ::System::Data::DataKey& dyn__childKey();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataKey& dyn__childKey();
     // Get instance field reference: private System.Data.DataKey _parentKey
-    [[deprecated]] ::System::Data::DataKey& dyn__parentKey();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataKey& dyn__parentKey();
     // Get instance field reference: private System.Data.UniqueConstraint _parentKeyConstraint
-    [[deprecated]] ::System::Data::UniqueConstraint*& dyn__parentKeyConstraint();
+    [[deprecated("Use field access instead!")]] ::System::Data::UniqueConstraint*& dyn__parentKeyConstraint();
     // Get instance field reference: private System.Data.ForeignKeyConstraint _childKeyConstraint
-    [[deprecated]] ::System::Data::ForeignKeyConstraint*& dyn__childKeyConstraint();
+    [[deprecated("Use field access instead!")]] ::System::Data::ForeignKeyConstraint*& dyn__childKeyConstraint();
     // Get instance field reference: System.String[] _parentColumnNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__parentColumnNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__parentColumnNames();
     // Get instance field reference: System.String[] _childColumnNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__childColumnNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__childColumnNames();
     // Get instance field reference: System.String _parentTableName
-    [[deprecated]] ::StringW& dyn__parentTableName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__parentTableName();
     // Get instance field reference: System.String _childTableName
-    [[deprecated]] ::StringW& dyn__childTableName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__childTableName();
     // Get instance field reference: System.String _parentTableNamespace
-    [[deprecated]] ::StringW& dyn__parentTableNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__parentTableNamespace();
     // Get instance field reference: System.String _childTableNamespace
-    [[deprecated]] ::StringW& dyn__childTableNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__childTableNamespace();
     // Get instance field reference: System.Boolean _nested
-    [[deprecated]] bool& dyn__nested();
+    [[deprecated("Use field access instead!")]] bool& dyn__nested();
     // Get instance field reference: System.Boolean _createConstraints
-    [[deprecated]] bool& dyn__createConstraints();
+    [[deprecated("Use field access instead!")]] bool& dyn__createConstraints();
     // Get instance field reference: private System.Boolean _checkMultipleNested
-    [[deprecated]] bool& dyn__checkMultipleNested();
+    [[deprecated("Use field access instead!")]] bool& dyn__checkMultipleNested();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // Get instance field reference: private System.ComponentModel.PropertyChangedEventHandler PropertyChanging
-    [[deprecated]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanging();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanging();
     // public System.Data.DataColumn[] get_ChildColumns()
     // Offset: 0xF99D0C
     ::ArrayW<::System::Data::DataColumn*> get_ChildColumns();

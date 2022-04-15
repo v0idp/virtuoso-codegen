@@ -182,47 +182,47 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::SchemaElementDecl*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean isAbstract
-    [[deprecated]] bool& dyn_isAbstract();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAbstract();
     // Get instance field reference: private System.Boolean hasAbstractAttribute
-    [[deprecated]] bool& dyn_hasAbstractAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasAbstractAttribute();
     // Get instance field reference: private System.Boolean isNillable
-    [[deprecated]] bool& dyn_isNillable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNillable();
     // Get instance field reference: private System.Boolean hasNillableAttribute
-    [[deprecated]] bool& dyn_hasNillableAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasNillableAttribute();
     // Get instance field reference: private System.Boolean isLocalTypeDerivationChecked
-    [[deprecated]] bool& dyn_isLocalTypeDerivationChecked();
+    [[deprecated("Use field access instead!")]] bool& dyn_isLocalTypeDerivationChecked();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod block
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_block();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_block();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod final
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_final();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_final();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
     // Get instance field reference: private System.String defaultValue
-    [[deprecated]] ::StringW& dyn_defaultValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_defaultValue();
     // Get instance field reference: private System.String fixedValue
-    [[deprecated]] ::StringW& dyn_fixedValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fixedValue();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Xml.XmlQualifiedName refName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_refName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_refName();
     // Get instance field reference: private System.Xml.XmlQualifiedName substitutionGroup
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_substitutionGroup();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_substitutionGroup();
     // Get instance field reference: private System.Xml.XmlQualifiedName typeName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_typeName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaType type
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaType*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaType*& dyn_type();
     // Get instance field reference: private System.Xml.XmlQualifiedName qualifiedName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_qualifiedName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_qualifiedName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaType elementType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaType*& dyn_elementType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaType*& dyn_elementType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod blockResolved
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_blockResolved();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_blockResolved();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod finalResolved
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_finalResolved();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_finalResolved();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection constraints
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_constraints();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_constraints();
     // Get instance field reference: private System.Xml.Schema.SchemaElementDecl elementDecl
-    [[deprecated]] ::System::Xml::Schema::SchemaElementDecl*& dyn_elementDecl();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaElementDecl*& dyn_elementDecl();
     // public System.Boolean get_IsAbstract()
     // Offset: 0x110DC78
     bool get_IsAbstract();
@@ -367,7 +367,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaParticle::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaElement* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaElement::.ctor");

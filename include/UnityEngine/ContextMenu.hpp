@@ -54,11 +54,11 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public readonly System.String menuItem
-    [[deprecated]] ::StringW& dyn_menuItem();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_menuItem();
     // Get instance field reference: public readonly System.Boolean validate
-    [[deprecated]] bool& dyn_validate();
+    [[deprecated("Use field access instead!")]] bool& dyn_validate();
     // Get instance field reference: public readonly System.Int32 priority
-    [[deprecated]] int& dyn_priority();
+    [[deprecated("Use field access instead!")]] int& dyn_priority();
     // public System.Void .ctor(System.String itemName)
     // Offset: 0x11237AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

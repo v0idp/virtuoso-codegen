@@ -54,12 +54,19 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.GlobalColorController/VROSC.BeatGradient[] _beatGradients
-    [[deprecated]] ::ArrayW<::VROSC::GlobalColorController::BeatGradient*>& dyn__beatGradients();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::GlobalColorController::BeatGradient*>& dyn__beatGradients();
     // Get instance field reference: private System.Single _darkenOnMirror
-    [[deprecated]] float& dyn__darkenOnMirror();
+    [[deprecated("Use field access instead!")]] float& dyn__darkenOnMirror();
     // public VROSC.GlobalColorController/VROSC.BeatGradient[] get_BeatGradients()
     // Offset: 0x19A3ABC
     ::ArrayW<::VROSC::GlobalColorController::BeatGradient*> get_BeatGradients();
+    // public System.Void .ctor()
+    // Offset: 0x19A3DCC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GlobalColorController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GlobalColorController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GlobalColorController*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x19A3AC4
     void Start();
@@ -69,19 +76,6 @@ namespace VROSC {
     // private System.Void OnDestroy()
     // Offset: 0x19A3CE0
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x19A3DCC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GlobalColorController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GlobalColorController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GlobalColorController*, creationType>()));
-    }
   }; // VROSC.GlobalColorController
   #pragma pack(pop)
   static check_size<sizeof(GlobalColorController), 32 + sizeof(float)> __VROSC_GlobalColorControllerSizeCheck;
@@ -96,6 +90,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(VROSC::GlobalColorController*), "get_BeatGradients", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::GlobalColorController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GlobalColorController::Start
 // Il2CppName: Start
 template<>
@@ -121,7 +119,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::GlobalColorController*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::GlobalColorController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

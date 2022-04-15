@@ -49,9 +49,16 @@ namespace Facebook::WitAi {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.WitResponseReference child
-    [[deprecated]] ::Facebook::WitAi::WitResponseReference*& dyn_child();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::WitResponseReference*& dyn_child();
     // Get instance field reference: public System.String path
-    [[deprecated]] ::StringW& dyn_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_path();
+    // public System.Void .ctor()
+    // Offset: 0x166E6F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WitResponseReference* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitResponseReference::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WitResponseReference*, creationType>()));
+    }
     // public System.String GetStringValue(Facebook.WitAi.Lib.WitResponseNode response)
     // Offset: 0x167CB90
     ::StringW GetStringValue(::Facebook::WitAi::Lib::WitResponseNode* response);
@@ -61,21 +68,16 @@ namespace Facebook::WitAi {
     // public System.Single GetFloatValue(Facebook.WitAi.Lib.WitResponseNode response)
     // Offset: 0x167CBD0
     float GetFloatValue(::Facebook::WitAi::Lib::WitResponseNode* response);
-    // public System.Void .ctor()
-    // Offset: 0x166E6F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WitResponseReference* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitResponseReference::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WitResponseReference*, creationType>()));
-    }
   }; // Facebook.WitAi.WitResponseReference
   #pragma pack(pop)
   static check_size<sizeof(WitResponseReference), 24 + sizeof(::StringW)> __Facebook_WitAi_WitResponseReferenceSizeCheck;
   static_assert(sizeof(WitResponseReference) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Facebook::WitAi::WitResponseReference::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::WitResponseReference::GetStringValue
 // Il2CppName: GetStringValue
 template<>
@@ -103,7 +105,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Face
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::WitResponseReference*), "GetFloatValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{response});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::WitResponseReference::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

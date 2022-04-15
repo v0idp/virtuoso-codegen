@@ -43,16 +43,12 @@ namespace GlobalNamespace {
     // Set static field: static private ONSPSettings instance
     static void _set_instance(::GlobalNamespace::ONSPSettings* value);
     // Get instance field reference: public System.Int32 voiceLimit
-    [[deprecated]] int& dyn_voiceLimit();
+    [[deprecated("Use field access instead!")]] int& dyn_voiceLimit();
     // static public ONSPSettings get_Instance()
     // Offset: 0x176CBDC
     static ::GlobalNamespace::ONSPSettings* get_Instance();
     // public System.Void .ctor()
     // Offset: 0x176CD1C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ONSPSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPSettings::.ctor");

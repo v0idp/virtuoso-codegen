@@ -382,85 +382,85 @@ namespace System::Xml {
     // Set static field: static System.Xml.Schema.IXmlSchemaInfo InvalidSchemaInfo
     static void _set_InvalidSchemaInfo(::System::Xml::Schema::IXmlSchemaInfo* value);
     // Get instance field reference: private System.Xml.XmlImplementation implementation
-    [[deprecated]] ::System::Xml::XmlImplementation*& dyn_implementation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlImplementation*& dyn_implementation();
     // Get instance field reference: private System.Xml.DomNameTable domNameTable
-    [[deprecated]] ::System::Xml::DomNameTable*& dyn_domNameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DomNameTable*& dyn_domNameTable();
     // Get instance field reference: private System.Xml.XmlLinkedNode lastChild
-    [[deprecated]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
     // Get instance field reference: private System.Xml.XmlNamedNodeMap entities
-    [[deprecated]] ::System::Xml::XmlNamedNodeMap*& dyn_entities();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamedNodeMap*& dyn_entities();
     // Get instance field reference: private System.Collections.Hashtable htElementIdMap
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_htElementIdMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_htElementIdMap();
     // Get instance field reference: private System.Collections.Hashtable htElementIDAttrDecl
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_htElementIDAttrDecl();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_htElementIDAttrDecl();
     // Get instance field reference: private System.Xml.Schema.SchemaInfo schemaInfo
-    [[deprecated]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSet schemas
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSet*& dyn_schemas();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSet*& dyn_schemas();
     // Get instance field reference: private System.Boolean reportValidity
-    [[deprecated]] bool& dyn_reportValidity();
+    [[deprecated("Use field access instead!")]] bool& dyn_reportValidity();
     // Get instance field reference: private System.Boolean actualLoadingStatus
-    [[deprecated]] bool& dyn_actualLoadingStatus();
+    [[deprecated("Use field access instead!")]] bool& dyn_actualLoadingStatus();
     // Get instance field reference: private System.Xml.XmlNodeChangedEventHandler onNodeInsertingDelegate
-    [[deprecated]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeInsertingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeInsertingDelegate();
     // Get instance field reference: private System.Xml.XmlNodeChangedEventHandler onNodeInsertedDelegate
-    [[deprecated]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeInsertedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeInsertedDelegate();
     // Get instance field reference: private System.Xml.XmlNodeChangedEventHandler onNodeRemovingDelegate
-    [[deprecated]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeRemovingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeRemovingDelegate();
     // Get instance field reference: private System.Xml.XmlNodeChangedEventHandler onNodeRemovedDelegate
-    [[deprecated]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeRemovedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeRemovedDelegate();
     // Get instance field reference: private System.Xml.XmlNodeChangedEventHandler onNodeChangingDelegate
-    [[deprecated]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeChangingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeChangingDelegate();
     // Get instance field reference: private System.Xml.XmlNodeChangedEventHandler onNodeChangedDelegate
-    [[deprecated]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeChangedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeChangedEventHandler*& dyn_onNodeChangedDelegate();
     // Get instance field reference: System.Boolean fEntRefNodesPresent
-    [[deprecated]] bool& dyn_fEntRefNodesPresent();
+    [[deprecated("Use field access instead!")]] bool& dyn_fEntRefNodesPresent();
     // Get instance field reference: System.Boolean fCDataNodesPresent
-    [[deprecated]] bool& dyn_fCDataNodesPresent();
+    [[deprecated("Use field access instead!")]] bool& dyn_fCDataNodesPresent();
     // Get instance field reference: private System.Boolean preserveWhitespace
-    [[deprecated]] bool& dyn_preserveWhitespace();
+    [[deprecated("Use field access instead!")]] bool& dyn_preserveWhitespace();
     // Get instance field reference: private System.Boolean isLoading
-    [[deprecated]] bool& dyn_isLoading();
+    [[deprecated("Use field access instead!")]] bool& dyn_isLoading();
     // Get instance field reference: System.String strDocumentName
-    [[deprecated]] ::StringW& dyn_strDocumentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strDocumentName();
     // Get instance field reference: System.String strDocumentFragmentName
-    [[deprecated]] ::StringW& dyn_strDocumentFragmentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strDocumentFragmentName();
     // Get instance field reference: System.String strCommentName
-    [[deprecated]] ::StringW& dyn_strCommentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strCommentName();
     // Get instance field reference: System.String strTextName
-    [[deprecated]] ::StringW& dyn_strTextName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strTextName();
     // Get instance field reference: System.String strCDataSectionName
-    [[deprecated]] ::StringW& dyn_strCDataSectionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strCDataSectionName();
     // Get instance field reference: System.String strEntityName
-    [[deprecated]] ::StringW& dyn_strEntityName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strEntityName();
     // Get instance field reference: System.String strID
-    [[deprecated]] ::StringW& dyn_strID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strID();
     // Get instance field reference: System.String strXmlns
-    [[deprecated]] ::StringW& dyn_strXmlns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strXmlns();
     // Get instance field reference: System.String strXml
-    [[deprecated]] ::StringW& dyn_strXml();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strXml();
     // Get instance field reference: System.String strSpace
-    [[deprecated]] ::StringW& dyn_strSpace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strSpace();
     // Get instance field reference: System.String strLang
-    [[deprecated]] ::StringW& dyn_strLang();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strLang();
     // Get instance field reference: System.String strEmpty
-    [[deprecated]] ::StringW& dyn_strEmpty();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strEmpty();
     // Get instance field reference: System.String strNonSignificantWhitespaceName
-    [[deprecated]] ::StringW& dyn_strNonSignificantWhitespaceName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strNonSignificantWhitespaceName();
     // Get instance field reference: System.String strSignificantWhitespaceName
-    [[deprecated]] ::StringW& dyn_strSignificantWhitespaceName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strSignificantWhitespaceName();
     // Get instance field reference: System.String strReservedXmlns
-    [[deprecated]] ::StringW& dyn_strReservedXmlns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strReservedXmlns();
     // Get instance field reference: System.String strReservedXml
-    [[deprecated]] ::StringW& dyn_strReservedXml();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strReservedXml();
     // Get instance field reference: System.String baseURI
-    [[deprecated]] ::StringW& dyn_baseURI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_baseURI();
     // Get instance field reference: private System.Xml.XmlResolver resolver
-    [[deprecated]] ::System::Xml::XmlResolver*& dyn_resolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlResolver*& dyn_resolver();
     // Get instance field reference: System.Boolean bSetResolver
-    [[deprecated]] bool& dyn_bSetResolver();
+    [[deprecated("Use field access instead!")]] bool& dyn_bSetResolver();
     // Get instance field reference: System.Object objLock
-    [[deprecated]] ::Il2CppObject*& dyn_objLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_objLock();
     // System.Xml.Schema.SchemaInfo get_DtdSchemaInfo()
     // Offset: 0x119C7FC
     ::System::Xml::Schema::SchemaInfo* get_DtdSchemaInfo();
@@ -742,7 +742,6 @@ namespace System::Xml {
     // Offset: 0x119C360
     // Implemented from: System.Xml.XmlNode
     // Base method: System.Void XmlNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlDocument* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlDocument::.ctor");

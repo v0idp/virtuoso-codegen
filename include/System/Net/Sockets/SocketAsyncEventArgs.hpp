@@ -103,21 +103,21 @@ namespace System::Net::Sockets {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: System.Int32 in_progress
-    [[deprecated]] int& dyn_in_progress();
+    [[deprecated("Use field access instead!")]] int& dyn_in_progress();
     // Get instance field reference: System.Net.EndPoint remote_ep
-    [[deprecated]] ::System::Net::EndPoint*& dyn_remote_ep();
+    [[deprecated("Use field access instead!")]] ::System::Net::EndPoint*& dyn_remote_ep();
     // Get instance field reference: System.Net.Sockets.Socket current_socket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_current_socket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_current_socket();
     // Get instance field reference: private System.Net.Sockets.Socket <AcceptSocket>k__BackingField
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_$AcceptSocket$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_$AcceptSocket$k__BackingField();
     // Get instance field reference: private System.Int32 <BytesTransferred>k__BackingField
-    [[deprecated]] int& dyn_$BytesTransferred$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$BytesTransferred$k__BackingField();
     // Get instance field reference: private System.Net.Sockets.SocketError <SocketError>k__BackingField
-    [[deprecated]] ::System::Net::Sockets::SocketError& dyn_$SocketError$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::SocketError& dyn_$SocketError$k__BackingField();
     // Get instance field reference: private System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> Completed
-    [[deprecated]] ::System::EventHandler_1<::System::Net::Sockets::SocketAsyncEventArgs*>*& dyn_Completed();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Net::Sockets::SocketAsyncEventArgs*>*& dyn_Completed();
     // public System.Net.Sockets.Socket get_AcceptSocket()
     // Offset: 0xDA4D8C
     ::System::Net::Sockets::Socket* get_AcceptSocket();

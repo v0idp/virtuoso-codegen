@@ -54,16 +54,14 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::List_1<::GlobalNamespace::ONSPPropagationMaterial::Point*>*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 selection
-    [[deprecated]] int& dyn_selection();
+    [[deprecated("Use field access instead!")]] int& dyn_selection();
     // Get instance field reference: public System.Collections.Generic.List`1<ONSPPropagationMaterial/Point> points
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::ONSPPropagationMaterial::Point*>*& dyn_points();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::ONSPPropagationMaterial::Point*>*& dyn_points();
     // public System.Single get_Item(System.Single f)
     // Offset: 0x17711C8
     float get_Item(float f);
     // public System.Void .ctor()
     // Offset: 0x176C450
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ONSPPropagationMaterial::Spectrum* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationMaterial::Spectrum::.ctor");

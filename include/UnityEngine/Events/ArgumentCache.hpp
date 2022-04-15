@@ -84,17 +84,17 @@ namespace UnityEngine::Events {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private UnityEngine.Object m_ObjectArgument
-    [[deprecated]] ::UnityEngine::Object*& dyn_m_ObjectArgument();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Object*& dyn_m_ObjectArgument();
     // Get instance field reference: private System.String m_ObjectArgumentAssemblyTypeName
-    [[deprecated]] ::StringW& dyn_m_ObjectArgumentAssemblyTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_ObjectArgumentAssemblyTypeName();
     // Get instance field reference: private System.Int32 m_IntArgument
-    [[deprecated]] int& dyn_m_IntArgument();
+    [[deprecated("Use field access instead!")]] int& dyn_m_IntArgument();
     // Get instance field reference: private System.Single m_FloatArgument
-    [[deprecated]] float& dyn_m_FloatArgument();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FloatArgument();
     // Get instance field reference: private System.String m_StringArgument
-    [[deprecated]] ::StringW& dyn_m_StringArgument();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_StringArgument();
     // Get instance field reference: private System.Boolean m_BoolArgument
-    [[deprecated]] bool& dyn_m_BoolArgument();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_BoolArgument();
     // public UnityEngine.Object get_unityObjectArgument()
     // Offset: 0x111D154
     ::UnityEngine::Object* get_unityObjectArgument();
@@ -113,21 +113,19 @@ namespace UnityEngine::Events {
     // public System.Boolean get_boolArgument()
     // Offset: 0x111D17C
     bool get_boolArgument();
+    // public System.Void .ctor()
+    // Offset: 0x111D1DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ArgumentCache* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::ArgumentCache::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ArgumentCache*, creationType>()));
+    }
     // public System.Void OnBeforeSerialize()
     // Offset: 0x111D184
     void OnBeforeSerialize();
     // public System.Void OnAfterDeserialize()
     // Offset: 0x111D1B0
     void OnAfterDeserialize();
-    // public System.Void .ctor()
-    // Offset: 0x111D1DC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ArgumentCache* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::ArgumentCache::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ArgumentCache*, creationType>()));
-    }
   }; // UnityEngine.Events.ArgumentCache
   #pragma pack(pop)
   static check_size<sizeof(ArgumentCache), 48 + sizeof(bool)> __UnityEngine_Events_ArgumentCacheSizeCheck;
@@ -182,6 +180,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Events::ArgumentCache*), "get_boolArgument", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Events::ArgumentCache::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Events::ArgumentCache::OnBeforeSerialize
 // Il2CppName: OnBeforeSerialize
 template<>
@@ -198,7 +200,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Events::ArgumentCache*), "OnAfterDeserialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Events::ArgumentCache::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

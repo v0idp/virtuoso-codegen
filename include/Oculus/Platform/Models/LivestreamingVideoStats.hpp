@@ -50,11 +50,11 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int32 CommentCount
-    [[deprecated]] int& dyn_CommentCount();
+    [[deprecated("Use field access instead!")]] int& dyn_CommentCount();
     // Get instance field reference: public readonly System.Int32 ReactionCount
-    [[deprecated]] int& dyn_ReactionCount();
+    [[deprecated("Use field access instead!")]] int& dyn_ReactionCount();
     // Get instance field reference: public readonly System.String TotalViews
-    [[deprecated]] ::StringW& dyn_TotalViews();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TotalViews();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3DB9C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

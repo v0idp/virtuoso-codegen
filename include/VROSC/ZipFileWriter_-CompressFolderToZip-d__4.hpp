@@ -98,21 +98,21 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.String origin
-    [[deprecated]] ::StringW& dyn_origin();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_origin();
     // Get instance field reference: public VROSC.ZipFileWriter <>4__this
-    [[deprecated]] ::VROSC::ZipFileWriter*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::ZipFileWriter*& dyn_$$4__this();
     // Get instance field reference: public System.Action successCallback
-    [[deprecated]] ::System::Action*& dyn_successCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_successCallback();
     // Get instance field reference: public System.Action`1<VROSC.Error> failureCallback
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
     // Get instance field reference: public System.String destination
-    [[deprecated]] ::StringW& dyn_destination();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_destination();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xE8A9F8
     void MoveNext();

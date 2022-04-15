@@ -37,7 +37,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Implemented from: System.Linq.Expressions.Interpreter.DecrementInstruction
     // Base method: System.Void DecrementInstruction::.ctor()
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DecrementInstruction::DecrementInt16* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::DecrementInstruction::DecrementInt16::.ctor");

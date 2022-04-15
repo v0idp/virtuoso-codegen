@@ -60,7 +60,7 @@ namespace Firebase::Firestore {
     // Set static field: static public Firebase.Firestore.Source Cache
     static void _set_Cache(::Firebase::Firestore::Source value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Firebase.Firestore.Source
   #pragma pack(pop)
   static check_size<sizeof(Source), 0 + sizeof(int)> __Firebase_Firestore_SourceSizeCheck;

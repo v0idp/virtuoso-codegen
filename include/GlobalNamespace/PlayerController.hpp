@@ -58,11 +58,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public UnityEngine.Camera spyCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_spyCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_spyCamera();
     // Get instance field reference: private UnityEngine.GameObject cameraRig
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_cameraRig();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_cameraRig();
     // Get instance field reference: private System.Boolean showUI
-    [[deprecated]] bool& dyn_showUI();
+    [[deprecated("Use field access instead!")]] bool& dyn_showUI();
     // private System.Void checkInput()
     // Offset: 0xAE1E2C
     void checkInput();
@@ -76,11 +76,6 @@ namespace GlobalNamespace {
     // Offset: 0xAE209C
     // Implemented from: SocialPlatformManager
     // Base method: System.Void SocialPlatformManager::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayerController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PlayerController::.ctor");

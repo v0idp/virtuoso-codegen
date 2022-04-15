@@ -57,17 +57,15 @@ namespace TMPro {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.Material baseMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_baseMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_baseMaterial();
     // Get instance field reference: public UnityEngine.Material stencilMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_stencilMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_stencilMaterial();
     // Get instance field reference: public System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: public System.Int32 stencilID
-    [[deprecated]] int& dyn_stencilID();
+    [[deprecated("Use field access instead!")]] int& dyn_stencilID();
     // public System.Void .ctor()
     // Offset: 0x18211F8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_MaterialManager::MaskingMaterial* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_MaterialManager::MaskingMaterial::.ctor");

@@ -44,25 +44,27 @@ namespace GlobalNamespace {
       return obj;
     }
     // Get instance field reference: public UnityEngine.GameObject obj
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_obj();
-    // System.Boolean <RemoveSurfaceGeometry>b__0(OVRPassthroughLayer/DeferredPassthroughMeshAddition x)
-    // Offset: 0x855998
-    bool $RemoveSurfaceGeometry$b__0(::GlobalNamespace::OVRPassthroughLayer::DeferredPassthroughMeshAddition x);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_obj();
     // public System.Void .ctor()
     // Offset: 0x855990
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRPassthroughLayer::$$c__DisplayClass9_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPassthroughLayer::$$c__DisplayClass9_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRPassthroughLayer::$$c__DisplayClass9_0*, creationType>()));
     }
+    // System.Boolean <RemoveSurfaceGeometry>b__0(OVRPassthroughLayer/DeferredPassthroughMeshAddition x)
+    // Offset: 0x855998
+    bool $RemoveSurfaceGeometry$b__0(::GlobalNamespace::OVRPassthroughLayer::DeferredPassthroughMeshAddition x);
   }; // OVRPassthroughLayer/<>c__DisplayClass9_0
   #pragma pack(pop)
   static check_size<sizeof(OVRPassthroughLayer::$$c__DisplayClass9_0), 16 + sizeof(::UnityEngine::GameObject*)> __GlobalNamespace_OVRPassthroughLayer_$$c__DisplayClass9_0SizeCheck;
   static_assert(sizeof(OVRPassthroughLayer::$$c__DisplayClass9_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::$$c__DisplayClass9_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::$$c__DisplayClass9_0::$RemoveSurfaceGeometry$b__0
 // Il2CppName: <RemoveSurfaceGeometry>b__0
 template<>
@@ -72,7 +74,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPassthroughLayer::$$c__DisplayClass9_0*), "<RemoveSurfaceGeometry>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::$$c__DisplayClass9_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

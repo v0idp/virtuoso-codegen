@@ -49,7 +49,7 @@ namespace System::Linq::Expressions::Interpreter {
       return field;
     }
     // Get instance field reference: protected readonly System.Reflection.FieldInfo _field
-    [[deprecated]] ::System::Reflection::FieldInfo*& dyn__field();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::FieldInfo*& dyn__field();
     // public System.Void .ctor(System.Reflection.FieldInfo field)
     // Offset: 0xF14714
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

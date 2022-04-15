@@ -38,7 +38,7 @@ namespace System::Runtime::Serialization {
       return isReference;
     }
     // Get instance field reference: private System.Boolean isReference
-    [[deprecated]] bool& dyn_isReference();
+    [[deprecated("Use field access instead!")]] bool& dyn_isReference();
     // public System.Boolean get_IsReference()
     // Offset: 0x190EB7C
     bool get_IsReference();

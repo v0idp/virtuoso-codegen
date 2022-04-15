@@ -48,11 +48,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String fullTypeName
-    [[deprecated]] ::StringW& dyn_fullTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fullTypeName();
     // Get instance field reference: private System.String assemblyString
-    [[deprecated]] ::StringW& dyn_assemblyString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assemblyString();
     // Get instance field reference: private System.Boolean hasTypeForwardedFrom
-    [[deprecated]] bool& dyn_hasTypeForwardedFrom();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasTypeForwardedFrom();
     // System.String get_FullTypeName()
     // Offset: 0x12B245C
     ::StringW get_FullTypeName();

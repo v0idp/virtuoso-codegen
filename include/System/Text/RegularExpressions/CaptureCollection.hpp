@@ -76,11 +76,11 @@ namespace System::Text::RegularExpressions {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: System.Text.RegularExpressions.Group _group
-    [[deprecated]] ::System::Text::RegularExpressions::Group*& dyn__group();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Group*& dyn__group();
     // Get instance field reference: System.Int32 _capcount
-    [[deprecated]] int& dyn__capcount();
+    [[deprecated("Use field access instead!")]] int& dyn__capcount();
     // Get instance field reference: System.Text.RegularExpressions.Capture[] _captures
-    [[deprecated]] ::ArrayW<::System::Text::RegularExpressions::Capture*>& dyn__captures();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Text::RegularExpressions::Capture*>& dyn__captures();
     // public System.Object get_SyncRoot()
     // Offset: 0x10E0858
     ::Il2CppObject* get_SyncRoot();
@@ -90,6 +90,13 @@ namespace System::Text::RegularExpressions {
     // public System.Text.RegularExpressions.Capture get_Item(System.Int32 i)
     // Offset: 0x10E0868
     ::System::Text::RegularExpressions::Capture* get_Item(int i);
+    // System.Void .ctor()
+    // Offset: 0x10E0BC0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CaptureCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::CaptureCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CaptureCollection*, creationType>()));
+    }
     // public System.Void CopyTo(System.Array array, System.Int32 arrayIndex)
     // Offset: 0x10E0A60
     void CopyTo(::System::Array* array, int arrayIndex);
@@ -99,15 +106,6 @@ namespace System::Text::RegularExpressions {
     // System.Text.RegularExpressions.Capture GetCapture(System.Int32 i)
     // Offset: 0x10E086C
     ::System::Text::RegularExpressions::Capture* GetCapture(int i);
-    // System.Void .ctor()
-    // Offset: 0x10E0BC0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CaptureCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::CaptureCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CaptureCollection*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.CaptureCollection
   #pragma pack(pop)
   static check_size<sizeof(CaptureCollection), 32 + sizeof(::ArrayW<::System::Text::RegularExpressions::Capture*>)> __System_Text_RegularExpressions_CaptureCollectionSizeCheck;
@@ -139,6 +137,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::CaptureCollection*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{i});
   }
 };
+// Writing MetadataGetter for method: System::Text::RegularExpressions::CaptureCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::CaptureCollection::CopyTo
 // Il2CppName: CopyTo
 template<>
@@ -166,7 +168,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::CaptureCollection*), "GetCapture", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{i});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::CaptureCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -79,13 +79,13 @@ namespace System::Data {
     static_assert(sizeof(::System::ComponentModel::CollectionChangeEventHandler*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private readonly System.Collections.ArrayList _relations
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__relations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__relations();
     // Get instance field reference: private readonly System.Boolean _fParentCollection
-    [[deprecated]] bool& dyn__fParentCollection();
+    [[deprecated("Use field access instead!")]] bool& dyn__fParentCollection();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler RelationPropertyChanged
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_RelationPropertyChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_RelationPropertyChanged();
     // System.Void add_RelationPropertyChanged(System.ComponentModel.CollectionChangeEventHandler value)
     // Offset: 0x18CDBA0
     void add_RelationPropertyChanged(::System::ComponentModel::CollectionChangeEventHandler* value);

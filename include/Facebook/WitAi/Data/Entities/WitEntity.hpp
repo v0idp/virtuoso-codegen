@@ -72,20 +72,19 @@ namespace Facebook::WitAi::Data::Entities {
     // Deleting conversion operator: operator ::Facebook::WitAi::Data::Configuration::WitConfiguration*
     constexpr operator ::Facebook::WitAi::Data::Configuration::WitConfiguration*() const noexcept = delete;
     // Get instance field reference: public System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public System.String[] lookups
-    [[deprecated]] ::ArrayW<::StringW>& dyn_lookups();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_lookups();
     // Get instance field reference: public System.String[] roles
-    [[deprecated]] ::ArrayW<::StringW>& dyn_roles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_roles();
     // Get instance field reference: public Facebook.WitAi.Data.Keywords.WitKeyword[] keywords
-    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Keywords::WitKeyword*>& dyn_keywords();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Facebook::WitAi::Data::Keywords::WitKeyword*>& dyn_keywords();
     // public System.Void .ctor()
     // Offset: 0x1675080
     // Implemented from: Facebook.WitAi.Configuration.WitConfigurationData
     // Base method: System.Void WitConfigurationData::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitEntity* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::Entities::WitEntity::.ctor");

@@ -91,17 +91,17 @@ namespace VROSC::UI {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TMP_FontAsset _font
-    [[deprecated]] ::TMPro::TMP_FontAsset*& dyn__font();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_FontAsset*& dyn__font();
     // Get instance field reference: private TMPro.FontStyles _style
-    [[deprecated]] ::TMPro::FontStyles& dyn__style();
+    [[deprecated("Use field access instead!")]] ::TMPro::FontStyles& dyn__style();
     // Get instance field reference: private System.Boolean _autoSize
-    [[deprecated]] bool& dyn__autoSize();
+    [[deprecated("Use field access instead!")]] bool& dyn__autoSize();
     // Get instance field reference: private System.Single _size
-    [[deprecated]] float& dyn__size();
+    [[deprecated("Use field access instead!")]] float& dyn__size();
     // Get instance field reference: private VROSC.MinMaxFloat _minMaxSize
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__minMaxSize();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__minMaxSize();
     // Get instance field reference: public System.Action OnTextChange
-    [[deprecated]] ::System::Action*& dyn_OnTextChange();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnTextChange();
     // public TMPro.TMP_FontAsset get_Font()
     // Offset: 0x1919594
     ::TMPro::TMP_FontAsset* get_Font();
@@ -121,9 +121,6 @@ namespace VROSC::UI {
     // Offset: 0x19195BC
     // Implemented from: VROSC.UI.UIColorGetter
     // Base method: System.Void UIColorGetter::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UITextSetting* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UITextSetting::.ctor");

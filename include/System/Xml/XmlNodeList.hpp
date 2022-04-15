@@ -57,6 +57,13 @@ namespace System::Xml {
     // public System.Xml.XmlNode get_ItemOf(System.Int32 i)
     // Offset: 0x1019264
     ::System::Xml::XmlNode* get_ItemOf(int i);
+    // protected System.Void .ctor()
+    // Offset: 0x1019280
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlNodeList* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlNodeList::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlNodeList*, creationType>()));
+    }
     // public System.Xml.XmlNode Item(System.Int32 index)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Xml::XmlNode* Item(int index);
@@ -69,15 +76,6 @@ namespace System::Xml {
     // protected System.Void PrivateDisposeNodeList()
     // Offset: 0x101927C
     void PrivateDisposeNodeList();
-    // protected System.Void .ctor()
-    // Offset: 0x1019280
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlNodeList* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlNodeList::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlNodeList*, creationType>()));
-    }
   }; // System.Xml.XmlNodeList
   #pragma pack(pop)
 }
@@ -99,6 +97,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlNodeList*), "get_ItemOf", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{i});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlNodeList::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlNodeList::Item
 // Il2CppName: Item
 template<>
@@ -132,7 +134,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlNodeList*), "PrivateDisposeNodeList", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlNodeList::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -107,21 +107,21 @@ namespace System::Runtime::Remoting {
       return *reinterpret_cast<::Mono::Xml::SmallXmlParser::IContentHandler*>(this);
     }
     // Get instance field reference: private System.Collections.ArrayList typeEntries
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_typeEntries();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_typeEntries();
     // Get instance field reference: private System.Collections.ArrayList channelInstances
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_channelInstances();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_channelInstances();
     // Get instance field reference: private System.Runtime.Remoting.ChannelData currentChannel
-    [[deprecated]] ::System::Runtime::Remoting::ChannelData*& dyn_currentChannel();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::ChannelData*& dyn_currentChannel();
     // Get instance field reference: private System.Collections.Stack currentProviderData
-    [[deprecated]] ::System::Collections::Stack*& dyn_currentProviderData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn_currentProviderData();
     // Get instance field reference: private System.String currentClientUrl
-    [[deprecated]] ::StringW& dyn_currentClientUrl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currentClientUrl();
     // Get instance field reference: private System.String appName
-    [[deprecated]] ::StringW& dyn_appName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_appName();
     // Get instance field reference: private System.String currentXmlPath
-    [[deprecated]] ::StringW& dyn_currentXmlPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currentXmlPath();
     // Get instance field reference: private System.Boolean onlyDelayedChannels
-    [[deprecated]] bool& dyn_onlyDelayedChannels();
+    [[deprecated("Use field access instead!")]] bool& dyn_onlyDelayedChannels();
     // public System.Void .ctor(System.Boolean onlyDelayedChannels)
     // Offset: 0xE3C408
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

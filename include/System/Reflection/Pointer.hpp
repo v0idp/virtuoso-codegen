@@ -65,9 +65,9 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: private System.Void* _ptr
-    [[deprecated]] void*& dyn__ptr();
+    [[deprecated("Use field access instead!")]] void*& dyn__ptr();
     // Get instance field reference: private System.RuntimeType _ptrType
-    [[deprecated]] ::System::RuntimeType*& dyn__ptrType();
+    [[deprecated("Use field access instead!")]] ::System::RuntimeType*& dyn__ptrType();
     // private System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x14CFDB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

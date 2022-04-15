@@ -87,17 +87,17 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::XmlCharType) == 0x8);
     public:
     // Get instance field reference: private System.IO.TextWriter textWriter
-    [[deprecated]] ::System::IO::TextWriter*& dyn_textWriter();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextWriter*& dyn_textWriter();
     // Get instance field reference: private System.Boolean inAttribute
-    [[deprecated]] bool& dyn_inAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_inAttribute();
     // Get instance field reference: private System.Char quoteChar
-    [[deprecated]] ::Il2CppChar& dyn_quoteChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_quoteChar();
     // Get instance field reference: private System.Text.StringBuilder attrValue
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_attrValue();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_attrValue();
     // Get instance field reference: private System.Boolean cacheAttrValue
-    [[deprecated]] bool& dyn_cacheAttrValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_cacheAttrValue();
     // Get instance field reference: private System.Xml.XmlCharType xmlCharType
-    [[deprecated]] ::System::Xml::XmlCharType& dyn_xmlCharType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlCharType& dyn_xmlCharType();
     // System.Void set_QuoteChar(System.Char value)
     // Offset: 0x155E9B0
     void set_QuoteChar(::Il2CppChar value);

@@ -105,7 +105,7 @@ namespace System::Globalization {
       // Set static field: static public System.Globalization.DateTimeFormatInfoScanner/System.Globalization.FoundDatePattern FoundYMDPatternFlag
       static void _set_FoundYMDPatternFlag(::System::Globalization::DateTimeFormatInfoScanner::FoundDatePattern value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Globalization.DateTimeFormatInfoScanner/System.Globalization.FoundDatePattern
     #pragma pack(pop)
     static check_size<sizeof(DateTimeFormatInfoScanner::FoundDatePattern), 0 + sizeof(int)> __System_Globalization_DateTimeFormatInfoScanner_FoundDatePatternSizeCheck;
@@ -129,9 +129,9 @@ namespace System::Globalization {
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.String,System.String> s_knownWords
     static void _set_s_knownWords(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* value);
     // Get instance field reference: System.Collections.Generic.List`1<System.String> m_dateWords
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_dateWords();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_dateWords();
     // Get instance field reference: private System.Globalization.DateTimeFormatInfoScanner/System.Globalization.FoundDatePattern m_ymdFlags
-    [[deprecated]] ::System::Globalization::DateTimeFormatInfoScanner::FoundDatePattern& dyn_m_ymdFlags();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::DateTimeFormatInfoScanner::FoundDatePattern& dyn_m_ymdFlags();
     // static private System.Collections.Generic.Dictionary`2<System.String,System.String> get_KnownWords()
     // Offset: 0xFD5BF8
     static ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* get_KnownWords();

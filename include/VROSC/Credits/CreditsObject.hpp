@@ -45,12 +45,19 @@ namespace VROSC::Credits {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Single _height
-    [[deprecated]] float& dyn__height();
+    [[deprecated("Use field access instead!")]] float& dyn__height();
     // Get instance field reference: private System.Single _visibility
-    [[deprecated]] float& dyn__visibility();
+    [[deprecated("Use field access instead!")]] float& dyn__visibility();
     // public System.Single get_Height()
     // Offset: 0x8DFBB0
     float get_Height();
+    // public System.Void .ctor()
+    // Offset: 0x8DF5A4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CreditsObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CreditsObject*, creationType>()));
+    }
     // private System.Void OnDrawGizmos()
     // Offset: 0x8DFBB8
     void OnDrawGizmos();
@@ -60,19 +67,6 @@ namespace VROSC::Credits {
     // protected System.Void UpdateVisibility(System.Single visible)
     // Offset: 0x8DF598
     void UpdateVisibility(float visible);
-    // public System.Void .ctor()
-    // Offset: 0x8DF5A4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CreditsObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CreditsObject*, creationType>()));
-    }
   }; // VROSC.Credits.CreditsObject
   #pragma pack(pop)
   static check_size<sizeof(CreditsObject), 28 + sizeof(float)> __VROSC_Credits_CreditsObjectSizeCheck;
@@ -87,6 +81,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::Credits::CreditsObject*), "get_Height", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::Credits::CreditsObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Credits::CreditsObject::OnDrawGizmos
 // Il2CppName: OnDrawGizmos
 template<>
@@ -113,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Credits::CreditsObject*), "UpdateVisibility", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{visible});
   }
 };
-// Writing MetadataGetter for method: VROSC::Credits::CreditsObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

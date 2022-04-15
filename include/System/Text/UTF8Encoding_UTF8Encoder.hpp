@@ -45,7 +45,7 @@ namespace System::Text {
       return surrogateChar;
     }
     // Get instance field reference: System.Int32 surrogateChar
-    [[deprecated]] int& dyn_surrogateChar();
+    [[deprecated("Use field access instead!")]] int& dyn_surrogateChar();
     // public System.Void .ctor(System.Text.UTF8Encoding encoding)
     // Offset: 0x189B574
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

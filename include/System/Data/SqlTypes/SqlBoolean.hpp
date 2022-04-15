@@ -104,7 +104,7 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlBoolean One
     static void _set_One(::System::Data::SqlTypes::SqlBoolean value);
     // Get instance field reference: private System.Byte m_value
-    [[deprecated]] uint8_t& dyn_m_value();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_value();
     // public System.Boolean get_IsNull()
     // Offset: 0x1220C84
     bool get_IsNull();

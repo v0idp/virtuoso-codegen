@@ -32,6 +32,13 @@ namespace UnityEngine {
     operator ::UnityEngine::ISubsystem() noexcept {
       return *reinterpret_cast<::UnityEngine::ISubsystem*>(this);
     }
+    // protected System.Void .ctor()
+    // Offset: 0x1903C3C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Subsystem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Subsystem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Subsystem*, creationType>()));
+    }
     // public System.Void Start()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Start();
@@ -44,19 +51,14 @@ namespace UnityEngine {
     // protected System.Void OnDestroy()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnDestroy();
-    // protected System.Void .ctor()
-    // Offset: 0x1903C3C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Subsystem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Subsystem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Subsystem*, creationType>()));
-    }
   }; // UnityEngine.Subsystem
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Subsystem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Subsystem::Start
 // Il2CppName: Start
 template<>
@@ -89,7 +91,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Subsystem*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Subsystem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

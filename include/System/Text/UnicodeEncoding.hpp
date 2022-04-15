@@ -77,11 +77,11 @@ namespace System::Text {
     // Set static field: static private readonly System.UInt64 highLowPatternMask
     static void _set_highLowPatternMask(uint64_t value);
     // Get instance field reference: System.Boolean isThrowException
-    [[deprecated]] bool& dyn_isThrowException();
+    [[deprecated("Use field access instead!")]] bool& dyn_isThrowException();
     // Get instance field reference: System.Boolean bigEndian
-    [[deprecated]] bool& dyn_bigEndian();
+    [[deprecated("Use field access instead!")]] bool& dyn_bigEndian();
     // Get instance field reference: System.Boolean byteOrderMark
-    [[deprecated]] bool& dyn_byteOrderMark();
+    [[deprecated("Use field access instead!")]] bool& dyn_byteOrderMark();
     // public System.Void .ctor(System.Boolean bigEndian, System.Boolean byteOrderMark)
     // Offset: 0x12055C4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

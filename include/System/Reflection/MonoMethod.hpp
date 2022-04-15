@@ -96,11 +96,11 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr mhandle
-    [[deprecated]] ::System::IntPtr& dyn_mhandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_mhandle();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Type reftype
-    [[deprecated]] ::System::Type*& dyn_reftype();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_reftype();
     // static System.String get_name(System.Reflection.MethodBase method)
     // Offset: 0x100837C
     static ::StringW get_name(::System::Reflection::MethodBase* method);

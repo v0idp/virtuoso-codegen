@@ -103,15 +103,15 @@ namespace VROSC {
     // Set static field: static public System.Int32 MaxEmpadMidiNotes
     static void _set_MaxEmpadMidiNotes(int value);
     // Get instance field reference: private System.Boolean _printToLog
-    [[deprecated]] bool& dyn__printToLog();
+    [[deprecated("Use field access instead!")]] bool& dyn__printToLog();
     // Get instance field reference: private System.String _clientName
-    [[deprecated]] ::StringW& dyn__clientName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__clientName();
     // Get instance field reference: private System.Int32 _oscServerPort
-    [[deprecated]] int& dyn__oscServerPort();
+    [[deprecated("Use field access instead!")]] int& dyn__oscServerPort();
     // Get instance field reference: private System.Threading.CancellationTokenSource _udpThreadCancellationTokenSource
-    [[deprecated]] ::System::Threading::CancellationTokenSource*& dyn__udpThreadCancellationTokenSource();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationTokenSource*& dyn__udpThreadCancellationTokenSource();
     // Get instance field reference: private System.Boolean _isSetup
-    [[deprecated]] bool& dyn__isSetup();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSetup();
     // protected System.Void OnDestroy()
     // Offset: 0x8F0A18
     void OnDestroy();
@@ -143,11 +143,6 @@ namespace VROSC {
     // Offset: 0x8F124C
     // Implemented from: VROSC.MidiInterface
     // Base method: System.Void MidiInterface::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExternalSynthesizer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ExternalSynthesizer::.ctor");

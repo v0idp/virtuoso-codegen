@@ -165,29 +165,29 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private readonly UnityEngine.UI.RectangularVertexClipper m_VertexClipper
-    [[deprecated]] ::UnityEngine::UI::RectangularVertexClipper*& dyn_m_VertexClipper();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::RectangularVertexClipper*& dyn_m_VertexClipper();
     // Get instance field reference: private UnityEngine.RectTransform m_RectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<UnityEngine.UI.MaskableGraphic> m_MaskableTargets
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::UnityEngine::UI::MaskableGraphic*>*& dyn_m_MaskableTargets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::UnityEngine::UI::MaskableGraphic*>*& dyn_m_MaskableTargets();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<UnityEngine.UI.IClippable> m_ClipTargets
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::UnityEngine::UI::IClippable*>*& dyn_m_ClipTargets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::UnityEngine::UI::IClippable*>*& dyn_m_ClipTargets();
     // Get instance field reference: private System.Boolean m_ShouldRecalculateClipRects
-    [[deprecated]] bool& dyn_m_ShouldRecalculateClipRects();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShouldRecalculateClipRects();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.UI.RectMask2D> m_Clippers
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UI::RectMask2D*>*& dyn_m_Clippers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UI::RectMask2D*>*& dyn_m_Clippers();
     // Get instance field reference: private UnityEngine.Rect m_LastClipRectCanvasSpace
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_LastClipRectCanvasSpace();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_LastClipRectCanvasSpace();
     // Get instance field reference: private System.Boolean m_ForceClip
-    [[deprecated]] bool& dyn_m_ForceClip();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ForceClip();
     // Get instance field reference: private UnityEngine.Vector4 m_Padding
-    [[deprecated]] ::UnityEngine::Vector4& dyn_m_Padding();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_m_Padding();
     // Get instance field reference: private UnityEngine.Vector2Int m_Softness
-    [[deprecated]] ::UnityEngine::Vector2Int& dyn_m_Softness();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2Int& dyn_m_Softness();
     // Get instance field reference: private UnityEngine.Canvas m_Canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_m_Canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_m_Canvas();
     // Get instance field reference: private UnityEngine.Vector3[] m_Corners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
     // public UnityEngine.Vector4 get_padding()
     // Offset: 0x142B21C
     ::UnityEngine::Vector4 get_padding();
@@ -231,11 +231,6 @@ namespace UnityEngine::UI {
     // Offset: 0x142B638
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RectMask2D* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::RectMask2D::.ctor");

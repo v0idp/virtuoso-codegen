@@ -88,11 +88,18 @@ namespace UnityEngine::Events {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private UnityEngine.Events.InvokableCallList m_Calls
-    [[deprecated]] ::UnityEngine::Events::InvokableCallList*& dyn_m_Calls();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::InvokableCallList*& dyn_m_Calls();
     // Get instance field reference: private UnityEngine.Events.PersistentCallGroup m_PersistentCalls
-    [[deprecated]] ::UnityEngine::Events::PersistentCallGroup*& dyn_m_PersistentCalls();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::PersistentCallGroup*& dyn_m_PersistentCalls();
     // Get instance field reference: private System.Boolean m_CallsDirty
-    [[deprecated]] bool& dyn_m_CallsDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CallsDirty();
+    // protected System.Void .ctor()
+    // Offset: 0x183CA38
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UnityEventBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::UnityEventBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UnityEventBase*, creationType>()));
+    }
     // private System.Void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
     // Offset: 0x183D05C
     void UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize();
@@ -129,15 +136,6 @@ namespace UnityEngine::Events {
     // static public System.Reflection.MethodInfo GetValidMethodInfo(System.Type objectType, System.String functionName, System.Type[] argumentTypes)
     // Offset: 0x183CC5C
     static ::System::Reflection::MethodInfo* GetValidMethodInfo(::System::Type* objectType, ::StringW functionName, ::ArrayW<::System::Type*> argumentTypes);
-    // protected System.Void .ctor()
-    // Offset: 0x183CA38
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UnityEventBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::UnityEventBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UnityEventBase*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x183D624
     // Implemented from: System.Object
@@ -149,6 +147,10 @@ namespace UnityEngine::Events {
   static_assert(sizeof(UnityEventBase) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Events::UnityEventBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Events::UnityEventBase::UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize
 // Il2CppName: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
 template<>
@@ -260,10 +262,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::R
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Events::UnityEventBase*), "GetValidMethodInfo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{objectType, functionName, argumentTypes});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Events::UnityEventBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Events::UnityEventBase::ToString
 // Il2CppName: ToString
 template<>

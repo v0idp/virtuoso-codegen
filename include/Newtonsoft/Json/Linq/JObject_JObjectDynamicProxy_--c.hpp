@@ -51,18 +51,16 @@ namespace Newtonsoft::Json::Linq {
     // static private System.Void .cctor()
     // Offset: 0x15A0674
     static void _cctor();
-    // System.String <GetDynamicMemberNames>b__2_0(Newtonsoft.Json.Linq.JProperty p)
-    // Offset: 0x15A06DC
-    ::StringW $GetDynamicMemberNames$b__2_0(::Newtonsoft::Json::Linq::JProperty* p);
     // public System.Void .ctor()
     // Offset: 0x15A06D4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JObject::JObjectDynamicProxy::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JObject::JObjectDynamicProxy::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<JObject::JObjectDynamicProxy::$$c*, creationType>()));
     }
+    // System.String <GetDynamicMemberNames>b__2_0(Newtonsoft.Json.Linq.JProperty p)
+    // Offset: 0x15A06DC
+    ::StringW $GetDynamicMemberNames$b__2_0(::Newtonsoft::Json::Linq::JProperty* p);
   }; // Newtonsoft.Json.Linq.JObject/Newtonsoft.Json.Linq.JObjectDynamicProxy/Newtonsoft.Json.Linq.<>c
   #pragma pack(pop)
 }
@@ -75,6 +73,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Linq::JObject::JObjectDynamicProxy::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::Linq::JObject::JObjectDynamicProxy::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Linq::JObject::JObjectDynamicProxy::$$c::$GetDynamicMemberNames$b__2_0
 // Il2CppName: <GetDynamicMemberNames>b__2_0
 template<>
@@ -84,7 +86,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Linq::JObject::JObjectDynamicProxy::$$c*), "<GetDynamicMemberNames>b__2_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Linq::JObject::JObjectDynamicProxy::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

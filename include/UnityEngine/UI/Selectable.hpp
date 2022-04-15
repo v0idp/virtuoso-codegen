@@ -149,7 +149,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.Selectable/UnityEngine.UI.Transition Animation
       static void _set_Animation(::UnityEngine::UI::Selectable::Transition value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.Selectable/UnityEngine.UI.Transition
     #pragma pack(pop)
     static check_size<sizeof(Selectable::Transition), 0 + sizeof(int)> __UnityEngine_UI_Selectable_TransitionSizeCheck;
@@ -297,33 +297,33 @@ namespace UnityEngine::UI {
     // Set static field: static protected System.Int32 s_SelectableCount
     static void _set_s_SelectableCount(int value);
     // Get instance field reference: private System.Boolean m_EnableCalled
-    [[deprecated]] bool& dyn_m_EnableCalled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableCalled();
     // Get instance field reference: private UnityEngine.UI.Navigation m_Navigation
-    [[deprecated]] ::UnityEngine::UI::Navigation& dyn_m_Navigation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Navigation& dyn_m_Navigation();
     // Get instance field reference: private UnityEngine.UI.Selectable/UnityEngine.UI.Transition m_Transition
-    [[deprecated]] ::UnityEngine::UI::Selectable::Transition& dyn_m_Transition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Selectable::Transition& dyn_m_Transition();
     // Get instance field reference: private UnityEngine.UI.ColorBlock m_Colors
-    [[deprecated]] ::UnityEngine::UI::ColorBlock& dyn_m_Colors();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ColorBlock& dyn_m_Colors();
     // Get instance field reference: private UnityEngine.UI.SpriteState m_SpriteState
-    [[deprecated]] ::UnityEngine::UI::SpriteState& dyn_m_SpriteState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::SpriteState& dyn_m_SpriteState();
     // Get instance field reference: private UnityEngine.UI.AnimationTriggers m_AnimationTriggers
-    [[deprecated]] ::UnityEngine::UI::AnimationTriggers*& dyn_m_AnimationTriggers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::AnimationTriggers*& dyn_m_AnimationTriggers();
     // Get instance field reference: private System.Boolean m_Interactable
-    [[deprecated]] bool& dyn_m_Interactable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Interactable();
     // Get instance field reference: private UnityEngine.UI.Graphic m_TargetGraphic
-    [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_m_TargetGraphic();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_m_TargetGraphic();
     // Get instance field reference: private System.Boolean m_GroupsAllowInteraction
-    [[deprecated]] bool& dyn_m_GroupsAllowInteraction();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_GroupsAllowInteraction();
     // Get instance field reference: protected System.Int32 m_CurrentIndex
-    [[deprecated]] int& dyn_m_CurrentIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CurrentIndex();
     // Get instance field reference: private System.Boolean <isPointerInside>k__BackingField
-    [[deprecated]] bool& dyn_$isPointerInside$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isPointerInside$k__BackingField();
     // Get instance field reference: private System.Boolean <isPointerDown>k__BackingField
-    [[deprecated]] bool& dyn_$isPointerDown$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isPointerDown$k__BackingField();
     // Get instance field reference: private System.Boolean <hasSelection>k__BackingField
-    [[deprecated]] bool& dyn_$hasSelection$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$hasSelection$k__BackingField();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.CanvasGroup> m_CanvasGroupCache
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::CanvasGroup*>*& dyn_m_CanvasGroupCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::CanvasGroup*>*& dyn_m_CanvasGroupCache();
     // static public UnityEngine.UI.Selectable[] get_allSelectablesArray()
     // Offset: 0x14328FC
     static ::ArrayW<::UnityEngine::UI::Selectable*> get_allSelectablesArray();
@@ -405,6 +405,9 @@ namespace UnityEngine::UI {
     // protected UnityEngine.UI.Selectable/UnityEngine.UI.SelectionState get_currentSelectionState()
     // Offset: 0x14334A8
     ::UnityEngine::UI::Selectable::SelectionState get_currentSelectionState();
+    // static private System.Void .cctor()
+    // Offset: 0x14343C4
+    static void _cctor();
     // static public System.Int32 AllSelectablesNoAlloc(UnityEngine.UI.Selectable[] selectables)
     // Offset: 0x1432AB0
     static int AllSelectablesNoAlloc(::ArrayW<::UnityEngine::UI::Selectable*> selectables);
@@ -487,21 +490,11 @@ namespace UnityEngine::UI {
     // Offset: 0x1431060
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Selectable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Selectable::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Selectable*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0x14343C4
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void Awake()
     // Offset: 0x1433218
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
@@ -767,6 +760,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Selectable*), "get_currentSelectionState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::Selectable::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::UI::Selectable::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Selectable*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: UnityEngine::UI::Selectable::AllSelectablesNoAlloc
 // Il2CppName: AllSelectablesNoAlloc
 template<>
@@ -998,14 +999,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::UI::Selectable::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::UI::Selectable::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Selectable*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: UnityEngine::UI::Selectable::Awake
 // Il2CppName: Awake
 template<>

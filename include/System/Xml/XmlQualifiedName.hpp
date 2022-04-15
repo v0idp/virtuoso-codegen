@@ -67,11 +67,11 @@ namespace System::Xml {
     // Set static field: static public readonly System.Xml.XmlQualifiedName Empty
     static void _set_Empty(::System::Xml::XmlQualifiedName* value);
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.Int32 hash
-    [[deprecated]] int& dyn_hash();
+    [[deprecated("Use field access instead!")]] int& dyn_hash();
     // public System.String get_Namespace()
     // Offset: 0x10244EC
     ::StringW get_Namespace();
@@ -81,6 +81,13 @@ namespace System::Xml {
     // public System.Boolean get_IsEmpty()
     // Offset: 0x102477C
     bool get_IsEmpty();
+    // public System.Void .ctor()
+    // Offset: 0x1024398
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlQualifiedName* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlQualifiedName::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlQualifiedName*, creationType>()));
+    }
     // public System.Void .ctor(System.String name)
     // Offset: 0x1024488
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -128,15 +135,6 @@ namespace System::Xml {
     // System.Xml.XmlQualifiedName Clone()
     // Offset: 0x1024DA4
     ::System::Xml::XmlQualifiedName* Clone();
-    // public System.Void .ctor()
-    // Offset: 0x1024398
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlQualifiedName* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlQualifiedName::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlQualifiedName*, creationType>()));
-    }
     // public override System.Int32 GetHashCode()
     // Offset: 0x10244FC
     // Implemented from: System.Object
@@ -188,6 +186,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlQualifiedName*), "get_IsEmpty", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlQualifiedName::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlQualifiedName::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -296,10 +298,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlQualifiedName*), "Clone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlQualifiedName::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlQualifiedName::GetHashCode
 // Il2CppName: GetHashCode
 template<>

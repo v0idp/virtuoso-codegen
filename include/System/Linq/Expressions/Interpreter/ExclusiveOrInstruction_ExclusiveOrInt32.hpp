@@ -37,7 +37,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Implemented from: System.Linq.Expressions.Interpreter.ExclusiveOrInstruction
     // Base method: System.Void ExclusiveOrInstruction::.ctor()
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExclusiveOrInstruction::ExclusiveOrInt32* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction::ExclusiveOrInt32::.ctor");

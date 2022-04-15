@@ -111,19 +111,19 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.TypeIdentifier name
-    [[deprecated]] ::System::TypeIdentifier*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::TypeIdentifier*& dyn_name();
     // Get instance field reference: private System.String assembly_name
-    [[deprecated]] ::StringW& dyn_assembly_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assembly_name();
     // Get instance field reference: private System.Collections.Generic.List`1<System.TypeIdentifier> nested
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::TypeIdentifier*>*& dyn_nested();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::TypeIdentifier*>*& dyn_nested();
     // Get instance field reference: private System.Collections.Generic.List`1<System.TypeSpec> generic_params
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::TypeSpec*>*& dyn_generic_params();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::TypeSpec*>*& dyn_generic_params();
     // Get instance field reference: private System.Collections.Generic.List`1<System.ModifierSpec> modifier_spec
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::ModifierSpec*>*& dyn_modifier_spec();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::ModifierSpec*>*& dyn_modifier_spec();
     // Get instance field reference: private System.Boolean is_byref
-    [[deprecated]] bool& dyn_is_byref();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_byref();
     // Get instance field reference: private System.String display_fullname
-    [[deprecated]] ::StringW& dyn_display_fullname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_display_fullname();
     // System.Boolean get_HasModifiers()
     // Offset: 0x12B3768
     bool get_HasModifiers();

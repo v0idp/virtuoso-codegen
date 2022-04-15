@@ -56,15 +56,13 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::FirebaseWrapper::$$c__DisplayClass56_0*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>> result
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*& dyn_result();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*& dyn_result();
     // Get instance field reference: public System.Int32 sessionCount
-    [[deprecated]] int& dyn_sessionCount();
+    [[deprecated("Use field access instead!")]] int& dyn_sessionCount();
     // Get instance field reference: public VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass56_0 CS$<>8__locals1
-    [[deprecated]] ::VROSC::FirebaseWrapper::$$c__DisplayClass56_0*& dyn_CS$$$8__locals1();
+    [[deprecated("Use field access instead!")]] ::VROSC::FirebaseWrapper::$$c__DisplayClass56_0*& dyn_CS$$$8__locals1();
     // public System.Void .ctor()
     // Offset: 0x1953DFC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseWrapper::$$c__DisplayClass56_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::$$c__DisplayClass56_1::.ctor");

@@ -82,19 +82,19 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public System.Boolean hasPreview
-    [[deprecated]] bool& dyn_hasPreview();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasPreview();
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // Get instance field reference: public System.Boolean isCommunity
-    [[deprecated]] bool& dyn_isCommunity();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCommunity();
     // Get instance field reference: public VROSC.CloudStateManager <>4__this
-    [[deprecated]] ::VROSC::CloudStateManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::CloudStateManager*& dyn_$$4__this();
     // Get instance field reference: private VROSC.CloudStateManager/VROSC.<>c__DisplayClass20_0 <>8__1
-    [[deprecated]] ::VROSC::CloudStateManager::$$c__DisplayClass20_0*& dyn_$$8__1();
+    [[deprecated("Use field access instead!")]] ::VROSC::CloudStateManager::$$c__DisplayClass20_0*& dyn_$$8__1();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x95BF20
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

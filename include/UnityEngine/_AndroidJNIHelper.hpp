@@ -47,6 +47,13 @@ namespace UnityEngine {
   // [UsedByNativeCodeAttribute] Offset: 6B3CE4
   class _AndroidJNIHelper : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x187563C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static _AndroidJNIHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::_AndroidJNIHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<_AndroidJNIHelper*, creationType>()));
+    }
     // static public System.IntPtr CreateJavaProxy(System.IntPtr delegateHandle, UnityEngine.AndroidJavaProxy proxy)
     // Offset: 0x1869FB8
     static ::System::IntPtr CreateJavaProxy(::System::IntPtr delegateHandle, ::UnityEngine::AndroidJavaProxy* proxy);
@@ -134,19 +141,14 @@ namespace UnityEngine {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ReturnType>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::StringW, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, args);
     }
-    // public System.Void .ctor()
-    // Offset: 0x187563C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static _AndroidJNIHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::_AndroidJNIHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<_AndroidJNIHelper*, creationType>()));
-    }
   }; // UnityEngine._AndroidJNIHelper
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::_AndroidJNIHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::_AndroidJNIHelper::CreateJavaProxy
 // Il2CppName: CreateJavaProxy
 template<>
@@ -330,7 +332,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Writing MetadataGetter for method: UnityEngine::_AndroidJNIHelper::GetSignature
 // Il2CppName: GetSignature
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: UnityEngine::_AndroidJNIHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

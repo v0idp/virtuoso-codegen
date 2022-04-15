@@ -100,23 +100,23 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Text.RegularExpressions.Match _empty
     static void _set__empty(::System::Text::RegularExpressions::Match* value);
     // Get instance field reference: System.Text.RegularExpressions.GroupCollection _groupcoll
-    [[deprecated]] ::System::Text::RegularExpressions::GroupCollection*& dyn__groupcoll();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::GroupCollection*& dyn__groupcoll();
     // Get instance field reference: System.Text.RegularExpressions.Regex _regex
-    [[deprecated]] ::System::Text::RegularExpressions::Regex*& dyn__regex();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Regex*& dyn__regex();
     // Get instance field reference: System.Int32 _textbeg
-    [[deprecated]] int& dyn__textbeg();
+    [[deprecated("Use field access instead!")]] int& dyn__textbeg();
     // Get instance field reference: System.Int32 _textpos
-    [[deprecated]] int& dyn__textpos();
+    [[deprecated("Use field access instead!")]] int& dyn__textpos();
     // Get instance field reference: System.Int32 _textend
-    [[deprecated]] int& dyn__textend();
+    [[deprecated("Use field access instead!")]] int& dyn__textend();
     // Get instance field reference: System.Int32 _textstart
-    [[deprecated]] int& dyn__textstart();
+    [[deprecated("Use field access instead!")]] int& dyn__textstart();
     // Get instance field reference: System.Int32[][] _matches
-    [[deprecated]] ::ArrayW<::ArrayW<int>>& dyn__matches();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::ArrayW<int>>& dyn__matches();
     // Get instance field reference: System.Int32[] _matchcount
-    [[deprecated]] ::ArrayW<int>& dyn__matchcount();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__matchcount();
     // Get instance field reference: System.Boolean _balancing
-    [[deprecated]] bool& dyn__balancing();
+    [[deprecated("Use field access instead!")]] bool& dyn__balancing();
     // static public System.Text.RegularExpressions.Match get_Empty()
     // Offset: 0x10F9240
     static ::System::Text::RegularExpressions::Match* get_Empty();
@@ -173,7 +173,6 @@ namespace System::Text::RegularExpressions {
     // Implemented from: System.Text.RegularExpressions.Group
     // Base method: System.Void Group::.ctor()
     // Base method: System.Void Capture::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Match* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Match::.ctor");

@@ -92,21 +92,21 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
     public:
     // Get instance field reference: public readonly System.String DeeplinkMessage
-    [[deprecated]] ::StringW& dyn_DeeplinkMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DeeplinkMessage();
     // Get instance field reference: public readonly System.String DestinationApiName
-    [[deprecated]] ::StringW& dyn_DestinationApiName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DestinationApiName();
     // Get instance field reference: public readonly System.String LaunchSource
-    [[deprecated]] ::StringW& dyn_LaunchSource();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_LaunchSource();
     // Get instance field reference: public readonly Oculus.Platform.LaunchType LaunchType
-    [[deprecated]] ::Oculus::Platform::LaunchType& dyn_LaunchType();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::LaunchType& dyn_LaunchType();
     // Get instance field reference: public readonly System.UInt64 RoomID
-    [[deprecated]] uint64_t& dyn_RoomID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_RoomID();
     // Get instance field reference: public readonly System.String TrackingID
-    [[deprecated]] ::StringW& dyn_TrackingID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TrackingID();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList UsersOptional
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList Users
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_Users();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_Users();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3AE84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

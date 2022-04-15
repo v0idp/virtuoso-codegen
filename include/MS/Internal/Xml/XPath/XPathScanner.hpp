@@ -250,7 +250,7 @@ namespace MS::Internal::Xml::XPath {
       // Set static field: static public MS.Internal.Xml.XPath.XPathScanner/MS.Internal.Xml.XPath.LexKind Eof
       static void _set_Eof(::MS::Internal::Xml::XPath::XPathScanner::LexKind value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MS.Internal.Xml.XPath.XPathScanner/MS.Internal.Xml.XPath.LexKind
     #pragma pack(pop)
     static check_size<sizeof(XPathScanner::LexKind), 0 + sizeof(int)> __MS_Internal_Xml_XPath_XPathScanner_LexKindSizeCheck;
@@ -322,25 +322,25 @@ namespace MS::Internal::Xml::XPath {
     static_assert(sizeof(::System::Xml::XmlCharType) == 0x8);
     public:
     // Get instance field reference: private System.String xpathExpr
-    [[deprecated]] ::StringW& dyn_xpathExpr();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xpathExpr();
     // Get instance field reference: private System.Int32 xpathExprIndex
-    [[deprecated]] int& dyn_xpathExprIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_xpathExprIndex();
     // Get instance field reference: private MS.Internal.Xml.XPath.XPathScanner/MS.Internal.Xml.XPath.LexKind kind
-    [[deprecated]] ::MS::Internal::Xml::XPath::XPathScanner::LexKind& dyn_kind();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::XPathScanner::LexKind& dyn_kind();
     // Get instance field reference: private System.Char currentChar
-    [[deprecated]] ::Il2CppChar& dyn_currentChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_currentChar();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: private System.String stringValue
-    [[deprecated]] ::StringW& dyn_stringValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_stringValue();
     // Get instance field reference: private System.Double numberValue
-    [[deprecated]] double& dyn_numberValue();
+    [[deprecated("Use field access instead!")]] double& dyn_numberValue();
     // Get instance field reference: private System.Boolean canBeFunction
-    [[deprecated]] bool& dyn_canBeFunction();
+    [[deprecated("Use field access instead!")]] bool& dyn_canBeFunction();
     // Get instance field reference: private System.Xml.XmlCharType xmlCharType
-    [[deprecated]] ::System::Xml::XmlCharType& dyn_xmlCharType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlCharType& dyn_xmlCharType();
     // public System.String get_SourceText()
     // Offset: 0x11A4C28
     ::StringW get_SourceText();

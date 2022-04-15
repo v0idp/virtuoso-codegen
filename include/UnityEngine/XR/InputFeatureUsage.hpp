@@ -58,9 +58,9 @@ namespace UnityEngine::XR {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::XR::InputFeatureUsage>*>(this);
     }
     // Get instance field reference: System.String m_Name
-    [[deprecated]] ::StringW& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Name();
     // Get instance field reference: UnityEngine.XR.InputFeatureType m_InternalType
-    [[deprecated]] ::UnityEngine::XR::InputFeatureType& dyn_m_InternalType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::InputFeatureType& dyn_m_InternalType();
     // public System.String get_name()
     // Offset: 0x18C5FB4
     ::StringW get_name();

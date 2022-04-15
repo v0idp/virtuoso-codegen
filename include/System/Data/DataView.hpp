@@ -253,53 +253,53 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private System.Data.DataViewManager _dataViewManager
-    [[deprecated]] ::System::Data::DataViewManager*& dyn__dataViewManager();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewManager*& dyn__dataViewManager();
     // Get instance field reference: private System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private System.Boolean _locked
-    [[deprecated]] bool& dyn__locked();
+    [[deprecated("Use field access instead!")]] bool& dyn__locked();
     // Get instance field reference: private System.Data.Index _index
-    [[deprecated]] ::System::Data::Index*& dyn__index();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__index();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Data.Index> _findIndexes
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Data::Index*>*& dyn__findIndexes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Data::Index*>*& dyn__findIndexes();
     // Get instance field reference: private System.String _sort
-    [[deprecated]] ::StringW& dyn__sort();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sort();
     // Get instance field reference: private System.Comparison`1<System.Data.DataRow> _comparison
-    [[deprecated]] ::System::Comparison_1<::System::Data::DataRow*>*& dyn__comparison();
+    [[deprecated("Use field access instead!")]] ::System::Comparison_1<::System::Data::DataRow*>*& dyn__comparison();
     // Get instance field reference: private System.Data.IFilter _rowFilter
-    [[deprecated]] ::System::Data::IFilter*& dyn__rowFilter();
+    [[deprecated("Use field access instead!")]] ::System::Data::IFilter*& dyn__rowFilter();
     // Get instance field reference: private System.Data.DataViewRowState _recordStates
-    [[deprecated]] ::System::Data::DataViewRowState& dyn__recordStates();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewRowState& dyn__recordStates();
     // Get instance field reference: private System.Boolean _shouldOpen
-    [[deprecated]] bool& dyn__shouldOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__shouldOpen();
     // Get instance field reference: private System.Boolean _open
-    [[deprecated]] bool& dyn__open();
+    [[deprecated("Use field access instead!")]] bool& dyn__open();
     // Get instance field reference: private System.Boolean _allowNew
-    [[deprecated]] bool& dyn__allowNew();
+    [[deprecated("Use field access instead!")]] bool& dyn__allowNew();
     // Get instance field reference: private System.Boolean _allowEdit
-    [[deprecated]] bool& dyn__allowEdit();
+    [[deprecated("Use field access instead!")]] bool& dyn__allowEdit();
     // Get instance field reference: private System.Boolean _allowDelete
-    [[deprecated]] bool& dyn__allowDelete();
+    [[deprecated("Use field access instead!")]] bool& dyn__allowDelete();
     // Get instance field reference: private System.Boolean _applyDefaultSort
-    [[deprecated]] bool& dyn__applyDefaultSort();
+    [[deprecated("Use field access instead!")]] bool& dyn__applyDefaultSort();
     // Get instance field reference: System.Data.DataRow _addNewRow
-    [[deprecated]] ::System::Data::DataRow*& dyn__addNewRow();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRow*& dyn__addNewRow();
     // Get instance field reference: private System.ComponentModel.ListChangedEventArgs _addNewMoved
-    [[deprecated]] ::System::ComponentModel::ListChangedEventArgs*& dyn__addNewMoved();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ListChangedEventArgs*& dyn__addNewMoved();
     // Get instance field reference: private System.ComponentModel.ListChangedEventHandler _onListChanged
-    [[deprecated]] ::System::ComponentModel::ListChangedEventHandler*& dyn__onListChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ListChangedEventHandler*& dyn__onListChanged();
     // Get instance field reference: private System.Data.DataViewRowState _delayedRecordStates
-    [[deprecated]] ::System::Data::DataViewRowState& dyn__delayedRecordStates();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewRowState& dyn__delayedRecordStates();
     // Get instance field reference: private System.Boolean _fEndInitInProgress
-    [[deprecated]] bool& dyn__fEndInitInProgress();
+    [[deprecated("Use field access instead!")]] bool& dyn__fEndInitInProgress();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Data.DataRow,System.Data.DataRowView> _rowViewCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Data::DataRow*, ::System::Data::DataRowView*>*& dyn__rowViewCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Data::DataRow*, ::System::Data::DataRowView*>*& dyn__rowViewCache();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Data.DataRow,System.Data.DataRowView> _rowViewBuffer
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Data::DataRow*, ::System::Data::DataRowView*>*& dyn__rowViewBuffer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Data::DataRow*, ::System::Data::DataRowView*>*& dyn__rowViewBuffer();
     // Get instance field reference: private System.Data.DataViewListener _dvListener
-    [[deprecated]] ::System::Data::DataViewListener*& dyn__dvListener();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewListener*& dyn__dvListener();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // public System.Boolean get_AllowDelete()
     // Offset: 0x12E4124
     bool get_AllowDelete();
@@ -358,6 +358,9 @@ namespace System::Data {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataView::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DataView*, creationType>(table, locked)));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x12E7120
+    static void _cctor();
     // public System.Data.DataRowView AddNew()
     // Offset: 0x12E43F4
     ::System::Data::DataRowView* AddNew();
@@ -475,11 +478,6 @@ namespace System::Data {
     // System.Void ColumnCollectionChangedInternal(System.Object sender, System.ComponentModel.CollectionChangeEventArgs e)
     // Offset: 0x12E7108
     void ColumnCollectionChangedInternal(::Il2CppObject* sender, ::System::ComponentModel::CollectionChangeEventArgs* e);
-    // static private System.Void .cctor()
-    // Offset: 0x12E7120
-    // Implemented from: System.ComponentModel.MarshalByValueComponent
-    // Base method: System.Void MarshalByValueComponent::.cctor()
-    static void _cctor();
     // protected override System.Void Dispose(System.Boolean disposing)
     // Offset: 0x12E4FF0
     // Implemented from: System.ComponentModel.MarshalByValueComponent
@@ -635,6 +633,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Data::DataView::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Data::DataView::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Data::DataView*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::Data::DataView::AddNew
 // Il2CppName: AddNew
 template<>
@@ -991,14 +997,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     static auto* sender = &::il2cpp_utils::GetClassFromName("System", "Object")->byval_arg;
     static auto* e = &::il2cpp_utils::GetClassFromName("System.ComponentModel", "CollectionChangeEventArgs")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataView*), "ColumnCollectionChangedInternal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sender, e});
-  }
-};
-// Writing MetadataGetter for method: System::Data::DataView::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Data::DataView::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(System::Data::DataView*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::Data::DataView::Dispose

@@ -59,11 +59,11 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::System::Reflection::MethodBase*) == 0x8);
     public:
     // Get instance field reference: private System.Int32[] _paramMap
-    [[deprecated]] ::ArrayW<int>& dyn__paramMap();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__paramMap();
     // Get instance field reference: private System.Int32 _inoutArgCount
-    [[deprecated]] int& dyn__inoutArgCount();
+    [[deprecated("Use field access instead!")]] int& dyn__inoutArgCount();
     // Get instance field reference: private System.Reflection.MethodBase _method
-    [[deprecated]] ::System::Reflection::MethodBase*& dyn__method();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodBase*& dyn__method();
     // public System.Void .ctor(System.Reflection.MethodBase method, System.Runtime.Remoting.Messaging.ArgInfoType type)
     // Offset: 0x113D7EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

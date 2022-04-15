@@ -60,9 +60,9 @@ namespace UnityEngine::UI {
     static_assert(sizeof(::UnityEngine::Rect) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Texture m_Texture
-    [[deprecated]] ::UnityEngine::Texture*& dyn_m_Texture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_m_Texture();
     // Get instance field reference: private UnityEngine.Rect m_UVRect
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_UVRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_UVRect();
     // public UnityEngine.Texture get_texture()
     // Offset: 0x142A6F4
     ::UnityEngine::Texture* get_texture();
@@ -86,11 +86,6 @@ namespace UnityEngine::UI {
     // Base method: System.Void MaskableGraphic::.ctor()
     // Base method: System.Void Graphic::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RawImage* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::RawImage::.ctor");

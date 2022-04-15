@@ -37,21 +37,19 @@ namespace Newtonsoft::Json::Utilities {
   template<typename T>
   class DynamicProxy_1 : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DynamicProxy_1<T>* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::DynamicProxy_1::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DynamicProxy_1<T>*, creationType>()));
+    }
     // public System.Collections.Generic.IEnumerable`1<System.String> GetDynamicMemberNames(T instance)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Collections::Generic::IEnumerable_1<::StringW>* GetDynamicMemberNames(T instance) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::DynamicProxy_1::GetDynamicMemberNames");
       auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::Newtonsoft::Json::Utilities::DynamicProxy_1<T>*), -1));
       return ::il2cpp_utils::RunMethodRethrow<::System::Collections::Generic::IEnumerable_1<::StringW>*, false>(this, ___internal__method, instance);
-    }
-    // public System.Void .ctor()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DynamicProxy_1<T>* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::DynamicProxy_1::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DynamicProxy_1<T>*, creationType>()));
     }
   }; // Newtonsoft.Json.Utilities.DynamicProxy`1
   // Could not write size check! Type: Newtonsoft.Json.Utilities.DynamicProxy`1 is generic, or has no fields that are valid for size checks!

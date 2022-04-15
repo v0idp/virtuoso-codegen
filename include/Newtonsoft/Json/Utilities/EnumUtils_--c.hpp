@@ -51,18 +51,16 @@ namespace Newtonsoft::Json::Utilities {
     // static private System.Void .cctor()
     // Offset: 0x159E7E8
     static void _cctor();
-    // System.String <InitializeValuesAndNames>b__3_0(System.Runtime.Serialization.EnumMemberAttribute a)
-    // Offset: 0x159E850
-    ::StringW $InitializeValuesAndNames$b__3_0(::System::Runtime::Serialization::EnumMemberAttribute* a);
     // public System.Void .ctor()
     // Offset: 0x159E848
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EnumUtils::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::EnumUtils::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EnumUtils::$$c*, creationType>()));
     }
+    // System.String <InitializeValuesAndNames>b__3_0(System.Runtime.Serialization.EnumMemberAttribute a)
+    // Offset: 0x159E850
+    ::StringW $InitializeValuesAndNames$b__3_0(::System::Runtime::Serialization::EnumMemberAttribute* a);
   }; // Newtonsoft.Json.Utilities.EnumUtils/Newtonsoft.Json.Utilities.<>c
   #pragma pack(pop)
 }
@@ -75,6 +73,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Utilities::EnumUtils::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::EnumUtils::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::EnumUtils::$$c::$InitializeValuesAndNames$b__3_0
 // Il2CppName: <InitializeValuesAndNames>b__3_0
 template<>
@@ -84,7 +86,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Utilities::EnumUtils::$$c*), "<InitializeValuesAndNames>b__3_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{a});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::EnumUtils::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

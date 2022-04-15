@@ -55,9 +55,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ModularDrumpads/VROSC.SpawnerSample[] _spawnersSamples
-    [[deprecated]] ::ArrayW<::VROSC::ModularDrumpads::SpawnerSample*>& dyn__spawnersSamples();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::ModularDrumpads::SpawnerSample*>& dyn__spawnersSamples();
     // Get instance field reference: private System.Boolean <IsSetup>k__BackingField
-    [[deprecated]] bool& dyn_$IsSetup$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsSetup$k__BackingField();
     // public System.Int32 get_SpawnedPadsCount()
     // Offset: 0xACA230
     int get_SpawnedPadsCount();
@@ -67,6 +67,13 @@ namespace VROSC {
     // private System.Void set_IsSetup(System.Boolean value)
     // Offset: 0xACA2C8
     void set_IsSetup(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xACA784
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ModularDrumpads* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ModularDrumpads::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ModularDrumpads*, creationType>()));
+    }
     // public System.Void Setup(VROSC.ModularDrumsController instrumentController)
     // Offset: 0xACA2D4
     void Setup(::VROSC::ModularDrumsController* instrumentController);
@@ -79,19 +86,6 @@ namespace VROSC {
     // System.Void SetActive(System.Boolean isActive)
     // Offset: 0xACA700
     void SetActive(bool isActive);
-    // public System.Void .ctor()
-    // Offset: 0xACA784
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ModularDrumpads* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ModularDrumpads::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ModularDrumpads*, creationType>()));
-    }
   }; // VROSC.ModularDrumpads
   #pragma pack(pop)
   static check_size<sizeof(ModularDrumpads), 32 + sizeof(bool)> __VROSC_ModularDrumpadsSizeCheck;
@@ -123,6 +117,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ModularDrumpads*), "set_IsSetup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::ModularDrumpads::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ModularDrumpads::Setup
 // Il2CppName: Setup
 template<>
@@ -158,7 +156,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ModularDrumpads*), "SetActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isActive});
   }
 };
-// Writing MetadataGetter for method: VROSC::ModularDrumpads::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

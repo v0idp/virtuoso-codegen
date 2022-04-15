@@ -69,13 +69,13 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::Serialization::XmlTypeMapping*) == 0x8);
     public:
     // Get instance field reference: private System.String _attributeName
-    [[deprecated]] ::StringW& dyn__attributeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__attributeName();
     // Get instance field reference: private System.String _namespace
-    [[deprecated]] ::StringW& dyn__namespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__namespace();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm _form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn__form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn__form();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapping _mappedType
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapping*& dyn__mappedType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapping*& dyn__mappedType();
     // public System.String get_AttributeName()
     // Offset: 0x10884CC
     ::StringW get_AttributeName();
@@ -101,7 +101,6 @@ namespace System::Xml::Serialization {
     // Offset: 0x108847C
     // Implemented from: System.Xml.Serialization.XmlTypeMapMember
     // Base method: System.Void XmlTypeMapMember::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapMemberAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMemberAttribute::.ctor");

@@ -61,7 +61,7 @@ namespace UnityEngine::SceneManagement {
       return m_Handle;
     }
     // Get instance field reference: private System.Int32 m_Handle
-    [[deprecated]] int& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Handle();
     // public System.Int32 get_handle()
     // Offset: 0xBD1094
     int get_handle();

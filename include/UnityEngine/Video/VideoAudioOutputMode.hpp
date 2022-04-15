@@ -67,7 +67,7 @@ namespace UnityEngine::Video {
     // Set static field: static public UnityEngine.Video.VideoAudioOutputMode APIOnly
     static void _set_APIOnly(::UnityEngine::Video::VideoAudioOutputMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Video.VideoAudioOutputMode
   #pragma pack(pop)
   static check_size<sizeof(VideoAudioOutputMode), 0 + sizeof(int)> __UnityEngine_Video_VideoAudioOutputModeSizeCheck;

@@ -81,11 +81,11 @@ namespace System::Xml::Linq {
     // Set static field: static private System.WeakReference refXmlns
     static void _set_refXmlns(::System::WeakReference* value);
     // Get instance field reference: private System.String namespaceName
-    [[deprecated]] ::StringW& dyn_namespaceName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceName();
     // Get instance field reference: private System.Int32 hashCode
-    [[deprecated]] int& dyn_hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCode();
     // Get instance field reference: private System.Xml.Linq.XHashtable`1<System.Xml.Linq.XName> names
-    [[deprecated]] ::System::Xml::Linq::XHashtable_1<::System::Xml::Linq::XName*>*& dyn_names();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XHashtable_1<::System::Xml::Linq::XName*>*& dyn_names();
     // public System.String get_NamespaceName()
     // Offset: 0x185D09C
     ::StringW get_NamespaceName();

@@ -70,33 +70,35 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public System.String destinationPath
-    [[deprecated]] ::StringW& dyn_destinationPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_destinationPath();
     // Get instance field reference: public System.String origin
-    [[deprecated]] ::StringW& dyn_origin();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_origin();
     // Get instance field reference: public VROSC.ZipFileWriter <>4__this
-    [[deprecated]] ::VROSC::ZipFileWriter*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::ZipFileWriter*& dyn_$$4__this();
     // Get instance field reference: public System.Action successCallback
-    [[deprecated]] ::System::Action*& dyn_successCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_successCallback();
     // Get instance field reference: public System.Action`1<VROSC.Error> failureCallback
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
-    // System.Void <CompressFolderToZip>b__0()
-    // Offset: 0xE8A7A4
-    void $CompressFolderToZip$b__0();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_failureCallback();
     // public System.Void .ctor()
     // Offset: 0xE8A79C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ZipFileWriter::$$c__DisplayClass4_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ZipFileWriter::$$c__DisplayClass4_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ZipFileWriter::$$c__DisplayClass4_0*, creationType>()));
     }
+    // System.Void <CompressFolderToZip>b__0()
+    // Offset: 0xE8A7A4
+    void $CompressFolderToZip$b__0();
   }; // VROSC.ZipFileWriter/VROSC.<>c__DisplayClass4_0
   #pragma pack(pop)
   static check_size<sizeof(ZipFileWriter::$$c__DisplayClass4_0), 48 + sizeof(::System::Action_1<::VROSC::Error>*)> __VROSC_ZipFileWriter_$$c__DisplayClass4_0SizeCheck;
   static_assert(sizeof(ZipFileWriter::$$c__DisplayClass4_0) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ZipFileWriter::$$c__DisplayClass4_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ZipFileWriter::$$c__DisplayClass4_0::$CompressFolderToZip$b__0
 // Il2CppName: <CompressFolderToZip>b__0
 template<>
@@ -105,7 +107,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ZipFileWriter::$$c__DisplayClass4_0*), "<CompressFolderToZip>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ZipFileWriter::$$c__DisplayClass4_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

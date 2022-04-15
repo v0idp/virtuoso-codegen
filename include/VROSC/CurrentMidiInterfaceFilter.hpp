@@ -76,7 +76,7 @@ namespace VROSC {
       // Set static field: static public VROSC.CurrentMidiInterfaceFilter/VROSC.MidiInterfaceType External
       static void _set_External(::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.CurrentMidiInterfaceFilter/VROSC.MidiInterfaceType
     #pragma pack(pop)
     static check_size<sizeof(CurrentMidiInterfaceFilter::MidiInterfaceType), 0 + sizeof(int)> __VROSC_CurrentMidiInterfaceFilter_MidiInterfaceTypeSizeCheck;
@@ -90,18 +90,13 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType) == 0x4);
     public:
     // Get instance field reference: private VROSC.CurrentMidiInterfaceFilter/VROSC.MidiInterfaceType _allowType
-    [[deprecated]] ::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType& dyn__allowType();
+    [[deprecated("Use field access instead!")]] ::VROSC::CurrentMidiInterfaceFilter::MidiInterfaceType& dyn__allowType();
     // public System.Void .ctor()
     // Offset: 0x8E062C
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CurrentMidiInterfaceFilter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CurrentMidiInterfaceFilter::.ctor");

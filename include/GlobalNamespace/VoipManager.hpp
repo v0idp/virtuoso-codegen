@@ -39,6 +39,13 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class VoipManager : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x94F444
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VoipManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VoipManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VoipManager*, creationType>()));
+    }
     // public System.Void ConnectTo(System.UInt64 userID)
     // Offset: 0x94F524
     void ConnectTo(uint64_t userID);
@@ -51,19 +58,14 @@ namespace GlobalNamespace {
     // private System.Void VoipStateChangedCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.NetworkingPeer> msg)
     // Offset: 0x94F7F8
     void VoipStateChangedCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::NetworkingPeer*>* msg);
-    // public System.Void .ctor()
-    // Offset: 0x94F444
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VoipManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VoipManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VoipManager*, creationType>()));
-    }
   }; // VoipManager
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::VoipManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::VoipManager::ConnectTo
 // Il2CppName: ConnectTo
 template<>
@@ -100,7 +102,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::VoipManager*), "VoipStateChangedCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::VoipManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

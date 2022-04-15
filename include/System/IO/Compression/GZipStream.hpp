@@ -72,7 +72,7 @@ namespace System::IO::Compression {
     static_assert(sizeof(::System::IO::Compression::DeflateStream*) == 0x8);
     public:
     // Get instance field reference: private System.IO.Compression.DeflateStream _deflateStream
-    [[deprecated]] ::System::IO::Compression::DeflateStream*& dyn__deflateStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflateStream*& dyn__deflateStream();
     // public System.Void .ctor(System.IO.Stream stream, System.IO.Compression.CompressionMode mode)
     // Offset: 0xF0AEF8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

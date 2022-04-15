@@ -136,21 +136,21 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.UInt64 _userId
-      [[deprecated]] uint64_t& dyn__userId();
+      [[deprecated("Use field access instead!")]] uint64_t& dyn__userId();
       // Get instance field reference: public specificationCallback _callback
-      [[deprecated]] ::GlobalNamespace::specificationCallback*& dyn__callback();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::specificationCallback*& dyn__callback();
       // Get instance field reference: public System.Boolean _useCombinedMesh
-      [[deprecated]] bool& dyn__useCombinedMesh();
+      [[deprecated("Use field access instead!")]] bool& dyn__useCombinedMesh();
       // Get instance field reference: public ovrAvatarAssetLevelOfDetail _lod
-      [[deprecated]] ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn__lod();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn__lod();
       // Get instance field reference: public System.Boolean _forceMobileTextureFormat
-      [[deprecated]] bool& dyn__forceMobileTextureFormat();
+      [[deprecated("Use field access instead!")]] bool& dyn__forceMobileTextureFormat();
       // Get instance field reference: public ovrAvatarLookAndFeelVersion _lookVersion
-      [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__lookVersion();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__lookVersion();
       // Get instance field reference: public ovrAvatarLookAndFeelVersion _fallbackVersion
-      [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__fallbackVersion();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn__fallbackVersion();
       // Get instance field reference: public System.Boolean _enableExpressive
-      [[deprecated]] bool& dyn__enableExpressive();
+      [[deprecated("Use field access instead!")]] bool& dyn__enableExpressive();
       // public System.Void .ctor(System.UInt64 userId, specificationCallback callback, System.Boolean useCombinedMesh, ovrAvatarAssetLevelOfDetail lod, System.Boolean forceMobileTextureFormat, ovrAvatarLookAndFeelVersion lookVersion, ovrAvatarLookAndFeelVersion fallbackVersion, System.Boolean enableExpressive)
       // Offset: 0x8CCA58
       // ABORTED: conflicts with another method.  AvatarSpecRequestParams(uint64_t userId, ::GlobalNamespace::specificationCallback* callback, bool useCombinedMesh, ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod, bool forceMobileTextureFormat, ::GlobalNamespace::ovrAvatarLookAndFeelVersion lookVersion, ::GlobalNamespace::ovrAvatarLookAndFeelVersion fallbackVersion, bool enableExpressive);
@@ -245,30 +245,37 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single AVATAR_SPEC_REQUEST_TIMEOUT
     static void _set_AVATAR_SPEC_REQUEST_TIMEOUT(float value);
     // Get instance field reference: private System.Boolean initialized
-    [[deprecated]] bool& dyn_initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_initialized();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.UInt64,System.Collections.Generic.HashSet`1<specificationCallback>> specificationCallbacks
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::specificationCallback*>*>*& dyn_specificationCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::specificationCallback*>*>*& dyn_specificationCallbacks();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.UInt64,System.Collections.Generic.HashSet`1<assetLoadedCallback>> assetLoadedCallbacks
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::assetLoadedCallback*>*>*& dyn_assetLoadedCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::HashSet_1<::GlobalNamespace::assetLoadedCallback*>*>*& dyn_assetLoadedCallbacks();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.IntPtr,combinedMeshLoadedCallback> combinedMeshLoadedCallbacks
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::IntPtr, ::GlobalNamespace::combinedMeshLoadedCallback*>*& dyn_combinedMeshLoadedCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::IntPtr, ::GlobalNamespace::combinedMeshLoadedCallback*>*& dyn_combinedMeshLoadedCallbacks();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.UInt64,OvrAvatarAsset> assetCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::GlobalNamespace::OvrAvatarAsset*>*& dyn_assetCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::GlobalNamespace::OvrAvatarAsset*>*& dyn_assetCache();
     // Get instance field reference: private OvrAvatarTextureCopyManager textureCopyManager
-    [[deprecated]] ::GlobalNamespace::OvrAvatarTextureCopyManager*& dyn_textureCopyManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarTextureCopyManager*& dyn_textureCopyManager();
     // Get instance field reference: public ovrAvatarLogLevel LoggingLevel
-    [[deprecated]] ::GlobalNamespace::ovrAvatarLogLevel& dyn_LoggingLevel();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarLogLevel& dyn_LoggingLevel();
     // Get instance field reference: private System.Collections.Generic.Queue`1<OvrAvatarSDKManager/AvatarSpecRequestParams> avatarSpecificationQueue
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarSDKManager::AvatarSpecRequestParams>*& dyn_avatarSpecificationQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarSDKManager::AvatarSpecRequestParams>*& dyn_avatarSpecificationQueue();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> loadingAvatars
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_loadingAvatars();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn_loadingAvatars();
     // Get instance field reference: private System.Boolean avatarSpecRequestAvailable
-    [[deprecated]] bool& dyn_avatarSpecRequestAvailable();
+    [[deprecated("Use field access instead!")]] bool& dyn_avatarSpecRequestAvailable();
     // Get instance field reference: private System.Single lastDispatchedAvatarSpecRequestTime
-    [[deprecated]] float& dyn_lastDispatchedAvatarSpecRequestTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastDispatchedAvatarSpecRequestTime();
     // static public OvrAvatarSDKManager get_Instance()
     // Offset: 0xF8345C
     static ::GlobalNamespace::OvrAvatarSDKManager* get_Instance();
+    // public System.Void .ctor()
+    // Offset: 0xF91D48
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OvrAvatarSDKManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarSDKManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarSDKManager*, creationType>()));
+    }
     // private System.Boolean Initialize()
     // Offset: 0xF90E74
     bool Initialize();
@@ -314,19 +321,6 @@ namespace GlobalNamespace {
     // public OvrAvatarTextureCopyManager GetTextureCopyManager()
     // Offset: 0xF8CA60
     ::GlobalNamespace::OvrAvatarTextureCopyManager* GetTextureCopyManager();
-    // public System.Void .ctor()
-    // Offset: 0xF91D48
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OvrAvatarSDKManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarSDKManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarSDKManager*, creationType>()));
-    }
   }; // OvrAvatarSDKManager
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarSDKManager), 100 + sizeof(float)> __GlobalNamespace_OvrAvatarSDKManagerSizeCheck;
@@ -343,6 +337,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarSDKManager*), "get_Instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarSDKManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarSDKManager::Initialize
 // Il2CppName: Initialize
 template<>
@@ -474,7 +472,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarSDKManager*), "GetTextureCopyManager", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarSDKManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

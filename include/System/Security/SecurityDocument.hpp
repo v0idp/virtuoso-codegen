@@ -48,7 +48,7 @@ namespace System::Security {
       return m_data;
     }
     // Get instance field reference: System.Byte[] m_data
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_data();
     // public System.Void .ctor(System.Int32 numData)
     // Offset: 0x1172EA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -66,11 +66,11 @@ namespace Newtonsoft::Json {
     // Set static field: static private readonly System.Int32 HashCodeRandomizer
     static void _set_HashCodeRandomizer(int value);
     // Get instance field reference: private System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // Get instance field reference: private Newtonsoft.Json.DefaultJsonNameTable/Newtonsoft.Json.Entry[] _entries
-    [[deprecated]] ::ArrayW<::Newtonsoft::Json::DefaultJsonNameTable::Entry*>& dyn__entries();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Newtonsoft::Json::DefaultJsonNameTable::Entry*>& dyn__entries();
     // Get instance field reference: private System.Int32 _mask
-    [[deprecated]] int& dyn__mask();
+    [[deprecated("Use field access instead!")]] int& dyn__mask();
     // static private System.Void .cctor()
     // Offset: 0xDCAB1C
     static void _cctor();
@@ -90,7 +90,6 @@ namespace Newtonsoft::Json {
     // Offset: 0xDC2F40
     // Implemented from: Newtonsoft.Json.JsonNameTable
     // Base method: System.Void JsonNameTable::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DefaultJsonNameTable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::DefaultJsonNameTable::.ctor");

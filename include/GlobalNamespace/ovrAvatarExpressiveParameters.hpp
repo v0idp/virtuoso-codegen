@@ -89,23 +89,23 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector4 irisColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_irisColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_irisColor();
     // Get instance field reference: public UnityEngine.Vector4 scleraColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_scleraColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_scleraColor();
     // Get instance field reference: public UnityEngine.Vector4 lashColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_lashColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_lashColor();
     // Get instance field reference: public UnityEngine.Vector4 browColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_browColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_browColor();
     // Get instance field reference: public UnityEngine.Vector4 lipColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_lipColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_lipColor();
     // Get instance field reference: public UnityEngine.Vector4 teethColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_teethColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_teethColor();
     // Get instance field reference: public UnityEngine.Vector4 gumColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_gumColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_gumColor();
     // Get instance field reference: public System.Single browLashIntensity
-    [[deprecated]] float& dyn_browLashIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_browLashIntensity();
     // Get instance field reference: public System.Single lipSmoothness
-    [[deprecated]] float& dyn_lipSmoothness();
+    [[deprecated("Use field access instead!")]] float& dyn_lipSmoothness();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
     // Offset: 0x954850
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);

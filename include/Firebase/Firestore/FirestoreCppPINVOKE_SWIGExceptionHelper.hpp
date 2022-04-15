@@ -92,6 +92,13 @@ namespace Firebase::Firestore {
     // static private System.Void .cctor()
     // Offset: 0xD67DCC
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xD5CC7C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FirestoreCppPINVOKE::SWIGExceptionHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FirestoreCppPINVOKE::SWIGExceptionHelper*, creationType>()));
+    }
     // static public System.Void SWIGRegisterExceptionCallbacks_FirestoreCpp(Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate applicationDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate arithmeticDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate divideByZeroDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate indexOutOfRangeDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate invalidCastDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate invalidOperationDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate ioDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate nullReferenceDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate outOfMemoryDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate overflowDelegate, Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper/Firebase.Firestore.ExceptionDelegate systemExceptionDelegate)
     // Offset: 0xD681A4
     static void SWIGRegisterExceptionCallbacks_FirestoreCpp(::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* applicationDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* arithmeticDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* divideByZeroDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* indexOutOfRangeDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidCastDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidOperationDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* ioDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* nullReferenceDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* outOfMemoryDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* overflowDelegate, ::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::ExceptionDelegate* systemExceptionDelegate);
@@ -140,15 +147,6 @@ namespace Firebase::Firestore {
     // static private System.Void SetPendingArgumentOutOfRangeException(System.String message, System.String paramName)
     // Offset: 0xD67D1C
     static void SetPendingArgumentOutOfRangeException(::StringW message, ::StringW paramName);
-    // public System.Void .ctor()
-    // Offset: 0xD5CC7C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FirestoreCppPINVOKE::SWIGExceptionHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FirestoreCppPINVOKE::SWIGExceptionHelper*, creationType>()));
-    }
   }; // Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.SWIGExceptionHelper
   #pragma pack(pop)
 }
@@ -161,6 +159,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::SWIGRegisterExceptionCallbacks_FirestoreCpp
 // Il2CppName: SWIGRegisterExceptionCallbacks_FirestoreCpp
 template<>
@@ -320,7 +322,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper*), "SetPendingArgumentOutOfRangeException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message, paramName});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::SWIGExceptionHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -54,7 +54,6 @@ namespace System::Xml::Schema {
     // Offset: 0xAF8A80
     // Implemented from: System.Xml.Schema.FacetsChecker
     // Base method: System.Void FacetsChecker::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Numeric2FacetsChecker* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::Numeric2FacetsChecker::.ctor");

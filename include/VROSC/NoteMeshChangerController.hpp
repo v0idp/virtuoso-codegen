@@ -98,19 +98,19 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private VROSC.NotefieldColorSettings _colorSettings
-    [[deprecated]] ::VROSC::NotefieldColorSettings*& dyn__colorSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotefieldColorSettings*& dyn__colorSettings();
     // Get instance field reference: private System.Boolean _sendMultiNoteData
-    [[deprecated]] bool& dyn__sendMultiNoteData();
+    [[deprecated("Use field access instead!")]] bool& dyn__sendMultiNoteData();
     // Get instance field reference: private UnityEngine.Color _restingColor
-    [[deprecated]] ::UnityEngine::Color& dyn__restingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__restingColor();
     // Get instance field reference: private System.Boolean _animating
-    [[deprecated]] bool& dyn__animating();
+    [[deprecated("Use field access instead!")]] bool& dyn__animating();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Single _note
-    [[deprecated]] float& dyn__note();
+    [[deprecated("Use field access instead!")]] float& dyn__note();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // private System.Void CreateBlock()
     // Offset: 0xC5A480
     void CreateBlock();
@@ -121,11 +121,6 @@ namespace VROSC {
     // Offset: 0xC5A81C
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteMeshChangerController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteMeshChangerController::.ctor");

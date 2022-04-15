@@ -75,9 +75,9 @@ namespace System::Runtime::CompilerServices {
         return *reinterpret_cast<::System::Runtime::CompilerServices::ICriticalNotifyCompletion*>(this);
       }
       // Get instance field reference: private readonly System.Threading.Tasks.Task m_task
-      [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_task();
+      [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_task();
       // Get instance field reference: private readonly System.Boolean m_continueOnCapturedContext
-      [[deprecated]] bool& dyn_m_continueOnCapturedContext();
+      [[deprecated("Use field access instead!")]] bool& dyn_m_continueOnCapturedContext();
       // public System.Boolean get_IsCompleted()
       // Offset: 0x13A7DD8
       bool get_IsCompleted();
@@ -116,7 +116,7 @@ namespace System::Runtime::CompilerServices {
       return m_configuredTaskAwaiter;
     }
     // Get instance field reference: private readonly System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter m_configuredTaskAwaiter
-    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_m_configuredTaskAwaiter();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_m_configuredTaskAwaiter();
     // System.Void .ctor(System.Threading.Tasks.Task task, System.Boolean continueOnCapturedContext)
     // Offset: 0xE3FC50
     ConfiguredTaskAwaitable(::System::Threading::Tasks::Task* task, bool continueOnCapturedContext);

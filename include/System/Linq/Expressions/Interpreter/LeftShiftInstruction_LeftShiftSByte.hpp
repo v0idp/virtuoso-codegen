@@ -37,7 +37,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Implemented from: System.Linq.Expressions.Interpreter.LeftShiftInstruction
     // Base method: System.Void LeftShiftInstruction::.ctor()
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LeftShiftInstruction::LeftShiftSByte* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LeftShiftInstruction::LeftShiftSByte::.ctor");

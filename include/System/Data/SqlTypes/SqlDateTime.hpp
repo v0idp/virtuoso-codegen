@@ -205,11 +205,11 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlDateTime Null
     static void _set_Null(::System::Data::SqlTypes::SqlDateTime value);
     // Get instance field reference: private System.Boolean m_fNotNull
-    [[deprecated]] bool& dyn_m_fNotNull();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_fNotNull();
     // Get instance field reference: private System.Int32 m_day
-    [[deprecated]] int& dyn_m_day();
+    [[deprecated("Use field access instead!")]] int& dyn_m_day();
     // Get instance field reference: private System.Int32 m_time
-    [[deprecated]] int& dyn_m_time();
+    [[deprecated("Use field access instead!")]] int& dyn_m_time();
     // public System.Boolean get_IsNull()
     // Offset: 0x122FF54
     bool get_IsNull();

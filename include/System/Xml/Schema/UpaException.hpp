@@ -43,9 +43,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Object particle1
-    [[deprecated]] ::Il2CppObject*& dyn_particle1();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_particle1();
     // Get instance field reference: private System.Object particle2
-    [[deprecated]] ::Il2CppObject*& dyn_particle2();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_particle2();
     // public System.Object get_Particle1()
     // Offset: 0xF7897C
     ::Il2CppObject* get_Particle1();

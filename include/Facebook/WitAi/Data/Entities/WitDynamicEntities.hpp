@@ -60,7 +60,14 @@ namespace Facebook::WitAi::Data::Entities {
       return entities;
     }
     // Get instance field reference: public Facebook.WitAi.Lib.WitResponseClass entities
-    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseClass*& dyn_entities();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Lib::WitResponseClass*& dyn_entities();
+    // public System.Void .ctor()
+    // Offset: 0x16745BC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WitDynamicEntities* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::Entities::WitDynamicEntities::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WitDynamicEntities*, creationType>()));
+    }
     // public System.Void Add(Facebook.WitAi.Data.Entities.WitSimpleDynamicEntity entity)
     // Offset: 0x1674698
     void Add(::Facebook::WitAi::Data::Entities::WitSimpleDynamicEntity* entity);
@@ -70,21 +77,16 @@ namespace Facebook::WitAi::Data::Entities {
     // public System.String ToJSON()
     // Offset: 0x1674ED4
     ::StringW ToJSON();
-    // public System.Void .ctor()
-    // Offset: 0x16745BC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WitDynamicEntities* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::Entities::WitDynamicEntities::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WitDynamicEntities*, creationType>()));
-    }
   }; // Facebook.WitAi.Data.Entities.WitDynamicEntities
   #pragma pack(pop)
   static check_size<sizeof(WitDynamicEntities), 16 + sizeof(::Facebook::WitAi::Lib::WitResponseClass*)> __Facebook_WitAi_Data_Entities_WitDynamicEntitiesSizeCheck;
   static_assert(sizeof(WitDynamicEntities) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Facebook::WitAi::Data::Entities::WitDynamicEntities::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Data::Entities::WitDynamicEntities::Add
 // Il2CppName: Add
 template<>
@@ -111,7 +113,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Data::Entities::WitDynamicEntities*), "ToJSON", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::Data::Entities::WitDynamicEntities::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

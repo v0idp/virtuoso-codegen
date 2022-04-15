@@ -75,9 +75,19 @@ namespace GlobalNamespace {
     // Set static field: static private ReflectionSnapshot currentSnapshot
     static void _set_currentSnapshot(::GlobalNamespace::ReflectionSnapshot value);
     // Get instance field reference: public UnityEngine.Audio.AudioMixerSnapshot mixerSnapshot
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_mixerSnapshot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_mixerSnapshot();
     // Get instance field reference: public System.Single fadeTime
-    [[deprecated]] float& dyn_fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn_fadeTime();
+    // public System.Void .ctor()
+    // Offset: 0x176CB40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ONSPReflectionZone* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPReflectionZone::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ONSPReflectionZone*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x176CB48
+    static void _cctor();
     // private System.Void Start()
     // Offset: 0x176C5AC
     void Start();
@@ -105,30 +115,24 @@ namespace GlobalNamespace {
     // private System.Void SetReflectionValues(ref ReflectionSnapshot mss)
     // Offset: 0x176C9AC
     void SetReflectionValues(ByRef<::GlobalNamespace::ReflectionSnapshot> mss);
-    // public System.Void .ctor()
-    // Offset: 0x176CB40
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ONSPReflectionZone* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPReflectionZone::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ONSPReflectionZone*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x176CB48
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // ONSPReflectionZone
   #pragma pack(pop)
   static check_size<sizeof(ONSPReflectionZone), 32 + sizeof(float)> __GlobalNamespace_ONSPReflectionZoneSizeCheck;
   static_assert(sizeof(ONSPReflectionZone) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ONSPReflectionZone::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::ONSPReflectionZone::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPReflectionZone::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPReflectionZone*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::ONSPReflectionZone::Start
 // Il2CppName: Start
 template<>
@@ -203,17 +207,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
   static const MethodInfo* get() {
     static auto* mss = &::il2cpp_utils::GetClassFromName("", "ReflectionSnapshot")->this_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPReflectionZone*), "SetReflectionValues", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mss});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::ONSPReflectionZone::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::ONSPReflectionZone::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPReflectionZone::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPReflectionZone*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

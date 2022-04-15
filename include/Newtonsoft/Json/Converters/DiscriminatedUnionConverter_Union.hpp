@@ -52,9 +52,9 @@ namespace Newtonsoft::Json::Converters {
     static_assert(sizeof(::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase*>*) == 0x8);
     public:
     // Get instance field reference: public readonly Newtonsoft.Json.Utilities.FSharpFunction TagReader
-    [[deprecated]] ::Newtonsoft::Json::Utilities::FSharpFunction*& dyn_TagReader();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::FSharpFunction*& dyn_TagReader();
     // Get instance field reference: public readonly System.Collections.Generic.List`1<Newtonsoft.Json.Converters.DiscriminatedUnionConverter/Newtonsoft.Json.Converters.UnionCase> Cases
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase*>*& dyn_Cases();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase*>*& dyn_Cases();
     // public System.Void .ctor(Newtonsoft.Json.Utilities.FSharpFunction tagReader, System.Collections.Generic.List`1<Newtonsoft.Json.Converters.DiscriminatedUnionConverter/Newtonsoft.Json.Converters.UnionCase> cases)
     // Offset: 0x159D980
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -118,27 +118,27 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::SchemaAttDef*) == 0x8);
     public:
     // Get instance field reference: private System.String defaultValue
-    [[deprecated]] ::StringW& dyn_defaultValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_defaultValue();
     // Get instance field reference: private System.String fixedValue
-    [[deprecated]] ::StringW& dyn_fixedValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fixedValue();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaUse use
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaUse& dyn_use();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaUse& dyn_use();
     // Get instance field reference: private System.Xml.XmlQualifiedName refName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_refName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_refName();
     // Get instance field reference: private System.Xml.XmlQualifiedName typeName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_typeName();
     // Get instance field reference: private System.Xml.XmlQualifiedName qualifiedName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_qualifiedName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_qualifiedName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType type
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_type();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType attributeType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_attributeType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_attributeType();
     // Get instance field reference: private System.Xml.Schema.SchemaAttDef attDef
-    [[deprecated]] ::System::Xml::Schema::SchemaAttDef*& dyn_attDef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaAttDef*& dyn_attDef();
     // public System.String get_DefaultValue()
     // Offset: 0x1109694
     ::StringW get_DefaultValue();
@@ -223,7 +223,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaAnnotated
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaAttribute::.ctor");

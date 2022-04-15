@@ -90,7 +90,7 @@ namespace GlobalNamespace {
       // Set static field: static public OvrAvatarDriver/PacketMode Unity
       static void _set_Unity(::GlobalNamespace::OvrAvatarDriver::PacketMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OvrAvatarDriver/PacketMode
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarDriver::PacketMode), 0 + sizeof(int)> __GlobalNamespace_OvrAvatarDriver_PacketModeSizeCheck;
@@ -147,17 +147,17 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public ovrAvatarButton buttons
-      [[deprecated]] ::GlobalNamespace::ovrAvatarButton& dyn_buttons();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarButton& dyn_buttons();
       // Get instance field reference: public ovrAvatarTouch touches
-      [[deprecated]] ::GlobalNamespace::ovrAvatarTouch& dyn_touches();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTouch& dyn_touches();
       // Get instance field reference: public UnityEngine.Vector2 joystickPosition
-      [[deprecated]] ::UnityEngine::Vector2& dyn_joystickPosition();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_joystickPosition();
       // Get instance field reference: public System.Single indexTrigger
-      [[deprecated]] float& dyn_indexTrigger();
+      [[deprecated("Use field access instead!")]] float& dyn_indexTrigger();
       // Get instance field reference: public System.Single handTrigger
-      [[deprecated]] float& dyn_handTrigger();
+      [[deprecated("Use field access instead!")]] float& dyn_handTrigger();
       // Get instance field reference: public System.Boolean isActive
-      [[deprecated]] bool& dyn_isActive();
+      [[deprecated("Use field access instead!")]] bool& dyn_isActive();
       // static public OvrAvatarDriver/ControllerPose Interpolate(OvrAvatarDriver/ControllerPose a, OvrAvatarDriver/ControllerPose b, System.Single t)
       // Offset: 0x8CBF78
       static ::GlobalNamespace::OvrAvatarDriver::ControllerPose Interpolate(::GlobalNamespace::OvrAvatarDriver::ControllerPose a, ::GlobalNamespace::OvrAvatarDriver::ControllerPose b, float t);
@@ -237,23 +237,23 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Vector3 headPosition
-      [[deprecated]] ::UnityEngine::Vector3& dyn_headPosition();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_headPosition();
       // Get instance field reference: public UnityEngine.Quaternion headRotation
-      [[deprecated]] ::UnityEngine::Quaternion& dyn_headRotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_headRotation();
       // Get instance field reference: public UnityEngine.Vector3 handLeftPosition
-      [[deprecated]] ::UnityEngine::Vector3& dyn_handLeftPosition();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_handLeftPosition();
       // Get instance field reference: public UnityEngine.Quaternion handLeftRotation
-      [[deprecated]] ::UnityEngine::Quaternion& dyn_handLeftRotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_handLeftRotation();
       // Get instance field reference: public UnityEngine.Vector3 handRightPosition
-      [[deprecated]] ::UnityEngine::Vector3& dyn_handRightPosition();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_handRightPosition();
       // Get instance field reference: public UnityEngine.Quaternion handRightRotation
-      [[deprecated]] ::UnityEngine::Quaternion& dyn_handRightRotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_handRightRotation();
       // Get instance field reference: public System.Single voiceAmplitude
-      [[deprecated]] float& dyn_voiceAmplitude();
+      [[deprecated("Use field access instead!")]] float& dyn_voiceAmplitude();
       // Get instance field reference: public OvrAvatarDriver/ControllerPose controllerLeftPose
-      [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerLeftPose();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerLeftPose();
       // Get instance field reference: public OvrAvatarDriver/ControllerPose controllerRightPose
-      [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerRightPose();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarDriver::ControllerPose& dyn_controllerRightPose();
       // static public OvrAvatarDriver/PoseFrame Interpolate(OvrAvatarDriver/PoseFrame a, OvrAvatarDriver/PoseFrame b, System.Single t)
       // Offset: 0x8CC054
       static ::GlobalNamespace::OvrAvatarDriver::PoseFrame Interpolate(::GlobalNamespace::OvrAvatarDriver::PoseFrame a, ::GlobalNamespace::OvrAvatarDriver::PoseFrame b, float t);
@@ -286,11 +286,18 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OvrAvatarDriver/PacketMode Mode
-    [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::PacketMode& dyn_Mode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarDriver::PacketMode& dyn_Mode();
     // Get instance field reference: protected OvrAvatarDriver/PoseFrame CurrentPose
-    [[deprecated]] ::GlobalNamespace::OvrAvatarDriver::PoseFrame& dyn_CurrentPose();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarDriver::PoseFrame& dyn_CurrentPose();
     // Get instance field reference: private ovrAvatarControllerType ControllerType
-    [[deprecated]] ::GlobalNamespace::ovrAvatarControllerType& dyn_ControllerType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarControllerType& dyn_ControllerType();
+    // protected System.Void .ctor()
+    // Offset: 0xF8B774
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OvrAvatarDriver* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarDriver::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarDriver*, creationType>()));
+    }
     // public OvrAvatarDriver/PoseFrame GetCurrentPose()
     // Offset: 0xF8B6D4
     ::GlobalNamespace::OvrAvatarDriver::PoseFrame GetCurrentPose();
@@ -306,19 +313,6 @@ namespace GlobalNamespace {
     // static public System.Boolean GetIsTrackedRemote()
     // Offset: 0xF8B76C
     static bool GetIsTrackedRemote();
-    // protected System.Void .ctor()
-    // Offset: 0xF8B774
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OvrAvatarDriver* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarDriver::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarDriver*, creationType>()));
-    }
   }; // OvrAvatarDriver
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarDriver), 172 + sizeof(::GlobalNamespace::ovrAvatarControllerType)> __GlobalNamespace_OvrAvatarDriverSizeCheck;
@@ -331,6 +325,10 @@ DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OvrAvatarDriver::ControllerPose, "", "
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OvrAvatarDriver::PacketMode, "", "OvrAvatarDriver/PacketMode");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarDriver::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarDriver::GetCurrentPose
 // Il2CppName: GetCurrentPose
 template<>
@@ -373,7 +371,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarDriver*), "GetIsTrackedRemote", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarDriver::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

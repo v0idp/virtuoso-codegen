@@ -74,15 +74,15 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Linq::Expressions::Interpreter::ExceptionFilter*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Type _exceptionType
-    [[deprecated]] ::System::Type*& dyn__exceptionType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__exceptionType();
     // Get instance field reference: public readonly System.Int32 LabelIndex
-    [[deprecated]] int& dyn_LabelIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_LabelIndex();
     // Get instance field reference: public readonly System.Int32 HandlerStartIndex
-    [[deprecated]] int& dyn_HandlerStartIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_HandlerStartIndex();
     // Get instance field reference: public readonly System.Int32 HandlerEndIndex
-    [[deprecated]] int& dyn_HandlerEndIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_HandlerEndIndex();
     // Get instance field reference: public readonly System.Linq.Expressions.Interpreter.ExceptionFilter Filter
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::ExceptionFilter*& dyn_Filter();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::ExceptionFilter*& dyn_Filter();
     // System.Void .ctor(System.Int32 labelIndex, System.Int32 handlerStartIndex, System.Int32 handlerEndIndex, System.Type exceptionType, System.Linq.Expressions.Interpreter.ExceptionFilter filter)
     // Offset: 0x1202620
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

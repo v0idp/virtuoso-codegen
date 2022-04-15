@@ -59,21 +59,19 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x85279C
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x8527FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRManager_$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRManager_$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRManager_$$c*, creationType>()));
+    }
     // System.String <InitOVRManager>b__345_0(System.Single f)
     // Offset: 0x852804
     ::StringW $InitOVRManager$b__345_0(float f);
     // System.Int32 <FindMainCamera>b__359_0(UnityEngine.Camera c0, UnityEngine.Camera c1)
     // Offset: 0x85282C
     int $FindMainCamera$b__359_0(::UnityEngine::Camera* c0, ::UnityEngine::Camera* c1);
-    // public System.Void .ctor()
-    // Offset: 0x8527FC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRManager_$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRManager_$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRManager_$$c*, creationType>()));
-    }
   }; // OVRManager/<>c
   #pragma pack(pop)
 }
@@ -86,6 +84,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRManager_$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRManager_$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRManager_$$c::$InitOVRManager$b__345_0
 // Il2CppName: <InitOVRManager>b__345_0
 template<>
@@ -105,7 +107,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Global
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRManager_$$c*), "<FindMainCamera>b__359_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{c0, c1});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRManager_$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

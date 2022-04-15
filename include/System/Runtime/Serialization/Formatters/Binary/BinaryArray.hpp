@@ -101,23 +101,23 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryArrayTypeEnum) == 0x4);
     public:
     // Get instance field reference: System.Int32 objectId
-    [[deprecated]] int& dyn_objectId();
+    [[deprecated("Use field access instead!")]] int& dyn_objectId();
     // Get instance field reference: System.Int32 rank
-    [[deprecated]] int& dyn_rank();
+    [[deprecated("Use field access instead!")]] int& dyn_rank();
     // Get instance field reference: System.Int32[] lengthA
-    [[deprecated]] ::ArrayW<int>& dyn_lengthA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_lengthA();
     // Get instance field reference: System.Int32[] lowerBoundA
-    [[deprecated]] ::ArrayW<int>& dyn_lowerBoundA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_lowerBoundA();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum binaryTypeEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_binaryTypeEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_binaryTypeEnum();
     // Get instance field reference: System.Object typeInformation
-    [[deprecated]] ::Il2CppObject*& dyn_typeInformation();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_typeInformation();
     // Get instance field reference: System.Int32 assemId
-    [[deprecated]] int& dyn_assemId();
+    [[deprecated("Use field access instead!")]] int& dyn_assemId();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum& dyn_binaryHeaderEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum& dyn_binaryHeaderEnum();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryArrayTypeEnum binaryArrayTypeEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryArrayTypeEnum& dyn_binaryArrayTypeEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryArrayTypeEnum& dyn_binaryArrayTypeEnum();
     // System.Void .ctor(System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum)
     // Offset: 0xFE6298
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

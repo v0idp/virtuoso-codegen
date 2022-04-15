@@ -43,7 +43,7 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator uint64_t
     constexpr operator uint64_t() const noexcept = delete;
     // Get instance field reference: public ovrAvatarMaterialState material
-    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialState& dyn_material();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarMaterialState& dyn_material();
     // public System.Void .ctor(System.UInt64 id, System.IntPtr mat)
     // Offset: 0xF87374
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

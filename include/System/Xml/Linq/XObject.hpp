@@ -80,9 +80,9 @@ namespace System::Xml::Linq {
       return *reinterpret_cast<::System::Xml::IXmlLineInfo*>(this);
     }
     // Get instance field reference: System.Xml.Linq.XContainer parent
-    [[deprecated]] ::System::Xml::Linq::XContainer*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XContainer*& dyn_parent();
     // Get instance field reference: System.Object annotations
-    [[deprecated]] ::Il2CppObject*& dyn_annotations();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_annotations();
     // public System.String get_BaseUri()
     // Offset: 0x18599A0
     ::StringW get_BaseUri();
@@ -101,6 +101,13 @@ namespace System::Xml::Linq {
     // System.Boolean get_HasBaseUri()
     // Offset: 0x1859948
     bool get_HasBaseUri();
+    // System.Void .ctor()
+    // Offset: 0x1854E58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XObject*, creationType>()));
+    }
     // public System.Void AddAnnotation(System.Object annotation)
     // Offset: 0x185B900
     void AddAnnotation(::Il2CppObject* annotation);
@@ -146,15 +153,6 @@ namespace System::Xml::Linq {
     // System.Xml.Linq.SaveOptions GetSaveOptionsFromAnnotations()
     // Offset: 0x185D3AC
     ::System::Xml::Linq::SaveOptions GetSaveOptionsFromAnnotations();
-    // System.Void .ctor()
-    // Offset: 0x1854E58
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XObject*, creationType>()));
-    }
   }; // System.Xml.Linq.XObject
   #pragma pack(pop)
   static check_size<sizeof(XObject), 24 + sizeof(::Il2CppObject*)> __System_Xml_Linq_XObjectSizeCheck;
@@ -209,6 +207,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Linq::XObject*), "get_HasBaseUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Linq::XObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Linq::XObject::AddAnnotation
 // Il2CppName: AddAnnotation
 template<>
@@ -296,7 +298,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Linq::XObject*), "GetSaveOptionsFromAnnotations", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Linq::XObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -60,11 +60,11 @@ namespace System::ComponentModel {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Array array
-    [[deprecated]] ::System::Array*& dyn_array();
+    [[deprecated("Use field access instead!")]] ::System::Array*& dyn_array();
     // Get instance field reference: private System.Int32 total
-    [[deprecated]] int& dyn_total();
+    [[deprecated("Use field access instead!")]] int& dyn_total();
     // Get instance field reference: private System.Int32 current
-    [[deprecated]] int& dyn_current();
+    [[deprecated("Use field access instead!")]] int& dyn_current();
     // public System.Object get_Current()
     // Offset: 0x10D5A20
     ::Il2CppObject* get_Current();

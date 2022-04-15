@@ -105,23 +105,23 @@ namespace System::Security::Cryptography {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: protected System.Int32 BlockSizeValue
-    [[deprecated]] int& dyn_BlockSizeValue();
+    [[deprecated("Use field access instead!")]] int& dyn_BlockSizeValue();
     // Get instance field reference: protected System.Int32 FeedbackSizeValue
-    [[deprecated]] int& dyn_FeedbackSizeValue();
+    [[deprecated("Use field access instead!")]] int& dyn_FeedbackSizeValue();
     // Get instance field reference: protected System.Byte[] IVValue
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_IVValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_IVValue();
     // Get instance field reference: protected System.Byte[] KeyValue
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_KeyValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_KeyValue();
     // Get instance field reference: protected System.Security.Cryptography.KeySizes[] LegalBlockSizesValue
-    [[deprecated]] ::ArrayW<::System::Security::Cryptography::KeySizes*>& dyn_LegalBlockSizesValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Security::Cryptography::KeySizes*>& dyn_LegalBlockSizesValue();
     // Get instance field reference: protected System.Security.Cryptography.KeySizes[] LegalKeySizesValue
-    [[deprecated]] ::ArrayW<::System::Security::Cryptography::KeySizes*>& dyn_LegalKeySizesValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Security::Cryptography::KeySizes*>& dyn_LegalKeySizesValue();
     // Get instance field reference: protected System.Int32 KeySizeValue
-    [[deprecated]] int& dyn_KeySizeValue();
+    [[deprecated("Use field access instead!")]] int& dyn_KeySizeValue();
     // Get instance field reference: protected System.Security.Cryptography.CipherMode ModeValue
-    [[deprecated]] ::System::Security::Cryptography::CipherMode& dyn_ModeValue();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::CipherMode& dyn_ModeValue();
     // Get instance field reference: protected System.Security.Cryptography.PaddingMode PaddingValue
-    [[deprecated]] ::System::Security::Cryptography::PaddingMode& dyn_PaddingValue();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::PaddingMode& dyn_PaddingValue();
     // public System.Int32 get_BlockSize()
     // Offset: 0x12690F4
     int get_BlockSize();

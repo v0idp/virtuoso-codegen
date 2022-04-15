@@ -54,13 +54,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::IdRefNode*) == 0x8);
     public:
     // Get instance field reference: System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: System.Int32 LineNo
-    [[deprecated]] int& dyn_LineNo();
+    [[deprecated("Use field access instead!")]] int& dyn_LineNo();
     // Get instance field reference: System.Int32 LinePos
-    [[deprecated]] int& dyn_LinePos();
+    [[deprecated("Use field access instead!")]] int& dyn_LinePos();
     // Get instance field reference: System.Xml.Schema.IdRefNode Next
-    [[deprecated]] ::System::Xml::Schema::IdRefNode*& dyn_Next();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::IdRefNode*& dyn_Next();
     // System.Void .ctor(System.Xml.Schema.IdRefNode next, System.String id, System.Int32 lineNo, System.Int32 linePos)
     // Offset: 0xAEC53C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -85,21 +85,21 @@ namespace System::Globalization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Int32 era
-    [[deprecated]] int& dyn_era();
+    [[deprecated("Use field access instead!")]] int& dyn_era();
     // Get instance field reference: System.Int64 ticks
-    [[deprecated]] int64_t& dyn_ticks();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_ticks();
     // Get instance field reference: System.Int32 yearOffset
-    [[deprecated]] int& dyn_yearOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_yearOffset();
     // Get instance field reference: System.Int32 minEraYear
-    [[deprecated]] int& dyn_minEraYear();
+    [[deprecated("Use field access instead!")]] int& dyn_minEraYear();
     // Get instance field reference: System.Int32 maxEraYear
-    [[deprecated]] int& dyn_maxEraYear();
+    [[deprecated("Use field access instead!")]] int& dyn_maxEraYear();
     // Get instance field reference: System.String eraName
-    [[deprecated]] ::StringW& dyn_eraName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_eraName();
     // Get instance field reference: System.String abbrevEraName
-    [[deprecated]] ::StringW& dyn_abbrevEraName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_abbrevEraName();
     // Get instance field reference: System.String englishEraName
-    [[deprecated]] ::StringW& dyn_englishEraName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_englishEraName();
     // System.Void .ctor(System.Int32 era, System.Int32 startYear, System.Int32 startMonth, System.Int32 startDay, System.Int32 yearOffset, System.Int32 minEraYear, System.Int32 maxEraYear)
     // Offset: 0x14F7B94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

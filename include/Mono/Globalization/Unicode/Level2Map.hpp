@@ -41,9 +41,9 @@ namespace Mono::Globalization::Unicode {
     static_assert(sizeof(uint8_t) == 0x1);
     public:
     // Get instance field reference: public System.Byte Source
-    [[deprecated]] uint8_t& dyn_Source();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_Source();
     // Get instance field reference: public System.Byte Replace
-    [[deprecated]] uint8_t& dyn_Replace();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_Replace();
     // public System.Void .ctor(System.Byte source, System.Byte replace)
     // Offset: 0x10783C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

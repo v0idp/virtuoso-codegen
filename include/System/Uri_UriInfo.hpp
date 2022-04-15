@@ -65,21 +65,19 @@ namespace System {
     static_assert(sizeof(::System::Uri::MoreInfo*) == 0x8);
     public:
     // Get instance field reference: public System.String Host
-    [[deprecated]] ::StringW& dyn_Host();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Host();
     // Get instance field reference: public System.String ScopeId
-    [[deprecated]] ::StringW& dyn_ScopeId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ScopeId();
     // Get instance field reference: public System.String String
-    [[deprecated]] ::StringW& dyn_String();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_String();
     // Get instance field reference: public System.Uri/System.Offset Offset
-    [[deprecated]] ::System::Uri::Offset& dyn_Offset();
+    [[deprecated("Use field access instead!")]] ::System::Uri::Offset& dyn_Offset();
     // Get instance field reference: public System.String DnsSafeHost
-    [[deprecated]] ::StringW& dyn_DnsSafeHost();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DnsSafeHost();
     // Get instance field reference: public System.Uri/System.MoreInfo MoreInfo
-    [[deprecated]] ::System::Uri::MoreInfo*& dyn_MoreInfo();
+    [[deprecated("Use field access instead!")]] ::System::Uri::MoreInfo*& dyn_MoreInfo();
     // public System.Void .ctor()
     // Offset: 0xA05418
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Uri::UriInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Uri::UriInfo::.ctor");

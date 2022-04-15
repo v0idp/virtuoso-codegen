@@ -72,15 +72,15 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Version m_parsedVersion
-    [[deprecated]] ::System::Version*& dyn_m_parsedVersion();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_m_parsedVersion();
     // Get instance field reference: System.Version/System.ParseFailureKind m_failure
-    [[deprecated]] ::System::Version::ParseFailureKind& dyn_m_failure();
+    [[deprecated("Use field access instead!")]] ::System::Version::ParseFailureKind& dyn_m_failure();
     // Get instance field reference: System.String m_exceptionArgument
-    [[deprecated]] ::StringW& dyn_m_exceptionArgument();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_exceptionArgument();
     // Get instance field reference: System.String m_argumentName
-    [[deprecated]] ::StringW& dyn_m_argumentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_argumentName();
     // Get instance field reference: System.Boolean m_canThrow
-    [[deprecated]] bool& dyn_m_canThrow();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_canThrow();
     // System.Void Init(System.String argumentName, System.Boolean canThrow)
     // Offset: 0x189C08C
     void Init(::StringW argumentName, bool canThrow);

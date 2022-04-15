@@ -79,20 +79,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.OrganPipeCreationBehaviour template
-    [[deprecated]] ::VROSC::OrganPipeCreationBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::OrganPipeCreationBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.OrganPipeRow> _row
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::OrganPipeRow*>& dyn__row();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::OrganPipeRow*>& dyn__row();
     // Get instance field reference: public UnityEngine.AnimationCurve _startCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__startCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__startCurve();
     // Get instance field reference: public UnityEngine.AnimationCurve _endCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__endCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__endCurve();
     // public System.Void .ctor()
     // Offset: 0xC68CE0
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OrganPipeCreationAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrganPipeCreationAsset::.ctor");

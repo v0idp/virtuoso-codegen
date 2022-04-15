@@ -100,17 +100,17 @@ namespace System {
       return *reinterpret_cast<::System::Runtime::Serialization::IDeserializationCallback*>(this);
     }
     // Get instance field reference: private System.DateTime m_dateStart
-    [[deprecated]] ::System::DateTime& dyn_m_dateStart();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_dateStart();
     // Get instance field reference: private System.DateTime m_dateEnd
-    [[deprecated]] ::System::DateTime& dyn_m_dateEnd();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_dateEnd();
     // Get instance field reference: private System.TimeSpan m_daylightDelta
-    [[deprecated]] ::System::TimeSpan& dyn_m_daylightDelta();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn_m_daylightDelta();
     // Get instance field reference: private System.TimeZoneInfo/System.TransitionTime m_daylightTransitionStart
-    [[deprecated]] ::System::TimeZoneInfo::TransitionTime& dyn_m_daylightTransitionStart();
+    [[deprecated("Use field access instead!")]] ::System::TimeZoneInfo::TransitionTime& dyn_m_daylightTransitionStart();
     // Get instance field reference: private System.TimeZoneInfo/System.TransitionTime m_daylightTransitionEnd
-    [[deprecated]] ::System::TimeZoneInfo::TransitionTime& dyn_m_daylightTransitionEnd();
+    [[deprecated("Use field access instead!")]] ::System::TimeZoneInfo::TransitionTime& dyn_m_daylightTransitionEnd();
     // Get instance field reference: private System.TimeSpan m_baseUtcOffsetDelta
-    [[deprecated]] ::System::TimeSpan& dyn_m_baseUtcOffsetDelta();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn_m_baseUtcOffsetDelta();
     // public System.DateTime get_DateStart()
     // Offset: 0x18976C4
     ::System::DateTime get_DateStart();

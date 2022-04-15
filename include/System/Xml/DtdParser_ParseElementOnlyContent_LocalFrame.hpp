@@ -40,9 +40,9 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::DtdParser::Token) == 0x4);
     public:
     // Get instance field reference: public System.Int32 startParenEntityId
-    [[deprecated]] int& dyn_startParenEntityId();
+    [[deprecated("Use field access instead!")]] int& dyn_startParenEntityId();
     // Get instance field reference: public System.Xml.DtdParser/System.Xml.Token parsingSchema
-    [[deprecated]] ::System::Xml::DtdParser::Token& dyn_parsingSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DtdParser::Token& dyn_parsingSchema();
     // public System.Void .ctor(System.Int32 startParentEntityIdParam)
     // Offset: 0xC1B4B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

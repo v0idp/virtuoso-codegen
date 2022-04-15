@@ -71,15 +71,15 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr rVertexData
-    [[deprecated]] ::System::IntPtr& dyn_rVertexData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_rVertexData();
     // Get instance field reference: public System.UInt32 unVertexCount
-    [[deprecated]] uint& dyn_unVertexCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_unVertexCount();
     // Get instance field reference: public System.IntPtr rIndexData
-    [[deprecated]] ::System::IntPtr& dyn_rIndexData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_rIndexData();
     // Get instance field reference: public System.UInt32 unTriangleCount
-    [[deprecated]] uint& dyn_unTriangleCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_unTriangleCount();
     // Get instance field reference: public System.Int32 diffuseTextureId
-    [[deprecated]] int& dyn_diffuseTextureId();
+    [[deprecated("Use field access instead!")]] int& dyn_diffuseTextureId();
     // public System.Void .ctor(OVR.OpenVR.RenderModel_t unpacked)
     // Offset: 0x804818
     RenderModel_t_Packed(::OVR::OpenVR::RenderModel_t unpacked);

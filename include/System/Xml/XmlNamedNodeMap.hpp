@@ -76,7 +76,7 @@ namespace System::Xml {
         return field;
       }
       // Get instance field reference: private System.Object field
-      [[deprecated]] ::Il2CppObject*& dyn_field();
+      [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_field();
       // public System.Int32 get_Count()
       // Offset: 0xC20A18
       int get_Count();
@@ -118,9 +118,9 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Collections::IEnumerable*>(this);
     }
     // Get instance field reference: System.Xml.XmlNode parent
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_parent();
     // Get instance field reference: System.Xml.XmlNamedNodeMap/System.Xml.SmallXmlNodeList nodes
-    [[deprecated]] ::System::Xml::XmlNamedNodeMap::SmallXmlNodeList& dyn_nodes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamedNodeMap::SmallXmlNodeList& dyn_nodes();
     // public System.Int32 get_Count()
     // Offset: 0x1014878
     int get_Count();

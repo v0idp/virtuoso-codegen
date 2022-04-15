@@ -49,18 +49,16 @@ namespace Mono::Http {
     // static private System.Void .cctor()
     // Offset: 0x9FBDF8
     static void _cctor();
-    // Mono.Http.NtlmSession <Authenticate>b__1_0(System.Net.HttpWebRequest x)
-    // Offset: 0x9FBE60
-    ::Mono::Http::NtlmSession* $Authenticate$b__1_0(::System::Net::HttpWebRequest* x);
     // public System.Void .ctor()
     // Offset: 0x9FBE58
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NtlmClient::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Http::NtlmClient::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NtlmClient::$$c*, creationType>()));
     }
+    // Mono.Http.NtlmSession <Authenticate>b__1_0(System.Net.HttpWebRequest x)
+    // Offset: 0x9FBE60
+    ::Mono::Http::NtlmSession* $Authenticate$b__1_0(::System::Net::HttpWebRequest* x);
   }; // Mono.Http.NtlmClient/Mono.Http.<>c
   #pragma pack(pop)
 }
@@ -73,6 +71,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Mono::Http::NtlmClient::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Mono::Http::NtlmClient::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Http::NtlmClient::$$c::$Authenticate$b__1_0
 // Il2CppName: <Authenticate>b__1_0
 template<>
@@ -82,7 +84,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Mono::Htt
     return ::il2cpp_utils::FindMethod(classof(Mono::Http::NtlmClient::$$c*), "<Authenticate>b__1_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: Mono::Http::NtlmClient::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -79,19 +79,19 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Nullable`1<System.Int32>> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Nullable_1<int>>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Nullable_1<int>>& dyn_$$t__builder();
     // Get instance field reference: public Mono.Net.Security.AsyncProtocolRequest <>4__this
-    [[deprecated]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Int32 <requestedSize>5__1
-    [[deprecated]] int& dyn_$requestedSize$5__1();
+    [[deprecated("Use field access instead!")]] int& dyn_$requestedSize$5__1();
     // Get instance field reference: private System.Nullable`1<System.Int32> <totalRead>5__2
-    [[deprecated]] ::System::Nullable_1<int>& dyn_$totalRead$5__2();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn_$totalRead$5__2();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Int32> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x9F332C
     void MoveNext();

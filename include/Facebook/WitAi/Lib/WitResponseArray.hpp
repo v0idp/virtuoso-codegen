@@ -77,7 +77,7 @@ namespace Facebook::WitAi::Lib {
       return m_List;
     }
     // Get instance field reference: private System.Collections.Generic.List`1<Facebook.WitAi.Lib.WitResponseNode> m_List
-    [[deprecated]] ::System::Collections::Generic::List_1<::Facebook::WitAi::Lib::WitResponseNode*>*& dyn_m_List();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Facebook::WitAi::Lib::WitResponseNode*>*& dyn_m_List();
     // public System.Collections.IEnumerator GetEnumerator()
     // Offset: 0x167736C
     ::System::Collections::IEnumerator* GetEnumerator();
@@ -115,7 +115,6 @@ namespace Facebook::WitAi::Lib {
     // Offset: 0x1674F2C
     // Implemented from: Facebook.WitAi.Lib.WitResponseNode
     // Base method: System.Void WitResponseNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseArray* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseArray::.ctor");

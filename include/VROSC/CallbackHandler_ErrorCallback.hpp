@@ -48,13 +48,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Error) == 0x4);
     public:
     // Get instance field reference: public System.Action`1<VROSC.Error> Action
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_Action();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_Action();
     // Get instance field reference: public VROSC.Error Error
-    [[deprecated]] ::VROSC::Error& dyn_Error();
+    [[deprecated("Use field access instead!")]] ::VROSC::Error& dyn_Error();
     // public System.Void .ctor()
     // Offset: 0x9593B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CallbackHandler::ErrorCallback* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CallbackHandler::ErrorCallback::.ctor");

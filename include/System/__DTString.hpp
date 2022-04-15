@@ -93,17 +93,17 @@ namespace System {
     // Set static field: static private System.Char[] WhiteSpaceChecks
     static void _set_WhiteSpaceChecks(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: System.String Value
-    [[deprecated]] ::StringW& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Value();
     // Get instance field reference: System.Int32 Index
-    [[deprecated]] int& dyn_Index();
+    [[deprecated("Use field access instead!")]] int& dyn_Index();
     // Get instance field reference: System.Int32 len
-    [[deprecated]] int& dyn_len();
+    [[deprecated("Use field access instead!")]] int& dyn_len();
     // Get instance field reference: System.Char m_current
-    [[deprecated]] ::Il2CppChar& dyn_m_current();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_m_current();
     // Get instance field reference: private System.Globalization.CompareInfo m_info
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn_m_info();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn_m_info();
     // Get instance field reference: private System.Boolean m_checkDigitToken
-    [[deprecated]] bool& dyn_m_checkDigitToken();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_checkDigitToken();
     // System.Globalization.CompareInfo get_CompareInfo()
     // Offset: 0x139D6C4
     ::System::Globalization::CompareInfo* get_CompareInfo();

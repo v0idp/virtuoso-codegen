@@ -44,7 +44,7 @@ namespace UnityEngine::Timeline {
       return m_Color;
     }
     // Get instance field reference: private UnityEngine.Color m_Color
-    [[deprecated]] ::UnityEngine::Color& dyn_m_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_Color();
     // public UnityEngine.Color get_color()
     // Offset: 0x18D3EAC
     ::UnityEngine::Color get_color();

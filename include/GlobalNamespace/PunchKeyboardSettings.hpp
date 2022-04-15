@@ -112,17 +112,24 @@ namespace GlobalNamespace {
     // Set static field: static public System.Action OnSettingsUpdated
     static void _set_OnSettingsUpdated(::System::Action* value);
     // Get instance field reference: private VROSC.UISlideToggle _usePointAndClick
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__usePointAndClick();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__usePointAndClick();
     // Get instance field reference: private VROSC.UISlideToggle _useTouchables
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__useTouchables();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__useTouchables();
     // Get instance field reference: private VROSC.UISlideToggle _allowExternalKeyboard
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__allowExternalKeyboard();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__allowExternalKeyboard();
     // Get instance field reference: private VROSC.UISlideToggle _keySounds
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__keySounds();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__keySounds();
     // Get instance field reference: private VROSC.UIToggle _settingsButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__settingsButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__settingsButton();
     // Get instance field reference: private UnityEngine.GameObject _panelObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__panelObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__panelObject();
+    // public System.Void .ctor()
+    // Offset: 0xB2CC20
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PunchKeyboardSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PunchKeyboardSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PunchKeyboardSettings*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xB2C0E0
     void Awake();
@@ -153,25 +160,16 @@ namespace GlobalNamespace {
     // private System.Void KeySoundsToggled(VROSC.InputDevice arg1, System.Boolean toggled)
     // Offset: 0xB2CB70
     void KeySoundsToggled(::VROSC::InputDevice* arg1, bool toggled);
-    // public System.Void .ctor()
-    // Offset: 0xB2CC20
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PunchKeyboardSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PunchKeyboardSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PunchKeyboardSettings*, creationType>()));
-    }
   }; // PunchKeyboardSettings
   #pragma pack(pop)
   static check_size<sizeof(PunchKeyboardSettings), 64 + sizeof(::UnityEngine::GameObject*)> __GlobalNamespace_PunchKeyboardSettingsSizeCheck;
   static_assert(sizeof(PunchKeyboardSettings) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::PunchKeyboardSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::PunchKeyboardSettings::Awake
 // Il2CppName: Awake
 template<>
@@ -263,7 +261,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PunchKeyboardSettings*), "KeySoundsToggled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{arg1, toggled});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::PunchKeyboardSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

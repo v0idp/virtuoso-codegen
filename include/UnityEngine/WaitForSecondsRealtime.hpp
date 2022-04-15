@@ -44,9 +44,9 @@ namespace UnityEngine {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single <waitTime>k__BackingField
-    [[deprecated]] float& dyn_$waitTime$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$waitTime$k__BackingField();
     // Get instance field reference: private System.Single m_WaitUntilTime
-    [[deprecated]] float& dyn_m_WaitUntilTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_WaitUntilTime();
     // public System.Single get_waitTime()
     // Offset: 0x18415E8
     float get_waitTime();

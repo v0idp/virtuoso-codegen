@@ -60,13 +60,13 @@ namespace System::ComponentModel::Design::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Boolean reloadable
-    [[deprecated]] bool& dyn_reloadable();
+    [[deprecated("Use field access instead!")]] bool& dyn_reloadable();
     // Get instance field reference: private System.String serializerTypeName
-    [[deprecated]] ::StringW& dyn_serializerTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_serializerTypeName();
     // Get instance field reference: private System.String serializerBaseTypeName
-    [[deprecated]] ::StringW& dyn_serializerBaseTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_serializerBaseTypeName();
     // Get instance field reference: private System.String typeId
-    [[deprecated]] ::StringW& dyn_typeId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeId();
     // public System.Void .ctor(System.String serializerTypeName, System.String baseSerializerTypeName, System.Boolean reloadable)
     // Offset: 0xD983BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -254,57 +254,57 @@ namespace LIV::SDK::Unity {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action onActivate
-    [[deprecated]] ::System::Action*& dyn_onActivate();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onActivate();
     // Get instance field reference: public System.Action`1<LIV.SDK.Unity.SDKRender> onPreRender
-    [[deprecated]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPreRender();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPreRender();
     // Get instance field reference: public System.Action`1<LIV.SDK.Unity.SDKRender> onPreRenderBackground
-    [[deprecated]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPreRenderBackground();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPreRenderBackground();
     // Get instance field reference: public System.Action`1<LIV.SDK.Unity.SDKRender> onPostRenderBackground
-    [[deprecated]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPostRenderBackground();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPostRenderBackground();
     // Get instance field reference: public System.Action`1<LIV.SDK.Unity.SDKRender> onPreRenderForeground
-    [[deprecated]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPreRenderForeground();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPreRenderForeground();
     // Get instance field reference: public System.Action`1<LIV.SDK.Unity.SDKRender> onPostRenderForeground
-    [[deprecated]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPostRenderForeground();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPostRenderForeground();
     // Get instance field reference: public System.Action`1<LIV.SDK.Unity.SDKRender> onPostRender
-    [[deprecated]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPostRender();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::LIV::SDK::Unity::SDKRender*>*& dyn_onPostRender();
     // Get instance field reference: public System.Action onDeactivate
-    [[deprecated]] ::System::Action*& dyn_onDeactivate();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onDeactivate();
     // Get instance field reference: private UnityEngine.Transform _stage
-    [[deprecated]] ::UnityEngine::Transform*& dyn__stage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__stage();
     // Get instance field reference: private UnityEngine.Transform _stageTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__stageTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__stageTransform();
     // Get instance field reference: private UnityEngine.Camera _HMDCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__HMDCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__HMDCamera();
     // Get instance field reference: private UnityEngine.Camera _MRCameraPrefab
-    [[deprecated]] ::UnityEngine::Camera*& dyn__MRCameraPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__MRCameraPrefab();
     // Get instance field reference: private System.Boolean _disableStandardAssets
-    [[deprecated]] bool& dyn__disableStandardAssets();
+    [[deprecated("Use field access instead!")]] bool& dyn__disableStandardAssets();
     // Get instance field reference: private UnityEngine.LayerMask _spectatorLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn__spectatorLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn__spectatorLayerMask();
     // Get instance field reference: private System.String[] _excludeBehaviours
-    [[deprecated]] ::ArrayW<::StringW>& dyn__excludeBehaviours();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__excludeBehaviours();
     // Get instance field reference: private System.Boolean _fixPostEffectsAlpha
-    [[deprecated]] bool& dyn__fixPostEffectsAlpha();
+    [[deprecated("Use field access instead!")]] bool& dyn__fixPostEffectsAlpha();
     // Get instance field reference: private System.Boolean _isActive
-    [[deprecated]] bool& dyn__isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__isActive();
     // Get instance field reference: private LIV.SDK.Unity.SDKRender _render
-    [[deprecated]] ::LIV::SDK::Unity::SDKRender*& dyn__render();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKRender*& dyn__render();
     // Get instance field reference: private System.Boolean _wasReady
-    [[deprecated]] bool& dyn__wasReady();
+    [[deprecated("Use field access instead!")]] bool& dyn__wasReady();
     // Get instance field reference: private LIV.SDK.Unity.INVALIDATION_FLAGS _invalidate
-    [[deprecated]] ::LIV::SDK::Unity::INVALIDATION_FLAGS& dyn__invalidate();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::INVALIDATION_FLAGS& dyn__invalidate();
     // Get instance field reference: private UnityEngine.Transform _stageCandidate
-    [[deprecated]] ::UnityEngine::Transform*& dyn__stageCandidate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__stageCandidate();
     // Get instance field reference: private UnityEngine.Camera _HMDCameraCandidate
-    [[deprecated]] ::UnityEngine::Camera*& dyn__HMDCameraCandidate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__HMDCameraCandidate();
     // Get instance field reference: private UnityEngine.Camera _MRCameraPrefabCandidate
-    [[deprecated]] ::UnityEngine::Camera*& dyn__MRCameraPrefabCandidate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__MRCameraPrefabCandidate();
     // Get instance field reference: private System.String[] _excludeBehavioursCandidate
-    [[deprecated]] ::ArrayW<::StringW>& dyn__excludeBehavioursCandidate();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__excludeBehavioursCandidate();
     // Get instance field reference: private System.Boolean _enabled
-    [[deprecated]] bool& dyn__enabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__enabled();
     // Get instance field reference: private UnityEngine.Coroutine _waitForEndOfFrameCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__waitForEndOfFrameCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__waitForEndOfFrameCoroutine();
     // public UnityEngine.Transform get_stage()
     // Offset: 0x194CAE8
     ::UnityEngine::Transform* get_stage();
@@ -377,6 +377,13 @@ namespace LIV::SDK::Unity {
     // public LIV.SDK.Unity.SDKRender get_render()
     // Offset: 0x194D2BC
     ::LIV::SDK::Unity::SDKRender* get_render();
+    // public System.Void .ctor()
+    // Offset: 0x194D8F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LIV* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::LIV::SDK::Unity::LIV::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LIV*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x194D2C4
     void OnEnable();
@@ -419,19 +426,6 @@ namespace LIV::SDK::Unity {
     // private System.Void Invalidate()
     // Offset: 0x194D34C
     void Invalidate();
-    // public System.Void .ctor()
-    // Offset: 0x194D8F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LIV* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::LIV::SDK::Unity::LIV::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LIV*, creationType>()));
-    }
   }; // LIV.SDK.Unity.LIV
   #pragma pack(pop)
   static check_size<sizeof(LIV), 200 + sizeof(::UnityEngine::Coroutine*)> __LIV_SDK_Unity_LIVSizeCheck;
@@ -639,6 +633,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::LIV::SDK:
     return ::il2cpp_utils::FindMethod(classof(LIV::SDK::Unity::LIV*), "get_render", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: LIV::SDK::Unity::LIV::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: LIV::SDK::Unity::LIV::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -752,7 +750,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (LIV::
     return ::il2cpp_utils::FindMethod(classof(LIV::SDK::Unity::LIV*), "Invalidate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: LIV::SDK::Unity::LIV::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

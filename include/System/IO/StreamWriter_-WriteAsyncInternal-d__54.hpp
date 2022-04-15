@@ -123,33 +123,33 @@ namespace System::IO {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // Get instance field reference: public System.Int32 charPos
-    [[deprecated]] int& dyn_charPos();
+    [[deprecated("Use field access instead!")]] int& dyn_charPos();
     // Get instance field reference: public System.Int32 charLen
-    [[deprecated]] int& dyn_charLen();
+    [[deprecated("Use field access instead!")]] int& dyn_charLen();
     // Get instance field reference: public System.IO.StreamWriter _this
-    [[deprecated]] ::System::IO::StreamWriter*& dyn__this();
+    [[deprecated("Use field access instead!")]] ::System::IO::StreamWriter*& dyn__this();
     // Get instance field reference: public System.Char[] charBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
     // Get instance field reference: private System.Int32 <count>5__1
-    [[deprecated]] int& dyn_$count$5__1();
+    [[deprecated("Use field access instead!")]] int& dyn_$count$5__1();
     // Get instance field reference: private System.Int32 <index>5__2
-    [[deprecated]] int& dyn_$index$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$index$5__2();
     // Get instance field reference: public System.Boolean appendNewLine
-    [[deprecated]] bool& dyn_appendNewLine();
+    [[deprecated("Use field access instead!")]] bool& dyn_appendNewLine();
     // Get instance field reference: public System.Char[] coreNewLine
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_coreNewLine();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_coreNewLine();
     // Get instance field reference: private System.Int32 <i>5__3
-    [[deprecated]] int& dyn_$i$5__3();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__3();
     // Get instance field reference: public System.Boolean autoFlush
-    [[deprecated]] bool& dyn_autoFlush();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoFlush();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xE5DFE0
     void MoveNext();

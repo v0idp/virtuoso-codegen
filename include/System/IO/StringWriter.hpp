@@ -71,9 +71,9 @@ namespace System::IO {
     // Set static field: static private System.Text.UnicodeEncoding m_encoding
     static void _set_m_encoding(::System::Text::UnicodeEncoding* value);
     // Get instance field reference: private System.Text.StringBuilder _sb
-    [[deprecated]] ::System::Text::StringBuilder*& dyn__sb();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn__sb();
     // Get instance field reference: private System.Boolean _isOpen
-    [[deprecated]] bool& dyn__isOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__isOpen();
     // public System.Void .ctor(System.Text.StringBuilder sb)
     // Offset: 0x1268784
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

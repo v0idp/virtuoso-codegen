@@ -215,47 +215,47 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Boolean IsNullable
-    [[deprecated]] bool& dyn_IsNullable();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsNullable();
     // Get instance field reference: System.Boolean IsConvertable
-    [[deprecated]] bool& dyn_IsConvertable();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsConvertable();
     // Get instance field reference: System.Boolean IsEnum
-    [[deprecated]] bool& dyn_IsEnum();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsEnum();
     // Get instance field reference: System.Type NonNullableUnderlyingType
-    [[deprecated]] ::System::Type*& dyn_NonNullableUnderlyingType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_NonNullableUnderlyingType();
     // Get instance field reference: Newtonsoft.Json.ReadType InternalReadType
-    [[deprecated]] ::Newtonsoft::Json::ReadType& dyn_InternalReadType();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::ReadType& dyn_InternalReadType();
     // Get instance field reference: Newtonsoft.Json.Serialization.JsonContractType ContractType
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonContractType& dyn_ContractType();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonContractType& dyn_ContractType();
     // Get instance field reference: System.Boolean IsReadOnlyOrFixedSize
-    [[deprecated]] bool& dyn_IsReadOnlyOrFixedSize();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsReadOnlyOrFixedSize();
     // Get instance field reference: System.Boolean IsSealed
-    [[deprecated]] bool& dyn_IsSealed();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsSealed();
     // Get instance field reference: System.Boolean IsInstantiable
-    [[deprecated]] bool& dyn_IsInstantiable();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsInstantiable();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Serialization.SerializationCallback> _onDeserializedCallbacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onDeserializedCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onDeserializedCallbacks();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Serialization.SerializationCallback> _onDeserializingCallbacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onDeserializingCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onDeserializingCallbacks();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Serialization.SerializationCallback> _onSerializedCallbacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onSerializedCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onSerializedCallbacks();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Serialization.SerializationCallback> _onSerializingCallbacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onSerializingCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationCallback*>*& dyn__onSerializingCallbacks();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Serialization.SerializationErrorCallback> _onErrorCallbacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>*& dyn__onErrorCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::SerializationErrorCallback*>*& dyn__onErrorCallbacks();
     // Get instance field reference: private System.Type _createdType
-    [[deprecated]] ::System::Type*& dyn__createdType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__createdType();
     // Get instance field reference: private readonly System.Type <UnderlyingType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$UnderlyingType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$UnderlyingType$k__BackingField();
     // Get instance field reference: private System.Nullable`1<System.Boolean> <IsReference>k__BackingField
-    [[deprecated]] ::System::Nullable_1<bool>& dyn_$IsReference$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_$IsReference$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.JsonConverter <Converter>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::JsonConverter*& dyn_$Converter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonConverter*& dyn_$Converter$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.JsonConverter <InternalConverter>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::JsonConverter*& dyn_$InternalConverter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonConverter*& dyn_$InternalConverter$k__BackingField();
     // Get instance field reference: private System.Func`1<System.Object> <DefaultCreator>k__BackingField
-    [[deprecated]] ::System::Func_1<::Il2CppObject*>*& dyn_$DefaultCreator$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::Il2CppObject*>*& dyn_$DefaultCreator$k__BackingField();
     // Get instance field reference: private System.Boolean <DefaultCreatorNonPublic>k__BackingField
-    [[deprecated]] bool& dyn_$DefaultCreatorNonPublic$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$DefaultCreatorNonPublic$k__BackingField();
     // public System.Type get_UnderlyingType()
     // Offset: 0xEF2B2C
     ::System::Type* get_UnderlyingType();

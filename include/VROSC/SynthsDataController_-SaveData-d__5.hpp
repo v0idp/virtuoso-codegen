@@ -144,29 +144,29 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.SynthsDataController <>4__this
-    [[deprecated]] ::VROSC::SynthsDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // Get instance field reference: private VROSC.SynthsDataController/VROSC.<>c__DisplayClass5_0 <>8__1
-    [[deprecated]] ::VROSC::SynthsDataController::$$c__DisplayClass5_0*& dyn_$$8__1();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthsDataController::$$c__DisplayClass5_0*& dyn_$$8__1();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: private System.Int32 <i>5__2
-    [[deprecated]] int& dyn_$i$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__2();
     // Get instance field reference: private VROSC.SynthData <instrumentData>5__3
-    [[deprecated]] ::VROSC::SynthData*& dyn_$instrumentData$5__3();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthData*& dyn_$instrumentData$5__3();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.InstrumentsDataController/VROSC.PatchSettings> <patchSettingsList>5__4
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::InstrumentsDataController::PatchSettings*>*& dyn_$patchSettingsList$5__4();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::InstrumentsDataController::PatchSettings*>*& dyn_$patchSettingsList$5__4();
     // Get instance field reference: private System.Int32 <j>5__5
-    [[deprecated]] int& dyn_$j$5__5();
+    [[deprecated("Use field access instead!")]] int& dyn_$j$5__5();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x8DB360
     void MoveNext();

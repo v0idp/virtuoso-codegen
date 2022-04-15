@@ -125,7 +125,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.AnimationPlayableAsset/UnityEngine.Timeline.LoopMode Off
       static void _set_Off(::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.AnimationPlayableAsset/UnityEngine.Timeline.LoopMode
     #pragma pack(pop)
     static check_size<sizeof(AnimationPlayableAsset::LoopMode), 0 + sizeof(int)> __UnityEngine_Timeline_AnimationPlayableAsset_LoopModeSizeCheck;
@@ -222,27 +222,27 @@ namespace UnityEngine::Timeline {
     // Set static field: static private readonly System.Int32 k_LatestVersion
     static void _set_k_LatestVersion(int value);
     // Get instance field reference: private UnityEngine.AnimationClip m_Clip
-    [[deprecated]] ::UnityEngine::AnimationClip*& dyn_m_Clip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationClip*& dyn_m_Clip();
     // Get instance field reference: private UnityEngine.Vector3 m_Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Vector3 m_EulerAngles
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_EulerAngles();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_EulerAngles();
     // Get instance field reference: private System.Boolean m_UseTrackMatchFields
-    [[deprecated]] bool& dyn_m_UseTrackMatchFields();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UseTrackMatchFields();
     // Get instance field reference: private UnityEngine.Timeline.MatchTargetFields m_MatchTargetFields
-    [[deprecated]] ::UnityEngine::Timeline::MatchTargetFields& dyn_m_MatchTargetFields();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::MatchTargetFields& dyn_m_MatchTargetFields();
     // Get instance field reference: private System.Boolean m_RemoveStartOffset
-    [[deprecated]] bool& dyn_m_RemoveStartOffset();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RemoveStartOffset();
     // Get instance field reference: private System.Boolean m_ApplyFootIK
-    [[deprecated]] bool& dyn_m_ApplyFootIK();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ApplyFootIK();
     // Get instance field reference: private UnityEngine.Timeline.AnimationPlayableAsset/UnityEngine.Timeline.LoopMode m_Loop
-    [[deprecated]] ::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode& dyn_m_Loop();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode& dyn_m_Loop();
     // Get instance field reference: private UnityEngine.Timeline.AppliedOffsetMode <appliedOffsetMode>k__BackingField
-    [[deprecated]] ::UnityEngine::Timeline::AppliedOffsetMode& dyn_$appliedOffsetMode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::AppliedOffsetMode& dyn_$appliedOffsetMode$k__BackingField();
     // Get instance field reference: private System.Int32 m_Version
-    [[deprecated]] int& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Version();
     // Get instance field reference: private UnityEngine.Quaternion m_Rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_Rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_Rotation();
     // public UnityEngine.Vector3 get_position()
     // Offset: 0xC6A428
     ::UnityEngine::Vector3 get_position();
@@ -309,6 +309,16 @@ namespace UnityEngine::Timeline {
     // public UnityEngine.Timeline.ClipCaps get_clipCaps()
     // Offset: 0xC6AF6C
     ::UnityEngine::Timeline::ClipCaps get_clipCaps();
+    // public System.Void .ctor()
+    // Offset: 0xC6B28C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AnimationPlayableAsset* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AnimationPlayableAsset::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AnimationPlayableAsset*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xC6B340
+    static void _cctor();
     // static UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.AnimationClip clip, UnityEngine.Vector3 positionOffset, UnityEngine.Vector3 eulerOffset, System.Boolean removeStartOffset, UnityEngine.Timeline.AppliedOffsetMode mode, System.Boolean applyFootIK, UnityEngine.Timeline.AnimationPlayableAsset/UnityEngine.Timeline.LoopMode loop)
     // Offset: 0xC6AACC
     static ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::AnimationClip* clip, ::UnityEngine::Vector3 positionOffset, ::UnityEngine::Vector3 eulerOffset, bool removeStartOffset, ::UnityEngine::Timeline::AppliedOffsetMode mode, bool applyFootIK, ::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode loop);
@@ -346,23 +356,6 @@ namespace UnityEngine::Timeline {
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Collections.Generic.IEnumerable`1<UnityEngine.Playables.PlayableBinding> PlayableAsset::get_outputs()
     ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* get_outputs();
-    // public System.Void .ctor()
-    // Offset: 0xC6B28C
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AnimationPlayableAsset* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AnimationPlayableAsset::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AnimationPlayableAsset*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xC6B340
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject go)
     // Offset: 0xC6A9E0
     // Implemented from: UnityEngine.Playables.PlayableAsset
@@ -562,6 +555,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::AnimationPlayableAsset*), "get_clipCaps", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::AnimationPlayableAsset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::Timeline::AnimationPlayableAsset::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::Timeline::AnimationPlayableAsset::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::AnimationPlayableAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: UnityEngine::Timeline::AnimationPlayableAsset::CreatePlayable
 // Il2CppName: CreatePlayable
 template<>
@@ -663,18 +668,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* (UnityEngine::Timeline::AnimationPlayableAsset::*)()>(&UnityEngine::Timeline::AnimationPlayableAsset::get_outputs)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::AnimationPlayableAsset*), "get_outputs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::Timeline::AnimationPlayableAsset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::Timeline::AnimationPlayableAsset::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::Timeline::AnimationPlayableAsset::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::AnimationPlayableAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::Timeline::AnimationPlayableAsset::CreatePlayable

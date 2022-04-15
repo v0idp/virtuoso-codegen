@@ -53,9 +53,9 @@ namespace System::Globalization {
     // Deleting conversion operator: operator ::StringW
     constexpr operator ::StringW() const noexcept = delete;
     // Get instance field reference: private System.String m_invalidCultureName
-    [[deprecated]] ::StringW& dyn_m_invalidCultureName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_invalidCultureName();
     // Get instance field reference: private System.Nullable`1<System.Int32> m_invalidCultureId
-    [[deprecated]] ::System::Nullable_1<int>& dyn_m_invalidCultureId();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn_m_invalidCultureId();
     // public System.Nullable`1<System.Int32> get_InvalidCultureId()
     // Offset: 0x14013A4
     ::System::Nullable_1<int> get_InvalidCultureId();

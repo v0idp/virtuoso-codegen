@@ -268,39 +268,39 @@ namespace TMPro {
     // Set static field: static private Unity.Profiling.ProfilerMarker k_GenerateTextPhaseIIIMarker
     static void _set_k_GenerateTextPhaseIIIMarker(::Unity::Profiling::ProfilerMarker value);
     // Get instance field reference: private System.Boolean m_hasFontAssetChanged
-    [[deprecated]] bool& dyn_m_hasFontAssetChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_hasFontAssetChanged();
     // Get instance field reference: private System.Single m_previousLossyScaleY
-    [[deprecated]] float& dyn_m_previousLossyScaleY();
+    [[deprecated("Use field access instead!")]] float& dyn_m_previousLossyScaleY();
     // Get instance field reference: private UnityEngine.Renderer m_renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_m_renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_m_renderer();
     // Get instance field reference: private UnityEngine.MeshFilter m_meshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn_m_meshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn_m_meshFilter();
     // Get instance field reference: private System.Boolean m_isFirstAllocation
-    [[deprecated]] bool& dyn_m_isFirstAllocation();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isFirstAllocation();
     // Get instance field reference: private System.Int32 m_max_characters
-    [[deprecated]] int& dyn_m_max_characters();
+    [[deprecated("Use field access instead!")]] int& dyn_m_max_characters();
     // Get instance field reference: private System.Int32 m_max_numberOfLines
-    [[deprecated]] int& dyn_m_max_numberOfLines();
+    [[deprecated("Use field access instead!")]] int& dyn_m_max_numberOfLines();
     // Get instance field reference: private TMPro.TMP_SubMesh[] m_subTextObjects
-    [[deprecated]] ::ArrayW<::TMPro::TMP_SubMesh*>& dyn_m_subTextObjects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_SubMesh*>& dyn_m_subTextObjects();
     // Get instance field reference: private TMPro.MaskingTypes m_maskType
-    [[deprecated]] ::TMPro::MaskingTypes& dyn_m_maskType();
+    [[deprecated("Use field access instead!")]] ::TMPro::MaskingTypes& dyn_m_maskType();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_EnvMapMatrix
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_EnvMapMatrix();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_EnvMapMatrix();
     // Get instance field reference: private UnityEngine.Vector3[] m_RectTransformCorners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_RectTransformCorners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_RectTransformCorners();
     // Get instance field reference: private System.Boolean m_isRegisteredForEvents
-    [[deprecated]] bool& dyn_m_isRegisteredForEvents();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isRegisteredForEvents();
     // Get instance field reference: System.Int32 _SortingLayer
-    [[deprecated]] int& dyn__SortingLayer();
+    [[deprecated("Use field access instead!")]] int& dyn__SortingLayer();
     // Get instance field reference: System.Int32 _SortingLayerID
-    [[deprecated]] int& dyn__SortingLayerID();
+    [[deprecated("Use field access instead!")]] int& dyn__SortingLayerID();
     // Get instance field reference: System.Int32 _SortingOrder
-    [[deprecated]] int& dyn__SortingOrder();
+    [[deprecated("Use field access instead!")]] int& dyn__SortingOrder();
     // Get instance field reference: private System.Action`1<TMPro.TMP_TextInfo> OnPreRenderText
-    [[deprecated]] ::System::Action_1<::TMPro::TMP_TextInfo*>*& dyn_OnPreRenderText();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::TMPro::TMP_TextInfo*>*& dyn_OnPreRenderText();
     // Get instance field reference: private System.Boolean m_currentAutoSizeMode
-    [[deprecated]] bool& dyn_m_currentAutoSizeMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_currentAutoSizeMode();
     // public System.Int32 get_sortingLayerID()
     // Offset: 0xD25B34
     int get_sortingLayerID();
@@ -405,9 +405,6 @@ namespace TMPro {
     // Offset: 0xD17EA8
     // Implemented from: TMPro.TMP_Text
     // Base method: UnityEngine.Transform TMP_Text::get_transform()
-    // Base method: UnityEngine.Transform Graphic::UnityEngine.UI.ICanvasElement.get_transform()
-    // Base method: UnityEngine.Transform Component::get_transform()
-    // Base method: UnityEngine.Transform ICanvasElement::get_transform()
     ::UnityEngine::Transform* get_transform();
     // public override UnityEngine.Mesh get_mesh()
     // Offset: 0xD25F54
@@ -428,14 +425,6 @@ namespace TMPro {
     // Offset: 0xD26C68
     // Implemented from: TMPro.TMP_Text
     // Base method: System.Void TMP_Text::.ctor()
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextMeshPro* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TextMeshPro::.ctor");
@@ -445,8 +434,6 @@ namespace TMPro {
     // Offset: 0xD26D2C
     // Implemented from: TMPro.TMP_Text
     // Base method: System.Void TMP_Text::.cctor()
-    // Base method: System.Void Graphic::.cctor()
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
     // protected override System.Void Awake()
     // Offset: 0xD17AE8

@@ -62,13 +62,13 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Color _activeColor
-    [[deprecated]] ::UnityEngine::Color& dyn__activeColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__activeColor();
     // Get instance field reference: private UnityEngine.Color _inactiveColor
-    [[deprecated]] ::UnityEngine::Color& dyn__inactiveColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__inactiveColor();
     // Get instance field reference: private UnityEngine.Color _hoverColor
-    [[deprecated]] ::UnityEngine::Color& dyn__hoverColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__hoverColor();
     // Get instance field reference: private UnityEngine.Color _disabledColor
-    [[deprecated]] ::UnityEngine::Color& dyn__disabledColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__disabledColor();
     // public UnityEngine.Color get_ActiveColor()
     // Offset: 0x1912508
     ::UnityEngine::Color get_ActiveColor();
@@ -81,21 +81,19 @@ namespace VROSC {
     // public UnityEngine.Color get_DisabledColor()
     // Offset: 0x191252C
     ::UnityEngine::Color get_DisabledColor();
+    // public System.Void .ctor()
+    // Offset: 0x191262C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIInteractableColorSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIInteractableColorSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIInteractableColorSettings*, creationType>()));
+    }
     // public UnityEngine.Color GetColor(System.Boolean isHovering, System.Boolean isActive, System.Boolean isDisabled)
     // Offset: 0x1912538
     ::UnityEngine::Color GetColor(bool isHovering, bool isActive, bool isDisabled);
     // public UnityEngine.Color GetColor(VROSC.UIScrollableItem selectionBarButton)
     // Offset: 0x19125A4
     ::UnityEngine::Color GetColor(::VROSC::UIScrollableItem* selectionBarButton);
-    // public System.Void .ctor()
-    // Offset: 0x191262C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIInteractableColorSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIInteractableColorSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIInteractableColorSettings*, creationType>()));
-    }
   }; // VROSC.UIInteractableColorSettings
   #pragma pack(pop)
   static check_size<sizeof(UIInteractableColorSettings), 64 + sizeof(::UnityEngine::Color)> __VROSC_UIInteractableColorSettingsSizeCheck;
@@ -134,6 +132,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIInteractableColorSettings*), "get_DisabledColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UIInteractableColorSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIInteractableColorSettings::GetColor
 // Il2CppName: GetColor
 template<>
@@ -154,7 +156,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIInteractableColorSettings*), "GetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{selectionBarButton});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIInteractableColorSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

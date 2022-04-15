@@ -50,25 +50,27 @@ namespace VROSC {
       return onSuccess;
     }
     // Get instance field reference: public System.Action`1<UnityEngine.AudioClip> onSuccess
-    [[deprecated]] ::System::Action_1<::UnityEngine::AudioClip*>*& dyn_onSuccess();
-    // System.Void <LoadPreviewFromFile>b__0(UnityEngine.AudioClip audioClip)
-    // Offset: 0x95FDE8
-    void $LoadPreviewFromFile$b__0(::UnityEngine::AudioClip* audioClip);
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::AudioClip*>*& dyn_onSuccess();
     // public System.Void .ctor()
     // Offset: 0x95FDE0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FileWriter::$$c__DisplayClass23_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FileWriter::$$c__DisplayClass23_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FileWriter::$$c__DisplayClass23_0*, creationType>()));
     }
+    // System.Void <LoadPreviewFromFile>b__0(UnityEngine.AudioClip audioClip)
+    // Offset: 0x95FDE8
+    void $LoadPreviewFromFile$b__0(::UnityEngine::AudioClip* audioClip);
   }; // VROSC.FileWriter/VROSC.<>c__DisplayClass23_0
   #pragma pack(pop)
   static check_size<sizeof(FileWriter::$$c__DisplayClass23_0), 16 + sizeof(::System::Action_1<::UnityEngine::AudioClip*>*)> __VROSC_FileWriter_$$c__DisplayClass23_0SizeCheck;
   static_assert(sizeof(FileWriter::$$c__DisplayClass23_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass23_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass23_0::$LoadPreviewFromFile$b__0
 // Il2CppName: <LoadPreviewFromFile>b__0
 template<>
@@ -78,7 +80,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter::$$c__DisplayClass23_0*), "<LoadPreviewFromFile>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{audioClip});
   }
 };
-// Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass23_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

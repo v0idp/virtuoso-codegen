@@ -80,19 +80,19 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: UnityEngine.CharacterController m_Controller
-    [[deprecated]] ::UnityEngine::CharacterController*& dyn_m_Controller();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CharacterController*& dyn_m_Controller();
     // Get instance field reference: UnityEngine.Collider m_Collider
-    [[deprecated]] ::UnityEngine::Collider*& dyn_m_Collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn_m_Collider();
     // Get instance field reference: UnityEngine.Vector3 m_Point
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Point();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Point();
     // Get instance field reference: UnityEngine.Vector3 m_Normal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Normal();
     // Get instance field reference: UnityEngine.Vector3 m_MoveDirection
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_MoveDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_MoveDirection();
     // Get instance field reference: System.Single m_MoveLength
-    [[deprecated]] float& dyn_m_MoveLength();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MoveLength();
     // Get instance field reference: System.Int32 m_Push
-    [[deprecated]] int& dyn_m_Push();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Push();
   }; // UnityEngine.ControllerColliderHit
   #pragma pack(pop)
   static check_size<sizeof(ControllerColliderHit), 72 + sizeof(int)> __UnityEngine_ControllerColliderHitSizeCheck;

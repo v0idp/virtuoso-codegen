@@ -42,9 +42,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XsdBuilder::XsdBuildFunction*) == 0x8);
     public:
     // Get instance field reference: public System.Xml.Schema.SchemaNames/System.Xml.Schema.Token Attribute
-    [[deprecated]] ::System::Xml::Schema::SchemaNames::Token& dyn_Attribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames::Token& dyn_Attribute();
     // Get instance field reference: public System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdBuildFunction BuildFunc
-    [[deprecated]] ::System::Xml::Schema::XsdBuilder::XsdBuildFunction*& dyn_BuildFunc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XsdBuilder::XsdBuildFunction*& dyn_BuildFunc();
     // public System.Void .ctor(System.Xml.Schema.SchemaNames/System.Xml.Schema.Token a, System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdBuildFunction build)
     // Offset: 0xC25B3C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

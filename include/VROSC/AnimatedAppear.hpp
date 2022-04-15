@@ -128,27 +128,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _move
-    [[deprecated]] float& dyn__move();
+    [[deprecated("Use field access instead!")]] float& dyn__move();
     // Get instance field reference: private VROSC.AnimatedAppearSettings _enter
-    [[deprecated]] ::VROSC::AnimatedAppearSettings*& dyn__enter();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppearSettings*& dyn__enter();
     // Get instance field reference: private VROSC.AnimatedAppearSettings _exit
-    [[deprecated]] ::VROSC::AnimatedAppearSettings*& dyn__exit();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppearSettings*& dyn__exit();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private System.Boolean _forceLayoutUpdate
-    [[deprecated]] bool& dyn__forceLayoutUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn__forceLayoutUpdate();
     // Get instance field reference: private VROSC.TimelinePlaybackHelper _playbackHelper
-    [[deprecated]] ::VROSC::TimelinePlaybackHelper*& dyn__playbackHelper();
+    [[deprecated("Use field access instead!")]] ::VROSC::TimelinePlaybackHelper*& dyn__playbackHelper();
     // Get instance field reference: private VROSC.AnimatedAppearData _data
-    [[deprecated]] ::VROSC::AnimatedAppearData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppearData*& dyn__data();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private System.Boolean _startPositionSet
-    [[deprecated]] bool& dyn__startPositionSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__startPositionSet();
     // Get instance field reference: private System.Boolean _startAnimationPlaying
-    [[deprecated]] bool& dyn__startAnimationPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn__startAnimationPlaying();
     // Get instance field reference: private System.Boolean _setupDone
-    [[deprecated]] bool& dyn__setupDone();
+    [[deprecated("Use field access instead!")]] bool& dyn__setupDone();
     // public VROSC.AnimatedAppearSettings get_Enter()
     // Offset: 0x969204
     ::VROSC::AnimatedAppearSettings* get_Enter();
@@ -158,6 +158,13 @@ namespace VROSC {
     // public System.Boolean get_IsAnimating()
     // Offset: 0x969214
     bool get_IsAnimating();
+    // public System.Void .ctor()
+    // Offset: 0x96A0FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AnimatedAppear* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppear::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppear*, creationType>()));
+    }
     // private System.Void OnDestroy()
     // Offset: 0x9692F0
     void OnDestroy();
@@ -206,19 +213,6 @@ namespace VROSC {
     // public System.Void EditorLoadDirector(System.Boolean enter)
     // Offset: 0x96A0B8
     void EditorLoadDirector(bool enter);
-    // public System.Void .ctor()
-    // Offset: 0x96A0FC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AnimatedAppear* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppear::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppear*, creationType>()));
-    }
   }; // VROSC.AnimatedAppear
   #pragma pack(pop)
   static check_size<sizeof(AnimatedAppear), 94 + sizeof(bool)> __VROSC_AnimatedAppearSizeCheck;
@@ -249,6 +243,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AnimatedAppear*), "get_IsAnimating", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::AnimatedAppear::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AnimatedAppear::OnDestroy
 // Il2CppName: OnDestroy
 template<>
@@ -385,7 +383,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AnimatedAppear*), "EditorLoadDirector", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{enter});
   }
 };
-// Writing MetadataGetter for method: VROSC::AnimatedAppear::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -98,23 +98,30 @@ namespace System::Net::Sockets {
     // Set static field: static private System.Int32 MaxUDPSize
     static void _set_MaxUDPSize(int value);
     // Get instance field reference: private System.Net.Sockets.Socket m_ClientSocket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_m_ClientSocket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_m_ClientSocket();
     // Get instance field reference: private System.Boolean m_Active
-    [[deprecated]] bool& dyn_m_Active();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Active();
     // Get instance field reference: private System.Byte[] m_Buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_Buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_Buffer();
     // Get instance field reference: private System.Net.Sockets.AddressFamily m_Family
-    [[deprecated]] ::System::Net::Sockets::AddressFamily& dyn_m_Family();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::AddressFamily& dyn_m_Family();
     // Get instance field reference: private System.Boolean m_CleanedUp
-    [[deprecated]] bool& dyn_m_CleanedUp();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CleanedUp();
     // Get instance field reference: private System.Boolean m_IsBroadcast
-    [[deprecated]] bool& dyn_m_IsBroadcast();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsBroadcast();
     // public System.Net.Sockets.Socket get_Client()
     // Offset: 0xDB342C
     ::System::Net::Sockets::Socket* get_Client();
     // public System.Void set_Client(System.Net.Sockets.Socket value)
     // Offset: 0xDB3434
     void set_Client(::System::Net::Sockets::Socket* value);
+    // public System.Void .ctor()
+    // Offset: 0xDB3050
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UdpClient* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::UdpClient::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UdpClient*, creationType>()));
+    }
     // public System.Void .ctor(System.Net.Sockets.AddressFamily family)
     // Offset: 0xDB3058
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -166,15 +173,6 @@ namespace System::Net::Sockets {
     // private System.Void createClientSocket()
     // Offset: 0xDB3198
     void createClientSocket();
-    // public System.Void .ctor()
-    // Offset: 0xDB3050
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UdpClient* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::UdpClient::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UdpClient*, creationType>()));
-    }
   }; // System.Net.Sockets.UdpClient
   #pragma pack(pop)
   static check_size<sizeof(UdpClient), 45 + sizeof(bool)> __System_Net_Sockets_UdpClientSizeCheck;
@@ -198,6 +196,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::UdpClient*), "set_Client", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Net::Sockets::UdpClient::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Sockets::UdpClient::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -298,7 +300,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::UdpClient*), "createClientSocket", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::Sockets::UdpClient::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

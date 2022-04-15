@@ -71,19 +71,19 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Xml.Schema.SchemaNames/System.Xml.Schema.Token Name
-    [[deprecated]] ::System::Xml::Schema::SchemaNames::Token& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames::Token& dyn_Name();
     // Get instance field reference: public System.Xml.Schema.XsdBuilder/System.Xml.Schema.State CurrentState
-    [[deprecated]] ::System::Xml::Schema::XsdBuilder::State& dyn_CurrentState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XsdBuilder::State& dyn_CurrentState();
     // Get instance field reference: public System.Xml.Schema.XsdBuilder/System.Xml.Schema.State[] NextStates
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::XsdBuilder::State>& dyn_NextStates();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::XsdBuilder::State>& dyn_NextStates();
     // Get instance field reference: public System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdAttributeEntry[] Attributes
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::XsdBuilder::XsdAttributeEntry*>& dyn_Attributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::XsdBuilder::XsdAttributeEntry*>& dyn_Attributes();
     // Get instance field reference: public System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdInitFunction InitFunc
-    [[deprecated]] ::System::Xml::Schema::XsdBuilder::XsdInitFunction*& dyn_InitFunc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XsdBuilder::XsdInitFunction*& dyn_InitFunc();
     // Get instance field reference: public System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdEndChildFunction EndChildFunc
-    [[deprecated]] ::System::Xml::Schema::XsdBuilder::XsdEndChildFunction*& dyn_EndChildFunc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XsdBuilder::XsdEndChildFunction*& dyn_EndChildFunc();
     // Get instance field reference: public System.Boolean ParseContent
-    [[deprecated]] bool& dyn_ParseContent();
+    [[deprecated("Use field access instead!")]] bool& dyn_ParseContent();
     // public System.Void .ctor(System.Xml.Schema.SchemaNames/System.Xml.Schema.Token n, System.Xml.Schema.XsdBuilder/System.Xml.Schema.State state, System.Xml.Schema.XsdBuilder/System.Xml.Schema.State[] nextStates, System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdAttributeEntry[] attributes, System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdInitFunction init, System.Xml.Schema.XsdBuilder/System.Xml.Schema.XsdEndChildFunction end, System.Boolean parseContent)
     // Offset: 0xC26308
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -60,9 +60,9 @@ namespace System {
       return *reinterpret_cast<::System::ModifierSpec*>(this);
     }
     // Get instance field reference: private System.Int32 dimensions
-    [[deprecated]] int& dyn_dimensions();
+    [[deprecated("Use field access instead!")]] int& dyn_dimensions();
     // Get instance field reference: private System.Boolean bound
-    [[deprecated]] bool& dyn_bound();
+    [[deprecated("Use field access instead!")]] bool& dyn_bound();
     // System.Void .ctor(System.Int32 dimensions, System.Boolean bound)
     // Offset: 0x1143CF8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

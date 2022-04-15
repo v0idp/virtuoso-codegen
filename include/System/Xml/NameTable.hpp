@@ -64,13 +64,13 @@ namespace System::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Xml.NameTable/System.Xml.Entry[] entries
-    [[deprecated]] ::ArrayW<::System::Xml::NameTable::Entry*>& dyn_entries();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::NameTable::Entry*>& dyn_entries();
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.Int32 mask
-    [[deprecated]] int& dyn_mask();
+    [[deprecated("Use field access instead!")]] int& dyn_mask();
     // Get instance field reference: private System.Int32 hashCodeRandomizer
-    [[deprecated]] int& dyn_hashCodeRandomizer();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCodeRandomizer();
     // private System.String AddEntry(System.String str, System.Int32 hashCode)
     // Offset: 0xAF4C0C
     ::StringW AddEntry(::StringW str, int hashCode);
@@ -84,7 +84,6 @@ namespace System::Xml {
     // Offset: 0xAF4A14
     // Implemented from: System.Xml.XmlNameTable
     // Base method: System.Void XmlNameTable::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NameTable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::NameTable::.ctor");

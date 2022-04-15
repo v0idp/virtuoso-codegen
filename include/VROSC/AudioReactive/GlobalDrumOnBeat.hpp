@@ -98,19 +98,19 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.AnimationCurve _powerCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
     // Get instance field reference: private VROSC.AudioReactive.ChangeColorEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
     // Get instance field reference: private System.Single _timeIfBPM0
-    [[deprecated]] float& dyn__timeIfBPM0();
+    [[deprecated("Use field access instead!")]] float& dyn__timeIfBPM0();
     // Get instance field reference: private System.Int32 _currentInt
-    [[deprecated]] int& dyn__currentInt();
+    [[deprecated("Use field access instead!")]] int& dyn__currentInt();
     // Get instance field reference: private System.Int32 _pingPongDirection
-    [[deprecated]] int& dyn__pingPongDirection();
+    [[deprecated("Use field access instead!")]] int& dyn__pingPongDirection();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__currentColor();
     // Get instance field reference: private System.Boolean _active
-    [[deprecated]] bool& dyn__active();
+    [[deprecated("Use field access instead!")]] bool& dyn__active();
     // private System.Void Update()
     // Offset: 0x19A4F50
     void Update();
@@ -133,11 +133,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x19A51B8
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalDrumOnBeat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::GlobalDrumOnBeat::.ctor");

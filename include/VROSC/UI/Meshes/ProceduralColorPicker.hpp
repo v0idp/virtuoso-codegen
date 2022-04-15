@@ -76,15 +76,15 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _edges
-    [[deprecated]] int& dyn__edges();
+    [[deprecated("Use field access instead!")]] int& dyn__edges();
     // Get instance field reference: private System.Single _outerSaturation
-    [[deprecated]] float& dyn__outerSaturation();
+    [[deprecated("Use field access instead!")]] float& dyn__outerSaturation();
     // Get instance field reference: private System.Single _outerValue
-    [[deprecated]] float& dyn__outerValue();
+    [[deprecated("Use field access instead!")]] float& dyn__outerValue();
     // Get instance field reference: private System.Single _centerSaturation
-    [[deprecated]] float& dyn__centerSaturation();
+    [[deprecated("Use field access instead!")]] float& dyn__centerSaturation();
     // Get instance field reference: private System.Single _centerValue
-    [[deprecated]] float& dyn__centerValue();
+    [[deprecated("Use field access instead!")]] float& dyn__centerValue();
     // private System.Int32 GetVertexCount()
     // Offset: 0xB229A0
     int GetVertexCount();
@@ -103,9 +103,6 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xB230CC
     // Implemented from: VROSC.UI.Meshes.ProceduralMeshData
     // Base method: System.Void ProceduralMeshData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralColorPicker* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralColorPicker::.ctor");

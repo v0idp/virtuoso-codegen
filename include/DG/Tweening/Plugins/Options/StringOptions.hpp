@@ -74,15 +74,15 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public System.Boolean richTextEnabled
-    [[deprecated]] bool& dyn_richTextEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_richTextEnabled();
     // Get instance field reference: public DG.Tweening.ScrambleMode scrambleMode
-    [[deprecated]] ::DG::Tweening::ScrambleMode& dyn_scrambleMode();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::ScrambleMode& dyn_scrambleMode();
     // Get instance field reference: public System.Char[] scrambledChars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_scrambledChars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_scrambledChars();
     // Get instance field reference: System.Int32 startValueStrippedLength
-    [[deprecated]] int& dyn_startValueStrippedLength();
+    [[deprecated("Use field access instead!")]] int& dyn_startValueStrippedLength();
     // Get instance field reference: System.Int32 changeValueStrippedLength
-    [[deprecated]] int& dyn_changeValueStrippedLength();
+    [[deprecated("Use field access instead!")]] int& dyn_changeValueStrippedLength();
     // public System.Void Reset()
     // Offset: 0x15AC4DC
     void Reset();

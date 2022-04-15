@@ -45,9 +45,9 @@ namespace System::Threading {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Threading.SendOrPostCallback m_Delegate
-    [[deprecated]] ::System::Threading::SendOrPostCallback*& dyn_m_Delegate();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SendOrPostCallback*& dyn_m_Delegate();
     // Get instance field reference: private System.Object m_State
-    [[deprecated]] ::Il2CppObject*& dyn_m_State();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_State();
     // public System.Void .ctor(System.Threading.SendOrPostCallback d, System.Object state)
     // Offset: 0xE555F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

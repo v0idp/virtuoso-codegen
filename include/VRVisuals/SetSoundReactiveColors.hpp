@@ -109,25 +109,32 @@ namespace VRVisuals {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color _baseColor
-    [[deprecated]] ::UnityEngine::Color& dyn__baseColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__baseColor();
     // Get instance field reference: private UnityEngine.Color _midColor
-    [[deprecated]] ::UnityEngine::Color& dyn__midColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__midColor();
     // Get instance field reference: private UnityEngine.Color _topColor
-    [[deprecated]] ::UnityEngine::Color& dyn__topColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__topColor();
     // Get instance field reference: private System.Single _rotation
-    [[deprecated]] float& dyn__rotation();
+    [[deprecated("Use field access instead!")]] float& dyn__rotation();
     // Get instance field reference: private System.Single _rotationSpeed
-    [[deprecated]] float& dyn__rotationSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__rotationSpeed();
     // Get instance field reference: private System.Single _bobbing
-    [[deprecated]] float& dyn__bobbing();
+    [[deprecated("Use field access instead!")]] float& dyn__bobbing();
     // Get instance field reference: private System.Single _bobbingSpeed
-    [[deprecated]] float& dyn__bobbingSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__bobbingSpeed();
     // Get instance field reference: private UnityEngine.Vector4 _jumpOnSound
-    [[deprecated]] ::UnityEngine::Vector4& dyn__jumpOnSound();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn__jumpOnSound();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    // public System.Void .ctor()
+    // Offset: 0x1924E24
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SetSoundReactiveColors* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VRVisuals::SetSoundReactiveColors::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SetSoundReactiveColors*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1924BD0
     void Awake();
@@ -137,25 +144,16 @@ namespace VRVisuals {
     // private System.Void SetColors()
     // Offset: 0x1924C68
     void SetColors();
-    // public System.Void .ctor()
-    // Offset: 0x1924E24
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SetSoundReactiveColors* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VRVisuals::SetSoundReactiveColors::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SetSoundReactiveColors*, creationType>()));
-    }
   }; // VRVisuals.SetSoundReactiveColors
   #pragma pack(pop)
   static check_size<sizeof(SetSoundReactiveColors), 112 + sizeof(::UnityEngine::MaterialPropertyBlock*)> __VRVisuals_SetSoundReactiveColorsSizeCheck;
   static_assert(sizeof(SetSoundReactiveColors) == 0x78);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VRVisuals::SetSoundReactiveColors::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VRVisuals::SetSoundReactiveColors::Awake
 // Il2CppName: Awake
 template<>
@@ -180,7 +178,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VRVis
     return ::il2cpp_utils::FindMethod(classof(VRVisuals::SetSoundReactiveColors*), "SetColors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VRVisuals::SetSoundReactiveColors::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

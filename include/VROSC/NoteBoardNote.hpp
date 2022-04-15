@@ -89,17 +89,17 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteVisualController _materialController
-    [[deprecated]] ::VROSC::NoteBoardNoteVisualController*& dyn__materialController();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteVisualController*& dyn__materialController();
     // Get instance field reference: private VROSC.NoteBoardNoteAnimator _animator
-    [[deprecated]] ::VROSC::NoteBoardNoteAnimator*& dyn__animator();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteAnimator*& dyn__animator();
     // Get instance field reference: private VROSC.NoteBoardNoteText _textDisplay
-    [[deprecated]] ::VROSC::NoteBoardNoteText*& dyn__textDisplay();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteText*& dyn__textDisplay();
     // Get instance field reference: private VROSC.NoteFieldNoteData <Data>k__BackingField
-    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn_$Data$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldNoteData*& dyn_$Data$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <LocalPositionForAnimation>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$LocalPositionForAnimation$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$LocalPositionForAnimation$k__BackingField();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPlaying$k__BackingField();
     // public VROSC.NoteBoardNoteAnimator get_Animator()
     // Offset: 0xAD5FCC
     ::VROSC::NoteBoardNoteAnimator* get_Animator();
@@ -127,6 +127,13 @@ namespace VROSC {
     // private System.Void set_IsPlaying(System.Boolean value)
     // Offset: 0xAD600C
     void set_IsPlaying(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xAD66AC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteBoardNote* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNote::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNote*, creationType>()));
+    }
     // public System.Void Init(VROSC.NoteFieldNoteData data, System.Int32[] numberOfFields, UnityEngine.Vector3 noteScale)
     // Offset: 0xAD3684
     void Init(::VROSC::NoteFieldNoteData* data, ::ArrayW<int> numberOfFields, ::UnityEngine::Vector3 noteScale);
@@ -151,19 +158,6 @@ namespace VROSC {
     // public System.Void SetPlaying(System.Boolean isPlaying, VROSC.PlayData playData)
     // Offset: 0xAD658C
     void SetPlaying(bool isPlaying, ::VROSC::PlayData playData);
-    // public System.Void .ctor()
-    // Offset: 0xAD66AC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteBoardNote* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNote::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNote*, creationType>()));
-    }
   }; // VROSC.NoteBoardNote
   #pragma pack(pop)
   static check_size<sizeof(NoteBoardNote), 68 + sizeof(bool)> __VROSC_NoteBoardNoteSizeCheck;
@@ -245,6 +239,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardNote*), "set_IsPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::NoteBoardNote::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteBoardNote::Init
 // Il2CppName: Init
 template<>
@@ -324,7 +322,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardNote*), "SetPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isPlaying, playData});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteBoardNote::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

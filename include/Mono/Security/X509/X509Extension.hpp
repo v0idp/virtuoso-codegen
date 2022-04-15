@@ -62,11 +62,11 @@ namespace Mono::Security::X509 {
     static_assert(sizeof(::Mono::Security::ASN1*) == 0x8);
     public:
     // Get instance field reference: protected System.String extnOid
-    [[deprecated]] ::StringW& dyn_extnOid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_extnOid();
     // Get instance field reference: protected System.Boolean extnCritical
-    [[deprecated]] bool& dyn_extnCritical();
+    [[deprecated("Use field access instead!")]] bool& dyn_extnCritical();
     // Get instance field reference: protected Mono.Security.ASN1 extnValue
-    [[deprecated]] ::Mono::Security::ASN1*& dyn_extnValue();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::ASN1*& dyn_extnValue();
     // public System.Void .ctor(Mono.Security.ASN1 asn1)
     // Offset: 0x1648DB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

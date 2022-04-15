@@ -66,17 +66,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 SampleRateHz
-    [[deprecated]] int& dyn_SampleRateHz();
+    [[deprecated("Use field access instead!")]] int& dyn_SampleRateHz();
     // Get instance field reference: public System.Int32 SampleSizeInBytes
-    [[deprecated]] int& dyn_SampleSizeInBytes();
+    [[deprecated("Use field access instead!")]] int& dyn_SampleSizeInBytes();
     // Get instance field reference: public System.Int32 MinimumSafeSamplesQueued
-    [[deprecated]] int& dyn_MinimumSafeSamplesQueued();
+    [[deprecated("Use field access instead!")]] int& dyn_MinimumSafeSamplesQueued();
     // Get instance field reference: public System.Int32 MinimumBufferSamplesCount
-    [[deprecated]] int& dyn_MinimumBufferSamplesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_MinimumBufferSamplesCount();
     // Get instance field reference: public System.Int32 OptimalBufferSamplesCount
-    [[deprecated]] int& dyn_OptimalBufferSamplesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_OptimalBufferSamplesCount();
     // Get instance field reference: public System.Int32 MaximumBufferSamplesCount
-    [[deprecated]] int& dyn_MaximumBufferSamplesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_MaximumBufferSamplesCount();
   }; // OVRPlugin/HapticsDesc
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::HapticsDesc), 20 + sizeof(int)> __GlobalNamespace_OVRPlugin_HapticsDescSizeCheck;

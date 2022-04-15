@@ -118,25 +118,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Grabable _grabable
-    [[deprecated]] ::VROSC::Grabable*& dyn__grabable();
+    [[deprecated("Use field access instead!")]] ::VROSC::Grabable*& dyn__grabable();
     // Get instance field reference: private UnityEngine.AnimationCurve _highlightAnimationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
     // Get instance field reference: private System.Single _highlightAnimationDuration
-    [[deprecated]] float& dyn__highlightAnimationDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__highlightAnimationDuration();
     // Get instance field reference: private System.Single _hoverLengthToAnimate
-    [[deprecated]] float& dyn__hoverLengthToAnimate();
+    [[deprecated("Use field access instead!")]] float& dyn__hoverLengthToAnimate();
     // Get instance field reference: private System.Single _hoverScale
-    [[deprecated]] float& dyn__hoverScale();
+    [[deprecated("Use field access instead!")]] float& dyn__hoverScale();
     // Get instance field reference: private UnityEngine.GameObject _hint
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__hint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__hint();
     // Get instance field reference: private UnityEngine.Vector3 _startScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startScale();
     // Get instance field reference: private System.Single _hoveringTimer
-    [[deprecated]] float& dyn__hoveringTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__hoveringTimer();
     // Get instance field reference: private UnityEngine.Coroutine _highlightRoutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__highlightRoutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__highlightRoutine();
     // Get instance field reference: private System.Boolean _isHighlighted
-    [[deprecated]] bool& dyn__isHighlighted();
+    [[deprecated("Use field access instead!")]] bool& dyn__isHighlighted();
+    // public System.Void .ctor()
+    // Offset: 0x1941C98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HighlightSpawnable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HighlightSpawnable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HighlightSpawnable*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1941A00
     void Awake();
@@ -155,25 +162,16 @@ namespace VROSC {
     // private System.Void ShowHint(System.Boolean show)
     // Offset: 0x1941A80
     void ShowHint(bool show);
-    // public System.Void .ctor()
-    // Offset: 0x1941C98
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HighlightSpawnable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HighlightSpawnable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HighlightSpawnable*, creationType>()));
-    }
   }; // VROSC.HighlightSpawnable
   #pragma pack(pop)
   static check_size<sizeof(HighlightSpawnable), 88 + sizeof(bool)> __VROSC_HighlightSpawnableSizeCheck;
   static_assert(sizeof(HighlightSpawnable) == 0x59);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::HighlightSpawnable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::HighlightSpawnable::Awake
 // Il2CppName: Awake
 template<>
@@ -225,7 +223,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::HighlightSpawnable*), "ShowHint", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{show});
   }
 };
-// Writing MetadataGetter for method: VROSC::HighlightSpawnable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

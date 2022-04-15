@@ -84,11 +84,11 @@ namespace Oculus::Platform::Samples::VrBoardGame {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.GameObject piece
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_piece();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_piece();
       // Get instance field reference: public System.Int32 pieceOwner
-      [[deprecated]] int& dyn_pieceOwner();
+      [[deprecated("Use field access instead!")]] int& dyn_pieceOwner();
       // Get instance field reference: public System.Int32 powerPieceOwner
-      [[deprecated]] int& dyn_powerPieceOwner();
+      [[deprecated("Use field access instead!")]] int& dyn_powerPieceOwner();
     }; // Oculus.Platform.Samples.VrBoardGame.GameBoard/Oculus.Platform.Samples.VrBoardGame.PositionInfo
     #pragma pack(pop)
     static check_size<sizeof(GameBoard::PositionInfo), 12 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_GameBoard_PositionInfoSizeCheck;
@@ -146,15 +146,22 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static public System.Int32 MAX_PLAYERS
     static void _set_MAX_PLAYERS(int value);
     // Get instance field reference: private UnityEngine.Color[] m_playerColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn_m_playerColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn_m_playerColors();
     // Get instance field reference: private UnityEngine.Color m_proposedMoveColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_proposedMoveColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_proposedMoveColor();
     // Get instance field reference: private System.Int32[] m_scores
-    [[deprecated]] ::ArrayW<int>& dyn_m_scores();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_scores();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.BoardPosition[] m_positions
-    [[deprecated]] ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::BoardPosition*>& dyn_m_positions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::BoardPosition*>& dyn_m_positions();
     // Get instance field reference: private readonly Oculus.Platform.Samples.VrBoardGame.GameBoard/Oculus.Platform.Samples.VrBoardGame.PositionInfo[,] m_pieces
-    [[deprecated]] ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::GameBoard::PositionInfo>& dyn_m_pieces();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Oculus::Platform::Samples::VrBoardGame::GameBoard::PositionInfo>& dyn_m_pieces();
+    // public System.Void .ctor()
+    // Offset: 0x92FE44
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GameBoard* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::GameBoard::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GameBoard*, creationType>()));
+    }
     // public System.Void Reset()
     // Offset: 0x92F130
     void Reset();
@@ -188,19 +195,6 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // private System.Void UpdateScores()
     // Offset: 0x92F87C
     void UpdateScores();
-    // public System.Void .ctor()
-    // Offset: 0x92FE44
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GameBoard* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::GameBoard::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GameBoard*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrBoardGame.GameBoard
   #pragma pack(pop)
   static check_size<sizeof(GameBoard), 64 + sizeof(::ArrayW<::Oculus::Platform::Samples::VrBoardGame::GameBoard::PositionInfo>)> __Oculus_Platform_Samples_VrBoardGame_GameBoardSizeCheck;
@@ -209,6 +203,10 @@ namespace Oculus::Platform::Samples::VrBoardGame {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::Oculus::Platform::Samples::VrBoardGame::GameBoard::PositionInfo, "Oculus.Platform.Samples.VrBoardGame", "GameBoard/PositionInfo");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GameBoard::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GameBoard::Reset
 // Il2CppName: Reset
 template<>
@@ -318,7 +316,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::GameBoard*), "UpdateScores", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GameBoard::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

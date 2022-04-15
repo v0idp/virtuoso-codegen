@@ -72,28 +72,25 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _frequencyScale
-    [[deprecated]] float& dyn__frequencyScale();
+    [[deprecated("Use field access instead!")]] float& dyn__frequencyScale();
     // Get instance field reference: private System.Single _amplitudeScale
-    [[deprecated]] float& dyn__amplitudeScale();
+    [[deprecated("Use field access instead!")]] float& dyn__amplitudeScale();
     // Get instance field reference: private VROSC.HandType _hand
-    [[deprecated]] ::VROSC::HandType& dyn__hand();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private System.Single _frequency
-    [[deprecated]] float& dyn__frequency();
+    [[deprecated("Use field access instead!")]] float& dyn__frequency();
     // Get instance field reference: private System.Single _amplitude
-    [[deprecated]] float& dyn__amplitude();
-    // public System.Void Setup(VROSC.HandType hand, System.Single frequency, System.Single amplitude)
-    // Offset: 0xA2F4A8
-    void Setup(::VROSC::HandType hand, float frequency, float amplitude);
+    [[deprecated("Use field access instead!")]] float& dyn__amplitude();
     // public System.Void .ctor()
     // Offset: 0xA2F5C0
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TutorialHapticBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialHapticBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TutorialHapticBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.HandType hand, System.Single frequency, System.Single amplitude)
+    // Offset: 0xA2F4A8
+    void Setup(::VROSC::HandType hand, float frequency, float amplitude);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0xA2F4CC
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -105,6 +102,10 @@ namespace VROSC {
   static_assert(sizeof(TutorialHapticBehaviour) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TutorialHapticBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TutorialHapticBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -116,10 +117,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialHapticBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hand, frequency, amplitude});
   }
 };
-// Writing MetadataGetter for method: VROSC::TutorialHapticBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TutorialHapticBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

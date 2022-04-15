@@ -64,15 +64,15 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly System.Boolean <ShowPlayButton>k__BackingField
-    [[deprecated]] bool& dyn_$ShowPlayButton$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ShowPlayButton$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <WaitingToStart>k__BackingField
-    [[deprecated]] bool& dyn_$WaitingToStart$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$WaitingToStart$k__BackingField();
     // Get instance field reference: private readonly System.Single <PlayBackProgress>k__BackingField
-    [[deprecated]] float& dyn_$PlayBackProgress$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$PlayBackProgress$k__BackingField();
     // Get instance field reference: private readonly System.Single <BeginningProgress>k__BackingField
-    [[deprecated]] float& dyn_$BeginningProgress$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$BeginningProgress$k__BackingField();
     // Get instance field reference: private readonly System.Single <Fade>k__BackingField
-    [[deprecated]] float& dyn_$Fade$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Fade$k__BackingField();
     // public System.Boolean get_ShowPlayButton()
     // Offset: 0xAE1D4C
     bool get_ShowPlayButton();

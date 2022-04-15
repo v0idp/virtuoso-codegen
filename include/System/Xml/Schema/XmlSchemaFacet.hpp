@@ -54,11 +54,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::FacetType) == 0x4);
     public:
     // Get instance field reference: private System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // Get instance field reference: private System.Boolean isFixed
-    [[deprecated]] bool& dyn_isFixed();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFixed();
     // Get instance field reference: private System.Xml.Schema.FacetType facetType
-    [[deprecated]] ::System::Xml::Schema::FacetType& dyn_facetType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::FacetType& dyn_facetType();
     // public System.String get_Value()
     // Offset: 0x110EE80
     ::StringW get_Value();
@@ -82,7 +82,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaAnnotated
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaFacet* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaFacet::.ctor");

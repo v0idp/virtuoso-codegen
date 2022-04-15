@@ -48,27 +48,29 @@ namespace DG::Tweening {
     static_assert(sizeof(::DG::Tweening::EaseFunction*) == 0x8);
     public:
     // Get instance field reference: public System.Single motionDelay
-    [[deprecated]] float& dyn_motionDelay();
+    [[deprecated("Use field access instead!")]] float& dyn_motionDelay();
     // Get instance field reference: public DG.Tweening.EaseFunction customEase
-    [[deprecated]] ::DG::Tweening::EaseFunction*& dyn_customEase();
-    // System.Single <StopMotion>b__0(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
-    // Offset: 0x18634B0
-    float $StopMotion$b__0(float time, float duration, float overshootOrAmplitude, float period);
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::EaseFunction*& dyn_customEase();
     // public System.Void .ctor()
     // Offset: 0x18634A8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EaseFactory::$$c__DisplayClass2_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::EaseFactory::$$c__DisplayClass2_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EaseFactory::$$c__DisplayClass2_0*, creationType>()));
     }
+    // System.Single <StopMotion>b__0(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
+    // Offset: 0x18634B0
+    float $StopMotion$b__0(float time, float duration, float overshootOrAmplitude, float period);
   }; // DG.Tweening.EaseFactory/DG.Tweening.<>c__DisplayClass2_0
   #pragma pack(pop)
   static check_size<sizeof(EaseFactory::$$c__DisplayClass2_0), 24 + sizeof(::DG::Tweening::EaseFunction*)> __DG_Tweening_EaseFactory_$$c__DisplayClass2_0SizeCheck;
   static_assert(sizeof(EaseFactory::$$c__DisplayClass2_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::EaseFactory::$$c__DisplayClass2_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::EaseFactory::$$c__DisplayClass2_0::$StopMotion$b__0
 // Il2CppName: <StopMotion>b__0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (DG::
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::EaseFactory::$$c__DisplayClass2_0*), "<StopMotion>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{time, duration, overshootOrAmplitude, period});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::EaseFactory::$$c__DisplayClass2_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

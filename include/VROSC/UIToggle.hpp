@@ -105,19 +105,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean <IsOn>k__BackingField
-    [[deprecated]] bool& dyn_$IsOn$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsOn$k__BackingField();
     // Get instance field reference: public System.Action`2<VROSC.InputDevice,System.Boolean> OnToggle
-    [[deprecated]] ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
     // Get instance field reference: private TMPro.TextMeshPro _tmpLabel
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__tmpLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__tmpLabel();
     // Get instance field reference: private System.Boolean _startInOnState
-    [[deprecated]] bool& dyn__startInOnState();
+    [[deprecated("Use field access instead!")]] bool& dyn__startInOnState();
     // Get instance field reference: private UnityEngine.GameObject _toggleObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__toggleObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__toggleObject();
     // Get instance field reference: protected VROSC.SimpleHaptic _hapticFeedBack
-    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated("Use field access instead!")]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private System.Boolean _isSet
-    [[deprecated]] bool& dyn__isSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSet();
     // public System.Boolean get_IsOn()
     // Offset: 0x19195D8
     bool get_IsOn();
@@ -150,11 +150,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIToggle* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIToggle::.ctor");

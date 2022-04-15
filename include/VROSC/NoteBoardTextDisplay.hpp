@@ -84,15 +84,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteController _controller
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__controller();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__controller();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.PlayAxis[] _displayAxises
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoard::PlayAxis>& dyn__displayAxises();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoard::PlayAxis>& dyn__displayAxises();
     // Get instance field reference: private System.Single _showDuration
-    [[deprecated]] float& dyn__showDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__showDuration();
     // Get instance field reference: private System.Boolean _colorize
-    [[deprecated]] bool& dyn__colorize();
+    [[deprecated("Use field access instead!")]] bool& dyn__colorize();
     // Get instance field reference: private VROSC.NoteBoardNoteText[] _noteTexts
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNoteText*>& dyn__noteTexts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNoteText*>& dyn__noteTexts();
+    // public System.Void .ctor()
+    // Offset: 0xC58848
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteBoardTextDisplay* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardTextDisplay::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardTextDisplay*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0xC5868C
     void OnEnable();
@@ -105,25 +112,16 @@ namespace VROSC {
     // private System.Void SetAllActive(System.Boolean active, VROSC.NoteBoard/VROSC.PlayAxis axis)
     // Offset: 0xC587AC
     void SetAllActive(bool active, ::VROSC::NoteBoard::PlayAxis axis);
-    // public System.Void .ctor()
-    // Offset: 0xC58848
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteBoardTextDisplay* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardTextDisplay::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardTextDisplay*, creationType>()));
-    }
   }; // VROSC.NoteBoardTextDisplay
   #pragma pack(pop)
   static check_size<sizeof(NoteBoardTextDisplay), 48 + sizeof(::ArrayW<::VROSC::NoteBoardNoteText*>)> __VROSC_NoteBoardTextDisplaySizeCheck;
   static_assert(sizeof(NoteBoardTextDisplay) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::NoteBoardTextDisplay::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteBoardTextDisplay::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -158,7 +156,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardTextDisplay*), "SetAllActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{active, axis});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteBoardTextDisplay::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

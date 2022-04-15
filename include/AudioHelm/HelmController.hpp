@@ -217,47 +217,54 @@ namespace AudioHelm {
     // Set static field: static public System.Int32 MAX_PARAMETERS
     static void _set_MAX_PARAMETERS(int value);
     // Get instance field reference: public System.Int32 channel
-    [[deprecated]] int& dyn_channel();
+    [[deprecated("Use field access instead!")]] int& dyn_channel();
     // Get instance field reference: protected System.Single synthParamValue0
-    [[deprecated]] float& dyn_synthParamValue0();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue0();
     // Get instance field reference: protected System.Single synthParamValue1
-    [[deprecated]] float& dyn_synthParamValue1();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue1();
     // Get instance field reference: protected System.Single synthParamValue2
-    [[deprecated]] float& dyn_synthParamValue2();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue2();
     // Get instance field reference: protected System.Single synthParamValue3
-    [[deprecated]] float& dyn_synthParamValue3();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue3();
     // Get instance field reference: protected System.Single synthParamValue4
-    [[deprecated]] float& dyn_synthParamValue4();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue4();
     // Get instance field reference: protected System.Single synthParamValue5
-    [[deprecated]] float& dyn_synthParamValue5();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue5();
     // Get instance field reference: protected System.Single synthParamValue6
-    [[deprecated]] float& dyn_synthParamValue6();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue6();
     // Get instance field reference: protected System.Single synthParamValue7
-    [[deprecated]] float& dyn_synthParamValue7();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue7();
     // Get instance field reference: protected System.Single synthParamValue8
-    [[deprecated]] float& dyn_synthParamValue8();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue8();
     // Get instance field reference: protected System.Single synthParamValue9
-    [[deprecated]] float& dyn_synthParamValue9();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue9();
     // Get instance field reference: protected System.Single synthParamValue10
-    [[deprecated]] float& dyn_synthParamValue10();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue10();
     // Get instance field reference: protected System.Single synthParamValue11
-    [[deprecated]] float& dyn_synthParamValue11();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue11();
     // Get instance field reference: protected System.Single synthParamValue12
-    [[deprecated]] float& dyn_synthParamValue12();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue12();
     // Get instance field reference: protected System.Single synthParamValue13
-    [[deprecated]] float& dyn_synthParamValue13();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue13();
     // Get instance field reference: protected System.Single synthParamValue14
-    [[deprecated]] float& dyn_synthParamValue14();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue14();
     // Get instance field reference: protected System.Single synthParamValue15
-    [[deprecated]] float& dyn_synthParamValue15();
+    [[deprecated("Use field access instead!")]] float& dyn_synthParamValue15();
     // Get instance field reference: private System.Single[] paramValues
-    [[deprecated]] ::ArrayW<float>& dyn_paramValues();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_paramValues();
     // Get instance field reference: public System.Collections.Generic.List`1<AudioHelm.HelmParameter> synthParameters
-    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::HelmParameter*>*& dyn_synthParameters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AudioHelm::HelmParameter*>*& dyn_synthParameters();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> pressedNotes
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, int>*& dyn_pressedNotes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, int>*& dyn_pressedNotes();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Single,System.Int32> pressedFrequencies
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<float, int>*& dyn_pressedFrequencies();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<float, int>*& dyn_pressedFrequencies();
+    // public System.Void .ctor()
+    // Offset: 0x193D00C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HelmController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HelmController*, creationType>()));
+    }
     // private System.Void OnDestroy()
     // Offset: 0x193BBA0
     void OnDestroy();
@@ -369,25 +376,16 @@ namespace AudioHelm {
     // private System.Void PopulateParamsArray()
     // Offset: 0x193C384
     void PopulateParamsArray();
-    // public System.Void .ctor()
-    // Offset: 0x193D00C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HelmController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HelmController*, creationType>()));
-    }
   }; // AudioHelm.HelmController
   #pragma pack(pop)
   static check_size<sizeof(HelmController), 120 + sizeof(::System::Collections::Generic::Dictionary_2<float, int>*)> __AudioHelm_HelmControllerSizeCheck;
   static_assert(sizeof(HelmController) == 0x80);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::HelmController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::HelmController::OnDestroy
 // Il2CppName: OnDestroy
 template<>
@@ -726,7 +724,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::HelmController*), "PopulateParamsArray", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::HelmController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

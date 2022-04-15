@@ -175,39 +175,39 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Int32 objectInfoId
-    [[deprecated]] int& dyn_objectInfoId();
+    [[deprecated("Use field access instead!")]] int& dyn_objectInfoId();
     // Get instance field reference: System.Object obj
-    [[deprecated]] ::Il2CppObject*& dyn_obj();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_obj();
     // Get instance field reference: System.Type objectType
-    [[deprecated]] ::System::Type*& dyn_objectType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_objectType();
     // Get instance field reference: System.Boolean isSi
-    [[deprecated]] bool& dyn_isSi();
+    [[deprecated("Use field access instead!")]] bool& dyn_isSi();
     // Get instance field reference: System.Boolean isNamed
-    [[deprecated]] bool& dyn_isNamed();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNamed();
     // Get instance field reference: System.Boolean isTyped
-    [[deprecated]] bool& dyn_isTyped();
+    [[deprecated("Use field access instead!")]] bool& dyn_isTyped();
     // Get instance field reference: System.Boolean isArray
-    [[deprecated]] bool& dyn_isArray();
+    [[deprecated("Use field access instead!")]] bool& dyn_isArray();
     // Get instance field reference: System.Runtime.Serialization.SerializationInfo si
-    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn_si();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationInfo*& dyn_si();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.SerObjectInfoCache cache
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache*& dyn_cache();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoCache*& dyn_cache();
     // Get instance field reference: System.Object[] memberData
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_memberData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_memberData();
     // Get instance field reference: System.Runtime.Serialization.ISerializationSurrogate serializationSurrogate
-    [[deprecated]] ::System::Runtime::Serialization::ISerializationSurrogate*& dyn_serializationSurrogate();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ISerializationSurrogate*& dyn_serializationSurrogate();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext context
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContext& dyn_context();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit*& dyn_serObjectInfoInit();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit*& dyn_serObjectInfoInit();
     // Get instance field reference: System.Int64 objectId
-    [[deprecated]] int64_t& dyn_objectId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_objectId();
     // Get instance field reference: System.Int64 assemId
-    [[deprecated]] int64_t& dyn_assemId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_assemId();
     // Get instance field reference: private System.String binderTypeName
-    [[deprecated]] ::StringW& dyn_binderTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_binderTypeName();
     // Get instance field reference: private System.String binderAssemblyString
-    [[deprecated]] ::StringW& dyn_binderAssemblyString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_binderAssemblyString();
     // System.Void ObjectEnd()
     // Offset: 0x121360C
     void ObjectEnd();

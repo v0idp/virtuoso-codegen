@@ -47,6 +47,13 @@ namespace Oculus::Platform {
     public:
     // Nested type: ::Oculus::Platform::WindowsPlatform::UnityLogDelegate
     class UnityLogDelegate;
+    // public System.Void .ctor()
+    // Offset: 0x17210DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WindowsPlatform* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::WindowsPlatform::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WindowsPlatform*, creationType>()));
+    }
     // private System.Void CPPLogCallback(System.IntPtr tag, System.IntPtr message)
     // Offset: 0x1720D9C
     void CPPLogCallback(::System::IntPtr tag, ::System::IntPtr message);
@@ -59,19 +66,14 @@ namespace Oculus::Platform {
     // public Oculus.Platform.Request`1<Oculus.Platform.Models.PlatformInitialize> AsyncInitialize(System.String appId)
     // Offset: 0x1720FAC
     ::Oculus::Platform::Request_1<::Oculus::Platform::Models::PlatformInitialize*>* AsyncInitialize(::StringW appId);
-    // public System.Void .ctor()
-    // Offset: 0x17210DC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WindowsPlatform* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::WindowsPlatform::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WindowsPlatform*, creationType>()));
-    }
   }; // Oculus.Platform.WindowsPlatform
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::WindowsPlatform::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::WindowsPlatform::CPPLogCallback
 // Il2CppName: CPPLogCallback
 template<>
@@ -108,7 +110,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Oculus::P
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::WindowsPlatform*), "AsyncInitialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{appId});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::WindowsPlatform::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

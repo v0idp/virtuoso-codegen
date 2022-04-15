@@ -66,17 +66,24 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: private VROSC.ProceduralAdjustableMesh _colorDisplay
-    [[deprecated]] ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
+    [[deprecated("Use field access instead!")]] ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
     // Get instance field reference: private UnityEngine.GameObject _selected
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__selected();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__selected();
     // public UnityEngine.Color get_Color()
     // Offset: 0xA34F50
     ::UnityEngine::Color get_Color();
     // private System.Void set_Color(UnityEngine.Color value)
     // Offset: 0xA34F44
     void set_Color(::UnityEngine::Color value);
+    // public System.Void .ctor()
+    // Offset: 0xA35020
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIColorPickerSwatch* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPickerSwatch::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIColorPickerSwatch*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xA34F5C
     void Awake();
@@ -86,19 +93,6 @@ namespace VROSC {
     // public System.Void SetHovering(System.Boolean hovering)
     // Offset: 0xA34F7C
     void SetHovering(bool hovering);
-    // public System.Void .ctor()
-    // Offset: 0xA35020
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIColorPickerSwatch* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPickerSwatch::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIColorPickerSwatch*, creationType>()));
-    }
   }; // VROSC.UIColorPickerSwatch
   #pragma pack(pop)
   static check_size<sizeof(UIColorPickerSwatch), 48 + sizeof(::UnityEngine::GameObject*)> __VROSC_UIColorPickerSwatchSizeCheck;
@@ -122,6 +116,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIColorPickerSwatch*), "set_Color", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::UIColorPickerSwatch::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIColorPickerSwatch::Awake
 // Il2CppName: Awake
 template<>
@@ -148,7 +146,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIColorPickerSwatch*), "SetHovering", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hovering});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIColorPickerSwatch::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

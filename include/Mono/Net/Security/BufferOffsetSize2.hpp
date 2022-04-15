@@ -44,7 +44,7 @@ namespace Mono::Net::Security {
       return InitialSize;
     }
     // Get instance field reference: public readonly System.Int32 InitialSize
-    [[deprecated]] int& dyn_InitialSize();
+    [[deprecated("Use field access instead!")]] int& dyn_InitialSize();
     // public System.Void .ctor(System.Int32 size)
     // Offset: 0x10DB258
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

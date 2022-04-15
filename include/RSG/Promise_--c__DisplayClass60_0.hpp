@@ -56,25 +56,27 @@ namespace RSG {
       return chain;
     }
     // Get instance field reference: public System.Func`1<System.Collections.Generic.IEnumerable`1<System.Func`1<RSG.IPromise>>> chain
-    [[deprecated]] ::System::Func_1<::System::Collections::Generic::IEnumerable_1<::System::Func_1<::RSG::IPromise*>*>*>*& dyn_chain();
-    // RSG.IPromise <ThenSequence>b__0()
-    // Offset: 0x8CEDFC
-    ::RSG::IPromise* $ThenSequence$b__0();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::System::Collections::Generic::IEnumerable_1<::System::Func_1<::RSG::IPromise*>*>*>*& dyn_chain();
     // public System.Void .ctor()
     // Offset: 0x8CEDF4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Promise::$$c__DisplayClass60_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::$$c__DisplayClass60_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Promise::$$c__DisplayClass60_0*, creationType>()));
     }
+    // RSG.IPromise <ThenSequence>b__0()
+    // Offset: 0x8CEDFC
+    ::RSG::IPromise* $ThenSequence$b__0();
   }; // RSG.Promise/RSG.<>c__DisplayClass60_0
   #pragma pack(pop)
   static check_size<sizeof(Promise::$$c__DisplayClass60_0), 16 + sizeof(::System::Func_1<::System::Collections::Generic::IEnumerable_1<::System::Func_1<::RSG::IPromise*>*>*>*)> __RSG_Promise_$$c__DisplayClass60_0SizeCheck;
   static_assert(sizeof(Promise::$$c__DisplayClass60_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass60_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass60_0::$ThenSequence$b__0
 // Il2CppName: <ThenSequence>b__0
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::RSG::IPro
     return ::il2cpp_utils::FindMethod(classof(RSG::Promise::$$c__DisplayClass60_0*), "<ThenSequence>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass60_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

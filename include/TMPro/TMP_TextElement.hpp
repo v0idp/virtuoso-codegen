@@ -81,17 +81,17 @@ namespace TMPro {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: protected TMPro.TextElementType m_ElementType
-    [[deprecated]] ::TMPro::TextElementType& dyn_m_ElementType();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextElementType& dyn_m_ElementType();
     // Get instance field reference: System.UInt32 m_Unicode
-    [[deprecated]] uint& dyn_m_Unicode();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_Unicode();
     // Get instance field reference: TMPro.TMP_Asset m_TextAsset
-    [[deprecated]] ::TMPro::TMP_Asset*& dyn_m_TextAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Asset*& dyn_m_TextAsset();
     // Get instance field reference: UnityEngine.TextCore.Glyph m_Glyph
-    [[deprecated]] ::UnityEngine::TextCore::Glyph*& dyn_m_Glyph();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::Glyph*& dyn_m_Glyph();
     // Get instance field reference: System.UInt32 m_GlyphIndex
-    [[deprecated]] uint& dyn_m_GlyphIndex();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_GlyphIndex();
     // Get instance field reference: System.Single m_Scale
-    [[deprecated]] float& dyn_m_Scale();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Scale();
     // public TMPro.TextElementType get_elementType()
     // Offset: 0xD0FCB0
     ::TMPro::TextElementType get_elementType();
@@ -127,8 +127,6 @@ namespace TMPro {
     void set_scale(float value);
     // public System.Void .ctor()
     // Offset: 0xD0FD08
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_TextElement* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextElement::.ctor");

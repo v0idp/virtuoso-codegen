@@ -78,13 +78,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::WaitForSeconds*) == 0x8);
     public:
     // Get instance field reference: protected System.Single _delay
-    [[deprecated]] float& dyn__delay();
+    [[deprecated("Use field access instead!")]] float& dyn__delay();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveBehaviour _behaviour
-    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveBehaviour*& dyn__behaviour();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::AudioReactiveBehaviour*& dyn__behaviour();
     // Get instance field reference: private UnityEngine.Coroutine _coroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__coroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__coroutine();
     // Get instance field reference: protected UnityEngine.WaitForSeconds _waitDelay
-    [[deprecated]] ::UnityEngine::WaitForSeconds*& dyn__waitDelay();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::WaitForSeconds*& dyn__waitDelay();
     // private System.Collections.IEnumerator Reaction()
     // Offset: 0x8DF3CC
     ::System::Collections::IEnumerator* Reaction();
@@ -95,7 +95,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x8DF438
     // Implemented from: VROSC.AudioReactive.ReactiveEffect
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CoroutineDrivenEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::CoroutineDrivenEffect::.ctor");

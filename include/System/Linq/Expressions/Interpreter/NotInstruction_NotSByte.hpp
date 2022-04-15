@@ -37,7 +37,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Implemented from: System.Linq.Expressions.Interpreter.NotInstruction
     // Base method: System.Void NotInstruction::.ctor()
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NotInstruction::NotSByte* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::NotInstruction::NotSByte::.ctor");

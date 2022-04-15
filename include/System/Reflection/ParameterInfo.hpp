@@ -126,19 +126,19 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::Runtime::InteropServices::_ParameterInfo*>(this);
     }
     // Get instance field reference: protected System.Type ClassImpl
-    [[deprecated]] ::System::Type*& dyn_ClassImpl();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_ClassImpl();
     // Get instance field reference: protected System.Object DefaultValueImpl
-    [[deprecated]] ::Il2CppObject*& dyn_DefaultValueImpl();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_DefaultValueImpl();
     // Get instance field reference: protected System.Reflection.MemberInfo MemberImpl
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn_MemberImpl();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn_MemberImpl();
     // Get instance field reference: protected System.String NameImpl
-    [[deprecated]] ::StringW& dyn_NameImpl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NameImpl();
     // Get instance field reference: protected System.Int32 PositionImpl
-    [[deprecated]] int& dyn_PositionImpl();
+    [[deprecated("Use field access instead!")]] int& dyn_PositionImpl();
     // Get instance field reference: protected System.Reflection.ParameterAttributes AttrsImpl
-    [[deprecated]] ::System::Reflection::ParameterAttributes& dyn_AttrsImpl();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::ParameterAttributes& dyn_AttrsImpl();
     // Get instance field reference: System.Runtime.InteropServices.MarshalAsAttribute marshalAs
-    [[deprecated]] ::System::Runtime::InteropServices::MarshalAsAttribute*& dyn_marshalAs();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::MarshalAsAttribute*& dyn_marshalAs();
     // public System.Type get_ParameterType()
     // Offset: 0x14C6BC8
     ::System::Type* get_ParameterType();

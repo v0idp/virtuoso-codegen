@@ -169,31 +169,31 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: readonly System.Data.IndexField[] _indexFields
-    [[deprecated]] ::ArrayW<::System::Data::IndexField>& dyn__indexFields();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::IndexField>& dyn__indexFields();
     // Get instance field reference: private readonly System.Comparison`1<System.Data.DataRow> _comparison
-    [[deprecated]] ::System::Comparison_1<::System::Data::DataRow*>*& dyn__comparison();
+    [[deprecated("Use field access instead!")]] ::System::Comparison_1<::System::Data::DataRow*>*& dyn__comparison();
     // Get instance field reference: private readonly System.Data.DataViewRowState _recordStates
-    [[deprecated]] ::System::Data::DataViewRowState& dyn__recordStates();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewRowState& dyn__recordStates();
     // Get instance field reference: private System.WeakReference _rowFilter
-    [[deprecated]] ::System::WeakReference*& dyn__rowFilter();
+    [[deprecated("Use field access instead!")]] ::System::WeakReference*& dyn__rowFilter();
     // Get instance field reference: private System.Data.Index/System.Data.IndexTree _records
-    [[deprecated]] ::System::Data::Index::IndexTree*& dyn__records();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index::IndexTree*& dyn__records();
     // Get instance field reference: private System.Int32 _recordCount
-    [[deprecated]] int& dyn__recordCount();
+    [[deprecated("Use field access instead!")]] int& dyn__recordCount();
     // Get instance field reference: private System.Int32 _refCount
-    [[deprecated]] int& dyn__refCount();
+    [[deprecated("Use field access instead!")]] int& dyn__refCount();
     // Get instance field reference: private System.Data.Listeners`1<System.Data.DataViewListener> _listeners
-    [[deprecated]] ::System::Data::Listeners_1<::System::Data::DataViewListener*>*& dyn__listeners();
+    [[deprecated("Use field access instead!")]] ::System::Data::Listeners_1<::System::Data::DataViewListener*>*& dyn__listeners();
     // Get instance field reference: private System.Boolean _suspendEvents
-    [[deprecated]] bool& dyn__suspendEvents();
+    [[deprecated("Use field access instead!")]] bool& dyn__suspendEvents();
     // Get instance field reference: private readonly System.Boolean _isSharable
-    [[deprecated]] bool& dyn__isSharable();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSharable();
     // Get instance field reference: private readonly System.Boolean _hasRemoteAggregate
-    [[deprecated]] bool& dyn__hasRemoteAggregate();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasRemoteAggregate();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // System.Boolean get_HasRemoteAggregate()
     // Offset: 0x13B01D4
     bool get_HasRemoteAggregate();

@@ -47,9 +47,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::SystemVoipStatus) == 0x4);
     public:
     // Get instance field reference: public readonly Oculus.Platform.VoipMuteState MicrophoneMuted
-    [[deprecated]] ::Oculus::Platform::VoipMuteState& dyn_MicrophoneMuted();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::VoipMuteState& dyn_MicrophoneMuted();
     // Get instance field reference: public readonly Oculus.Platform.SystemVoipStatus Status
-    [[deprecated]] ::Oculus::Platform::SystemVoipStatus& dyn_Status();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::SystemVoipStatus& dyn_Status();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x171BE40
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -56,7 +56,7 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 ASTCHeaderSize
     static void _set_ASTCHeaderSize(int value);
     // Get instance field reference: public UnityEngine.Texture2D texture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_texture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_texture();
     // public System.Void .ctor(System.UInt64 _assetId, System.IntPtr asset)
     // Offset: 0xF88ECC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

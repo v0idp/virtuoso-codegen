@@ -83,11 +83,11 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static System.String friendlyName
     static void _set_friendlyName(::StringW value);
     // Get instance field reference: private System.Byte[] _subjectKeyIdentifier
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__subjectKeyIdentifier();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__subjectKeyIdentifier();
     // Get instance field reference: private System.String _ski
-    [[deprecated]] ::StringW& dyn__ski();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__ski();
     // Get instance field reference: private System.Security.Cryptography.AsnDecodeStatus _status
-    [[deprecated]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
     // public System.String get_SubjectKeyIdentifier()
     // Offset: 0x9F2C34
     ::StringW get_SubjectKeyIdentifier();
@@ -146,7 +146,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // Implemented from: System.Security.Cryptography.X509Certificates.X509Extension
     // Base method: System.Void X509Extension::.ctor()
     // Base method: System.Void AsnEncodedData::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509SubjectKeyIdentifierExtension* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierExtension::.ctor");

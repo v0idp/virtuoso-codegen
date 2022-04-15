@@ -56,9 +56,9 @@ namespace System::Text::RegularExpressions {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: System.Text.RegularExpressions.CaptureCollection _rcc
-    [[deprecated]] ::System::Text::RegularExpressions::CaptureCollection*& dyn__rcc();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::CaptureCollection*& dyn__rcc();
     // Get instance field reference: System.Int32 _curindex
-    [[deprecated]] int& dyn__curindex();
+    [[deprecated("Use field access instead!")]] int& dyn__curindex();
     // public System.Object get_Current()
     // Offset: 0x10E0C3C
     ::Il2CppObject* get_Current();

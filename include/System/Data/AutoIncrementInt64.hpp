@@ -67,11 +67,11 @@ namespace System::Data {
     // Deleting conversion operator: operator bool
     constexpr operator bool() const noexcept = delete;
     // Get instance field reference: private System.Int64 _current
-    [[deprecated]] int64_t& dyn__current();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__current();
     // Get instance field reference: private System.Int64 _seed
-    [[deprecated]] int64_t& dyn__seed();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__seed();
     // Get instance field reference: private System.Int64 _step
-    [[deprecated]] int64_t& dyn__step();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__step();
     // private System.Boolean BoundaryCheck(System.Numerics.BigInteger value)
     // Offset: 0x14A36D8
     bool BoundaryCheck(::System::Numerics::BigInteger value);
@@ -114,7 +114,6 @@ namespace System::Data {
     // Offset: 0x14A3A74
     // Implemented from: System.Data.AutoIncrementValue
     // Base method: System.Void AutoIncrementValue::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AutoIncrementInt64* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::AutoIncrementInt64::.ctor");

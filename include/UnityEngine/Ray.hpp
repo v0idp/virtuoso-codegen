@@ -61,9 +61,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IFormattable*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector3 m_Origin
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Origin();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Origin();
     // Get instance field reference: private UnityEngine.Vector3 m_Direction
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Direction();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Direction();
     // public UnityEngine.Vector3 get_origin()
     // Offset: 0xBC207C
     ::UnityEngine::Vector3 get_origin();

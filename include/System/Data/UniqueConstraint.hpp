@@ -87,15 +87,15 @@ namespace System::Data {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: private System.Data.DataKey _key
-    [[deprecated]] ::System::Data::DataKey& dyn__key();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataKey& dyn__key();
     // Get instance field reference: private System.Data.Index _constraintIndex
-    [[deprecated]] ::System::Data::Index*& dyn__constraintIndex();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__constraintIndex();
     // Get instance field reference: System.Boolean _bPrimaryKey
-    [[deprecated]] bool& dyn__bPrimaryKey();
+    [[deprecated("Use field access instead!")]] bool& dyn__bPrimaryKey();
     // Get instance field reference: System.String _constraintName
-    [[deprecated]] ::StringW& dyn__constraintName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__constraintName();
     // Get instance field reference: System.String[] _columnNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__columnNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__columnNames();
     // System.String[] get_ColumnNames()
     // Offset: 0x11BD9A0
     ::ArrayW<::StringW> get_ColumnNames();

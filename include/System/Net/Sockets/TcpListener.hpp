@@ -78,13 +78,13 @@ namespace System::Net::Sockets {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Net.IPEndPoint m_ServerSocketEP
-    [[deprecated]] ::System::Net::IPEndPoint*& dyn_m_ServerSocketEP();
+    [[deprecated("Use field access instead!")]] ::System::Net::IPEndPoint*& dyn_m_ServerSocketEP();
     // Get instance field reference: private System.Net.Sockets.Socket m_ServerSocket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_m_ServerSocket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_m_ServerSocket();
     // Get instance field reference: private System.Boolean m_Active
-    [[deprecated]] bool& dyn_m_Active();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Active();
     // Get instance field reference: private System.Boolean m_ExclusiveAddressUse
-    [[deprecated]] bool& dyn_m_ExclusiveAddressUse();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ExclusiveAddressUse();
     // public System.Net.EndPoint get_LocalEndpoint()
     // Offset: 0xDA8514
     ::System::Net::EndPoint* get_LocalEndpoint();

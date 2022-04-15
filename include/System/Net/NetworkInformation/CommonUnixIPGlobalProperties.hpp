@@ -42,7 +42,6 @@ namespace System::Net::NetworkInformation {
     // Offset: 0x10E2860
     // Implemented from: System.Net.NetworkInformation.IPGlobalProperties
     // Base method: System.Void IPGlobalProperties::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CommonUnixIPGlobalProperties* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::NetworkInformation::CommonUnixIPGlobalProperties::.ctor");

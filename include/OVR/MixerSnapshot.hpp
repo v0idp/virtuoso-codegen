@@ -48,13 +48,11 @@ namespace OVR {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.Audio.AudioMixerSnapshot snapshot
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_snapshot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_snapshot();
     // Get instance field reference: public System.Single transitionTime
-    [[deprecated]] float& dyn_transitionTime();
+    [[deprecated("Use field access instead!")]] float& dyn_transitionTime();
     // public System.Void .ctor()
     // Offset: 0x18A4630
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MixerSnapshot* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::MixerSnapshot::.ctor");

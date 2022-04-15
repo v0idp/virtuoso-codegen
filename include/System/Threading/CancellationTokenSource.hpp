@@ -166,21 +166,21 @@ namespace System::Threading {
     // Set static field: static private readonly System.Threading.TimerCallback s_timerCallback
     static void _set_s_timerCallback(::System::Threading::TimerCallback* value);
     // Get instance field reference: private System.Threading.ManualResetEvent m_kernelEvent
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_m_kernelEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_m_kernelEvent();
     // Get instance field reference: private System.Threading.SparselyPopulatedArray`1<System.Threading.CancellationCallbackInfo>[] m_registeredCallbacksLists
-    [[deprecated]] ::ArrayW<::System::Threading::SparselyPopulatedArray_1<::System::Threading::CancellationCallbackInfo*>*>& dyn_m_registeredCallbacksLists();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Threading::SparselyPopulatedArray_1<::System::Threading::CancellationCallbackInfo*>*>& dyn_m_registeredCallbacksLists();
     // Get instance field reference: private System.Int32 m_state
-    [[deprecated]] int& dyn_m_state();
+    [[deprecated("Use field access instead!")]] int& dyn_m_state();
     // Get instance field reference: private System.Int32 m_threadIDExecutingCallbacks
-    [[deprecated]] int& dyn_m_threadIDExecutingCallbacks();
+    [[deprecated("Use field access instead!")]] int& dyn_m_threadIDExecutingCallbacks();
     // Get instance field reference: private System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // Get instance field reference: private System.Threading.CancellationTokenRegistration[] m_linkingRegistrations
-    [[deprecated]] ::ArrayW<::System::Threading::CancellationTokenRegistration>& dyn_m_linkingRegistrations();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Threading::CancellationTokenRegistration>& dyn_m_linkingRegistrations();
     // Get instance field reference: private System.Threading.CancellationCallbackInfo m_executingCallback
-    [[deprecated]] ::System::Threading::CancellationCallbackInfo*& dyn_m_executingCallback();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationCallbackInfo*& dyn_m_executingCallback();
     // Get instance field reference: private System.Threading.Timer m_timer
-    [[deprecated]] ::System::Threading::Timer*& dyn_m_timer();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Timer*& dyn_m_timer();
     // public System.Boolean get_IsCancellationRequested()
     // Offset: 0xFF71F0
     bool get_IsCancellationRequested();

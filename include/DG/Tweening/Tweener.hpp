@@ -72,9 +72,9 @@ namespace DG::Tweening {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Boolean hasManuallySetStartValue
-    [[deprecated]] bool& dyn_hasManuallySetStartValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasManuallySetStartValue();
     // Get instance field reference: System.Boolean isFromAllowed
-    [[deprecated]] bool& dyn_isFromAllowed();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFromAllowed();
     // public DG.Tweening.Tweener ChangeStartValue(System.Object newStartValue, System.Single newDuration)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::DG::Tweening::Tweener* ChangeStartValue(::Il2CppObject* newStartValue, float newDuration);
@@ -175,7 +175,6 @@ namespace DG::Tweening {
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Void Tween::.ctor()
     // Base method: System.Void ABSSequentiable::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Tweener* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Tweener::.ctor");

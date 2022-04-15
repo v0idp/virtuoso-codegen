@@ -65,6 +65,13 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x195DA8C
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x195DAEC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationDataController::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationDataController::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationDataController::$$c*, creationType>()));
+    }
     // System.Int32 <SaveAudioPreview>b__37_0(VROSC.LoopStationTrack x)
     // Offset: 0x195DAF4
     int $SaveAudioPreview$b__37_0(::VROSC::LoopStationTrack* x);
@@ -77,15 +84,6 @@ namespace VROSC {
     // System.String <GetLaunchpadIds>b__97_0(VROSC.LoopStationLaunchpadData t)
     // Offset: 0x195DB3C
     ::StringW $GetLaunchpadIds$b__97_0(::VROSC::LoopStationLaunchpadData* t);
-    // public System.Void .ctor()
-    // Offset: 0x195DAEC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationDataController::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationDataController::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationDataController::$$c*, creationType>()));
-    }
   }; // VROSC.LoopStationDataController/VROSC.<>c
   #pragma pack(pop)
 }
@@ -98,6 +96,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::$SaveAudioPreview$b__37_0
 // Il2CppName: <SaveAudioPreview>b__37_0
 template<>
@@ -134,7 +136,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c*), "<GetLaunchpadIds>b__97_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

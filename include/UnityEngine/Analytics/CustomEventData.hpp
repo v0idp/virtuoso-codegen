@@ -58,7 +58,7 @@ namespace UnityEngine::Analytics {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public System.Void .ctor(System.String name)
     // Offset: 0x1901334
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

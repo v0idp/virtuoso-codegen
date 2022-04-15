@@ -100,13 +100,13 @@ namespace System::Threading::Tasks {
     // Set static field: static private System.EventHandler s_adUnloadEventHandler
     static void _set_s_adUnloadEventHandler(::System::EventHandler* value);
     // Get instance field reference: private readonly System.Threading.Tasks.Task m_task
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_task();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_task();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Runtime.ExceptionServices.ExceptionDispatchInfo> m_faultExceptions
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Runtime::ExceptionServices::ExceptionDispatchInfo*>*& dyn_m_faultExceptions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Runtime::ExceptionServices::ExceptionDispatchInfo*>*& dyn_m_faultExceptions();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo m_cancellationException
-    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_m_cancellationException();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_m_cancellationException();
     // Get instance field reference: private System.Boolean m_isHandled
-    [[deprecated]] bool& dyn_m_isHandled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isHandled();
     // System.Boolean get_ContainsFaultList()
     // Offset: 0x126EDCC
     bool get_ContainsFaultList();

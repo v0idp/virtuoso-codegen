@@ -39,9 +39,9 @@ namespace Newtonsoft::Json::Linq {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: readonly System.Int32 LineNumber
-    [[deprecated]] int& dyn_LineNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_LineNumber();
     // Get instance field reference: readonly System.Int32 LinePosition
-    [[deprecated]] int& dyn_LinePosition();
+    [[deprecated("Use field access instead!")]] int& dyn_LinePosition();
     // public System.Void .ctor(System.Int32 lineNumber, System.Int32 linePosition)
     // Offset: 0x159F490
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

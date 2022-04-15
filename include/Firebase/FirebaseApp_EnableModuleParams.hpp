@@ -48,11 +48,11 @@ namespace Firebase {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String <CppModuleName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$CppModuleName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$CppModuleName$k__BackingField();
     // Get instance field reference: private System.String <CSharpClassName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$CSharpClassName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$CSharpClassName$k__BackingField();
     // Get instance field reference: private System.Boolean <AlwaysEnable>k__BackingField
-    [[deprecated]] bool& dyn_$AlwaysEnable$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$AlwaysEnable$k__BackingField();
     // public System.String get_CppModuleName()
     // Offset: 0x188BB7C
     ::StringW get_CppModuleName();

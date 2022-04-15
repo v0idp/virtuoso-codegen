@@ -60,7 +60,7 @@ namespace Newtonsoft::Json::Converters {
     // Deleting conversion operator: operator ::System::Xml::Linq::XObject*
     constexpr operator ::System::Xml::Linq::XObject*() const noexcept = delete;
     // Get instance field reference: private readonly System.Xml.Linq.XDeclaration <Declaration>k__BackingField
-    [[deprecated]] ::System::Xml::Linq::XDeclaration*& dyn_$Declaration$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XDeclaration*& dyn_$Declaration$k__BackingField();
     // System.Xml.Linq.XDeclaration get_Declaration()
     // Offset: 0x159129C
     ::System::Xml::Linq::XDeclaration* get_Declaration();

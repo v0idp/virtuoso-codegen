@@ -73,7 +73,7 @@ namespace System::Security::Cryptography {
     // Set static field: static public System.Security.Cryptography.CipherMode CTS
     static void _set_CTS(::System::Security::Cryptography::CipherMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Security.Cryptography.CipherMode
   #pragma pack(pop)
   static check_size<sizeof(CipherMode), 0 + sizeof(int)> __System_Security_Cryptography_CipherModeSizeCheck;

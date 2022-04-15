@@ -100,15 +100,15 @@ namespace UnityEngine::EventSystems {
     // Set static field: static protected System.Int32 kNoEventMaskSet
     static void _set_kNoEventMaskSet(int value);
     // Get instance field reference: protected UnityEngine.Camera m_EventCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_m_EventCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_m_EventCamera();
     // Get instance field reference: protected UnityEngine.LayerMask m_EventMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_EventMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_EventMask();
     // Get instance field reference: protected System.Int32 m_MaxRayIntersections
-    [[deprecated]] int& dyn_m_MaxRayIntersections();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MaxRayIntersections();
     // Get instance field reference: protected System.Int32 m_LastMaxRayIntersections
-    [[deprecated]] int& dyn_m_LastMaxRayIntersections();
+    [[deprecated("Use field access instead!")]] int& dyn_m_LastMaxRayIntersections();
     // Get instance field reference: private UnityEngine.RaycastHit[] m_Hits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_m_Hits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_m_Hits();
     // public System.Int32 get_depth()
     // Offset: 0x1427E80
     int get_depth();
@@ -140,11 +140,6 @@ namespace UnityEngine::EventSystems {
     // Implemented from: UnityEngine.EventSystems.BaseRaycaster
     // Base method: System.Void BaseRaycaster::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PhysicsRaycaster* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::PhysicsRaycaster::.ctor");

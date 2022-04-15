@@ -88,17 +88,17 @@ namespace UnityOSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityOSC.PacketReceivedEventHandler PacketReceivedEvent
-    [[deprecated]] ::UnityOSC::PacketReceivedEventHandler*& dyn_PacketReceivedEvent();
+    [[deprecated("Use field access instead!")]] ::UnityOSC::PacketReceivedEventHandler*& dyn_PacketReceivedEvent();
     // Get instance field reference: private System.Net.Sockets.UdpClient _udpClient
-    [[deprecated]] ::System::Net::Sockets::UdpClient*& dyn__udpClient();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::UdpClient*& dyn__udpClient();
     // Get instance field reference: private System.Int32 _localPort
-    [[deprecated]] int& dyn__localPort();
+    [[deprecated("Use field access instead!")]] int& dyn__localPort();
     // Get instance field reference: private System.Threading.Thread _receiverThread
-    [[deprecated]] ::System::Threading::Thread*& dyn__receiverThread();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Thread*& dyn__receiverThread();
     // Get instance field reference: private UnityOSC.OSCPacket _lastReceivedPacket
-    [[deprecated]] ::UnityOSC::OSCPacket*& dyn__lastReceivedPacket();
+    [[deprecated("Use field access instead!")]] ::UnityOSC::OSCPacket*& dyn__lastReceivedPacket();
     // Get instance field reference: private System.Int32 _sleepMilliseconds
-    [[deprecated]] int& dyn__sleepMilliseconds();
+    [[deprecated("Use field access instead!")]] int& dyn__sleepMilliseconds();
     // public System.Net.Sockets.UdpClient get_UDPClient()
     // Offset: 0xC5E3B4
     ::System::Net::Sockets::UdpClient* get_UDPClient();

@@ -53,11 +53,11 @@ namespace System::Reflection {
     static_assert(sizeof(uint) == 0x4);
     public:
     // Get instance field reference: System.Reflection.Assembly assembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_assembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_assembly();
     // Get instance field reference: System.IntPtr data
-    [[deprecated]] ::System::IntPtr& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_data();
     // Get instance field reference: System.UInt32 data_length
-    [[deprecated]] uint& dyn_data_length();
+    [[deprecated("Use field access instead!")]] uint& dyn_data_length();
     // public System.Void .ctor()
     // Offset: 0x13A9D64
     // Implemented from: System.Object

@@ -50,11 +50,11 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single m_flCenterX
-    [[deprecated]] float& dyn_m_flCenterX();
+    [[deprecated("Use field access instead!")]] float& dyn_m_flCenterX();
     // Get instance field reference: public System.Single m_flCenterY
-    [[deprecated]] float& dyn_m_flCenterY();
+    [[deprecated("Use field access instead!")]] float& dyn_m_flCenterY();
     // Get instance field reference: public System.Single m_flRadius
-    [[deprecated]] float& dyn_m_flRadius();
+    [[deprecated("Use field access instead!")]] float& dyn_m_flRadius();
   }; // OVR.OpenVR.IntersectionMaskCircle_t
   #pragma pack(pop)
   static check_size<sizeof(IntersectionMaskCircle_t), 8 + sizeof(float)> __OVR_OpenVR_IntersectionMaskCircle_tSizeCheck;

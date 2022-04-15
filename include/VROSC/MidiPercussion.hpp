@@ -336,7 +336,7 @@ namespace VROSC {
     // Set static field: static public VROSC.MidiPercussion OpenTriangle
     static void _set_OpenTriangle(::VROSC::MidiPercussion value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.MidiPercussion
   #pragma pack(pop)
   static check_size<sizeof(MidiPercussion), 0 + sizeof(int)> __VROSC_MidiPercussionSizeCheck;

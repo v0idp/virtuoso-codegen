@@ -48,18 +48,16 @@ namespace System::Xml::Serialization {
     // static private System.Void .cctor()
     // Offset: 0xC21578
     static void _cctor();
-    // System.Int32 <ImportClassMapping>b__28_0(System.Xml.Serialization.XmlReflectionMember m1, System.Xml.Serialization.XmlReflectionMember m2)
-    // Offset: 0xC215E0
-    int $ImportClassMapping$b__28_0(::System::Xml::Serialization::XmlReflectionMember* m1, ::System::Xml::Serialization::XmlReflectionMember* m2);
     // public System.Void .ctor()
     // Offset: 0xC215D8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlReflectionImporter::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlReflectionImporter::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XmlReflectionImporter::$$c*, creationType>()));
     }
+    // System.Int32 <ImportClassMapping>b__28_0(System.Xml.Serialization.XmlReflectionMember m1, System.Xml.Serialization.XmlReflectionMember m2)
+    // Offset: 0xC215E0
+    int $ImportClassMapping$b__28_0(::System::Xml::Serialization::XmlReflectionMember* m1, ::System::Xml::Serialization::XmlReflectionMember* m2);
   }; // System.Xml.Serialization.XmlReflectionImporter/System.Xml.Serialization.<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlReflectionImporter::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlReflectionImporter::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlReflectionImporter::$$c::$ImportClassMapping$b__28_0
 // Il2CppName: <ImportClassMapping>b__28_0
 template<>
@@ -82,7 +84,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlReflectionImporter::$$c*), "<ImportClassMapping>b__28_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{m1, m2});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlReflectionImporter::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

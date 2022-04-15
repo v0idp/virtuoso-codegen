@@ -58,7 +58,7 @@ namespace System {
       return pointer_level;
     }
     // Get instance field reference: private System.Int32 pointer_level
-    [[deprecated]] int& dyn_pointer_level();
+    [[deprecated("Use field access instead!")]] int& dyn_pointer_level();
     // System.Void .ctor(System.Int32 pointer_level)
     // Offset: 0x14D01EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

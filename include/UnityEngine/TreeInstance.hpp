@@ -86,21 +86,21 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public System.Single widthScale
-    [[deprecated]] float& dyn_widthScale();
+    [[deprecated("Use field access instead!")]] float& dyn_widthScale();
     // Get instance field reference: public System.Single heightScale
-    [[deprecated]] float& dyn_heightScale();
+    [[deprecated("Use field access instead!")]] float& dyn_heightScale();
     // Get instance field reference: public System.Single rotation
-    [[deprecated]] float& dyn_rotation();
+    [[deprecated("Use field access instead!")]] float& dyn_rotation();
     // Get instance field reference: public UnityEngine.Color32 color
-    [[deprecated]] ::UnityEngine::Color32& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_color();
     // Get instance field reference: public UnityEngine.Color32 lightmapColor
-    [[deprecated]] ::UnityEngine::Color32& dyn_lightmapColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_lightmapColor();
     // Get instance field reference: public System.Int32 prototypeIndex
-    [[deprecated]] int& dyn_prototypeIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_prototypeIndex();
     // Get instance field reference: System.Single temporaryDistance
-    [[deprecated]] float& dyn_temporaryDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_temporaryDistance();
   }; // UnityEngine.TreeInstance
   #pragma pack(pop)
   static check_size<sizeof(TreeInstance), 36 + sizeof(float)> __UnityEngine_TreeInstanceSizeCheck;

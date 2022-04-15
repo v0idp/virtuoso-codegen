@@ -90,25 +90,25 @@ namespace Unity::XR::Oculus {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt16 sharedDepthBuffer
-    [[deprecated]] uint16_t& dyn_sharedDepthBuffer();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_sharedDepthBuffer();
     // Get instance field reference: public System.UInt16 dashSupport
-    [[deprecated]] uint16_t& dyn_dashSupport();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_dashSupport();
     // Get instance field reference: public System.UInt16 stereoRenderingMode
-    [[deprecated]] uint16_t& dyn_stereoRenderingMode();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_stereoRenderingMode();
     // Get instance field reference: public System.UInt16 colorSpace
-    [[deprecated]] uint16_t& dyn_colorSpace();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_colorSpace();
     // Get instance field reference: public System.UInt16 lowOverheadMode
-    [[deprecated]] uint16_t& dyn_lowOverheadMode();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_lowOverheadMode();
     // Get instance field reference: public System.UInt16 protectedContext
-    [[deprecated]] uint16_t& dyn_protectedContext();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_protectedContext();
     // Get instance field reference: public System.UInt16 focusAware
-    [[deprecated]] uint16_t& dyn_focusAware();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_focusAware();
     // Get instance field reference: public System.UInt16 optimizeBufferDiscards
-    [[deprecated]] uint16_t& dyn_optimizeBufferDiscards();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_optimizeBufferDiscards();
     // Get instance field reference: public System.UInt16 phaseSync
-    [[deprecated]] uint16_t& dyn_phaseSync();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_phaseSync();
     // Get instance field reference: public System.UInt16 subsampledLayout
-    [[deprecated]] uint16_t& dyn_subsampledLayout();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_subsampledLayout();
   }; // Unity.XR.Oculus.NativeMethods/Unity.XR.Oculus.UserDefinedSettings
   #pragma pack(pop)
   static check_size<sizeof(NativeMethods::UserDefinedSettings), 18 + sizeof(uint16_t)> __Unity_XR_Oculus_NativeMethods_UserDefinedSettingsSizeCheck;

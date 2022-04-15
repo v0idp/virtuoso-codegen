@@ -175,25 +175,25 @@ namespace Firebase::Auth {
     // Set static field: static private System.Action`1<Firebase.Auth.FirebaseAuth> <>f__am$cache1
     static void _set_$$f__am$cache1(::System::Action_1<::Firebase::Auth::FirebaseAuth*>* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // Get instance field reference: private Firebase.FirebaseApp appProxy
-    [[deprecated]] ::Firebase::FirebaseApp*& dyn_appProxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::FirebaseApp*& dyn_appProxy();
     // Get instance field reference: private System.IntPtr appCPtr
-    [[deprecated]] ::System::IntPtr& dyn_appCPtr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_appCPtr();
     // Get instance field reference: private System.IntPtr authStateListener
-    [[deprecated]] ::System::IntPtr& dyn_authStateListener();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_authStateListener();
     // Get instance field reference: private System.IntPtr idTokenListener
-    [[deprecated]] ::System::IntPtr& dyn_idTokenListener();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_idTokenListener();
     // Get instance field reference: private Firebase.Auth.FirebaseUser currentUser
-    [[deprecated]] ::Firebase::Auth::FirebaseUser*& dyn_currentUser();
+    [[deprecated("Use field access instead!")]] ::Firebase::Auth::FirebaseUser*& dyn_currentUser();
     // Get instance field reference: private System.EventHandler stateChangedImpl
-    [[deprecated]] ::System::EventHandler*& dyn_stateChangedImpl();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler*& dyn_stateChangedImpl();
     // Get instance field reference: private System.EventHandler idTokenChangedImpl
-    [[deprecated]] ::System::EventHandler*& dyn_idTokenChangedImpl();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler*& dyn_idTokenChangedImpl();
     // Get instance field reference: private System.Boolean persistentLoaded
-    [[deprecated]] bool& dyn_persistentLoaded();
+    [[deprecated("Use field access instead!")]] bool& dyn_persistentLoaded();
     // static public Firebase.Auth.FirebaseAuth get_DefaultInstance()
     // Offset: 0x18B09D4
     static ::Firebase::Auth::FirebaseAuth* get_DefaultInstance();

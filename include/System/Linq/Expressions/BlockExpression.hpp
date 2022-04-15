@@ -90,7 +90,6 @@ namespace System::Linq::Expressions {
     // Offset: 0x11F4440
     // Implemented from: System.Linq.Expressions.Expression
     // Base method: System.Void Expression::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BlockExpression* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::BlockExpression::.ctor");

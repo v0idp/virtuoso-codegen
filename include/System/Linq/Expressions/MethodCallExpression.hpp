@@ -73,7 +73,7 @@ namespace System::Linq::Expressions {
       return Method;
     }
     // Get instance field reference: private readonly System.Reflection.MethodInfo <Method>k__BackingField
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_$Method$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_$Method$k__BackingField();
     // public System.Reflection.MethodInfo get_Method()
     // Offset: 0xE9130C
     ::System::Reflection::MethodInfo* get_Method();

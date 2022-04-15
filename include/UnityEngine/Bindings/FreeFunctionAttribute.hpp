@@ -35,8 +35,6 @@ namespace UnityEngine::Bindings {
     // Offset: 0x18FF570
     // Implemented from: UnityEngine.Bindings.NativeMethodAttribute
     // Base method: System.Void NativeMethodAttribute::.ctor()
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FreeFunctionAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::FreeFunctionAttribute::.ctor");

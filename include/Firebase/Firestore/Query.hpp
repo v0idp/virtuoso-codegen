@@ -86,9 +86,9 @@ namespace Firebase::Firestore {
     // Set static field: static private Firebase.Firestore.Query/Firebase.Firestore.ListenerDelegate querySnapshotsHandler
     static void _set_querySnapshotsHandler(::Firebase::Firestore::Query::ListenerDelegate* value);
     // Get instance field reference: readonly Firebase.Firestore.QueryProxy _proxy
-    [[deprecated]] ::Firebase::Firestore::QueryProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::QueryProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // public Firebase.Firestore.FirebaseFirestore get_Firestore()
     // Offset: 0xD62E3C
     ::Firebase::Firestore::FirebaseFirestore* get_Firestore();

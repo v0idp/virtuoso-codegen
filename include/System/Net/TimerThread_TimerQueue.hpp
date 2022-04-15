@@ -38,7 +38,7 @@ namespace System::Net {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private readonly System.Net.TimerThread/System.Net.TimerNode m_Timers
-    [[deprecated]] ::System::Net::TimerThread::TimerNode*& dyn_m_Timers();
+    [[deprecated("Use field access instead!")]] ::System::Net::TimerThread::TimerNode*& dyn_m_Timers();
     // System.Void .ctor(System.Int32 durationMilliseconds)
     // Offset: 0xA025B8
     // Implemented from: System.Net.TimerThread/System.Net.Queue

@@ -53,11 +53,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::Serialization::XmlSerializationFixupCallback*) == 0x8);
     public:
     // Get instance field reference: private System.Object source
-    [[deprecated]] ::Il2CppObject*& dyn_source();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_source();
     // Get instance field reference: private System.String[] ids
-    [[deprecated]] ::ArrayW<::StringW>& dyn_ids();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_ids();
     // Get instance field reference: private System.Xml.Serialization.XmlSerializationFixupCallback callback
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializationFixupCallback*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializationFixupCallback*& dyn_callback();
     // public System.Xml.Serialization.XmlSerializationFixupCallback get_Callback()
     // Offset: 0xC221A8
     ::System::Xml::Serialization::XmlSerializationFixupCallback* get_Callback();

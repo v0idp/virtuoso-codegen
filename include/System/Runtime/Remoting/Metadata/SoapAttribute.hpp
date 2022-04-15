@@ -53,11 +53,11 @@ namespace System::Runtime::Remoting::Metadata {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _useAttribute
-    [[deprecated]] bool& dyn__useAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn__useAttribute();
     // Get instance field reference: protected System.String ProtXmlNamespace
-    [[deprecated]] ::StringW& dyn_ProtXmlNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ProtXmlNamespace();
     // Get instance field reference: protected System.Object ReflectInfo
-    [[deprecated]] ::Il2CppObject*& dyn_ReflectInfo();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_ReflectInfo();
     // public System.Boolean get_UseAttribute()
     // Offset: 0x124E294
     bool get_UseAttribute();

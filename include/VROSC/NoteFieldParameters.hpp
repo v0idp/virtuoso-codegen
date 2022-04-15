@@ -105,23 +105,23 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.NoteFieldParameters/VROSC.Axis <X>k__BackingField
-    [[deprecated]] ::VROSC::NoteFieldParameters::Axis*& dyn_$X$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldParameters::Axis*& dyn_$X$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldParameters/VROSC.Axis <Y>k__BackingField
-    [[deprecated]] ::VROSC::NoteFieldParameters::Axis*& dyn_$Y$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldParameters::Axis*& dyn_$Y$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldParameters/VROSC.Axis <Z>k__BackingField
-    [[deprecated]] ::VROSC::NoteFieldParameters::Axis*& dyn_$Z$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldParameters::Axis*& dyn_$Z$k__BackingField();
     // Get instance field reference: private System.Int32 <NumberOfFields>k__BackingField
-    [[deprecated]] int& dyn_$NumberOfFields$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$NumberOfFields$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> <PrimaryNoteList>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_$PrimaryNoteList$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn_$PrimaryNoteList$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.Axis <PrimaryAxis>k__BackingField
-    [[deprecated]] ::VROSC::NoteBoard::Axis& dyn_$PrimaryAxis$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::Axis& dyn_$PrimaryAxis$k__BackingField();
     // Get instance field reference: private VROSC.Scale <PrimaryScale>k__BackingField
-    [[deprecated]] ::VROSC::Scale& dyn_$PrimaryScale$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn_$PrimaryScale$k__BackingField();
     // Get instance field reference: private System.Int32 <SecondaryAxisSteps>k__BackingField
-    [[deprecated]] int& dyn_$SecondaryAxisSteps$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$SecondaryAxisSteps$k__BackingField();
     // Get instance field reference: private System.Int32 <TertiaryAxisSteps>k__BackingField
-    [[deprecated]] int& dyn_$TertiaryAxisSteps$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$TertiaryAxisSteps$k__BackingField();
     // public VROSC.NoteFieldParameters/VROSC.Axis get_X()
     // Offset: 0xC59CBC
     ::VROSC::NoteFieldParameters::Axis* get_X();

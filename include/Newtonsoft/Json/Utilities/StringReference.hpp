@@ -57,11 +57,11 @@ namespace Newtonsoft::Json::Utilities {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly System.Char[] _chars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__chars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__chars();
     // Get instance field reference: private readonly System.Int32 _startIndex
-    [[deprecated]] int& dyn__startIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__startIndex();
     // Get instance field reference: private readonly System.Int32 _length
-    [[deprecated]] int& dyn__length();
+    [[deprecated("Use field access instead!")]] int& dyn__length();
     // public System.Char get_Item(System.Int32 i)
     // Offset: 0x158CCA0
     ::Il2CppChar get_Item(int i);

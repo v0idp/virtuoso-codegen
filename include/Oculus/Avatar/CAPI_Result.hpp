@@ -93,7 +93,7 @@ namespace Oculus::Avatar {
     // Set static field: static public Oculus.Avatar.CAPI/Oculus.Avatar.Result Failure_InsufficientSize
     static void _set_Failure_InsufficientSize(::Oculus::Avatar::CAPI::Result value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Avatar.CAPI/Oculus.Avatar.Result
   #pragma pack(pop)
   static check_size<sizeof(CAPI::Result), 0 + sizeof(int)> __Oculus_Avatar_CAPI_ResultSizeCheck;

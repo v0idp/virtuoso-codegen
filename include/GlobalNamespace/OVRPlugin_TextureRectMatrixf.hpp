@@ -63,13 +63,13 @@ namespace GlobalNamespace {
     // Set static field: static public readonly OVRPlugin/TextureRectMatrixf zero
     static void _set_zero(::GlobalNamespace::OVRPlugin::TextureRectMatrixf value);
     // Get instance field reference: public UnityEngine.Rect leftRect
-    [[deprecated]] ::UnityEngine::Rect& dyn_leftRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_leftRect();
     // Get instance field reference: public UnityEngine.Rect rightRect
-    [[deprecated]] ::UnityEngine::Rect& dyn_rightRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_rightRect();
     // Get instance field reference: public UnityEngine.Vector4 leftScaleBias
-    [[deprecated]] ::UnityEngine::Vector4& dyn_leftScaleBias();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_leftScaleBias();
     // Get instance field reference: public UnityEngine.Vector4 rightScaleBias
-    [[deprecated]] ::UnityEngine::Vector4& dyn_rightScaleBias();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_rightScaleBias();
     // static private System.Void .cctor()
     // Offset: 0x13EE190
     static void _cctor();

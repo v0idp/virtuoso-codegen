@@ -137,27 +137,27 @@ namespace System::Xml::Schema {
     // Set static field: static private System.Xml.Schema.XmlSchemaComplexType untypedAnyType
     static void _set_untypedAnyType(::System::Xml::Schema::XmlSchemaComplexType* value);
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod block
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_block();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_block();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaContentModel contentModel
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaContentModel*& dyn_contentModel();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaContentModel*& dyn_contentModel();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaParticle particle
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaParticle*& dyn_particle();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaParticle*& dyn_particle();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection attributes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_attributes();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnyAttribute anyAttribute
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaParticle contentTypeParticle
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaParticle*& dyn_contentTypeParticle();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaParticle*& dyn_contentTypeParticle();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod blockResolved
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_blockResolved();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_blockResolved();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable localElements
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_localElements();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_localElements();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable attributeUses
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeUses();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeUses();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnyAttribute attributeWildcard
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_attributeWildcard();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_attributeWildcard();
     // Get instance field reference: private System.Byte pvFlags
-    [[deprecated]] uint8_t& dyn_pvFlags();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_pvFlags();
     // static System.Xml.Schema.XmlSchemaComplexType get_AnyType()
     // Offset: 0x110BA64
     static ::System::Xml::Schema::XmlSchemaComplexType* get_AnyType();
@@ -282,7 +282,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaType::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaComplexType* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaComplexType::.ctor");

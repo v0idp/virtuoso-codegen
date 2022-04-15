@@ -115,25 +115,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Boolean _preview
-    [[deprecated]] bool& dyn__preview();
+    [[deprecated("Use field access instead!")]] bool& dyn__preview();
     // Get instance field reference: private UnityEngine.Color _triggerButton
-    [[deprecated]] ::UnityEngine::Color& dyn__triggerButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__triggerButton();
     // Get instance field reference: private UnityEngine.Color _gripButton
-    [[deprecated]] ::UnityEngine::Color& dyn__gripButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__gripButton();
     // Get instance field reference: private UnityEngine.Color _topButton
-    [[deprecated]] ::UnityEngine::Color& dyn__topButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__topButton();
     // Get instance field reference: private UnityEngine.Color _bottomButton
-    [[deprecated]] ::UnityEngine::Color& dyn__bottomButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__bottomButton();
     // Get instance field reference: private UnityEngine.Color _menuButton
-    [[deprecated]] ::UnityEngine::Color& dyn__menuButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__menuButton();
     // Get instance field reference: private UnityEngine.Color _thumbstick
-    [[deprecated]] ::UnityEngine::Color& dyn__thumbstick();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__thumbstick();
     // Get instance field reference: private UnityEngine.Color _special
-    [[deprecated]] ::UnityEngine::Color& dyn__special();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__special();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    // public System.Void .ctor()
+    // Offset: 0x8DE134
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControllerShaderEffects* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerShaderEffects::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControllerShaderEffects*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x8DDDF4
     void OnEnable();
@@ -146,25 +153,16 @@ namespace VROSC {
     // public System.Void SetEffectOnShader(VROSC.ControllerShaderEffects/VROSC.ShaderSettings settings)
     // Offset: 0x8DDE34
     void SetEffectOnShader(::VROSC::ControllerShaderEffects::ShaderSettings settings);
-    // public System.Void .ctor()
-    // Offset: 0x8DE134
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControllerShaderEffects* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerShaderEffects::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControllerShaderEffects*, creationType>()));
-    }
   }; // VROSC.ControllerShaderEffects
   #pragma pack(pop)
   static check_size<sizeof(ControllerShaderEffects), 152 + sizeof(::UnityEngine::MaterialPropertyBlock*)> __VROSC_ControllerShaderEffectsSizeCheck;
   static_assert(sizeof(ControllerShaderEffects) == 0xA0);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ControllerShaderEffects::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ControllerShaderEffects::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -198,7 +196,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControllerShaderEffects*), "SetEffectOnShader", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{settings});
   }
 };
-// Writing MetadataGetter for method: VROSC::ControllerShaderEffects::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

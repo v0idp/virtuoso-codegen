@@ -90,19 +90,19 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.UISlider <>4__this
-    [[deprecated]] ::VROSC::UISlider*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn_$$4__this();
     // Get instance field reference: public VROSC.InputDevice device
-    [[deprecated]] ::VROSC::InputDevice*& dyn_device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_device();
     // Get instance field reference: public VROSC.TriggerButton grabbingButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn_grabbingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn_grabbingButton();
     // Get instance field reference: public System.Boolean pointing
-    [[deprecated]] bool& dyn_pointing();
+    [[deprecated("Use field access instead!")]] bool& dyn_pointing();
     // Get instance field reference: private UnityEngine.Vector3 <point>5__2
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$point$5__2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$point$5__2();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0xE80F1C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

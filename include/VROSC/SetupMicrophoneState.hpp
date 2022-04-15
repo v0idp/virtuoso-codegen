@@ -54,7 +54,7 @@ namespace VROSC {
       return microphoneManager;
     }
     // Get instance field reference: private VROSC.MicrophoneDeviceManager _microphoneManager
-    [[deprecated]] ::VROSC::MicrophoneDeviceManager*& dyn__microphoneManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::MicrophoneDeviceManager*& dyn__microphoneManager();
     // public System.Void .ctor(VROSC.MicrophoneDeviceManager microphoneManager)
     // Offset: 0x1926938
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

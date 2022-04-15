@@ -43,12 +43,9 @@ namespace UnityEngine::Timeline {
       return volume;
     }
     // Get instance field reference: public System.Single volume
-    [[deprecated]] float& dyn_volume();
+    [[deprecated("Use field access instead!")]] float& dyn_volume();
     // public System.Void .ctor()
     // Offset: 0xC6FE74
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioClipProperties* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AudioClipProperties::.ctor");

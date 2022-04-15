@@ -74,11 +74,11 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.GUIContent none
     static void _set_none(::UnityEngine::GUIContent* value);
     // Get instance field reference: private System.String m_Text
-    [[deprecated]] ::StringW& dyn_m_Text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Text();
     // Get instance field reference: private UnityEngine.Texture m_Image
-    [[deprecated]] ::UnityEngine::Texture*& dyn_m_Image();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_m_Image();
     // Get instance field reference: private System.String m_Tooltip
-    [[deprecated]] ::StringW& dyn_m_Tooltip();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Tooltip();
     // public System.Void set_text(System.String value)
     // Offset: 0x1879790
     void set_text(::StringW value);
@@ -91,6 +91,13 @@ namespace UnityEngine {
     // public System.Void set_tooltip(System.String value)
     // Offset: 0x18797A0
     void set_tooltip(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x18797A8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GUIContent* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUIContent::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GUIContent*, creationType>()));
+    }
     // public System.Void .ctor(System.String text)
     // Offset: 0x1879810
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -114,15 +121,6 @@ namespace UnityEngine {
     // static System.Void ClearStaticCache()
     // Offset: 0x1879908
     static void ClearStaticCache();
-    // public System.Void .ctor()
-    // Offset: 0x18797A8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GUIContent* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUIContent::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GUIContent*, creationType>()));
-    }
   }; // UnityEngine.GUIContent
   #pragma pack(pop)
   static check_size<sizeof(GUIContent), 32 + sizeof(::StringW)> __UnityEngine_GUIContentSizeCheck;
@@ -172,6 +170,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::GUIContent::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUIContent::_cctor
 // Il2CppName: .cctor
 template<>
@@ -197,7 +199,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUIContent*), "ClearStaticCache", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::GUIContent::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

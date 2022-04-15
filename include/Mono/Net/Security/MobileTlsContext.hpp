@@ -128,23 +128,23 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private Mono.Net.Security.MobileAuthenticatedStream parent
-    [[deprecated]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_parent();
     // Get instance field reference: private System.Boolean serverMode
-    [[deprecated]] bool& dyn_serverMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_serverMode();
     // Get instance field reference: private System.String targetHost
-    [[deprecated]] ::StringW& dyn_targetHost();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_targetHost();
     // Get instance field reference: private System.String serverName
-    [[deprecated]] ::StringW& dyn_serverName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_serverName();
     // Get instance field reference: private System.Security.Authentication.SslProtocols enabledProtocols
-    [[deprecated]] ::System::Security::Authentication::SslProtocols& dyn_enabledProtocols();
+    [[deprecated("Use field access instead!")]] ::System::Security::Authentication::SslProtocols& dyn_enabledProtocols();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate serverCertificate
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_serverCertificate();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_serverCertificate();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509CertificateCollection clientCertificates
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_clientCertificates();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_clientCertificates();
     // Get instance field reference: private System.Boolean askForClientCert
-    [[deprecated]] bool& dyn_askForClientCert();
+    [[deprecated("Use field access instead!")]] bool& dyn_askForClientCert();
     // Get instance field reference: private Mono.Security.Interface.ICertificateValidator2 certificateValidator
-    [[deprecated]] ::Mono::Security::Interface::ICertificateValidator2*& dyn_certificateValidator();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::ICertificateValidator2*& dyn_certificateValidator();
     // Mono.Net.Security.MobileAuthenticatedStream get_Parent()
     // Offset: 0x10FDFE8
     ::Mono::Net::Security::MobileAuthenticatedStream* get_Parent();

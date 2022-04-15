@@ -110,23 +110,23 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Collections::ArrayList*) == 0x8);
     public:
     // Get instance field reference: private System.String xmlType
-    [[deprecated]] ::StringW& dyn_xmlType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xmlType();
     // Get instance field reference: private System.String xmlTypeNamespace
-    [[deprecated]] ::StringW& dyn_xmlTypeNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xmlTypeNamespace();
     // Get instance field reference: private System.Xml.Serialization.TypeData type
-    [[deprecated]] ::System::Xml::Serialization::TypeData*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::TypeData*& dyn_type();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapping baseMap
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapping*& dyn_baseMap();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapping*& dyn_baseMap();
     // Get instance field reference: private System.Boolean multiReferenceType
-    [[deprecated]] bool& dyn_multiReferenceType();
+    [[deprecated("Use field access instead!")]] bool& dyn_multiReferenceType();
     // Get instance field reference: private System.Boolean includeInSchema
-    [[deprecated]] bool& dyn_includeInSchema();
+    [[deprecated("Use field access instead!")]] bool& dyn_includeInSchema();
     // Get instance field reference: private System.Boolean isNullable
-    [[deprecated]] bool& dyn_isNullable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNullable();
     // Get instance field reference: private System.Boolean isAny
-    [[deprecated]] bool& dyn_isAny();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAny();
     // Get instance field reference: private System.Collections.ArrayList _derivedTypes
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__derivedTypes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__derivedTypes();
     // public System.String get_TypeFullName()
     // Offset: 0x1088C90
     ::StringW get_TypeFullName();

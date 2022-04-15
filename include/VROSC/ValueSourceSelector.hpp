@@ -137,7 +137,7 @@ namespace VROSC {
       // Set static field: static public VROSC.ValueSourceSelector/VROSC.ValueSource DistanceBetweenControllers
       static void _set_DistanceBetweenControllers(::VROSC::ValueSourceSelector::ValueSource value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.ValueSourceSelector/VROSC.ValueSource
     #pragma pack(pop)
     static check_size<sizeof(ValueSourceSelector::ValueSource), 0 + sizeof(int)> __VROSC_ValueSourceSelector_ValueSourceSizeCheck;
@@ -151,7 +151,7 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::ValueSourceSelector::ValueSource) == 0x4);
     public:
     // Get instance field reference: private VROSC.ValueSourceSelector/VROSC.ValueSource _valueSource
-    [[deprecated]] ::VROSC::ValueSourceSelector::ValueSource& dyn__valueSource();
+    [[deprecated("Use field access instead!")]] ::VROSC::ValueSourceSelector::ValueSource& dyn__valueSource();
     // static public System.Single GetSignalValue(VROSC.Signal signal, VROSC.ValueSourceSelector/VROSC.ValueSource valueSource)
     // Offset: 0x1921B64
     static float GetSignalValue(::VROSC::Signal* signal, ::VROSC::ValueSourceSelector::ValueSource valueSource);
@@ -160,11 +160,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ValueSourceSelector* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ValueSourceSelector::.ctor");

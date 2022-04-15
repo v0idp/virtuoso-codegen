@@ -101,23 +101,23 @@ namespace System::Runtime::InteropServices {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.String _val
-    [[deprecated]] ::StringW& dyn__val();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__val();
     // Get instance field reference: public System.String EntryPoint
-    [[deprecated]] ::StringW& dyn_EntryPoint();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_EntryPoint();
     // Get instance field reference: public System.Runtime.InteropServices.CharSet CharSet
-    [[deprecated]] ::System::Runtime::InteropServices::CharSet& dyn_CharSet();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::CharSet& dyn_CharSet();
     // Get instance field reference: public System.Boolean SetLastError
-    [[deprecated]] bool& dyn_SetLastError();
+    [[deprecated("Use field access instead!")]] bool& dyn_SetLastError();
     // Get instance field reference: public System.Boolean ExactSpelling
-    [[deprecated]] bool& dyn_ExactSpelling();
+    [[deprecated("Use field access instead!")]] bool& dyn_ExactSpelling();
     // Get instance field reference: public System.Boolean PreserveSig
-    [[deprecated]] bool& dyn_PreserveSig();
+    [[deprecated("Use field access instead!")]] bool& dyn_PreserveSig();
     // Get instance field reference: public System.Runtime.InteropServices.CallingConvention CallingConvention
-    [[deprecated]] ::System::Runtime::InteropServices::CallingConvention& dyn_CallingConvention();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::CallingConvention& dyn_CallingConvention();
     // Get instance field reference: public System.Boolean BestFitMapping
-    [[deprecated]] bool& dyn_BestFitMapping();
+    [[deprecated("Use field access instead!")]] bool& dyn_BestFitMapping();
     // Get instance field reference: public System.Boolean ThrowOnUnmappableChar
-    [[deprecated]] bool& dyn_ThrowOnUnmappableChar();
+    [[deprecated("Use field access instead!")]] bool& dyn_ThrowOnUnmappableChar();
     // public System.String get_Value()
     // Offset: 0x129ECF0
     ::StringW get_Value();

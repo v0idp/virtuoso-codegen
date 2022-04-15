@@ -113,17 +113,17 @@ namespace System::Runtime::Remoting {
     // Set static field: static private System.Int32 WellKnowObjectRef
     static void _set_WellKnowObjectRef(int value);
     // Get instance field reference: private System.Runtime.Remoting.IChannelInfo channel_info
-    [[deprecated]] ::System::Runtime::Remoting::IChannelInfo*& dyn_channel_info();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::IChannelInfo*& dyn_channel_info();
     // Get instance field reference: private System.String uri
-    [[deprecated]] ::StringW& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_uri();
     // Get instance field reference: private System.Runtime.Remoting.IRemotingTypeInfo typeInfo
-    [[deprecated]] ::System::Runtime::Remoting::IRemotingTypeInfo*& dyn_typeInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::IRemotingTypeInfo*& dyn_typeInfo();
     // Get instance field reference: private System.Runtime.Remoting.IEnvoyInfo envoyInfo
-    [[deprecated]] ::System::Runtime::Remoting::IEnvoyInfo*& dyn_envoyInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::IEnvoyInfo*& dyn_envoyInfo();
     // Get instance field reference: private System.Int32 flags
-    [[deprecated]] int& dyn_flags();
+    [[deprecated("Use field access instead!")]] int& dyn_flags();
     // Get instance field reference: private System.Type _serverType
-    [[deprecated]] ::System::Type*& dyn__serverType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__serverType();
     // System.Boolean get_IsReferenceToWellKnow()
     // Offset: 0x146BD40
     bool get_IsReferenceToWellKnow();

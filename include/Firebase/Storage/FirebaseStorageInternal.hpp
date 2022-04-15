@@ -64,9 +64,9 @@ namespace Firebase::Storage {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // System.String get_InstanceKey()
     // Offset: 0x1830DE4
     ::StringW get_InstanceKey();

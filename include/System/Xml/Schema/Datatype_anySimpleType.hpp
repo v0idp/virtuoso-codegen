@@ -110,7 +110,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.DatatypeImplementation
     // Base method: System.Void DatatypeImplementation::.ctor()
     // Base method: System.Void XmlSchemaDatatype::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Datatype_anySimpleType* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::Datatype_anySimpleType::.ctor");

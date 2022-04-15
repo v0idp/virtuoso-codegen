@@ -115,29 +115,27 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::XmlTextReaderImpl::InitInputType) == 0x4);
     public:
     // Get instance field reference: public System.Boolean useAsync
-    [[deprecated]] bool& dyn_useAsync();
+    [[deprecated("Use field access instead!")]] bool& dyn_useAsync();
     // Get instance field reference: public System.IO.Stream inputStream
-    [[deprecated]] ::System::IO::Stream*& dyn_inputStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_inputStream();
     // Get instance field reference: public System.Byte[] inputBytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_inputBytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_inputBytes();
     // Get instance field reference: public System.Int32 inputByteCount
-    [[deprecated]] int& dyn_inputByteCount();
+    [[deprecated("Use field access instead!")]] int& dyn_inputByteCount();
     // Get instance field reference: public System.Uri inputbaseUri
-    [[deprecated]] ::System::Uri*& dyn_inputbaseUri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_inputbaseUri();
     // Get instance field reference: public System.String inputUriStr
-    [[deprecated]] ::StringW& dyn_inputUriStr();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_inputUriStr();
     // Get instance field reference: public System.Xml.XmlResolver inputUriResolver
-    [[deprecated]] ::System::Xml::XmlResolver*& dyn_inputUriResolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlResolver*& dyn_inputUriResolver();
     // Get instance field reference: public System.Xml.XmlParserContext inputContext
-    [[deprecated]] ::System::Xml::XmlParserContext*& dyn_inputContext();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlParserContext*& dyn_inputContext();
     // Get instance field reference: public System.IO.TextReader inputTextReader
-    [[deprecated]] ::System::IO::TextReader*& dyn_inputTextReader();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextReader*& dyn_inputTextReader();
     // Get instance field reference: public System.Xml.XmlTextReaderImpl/System.Xml.InitInputType initType
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::InitInputType& dyn_initType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::InitInputType& dyn_initType();
     // public System.Void .ctor()
     // Offset: 0xC2331C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTextReaderImpl::LaterInitParam* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlTextReaderImpl::LaterInitParam::.ctor");

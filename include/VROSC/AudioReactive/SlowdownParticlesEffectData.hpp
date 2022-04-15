@@ -55,9 +55,9 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // public System.Single get_Duration()
     // Offset: 0x1928D34
     float get_Duration();
@@ -68,9 +68,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x1928D44
     // Implemented from: VROSC.AudioReactive.AudioReactiveEffectData
     // Base method: System.Void AudioReactiveEffectData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SlowdownParticlesEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::SlowdownParticlesEffectData::.ctor");

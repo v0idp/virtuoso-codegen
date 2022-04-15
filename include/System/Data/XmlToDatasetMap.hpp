@@ -72,9 +72,9 @@ namespace System::Data {
     static_assert(sizeof(::System::Data::XmlToDatasetMap::TableSchemaInfo*) == 0x8);
     public:
     // Get instance field reference: private System.Data.XmlToDatasetMap/System.Data.XmlNodeIdHashtable _tableSchemaMap
-    [[deprecated]] ::System::Data::XmlToDatasetMap::XmlNodeIdHashtable*& dyn__tableSchemaMap();
+    [[deprecated("Use field access instead!")]] ::System::Data::XmlToDatasetMap::XmlNodeIdHashtable*& dyn__tableSchemaMap();
     // Get instance field reference: private System.Data.XmlToDatasetMap/System.Data.TableSchemaInfo _lastTableSchemaInfo
-    [[deprecated]] ::System::Data::XmlToDatasetMap::TableSchemaInfo*& dyn__lastTableSchemaInfo();
+    [[deprecated("Use field access instead!")]] ::System::Data::XmlToDatasetMap::TableSchemaInfo*& dyn__lastTableSchemaInfo();
     // public System.Void .ctor(System.Data.DataSet dataSet, System.Xml.XmlNameTable nameTable)
     // Offset: 0x1619FA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

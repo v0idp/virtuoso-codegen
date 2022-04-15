@@ -95,13 +95,13 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.String NORMAL_POOL
     static void _set_NORMAL_POOL(::StringW value);
     // Get instance field reference: private System.UInt64 m_matchRoom
-    [[deprecated]] uint64_t& dyn_m_matchRoom();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_matchRoom();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,Oculus.Platform.Models.User> m_remotePlayers
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Models::User*>*& dyn_m_remotePlayers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Models::User*>*& dyn_m_remotePlayers();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnEnqueueResult m_enqueueCallback
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult*& dyn_m_enqueueCallback();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult*& dyn_m_enqueueCallback();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnMatchPlayerAdded m_playerCallback
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded*& dyn_m_playerCallback();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded*& dyn_m_playerCallback();
     // private Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnEnqueueResult get_EnqueueResultCallback()
     // Offset: 0xB44B4C
     ::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnEnqueueResult* get_EnqueueResultCallback();
@@ -114,6 +114,13 @@ namespace Oculus::Platform::Samples::VrHoops {
     // public System.Void set_MatchPlayerAddedCallback(Oculus.Platform.Samples.VrHoops.MatchmakingManager/Oculus.Platform.Samples.VrHoops.OnMatchPlayerAdded value)
     // Offset: 0xB44B64
     void set_MatchPlayerAddedCallback(::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded* value);
+    // public System.Void .ctor()
+    // Offset: 0xB44A30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MatchmakingManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::MatchmakingManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MatchmakingManager*, creationType>()));
+    }
     // public System.Void QueueForMatch()
     // Offset: 0xB3F618
     void QueueForMatch();
@@ -135,15 +142,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // public System.Void LeaveQueue()
     // Offset: 0xB3F6F8
     void LeaveQueue();
-    // public System.Void .ctor()
-    // Offset: 0xB44A30
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MatchmakingManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::MatchmakingManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MatchmakingManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.MatchmakingManager
   #pragma pack(pop)
   static check_size<sizeof(MatchmakingManager), 40 + sizeof(::Oculus::Platform::Samples::VrHoops::MatchmakingManager::OnMatchPlayerAdded*)> __Oculus_Platform_Samples_VrHoops_MatchmakingManagerSizeCheck;
@@ -184,6 +182,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::MatchmakingManager*), "set_MatchPlayerAddedCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::MatchmakingManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::MatchmakingManager::QueueForMatch
 // Il2CppName: QueueForMatch
 template<>
@@ -244,7 +246,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::MatchmakingManager*), "LeaveQueue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::MatchmakingManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

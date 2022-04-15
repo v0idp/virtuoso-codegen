@@ -78,15 +78,15 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::CompiledIdentityConstraint*) == 0x8);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaXPath selector
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaXPath*& dyn_selector();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaXPath*& dyn_selector();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection fields
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_fields();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_fields();
     // Get instance field reference: private System.Xml.XmlQualifiedName qualifiedName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_qualifiedName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_qualifiedName();
     // Get instance field reference: private System.Xml.Schema.CompiledIdentityConstraint compiledConstraint
-    [[deprecated]] ::System::Xml::Schema::CompiledIdentityConstraint*& dyn_compiledConstraint();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::CompiledIdentityConstraint*& dyn_compiledConstraint();
     // public System.String get_Name()
     // Offset: 0x110F14C
     ::StringW get_Name();
@@ -129,7 +129,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaAnnotated
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaIdentityConstraint* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaIdentityConstraint::.ctor");

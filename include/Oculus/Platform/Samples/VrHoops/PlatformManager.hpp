@@ -115,7 +115,7 @@ namespace Oculus::Platform::Samples::VrHoops {
       // Set static field: static public Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State PLAYING_A_NETWORKED_MATCH
       static void _set_PLAYING_A_NETWORKED_MATCH(::Oculus::Platform::Samples::VrHoops::PlatformManager::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State
     #pragma pack(pop)
     static check_size<sizeof(PlatformManager::State), 0 + sizeof(int)> __Oculus_Platform_Samples_VrHoops_PlatformManager_StateSizeCheck;
@@ -173,19 +173,19 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private Oculus.Platform.Samples.VrHoops.PlatformManager s_instance
     static void _set_s_instance(::Oculus::Platform::Samples::VrHoops::PlatformManager* value);
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchmakingManager m_matchmaking
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager*& dyn_m_matchmaking();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::MatchmakingManager*& dyn_m_matchmaking();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.P2PManager m_p2p
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::P2PManager*& dyn_m_p2p();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::P2PManager*& dyn_m_p2p();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.LeaderboardManager m_leaderboards
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager*& dyn_m_leaderboards();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager*& dyn_m_leaderboards();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.AchievementsManager m_achievements
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::AchievementsManager*& dyn_m_achievements();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::AchievementsManager*& dyn_m_achievements();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State m_currentState
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::PlatformManager::State& dyn_m_currentState();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::PlatformManager::State& dyn_m_currentState();
     // Get instance field reference: private System.UInt64 m_myID
-    [[deprecated]] uint64_t& dyn_m_myID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_myID();
     // Get instance field reference: private System.String m_myOculusID
-    [[deprecated]] ::StringW& dyn_m_myOculusID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_myOculusID();
     // static public Oculus.Platform.Samples.VrHoops.MatchmakingManager get_Matchmaking()
     // Offset: 0xB3E23C
     static ::Oculus::Platform::Samples::VrHoops::MatchmakingManager* get_Matchmaking();
@@ -207,6 +207,13 @@ namespace Oculus::Platform::Samples::VrHoops {
     // static public System.String get_MyOculusID()
     // Offset: 0xB3F1B8
     static ::StringW get_MyOculusID();
+    // public System.Void .ctor()
+    // Offset: 0xB57344
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlatformManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::PlatformManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlatformManager*, creationType>()));
+    }
     // private System.Void Update()
     // Offset: 0xB56EAC
     void Update();
@@ -234,19 +241,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // static public System.Void TransitionToState(Oculus.Platform.Samples.VrHoops.PlatformManager/Oculus.Platform.Samples.VrHoops.State newState)
     // Offset: 0xB3EA9C
     static void TransitionToState(::Oculus::Platform::Samples::VrHoops::PlatformManager::State newState);
-    // public System.Void .ctor()
-    // Offset: 0xB57344
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlatformManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::PlatformManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlatformManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.PlatformManager
   #pragma pack(pop)
   static check_size<sizeof(PlatformManager), 72 + sizeof(::StringW)> __Oculus_Platform_Samples_VrHoops_PlatformManagerSizeCheck;
@@ -311,6 +305,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::PlatformManager*), "get_MyOculusID", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::PlatformManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::PlatformManager::Update
 // Il2CppName: Update
 template<>
@@ -387,7 +385,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::PlatformManager*), "TransitionToState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{newState});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::PlatformManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

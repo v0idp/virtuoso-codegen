@@ -58,7 +58,7 @@ namespace System::Text {
     // Set static field: static private System.Object s_InternalSyncObject
     static void _set_s_InternalSyncObject(::Il2CppObject* value);
     // Get instance field reference: System.Boolean bIsMicrosoftBestFitFallback
-    [[deprecated]] bool& dyn_bIsMicrosoftBestFitFallback();
+    [[deprecated("Use field access instead!")]] bool& dyn_bIsMicrosoftBestFitFallback();
     // static private System.Object get_InternalSyncObject()
     // Offset: 0x12939F4
     static ::Il2CppObject* get_InternalSyncObject();

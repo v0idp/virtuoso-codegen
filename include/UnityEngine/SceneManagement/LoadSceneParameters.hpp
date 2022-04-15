@@ -49,9 +49,9 @@ namespace UnityEngine::SceneManagement {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.SceneManagement.LoadSceneMode m_LoadSceneMode
-    [[deprecated]] ::UnityEngine::SceneManagement::LoadSceneMode& dyn_m_LoadSceneMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SceneManagement::LoadSceneMode& dyn_m_LoadSceneMode();
     // Get instance field reference: private UnityEngine.SceneManagement.LocalPhysicsMode m_LocalPhysicsMode
-    [[deprecated]] ::UnityEngine::SceneManagement::LocalPhysicsMode& dyn_m_LocalPhysicsMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SceneManagement::LocalPhysicsMode& dyn_m_LocalPhysicsMode();
     // public System.Void .ctor(UnityEngine.SceneManagement.LoadSceneMode mode)
     // Offset: 0x112E2F8
     LoadSceneParameters(::UnityEngine::SceneManagement::LoadSceneMode mode);

@@ -67,13 +67,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Transform _transform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__transform();
     // Get instance field reference: private UnityEngine.Quaternion _startRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__startRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__startRotation();
     // Get instance field reference: private UnityEngine.Quaternion _endRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__endRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__endRotation();
     // Get instance field reference: private System.Boolean _local
-    [[deprecated]] bool& dyn__local();
+    [[deprecated("Use field access instead!")]] bool& dyn__local();
     // public System.Void .ctor(UnityEngine.Transform transform, VROSC.AudioReactive.RotateEffectData data)
     // Offset: 0xA2E480
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

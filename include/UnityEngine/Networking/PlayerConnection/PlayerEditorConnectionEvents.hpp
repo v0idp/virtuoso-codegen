@@ -87,11 +87,18 @@ namespace UnityEngine::Networking::PlayerConnection {
     static_assert(sizeof(::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::ConnectionChangeEvent*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/UnityEngine.Networking.PlayerConnection.MessageTypeSubscribers> messageTypeSubscribers
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::MessageTypeSubscribers*>*& dyn_messageTypeSubscribers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::MessageTypeSubscribers*>*& dyn_messageTypeSubscribers();
     // Get instance field reference: public UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/UnityEngine.Networking.PlayerConnection.ConnectionChangeEvent connectionEvent
-    [[deprecated]] ::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::ConnectionChangeEvent*& dyn_connectionEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::ConnectionChangeEvent*& dyn_connectionEvent();
     // Get instance field reference: public UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/UnityEngine.Networking.PlayerConnection.ConnectionChangeEvent disconnectionEvent
-    [[deprecated]] ::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::ConnectionChangeEvent*& dyn_disconnectionEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::ConnectionChangeEvent*& dyn_disconnectionEvent();
+    // public System.Void .ctor()
+    // Offset: 0xBC6FE0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlayerEditorConnectionEvents* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlayerEditorConnectionEvents*, creationType>()));
+    }
     // public System.Void InvokeMessageIdSubscribers(System.Guid messageId, System.Byte[] data, System.Int32 playerId)
     // Offset: 0xBC6990
     void InvokeMessageIdSubscribers(::System::Guid messageId, ::ArrayW<uint8_t> data, int playerId);
@@ -101,21 +108,16 @@ namespace UnityEngine::Networking::PlayerConnection {
     // public System.Void UnregisterManagedCallback(System.Guid messageId, UnityEngine.Events.UnityAction`1<UnityEngine.Networking.PlayerConnection.MessageEventArgs> callback)
     // Offset: 0xBC5E40
     void UnregisterManagedCallback(::System::Guid messageId, ::UnityEngine::Events::UnityAction_1<::UnityEngine::Networking::PlayerConnection::MessageEventArgs*>* callback);
-    // public System.Void .ctor()
-    // Offset: 0xBC6FE0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlayerEditorConnectionEvents* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlayerEditorConnectionEvents*, creationType>()));
-    }
   }; // UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents
   #pragma pack(pop)
   static check_size<sizeof(PlayerEditorConnectionEvents), 32 + sizeof(::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::ConnectionChangeEvent*)> __UnityEngine_Networking_PlayerConnection_PlayerEditorConnectionEventsSizeCheck;
   static_assert(sizeof(PlayerEditorConnectionEvents) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::InvokeMessageIdSubscribers
 // Il2CppName: InvokeMessageIdSubscribers
 template<>
@@ -146,7 +148,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents*), "UnregisterManagedCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{messageId, callback});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

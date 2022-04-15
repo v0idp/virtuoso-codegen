@@ -72,7 +72,7 @@ namespace DG::Tweening::Core::Enums {
     // Set static field: static public DG.Tweening.Core.Enums.SpecialStartupMode SetCameraShakePosition
     static void _set_SetCameraShakePosition(::DG::Tweening::Core::Enums::SpecialStartupMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // DG.Tweening.Core.Enums.SpecialStartupMode
   #pragma pack(pop)
   static check_size<sizeof(SpecialStartupMode), 0 + sizeof(int)> __DG_Tweening_Core_Enums_SpecialStartupModeSizeCheck;

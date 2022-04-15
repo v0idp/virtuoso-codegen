@@ -50,27 +50,25 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::TutorialStep*>) == 0x8);
     public:
     // Get instance field reference: private System.String _id
-    [[deprecated]] ::StringW& dyn__id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__id();
     // Get instance field reference: private VROSC.TutorialStep[] _steps
-    [[deprecated]] ::ArrayW<::VROSC::TutorialStep*>& dyn__steps();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::TutorialStep*>& dyn__steps();
     // public System.String get_Id()
     // Offset: 0xA2E73C
     ::StringW get_Id();
     // public VROSC.TutorialStep[] get_Steps()
     // Offset: 0xA2E744
     ::ArrayW<::VROSC::TutorialStep*> get_Steps();
-    // public System.Int32 GetStepIndex(VROSC.TutorialStep step)
-    // Offset: 0xA2E74C
-    int GetStepIndex(::VROSC::TutorialStep* step);
     // public System.Void .ctor()
     // Offset: 0xA2E7AC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Tutorial* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Tutorial::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Tutorial*, creationType>()));
     }
+    // public System.Int32 GetStepIndex(VROSC.TutorialStep step)
+    // Offset: 0xA2E74C
+    int GetStepIndex(::VROSC::TutorialStep* step);
   }; // VROSC.Tutorial
   #pragma pack(pop)
   static check_size<sizeof(Tutorial), 24 + sizeof(::ArrayW<::VROSC::TutorialStep*>)> __VROSC_TutorialSizeCheck;
@@ -93,6 +91,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(VROSC::Tutorial*), "get_Steps", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::Tutorial::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Tutorial::GetStepIndex
 // Il2CppName: GetStepIndex
 template<>
@@ -102,7 +104,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC:
     return ::il2cpp_utils::FindMethod(classof(VROSC::Tutorial*), "GetStepIndex", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{step});
   }
 };
-// Writing MetadataGetter for method: VROSC::Tutorial::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

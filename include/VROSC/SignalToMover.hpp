@@ -46,17 +46,12 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformMover*) == 0x8);
     public:
     // Get instance field reference: private VROSC.TransformMover transformMover
-    [[deprecated]] ::VROSC::TransformMover*& dyn_transformMover();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn_transformMover();
     // public System.Void .ctor()
     // Offset: 0x19287E4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalToMover* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SignalToMover::.ctor");

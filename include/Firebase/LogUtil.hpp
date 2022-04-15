@@ -77,10 +77,17 @@ namespace Firebase {
     // Set static field: static private Firebase.LogUtil/Firebase.LogMessageDelegate <>f__mg$cache0
     static void _set_$$f__mg$cache0(::Firebase::LogUtil::LogMessageDelegate* value);
     // Get instance field reference: private System.Boolean _disposed
-    [[deprecated]] bool& dyn__disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__disposed();
     // static private System.Void .cctor()
     // Offset: 0x1889A00
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1889A98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LogUtil* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::LogUtil::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LogUtil*, creationType>()));
+    }
     // static public System.Void InitializeLogging()
     // Offset: 0x1885050
     static void InitializeLogging();
@@ -102,15 +109,6 @@ namespace Firebase {
     // private System.Void <LogUtil>m__0(System.Object sender, System.EventArgs e)
     // Offset: 0x1889D4C
     void $LogUtil$m__0(::Il2CppObject* sender, ::System::EventArgs* e);
-    // public System.Void .ctor()
-    // Offset: 0x1889A98
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LogUtil* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::LogUtil::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LogUtil*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x1889C1C
     // Implemented from: System.Object
@@ -130,6 +128,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::LogUtil*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::LogUtil::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::LogUtil::InitializeLogging
 // Il2CppName: InitializeLogging
 template<>
@@ -194,10 +196,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::LogUtil*), "<LogUtil>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sender, e});
   }
 };
-// Writing MetadataGetter for method: Firebase::LogUtil::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::LogUtil::Finalize
 // Il2CppName: Finalize
 template<>

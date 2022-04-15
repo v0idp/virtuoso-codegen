@@ -53,7 +53,7 @@ namespace System::Data {
     // Deleting conversion operator: operator ::ArrayW<::Il2CppChar>
     constexpr operator ::ArrayW<::Il2CppChar>() const noexcept = delete;
     // Get instance field reference: private System.Xml.XmlWriter _xmltextWriter
-    [[deprecated]] ::System::Xml::XmlWriter*& dyn__xmltextWriter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWriter*& dyn__xmltextWriter();
     // System.IO.Stream get_BaseStream()
     // Offset: 0x12E37D4
     ::System::IO::Stream* get_BaseStream();

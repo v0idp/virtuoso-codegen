@@ -68,6 +68,16 @@ namespace Unity::XR::Oculus {
     // public UnityEngine.XR.XRInputSubsystem get_inputSubsystem()
     // Offset: 0x18DCE50
     ::UnityEngine::XR::XRInputSubsystem* get_inputSubsystem();
+    // public System.Void .ctor()
+    // Offset: 0x18DD688
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OculusLoader* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::OculusLoader::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OculusLoader*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x18DD690
+    static void _cctor();
     // static private Unity.XR.Oculus.OculusLoader/Unity.XR.Oculus.DeviceSupportedResult IsDeviceSupported()
     // Offset: 0x18DCD4C
     static ::Unity::XR::Oculus::OculusLoader::DeviceSupportedResult IsDeviceSupported();
@@ -77,24 +87,6 @@ namespace Unity::XR::Oculus {
     // public Unity.XR.Oculus.OculusSettings GetSettings()
     // Offset: 0x18DD63C
     ::Unity::XR::Oculus::OculusSettings* GetSettings();
-    // public System.Void .ctor()
-    // Offset: 0x18DD688
-    // Implemented from: UnityEngine.XR.Management.XRLoaderHelper
-    // Base method: System.Void XRLoaderHelper::.ctor()
-    // Base method: System.Void XRLoader::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OculusLoader* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::OculusLoader::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OculusLoader*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x18DD690
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override System.Boolean Initialize()
     // Offset: 0x18DCEB8
     // Implemented from: UnityEngine.XR.Management.XRLoader
@@ -135,6 +127,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::OculusLoader*), "get_inputSubsystem", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Unity::XR::Oculus::OculusLoader::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: Unity::XR::Oculus::OculusLoader::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Unity::XR::Oculus::OculusLoader::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::OculusLoader*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: Unity::XR::Oculus::OculusLoader::IsDeviceSupported
 // Il2CppName: IsDeviceSupported
 template<>
@@ -157,18 +161,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Unity::XR::Oculus::OculusSettings* (Unity::XR::Oculus::OculusLoader::*)()>(&Unity::XR::Oculus::OculusLoader::GetSettings)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::OculusLoader*), "GetSettings", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: Unity::XR::Oculus::OculusLoader::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: Unity::XR::Oculus::OculusLoader::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Unity::XR::Oculus::OculusLoader::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::OculusLoader*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Unity::XR::Oculus::OculusLoader::Initialize

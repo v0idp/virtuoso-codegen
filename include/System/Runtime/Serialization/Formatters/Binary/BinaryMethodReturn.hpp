@@ -92,19 +92,19 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static private System.Object instanceOfVoid
     static void _set_instanceOfVoid(::Il2CppObject* value);
     // Get instance field reference: private System.Object returnValue
-    [[deprecated]] ::Il2CppObject*& dyn_returnValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_returnValue();
     // Get instance field reference: private System.Object[] args
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_args();
     // Get instance field reference: private System.Object callContext
-    [[deprecated]] ::Il2CppObject*& dyn_callContext();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_callContext();
     // Get instance field reference: private System.Type[] argTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_argTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_argTypes();
     // Get instance field reference: private System.Boolean bArgsPrimitive
-    [[deprecated]] bool& dyn_bArgsPrimitive();
+    [[deprecated("Use field access instead!")]] bool& dyn_bArgsPrimitive();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.MessageEnum messageEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::MessageEnum& dyn_messageEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::MessageEnum& dyn_messageEnum();
     // Get instance field reference: private System.Type returnType
-    [[deprecated]] ::System::Type*& dyn_returnType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_returnType();
     // static private System.Void .cctor()
     // Offset: 0xFE828C
     static void _cctor();

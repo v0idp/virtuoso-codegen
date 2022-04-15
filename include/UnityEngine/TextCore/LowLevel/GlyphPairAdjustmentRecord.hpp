@@ -59,11 +59,11 @@ namespace UnityEngine::TextCore::LowLevel {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord m_FirstAdjustmentRecord
-    [[deprecated]] ::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord& dyn_m_FirstAdjustmentRecord();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord& dyn_m_FirstAdjustmentRecord();
     // Get instance field reference: private UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord m_SecondAdjustmentRecord
-    [[deprecated]] ::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord& dyn_m_SecondAdjustmentRecord();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord& dyn_m_SecondAdjustmentRecord();
     // Get instance field reference: private UnityEngine.TextCore.LowLevel.FontFeatureLookupFlags m_FeatureLookupFlags
-    [[deprecated]] ::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags& dyn_m_FeatureLookupFlags();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags& dyn_m_FeatureLookupFlags();
     // public UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord get_firstAdjustmentRecord()
     // Offset: 0x18EC930
     ::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord get_firstAdjustmentRecord();

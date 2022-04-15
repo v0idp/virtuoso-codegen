@@ -104,19 +104,19 @@ namespace System::Net {
     // Set static field: static private System.Net.LazyAsyncResult/System.Net.ThreadContext t_ThreadContext
     static void _set_t_ThreadContext(::System::Net::LazyAsyncResult::ThreadContext* value);
     // Get instance field reference: private System.Object m_AsyncObject
-    [[deprecated]] ::Il2CppObject*& dyn_m_AsyncObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_AsyncObject();
     // Get instance field reference: private System.Object m_AsyncState
-    [[deprecated]] ::Il2CppObject*& dyn_m_AsyncState();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_AsyncState();
     // Get instance field reference: private System.AsyncCallback m_AsyncCallback
-    [[deprecated]] ::System::AsyncCallback*& dyn_m_AsyncCallback();
+    [[deprecated("Use field access instead!")]] ::System::AsyncCallback*& dyn_m_AsyncCallback();
     // Get instance field reference: private System.Object m_Result
-    [[deprecated]] ::Il2CppObject*& dyn_m_Result();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_Result();
     // Get instance field reference: private System.Int32 m_IntCompleted
-    [[deprecated]] int& dyn_m_IntCompleted();
+    [[deprecated("Use field access instead!")]] int& dyn_m_IntCompleted();
     // Get instance field reference: private System.Boolean m_UserEvent
-    [[deprecated]] bool& dyn_m_UserEvent();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UserEvent();
     // Get instance field reference: private System.Object m_Event
-    [[deprecated]] ::Il2CppObject*& dyn_m_Event();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_Event();
     // static private System.Net.LazyAsyncResult/System.Net.ThreadContext get_CurrentThreadContext()
     // Offset: 0x10F73A4
     static ::System::Net::LazyAsyncResult::ThreadContext* get_CurrentThreadContext();

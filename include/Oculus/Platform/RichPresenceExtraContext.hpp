@@ -84,7 +84,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.RichPresenceExtraContext LookingForAMatch
     static void _set_LookingForAMatch(::Oculus::Platform::RichPresenceExtraContext value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Platform.RichPresenceExtraContext
   #pragma pack(pop)
   static check_size<sizeof(RichPresenceExtraContext), 0 + sizeof(int)> __Oculus_Platform_RichPresenceExtraContextSizeCheck;

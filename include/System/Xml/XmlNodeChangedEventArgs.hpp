@@ -79,17 +79,17 @@ namespace System::Xml {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlNodeChangedAction action
-    [[deprecated]] ::System::Xml::XmlNodeChangedAction& dyn_action();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeChangedAction& dyn_action();
     // Get instance field reference: private System.Xml.XmlNode node
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_node();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_node();
     // Get instance field reference: private System.Xml.XmlNode oldParent
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_oldParent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_oldParent();
     // Get instance field reference: private System.Xml.XmlNode newParent
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_newParent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_newParent();
     // Get instance field reference: private System.String oldValue
-    [[deprecated]] ::StringW& dyn_oldValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_oldValue();
     // Get instance field reference: private System.String newValue
-    [[deprecated]] ::StringW& dyn_newValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_newValue();
     // public System.Xml.XmlNodeChangedAction get_Action()
     // Offset: 0x1018A14
     ::System::Xml::XmlNodeChangedAction get_Action();

@@ -44,15 +44,13 @@ namespace System::Collections::Specialized {
     static_assert(sizeof(::System::Collections::Specialized::ListDictionary::DictionaryNode*) == 0x8);
     public:
     // Get instance field reference: public System.Object key
-    [[deprecated]] ::Il2CppObject*& dyn_key();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_key();
     // Get instance field reference: public System.Object value
-    [[deprecated]] ::Il2CppObject*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_value();
     // Get instance field reference: public System.Collections.Specialized.ListDictionary/System.Collections.Specialized.DictionaryNode next
-    [[deprecated]] ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_next();
     // public System.Void .ctor()
     // Offset: 0x9F8C7C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ListDictionary::DictionaryNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::ListDictionary::DictionaryNode::.ctor");

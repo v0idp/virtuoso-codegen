@@ -45,7 +45,7 @@ namespace Firebase::Firestore {
       return ErrorCode;
     }
     // Get instance field reference: private Firebase.Firestore.FirestoreError <ErrorCode>k__BackingField
-    [[deprecated]] ::Firebase::Firestore::FirestoreError& dyn_$ErrorCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirestoreError& dyn_$ErrorCode$k__BackingField();
     // private System.Void set_ErrorCode(Firebase.Firestore.FirestoreError value)
     // Offset: 0xD5EC18
     void set_ErrorCode(::Firebase::Firestore::FirestoreError value);

@@ -59,6 +59,13 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x956664
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x9566C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AppController::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppController::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AppController::$$c*, creationType>()));
+    }
     // System.Boolean <Awake>b__25_7()
     // Offset: 0x9566CC
     bool $Awake$b__25_7();
@@ -74,15 +81,6 @@ namespace VROSC {
     // System.Boolean <Awake>b__25_12()
     // Offset: 0x9567DC
     bool $Awake$b__25_12();
-    // public System.Void .ctor()
-    // Offset: 0x9566C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AppController::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppController::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AppController::$$c*, creationType>()));
-    }
   }; // VROSC.AppController/VROSC.<>c
   #pragma pack(pop)
 }
@@ -95,6 +93,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::AppController::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AppController::$$c::$Awake$b__25_7
 // Il2CppName: <Awake>b__25_7
 template<>
@@ -135,7 +137,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppController::$$c*), "<Awake>b__25_12", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AppController::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

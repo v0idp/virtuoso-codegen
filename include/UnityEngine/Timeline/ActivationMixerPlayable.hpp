@@ -72,30 +72,27 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState m_PostPlaybackState
-    [[deprecated]] ::UnityEngine::Timeline::ActivationTrack::PostPlaybackState& dyn_m_PostPlaybackState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::ActivationTrack::PostPlaybackState& dyn_m_PostPlaybackState();
     // Get instance field reference: private System.Boolean m_BoundGameObjectInitialStateIsActive
-    [[deprecated]] bool& dyn_m_BoundGameObjectInitialStateIsActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_BoundGameObjectInitialStateIsActive();
     // Get instance field reference: private UnityEngine.GameObject m_BoundGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_BoundGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_BoundGameObject();
     // public UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState get_postPlaybackState()
     // Offset: 0xC694BC
     ::UnityEngine::Timeline::ActivationTrack::PostPlaybackState get_postPlaybackState();
     // public System.Void set_postPlaybackState(UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState value)
     // Offset: 0xC694C4
     void set_postPlaybackState(::UnityEngine::Timeline::ActivationTrack::PostPlaybackState value);
-    // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.ActivationMixerPlayable> Create(UnityEngine.Playables.PlayableGraph graph, System.Int32 inputCount)
-    // Offset: 0xC6942C
-    static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ActivationMixerPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, int inputCount);
     // public System.Void .ctor()
     // Offset: 0xC69770
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ActivationMixerPlayable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ActivationMixerPlayable::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ActivationMixerPlayable*, creationType>()));
     }
+    // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.ActivationMixerPlayable> Create(UnityEngine.Playables.PlayableGraph graph, System.Int32 inputCount)
+    // Offset: 0xC6942C
+    static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ActivationMixerPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, int inputCount);
     // public override System.Void OnPlayableDestroy(UnityEngine.Playables.Playable playable)
     // Offset: 0xC694CC
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -129,6 +126,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ActivationMixerPlayable*), "set_postPlaybackState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::ActivationMixerPlayable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::ActivationMixerPlayable::Create
 // Il2CppName: Create
 template<>
@@ -139,10 +140,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ActivationMixerPlayable*), "Create", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{graph, inputCount});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::ActivationMixerPlayable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::ActivationMixerPlayable::OnPlayableDestroy
 // Il2CppName: OnPlayableDestroy
 template<>

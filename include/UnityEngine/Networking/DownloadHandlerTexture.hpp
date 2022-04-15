@@ -65,11 +65,11 @@ namespace UnityEngine::Networking {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Texture2D mTexture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_mTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_mTexture();
     // Get instance field reference: private System.Boolean mHasTexture
-    [[deprecated]] bool& dyn_mHasTexture();
+    [[deprecated("Use field access instead!")]] bool& dyn_mHasTexture();
     // Get instance field reference: private System.Boolean mNonReadable
-    [[deprecated]] bool& dyn_mNonReadable();
+    [[deprecated("Use field access instead!")]] bool& dyn_mNonReadable();
     // public UnityEngine.Texture2D get_texture()
     // Offset: 0x190DF94
     ::UnityEngine::Texture2D* get_texture();

@@ -51,9 +51,9 @@ namespace System::Data {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly System.Data.DataTable <Table>k__BackingField
-    [[deprecated]] ::System::Data::DataTable*& dyn_$Table$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn_$Table$k__BackingField();
     // Get instance field reference: private readonly System.String <Conflict>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Conflict$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Conflict$k__BackingField();
     // public System.String get_Conflict()
     // Offset: 0x13B7AB8
     ::StringW get_Conflict();

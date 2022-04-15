@@ -129,19 +129,19 @@ namespace System::Collections::Specialized {
       return *reinterpret_cast<::System::Runtime::Serialization::IDeserializationCallback*>(this);
     }
     // Get instance field reference: private System.Collections.ArrayList _objectsArray
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__objectsArray();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__objectsArray();
     // Get instance field reference: private System.Collections.Hashtable _objectsTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__objectsTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__objectsTable();
     // Get instance field reference: private System.Int32 _initialCapacity
-    [[deprecated]] int& dyn__initialCapacity();
+    [[deprecated("Use field access instead!")]] int& dyn__initialCapacity();
     // Get instance field reference: private System.Collections.IEqualityComparer _comparer
-    [[deprecated]] ::System::Collections::IEqualityComparer*& dyn__comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEqualityComparer*& dyn__comparer();
     // Get instance field reference: private System.Boolean _readOnly
-    [[deprecated]] bool& dyn__readOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__readOnly();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // Get instance field reference: private System.Runtime.Serialization.SerializationInfo _siInfo
-    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn__siInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationInfo*& dyn__siInfo();
     // public System.Int32 get_Count()
     // Offset: 0x140812C
     int get_Count();
@@ -166,6 +166,13 @@ namespace System::Collections::Specialized {
     // public System.Collections.ICollection get_Values()
     // Offset: 0x14087BC
     ::System::Collections::ICollection* get_Values();
+    // public System.Void .ctor()
+    // Offset: 0x1408068
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OrderedDictionary* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::OrderedDictionary::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OrderedDictionary*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 capacity)
     // Offset: 0x1408094
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -217,15 +224,6 @@ namespace System::Collections::Specialized {
     // private System.Void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object sender)
     // Offset: 0x1409030
     void System_Runtime_Serialization_IDeserializationCallback_OnDeserialization(::Il2CppObject* sender);
-    // public System.Void .ctor()
-    // Offset: 0x1408068
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OrderedDictionary* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::OrderedDictionary::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OrderedDictionary*, creationType>()));
-    }
   }; // System.Collections.Specialized.OrderedDictionary
   #pragma pack(pop)
   static check_size<sizeof(OrderedDictionary), 64 + sizeof(::System::Runtime::Serialization::SerializationInfo*)> __System_Collections_Specialized_OrderedDictionarySizeCheck;
@@ -299,6 +297,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::OrderedDictionary*), "get_Values", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Collections::Specialized::OrderedDictionary::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Collections::Specialized::OrderedDictionary::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -402,7 +404,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::OrderedDictionary*), "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sender});
   }
 };
-// Writing MetadataGetter for method: System::Collections::Specialized::OrderedDictionary::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

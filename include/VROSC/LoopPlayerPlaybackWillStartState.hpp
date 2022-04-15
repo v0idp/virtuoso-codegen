@@ -51,9 +51,9 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 <SyncOffset>k__BackingField
-    [[deprecated]] int& dyn_$SyncOffset$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$SyncOffset$k__BackingField();
     // Get instance field reference: private System.Int32 <InverseSyncOffset>k__BackingField
-    [[deprecated]] int& dyn_$InverseSyncOffset$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$InverseSyncOffset$k__BackingField();
     // public System.Int32 get_SyncOffset()
     // Offset: 0x19BDFC4
     int get_SyncOffset();
@@ -88,7 +88,6 @@ namespace VROSC {
     // Implemented from: VROSC.LoopPlayerPlaybackFadeState
     // Base method: System.Void LoopPlayerPlaybackFadeState::.ctor()
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlayerPlaybackWillStartState* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackWillStartState::.ctor");

@@ -84,15 +84,15 @@ namespace System::IO {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: System.IO.MonoIOStat _data
-    [[deprecated]] ::System::IO::MonoIOStat& dyn__data();
+    [[deprecated("Use field access instead!")]] ::System::IO::MonoIOStat& dyn__data();
     // Get instance field reference: System.Int32 _dataInitialised
-    [[deprecated]] int& dyn__dataInitialised();
+    [[deprecated("Use field access instead!")]] int& dyn__dataInitialised();
     // Get instance field reference: protected System.String FullPath
-    [[deprecated]] ::StringW& dyn_FullPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_FullPath();
     // Get instance field reference: protected System.String OriginalPath
-    [[deprecated]] ::StringW& dyn_OriginalPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_OriginalPath();
     // Get instance field reference: private System.String _displayPath
-    [[deprecated]] ::StringW& dyn__displayPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__displayPath();
     // public System.String get_FullName()
     // Offset: 0x1451748
     ::StringW get_FullName();

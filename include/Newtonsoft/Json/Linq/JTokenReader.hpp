@@ -79,13 +79,13 @@ namespace Newtonsoft::Json::Linq {
       return *reinterpret_cast<::Newtonsoft::Json::IJsonLineInfo*>(this);
     }
     // Get instance field reference: private readonly Newtonsoft.Json.Linq.JToken _root
-    [[deprecated]] ::Newtonsoft::Json::Linq::JToken*& dyn__root();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JToken*& dyn__root();
     // Get instance field reference: private System.String _initialPath
-    [[deprecated]] ::StringW& dyn__initialPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__initialPath();
     // Get instance field reference: private Newtonsoft.Json.Linq.JToken _parent
-    [[deprecated]] ::Newtonsoft::Json::Linq::JToken*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JToken*& dyn__parent();
     // Get instance field reference: private Newtonsoft.Json.Linq.JToken _current
-    [[deprecated]] ::Newtonsoft::Json::Linq::JToken*& dyn__current();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JToken*& dyn__current();
     // public Newtonsoft.Json.Linq.JToken get_CurrentToken()
     // Offset: 0xEEAF70
     ::Newtonsoft::Json::Linq::JToken* get_CurrentToken();

@@ -66,7 +66,7 @@ namespace DG::Tweening::Core::Enums {
     // Set static field: static public DG.Tweening.Core.Enums.UpdateMode IgnoreOnComplete
     static void _set_IgnoreOnComplete(::DG::Tweening::Core::Enums::UpdateMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // DG.Tweening.Core.Enums.UpdateMode
   #pragma pack(pop)
   static check_size<sizeof(UpdateMode), 0 + sizeof(int)> __DG_Tweening_Core_Enums_UpdateModeSizeCheck;

@@ -79,7 +79,7 @@ namespace Unity::XR::Oculus {
       // Set static field: static public Unity.XR.Oculus.OculusSettings/Unity.XR.Oculus.StereoRenderingModeDesktop SinglePassInstanced
       static void _set_SinglePassInstanced(::Unity::XR::Oculus::OculusSettings::StereoRenderingModeDesktop value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Unity.XR.Oculus.OculusSettings/Unity.XR.Oculus.StereoRenderingModeDesktop
     #pragma pack(pop)
     static check_size<sizeof(OculusSettings::StereoRenderingModeDesktop), 0 + sizeof(int)> __Unity_XR_Oculus_OculusSettings_StereoRenderingModeDesktopSizeCheck;
@@ -121,7 +121,7 @@ namespace Unity::XR::Oculus {
       // Set static field: static public Unity.XR.Oculus.OculusSettings/Unity.XR.Oculus.StereoRenderingModeAndroid Multiview
       static void _set_Multiview(::Unity::XR::Oculus::OculusSettings::StereoRenderingModeAndroid value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Unity.XR.Oculus.OculusSettings/Unity.XR.Oculus.StereoRenderingModeAndroid
     #pragma pack(pop)
     static check_size<sizeof(OculusSettings::StereoRenderingModeAndroid), 0 + sizeof(int)> __Unity_XR_Oculus_OculusSettings_StereoRenderingModeAndroidSizeCheck;
@@ -235,50 +235,46 @@ namespace Unity::XR::Oculus {
     // Set static field: static public Unity.XR.Oculus.OculusSettings s_Settings
     static void _set_s_Settings(::Unity::XR::Oculus::OculusSettings* value);
     // Get instance field reference: public Unity.XR.Oculus.OculusSettings/Unity.XR.Oculus.StereoRenderingModeDesktop m_StereoRenderingModeDesktop
-    [[deprecated]] ::Unity::XR::Oculus::OculusSettings::StereoRenderingModeDesktop& dyn_m_StereoRenderingModeDesktop();
+    [[deprecated("Use field access instead!")]] ::Unity::XR::Oculus::OculusSettings::StereoRenderingModeDesktop& dyn_m_StereoRenderingModeDesktop();
     // Get instance field reference: public Unity.XR.Oculus.OculusSettings/Unity.XR.Oculus.StereoRenderingModeAndroid m_StereoRenderingModeAndroid
-    [[deprecated]] ::Unity::XR::Oculus::OculusSettings::StereoRenderingModeAndroid& dyn_m_StereoRenderingModeAndroid();
+    [[deprecated("Use field access instead!")]] ::Unity::XR::Oculus::OculusSettings::StereoRenderingModeAndroid& dyn_m_StereoRenderingModeAndroid();
     // Get instance field reference: public System.Boolean SharedDepthBuffer
-    [[deprecated]] bool& dyn_SharedDepthBuffer();
+    [[deprecated("Use field access instead!")]] bool& dyn_SharedDepthBuffer();
     // Get instance field reference: public System.Boolean DashSupport
-    [[deprecated]] bool& dyn_DashSupport();
+    [[deprecated("Use field access instead!")]] bool& dyn_DashSupport();
     // Get instance field reference: public System.Boolean V2Signing
-    [[deprecated]] bool& dyn_V2Signing();
+    [[deprecated("Use field access instead!")]] bool& dyn_V2Signing();
     // Get instance field reference: public System.Boolean LowOverheadMode
-    [[deprecated]] bool& dyn_LowOverheadMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_LowOverheadMode();
     // Get instance field reference: public System.Boolean ProtectedContext
-    [[deprecated]] bool& dyn_ProtectedContext();
+    [[deprecated("Use field access instead!")]] bool& dyn_ProtectedContext();
     // Get instance field reference: public System.Boolean FocusAware
-    [[deprecated]] bool& dyn_FocusAware();
+    [[deprecated("Use field access instead!")]] bool& dyn_FocusAware();
     // Get instance field reference: public System.Boolean OptimizeBufferDiscards
-    [[deprecated]] bool& dyn_OptimizeBufferDiscards();
+    [[deprecated("Use field access instead!")]] bool& dyn_OptimizeBufferDiscards();
     // Get instance field reference: public System.Boolean PhaseSync
-    [[deprecated]] bool& dyn_PhaseSync();
+    [[deprecated("Use field access instead!")]] bool& dyn_PhaseSync();
     // Get instance field reference: public System.Boolean SubsampledLayout
-    [[deprecated]] bool& dyn_SubsampledLayout();
+    [[deprecated("Use field access instead!")]] bool& dyn_SubsampledLayout();
     // Get instance field reference: public System.Boolean TargetQuest
-    [[deprecated]] bool& dyn_TargetQuest();
+    [[deprecated("Use field access instead!")]] bool& dyn_TargetQuest();
     // Get instance field reference: public System.Boolean TargetQuest2
-    [[deprecated]] bool& dyn_TargetQuest2();
+    [[deprecated("Use field access instead!")]] bool& dyn_TargetQuest2();
     // Get instance field reference: public UnityEngine.Texture2D SystemSplashScreen
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_SystemSplashScreen();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_SystemSplashScreen();
+    // public System.Void .ctor()
+    // Offset: 0x18DD7B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OculusSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::OculusSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OculusSettings*, creationType>()));
+    }
     // public System.UInt16 GetStereoRenderingMode()
     // Offset: 0x18DD1E8
     uint16_t GetStereoRenderingMode();
     // public System.Void Awake()
     // Offset: 0x18DD760
     void Awake();
-    // public System.Void .ctor()
-    // Offset: 0x18DD7B0
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OculusSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::OculusSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OculusSettings*, creationType>()));
-    }
   }; // Unity.XR.Oculus.OculusSettings
   #pragma pack(pop)
   static check_size<sizeof(OculusSettings), 48 + sizeof(::UnityEngine::Texture2D*)> __Unity_XR_Oculus_OculusSettingsSizeCheck;
@@ -289,6 +285,10 @@ DEFINE_IL2CPP_ARG_TYPE(::Unity::XR::Oculus::OculusSettings::StereoRenderingModeA
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::Unity::XR::Oculus::OculusSettings::StereoRenderingModeDesktop, "Unity.XR.Oculus", "OculusSettings/StereoRenderingModeDesktop");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Unity::XR::Oculus::OculusSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Unity::XR::Oculus::OculusSettings::GetStereoRenderingMode
 // Il2CppName: GetStereoRenderingMode
 template<>
@@ -305,7 +305,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::OculusSettings*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Unity::XR::Oculus::OculusSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -115,7 +115,7 @@ namespace System::IO::Compression {
       // Set static field: static public System.IO.Compression.ZipArchiveEntry/System.IO.Compression.BitFlagValues UnicodeFileName
       static void _set_UnicodeFileName(::System::IO::Compression::ZipArchiveEntry::BitFlagValues value);
       // Get instance field reference: public System.UInt16 value__
-      [[deprecated]] uint16_t& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint16_t& dyn_value__();
     }; // System.IO.Compression.ZipArchiveEntry/System.IO.Compression.BitFlagValues
     #pragma pack(pop)
     static check_size<sizeof(ZipArchiveEntry::BitFlagValues), 0 + sizeof(uint16_t)> __System_IO_Compression_ZipArchiveEntry_BitFlagValuesSizeCheck;
@@ -175,7 +175,7 @@ namespace System::IO::Compression {
       // Set static field: static public System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues LZMA
       static void _set_LZMA(::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues value);
       // Get instance field reference: public System.UInt16 value__
-      [[deprecated]] uint16_t& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint16_t& dyn_value__();
     }; // System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues
     #pragma pack(pop)
     static check_size<sizeof(ZipArchiveEntry::CompressionMethodValues), 0 + sizeof(uint16_t)> __System_IO_Compression_ZipArchiveEntry_CompressionMethodValuesSizeCheck;
@@ -343,57 +343,57 @@ namespace System::IO::Compression {
     // Set static field: static readonly System.IO.Compression.ZipVersionMadeByPlatform CurrentZipPlatform
     static void _set_CurrentZipPlatform(::System::IO::Compression::ZipVersionMadeByPlatform value);
     // Get instance field reference: private System.IO.Compression.ZipArchive _archive
-    [[deprecated]] ::System::IO::Compression::ZipArchive*& dyn__archive();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchive*& dyn__archive();
     // Get instance field reference: private readonly System.Boolean _originallyInArchive
-    [[deprecated]] bool& dyn__originallyInArchive();
+    [[deprecated("Use field access instead!")]] bool& dyn__originallyInArchive();
     // Get instance field reference: private readonly System.Int32 _diskNumberStart
-    [[deprecated]] int& dyn__diskNumberStart();
+    [[deprecated("Use field access instead!")]] int& dyn__diskNumberStart();
     // Get instance field reference: private readonly System.IO.Compression.ZipVersionMadeByPlatform _versionMadeByPlatform
-    [[deprecated]] ::System::IO::Compression::ZipVersionMadeByPlatform& dyn__versionMadeByPlatform();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipVersionMadeByPlatform& dyn__versionMadeByPlatform();
     // Get instance field reference: private System.IO.Compression.ZipVersionNeededValues _versionMadeBySpecification
-    [[deprecated]] ::System::IO::Compression::ZipVersionNeededValues& dyn__versionMadeBySpecification();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipVersionNeededValues& dyn__versionMadeBySpecification();
     // Get instance field reference: private System.IO.Compression.ZipVersionNeededValues _versionToExtract
-    [[deprecated]] ::System::IO::Compression::ZipVersionNeededValues& dyn__versionToExtract();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipVersionNeededValues& dyn__versionToExtract();
     // Get instance field reference: private System.IO.Compression.ZipArchiveEntry/System.IO.Compression.BitFlagValues _generalPurposeBitFlag
-    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry::BitFlagValues& dyn__generalPurposeBitFlag();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchiveEntry::BitFlagValues& dyn__generalPurposeBitFlag();
     // Get instance field reference: private System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues _storedCompressionMethod
-    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues& dyn__storedCompressionMethod();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchiveEntry::CompressionMethodValues& dyn__storedCompressionMethod();
     // Get instance field reference: private System.DateTimeOffset _lastModified
-    [[deprecated]] ::System::DateTimeOffset& dyn__lastModified();
+    [[deprecated("Use field access instead!")]] ::System::DateTimeOffset& dyn__lastModified();
     // Get instance field reference: private System.Int64 _compressedSize
-    [[deprecated]] int64_t& dyn__compressedSize();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__compressedSize();
     // Get instance field reference: private System.Int64 _uncompressedSize
-    [[deprecated]] int64_t& dyn__uncompressedSize();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__uncompressedSize();
     // Get instance field reference: private System.Int64 _offsetOfLocalHeader
-    [[deprecated]] int64_t& dyn__offsetOfLocalHeader();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__offsetOfLocalHeader();
     // Get instance field reference: private System.Nullable`1<System.Int64> _storedOffsetOfCompressedData
-    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__storedOffsetOfCompressedData();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int64_t>& dyn__storedOffsetOfCompressedData();
     // Get instance field reference: private System.UInt32 _crc32
-    [[deprecated]] uint& dyn__crc32();
+    [[deprecated("Use field access instead!")]] uint& dyn__crc32();
     // Get instance field reference: private System.Byte[][] _compressedBytes
-    [[deprecated]] ::ArrayW<::ArrayW<uint8_t>>& dyn__compressedBytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::ArrayW<uint8_t>>& dyn__compressedBytes();
     // Get instance field reference: private System.IO.MemoryStream _storedUncompressedData
-    [[deprecated]] ::System::IO::MemoryStream*& dyn__storedUncompressedData();
+    [[deprecated("Use field access instead!")]] ::System::IO::MemoryStream*& dyn__storedUncompressedData();
     // Get instance field reference: private System.Boolean _currentlyOpenForWrite
-    [[deprecated]] bool& dyn__currentlyOpenForWrite();
+    [[deprecated("Use field access instead!")]] bool& dyn__currentlyOpenForWrite();
     // Get instance field reference: private System.Boolean _everOpenedForWrite
-    [[deprecated]] bool& dyn__everOpenedForWrite();
+    [[deprecated("Use field access instead!")]] bool& dyn__everOpenedForWrite();
     // Get instance field reference: private System.IO.Stream _outstandingWriteStream
-    [[deprecated]] ::System::IO::Stream*& dyn__outstandingWriteStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__outstandingWriteStream();
     // Get instance field reference: private System.UInt32 _externalFileAttr
-    [[deprecated]] uint& dyn__externalFileAttr();
+    [[deprecated("Use field access instead!")]] uint& dyn__externalFileAttr();
     // Get instance field reference: private System.String _storedEntryName
-    [[deprecated]] ::StringW& dyn__storedEntryName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__storedEntryName();
     // Get instance field reference: private System.Byte[] _storedEntryNameBytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__storedEntryNameBytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__storedEntryNameBytes();
     // Get instance field reference: private System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> _cdUnknownExtraFields
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__cdUnknownExtraFields();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__cdUnknownExtraFields();
     // Get instance field reference: private System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> _lhUnknownExtraFields
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__lhUnknownExtraFields();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn__lhUnknownExtraFields();
     // Get instance field reference: private System.Byte[] _fileComment
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__fileComment();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__fileComment();
     // Get instance field reference: private System.Nullable`1<System.IO.Compression.CompressionLevel> _compressionLevel
-    [[deprecated]] ::System::Nullable_1<::System::IO::Compression::CompressionLevel>& dyn__compressionLevel();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::System::IO::Compression::CompressionLevel>& dyn__compressionLevel();
     // public System.String get_FullName()
     // Offset: 0x169E6B4
     ::StringW get_FullName();

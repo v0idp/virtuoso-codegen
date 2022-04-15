@@ -145,31 +145,31 @@ namespace UnityEngine {
     // Set static field: static private System.Int32[] depthFormatBits
     static void _set_depthFormatBits(::ArrayW<int> value);
     // Get instance field reference: private System.Int32 <width>k__BackingField
-    [[deprecated]] int& dyn_$width$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$width$k__BackingField();
     // Get instance field reference: private System.Int32 <height>k__BackingField
-    [[deprecated]] int& dyn_$height$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$height$k__BackingField();
     // Get instance field reference: private System.Int32 <msaaSamples>k__BackingField
-    [[deprecated]] int& dyn_$msaaSamples$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$msaaSamples$k__BackingField();
     // Get instance field reference: private System.Int32 <volumeDepth>k__BackingField
-    [[deprecated]] int& dyn_$volumeDepth$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$volumeDepth$k__BackingField();
     // Get instance field reference: private System.Int32 <mipCount>k__BackingField
-    [[deprecated]] int& dyn_$mipCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$mipCount$k__BackingField();
     // Get instance field reference: private UnityEngine.Experimental.Rendering.GraphicsFormat _graphicsFormat
-    [[deprecated]] ::UnityEngine::Experimental::Rendering::GraphicsFormat& dyn__graphicsFormat();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::Rendering::GraphicsFormat& dyn__graphicsFormat();
     // Get instance field reference: private UnityEngine.Experimental.Rendering.GraphicsFormat <stencilFormat>k__BackingField
-    [[deprecated]] ::UnityEngine::Experimental::Rendering::GraphicsFormat& dyn_$stencilFormat$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::Rendering::GraphicsFormat& dyn_$stencilFormat$k__BackingField();
     // Get instance field reference: private System.Int32 _depthBufferBits
-    [[deprecated]] int& dyn__depthBufferBits();
+    [[deprecated("Use field access instead!")]] int& dyn__depthBufferBits();
     // Get instance field reference: private UnityEngine.Rendering.TextureDimension <dimension>k__BackingField
-    [[deprecated]] ::UnityEngine::Rendering::TextureDimension& dyn_$dimension$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::TextureDimension& dyn_$dimension$k__BackingField();
     // Get instance field reference: private UnityEngine.Rendering.ShadowSamplingMode <shadowSamplingMode>k__BackingField
-    [[deprecated]] ::UnityEngine::Rendering::ShadowSamplingMode& dyn_$shadowSamplingMode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::ShadowSamplingMode& dyn_$shadowSamplingMode$k__BackingField();
     // Get instance field reference: private UnityEngine.VRTextureUsage <vrUsage>k__BackingField
-    [[deprecated]] ::UnityEngine::VRTextureUsage& dyn_$vrUsage$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::VRTextureUsage& dyn_$vrUsage$k__BackingField();
     // Get instance field reference: private UnityEngine.RenderTextureCreationFlags _flags
-    [[deprecated]] ::UnityEngine::RenderTextureCreationFlags& dyn__flags();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTextureCreationFlags& dyn__flags();
     // Get instance field reference: private UnityEngine.RenderTextureMemoryless <memoryless>k__BackingField
-    [[deprecated]] ::UnityEngine::RenderTextureMemoryless& dyn_$memoryless$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTextureMemoryless& dyn_$memoryless$k__BackingField();
     // public System.Int32 get_width()
     // Offset: 0xBCF954
     int get_width();

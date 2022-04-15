@@ -74,11 +74,11 @@ namespace OVR {
     static_assert(sizeof(::OVR::SoundFX*) == 0x8);
     public:
     // Get instance field reference: public System.String soundFXName
-    [[deprecated]] ::StringW& dyn_soundFXName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_soundFXName();
     // Get instance field reference: private System.Boolean initialized
-    [[deprecated]] bool& dyn_initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_initialized();
     // Get instance field reference: private OVR.SoundFX soundFXCached
-    [[deprecated]] ::OVR::SoundFX*& dyn_soundFXCached();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundFX*& dyn_soundFXCached();
     // public OVR.SoundFX get_soundFX()
     // Offset: 0x18A5530
     ::OVR::SoundFX* get_soundFX();
@@ -94,6 +94,13 @@ namespace OVR {
     // public System.Boolean get_IsValid()
     // Offset: 0x18A5680
     bool get_IsValid();
+    // public System.Void .ctor()
+    // Offset: 0x18A58B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SoundFXRef* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundFXRef::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SoundFXRef*, creationType>()));
+    }
     // private System.Void Init()
     // Offset: 0x18A5560
     void Init();
@@ -124,15 +131,6 @@ namespace OVR {
     // public System.Void DetachFromParent()
     // Offset: 0x18A5880
     void DetachFromParent();
-    // public System.Void .ctor()
-    // Offset: 0x18A58B8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SoundFXRef* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundFXRef::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SoundFXRef*, creationType>()));
-    }
   }; // OVR.SoundFXRef
   #pragma pack(pop)
   static check_size<sizeof(SoundFXRef), 32 + sizeof(::OVR::SoundFX*)> __OVR_SoundFXRefSizeCheck;
@@ -180,6 +178,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::SoundFXRef*), "get_IsValid", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OVR::SoundFXRef::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::SoundFXRef::Init
 // Il2CppName: Init
 template<>
@@ -270,7 +272,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::SoundFXRef*), "DetachFromParent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OVR::SoundFXRef::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

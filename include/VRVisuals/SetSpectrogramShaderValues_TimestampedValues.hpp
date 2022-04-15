@@ -50,9 +50,9 @@ namespace VRVisuals {
     static_assert(sizeof(::System::Collections::Generic::List_1<float>*) == 0x8);
     public:
     // Get instance field reference: private System.Single <Life>k__BackingField
-    [[deprecated]] float& dyn_$Life$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Life$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single> <Values>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn_$Values$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<float>*& dyn_$Values$k__BackingField();
     // public System.Single get_Life()
     // Offset: 0x8D98F0
     float get_Life();

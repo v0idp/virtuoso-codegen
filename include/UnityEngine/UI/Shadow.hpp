@@ -79,11 +79,11 @@ namespace UnityEngine::UI {
     // Set static field: static private System.Single kMaxEffectDistance
     static void _set_kMaxEffectDistance(float value);
     // Get instance field reference: private UnityEngine.Color m_EffectColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_EffectColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_EffectColor();
     // Get instance field reference: private UnityEngine.Vector2 m_EffectDistance
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_EffectDistance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_EffectDistance();
     // Get instance field reference: private System.Boolean m_UseGraphicAlpha
-    [[deprecated]] bool& dyn_m_UseGraphicAlpha();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UseGraphicAlpha();
     // public UnityEngine.Color get_effectColor()
     // Offset: 0x1434484
     ::UnityEngine::Color get_effectColor();
@@ -113,11 +113,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.BaseMeshEffect
     // Base method: System.Void BaseMeshEffect::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Shadow* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Shadow::.ctor");

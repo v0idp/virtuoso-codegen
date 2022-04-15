@@ -50,27 +50,25 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: private System.String _header
-    [[deprecated]] ::StringW& dyn__header();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__header();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _values
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__values();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__values();
     // public System.String get_Header()
     // Offset: 0x1918C64
     ::StringW get_Header();
     // public System.Collections.Generic.List`1<System.String> get_Values()
     // Offset: 0x1918C6C
     ::System::Collections::Generic::List_1<::StringW>* get_Values();
-    // public System.Void Set(System.String header, System.Collections.Generic.List`1<System.String> values)
-    // Offset: 0x1918C74
-    void Set(::StringW header, ::System::Collections::Generic::List_1<::StringW>* values);
     // public System.Void .ctor()
     // Offset: 0x1918C7C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISpinnerData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISpinnerData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UISpinnerData*, creationType>()));
     }
+    // public System.Void Set(System.String header, System.Collections.Generic.List`1<System.String> values)
+    // Offset: 0x1918C74
+    void Set(::StringW header, ::System::Collections::Generic::List_1<::StringW>* values);
   }; // VROSC.UISpinnerData
   #pragma pack(pop)
   static check_size<sizeof(UISpinnerData), 24 + sizeof(::System::Collections::Generic::List_1<::StringW>*)> __VROSC_UISpinnerDataSizeCheck;
@@ -93,6 +91,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISpinnerData*), "get_Values", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UISpinnerData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UISpinnerData::Set
 // Il2CppName: Set
 template<>
@@ -103,7 +105,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISpinnerData*), "Set", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{header, values});
   }
 };
-// Writing MetadataGetter for method: VROSC::UISpinnerData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

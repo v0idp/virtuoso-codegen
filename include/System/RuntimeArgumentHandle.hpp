@@ -45,7 +45,7 @@ namespace System {
       return args;
     }
     // Get instance field reference: System.IntPtr args
-    [[deprecated]] ::System::IntPtr& dyn_args();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_args();
   }; // System.RuntimeArgumentHandle
   #pragma pack(pop)
   static check_size<sizeof(RuntimeArgumentHandle), 0 + sizeof(::System::IntPtr)> __System_RuntimeArgumentHandleSizeCheck;

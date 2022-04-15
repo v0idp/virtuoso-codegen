@@ -44,25 +44,27 @@ namespace Firebase::Platform {
       return appUtils;
     }
     // Get instance field reference: Firebase.Platform.IFirebaseAppUtils appUtils
-    [[deprecated]] ::Firebase::Platform::IFirebaseAppUtils*& dyn_appUtils();
-    // System.Void <>m__0()
-    // Offset: 0x18CB428
-    void $$m__0();
+    [[deprecated("Use field access instead!")]] ::Firebase::Platform::IFirebaseAppUtils*& dyn_appUtils();
     // public System.Void .ctor()
     // Offset: 0x18C97C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0*, creationType>()));
     }
+    // System.Void <>m__0()
+    // Offset: 0x18CB428
+    void $$m__0();
   }; // Firebase.Platform.FirebaseHandler/Firebase.Platform.<CreatePartialOnMainThread>c__AnonStorey0
   #pragma pack(pop)
   static check_size<sizeof(FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0), 16 + sizeof(::Firebase::Platform::IFirebaseAppUtils*)> __Firebase_Platform_FirebaseHandler_$CreatePartialOnMainThread$c__AnonStorey0SizeCheck;
   static_assert(sizeof(FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Platform::FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Platform::FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Platform::FirebaseHandler::$CreatePartialOnMainThread$c__AnonStorey0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

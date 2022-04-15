@@ -70,9 +70,9 @@ namespace OVRSimpleJSON {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<OVRSimpleJSON.JSONNode> m_List
-    [[deprecated]] ::System::Collections::Generic::List_1<::OVRSimpleJSON::JSONNode*>*& dyn_m_List();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::OVRSimpleJSON::JSONNode*>*& dyn_m_List();
     // Get instance field reference: private System.Boolean inline
-    [[deprecated]] bool& dyn_inline();
+    [[deprecated("Use field access instead!")]] bool& dyn_inline();
     // public override System.Boolean get_Inline()
     // Offset: 0x987EB4
     // Implemented from: OVRSimpleJSON.JSONNode
@@ -127,7 +127,6 @@ namespace OVRSimpleJSON {
     // Offset: 0x98895C
     // Implemented from: OVRSimpleJSON.JSONNode
     // Base method: System.Void JSONNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JSONArray* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVRSimpleJSON::JSONArray::.ctor");

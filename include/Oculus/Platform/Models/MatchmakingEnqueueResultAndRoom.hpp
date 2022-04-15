@@ -52,9 +52,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::Room*) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.Models.MatchmakingEnqueueResult MatchmakingEnqueueResult
-    [[deprecated]] ::Oculus::Platform::Models::MatchmakingEnqueueResult*& dyn_MatchmakingEnqueueResult();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::MatchmakingEnqueueResult*& dyn_MatchmakingEnqueueResult();
     // Get instance field reference: public readonly Oculus.Platform.Models.Room Room
-    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_Room();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Room*& dyn_Room();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB42990
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

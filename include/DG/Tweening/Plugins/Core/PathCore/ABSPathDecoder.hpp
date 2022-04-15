@@ -38,25 +38,27 @@ namespace DG::Tweening::Plugins::Core::PathCore {
   // [TokenAttribute] Offset: FFFFFFFF
   class ABSPathDecoder : public ::Il2CppObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x15D3334
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ABSPathDecoder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ABSPathDecoder*, creationType>()));
+    }
     // System.Void FinalizePath(DG.Tweening.Plugins.Core.PathCore.Path p, UnityEngine.Vector3[] wps, System.Boolean isClosedPath)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void FinalizePath(::DG::Tweening::Plugins::Core::PathCore::Path* p, ::ArrayW<::UnityEngine::Vector3> wps, bool isClosedPath);
     // UnityEngine.Vector3 GetPoint(System.Single perc, UnityEngine.Vector3[] wps, DG.Tweening.Plugins.Core.PathCore.Path p, DG.Tweening.Plugins.Core.PathCore.ControlPoint[] controlPoints)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::UnityEngine::Vector3 GetPoint(float perc, ::ArrayW<::UnityEngine::Vector3> wps, ::DG::Tweening::Plugins::Core::PathCore::Path* p, ::ArrayW<::DG::Tweening::Plugins::Core::PathCore::ControlPoint> controlPoints);
-    // protected System.Void .ctor()
-    // Offset: 0x15D3334
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ABSPathDecoder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ABSPathDecoder*, creationType>()));
-    }
   }; // DG.Tweening.Plugins.Core.PathCore.ABSPathDecoder
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder::FinalizePath
 // Il2CppName: FinalizePath
 template<>
@@ -80,7 +82,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder*), "GetPoint", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{perc, wps, p, controlPoints});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

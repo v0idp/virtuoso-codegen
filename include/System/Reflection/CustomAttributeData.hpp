@@ -92,13 +92,13 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Reflection::CustomAttributeData::LazyCAttrData*) == 0x8);
     public:
     // Get instance field reference: private System.Reflection.ConstructorInfo ctorInfo
-    [[deprecated]] ::System::Reflection::ConstructorInfo*& dyn_ctorInfo();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::ConstructorInfo*& dyn_ctorInfo();
     // Get instance field reference: private System.Collections.Generic.IList`1<System.Reflection.CustomAttributeTypedArgument> ctorArgs
-    [[deprecated]] ::System::Collections::Generic::IList_1<::System::Reflection::CustomAttributeTypedArgument>*& dyn_ctorArgs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::System::Reflection::CustomAttributeTypedArgument>*& dyn_ctorArgs();
     // Get instance field reference: private System.Collections.Generic.IList`1<System.Reflection.CustomAttributeNamedArgument> namedArgs
-    [[deprecated]] ::System::Collections::Generic::IList_1<::System::Reflection::CustomAttributeNamedArgument>*& dyn_namedArgs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::System::Reflection::CustomAttributeNamedArgument>*& dyn_namedArgs();
     // Get instance field reference: private System.Reflection.CustomAttributeData/System.Reflection.LazyCAttrData lazyData
-    [[deprecated]] ::System::Reflection::CustomAttributeData::LazyCAttrData*& dyn_lazyData();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::CustomAttributeData::LazyCAttrData*& dyn_lazyData();
     // public System.Reflection.ConstructorInfo get_Constructor()
     // Offset: 0x14018B4
     ::System::Reflection::ConstructorInfo* get_Constructor();

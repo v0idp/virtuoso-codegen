@@ -51,11 +51,11 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::IComparable*>(this);
     }
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Xml.Schema.DatatypeImplementation type
-    [[deprecated]] ::System::Xml::Schema::DatatypeImplementation*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::DatatypeImplementation*& dyn_type();
     // Get instance field reference: private System.Int32 parentIndex
-    [[deprecated]] int& dyn_parentIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_parentIndex();
     // public System.String get_Name()
     // Offset: 0xC1B424
     ::StringW get_Name();

@@ -43,19 +43,16 @@ namespace Newtonsoft::Json::Utilities {
     static ::Il2CppObject* _get_ErrorResult();
     // Set static field: static readonly System.Object ErrorResult
     static void _set_ErrorResult(::Il2CppObject* value);
-    // static private System.Void .cctor()
-    // Offset: 0x13485F8
-    static void _cctor();
     // public System.Void .ctor()
     // Offset: 0x13485F0
-    // Implemented from: System.Linq.Expressions.ExpressionVisitor
-    // Base method: System.Void ExpressionVisitor::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoThrowExpressionVisitor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NoThrowExpressionVisitor*, creationType>()));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x13485F8
+    static void _cctor();
     // protected override System.Linq.Expressions.Expression VisitConditional(System.Linq.Expressions.ConditionalExpression node)
     // Offset: 0x13484E4
     // Implemented from: System.Linq.Expressions.ExpressionVisitor
@@ -65,6 +62,10 @@ namespace Newtonsoft::Json::Utilities {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::NoThrowExpressionVisitor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::NoThrowExpressionVisitor::_cctor
 // Il2CppName: .cctor
 template<>
@@ -73,10 +74,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Utilities::NoThrowExpressionVisitor*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::NoThrowExpressionVisitor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::NoThrowExpressionVisitor::VisitConditional
 // Il2CppName: VisitConditional
 template<>

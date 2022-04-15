@@ -66,7 +66,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRTextureFormat JPEG
     static void _set_JPEG(::GlobalNamespace::OVRTextureFormat value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OVRTextureFormat
   #pragma pack(pop)
   static check_size<sizeof(OVRTextureFormat), 0 + sizeof(int)> __GlobalNamespace_OVRTextureFormatSizeCheck;

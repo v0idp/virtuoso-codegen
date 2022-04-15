@@ -57,9 +57,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.GameObject root
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_root();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_root();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> nodes
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_nodes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_nodes();
   }; // OVRGLTFScene
   #pragma pack(pop)
   static check_size<sizeof(OVRGLTFScene), 8 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*)> __GlobalNamespace_OVRGLTFSceneSizeCheck;

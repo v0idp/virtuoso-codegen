@@ -52,12 +52,19 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AnimatedAppear _animation
-    [[deprecated]] ::VROSC::AnimatedAppear*& dyn__animation();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppear*& dyn__animation();
     // Get instance field reference: private System.Boolean _isClosing
-    [[deprecated]] bool& dyn__isClosing();
+    [[deprecated("Use field access instead!")]] bool& dyn__isClosing();
     // public System.Boolean get_IsAnimating()
     // Offset: 0x96AB10
     bool get_IsAnimating();
+    // public System.Void .ctor()
+    // Offset: 0x96AC60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AnimatedPanel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedPanel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AnimatedPanel*, creationType>()));
+    }
     // public System.Void SetActive(System.Boolean shouldBeOpen)
     // Offset: 0x96AB28
     void SetActive(bool shouldBeOpen);
@@ -70,19 +77,6 @@ namespace VROSC {
     // private System.Void OnDisable()
     // Offset: 0x96AC50
     void OnDisable();
-    // public System.Void .ctor()
-    // Offset: 0x96AC60
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AnimatedPanel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedPanel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AnimatedPanel*, creationType>()));
-    }
   }; // VROSC.AnimatedPanel
   #pragma pack(pop)
   static check_size<sizeof(AnimatedPanel), 32 + sizeof(bool)> __VROSC_AnimatedPanelSizeCheck;
@@ -97,6 +91,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AnimatedPanel*), "get_IsAnimating", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::AnimatedPanel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AnimatedPanel::SetActive
 // Il2CppName: SetActive
 template<>
@@ -130,7 +128,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AnimatedPanel*), "OnDisable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AnimatedPanel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

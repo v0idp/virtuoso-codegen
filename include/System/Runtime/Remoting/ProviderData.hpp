@@ -69,15 +69,15 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::System::Collections::IList*) == 0x8);
     public:
     // Get instance field reference: System.String Ref
-    [[deprecated]] ::StringW& dyn_Ref();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Ref();
     // Get instance field reference: System.String Type
-    [[deprecated]] ::StringW& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Type();
     // Get instance field reference: System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: System.Collections.Hashtable CustomProperties
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_CustomProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_CustomProperties();
     // Get instance field reference: System.Collections.IList CustomData
-    [[deprecated]] ::System::Collections::IList*& dyn_CustomData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IList*& dyn_CustomData();
     // public System.Void CopyFrom(System.Runtime.Remoting.ProviderData other)
     // Offset: 0x160945C
     void CopyFrom(::System::Runtime::Remoting::ProviderData* other);

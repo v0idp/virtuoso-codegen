@@ -198,43 +198,43 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Net.HttpWebRequest <Request>k__BackingField
-    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
     // Get instance field reference: private System.Net.WebConnection <Connection>k__BackingField
-    [[deprecated]] ::System::Net::WebConnection*& dyn_$Connection$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebConnection*& dyn_$Connection$k__BackingField();
     // Get instance field reference: private System.Net.ServicePoint <ServicePoint>k__BackingField
-    [[deprecated]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
     // Get instance field reference: private readonly System.Net.BufferOffsetSize <WriteBuffer>k__BackingField
-    [[deprecated]] ::System::Net::BufferOffsetSize*& dyn_$WriteBuffer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::BufferOffsetSize*& dyn_$WriteBuffer$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <IsNtlmChallenge>k__BackingField
-    [[deprecated]] bool& dyn_$IsNtlmChallenge$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsNtlmChallenge$k__BackingField();
     // Get instance field reference: readonly System.Int32 ID
-    [[deprecated]] int& dyn_ID();
+    [[deprecated("Use field access instead!")]] int& dyn_ID();
     // Get instance field reference: private System.Threading.CancellationTokenSource cts
-    [[deprecated]] ::System::Threading::CancellationTokenSource*& dyn_cts();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationTokenSource*& dyn_cts();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebRequestStream> requestTask
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebRequestStream> requestWrittenTask
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestWrittenTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebRequestStream*>*& dyn_requestWrittenTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebResponseStream> responseTask
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebResponseStream*>*& dyn_responseTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebResponseStream*>*& dyn_responseTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Boolean> completeResponseReadTask
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_completeResponseReadTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_completeResponseReadTask();
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> finishedTask
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>*& dyn_finishedTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>*& dyn_finishedTask();
     // Get instance field reference: private System.Net.WebRequestStream writeStream
-    [[deprecated]] ::System::Net::WebRequestStream*& dyn_writeStream();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebRequestStream*& dyn_writeStream();
     // Get instance field reference: private System.Net.WebResponseStream responseStream
-    [[deprecated]] ::System::Net::WebResponseStream*& dyn_responseStream();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebResponseStream*& dyn_responseStream();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo disposedInfo
-    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_disposedInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_disposedInfo();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo closedInfo
-    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_closedInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_closedInfo();
     // Get instance field reference: private System.Net.WebOperation priorityRequest
-    [[deprecated]] ::System::Net::WebOperation*& dyn_priorityRequest();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebOperation*& dyn_priorityRequest();
     // Get instance field reference: private System.Boolean finishedReading
-    [[deprecated]] bool& dyn_finishedReading();
+    [[deprecated("Use field access instead!")]] bool& dyn_finishedReading();
     // Get instance field reference: private System.Int32 requestSent
-    [[deprecated]] int& dyn_requestSent();
+    [[deprecated("Use field access instead!")]] int& dyn_requestSent();
     // public System.Net.HttpWebRequest get_Request()
     // Offset: 0xC46ED4
     ::System::Net::HttpWebRequest* get_Request();

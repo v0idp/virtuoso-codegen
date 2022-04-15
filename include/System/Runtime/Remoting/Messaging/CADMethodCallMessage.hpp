@@ -57,7 +57,7 @@ namespace System::Runtime::Remoting::Messaging {
       return uri;
     }
     // Get instance field reference: private System.String _uri
-    [[deprecated]] ::StringW& dyn__uri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__uri();
     // System.String get_Uri()
     // Offset: 0xFF2B3C
     ::StringW get_Uri();

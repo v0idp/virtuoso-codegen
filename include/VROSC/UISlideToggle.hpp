@@ -120,25 +120,25 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean <IsOn>k__BackingField
-    [[deprecated]] bool& dyn_$IsOn$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsOn$k__BackingField();
     // Get instance field reference: public System.Action`2<VROSC.InputDevice,System.Boolean> OnToggle
-    [[deprecated]] ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::InputDevice*, bool>*& dyn_OnToggle();
     // Get instance field reference: private System.Boolean _startInOnState
-    [[deprecated]] bool& dyn__startInOnState();
+    [[deprecated("Use field access instead!")]] bool& dyn__startInOnState();
     // Get instance field reference: private VROSC.AdjustableMesh _base
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__base();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__base();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _baseColorOn
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__baseColorOn();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__baseColorOn();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _baseColorOff
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__baseColorOff();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__baseColorOff();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _knobColor
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__knobColor();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__knobColor();
     // Get instance field reference: private VROSC.AdjustableMesh _knob
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__knob();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__knob();
     // Get instance field reference: private VROSC.SimpleHaptic _hapticFeedBack
-    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated("Use field access instead!")]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private System.Boolean _isSet
-    [[deprecated]] bool& dyn__isSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSet();
     // public System.Boolean get_IsOn()
     // Offset: 0x19155A8
     bool get_IsOn();
@@ -183,11 +183,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISlideToggle* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISlideToggle::.ctor");

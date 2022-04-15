@@ -98,7 +98,7 @@ namespace System::Xml::Schema {
     // Set static field: static public System.Xml.Schema.XmlSchemaDerivationMethod None
     static void _set_None(::System::Xml::Schema::XmlSchemaDerivationMethod value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Xml.Schema.XmlSchemaDerivationMethod
   #pragma pack(pop)
   static check_size<sizeof(XmlSchemaDerivationMethod), 0 + sizeof(int)> __System_Xml_Schema_XmlSchemaDerivationMethodSizeCheck;

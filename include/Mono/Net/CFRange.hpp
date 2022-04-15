@@ -46,9 +46,9 @@ namespace Mono::Net {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr Location
-    [[deprecated]] ::System::IntPtr& dyn_Location();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Location();
     // Get instance field reference: public System.IntPtr Length
-    [[deprecated]] ::System::IntPtr& dyn_Length();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Length();
     // public System.Void .ctor(System.Int32 loc, System.Int32 len)
     // Offset: 0x10DFE68
     CFRange(int loc, int len);

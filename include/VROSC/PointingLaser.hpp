@@ -135,7 +135,7 @@ namespace VROSC {
       // Set static field: static public VROSC.PointingLaser/VROSC.DisablingReason UsingUIHelper
       static void _set_UsingUIHelper(::VROSC::PointingLaser::DisablingReason value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.PointingLaser/VROSC.DisablingReason
     #pragma pack(pop)
     static check_size<sizeof(PointingLaser::DisablingReason), 0 + sizeof(int)> __VROSC_PointingLaser_DisablingReasonSizeCheck;
@@ -237,35 +237,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _endDot
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__endDot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__endDot();
     // Get instance field reference: private UnityEngine.LineRenderer _laser
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn__laser();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn__laser();
     // Get instance field reference: private VROSC.SmoothMovement _smoothMovement
-    [[deprecated]] ::VROSC::SmoothMovement*& dyn__smoothMovement();
+    [[deprecated("Use field access instead!")]] ::VROSC::SmoothMovement*& dyn__smoothMovement();
     // Get instance field reference: private VROSC.InputDevice _device
-    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private VROSC.InputSettings _settings
-    [[deprecated]] ::VROSC::InputSettings*& dyn__settings();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputSettings*& dyn__settings();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PointingLaser/VROSC.DisablingReason> _disablingReasons
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PointingLaser::DisablingReason>*& dyn__disablingReasons();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::PointingLaser::DisablingReason>*& dyn__disablingReasons();
     // Get instance field reference: public System.Action`2<System.Boolean,VROSC.PointingLaser/VROSC.DisablingReason> OnPointingDisabledChanged
-    [[deprecated]] ::System::Action_2<bool, ::VROSC::PointingLaser::DisablingReason>*& dyn_OnPointingDisabledChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, ::VROSC::PointingLaser::DisablingReason>*& dyn_OnPointingDisabledChanged();
     // Get instance field reference: private System.Boolean <PointingDisabled>k__BackingField
-    [[deprecated]] bool& dyn_$PointingDisabled$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$PointingDisabled$k__BackingField();
     // Get instance field reference: private System.Boolean <Dimmed>k__BackingField
-    [[deprecated]] bool& dyn_$Dimmed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Dimmed$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3[] _laserPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__laserPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__laserPositions();
     // Get instance field reference: private UnityEngine.Gradient _normalGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__normalGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__normalGradient();
     // Get instance field reference: private UnityEngine.Gradient _dimGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__dimGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__dimGradient();
     // Get instance field reference: private UnityEngine.Gradient _fadingGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__fadingGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__fadingGradient();
     // Get instance field reference: private System.Single _fadeTime
-    [[deprecated]] float& dyn__fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn__fadeTime();
     // Get instance field reference: private System.Single _fadingTimer
-    [[deprecated]] float& dyn__fadingTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__fadingTimer();
     // public System.Boolean get_PointingDisabled()
     // Offset: 0xAE2108
     bool get_PointingDisabled();
@@ -278,6 +278,13 @@ namespace VROSC {
     // private System.Void set_Dimmed(System.Boolean value)
     // Offset: 0xAE2124
     void set_Dimmed(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xAE2864
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PointingLaser* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PointingLaser::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PointingLaser*, creationType>()));
+    }
     // public System.Void SetPointingDisabled(System.Boolean disabled, VROSC.PointingLaser/VROSC.DisablingReason reason)
     // Offset: 0xAE2130
     void SetPointingDisabled(bool disabled, ::VROSC::PointingLaser::DisablingReason reason);
@@ -299,19 +306,6 @@ namespace VROSC {
     // private UnityEngine.GradientAlphaKey LerpAlphaKey(UnityEngine.Gradient a, UnityEngine.Gradient b, System.Int32 key, System.Single value)
     // Offset: 0xAE2738
     ::UnityEngine::GradientAlphaKey LerpAlphaKey(::UnityEngine::Gradient* a, ::UnityEngine::Gradient* b, int key, float value);
-    // public System.Void .ctor()
-    // Offset: 0xAE2864
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PointingLaser* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PointingLaser::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PointingLaser*, creationType>()));
-    }
   }; // VROSC.PointingLaser
   #pragma pack(pop)
   static check_size<sizeof(PointingLaser), 124 + sizeof(float)> __VROSC_PointingLaserSizeCheck;
@@ -354,6 +348,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PointingLaser*), "set_Dimmed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::PointingLaser::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PointingLaser::SetPointingDisabled
 // Il2CppName: SetPointingDisabled
 template<>
@@ -422,7 +420,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::PointingLaser*), "LerpAlphaKey", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{a, b, key, value});
   }
 };
-// Writing MetadataGetter for method: VROSC::PointingLaser::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

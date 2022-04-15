@@ -121,7 +121,7 @@ namespace Oculus::Platform::Samples::VrBoardGame {
       // Set static field: static public Oculus.Platform.Samples.VrBoardGame.MatchmakingManager/Oculus.Platform.Samples.VrBoardGame.MatchRoomState RemoteTurn
       static void _set_RemoteTurn(::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrBoardGame.MatchmakingManager/Oculus.Platform.Samples.VrBoardGame.MatchRoomState
     #pragma pack(pop)
     static check_size<sizeof(MatchmakingManager::MatchRoomState), 0 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_MatchmakingManager_MatchRoomStateSizeCheck;
@@ -185,19 +185,26 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static private System.Single POLL_FREQUENCY
     static void _set_POLL_FREQUENCY(float value);
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
     // Get instance field reference: private UnityEngine.UI.Text m_matchButtonText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_matchButtonText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_matchButtonText();
     // Get instance field reference: private UnityEngine.UI.Text m_infoText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_infoText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_infoText();
     // Get instance field reference: private System.UInt64 m_matchRoom
-    [[deprecated]] uint64_t& dyn_m_matchRoom();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_matchRoom();
     // Get instance field reference: private Oculus.Platform.Models.User m_remotePlayer
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_m_remotePlayer();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_m_remotePlayer();
     // Get instance field reference: private System.Single m_lastUpdateTime
-    [[deprecated]] float& dyn_m_lastUpdateTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_lastUpdateTime();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.MatchmakingManager/Oculus.Platform.Samples.VrBoardGame.MatchRoomState m_state
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState& dyn_m_state();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState& dyn_m_state();
+    // public System.Void .ctor()
+    // Offset: 0xB44A28
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MatchmakingManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MatchmakingManager*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xB42D9C
     void Start();
@@ -246,19 +253,6 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // private System.Void GenericErrorCheckCallback(Oculus.Platform.Message msg)
     // Offset: 0xB44970
     void GenericErrorCheckCallback(::Oculus::Platform::Message* msg);
-    // public System.Void .ctor()
-    // Offset: 0xB44A28
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MatchmakingManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MatchmakingManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrBoardGame.MatchmakingManager
   #pragma pack(pop)
   static check_size<sizeof(MatchmakingManager), 68 + sizeof(::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState)> __Oculus_Platform_Samples_VrBoardGame_MatchmakingManagerSizeCheck;
@@ -267,6 +261,10 @@ namespace Oculus::Platform::Samples::VrBoardGame {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::MatchRoomState, "Oculus.Platform.Samples.VrBoardGame", "MatchmakingManager/MatchRoomState");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::Start
 // Il2CppName: Start
 template<>
@@ -409,7 +407,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::MatchmakingManager*), "GenericErrorCheckCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::MatchmakingManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

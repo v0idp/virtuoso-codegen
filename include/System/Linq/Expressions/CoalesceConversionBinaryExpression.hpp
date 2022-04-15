@@ -55,7 +55,7 @@ namespace System::Linq::Expressions {
       return conversion;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.LambdaExpression _conversion
-    [[deprecated]] ::System::Linq::Expressions::LambdaExpression*& dyn__conversion();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::LambdaExpression*& dyn__conversion();
     // System.Void .ctor(System.Linq.Expressions.Expression left, System.Linq.Expressions.Expression right, System.Linq.Expressions.LambdaExpression conversion)
     // Offset: 0x11F8C8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

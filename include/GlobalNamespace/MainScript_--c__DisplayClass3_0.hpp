@@ -72,9 +72,16 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Proyecto26::RequestHelper*) == 0x8);
     public:
     // Get instance field reference: public MainScript <>4__this
-    [[deprecated]] ::GlobalNamespace::MainScript*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MainScript*& dyn_$$4__this();
     // Get instance field reference: public Proyecto26.RequestHelper requestOptions
-    [[deprecated]] ::Proyecto26::RequestHelper*& dyn_requestOptions();
+    [[deprecated("Use field access instead!")]] ::Proyecto26::RequestHelper*& dyn_requestOptions();
+    // public System.Void .ctor()
+    // Offset: 0x196054C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MainScript::$$c__DisplayClass3_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MainScript::$$c__DisplayClass3_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MainScript::$$c__DisplayClass3_0*, creationType>()));
+    }
     // RSG.IPromise`1<Models.Todo[]> <Get>b__0(Proyecto26.Models.Post[] res)
     // Offset: 0x1960554
     ::RSG::IPromise_1<::ArrayW<::Models::Todo*>>* $Get$b__0(::ArrayW<::Proyecto26::Models::Post*> res);
@@ -90,21 +97,16 @@ namespace GlobalNamespace {
     // System.Void <Get>b__4(System.Exception err)
     // Offset: 0x1960940
     void $Get$b__4(::System::Exception* err);
-    // public System.Void .ctor()
-    // Offset: 0x196054C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MainScript::$$c__DisplayClass3_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MainScript::$$c__DisplayClass3_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MainScript::$$c__DisplayClass3_0*, creationType>()));
-    }
   }; // MainScript/<>c__DisplayClass3_0
   #pragma pack(pop)
   static check_size<sizeof(MainScript::$$c__DisplayClass3_0), 24 + sizeof(::Proyecto26::RequestHelper*)> __GlobalNamespace_MainScript_$$c__DisplayClass3_0SizeCheck;
   static_assert(sizeof(MainScript::$$c__DisplayClass3_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::MainScript::$$c__DisplayClass3_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::MainScript::$$c__DisplayClass3_0::$Get$b__0
 // Il2CppName: <Get>b__0
 template<>
@@ -150,7 +152,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MainScript::$$c__DisplayClass3_0*), "<Get>b__4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{err});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::MainScript::$$c__DisplayClass3_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

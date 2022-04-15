@@ -188,41 +188,41 @@ namespace System::Net::Sockets {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Net.Sockets.Socket socket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_socket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_socket();
     // Get instance field reference: public System.Net.Sockets.SocketOperation operation
-    [[deprecated]] ::System::Net::Sockets::SocketOperation& dyn_operation();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::SocketOperation& dyn_operation();
     // Get instance field reference: private System.Exception DelayedException
-    [[deprecated]] ::System::Exception*& dyn_DelayedException();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_DelayedException();
     // Get instance field reference: public System.Net.EndPoint EndPoint
-    [[deprecated]] ::System::Net::EndPoint*& dyn_EndPoint();
+    [[deprecated("Use field access instead!")]] ::System::Net::EndPoint*& dyn_EndPoint();
     // Get instance field reference: public System.Byte[] Buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Buffer();
     // Get instance field reference: public System.Int32 Offset
-    [[deprecated]] int& dyn_Offset();
+    [[deprecated("Use field access instead!")]] int& dyn_Offset();
     // Get instance field reference: public System.Int32 Size
-    [[deprecated]] int& dyn_Size();
+    [[deprecated("Use field access instead!")]] int& dyn_Size();
     // Get instance field reference: public System.Net.Sockets.SocketFlags SockFlags
-    [[deprecated]] ::System::Net::Sockets::SocketFlags& dyn_SockFlags();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::SocketFlags& dyn_SockFlags();
     // Get instance field reference: public System.Net.Sockets.Socket AcceptSocket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_AcceptSocket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_AcceptSocket();
     // Get instance field reference: public System.Net.IPAddress[] Addresses
-    [[deprecated]] ::ArrayW<::System::Net::IPAddress*>& dyn_Addresses();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Net::IPAddress*>& dyn_Addresses();
     // Get instance field reference: public System.Int32 Port
-    [[deprecated]] int& dyn_Port();
+    [[deprecated("Use field access instead!")]] int& dyn_Port();
     // Get instance field reference: public System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>> Buffers
-    [[deprecated]] ::System::Collections::Generic::IList_1<::System::ArraySegment_1<uint8_t>>*& dyn_Buffers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::System::ArraySegment_1<uint8_t>>*& dyn_Buffers();
     // Get instance field reference: public System.Boolean ReuseSocket
-    [[deprecated]] bool& dyn_ReuseSocket();
+    [[deprecated("Use field access instead!")]] bool& dyn_ReuseSocket();
     // Get instance field reference: public System.Int32 CurrentAddress
-    [[deprecated]] int& dyn_CurrentAddress();
+    [[deprecated("Use field access instead!")]] int& dyn_CurrentAddress();
     // Get instance field reference: public System.Net.Sockets.Socket AcceptedSocket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_AcceptedSocket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_AcceptedSocket();
     // Get instance field reference: public System.Int32 Total
-    [[deprecated]] int& dyn_Total();
+    [[deprecated("Use field access instead!")]] int& dyn_Total();
     // Get instance field reference: System.Int32 error
-    [[deprecated]] int& dyn_error();
+    [[deprecated("Use field access instead!")]] int& dyn_error();
     // Get instance field reference: public System.Int32 EndCalled
-    [[deprecated]] int& dyn_EndCalled();
+    [[deprecated("Use field access instead!")]] int& dyn_EndCalled();
     // public System.IntPtr get_Handle()
     // Offset: 0xDA0D94
     ::System::IntPtr get_Handle();

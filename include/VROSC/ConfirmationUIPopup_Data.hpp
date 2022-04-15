@@ -39,13 +39,11 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String HeaderText
-    [[deprecated]] ::StringW& dyn_HeaderText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_HeaderText();
     // Get instance field reference: public System.String BodyText
-    [[deprecated]] ::StringW& dyn_BodyText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_BodyText();
     // public System.Void .ctor()
     // Offset: 0x95D9AC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ConfirmationUIPopup::Data* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ConfirmationUIPopup::Data::.ctor");

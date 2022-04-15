@@ -52,7 +52,7 @@ namespace System::Xml {
       return impl;
     }
     // Get instance field reference: private System.Xml.XmlValidatingReaderImpl impl
-    [[deprecated]] ::System::Xml::XmlValidatingReaderImpl*& dyn_impl();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlValidatingReaderImpl*& dyn_impl();
     // public System.Boolean get_Namespaces()
     // Offset: 0x1094D14
     bool get_Namespaces();

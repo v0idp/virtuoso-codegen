@@ -65,7 +65,7 @@ namespace System::Data::Common {
     // Set static field: static private readonly System.DateTime s_defaultValue
     static void _set_s_defaultValue(::System::DateTime value);
     // Get instance field reference: private System.DateTime[] _values
-    [[deprecated]] ::ArrayW<::System::DateTime>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::DateTime>& dyn__values();
     // System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x12E90B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

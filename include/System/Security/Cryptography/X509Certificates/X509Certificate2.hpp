@@ -36,15 +36,15 @@ namespace System::Security::Cryptography {
   // Forward declaring type: Oid
   class Oid;
 }
-// Forward declaring namespace: System::Text
-namespace System::Text {
-  // Forward declaring type: StringBuilder
-  class StringBuilder;
-}
 // Forward declaring namespace: System::Runtime::Serialization
 namespace System::Runtime::Serialization {
   // Forward declaring type: SerializationInfo
   class SerializationInfo;
+}
+// Forward declaring namespace: System::Text
+namespace System::Text {
+  // Forward declaring type: StringBuilder
+  class StringBuilder;
 }
 // Completed forward declares
 // Type namespace: System.Security.Cryptography.X509Certificates
@@ -80,7 +80,7 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static private System.Byte[] signedData
     static void _set_signedData(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.String friendlyName
-    [[deprecated]] ::StringW& dyn_friendlyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_friendlyName();
     // System.Security.Cryptography.X509Certificates.X509Certificate2Impl get_Impl()
     // Offset: 0xC4F508
     ::System::Security::Cryptography::X509Certificates::X509Certificate2Impl* get_Impl();
@@ -108,6 +108,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // public System.Int32 get_Version()
     // Offset: 0xC4F828
     int get_Version();
+    // public System.Void .ctor()
+    // Offset: 0xC4F5A8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509Certificate2* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509Certificate2*, creationType>()));
+    }
     // public System.Void .ctor(System.Byte[] rawData)
     // Offset: 0xC4F604
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -115,31 +122,19 @@ namespace System::Security::Cryptography::X509Certificates {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<X509Certificate2*, creationType>(rawData)));
     }
+    // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+    // Offset: 0xC4F68C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509Certificate2* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509Certificate2*, creationType>(info, context)));
+    }
     // static private System.Void .cctor()
     // Offset: 0xC5002C
     static void _cctor();
     // static private System.Void AppendBuffer(System.Text.StringBuilder sb, System.Byte[] buffer)
     // Offset: 0xC4FF2C
     static void AppendBuffer(::System::Text::StringBuilder* sb, ::ArrayW<uint8_t> buffer);
-    // public System.Void .ctor()
-    // Offset: 0xC4F5A8
-    // Implemented from: System.Security.Cryptography.X509Certificates.X509Certificate
-    // Base method: System.Void X509Certificate::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509Certificate2* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509Certificate2*, creationType>()));
-    }
-    // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0xC4F68C
-    // Implemented from: System.Security.Cryptography.X509Certificates.X509Certificate
-    // Base method: System.Void X509Certificate::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509Certificate2* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509Certificate2*, creationType>(info, context)));
-    }
     // public override System.Void Import(System.Byte[] rawData, System.String password, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags keyStorageFlags)
     // Offset: 0xC4F850
     // Implemented from: System.Security.Cryptography.X509Certificates.X509Certificate
@@ -242,6 +237,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2::_cctor
 // Il2CppName: .cctor
 template<>
@@ -260,14 +263,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509Certificate2*), "AppendBuffer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sb, buffer});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2::Import
 // Il2CppName: Import
 template<>

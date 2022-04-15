@@ -70,15 +70,15 @@ namespace Mono::Security::Cryptography {
       return *reinterpret_cast<::System::Security::Cryptography::ICryptoTransform*>(this);
     }
     // Get instance field reference: private System.Byte[] key
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_key();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_key();
     // Get instance field reference: private System.Byte[] state
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_state();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_state();
     // Get instance field reference: private System.Byte x
-    [[deprecated]] uint8_t& dyn_x();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_x();
     // Get instance field reference: private System.Byte y
-    [[deprecated]] uint8_t& dyn_y();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_y();
     // Get instance field reference: private System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // public System.Boolean get_CanTransformMultipleBlocks()
     // Offset: 0x1133EC4
     bool get_CanTransformMultipleBlocks();

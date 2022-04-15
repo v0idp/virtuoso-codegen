@@ -44,9 +44,9 @@ namespace UnityEngine {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public readonly System.Single min
-    [[deprecated]] float& dyn_min();
+    [[deprecated("Use field access instead!")]] float& dyn_min();
     // Get instance field reference: public readonly System.Single max
-    [[deprecated]] float& dyn_max();
+    [[deprecated("Use field access instead!")]] float& dyn_max();
     // public System.Void .ctor(System.Single min, System.Single max)
     // Offset: 0xBC9530
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

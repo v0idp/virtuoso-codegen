@@ -122,19 +122,26 @@ namespace System::Data::SqlTypes {
     // Set static field: static private System.Reflection.MethodInfo s_createSqlReaderMethodInfo
     static void _set_s_createSqlReaderMethodInfo(::System::Reflection::MethodInfo* value);
     // Get instance field reference: private System.Reflection.MethodInfo _createSqlReaderMethodInfo
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn__createSqlReaderMethodInfo();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn__createSqlReaderMethodInfo();
     // Get instance field reference: private System.Boolean _fNotNull
-    [[deprecated]] bool& dyn__fNotNull();
+    [[deprecated("Use field access instead!")]] bool& dyn__fNotNull();
     // Get instance field reference: private System.IO.Stream _stream
-    [[deprecated]] ::System::IO::Stream*& dyn__stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__stream();
     // Get instance field reference: private System.Boolean _firstCreateReader
-    [[deprecated]] bool& dyn__firstCreateReader();
+    [[deprecated("Use field access instead!")]] bool& dyn__firstCreateReader();
     // static private System.Reflection.MethodInfo get_CreateSqlReaderMethodInfo()
     // Offset: 0x13DEB48
     static ::System::Reflection::MethodInfo* get_CreateSqlReaderMethodInfo();
     // public System.Boolean get_IsNull()
     // Offset: 0x13DEABC
     bool get_IsNull();
+    // public System.Void .ctor()
+    // Offset: 0x13DE900
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SqlXml* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlXml::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SqlXml*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x13DF35C
     static void _cctor();
@@ -162,15 +169,6 @@ namespace System::Data::SqlTypes {
     // static public System.Xml.XmlQualifiedName GetXsdType(System.Xml.Schema.XmlSchemaSet schemaSet)
     // Offset: 0x13DF2D4
     static ::System::Xml::XmlQualifiedName* GetXsdType(::System::Xml::Schema::XmlSchemaSet* schemaSet);
-    // public System.Void .ctor()
-    // Offset: 0x13DE900
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SqlXml* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlXml::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SqlXml*, creationType>()));
-    }
   }; // System.Data.SqlTypes.SqlXml
   #pragma pack(pop)
   static check_size<sizeof(SqlXml), 40 + sizeof(bool)> __System_Data_SqlTypes_SqlXmlSizeCheck;
@@ -193,6 +191,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::SqlTypes::SqlXml*), "get_IsNull", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::SqlTypes::SqlXml::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::SqlTypes::SqlXml::_cctor
 // Il2CppName: .cctor
 template<>
@@ -271,7 +273,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Data::SqlTypes::SqlXml*), "GetXsdType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{schemaSet});
   }
 };
-// Writing MetadataGetter for method: System::Data::SqlTypes::SqlXml::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

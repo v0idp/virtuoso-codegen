@@ -53,9 +53,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Interactable[] _interactables
-    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
     // Get instance field reference: private System.Boolean _getInteractablesOnAwake
-    [[deprecated]] bool& dyn__getInteractablesOnAwake();
+    [[deprecated("Use field access instead!")]] bool& dyn__getInteractablesOnAwake();
+    // public System.Void .ctor()
+    // Offset: 0x1949624
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InteractionDisabler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InteractionDisabler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InteractionDisabler*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1949498
     void Awake();
@@ -65,25 +72,16 @@ namespace VROSC {
     // public System.Void SetDisabled(System.Boolean disabled, System.Boolean disableVisually)
     // Offset: 0x1949500
     void SetDisabled(bool disabled, bool disableVisually);
-    // public System.Void .ctor()
-    // Offset: 0x1949624
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InteractionDisabler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InteractionDisabler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InteractionDisabler*, creationType>()));
-    }
   }; // VROSC.InteractionDisabler
   #pragma pack(pop)
   static check_size<sizeof(InteractionDisabler), 32 + sizeof(bool)> __VROSC_InteractionDisablerSizeCheck;
   static_assert(sizeof(InteractionDisabler) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::InteractionDisabler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InteractionDisabler::Awake
 // Il2CppName: Awake
 template<>
@@ -110,7 +108,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::InteractionDisabler*), "SetDisabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{disabled, disableVisually});
   }
 };
-// Writing MetadataGetter for method: VROSC::InteractionDisabler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -54,7 +54,6 @@ namespace System::Xml::Schema {
     // Offset: 0x10A1EC4
     // Implemented from: System.Xml.Schema.FacetsChecker
     // Base method: System.Void FacetsChecker::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DateTimeFacetsChecker* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::DateTimeFacetsChecker::.ctor");

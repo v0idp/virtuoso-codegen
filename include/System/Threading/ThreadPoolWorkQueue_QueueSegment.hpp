@@ -54,11 +54,11 @@ namespace System::Threading {
     static_assert(sizeof(::System::Threading::ThreadPoolWorkQueue::QueueSegment*) == 0x8);
     public:
     // Get instance field reference: readonly System.Threading.IThreadPoolWorkItem[] nodes
-    [[deprecated]] ::ArrayW<::System::Threading::IThreadPoolWorkItem*>& dyn_nodes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Threading::IThreadPoolWorkItem*>& dyn_nodes();
     // Get instance field reference: private System.Int32 indexes
-    [[deprecated]] int& dyn_indexes();
+    [[deprecated("Use field access instead!")]] int& dyn_indexes();
     // Get instance field reference: public System.Threading.ThreadPoolWorkQueue/System.Threading.QueueSegment Next
-    [[deprecated]] ::System::Threading::ThreadPoolWorkQueue::QueueSegment*& dyn_Next();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ThreadPoolWorkQueue::QueueSegment*& dyn_Next();
     // private System.Void GetIndexes(out System.Int32 upper, out System.Int32 lower)
     // Offset: 0xE607D8
     void GetIndexes(ByRef<int> upper, ByRef<int> lower);

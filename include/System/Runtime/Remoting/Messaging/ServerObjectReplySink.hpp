@@ -61,9 +61,9 @@ namespace System::Runtime::Remoting::Messaging {
       return *reinterpret_cast<::System::Runtime::Remoting::Messaging::IMessageSink*>(this);
     }
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink _replySink
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__replySink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__replySink();
     // Get instance field reference: private System.Runtime.Remoting.ServerIdentity _identity
-    [[deprecated]] ::System::Runtime::Remoting::ServerIdentity*& dyn__identity();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::ServerIdentity*& dyn__identity();
     // public System.Void .ctor(System.Runtime.Remoting.ServerIdentity identity, System.Runtime.Remoting.Messaging.IMessageSink replySink)
     // Offset: 0x117C3E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -109,23 +109,23 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color[] _startColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__startColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__startColors();
     // Get instance field reference: private System.Single _hueShift
-    [[deprecated]] float& dyn__hueShift();
+    [[deprecated("Use field access instead!")]] float& dyn__hueShift();
     // Get instance field reference: private UnityEngine.Gradient _gradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__gradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__gradient();
     // Get instance field reference: private System.Boolean _useGradient
-    [[deprecated]] bool& dyn__useGradient();
+    [[deprecated("Use field access instead!")]] bool& dyn__useGradient();
     // Get instance field reference: private System.Boolean _switchToRandomStartColor
-    [[deprecated]] bool& dyn__switchToRandomStartColor();
+    [[deprecated("Use field access instead!")]] bool& dyn__switchToRandomStartColor();
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: private UnityEngine.AnimationCurve _hueChange
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__hueChange();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__hueChange();
     // Get instance field reference: private UnityEngine.AnimationCurve _saturationChange
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__saturationChange();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__saturationChange();
     // Get instance field reference: private UnityEngine.AnimationCurve _valueChange
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__valueChange();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__valueChange();
     // public UnityEngine.Color[] get_StartColors()
     // Offset: 0x19277E0
     ::ArrayW<::UnityEngine::Color> get_StartColors();
@@ -157,9 +157,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x1927828
     // Implemented from: VROSC.AudioReactive.AudioReactiveEffectData
     // Base method: System.Void AudioReactiveEffectData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ShiftColorEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ShiftColorEffectData::.ctor");

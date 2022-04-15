@@ -61,7 +61,7 @@ namespace Newtonsoft::Json::Converters {
       return element;
     }
     // Get instance field reference: private readonly System.Xml.XmlElement _element
-    [[deprecated]] ::System::Xml::XmlElement*& dyn__element();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlElement*& dyn__element();
     // public System.Boolean get_IsEmpty()
     // Offset: 0x1593888
     bool get_IsEmpty();

@@ -39,13 +39,11 @@ namespace Facebook::WitAi {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String key
-    [[deprecated]] ::StringW& dyn_key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_key();
     // Get instance field reference: public System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // public System.Void .ctor()
     // Offset: 0x1676E70
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitRequest::QueryParam* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitRequest::QueryParam::.ctor");

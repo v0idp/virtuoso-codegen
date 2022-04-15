@@ -90,19 +90,19 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
     // Get instance field reference: public Mono.Net.Security.MobileAuthenticatedStream <>4__this
-    [[deprecated]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$$4__this();
     // Get instance field reference: public Mono.Net.Security.MobileAuthenticatedStream/Mono.Net.Security.OperationType type
-    [[deprecated]] ::Mono::Net::Security::MobileAuthenticatedStream::OperationType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::MobileAuthenticatedStream::OperationType& dyn_type();
     // Get instance field reference: public Mono.Net.Security.AsyncProtocolRequest asyncRequest
-    [[deprecated]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncRequest();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::AsyncProtocolRequest*& dyn_asyncRequest();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<Mono.Net.Security.AsyncProtocolResult> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::Mono::Net::Security::AsyncProtocolResult*>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::Mono::Net::Security::AsyncProtocolResult*>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x9FA3E8
     void MoveNext();

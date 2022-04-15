@@ -90,21 +90,21 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralMeshData _data
-    [[deprecated]] ::VROSC::UI::Meshes::ProceduralMeshData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ProceduralMeshData*& dyn__data();
     // Get instance field reference: protected System.Single _depth
-    [[deprecated]] float& dyn__depth();
+    [[deprecated("Use field access instead!")]] float& dyn__depth();
     // Get instance field reference: protected System.Single _border
-    [[deprecated]] float& dyn__border();
+    [[deprecated("Use field access instead!")]] float& dyn__border();
     // Get instance field reference: private System.Boolean _flatMapUv
-    [[deprecated]] bool& dyn__flatMapUv();
+    [[deprecated("Use field access instead!")]] bool& dyn__flatMapUv();
     // Get instance field reference: private System.Boolean _alwaysUpdate
-    [[deprecated]] bool& dyn__alwaysUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn__alwaysUpdate();
     // Get instance field reference: private System.Single _lastHeight
-    [[deprecated]] float& dyn__lastHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__lastHeight();
     // Get instance field reference: private System.Single _lastWidth
-    [[deprecated]] float& dyn__lastWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__lastWidth();
     // Get instance field reference: private System.Boolean _needsSizeUpdate
-    [[deprecated]] bool& dyn__needsSizeUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn__needsSizeUpdate();
     // private System.Void GetRequiredCompontents()
     // Offset: 0xAE68FC
     void GetRequiredCompontents();
@@ -127,11 +127,6 @@ namespace VROSC {
     // Offset: 0xAE70D8
     // Implemented from: VROSC.AdjustableMesh
     // Base method: System.Void AdjustableMesh::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralAdjustableMesh* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ProceduralAdjustableMesh::.ctor");

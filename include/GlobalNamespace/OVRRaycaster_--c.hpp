@@ -43,18 +43,16 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x13EE88C
     static void _cctor();
-    // System.Int32 <GraphicRaycast>b__16_0(OVRRaycaster/RaycastHit g1, OVRRaycaster/RaycastHit g2)
-    // Offset: 0x13EE8F4
-    int $GraphicRaycast$b__16_0(::GlobalNamespace::OVRRaycaster::RaycastHit g1, ::GlobalNamespace::OVRRaycaster::RaycastHit g2);
     // public System.Void .ctor()
     // Offset: 0x13EE8EC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRRaycaster::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRRaycaster::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRRaycaster::$$c*, creationType>()));
     }
+    // System.Int32 <GraphicRaycast>b__16_0(OVRRaycaster/RaycastHit g1, OVRRaycaster/RaycastHit g2)
+    // Offset: 0x13EE8F4
+    int $GraphicRaycast$b__16_0(::GlobalNamespace::OVRRaycaster::RaycastHit g1, ::GlobalNamespace::OVRRaycaster::RaycastHit g2);
   }; // OVRRaycaster/<>c
   #pragma pack(pop)
 }
@@ -67,6 +65,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::$$c::$GraphicRaycast$b__16_0
 // Il2CppName: <GraphicRaycast>b__16_0
 template<>
@@ -77,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Global
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster::$$c*), "<GraphicRaycast>b__16_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{g1, g2});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

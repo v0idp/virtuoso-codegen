@@ -48,9 +48,9 @@ namespace MS::Internal::Xml::XPath {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XPath.XPathResultType type
-    [[deprecated]] ::System::Xml::XPath::XPathResultType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XPath::XPathResultType& dyn_type();
     // Get instance field reference: private System.Object val
-    [[deprecated]] ::Il2CppObject*& dyn_val();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_val();
     // public System.Void .ctor(System.String val)
     // Offset: 0xAF8E44
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

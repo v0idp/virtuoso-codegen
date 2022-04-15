@@ -70,9 +70,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // Get instance field reference: private readonly System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.Expression> <Expressions>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*& dyn_$Expressions$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*& dyn_$Expressions$k__BackingField();
     // public System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.Expression> get_Expressions()
     // Offset: 0xE93F24
     ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>* get_Expressions();

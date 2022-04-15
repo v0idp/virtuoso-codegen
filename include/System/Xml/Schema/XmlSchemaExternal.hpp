@@ -90,17 +90,17 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::Compositor) == 0x4);
     public:
     // Get instance field reference: private System.String location
-    [[deprecated]] ::StringW& dyn_location();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_location();
     // Get instance field reference: private System.Uri baseUri
-    [[deprecated]] ::System::Uri*& dyn_baseUri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_baseUri();
     // Get instance field reference: private System.Xml.Schema.XmlSchema schema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_schema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_schema();
     // Get instance field reference: private System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // Get instance field reference: private System.Xml.XmlAttribute[] moreAttributes
-    [[deprecated]] ::ArrayW<::System::Xml::XmlAttribute*>& dyn_moreAttributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlAttribute*>& dyn_moreAttributes();
     // Get instance field reference: private System.Xml.Schema.Compositor compositor
-    [[deprecated]] ::System::Xml::Schema::Compositor& dyn_compositor();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::Compositor& dyn_compositor();
     // public System.String get_SchemaLocation()
     // Offset: 0x110EE10
     ::StringW get_SchemaLocation();
@@ -145,7 +145,6 @@ namespace System::Xml::Schema {
     // Offset: 0x110EE78
     // Implemented from: System.Xml.Schema.XmlSchemaObject
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaExternal* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaExternal::.ctor");

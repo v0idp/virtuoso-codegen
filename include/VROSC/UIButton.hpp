@@ -80,13 +80,13 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.TextMesh _label
-    [[deprecated]] ::UnityEngine::TextMesh*& dyn__label();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextMesh*& dyn__label();
     // Get instance field reference: private TMPro.TextMeshPro _tmpLabel
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__tmpLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__tmpLabel();
     // Get instance field reference: protected VROSC.SimpleHaptic _hapticFeedBack
-    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated("Use field access instead!")]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: public System.Action OnButtonPress
-    [[deprecated]] ::System::Action*& dyn_OnButtonPress();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnButtonPress();
     // public System.String get_Text()
     // Offset: 0xA33BB0
     ::StringW get_Text();
@@ -110,11 +110,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIButton::.ctor");

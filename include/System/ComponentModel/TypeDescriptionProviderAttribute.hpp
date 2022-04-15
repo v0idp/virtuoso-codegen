@@ -50,7 +50,7 @@ namespace System::ComponentModel {
       return typeName;
     }
     // Get instance field reference: private System.String _typeName
-    [[deprecated]] ::StringW& dyn__typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__typeName();
     // public System.String get_TypeName()
     // Offset: 0xDAAB24
     ::StringW get_TypeName();

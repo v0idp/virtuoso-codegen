@@ -91,17 +91,24 @@ namespace VROSC::AudioReactive {
     // Set static field: static public System.Action`1<System.Int32> OnBeat
     static void _set_OnBeat(::System::Action_1<int>* value);
     // Get instance field reference: private System.Single _fallSpeed
-    [[deprecated]] float& dyn__fallSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__fallSpeed();
     // Get instance field reference: private System.Single _coolDown
-    [[deprecated]] float& dyn__coolDown();
+    [[deprecated("Use field access instead!")]] float& dyn__coolDown();
     // Get instance field reference: private VROSC.Environment _environmentSettings
-    [[deprecated]] ::VROSC::Environment*& dyn__environmentSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::Environment*& dyn__environmentSettings();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue _bass
-    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__bass();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__bass();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue _mid
-    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__mid();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__mid();
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue _top
-    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__top();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::AudioReactiveCore::BufferValue*& dyn__top();
+    // public System.Void .ctor()
+    // Offset: 0x971594
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioReactiveCore* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveCore::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioReactiveCore*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x970E40
     void Awake();
@@ -129,25 +136,16 @@ namespace VROSC::AudioReactive {
     // private System.Void <Awake>b__8_2()
     // Offset: 0x971640
     void $Awake$b__8_2();
-    // public System.Void .ctor()
-    // Offset: 0x971594
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioReactiveCore* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveCore::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioReactiveCore*, creationType>()));
-    }
   }; // VROSC.AudioReactive.AudioReactiveCore
   #pragma pack(pop)
   static check_size<sizeof(AudioReactiveCore), 56 + sizeof(::VROSC::AudioReactive::AudioReactiveCore::BufferValue*)> __VROSC_AudioReactive_AudioReactiveCoreSizeCheck;
   static_assert(sizeof(AudioReactiveCore) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveCore::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveCore::Awake
 // Il2CppName: Awake
 template<>
@@ -223,7 +221,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioReactive::AudioReactiveCore*), "<Awake>b__8_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveCore::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

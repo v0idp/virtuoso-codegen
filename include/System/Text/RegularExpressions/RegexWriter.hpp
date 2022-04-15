@@ -129,25 +129,32 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: System.Int32[] _intStack
-    [[deprecated]] ::ArrayW<int>& dyn__intStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__intStack();
     // Get instance field reference: System.Int32 _depth
-    [[deprecated]] int& dyn__depth();
+    [[deprecated("Use field access instead!")]] int& dyn__depth();
     // Get instance field reference: System.Int32[] _emitted
-    [[deprecated]] ::ArrayW<int>& dyn__emitted();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__emitted();
     // Get instance field reference: System.Int32 _curpos
-    [[deprecated]] int& dyn__curpos();
+    [[deprecated("Use field access instead!")]] int& dyn__curpos();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.String,System.Int32> _stringhash
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__stringhash();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__stringhash();
     // Get instance field reference: System.Collections.Generic.List`1<System.String> _stringtable
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__stringtable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__stringtable();
     // Get instance field reference: System.Boolean _counting
-    [[deprecated]] bool& dyn__counting();
+    [[deprecated("Use field access instead!")]] bool& dyn__counting();
     // Get instance field reference: System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // Get instance field reference: System.Int32 _trackcount
-    [[deprecated]] int& dyn__trackcount();
+    [[deprecated("Use field access instead!")]] int& dyn__trackcount();
     // Get instance field reference: System.Collections.Hashtable _caps
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__caps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__caps();
+    // private System.Void .ctor()
+    // Offset: 0x1852154
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RegexWriter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexWriter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RegexWriter*, creationType>()));
+    }
     // static System.Text.RegularExpressions.RegexCode Write(System.Text.RegularExpressions.RegexTree t)
     // Offset: 0x18520F0
     static ::System::Text::RegularExpressions::RegexCode* Write(::System::Text::RegularExpressions::RegexTree* t);
@@ -190,21 +197,16 @@ namespace System::Text::RegularExpressions {
     // System.Void EmitFragment(System.Int32 nodetype, System.Text.RegularExpressions.RegexNode node, System.Int32 CurIndex)
     // Offset: 0x1852C34
     void EmitFragment(int nodetype, ::System::Text::RegularExpressions::RegexNode* node, int CurIndex);
-    // private System.Void .ctor()
-    // Offset: 0x1852154
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RegexWriter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexWriter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RegexWriter*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.RegexWriter
   #pragma pack(pop)
   static check_size<sizeof(RegexWriter), 80 + sizeof(::System::Collections::Hashtable*)> __System_Text_RegularExpressions_RegexWriterSizeCheck;
   static_assert(sizeof(RegexWriter) == 0x58);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexWriter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::RegexWriter::Write
 // Il2CppName: Write
 template<>
@@ -334,7 +336,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::RegexWriter*), "EmitFragment", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{nodetype, node, CurIndex});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexWriter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

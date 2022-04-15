@@ -55,11 +55,11 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Array keys
-    [[deprecated]] ::System::Array*& dyn_keys();
+    [[deprecated("Use field access instead!")]] ::System::Array*& dyn_keys();
     // Get instance field reference: private System.Array items
-    [[deprecated]] ::System::Array*& dyn_items();
+    [[deprecated("Use field access instead!")]] ::System::Array*& dyn_items();
     // Get instance field reference: private System.Collections.IComparer comparer
-    [[deprecated]] ::System::Collections::IComparer*& dyn_comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IComparer*& dyn_comparer();
     // System.Void .ctor(System.Array keys, System.Array items, System.Collections.IComparer comparer)
     // Offset: 0x139FCDC
     // ABORTED: conflicts with another method.  SorterGenericArray(::System::Array* keys, ::System::Array* items, ::System::Collections::IComparer* comparer);

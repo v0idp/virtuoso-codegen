@@ -86,11 +86,18 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.XmlDocument doc
-    [[deprecated]] ::System::Xml::XmlDocument*& dyn_doc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocument*& dyn_doc();
     // Get instance field reference: private System.Xml.XmlReader reader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn_reader();
     // Get instance field reference: private System.Boolean preserveWhitespace
-    [[deprecated]] bool& dyn_preserveWhitespace();
+    [[deprecated("Use field access instead!")]] bool& dyn_preserveWhitespace();
+    // public System.Void .ctor()
+    // Offset: 0x127AE50
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlLoader* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlLoader::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlLoader*, creationType>()));
+    }
     // System.Void Load(System.Xml.XmlDocument doc, System.Xml.XmlReader reader, System.Boolean preserveWhitespace)
     // Offset: 0x12880C4
     void Load(::System::Xml::XmlDocument* doc, ::System::Xml::XmlReader* reader, bool preserveWhitespace);
@@ -169,21 +176,16 @@ namespace System::Xml {
     // static System.Exception UnexpectedNodeType(System.Xml.XmlNodeType nodetype)
     // Offset: 0x12892F4
     static ::System::Exception* UnexpectedNodeType(::System::Xml::XmlNodeType nodetype);
-    // public System.Void .ctor()
-    // Offset: 0x127AE50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlLoader* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlLoader::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlLoader*, creationType>()));
-    }
   }; // System.Xml.XmlLoader
   #pragma pack(pop)
   static check_size<sizeof(XmlLoader), 32 + sizeof(bool)> __System_Xml_XmlLoaderSizeCheck;
   static_assert(sizeof(XmlLoader) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::XmlLoader::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlLoader::Load
 // Il2CppName: Load
 template<>
@@ -431,7 +433,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::E
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlLoader*), "UnexpectedNodeType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{nodetype});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlLoader::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

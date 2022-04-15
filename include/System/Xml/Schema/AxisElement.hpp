@@ -63,13 +63,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Xml.Schema.DoubleLinkAxis curNode
-    [[deprecated]] ::System::Xml::Schema::DoubleLinkAxis*& dyn_curNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::DoubleLinkAxis*& dyn_curNode();
     // Get instance field reference: System.Int32 rootDepth
-    [[deprecated]] int& dyn_rootDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_rootDepth();
     // Get instance field reference: System.Int32 curDepth
-    [[deprecated]] int& dyn_curDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_curDepth();
     // Get instance field reference: System.Boolean isMatch
-    [[deprecated]] bool& dyn_isMatch();
+    [[deprecated("Use field access instead!")]] bool& dyn_isMatch();
     // System.Xml.Schema.DoubleLinkAxis get_CurNode()
     // Offset: 0xB5C4F0
     ::System::Xml::Schema::DoubleLinkAxis* get_CurNode();

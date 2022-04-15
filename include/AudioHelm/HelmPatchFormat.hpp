@@ -73,21 +73,19 @@ namespace AudioHelm {
     static_assert(sizeof(::AudioHelm::HelmPatchSettings*) == 0x8);
     public:
     // Get instance field reference: public System.String license
-    [[deprecated]] ::StringW& dyn_license();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_license();
     // Get instance field reference: public System.String synth_version
-    [[deprecated]] ::StringW& dyn_synth_version();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_synth_version();
     // Get instance field reference: public System.String patch_name
-    [[deprecated]] ::StringW& dyn_patch_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_patch_name();
     // Get instance field reference: public System.String folder_name
-    [[deprecated]] ::StringW& dyn_folder_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_folder_name();
     // Get instance field reference: public System.String author
-    [[deprecated]] ::StringW& dyn_author();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_author();
     // Get instance field reference: public AudioHelm.HelmPatchSettings settings
-    [[deprecated]] ::AudioHelm::HelmPatchSettings*& dyn_settings();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmPatchSettings*& dyn_settings();
     // public System.Void .ctor()
     // Offset: 0x193D39C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HelmPatchFormat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmPatchFormat::.ctor");

@@ -78,7 +78,7 @@ namespace VROSC {
       // Set static field: static public VROSC.ParameterController/VROSC.TargetParameter MidiCC
       static void _set_MidiCC(::VROSC::ParameterController::TargetParameter value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.ParameterController/VROSC.TargetParameter
     #pragma pack(pop)
     static check_size<sizeof(ParameterController::TargetParameter), 0 + sizeof(int)> __VROSC_ParameterController_TargetParameterSizeCheck;
@@ -130,17 +130,17 @@ namespace VROSC {
     // Set static field: static private System.Single MaxExternalSendFrequency
     static void _set_MaxExternalSendFrequency(float value);
     // Get instance field reference: private VROSC.ParameterController/VROSC.TargetParameter _targetParameter
-    [[deprecated]] ::VROSC::ParameterController::TargetParameter& dyn__targetParameter();
+    [[deprecated("Use field access instead!")]] ::VROSC::ParameterController::TargetParameter& dyn__targetParameter();
     // Get instance field reference: private VROSC.MidiCC _midiCC
-    [[deprecated]] ::VROSC::MidiCC& dyn__midiCC();
+    [[deprecated("Use field access instead!")]] ::VROSC::MidiCC& dyn__midiCC();
     // Get instance field reference: private VROSC.InstrumentController _instrument
-    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrument();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentController*& dyn__instrument();
     // Get instance field reference: private System.Boolean _handSpecific
-    [[deprecated]] bool& dyn__handSpecific();
+    [[deprecated("Use field access instead!")]] bool& dyn__handSpecific();
     // Get instance field reference: private System.Boolean _saveToPatch
-    [[deprecated]] bool& dyn__saveToPatch();
+    [[deprecated("Use field access instead!")]] bool& dyn__saveToPatch();
     // Get instance field reference: private System.Single _lastSendTime
-    [[deprecated]] float& dyn__lastSendTime();
+    [[deprecated("Use field access instead!")]] float& dyn__lastSendTime();
     // public VROSC.InstrumentController get_Instrument()
     // Offset: 0xADC9D8
     ::VROSC::InstrumentController* get_Instrument();
@@ -155,11 +155,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ParameterController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ParameterController::.ctor");

@@ -99,28 +99,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.AppearAnimationBehaviour template
-    [[deprecated]] ::VROSC::AppearAnimationBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::AppearAnimationBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _target
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__target();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _start
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__start();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__start();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _end
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__end();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__end();
     // Get instance field reference: public UnityEngine.AnimationCurve _positionCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
     // Get instance field reference: public UnityEngine.AnimationCurve _rotationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
     // Get instance field reference: public UnityEngine.AnimationCurve _scaleCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // Get instance field reference: public System.Single _randomStartRotation
-    [[deprecated]] float& dyn__randomStartRotation();
+    [[deprecated("Use field access instead!")]] float& dyn__randomStartRotation();
     // public System.Void .ctor()
     // Offset: 0x96C8BC
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AppearAnimationAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppearAnimationAsset::.ctor");

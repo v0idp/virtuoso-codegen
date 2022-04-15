@@ -56,7 +56,7 @@ namespace System::Net::Sockets {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private System.Net.EndPoint m_EndPoint
-    [[deprecated]] ::System::Net::EndPoint*& dyn_m_EndPoint();
+    [[deprecated("Use field access instead!")]] ::System::Net::EndPoint*& dyn_m_EndPoint();
     // public System.Net.Sockets.SocketError get_SocketErrorCode()
     // Offset: 0xDA4EA8
     ::System::Net::Sockets::SocketError get_SocketErrorCode();
@@ -79,10 +79,6 @@ namespace System::Net::Sockets {
     // Offset: 0xD9D388
     // Implemented from: System.ComponentModel.Win32Exception
     // Base method: System.Void Win32Exception::.ctor()
-    // Base method: System.Void ExternalException::.ctor()
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SocketException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SocketException::.ctor");
@@ -110,9 +106,6 @@ namespace System::Net::Sockets {
     // Offset: 0xDA51AC
     // Implemented from: System.ComponentModel.Win32Exception
     // Base method: System.Void Win32Exception::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Base method: System.Void ExternalException::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SocketException* New_ctor(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SocketException::.ctor");

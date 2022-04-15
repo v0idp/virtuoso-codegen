@@ -90,15 +90,15 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Linq::Expressions::Expression*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Body>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Body$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Body$k__BackingField();
     // Get instance field reference: private readonly System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.CatchBlock> <Handlers>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::CatchBlock*>*& dyn_$Handlers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::CatchBlock*>*& dyn_$Handlers$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Finally>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Finally$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Finally$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Fault>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Fault$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Fault$k__BackingField();
     // public System.Linq.Expressions.Expression get_Body()
     // Offset: 0xE9E8D0
     ::System::Linq::Expressions::Expression* get_Body();

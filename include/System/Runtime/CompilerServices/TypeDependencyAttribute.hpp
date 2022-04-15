@@ -43,7 +43,7 @@ namespace System::Runtime::CompilerServices {
       return typeName;
     }
     // Get instance field reference: private System.String typeName
-    [[deprecated]] ::StringW& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeName();
     // public System.Void .ctor(System.String typeName)
     // Offset: 0x12B1850
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

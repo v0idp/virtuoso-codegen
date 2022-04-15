@@ -113,27 +113,27 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRHapticsClip*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean m_lowLatencyMode
-    [[deprecated]] bool& dyn_m_lowLatencyMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_lowLatencyMode();
     // Get instance field reference: private System.Boolean m_paddingEnabled
-    [[deprecated]] bool& dyn_m_paddingEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_paddingEnabled();
     // Get instance field reference: private System.Int32 m_prevSamplesQueued
-    [[deprecated]] int& dyn_m_prevSamplesQueued();
+    [[deprecated("Use field access instead!")]] int& dyn_m_prevSamplesQueued();
     // Get instance field reference: private System.Single m_prevSamplesQueuedTime
-    [[deprecated]] float& dyn_m_prevSamplesQueuedTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_prevSamplesQueuedTime();
     // Get instance field reference: private System.Int32 m_numPredictionHits
-    [[deprecated]] int& dyn_m_numPredictionHits();
+    [[deprecated("Use field access instead!")]] int& dyn_m_numPredictionHits();
     // Get instance field reference: private System.Int32 m_numPredictionMisses
-    [[deprecated]] int& dyn_m_numPredictionMisses();
+    [[deprecated("Use field access instead!")]] int& dyn_m_numPredictionMisses();
     // Get instance field reference: private System.Int32 m_numUnderruns
-    [[deprecated]] int& dyn_m_numUnderruns();
+    [[deprecated("Use field access instead!")]] int& dyn_m_numUnderruns();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRHaptics/OVRHapticsOutput/ClipPlaybackTracker> m_pendingClips
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRHaptics::OVRHapticsOutput::ClipPlaybackTracker*>*& dyn_m_pendingClips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRHaptics::OVRHapticsOutput::ClipPlaybackTracker*>*& dyn_m_pendingClips();
     // Get instance field reference: private System.UInt32 m_controller
-    [[deprecated]] uint& dyn_m_controller();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_controller();
     // Get instance field reference: private OVRNativeBuffer m_nativeBuffer
-    [[deprecated]] ::GlobalNamespace::OVRNativeBuffer*& dyn_m_nativeBuffer();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRNativeBuffer*& dyn_m_nativeBuffer();
     // Get instance field reference: private OVRHapticsClip m_paddingClip
-    [[deprecated]] ::GlobalNamespace::OVRHapticsClip*& dyn_m_paddingClip();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRHapticsClip*& dyn_m_paddingClip();
     // public System.Void .ctor(System.UInt32 controller)
     // Offset: 0x84E090
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

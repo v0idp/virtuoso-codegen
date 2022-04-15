@@ -60,7 +60,7 @@ namespace System::Runtime::CompilerServices {
       return m_task;
     }
     // Get instance field reference: private readonly System.Threading.Tasks.Task m_task
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_task();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_task();
     // public System.Boolean get_IsCompleted()
     // Offset: 0x12740D4
     bool get_IsCompleted();

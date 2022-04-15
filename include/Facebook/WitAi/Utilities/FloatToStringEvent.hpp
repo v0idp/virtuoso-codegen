@@ -53,31 +53,29 @@ namespace Facebook::WitAi::Utilities {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String format
-    [[deprecated]] ::StringW& dyn_format();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_format();
     // Get instance field reference: private Facebook.WitAi.Utilities.StringEvent onFloatToString
-    [[deprecated]] ::Facebook::WitAi::Utilities::StringEvent*& dyn_onFloatToString();
-    // public System.Void ConvertFloatToString(System.Single value)
-    // Offset: 0x166EB1C
-    void ConvertFloatToString(float value);
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Utilities::StringEvent*& dyn_onFloatToString();
     // public System.Void .ctor()
     // Offset: 0x166EBB8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FloatToStringEvent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Utilities::FloatToStringEvent::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FloatToStringEvent*, creationType>()));
     }
+    // public System.Void ConvertFloatToString(System.Single value)
+    // Offset: 0x166EB1C
+    void ConvertFloatToString(float value);
   }; // Facebook.WitAi.Utilities.FloatToStringEvent
   #pragma pack(pop)
   static check_size<sizeof(FloatToStringEvent), 32 + sizeof(::Facebook::WitAi::Utilities::StringEvent*)> __Facebook_WitAi_Utilities_FloatToStringEventSizeCheck;
   static_assert(sizeof(FloatToStringEvent) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Facebook::WitAi::Utilities::FloatToStringEvent::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Utilities::FloatToStringEvent::ConvertFloatToString
 // Il2CppName: ConvertFloatToString
 template<>
@@ -87,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Utilities::FloatToStringEvent*), "ConvertFloatToString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::Utilities::FloatToStringEvent::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

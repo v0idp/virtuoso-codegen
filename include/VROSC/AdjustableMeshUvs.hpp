@@ -89,7 +89,7 @@ namespace VROSC {
       // Set static field: static public VROSC.AdjustableMeshUvs/VROSC.Channel Uv4
       static void _set_Uv4(::VROSC::AdjustableMeshUvs::Channel value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.AdjustableMeshUvs/VROSC.Channel
     #pragma pack(pop)
     static check_size<sizeof(AdjustableMeshUvs::Channel), 0 + sizeof(int)> __VROSC_AdjustableMeshUvs_ChannelSizeCheck;
@@ -123,13 +123,13 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector2>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AdjustableMeshUvs/VROSC.Channel _channel
-    [[deprecated]] ::VROSC::AdjustableMeshUvs::Channel& dyn__channel();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshUvs::Channel& dyn__channel();
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Vector2[] _originalUv
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
     // Get instance field reference: private UnityEngine.Vector2[] _uv
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh, VROSC.AdjustableMeshUvs/VROSC.Channel channel, System.Boolean useOriginalAsUVSource)
     // Offset: 0x966904
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -46,7 +46,7 @@ namespace System::Xml::Serialization {
       return memberName;
     }
     // Get instance field reference: private System.String memberName
-    [[deprecated]] ::StringW& dyn_memberName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_memberName();
     // public System.String get_MemberName()
     // Offset: 0x1190A10
     ::StringW get_MemberName();

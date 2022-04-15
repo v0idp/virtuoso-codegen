@@ -56,7 +56,7 @@ namespace UnityEngine::Rendering {
     // Set static field: static public readonly UnityEngine.Rendering.ShaderTagId none
     static void _set_none(::UnityEngine::Rendering::ShaderTagId value);
     // Get instance field reference: private System.Int32 m_Id
-    [[deprecated]] int& dyn_m_Id();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Id();
     // public System.Void .ctor(System.String name)
     // Offset: 0xBD2E28
     ShaderTagId(::StringW name);

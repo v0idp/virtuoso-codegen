@@ -43,7 +43,7 @@ namespace UnityEngine {
       return m_Order;
     }
     // Get instance field reference: private System.Int32 m_Order
-    [[deprecated]] int& dyn_m_Order();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Order();
     // public System.Int32 get_order()
     // Offset: 0x111DC24
     int get_order();

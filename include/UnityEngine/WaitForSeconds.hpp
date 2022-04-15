@@ -43,7 +43,7 @@ namespace UnityEngine {
       return m_Seconds;
     }
     // Get instance field reference: System.Single m_Seconds
-    [[deprecated]] float& dyn_m_Seconds();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Seconds();
     // public System.Void .ctor(System.Single seconds)
     // Offset: 0x18415B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

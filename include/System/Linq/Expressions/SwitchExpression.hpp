@@ -70,13 +70,13 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Reflection::MethodInfo*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <SwitchValue>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$SwitchValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$SwitchValue$k__BackingField();
     // Get instance field reference: private readonly System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.SwitchCase> <Cases>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::SwitchCase*>*& dyn_$Cases$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::SwitchCase*>*& dyn_$Cases$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <DefaultBody>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$DefaultBody$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$DefaultBody$k__BackingField();
     // Get instance field reference: private readonly System.Reflection.MethodInfo <Comparison>k__BackingField
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_$Comparison$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_$Comparison$k__BackingField();
     // public System.Linq.Expressions.Expression get_SwitchValue()
     // Offset: 0xE9DD34
     ::System::Linq::Expressions::Expression* get_SwitchValue();

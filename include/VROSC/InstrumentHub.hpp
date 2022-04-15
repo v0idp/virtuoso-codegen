@@ -70,13 +70,13 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _spawnDistanceFromBoard
-    [[deprecated]] float& dyn__spawnDistanceFromBoard();
+    [[deprecated("Use field access instead!")]] float& dyn__spawnDistanceFromBoard();
     // Get instance field reference: private System.Single _spawnDistanceFromController
-    [[deprecated]] float& dyn__spawnDistanceFromController();
+    [[deprecated("Use field access instead!")]] float& dyn__spawnDistanceFromController();
     // Get instance field reference: private System.Single _instrumentSizeMultiplier
-    [[deprecated]] float& dyn__instrumentSizeMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn__instrumentSizeMultiplier();
     // Get instance field reference: private System.Single _gripSpawnHeightOffset
-    [[deprecated]] float& dyn__gripSpawnHeightOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__gripSpawnHeightOffset();
     // public System.Single get_InstrumentSizeMultiplier()
     // Offset: 0x1947A3C
     float get_InstrumentSizeMultiplier();
@@ -90,11 +90,6 @@ namespace VROSC {
     // Offset: 0x194875C
     // Implemented from: VROSC.WidgetHub
     // Base method: System.Void WidgetHub::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentHub* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentHub::.ctor");

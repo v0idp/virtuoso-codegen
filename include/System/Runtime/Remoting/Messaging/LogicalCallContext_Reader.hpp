@@ -40,7 +40,7 @@ namespace System::Runtime::Remoting::Messaging {
       return m_ctx;
     }
     // Get instance field reference: private System.Runtime.Remoting.Messaging.LogicalCallContext m_ctx
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::LogicalCallContext*& dyn_m_ctx();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::LogicalCallContext*& dyn_m_ctx();
     // public System.Boolean get_IsNull()
     // Offset: 0xE53AEC
     bool get_IsNull();

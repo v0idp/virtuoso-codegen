@@ -61,9 +61,9 @@ namespace System::Runtime::Remoting {
       return *reinterpret_cast<::System::Runtime::Remoting::Messaging::IMessageSink*>(this);
     }
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink _next
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__next();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__next();
     // Get instance field reference: private System.IDisposable _disposable
-    [[deprecated]] ::System::IDisposable*& dyn__disposable();
+    [[deprecated("Use field access instead!")]] ::System::IDisposable*& dyn__disposable();
     // public System.Void .ctor(System.Runtime.Remoting.Messaging.IMessageSink next, System.IDisposable disposable)
     // Offset: 0x129E768
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

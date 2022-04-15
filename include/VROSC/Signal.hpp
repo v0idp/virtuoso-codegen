@@ -59,13 +59,13 @@ namespace VROSC {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public System.Single Value
-    [[deprecated]] float& dyn_Value();
+    [[deprecated("Use field access instead!")]] float& dyn_Value();
     // Get instance field reference: public VROSC.SignalControllerInfo ControllerInfo
-    [[deprecated]] ::VROSC::SignalControllerInfo*& dyn_ControllerInfo();
+    [[deprecated("Use field access instead!")]] ::VROSC::SignalControllerInfo*& dyn_ControllerInfo();
     // Get instance field reference: public System.Nullable`1<System.Boolean> FirstFrameOfSignal
-    [[deprecated]] ::System::Nullable_1<bool>& dyn_FirstFrameOfSignal();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_FirstFrameOfSignal();
     // Get instance field reference: public System.Double PredictedDSPTime
-    [[deprecated]] double& dyn_PredictedDSPTime();
+    [[deprecated("Use field access instead!")]] double& dyn_PredictedDSPTime();
     // public System.Void .ctor(System.Single value, VROSC.SignalControllerInfo controllerInfo, System.Nullable`1<System.Boolean> firstFrameOfSignal, System.Double predictedDspTime)
     // Offset: 0x1927B8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

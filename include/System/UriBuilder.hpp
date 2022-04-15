@@ -107,27 +107,27 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _changed
-    [[deprecated]] bool& dyn__changed();
+    [[deprecated("Use field access instead!")]] bool& dyn__changed();
     // Get instance field reference: private System.String _fragment
-    [[deprecated]] ::StringW& dyn__fragment();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__fragment();
     // Get instance field reference: private System.String _host
-    [[deprecated]] ::StringW& dyn__host();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__host();
     // Get instance field reference: private System.String _password
-    [[deprecated]] ::StringW& dyn__password();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__password();
     // Get instance field reference: private System.String _path
-    [[deprecated]] ::StringW& dyn__path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__path();
     // Get instance field reference: private System.Int32 _port
-    [[deprecated]] int& dyn__port();
+    [[deprecated("Use field access instead!")]] int& dyn__port();
     // Get instance field reference: private System.String _query
-    [[deprecated]] ::StringW& dyn__query();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__query();
     // Get instance field reference: private System.String _scheme
-    [[deprecated]] ::StringW& dyn__scheme();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__scheme();
     // Get instance field reference: private System.String _schemeDelimiter
-    [[deprecated]] ::StringW& dyn__schemeDelimiter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__schemeDelimiter();
     // Get instance field reference: private System.Uri _uri
-    [[deprecated]] ::System::Uri*& dyn__uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn__uri();
     // Get instance field reference: private System.String _username
-    [[deprecated]] ::StringW& dyn__username();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__username();
     // public System.Void set_Host(System.String value)
     // Offset: 0xC3CAA8
     void set_Host(::StringW value);
@@ -146,18 +146,16 @@ namespace System {
     // public System.Uri get_Uri()
     // Offset: 0xC3CE8C
     ::System::Uri* get_Uri();
-    // private System.Void SetFieldsFromUri(System.Uri uri)
-    // Offset: 0xC3CF34
-    void SetFieldsFromUri(::System::Uri* uri);
     // public System.Void .ctor()
     // Offset: 0xC3C978
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UriBuilder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::UriBuilder::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UriBuilder*, creationType>()));
     }
+    // private System.Void SetFieldsFromUri(System.Uri uri)
+    // Offset: 0xC3CF34
+    void SetFieldsFromUri(::System::Uri* uri);
     // public override System.Boolean Equals(System.Object rparam)
     // Offset: 0xC3D0AC
     // Implemented from: System.Object
@@ -231,6 +229,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::U
     return ::il2cpp_utils::FindMethod(classof(System::UriBuilder*), "get_Uri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::UriBuilder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::UriBuilder::SetFieldsFromUri
 // Il2CppName: SetFieldsFromUri
 template<>
@@ -240,10 +242,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::UriBuilder*), "SetFieldsFromUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{uri});
   }
 };
-// Writing MetadataGetter for method: System::UriBuilder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::UriBuilder::Equals
 // Il2CppName: Equals
 template<>

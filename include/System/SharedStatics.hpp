@@ -45,7 +45,7 @@ namespace System {
     // Set static field: static private readonly System.SharedStatics _sharedStatics
     static void _set__sharedStatics(::System::SharedStatics* value);
     // Get instance field reference: private System.Security.Util.Tokenizer/System.Security.Util.StringMaker _maker
-    [[deprecated]] ::System::Security::Util::Tokenizer::StringMaker*& dyn__maker();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::Tokenizer::StringMaker*& dyn__maker();
     // static private System.Void .cctor()
     // Offset: 0x117C8D8
     static void _cctor();

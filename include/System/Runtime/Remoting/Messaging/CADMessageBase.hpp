@@ -90,15 +90,15 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: protected System.Object[] _args
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__args();
     // Get instance field reference: protected System.Byte[] _serializedArgs
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__serializedArgs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__serializedArgs();
     // Get instance field reference: protected System.Int32 _propertyCount
-    [[deprecated]] int& dyn__propertyCount();
+    [[deprecated("Use field access instead!")]] int& dyn__propertyCount();
     // Get instance field reference: protected System.Runtime.Remoting.Messaging.CADArgHolder _callContext
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::CADArgHolder*& dyn__callContext();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::CADArgHolder*& dyn__callContext();
     // Get instance field reference: System.Byte[] serializedMethod
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_serializedMethod();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_serializedMethod();
     // public System.Void .ctor(System.Runtime.Remoting.Messaging.IMethodMessage msg)
     // Offset: 0xFF077C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

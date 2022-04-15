@@ -66,7 +66,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.AutoPlay All
     static void _set_All(::DG::Tweening::AutoPlay value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // DG.Tweening.AutoPlay
   #pragma pack(pop)
   static check_size<sizeof(AutoPlay), 0 + sizeof(int)> __DG_Tweening_AutoPlaySizeCheck;

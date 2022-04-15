@@ -42,9 +42,9 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _originalPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__originalPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__originalPosition();
     // Get instance field reference: private UnityEngine.Vector2 _scaling
-    [[deprecated]] ::UnityEngine::Vector2& dyn__scaling();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__scaling();
     // public UnityEngine.Vector3 get_OriginalPosition()
     // Offset: 0x956318
     ::UnityEngine::Vector3 get_OriginalPosition();

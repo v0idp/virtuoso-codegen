@@ -87,17 +87,17 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector2 m_Centroid
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Centroid();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Centroid();
     // Get instance field reference: private UnityEngine.Vector2 m_Point
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Point();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Point();
     // Get instance field reference: private UnityEngine.Vector2 m_Normal
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Normal();
     // Get instance field reference: private System.Single m_Distance
-    [[deprecated]] float& dyn_m_Distance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Distance();
     // Get instance field reference: private System.Single m_Fraction
-    [[deprecated]] float& dyn_m_Fraction();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Fraction();
     // Get instance field reference: private System.Int32 m_Collider
-    [[deprecated]] int& dyn_m_Collider();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Collider();
     // public UnityEngine.Vector2 get_point()
     // Offset: 0x18FF190
     ::UnityEngine::Vector2 get_point();

@@ -75,11 +75,11 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::System::Collections::Generic::List_1<int>*) == 0x8);
     public:
     // Get instance field reference: System.String _rep
-    [[deprecated]] ::StringW& dyn__rep();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__rep();
     // Get instance field reference: System.Collections.Generic.List`1<System.String> _strings
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__strings();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__strings();
     // Get instance field reference: System.Collections.Generic.List`1<System.Int32> _rules
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn__rules();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn__rules();
     // System.String get_Pattern()
     // Offset: 0x18513D4
     ::StringW get_Pattern();

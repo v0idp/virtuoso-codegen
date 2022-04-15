@@ -60,7 +60,7 @@ namespace System::Linq::Expressions {
     // Deleting conversion operator: operator ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>*
     constexpr operator ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>*() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> _body
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__body();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__body();
     // protected System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> get_Body()
     // Offset: 0xE99E14
     ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>* get_Body();

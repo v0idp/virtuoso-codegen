@@ -44,22 +44,19 @@ namespace System::Xml::Serialization {
     // public System.Xml.Serialization.XmlArrayItemAttribute get_Item(System.Int32 index)
     // Offset: 0x11B3C8C
     ::System::Xml::Serialization::XmlArrayItemAttribute* get_Item(int index);
+    // public System.Void .ctor()
+    // Offset: 0x11B3F48
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlArrayItemAttributes* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlArrayItemAttributes::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlArrayItemAttributes*, creationType>()));
+    }
     // public System.Int32 Add(System.Xml.Serialization.XmlArrayItemAttribute attribute)
     // Offset: 0x11B3DA0
     int Add(::System::Xml::Serialization::XmlArrayItemAttribute* attribute);
     // System.Void AddKeyHash(System.Text.StringBuilder sb)
     // Offset: 0x11B3E6C
     void AddKeyHash(::System::Text::StringBuilder* sb);
-    // public System.Void .ctor()
-    // Offset: 0x11B3F48
-    // Implemented from: System.Collections.CollectionBase
-    // Base method: System.Void CollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlArrayItemAttributes* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlArrayItemAttributes::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlArrayItemAttributes*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlArrayItemAttributes
   #pragma pack(pop)
 }
@@ -73,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlArrayItemAttributes*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlArrayItemAttributes::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlArrayItemAttributes::Add
 // Il2CppName: Add
 template<>
@@ -91,7 +92,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlArrayItemAttributes*), "AddKeyHash", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sb});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlArrayItemAttributes::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

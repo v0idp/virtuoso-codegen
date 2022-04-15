@@ -61,9 +61,9 @@ namespace System::Xml {
     // Deleting conversion operator: operator ::ArrayW<::Il2CppChar>
     constexpr operator ::ArrayW<::Il2CppChar>() const noexcept = delete;
     // Get instance field reference: private readonly System.Xml.XmlWriter coreWriter
-    [[deprecated]] ::System::Xml::XmlWriter*& dyn_coreWriter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWriter*& dyn_coreWriter();
     // Get instance field reference: private System.Threading.Tasks.Task lastTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_lastTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_lastTask();
     // public System.Void .ctor(System.Xml.XmlWriter writer)
     // Offset: 0x11B5ABC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

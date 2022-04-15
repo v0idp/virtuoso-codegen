@@ -47,17 +47,12 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::ScaleRandomizer::RandomTarget*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.ScaleRandomizer/VROSC.RandomTarget[] _randomTargets
-    [[deprecated]] ::ArrayW<::VROSC::ScaleRandomizer::RandomTarget*>& dyn__randomTargets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::ScaleRandomizer::RandomTarget*>& dyn__randomTargets();
     // public System.Void .ctor()
     // Offset: 0xDE4618
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleRandomizer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleRandomizer::.ctor");

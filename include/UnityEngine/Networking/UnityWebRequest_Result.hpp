@@ -69,7 +69,7 @@ namespace UnityEngine::Networking {
     // Set static field: static public UnityEngine.Networking.UnityWebRequest/UnityEngine.Networking.Result DataProcessingError
     static void _set_DataProcessingError(::UnityEngine::Networking::UnityWebRequest::Result value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Networking.UnityWebRequest/UnityEngine.Networking.Result
   #pragma pack(pop)
   static check_size<sizeof(UnityWebRequest::Result), 0 + sizeof(int)> __UnityEngine_Networking_UnityWebRequest_ResultSizeCheck;

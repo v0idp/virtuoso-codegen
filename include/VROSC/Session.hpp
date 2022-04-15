@@ -88,7 +88,7 @@ namespace VROSC {
       // Set static field: static public VROSC.Session/VROSC.PreviewSource TapeRecorder
       static void _set_TapeRecorder(::VROSC::Session::PreviewSource value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.Session/VROSC.PreviewSource
     #pragma pack(pop)
     static check_size<sizeof(Session::PreviewSource), 0 + sizeof(int)> __VROSC_Session_PreviewSourceSizeCheck;
@@ -208,56 +208,54 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Session::Contributor*>*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 Version
-    [[deprecated]] int& dyn_Version();
+    [[deprecated("Use field access instead!")]] int& dyn_Version();
     // Get instance field reference: public System.String SessionName
-    [[deprecated]] ::StringW& dyn_SessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SessionName();
     // Get instance field reference: public System.String SessionId
-    [[deprecated]] ::StringW& dyn_SessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SessionId();
     // Get instance field reference: public System.String DisplayName
-    [[deprecated]] ::StringW& dyn_DisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DisplayName();
     // Get instance field reference: public System.String AuthorName
-    [[deprecated]] ::StringW& dyn_AuthorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_AuthorName();
     // Get instance field reference: public System.String PlatformName
-    [[deprecated]] ::StringW& dyn_PlatformName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PlatformName();
     // Get instance field reference: public System.String Date
-    [[deprecated]] ::StringW& dyn_Date();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Date();
     // Get instance field reference: public System.Int32 TrackCount
-    [[deprecated]] int& dyn_TrackCount();
+    [[deprecated("Use field access instead!")]] int& dyn_TrackCount();
     // Get instance field reference: public System.Boolean HasPreview
-    [[deprecated]] bool& dyn_HasPreview();
+    [[deprecated("Use field access instead!")]] bool& dyn_HasPreview();
     // Get instance field reference: public System.Single PreviewNormalizeMultiplier
-    [[deprecated]] float& dyn_PreviewNormalizeMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_PreviewNormalizeMultiplier();
     // Get instance field reference: public VROSC.Session/VROSC.PreviewSource PreviewType
-    [[deprecated]] ::VROSC::Session::PreviewSource& dyn_PreviewType();
+    [[deprecated("Use field access instead!")]] ::VROSC::Session::PreviewSource& dyn_PreviewType();
     // Get instance field reference: public System.String Description
-    [[deprecated]] ::StringW& dyn_Description();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Description();
     // Get instance field reference: public System.Int32 UpVotesCount
-    [[deprecated]] int& dyn_UpVotesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_UpVotesCount();
     // Get instance field reference: public System.Int32 FavoritesCount
-    [[deprecated]] int& dyn_FavoritesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_FavoritesCount();
     // Get instance field reference: public System.Int32 DownloadsCount
-    [[deprecated]] int& dyn_DownloadsCount();
+    [[deprecated("Use field access instead!")]] int& dyn_DownloadsCount();
     // Get instance field reference: public System.Int32 PreviewPlaysCount
-    [[deprecated]] int& dyn_PreviewPlaysCount();
+    [[deprecated("Use field access instead!")]] int& dyn_PreviewPlaysCount();
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> Tags
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_Tags();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_Tags();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.Session/VROSC.Contributor> Contributors
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Session::Contributor*>*& dyn_Contributors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Session::Contributor*>*& dyn_Contributors();
+    // public System.Void .ctor()
+    // Offset: 0x1985480
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Session* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Session::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Session*, creationType>()));
+    }
     // public VROSC.Session Clone()
     // Offset: 0x1985210
     ::VROSC::Session* Clone();
     // public System.Void SetHasPreview(System.Boolean hasPreview, System.Single multiplier, VROSC.Session/VROSC.PreviewSource previewSource)
     // Offset: 0x198546C
     void SetHasPreview(bool hasPreview, float multiplier, ::VROSC::Session::PreviewSource previewSource);
-    // public System.Void .ctor()
-    // Offset: 0x1985480
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Session* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Session::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Session*, creationType>()));
-    }
   }; // VROSC.Session
   #pragma pack(pop)
   static check_size<sizeof(Session), 120 + sizeof(::System::Collections::Generic::List_1<::VROSC::Session::Contributor*>*)> __VROSC_SessionSizeCheck;
@@ -266,6 +264,10 @@ namespace VROSC {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::Session::PreviewSource, "VROSC", "Session/PreviewSource");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::Session::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Session::Clone
 // Il2CppName: Clone
 template<>
@@ -285,7 +287,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Session*), "SetHasPreview", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hasPreview, multiplier, previewSource});
   }
 };
-// Writing MetadataGetter for method: VROSC::Session::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

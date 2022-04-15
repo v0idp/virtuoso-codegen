@@ -57,32 +57,34 @@ namespace RSG {
     static_assert(sizeof(::System::Action_1<::System::Exception*>*) == 0x8);
     public:
     // Get instance field reference: public System.Action onResolved
-    [[deprecated]] ::System::Action*& dyn_onResolved();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onResolved();
     // Get instance field reference: public RSG.Promise resultPromise
-    [[deprecated]] ::RSG::Promise*& dyn_resultPromise();
+    [[deprecated("Use field access instead!")]] ::RSG::Promise*& dyn_resultPromise();
     // Get instance field reference: public System.Action`1<System.Exception> onRejected
-    [[deprecated]] ::System::Action_1<::System::Exception*>*& dyn_onRejected();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::System::Exception*>*& dyn_onRejected();
+    // public System.Void .ctor()
+    // Offset: 0x8CE7E4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Promise::$$c__DisplayClass53_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::$$c__DisplayClass53_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Promise::$$c__DisplayClass53_0*, creationType>()));
+    }
     // System.Void <Then>b__0()
     // Offset: 0x8CE7EC
     void $Then$b__0();
     // System.Void <Then>b__1(System.Exception ex)
     // Offset: 0x8CE828
     void $Then$b__1(::System::Exception* ex);
-    // public System.Void .ctor()
-    // Offset: 0x8CE7E4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Promise::$$c__DisplayClass53_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::$$c__DisplayClass53_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Promise::$$c__DisplayClass53_0*, creationType>()));
-    }
   }; // RSG.Promise/RSG.<>c__DisplayClass53_0
   #pragma pack(pop)
   static check_size<sizeof(Promise::$$c__DisplayClass53_0), 32 + sizeof(::System::Action_1<::System::Exception*>*)> __RSG_Promise_$$c__DisplayClass53_0SizeCheck;
   static_assert(sizeof(Promise::$$c__DisplayClass53_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass53_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass53_0::$Then$b__0
 // Il2CppName: <Then>b__0
 template<>
@@ -100,7 +102,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (RSG::
     return ::il2cpp_utils::FindMethod(classof(RSG::Promise::$$c__DisplayClass53_0*), "<Then>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ex});
   }
 };
-// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass53_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

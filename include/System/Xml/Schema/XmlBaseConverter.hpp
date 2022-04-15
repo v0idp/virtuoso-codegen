@@ -202,11 +202,11 @@ namespace System::Xml::Schema {
     // Set static field: static protected readonly System.Type XPathNavigatorType
     static void _set_XPathNavigatorType(::System::Type* value);
     // Get instance field reference: private System.Xml.Schema.XmlSchemaType schemaType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaType*& dyn_schemaType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaType*& dyn_schemaType();
     // Get instance field reference: private System.Xml.Schema.XmlTypeCode typeCode
-    [[deprecated]] ::System::Xml::Schema::XmlTypeCode& dyn_typeCode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlTypeCode& dyn_typeCode();
     // Get instance field reference: private System.Type clrTypeDefault
-    [[deprecated]] ::System::Type*& dyn_clrTypeDefault();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_clrTypeDefault();
     // protected System.Xml.Schema.XmlSchemaType get_SchemaType()
     // Offset: 0x118AE50
     ::System::Xml::Schema::XmlSchemaType* get_SchemaType();

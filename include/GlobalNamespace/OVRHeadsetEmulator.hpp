@@ -85,7 +85,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRHeadsetEmulator/OpMode AlwaysOn
       static void _set_AlwaysOn(::GlobalNamespace::OVRHeadsetEmulator::OpMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRHeadsetEmulator/OpMode
     #pragma pack(pop)
     static check_size<sizeof(OVRHeadsetEmulator::OpMode), 0 + sizeof(int)> __GlobalNamespace_OVRHeadsetEmulator_OpModeSizeCheck;
@@ -203,29 +203,36 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single MAX_ROLL
     static void _set_MAX_ROLL(float value);
     // Get instance field reference: public OVRHeadsetEmulator/OpMode opMode
-    [[deprecated]] ::GlobalNamespace::OVRHeadsetEmulator::OpMode& dyn_opMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRHeadsetEmulator::OpMode& dyn_opMode();
     // Get instance field reference: public System.Boolean resetHmdPoseOnRelease
-    [[deprecated]] bool& dyn_resetHmdPoseOnRelease();
+    [[deprecated("Use field access instead!")]] bool& dyn_resetHmdPoseOnRelease();
     // Get instance field reference: public System.Boolean resetHmdPoseByMiddleMouseButton
-    [[deprecated]] bool& dyn_resetHmdPoseByMiddleMouseButton();
+    [[deprecated("Use field access instead!")]] bool& dyn_resetHmdPoseByMiddleMouseButton();
     // Get instance field reference: public UnityEngine.KeyCode[] activateKeys
-    [[deprecated]] ::ArrayW<::UnityEngine::KeyCode>& dyn_activateKeys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::KeyCode>& dyn_activateKeys();
     // Get instance field reference: public UnityEngine.KeyCode[] pitchKeys
-    [[deprecated]] ::ArrayW<::UnityEngine::KeyCode>& dyn_pitchKeys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::KeyCode>& dyn_pitchKeys();
     // Get instance field reference: private OVRManager manager
-    [[deprecated]] ::GlobalNamespace::OVRManager*& dyn_manager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager*& dyn_manager();
     // Get instance field reference: private System.Boolean lastFrameEmulationActivated
-    [[deprecated]] bool& dyn_lastFrameEmulationActivated();
+    [[deprecated("Use field access instead!")]] bool& dyn_lastFrameEmulationActivated();
     // Get instance field reference: private UnityEngine.Vector3 recordedHeadPoseRelativeOffsetTranslation
-    [[deprecated]] ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetTranslation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetTranslation();
     // Get instance field reference: private UnityEngine.Vector3 recordedHeadPoseRelativeOffsetRotation
-    [[deprecated]] ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_recordedHeadPoseRelativeOffsetRotation();
     // Get instance field reference: private System.Boolean hasSentEvent
-    [[deprecated]] bool& dyn_hasSentEvent();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasSentEvent();
     // Get instance field reference: private System.Boolean emulatorHasInitialized
-    [[deprecated]] bool& dyn_emulatorHasInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_emulatorHasInitialized();
     // Get instance field reference: private UnityEngine.CursorLockMode previousCursorLockMode
-    [[deprecated]] ::UnityEngine::CursorLockMode& dyn_previousCursorLockMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CursorLockMode& dyn_previousCursorLockMode();
+    // public System.Void .ctor()
+    // Offset: 0xFC28EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRHeadsetEmulator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHeadsetEmulator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRHeadsetEmulator*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xFC23C8
     void Start();
@@ -238,19 +245,6 @@ namespace GlobalNamespace {
     // private System.Boolean IsTweakingPitch()
     // Offset: 0xFC285C
     bool IsTweakingPitch();
-    // public System.Void .ctor()
-    // Offset: 0xFC28EC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRHeadsetEmulator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHeadsetEmulator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRHeadsetEmulator*, creationType>()));
-    }
   }; // OVRHeadsetEmulator
   #pragma pack(pop)
   static check_size<sizeof(OVRHeadsetEmulator), 88 + sizeof(::UnityEngine::CursorLockMode)> __GlobalNamespace_OVRHeadsetEmulatorSizeCheck;
@@ -259,6 +253,10 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OVRHeadsetEmulator::OpMode, "", "OVRHeadsetEmulator/OpMode");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRHeadsetEmulator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRHeadsetEmulator::Start
 // Il2CppName: Start
 template<>
@@ -291,7 +289,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRHeadsetEmulator*), "IsTweakingPitch", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRHeadsetEmulator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

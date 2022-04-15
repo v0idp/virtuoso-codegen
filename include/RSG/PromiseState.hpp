@@ -60,7 +60,7 @@ namespace RSG {
     // Set static field: static public RSG.PromiseState Resolved
     static void _set_Resolved(::RSG::PromiseState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // RSG.PromiseState
   #pragma pack(pop)
   static check_size<sizeof(PromiseState), 0 + sizeof(int)> __RSG_PromiseStateSizeCheck;

@@ -92,7 +92,6 @@ namespace VROSC {
     // Offset: 0x194881C
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentsDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentsDataController::.ctor");

@@ -45,7 +45,7 @@ namespace UnityEngine::Timeline {
       return m_MediaType;
     }
     // Get instance field reference: public readonly UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.MediaType m_MediaType
-    [[deprecated]] ::UnityEngine::Timeline::TimelineAsset::MediaType& dyn_m_MediaType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineAsset::MediaType& dyn_m_MediaType();
     // public System.Void .ctor(UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.MediaType mt)
     // Offset: 0x18D3F24
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

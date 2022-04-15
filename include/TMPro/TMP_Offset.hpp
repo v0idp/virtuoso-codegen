@@ -63,13 +63,13 @@ namespace TMPro {
     // Set static field: static private readonly TMPro.TMP_Offset k_ZeroOffset
     static void _set_k_ZeroOffset(::TMPro::TMP_Offset value);
     // Get instance field reference: private System.Single m_Left
-    [[deprecated]] float& dyn_m_Left();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Left();
     // Get instance field reference: private System.Single m_Right
-    [[deprecated]] float& dyn_m_Right();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Right();
     // Get instance field reference: private System.Single m_Top
-    [[deprecated]] float& dyn_m_Top();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Top();
     // Get instance field reference: private System.Single m_Bottom
-    [[deprecated]] float& dyn_m_Bottom();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Bottom();
     // public System.Single get_left()
     // Offset: 0x9B0408
     float get_left();

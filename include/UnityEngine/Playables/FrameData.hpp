@@ -102,7 +102,7 @@ namespace UnityEngine::Playables {
       // Set static field: static public UnityEngine.Playables.FrameData/UnityEngine.Playables.Flags EffectivePlayStatePlaying
       static void _set_EffectivePlayStatePlaying(::UnityEngine::Playables::FrameData::Flags value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Playables.FrameData/UnityEngine.Playables.Flags
     #pragma pack(pop)
     static check_size<sizeof(FrameData::Flags), 0 + sizeof(int)> __UnityEngine_Playables_FrameData_FlagsSizeCheck;
@@ -172,23 +172,23 @@ namespace UnityEngine::Playables {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.UInt64 m_FrameID
-    [[deprecated]] uint64_t& dyn_m_FrameID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_FrameID();
     // Get instance field reference: System.Double m_DeltaTime
-    [[deprecated]] double& dyn_m_DeltaTime();
+    [[deprecated("Use field access instead!")]] double& dyn_m_DeltaTime();
     // Get instance field reference: System.Single m_Weight
-    [[deprecated]] float& dyn_m_Weight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Weight();
     // Get instance field reference: System.Single m_EffectiveWeight
-    [[deprecated]] float& dyn_m_EffectiveWeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_EffectiveWeight();
     // Get instance field reference: System.Double m_EffectiveParentDelay
-    [[deprecated]] double& dyn_m_EffectiveParentDelay();
+    [[deprecated("Use field access instead!")]] double& dyn_m_EffectiveParentDelay();
     // Get instance field reference: System.Single m_EffectiveParentSpeed
-    [[deprecated]] float& dyn_m_EffectiveParentSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_m_EffectiveParentSpeed();
     // Get instance field reference: System.Single m_EffectiveSpeed
-    [[deprecated]] float& dyn_m_EffectiveSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_m_EffectiveSpeed();
     // Get instance field reference: UnityEngine.Playables.FrameData/UnityEngine.Playables.Flags m_Flags
-    [[deprecated]] ::UnityEngine::Playables::FrameData::Flags& dyn_m_Flags();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::FrameData::Flags& dyn_m_Flags();
     // Get instance field reference: UnityEngine.Playables.PlayableOutput m_Output
-    [[deprecated]] ::UnityEngine::Playables::PlayableOutput& dyn_m_Output();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableOutput& dyn_m_Output();
     // public System.Single get_deltaTime()
     // Offset: 0x1127050
     float get_deltaTime();

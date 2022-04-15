@@ -90,25 +90,19 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public TimeOfDayType timeOfDay
-    [[deprecated]] ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
     // Get instance field reference: public UnityEngine.Material SkyboxMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_SkyboxMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_SkyboxMaterial();
     // Get instance field reference: public UnityEngine.Light directionalLight
-    [[deprecated]] ::UnityEngine::Light*& dyn_directionalLight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Light*& dyn_directionalLight();
     // Get instance field reference: public UnityEngine.Transform SunTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_SunTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_SunTransform();
     // Get instance field reference: public UnityEngine.Color SunColor
-    [[deprecated]] ::UnityEngine::Color& dyn_SunColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_SunColor();
     // Get instance field reference: public UnityEngine.GameObject[] ObjectsToActivate
-    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn_ObjectsToActivate();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::GameObject*>& dyn_ObjectsToActivate();
     // public System.Void .ctor()
     // Offset: 0xA269F4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TimeOfDayPreset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TimeOfDayPreset::.ctor");

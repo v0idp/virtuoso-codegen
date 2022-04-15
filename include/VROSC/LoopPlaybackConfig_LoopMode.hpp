@@ -51,7 +51,7 @@ namespace VROSC {
     // Set static field: static public VROSC.LoopPlaybackConfig/VROSC.LoopMode Once
     static void _set_Once(::VROSC::LoopPlaybackConfig::LoopMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.LoopPlaybackConfig/VROSC.LoopMode
   #pragma pack(pop)
   static check_size<sizeof(LoopPlaybackConfig::LoopMode), 0 + sizeof(int)> __VROSC_LoopPlaybackConfig_LoopModeSizeCheck;

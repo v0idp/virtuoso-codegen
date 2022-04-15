@@ -148,29 +148,29 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _inProgressText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__inProgressText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__inProgressText();
     // Get instance field reference: private System.Single _pressTime
-    [[deprecated]] float& dyn__pressTime();
+    [[deprecated("Use field access instead!")]] float& dyn__pressTime();
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _previewValue
-    [[deprecated]] float& dyn__previewValue();
+    [[deprecated("Use field access instead!")]] float& dyn__previewValue();
     // Get instance field reference: private VROSC.SimpleHaptic _hapticFeedBack
-    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated("Use field access instead!")]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private System.Single _pressedFor
-    [[deprecated]] float& dyn__pressedFor();
+    [[deprecated("Use field access instead!")]] float& dyn__pressedFor();
     // Get instance field reference: private System.Boolean _pressing
-    [[deprecated]] bool& dyn__pressing();
+    [[deprecated("Use field access instead!")]] bool& dyn__pressing();
     // Get instance field reference: private System.Boolean _pressCompleteToken
-    [[deprecated]] bool& dyn__pressCompleteToken();
+    [[deprecated("Use field access instead!")]] bool& dyn__pressCompleteToken();
     // Get instance field reference: private VROSC.InputDevice _heldBy
-    [[deprecated]] ::VROSC::InputDevice*& dyn__heldBy();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__heldBy();
     // Get instance field reference: private VROSC.TriggerButton _heldByButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn__heldByButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__heldByButton();
     // Get instance field reference: public System.Action OnPressCompleted
-    [[deprecated]] ::System::Action*& dyn_OnPressCompleted();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnPressCompleted();
     // private System.Void OnEnable()
     // Offset: 0x190FBBC
     void OnEnable();
@@ -206,11 +206,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIHoldButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIHoldButton::.ctor");

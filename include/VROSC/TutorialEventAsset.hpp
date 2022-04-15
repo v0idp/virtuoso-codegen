@@ -72,18 +72,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.TutorialEventBehaviour settings
-    [[deprecated]] ::VROSC::TutorialEventBehaviour*& dyn_settings();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialEventBehaviour*& dyn_settings();
     // Get instance field reference: private VROSC.TutorialEvent _startEvent
-    [[deprecated]] ::VROSC::TutorialEvent& dyn__startEvent();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialEvent& dyn__startEvent();
     // Get instance field reference: private VROSC.TutorialEvent _endEvent
-    [[deprecated]] ::VROSC::TutorialEvent& dyn__endEvent();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialEvent& dyn__endEvent();
     // public System.Void .ctor()
     // Offset: 0xA2F070
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TutorialEventAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialEventAsset::.ctor");

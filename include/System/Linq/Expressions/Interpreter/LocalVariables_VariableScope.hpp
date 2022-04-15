@@ -69,15 +69,15 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::LocalVariables::VariableScope*>*) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int32 Start
-    [[deprecated]] int& dyn_Start();
+    [[deprecated("Use field access instead!")]] int& dyn_Start();
     // Get instance field reference: public System.Int32 Stop
-    [[deprecated]] int& dyn_Stop();
+    [[deprecated("Use field access instead!")]] int& dyn_Stop();
     // Get instance field reference: public readonly System.Linq.Expressions.Interpreter.LocalVariable Variable
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LocalVariable*& dyn_Variable();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LocalVariable*& dyn_Variable();
     // Get instance field reference: public readonly System.Linq.Expressions.Interpreter.LocalVariables/System.Linq.Expressions.Interpreter.VariableScope Parent
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LocalVariables::VariableScope*& dyn_Parent();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LocalVariables::VariableScope*& dyn_Parent();
     // Get instance field reference: public System.Collections.Generic.List`1<System.Linq.Expressions.Interpreter.LocalVariables/System.Linq.Expressions.Interpreter.VariableScope> ChildScopes
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::LocalVariables::VariableScope*>*& dyn_ChildScopes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::LocalVariables::VariableScope*>*& dyn_ChildScopes();
     // public System.Void .ctor(System.Linq.Expressions.Interpreter.LocalVariable variable, System.Int32 start, System.Linq.Expressions.Interpreter.LocalVariables/System.Linq.Expressions.Interpreter.VariableScope parent)
     // Offset: 0x16AA240
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

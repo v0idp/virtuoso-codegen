@@ -103,19 +103,19 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.LoopStationBaseGroupHandler _baseGroupHandler
-    [[deprecated]] ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroupHandler();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroupHandler();
     // Get instance field reference: private UnityEngine.RectTransform _sortArea
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sortArea();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__sortArea();
     // Get instance field reference: private System.Single _padding
-    [[deprecated]] float& dyn__padding();
+    [[deprecated("Use field access instead!")]] float& dyn__padding();
     // Get instance field reference: private UnityEngine.RectTransform _autoGroupHeader
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__autoGroupHeader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__autoGroupHeader();
     // Get instance field reference: private VROSC.UIButton _addGroupButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__addGroupButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__addGroupButton();
     // Get instance field reference: private VROSC.UISlideToggle _arrangeGroups
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__arrangeGroups();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__arrangeGroups();
     // Get instance field reference: private System.Int32 _groupNameCounter
-    [[deprecated]] int& dyn__groupNameCounter();
+    [[deprecated("Use field access instead!")]] int& dyn__groupNameCounter();
     // private System.Void Awake()
     // Offset: 0x19797B4
     void Awake();
@@ -147,11 +147,6 @@ namespace VROSC {
     // Offset: 0x197A12C
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: System.Void LoopStationGroupHandler::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationUserGroupHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationUserGroupHandler::.ctor");

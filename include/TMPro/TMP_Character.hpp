@@ -65,7 +65,6 @@ namespace TMPro {
     // Offset: 0xC2E0A4
     // Implemented from: TMPro.TMP_TextElement
     // Base method: System.Void TMP_TextElement::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_Character* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Character::.ctor");

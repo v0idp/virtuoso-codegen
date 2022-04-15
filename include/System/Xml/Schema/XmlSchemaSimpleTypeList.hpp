@@ -61,11 +61,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchemaSimpleType*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlQualifiedName itemTypeName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_itemTypeName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_itemTypeName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType itemType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_itemType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_itemType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType baseItemType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_baseItemType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_baseItemType();
     // public System.Xml.XmlQualifiedName get_ItemTypeName()
     // Offset: 0xF36C48
     ::System::Xml::XmlQualifiedName* get_ItemTypeName();
@@ -90,7 +90,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaSimpleTypeContent::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaSimpleTypeList* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSimpleTypeList::.ctor");

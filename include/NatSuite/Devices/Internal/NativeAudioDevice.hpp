@@ -56,7 +56,7 @@ namespace NatSuite::Devices::Internal {
       return device;
     }
     // Get instance field reference: private readonly System.IntPtr device
-    [[deprecated]] ::System::IntPtr& dyn_device();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_device();
     // public System.Void .ctor(System.IntPtr device)
     // Offset: 0xAC1B80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

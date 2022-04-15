@@ -85,13 +85,13 @@ namespace System::Text {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Byte[] base64Bytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_base64Bytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_base64Bytes();
     // Get instance field reference: private System.SByte[] base64Values
-    [[deprecated]] ::ArrayW<int8_t>& dyn_base64Values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int8_t>& dyn_base64Values();
     // Get instance field reference: private System.Boolean[] directEncode
-    [[deprecated]] ::ArrayW<bool>& dyn_directEncode();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_directEncode();
     // Get instance field reference: private System.Boolean m_allowOptionals
-    [[deprecated]] bool& dyn_m_allowOptionals();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_allowOptionals();
     // public System.Void .ctor(System.Boolean allowOptionals)
     // Offset: 0x12B9DAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

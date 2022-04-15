@@ -81,11 +81,18 @@ namespace RSG {
       return *reinterpret_cast<::RSG::IPromiseTimer*>(this);
     }
     // Get instance field reference: private System.Single curTime
-    [[deprecated]] float& dyn_curTime();
+    [[deprecated("Use field access instead!")]] float& dyn_curTime();
     // Get instance field reference: private System.Int32 curFrame
-    [[deprecated]] int& dyn_curFrame();
+    [[deprecated("Use field access instead!")]] int& dyn_curFrame();
     // Get instance field reference: private readonly System.Collections.Generic.LinkedList`1<RSG.PredicateWait> waiting
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::RSG::PredicateWait*>*& dyn_waiting();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::RSG::PredicateWait*>*& dyn_waiting();
+    // public System.Void .ctor()
+    // Offset: 0xB2A678
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PromiseTimer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseTimer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PromiseTimer*, creationType>()));
+    }
     // public RSG.IPromise WaitFor(System.Single seconds)
     // Offset: 0xB29D2C
     ::RSG::IPromise* WaitFor(float seconds);
@@ -107,21 +114,16 @@ namespace RSG {
     // private System.Collections.Generic.LinkedListNode`1<RSG.PredicateWait> RemoveNode(System.Collections.Generic.LinkedListNode`1<RSG.PredicateWait> node)
     // Offset: 0xB2A5E0
     ::System::Collections::Generic::LinkedListNode_1<::RSG::PredicateWait*>* RemoveNode(::System::Collections::Generic::LinkedListNode_1<::RSG::PredicateWait*>* node);
-    // public System.Void .ctor()
-    // Offset: 0xB2A678
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PromiseTimer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseTimer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PromiseTimer*, creationType>()));
-    }
   }; // RSG.PromiseTimer
   #pragma pack(pop)
   static check_size<sizeof(PromiseTimer), 24 + sizeof(::System::Collections::Generic::LinkedList_1<::RSG::PredicateWait*>*)> __RSG_PromiseTimerSizeCheck;
   static_assert(sizeof(PromiseTimer) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: RSG::PromiseTimer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: RSG::PromiseTimer::WaitFor
 // Il2CppName: WaitFor
 template<>
@@ -185,7 +187,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(RSG::PromiseTimer*), "RemoveNode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{node});
   }
 };
-// Writing MetadataGetter for method: RSG::PromiseTimer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -80,19 +80,19 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single <Value>k__BackingField
-    [[deprecated]] float& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Value$k__BackingField();
     // Get instance field reference: private System.Single <Buffer>k__BackingField
-    [[deprecated]] float& dyn_$Buffer$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Buffer$k__BackingField();
     // Get instance field reference: private System.Single <Interpolated>k__BackingField
-    [[deprecated]] float& dyn_$Interpolated$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Interpolated$k__BackingField();
     // Get instance field reference: private System.Single _peak
-    [[deprecated]] float& dyn__peak();
+    [[deprecated("Use field access instead!")]] float& dyn__peak();
     // Get instance field reference: private VROSC.MinMaxFloat _interval
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__interval();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__interval();
     // Get instance field reference: public System.Action OnBeat
-    [[deprecated]] ::System::Action*& dyn_OnBeat();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnBeat();
     // Get instance field reference: private System.Single _coolDown
-    [[deprecated]] float& dyn__coolDown();
+    [[deprecated("Use field access instead!")]] float& dyn__coolDown();
     // public System.Single get_Value()
     // Offset: 0x957414
     float get_Value();
@@ -111,21 +111,19 @@ namespace VROSC::AudioReactive {
     // private System.Void set_Interpolated(System.Single value)
     // Offset: 0x95742C
     void set_Interpolated(float value);
+    // public System.Void .ctor()
+    // Offset: 0x95761C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioReactiveCore::BufferValue* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveCore::BufferValue::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioReactiveCore::BufferValue*, creationType>()));
+    }
     // public System.Void Set(System.Single min, System.Single max)
     // Offset: 0x95743C
     void Set(float min, float max);
     // public System.Void Update(System.Single modifier, System.Single fallSpeed, System.Single coolDownTime)
     // Offset: 0x9574B0
     void Update(float modifier, float fallSpeed, float coolDownTime);
-    // public System.Void .ctor()
-    // Offset: 0x95761C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioReactiveCore::BufferValue* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveCore::BufferValue::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioReactiveCore::BufferValue*, creationType>()));
-    }
   }; // VROSC.AudioReactive.AudioReactiveCore/VROSC.AudioReactive.BufferValue
   #pragma pack(pop)
   static check_size<sizeof(AudioReactiveCore::BufferValue), 48 + sizeof(float)> __VROSC_AudioReactive_AudioReactiveCore_BufferValueSizeCheck;
@@ -183,6 +181,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioReactive::AudioReactiveCore::BufferValue*), "set_Interpolated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveCore::BufferValue::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveCore::BufferValue::Set
 // Il2CppName: Set
 template<>
@@ -204,7 +206,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioReactive::AudioReactiveCore::BufferValue*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{modifier, fallSpeed, coolDownTime});
   }
 };
-// Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveCore::BufferValue::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

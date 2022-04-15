@@ -47,27 +47,29 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::FirebaseWrapper::$$c__DisplayClass56_2*) == 0x8);
     public:
     // Get instance field reference: public System.String sessionId
-    [[deprecated]] ::StringW& dyn_sessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionId();
     // Get instance field reference: public VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass56_2 CS$<>8__locals3
-    [[deprecated]] ::VROSC::FirebaseWrapper::$$c__DisplayClass56_2*& dyn_CS$$$8__locals3();
-    // System.Void <GetUserFavorites>b__2(VROSC.Error error)
-    // Offset: 0x1953F54
-    void $GetUserFavorites$b__2(::VROSC::Error error);
+    [[deprecated("Use field access instead!")]] ::VROSC::FirebaseWrapper::$$c__DisplayClass56_2*& dyn_CS$$$8__locals3();
     // public System.Void .ctor()
     // Offset: 0x1953E0C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseWrapper::$$c__DisplayClass56_3* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::$$c__DisplayClass56_3::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseWrapper::$$c__DisplayClass56_3*, creationType>()));
     }
+    // System.Void <GetUserFavorites>b__2(VROSC.Error error)
+    // Offset: 0x1953F54
+    void $GetUserFavorites$b__2(::VROSC::Error error);
   }; // VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass56_3
   #pragma pack(pop)
   static check_size<sizeof(FirebaseWrapper::$$c__DisplayClass56_3), 24 + sizeof(::VROSC::FirebaseWrapper::$$c__DisplayClass56_2*)> __VROSC_FirebaseWrapper_$$c__DisplayClass56_3SizeCheck;
   static_assert(sizeof(FirebaseWrapper::$$c__DisplayClass56_3) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass56_3::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass56_3::$GetUserFavorites$b__2
 // Il2CppName: <GetUserFavorites>b__2
 template<>
@@ -77,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper::$$c__DisplayClass56_3*), "<GetUserFavorites>b__2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass56_3::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -61,19 +61,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::PlatformSelector::Platform) == 0x4);
     public:
     // Get instance field reference: public System.Boolean DisableVR
-    [[deprecated]] bool& dyn_DisableVR();
+    [[deprecated("Use field access instead!")]] bool& dyn_DisableVR();
     // Get instance field reference: public System.String DummyOculusId
-    [[deprecated]] ::StringW& dyn_DummyOculusId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DummyOculusId();
     // Get instance field reference: public System.String DummyUsername
-    [[deprecated]] ::StringW& dyn_DummyUsername();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DummyUsername();
     // Get instance field reference: public System.Boolean PassEntitlements
-    [[deprecated]] bool& dyn_PassEntitlements();
+    [[deprecated("Use field access instead!")]] bool& dyn_PassEntitlements();
     // Get instance field reference: public VROSC.PlatformSelector/VROSC.Platform Platform
-    [[deprecated]] ::VROSC::PlatformSelector::Platform& dyn_Platform();
+    [[deprecated("Use field access instead!")]] ::VROSC::PlatformSelector::Platform& dyn_Platform();
     // public System.Void .ctor()
     // Offset: 0x8CDAC8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlatformSelector::DebugSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PlatformSelector::DebugSettings::.ctor");

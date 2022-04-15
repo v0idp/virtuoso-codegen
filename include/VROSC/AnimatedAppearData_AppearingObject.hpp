@@ -49,9 +49,9 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: protected VROSC.MinMaxVector2 _minMax
-    [[deprecated]] ::VROSC::MinMaxVector2*& dyn__minMax();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxVector2*& dyn__minMax();
     // Get instance field reference: protected UnityEngine.Vector2 _appear
-    [[deprecated]] ::UnityEngine::Vector2& dyn__appear();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__appear();
     // protected System.Void .ctor(VROSC.MinMaxVector2 minMax)
     // Offset: 0x9563D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

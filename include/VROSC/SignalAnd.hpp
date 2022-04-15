@@ -44,7 +44,7 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _cachedFirstValue
-    [[deprecated]] float& dyn__cachedFirstValue();
+    [[deprecated("Use field access instead!")]] float& dyn__cachedFirstValue();
     // private VROSC.Signal TransformValue(VROSC.Signal signal)
     // Offset: 0x1927BEC
     ::VROSC::Signal* TransformValue(::VROSC::Signal* signal);
@@ -58,11 +58,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalAnd* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SignalAnd::.ctor");

@@ -46,7 +46,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRLipSyncSequence*) == 0x8);
     public:
     // Get instance field reference: public OVRLipSyncSequence currentSequence
-    [[deprecated]] ::GlobalNamespace::OVRLipSyncSequence*& dyn_currentSequence();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRLipSyncSequence*& dyn_currentSequence();
     // private System.Void Update()
     // Offset: 0x18AACD8
     void Update();
@@ -54,11 +54,6 @@ namespace GlobalNamespace {
     // Offset: 0x18AAEBC
     // Implemented from: OVRLipSyncContextBase
     // Base method: System.Void OVRLipSyncContextBase::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRLipSyncContextCanned* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSyncContextCanned::.ctor");

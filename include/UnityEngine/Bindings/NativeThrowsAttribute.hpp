@@ -44,15 +44,12 @@ namespace UnityEngine::Bindings {
       return ThrowsException;
     }
     // Get instance field reference: private System.Boolean <ThrowsException>k__BackingField
-    [[deprecated]] bool& dyn_$ThrowsException$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ThrowsException$k__BackingField();
     // public System.Void set_ThrowsException(System.Boolean value)
     // Offset: 0x18FFB84
     void set_ThrowsException(bool value);
     // public System.Void .ctor()
     // Offset: 0x18FFB90
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NativeThrowsAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeThrowsAttribute::.ctor");

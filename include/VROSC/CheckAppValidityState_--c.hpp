@@ -55,6 +55,13 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x9593E8
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x959448
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CheckAppValidityState::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CheckAppValidityState::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CheckAppValidityState::$$c*, creationType>()));
+    }
     // System.Void <OnEnter>b__1_0()
     // Offset: 0x959450
     void $OnEnter$b__1_0();
@@ -64,15 +71,6 @@ namespace VROSC {
     // System.Void <OnEnter>b__1_2(VROSC.Error error)
     // Offset: 0x959694
     void $OnEnter$b__1_2(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x959448
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CheckAppValidityState::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CheckAppValidityState::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CheckAppValidityState::$$c*, creationType>()));
-    }
   }; // VROSC.CheckAppValidityState/VROSC.<>c
   #pragma pack(pop)
 }
@@ -85,6 +83,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::CheckAppValidityState::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::CheckAppValidityState::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CheckAppValidityState::$$c::$OnEnter$b__1_0
 // Il2CppName: <OnEnter>b__1_0
 template<>
@@ -110,7 +112,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::CheckAppValidityState::$$c*), "<OnEnter>b__1_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::CheckAppValidityState::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -58,13 +58,13 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Serialization.XmlSerializationCollectionFixupCallback callback
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializationCollectionFixupCallback*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializationCollectionFixupCallback*& dyn_callback();
     // Get instance field reference: private System.Object collection
-    [[deprecated]] ::Il2CppObject*& dyn_collection();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_collection();
     // Get instance field reference: private System.Object collectionItems
-    [[deprecated]] ::Il2CppObject*& dyn_collectionItems();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_collectionItems();
     // Get instance field reference: private System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // public System.Xml.Serialization.XmlSerializationCollectionFixupCallback get_Callback()
     // Offset: 0xC220A0
     ::System::Xml::Serialization::XmlSerializationCollectionFixupCallback* get_Callback();

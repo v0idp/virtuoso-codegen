@@ -65,16 +65,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.IndividualHintNoteBehaviour template
-    [[deprecated]] ::VROSC::IndividualHintNoteBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::IndividualHintNoteBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.TouchableObject> _target
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObject*>& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObject*>& dyn__target();
     // public System.Void .ctor()
     // Offset: 0x1943300
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IndividualHintNoteAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IndividualHintNoteAsset::.ctor");

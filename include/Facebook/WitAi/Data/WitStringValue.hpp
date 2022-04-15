@@ -43,9 +43,6 @@ namespace Facebook::WitAi::Data {
     // Offset: 0x167D460
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Void WitValue::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitStringValue* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::WitStringValue::.ctor");

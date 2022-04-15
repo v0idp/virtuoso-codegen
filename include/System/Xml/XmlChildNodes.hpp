@@ -53,7 +53,7 @@ namespace System::Xml {
       return container;
     }
     // Get instance field reference: private System.Xml.XmlNode container
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_container();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_container();
     // public System.Void .ctor(System.Xml.XmlNode container)
     // Offset: 0x1190868
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

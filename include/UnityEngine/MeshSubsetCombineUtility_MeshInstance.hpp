@@ -76,19 +76,19 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 meshInstanceID
-    [[deprecated]] int& dyn_meshInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_meshInstanceID();
     // Get instance field reference: public System.Int32 rendererInstanceID
-    [[deprecated]] int& dyn_rendererInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_rendererInstanceID();
     // Get instance field reference: public System.Int32 additionalVertexStreamsMeshInstanceID
-    [[deprecated]] int& dyn_additionalVertexStreamsMeshInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_additionalVertexStreamsMeshInstanceID();
     // Get instance field reference: public System.Int32 enlightenVertexStreamMeshInstanceID
-    [[deprecated]] int& dyn_enlightenVertexStreamMeshInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_enlightenVertexStreamMeshInstanceID();
     // Get instance field reference: public UnityEngine.Matrix4x4 transform
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_transform();
     // Get instance field reference: public UnityEngine.Vector4 lightmapScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_lightmapScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_lightmapScaleOffset();
     // Get instance field reference: public UnityEngine.Vector4 realtimeLightmapScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_realtimeLightmapScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_realtimeLightmapScaleOffset();
   }; // UnityEngine.MeshSubsetCombineUtility/UnityEngine.MeshInstance
   #pragma pack(pop)
   static check_size<sizeof(MeshSubsetCombineUtility::MeshInstance), 96 + sizeof(::UnityEngine::Vector4)> __UnityEngine_MeshSubsetCombineUtility_MeshInstanceSizeCheck;

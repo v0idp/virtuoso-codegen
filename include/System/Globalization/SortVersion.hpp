@@ -39,9 +39,9 @@ namespace System::Globalization {
     static_assert(sizeof(::System::Guid) == 0x10);
     public:
     // Get instance field reference: private System.Int32 m_NlsVersion
-    [[deprecated]] int& dyn_m_NlsVersion();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NlsVersion();
     // Get instance field reference: private System.Guid m_SortId
-    [[deprecated]] ::System::Guid& dyn_m_SortId();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_m_SortId();
   }; // System.Globalization.SortVersion
   #pragma pack(pop)
   static check_size<sizeof(SortVersion), 20 + sizeof(::System::Guid)> __System_Globalization_SortVersionSizeCheck;

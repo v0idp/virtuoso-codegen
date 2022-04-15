@@ -44,18 +44,16 @@ namespace UnityEngine::EventSystems {
     // static private System.Void .cctor()
     // Offset: 0x16D82F4
     static void _cctor();
-    // System.Void <.cctor>b__79_0(System.Collections.Generic.List`1<UnityEngine.EventSystems.IEventSystemHandler> l)
-    // Offset: 0x16D835C
-    void $_cctor$b__79_0(::System::Collections::Generic::List_1<::UnityEngine::EventSystems::IEventSystemHandler*>* l);
     // public System.Void .ctor()
     // Offset: 0x16D8354
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExecuteEvents::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::ExecuteEvents::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ExecuteEvents::$$c*, creationType>()));
     }
+    // System.Void <.cctor>b__79_0(System.Collections.Generic.List`1<UnityEngine.EventSystems.IEventSystemHandler> l)
+    // Offset: 0x16D835C
+    void $_cctor$b__79_0(::System::Collections::Generic::List_1<::UnityEngine::EventSystems::IEventSystemHandler*>* l);
   }; // UnityEngine.EventSystems.ExecuteEvents/UnityEngine.EventSystems.<>c
   #pragma pack(pop)
 }
@@ -68,6 +66,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::ExecuteEvents::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::EventSystems::ExecuteEvents::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::EventSystems::ExecuteEvents::$$c::$_cctor$b__79_0
 // Il2CppName: <.cctor>b__79_0
 template<>
@@ -77,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::ExecuteEvents::$$c*), "<.cctor>b__79_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{l});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::EventSystems::ExecuteEvents::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -52,7 +52,7 @@ namespace System::Runtime::Remoting::Messaging {
       return principal;
     }
     // Get instance field reference: private System.Security.Principal.IPrincipal _principal
-    [[deprecated]] ::System::Security::Principal::IPrincipal*& dyn__principal();
+    [[deprecated("Use field access instead!")]] ::System::Security::Principal::IPrincipal*& dyn__principal();
     // System.Boolean get_HasInfo()
     // Offset: 0xFF6F28
     bool get_HasInfo();

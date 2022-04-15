@@ -198,7 +198,6 @@ namespace System::Xml::XPath {
     // Offset: 0xF79D80
     // Implemented from: System.Xml.XPath.XPathItem
     // Base method: System.Void XPathItem::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XPathNavigator* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XPath::XPathNavigator::.ctor");

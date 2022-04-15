@@ -86,17 +86,17 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32 lineNum
-    [[deprecated]] int& dyn_lineNum();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNum();
     // Get instance field reference: private System.Int32 linePos
-    [[deprecated]] int& dyn_linePos();
+    [[deprecated("Use field access instead!")]] int& dyn_linePos();
     // Get instance field reference: private System.String sourceUri
-    [[deprecated]] ::StringW& dyn_sourceUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sourceUri();
     // Get instance field reference: private System.Xml.Serialization.XmlSerializerNamespaces namespaces
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializerNamespaces*& dyn_namespaces();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializerNamespaces*& dyn_namespaces();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObject parent
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObject*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObject*& dyn_parent();
     // Get instance field reference: private System.Boolean isProcessing
-    [[deprecated]] bool& dyn_isProcessing();
+    [[deprecated("Use field access instead!")]] bool& dyn_isProcessing();
     // public System.Int32 get_LineNumber()
     // Offset: 0x1119568
     int get_LineNumber();
@@ -145,6 +145,13 @@ namespace System::Xml::Schema {
     // System.Void set_IsProcessing(System.Boolean value)
     // Offset: 0x11195E4
     void set_IsProcessing(bool value);
+    // protected System.Void .ctor()
+    // Offset: 0x1106F04
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSchemaObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaObject*, creationType>()));
+    }
     // System.Void OnAdd(System.Xml.Schema.XmlSchemaObjectCollection container, System.Object item)
     // Offset: 0x11195B0
     void OnAdd(::System::Xml::Schema::XmlSchemaObjectCollection* container, ::Il2CppObject* item);
@@ -163,15 +170,6 @@ namespace System::Xml::Schema {
     // System.Xml.Schema.XmlSchemaObject Clone()
     // Offset: 0x11195F0
     ::System::Xml::Schema::XmlSchemaObject* Clone();
-    // protected System.Void .ctor()
-    // Offset: 0x1106F04
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSchemaObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaObject*, creationType>()));
-    }
   }; // System.Xml.Schema.XmlSchemaObject
   #pragma pack(pop)
   static check_size<sizeof(XmlSchemaObject), 48 + sizeof(bool)> __System_Xml_Schema_XmlSchemaObjectSizeCheck;
@@ -314,6 +312,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaObject*), "set_IsProcessing", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaObject::OnAdd
 // Il2CppName: OnAdd
 template<>
@@ -369,7 +371,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaObject*), "Clone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

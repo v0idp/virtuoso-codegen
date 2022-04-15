@@ -111,21 +111,21 @@ namespace System::Runtime::Remoting::Lifetime {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: private System.DateTime _leaseExpireTime
-    [[deprecated]] ::System::DateTime& dyn__leaseExpireTime();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn__leaseExpireTime();
     // Get instance field reference: private System.Runtime.Remoting.Lifetime.LeaseState _currentState
-    [[deprecated]] ::System::Runtime::Remoting::Lifetime::LeaseState& dyn__currentState();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Lifetime::LeaseState& dyn__currentState();
     // Get instance field reference: private System.TimeSpan _initialLeaseTime
-    [[deprecated]] ::System::TimeSpan& dyn__initialLeaseTime();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn__initialLeaseTime();
     // Get instance field reference: private System.TimeSpan _renewOnCallTime
-    [[deprecated]] ::System::TimeSpan& dyn__renewOnCallTime();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn__renewOnCallTime();
     // Get instance field reference: private System.TimeSpan _sponsorshipTimeout
-    [[deprecated]] ::System::TimeSpan& dyn__sponsorshipTimeout();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn__sponsorshipTimeout();
     // Get instance field reference: private System.Collections.ArrayList _sponsors
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__sponsors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__sponsors();
     // Get instance field reference: private System.Collections.Queue _renewingSponsors
-    [[deprecated]] ::System::Collections::Queue*& dyn__renewingSponsors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Queue*& dyn__renewingSponsors();
     // Get instance field reference: private System.Runtime.Remoting.Lifetime.Lease/System.Runtime.Remoting.Lifetime.RenewalDelegate _renewalDelegate
-    [[deprecated]] ::System::Runtime::Remoting::Lifetime::Lease::RenewalDelegate*& dyn__renewalDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Lifetime::Lease::RenewalDelegate*& dyn__renewalDelegate();
     // public System.TimeSpan get_CurrentLeaseTime()
     // Offset: 0x107705C
     ::System::TimeSpan get_CurrentLeaseTime();

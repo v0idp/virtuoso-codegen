@@ -101,11 +101,11 @@ namespace System::Security::Cryptography {
     // Set static field: static private readonly System.UInt32[] iT3
     static void _set_iT3(::ArrayW<uint> value);
     // Get instance field reference: private System.UInt32[] expandedKey
-    [[deprecated]] ::ArrayW<uint>& dyn_expandedKey();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_expandedKey();
     // Get instance field reference: private System.Int32 Nk
-    [[deprecated]] int& dyn_Nk();
+    [[deprecated("Use field access instead!")]] int& dyn_Nk();
     // Get instance field reference: private System.Int32 Nr
-    [[deprecated]] int& dyn_Nr();
+    [[deprecated("Use field access instead!")]] int& dyn_Nr();
     // public System.Void .ctor(System.Security.Cryptography.Aes algo, System.Boolean encryption, System.Byte[] key, System.Byte[] iv)
     // Offset: 0x11EC990
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

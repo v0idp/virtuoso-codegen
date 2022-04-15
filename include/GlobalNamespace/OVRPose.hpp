@@ -51,9 +51,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Quaternion orientation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_orientation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_orientation();
     // static public OVRPose get_identity()
     // Offset: 0xE7807C
     static ::GlobalNamespace::OVRPose get_identity();

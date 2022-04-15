@@ -38,7 +38,6 @@ namespace System::Net::NetworkInformation {
     // Offset: 0xC4E7A8
     // Implemented from: System.Net.NetworkInformation.IPGlobalProperties
     // Base method: System.Void IPGlobalProperties::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Win32IPGlobalProperties* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::NetworkInformation::Win32IPGlobalProperties::.ctor");

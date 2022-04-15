@@ -48,7 +48,7 @@ namespace System::Xml::Schema {
       return refer;
     }
     // Get instance field reference: private System.Xml.XmlQualifiedName refer
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_refer();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_refer();
     // public System.Xml.XmlQualifiedName get_Refer()
     // Offset: 0x111924C
     ::System::Xml::XmlQualifiedName* get_Refer();
@@ -61,7 +61,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaIdentityConstraint::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaKeyref* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaKeyref::.ctor");

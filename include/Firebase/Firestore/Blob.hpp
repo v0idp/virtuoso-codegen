@@ -57,9 +57,9 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IEquatable_1<::Firebase::Firestore::Blob>*>(this);
     }
     // Get instance field reference: private readonly System.Byte[] _bytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__bytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__bytes();
     // Get instance field reference: private System.Int32 _hash
-    [[deprecated]] int& dyn__hash();
+    [[deprecated("Use field access instead!")]] int& dyn__hash();
     // public System.Int32 get_Length()
     // Offset: 0xD4A868
     int get_Length();

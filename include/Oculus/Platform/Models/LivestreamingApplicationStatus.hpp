@@ -41,7 +41,7 @@ namespace Oculus::Platform::Models {
       return StreamingEnabled;
     }
     // Get instance field reference: public readonly System.Boolean StreamingEnabled
-    [[deprecated]] bool& dyn_StreamingEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_StreamingEnabled();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3D9BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

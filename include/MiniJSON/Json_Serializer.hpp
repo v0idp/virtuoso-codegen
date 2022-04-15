@@ -51,7 +51,14 @@ namespace MiniJSON {
       return builder;
     }
     // Get instance field reference: private System.Text.StringBuilder builder
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_builder();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_builder();
+    // private System.Void .ctor()
+    // Offset: 0x195A740
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Json::Serializer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::MiniJSON::Json::Serializer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Json::Serializer*, creationType>()));
+    }
     // static public System.String Serialize(System.Object obj)
     // Offset: 0x195A7A8
     static ::StringW Serialize(::Il2CppObject* obj);
@@ -70,21 +77,16 @@ namespace MiniJSON {
     // private System.Void SerializeOther(System.Object value)
     // Offset: 0x195B41C
     void SerializeOther(::Il2CppObject* value);
-    // private System.Void .ctor()
-    // Offset: 0x195A740
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Json::Serializer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::MiniJSON::Json::Serializer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Json::Serializer*, creationType>()));
-    }
   }; // MiniJSON.Json/MiniJSON.Serializer
   #pragma pack(pop)
   static check_size<sizeof(Json::Serializer), 16 + sizeof(::System::Text::StringBuilder*)> __MiniJSON_Json_SerializerSizeCheck;
   static_assert(sizeof(Json::Serializer) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: MiniJSON::Json::Serializer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: MiniJSON::Json::Serializer::Serialize
 // Il2CppName: Serialize
 template<>
@@ -139,7 +141,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (MiniJ
     return ::il2cpp_utils::FindMethod(classof(MiniJSON::Json::Serializer*), "SerializeOther", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: MiniJSON::Json::Serializer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

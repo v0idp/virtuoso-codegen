@@ -115,31 +115,31 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector4 baseColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_baseColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_baseColor();
     // Get instance field reference: public System.UInt64 albedoTextureID
-    [[deprecated]] uint64_t& dyn_albedoTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_albedoTextureID();
     // Get instance field reference: public UnityEngine.Vector4 albedoMultiplier
-    [[deprecated]] ::UnityEngine::Vector4& dyn_albedoMultiplier();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_albedoMultiplier();
     // Get instance field reference: public System.UInt64 metallicnessTextureID
-    [[deprecated]] uint64_t& dyn_metallicnessTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_metallicnessTextureID();
     // Get instance field reference: public System.Single glossinessScale
-    [[deprecated]] float& dyn_glossinessScale();
+    [[deprecated("Use field access instead!")]] float& dyn_glossinessScale();
     // Get instance field reference: public System.UInt64 normalTextureID
-    [[deprecated]] uint64_t& dyn_normalTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_normalTextureID();
     // Get instance field reference: public System.UInt64 heightTextureID
-    [[deprecated]] uint64_t& dyn_heightTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_heightTextureID();
     // Get instance field reference: public System.UInt64 occlusionTextureID
-    [[deprecated]] uint64_t& dyn_occlusionTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_occlusionTextureID();
     // Get instance field reference: public System.UInt64 emissionTextureID
-    [[deprecated]] uint64_t& dyn_emissionTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_emissionTextureID();
     // Get instance field reference: public UnityEngine.Vector4 emissionMultiplier
-    [[deprecated]] ::UnityEngine::Vector4& dyn_emissionMultiplier();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_emissionMultiplier();
     // Get instance field reference: public System.UInt64 detailMaskTextureID
-    [[deprecated]] uint64_t& dyn_detailMaskTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_detailMaskTextureID();
     // Get instance field reference: public System.UInt64 detailAlbedoTextureID
-    [[deprecated]] uint64_t& dyn_detailAlbedoTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_detailAlbedoTextureID();
     // Get instance field reference: public System.UInt64 detailNormalTextureID
-    [[deprecated]] uint64_t& dyn_detailNormalTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_detailNormalTextureID();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
     // Offset: 0x955B24
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);

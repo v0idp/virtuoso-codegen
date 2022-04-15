@@ -84,11 +84,11 @@ namespace VROSC {
     // Set static field: static public System.String BaseID
     static void _set_BaseID(::StringW value);
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopStationGroup> _arrangedGroups
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__arrangedGroups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__arrangedGroups();
     // Get instance field reference: private UnityEngine.RectTransform _autoGroupHeader
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__autoGroupHeader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__autoGroupHeader();
     // Get instance field reference: private VROSC.LoopStationGroup <BaseGroup>k__BackingField
-    [[deprecated]] ::VROSC::LoopStationGroup*& dyn_$BaseGroup$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroup*& dyn_$BaseGroup$k__BackingField();
     // public VROSC.LoopStationGroup get_BaseGroup()
     // Offset: 0x1967F14
     ::VROSC::LoopStationGroup* get_BaseGroup();
@@ -120,11 +120,6 @@ namespace VROSC {
     // Offset: 0x1969770
     // Implemented from: VROSC.LoopStationGroupHandler
     // Base method: System.Void LoopStationGroupHandler::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationBaseGroupHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationBaseGroupHandler::.ctor");

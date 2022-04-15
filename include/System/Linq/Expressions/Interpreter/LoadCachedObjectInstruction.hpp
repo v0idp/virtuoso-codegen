@@ -49,7 +49,7 @@ namespace System::Linq::Expressions::Interpreter {
       return index;
     }
     // Get instance field reference: private readonly System.UInt32 _index
-    [[deprecated]] uint& dyn__index();
+    [[deprecated("Use field access instead!")]] uint& dyn__index();
     // System.Void .ctor(System.UInt32 index)
     // Offset: 0xE8F734
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -50,9 +50,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::FloatNode*) == 0x8);
     public:
     // Get instance field reference: protected System.Single EnteredValue
-    [[deprecated]] float& dyn_EnteredValue();
+    [[deprecated("Use field access instead!")]] float& dyn_EnteredValue();
     // Get instance field reference: protected VROSC.FloatNode ConnectedValue
-    [[deprecated]] ::VROSC::FloatNode*& dyn_ConnectedValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::FloatNode*& dyn_ConnectedValue();
     // public System.Single get_Value()
     // Offset: 0x199F858
     float get_Value();

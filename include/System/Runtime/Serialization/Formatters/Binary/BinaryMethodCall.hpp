@@ -89,19 +89,19 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::MessageEnum) == 0x4);
     public:
     // Get instance field reference: private System.String methodName
-    [[deprecated]] ::StringW& dyn_methodName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_methodName();
     // Get instance field reference: private System.String typeName
-    [[deprecated]] ::StringW& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeName();
     // Get instance field reference: private System.Object[] args
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_args();
     // Get instance field reference: private System.Object callContext
-    [[deprecated]] ::Il2CppObject*& dyn_callContext();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_callContext();
     // Get instance field reference: private System.Type[] argTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_argTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_argTypes();
     // Get instance field reference: private System.Boolean bArgsPrimitive
-    [[deprecated]] bool& dyn_bArgsPrimitive();
+    [[deprecated("Use field access instead!")]] bool& dyn_bArgsPrimitive();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.MessageEnum messageEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::MessageEnum& dyn_messageEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::MessageEnum& dyn_messageEnum();
     // System.Void Write(System.Runtime.Serialization.Formatters.Binary.__BinaryWriter sout)
     // Offset: 0xFE8114
     void Write(::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter* sout);

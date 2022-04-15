@@ -90,20 +90,27 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UI.TabButton> _pcTabs
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UI::TabButton*>*& dyn__pcTabs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UI::TabButton*>*& dyn__pcTabs();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UI.TabButton> _mobileTabs
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UI::TabButton*>*& dyn__mobileTabs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UI::TabButton*>*& dyn__mobileTabs();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UI.TabButton> _tabs
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UI::TabButton*>*& dyn__tabs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UI::TabButton*>*& dyn__tabs();
     // Get instance field reference: private System.Int32 _currentTab
-    [[deprecated]] int& dyn__currentTab();
+    [[deprecated("Use field access instead!")]] int& dyn__currentTab();
     // Get instance field reference: private System.Boolean _areTabsEnabled
-    [[deprecated]] bool& dyn__areTabsEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__areTabsEnabled();
     // Get instance field reference: public System.Action`1<VROSC.UI.TabButton> OnTabChanged
-    [[deprecated]] ::System::Action_1<::VROSC::UI::TabButton*>*& dyn_OnTabChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::UI::TabButton*>*& dyn_OnTabChanged();
     // public VROSC.UI.TabButton get_SelectedTab()
     // Offset: 0x193A570
     ::VROSC::UI::TabButton* get_SelectedTab();
+    // public System.Void .ctor()
+    // Offset: 0x193AD04
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TabController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::TabController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TabController*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x193A5F8
     void Awake();
@@ -116,19 +123,6 @@ namespace VROSC::UI {
     // private System.Void TabActivated(VROSC.UI.TabButton sender)
     // Offset: 0x193AB10
     void TabActivated(::VROSC::UI::TabButton* sender);
-    // public System.Void .ctor()
-    // Offset: 0x193AD04
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TabController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::TabController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TabController*, creationType>()));
-    }
   }; // VROSC.UI.TabController
   #pragma pack(pop)
   static check_size<sizeof(TabController), 56 + sizeof(::System::Action_1<::VROSC::UI::TabButton*>*)> __VROSC_UI_TabControllerSizeCheck;
@@ -143,6 +137,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::UI
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::TabController*), "get_SelectedTab", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::TabController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::TabController::Awake
 // Il2CppName: Awake
 template<>
@@ -177,7 +175,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::TabController*), "TabActivated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sender});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::TabController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

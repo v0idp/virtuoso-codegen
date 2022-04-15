@@ -65,15 +65,15 @@ namespace System::Threading {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr InternalLow
-    [[deprecated]] ::System::IntPtr& dyn_InternalLow();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_InternalLow();
     // Get instance field reference: public System.IntPtr InternalHigh
-    [[deprecated]] ::System::IntPtr& dyn_InternalHigh();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_InternalHigh();
     // Get instance field reference: public System.Int32 OffsetLow
-    [[deprecated]] int& dyn_OffsetLow();
+    [[deprecated("Use field access instead!")]] int& dyn_OffsetLow();
     // Get instance field reference: public System.Int32 OffsetHigh
-    [[deprecated]] int& dyn_OffsetHigh();
+    [[deprecated("Use field access instead!")]] int& dyn_OffsetHigh();
     // Get instance field reference: public System.IntPtr EventHandle
-    [[deprecated]] ::System::IntPtr& dyn_EventHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_EventHandle();
   }; // System.Threading.NativeOverlapped
   #pragma pack(pop)
   static check_size<sizeof(NativeOverlapped), 24 + sizeof(::System::IntPtr)> __System_Threading_NativeOverlappedSizeCheck;

@@ -83,7 +83,7 @@ namespace UnityEngine::Timeline {
     // Set static field: static public UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.MediaType Group
     static void _set_Group(::UnityEngine::Timeline::TimelineAsset::MediaType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.MediaType
   #pragma pack(pop)
   static check_size<sizeof(TimelineAsset::MediaType), 0 + sizeof(int)> __UnityEngine_Timeline_TimelineAsset_MediaTypeSizeCheck;

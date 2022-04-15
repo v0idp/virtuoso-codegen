@@ -104,7 +104,7 @@ namespace System::Threading {
     // Set static field: static public System.Threading.ThreadState Aborted
     static void _set_Aborted(::System::Threading::ThreadState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Threading.ThreadState
   #pragma pack(pop)
   static check_size<sizeof(ThreadState), 0 + sizeof(int)> __System_Threading_ThreadStateSizeCheck;

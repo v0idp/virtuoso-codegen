@@ -42,13 +42,11 @@ namespace UnityEngine {
       return lines;
     }
     // Get instance field reference: public readonly System.Int32 lines
-    [[deprecated]] int& dyn_lines();
+    [[deprecated("Use field access instead!")]] int& dyn_lines();
     // public System.Void .ctor()
     // Offset: 0xBBFF24
     // Implemented from: UnityEngine.PropertyAttribute
     // Base method: System.Void PropertyAttribute::.ctor()
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MultilineAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::MultilineAttribute::.ctor");

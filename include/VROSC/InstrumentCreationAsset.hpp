@@ -58,14 +58,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.InstrumentCreationBehaviour template
-    [[deprecated]] ::VROSC::InstrumentCreationBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentCreationBehaviour*& dyn_template();
     // public System.Void .ctor()
     // Offset: 0x1947538
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentCreationAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentCreationAsset::.ctor");

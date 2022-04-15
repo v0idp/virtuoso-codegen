@@ -37,6 +37,16 @@ namespace System::Data {
     static int64_t _get_s_nextScopeId();
     // Set static field: static private System.Int64 s_nextScopeId
     static void _set_s_nextScopeId(int64_t value);
+    // public System.Void .ctor()
+    // Offset: 0xF977A8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataCommonEventSource* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataCommonEventSource::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataCommonEventSource*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xF9780C
+    static void _cctor();
     // System.Void Trace(System.String message)
     // Offset: 0xF9774C
     void Trace(::StringW message);
@@ -136,25 +146,22 @@ namespace System::Data {
     // System.Void ExitScope(System.Int64 scopeId)
     // Offset: 0xF977A4
     void ExitScope(int64_t scopeId);
-    // public System.Void .ctor()
-    // Offset: 0xF977A8
-    // Implemented from: System.Diagnostics.Tracing.EventSource
-    // Base method: System.Void EventSource::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataCommonEventSource* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataCommonEventSource::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataCommonEventSource*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xF9780C
-    // Implemented from: System.Diagnostics.Tracing.EventSource
-    // Base method: System.Void EventSource::.cctor()
-    static void _cctor();
   }; // System.Data.DataCommonEventSource
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::DataCommonEventSource::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Data::DataCommonEventSource::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Data::DataCommonEventSource::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Data::DataCommonEventSource*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::Data::DataCommonEventSource::Trace
 // Il2CppName: Trace
 template<>
@@ -210,17 +217,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
   static const MethodInfo* get() {
     static auto* scopeId = &::il2cpp_utils::GetClassFromName("System", "Int64")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataCommonEventSource*), "ExitScope", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{scopeId});
-  }
-};
-// Writing MetadataGetter for method: System::Data::DataCommonEventSource::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Data::DataCommonEventSource::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Data::DataCommonEventSource::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(System::Data::DataCommonEventSource*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

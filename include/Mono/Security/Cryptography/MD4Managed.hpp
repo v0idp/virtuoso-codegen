@@ -64,15 +64,15 @@ namespace Mono::Security::Cryptography {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private System.UInt32[] state
-    [[deprecated]] ::ArrayW<uint>& dyn_state();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_state();
     // Get instance field reference: private System.Byte[] buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: private System.UInt32[] count
-    [[deprecated]] ::ArrayW<uint>& dyn_count();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_count();
     // Get instance field reference: private System.UInt32[] x
-    [[deprecated]] ::ArrayW<uint>& dyn_x();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_x();
     // Get instance field reference: private System.Byte[] digest
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_digest();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_digest();
     // private System.Byte[] Padding(System.Int32 nLength)
     // Offset: 0x163B9EC
     ::ArrayW<uint8_t> Padding(int nLength);
@@ -110,8 +110,6 @@ namespace Mono::Security::Cryptography {
     // Offset: 0x163AE44
     // Implemented from: Mono.Security.Cryptography.MD4
     // Base method: System.Void MD4::.ctor()
-    // Base method: System.Void HashAlgorithm::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MD4Managed* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Cryptography::MD4Managed::.ctor");

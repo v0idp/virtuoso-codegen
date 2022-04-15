@@ -59,11 +59,11 @@ namespace System {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: protected System.String ClassName
-    [[deprecated]] ::StringW& dyn_ClassName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ClassName();
     // Get instance field reference: protected System.String MemberName
-    [[deprecated]] ::StringW& dyn_MemberName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MemberName();
     // Get instance field reference: protected System.Byte[] Signature
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Signature();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Signature();
     // static System.String FormatSignature(System.Byte[] signature)
     // Offset: 0x10067AC
     static ::StringW FormatSignature(::ArrayW<uint8_t> signature);

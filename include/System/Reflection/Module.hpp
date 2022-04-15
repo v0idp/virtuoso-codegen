@@ -140,19 +140,19 @@ namespace System::Reflection {
     // Set static field: static private System.Reflection.BindingFlags defaultBindingFlags
     static void _set_defaultBindingFlags(::System::Reflection::BindingFlags value);
     // Get instance field reference: System.IntPtr _impl
-    [[deprecated]] ::System::IntPtr& dyn__impl();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__impl();
     // Get instance field reference: System.Reflection.Assembly assembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_assembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_assembly();
     // Get instance field reference: System.String fqname
-    [[deprecated]] ::StringW& dyn_fqname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fqname();
     // Get instance field reference: System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: System.String scopename
-    [[deprecated]] ::StringW& dyn_scopename();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_scopename();
     // Get instance field reference: System.Boolean is_resource
-    [[deprecated]] bool& dyn_is_resource();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_resource();
     // Get instance field reference: System.Int32 token
-    [[deprecated]] int& dyn_token();
+    [[deprecated("Use field access instead!")]] int& dyn_token();
     // public System.Reflection.Assembly get_Assembly()
     // Offset: 0x1006FBC
     ::System::Reflection::Assembly* get_Assembly();

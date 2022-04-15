@@ -90,17 +90,17 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32 last
-    [[deprecated]] int& dyn_last();
+    [[deprecated("Use field access instead!")]] int& dyn_last();
     // Get instance field reference: private System.Collections.Hashtable names
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_names();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_names();
     // Get instance field reference: private System.Collections.Hashtable wildcards
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_wildcards();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_wildcards();
     // Get instance field reference: private System.Collections.ArrayList particles
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_particles();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_particles();
     // Get instance field reference: private System.Object particleLast
-    [[deprecated]] ::Il2CppObject*& dyn_particleLast();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_particleLast();
     // Get instance field reference: private System.Boolean isUpaEnforced
-    [[deprecated]] bool& dyn_isUpaEnforced();
+    [[deprecated("Use field access instead!")]] bool& dyn_isUpaEnforced();
     // public System.Int32 get_Count()
     // Offset: 0xF6E6C4
     int get_Count();
@@ -113,6 +113,13 @@ namespace System::Xml::Schema {
     // public System.Int32 get_Item(System.Xml.XmlQualifiedName name)
     // Offset: 0xF6F438
     int get_Item(::System::Xml::XmlQualifiedName* name);
+    // public System.Void .ctor()
+    // Offset: 0xF6E628
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SymbolsDictionary* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SymbolsDictionary::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SymbolsDictionary*, creationType>()));
+    }
     // public System.Int32 AddName(System.Xml.XmlQualifiedName name, System.Object particle)
     // Offset: 0xF6E6E4
     int AddName(::System::Xml::XmlQualifiedName* name, ::Il2CppObject* particle);
@@ -134,15 +141,6 @@ namespace System::Xml::Schema {
     // public System.String NameOf(System.Int32 symbol)
     // Offset: 0xF6F568
     ::StringW NameOf(int symbol);
-    // public System.Void .ctor()
-    // Offset: 0xF6E628
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SymbolsDictionary* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SymbolsDictionary::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SymbolsDictionary*, creationType>()));
-    }
   }; // System.Xml.Schema.SymbolsDictionary
   #pragma pack(pop)
   static check_size<sizeof(SymbolsDictionary), 56 + sizeof(bool)> __System_Xml_Schema_SymbolsDictionarySizeCheck;
@@ -183,6 +181,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::SymbolsDictionary*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{name});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::SymbolsDictionary::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::SymbolsDictionary::AddName
 // Il2CppName: AddName
 template<>
@@ -250,7 +252,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::SymbolsDictionary*), "NameOf", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{symbol});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::SymbolsDictionary::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

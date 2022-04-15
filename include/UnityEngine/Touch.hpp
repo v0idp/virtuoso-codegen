@@ -124,33 +124,33 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_FingerId
-    [[deprecated]] int& dyn_m_FingerId();
+    [[deprecated("Use field access instead!")]] int& dyn_m_FingerId();
     // Get instance field reference: private UnityEngine.Vector2 m_Position
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Vector2 m_RawPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_RawPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_RawPosition();
     // Get instance field reference: private UnityEngine.Vector2 m_PositionDelta
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_PositionDelta();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_PositionDelta();
     // Get instance field reference: private System.Single m_TimeDelta
-    [[deprecated]] float& dyn_m_TimeDelta();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TimeDelta();
     // Get instance field reference: private System.Int32 m_TapCount
-    [[deprecated]] int& dyn_m_TapCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_TapCount();
     // Get instance field reference: private UnityEngine.TouchPhase m_Phase
-    [[deprecated]] ::UnityEngine::TouchPhase& dyn_m_Phase();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TouchPhase& dyn_m_Phase();
     // Get instance field reference: private UnityEngine.TouchType m_Type
-    [[deprecated]] ::UnityEngine::TouchType& dyn_m_Type();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TouchType& dyn_m_Type();
     // Get instance field reference: private System.Single m_Pressure
-    [[deprecated]] float& dyn_m_Pressure();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Pressure();
     // Get instance field reference: private System.Single m_maximumPossiblePressure
-    [[deprecated]] float& dyn_m_maximumPossiblePressure();
+    [[deprecated("Use field access instead!")]] float& dyn_m_maximumPossiblePressure();
     // Get instance field reference: private System.Single m_Radius
-    [[deprecated]] float& dyn_m_Radius();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Radius();
     // Get instance field reference: private System.Single m_RadiusVariance
-    [[deprecated]] float& dyn_m_RadiusVariance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_RadiusVariance();
     // Get instance field reference: private System.Single m_AltitudeAngle
-    [[deprecated]] float& dyn_m_AltitudeAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AltitudeAngle();
     // Get instance field reference: private System.Single m_AzimuthAngle
-    [[deprecated]] float& dyn_m_AzimuthAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AzimuthAngle();
     // public System.Int32 get_fingerId()
     // Offset: 0x19074E0
     int get_fingerId();

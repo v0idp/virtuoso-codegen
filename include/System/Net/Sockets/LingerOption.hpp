@@ -43,9 +43,9 @@ namespace System::Net::Sockets {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Boolean enabled
-    [[deprecated]] bool& dyn_enabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_enabled();
     // Get instance field reference: private System.Int32 lingerTime
-    [[deprecated]] int& dyn_lingerTime();
+    [[deprecated("Use field access instead!")]] int& dyn_lingerTime();
     // public System.Void set_Enabled(System.Boolean value)
     // Offset: 0x10F7F20
     void set_Enabled(bool value);

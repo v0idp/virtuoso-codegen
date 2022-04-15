@@ -64,22 +64,18 @@ namespace TMPro {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 m_InstanceID
-    [[deprecated]] int& dyn_m_InstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_InstanceID();
     // Get instance field reference: public System.Int32 hashCode
-    [[deprecated]] int& dyn_hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCode();
     // Get instance field reference: public UnityEngine.Material material
-    [[deprecated]] ::UnityEngine::Material*& dyn_material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public System.Int32 materialHashCode
-    [[deprecated]] int& dyn_materialHashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_materialHashCode();
     // public System.Int32 get_instanceID()
     // Offset: 0xC2E068
     int get_instanceID();
     // protected System.Void .ctor()
     // Offset: 0xC2E09C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_Asset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Asset::.ctor");

@@ -74,13 +74,13 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Playables::PlayableDirector*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _play
-    [[deprecated]] bool& dyn__play();
+    [[deprecated("Use field access instead!")]] bool& dyn__play();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _timeline
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__timeline();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__timeline();
     // Get instance field reference: private VROSC.AnimatedAppear/VROSC.Mode _mode
-    [[deprecated]] ::VROSC::AnimatedAppear::Mode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppear::Mode& dyn__mode();
     // Get instance field reference: private UnityEngine.Playables.PlayableDirector _director
-    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn__director();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableDirector*& dyn__director();
     // public UnityEngine.Playables.PlayableAsset get_Timeline()
     // Offset: 0x96AA1C
     ::UnityEngine::Playables::PlayableAsset* get_Timeline();
@@ -93,6 +93,13 @@ namespace VROSC {
     // public System.Boolean get_IsPlaying()
     // Offset: 0x96925C
     bool get_IsPlaying();
+    // public System.Void .ctor()
+    // Offset: 0x96AB00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AnimatedAppearSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearSettings*, creationType>()));
+    }
     // public System.Void Stop()
     // Offset: 0x969BB0
     void Stop();
@@ -108,15 +115,6 @@ namespace VROSC {
     // UnityEngine.Vector3 GetDir()
     // Offset: 0x969D94
     ::UnityEngine::Vector3 GetDir();
-    // public System.Void .ctor()
-    // Offset: 0x96AB00
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AnimatedAppearSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearSettings*, creationType>()));
-    }
   }; // VROSC.AnimatedAppearSettings
   #pragma pack(pop)
   static check_size<sizeof(AnimatedAppearSettings), 40 + sizeof(::UnityEngine::Playables::PlayableDirector*)> __VROSC_AnimatedAppearSettingsSizeCheck;
@@ -155,6 +153,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AnimatedAppearSettings*), "get_IsPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::AnimatedAppearSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AnimatedAppearSettings::Stop
 // Il2CppName: Stop
 template<>
@@ -199,7 +201,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::AnimatedAppearSettings*), "GetDir", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AnimatedAppearSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

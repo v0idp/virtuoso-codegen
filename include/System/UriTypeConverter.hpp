@@ -52,7 +52,6 @@ namespace System {
     // Offset: 0xC40510
     // Implemented from: System.ComponentModel.TypeConverter
     // Base method: System.Void TypeConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UriTypeConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::UriTypeConverter::.ctor");

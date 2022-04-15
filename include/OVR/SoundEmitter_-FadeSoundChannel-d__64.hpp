@@ -113,29 +113,29 @@ namespace OVR {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public System.Single delaySecs
-    [[deprecated]] float& dyn_delaySecs();
+    [[deprecated("Use field access instead!")]] float& dyn_delaySecs();
     // Get instance field reference: public OVR.Fade fadeType
-    [[deprecated]] ::OVR::Fade& dyn_fadeType();
+    [[deprecated("Use field access instead!")]] ::OVR::Fade& dyn_fadeType();
     // Get instance field reference: public System.Single defaultVolume
-    [[deprecated]] float& dyn_defaultVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_defaultVolume();
     // Get instance field reference: public OVR.SoundEmitter <>4__this
-    [[deprecated]] ::OVR::SoundEmitter*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundEmitter*& dyn_$$4__this();
     // Get instance field reference: public System.Single fadeTime
-    [[deprecated]] float& dyn_fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn_fadeTime();
     // Get instance field reference: private System.Single <start>5__2
-    [[deprecated]] float& dyn_$start$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$start$5__2();
     // Get instance field reference: private System.Single <end>5__3
-    [[deprecated]] float& dyn_$end$5__3();
+    [[deprecated("Use field access instead!")]] float& dyn_$end$5__3();
     // Get instance field reference: private System.Boolean <restartPlay>5__4
-    [[deprecated]] bool& dyn_$restartPlay$5__4();
+    [[deprecated("Use field access instead!")]] bool& dyn_$restartPlay$5__4();
     // Get instance field reference: private System.Single <startTime>5__5
-    [[deprecated]] float& dyn_$startTime$5__5();
+    [[deprecated("Use field access instead!")]] float& dyn_$startTime$5__5();
     // Get instance field reference: private System.Single <elapsedTime>5__6
-    [[deprecated]] float& dyn_$elapsedTime$5__6();
+    [[deprecated("Use field access instead!")]] float& dyn_$elapsedTime$5__6();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x18A5FF8
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

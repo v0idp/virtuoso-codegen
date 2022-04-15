@@ -43,11 +43,9 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // protected System.Void .ctor()
     // Offset: 0xBDA81C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TrackedReference* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TrackedReference::.ctor");

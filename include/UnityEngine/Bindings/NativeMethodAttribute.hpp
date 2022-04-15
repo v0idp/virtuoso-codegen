@@ -69,15 +69,15 @@ namespace UnityEngine::Bindings {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private System.Boolean <IsThreadSafe>k__BackingField
-    [[deprecated]] bool& dyn_$IsThreadSafe$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsThreadSafe$k__BackingField();
     // Get instance field reference: private System.Boolean <IsFreeFunction>k__BackingField
-    [[deprecated]] bool& dyn_$IsFreeFunction$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsFreeFunction$k__BackingField();
     // Get instance field reference: private System.Boolean <ThrowsException>k__BackingField
-    [[deprecated]] bool& dyn_$ThrowsException$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ThrowsException$k__BackingField();
     // Get instance field reference: private System.Boolean <HasExplicitThis>k__BackingField
-    [[deprecated]] bool& dyn_$HasExplicitThis$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasExplicitThis$k__BackingField();
     // public System.Void set_Name(System.String value)
     // Offset: 0x18FF8E4
     void set_Name(::StringW value);
@@ -93,6 +93,13 @@ namespace UnityEngine::Bindings {
     // public System.Void set_HasExplicitThis(System.Boolean value)
     // Offset: 0x18FF910
     void set_HasExplicitThis(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x18FF59C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NativeMethodAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeMethodAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NativeMethodAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.String name)
     // Offset: 0x18FF91C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -113,16 +120,6 @@ namespace UnityEngine::Bindings {
     static NativeMethodAttribute* New_ctor(::StringW name, bool isFreeFunction, bool isThreadSafe) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeMethodAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NativeMethodAttribute*, creationType>(name, isFreeFunction, isThreadSafe)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0x18FF59C
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NativeMethodAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeMethodAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NativeMethodAttribute*, creationType>()));
     }
   }; // UnityEngine.Bindings.NativeMethodAttribute
   #pragma pack(pop)

@@ -130,7 +130,7 @@ namespace System::Net {
       // Set static field: static public System.Net.WebHeaderCollection/System.Net.RfcChar Delim
       static void _set_Delim(::System::Net::WebHeaderCollection::RfcChar value);
       // Get instance field reference: public System.Byte value__
-      [[deprecated]] uint8_t& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_value__();
     }; // System.Net.WebHeaderCollection/System.Net.RfcChar
     #pragma pack(pop)
     static check_size<sizeof(WebHeaderCollection::RfcChar), 0 + sizeof(uint8_t)> __System_Net_WebHeaderCollection_RfcCharSizeCheck;
@@ -304,13 +304,13 @@ namespace System::Net {
     // Set static field: static private System.Net.WebHeaderCollection/System.Net.RfcChar[] RfcCharMap
     static void _set_RfcCharMap(::ArrayW<::System::Net::WebHeaderCollection::RfcChar> value);
     // Get instance field reference: private System.String[] m_CommonHeaders
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_CommonHeaders();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_CommonHeaders();
     // Get instance field reference: private System.Int32 m_NumCommonHeaders
-    [[deprecated]] int& dyn_m_NumCommonHeaders();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NumCommonHeaders();
     // Get instance field reference: private System.Collections.Specialized.NameValueCollection m_InnerCollection
-    [[deprecated]] ::System::Collections::Specialized::NameValueCollection*& dyn_m_InnerCollection();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::NameValueCollection*& dyn_m_InnerCollection();
     // Get instance field reference: private System.Net.WebHeaderCollectionType m_Type
-    [[deprecated]] ::System::Net::WebHeaderCollectionType& dyn_m_Type();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollectionType& dyn_m_Type();
     // private System.Collections.Specialized.NameValueCollection get_InnerCollection()
     // Offset: 0xC4459C
     ::System::Collections::Specialized::NameValueCollection* get_InnerCollection();
@@ -373,7 +373,6 @@ namespace System::Net {
     // Implemented from: System.Collections.Specialized.NameValueCollection
     // Base method: System.Void NameValueCollection::.ctor()
     // Base method: System.Void NameObjectCollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebHeaderCollection* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebHeaderCollection::.ctor");

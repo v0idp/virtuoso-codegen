@@ -41,27 +41,29 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRMaterialData) == 0x28);
     public:
     // Get instance field reference: public OVRGLTFLoader <>4__this
-    [[deprecated]] ::GlobalNamespace::OVRGLTFLoader*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRGLTFLoader*& dyn_$$4__this();
     // Get instance field reference: public OVRMaterialData matData
-    [[deprecated]] ::GlobalNamespace::OVRMaterialData& dyn_matData();
-    // System.Void <ProcessMesh>b__0()
-    // Offset: 0x84CDAC
-    void $ProcessMesh$b__0();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMaterialData& dyn_matData();
     // public System.Void .ctor()
     // Offset: 0x84CDA4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRGLTFLoader::$$c__DisplayClass16_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGLTFLoader::$$c__DisplayClass16_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRGLTFLoader::$$c__DisplayClass16_0*, creationType>()));
     }
+    // System.Void <ProcessMesh>b__0()
+    // Offset: 0x84CDAC
+    void $ProcessMesh$b__0();
   }; // OVRGLTFLoader/<>c__DisplayClass16_0
   #pragma pack(pop)
   static check_size<sizeof(OVRGLTFLoader::$$c__DisplayClass16_0), 24 + sizeof(::GlobalNamespace::OVRMaterialData)> __GlobalNamespace_OVRGLTFLoader_$$c__DisplayClass16_0SizeCheck;
   static_assert(sizeof(OVRGLTFLoader::$$c__DisplayClass16_0) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRGLTFLoader::$$c__DisplayClass16_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRGLTFLoader::$$c__DisplayClass16_0::$ProcessMesh$b__0
 // Il2CppName: <ProcessMesh>b__0
 template<>
@@ -70,7 +72,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRGLTFLoader::$$c__DisplayClass16_0*), "<ProcessMesh>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRGLTFLoader::$$c__DisplayClass16_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

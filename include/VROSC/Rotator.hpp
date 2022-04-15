@@ -39,29 +39,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Vector3 _rotation
-    [[deprecated]] ::UnityEngine::Vector3& dyn__rotation();
-    // protected System.Void Update()
-    // Offset: 0xDD26E0
-    void Update();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__rotation();
     // public System.Void .ctor()
     // Offset: 0xDD2748
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Rotator* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Rotator::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Rotator*, creationType>()));
     }
+    // protected System.Void Update()
+    // Offset: 0xDD26E0
+    void Update();
   }; // VROSC.Rotator
   #pragma pack(pop)
   static check_size<sizeof(Rotator), 24 + sizeof(::UnityEngine::Vector3)> __VROSC_RotatorSizeCheck;
   static_assert(sizeof(Rotator) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::Rotator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Rotator::Update
 // Il2CppName: Update
 template<>
@@ -70,7 +68,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Rotator*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::Rotator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

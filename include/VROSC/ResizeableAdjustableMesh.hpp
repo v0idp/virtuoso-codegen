@@ -88,17 +88,17 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector3>) == 0x8);
     public:
     // Get instance field reference: private VROSC.UI.Meshes.AdjustableMeshData _data
-    [[deprecated]] ::VROSC::UI::Meshes::AdjustableMeshData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::AdjustableMeshData*& dyn__data();
     // Get instance field reference: private System.Boolean _alwaysUpdate
-    [[deprecated]] bool& dyn__alwaysUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn__alwaysUpdate();
     // Get instance field reference: private System.Single _lastHeight
-    [[deprecated]] float& dyn__lastHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__lastHeight();
     // Get instance field reference: private System.Single _lastWidth
-    [[deprecated]] float& dyn__lastWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__lastWidth();
     // Get instance field reference: private UnityEngine.Vector3[] _originalPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__originalPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__originalPositions();
     // Get instance field reference: private UnityEngine.Vector3[] _modifiedPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__modifiedPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__modifiedPositions();
     // public System.Void UpdateMesh(System.Boolean force)
     // Offset: 0xB3461C
     void UpdateMesh(bool force);
@@ -120,11 +120,6 @@ namespace VROSC {
     // Offset: 0xB34A90
     // Implemented from: VROSC.AdjustableMesh
     // Base method: System.Void AdjustableMesh::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ResizeableAdjustableMesh* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ResizeableAdjustableMesh::.ctor");

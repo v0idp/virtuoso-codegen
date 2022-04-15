@@ -55,11 +55,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlQualifiedName name
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_name();
     // Get instance field reference: private System.String systemLiteral
-    [[deprecated]] ::StringW& dyn_systemLiteral();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_systemLiteral();
     // Get instance field reference: private System.String pubid
-    [[deprecated]] ::StringW& dyn_pubid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_pubid();
     // System.Xml.XmlQualifiedName get_Name()
     // Offset: 0xF6CBF0
     ::System::Xml::XmlQualifiedName* get_Name();

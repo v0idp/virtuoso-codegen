@@ -56,7 +56,7 @@ namespace System::Xml {
       return wfWriter;
     }
     // Get instance field reference: private System.Xml.XmlWellFormedWriter wfWriter
-    [[deprecated]] ::System::Xml::XmlWellFormedWriter*& dyn_wfWriter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWellFormedWriter*& dyn_wfWriter();
     // System.Void .ctor(System.Xml.XmlWellFormedWriter wfWriter)
     // Offset: 0xC259F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

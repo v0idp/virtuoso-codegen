@@ -70,13 +70,13 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.MeshFilter _meshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
     // Get instance field reference: private UnityEngine.Mesh _normalMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__normalMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__normalMesh();
     // Get instance field reference: private UnityEngine.Mesh _activeMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__activeMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__activeMesh();
     // Get instance field reference: private System.Boolean _isHovering
-    [[deprecated]] bool& dyn__isHovering();
+    [[deprecated("Use field access instead!")]] bool& dyn__isHovering();
     // public System.Void SetActive(System.Boolean shouldBeActive)
     // Offset: 0x1942C50
     void SetActive(bool shouldBeActive);
@@ -85,11 +85,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IconSwitchOnSignal* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IconSwitchOnSignal::.ctor");

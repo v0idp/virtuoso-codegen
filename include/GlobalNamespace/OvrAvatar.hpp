@@ -691,145 +691,155 @@ namespace GlobalNamespace {
     // Set static field: static private ovrAvatarLights ovrLights
     static void _set_ovrLights(::GlobalNamespace::ovrAvatarLights value);
     // Get instance field reference: public System.IntPtr sdkAvatar
-    [[deprecated]] ::System::IntPtr& dyn_sdkAvatar();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_sdkAvatar();
     // Get instance field reference: public System.String oculusUserID
-    [[deprecated]] ::StringW& dyn_oculusUserID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_oculusUserID();
     // Get instance field reference: public OvrAvatarDriver Driver
-    [[deprecated]] ::GlobalNamespace::OvrAvatarDriver*& dyn_Driver();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarDriver*& dyn_Driver();
     // Get instance field reference: public System.Boolean EnableBody
-    [[deprecated]] bool& dyn_EnableBody();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableBody();
     // Get instance field reference: public System.Boolean EnableHands
-    [[deprecated]] bool& dyn_EnableHands();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableHands();
     // Get instance field reference: public System.Boolean EnableBase
-    [[deprecated]] bool& dyn_EnableBase();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableBase();
     // Get instance field reference: public System.Boolean EnableExpressive
-    [[deprecated]] bool& dyn_EnableExpressive();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableExpressive();
     // Get instance field reference: public System.Boolean RecordPackets
-    [[deprecated]] bool& dyn_RecordPackets();
+    [[deprecated("Use field access instead!")]] bool& dyn_RecordPackets();
     // Get instance field reference: public System.Boolean UseSDKPackets
-    [[deprecated]] bool& dyn_UseSDKPackets();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseSDKPackets();
     // Get instance field reference: public PacketRecordSettings PacketSettings
-    [[deprecated]] ::GlobalNamespace::PacketRecordSettings*& dyn_PacketSettings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PacketRecordSettings*& dyn_PacketSettings();
     // Get instance field reference: public System.Boolean StartWithControllers
-    [[deprecated]] bool& dyn_StartWithControllers();
+    [[deprecated("Use field access instead!")]] bool& dyn_StartWithControllers();
     // Get instance field reference: public AvatarLayer FirstPersonLayer
-    [[deprecated]] ::GlobalNamespace::AvatarLayer*& dyn_FirstPersonLayer();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarLayer*& dyn_FirstPersonLayer();
     // Get instance field reference: public AvatarLayer ThirdPersonLayer
-    [[deprecated]] ::GlobalNamespace::AvatarLayer*& dyn_ThirdPersonLayer();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarLayer*& dyn_ThirdPersonLayer();
     // Get instance field reference: public System.Boolean ShowFirstPerson
-    [[deprecated]] bool& dyn_ShowFirstPerson();
+    [[deprecated("Use field access instead!")]] bool& dyn_ShowFirstPerson();
     // Get instance field reference: public System.Boolean ShowThirdPerson
-    [[deprecated]] bool& dyn_ShowThirdPerson();
+    [[deprecated("Use field access instead!")]] bool& dyn_ShowThirdPerson();
     // Get instance field reference: ovrAvatarCapabilities Capabilities
-    [[deprecated]] ::GlobalNamespace::ovrAvatarCapabilities& dyn_Capabilities();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarCapabilities& dyn_Capabilities();
     // Get instance field reference: ovrAvatarAssetLevelOfDetail LevelOfDetail
-    [[deprecated]] ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn_LevelOfDetail();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarAssetLevelOfDetail& dyn_LevelOfDetail();
     // Get instance field reference: private System.Boolean CombineMeshes
-    [[deprecated]] bool& dyn_CombineMeshes();
+    [[deprecated("Use field access instead!")]] bool& dyn_CombineMeshes();
     // Get instance field reference: public System.Boolean UseTransparentRenderQueue
-    [[deprecated]] bool& dyn_UseTransparentRenderQueue();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseTransparentRenderQueue();
     // Get instance field reference: public UnityEngine.Shader Monochrome_SurfaceShader
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader();
     // Get instance field reference: public UnityEngine.Shader Monochrome_SurfaceShader_SelfOccluding
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_SelfOccluding();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_SelfOccluding();
     // Get instance field reference: public UnityEngine.Shader Monochrome_SurfaceShader_PBS
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_PBS();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Monochrome_SurfaceShader_PBS();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_SurfaceShader_SingleComponent
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_SurfaceShader_SingleComponent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Skinshaded_SurfaceShader_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_VertFrag_SingleComponent
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_SingleComponent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_VertFrag_CombinedMesh
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_CombinedMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Skinshaded_VertFrag_CombinedMesh();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_Expressive_SurfaceShader_SingleComponent
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_SurfaceShader_SingleComponent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_SurfaceShader_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_Expressive_VertFrag_SingleComponent
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_SingleComponent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_SingleComponent();
     // Get instance field reference: public UnityEngine.Shader Skinshaded_Expressive_VertFrag_CombinedMesh
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_CombinedMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Skinshaded_Expressive_VertFrag_CombinedMesh();
     // Get instance field reference: public UnityEngine.Shader Loader_VertFrag_CombinedMesh
-    [[deprecated]] ::UnityEngine::Shader*& dyn_Loader_VertFrag_CombinedMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_Loader_VertFrag_CombinedMesh();
     // Get instance field reference: public UnityEngine.Shader EyeLens
-    [[deprecated]] ::UnityEngine::Shader*& dyn_EyeLens();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_EyeLens();
     // Get instance field reference: public UnityEngine.Shader ControllerShader
-    [[deprecated]] ::UnityEngine::Shader*& dyn_ControllerShader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_ControllerShader();
     // Get instance field reference: public System.Boolean CanOwnMicrophone
-    [[deprecated]] bool& dyn_CanOwnMicrophone();
+    [[deprecated("Use field access instead!")]] bool& dyn_CanOwnMicrophone();
     // Get instance field reference: public System.Boolean EnableLaughter
-    [[deprecated]] bool& dyn_EnableLaughter();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableLaughter();
     // Get instance field reference: public UnityEngine.GameObject MouthAnchor
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_MouthAnchor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_MouthAnchor();
     // Get instance field reference: public UnityEngine.Transform LeftHandCustomPose
-    [[deprecated]] ::UnityEngine::Transform*& dyn_LeftHandCustomPose();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_LeftHandCustomPose();
     // Get instance field reference: public UnityEngine.Transform RightHandCustomPose
-    [[deprecated]] ::UnityEngine::Transform*& dyn_RightHandCustomPose();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_RightHandCustomPose();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.UInt64> assetLoadingIds
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_assetLoadingIds();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_assetLoadingIds();
     // Get instance field reference: private System.Boolean assetsFinishedLoading
-    [[deprecated]] bool& dyn_assetsFinishedLoading();
+    [[deprecated("Use field access instead!")]] bool& dyn_assetsFinishedLoading();
     // Get instance field reference: private OvrAvatarMaterialManager materialManager
-    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_materialManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_materialManager();
     // Get instance field reference: private System.Boolean waitingForCombinedMesh
-    [[deprecated]] bool& dyn_waitingForCombinedMesh();
+    [[deprecated("Use field access instead!")]] bool& dyn_waitingForCombinedMesh();
     // Get instance field reference: private UnityEngine.Vector4 clothingAlphaOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_clothingAlphaOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_clothingAlphaOffset();
     // Get instance field reference: private System.UInt64 clothingAlphaTexture
-    [[deprecated]] uint64_t& dyn_clothingAlphaTexture();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_clothingAlphaTexture();
     // Get instance field reference: private OVRLipSyncMicInput micInput
-    [[deprecated]] ::GlobalNamespace::OVRLipSyncMicInput*& dyn_micInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRLipSyncMicInput*& dyn_micInput();
     // Get instance field reference: private OVRLipSyncContext lipsyncContext
-    [[deprecated]] ::GlobalNamespace::OVRLipSyncContext*& dyn_lipsyncContext();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRLipSyncContext*& dyn_lipsyncContext();
     // Get instance field reference: private OVRLipSync/Frame currentFrame
-    [[deprecated]] ::GlobalNamespace::OVRLipSync::Frame*& dyn_currentFrame();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRLipSync::Frame*& dyn_currentFrame();
     // Get instance field reference: private System.Single[] visemes
-    [[deprecated]] ::ArrayW<float>& dyn_visemes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_visemes();
     // Get instance field reference: private UnityEngine.AudioSource audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: private ONSPAudioSource spatializedSource
-    [[deprecated]] ::GlobalNamespace::ONSPAudioSource*& dyn_spatializedSource();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ONSPAudioSource*& dyn_spatializedSource();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single[]> voiceUpdates
-    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<float>>*& dyn_voiceUpdates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::ArrayW<float>>*& dyn_voiceUpdates();
     // Get instance field reference: private UnityEngine.Transform cachedLeftHandCustomPose
-    [[deprecated]] ::UnityEngine::Transform*& dyn_cachedLeftHandCustomPose();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_cachedLeftHandCustomPose();
     // Get instance field reference: private UnityEngine.Transform[] cachedCustomLeftHandJoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomLeftHandJoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomLeftHandJoints();
     // Get instance field reference: private ovrAvatarTransform[] cachedLeftHandTransforms
-    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedLeftHandTransforms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedLeftHandTransforms();
     // Get instance field reference: private UnityEngine.Transform cachedRightHandCustomPose
-    [[deprecated]] ::UnityEngine::Transform*& dyn_cachedRightHandCustomPose();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_cachedRightHandCustomPose();
     // Get instance field reference: private UnityEngine.Transform[] cachedCustomRightHandJoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomRightHandJoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn_cachedCustomRightHandJoints();
     // Get instance field reference: private ovrAvatarTransform[] cachedRightHandTransforms
-    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedRightHandTransforms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_cachedRightHandTransforms();
     // Get instance field reference: private System.Boolean showLeftController
-    [[deprecated]] bool& dyn_showLeftController();
+    [[deprecated("Use field access instead!")]] bool& dyn_showLeftController();
     // Get instance field reference: private System.Boolean showRightController
-    [[deprecated]] bool& dyn_showRightController();
+    [[deprecated("Use field access instead!")]] bool& dyn_showRightController();
     // Get instance field reference: System.UInt64 oculusUserIDInternal
-    [[deprecated]] uint64_t& dyn_oculusUserIDInternal();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_oculusUserIDInternal();
     // Get instance field reference: OvrAvatarBase Base
-    [[deprecated]] ::GlobalNamespace::OvrAvatarBase*& dyn_Base();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarBase*& dyn_Base();
     // Get instance field reference: OvrAvatarTouchController ControllerLeft
-    [[deprecated]] ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerLeft();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerLeft();
     // Get instance field reference: OvrAvatarTouchController ControllerRight
-    [[deprecated]] ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerRight();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarTouchController*& dyn_ControllerRight();
     // Get instance field reference: OvrAvatarBody Body
-    [[deprecated]] ::GlobalNamespace::OvrAvatarBody*& dyn_Body();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarBody*& dyn_Body();
     // Get instance field reference: OvrAvatarHand HandLeft
-    [[deprecated]] ::GlobalNamespace::OvrAvatarHand*& dyn_HandLeft();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarHand*& dyn_HandLeft();
     // Get instance field reference: OvrAvatarHand HandRight
-    [[deprecated]] ::GlobalNamespace::OvrAvatarHand*& dyn_HandRight();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarHand*& dyn_HandRight();
     // Get instance field reference: ovrAvatarLookAndFeelVersion LookAndFeelVersion
-    [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_LookAndFeelVersion();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_LookAndFeelVersion();
     // Get instance field reference: ovrAvatarLookAndFeelVersion FallbackLookAndFeelVersion
-    [[deprecated]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_FallbackLookAndFeelVersion();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarLookAndFeelVersion& dyn_FallbackLookAndFeelVersion();
     // Get instance field reference: private OvrAvatarPacket CurrentUnityPacket
-    [[deprecated]] ::GlobalNamespace::OvrAvatarPacket*& dyn_CurrentUnityPacket();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarPacket*& dyn_CurrentUnityPacket();
     // Get instance field reference: public System.EventHandler`1<OvrAvatar/PacketEventArgs> PacketRecorded
-    [[deprecated]] ::System::EventHandler_1<::GlobalNamespace::OvrAvatar::PacketEventArgs*>*& dyn_PacketRecorded();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::GlobalNamespace::OvrAvatar::PacketEventArgs*>*& dyn_PacketRecorded();
     // Get instance field reference: public System.Single VoiceAmplitude
-    [[deprecated]] float& dyn_VoiceAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_VoiceAmplitude();
     // Get instance field reference: public System.Boolean EnableMouthVertexAnimation
-    [[deprecated]] bool& dyn_EnableMouthVertexAnimation();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableMouthVertexAnimation();
+    // static private System.Void .cctor()
+    // Offset: 0xF80FE4
+    static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xF871AC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OvrAvatar* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatar::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatar*, creationType>()));
+    }
     // private System.Void OnDestroy()
     // Offset: 0xF813D0
     void OnDestroy();
@@ -987,30 +997,24 @@ namespace GlobalNamespace {
     // private System.Void UpdateFacewave()
     // Offset: 0xF86AC8
     void UpdateFacewave();
-    // static private System.Void .cctor()
-    // Offset: 0xF80FE4
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
-    // public System.Void .ctor()
-    // Offset: 0xF871AC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OvrAvatar* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatar::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatar*, creationType>()));
-    }
   }; // OvrAvatar
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatar), 484 + sizeof(bool)> __GlobalNamespace_OvrAvatarSizeCheck;
   static_assert(sizeof(OvrAvatar) == 0x1E5);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OvrAvatar::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatar*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::OnDestroy
 // Il2CppName: OnDestroy
 template<>
@@ -1477,15 +1481,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatar*), "UpdateFacewave", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OvrAvatar::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatar*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

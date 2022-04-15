@@ -148,37 +148,37 @@ namespace Mono::Security::Interface {
     // Set static field: static private Mono.Security.Interface.MonoTlsSettings defaultSettings
     static void _set_defaultSettings(::Mono::Security::Interface::MonoTlsSettings* value);
     // Get instance field reference: private Mono.Security.Interface.MonoRemoteCertificateValidationCallback <RemoteCertificateValidationCallback>k__BackingField
-    [[deprecated]] ::Mono::Security::Interface::MonoRemoteCertificateValidationCallback*& dyn_$RemoteCertificateValidationCallback$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoRemoteCertificateValidationCallback*& dyn_$RemoteCertificateValidationCallback$k__BackingField();
     // Get instance field reference: private Mono.Security.Interface.MonoLocalCertificateSelectionCallback <ClientCertificateSelectionCallback>k__BackingField
-    [[deprecated]] ::Mono::Security::Interface::MonoLocalCertificateSelectionCallback*& dyn_$ClientCertificateSelectionCallback$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoLocalCertificateSelectionCallback*& dyn_$ClientCertificateSelectionCallback$k__BackingField();
     // Get instance field reference: private System.Nullable`1<System.DateTime> <CertificateValidationTime>k__BackingField
-    [[deprecated]] ::System::Nullable_1<::System::DateTime>& dyn_$CertificateValidationTime$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::System::DateTime>& dyn_$CertificateValidationTime$k__BackingField();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509CertificateCollection <TrustAnchors>k__BackingField
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_$TrustAnchors$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_$TrustAnchors$k__BackingField();
     // Get instance field reference: private System.Object <UserSettings>k__BackingField
-    [[deprecated]] ::Il2CppObject*& dyn_$UserSettings$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$UserSettings$k__BackingField();
     // Get instance field reference: private System.String[] <CertificateSearchPaths>k__BackingField
-    [[deprecated]] ::ArrayW<::StringW>& dyn_$CertificateSearchPaths$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_$CertificateSearchPaths$k__BackingField();
     // Get instance field reference: private System.Boolean <SendCloseNotify>k__BackingField
-    [[deprecated]] bool& dyn_$SendCloseNotify$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$SendCloseNotify$k__BackingField();
     // Get instance field reference: private System.Nullable`1<Mono.Security.Interface.TlsProtocols> <EnabledProtocols>k__BackingField
-    [[deprecated]] ::System::Nullable_1<::Mono::Security::Interface::TlsProtocols>& dyn_$EnabledProtocols$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Mono::Security::Interface::TlsProtocols>& dyn_$EnabledProtocols$k__BackingField();
     // Get instance field reference: private Mono.Security.Interface.CipherSuiteCode[] <EnabledCiphers>k__BackingField
-    [[deprecated]] ::ArrayW<::Mono::Security::Interface::CipherSuiteCode>& dyn_$EnabledCiphers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Mono::Security::Interface::CipherSuiteCode>& dyn_$EnabledCiphers$k__BackingField();
     // Get instance field reference: private System.Boolean cloned
-    [[deprecated]] bool& dyn_cloned();
+    [[deprecated("Use field access instead!")]] bool& dyn_cloned();
     // Get instance field reference: private System.Boolean checkCertName
-    [[deprecated]] bool& dyn_checkCertName();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkCertName();
     // Get instance field reference: private System.Boolean checkCertRevocationStatus
-    [[deprecated]] bool& dyn_checkCertRevocationStatus();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkCertRevocationStatus();
     // Get instance field reference: private System.Nullable`1<System.Boolean> useServicePointManagerCallback
-    [[deprecated]] ::System::Nullable_1<bool>& dyn_useServicePointManagerCallback();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_useServicePointManagerCallback();
     // Get instance field reference: private System.Boolean skipSystemValidators
-    [[deprecated]] bool& dyn_skipSystemValidators();
+    [[deprecated("Use field access instead!")]] bool& dyn_skipSystemValidators();
     // Get instance field reference: private System.Boolean callbackNeedsChain
-    [[deprecated]] bool& dyn_callbackNeedsChain();
+    [[deprecated("Use field access instead!")]] bool& dyn_callbackNeedsChain();
     // Get instance field reference: private Mono.Security.Interface.ICertificateValidator certificateValidator
-    [[deprecated]] ::Mono::Security::Interface::ICertificateValidator*& dyn_certificateValidator();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::ICertificateValidator*& dyn_certificateValidator();
     // public Mono.Security.Interface.MonoRemoteCertificateValidationCallback get_RemoteCertificateValidationCallback()
     // Offset: 0x163CA9C
     ::Mono::Security::Interface::MonoRemoteCertificateValidationCallback* get_RemoteCertificateValidationCallback();
@@ -248,6 +248,13 @@ namespace Mono::Security::Interface {
     // public Mono.Security.Interface.ICertificateValidator get_CertificateValidator()
     // Offset: 0x163CC68
     ::Mono::Security::Interface::ICertificateValidator* get_CertificateValidator();
+    // public System.Void .ctor()
+    // Offset: 0x163CB4C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MonoTlsSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Interface::MonoTlsSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MonoTlsSettings*, creationType>()));
+    }
     // private System.Void .ctor(Mono.Security.Interface.MonoTlsSettings other)
     // Offset: 0x163CCFC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -264,15 +271,6 @@ namespace Mono::Security::Interface {
     // public Mono.Security.Interface.MonoTlsSettings Clone()
     // Offset: 0x163CC0C
     ::Mono::Security::Interface::MonoTlsSettings* Clone();
-    // public System.Void .ctor()
-    // Offset: 0x163CB4C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MonoTlsSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Interface::MonoTlsSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MonoTlsSettings*, creationType>()));
-    }
   }; // Mono.Security.Interface.MonoTlsSettings
   // WARNING Not writing size check since size may be invalid!
 }
@@ -475,6 +473,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Mono::Sec
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Mono::Security::Interface::MonoTlsSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::Interface::MonoTlsSettings::CopyDefaultSettings
 // Il2CppName: CopyDefaultSettings
 template<>
@@ -500,7 +502,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Mono::Sec
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::Interface::MonoTlsSettings*), "Clone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::Interface::MonoTlsSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

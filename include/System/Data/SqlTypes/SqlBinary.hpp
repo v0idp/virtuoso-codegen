@@ -97,7 +97,7 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlBinary Null
     static void _set_Null(::System::Data::SqlTypes::SqlBinary value);
     // Get instance field reference: private System.Byte[] _value
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__value();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__value();
     // public System.Boolean get_IsNull()
     // Offset: 0x121ED00
     bool get_IsNull();

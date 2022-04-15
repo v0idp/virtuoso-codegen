@@ -51,7 +51,7 @@ namespace VROSC {
     // Set static field: static public VROSC.LoopPlayerUI/VROSC.State HasRecording
     static void _set_HasRecording(::VROSC::LoopPlayerUI::State value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.LoopPlayerUI/VROSC.State
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerUI::State), 0 + sizeof(int)> __VROSC_LoopPlayerUI_StateSizeCheck;

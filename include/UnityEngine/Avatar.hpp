@@ -40,19 +40,16 @@ namespace UnityEngine {
     // public UnityEngine.HumanDescription get_humanDescription()
     // Offset: 0x18D2510
     ::UnityEngine::HumanDescription get_humanDescription();
-    // private System.Void get_humanDescription_Injected(out UnityEngine.HumanDescription ret)
-    // Offset: 0x18D2588
-    void get_humanDescription_Injected(ByRef<::UnityEngine::HumanDescription> ret);
     // private System.Void .ctor()
     // Offset: 0x18D24AC
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Avatar* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Avatar::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Avatar*, creationType>()));
     }
+    // private System.Void get_humanDescription_Injected(out UnityEngine.HumanDescription ret)
+    // Offset: 0x18D2588
+    void get_humanDescription_Injected(ByRef<::UnityEngine::HumanDescription> ret);
   }; // UnityEngine.Avatar
   #pragma pack(pop)
 }
@@ -65,6 +62,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Avatar*), "get_humanDescription", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Avatar::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Avatar::get_humanDescription_Injected
 // Il2CppName: get_humanDescription_Injected
 template<>
@@ -74,7 +75,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Avatar*), "get_humanDescription_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ret});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Avatar::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

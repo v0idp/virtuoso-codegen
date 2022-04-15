@@ -52,9 +52,9 @@ namespace UnityEngine::Rendering {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.ReflectionProbe probe
-    [[deprecated]] ::UnityEngine::ReflectionProbe*& dyn_probe();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ReflectionProbe*& dyn_probe();
     // Get instance field reference: public System.Single weight
-    [[deprecated]] float& dyn_weight();
+    [[deprecated("Use field access instead!")]] float& dyn_weight();
   }; // UnityEngine.Rendering.ReflectionProbeBlendInfo
   #pragma pack(pop)
   static check_size<sizeof(ReflectionProbeBlendInfo), 8 + sizeof(float)> __UnityEngine_Rendering_ReflectionProbeBlendInfoSizeCheck;

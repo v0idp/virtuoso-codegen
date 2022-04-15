@@ -66,7 +66,7 @@ namespace UnityEngine {
     // Set static field: static private UnityEngine.Display/UnityEngine.DisplaysUpdatedDelegate onDisplaysUpdated
     static void _set_onDisplaysUpdated(::UnityEngine::Display::DisplaysUpdatedDelegate* value);
     // Get instance field reference: System.IntPtr nativeDisplay
-    [[deprecated]] ::System::IntPtr& dyn_nativeDisplay();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_nativeDisplay();
     // public System.Int32 get_renderingWidth()
     // Offset: 0x1126780
     int get_renderingWidth();
@@ -82,6 +82,13 @@ namespace UnityEngine {
     // static public UnityEngine.Display get_main()
     // Offset: 0x1126C08
     static ::UnityEngine::Display* get_main();
+    // System.Void .ctor()
+    // Offset: 0x1126714
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Display* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Display::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Display*, creationType>()));
+    }
     // System.Void .ctor(System.IntPtr nativeDisplay)
     // Offset: 0x1126754
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -110,15 +117,6 @@ namespace UnityEngine {
     // static private System.Int32 RelativeMouseAtImpl(System.Int32 x, System.Int32 y, out System.Int32 rx, out System.Int32 ry)
     // Offset: 0x1126BA0
     static int RelativeMouseAtImpl(int x, int y, ByRef<int> rx, ByRef<int> ry);
-    // System.Void .ctor()
-    // Offset: 0x1126714
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Display* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Display::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Display*, creationType>()));
-    }
   }; // UnityEngine.Display
   #pragma pack(pop)
   static check_size<sizeof(Display), 16 + sizeof(::System::IntPtr)> __UnityEngine_DisplaySizeCheck;
@@ -165,6 +163,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Display*), "get_main", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Display::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Display::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -237,7 +239,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(int
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Display*), "RelativeMouseAtImpl", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x, y, rx, ry});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Display::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -57,7 +57,7 @@ namespace Newtonsoft::Json::Converters {
       return declaration;
     }
     // Get instance field reference: private readonly System.Xml.XmlDeclaration _declaration
-    [[deprecated]] ::System::Xml::XmlDeclaration*& dyn__declaration();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDeclaration*& dyn__declaration();
     // public System.String get_Version()
     // Offset: 0x1592DA4
     ::StringW get_Version();

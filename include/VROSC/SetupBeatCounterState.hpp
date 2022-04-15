@@ -58,9 +58,9 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.BeatCounter _beatCounter
-    [[deprecated]] ::VROSC::BeatCounter*& dyn__beatCounter();
+    [[deprecated("Use field access instead!")]] ::VROSC::BeatCounter*& dyn__beatCounter();
     // Get instance field reference: private VROSC.BeatCounterUI _beatCounterUI
-    [[deprecated]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
     // public System.Void .ctor(VROSC.BeatCounter beatCounter)
     // Offset: 0x192673C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

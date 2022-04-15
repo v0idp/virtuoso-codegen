@@ -44,7 +44,7 @@ namespace System::IO {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: System.IO.TextReader _in
-    [[deprecated]] ::System::IO::TextReader*& dyn__in();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextReader*& dyn__in();
     // System.Void .ctor(System.IO.TextReader t)
     // Offset: 0xE5FB28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

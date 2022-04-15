@@ -48,25 +48,27 @@ namespace System::Data {
       return changedType;
     }
     // Get instance field reference: public System.ComponentModel.ListChangedType changedType
-    [[deprecated]] ::System::ComponentModel::ListChangedType& dyn_changedType();
-    // System.Void <MaintainDataView>b__0(System.Data.DataViewListener listener, System.ComponentModel.ListChangedType type, System.Data.DataRow row, System.Boolean track)
-    // Offset: 0x18CE224
-    void $MaintainDataView$b__0(::System::Data::DataViewListener* listener, ::System::ComponentModel::ListChangedType type, ::System::Data::DataRow* row, bool track);
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ListChangedType& dyn_changedType();
     // public System.Void .ctor()
     // Offset: 0x18CE21C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Index::$$c__DisplayClass86_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::Index::$$c__DisplayClass86_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Index::$$c__DisplayClass86_0*, creationType>()));
     }
+    // System.Void <MaintainDataView>b__0(System.Data.DataViewListener listener, System.ComponentModel.ListChangedType type, System.Data.DataRow row, System.Boolean track)
+    // Offset: 0x18CE224
+    void $MaintainDataView$b__0(::System::Data::DataViewListener* listener, ::System::ComponentModel::ListChangedType type, ::System::Data::DataRow* row, bool track);
   }; // System.Data.Index/System.Data.<>c__DisplayClass86_0
   #pragma pack(pop)
   static check_size<sizeof(Index::$$c__DisplayClass86_0), 16 + sizeof(::System::ComponentModel::ListChangedType)> __System_Data_Index_$$c__DisplayClass86_0SizeCheck;
   static_assert(sizeof(Index::$$c__DisplayClass86_0) == 0x14);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::Index::$$c__DisplayClass86_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::Index::$$c__DisplayClass86_0::$MaintainDataView$b__0
 // Il2CppName: <MaintainDataView>b__0
 template<>
@@ -79,7 +81,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::Index::$$c__DisplayClass86_0*), "<MaintainDataView>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{listener, type, row, track});
   }
 };
-// Writing MetadataGetter for method: System::Data::Index::$$c__DisplayClass86_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

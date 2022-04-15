@@ -204,45 +204,45 @@ namespace System::Xml {
     // Set static field: static private System.Nullable`1<System.Boolean> s_enableLegacyXmlSettings
     static void _set_s_enableLegacyXmlSettings(::System::Nullable_1<bool> value);
     // Get instance field reference: private System.Boolean useAsync
-    [[deprecated]] bool& dyn_useAsync();
+    [[deprecated("Use field access instead!")]] bool& dyn_useAsync();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Xml.XmlResolver xmlResolver
-    [[deprecated]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
     // Get instance field reference: private System.Int32 lineNumberOffset
-    [[deprecated]] int& dyn_lineNumberOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNumberOffset();
     // Get instance field reference: private System.Int32 linePositionOffset
-    [[deprecated]] int& dyn_linePositionOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_linePositionOffset();
     // Get instance field reference: private System.Xml.ConformanceLevel conformanceLevel
-    [[deprecated]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
     // Get instance field reference: private System.Boolean checkCharacters
-    [[deprecated]] bool& dyn_checkCharacters();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkCharacters();
     // Get instance field reference: private System.Int64 maxCharactersInDocument
-    [[deprecated]] int64_t& dyn_maxCharactersInDocument();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_maxCharactersInDocument();
     // Get instance field reference: private System.Int64 maxCharactersFromEntities
-    [[deprecated]] int64_t& dyn_maxCharactersFromEntities();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_maxCharactersFromEntities();
     // Get instance field reference: private System.Boolean ignoreWhitespace
-    [[deprecated]] bool& dyn_ignoreWhitespace();
+    [[deprecated("Use field access instead!")]] bool& dyn_ignoreWhitespace();
     // Get instance field reference: private System.Boolean ignorePIs
-    [[deprecated]] bool& dyn_ignorePIs();
+    [[deprecated("Use field access instead!")]] bool& dyn_ignorePIs();
     // Get instance field reference: private System.Boolean ignoreComments
-    [[deprecated]] bool& dyn_ignoreComments();
+    [[deprecated("Use field access instead!")]] bool& dyn_ignoreComments();
     // Get instance field reference: private System.Xml.DtdProcessing dtdProcessing
-    [[deprecated]] ::System::Xml::DtdProcessing& dyn_dtdProcessing();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DtdProcessing& dyn_dtdProcessing();
     // Get instance field reference: private System.Xml.ValidationType validationType
-    [[deprecated]] ::System::Xml::ValidationType& dyn_validationType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ValidationType& dyn_validationType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaValidationFlags validationFlags
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaValidationFlags& dyn_validationFlags();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaValidationFlags& dyn_validationFlags();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSet schemas
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSet*& dyn_schemas();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSet*& dyn_schemas();
     // Get instance field reference: private System.Xml.Schema.ValidationEventHandler valEventHandler
-    [[deprecated]] ::System::Xml::Schema::ValidationEventHandler*& dyn_valEventHandler();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ValidationEventHandler*& dyn_valEventHandler();
     // Get instance field reference: private System.Boolean closeInput
-    [[deprecated]] bool& dyn_closeInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_closeInput();
     // Get instance field reference: private System.Boolean isReadOnly
-    [[deprecated]] bool& dyn_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_isReadOnly();
     // Get instance field reference: private System.Boolean <IsXmlResolverSet>k__BackingField
-    [[deprecated]] bool& dyn_$IsXmlResolverSet$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsXmlResolverSet$k__BackingField();
     // public System.Boolean get_Async()
     // Offset: 0x10275F4
     bool get_Async();
@@ -351,6 +351,13 @@ namespace System::Xml {
     // System.Void set_ReadOnly(System.Boolean value)
     // Offset: 0x1028074
     void set_ReadOnly(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x1026CE4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlReaderSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlReaderSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlReaderSettings*, creationType>()));
+    }
     // System.Xml.XmlResolver GetXmlResolver()
     // Offset: 0x10277F4
     ::System::Xml::XmlResolver* GetXmlResolver();
@@ -390,15 +397,6 @@ namespace System::Xml {
     // static System.Boolean EnableLegacyXmlSettings()
     // Offset: 0x1028148
     static bool EnableLegacyXmlSettings();
-    // public System.Void .ctor()
-    // Offset: 0x1026CE4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlReaderSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlReaderSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlReaderSettings*, creationType>()));
-    }
   }; // System.Xml.XmlReaderSettings
   #pragma pack(pop)
   static check_size<sizeof(XmlReaderSettings), 106 + sizeof(bool)> __System_Xml_XmlReaderSettingsSizeCheck;
@@ -712,6 +710,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlReaderSettings*), "set_ReadOnly", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlReaderSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlReaderSettings::GetXmlResolver
 // Il2CppName: GetXmlResolver
 template<>
@@ -827,7 +829,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlReaderSettings*), "EnableLegacyXmlSettings", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlReaderSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

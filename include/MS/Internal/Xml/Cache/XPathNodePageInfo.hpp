@@ -46,11 +46,11 @@ namespace MS::Internal::Xml::Cache {
     static_assert(sizeof(::ArrayW<::MS::Internal::Xml::Cache::XPathNode>) == 0x8);
     public:
     // Get instance field reference: private System.Int32 pageNum
-    [[deprecated]] int& dyn_pageNum();
+    [[deprecated("Use field access instead!")]] int& dyn_pageNum();
     // Get instance field reference: private System.Int32 nodeCount
-    [[deprecated]] int& dyn_nodeCount();
+    [[deprecated("Use field access instead!")]] int& dyn_nodeCount();
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNode[] pageNext
-    [[deprecated]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageNext();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageNext();
     // public System.Int32 get_PageNumber()
     // Offset: 0xF7D9FC
     int get_PageNumber();

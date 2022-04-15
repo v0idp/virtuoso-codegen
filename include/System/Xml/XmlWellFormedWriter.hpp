@@ -310,7 +310,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.XmlWellFormedWriter/System.Xml.State StartRootLevelAttr
       static void _set_StartRootLevelAttr(::System::Xml::XmlWellFormedWriter::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.XmlWellFormedWriter/System.Xml.State
     #pragma pack(pop)
     static check_size<sizeof(XmlWellFormedWriter::State), 0 + sizeof(int)> __System_Xml_XmlWellFormedWriter_StateSizeCheck;
@@ -371,17 +371,17 @@ namespace System::Xml {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Int32 prevNSTop
-      [[deprecated]] int& dyn_prevNSTop();
+      [[deprecated("Use field access instead!")]] int& dyn_prevNSTop();
       // Get instance field reference: System.String prefix
-      [[deprecated]] ::StringW& dyn_prefix();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
       // Get instance field reference: System.String localName
-      [[deprecated]] ::StringW& dyn_localName();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
       // Get instance field reference: System.String namespaceUri
-      [[deprecated]] ::StringW& dyn_namespaceUri();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceUri();
       // Get instance field reference: System.Xml.XmlSpace xmlSpace
-      [[deprecated]] ::System::Xml::XmlSpace& dyn_xmlSpace();
+      [[deprecated("Use field access instead!")]] ::System::Xml::XmlSpace& dyn_xmlSpace();
       // Get instance field reference: System.String xmlLang
-      [[deprecated]] ::StringW& dyn_xmlLang();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_xmlLang();
       // System.Void Set(System.String prefix, System.String localName, System.String namespaceUri, System.Int32 prevNSTop)
       // Offset: 0xC25828
       void Set(::StringW prefix, ::StringW localName, ::StringW namespaceUri, int prevNSTop);
@@ -444,7 +444,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.XmlWellFormedWriter/System.Xml.NamespaceKind Special
       static void _set_Special(::System::Xml::XmlWellFormedWriter::NamespaceKind value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.XmlWellFormedWriter/System.Xml.NamespaceKind
     #pragma pack(pop)
     static check_size<sizeof(XmlWellFormedWriter::NamespaceKind), 0 + sizeof(int)> __System_Xml_XmlWellFormedWriter_NamespaceKindSizeCheck;
@@ -489,13 +489,13 @@ namespace System::Xml {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.String prefix
-      [[deprecated]] ::StringW& dyn_prefix();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
       // Get instance field reference: System.String namespaceUri
-      [[deprecated]] ::StringW& dyn_namespaceUri();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceUri();
       // Get instance field reference: System.Xml.XmlWellFormedWriter/System.Xml.NamespaceKind kind
-      [[deprecated]] ::System::Xml::XmlWellFormedWriter::NamespaceKind& dyn_kind();
+      [[deprecated("Use field access instead!")]] ::System::Xml::XmlWellFormedWriter::NamespaceKind& dyn_kind();
       // Get instance field reference: System.Int32 prevNsIndex
-      [[deprecated]] int& dyn_prevNsIndex();
+      [[deprecated("Use field access instead!")]] int& dyn_prevNsIndex();
       // System.Void Set(System.String prefix, System.String namespaceUri, System.Xml.XmlWellFormedWriter/System.Xml.NamespaceKind kind)
       // Offset: 0xC258A4
       void Set(::StringW prefix, ::StringW namespaceUri, ::System::Xml::XmlWellFormedWriter::NamespaceKind kind);
@@ -546,13 +546,13 @@ namespace System::Xml {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.String prefix
-      [[deprecated]] ::StringW& dyn_prefix();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
       // Get instance field reference: System.String namespaceUri
-      [[deprecated]] ::StringW& dyn_namespaceUri();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceUri();
       // Get instance field reference: System.String localName
-      [[deprecated]] ::StringW& dyn_localName();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
       // Get instance field reference: System.Int32 prev
-      [[deprecated]] int& dyn_prev();
+      [[deprecated("Use field access instead!")]] int& dyn_prev();
       // System.Void Set(System.String prefix, System.String localName, System.String namespaceUri)
       // Offset: 0xC24704
       void Set(::StringW prefix, ::StringW localName, ::StringW namespaceUri);
@@ -618,7 +618,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.XmlWellFormedWriter/System.Xml.SpecialAttribute XmlLang
       static void _set_XmlLang(::System::Xml::XmlWellFormedWriter::SpecialAttribute value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.XmlWellFormedWriter/System.Xml.SpecialAttribute
     #pragma pack(pop)
     static check_size<sizeof(XmlWellFormedWriter::SpecialAttribute), 0 + sizeof(int)> __System_Xml_XmlWellFormedWriter_SpecialAttributeSizeCheck;
@@ -812,55 +812,55 @@ namespace System::Xml {
     // Set static field: static private readonly System.Xml.XmlWellFormedWriter/System.Xml.State[] StateTableAuto
     static void _set_StateTableAuto(::ArrayW<::System::Xml::XmlWellFormedWriter::State> value);
     // Get instance field reference: private System.Xml.XmlWriter writer
-    [[deprecated]] ::System::Xml::XmlWriter*& dyn_writer();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWriter*& dyn_writer();
     // Get instance field reference: private System.Xml.XmlRawWriter rawWriter
-    [[deprecated]] ::System::Xml::XmlRawWriter*& dyn_rawWriter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlRawWriter*& dyn_rawWriter();
     // Get instance field reference: private System.Xml.IXmlNamespaceResolver predefinedNamespaces
-    [[deprecated]] ::System::Xml::IXmlNamespaceResolver*& dyn_predefinedNamespaces();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IXmlNamespaceResolver*& dyn_predefinedNamespaces();
     // Get instance field reference: private System.Xml.XmlWellFormedWriter/System.Xml.Namespace[] nsStack
-    [[deprecated]] ::ArrayW<::System::Xml::XmlWellFormedWriter::Namespace>& dyn_nsStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlWellFormedWriter::Namespace>& dyn_nsStack();
     // Get instance field reference: private System.Int32 nsTop
-    [[deprecated]] int& dyn_nsTop();
+    [[deprecated("Use field access instead!")]] int& dyn_nsTop();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Int32> nsHashtable
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_nsHashtable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_nsHashtable();
     // Get instance field reference: private System.Boolean useNsHashtable
-    [[deprecated]] bool& dyn_useNsHashtable();
+    [[deprecated("Use field access instead!")]] bool& dyn_useNsHashtable();
     // Get instance field reference: private System.Xml.XmlWellFormedWriter/System.Xml.ElementScope[] elemScopeStack
-    [[deprecated]] ::ArrayW<::System::Xml::XmlWellFormedWriter::ElementScope>& dyn_elemScopeStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlWellFormedWriter::ElementScope>& dyn_elemScopeStack();
     // Get instance field reference: private System.Int32 elemTop
-    [[deprecated]] int& dyn_elemTop();
+    [[deprecated("Use field access instead!")]] int& dyn_elemTop();
     // Get instance field reference: private System.Xml.XmlWellFormedWriter/System.Xml.AttrName[] attrStack
-    [[deprecated]] ::ArrayW<::System::Xml::XmlWellFormedWriter::AttrName>& dyn_attrStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlWellFormedWriter::AttrName>& dyn_attrStack();
     // Get instance field reference: private System.Int32 attrCount
-    [[deprecated]] int& dyn_attrCount();
+    [[deprecated("Use field access instead!")]] int& dyn_attrCount();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Int32> attrHashTable
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_attrHashTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_attrHashTable();
     // Get instance field reference: private System.Xml.XmlWellFormedWriter/System.Xml.SpecialAttribute specAttr
-    [[deprecated]] ::System::Xml::XmlWellFormedWriter::SpecialAttribute& dyn_specAttr();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWellFormedWriter::SpecialAttribute& dyn_specAttr();
     // Get instance field reference: private System.Xml.XmlWellFormedWriter/System.Xml.AttributeValueCache attrValueCache
-    [[deprecated]] ::System::Xml::XmlWellFormedWriter::AttributeValueCache*& dyn_attrValueCache();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWellFormedWriter::AttributeValueCache*& dyn_attrValueCache();
     // Get instance field reference: private System.String curDeclPrefix
-    [[deprecated]] ::StringW& dyn_curDeclPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_curDeclPrefix();
     // Get instance field reference: private System.Xml.XmlWellFormedWriter/System.Xml.State[] stateTable
-    [[deprecated]] ::ArrayW<::System::Xml::XmlWellFormedWriter::State>& dyn_stateTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlWellFormedWriter::State>& dyn_stateTable();
     // Get instance field reference: private System.Xml.XmlWellFormedWriter/System.Xml.State currentState
-    [[deprecated]] ::System::Xml::XmlWellFormedWriter::State& dyn_currentState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWellFormedWriter::State& dyn_currentState();
     // Get instance field reference: private System.Boolean checkCharacters
-    [[deprecated]] bool& dyn_checkCharacters();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkCharacters();
     // Get instance field reference: private System.Boolean omitDuplNamespaces
-    [[deprecated]] bool& dyn_omitDuplNamespaces();
+    [[deprecated("Use field access instead!")]] bool& dyn_omitDuplNamespaces();
     // Get instance field reference: private System.Boolean writeEndDocumentOnClose
-    [[deprecated]] bool& dyn_writeEndDocumentOnClose();
+    [[deprecated("Use field access instead!")]] bool& dyn_writeEndDocumentOnClose();
     // Get instance field reference: private System.Xml.ConformanceLevel conformanceLevel
-    [[deprecated]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
     // Get instance field reference: private System.Boolean dtdWritten
-    [[deprecated]] bool& dyn_dtdWritten();
+    [[deprecated("Use field access instead!")]] bool& dyn_dtdWritten();
     // Get instance field reference: private System.Boolean xmlDeclFollows
-    [[deprecated]] bool& dyn_xmlDeclFollows();
+    [[deprecated("Use field access instead!")]] bool& dyn_xmlDeclFollows();
     // Get instance field reference: private System.Xml.XmlCharType xmlCharType
-    [[deprecated]] ::System::Xml::XmlCharType& dyn_xmlCharType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlCharType& dyn_xmlCharType();
     // Get instance field reference: private System.Xml.SecureStringHasher hasher
-    [[deprecated]] ::System::Xml::SecureStringHasher*& dyn_hasher();
+    [[deprecated("Use field access instead!")]] ::System::Xml::SecureStringHasher*& dyn_hasher();
     // System.Xml.XmlRawWriter get_RawWriter()
     // Offset: 0x109BEE0
     ::System::Xml::XmlRawWriter* get_RawWriter();

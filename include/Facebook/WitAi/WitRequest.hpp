@@ -292,55 +292,55 @@ namespace Facebook::WitAi {
     // Set static field: static private System.String deviceName
     static void _set_deviceName(::StringW value);
     // Get instance field reference: private Facebook.WitAi.Data.Configuration.WitConfiguration configuration
-    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_configuration();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_configuration();
     // Get instance field reference: private System.IO.Stream activeStream
-    [[deprecated]] ::System::IO::Stream*& dyn_activeStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_activeStream();
     // Get instance field reference: private System.String command
-    [[deprecated]] ::StringW& dyn_command();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_command();
     // Get instance field reference: private System.String path
-    [[deprecated]] ::StringW& dyn_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_path();
     // Get instance field reference: public Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam[] queryParams
-    [[deprecated]] ::ArrayW<::Facebook::WitAi::WitRequest::QueryParam*>& dyn_queryParams();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Facebook::WitAi::WitRequest::QueryParam*>& dyn_queryParams();
     // Get instance field reference: private System.Net.HttpWebRequest request
-    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_request();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_request();
     // Get instance field reference: private System.Net.HttpWebResponse response
-    [[deprecated]] ::System::Net::HttpWebResponse*& dyn_response();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebResponse*& dyn_response();
     // Get instance field reference: private System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private Facebook.WitAi.Lib.WitResponseNode responseData
-    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_responseData();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_responseData();
     // Get instance field reference: private System.Boolean isActive
-    [[deprecated]] bool& dyn_isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_isActive();
     // Get instance field reference: public System.Byte[] postData
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_postData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_postData();
     // Get instance field reference: public System.String postContentType
-    [[deprecated]] ::StringW& dyn_postContentType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_postContentType();
     // Get instance field reference: public System.Action`1<Facebook.WitAi.WitRequest> onResponse
-    [[deprecated]] ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onResponse();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onResponse();
     // Get instance field reference: public System.Action`1<Facebook.WitAi.WitRequest> onInputStreamReady
-    [[deprecated]] ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onInputStreamReady();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Facebook::WitAi::WitRequest*>*& dyn_onInputStreamReady();
     // Get instance field reference: public System.Action`1<System.String> onRawResponse
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onRawResponse();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_onRawResponse();
     // Get instance field reference: public System.Action`1<System.String> onPartialTranscription
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onPartialTranscription();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_onPartialTranscription();
     // Get instance field reference: public System.Action`1<System.String> onFullTranscription
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onFullTranscription();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_onFullTranscription();
     // Get instance field reference: public Facebook.WitAi.Data.AudioEncoding audioEncoding
-    [[deprecated]] ::Facebook::WitAi::Data::AudioEncoding*& dyn_audioEncoding();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::AudioEncoding*& dyn_audioEncoding();
     // Get instance field reference: private System.Int32 statusCode
-    [[deprecated]] int& dyn_statusCode();
+    [[deprecated("Use field access instead!")]] int& dyn_statusCode();
     // Get instance field reference: private System.String statusDescription
-    [[deprecated]] ::StringW& dyn_statusDescription();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_statusDescription();
     // Get instance field reference: private System.Boolean isRequestStreamActive
-    [[deprecated]] bool& dyn_isRequestStreamActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRequestStreamActive();
     // Get instance field reference: private System.Boolean isServerAuthRequired
-    [[deprecated]] bool& dyn_isServerAuthRequired();
+    [[deprecated("Use field access instead!")]] bool& dyn_isServerAuthRequired();
     // Get instance field reference: private System.Boolean configurationRequired
-    [[deprecated]] bool& dyn_configurationRequired();
+    [[deprecated("Use field access instead!")]] bool& dyn_configurationRequired();
     // Get instance field reference: private System.String serverToken
-    [[deprecated]] ::StringW& dyn_serverToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_serverToken();
     // Get instance field reference: private System.String callingStackTrace
-    [[deprecated]] ::StringW& dyn_callingStackTrace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_callingStackTrace();
     // public System.Boolean get_IsActive()
     // Offset: 0x1675428
     bool get_IsActive();

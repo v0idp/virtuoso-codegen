@@ -51,11 +51,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.Serialization.XmlSerializationReaderInterpreter _sri
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializationReaderInterpreter*& dyn__sri();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializationReaderInterpreter*& dyn__sri();
     // Get instance field reference: private System.Xml.Serialization.ClassMap _map
-    [[deprecated]] ::System::Xml::Serialization::ClassMap*& dyn__map();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::ClassMap*& dyn__map();
     // Get instance field reference: private System.Boolean _isValueList
-    [[deprecated]] bool& dyn__isValueList();
+    [[deprecated("Use field access instead!")]] bool& dyn__isValueList();
     // public System.Void .ctor(System.Xml.Serialization.XmlSerializationReaderInterpreter sri, System.Xml.Serialization.ClassMap map, System.Boolean isValueList)
     // Offset: 0xC221C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

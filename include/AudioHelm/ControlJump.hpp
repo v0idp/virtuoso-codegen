@@ -61,36 +61,34 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single jumpForce
-    [[deprecated]] float& dyn_jumpForce();
+    [[deprecated("Use field access instead!")]] float& dyn_jumpForce();
     // Get instance field reference: public UnityEngine.KeyCode key
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_key();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_key();
     // Get instance field reference: private UnityEngine.Vector3 surface_normal_
-    [[deprecated]] ::UnityEngine::Vector3& dyn_surface_normal_();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_surface_normal_();
+    // public System.Void .ctor()
+    // Offset: 0x94CE98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControlJump* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::ControlJump::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControlJump*, creationType>()));
+    }
     // private System.Void Update()
     // Offset: 0x94CD48
     void Update();
     // private System.Void OnCollisionStay(UnityEngine.Collision collision)
     // Offset: 0x94CDE0
     void OnCollisionStay(::UnityEngine::Collision* collision);
-    // public System.Void .ctor()
-    // Offset: 0x94CE98
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControlJump* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::ControlJump::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControlJump*, creationType>()));
-    }
   }; // AudioHelm.ControlJump
   #pragma pack(pop)
   static check_size<sizeof(ControlJump), 32 + sizeof(::UnityEngine::Vector3)> __AudioHelm_ControlJumpSizeCheck;
   static_assert(sizeof(ControlJump) == 0x2C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::ControlJump::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::ControlJump::Update
 // Il2CppName: Update
 template<>
@@ -108,7 +106,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::ControlJump*), "OnCollisionStay", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{collision});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::ControlJump::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

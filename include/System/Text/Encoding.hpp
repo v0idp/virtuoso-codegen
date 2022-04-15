@@ -163,17 +163,17 @@ namespace System::Text {
     // Set static field: static private System.Object s_InternalSyncObject
     static void _set_s_InternalSyncObject(::Il2CppObject* value);
     // Get instance field reference: System.Int32 m_codePage
-    [[deprecated]] int& dyn_m_codePage();
+    [[deprecated("Use field access instead!")]] int& dyn_m_codePage();
     // Get instance field reference: System.Globalization.CodePageDataItem dataItem
-    [[deprecated]] ::System::Globalization::CodePageDataItem*& dyn_dataItem();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CodePageDataItem*& dyn_dataItem();
     // Get instance field reference: System.Boolean m_deserializedFromEverett
-    [[deprecated]] bool& dyn_m_deserializedFromEverett();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_deserializedFromEverett();
     // Get instance field reference: private System.Boolean m_isReadOnly
-    [[deprecated]] bool& dyn_m_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isReadOnly();
     // Get instance field reference: System.Text.EncoderFallback encoderFallback
-    [[deprecated]] ::System::Text::EncoderFallback*& dyn_encoderFallback();
+    [[deprecated("Use field access instead!")]] ::System::Text::EncoderFallback*& dyn_encoderFallback();
     // Get instance field reference: System.Text.DecoderFallback decoderFallback
-    [[deprecated]] ::System::Text::DecoderFallback*& dyn_decoderFallback();
+    [[deprecated("Use field access instead!")]] ::System::Text::DecoderFallback*& dyn_decoderFallback();
     // static private System.Object get_InternalSyncObject()
     // Offset: 0x12A4E48
     static ::Il2CppObject* get_InternalSyncObject();

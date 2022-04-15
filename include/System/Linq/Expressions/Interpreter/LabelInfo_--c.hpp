@@ -48,18 +48,16 @@ namespace System::Linq::Expressions::Interpreter {
     // static private System.Void .cctor()
     // Offset: 0x16A76FC
     static void _cctor();
-    // System.Linq.Expressions.Interpreter.LabelScopeInfo <ValidateJump>b__9_0(System.Linq.Expressions.Interpreter.LabelScopeInfo b)
-    // Offset: 0x16A7764
-    ::System::Linq::Expressions::Interpreter::LabelScopeInfo* $ValidateJump$b__9_0(::System::Linq::Expressions::Interpreter::LabelScopeInfo* b);
     // public System.Void .ctor()
     // Offset: 0x16A775C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LabelInfo::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LabelInfo::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LabelInfo::$$c*, creationType>()));
     }
+    // System.Linq.Expressions.Interpreter.LabelScopeInfo <ValidateJump>b__9_0(System.Linq.Expressions.Interpreter.LabelScopeInfo b)
+    // Offset: 0x16A7764
+    ::System::Linq::Expressions::Interpreter::LabelScopeInfo* $ValidateJump$b__9_0(::System::Linq::Expressions::Interpreter::LabelScopeInfo* b);
   }; // System.Linq.Expressions.Interpreter.LabelInfo/System.Linq.Expressions.Interpreter.<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LabelInfo::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LabelInfo::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LabelInfo::$$c::$ValidateJump$b__9_0
 // Il2CppName: <ValidateJump>b__9_0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::L
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LabelInfo::$$c*), "<ValidateJump>b__9_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{b});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LabelInfo::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

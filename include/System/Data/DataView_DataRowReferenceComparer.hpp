@@ -40,6 +40,13 @@ namespace System::Data {
     static ::System::Data::DataView::DataRowReferenceComparer* _get_s_default();
     // Set static field: static readonly System.Data.DataView/System.Data.DataRowReferenceComparer s_default
     static void _set_s_default(::System::Data::DataView::DataRowReferenceComparer* value);
+    // private System.Void .ctor()
+    // Offset: 0x18CE0F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataView::DataRowReferenceComparer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataView::DataRowReferenceComparer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataView::DataRowReferenceComparer*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x18CE11C
     static void _cctor();
@@ -49,19 +56,14 @@ namespace System::Data {
     // public System.Int32 GetHashCode(System.Data.DataRow obj)
     // Offset: 0x18CE104
     int GetHashCode(::System::Data::DataRow* obj);
-    // private System.Void .ctor()
-    // Offset: 0x18CE0F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataView::DataRowReferenceComparer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataView::DataRowReferenceComparer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataView::DataRowReferenceComparer*, creationType>()));
-    }
   }; // System.Data.DataView/System.Data.DataRowReferenceComparer
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::DataView::DataRowReferenceComparer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataView::DataRowReferenceComparer::_cctor
 // Il2CppName: .cctor
 template<>
@@ -89,7 +91,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataView::DataRowReferenceComparer*), "GetHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };
-// Writing MetadataGetter for method: System::Data::DataView::DataRowReferenceComparer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -51,7 +51,7 @@ namespace System::IO {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // public System.Int64 get_Length()
     // Offset: 0x144C980
     int64_t get_Length();

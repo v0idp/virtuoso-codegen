@@ -115,27 +115,27 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String _elementName
-    [[deprecated]] ::StringW& dyn__elementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__elementName();
     // Get instance field reference: private System.String _namespace
-    [[deprecated]] ::StringW& dyn__namespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__namespace();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm _form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn__form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn__form();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapMember _member
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapMember*& dyn__member();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapMember*& dyn__member();
     // Get instance field reference: private System.Object _choiceValue
-    [[deprecated]] ::Il2CppObject*& dyn__choiceValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__choiceValue();
     // Get instance field reference: private System.Boolean _isNullable
-    [[deprecated]] bool& dyn__isNullable();
+    [[deprecated("Use field access instead!")]] bool& dyn__isNullable();
     // Get instance field reference: private System.Int32 _nestingLevel
-    [[deprecated]] int& dyn__nestingLevel();
+    [[deprecated("Use field access instead!")]] int& dyn__nestingLevel();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapping _mappedType
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapping*& dyn__mappedType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapping*& dyn__mappedType();
     // Get instance field reference: private System.Xml.Serialization.TypeData _type
-    [[deprecated]] ::System::Xml::Serialization::TypeData*& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::TypeData*& dyn__type();
     // Get instance field reference: private System.Boolean _wrappedElement
-    [[deprecated]] bool& dyn__wrappedElement();
+    [[deprecated("Use field access instead!")]] bool& dyn__wrappedElement();
     // Get instance field reference: private System.Int32 _explicitOrder
-    [[deprecated]] int& dyn__explicitOrder();
+    [[deprecated("Use field access instead!")]] int& dyn__explicitOrder();
     // public System.Xml.Serialization.TypeData get_TypeData()
     // Offset: 0x10868D0
     ::System::Xml::Serialization::TypeData* get_TypeData();

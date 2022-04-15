@@ -95,17 +95,17 @@ namespace Proyecto26 {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public Proyecto26.RequestHelper options
-    [[deprecated]] ::Proyecto26::RequestHelper*& dyn_options();
+    [[deprecated("Use field access instead!")]] ::Proyecto26::RequestHelper*& dyn_options();
     // Get instance field reference: public System.Action`2<Proyecto26.RequestException,Proyecto26.ResponseHelper> callback
-    [[deprecated]] ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::Proyecto26::RequestException*, ::Proyecto26::ResponseHelper*>*& dyn_callback();
     // Get instance field reference: private System.Int32 <retries>5__2
-    [[deprecated]] int& dyn_$retries$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$retries$5__2();
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <request>5__3
-    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$request$5__3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$request$5__3();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x19588F4
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

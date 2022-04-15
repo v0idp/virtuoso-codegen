@@ -99,19 +99,19 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: protected System.String _descriptionText
-    [[deprecated]] ::StringW& dyn__descriptionText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__descriptionText();
     // Get instance field reference: protected TMPro.TextMeshPro _textInput
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textInput();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__textInput();
     // Get instance field reference: protected TMPro.TextMeshPro _placeholderText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__placeholderText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__placeholderText();
     // Get instance field reference: protected UnityEngine.GameObject _toggleObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__toggleObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__toggleObject();
     // Get instance field reference: protected System.Boolean _isActive
-    [[deprecated]] bool& dyn__isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__isActive();
     // Get instance field reference: public System.Action`1<UIInputField> OnSelected
-    [[deprecated]] ::System::Action_1<::GlobalNamespace::UIInputField*>*& dyn_OnSelected();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::GlobalNamespace::UIInputField*>*& dyn_OnSelected();
     // Get instance field reference: public System.Action`1<System.String> OnValueChanged
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_OnValueChanged();
     // public System.String get_Text()
     // Offset: 0x191024C
     ::StringW get_Text();
@@ -150,11 +150,6 @@ namespace GlobalNamespace {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIInputField* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UIInputField::.ctor");

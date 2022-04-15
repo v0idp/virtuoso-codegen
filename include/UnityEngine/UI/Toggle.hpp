@@ -100,7 +100,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.Toggle/UnityEngine.UI.ToggleTransition Fade
       static void _set_Fade(::UnityEngine::UI::Toggle::ToggleTransition value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.Toggle/UnityEngine.UI.ToggleTransition
     #pragma pack(pop)
     static check_size<sizeof(Toggle::ToggleTransition), 0 + sizeof(int)> __UnityEngine_UI_Toggle_ToggleTransitionSizeCheck;
@@ -153,15 +153,15 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::UnityEngine::UI::ICanvasElement*>(this);
     }
     // Get instance field reference: public UnityEngine.UI.Toggle/UnityEngine.UI.ToggleTransition toggleTransition
-    [[deprecated]] ::UnityEngine::UI::Toggle::ToggleTransition& dyn_toggleTransition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle::ToggleTransition& dyn_toggleTransition();
     // Get instance field reference: public UnityEngine.UI.Graphic graphic
-    [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_graphic();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_graphic();
     // Get instance field reference: private UnityEngine.UI.ToggleGroup m_Group
-    [[deprecated]] ::UnityEngine::UI::ToggleGroup*& dyn_m_Group();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ToggleGroup*& dyn_m_Group();
     // Get instance field reference: public UnityEngine.UI.Toggle/UnityEngine.UI.ToggleEvent onValueChanged
-    [[deprecated]] ::UnityEngine::UI::Toggle::ToggleEvent*& dyn_onValueChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle::ToggleEvent*& dyn_onValueChanged();
     // Get instance field reference: private System.Boolean m_IsOn
-    [[deprecated]] bool& dyn_m_IsOn();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsOn();
     // public UnityEngine.UI.ToggleGroup get_group()
     // Offset: 0x16D452C
     ::UnityEngine::UI::ToggleGroup* get_group();
@@ -212,11 +212,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Toggle* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Toggle::.ctor");

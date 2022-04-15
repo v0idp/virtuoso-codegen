@@ -162,7 +162,7 @@ namespace Newtonsoft::Json::Bson {
     // Set static field: static public Newtonsoft.Json.Bson.BsonType MaxKey
     static void _set_MaxKey(::Newtonsoft::Json::Bson::BsonType value);
     // Get instance field reference: public System.SByte value__
-    [[deprecated]] int8_t& dyn_value__();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_value__();
   }; // Newtonsoft.Json.Bson.BsonType
   #pragma pack(pop)
   static check_size<sizeof(BsonType), 0 + sizeof(int8_t)> __Newtonsoft_Json_Bson_BsonTypeSizeCheck;

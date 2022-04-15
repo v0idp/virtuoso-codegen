@@ -58,9 +58,9 @@ namespace UnityEngine::SubsystemsImplementation {
       return *reinterpret_cast<::UnityEngine::ISubsystem*>(this);
     }
     // Get instance field reference: private System.Boolean <running>k__BackingField
-    [[deprecated]] bool& dyn_$running$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$running$k__BackingField();
     // Get instance field reference: private UnityEngine.SubsystemsImplementation.SubsystemProvider <providerBase>k__BackingField
-    [[deprecated]] ::UnityEngine::SubsystemsImplementation::SubsystemProvider*& dyn_$providerBase$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SubsystemsImplementation::SubsystemProvider*& dyn_$providerBase$k__BackingField();
     // public System.Boolean get_running()
     // Offset: 0x1904974
     bool get_running();
@@ -70,6 +70,13 @@ namespace UnityEngine::SubsystemsImplementation {
     // UnityEngine.SubsystemsImplementation.SubsystemProvider get_providerBase()
     // Offset: 0x1904988
     ::UnityEngine::SubsystemsImplementation::SubsystemProvider* get_providerBase();
+    // protected System.Void .ctor()
+    // Offset: 0x1904990
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SubsystemWithProvider* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::SubsystemsImplementation::SubsystemWithProvider::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SubsystemWithProvider*, creationType>()));
+    }
     // public System.Void Start()
     // Offset: 0x1904860
     void Start();
@@ -88,15 +95,6 @@ namespace UnityEngine::SubsystemsImplementation {
     // protected System.Void OnDestroy()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnDestroy();
-    // protected System.Void .ctor()
-    // Offset: 0x1904990
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SubsystemWithProvider* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::SubsystemsImplementation::SubsystemWithProvider::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SubsystemWithProvider*, creationType>()));
-    }
   }; // UnityEngine.SubsystemsImplementation.SubsystemWithProvider
   #pragma pack(pop)
   static check_size<sizeof(SubsystemWithProvider), 24 + sizeof(::UnityEngine::SubsystemsImplementation::SubsystemProvider*)> __UnityEngine_SubsystemsImplementation_SubsystemWithProviderSizeCheck;
@@ -128,6 +126,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::SubsystemsImplementation::SubsystemWithProvider*), "get_providerBase", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::SubsystemsImplementation::SubsystemWithProvider::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::SubsystemsImplementation::SubsystemWithProvider::Start
 // Il2CppName: Start
 template<>
@@ -176,7 +178,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::SubsystemsImplementation::SubsystemWithProvider*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::SubsystemsImplementation::SubsystemWithProvider::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

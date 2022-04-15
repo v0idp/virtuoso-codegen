@@ -55,7 +55,7 @@ namespace Newtonsoft::Json::Converters {
     // Deleting conversion operator: operator ::System::Xml::Linq::XObject*
     constexpr operator ::System::Xml::Linq::XObject*() const noexcept = delete;
     // Get instance field reference: private readonly System.Xml.Linq.XDocumentType _documentType
-    [[deprecated]] ::System::Xml::Linq::XDocumentType*& dyn__documentType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XDocumentType*& dyn__documentType();
     // public System.String get_Name()
     // Offset: 0x159132C
     ::StringW get_Name();

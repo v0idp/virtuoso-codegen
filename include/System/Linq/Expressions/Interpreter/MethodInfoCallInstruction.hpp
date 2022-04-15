@@ -57,9 +57,9 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: protected readonly System.Reflection.MethodInfo _target
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn__target();
     // Get instance field reference: protected readonly System.Int32 _argumentCount
-    [[deprecated]] int& dyn__argumentCount();
+    [[deprecated("Use field access instead!")]] int& dyn__argumentCount();
     // System.Void .ctor(System.Reflection.MethodInfo target, System.Int32 argumentCount)
     // Offset: 0xE92684
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

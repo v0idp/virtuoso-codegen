@@ -223,7 +223,7 @@ namespace System::Globalization {
     // Set static field: static public System.Globalization.UnicodeCategory OtherNotAssigned
     static void _set_OtherNotAssigned(::System::Globalization::UnicodeCategory value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Globalization.UnicodeCategory
   #pragma pack(pop)
   static check_size<sizeof(UnicodeCategory), 0 + sizeof(int)> __System_Globalization_UnicodeCategorySizeCheck;

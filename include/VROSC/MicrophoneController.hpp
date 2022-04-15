@@ -200,41 +200,41 @@ namespace VROSC {
     // Set static field: static public System.String LatencyCompensationPrefsString
     static void _set_LatencyCompensationPrefsString(::StringW value);
     // Get instance field reference: private VROSC.Microphone _microphone
-    [[deprecated]] ::VROSC::Microphone*& dyn__microphone();
+    [[deprecated("Use field access instead!")]] ::VROSC::Microphone*& dyn__microphone();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.UISlider _reverbSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__reverbSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__reverbSlider();
     // Get instance field reference: private VROSC.UISlideToggle _proximityToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__proximityToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__proximityToggle();
     // Get instance field reference: private VROSC.UISlider _inputVisualizer
-    [[deprecated]] ::VROSC::UISlider*& dyn__inputVisualizer();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__inputVisualizer();
     // Get instance field reference: private UnityEngine.GameObject _peakWarning
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__peakWarning();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__peakWarning();
     // Get instance field reference: private VROSC.ControlPanelUI _controlPanel
-    [[deprecated]] ::VROSC::ControlPanelUI*& dyn__controlPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControlPanelUI*& dyn__controlPanel();
     // Get instance field reference: protected VROSC.InfoPanel _infoPanel
-    [[deprecated]] ::VROSC::InfoPanel*& dyn__infoPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::InfoPanel*& dyn__infoPanel();
     // Get instance field reference: protected UnityEngine.GameObject _failedToInitializeText
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__failedToInitializeText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__failedToInitializeText();
     // Get instance field reference: private UnityEngine.GameObject _pcOnlyObjects
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__pcOnlyObjects();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__pcOnlyObjects();
     // Get instance field reference: private VROSC.UISpinner _inputSpinner
-    [[deprecated]] ::VROSC::UISpinner*& dyn__inputSpinner();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinner*& dyn__inputSpinner();
     // Get instance field reference: private VROSC.UISlider _latencySlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__latencySlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__latencySlider();
     // Get instance field reference: private VROSC.UIButton _resetLatencyButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__resetLatencyButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__resetLatencyButton();
     // Get instance field reference: private VROSC.UISlideToggle _grabToActivateToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__grabToActivateToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__grabToActivateToggle();
     // Get instance field reference: private VROSC.UISlideToggle _previewReverbToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__previewReverbToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__previewReverbToggle();
     // Get instance field reference: private VROSC.MicrophoneDeviceManager _microphoneDeviceManager
-    [[deprecated]] ::VROSC::MicrophoneDeviceManager*& dyn__microphoneDeviceManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::MicrophoneDeviceManager*& dyn__microphoneDeviceManager();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,NatSuite.Devices.AudioDevice> _inputDevices
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::NatSuite::Devices::AudioDevice*>*& dyn__inputDevices();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::NatSuite::Devices::AudioDevice*>*& dyn__inputDevices();
     // Get instance field reference: private System.Boolean _microphoneGrabbed
-    [[deprecated]] bool& dyn__microphoneGrabbed();
+    [[deprecated("Use field access instead!")]] bool& dyn__microphoneGrabbed();
     // private VROSC.MicrophoneDataController get_MicrophoneDataController()
     // Offset: 0xAC3A1C
     ::VROSC::MicrophoneDataController* get_MicrophoneDataController();
@@ -291,11 +291,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::.ctor()
     // Base method: System.Void WidgetController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MicrophoneController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneController::.ctor");

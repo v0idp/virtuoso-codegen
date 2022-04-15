@@ -60,9 +60,9 @@ namespace System::Threading {
     static_assert(sizeof(::System::Threading::Mutex*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 m_MutexIndex
-    [[deprecated]] int& dyn_m_MutexIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MutexIndex();
     // Get instance field reference: private System.Threading.Mutex m_Mutex
-    [[deprecated]] ::System::Threading::Mutex*& dyn_m_Mutex();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Mutex*& dyn_m_Mutex();
     // public System.Void .ctor(System.Int32 location, System.Threading.WaitHandle handle)
     // Offset: 0x11383B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

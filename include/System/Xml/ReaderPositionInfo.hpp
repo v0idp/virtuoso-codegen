@@ -47,7 +47,7 @@ namespace System::Xml {
       return lineInfo;
     }
     // Get instance field reference: private System.Xml.IXmlLineInfo lineInfo
-    [[deprecated]] ::System::Xml::IXmlLineInfo*& dyn_lineInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IXmlLineInfo*& dyn_lineInfo();
     // public System.Void .ctor(System.Xml.IXmlLineInfo lineInfo)
     // Offset: 0xDE7E30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

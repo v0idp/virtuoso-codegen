@@ -58,9 +58,9 @@ namespace System::Security::Cryptography::X509Certificates {
     // Deleting conversion operator: operator bool
     constexpr operator bool() const noexcept = delete;
     // Get instance field reference: private System.Security.Cryptography.OidCollection _enhKeyUsage
-    [[deprecated]] ::System::Security::Cryptography::OidCollection*& dyn__enhKeyUsage();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::OidCollection*& dyn__enhKeyUsage();
     // Get instance field reference: private System.Security.Cryptography.AsnDecodeStatus _status
-    [[deprecated]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
     // public System.Void .ctor(System.Security.Cryptography.AsnEncodedData encodedEnhancedKeyUsages, System.Boolean critical)
     // Offset: 0xC53D3C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

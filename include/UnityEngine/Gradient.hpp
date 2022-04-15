@@ -61,7 +61,7 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public UnityEngine.GradientColorKey[] get_colorKeys()
     // Offset: 0x11286C8
     ::ArrayW<::UnityEngine::GradientColorKey> get_colorKeys();
@@ -74,6 +74,13 @@ namespace UnityEngine {
     // public System.Void set_alphaKeys(UnityEngine.GradientAlphaKey[] value)
     // Offset: 0x1128798
     void set_alphaKeys(::ArrayW<::UnityEngine::GradientAlphaKey> value);
+    // public System.Void .ctor()
+    // Offset: 0x1128524
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Gradient* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Gradient::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Gradient*, creationType>()));
+    }
     // static private System.IntPtr Init()
     // Offset: 0x1128460
     static ::System::IntPtr Init();
@@ -95,15 +102,6 @@ namespace UnityEngine {
     // private System.Void Evaluate_Injected(System.Single time, out UnityEngine.Color ret)
     // Offset: 0x1128668
     void Evaluate_Injected(float time, ByRef<::UnityEngine::Color> ret);
-    // public System.Void .ctor()
-    // Offset: 0x1128524
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Gradient* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Gradient::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Gradient*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x1128570
     // Implemented from: System.Object
@@ -159,6 +157,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Gradient*), "set_alphaKeys", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Gradient::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Gradient::Init
 // Il2CppName: Init
 template<>
@@ -222,10 +224,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Gradient*), "Evaluate_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{time, ret});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Gradient::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Gradient::Finalize
 // Il2CppName: Finalize
 template<>

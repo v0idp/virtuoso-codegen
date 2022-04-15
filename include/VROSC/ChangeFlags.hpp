@@ -61,7 +61,7 @@ namespace VROSC {
     // Set static field: static public VROSC.ChangeFlags CriticalChange
     static void _set_CriticalChange(::VROSC::ChangeFlags value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.ChangeFlags
   #pragma pack(pop)
   static check_size<sizeof(ChangeFlags), 0 + sizeof(int)> __VROSC_ChangeFlagsSizeCheck;

@@ -222,55 +222,55 @@ namespace System::Data {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: private System.Data.XmlToDatasetMap _nodeToSchemaMap
-    [[deprecated]] ::System::Data::XmlToDatasetMap*& dyn__nodeToSchemaMap();
+    [[deprecated("Use field access instead!")]] ::System::Data::XmlToDatasetMap*& dyn__nodeToSchemaMap();
     // Get instance field reference: private System.Collections.Hashtable _nodeToRowMap
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__nodeToRowMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__nodeToRowMap();
     // Get instance field reference: private System.Collections.Stack _childRowsStack
-    [[deprecated]] ::System::Collections::Stack*& dyn__childRowsStack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn__childRowsStack();
     // Get instance field reference: private System.Collections.Hashtable _htableExcludedNS
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__htableExcludedNS();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__htableExcludedNS();
     // Get instance field reference: private System.Boolean _fIsXdr
-    [[deprecated]] bool& dyn__fIsXdr();
+    [[deprecated("Use field access instead!")]] bool& dyn__fIsXdr();
     // Get instance field reference: System.Boolean _isDiffgram
-    [[deprecated]] bool& dyn__isDiffgram();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDiffgram();
     // Get instance field reference: private System.Xml.XmlElement _topMostNode
-    [[deprecated]] ::System::Xml::XmlElement*& dyn__topMostNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlElement*& dyn__topMostNode();
     // Get instance field reference: private System.Boolean _ignoreSchema
-    [[deprecated]] bool& dyn__ignoreSchema();
+    [[deprecated("Use field access instead!")]] bool& dyn__ignoreSchema();
     // Get instance field reference: private System.Data.DataTable _dataTable
-    [[deprecated]] ::System::Data::DataTable*& dyn__dataTable();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__dataTable();
     // Get instance field reference: private System.Boolean _isTableLevel
-    [[deprecated]] bool& dyn__isTableLevel();
+    [[deprecated("Use field access instead!")]] bool& dyn__isTableLevel();
     // Get instance field reference: private System.Boolean _fromInference
-    [[deprecated]] bool& dyn__fromInference();
+    [[deprecated("Use field access instead!")]] bool& dyn__fromInference();
     // Get instance field reference: private System.Xml.XmlReader _dataReader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn__dataReader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn__dataReader();
     // Get instance field reference: private System.Object _XSD_XMLNS_NS
-    [[deprecated]] ::Il2CppObject*& dyn__XSD_XMLNS_NS();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__XSD_XMLNS_NS();
     // Get instance field reference: private System.Object _XDR_SCHEMA
-    [[deprecated]] ::Il2CppObject*& dyn__XDR_SCHEMA();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__XDR_SCHEMA();
     // Get instance field reference: private System.Object _XDRNS
-    [[deprecated]] ::Il2CppObject*& dyn__XDRNS();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__XDRNS();
     // Get instance field reference: private System.Object _SQL_SYNC
-    [[deprecated]] ::Il2CppObject*& dyn__SQL_SYNC();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__SQL_SYNC();
     // Get instance field reference: private System.Object _UPDGNS
-    [[deprecated]] ::Il2CppObject*& dyn__UPDGNS();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__UPDGNS();
     // Get instance field reference: private System.Object _XSD_SCHEMA
-    [[deprecated]] ::Il2CppObject*& dyn__XSD_SCHEMA();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__XSD_SCHEMA();
     // Get instance field reference: private System.Object _XSDNS
-    [[deprecated]] ::Il2CppObject*& dyn__XSDNS();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__XSDNS();
     // Get instance field reference: private System.Object _DFFNS
-    [[deprecated]] ::Il2CppObject*& dyn__DFFNS();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__DFFNS();
     // Get instance field reference: private System.Object _MSDNS
-    [[deprecated]] ::Il2CppObject*& dyn__MSDNS();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__MSDNS();
     // Get instance field reference: private System.Object _DIFFID
-    [[deprecated]] ::Il2CppObject*& dyn__DIFFID();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__DIFFID();
     // Get instance field reference: private System.Object _HASCHANGES
-    [[deprecated]] ::Il2CppObject*& dyn__HASCHANGES();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__HASCHANGES();
     // Get instance field reference: private System.Object _ROWORDER
-    [[deprecated]] ::Il2CppObject*& dyn__ROWORDER();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__ROWORDER();
     // System.Boolean get_FromInference()
     // Offset: 0x1618F84
     bool get_FromInference();

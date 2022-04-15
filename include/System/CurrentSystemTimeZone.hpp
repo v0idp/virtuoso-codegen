@@ -50,7 +50,7 @@ namespace System {
       return LocalTimeZone;
     }
     // Get instance field reference: private readonly System.TimeZoneInfo LocalTimeZone
-    [[deprecated]] ::System::TimeZoneInfo*& dyn_LocalTimeZone();
+    [[deprecated("Use field access instead!")]] ::System::TimeZoneInfo*& dyn_LocalTimeZone();
     // static public System.Boolean GetTimeZoneData(System.Int32 year, out System.Int64[] data, out System.String[] names, out System.Boolean daylight_inverted)
     // Offset: 0x1401698
     static bool GetTimeZoneData(int year, ByRef<::ArrayW<int64_t>> data, ByRef<::ArrayW<::StringW>> names, ByRef<bool> daylight_inverted);

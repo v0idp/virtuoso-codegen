@@ -80,17 +80,17 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.IntNode _x
-    [[deprecated]] ::VROSC::IntNode*& dyn__x();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntNode*& dyn__x();
     // Get instance field reference: private System.Int32 _previousValueX
-    [[deprecated]] int& dyn__previousValueX();
+    [[deprecated("Use field access instead!")]] int& dyn__previousValueX();
     // Get instance field reference: private VROSC.IntNode _y
-    [[deprecated]] ::VROSC::IntNode*& dyn__y();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntNode*& dyn__y();
     // Get instance field reference: private System.Int32 _previousValueY
-    [[deprecated]] int& dyn__previousValueY();
+    [[deprecated("Use field access instead!")]] int& dyn__previousValueY();
     // Get instance field reference: private VROSC.IntNode _z
-    [[deprecated]] ::VROSC::IntNode*& dyn__z();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntNode*& dyn__z();
     // Get instance field reference: private System.Int32 _previousValueZ
-    [[deprecated]] int& dyn__previousValueZ();
+    [[deprecated("Use field access instead!")]] int& dyn__previousValueZ();
     // protected System.Void Start()
     // Offset: 0xA264D0
     void Start();
@@ -107,11 +107,6 @@ namespace VROSC {
     // Offset: 0xA269EC
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TieSizeToInt* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TieSizeToInt::.ctor");

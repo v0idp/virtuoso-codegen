@@ -54,7 +54,7 @@ namespace VROSC {
       return authenticationManager;
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authenticationManager
-    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authenticationManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::AuthenticationManager*& dyn__authenticationManager();
     // public System.Void .ctor(VROSC.AuthenticationManager authenticationManager)
     // Offset: 0x19266E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

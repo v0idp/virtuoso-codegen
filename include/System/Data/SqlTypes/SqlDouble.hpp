@@ -122,9 +122,9 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlDouble MaxValue
     static void _set_MaxValue(::System::Data::SqlTypes::SqlDouble value);
     // Get instance field reference: private System.Boolean m_fNotNull
-    [[deprecated]] bool& dyn_m_fNotNull();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_fNotNull();
     // Get instance field reference: private System.Double m_value
-    [[deprecated]] double& dyn_m_value();
+    [[deprecated("Use field access instead!")]] double& dyn_m_value();
     // public System.Boolean get_IsNull()
     // Offset: 0x13C6848
     bool get_IsNull();

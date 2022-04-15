@@ -50,7 +50,7 @@ namespace System {
       return signature;
     }
     // Get instance field reference: private System.String signature
-    [[deprecated]] ::StringW& dyn_signature();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_signature();
     // public System.Void .ctor(System.String className, System.String methodName)
     // Offset: 0x1006C4C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

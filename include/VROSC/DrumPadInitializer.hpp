@@ -75,13 +75,13 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteBoard*) == 0x8);
     public:
     // Get instance field reference: private VROSC.IntNode _noteNode
-    [[deprecated]] ::VROSC::IntNode*& dyn__noteNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntNode*& dyn__noteNode();
     // Get instance field reference: private VROSC.NotePlayer _notePlayer
-    [[deprecated]] ::VROSC::NotePlayer*& dyn__notePlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotePlayer*& dyn__notePlayer();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.NoteBoard _noteBoard
-    [[deprecated]] ::VROSC::NoteBoard*& dyn__noteBoard();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard*& dyn__noteBoard();
     // private System.Void GetNoteBoardRecursive(UnityEngine.Transform t)
     // Offset: 0x8E66C0
     void GetNoteBoardRecursive(::UnityEngine::Transform* t);
@@ -96,11 +96,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DrumPadInitializer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DrumPadInitializer::.ctor");

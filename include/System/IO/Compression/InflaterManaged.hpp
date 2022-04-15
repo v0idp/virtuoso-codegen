@@ -215,53 +215,53 @@ namespace System::IO::Compression {
     // Set static field: static private readonly System.Byte[] s_staticDistanceTreeTable
     static void _set_s_staticDistanceTreeTable(::ArrayW<uint8_t> value);
     // Get instance field reference: private readonly System.IO.Compression.OutputWindow _output
-    [[deprecated]] ::System::IO::Compression::OutputWindow*& dyn__output();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::OutputWindow*& dyn__output();
     // Get instance field reference: private readonly System.IO.Compression.InputBuffer _input
-    [[deprecated]] ::System::IO::Compression::InputBuffer*& dyn__input();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::InputBuffer*& dyn__input();
     // Get instance field reference: private System.IO.Compression.HuffmanTree _literalLengthTree
-    [[deprecated]] ::System::IO::Compression::HuffmanTree*& dyn__literalLengthTree();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::HuffmanTree*& dyn__literalLengthTree();
     // Get instance field reference: private System.IO.Compression.HuffmanTree _distanceTree
-    [[deprecated]] ::System::IO::Compression::HuffmanTree*& dyn__distanceTree();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::HuffmanTree*& dyn__distanceTree();
     // Get instance field reference: private System.IO.Compression.InflaterState _state
-    [[deprecated]] ::System::IO::Compression::InflaterState& dyn__state();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::InflaterState& dyn__state();
     // Get instance field reference: private System.Boolean _hasFormatReader
-    [[deprecated]] bool& dyn__hasFormatReader();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasFormatReader();
     // Get instance field reference: private System.Int32 _bfinal
-    [[deprecated]] int& dyn__bfinal();
+    [[deprecated("Use field access instead!")]] int& dyn__bfinal();
     // Get instance field reference: private System.IO.Compression.BlockType _blockType
-    [[deprecated]] ::System::IO::Compression::BlockType& dyn__blockType();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::BlockType& dyn__blockType();
     // Get instance field reference: private readonly System.Byte[] _blockLengthBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__blockLengthBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__blockLengthBuffer();
     // Get instance field reference: private System.Int32 _blockLength
-    [[deprecated]] int& dyn__blockLength();
+    [[deprecated("Use field access instead!")]] int& dyn__blockLength();
     // Get instance field reference: private System.Int32 _length
-    [[deprecated]] int& dyn__length();
+    [[deprecated("Use field access instead!")]] int& dyn__length();
     // Get instance field reference: private System.Int32 _distanceCode
-    [[deprecated]] int& dyn__distanceCode();
+    [[deprecated("Use field access instead!")]] int& dyn__distanceCode();
     // Get instance field reference: private System.Int32 _extraBits
-    [[deprecated]] int& dyn__extraBits();
+    [[deprecated("Use field access instead!")]] int& dyn__extraBits();
     // Get instance field reference: private System.Int32 _loopCounter
-    [[deprecated]] int& dyn__loopCounter();
+    [[deprecated("Use field access instead!")]] int& dyn__loopCounter();
     // Get instance field reference: private System.Int32 _literalLengthCodeCount
-    [[deprecated]] int& dyn__literalLengthCodeCount();
+    [[deprecated("Use field access instead!")]] int& dyn__literalLengthCodeCount();
     // Get instance field reference: private System.Int32 _distanceCodeCount
-    [[deprecated]] int& dyn__distanceCodeCount();
+    [[deprecated("Use field access instead!")]] int& dyn__distanceCodeCount();
     // Get instance field reference: private System.Int32 _codeLengthCodeCount
-    [[deprecated]] int& dyn__codeLengthCodeCount();
+    [[deprecated("Use field access instead!")]] int& dyn__codeLengthCodeCount();
     // Get instance field reference: private System.Int32 _codeArraySize
-    [[deprecated]] int& dyn__codeArraySize();
+    [[deprecated("Use field access instead!")]] int& dyn__codeArraySize();
     // Get instance field reference: private System.Int32 _lengthCode
-    [[deprecated]] int& dyn__lengthCode();
+    [[deprecated("Use field access instead!")]] int& dyn__lengthCode();
     // Get instance field reference: private readonly System.Byte[] _codeList
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__codeList();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__codeList();
     // Get instance field reference: private readonly System.Byte[] _codeLengthTreeCodeLength
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__codeLengthTreeCodeLength();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__codeLengthTreeCodeLength();
     // Get instance field reference: private readonly System.Boolean _deflate64
-    [[deprecated]] bool& dyn__deflate64();
+    [[deprecated("Use field access instead!")]] bool& dyn__deflate64();
     // Get instance field reference: private System.IO.Compression.HuffmanTree _codeLengthTree
-    [[deprecated]] ::System::IO::Compression::HuffmanTree*& dyn__codeLengthTree();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::HuffmanTree*& dyn__codeLengthTree();
     // Get instance field reference: private System.IO.Compression.IFileFormatReader _formatReader
-    [[deprecated]] ::System::IO::Compression::IFileFormatReader*& dyn__formatReader();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::IFileFormatReader*& dyn__formatReader();
     // System.Void .ctor(System.IO.Compression.IFileFormatReader reader, System.Boolean deflate64)
     // Offset: 0x16933AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

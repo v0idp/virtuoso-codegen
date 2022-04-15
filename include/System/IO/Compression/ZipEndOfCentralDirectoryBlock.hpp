@@ -93,21 +93,21 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 Signature
-    [[deprecated]] uint& dyn_Signature();
+    [[deprecated("Use field access instead!")]] uint& dyn_Signature();
     // Get instance field reference: public System.UInt16 NumberOfThisDisk
-    [[deprecated]] uint16_t& dyn_NumberOfThisDisk();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_NumberOfThisDisk();
     // Get instance field reference: public System.UInt16 NumberOfTheDiskWithTheStartOfTheCentralDirectory
-    [[deprecated]] uint16_t& dyn_NumberOfTheDiskWithTheStartOfTheCentralDirectory();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_NumberOfTheDiskWithTheStartOfTheCentralDirectory();
     // Get instance field reference: public System.UInt16 NumberOfEntriesInTheCentralDirectoryOnThisDisk
-    [[deprecated]] uint16_t& dyn_NumberOfEntriesInTheCentralDirectoryOnThisDisk();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_NumberOfEntriesInTheCentralDirectoryOnThisDisk();
     // Get instance field reference: public System.UInt16 NumberOfEntriesInTheCentralDirectory
-    [[deprecated]] uint16_t& dyn_NumberOfEntriesInTheCentralDirectory();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_NumberOfEntriesInTheCentralDirectory();
     // Get instance field reference: public System.UInt32 SizeOfCentralDirectory
-    [[deprecated]] uint& dyn_SizeOfCentralDirectory();
+    [[deprecated("Use field access instead!")]] uint& dyn_SizeOfCentralDirectory();
     // Get instance field reference: public System.UInt32 OffsetOfStartOfCentralDirectoryWithRespectToTheStartingDiskNumber
-    [[deprecated]] uint& dyn_OffsetOfStartOfCentralDirectoryWithRespectToTheStartingDiskNumber();
+    [[deprecated("Use field access instead!")]] uint& dyn_OffsetOfStartOfCentralDirectoryWithRespectToTheStartingDiskNumber();
     // Get instance field reference: public System.Byte[] ArchiveComment
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_ArchiveComment();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_ArchiveComment();
     // static public System.Void WriteBlock(System.IO.Stream stream, System.Int64 numberOfEntries, System.Int64 startOfCentralDirectory, System.Int64 sizeOfCentralDirectory, System.Byte[] archiveComment)
     // Offset: 0x169E1D4
     static void WriteBlock(::System::IO::Stream* stream, int64_t numberOfEntries, int64_t startOfCentralDirectory, int64_t sizeOfCentralDirectory, ::ArrayW<uint8_t> archiveComment);

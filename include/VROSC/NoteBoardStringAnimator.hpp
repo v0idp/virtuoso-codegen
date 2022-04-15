@@ -57,9 +57,9 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.Axis _axis
-    [[deprecated]] ::VROSC::Axis& dyn__axis();
+    [[deprecated("Use field access instead!")]] ::VROSC::Axis& dyn__axis();
     // Get instance field reference: private System.Single _width
-    [[deprecated]] float& dyn__width();
+    [[deprecated("Use field access instead!")]] float& dyn__width();
     // private VROSC.Axis GetAxis(UnityEngine.Vector3 scale)
     // Offset: 0xC58514
     ::VROSC::Axis GetAxis(::UnityEngine::Vector3 scale);
@@ -73,11 +73,6 @@ namespace VROSC {
     // Offset: 0xC58684
     // Implemented from: VROSC.NoteBoardNoteAnimator
     // Base method: System.Void NoteBoardNoteAnimator::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardStringAnimator* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardStringAnimator::.ctor");

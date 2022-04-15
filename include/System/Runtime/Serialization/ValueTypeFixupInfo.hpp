@@ -55,11 +55,11 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::ArrayW<int>) == 0x8);
     public:
     // Get instance field reference: private System.Int64 m_containerID
-    [[deprecated]] int64_t& dyn_m_containerID();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_containerID();
     // Get instance field reference: private System.Reflection.FieldInfo m_parentField
-    [[deprecated]] ::System::Reflection::FieldInfo*& dyn_m_parentField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::FieldInfo*& dyn_m_parentField();
     // Get instance field reference: private System.Int32[] m_parentIndex
-    [[deprecated]] ::ArrayW<int>& dyn_m_parentIndex();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_parentIndex();
     // public System.Int64 get_ContainerID()
     // Offset: 0x120DB58
     int64_t get_ContainerID();

@@ -99,7 +99,7 @@ namespace VROSC {
       // Set static field: static public VROSC.NotefieldColorSettings/VROSC.Coloring AlwaysZ
       static void _set_AlwaysZ(::VROSC::NotefieldColorSettings::Coloring value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.NotefieldColorSettings/VROSC.Coloring
     #pragma pack(pop)
     static check_size<sizeof(NotefieldColorSettings::Coloring), 0 + sizeof(int)> __VROSC_NotefieldColorSettings_ColoringSizeCheck;
@@ -147,7 +147,7 @@ namespace VROSC {
       // Set static field: static public VROSC.NotefieldColorSettings/VROSC.SpreadType Inverted
       static void _set_Inverted(::VROSC::NotefieldColorSettings::SpreadType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.NotefieldColorSettings/VROSC.SpreadType
     #pragma pack(pop)
     static check_size<sizeof(NotefieldColorSettings::SpreadType), 0 + sizeof(int)> __VROSC_NotefieldColorSettings_SpreadTypeSizeCheck;
@@ -265,37 +265,37 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color _restingEvenColor
-    [[deprecated]] ::UnityEngine::Color& dyn__restingEvenColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__restingEvenColor();
     // Get instance field reference: private UnityEngine.Color _restingOddColor
-    [[deprecated]] ::UnityEngine::Color& dyn__restingOddColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__restingOddColor();
     // Get instance field reference: private UnityEngine.Color _octaveColor
-    [[deprecated]] ::UnityEngine::Color& dyn__octaveColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__octaveColor();
     // Get instance field reference: private System.Int32 _transmitLength
-    [[deprecated]] int& dyn__transmitLength();
+    [[deprecated("Use field access instead!")]] int& dyn__transmitLength();
     // Get instance field reference: private UnityEngine.AnimationCurve _transmitFadeCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__transmitFadeCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__transmitFadeCurve();
     // Get instance field reference: private VROSC.NotefieldColorSettings/VROSC.Coloring _coloring
-    [[deprecated]] ::VROSC::NotefieldColorSettings::Coloring& dyn__coloring();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotefieldColorSettings::Coloring& dyn__coloring();
     // Get instance field reference: private System.Single _fallSpeed
-    [[deprecated]] float& dyn__fallSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__fallSpeed();
     // Get instance field reference: private VROSC.NotefieldColorSettings/VROSC.SpreadType _spread
-    [[deprecated]] ::VROSC::NotefieldColorSettings::SpreadType& dyn__spread();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotefieldColorSettings::SpreadType& dyn__spread();
     // Get instance field reference: private System.Single _hoverScale
-    [[deprecated]] float& dyn__hoverScale();
+    [[deprecated("Use field access instead!")]] float& dyn__hoverScale();
     // Get instance field reference: private UnityEngine.AnimationCurve _hoverTransmitCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__hoverTransmitCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__hoverTransmitCurve();
     // Get instance field reference: private System.Single _hoverFallSpeed
-    [[deprecated]] float& dyn__hoverFallSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__hoverFallSpeed();
     // Get instance field reference: private System.Single _noteScale
-    [[deprecated]] float& dyn__noteScale();
+    [[deprecated("Use field access instead!")]] float& dyn__noteScale();
     // Get instance field reference: private System.Single _playPower
-    [[deprecated]] float& dyn__playPower();
+    [[deprecated("Use field access instead!")]] float& dyn__playPower();
     // Get instance field reference: private System.Boolean _uniformScale
-    [[deprecated]] bool& dyn__uniformScale();
+    [[deprecated("Use field access instead!")]] bool& dyn__uniformScale();
     // Get instance field reference: private System.Boolean _smallestUniformScale
-    [[deprecated]] bool& dyn__smallestUniformScale();
+    [[deprecated("Use field access instead!")]] bool& dyn__smallestUniformScale();
     // Get instance field reference: private System.Boolean _additiveScale
-    [[deprecated]] bool& dyn__additiveScale();
+    [[deprecated("Use field access instead!")]] bool& dyn__additiveScale();
     // public UnityEngine.Color get_RestingEvenColor()
     // Offset: 0xC5B39C
     ::UnityEngine::Color get_RestingEvenColor();
@@ -329,23 +329,19 @@ namespace VROSC {
     // public System.Single get_HoverScale()
     // Offset: 0xC5B3F8
     float get_HoverScale();
+    // public System.Void .ctor()
+    // Offset: 0xC5B5A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NotefieldColorSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NotefieldColorSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NotefieldColorSettings*, creationType>()));
+    }
     // UnityEngine.Vector3 GetScale(UnityEngine.Vector3 baseScale, System.Single hoveringAmount, UnityEngine.Vector3 playPower)
     // Offset: 0xC5B400
     ::UnityEngine::Vector3 GetScale(::UnityEngine::Vector3 baseScale, float hoveringAmount, ::UnityEngine::Vector3 playPower);
     // UnityEngine.Vector3 GetBaseScale(UnityEngine.Vector3 baseScale)
     // Offset: 0xC5B520
     ::UnityEngine::Vector3 GetBaseScale(::UnityEngine::Vector3 baseScale);
-    // public System.Void .ctor()
-    // Offset: 0xC5B5A0
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NotefieldColorSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NotefieldColorSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NotefieldColorSettings*, creationType>()));
-    }
   }; // VROSC.NotefieldColorSettings
   #pragma pack(pop)
   static check_size<sizeof(NotefieldColorSettings), 126 + sizeof(bool)> __VROSC_NotefieldColorSettingsSizeCheck;
@@ -444,6 +440,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::NotefieldColorSettings*), "get_HoverScale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::NotefieldColorSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NotefieldColorSettings::GetScale
 // Il2CppName: GetScale
 template<>
@@ -464,7 +464,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::NotefieldColorSettings*), "GetBaseScale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{baseScale});
   }
 };
-// Writing MetadataGetter for method: VROSC::NotefieldColorSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

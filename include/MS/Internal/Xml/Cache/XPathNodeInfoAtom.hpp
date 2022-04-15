@@ -95,23 +95,23 @@ namespace MS::Internal::Xml::Cache {
     static_assert(sizeof(::MS::Internal::Xml::Cache::XPathNodePageInfo*) == 0x8);
     public:
     // Get instance field reference: private System.String localName
-    [[deprecated]] ::StringW& dyn_localName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
     // Get instance field reference: private System.String namespaceUri
-    [[deprecated]] ::StringW& dyn_namespaceUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceUri();
     // Get instance field reference: private System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNode[] pageParent
-    [[deprecated]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageParent();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageParent();
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNode[] pageSibling
-    [[deprecated]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageSibling();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageSibling();
     // Get instance field reference: private System.Xml.XPath.XPathDocument doc
-    [[deprecated]] ::System::Xml::XPath::XPathDocument*& dyn_doc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XPath::XPathDocument*& dyn_doc();
     // Get instance field reference: private System.Int32 lineNumBase
-    [[deprecated]] int& dyn_lineNumBase();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNumBase();
     // Get instance field reference: private System.Int32 linePosBase
-    [[deprecated]] int& dyn_linePosBase();
+    [[deprecated("Use field access instead!")]] int& dyn_linePosBase();
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNodePageInfo pageInfo
-    [[deprecated]] ::MS::Internal::Xml::Cache::XPathNodePageInfo*& dyn_pageInfo();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::Cache::XPathNodePageInfo*& dyn_pageInfo();
     // public MS.Internal.Xml.Cache.XPathNodePageInfo get_PageInfo()
     // Offset: 0xF7D9B4
     ::MS::Internal::Xml::Cache::XPathNodePageInfo* get_PageInfo();

@@ -44,19 +44,16 @@ namespace System::ComponentModel {
     static ::System::Collections::IEqualityComparer* _get__comparer();
     // Set static field: static private System.Collections.IEqualityComparer _comparer
     static void _set__comparer(::System::Collections::IEqualityComparer* value);
-    // static private System.Void .cctor()
-    // Offset: 0xC40CB0
-    static void _cctor();
     // System.Void .ctor()
     // Offset: 0xC40C30
-    // Implemented from: System.Collections.Hashtable
-    // Base method: System.Void Hashtable::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WeakHashtable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::WeakHashtable::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WeakHashtable*, creationType>()));
     }
+    // static private System.Void .cctor()
+    // Offset: 0xC40CB0
+    static void _cctor();
     // public override System.Void Clear()
     // Offset: 0xC40CA0
     // Implemented from: System.Collections.Hashtable
@@ -71,6 +68,10 @@ namespace System::ComponentModel {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::ComponentModel::WeakHashtable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::WeakHashtable::_cctor
 // Il2CppName: .cctor
 template<>
@@ -79,10 +80,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::WeakHashtable*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::WeakHashtable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::WeakHashtable::Clear
 // Il2CppName: Clear
 template<>

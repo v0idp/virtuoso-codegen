@@ -94,21 +94,21 @@ namespace AudioHelm {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private AudioHelm.Note/AudioHelm.NoteAction OnNoteOn
-    [[deprecated]] ::AudioHelm::Note::NoteAction*& dyn_OnNoteOn();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Note::NoteAction*& dyn_OnNoteOn();
     // Get instance field reference: private AudioHelm.Note/AudioHelm.NoteAction OnNoteOff
-    [[deprecated]] ::AudioHelm::Note::NoteAction*& dyn_OnNoteOff();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Note::NoteAction*& dyn_OnNoteOff();
     // Get instance field reference: private System.Int32 note_
-    [[deprecated]] int& dyn_note_();
+    [[deprecated("Use field access instead!")]] int& dyn_note_();
     // Get instance field reference: private System.Single start_
-    [[deprecated]] float& dyn_start_();
+    [[deprecated("Use field access instead!")]] float& dyn_start_();
     // Get instance field reference: private System.Single end_
-    [[deprecated]] float& dyn_end_();
+    [[deprecated("Use field access instead!")]] float& dyn_end_();
     // Get instance field reference: private System.Single velocity_
-    [[deprecated]] float& dyn_velocity_();
+    [[deprecated("Use field access instead!")]] float& dyn_velocity_();
     // Get instance field reference: public AudioHelm.Sequencer parent
-    [[deprecated]] ::AudioHelm::Sequencer*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer*& dyn_parent();
     // Get instance field reference: private System.IntPtr reference
-    [[deprecated]] ::System::IntPtr& dyn_reference();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_reference();
     // public System.Int32 get_note()
     // Offset: 0xAD47C4
     int get_note();
@@ -145,6 +145,13 @@ namespace AudioHelm {
     // public System.Void remove_OnNoteOff(AudioHelm.Note/AudioHelm.NoteAction value)
     // Offset: 0xAD4724
     void remove_OnNoteOff(::AudioHelm::Note::NoteAction* value);
+    // public System.Void .ctor()
+    // Offset: 0xAD4EE4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Note* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Note::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Note*, creationType>()));
+    }
     // public System.Void OnAfterDeserialize()
     // Offset: 0xAD4B40
     void OnAfterDeserialize();
@@ -184,15 +191,6 @@ namespace AudioHelm {
     // public System.Void RemoveRange(System.Single rangeStart, System.Single rangeEnd)
     // Offset: 0xAD4E78
     void RemoveRange(float rangeStart, float rangeEnd);
-    // public System.Void .ctor()
-    // Offset: 0xAD4EE4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Note* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Note::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Note*, creationType>()));
-    }
   }; // AudioHelm.Note
   #pragma pack(pop)
   static check_size<sizeof(Note), 56 + sizeof(::System::IntPtr)> __AudioHelm_NoteSizeCheck;
@@ -303,6 +301,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Note*), "remove_OnNoteOff", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: AudioHelm::Note::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::Note::OnAfterDeserialize
 // Il2CppName: OnAfterDeserialize
 template<>
@@ -413,7 +415,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Note*), "RemoveRange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{rangeStart, rangeEnd});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::Note::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

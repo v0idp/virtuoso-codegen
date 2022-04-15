@@ -175,43 +175,43 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static System.Int32 opRecordIdCount
     static void _set_opRecordIdCount(int value);
     // Get instance field reference: System.Boolean isInitial
-    [[deprecated]] bool& dyn_isInitial();
+    [[deprecated("Use field access instead!")]] bool& dyn_isInitial();
     // Get instance field reference: System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum expectedType
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_expectedType();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_expectedType();
     // Get instance field reference: System.Object expectedTypeInformation
-    [[deprecated]] ::Il2CppObject*& dyn_expectedTypeInformation();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_expectedTypeInformation();
     // Get instance field reference: System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalObjectTypeE objectTypeEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE& dyn_objectTypeEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE& dyn_objectTypeEnum();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalMemberTypeE memberTypeEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE& dyn_memberTypeEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE& dyn_memberTypeEnum();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalMemberValueE memberValueEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE& dyn_memberValueEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE& dyn_memberValueEnum();
     // Get instance field reference: System.Type dtType
-    [[deprecated]] ::System::Type*& dyn_dtType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_dtType();
     // Get instance field reference: System.Int32 numItems
-    [[deprecated]] int& dyn_numItems();
+    [[deprecated("Use field access instead!")]] int& dyn_numItems();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum binaryTypeEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_binaryTypeEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum& dyn_binaryTypeEnum();
     // Get instance field reference: System.Object typeInformation
-    [[deprecated]] ::Il2CppObject*& dyn_typeInformation();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_typeInformation();
     // Get instance field reference: System.Int32 nullCount
-    [[deprecated]] int& dyn_nullCount();
+    [[deprecated("Use field access instead!")]] int& dyn_nullCount();
     // Get instance field reference: System.Int32 memberLength
-    [[deprecated]] int& dyn_memberLength();
+    [[deprecated("Use field access instead!")]] int& dyn_memberLength();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum[] binaryTypeEnumA
-    [[deprecated]] ::ArrayW<::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum>& dyn_binaryTypeEnumA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum>& dyn_binaryTypeEnumA();
     // Get instance field reference: System.Object[] typeInformationA
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_typeInformationA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_typeInformationA();
     // Get instance field reference: System.String[] memberNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_memberNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_memberNames();
     // Get instance field reference: System.Type[] memberTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_memberTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_memberTypes();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.ParseRecord pr
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::ParseRecord*& dyn_pr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::ParseRecord*& dyn_pr();
     // static private System.Void .cctor()
     // Offset: 0x1471AD8
     static void _cctor();

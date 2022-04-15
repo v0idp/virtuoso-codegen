@@ -175,29 +175,29 @@ namespace System::Net {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Net.NetworkCredential ntlm_credentials
-    [[deprecated]] ::System::Net::NetworkCredential*& dyn_ntlm_credentials();
+    [[deprecated("Use field access instead!")]] ::System::Net::NetworkCredential*& dyn_ntlm_credentials();
     // Get instance field reference: private System.Boolean ntlm_authenticated
-    [[deprecated]] bool& dyn_ntlm_authenticated();
+    [[deprecated("Use field access instead!")]] bool& dyn_ntlm_authenticated();
     // Get instance field reference: private System.Boolean unsafe_sharing
-    [[deprecated]] bool& dyn_unsafe_sharing();
+    [[deprecated("Use field access instead!")]] bool& dyn_unsafe_sharing();
     // Get instance field reference: private System.IO.Stream networkStream
-    [[deprecated]] ::System::IO::Stream*& dyn_networkStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_networkStream();
     // Get instance field reference: private System.Net.Sockets.Socket socket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_socket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_socket();
     // Get instance field reference: private Mono.Net.Security.MonoTlsStream monoTlsStream
-    [[deprecated]] ::Mono::Net::Security::MonoTlsStream*& dyn_monoTlsStream();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::MonoTlsStream*& dyn_monoTlsStream();
     // Get instance field reference: private System.Net.WebConnectionTunnel tunnel
-    [[deprecated]] ::System::Net::WebConnectionTunnel*& dyn_tunnel();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebConnectionTunnel*& dyn_tunnel();
     // Get instance field reference: private System.Int32 disposed
-    [[deprecated]] int& dyn_disposed();
+    [[deprecated("Use field access instead!")]] int& dyn_disposed();
     // Get instance field reference: private readonly System.Net.ServicePoint <ServicePoint>k__BackingField
-    [[deprecated]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
     // Get instance field reference: readonly System.Int32 ID
-    [[deprecated]] int& dyn_ID();
+    [[deprecated("Use field access instead!")]] int& dyn_ID();
     // Get instance field reference: private System.DateTime idleSince
-    [[deprecated]] ::System::DateTime& dyn_idleSince();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_idleSince();
     // Get instance field reference: private System.Net.WebOperation currentOperation
-    [[deprecated]] ::System::Net::WebOperation*& dyn_currentOperation();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebOperation*& dyn_currentOperation();
     // public System.Net.ServicePoint get_ServicePoint()
     // Offset: 0xC411D8
     ::System::Net::ServicePoint* get_ServicePoint();

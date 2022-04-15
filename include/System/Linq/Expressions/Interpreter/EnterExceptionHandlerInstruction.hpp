@@ -57,7 +57,7 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static readonly System.Linq.Expressions.Interpreter.EnterExceptionHandlerInstruction NonVoid
     static void _set_NonVoid(::System::Linq::Expressions::Interpreter::EnterExceptionHandlerInstruction* value);
     // Get instance field reference: private readonly System.Boolean _hasValue
-    [[deprecated]] bool& dyn__hasValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasValue();
     // private System.Void .ctor(System.Boolean hasValue)
     // Offset: 0x11FC308
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

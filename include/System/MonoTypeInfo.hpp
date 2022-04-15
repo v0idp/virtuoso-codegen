@@ -50,9 +50,9 @@ namespace System {
     static_assert(sizeof(::System::Reflection::MonoCMethod*) == 0x8);
     public:
     // Get instance field reference: public System.String full_name
-    [[deprecated]] ::StringW& dyn_full_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_full_name();
     // Get instance field reference: public System.Reflection.MonoCMethod default_ctor
-    [[deprecated]] ::System::Reflection::MonoCMethod*& dyn_default_ctor();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MonoCMethod*& dyn_default_ctor();
     // public System.Void .ctor()
     // Offset: 0x1010600
     // Implemented from: System.Object

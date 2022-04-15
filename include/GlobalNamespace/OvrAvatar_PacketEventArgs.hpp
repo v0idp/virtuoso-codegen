@@ -45,7 +45,7 @@ namespace GlobalNamespace {
       return Packet;
     }
     // Get instance field reference: public readonly OvrAvatarPacket Packet
-    [[deprecated]] ::GlobalNamespace::OvrAvatarPacket*& dyn_Packet();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarPacket*& dyn_Packet();
     // public System.Void .ctor(OvrAvatarPacket packet)
     // Offset: 0x8CBF00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

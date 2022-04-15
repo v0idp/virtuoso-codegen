@@ -144,35 +144,33 @@ namespace Facebook::WitAi::Events {
     static_assert(sizeof(::Facebook::WitAi::Events::WitTranscriptionEvent*) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.Events.WitResponseEvent OnResponse
-    [[deprecated]] ::Facebook::WitAi::Events::WitResponseEvent*& dyn_OnResponse();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitResponseEvent*& dyn_OnResponse();
     // Get instance field reference: public Facebook.WitAi.Events.WitErrorEvent OnError
-    [[deprecated]] ::Facebook::WitAi::Events::WitErrorEvent*& dyn_OnError();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitErrorEvent*& dyn_OnError();
     // Get instance field reference: public Facebook.WitAi.Events.WitMicLevelChangedEvent OnMicLevelChanged
-    [[deprecated]] ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_OnMicLevelChanged();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_OnMicLevelChanged();
     // Get instance field reference: public Facebook.WitAi.Events.WitRequestCreatedEvent OnRequestCreated
-    [[deprecated]] ::Facebook::WitAi::Events::WitRequestCreatedEvent*& dyn_OnRequestCreated();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitRequestCreatedEvent*& dyn_OnRequestCreated();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStartListening
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStartListening();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_OnStartListening();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListening
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListening();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListening();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListeningDueToInactivity
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToInactivity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToInactivity();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListeningDueToTimeout
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToTimeout();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToTimeout();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnStoppedListeningDueToDeactivation
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToDeactivation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_OnStoppedListeningDueToDeactivation();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnMicDataSent
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnMicDataSent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_OnMicDataSent();
     // Get instance field reference: public UnityEngine.Events.UnityEvent OnMinimumWakeThresholdHit
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_OnMinimumWakeThresholdHit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_OnMinimumWakeThresholdHit();
     // Get instance field reference: public Facebook.WitAi.Events.WitTranscriptionEvent OnPartialTranscription
-    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnPartialTranscription();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnPartialTranscription();
     // Get instance field reference: public Facebook.WitAi.Events.WitTranscriptionEvent OnFullTranscription
-    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnFullTranscription();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_OnFullTranscription();
     // public System.Void .ctor()
     // Offset: 0x1670728
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VoiceEvents* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Events::VoiceEvents::.ctor");

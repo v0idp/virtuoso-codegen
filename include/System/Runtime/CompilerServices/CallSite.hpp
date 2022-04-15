@@ -48,9 +48,9 @@ namespace System::Runtime::CompilerServices {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: readonly System.Runtime.CompilerServices.CallSiteBinder _binder
-    [[deprecated]] ::System::Runtime::CompilerServices::CallSiteBinder*& dyn__binder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::CallSiteBinder*& dyn__binder();
     // Get instance field reference: System.Boolean _match
-    [[deprecated]] bool& dyn__match();
+    [[deprecated("Use field access instead!")]] bool& dyn__match();
     // public System.Runtime.CompilerServices.CallSiteBinder get_Binder()
     // Offset: 0x11F7CD4
     ::System::Runtime::CompilerServices::CallSiteBinder* get_Binder();

@@ -74,7 +74,7 @@ namespace System::Xml {
     // Set static field: static public System.Xml.ValidationType Schema
     static void _set_Schema(::System::Xml::ValidationType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Xml.ValidationType
   #pragma pack(pop)
   static check_size<sizeof(ValidationType), 0 + sizeof(int)> __System_Xml_ValidationTypeSizeCheck;

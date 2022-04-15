@@ -82,21 +82,21 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.SByte pose
-    [[deprecated]] int8_t& dyn_pose();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_pose();
     // Get instance field reference: public System.SByte clipPlane
-    [[deprecated]] int8_t& dyn_clipPlane();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_clipPlane();
     // Get instance field reference: public System.SByte stage
-    [[deprecated]] int8_t& dyn_stage();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_stage();
     // Get instance field reference: public System.SByte resolution
-    [[deprecated]] int8_t& dyn_resolution();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_resolution();
     // Get instance field reference: public System.SByte feature
-    [[deprecated]] int8_t& dyn_feature();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_feature();
     // Get instance field reference: public System.SByte nearFarAdjustment
-    [[deprecated]] int8_t& dyn_nearFarAdjustment();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_nearFarAdjustment();
     // Get instance field reference: public System.SByte groundPlane
-    [[deprecated]] int8_t& dyn_groundPlane();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_groundPlane();
     // Get instance field reference: public System.SByte reserved2
-    [[deprecated]] int8_t& dyn_reserved2();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_reserved2();
     // static public LIV.SDK.Unity.SDKPriority get_empty()
     // Offset: 0xDD4488
     static ::LIV::SDK::Unity::SDKPriority get_empty();

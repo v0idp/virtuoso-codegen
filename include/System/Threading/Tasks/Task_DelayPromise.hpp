@@ -56,11 +56,11 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(::System::Threading::Timer*) == 0x8);
     public:
     // Get instance field reference: readonly System.Threading.CancellationToken Token
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_Token();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_Token();
     // Get instance field reference: System.Threading.CancellationTokenRegistration Registration
-    [[deprecated]] ::System::Threading::CancellationTokenRegistration& dyn_Registration();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationTokenRegistration& dyn_Registration();
     // Get instance field reference: System.Threading.Timer Timer
-    [[deprecated]] ::System::Threading::Timer*& dyn_Timer();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Timer*& dyn_Timer();
     // System.Void .ctor(System.Threading.CancellationToken token)
     // Offset: 0xE5ED90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

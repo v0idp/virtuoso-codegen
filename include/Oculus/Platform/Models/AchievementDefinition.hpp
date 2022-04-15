@@ -62,13 +62,13 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(uint64_t) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.AchievementType Type
-    [[deprecated]] ::Oculus::Platform::AchievementType& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::AchievementType& dyn_Type();
     // Get instance field reference: public readonly System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: public readonly System.UInt32 BitfieldLength
-    [[deprecated]] uint& dyn_BitfieldLength();
+    [[deprecated("Use field access instead!")]] uint& dyn_BitfieldLength();
     // Get instance field reference: public readonly System.UInt64 Target
-    [[deprecated]] uint64_t& dyn_Target();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_Target();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x8F5468
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

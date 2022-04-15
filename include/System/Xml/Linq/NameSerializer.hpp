@@ -61,7 +61,7 @@ namespace System::Xml::Linq {
       return expandedName;
     }
     // Get instance field reference: private System.String expandedName
-    [[deprecated]] ::StringW& dyn_expandedName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_expandedName();
     // private System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x1853F1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

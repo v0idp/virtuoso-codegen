@@ -264,67 +264,67 @@ namespace TMPro {
     // Set static field: static private TMPro.TMP_Settings s_Instance
     static void _set_s_Instance(::TMPro::TMP_Settings* value);
     // Get instance field reference: private System.Boolean m_enableWordWrapping
-    [[deprecated]] bool& dyn_m_enableWordWrapping();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_enableWordWrapping();
     // Get instance field reference: private System.Boolean m_enableKerning
-    [[deprecated]] bool& dyn_m_enableKerning();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_enableKerning();
     // Get instance field reference: private System.Boolean m_enableExtraPadding
-    [[deprecated]] bool& dyn_m_enableExtraPadding();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_enableExtraPadding();
     // Get instance field reference: private System.Boolean m_enableTintAllSprites
-    [[deprecated]] bool& dyn_m_enableTintAllSprites();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_enableTintAllSprites();
     // Get instance field reference: private System.Boolean m_enableParseEscapeCharacters
-    [[deprecated]] bool& dyn_m_enableParseEscapeCharacters();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_enableParseEscapeCharacters();
     // Get instance field reference: private System.Boolean m_EnableRaycastTarget
-    [[deprecated]] bool& dyn_m_EnableRaycastTarget();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableRaycastTarget();
     // Get instance field reference: private System.Boolean m_GetFontFeaturesAtRuntime
-    [[deprecated]] bool& dyn_m_GetFontFeaturesAtRuntime();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_GetFontFeaturesAtRuntime();
     // Get instance field reference: private System.Int32 m_missingGlyphCharacter
-    [[deprecated]] int& dyn_m_missingGlyphCharacter();
+    [[deprecated("Use field access instead!")]] int& dyn_m_missingGlyphCharacter();
     // Get instance field reference: private System.Boolean m_warningsDisabled
-    [[deprecated]] bool& dyn_m_warningsDisabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_warningsDisabled();
     // Get instance field reference: private TMPro.TMP_FontAsset m_defaultFontAsset
-    [[deprecated]] ::TMPro::TMP_FontAsset*& dyn_m_defaultFontAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_FontAsset*& dyn_m_defaultFontAsset();
     // Get instance field reference: private System.String m_defaultFontAssetPath
-    [[deprecated]] ::StringW& dyn_m_defaultFontAssetPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_defaultFontAssetPath();
     // Get instance field reference: private System.Single m_defaultFontSize
-    [[deprecated]] float& dyn_m_defaultFontSize();
+    [[deprecated("Use field access instead!")]] float& dyn_m_defaultFontSize();
     // Get instance field reference: private System.Single m_defaultAutoSizeMinRatio
-    [[deprecated]] float& dyn_m_defaultAutoSizeMinRatio();
+    [[deprecated("Use field access instead!")]] float& dyn_m_defaultAutoSizeMinRatio();
     // Get instance field reference: private System.Single m_defaultAutoSizeMaxRatio
-    [[deprecated]] float& dyn_m_defaultAutoSizeMaxRatio();
+    [[deprecated("Use field access instead!")]] float& dyn_m_defaultAutoSizeMaxRatio();
     // Get instance field reference: private UnityEngine.Vector2 m_defaultTextMeshProTextContainerSize
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_defaultTextMeshProTextContainerSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_defaultTextMeshProTextContainerSize();
     // Get instance field reference: private UnityEngine.Vector2 m_defaultTextMeshProUITextContainerSize
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_defaultTextMeshProUITextContainerSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_defaultTextMeshProUITextContainerSize();
     // Get instance field reference: private System.Boolean m_autoSizeTextContainer
-    [[deprecated]] bool& dyn_m_autoSizeTextContainer();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_autoSizeTextContainer();
     // Get instance field reference: private System.Boolean m_IsTextObjectScaleStatic
-    [[deprecated]] bool& dyn_m_IsTextObjectScaleStatic();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsTextObjectScaleStatic();
     // Get instance field reference: private System.Collections.Generic.List`1<TMPro.TMP_FontAsset> m_fallbackFontAssets
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_FontAsset*>*& dyn_m_fallbackFontAssets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_FontAsset*>*& dyn_m_fallbackFontAssets();
     // Get instance field reference: private System.Boolean m_matchMaterialPreset
-    [[deprecated]] bool& dyn_m_matchMaterialPreset();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_matchMaterialPreset();
     // Get instance field reference: private TMPro.TMP_SpriteAsset m_defaultSpriteAsset
-    [[deprecated]] ::TMPro::TMP_SpriteAsset*& dyn_m_defaultSpriteAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_SpriteAsset*& dyn_m_defaultSpriteAsset();
     // Get instance field reference: private System.String m_defaultSpriteAssetPath
-    [[deprecated]] ::StringW& dyn_m_defaultSpriteAssetPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_defaultSpriteAssetPath();
     // Get instance field reference: private System.Boolean m_enableEmojiSupport
-    [[deprecated]] bool& dyn_m_enableEmojiSupport();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_enableEmojiSupport();
     // Get instance field reference: private System.UInt32 m_MissingCharacterSpriteUnicode
-    [[deprecated]] uint& dyn_m_MissingCharacterSpriteUnicode();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_MissingCharacterSpriteUnicode();
     // Get instance field reference: private System.String m_defaultColorGradientPresetsPath
-    [[deprecated]] ::StringW& dyn_m_defaultColorGradientPresetsPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_defaultColorGradientPresetsPath();
     // Get instance field reference: private TMPro.TMP_StyleSheet m_defaultStyleSheet
-    [[deprecated]] ::TMPro::TMP_StyleSheet*& dyn_m_defaultStyleSheet();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_StyleSheet*& dyn_m_defaultStyleSheet();
     // Get instance field reference: private System.String m_StyleSheetsResourcePath
-    [[deprecated]] ::StringW& dyn_m_StyleSheetsResourcePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_StyleSheetsResourcePath();
     // Get instance field reference: private UnityEngine.TextAsset m_leadingCharacters
-    [[deprecated]] ::UnityEngine::TextAsset*& dyn_m_leadingCharacters();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextAsset*& dyn_m_leadingCharacters();
     // Get instance field reference: private UnityEngine.TextAsset m_followingCharacters
-    [[deprecated]] ::UnityEngine::TextAsset*& dyn_m_followingCharacters();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextAsset*& dyn_m_followingCharacters();
     // Get instance field reference: private TMPro.TMP_Settings/TMPro.LineBreakingTable m_linebreakingRules
-    [[deprecated]] ::TMPro::TMP_Settings::LineBreakingTable*& dyn_m_linebreakingRules();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Settings::LineBreakingTable*& dyn_m_linebreakingRules();
     // Get instance field reference: private System.Boolean m_UseModernHangulLineBreakingRules
-    [[deprecated]] bool& dyn_m_UseModernHangulLineBreakingRules();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UseModernHangulLineBreakingRules();
     // static public System.String get_version()
     // Offset: 0x9B0F80
     static ::StringW get_version();
@@ -439,6 +439,13 @@ namespace TMPro {
     // static public TMPro.TMP_Settings get_instance()
     // Offset: 0x9B0FE4
     static ::TMPro::TMP_Settings* get_instance();
+    // public System.Void .ctor()
+    // Offset: 0x9B1B14
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_Settings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Settings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_Settings*, creationType>()));
+    }
     // static public TMPro.TMP_Settings LoadDefaultSettings()
     // Offset: 0x9B1698
     static ::TMPro::TMP_Settings* LoadDefaultSettings();
@@ -460,17 +467,6 @@ namespace TMPro {
     // static private System.Collections.Generic.Dictionary`2<System.Int32,System.Char> GetCharacters(UnityEngine.TextAsset file)
     // Offset: 0x9B19E4
     static ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>* GetCharacters(::UnityEngine::TextAsset* file);
-    // public System.Void .ctor()
-    // Offset: 0x9B1B14
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_Settings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Settings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_Settings*, creationType>()));
-    }
   }; // TMPro.TMP_Settings
   #pragma pack(pop)
   static check_size<sizeof(TMP_Settings), 176 + sizeof(bool)> __TMPro_TMP_SettingsSizeCheck;
@@ -786,6 +782,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::TM
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Settings*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_Settings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_Settings::LoadDefaultSettings
 // Il2CppName: LoadDefaultSettings
 template<>
@@ -843,7 +843,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Settings*), "GetCharacters", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{file});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_Settings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

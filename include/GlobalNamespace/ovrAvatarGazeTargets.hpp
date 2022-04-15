@@ -50,9 +50,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 targetCount
-    [[deprecated]] uint& dyn_targetCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_targetCount();
     // Get instance field reference: public ovrAvatarGazeTarget[] targets
-    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarGazeTarget>& dyn_targets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ovrAvatarGazeTarget>& dyn_targets();
   }; // ovrAvatarGazeTargets
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarGazeTargets), 8 + sizeof(::ArrayW<::GlobalNamespace::ovrAvatarGazeTarget>)> __GlobalNamespace_ovrAvatarGazeTargetsSizeCheck;

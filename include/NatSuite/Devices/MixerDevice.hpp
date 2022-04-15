@@ -88,11 +88,11 @@ namespace NatSuite::Devices {
       return *reinterpret_cast<::NatSuite::Devices::IAudioDevice*>(this);
     }
     // Get instance field reference: private readonly NatSuite.Devices.IAudioDevice audioDevice
-    [[deprecated]] ::NatSuite::Devices::IAudioDevice*& dyn_audioDevice();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::IAudioDevice*& dyn_audioDevice();
     // Get instance field reference: private readonly NatSuite.Devices.MixerDevice/NatSuite.Devices.MixerDeviceAttachment attachment
-    [[deprecated]] ::NatSuite::Devices::MixerDevice::MixerDeviceAttachment*& dyn_attachment();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::MixerDevice::MixerDeviceAttachment*& dyn_attachment();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Single> stagingBuffer
-    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn_stagingBuffer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<float>*& dyn_stagingBuffer();
     // public System.String get_uniqueID()
     // Offset: 0xAC9904
     ::StringW get_uniqueID();

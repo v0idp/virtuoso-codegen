@@ -60,19 +60,17 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::XR::XRNode) == 0x4);
     public:
     // Get instance field reference: public System.Boolean playingHaptics
-    [[deprecated]] bool& dyn_playingHaptics();
+    [[deprecated("Use field access instead!")]] bool& dyn_playingHaptics();
     // Get instance field reference: public System.Single hapticsDurationPlayed
-    [[deprecated]] float& dyn_hapticsDurationPlayed();
+    [[deprecated("Use field access instead!")]] float& dyn_hapticsDurationPlayed();
     // Get instance field reference: public System.Single hapticsDuration
-    [[deprecated]] float& dyn_hapticsDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_hapticsDuration();
     // Get instance field reference: public System.Single hapticAmplitude
-    [[deprecated]] float& dyn_hapticAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_hapticAmplitude();
     // Get instance field reference: public UnityEngine.XR.XRNode node
-    [[deprecated]] ::UnityEngine::XR::XRNode& dyn_node();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::XRNode& dyn_node();
     // public System.Void .ctor()
     // Offset: 0x84EBFC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRInput::HapticInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRInput::HapticInfo::.ctor");

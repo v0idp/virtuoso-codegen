@@ -70,6 +70,13 @@ namespace UnityEngine::UI {
     // static private System.Void .cctor()
     // Offset: 0x16D8FD8
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x16D9038
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LayoutRebuilder::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::LayoutRebuilder::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LayoutRebuilder::$$c*, creationType>()));
+    }
     // System.Void <.cctor>b__5_0(UnityEngine.UI.LayoutRebuilder x)
     // Offset: 0x16D9040
     void $_cctor$b__5_0(::UnityEngine::UI::LayoutRebuilder* x);
@@ -88,15 +95,6 @@ namespace UnityEngine::UI {
     // System.Void <Rebuild>b__12_3(UnityEngine.Component e)
     // Offset: 0x16D9348
     void $Rebuild$b__12_3(::UnityEngine::Component* e);
-    // public System.Void .ctor()
-    // Offset: 0x16D9038
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LayoutRebuilder::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::LayoutRebuilder::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LayoutRebuilder::$$c*, creationType>()));
-    }
   }; // UnityEngine.UI.LayoutRebuilder/UnityEngine.UI.<>c
   #pragma pack(pop)
 }
@@ -109,6 +107,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::LayoutRebuilder::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::LayoutRebuilder::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::LayoutRebuilder::$$c::$_cctor$b__5_0
 // Il2CppName: <.cctor>b__5_0
 template<>
@@ -163,7 +165,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::LayoutRebuilder::$$c*), "<Rebuild>b__12_3", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::LayoutRebuilder::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

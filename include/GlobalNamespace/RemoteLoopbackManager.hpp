@@ -83,15 +83,22 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OvrAvatar LocalAvatar
-    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_LocalAvatar();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatar*& dyn_LocalAvatar();
     // Get instance field reference: public OvrAvatar LoopbackAvatar
-    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_LoopbackAvatar();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatar*& dyn_LoopbackAvatar();
     // Get instance field reference: public RemoteLoopbackManager/SimulatedLatencySettings LatencySettings
-    [[deprecated]] ::GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings*& dyn_LatencySettings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings*& dyn_LatencySettings();
     // Get instance field reference: private System.Int32 PacketSequence
-    [[deprecated]] int& dyn_PacketSequence();
+    [[deprecated("Use field access instead!")]] int& dyn_PacketSequence();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<RemoteLoopbackManager/PacketLatencyPair> packetQueue
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::GlobalNamespace::RemoteLoopbackManager::PacketLatencyPair*>*& dyn_packetQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::GlobalNamespace::RemoteLoopbackManager::PacketLatencyPair*>*& dyn_packetQueue();
+    // public System.Void .ctor()
+    // Offset: 0xB32194
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RemoteLoopbackManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RemoteLoopbackManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RemoteLoopbackManager*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xB31660
     void Start();
@@ -107,25 +114,16 @@ namespace GlobalNamespace {
     // private System.Void ReceivePacketData(System.Byte[] data)
     // Offset: 0xB31EAC
     void ReceivePacketData(::ArrayW<uint8_t> data);
-    // public System.Void .ctor()
-    // Offset: 0xB32194
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RemoteLoopbackManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RemoteLoopbackManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RemoteLoopbackManager*, creationType>()));
-    }
   }; // RemoteLoopbackManager
   #pragma pack(pop)
   static check_size<sizeof(RemoteLoopbackManager), 56 + sizeof(::System::Collections::Generic::LinkedList_1<::GlobalNamespace::RemoteLoopbackManager::PacketLatencyPair*>*)> __GlobalNamespace_RemoteLoopbackManagerSizeCheck;
   static_assert(sizeof(RemoteLoopbackManager) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RemoteLoopbackManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RemoteLoopbackManager::Start
 // Il2CppName: Start
 template<>
@@ -170,7 +168,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RemoteLoopbackManager*), "ReceivePacketData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RemoteLoopbackManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

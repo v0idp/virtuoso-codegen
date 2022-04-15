@@ -81,24 +81,19 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::System::Text::RegularExpressions::Regex*) == 0x8);
     public:
     // Get instance field reference: private System.String searchText
-    [[deprecated]] ::StringW& dyn_searchText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_searchText();
     // Get instance field reference: private System.Boolean exactMatch
-    [[deprecated]] bool& dyn_exactMatch();
+    [[deprecated("Use field access instead!")]] bool& dyn_exactMatch();
     // Get instance field reference: private System.Boolean useRegex
-    [[deprecated]] bool& dyn_useRegex();
+    [[deprecated("Use field access instead!")]] bool& dyn_useRegex();
     // Get instance field reference: private Facebook.WitAi.Utilities.StringEvent onUtteranceMatched
-    [[deprecated]] ::Facebook::WitAi::Utilities::StringEvent*& dyn_onUtteranceMatched();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Utilities::StringEvent*& dyn_onUtteranceMatched();
     // Get instance field reference: private System.Text.RegularExpressions.Regex regex
-    [[deprecated]] ::System::Text::RegularExpressions::Regex*& dyn_regex();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Regex*& dyn_regex();
     // public System.Void .ctor()
     // Offset: 0x167D648
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitUtteranceMatcher* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::CallbackHandlers::WitUtteranceMatcher::.ctor");

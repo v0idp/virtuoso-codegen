@@ -107,7 +107,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.AspectRatioFitter/UnityEngine.UI.AspectMode EnvelopeParent
       static void _set_EnvelopeParent(::UnityEngine::UI::AspectRatioFitter::AspectMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.AspectRatioFitter/UnityEngine.UI.AspectMode
     #pragma pack(pop)
     static check_size<sizeof(AspectRatioFitter::AspectMode), 0 + sizeof(int)> __UnityEngine_UI_AspectRatioFitter_AspectModeSizeCheck;
@@ -157,17 +157,17 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.UI.AspectRatioFitter/UnityEngine.UI.AspectMode m_AspectMode
-    [[deprecated]] ::UnityEngine::UI::AspectRatioFitter::AspectMode& dyn_m_AspectMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::AspectRatioFitter::AspectMode& dyn_m_AspectMode();
     // Get instance field reference: private System.Single m_AspectRatio
-    [[deprecated]] float& dyn_m_AspectRatio();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AspectRatio();
     // Get instance field reference: private UnityEngine.RectTransform m_Rect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_Rect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_Rect();
     // Get instance field reference: private System.Boolean m_DelayedSetDirty
-    [[deprecated]] bool& dyn_m_DelayedSetDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DelayedSetDirty();
     // Get instance field reference: private System.Boolean m_DoesParentExist
-    [[deprecated]] bool& dyn_m_DoesParentExist();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DoesParentExist();
     // Get instance field reference: private UnityEngine.DrivenRectTransformTracker m_Tracker
-    [[deprecated]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
     // public UnityEngine.UI.AspectRatioFitter/UnityEngine.UI.AspectMode get_aspectMode()
     // Offset: 0xEAA5D8
     ::UnityEngine::UI::AspectRatioFitter::AspectMode get_aspectMode();
@@ -217,11 +217,6 @@ namespace UnityEngine::UI {
     // Offset: 0xEAA77C
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AspectRatioFitter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::AspectRatioFitter::.ctor");

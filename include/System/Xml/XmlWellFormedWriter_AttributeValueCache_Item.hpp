@@ -42,27 +42,29 @@ namespace System::Xml {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: System.Xml.XmlWellFormedWriter/System.Xml.AttributeValueCache/System.Xml.ItemType type
-    [[deprecated]] ::System::Xml::XmlWellFormedWriter::AttributeValueCache::ItemType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWellFormedWriter::AttributeValueCache::ItemType& dyn_type();
     // Get instance field reference: System.Object data
-    [[deprecated]] ::Il2CppObject*& dyn_data();
-    // System.Void Set(System.Xml.XmlWellFormedWriter/System.Xml.AttributeValueCache/System.Xml.ItemType type, System.Object data)
-    // Offset: 0xC257B0
-    void Set(::System::Xml::XmlWellFormedWriter::AttributeValueCache::ItemType type, ::Il2CppObject* data);
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_data();
     // System.Void .ctor()
     // Offset: 0xC257A8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlWellFormedWriter::AttributeValueCache::Item* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlWellFormedWriter::AttributeValueCache::Item::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XmlWellFormedWriter::AttributeValueCache::Item*, creationType>()));
     }
+    // System.Void Set(System.Xml.XmlWellFormedWriter/System.Xml.AttributeValueCache/System.Xml.ItemType type, System.Object data)
+    // Offset: 0xC257B0
+    void Set(::System::Xml::XmlWellFormedWriter::AttributeValueCache::ItemType type, ::Il2CppObject* data);
   }; // System.Xml.XmlWellFormedWriter/System.Xml.AttributeValueCache/System.Xml.Item
   #pragma pack(pop)
   static check_size<sizeof(XmlWellFormedWriter::AttributeValueCache::Item), 24 + sizeof(::Il2CppObject*)> __System_Xml_XmlWellFormedWriter_AttributeValueCache_ItemSizeCheck;
   static_assert(sizeof(XmlWellFormedWriter::AttributeValueCache::Item) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::XmlWellFormedWriter::AttributeValueCache::Item::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlWellFormedWriter::AttributeValueCache::Item::Set
 // Il2CppName: Set
 template<>
@@ -73,7 +75,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlWellFormedWriter::AttributeValueCache::Item*), "Set", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{type, data});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlWellFormedWriter::AttributeValueCache::Item::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

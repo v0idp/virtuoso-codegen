@@ -54,7 +54,7 @@ namespace VROSC {
       return instrumentHub;
     }
     // Get instance field reference: private VROSC.InstrumentHub _instrumentHub
-    [[deprecated]] ::VROSC::InstrumentHub*& dyn__instrumentHub();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentHub*& dyn__instrumentHub();
     // public System.Void .ctor(VROSC.InstrumentHub instrumentHub)
     // Offset: 0x1926890
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

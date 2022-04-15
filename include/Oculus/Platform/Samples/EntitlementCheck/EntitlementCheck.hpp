@@ -59,7 +59,7 @@ namespace Oculus::Platform::Samples::EntitlementCheck {
     // Set static field: static private System.Action UserPassedEntitlementCheck
     static void _set_UserPassedEntitlementCheck(::System::Action* value);
     // Get instance field reference: public System.Boolean exitAppOnFailure
-    [[deprecated]] bool& dyn_exitAppOnFailure();
+    [[deprecated("Use field access instead!")]] bool& dyn_exitAppOnFailure();
     // static public System.Void add_UserFailedEntitlementCheck(System.Action value)
     // Offset: 0x92DE74
     static void add_UserFailedEntitlementCheck(::System::Action* value);
@@ -72,6 +72,13 @@ namespace Oculus::Platform::Samples::EntitlementCheck {
     // static public System.Void remove_UserPassedEntitlementCheck(System.Action value)
     // Offset: 0x92E0AC
     static void remove_UserPassedEntitlementCheck(::System::Action* value);
+    // public System.Void .ctor()
+    // Offset: 0x92E64C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EntitlementCheck* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EntitlementCheck*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x92E16C
     void Start();
@@ -81,19 +88,6 @@ namespace Oculus::Platform::Samples::EntitlementCheck {
     // private System.Void HandleEntitlementCheckResult(System.Boolean result)
     // Offset: 0x92E334
     void HandleEntitlementCheckResult(bool result);
-    // public System.Void .ctor()
-    // Offset: 0x92E64C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EntitlementCheck* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EntitlementCheck*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.EntitlementCheck.EntitlementCheck
   #pragma pack(pop)
   static check_size<sizeof(EntitlementCheck), 24 + sizeof(bool)> __Oculus_Platform_Samples_EntitlementCheck_EntitlementCheckSizeCheck;
@@ -136,6 +130,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck*), "remove_UserPassedEntitlementCheck", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck::Start
 // Il2CppName: Start
 template<>
@@ -162,7 +160,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck*), "HandleEntitlementCheckResult", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{result});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

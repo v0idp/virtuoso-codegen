@@ -76,15 +76,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: System.String parentName
-    [[deprecated]] ::StringW& dyn_parentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_parentName();
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Quaternion rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_rotation();
     // Get instance field reference: public UnityEngine.Vector3 scale
-    [[deprecated]] ::UnityEngine::Vector3& dyn_scale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_scale();
   }; // UnityEngine.SkeletonBone
   #pragma pack(pop)
   static check_size<sizeof(SkeletonBone), 44 + sizeof(::UnityEngine::Vector3)> __UnityEngine_SkeletonBoneSizeCheck;

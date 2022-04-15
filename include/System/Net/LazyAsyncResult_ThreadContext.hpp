@@ -36,11 +36,9 @@ namespace System::Net {
       return m_NestedIOCount;
     }
     // Get instance field reference: System.Int32 m_NestedIOCount
-    [[deprecated]] int& dyn_m_NestedIOCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NestedIOCount();
     // public System.Void .ctor()
     // Offset: 0x9F8C74
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LazyAsyncResult::ThreadContext* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::LazyAsyncResult::ThreadContext::.ctor");

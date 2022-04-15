@@ -53,27 +53,29 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.UserPreferencesDataController <>4__this
-    [[deprecated]] ::VROSC::UserPreferencesDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserPreferencesDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
-    // System.Void <LoadCloudData>b__0(System.Collections.Generic.Dictionary`2<System.String,System.Object> data)
-    // Offset: 0xE87594
-    void $LoadCloudData$b__0(::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* data);
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // public System.Void .ctor()
     // Offset: 0xE8758C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserPreferencesDataController::$$c__DisplayClass82_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserPreferencesDataController::$$c__DisplayClass82_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UserPreferencesDataController::$$c__DisplayClass82_0*, creationType>()));
     }
+    // System.Void <LoadCloudData>b__0(System.Collections.Generic.Dictionary`2<System.String,System.Object> data)
+    // Offset: 0xE87594
+    void $LoadCloudData$b__0(::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* data);
   }; // VROSC.UserPreferencesDataController/VROSC.<>c__DisplayClass82_0
   #pragma pack(pop)
   static check_size<sizeof(UserPreferencesDataController::$$c__DisplayClass82_0), 24 + sizeof(::System::Action*)> __VROSC_UserPreferencesDataController_$$c__DisplayClass82_0SizeCheck;
   static_assert(sizeof(UserPreferencesDataController::$$c__DisplayClass82_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UserPreferencesDataController::$$c__DisplayClass82_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UserPreferencesDataController::$$c__DisplayClass82_0::$LoadCloudData$b__0
 // Il2CppName: <LoadCloudData>b__0
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserPreferencesDataController::$$c__DisplayClass82_0*), "<LoadCloudData>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data});
   }
 };
-// Writing MetadataGetter for method: VROSC::UserPreferencesDataController::$$c__DisplayClass82_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

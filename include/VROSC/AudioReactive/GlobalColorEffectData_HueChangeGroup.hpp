@@ -60,13 +60,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Single _hueShift
-    [[deprecated]] float& dyn__hueShift();
+    [[deprecated("Use field access instead!")]] float& dyn__hueShift();
     // Get instance field reference: private UnityEngine.Gradient _gradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__gradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__gradient();
     // Get instance field reference: private System.Boolean _useGradient
-    [[deprecated]] bool& dyn__useGradient();
+    [[deprecated("Use field access instead!")]] bool& dyn__useGradient();
     // Get instance field reference: private System.Boolean _includeShifts
-    [[deprecated]] bool& dyn__includeShifts();
+    [[deprecated("Use field access instead!")]] bool& dyn__includeShifts();
     // public System.Single get_HueShift()
     // Offset: 0x1957168
     float get_HueShift();
@@ -81,8 +81,6 @@ namespace VROSC::AudioReactive {
     bool get_IncludeShifts();
     // public System.Void .ctor()
     // Offset: 0x1957188
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalColorEffectData::HueChangeGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup::.ctor");

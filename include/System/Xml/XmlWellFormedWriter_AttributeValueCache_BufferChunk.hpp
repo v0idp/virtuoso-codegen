@@ -45,11 +45,11 @@ namespace System::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Char[] buffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_buffer();
     // Get instance field reference: System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // System.Void .ctor(System.Char[] buffer, System.Int32 index, System.Int32 count)
     // Offset: 0xC24E18
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

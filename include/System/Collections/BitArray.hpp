@@ -82,13 +82,13 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: private System.Int32[] m_array
-    [[deprecated]] ::ArrayW<int>& dyn_m_array();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_array();
     // Get instance field reference: private System.Int32 m_length
-    [[deprecated]] int& dyn_m_length();
+    [[deprecated("Use field access instead!")]] int& dyn_m_length();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // public System.Boolean get_Item(System.Int32 index)
     // Offset: 0xFEB9FC
     bool get_Item(int index);

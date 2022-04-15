@@ -54,11 +54,11 @@ namespace System::Net::Cache {
     static_assert(sizeof(::System::Net::Cache::RequestCachePolicy*) == 0x8);
     public:
     // Get instance field reference: private System.Net.Cache.RequestCache m_RequestCache
-    [[deprecated]] ::System::Net::Cache::RequestCache*& dyn_m_RequestCache();
+    [[deprecated("Use field access instead!")]] ::System::Net::Cache::RequestCache*& dyn_m_RequestCache();
     // Get instance field reference: private System.Net.Cache.RequestCacheValidator m_CacheValidator
-    [[deprecated]] ::System::Net::Cache::RequestCacheValidator*& dyn_m_CacheValidator();
+    [[deprecated("Use field access instead!")]] ::System::Net::Cache::RequestCacheValidator*& dyn_m_CacheValidator();
     // Get instance field reference: private System.Net.Cache.RequestCachePolicy m_Policy
-    [[deprecated]] ::System::Net::Cache::RequestCachePolicy*& dyn_m_Policy();
+    [[deprecated("Use field access instead!")]] ::System::Net::Cache::RequestCachePolicy*& dyn_m_Policy();
     // System.Net.Cache.RequestCache get_Cache()
     // Offset: 0xD9831C
     ::System::Net::Cache::RequestCache* get_Cache();

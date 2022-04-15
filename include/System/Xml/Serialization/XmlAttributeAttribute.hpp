@@ -79,15 +79,15 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String attributeName
-    [[deprecated]] ::StringW& dyn_attributeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_attributeName();
     // Get instance field reference: private System.String dataType
-    [[deprecated]] ::StringW& dyn_dataType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dataType();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // public System.String get_AttributeName()
     // Offset: 0x1182C64
     ::StringW get_AttributeName();

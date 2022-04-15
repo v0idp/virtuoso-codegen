@@ -48,9 +48,9 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(::System::IAsyncResult*) == 0x8);
     public:
     // Get instance field reference: public System.AsyncCallback callback
-    [[deprecated]] ::System::AsyncCallback*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::AsyncCallback*& dyn_callback();
     // Get instance field reference: public System.IAsyncResult asyncResult
-    [[deprecated]] ::System::IAsyncResult*& dyn_asyncResult();
+    [[deprecated("Use field access instead!")]] ::System::IAsyncResult*& dyn_asyncResult();
     // System.Void <InvokeCallbackWhenTaskCompletes>b__0()
     // Offset: 0xE5F454
     void $InvokeCallbackWhenTaskCompletes$b__0();

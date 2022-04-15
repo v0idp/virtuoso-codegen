@@ -69,13 +69,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.UInt64 roomID
-    [[deprecated]] uint64_t& dyn_roomID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_roomID();
     // Get instance field reference: private System.UInt64 invitedRoomID
-    [[deprecated]] uint64_t& dyn_invitedRoomID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_invitedRoomID();
     // Get instance field reference: private System.Boolean amIServer
-    [[deprecated]] bool& dyn_amIServer();
+    [[deprecated("Use field access instead!")]] bool& dyn_amIServer();
     // Get instance field reference: private System.Boolean startupDone
-    [[deprecated]] bool& dyn_startupDone();
+    [[deprecated("Use field access instead!")]] bool& dyn_startupDone();
+    // public System.Void .ctor()
+    // Offset: 0xB3607C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RoomManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RoomManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RoomManager*, creationType>()));
+    }
     // private System.Void AcceptingInviteCallback(Oculus.Platform.Message`1<System.String> msg)
     // Offset: 0xB36180
     void AcceptingInviteCallback(::Oculus::Platform::Message_1<::StringW>* msg);
@@ -106,21 +113,16 @@ namespace GlobalNamespace {
     // private System.Void ProcessRoomData(Oculus.Platform.Message`1<Oculus.Platform.Models.Room> msg)
     // Offset: 0xB369B4
     void ProcessRoomData(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Room*>* msg);
-    // public System.Void .ctor()
-    // Offset: 0xB3607C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RoomManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RoomManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RoomManager*, creationType>()));
-    }
   }; // RoomManager
   #pragma pack(pop)
   static check_size<sizeof(RoomManager), 33 + sizeof(bool)> __GlobalNamespace_RoomManagerSizeCheck;
   static_assert(sizeof(RoomManager) == 0x22);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RoomManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RoomManager::AcceptingInviteCallback
 // Il2CppName: AcceptingInviteCallback
 template<>
@@ -208,7 +210,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RoomManager*), "ProcessRoomData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RoomManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -36,7 +36,7 @@ namespace System::Runtime::InteropServices {
       return m_ErrorCode;
     }
     // Get instance field reference: private System.Int32 m_ErrorCode
-    [[deprecated]] int& dyn_m_ErrorCode();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ErrorCode();
   }; // System.Runtime.InteropServices.ErrorWrapper
   #pragma pack(pop)
   static check_size<sizeof(ErrorWrapper), 16 + sizeof(int)> __System_Runtime_InteropServices_ErrorWrapperSizeCheck;

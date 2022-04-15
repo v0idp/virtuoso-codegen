@@ -45,9 +45,9 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String _methodName
-    [[deprecated]] ::StringW& dyn__methodName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__methodName();
     // Get instance field reference: private System.Boolean _isAny
-    [[deprecated]] bool& dyn__isAny();
+    [[deprecated("Use field access instead!")]] bool& dyn__isAny();
     // public System.String get_MethodName()
     // Offset: 0xF2EB70
     ::StringW get_MethodName();

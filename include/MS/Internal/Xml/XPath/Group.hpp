@@ -48,7 +48,7 @@ namespace MS::Internal::Xml::XPath {
       return groupNode;
     }
     // Get instance field reference: private MS.Internal.Xml.XPath.AstNode groupNode
-    [[deprecated]] ::MS::Internal::Xml::XPath::AstNode*& dyn_groupNode();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::AstNode*& dyn_groupNode();
     // public System.Void .ctor(MS.Internal.Xml.XPath.AstNode groupNode)
     // Offset: 0xAEEC64
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

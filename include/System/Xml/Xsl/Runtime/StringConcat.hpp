@@ -84,19 +84,19 @@ namespace System::Xml::Xsl::Runtime {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.String s1
-    [[deprecated]] ::StringW& dyn_s1();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_s1();
     // Get instance field reference: private System.String s2
-    [[deprecated]] ::StringW& dyn_s2();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_s2();
     // Get instance field reference: private System.String s3
-    [[deprecated]] ::StringW& dyn_s3();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_s3();
     // Get instance field reference: private System.String s4
-    [[deprecated]] ::StringW& dyn_s4();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_s4();
     // Get instance field reference: private System.String delimiter
-    [[deprecated]] ::StringW& dyn_delimiter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_delimiter();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> strList
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_strList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_strList();
     // Get instance field reference: private System.Int32 idxStr
-    [[deprecated]] int& dyn_idxStr();
+    [[deprecated("Use field access instead!")]] int& dyn_idxStr();
     // System.Int32 get_Count()
     // Offset: 0xF6DB8C
     int get_Count();

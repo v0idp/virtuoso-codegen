@@ -55,7 +55,14 @@ namespace System::Security::Cryptography {
       return m_rijndael;
     }
     // Get instance field reference: private System.Security.Cryptography.RijndaelManaged m_rijndael
-    [[deprecated]] ::System::Security::Cryptography::RijndaelManaged*& dyn_m_rijndael();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::RijndaelManaged*& dyn_m_rijndael();
+    // public System.Void .ctor()
+    // Offset: 0x11ED2F8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AesManaged* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::AesManaged::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AesManaged*, creationType>()));
+    }
     // public override System.Int32 get_FeedbackSize()
     // Offset: 0x11ED444
     // Implemented from: System.Security.Cryptography.SymmetricAlgorithm
@@ -111,17 +118,6 @@ namespace System::Security::Cryptography {
     // Implemented from: System.Security.Cryptography.SymmetricAlgorithm
     // Base method: System.Void SymmetricAlgorithm::set_Padding(System.Security.Cryptography.PaddingMode value)
     void set_Padding(::System::Security::Cryptography::PaddingMode value);
-    // public System.Void .ctor()
-    // Offset: 0x11ED2F8
-    // Implemented from: System.Security.Cryptography.Aes
-    // Base method: System.Void Aes::.ctor()
-    // Base method: System.Void SymmetricAlgorithm::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AesManaged* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::AesManaged::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AesManaged*, creationType>()));
-    }
     // public override System.Security.Cryptography.ICryptoTransform CreateDecryptor()
     // Offset: 0x11ED624
     // Implemented from: System.Security.Cryptography.SymmetricAlgorithm
@@ -163,6 +159,10 @@ namespace System::Security::Cryptography {
   static_assert(sizeof(AesManaged) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Security::Cryptography::AesManaged::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::AesManaged::get_FeedbackSize
 // Il2CppName: get_FeedbackSize
 template<>
@@ -256,10 +256,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::AesManaged*), "set_Padding", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::AesManaged::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::AesManaged::CreateDecryptor
 // Il2CppName: CreateDecryptor
 template<>

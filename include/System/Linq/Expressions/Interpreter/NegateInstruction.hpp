@@ -91,7 +91,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Offset: 0xE93C50
     // Implemented from: System.Linq.Expressions.Interpreter.Instruction
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NegateInstruction* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::NegateInstruction::.ctor");

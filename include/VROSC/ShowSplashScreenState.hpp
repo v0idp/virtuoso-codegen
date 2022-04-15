@@ -66,11 +66,11 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    [[deprecated("Use field access instead!")]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
     // Get instance field reference: private VROSC.IntroVideoPlayer _introVideoPlayer
-    [[deprecated]] ::VROSC::IntroVideoPlayer*& dyn__introVideoPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntroVideoPlayer*& dyn__introVideoPlayer();
     // Get instance field reference: private VROSC.PlatformSelector _platformSelector
-    [[deprecated]] ::VROSC::PlatformSelector*& dyn__platformSelector();
+    [[deprecated("Use field access instead!")]] ::VROSC::PlatformSelector*& dyn__platformSelector();
     // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController, VROSC.IntroVideoPlayer introVideoPlayer, VROSC.PlatformSelector platformSelector)
     // Offset: 0x1927AF4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

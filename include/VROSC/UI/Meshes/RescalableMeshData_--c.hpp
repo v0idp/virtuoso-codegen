@@ -55,6 +55,13 @@ namespace VROSC::UI::Meshes {
     // static private System.Void .cctor()
     // Offset: 0x8D0260
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x8D02C0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RescalableMeshData::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::RescalableMeshData::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RescalableMeshData::$$c*, creationType>()));
+    }
     // System.Single <Analyze>b__14_0(VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData o)
     // Offset: 0x8D02C8
     float $Analyze$b__14_0(::VROSC::UI::Meshes::RescalableMeshData::VertexData* o);
@@ -67,15 +74,6 @@ namespace VROSC::UI::Meshes {
     // System.Single <Analyze>b__14_3(VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData o)
     // Offset: 0x8D0310
     float $Analyze$b__14_3(::VROSC::UI::Meshes::RescalableMeshData::VertexData* o);
-    // public System.Void .ctor()
-    // Offset: 0x8D02C0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RescalableMeshData::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::RescalableMeshData::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RescalableMeshData::$$c*, creationType>()));
-    }
   }; // VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.<>c
   #pragma pack(pop)
 }
@@ -88,6 +86,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::RescalableMeshData::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::Meshes::RescalableMeshData::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::Meshes::RescalableMeshData::$$c::$Analyze$b__14_0
 // Il2CppName: <Analyze>b__14_0
 template<>
@@ -124,7 +126,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::RescalableMeshData::$$c*), "<Analyze>b__14_3", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{o});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::Meshes::RescalableMeshData::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

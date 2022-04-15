@@ -52,7 +52,7 @@ namespace System {
       return cancellationToken;
     }
     // Get instance field reference: private System.Threading.CancellationToken _cancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn__cancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn__cancellationToken();
     // public System.Threading.CancellationToken get_CancellationToken()
     // Offset: 0x14BF664
     ::System::Threading::CancellationToken get_CancellationToken();

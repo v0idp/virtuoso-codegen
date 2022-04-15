@@ -166,29 +166,29 @@ namespace Newtonsoft::Json::Utilities {
     // Set static field: static private readonly System.Int32 Lz_zz
     static void _set_Lz_zz(int value);
     // Get instance field reference: public System.Int32 Year
-    [[deprecated]] int& dyn_Year();
+    [[deprecated("Use field access instead!")]] int& dyn_Year();
     // Get instance field reference: public System.Int32 Month
-    [[deprecated]] int& dyn_Month();
+    [[deprecated("Use field access instead!")]] int& dyn_Month();
     // Get instance field reference: public System.Int32 Day
-    [[deprecated]] int& dyn_Day();
+    [[deprecated("Use field access instead!")]] int& dyn_Day();
     // Get instance field reference: public System.Int32 Hour
-    [[deprecated]] int& dyn_Hour();
+    [[deprecated("Use field access instead!")]] int& dyn_Hour();
     // Get instance field reference: public System.Int32 Minute
-    [[deprecated]] int& dyn_Minute();
+    [[deprecated("Use field access instead!")]] int& dyn_Minute();
     // Get instance field reference: public System.Int32 Second
-    [[deprecated]] int& dyn_Second();
+    [[deprecated("Use field access instead!")]] int& dyn_Second();
     // Get instance field reference: public System.Int32 Fraction
-    [[deprecated]] int& dyn_Fraction();
+    [[deprecated("Use field access instead!")]] int& dyn_Fraction();
     // Get instance field reference: public System.Int32 ZoneHour
-    [[deprecated]] int& dyn_ZoneHour();
+    [[deprecated("Use field access instead!")]] int& dyn_ZoneHour();
     // Get instance field reference: public System.Int32 ZoneMinute
-    [[deprecated]] int& dyn_ZoneMinute();
+    [[deprecated("Use field access instead!")]] int& dyn_ZoneMinute();
     // Get instance field reference: public Newtonsoft.Json.Utilities.ParserTimeZone Zone
-    [[deprecated]] ::Newtonsoft::Json::Utilities::ParserTimeZone& dyn_Zone();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::ParserTimeZone& dyn_Zone();
     // Get instance field reference: private System.Char[] _text
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__text();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__text();
     // Get instance field reference: private System.Int32 _end
-    [[deprecated]] int& dyn__end();
+    [[deprecated("Use field access instead!")]] int& dyn__end();
     // static private System.Void .cctor()
     // Offset: 0xDBF474
     static void _cctor();

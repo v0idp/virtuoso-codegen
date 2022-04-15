@@ -37,7 +37,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Implemented from: System.Linq.Expressions.Interpreter.AddInstruction
     // Base method: System.Void AddInstruction::.ctor()
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AddInstruction::AddDouble* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::AddInstruction::AddDouble::.ctor");

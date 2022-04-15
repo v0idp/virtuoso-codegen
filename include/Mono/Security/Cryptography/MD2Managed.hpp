@@ -70,15 +70,15 @@ namespace Mono::Security::Cryptography {
     // Set static field: static private readonly System.Byte[] PI_SUBST
     static void _set_PI_SUBST(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.Byte[] state
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_state();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_state();
     // Get instance field reference: private System.Byte[] checksum
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_checksum();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_checksum();
     // Get instance field reference: private System.Byte[] buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.Byte[] x
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_x();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_x();
     // static private System.Void .cctor()
     // Offset: 0x163AD88
     static void _cctor();
@@ -92,8 +92,6 @@ namespace Mono::Security::Cryptography {
     // Offset: 0x163A778
     // Implemented from: Mono.Security.Cryptography.MD2
     // Base method: System.Void MD2::.ctor()
-    // Base method: System.Void HashAlgorithm::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MD2Managed* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Cryptography::MD2Managed::.ctor");

@@ -127,15 +127,15 @@ namespace System::Text {
     // Set static field: static System.Int32 MaxChunkSize
     static void _set_MaxChunkSize(int value);
     // Get instance field reference: System.Char[] m_ChunkChars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_m_ChunkChars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_m_ChunkChars();
     // Get instance field reference: System.Text.StringBuilder m_ChunkPrevious
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_m_ChunkPrevious();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_m_ChunkPrevious();
     // Get instance field reference: System.Int32 m_ChunkLength
-    [[deprecated]] int& dyn_m_ChunkLength();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ChunkLength();
     // Get instance field reference: System.Int32 m_ChunkOffset
-    [[deprecated]] int& dyn_m_ChunkOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ChunkOffset();
     // Get instance field reference: System.Int32 m_MaxCapacity
-    [[deprecated]] int& dyn_m_MaxCapacity();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MaxCapacity();
     // public System.Int32 get_Capacity()
     // Offset: 0x12645A4
     int get_Capacity();

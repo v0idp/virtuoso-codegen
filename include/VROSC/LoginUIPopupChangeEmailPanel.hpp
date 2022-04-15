@@ -76,13 +76,13 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _currentEmailText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__currentEmailText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__currentEmailText();
     // Get instance field reference: private UIInputField _newEmailInput
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__newEmailInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__newEmailInput();
     // Get instance field reference: private VROSC.UIButton _confirmEmailChangeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__confirmEmailChangeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__confirmEmailChangeButton();
     // Get instance field reference: private VROSC.UIButton _cancelEmailChangeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__cancelEmailChangeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__cancelEmailChangeButton();
     // private System.Void Awake()
     // Offset: 0x19B0320
     void Awake();
@@ -105,11 +105,6 @@ namespace VROSC {
     // Offset: 0x19B0E00
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoginUIPopupChangeEmailPanel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopupChangeEmailPanel::.ctor");

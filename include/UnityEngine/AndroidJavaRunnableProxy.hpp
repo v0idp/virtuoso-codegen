@@ -48,7 +48,7 @@ namespace UnityEngine {
       return mRunnable;
     }
     // Get instance field reference: private UnityEngine.AndroidJavaRunnable mRunnable
-    [[deprecated]] ::UnityEngine::AndroidJavaRunnable*& dyn_mRunnable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AndroidJavaRunnable*& dyn_mRunnable();
     // public System.Void .ctor(UnityEngine.AndroidJavaRunnable runnable)
     // Offset: 0x18731CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

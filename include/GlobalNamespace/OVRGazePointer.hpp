@@ -161,37 +161,37 @@ namespace GlobalNamespace {
     // Set static field: static private OVRGazePointer _instance
     static void _set__instance(::GlobalNamespace::OVRGazePointer* value);
     // Get instance field reference: private UnityEngine.Transform gazeIcon
-    [[deprecated]] ::UnityEngine::Transform*& dyn_gazeIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_gazeIcon();
     // Get instance field reference: public System.Boolean hideByDefault
-    [[deprecated]] bool& dyn_hideByDefault();
+    [[deprecated("Use field access instead!")]] bool& dyn_hideByDefault();
     // Get instance field reference: public System.Single showTimeoutPeriod
-    [[deprecated]] float& dyn_showTimeoutPeriod();
+    [[deprecated("Use field access instead!")]] float& dyn_showTimeoutPeriod();
     // Get instance field reference: public System.Single hideTimeoutPeriod
-    [[deprecated]] float& dyn_hideTimeoutPeriod();
+    [[deprecated("Use field access instead!")]] float& dyn_hideTimeoutPeriod();
     // Get instance field reference: public System.Boolean dimOnHideRequest
-    [[deprecated]] bool& dyn_dimOnHideRequest();
+    [[deprecated("Use field access instead!")]] bool& dyn_dimOnHideRequest();
     // Get instance field reference: public System.Single depthScaleMultiplier
-    [[deprecated]] float& dyn_depthScaleMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_depthScaleMultiplier();
     // Get instance field reference: public System.Boolean matchNormalOnPhysicsColliders
-    [[deprecated]] bool& dyn_matchNormalOnPhysicsColliders();
+    [[deprecated("Use field access instead!")]] bool& dyn_matchNormalOnPhysicsColliders();
     // Get instance field reference: public UnityEngine.Transform rayTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_rayTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_rayTransform();
     // Get instance field reference: private System.Boolean <hidden>k__BackingField
-    [[deprecated]] bool& dyn_$hidden$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$hidden$k__BackingField();
     // Get instance field reference: private System.Single <currentScale>k__BackingField
-    [[deprecated]] float& dyn_$currentScale$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$currentScale$k__BackingField();
     // Get instance field reference: private System.Single depth
-    [[deprecated]] float& dyn_depth();
+    [[deprecated("Use field access instead!")]] float& dyn_depth();
     // Get instance field reference: private System.Single hideUntilTime
-    [[deprecated]] float& dyn_hideUntilTime();
+    [[deprecated("Use field access instead!")]] float& dyn_hideUntilTime();
     // Get instance field reference: private System.Int32 positionSetsThisFrame
-    [[deprecated]] int& dyn_positionSetsThisFrame();
+    [[deprecated("Use field access instead!")]] int& dyn_positionSetsThisFrame();
     // Get instance field reference: private System.Single lastShowRequestTime
-    [[deprecated]] float& dyn_lastShowRequestTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastShowRequestTime();
     // Get instance field reference: private System.Single lastHideRequestTime
-    [[deprecated]] float& dyn_lastHideRequestTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastHideRequestTime();
     // Get instance field reference: private OVRProgressIndicator progressIndicator
-    [[deprecated]] ::GlobalNamespace::OVRProgressIndicator*& dyn_progressIndicator();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRProgressIndicator*& dyn_progressIndicator();
     // public System.Boolean get_hidden()
     // Offset: 0xFBBD58
     bool get_hidden();
@@ -241,11 +241,6 @@ namespace GlobalNamespace {
     // Offset: 0xFBCE5C
     // Implemented from: OVRCursor
     // Base method: System.Void OVRCursor::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRGazePointer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGazePointer::.ctor");

@@ -56,9 +56,9 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Type argumentType
-    [[deprecated]] ::System::Type*& dyn_argumentType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_argumentType();
     // Get instance field reference: private System.Object value
-    [[deprecated]] ::Il2CppObject*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_value();
     // public System.Void .ctor(System.Type argumentType, System.Object value)
     // Offset: 0x1403104
     // ABORTED: conflicts with another method.  CustomAttributeTypedArgument(::System::Type* argumentType, ::Il2CppObject* value);

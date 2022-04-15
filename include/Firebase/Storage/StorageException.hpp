@@ -72,9 +72,9 @@ namespace Firebase::Storage {
     // Set static field: static private readonly System.Tuple`2<System.Int32,System.Net.HttpStatusCode> unknownError
     static void _set_unknownError(::System::Tuple_2<int, ::System::Net::HttpStatusCode>* value);
     // Get instance field reference: private System.Int32 <ErrorCode>k__BackingField
-    [[deprecated]] int& dyn_$ErrorCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$ErrorCode$k__BackingField();
     // Get instance field reference: private System.Int32 <HttpResultCode>k__BackingField
-    [[deprecated]] int& dyn_$HttpResultCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$HttpResultCode$k__BackingField();
     // public System.Int32 get_ErrorCode()
     // Offset: 0x1837500
     int get_ErrorCode();
@@ -91,17 +91,15 @@ namespace Firebase::Storage {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<StorageException*, creationType>(errorCode, httpResultCode, errorMessage)));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x1837518
+    static void _cctor();
     // static Firebase.Storage.StorageException CreateFromException(System.Exception exception)
     // Offset: 0x18370B4
     static ::Firebase::Storage::StorageException* CreateFromException(::System::Exception* exception);
     // static System.String GetErrorMessageForCode(System.Int32 errorCode)
     // Offset: 0x1836F54
     static ::StringW GetErrorMessageForCode(int errorCode);
-    // static private System.Void .cctor()
-    // Offset: 0x1837518
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.cctor()
-    static void _cctor();
   }; // Firebase.Storage.StorageException
   #pragma pack(pop)
   static check_size<sizeof(StorageException), 140 + sizeof(int)> __Firebase_Storage_StorageExceptionSizeCheck;
@@ -138,6 +136,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Firebase::Storage::StorageException::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Firebase::Storage::StorageException::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageException*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: Firebase::Storage::StorageException::CreateFromException
 // Il2CppName: CreateFromException
 template<>
@@ -154,13 +160,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
   static const MethodInfo* get() {
     static auto* errorCode = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageException*), "GetErrorMessageForCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{errorCode});
-  }
-};
-// Writing MetadataGetter for method: Firebase::Storage::StorageException::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Firebase::Storage::StorageException::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageException*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

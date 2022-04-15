@@ -48,7 +48,7 @@ namespace UnityEngine::Animations {
       return stream;
     }
     // Get instance field reference: private System.IntPtr stream
-    [[deprecated]] ::System::IntPtr& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_stream();
   }; // UnityEngine.Animations.AnimationHumanStream
   #pragma pack(pop)
   static check_size<sizeof(AnimationHumanStream), 0 + sizeof(::System::IntPtr)> __UnityEngine_Animations_AnimationHumanStreamSizeCheck;

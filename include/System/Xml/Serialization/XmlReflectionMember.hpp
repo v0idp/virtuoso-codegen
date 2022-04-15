@@ -74,15 +74,15 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean isReturnValue
-    [[deprecated]] bool& dyn_isReturnValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_isReturnValue();
     // Get instance field reference: private System.String memberName
-    [[deprecated]] ::StringW& dyn_memberName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_memberName();
     // Get instance field reference: private System.Type memberType
-    [[deprecated]] ::System::Type*& dyn_memberType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_memberType();
     // Get instance field reference: private System.Xml.Serialization.XmlAttributes xmlAttributes
-    [[deprecated]] ::System::Xml::Serialization::XmlAttributes*& dyn_xmlAttributes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlAttributes*& dyn_xmlAttributes();
     // Get instance field reference: private System.Type declaringType
-    [[deprecated]] ::System::Type*& dyn_declaringType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_declaringType();
     // public System.Boolean get_IsReturnValue()
     // Offset: 0x1106288
     bool get_IsReturnValue();

@@ -51,9 +51,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SessionUIData*) == 0x8);
     public:
     // Get instance field reference: private System.String <ID>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ID$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ID$k__BackingField();
     // Get instance field reference: private VROSC.SessionUIData <Data>k__BackingField
-    [[deprecated]] ::VROSC::SessionUIData*& dyn_$Data$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionUIData*& dyn_$Data$k__BackingField();
     // public System.String get_ID()
     // Offset: 0x1986FD0
     ::StringW get_ID();

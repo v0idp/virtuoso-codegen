@@ -84,7 +84,7 @@ namespace VROSC {
       // Set static field: static public VROSC.AdjustableMeshTransformUVEffect/VROSC.Channel Uv4
       static void _set_Uv4(::VROSC::AdjustableMeshTransformUVEffect::Channel value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.AdjustableMeshTransformUVEffect/VROSC.Channel
     #pragma pack(pop)
     static check_size<sizeof(AdjustableMeshTransformUVEffect::Channel), 0 + sizeof(int)> __VROSC_AdjustableMeshTransformUVEffect_ChannelSizeCheck;
@@ -118,13 +118,13 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector2>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector2 _offset
-    [[deprecated]] ::UnityEngine::Vector2& dyn__offset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__offset();
     // Get instance field reference: private VROSC.AdjustableMeshTransformUVEffect/VROSC.Channel _channel
-    [[deprecated]] ::VROSC::AdjustableMeshTransformUVEffect::Channel& dyn__channel();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshTransformUVEffect::Channel& dyn__channel();
     // Get instance field reference: private UnityEngine.Vector2[] _originalUv
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn__originalUv();
     // Get instance field reference: private UnityEngine.Vector2[] _uv
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // public System.Void SetOffset(UnityEngine.Vector2 offset)
     // Offset: 0x968A88
     void SetOffset(::UnityEngine::Vector2 offset);
@@ -132,11 +132,6 @@ namespace VROSC {
     // Offset: 0x968A90
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AdjustableMeshTransformUVEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMeshTransformUVEffect::.ctor");

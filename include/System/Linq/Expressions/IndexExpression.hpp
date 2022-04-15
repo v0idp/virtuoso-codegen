@@ -82,11 +82,11 @@ namespace System::Linq::Expressions {
       return *reinterpret_cast<::System::Linq::Expressions::IArgumentProvider*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> _arguments
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__arguments();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__arguments();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Object>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Object$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Object$k__BackingField();
     // Get instance field reference: private readonly System.Reflection.PropertyInfo <Indexer>k__BackingField
-    [[deprecated]] ::System::Reflection::PropertyInfo*& dyn_$Indexer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::PropertyInfo*& dyn_$Indexer$k__BackingField();
     // public System.Linq.Expressions.Expression get_Object()
     // Offset: 0xF16D4C
     ::System::Linq::Expressions::Expression* get_Object();

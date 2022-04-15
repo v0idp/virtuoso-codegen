@@ -84,15 +84,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 _id
-    [[deprecated]] int& dyn__id();
+    [[deprecated("Use field access instead!")]] int& dyn__id();
     // Get instance field reference: private System.String _displayName
-    [[deprecated]] ::StringW& dyn__displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__displayName();
     // Get instance field reference: private System.Int32 _defaultMidiNote
-    [[deprecated]] int& dyn__defaultMidiNote();
+    [[deprecated("Use field access instead!")]] int& dyn__defaultMidiNote();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.SampleData> _samples
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::SampleData*>*& dyn__samples();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::SampleData*>*& dyn__samples();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // public System.Int32 get_Id()
     // Offset: 0xDDBF1C
     int get_Id();
@@ -110,10 +110,6 @@ namespace VROSC {
     ::System::Collections::Generic::List_1<::VROSC::SampleData*>* get_Samples();
     // public System.Void .ctor()
     // Offset: 0xDDBF48
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SampleGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SampleGroup::.ctor");

@@ -111,29 +111,27 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Oculus::Platform::VoipAudioSourceHiLevel*) == 0x8);
     public:
     // Get instance field reference: public System.UInt64 remoteUserID
-    [[deprecated]] uint64_t& dyn_remoteUserID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_remoteUserID();
     // Get instance field reference: public System.Boolean stillInRoom
-    [[deprecated]] bool& dyn_stillInRoom();
+    [[deprecated("Use field access instead!")]] bool& dyn_stillInRoom();
     // Get instance field reference: public Oculus.Platform.PeerConnectionState p2pConnectionState
-    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_p2pConnectionState();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PeerConnectionState& dyn_p2pConnectionState();
     // Get instance field reference: public Oculus.Platform.PeerConnectionState voipConnectionState
-    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_voipConnectionState();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PeerConnectionState& dyn_voipConnectionState();
     // Get instance field reference: public OvrAvatar RemoteAvatar
-    [[deprecated]] ::GlobalNamespace::OvrAvatar*& dyn_RemoteAvatar();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatar*& dyn_RemoteAvatar();
     // Get instance field reference: public UnityEngine.Vector3 receivedRootPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedRootPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_receivedRootPosition();
     // Get instance field reference: public UnityEngine.Vector3 receivedRootPositionPrior
-    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedRootPositionPrior();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_receivedRootPositionPrior();
     // Get instance field reference: public UnityEngine.Quaternion receivedRootRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRootRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_receivedRootRotation();
     // Get instance field reference: public UnityEngine.Quaternion receivedRootRotationPrior
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRootRotationPrior();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_receivedRootRotationPrior();
     // Get instance field reference: public Oculus.Platform.VoipAudioSourceHiLevel voipSource
-    [[deprecated]] ::Oculus::Platform::VoipAudioSourceHiLevel*& dyn_voipSource();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::VoipAudioSourceHiLevel*& dyn_voipSource();
     // public System.Void .ctor()
     // Offset: 0xB32238
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RemotePlayer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RemotePlayer::.ctor");

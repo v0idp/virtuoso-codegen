@@ -75,19 +75,19 @@ namespace UnityEngine::Scripting::APIUpdating {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String className
-    [[deprecated]] ::StringW& dyn_className();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_className();
     // Get instance field reference: public System.String nameSpace
-    [[deprecated]] ::StringW& dyn_nameSpace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nameSpace();
     // Get instance field reference: public System.String assembly
-    [[deprecated]] ::StringW& dyn_assembly();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assembly();
     // Get instance field reference: public System.Boolean classHasChanged
-    [[deprecated]] bool& dyn_classHasChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_classHasChanged();
     // Get instance field reference: public System.Boolean nameSpaceHasChanged
-    [[deprecated]] bool& dyn_nameSpaceHasChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_nameSpaceHasChanged();
     // Get instance field reference: public System.Boolean assemblyHasChanged
-    [[deprecated]] bool& dyn_assemblyHasChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_assemblyHasChanged();
     // Get instance field reference: public System.Boolean autoUdpateAPI
-    [[deprecated]] bool& dyn_autoUdpateAPI();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoUdpateAPI();
     // public System.Void Set(System.Boolean autoUpdateAPI, System.String sourceNamespace, System.String sourceAssembly, System.String sourceClassName)
     // Offset: 0xBBFEA4
     void Set(bool autoUpdateAPI, ::StringW sourceNamespace, ::StringW sourceAssembly, ::StringW sourceClassName);

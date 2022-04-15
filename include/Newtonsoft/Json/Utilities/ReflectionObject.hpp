@@ -82,9 +82,9 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::System::Collections::Generic::IDictionary_2<::StringW, ::Newtonsoft::Json::Utilities::ReflectionMember*>*) == 0x8);
     public:
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.ObjectConstructor`1<System.Object> <Creator>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ObjectConstructor_1<::Il2CppObject*>*& dyn_$Creator$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ObjectConstructor_1<::Il2CppObject*>*& dyn_$Creator$k__BackingField();
     // Get instance field reference: private readonly System.Collections.Generic.IDictionary`2<System.String,Newtonsoft.Json.Utilities.ReflectionMember> <Members>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::IDictionary_2<::StringW, ::Newtonsoft::Json::Utilities::ReflectionMember*>*& dyn_$Members$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IDictionary_2<::StringW, ::Newtonsoft::Json::Utilities::ReflectionMember*>*& dyn_$Members$k__BackingField();
     // public Newtonsoft.Json.Serialization.ObjectConstructor`1<System.Object> get_Creator()
     // Offset: 0x1348B7C
     ::Newtonsoft::Json::Serialization::ObjectConstructor_1<::Il2CppObject*>* get_Creator();

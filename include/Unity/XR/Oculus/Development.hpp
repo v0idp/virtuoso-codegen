@@ -69,7 +69,7 @@ namespace Unity::XR::Oculus {
       // Set static field: static public Unity.XR.Oculus.Development/Unity.XR.Oculus.UserDeveloperModeSettingCache UserSettingTrue
       static void _set_UserSettingTrue(::Unity::XR::Oculus::Development::UserDeveloperModeSettingCache value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Unity.XR.Oculus.Development/Unity.XR.Oculus.UserDeveloperModeSettingCache
     #pragma pack(pop)
     static check_size<sizeof(Development::UserDeveloperModeSettingCache), 0 + sizeof(int)> __Unity_XR_Oculus_Development_UserDeveloperModeSettingCacheSizeCheck;

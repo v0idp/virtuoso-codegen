@@ -133,35 +133,35 @@ namespace UnityEngine::Experimental::U2D {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 SpriteID
-    [[deprecated]] int& dyn_SpriteID();
+    [[deprecated("Use field access instead!")]] int& dyn_SpriteID();
     // Get instance field reference: public System.Int32 TextureID
-    [[deprecated]] int& dyn_TextureID();
+    [[deprecated("Use field access instead!")]] int& dyn_TextureID();
     // Get instance field reference: public System.Int32 MaterialID
-    [[deprecated]] int& dyn_MaterialID();
+    [[deprecated("Use field access instead!")]] int& dyn_MaterialID();
     // Get instance field reference: public UnityEngine.Color Color
-    [[deprecated]] ::UnityEngine::Color& dyn_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_Color();
     // Get instance field reference: public UnityEngine.Matrix4x4 Transform
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_Transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_Transform();
     // Get instance field reference: public UnityEngine.Bounds Bounds
-    [[deprecated]] ::UnityEngine::Bounds& dyn_Bounds();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bounds& dyn_Bounds();
     // Get instance field reference: public System.Int32 Layer
-    [[deprecated]] int& dyn_Layer();
+    [[deprecated("Use field access instead!")]] int& dyn_Layer();
     // Get instance field reference: public System.Int32 SortingLayer
-    [[deprecated]] int& dyn_SortingLayer();
+    [[deprecated("Use field access instead!")]] int& dyn_SortingLayer();
     // Get instance field reference: public System.Int32 SortingOrder
-    [[deprecated]] int& dyn_SortingOrder();
+    [[deprecated("Use field access instead!")]] int& dyn_SortingOrder();
     // Get instance field reference: public System.UInt64 SceneCullingMask
-    [[deprecated]] uint64_t& dyn_SceneCullingMask();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SceneCullingMask();
     // Get instance field reference: public System.IntPtr IndexData
-    [[deprecated]] ::System::IntPtr& dyn_IndexData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_IndexData();
     // Get instance field reference: public System.IntPtr VertexData
-    [[deprecated]] ::System::IntPtr& dyn_VertexData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_VertexData();
     // Get instance field reference: public System.Int32 IndexCount
-    [[deprecated]] int& dyn_IndexCount();
+    [[deprecated("Use field access instead!")]] int& dyn_IndexCount();
     // Get instance field reference: public System.Int32 VertexCount
-    [[deprecated]] int& dyn_VertexCount();
+    [[deprecated("Use field access instead!")]] int& dyn_VertexCount();
     // Get instance field reference: public System.Int32 ShaderChannelMask
-    [[deprecated]] int& dyn_ShaderChannelMask();
+    [[deprecated("Use field access instead!")]] int& dyn_ShaderChannelMask();
   }; // UnityEngine.Experimental.U2D.SpriteIntermediateRendererInfo
   #pragma pack(pop)
   static check_size<sizeof(SpriteIntermediateRendererInfo), 160 + sizeof(int)> __UnityEngine_Experimental_U2D_SpriteIntermediateRendererInfoSizeCheck;

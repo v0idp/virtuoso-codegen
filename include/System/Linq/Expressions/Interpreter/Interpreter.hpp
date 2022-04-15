@@ -105,19 +105,19 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static readonly System.Object NoValue
     static void _set_NoValue(::Il2CppObject* value);
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.InstructionArray _instructions
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::InstructionArray& dyn__instructions();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::InstructionArray& dyn__instructions();
     // Get instance field reference: readonly System.Object[] _objects
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__objects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__objects();
     // Get instance field reference: readonly System.Linq.Expressions.Interpreter.RuntimeLabel[] _labels
-    [[deprecated]] ::ArrayW<::System::Linq::Expressions::Interpreter::RuntimeLabel>& dyn__labels();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Linq::Expressions::Interpreter::RuntimeLabel>& dyn__labels();
     // Get instance field reference: readonly System.Linq.Expressions.Interpreter.DebugInfo[] _debugInfos
-    [[deprecated]] ::ArrayW<::System::Linq::Expressions::Interpreter::DebugInfo*>& dyn__debugInfos();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Linq::Expressions::Interpreter::DebugInfo*>& dyn__debugInfos();
     // Get instance field reference: private readonly System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private readonly System.Int32 <LocalCount>k__BackingField
-    [[deprecated]] int& dyn_$LocalCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$LocalCount$k__BackingField();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariable> <ClosureVariables>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn_$ClosureVariables$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn_$ClosureVariables$k__BackingField();
     // System.String get_Name()
     // Offset: 0xF1EFB0
     ::StringW get_Name();

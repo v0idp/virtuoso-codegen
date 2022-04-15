@@ -42,13 +42,11 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::EventSystems::EventTrigger::TriggerEvent*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.EventSystems.EventTriggerType eventID
-    [[deprecated]] ::UnityEngine::EventSystems::EventTriggerType& dyn_eventID();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::EventTriggerType& dyn_eventID();
     // Get instance field reference: public UnityEngine.EventSystems.EventTrigger/UnityEngine.EventSystems.TriggerEvent callback
-    [[deprecated]] ::UnityEngine::EventSystems::EventTrigger::TriggerEvent*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::EventTrigger::TriggerEvent*& dyn_callback();
     // public System.Void .ctor()
     // Offset: 0x16D8240
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EventTrigger::Entry* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::EventTrigger::Entry::.ctor");

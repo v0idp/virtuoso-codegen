@@ -186,45 +186,45 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.String info
-      [[deprecated]] ::StringW& dyn_info();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_info();
       // Get instance field reference: public UnityEngine.Color color
-      [[deprecated]] ::UnityEngine::Color& dyn_color();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color();
       // Get instance field reference: public System.Single mix
-      [[deprecated]] float& dyn_mix();
+      [[deprecated("Use field access instead!")]] float& dyn_mix();
       // Get instance field reference: public System.Single pitch
-      [[deprecated]] float& dyn_pitch();
+      [[deprecated("Use field access instead!")]] float& dyn_pitch();
       // Get instance field reference: public System.Int32 bands
-      [[deprecated]] int& dyn_bands();
+      [[deprecated("Use field access instead!")]] int& dyn_bands();
       // Get instance field reference: public System.Int32 formant
-      [[deprecated]] int& dyn_formant();
+      [[deprecated("Use field access instead!")]] int& dyn_formant();
       // Get instance field reference: public System.Int32 c1PTrack
-      [[deprecated]] int& dyn_c1PTrack();
+      [[deprecated("Use field access instead!")]] int& dyn_c1PTrack();
       // Get instance field reference: public System.Int32 c1Type
-      [[deprecated]] int& dyn_c1Type();
+      [[deprecated("Use field access instead!")]] int& dyn_c1Type();
       // Get instance field reference: public System.Single c1Gain
-      [[deprecated]] float& dyn_c1Gain();
+      [[deprecated("Use field access instead!")]] float& dyn_c1Gain();
       // Get instance field reference: public System.Single c1Freq
-      [[deprecated]] float& dyn_c1Freq();
+      [[deprecated("Use field access instead!")]] float& dyn_c1Freq();
       // Get instance field reference: public System.Int32 c1Note
-      [[deprecated]] int& dyn_c1Note();
+      [[deprecated("Use field access instead!")]] int& dyn_c1Note();
       // Get instance field reference: public System.Single c1PW
-      [[deprecated]] float& dyn_c1PW();
+      [[deprecated("Use field access instead!")]] float& dyn_c1PW();
       // Get instance field reference: public System.Int32 c1CNS
-      [[deprecated]] int& dyn_c1CNS();
+      [[deprecated("Use field access instead!")]] int& dyn_c1CNS();
       // Get instance field reference: public System.Int32 c2PTrack
-      [[deprecated]] int& dyn_c2PTrack();
+      [[deprecated("Use field access instead!")]] int& dyn_c2PTrack();
       // Get instance field reference: public System.Int32 c2Type
-      [[deprecated]] int& dyn_c2Type();
+      [[deprecated("Use field access instead!")]] int& dyn_c2Type();
       // Get instance field reference: public System.Single c2Gain
-      [[deprecated]] float& dyn_c2Gain();
+      [[deprecated("Use field access instead!")]] float& dyn_c2Gain();
       // Get instance field reference: public System.Single c2Freq
-      [[deprecated]] float& dyn_c2Freq();
+      [[deprecated("Use field access instead!")]] float& dyn_c2Freq();
       // Get instance field reference: public System.Int32 c2Note
-      [[deprecated]] int& dyn_c2Note();
+      [[deprecated("Use field access instead!")]] int& dyn_c2Note();
       // Get instance field reference: public System.Single c2PW
-      [[deprecated]] float& dyn_c2PW();
+      [[deprecated("Use field access instead!")]] float& dyn_c2PW();
       // Get instance field reference: public System.Int32 c2CNS
-      [[deprecated]] int& dyn_c2CNS();
+      [[deprecated("Use field access instead!")]] int& dyn_c2CNS();
     }; // OVRVoiceModContext/VMPreset
     #pragma pack(pop)
     static check_size<sizeof(OVRVoiceModContext::VMPreset), 92 + sizeof(int)> __GlobalNamespace_OVRVoiceModContext_VMPresetSizeCheck;
@@ -388,55 +388,62 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.AudioSource audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: public System.Single gain
-    [[deprecated]] float& dyn_gain();
+    [[deprecated("Use field access instead!")]] float& dyn_gain();
     // Get instance field reference: public System.Boolean audioMute
-    [[deprecated]] bool& dyn_audioMute();
+    [[deprecated("Use field access instead!")]] bool& dyn_audioMute();
     // Get instance field reference: public UnityEngine.KeyCode loopback
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_loopback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_loopback();
     // Get instance field reference: private OVRVoiceModContext/VMPreset[] VMPresets
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRVoiceModContext::VMPreset>& dyn_VMPresets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRVoiceModContext::VMPreset>& dyn_VMPresets();
     // Get instance field reference: public System.Single VM_MixAudio
-    [[deprecated]] float& dyn_VM_MixAudio();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_MixAudio();
     // Get instance field reference: public System.Single VM_Pitch
-    [[deprecated]] float& dyn_VM_Pitch();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_Pitch();
     // Get instance field reference: public System.Int32 VM_Bands
-    [[deprecated]] int& dyn_VM_Bands();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_Bands();
     // Get instance field reference: public System.Int32 VM_FormantCorrect
-    [[deprecated]] int& dyn_VM_FormantCorrect();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_FormantCorrect();
     // Get instance field reference: public System.Int32 VM_C1_TrackPitch
-    [[deprecated]] int& dyn_VM_C1_TrackPitch();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C1_TrackPitch();
     // Get instance field reference: public System.Int32 VM_C1_Type
-    [[deprecated]] int& dyn_VM_C1_Type();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C1_Type();
     // Get instance field reference: public System.Single VM_C1_Gain
-    [[deprecated]] float& dyn_VM_C1_Gain();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_C1_Gain();
     // Get instance field reference: public System.Single VM_C1_Freq
-    [[deprecated]] float& dyn_VM_C1_Freq();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_C1_Freq();
     // Get instance field reference: public System.Int32 VM_C1_Note
-    [[deprecated]] int& dyn_VM_C1_Note();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C1_Note();
     // Get instance field reference: public System.Single VM_C1_PulseWidth
-    [[deprecated]] float& dyn_VM_C1_PulseWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_C1_PulseWidth();
     // Get instance field reference: public System.Int32 VM_C1_CycledNoiseSize
-    [[deprecated]] int& dyn_VM_C1_CycledNoiseSize();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C1_CycledNoiseSize();
     // Get instance field reference: public System.Int32 VM_C2_TrackPitch
-    [[deprecated]] int& dyn_VM_C2_TrackPitch();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C2_TrackPitch();
     // Get instance field reference: public System.Int32 VM_C2_Type
-    [[deprecated]] int& dyn_VM_C2_Type();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C2_Type();
     // Get instance field reference: public System.Single VM_C2_Gain
-    [[deprecated]] float& dyn_VM_C2_Gain();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_C2_Gain();
     // Get instance field reference: public System.Single VM_C2_Freq
-    [[deprecated]] float& dyn_VM_C2_Freq();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_C2_Freq();
     // Get instance field reference: public System.Int32 VM_C2_Note
-    [[deprecated]] int& dyn_VM_C2_Note();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C2_Note();
     // Get instance field reference: public System.Single VM_C2_PulseWidth
-    [[deprecated]] float& dyn_VM_C2_PulseWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_VM_C2_PulseWidth();
     // Get instance field reference: public System.Int32 VM_C2_CycledNoiseSize
-    [[deprecated]] int& dyn_VM_C2_CycledNoiseSize();
+    [[deprecated("Use field access instead!")]] int& dyn_VM_C2_CycledNoiseSize();
     // Get instance field reference: private System.UInt32 context
-    [[deprecated]] uint& dyn_context();
+    [[deprecated("Use field access instead!")]] uint& dyn_context();
     // Get instance field reference: private System.Single prevVol
-    [[deprecated]] float& dyn_prevVol();
+    [[deprecated("Use field access instead!")]] float& dyn_prevVol();
+    // public System.Void .ctor()
+    // Offset: 0xC63170
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRVoiceModContext* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRVoiceModContext::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRVoiceModContext*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xC61E80
     void Awake();
@@ -476,19 +483,6 @@ namespace GlobalNamespace {
     // private System.Void SendVoiceModUpdate()
     // Offset: 0xC62190
     void SendVoiceModUpdate();
-    // public System.Void .ctor()
-    // Offset: 0xC63170
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRVoiceModContext* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRVoiceModContext::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRVoiceModContext*, creationType>()));
-    }
   }; // OVRVoiceModContext
   #pragma pack(pop)
   static check_size<sizeof(OVRVoiceModContext), 132 + sizeof(float)> __GlobalNamespace_OVRVoiceModContextSizeCheck;
@@ -497,6 +491,10 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OVRVoiceModContext::VMPreset, "", "OVRVoiceModContext/VMPreset");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRVoiceModContext::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRVoiceModContext::Awake
 // Il2CppName: Awake
 template<>
@@ -608,7 +606,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRVoiceModContext*), "SendVoiceModUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRVoiceModContext::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

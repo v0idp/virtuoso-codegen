@@ -64,11 +64,11 @@ namespace VROSC::Credits {
     static_assert(sizeof(::ArrayW<::UnityEngine::Color>) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro[] _lines
-    [[deprecated]] ::ArrayW<::TMPro::TextMeshPro*>& dyn__lines();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TextMeshPro*>& dyn__lines();
     // Get instance field reference: private VROSC.AdjustableMesh[] _meshes
-    [[deprecated]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__meshes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__meshes();
     // Get instance field reference: private UnityEngine.Color[] _linesColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__linesColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__linesColors();
     // private System.Void Awake()
     // Offset: 0x8DF8A0
     void Awake();
@@ -76,11 +76,6 @@ namespace VROSC::Credits {
     // Offset: 0x8DFB70
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreditsMultiObject* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsMultiObject::.ctor");

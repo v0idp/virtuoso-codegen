@@ -53,15 +53,13 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Action`2<System.String,System.Boolean> Action
-    [[deprecated]] ::System::Action_2<::StringW, bool>*& dyn_Action();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::StringW, bool>*& dyn_Action();
     // Get instance field reference: public System.String UserId
-    [[deprecated]] ::StringW& dyn_UserId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserId();
     // Get instance field reference: public System.Boolean IsVerified
-    [[deprecated]] bool& dyn_IsVerified();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsVerified();
     // public System.Void .ctor()
     // Offset: 0x9593D0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CallbackHandler::LoginUserWithEmailCallback* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CallbackHandler::LoginUserWithEmailCallback::.ctor");

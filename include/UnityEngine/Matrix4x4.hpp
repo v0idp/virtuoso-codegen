@@ -190,37 +190,37 @@ namespace UnityEngine {
     // Set static field: static private readonly UnityEngine.Matrix4x4 identityMatrix
     static void _set_identityMatrix(::UnityEngine::Matrix4x4 value);
     // Get instance field reference: public System.Single m00
-    [[deprecated]] float& dyn_m00();
+    [[deprecated("Use field access instead!")]] float& dyn_m00();
     // Get instance field reference: public System.Single m10
-    [[deprecated]] float& dyn_m10();
+    [[deprecated("Use field access instead!")]] float& dyn_m10();
     // Get instance field reference: public System.Single m20
-    [[deprecated]] float& dyn_m20();
+    [[deprecated("Use field access instead!")]] float& dyn_m20();
     // Get instance field reference: public System.Single m30
-    [[deprecated]] float& dyn_m30();
+    [[deprecated("Use field access instead!")]] float& dyn_m30();
     // Get instance field reference: public System.Single m01
-    [[deprecated]] float& dyn_m01();
+    [[deprecated("Use field access instead!")]] float& dyn_m01();
     // Get instance field reference: public System.Single m11
-    [[deprecated]] float& dyn_m11();
+    [[deprecated("Use field access instead!")]] float& dyn_m11();
     // Get instance field reference: public System.Single m21
-    [[deprecated]] float& dyn_m21();
+    [[deprecated("Use field access instead!")]] float& dyn_m21();
     // Get instance field reference: public System.Single m31
-    [[deprecated]] float& dyn_m31();
+    [[deprecated("Use field access instead!")]] float& dyn_m31();
     // Get instance field reference: public System.Single m02
-    [[deprecated]] float& dyn_m02();
+    [[deprecated("Use field access instead!")]] float& dyn_m02();
     // Get instance field reference: public System.Single m12
-    [[deprecated]] float& dyn_m12();
+    [[deprecated("Use field access instead!")]] float& dyn_m12();
     // Get instance field reference: public System.Single m22
-    [[deprecated]] float& dyn_m22();
+    [[deprecated("Use field access instead!")]] float& dyn_m22();
     // Get instance field reference: public System.Single m32
-    [[deprecated]] float& dyn_m32();
+    [[deprecated("Use field access instead!")]] float& dyn_m32();
     // Get instance field reference: public System.Single m03
-    [[deprecated]] float& dyn_m03();
+    [[deprecated("Use field access instead!")]] float& dyn_m03();
     // Get instance field reference: public System.Single m13
-    [[deprecated]] float& dyn_m13();
+    [[deprecated("Use field access instead!")]] float& dyn_m13();
     // Get instance field reference: public System.Single m23
-    [[deprecated]] float& dyn_m23();
+    [[deprecated("Use field access instead!")]] float& dyn_m23();
     // Get instance field reference: public System.Single m33
-    [[deprecated]] float& dyn_m33();
+    [[deprecated("Use field access instead!")]] float& dyn_m33();
     // public UnityEngine.Vector3 get_lossyScale()
     // Offset: 0x113259C
     ::UnityEngine::Vector3 get_lossyScale();

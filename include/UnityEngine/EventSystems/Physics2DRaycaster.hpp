@@ -55,18 +55,13 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::ArrayW<::UnityEngine::RaycastHit2D>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.RaycastHit2D[] m_Hits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit2D>& dyn_m_Hits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit2D>& dyn_m_Hits();
     // protected System.Void .ctor()
     // Offset: 0x1427380
     // Implemented from: UnityEngine.EventSystems.PhysicsRaycaster
     // Base method: System.Void PhysicsRaycaster::.ctor()
     // Base method: System.Void BaseRaycaster::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Physics2DRaycaster* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::Physics2DRaycaster::.ctor");

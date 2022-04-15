@@ -62,23 +62,20 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Single VolumeMaxValue
-    [[deprecated]] float& dyn_VolumeMaxValue();
+    [[deprecated("Use field access instead!")]] float& dyn_VolumeMaxValue();
     // Get instance field reference: public System.Single Volume
-    [[deprecated]] float& dyn_Volume();
+    [[deprecated("Use field access instead!")]] float& dyn_Volume();
     // Get instance field reference: public System.Single ReverbMaxValue
-    [[deprecated]] float& dyn_ReverbMaxValue();
+    [[deprecated("Use field access instead!")]] float& dyn_ReverbMaxValue();
     // Get instance field reference: public System.Single Reverb
-    [[deprecated]] float& dyn_Reverb();
+    [[deprecated("Use field access instead!")]] float& dyn_Reverb();
     // Get instance field reference: public System.Boolean UseProximity
-    [[deprecated]] bool& dyn_UseProximity();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseProximity();
     // public System.Void .ctor()
     // Offset: 0xAC7640
     // Implemented from: VROSC.ToolSettings
     // Base method: System.Void ToolSettings::.ctor()
     // Base method: System.Void WidgetSettings::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MicrophoneSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneSettings::.ctor");

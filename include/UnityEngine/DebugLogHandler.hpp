@@ -50,6 +50,13 @@ namespace UnityEngine {
     operator ::UnityEngine::ILogHandler() noexcept {
       return *reinterpret_cast<::UnityEngine::ILogHandler*>(this);
     }
+    // public System.Void .ctor()
+    // Offset: 0x112639C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DebugLogHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::DebugLogHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DebugLogHandler*, creationType>()));
+    }
     // static System.Void Internal_Log(UnityEngine.LogType level, UnityEngine.LogOption options, System.String msg, UnityEngine.Object obj)
     // Offset: 0x11263E0
     static void Internal_Log(::UnityEngine::LogType level, ::UnityEngine::LogOption options, ::StringW msg, ::UnityEngine::Object* obj);
@@ -62,19 +69,14 @@ namespace UnityEngine {
     // public System.Void LogException(System.Exception exception, UnityEngine.Object context)
     // Offset: 0x1126504
     void LogException(::System::Exception* exception, ::UnityEngine::Object* context);
-    // public System.Void .ctor()
-    // Offset: 0x112639C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DebugLogHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::DebugLogHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DebugLogHandler*, creationType>()));
-    }
   }; // UnityEngine.DebugLogHandler
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::DebugLogHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::DebugLogHandler::Internal_Log
 // Il2CppName: Internal_Log
 template<>
@@ -119,7 +121,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::DebugLogHandler*), "LogException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{exception, context});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::DebugLogHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

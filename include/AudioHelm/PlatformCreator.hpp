@@ -95,19 +95,26 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Transform platformModel
-    [[deprecated]] ::UnityEngine::Transform*& dyn_platformModel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_platformModel();
     // Get instance field reference: public System.Single minWidth
-    [[deprecated]] float& dyn_minWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_minWidth();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Transform> allPlatforms
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Transform*>*& dyn_allPlatforms();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Transform*>*& dyn_allPlatforms();
     // Get instance field reference: public UnityEngine.KeyCode clearKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_clearKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_clearKey();
     // Get instance field reference: public UnityEngine.KeyCode undoKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_undoKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_undoKey();
     // Get instance field reference: private UnityEngine.Transform currentPlatform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_currentPlatform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_currentPlatform();
     // Get instance field reference: private UnityEngine.Vector2 startPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_startPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_startPosition();
+    // public System.Void .ctor()
+    // Offset: 0xADEF00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlatformCreator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::PlatformCreator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlatformCreator*, creationType>()));
+    }
     // private System.Void TryInitialize(UnityEngine.Vector2 position)
     // Offset: 0xADE898
     void TryInitialize(::UnityEngine::Vector2 position);
@@ -126,25 +133,16 @@ namespace AudioHelm {
     // private System.Void Update()
     // Offset: 0xADEE48
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0xADEF00
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlatformCreator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::PlatformCreator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlatformCreator*, creationType>()));
-    }
   }; // AudioHelm.PlatformCreator
   #pragma pack(pop)
   static check_size<sizeof(PlatformCreator), 64 + sizeof(::UnityEngine::Vector2)> __AudioHelm_PlatformCreatorSizeCheck;
   static_assert(sizeof(PlatformCreator) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::PlatformCreator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::PlatformCreator::TryInitialize
 // Il2CppName: TryInitialize
 template<>
@@ -196,7 +194,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::PlatformCreator*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::PlatformCreator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -51,9 +51,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::IState*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Func`1<System.Boolean> <Condition>k__BackingField
-    [[deprecated]] ::System::Func_1<bool>*& dyn_$Condition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<bool>*& dyn_$Condition$k__BackingField();
     // Get instance field reference: private readonly VROSC.IState <To>k__BackingField
-    [[deprecated]] ::VROSC::IState*& dyn_$To$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::IState*& dyn_$To$k__BackingField();
     // public System.Func`1<System.Boolean> get_Condition()
     // Offset: 0x8DA5EC
     ::System::Func_1<bool>* get_Condition();

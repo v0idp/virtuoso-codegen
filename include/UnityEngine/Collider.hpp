@@ -59,6 +59,13 @@ namespace UnityEngine {
     // public UnityEngine.Bounds get_bounds()
     // Offset: 0x18F1684
     ::UnityEngine::Bounds get_bounds();
+    // public System.Void .ctor()
+    // Offset: 0x18F1890
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Collider* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Collider::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Collider*, creationType>()));
+    }
     // private System.Void Internal_ClosestPointOnBounds(UnityEngine.Vector3 point, ref UnityEngine.Vector3 outPos, ref System.Single distance)
     // Offset: 0x18F1740
     void Internal_ClosestPointOnBounds(::UnityEngine::Vector3 point, ByRef<::UnityEngine::Vector3> outPos, ByRef<float> distance);
@@ -71,17 +78,6 @@ namespace UnityEngine {
     // private System.Void Internal_ClosestPointOnBounds_Injected(ref UnityEngine.Vector3 point, ref UnityEngine.Vector3 outPos, ref System.Single distance)
     // Offset: 0x18F17B0
     void Internal_ClosestPointOnBounds_Injected(ByRef<::UnityEngine::Vector3> point, ByRef<::UnityEngine::Vector3> outPos, ByRef<float> distance);
-    // public System.Void .ctor()
-    // Offset: 0x18F1890
-    // Implemented from: UnityEngine.Component
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Collider* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Collider::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Collider*, creationType>()));
-    }
   }; // UnityEngine.Collider
   #pragma pack(pop)
 }
@@ -136,6 +132,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Collider*), "get_bounds", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Collider::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Collider::Internal_ClosestPointOnBounds
 // Il2CppName: Internal_ClosestPointOnBounds
 template<>
@@ -176,7 +176,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Collider*), "Internal_ClosestPointOnBounds_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{point, outPos, distance});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Collider::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

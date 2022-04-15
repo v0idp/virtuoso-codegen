@@ -64,21 +64,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteboardController
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
     // Get instance field reference: private System.Boolean _xAxis
-    [[deprecated]] bool& dyn__xAxis();
+    [[deprecated("Use field access instead!")]] bool& dyn__xAxis();
     // Get instance field reference: private System.Boolean _yAxis
-    [[deprecated]] bool& dyn__yAxis();
+    [[deprecated("Use field access instead!")]] bool& dyn__yAxis();
     // Get instance field reference: private System.Boolean _zAxis
-    [[deprecated]] bool& dyn__zAxis();
+    [[deprecated("Use field access instead!")]] bool& dyn__zAxis();
     // public System.Void .ctor()
     // Offset: 0xC5AFBC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteboardTooltips* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteboardTooltips::.ctor");

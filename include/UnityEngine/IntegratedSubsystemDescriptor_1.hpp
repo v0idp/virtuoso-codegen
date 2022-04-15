@@ -51,7 +51,6 @@ namespace UnityEngine {
     // Offset: 0xFFFFFFFFFFFFFFFF
     // Implemented from: UnityEngine.IntegratedSubsystemDescriptor
     // Base method: System.Void IntegratedSubsystemDescriptor::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IntegratedSubsystemDescriptor_1<TSubsystem>* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::IntegratedSubsystemDescriptor_1::.ctor");

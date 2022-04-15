@@ -122,9 +122,9 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlSingle MaxValue
     static void _set_MaxValue(::System::Data::SqlTypes::SqlSingle value);
     // Get instance field reference: private System.Boolean _fNotNull
-    [[deprecated]] bool& dyn__fNotNull();
+    [[deprecated("Use field access instead!")]] bool& dyn__fNotNull();
     // Get instance field reference: private System.Single _value
-    [[deprecated]] float& dyn__value();
+    [[deprecated("Use field access instead!")]] float& dyn__value();
     // public System.Boolean get_IsNull()
     // Offset: 0x13C6DA4
     bool get_IsNull();

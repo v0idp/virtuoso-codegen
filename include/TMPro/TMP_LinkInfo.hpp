@@ -86,19 +86,19 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public TMPro.TMP_Text textComponent
-    [[deprecated]] ::TMPro::TMP_Text*& dyn_textComponent();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Text*& dyn_textComponent();
     // Get instance field reference: public System.Int32 hashCode
-    [[deprecated]] int& dyn_hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCode();
     // Get instance field reference: public System.Int32 linkIdFirstCharacterIndex
-    [[deprecated]] int& dyn_linkIdFirstCharacterIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_linkIdFirstCharacterIndex();
     // Get instance field reference: public System.Int32 linkIdLength
-    [[deprecated]] int& dyn_linkIdLength();
+    [[deprecated("Use field access instead!")]] int& dyn_linkIdLength();
     // Get instance field reference: public System.Int32 linkTextfirstCharacterIndex
-    [[deprecated]] int& dyn_linkTextfirstCharacterIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_linkTextfirstCharacterIndex();
     // Get instance field reference: public System.Int32 linkTextLength
-    [[deprecated]] int& dyn_linkTextLength();
+    [[deprecated("Use field access instead!")]] int& dyn_linkTextLength();
     // Get instance field reference: System.Char[] linkID
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_linkID();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_linkID();
     // System.Void SetLinkID(System.Char[] text, System.Int32 startIndex, System.Int32 length)
     // Offset: 0x103BDE4
     void SetLinkID(::ArrayW<::Il2CppChar> text, int startIndex, int length);

@@ -58,9 +58,9 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.String applicationUrl
-    [[deprecated]] ::StringW& dyn_applicationUrl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_applicationUrl();
     // Get instance field reference: private System.Type obj_type
-    [[deprecated]] ::System::Type*& dyn_obj_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_obj_type();
     // public System.String get_ApplicationUrl()
     // Offset: 0x1138940
     ::StringW get_ApplicationUrl();

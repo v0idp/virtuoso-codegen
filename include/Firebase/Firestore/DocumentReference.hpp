@@ -104,9 +104,9 @@ namespace Firebase::Firestore {
     // Set static field: static private Firebase.Firestore.DocumentReference/Firebase.Firestore.ListenerDelegate documentSnapshotsHandler
     static void _set_documentSnapshotsHandler(::Firebase::Firestore::DocumentReference::ListenerDelegate* value);
     // Get instance field reference: private readonly Firebase.Firestore.DocumentReferenceProxy _proxy
-    [[deprecated]] ::Firebase::Firestore::DocumentReferenceProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::DocumentReferenceProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // Firebase.Firestore.DocumentReferenceProxy get_Proxy()
     // Offset: 0xD51BE4
     ::Firebase::Firestore::DocumentReferenceProxy* get_Proxy();

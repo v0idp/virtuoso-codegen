@@ -58,11 +58,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::CapsuleCollider*) == 0x8);
     public:
     // Get instance field reference: private System.Int16 <BoneIndex>k__BackingField
-    [[deprecated]] int16_t& dyn_$BoneIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_$BoneIndex$k__BackingField();
     // Get instance field reference: private UnityEngine.Rigidbody <CapsuleRigidbody>k__BackingField
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_$CapsuleRigidbody$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn_$CapsuleRigidbody$k__BackingField();
     // Get instance field reference: private UnityEngine.CapsuleCollider <CapsuleCollider>k__BackingField
-    [[deprecated]] ::UnityEngine::CapsuleCollider*& dyn_$CapsuleCollider$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CapsuleCollider*& dyn_$CapsuleCollider$k__BackingField();
     // public System.Int16 get_BoneIndex()
     // Offset: 0x98F00C
     int16_t get_BoneIndex();
@@ -81,21 +81,19 @@ namespace GlobalNamespace {
     // public System.Void set_CapsuleCollider(UnityEngine.CapsuleCollider value)
     // Offset: 0x98F034
     void set_CapsuleCollider(::UnityEngine::CapsuleCollider* value);
+    // public System.Void .ctor()
+    // Offset: 0x98F03C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRBoneCapsule* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRBoneCapsule::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRBoneCapsule*, creationType>()));
+    }
     // public System.Void .ctor(System.Int16 boneIndex, UnityEngine.Rigidbody capsuleRigidBody, UnityEngine.CapsuleCollider capsuleCollider)
     // Offset: 0x98F044
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRBoneCapsule* New_ctor(int16_t boneIndex, ::UnityEngine::Rigidbody* capsuleRigidBody, ::UnityEngine::CapsuleCollider* capsuleCollider) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRBoneCapsule::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRBoneCapsule*, creationType>(boneIndex, capsuleRigidBody, capsuleCollider)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0x98F03C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRBoneCapsule* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRBoneCapsule::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRBoneCapsule*, creationType>()));
     }
   }; // OVRBoneCapsule
   #pragma pack(pop)

@@ -69,15 +69,22 @@ namespace VROSC::UI {
     // Set static field: static private VROSC.UI.UIScheme <Current>k__BackingField
     static void _set_$Current$k__BackingField(::VROSC::UI::UIScheme* value);
     // Get instance field reference: private VROSC.UI.UIColorSettings _colorSettings
-    [[deprecated]] ::VROSC::UI::UIColorSettings*& dyn__colorSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorSettings*& dyn__colorSettings();
     // Get instance field reference: private System.Boolean _editorSetting
-    [[deprecated]] bool& dyn__editorSetting();
+    [[deprecated("Use field access instead!")]] bool& dyn__editorSetting();
     // static public VROSC.UI.UIScheme get_Current()
     // Offset: 0x1913534
     static ::VROSC::UI::UIScheme* get_Current();
     // static public System.Void set_Current(VROSC.UI.UIScheme value)
     // Offset: 0x1913580
     static void set_Current(::VROSC::UI::UIScheme* value);
+    // public System.Void .ctor()
+    // Offset: 0x1913734
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIScheme* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIScheme::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIScheme*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x19135D0
     void OnEnable();
@@ -90,17 +97,6 @@ namespace VROSC::UI {
     // static public System.Void UpdateForEditor()
     // Offset: 0x19136D8
     static void UpdateForEditor();
-    // public System.Void .ctor()
-    // Offset: 0x1913734
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIScheme* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIScheme::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIScheme*, creationType>()));
-    }
   }; // VROSC.UI.UIScheme
   #pragma pack(pop)
   static check_size<sizeof(UIScheme), 32 + sizeof(bool)> __VROSC_UI_UISchemeSizeCheck;
@@ -124,6 +120,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIScheme*), "set_Current", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::UIScheme::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::UIScheme::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -161,7 +161,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIScheme*), "UpdateForEditor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::UIScheme::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

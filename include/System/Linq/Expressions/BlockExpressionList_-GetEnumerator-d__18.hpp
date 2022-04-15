@@ -66,13 +66,13 @@ namespace System::Linq::Expressions {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Linq::Expressions::Expression*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Linq.Expressions.Expression <>2__current
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$$2__current();
     // Get instance field reference: public System.Linq.Expressions.BlockExpressionList <>4__this
-    [[deprecated]] ::System::Linq::Expressions::BlockExpressionList*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::BlockExpressionList*& dyn_$$4__this();
     // Get instance field reference: private System.Int32 <i>5__1
-    [[deprecated]] int& dyn_$i$5__1();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__1();
     // private System.Linq.Expressions.Expression System.Collections.Generic.IEnumerator<System.Linq.Expressions.Expression>.get_Current()
     // Offset: 0xEA6794
     ::System::Linq::Expressions::Expression* System_Collections_Generic_IEnumerator$System_Linq_Expressions_Expression$_get_Current();

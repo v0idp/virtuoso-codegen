@@ -39,30 +39,32 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 channel
-    [[deprecated]] int& dyn_channel();
+    [[deprecated("Use field access instead!")]] int& dyn_channel();
     // Get instance field reference: public System.Int32 note
-    [[deprecated]] int& dyn_note();
+    [[deprecated("Use field access instead!")]] int& dyn_note();
+    // public System.Void .ctor()
+    // Offset: 0x19630F8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MidiManager::$$c__DisplayClass19_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MidiManager::$$c__DisplayClass19_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MidiManager::$$c__DisplayClass19_0*, creationType>()));
+    }
     // System.Boolean <PlayNote>b__0(VROSC.MidiManager/VROSC.ActiveNote a)
     // Offset: 0x1963100
     bool $PlayNote$b__0(::VROSC::MidiManager::ActiveNote* a);
     // System.Boolean <PlayNote>b__1(VROSC.MidiManager/VROSC.ActiveNote a)
     // Offset: 0x1963124
     bool $PlayNote$b__1(::VROSC::MidiManager::ActiveNote* a);
-    // public System.Void .ctor()
-    // Offset: 0x19630F8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MidiManager::$$c__DisplayClass19_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MidiManager::$$c__DisplayClass19_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MidiManager::$$c__DisplayClass19_0*, creationType>()));
-    }
   }; // VROSC.MidiManager/VROSC.<>c__DisplayClass19_0
   #pragma pack(pop)
   static check_size<sizeof(MidiManager::$$c__DisplayClass19_0), 20 + sizeof(int)> __VROSC_MidiManager_$$c__DisplayClass19_0SizeCheck;
   static_assert(sizeof(MidiManager::$$c__DisplayClass19_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::MidiManager::$$c__DisplayClass19_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MidiManager::$$c__DisplayClass19_0::$PlayNote$b__0
 // Il2CppName: <PlayNote>b__0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::MidiManager::$$c__DisplayClass19_0*), "<PlayNote>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{a});
   }
 };
-// Writing MetadataGetter for method: VROSC::MidiManager::$$c__DisplayClass19_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -57,11 +57,11 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Char _keyChar
-    [[deprecated]] ::Il2CppChar& dyn__keyChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__keyChar();
     // Get instance field reference: private System.ConsoleKey _key
-    [[deprecated]] ::System::ConsoleKey& dyn__key();
+    [[deprecated("Use field access instead!")]] ::System::ConsoleKey& dyn__key();
     // Get instance field reference: private System.ConsoleModifiers _mods
-    [[deprecated]] ::System::ConsoleModifiers& dyn__mods();
+    [[deprecated("Use field access instead!")]] ::System::ConsoleModifiers& dyn__mods();
     // public System.Char get_KeyChar()
     // Offset: 0xE41530
     ::Il2CppChar get_KeyChar();

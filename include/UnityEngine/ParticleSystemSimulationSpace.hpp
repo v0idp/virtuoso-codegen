@@ -60,7 +60,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.ParticleSystemSimulationSpace Custom
     static void _set_Custom(::UnityEngine::ParticleSystemSimulationSpace value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.ParticleSystemSimulationSpace
   #pragma pack(pop)
   static check_size<sizeof(ParticleSystemSimulationSpace), 0 + sizeof(int)> __UnityEngine_ParticleSystemSimulationSpaceSizeCheck;

@@ -48,18 +48,13 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteNode*) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteNode _note
-    [[deprecated]] ::VROSC::NoteNode*& dyn__note();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteNode*& dyn__note();
     // public System.Void .ctor()
     // Offset: 0xC5AFB4
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteToggle* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteToggle::.ctor");

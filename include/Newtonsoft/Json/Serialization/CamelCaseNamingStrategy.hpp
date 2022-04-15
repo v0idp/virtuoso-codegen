@@ -33,7 +33,6 @@ namespace Newtonsoft::Json::Serialization {
     // Offset: 0xDB89BC
     // Implemented from: Newtonsoft.Json.Serialization.NamingStrategy
     // Base method: System.Void NamingStrategy::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CamelCaseNamingStrategy* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::CamelCaseNamingStrategy::.ctor");

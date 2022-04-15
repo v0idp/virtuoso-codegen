@@ -51,7 +51,7 @@ namespace System::Linq::Expressions::Interpreter {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private readonly System.Type _type
-    [[deprecated]] ::System::Type*& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__type();
     // System.Void .ctor(System.Int32 index, System.Type type)
     // Offset: 0x16A6D38
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

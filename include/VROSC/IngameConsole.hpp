@@ -105,21 +105,28 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _text
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__text();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__text();
     // Get instance field reference: private System.String[] _excludes
-    [[deprecated]] ::ArrayW<::StringW>& dyn__excludes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__excludes();
     // Get instance field reference: private System.Boolean _showErrors
-    [[deprecated]] bool& dyn__showErrors();
+    [[deprecated("Use field access instead!")]] bool& dyn__showErrors();
     // Get instance field reference: private System.Boolean _showWarnings
-    [[deprecated]] bool& dyn__showWarnings();
+    [[deprecated("Use field access instead!")]] bool& dyn__showWarnings();
     // Get instance field reference: private System.Boolean _showLogs
-    [[deprecated]] bool& dyn__showLogs();
+    [[deprecated("Use field access instead!")]] bool& dyn__showLogs();
     // Get instance field reference: private System.Int32 _lines
-    [[deprecated]] int& dyn__lines();
+    [[deprecated("Use field access instead!")]] int& dyn__lines();
     // Get instance field reference: private System.Int32 _maxLines
-    [[deprecated]] int& dyn__maxLines();
+    [[deprecated("Use field access instead!")]] int& dyn__maxLines();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _loggedErrorStacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__loggedErrorStacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__loggedErrorStacks();
+    // public System.Void .ctor()
+    // Offset: 0x19439D8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static IngameConsole* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IngameConsole::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<IngameConsole*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x1943428
     void Awake();
@@ -135,25 +142,16 @@ namespace VROSC {
     // private System.Void LogErrorToFirebase(System.String message, System.String stack)
     // Offset: 0x1943818
     void LogErrorToFirebase(::StringW message, ::StringW stack);
-    // public System.Void .ctor()
-    // Offset: 0x19439D8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static IngameConsole* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IngameConsole::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<IngameConsole*, creationType>()));
-    }
   }; // VROSC.IngameConsole
   #pragma pack(pop)
   static check_size<sizeof(IngameConsole), 56 + sizeof(::System::Collections::Generic::List_1<::StringW>*)> __VROSC_IngameConsoleSizeCheck;
   static_assert(sizeof(IngameConsole) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::IngameConsole::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::IngameConsole::Awake
 // Il2CppName: Awake
 template<>
@@ -199,7 +197,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::IngameConsole*), "LogErrorToFirebase", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message, stack});
   }
 };
-// Writing MetadataGetter for method: VROSC::IngameConsole::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

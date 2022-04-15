@@ -58,13 +58,13 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Color topLeft
-    [[deprecated]] ::UnityEngine::Color& dyn_topLeft();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_topLeft();
     // Get instance field reference: public UnityEngine.Color topRight
-    [[deprecated]] ::UnityEngine::Color& dyn_topRight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_topRight();
     // Get instance field reference: public UnityEngine.Color bottomLeft
-    [[deprecated]] ::UnityEngine::Color& dyn_bottomLeft();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_bottomLeft();
     // Get instance field reference: public UnityEngine.Color bottomRight
-    [[deprecated]] ::UnityEngine::Color& dyn_bottomRight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_bottomRight();
     // public System.Void .ctor(UnityEngine.Color color)
     // Offset: 0x181FD2C
     VertexGradient(::UnityEngine::Color color);

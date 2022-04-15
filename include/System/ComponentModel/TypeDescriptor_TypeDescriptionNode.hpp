@@ -66,9 +66,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::ComponentModel::TypeDescriptionProvider*) == 0x8);
     public:
     // Get instance field reference: System.ComponentModel.TypeDescriptor/System.ComponentModel.TypeDescriptionNode Next
-    [[deprecated]] ::System::ComponentModel::TypeDescriptor::TypeDescriptionNode*& dyn_Next();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::TypeDescriptor::TypeDescriptionNode*& dyn_Next();
     // Get instance field reference: System.ComponentModel.TypeDescriptionProvider Provider
-    [[deprecated]] ::System::ComponentModel::TypeDescriptionProvider*& dyn_Provider();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::TypeDescriptionProvider*& dyn_Provider();
     // System.Void .ctor(System.ComponentModel.TypeDescriptionProvider provider)
     // Offset: 0xA02FB0
     // Implemented from: System.ComponentModel.TypeDescriptionProvider

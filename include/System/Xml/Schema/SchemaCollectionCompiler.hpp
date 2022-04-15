@@ -146,13 +146,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchema*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean compileContentModel
-    [[deprecated]] bool& dyn_compileContentModel();
+    [[deprecated("Use field access instead!")]] bool& dyn_compileContentModel();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable examplars
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_examplars();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_examplars();
     // Get instance field reference: private System.Collections.Stack complexTypeStack
-    [[deprecated]] ::System::Collections::Stack*& dyn_complexTypeStack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn_complexTypeStack();
     // Get instance field reference: private System.Xml.Schema.XmlSchema schema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_schema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_schema();
     // public System.Void .ctor(System.Xml.XmlNameTable nameTable, System.Xml.Schema.ValidationEventHandler eventHandler)
     // Offset: 0xDE9078
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -71,7 +71,7 @@ namespace NatSuite::Devices {
     // Set static field: static public NatSuite.Devices.FrameOrientation PortraitUpsideDown
     static void _set_PortraitUpsideDown(::NatSuite::Devices::FrameOrientation value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // NatSuite.Devices.FrameOrientation
   #pragma pack(pop)
   static check_size<sizeof(FrameOrientation), 0 + sizeof(int)> __NatSuite_Devices_FrameOrientationSizeCheck;

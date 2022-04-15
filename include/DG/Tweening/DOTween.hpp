@@ -272,6 +272,13 @@ namespace DG::Tweening {
     // static public System.Void set_debugStoreTargetId(System.Boolean value)
     // Offset: 0x15D69F8
     static void set_debugStoreTargetId(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x15DB054
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTween* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTween::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTween*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x15DB05C
     static void _cctor();
@@ -508,15 +515,6 @@ namespace DG::Tweening {
       static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T1>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T2>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<TPlugOptions>::get()})));
       return ::il2cpp_utils::RunMethodRethrow<::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, getter, setter, endValue, duration, plugin);
     }
-    // public System.Void .ctor()
-    // Offset: 0x15DB054
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTween* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTween::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTween*, creationType>()));
-    }
   }; // DG.Tweening.DOTween
   #pragma pack(pop)
 }
@@ -555,6 +553,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(bo
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTween*), "set_debugStoreTargetId", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: DG::Tweening::DOTween::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTween::_cctor
 // Il2CppName: .cctor
 template<>
@@ -1305,7 +1307,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
 // Writing MetadataGetter for method: DG::Tweening::DOTween::ApplyTo
 // Il2CppName: ApplyTo
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: DG::Tweening::DOTween::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

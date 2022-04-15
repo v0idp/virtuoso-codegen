@@ -62,7 +62,7 @@ namespace System::Linq::Expressions {
       return expressions;
     }
     // Get instance field reference: private System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> _expressions
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__expressions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__expressions();
     // System.Void .ctor(System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> expressions)
     // Offset: 0x11F52DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

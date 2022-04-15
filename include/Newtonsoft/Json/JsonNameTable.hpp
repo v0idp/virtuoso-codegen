@@ -28,22 +28,24 @@ namespace Newtonsoft::Json {
   // [TokenAttribute] Offset: FFFFFFFF
   class JsonNameTable : public ::Il2CppObject {
     public:
-    // public System.String Get(System.Char[] key, System.Int32 start, System.Int32 length)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    ::StringW Get(::ArrayW<::Il2CppChar> key, int start, int length);
     // protected System.Void .ctor()
     // Offset: 0xEF638C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JsonNameTable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonNameTable::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<JsonNameTable*, creationType>()));
     }
+    // public System.String Get(System.Char[] key, System.Int32 start, System.Int32 length)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    ::StringW Get(::ArrayW<::Il2CppChar> key, int start, int length);
   }; // Newtonsoft.Json.JsonNameTable
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::JsonNameTable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::JsonNameTable::Get
 // Il2CppName: Get
 template<>
@@ -55,7 +57,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::JsonNameTable*), "Get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{key, start, length});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::JsonNameTable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

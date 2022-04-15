@@ -65,15 +65,22 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static private Oculus.Platform.Samples.VrBoardGame.PlatformManager s_instance
     static void _set_s_instance(::Oculus::Platform::Samples::VrBoardGame::PlatformManager* value);
     // Get instance field reference: private System.UInt64 m_myID
-    [[deprecated]] uint64_t& dyn_m_myID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_myID();
     // Get instance field reference: private System.String m_myOculusID
-    [[deprecated]] ::StringW& dyn_m_myOculusID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_myOculusID();
     // static public System.UInt64 get_MyID()
     // Offset: 0xB4339C
     static uint64_t get_MyID();
     // static public System.String get_MyOculusID()
     // Offset: 0xB44874
     static ::StringW get_MyOculusID();
+    // public System.Void .ctor()
+    // Offset: 0xB56EA4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlatformManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::PlatformManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlatformManager*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xB56ADC
     void Awake();
@@ -89,19 +96,6 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // static public System.Void TerminateWithError(Oculus.Platform.Message msg)
     // Offset: 0xB39DD0
     static void TerminateWithError(::Oculus::Platform::Message* msg);
-    // public System.Void .ctor()
-    // Offset: 0xB56EA4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlatformManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::PlatformManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlatformManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrBoardGame.PlatformManager
   #pragma pack(pop)
   static check_size<sizeof(PlatformManager), 32 + sizeof(::StringW)> __Oculus_Platform_Samples_VrBoardGame_PlatformManagerSizeCheck;
@@ -124,6 +118,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::PlatformManager*), "get_MyOculusID", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::PlatformManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::PlatformManager::Awake
 // Il2CppName: Awake
 template<>
@@ -167,7 +165,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::PlatformManager*), "TerminateWithError", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::PlatformManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

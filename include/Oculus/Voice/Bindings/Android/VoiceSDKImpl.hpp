@@ -75,9 +75,9 @@ namespace Oculus::Voice::Bindings::Android {
       return *reinterpret_cast<::Oculus::Voice::Interfaces::IPlatformVoiceService*>(this);
     }
     // Get instance field reference: private Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding eventBinding
-    [[deprecated]] ::Oculus::Voice::Bindings::Android::VoiceSDKListenerBinding*& dyn_eventBinding();
+    [[deprecated("Use field access instead!")]] ::Oculus::Voice::Bindings::Android::VoiceSDKListenerBinding*& dyn_eventBinding();
     // Get instance field reference: private Facebook.WitAi.Interfaces.ITranscriptionProvider <TranscriptionProvider>k__BackingField
-    [[deprecated]] ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_$TranscriptionProvider$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_$TranscriptionProvider$k__BackingField();
     // public System.Boolean get_PlatformSupportsWit()
     // Offset: 0x18EA3C8
     bool get_PlatformSupportsWit();
@@ -102,6 +102,13 @@ namespace Oculus::Voice::Bindings::Android {
     // public System.Void set_TranscriptionProvider(Facebook.WitAi.Interfaces.ITranscriptionProvider value)
     // Offset: 0x18EA56C
     void set_TranscriptionProvider(::Facebook::WitAi::Interfaces::ITranscriptionProvider* value);
+    // public System.Void .ctor()
+    // Offset: 0x18E90FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VoiceSDKImpl* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Bindings::Android::VoiceSDKImpl::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VoiceSDKImpl*, creationType>()));
+    }
     // public System.Void SetRuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration configuration)
     // Offset: 0x18EA428
     void SetRuntimeConfiguration(::Facebook::WitAi::Configuration::WitRuntimeConfiguration* configuration);
@@ -126,15 +133,6 @@ namespace Oculus::Voice::Bindings::Android {
     // public System.Void Deactivate()
     // Offset: 0x18EA604
     void Deactivate();
-    // public System.Void .ctor()
-    // Offset: 0x18E90FC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VoiceSDKImpl* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Bindings::Android::VoiceSDKImpl::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VoiceSDKImpl*, creationType>()));
-    }
   }; // Oculus.Voice.Bindings.Android.VoiceSDKImpl
   // WARNING Not writing size check since size may be invalid!
 }
@@ -205,6 +203,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Bindings::Android::VoiceSDKImpl*), "set_TranscriptionProvider", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Voice::Bindings::Android::VoiceSDKImpl::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Voice::Bindings::Android::VoiceSDKImpl::SetRuntimeConfiguration
 // Il2CppName: SetRuntimeConfiguration
 template<>
@@ -275,7 +277,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Bindings::Android::VoiceSDKImpl*), "Deactivate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Voice::Bindings::Android::VoiceSDKImpl::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -93,32 +93,29 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private VROSC.AnimatedAppear _target
-    [[deprecated]] ::VROSC::AnimatedAppear*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppear*& dyn__target();
     // Get instance field reference: private System.Boolean _enter
-    [[deprecated]] bool& dyn__enter();
+    [[deprecated("Use field access instead!")]] bool& dyn__enter();
     // Get instance field reference: private System.Boolean _colorEffect
-    [[deprecated]] bool& dyn__colorEffect();
+    [[deprecated("Use field access instead!")]] bool& dyn__colorEffect();
     // Get instance field reference: public System.Single Appear
-    [[deprecated]] float& dyn_Appear();
+    [[deprecated("Use field access instead!")]] float& dyn_Appear();
     // Get instance field reference: public System.Single Move
-    [[deprecated]] float& dyn_Move();
+    [[deprecated("Use field access instead!")]] float& dyn_Move();
     // Get instance field reference: private UnityEngine.Vector3 _targetStart
-    [[deprecated]] ::UnityEngine::Vector3& dyn__targetStart();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__targetStart();
     // Get instance field reference: private UnityEngine.Vector3 _targetEnd
-    [[deprecated]] ::UnityEngine::Vector3& dyn__targetEnd();
-    // public System.Void Setup(VROSC.AnimatedAppear target, System.Boolean enter)
-    // Offset: 0xA33790
-    void Setup(::VROSC::AnimatedAppear* target, bool enter);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__targetEnd();
     // public System.Void .ctor()
     // Offset: 0xA33BA0
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIAppearBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIAppearBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UIAppearBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.AnimatedAppear target, System.Boolean enter)
+    // Offset: 0xA33790
+    void Setup(::VROSC::AnimatedAppear* target, bool enter);
     // public override System.Void OnGraphStart(UnityEngine.Playables.Playable playable)
     // Offset: 0xA33854
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -150,6 +147,10 @@ namespace VROSC {
   static_assert(sizeof(UIAppearBehaviour) == 0x3C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UIAppearBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIAppearBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -160,10 +161,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIAppearBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, enter});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIAppearBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIAppearBehaviour::OnGraphStart
 // Il2CppName: OnGraphStart
 template<>

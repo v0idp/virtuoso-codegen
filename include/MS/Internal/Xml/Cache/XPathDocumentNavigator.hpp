@@ -79,13 +79,13 @@ namespace MS::Internal::Xml::Cache {
       return *reinterpret_cast<::System::Xml::IXmlLineInfo*>(this);
     }
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNode[] pageCurrent
-    [[deprecated]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageCurrent();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageCurrent();
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNode[] pageParent
-    [[deprecated]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageParent();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageParent();
     // Get instance field reference: private System.Int32 idxCurrent
-    [[deprecated]] int& dyn_idxCurrent();
+    [[deprecated("Use field access instead!")]] int& dyn_idxCurrent();
     // Get instance field reference: private System.Int32 idxParent
-    [[deprecated]] int& dyn_idxParent();
+    [[deprecated("Use field access instead!")]] int& dyn_idxParent();
     // public System.Int32 get_LineNumber()
     // Offset: 0xF7A9CC
     int get_LineNumber();

@@ -142,29 +142,29 @@ namespace System::Net {
     static_assert(sizeof(::System::IO::Stream*) == 0x8);
     public:
     // Get instance field reference: private System.Uri uri
-    [[deprecated]] ::System::Uri*& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_uri();
     // Get instance field reference: private System.Net.WebHeaderCollection webHeaders
-    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_webHeaders();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollection*& dyn_webHeaders();
     // Get instance field reference: private System.Net.CookieCollection cookieCollection
-    [[deprecated]] ::System::Net::CookieCollection*& dyn_cookieCollection();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieCollection*& dyn_cookieCollection();
     // Get instance field reference: private System.String method
-    [[deprecated]] ::StringW& dyn_method();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_method();
     // Get instance field reference: private System.Version version
-    [[deprecated]] ::System::Version*& dyn_version();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_version();
     // Get instance field reference: private System.Net.HttpStatusCode statusCode
-    [[deprecated]] ::System::Net::HttpStatusCode& dyn_statusCode();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpStatusCode& dyn_statusCode();
     // Get instance field reference: private System.String statusDescription
-    [[deprecated]] ::StringW& dyn_statusDescription();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_statusDescription();
     // Get instance field reference: private System.Int64 contentLength
-    [[deprecated]] int64_t& dyn_contentLength();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_contentLength();
     // Get instance field reference: private System.String contentType
-    [[deprecated]] ::StringW& dyn_contentType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_contentType();
     // Get instance field reference: private System.Net.CookieContainer cookie_container
-    [[deprecated]] ::System::Net::CookieContainer*& dyn_cookie_container();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieContainer*& dyn_cookie_container();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // public System.Net.HttpStatusCode get_StatusCode()
     // Offset: 0x10EF2EC
     ::System::Net::HttpStatusCode get_StatusCode();
@@ -220,8 +220,6 @@ namespace System::Net {
     // Offset: 0x10EF5D0
     // Implemented from: System.Net.WebResponse
     // Base method: System.Void WebResponse::.ctor()
-    // Base method: System.Void MarshalByRefObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HttpWebResponse* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::HttpWebResponse::.ctor");

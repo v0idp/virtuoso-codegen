@@ -40,12 +40,9 @@ namespace Il2CppInspector::DLL {
       return Offset;
     }
     // Get instance field reference: public System.String Offset
-    [[deprecated]] ::StringW& dyn_Offset();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Offset();
     // public System.Void .ctor()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldOffsetAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Il2CppInspector::DLL::FieldOffsetAttribute::.ctor");

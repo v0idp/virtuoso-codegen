@@ -81,13 +81,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Collections.Hashtable elements
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_elements();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_elements();
     // Get instance field reference: private System.Object[] particles
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_particles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_particles();
     // Get instance field reference: private System.Xml.Schema.BitSet isRequired
-    [[deprecated]] ::System::Xml::Schema::BitSet*& dyn_isRequired();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::BitSet*& dyn_isRequired();
     // Get instance field reference: private System.Int32 countRequired
-    [[deprecated]] int& dyn_countRequired();
+    [[deprecated("Use field access instead!")]] int& dyn_countRequired();
     // public System.Void .ctor(System.Xml.Schema.XmlSchemaContentType contentType, System.Int32 size, System.Boolean isEmptiable)
     // Offset: 0xB5A2C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

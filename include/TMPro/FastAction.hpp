@@ -60,9 +60,16 @@ namespace TMPro {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.Action> delegates
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::Action*>*& dyn_delegates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::System::Action*>*& dyn_delegates();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Action,System.Collections.Generic.LinkedListNode`1<System.Action>> lookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>*& dyn_lookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>*& dyn_lookup();
+    // public System.Void .ctor()
+    // Offset: 0xC2947C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FastAction* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::FastAction::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FastAction*, creationType>()));
+    }
     // public System.Void Add(System.Action rhs)
     // Offset: 0xC29254
     void Add(::System::Action* rhs);
@@ -72,21 +79,16 @@ namespace TMPro {
     // public System.Void Call()
     // Offset: 0xC293E8
     void Call();
-    // public System.Void .ctor()
-    // Offset: 0xC2947C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FastAction* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::FastAction::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FastAction*, creationType>()));
-    }
   }; // TMPro.FastAction
   #pragma pack(pop)
   static check_size<sizeof(FastAction), 24 + sizeof(::System::Collections::Generic::Dictionary_2<::System::Action*, ::System::Collections::Generic::LinkedListNode_1<::System::Action*>*>*)> __TMPro_FastActionSizeCheck;
   static_assert(sizeof(FastAction) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: TMPro::FastAction::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::FastAction::Add
 // Il2CppName: Add
 template<>
@@ -113,7 +115,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::FastAction*), "Call", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: TMPro::FastAction::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

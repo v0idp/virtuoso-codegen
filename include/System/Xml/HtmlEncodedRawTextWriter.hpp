@@ -110,19 +110,19 @@ namespace System::Xml {
     // Set static field: static protected System.Xml.TernaryTreeReadOnly attributePropertySearch
     static void _set_attributePropertySearch(::System::Xml::TernaryTreeReadOnly* value);
     // Get instance field reference: protected System.Xml.ByteStack elementScope
-    [[deprecated]] ::System::Xml::ByteStack*& dyn_elementScope();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ByteStack*& dyn_elementScope();
     // Get instance field reference: protected System.Xml.ElementProperties currentElementProperties
-    [[deprecated]] ::System::Xml::ElementProperties& dyn_currentElementProperties();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ElementProperties& dyn_currentElementProperties();
     // Get instance field reference: private System.Xml.AttributeProperties currentAttributeProperties
-    [[deprecated]] ::System::Xml::AttributeProperties& dyn_currentAttributeProperties();
+    [[deprecated("Use field access instead!")]] ::System::Xml::AttributeProperties& dyn_currentAttributeProperties();
     // Get instance field reference: private System.Boolean endsWithAmpersand
-    [[deprecated]] bool& dyn_endsWithAmpersand();
+    [[deprecated("Use field access instead!")]] bool& dyn_endsWithAmpersand();
     // Get instance field reference: private System.Byte[] uriEscapingBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_uriEscapingBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_uriEscapingBuffer();
     // Get instance field reference: private System.String mediaType
-    [[deprecated]] ::StringW& dyn_mediaType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_mediaType();
     // Get instance field reference: private System.Boolean doNotEscapeUriAttributes
-    [[deprecated]] bool& dyn_doNotEscapeUriAttributes();
+    [[deprecated("Use field access instead!")]] bool& dyn_doNotEscapeUriAttributes();
     // private System.Void Init(System.Xml.XmlWriterSettings settings)
     // Offset: 0xAEEFC0
     void Init(::System::Xml::XmlWriterSettings* settings);

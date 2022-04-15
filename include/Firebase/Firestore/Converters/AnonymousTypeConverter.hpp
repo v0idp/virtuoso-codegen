@@ -68,7 +68,7 @@ namespace Firebase::Firestore::Converters {
     // Deleting conversion operator: operator ::System::Type*
     constexpr operator ::System::Type*() const noexcept = delete;
     // Get instance field reference: private readonly System.Collections.Generic.IList`1<System.Reflection.PropertyInfo> _properties
-    [[deprecated]] ::System::Collections::Generic::IList_1<::System::Reflection::PropertyInfo*>*& dyn__properties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::System::Reflection::PropertyInfo*>*& dyn__properties();
     // System.Void .ctor(System.Type targetType)
     // Offset: 0xD46C5C
     // Implemented from: Firebase.Firestore.Converters.MapConverterBase

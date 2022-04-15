@@ -84,7 +84,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.WriteState Start
     static void _set_Start(::Newtonsoft::Json::WriteState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.WriteState
   #pragma pack(pop)
   static check_size<sizeof(WriteState), 0 + sizeof(int)> __Newtonsoft_Json_WriteStateSizeCheck;

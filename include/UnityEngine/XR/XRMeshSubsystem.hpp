@@ -46,23 +46,23 @@ namespace UnityEngine::XR {
   // [NativeHeaderAttribute] Offset: 6C961C
   class XRMeshSubsystem : public ::UnityEngine::IntegratedSubsystem_1<::UnityEngine::XR::XRMeshSubsystemDescriptor*> {
     public:
-    // private System.Void InvokeMeshReadyDelegate(UnityEngine.XR.MeshGenerationResult result, System.Action`1<UnityEngine.XR.MeshGenerationResult> onMeshGenerationComplete)
-    // Offset: 0x18C6ECC
-    void InvokeMeshReadyDelegate(::UnityEngine::XR::MeshGenerationResult result, ::System::Action_1<::UnityEngine::XR::MeshGenerationResult>* onMeshGenerationComplete);
     // public System.Void .ctor()
     // Offset: 0x18C6F54
-    // Implemented from: UnityEngine.IntegratedSubsystem`1
-    // Base method: System.Void IntegratedSubsystem_1::.ctor()
-    // Base method: System.Void IntegratedSubsystem::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRMeshSubsystem* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::XRMeshSubsystem::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XRMeshSubsystem*, creationType>()));
     }
+    // private System.Void InvokeMeshReadyDelegate(UnityEngine.XR.MeshGenerationResult result, System.Action`1<UnityEngine.XR.MeshGenerationResult> onMeshGenerationComplete)
+    // Offset: 0x18C6ECC
+    void InvokeMeshReadyDelegate(::UnityEngine::XR::MeshGenerationResult result, ::System::Action_1<::UnityEngine::XR::MeshGenerationResult>* onMeshGenerationComplete);
   }; // UnityEngine.XR.XRMeshSubsystem
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::XR::XRMeshSubsystem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::XRMeshSubsystem::InvokeMeshReadyDelegate
 // Il2CppName: InvokeMeshReadyDelegate
 template<>
@@ -73,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::XRMeshSubsystem*), "InvokeMeshReadyDelegate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{result, onMeshGenerationComplete});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::XRMeshSubsystem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

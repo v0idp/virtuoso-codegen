@@ -108,7 +108,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState LeaveAsIs
       static void _set_LeaveAsIs(::UnityEngine::Timeline::ActivationTrack::PostPlaybackState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState
     #pragma pack(pop)
     static check_size<sizeof(ActivationTrack::PostPlaybackState), 0 + sizeof(int)> __UnityEngine_Timeline_ActivationTrack_PostPlaybackStateSizeCheck;
@@ -128,9 +128,9 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::UnityEngine::Timeline::ActivationMixerPlayable*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState m_PostPlaybackState
-    [[deprecated]] ::UnityEngine::Timeline::ActivationTrack::PostPlaybackState& dyn_m_PostPlaybackState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::ActivationTrack::PostPlaybackState& dyn_m_PostPlaybackState();
     // Get instance field reference: private UnityEngine.Timeline.ActivationMixerPlayable m_ActivationMixer
-    [[deprecated]] ::UnityEngine::Timeline::ActivationMixerPlayable*& dyn_m_ActivationMixer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::ActivationMixerPlayable*& dyn_m_ActivationMixer();
     // public UnityEngine.Timeline.ActivationTrack/UnityEngine.Timeline.PostPlaybackState get_postPlaybackState()
     // Offset: 0xC69918
     ::UnityEngine::Timeline::ActivationTrack::PostPlaybackState get_postPlaybackState();
@@ -144,10 +144,6 @@ namespace UnityEngine::Timeline {
     // Offset: 0xC69D64
     // Implemented from: UnityEngine.Timeline.TrackAsset
     // Base method: System.Void TrackAsset::.ctor()
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ActivationTrack* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ActivationTrack::.ctor");

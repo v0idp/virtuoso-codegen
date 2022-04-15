@@ -63,17 +63,17 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: public System.String uri
-    [[deprecated]] ::StringW& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_uri();
     // Get instance field reference: public System.Xml.XmlSqlBinaryReader/System.Xml.NamespaceDecl scopeLink
-    [[deprecated]] ::System::Xml::XmlSqlBinaryReader::NamespaceDecl*& dyn_scopeLink();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlSqlBinaryReader::NamespaceDecl*& dyn_scopeLink();
     // Get instance field reference: public System.Xml.XmlSqlBinaryReader/System.Xml.NamespaceDecl prevLink
-    [[deprecated]] ::System::Xml::XmlSqlBinaryReader::NamespaceDecl*& dyn_prevLink();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlSqlBinaryReader::NamespaceDecl*& dyn_prevLink();
     // Get instance field reference: public System.Int32 scope
-    [[deprecated]] int& dyn_scope();
+    [[deprecated("Use field access instead!")]] int& dyn_scope();
     // Get instance field reference: public System.Boolean implied
-    [[deprecated]] bool& dyn_implied();
+    [[deprecated("Use field access instead!")]] bool& dyn_implied();
     // public System.Void .ctor(System.String prefix, System.String nsuri, System.Xml.XmlSqlBinaryReader/System.Xml.NamespaceDecl nextInScope, System.Xml.XmlSqlBinaryReader/System.Xml.NamespaceDecl prevDecl, System.Int32 scope, System.Boolean implied)
     // Offset: 0xC225F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

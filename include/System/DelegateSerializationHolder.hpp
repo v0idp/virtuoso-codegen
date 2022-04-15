@@ -67,7 +67,7 @@ namespace System {
       return delegate;
     }
     // Get instance field reference: private System.Delegate _delegate
-    [[deprecated]] ::System::Delegate*& dyn__delegate();
+    [[deprecated("Use field access instead!")]] ::System::Delegate*& dyn__delegate();
     // private System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext ctx)
     // Offset: 0x129C564
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

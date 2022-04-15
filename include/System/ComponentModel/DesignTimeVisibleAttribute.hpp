@@ -54,7 +54,7 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.DesignTimeVisibleAttribute Default
     static void _set_Default(::System::ComponentModel::DesignTimeVisibleAttribute* value);
     // Get instance field reference: private System.Boolean visible
-    [[deprecated]] bool& dyn_visible();
+    [[deprecated("Use field access instead!")]] bool& dyn_visible();
     // public System.Boolean get_Visible()
     // Offset: 0xEF8424
     bool get_Visible();

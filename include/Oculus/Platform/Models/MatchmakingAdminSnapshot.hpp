@@ -50,9 +50,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.Models.MatchmakingAdminSnapshotCandidateList Candidates
-    [[deprecated]] ::Oculus::Platform::Models::MatchmakingAdminSnapshotCandidateList*& dyn_Candidates();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::MatchmakingAdminSnapshotCandidateList*& dyn_Candidates();
     // Get instance field reference: public readonly System.Double MyCurrentThreshold
-    [[deprecated]] double& dyn_MyCurrentThreshold();
+    [[deprecated("Use field access instead!")]] double& dyn_MyCurrentThreshold();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB42394
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

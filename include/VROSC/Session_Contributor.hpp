@@ -51,17 +51,15 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String UserId
-    [[deprecated]] ::StringW& dyn_UserId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserId();
     // Get instance field reference: public System.String UserName
-    [[deprecated]] ::StringW& dyn_UserName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserName();
     // Get instance field reference: public System.String SessionId
-    [[deprecated]] ::StringW& dyn_SessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SessionId();
     // Get instance field reference: public System.String Date
-    [[deprecated]] ::StringW& dyn_Date();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Date();
     // public System.Void .ctor()
     // Offset: 0x8D501C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Session::Contributor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Session::Contributor::.ctor");

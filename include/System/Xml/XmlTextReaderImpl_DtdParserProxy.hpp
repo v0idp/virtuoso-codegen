@@ -71,7 +71,7 @@ namespace System::Xml {
       return reader;
     }
     // Get instance field reference: private System.Xml.XmlTextReaderImpl reader
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl*& dyn_reader();
     // private System.Xml.XmlNameTable System.Xml.IDtdParserAdapter.get_NameTable()
     // Offset: 0xC22FD0
     ::System::Xml::XmlNameTable* System_Xml_IDtdParserAdapter_get_NameTable();

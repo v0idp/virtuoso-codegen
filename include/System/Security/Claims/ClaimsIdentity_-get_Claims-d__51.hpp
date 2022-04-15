@@ -96,19 +96,19 @@ namespace System::Security::Claims {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Security::Claims::Claim*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Security.Claims.Claim <>2__current
-    [[deprecated]] ::System::Security::Claims::Claim*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Security::Claims::Claim*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public System.Security.Claims.ClaimsIdentity <>4__this
-    [[deprecated]] ::System::Security::Claims::ClaimsIdentity*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Security::Claims::ClaimsIdentity*& dyn_$$4__this();
     // Get instance field reference: private System.Int32 <i>5__1
-    [[deprecated]] int& dyn_$i$5__1();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__1();
     // Get instance field reference: private System.Int32 <j>5__2
-    [[deprecated]] int& dyn_$j$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$j$5__2();
     // Get instance field reference: private System.Collections.Generic.IEnumerator`1<System.Security.Claims.Claim> <>7__wrap1
-    [[deprecated]] ::System::Collections::Generic::IEnumerator_1<::System::Security::Claims::Claim*>*& dyn_$$7__wrap1();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IEnumerator_1<::System::Security::Claims::Claim*>*& dyn_$$7__wrap1();
     // private System.Security.Claims.Claim System.Collections.Generic.IEnumerator<System.Security.Claims.Claim>.get_Current()
     // Offset: 0x13A7CB4
     ::System::Security::Claims::Claim* System_Collections_Generic_IEnumerator$System_Security_Claims_Claim$_get_Current();

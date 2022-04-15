@@ -57,11 +57,11 @@ namespace GlobalNamespace {
     // Set static field: static public System.Int32 StructSize
     static void _set_StructSize(int value);
     // Get instance field reference: public System.UInt32 protocolIdentifier
-    [[deprecated]] uint& dyn_protocolIdentifier();
+    [[deprecated("Use field access instead!")]] uint& dyn_protocolIdentifier();
     // Get instance field reference: public System.Int32 payloadType
-    [[deprecated]] int& dyn_payloadType();
+    [[deprecated("Use field access instead!")]] int& dyn_payloadType();
     // Get instance field reference: public System.Int32 payloadLength
-    [[deprecated]] int& dyn_payloadLength();
+    [[deprecated("Use field access instead!")]] int& dyn_payloadLength();
     // public System.Byte[] ToBytes()
     // Offset: 0x852D38
     ::ArrayW<uint8_t> ToBytes();

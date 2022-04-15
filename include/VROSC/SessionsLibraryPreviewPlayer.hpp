@@ -107,25 +107,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.PreviewOptionsUI _previewOptionsUI
-    [[deprecated]] ::VROSC::PreviewOptionsUI*& dyn__previewOptionsUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::PreviewOptionsUI*& dyn__previewOptionsUI();
     // Get instance field reference: private UnityEngine.AudioSource _previewAudio
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__previewAudio();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__previewAudio();
     // Get instance field reference: private VROSC.TimeSlider _timeSlider
-    [[deprecated]] ::VROSC::TimeSlider*& dyn__timeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::TimeSlider*& dyn__timeSlider();
     // Get instance field reference: private System.Single _currentPreviewNormalizeMultiplier
-    [[deprecated]] float& dyn__currentPreviewNormalizeMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn__currentPreviewNormalizeMultiplier();
     // Get instance field reference: private VROSC.SessionItemData _itemData
-    [[deprecated]] ::VROSC::SessionItemData*& dyn__itemData();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionItemData*& dyn__itemData();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPlaying$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Boolean> OnPlayingStateChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnPlayingStateChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnPlayingStateChanged();
     // public System.Boolean get_IsPlaying()
     // Offset: 0x198BC34
     bool get_IsPlaying();
     // private System.Void set_IsPlaying(System.Boolean value)
     // Offset: 0x198BC3C
     void set_IsPlaying(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x198CB0C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SessionsLibraryPreviewPlayer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsLibraryPreviewPlayer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SessionsLibraryPreviewPlayer*, creationType>()));
+    }
     // protected System.Void OnEnable()
     // Offset: 0x198BC48
     void OnEnable();
@@ -156,19 +163,6 @@ namespace VROSC {
     // public System.Single GetPreviewLength()
     // Offset: 0x198CA58
     float GetPreviewLength();
-    // public System.Void .ctor()
-    // Offset: 0x198CB0C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SessionsLibraryPreviewPlayer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsLibraryPreviewPlayer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SessionsLibraryPreviewPlayer*, creationType>()));
-    }
   }; // VROSC.SessionsLibraryPreviewPlayer
   #pragma pack(pop)
   static check_size<sizeof(SessionsLibraryPreviewPlayer), 72 + sizeof(::System::Action_1<bool>*)> __VROSC_SessionsLibraryPreviewPlayerSizeCheck;
@@ -192,6 +186,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryPreviewPlayer*), "set_IsPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::SessionsLibraryPreviewPlayer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SessionsLibraryPreviewPlayer::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -279,7 +277,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryPreviewPlayer*), "GetPreviewLength", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsLibraryPreviewPlayer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -60,7 +60,7 @@ namespace Mono {
       return value;
     }
     // Get instance field reference: private Mono.RuntimeStructs/Mono.GenericParamInfo* value
-    [[deprecated]] ::Mono::RuntimeStructs::GenericParamInfo*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Mono::RuntimeStructs::GenericParamInfo*& dyn_value();
     // System.Type[] get_Constraints()
     // Offset: 0xCE4C58
     ::ArrayW<::System::Type*> get_Constraints();

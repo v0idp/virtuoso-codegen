@@ -87,7 +87,7 @@ namespace Firebase::Firestore {
       // Set static field: static public Firebase.Firestore.SetOptions/Firebase.Firestore.Type Merge
       static void _set_Merge(::Firebase::Firestore::SetOptions::Type value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Firebase.Firestore.SetOptions/Firebase.Firestore.Type
     #pragma pack(pop)
     static check_size<sizeof(SetOptions::Type), 0 + sizeof(int)> __Firebase_Firestore_SetOptions_TypeSizeCheck;
@@ -123,11 +123,11 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Func`3<System.Int32,Firebase.Firestore.FieldPath,System.Int32> <>f__am$cache2
     static void _set_$$f__am$cache2(::System::Func_3<int, ::Firebase::Firestore::FieldPath*, int>* value);
     // Get instance field reference: private readonly Firebase.Firestore.SetOptionsProxy _proxy
-    [[deprecated]] ::Firebase::Firestore::SetOptionsProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::SetOptionsProxy*& dyn__proxy();
     // Get instance field reference: private Firebase.Firestore.SetOptions/Firebase.Firestore.Type setType
-    [[deprecated]] ::Firebase::Firestore::SetOptions::Type& dyn_setType();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::SetOptions::Type& dyn_setType();
     // Get instance field reference: private Firebase.Firestore.FieldPath[] fields
-    [[deprecated]] ::ArrayW<::Firebase::Firestore::FieldPath*>& dyn_fields();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Firebase::Firestore::FieldPath*>& dyn_fields();
     // Firebase.Firestore.SetOptionsProxy get_Proxy()
     // Offset: 0xD63BF4
     ::Firebase::Firestore::SetOptionsProxy* get_Proxy();

@@ -53,7 +53,7 @@ namespace System::Linq::Expressions {
       return arg0;
     }
     // Get instance field reference: private System.Object _arg0
-    [[deprecated]] ::Il2CppObject*& dyn__arg0();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__arg0();
     // public System.Void .ctor(System.Linq.Expressions.Expression lambda, System.Type returnType, System.Linq.Expressions.Expression arg0)
     // Offset: 0xF1F33C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -74,15 +74,15 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // Get instance field reference: public System.Boolean isOgg
-    [[deprecated]] bool& dyn_isOgg();
+    [[deprecated("Use field access instead!")]] bool& dyn_isOgg();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x8D1578
     void MoveNext();

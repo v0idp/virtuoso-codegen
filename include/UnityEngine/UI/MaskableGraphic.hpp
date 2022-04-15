@@ -139,25 +139,25 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::UnityEngine::UI::IMaskable*>(this);
     }
     // Get instance field reference: protected System.Boolean m_ShouldRecalculateStencil
-    [[deprecated]] bool& dyn_m_ShouldRecalculateStencil();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShouldRecalculateStencil();
     // Get instance field reference: protected UnityEngine.Material m_MaskMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_MaskMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_MaskMaterial();
     // Get instance field reference: private UnityEngine.UI.RectMask2D m_ParentMask
-    [[deprecated]] ::UnityEngine::UI::RectMask2D*& dyn_m_ParentMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::RectMask2D*& dyn_m_ParentMask();
     // Get instance field reference: private System.Boolean m_Maskable
-    [[deprecated]] bool& dyn_m_Maskable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Maskable();
     // Get instance field reference: private System.Boolean m_IsMaskingGraphic
-    [[deprecated]] bool& dyn_m_IsMaskingGraphic();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsMaskingGraphic();
     // Get instance field reference: protected System.Boolean m_IncludeForMasking
-    [[deprecated]] bool& dyn_m_IncludeForMasking();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IncludeForMasking();
     // Get instance field reference: private UnityEngine.UI.MaskableGraphic/UnityEngine.UI.CullStateChangedEvent m_OnCullStateChanged
-    [[deprecated]] ::UnityEngine::UI::MaskableGraphic::CullStateChangedEvent*& dyn_m_OnCullStateChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::MaskableGraphic::CullStateChangedEvent*& dyn_m_OnCullStateChanged();
     // Get instance field reference: protected System.Boolean m_ShouldRecalculate
-    [[deprecated]] bool& dyn_m_ShouldRecalculate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShouldRecalculate();
     // Get instance field reference: protected System.Int32 m_StencilValue
-    [[deprecated]] int& dyn_m_StencilValue();
+    [[deprecated("Use field access instead!")]] int& dyn_m_StencilValue();
     // Get instance field reference: private readonly UnityEngine.Vector3[] m_Corners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
     // public UnityEngine.UI.MaskableGraphic/UnityEngine.UI.CullStateChangedEvent get_onCullStateChanged()
     // Offset: 0x1425A40
     ::UnityEngine::UI::MaskableGraphic::CullStateChangedEvent* get_onCullStateChanged();
@@ -214,11 +214,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.Graphic
     // Base method: System.Void Graphic::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MaskableGraphic* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::MaskableGraphic::.ctor");

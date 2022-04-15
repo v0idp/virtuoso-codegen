@@ -60,13 +60,13 @@ namespace NatSuite::Examples {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public NatSuite.Examples.HotMic <>4__this
-    [[deprecated]] ::NatSuite::Examples::HotMic*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Examples::HotMic*& dyn_$$4__this();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter`1<System.Boolean> <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter_1<bool>& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter_1<bool>& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x195809C
     void MoveNext();

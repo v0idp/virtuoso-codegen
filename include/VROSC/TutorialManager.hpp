@@ -138,27 +138,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Tutorial _tutorial
-    [[deprecated]] ::VROSC::Tutorial*& dyn__tutorial();
+    [[deprecated("Use field access instead!")]] ::VROSC::Tutorial*& dyn__tutorial();
     // Get instance field reference: private TutorialSettings _settings
-    [[deprecated]] ::GlobalNamespace::TutorialSettings*& dyn__settings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TutorialSettings*& dyn__settings();
     // Get instance field reference: private VROSC.TutorialPanel _tutorialPanel
-    [[deprecated]] ::VROSC::TutorialPanel*& dyn__tutorialPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialPanel*& dyn__tutorialPanel();
     // Get instance field reference: private UnityEngine.AudioSource _timelineVOSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__timelineVOSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__timelineVOSource();
     // Get instance field reference: private UnityEngine.AudioSource _replayVOSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__replayVOSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__replayVOSource();
     // Get instance field reference: private VROSC.StateMachine _stateMachine
-    [[deprecated]] ::VROSC::StateMachine*& dyn__stateMachine();
+    [[deprecated("Use field access instead!")]] ::VROSC::StateMachine*& dyn__stateMachine();
     // Get instance field reference: private VROSC.TutorialCompletedState _completedState
-    [[deprecated]] ::VROSC::TutorialCompletedState*& dyn__completedState();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialCompletedState*& dyn__completedState();
     // Get instance field reference: private System.Boolean _isRunning
-    [[deprecated]] bool& dyn__isRunning();
+    [[deprecated("Use field access instead!")]] bool& dyn__isRunning();
     // Get instance field reference: private VROSC.TutorialStep _currentStep
-    [[deprecated]] ::VROSC::TutorialStep*& dyn__currentStep();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialStep*& dyn__currentStep();
     // Get instance field reference: private System.Boolean <HasRecordedCowbell>k__BackingField
-    [[deprecated]] bool& dyn_$HasRecordedCowbell$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasRecordedCowbell$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.TutorialEvent> OnEvent
-    [[deprecated]] ::System::Action_1<::VROSC::TutorialEvent>*& dyn_OnEvent();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::TutorialEvent>*& dyn_OnEvent();
     // public TutorialSettings get_Settings()
     // Offset: 0xA2FFF4
     ::GlobalNamespace::TutorialSettings* get_Settings();
@@ -174,6 +174,13 @@ namespace VROSC {
     // private System.Void set_HasRecordedCowbell(System.Boolean value)
     // Offset: 0xA30014
     void set_HasRecordedCowbell(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xA3155C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TutorialManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TutorialManager*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0xA30020
     void Awake();
@@ -204,19 +211,6 @@ namespace VROSC {
     // public System.Void SetHasRecordedCowbell(System.Boolean hasRecordedCowbell)
     // Offset: 0xA31550
     void SetHasRecordedCowbell(bool hasRecordedCowbell);
-    // public System.Void .ctor()
-    // Offset: 0xA3155C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TutorialManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TutorialManager*, creationType>()));
-    }
   }; // VROSC.TutorialManager
   #pragma pack(pop)
   static check_size<sizeof(TutorialManager), 104 + sizeof(::System::Action_1<::VROSC::TutorialEvent>*)> __VROSC_TutorialManagerSizeCheck;
@@ -264,6 +258,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialManager*), "set_HasRecordedCowbell", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::TutorialManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TutorialManager::Awake
 // Il2CppName: Awake
 template<>
@@ -351,7 +349,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialManager*), "SetHasRecordedCowbell", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hasRecordedCowbell});
   }
 };
-// Writing MetadataGetter for method: VROSC::TutorialManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

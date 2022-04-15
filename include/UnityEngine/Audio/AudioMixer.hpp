@@ -41,6 +41,13 @@ namespace UnityEngine::Audio {
   // [ExcludeFromPresetAttribute] Offset: FFFFFFFF
   class AudioMixer : public ::UnityEngine::Object {
     public:
+    // System.Void .ctor()
+    // Offset: 0x18D7EE0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioMixer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Audio::AudioMixer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioMixer*, creationType>()));
+    }
     // System.Void TransitionToSnapshot(UnityEngine.Audio.AudioMixerSnapshot snapshot, System.Single timeToReach)
     // Offset: 0x18D7F44
     void TransitionToSnapshot(::UnityEngine::Audio::AudioMixerSnapshot* snapshot, float timeToReach);
@@ -56,20 +63,14 @@ namespace UnityEngine::Audio {
     // public System.Boolean GetFloat(System.String name, out System.Single value)
     // Offset: 0x18D8388
     bool GetFloat(::StringW name, ByRef<float> value);
-    // System.Void .ctor()
-    // Offset: 0x18D7EE0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioMixer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Audio::AudioMixer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioMixer*, creationType>()));
-    }
   }; // UnityEngine.Audio.AudioMixer
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Audio::AudioMixer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Audio::AudioMixer::TransitionToSnapshot
 // Il2CppName: TransitionToSnapshot
 template<>
@@ -121,7 +122,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Audio::AudioMixer*), "GetFloat", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{name, value});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Audio::AudioMixer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

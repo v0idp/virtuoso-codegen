@@ -78,17 +78,17 @@ namespace Newtonsoft::Json::Serialization {
     ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling> ItemTypeNameHandling;
     public:
     // Get instance field reference: private Newtonsoft.Json.Serialization.JsonContract _itemContract
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonContract*& dyn__itemContract();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonContract*& dyn__itemContract();
     // Get instance field reference: private Newtonsoft.Json.Serialization.JsonContract _finalItemContract
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonContract*& dyn__finalItemContract();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonContract*& dyn__finalItemContract();
     // Get instance field reference: private Newtonsoft.Json.JsonConverter <ItemConverter>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::JsonConverter*& dyn_$ItemConverter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonConverter*& dyn_$ItemConverter$k__BackingField();
     // Get instance field reference: private System.Nullable`1<System.Boolean> <ItemIsReference>k__BackingField
-    [[deprecated]] ::System::Nullable_1<bool>& dyn_$ItemIsReference$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_$ItemIsReference$k__BackingField();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.ReferenceLoopHandling> <ItemReferenceLoopHandling>k__BackingField
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn_$ItemReferenceLoopHandling$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn_$ItemReferenceLoopHandling$k__BackingField();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.TypeNameHandling> <ItemTypeNameHandling>k__BackingField
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn_$ItemTypeNameHandling$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn_$ItemTypeNameHandling$k__BackingField();
     // Newtonsoft.Json.Serialization.JsonContract get_ItemContract()
     // Offset: 0xEF2928
     ::Newtonsoft::Json::Serialization::JsonContract* get_ItemContract();

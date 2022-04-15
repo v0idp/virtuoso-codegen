@@ -159,33 +159,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TransformMover _mover
-    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private VROSC.DrumpadPlayer _player
-    [[deprecated]] ::VROSC::DrumpadPlayer*& dyn__player();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumpadPlayer*& dyn__player();
     // Get instance field reference: private VROSC.DrumpadUI _UI
-    [[deprecated]] ::VROSC::DrumpadUI*& dyn__UI();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumpadUI*& dyn__UI();
     // Get instance field reference: private UnityEngine.Playables.PlayableDirector _playableDirector
-    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _enterTimeline
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _exitTimeline
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
     // Get instance field reference: private UnityEngine.Collider[] _overlaps
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__overlaps();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__overlaps();
     // Get instance field reference: private VROSC.DrumpadSpawner _overlappingSpawner
-    [[deprecated]] ::VROSC::DrumpadSpawner*& dyn__overlappingSpawner();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumpadSpawner*& dyn__overlappingSpawner();
     // Get instance field reference: private System.Single _spawnerDeleteDistance
-    [[deprecated]] float& dyn__spawnerDeleteDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__spawnerDeleteDistance();
     // Get instance field reference: private VROSC.DrumpadSpawner _drumpadSpawner
-    [[deprecated]] ::VROSC::DrumpadSpawner*& dyn__drumpadSpawner();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumpadSpawner*& dyn__drumpadSpawner();
     // Get instance field reference: private System.Int32 _empadId
-    [[deprecated]] int& dyn__empadId();
+    [[deprecated("Use field access instead!")]] int& dyn__empadId();
     // Get instance field reference: private UnityEngine.Transform _parent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__parent();
     // Get instance field reference: private VROSC.ModularDrumsController _instrumentController
-    [[deprecated]] ::VROSC::ModularDrumsController*& dyn__instrumentController();
+    [[deprecated("Use field access instead!")]] ::VROSC::ModularDrumsController*& dyn__instrumentController();
     // Get instance field reference: public System.Action`1<VROSC.Drumpad> OnRemoveDrumpad
-    [[deprecated]] ::System::Action_1<::VROSC::Drumpad*>*& dyn_OnRemoveDrumpad();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Drumpad*>*& dyn_OnRemoveDrumpad();
     // public VROSC.DrumpadSpawner get_DrumpadSpawner()
     // Offset: 0x8E6F88
     ::VROSC::DrumpadSpawner* get_DrumpadSpawner();
@@ -195,6 +195,13 @@ namespace VROSC {
     // public VROSC.TransformMover get_TransformMover()
     // Offset: 0x8E6F98
     ::VROSC::TransformMover* get_TransformMover();
+    // public System.Void .ctor()
+    // Offset: 0x8E83BC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Drumpad* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Drumpad::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Drumpad*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x8E6FA0
     void Awake();
@@ -231,19 +238,6 @@ namespace VROSC {
     // private System.Void SynthesizerChanged(System.Boolean useExternal)
     // Offset: 0x8E8370
     void SynthesizerChanged(bool useExternal);
-    // public System.Void .ctor()
-    // Offset: 0x8E83BC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Drumpad* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Drumpad::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Drumpad*, creationType>()));
-    }
   }; // VROSC.Drumpad
   #pragma pack(pop)
   static check_size<sizeof(Drumpad), 128 + sizeof(::System::Action_1<::VROSC::Drumpad*>*)> __VROSC_DrumpadSizeCheck;
@@ -274,6 +268,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Tr
     return ::il2cpp_utils::FindMethod(classof(VROSC::Drumpad*), "get_TransformMover", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::Drumpad::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Drumpad::Awake
 // Il2CppName: Awake
 template<>
@@ -384,7 +382,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Drumpad*), "SynthesizerChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{useExternal});
   }
 };
-// Writing MetadataGetter for method: VROSC::Drumpad::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -72,15 +72,22 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // Get instance field reference: public System.Boolean isCommunity
-    [[deprecated]] bool& dyn_isCommunity();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCommunity();
     // Get instance field reference: public System.Boolean isOgg
-    [[deprecated]] bool& dyn_isOgg();
+    [[deprecated("Use field access instead!")]] bool& dyn_isOgg();
     // Get instance field reference: public System.Action <>9__2
-    [[deprecated]] ::System::Action*& dyn_$$9__2();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_$$9__2();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__3
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__3();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__3();
+    // public System.Void .ctor()
+    // Offset: 0x95B144
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CloudStateManager::$$c__DisplayClass23_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CloudStateManager::$$c__DisplayClass23_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CloudStateManager::$$c__DisplayClass23_0*, creationType>()));
+    }
     // System.Void <CoDeleteSession>b__0()
     // Offset: 0x95B14C
     void $CoDeleteSession$b__0();
@@ -93,21 +100,16 @@ namespace VROSC {
     // System.Void <CoDeleteSession>b__1(VROSC.Error e)
     // Offset: 0x95B430
     void $CoDeleteSession$b__1(::VROSC::Error e);
-    // public System.Void .ctor()
-    // Offset: 0x95B144
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CloudStateManager::$$c__DisplayClass23_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CloudStateManager::$$c__DisplayClass23_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CloudStateManager::$$c__DisplayClass23_0*, creationType>()));
-    }
   }; // VROSC.CloudStateManager/VROSC.<>c__DisplayClass23_0
   #pragma pack(pop)
   static check_size<sizeof(CloudStateManager::$$c__DisplayClass23_0), 40 + sizeof(::System::Action_1<::VROSC::Error>*)> __VROSC_CloudStateManager_$$c__DisplayClass23_0SizeCheck;
   static_assert(sizeof(CloudStateManager::$$c__DisplayClass23_0) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::CloudStateManager::$$c__DisplayClass23_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CloudStateManager::$$c__DisplayClass23_0::$CoDeleteSession$b__0
 // Il2CppName: <CoDeleteSession>b__0
 template<>
@@ -142,7 +144,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::CloudStateManager::$$c__DisplayClass23_0*), "<CoDeleteSession>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e});
   }
 };
-// Writing MetadataGetter for method: VROSC::CloudStateManager::$$c__DisplayClass23_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

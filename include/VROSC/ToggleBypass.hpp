@@ -45,17 +45,12 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::SignalNode*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.SignalNode[] _nodesToToggle
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__nodesToToggle();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__nodesToToggle();
     // public System.Void .ctor()
     // Offset: 0xA28180
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ToggleBypass* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ToggleBypass::.ctor");

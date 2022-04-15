@@ -131,11 +131,11 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::System::Collections::Generic::List_1<::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: private System.Type _rootType
-    [[deprecated]] ::System::Type*& dyn__rootType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__rootType();
     // Get instance field reference: private System.Int32 _rootLevel
-    [[deprecated]] int& dyn__rootLevel();
+    [[deprecated("Use field access instead!")]] int& dyn__rootLevel();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Object> _serializeStack
-    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__serializeStack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__serializeStack();
     // public System.Void Serialize(Newtonsoft.Json.JsonWriter jsonWriter, System.Object value, System.Type objectType)
     // Offset: 0xF50D30
     void Serialize(::Newtonsoft::Json::JsonWriter* jsonWriter, ::Il2CppObject* value, ::System::Type* objectType);

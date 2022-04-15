@@ -134,31 +134,31 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpadData*>*) == 0x8);
     public:
     // Get instance field reference: public System.Single FirstRecordingLengthInBars
-    [[deprecated]] float& dyn_FirstRecordingLengthInBars();
+    [[deprecated("Use field access instead!")]] float& dyn_FirstRecordingLengthInBars();
     // Get instance field reference: public System.Single FirstRecordingLengthInSamples
-    [[deprecated]] float& dyn_FirstRecordingLengthInSamples();
+    [[deprecated("Use field access instead!")]] float& dyn_FirstRecordingLengthInSamples();
     // Get instance field reference: public System.Single FirstRecordingBeatsPerBar
-    [[deprecated]] float& dyn_FirstRecordingBeatsPerBar();
+    [[deprecated("Use field access instead!")]] float& dyn_FirstRecordingBeatsPerBar();
     // Get instance field reference: public System.Single Volume
-    [[deprecated]] float& dyn_Volume();
+    [[deprecated("Use field access instead!")]] float& dyn_Volume();
     // Get instance field reference: public System.Boolean AutoSortUserGroups
-    [[deprecated]] bool& dyn_AutoSortUserGroups();
+    [[deprecated("Use field access instead!")]] bool& dyn_AutoSortUserGroups();
     // Get instance field reference: public System.Boolean RecordButtonIsAttached
-    [[deprecated]] bool& dyn_RecordButtonIsAttached();
+    [[deprecated("Use field access instead!")]] bool& dyn_RecordButtonIsAttached();
     // Get instance field reference: public System.Single[] RecordButtonPosition
-    [[deprecated]] ::ArrayW<float>& dyn_RecordButtonPosition();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_RecordButtonPosition();
     // Get instance field reference: public System.Single[] RecordButtonRotation
-    [[deprecated]] ::ArrayW<float>& dyn_RecordButtonRotation();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_RecordButtonRotation();
     // Get instance field reference: public System.Single[] RecordButtonScale
-    [[deprecated]] ::ArrayW<float>& dyn_RecordButtonScale();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_RecordButtonScale();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData DefaultPlaybackConfig
-    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_DefaultPlaybackConfig();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigData*& dyn_DefaultPlaybackConfig();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.LoopStationTrack> LoopStationTracks
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationTrack*>*& dyn_LoopStationTracks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopStationTrack*>*& dyn_LoopStationTracks();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.LoopStationTrackGroup> LoopStationTrackGroups
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationTrackGroup*>*& dyn_LoopStationTrackGroups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopStationTrackGroup*>*& dyn_LoopStationTrackGroups();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.LoopStationLaunchpadData> LoopStationLaunchPads
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpadData*>*& dyn_LoopStationLaunchPads();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopStationLaunchpadData*>*& dyn_LoopStationLaunchPads();
     // public override System.String get_Key()
     // Offset: 0x196E498
     // Implemented from: VROSC.BaseDataModel
@@ -174,7 +174,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolDataModel
     // Base method: System.Void ToolDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationDataModel::.ctor");

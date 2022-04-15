@@ -100,17 +100,17 @@ namespace System {
       return *reinterpret_cast<::System::Runtime::Serialization::IDeserializationCallback*>(this);
     }
     // Get instance field reference: private System.DateTime m_timeOfDay
-    [[deprecated]] ::System::DateTime& dyn_m_timeOfDay();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_timeOfDay();
     // Get instance field reference: private System.Byte m_month
-    [[deprecated]] uint8_t& dyn_m_month();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_month();
     // Get instance field reference: private System.Byte m_week
-    [[deprecated]] uint8_t& dyn_m_week();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_week();
     // Get instance field reference: private System.Byte m_day
-    [[deprecated]] uint8_t& dyn_m_day();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_day();
     // Get instance field reference: private System.DayOfWeek m_dayOfWeek
-    [[deprecated]] ::System::DayOfWeek& dyn_m_dayOfWeek();
+    [[deprecated("Use field access instead!")]] ::System::DayOfWeek& dyn_m_dayOfWeek();
     // Get instance field reference: private System.Boolean m_isFixedDateRule
-    [[deprecated]] bool& dyn_m_isFixedDateRule();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isFixedDateRule();
     // public System.DateTime get_TimeOfDay()
     // Offset: 0x1898538
     ::System::DateTime get_TimeOfDay();

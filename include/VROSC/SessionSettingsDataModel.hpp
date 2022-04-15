@@ -97,21 +97,21 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Boolean UseExternalSynthesizer
-    [[deprecated]] bool& dyn_UseExternalSynthesizer();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseExternalSynthesizer();
     // Get instance field reference: public System.Boolean SyncIsInternal
-    [[deprecated]] bool& dyn_SyncIsInternal();
+    [[deprecated("Use field access instead!")]] bool& dyn_SyncIsInternal();
     // Get instance field reference: public System.Int32 InternalBeatLengthInSamples
-    [[deprecated]] int& dyn_InternalBeatLengthInSamples();
+    [[deprecated("Use field access instead!")]] int& dyn_InternalBeatLengthInSamples();
     // Get instance field reference: public System.Int32 SelectedScalePresetIndex
-    [[deprecated]] int& dyn_SelectedScalePresetIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_SelectedScalePresetIndex();
     // Get instance field reference: public VROSC.Note SelectedStartNote
-    [[deprecated]] ::VROSC::Note& dyn_SelectedStartNote();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn_SelectedStartNote();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ScalePreset> ScalePresets
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ScalePreset*>*& dyn_ScalePresets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::ScalePreset*>*& dyn_ScalePresets();
     // Get instance field reference: public System.String SelectedEnvironment
-    [[deprecated]] ::StringW& dyn_SelectedEnvironment();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SelectedEnvironment();
     // Get instance field reference: public System.Single EnvironmentEffectsAmount
-    [[deprecated]] float& dyn_EnvironmentEffectsAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_EnvironmentEffectsAmount();
     // public override System.String get_Key()
     // Offset: 0x1988288
     // Implemented from: VROSC.BaseDataModel
@@ -126,7 +126,6 @@ namespace VROSC {
     // Offset: 0x198737C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionSettingsDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionSettingsDataModel::.ctor");

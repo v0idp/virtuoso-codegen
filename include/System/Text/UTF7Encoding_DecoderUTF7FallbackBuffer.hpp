@@ -49,11 +49,11 @@ namespace System::Text {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Char cFallback
-    [[deprecated]] ::Il2CppChar& dyn_cFallback();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_cFallback();
     // Get instance field reference: private System.Int32 iCount
-    [[deprecated]] int& dyn_iCount();
+    [[deprecated("Use field access instead!")]] int& dyn_iCount();
     // Get instance field reference: private System.Int32 iSize
-    [[deprecated]] int& dyn_iSize();
+    [[deprecated("Use field access instead!")]] int& dyn_iSize();
     // public System.Void .ctor(System.Text.UTF7Encoding/System.Text.DecoderUTF7Fallback fallback)
     // Offset: 0x189AB70
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

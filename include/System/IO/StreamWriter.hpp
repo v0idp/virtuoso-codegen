@@ -133,27 +133,27 @@ namespace System::IO {
     // Set static field: static private System.Text.Encoding _UTF8NoBOM
     static void _set__UTF8NoBOM(::System::Text::Encoding* value);
     // Get instance field reference: private System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private System.Text.Encoding encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
     // Get instance field reference: private System.Text.Encoder encoder
-    [[deprecated]] ::System::Text::Encoder*& dyn_encoder();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoder*& dyn_encoder();
     // Get instance field reference: private System.Byte[] byteBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_byteBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_byteBuffer();
     // Get instance field reference: private System.Char[] charBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
     // Get instance field reference: private System.Int32 charPos
-    [[deprecated]] int& dyn_charPos();
+    [[deprecated("Use field access instead!")]] int& dyn_charPos();
     // Get instance field reference: private System.Int32 charLen
-    [[deprecated]] int& dyn_charLen();
+    [[deprecated("Use field access instead!")]] int& dyn_charLen();
     // Get instance field reference: private System.Boolean autoFlush
-    [[deprecated]] bool& dyn_autoFlush();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoFlush();
     // Get instance field reference: private System.Boolean haveWrittenPreamble
-    [[deprecated]] bool& dyn_haveWrittenPreamble();
+    [[deprecated("Use field access instead!")]] bool& dyn_haveWrittenPreamble();
     // Get instance field reference: private System.Boolean closable
-    [[deprecated]] bool& dyn_closable();
+    [[deprecated("Use field access instead!")]] bool& dyn_closable();
     // Get instance field reference: private System.Threading.Tasks.Task _asyncWriteTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn__asyncWriteTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn__asyncWriteTask();
     // static System.Text.Encoding get_UTF8NoBOM()
     // Offset: 0x1259B00
     static ::System::Text::Encoding* get_UTF8NoBOM();

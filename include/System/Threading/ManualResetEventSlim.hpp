@@ -144,11 +144,11 @@ namespace System::Threading {
     // Set static field: static private System.Action`1<System.Object> s_cancellationTokenCallback
     static void _set_s_cancellationTokenCallback(::System::Action_1<::Il2CppObject*>* value);
     // Get instance field reference: private System.Object m_lock
-    [[deprecated]] ::Il2CppObject*& dyn_m_lock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_lock();
     // Get instance field reference: private System.Threading.ManualResetEvent m_eventObj
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_m_eventObj();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_m_eventObj();
     // Get instance field reference: private System.Int32 m_combinedState
-    [[deprecated]] int& dyn_m_combinedState();
+    [[deprecated("Use field access instead!")]] int& dyn_m_combinedState();
     // public System.Threading.WaitHandle get_WaitHandle()
     // Offset: 0xFF99CC
     ::System::Threading::WaitHandle* get_WaitHandle();

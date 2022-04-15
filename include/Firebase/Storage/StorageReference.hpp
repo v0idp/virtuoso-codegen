@@ -122,11 +122,11 @@ namespace Firebase::Storage {
     // Set static field: static private System.Func`2<System.Threading.Tasks.Task,System.Threading.Tasks.Task> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::System::Threading::Tasks::Task*, ::System::Threading::Tasks::Task*>* value);
     // Get instance field reference: private readonly Firebase.Storage.FirebaseStorage firebaseStorage
-    [[deprecated]] ::Firebase::Storage::FirebaseStorage*& dyn_firebaseStorage();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::FirebaseStorage*& dyn_firebaseStorage();
     // Get instance field reference: private Firebase.Storage.Internal.ModuleLogger <Logger>k__BackingField
-    [[deprecated]] ::Firebase::Storage::Internal::ModuleLogger*& dyn_$Logger$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::Internal::ModuleLogger*& dyn_$Logger$k__BackingField();
     // Get instance field reference: private Firebase.Storage.StorageReferenceInternal <Internal>k__BackingField
-    [[deprecated]] ::Firebase::Storage::StorageReferenceInternal*& dyn_$Internal$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReferenceInternal*& dyn_$Internal$k__BackingField();
     // Firebase.Storage.Internal.ModuleLogger get_Logger()
     // Offset: 0x1837E60
     ::Firebase::Storage::Internal::ModuleLogger* get_Logger();

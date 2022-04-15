@@ -53,11 +53,11 @@ namespace System::Text {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Int32 bits
-    [[deprecated]] int& dyn_bits();
+    [[deprecated("Use field access instead!")]] int& dyn_bits();
     // Get instance field reference: System.Int32 bitCount
-    [[deprecated]] int& dyn_bitCount();
+    [[deprecated("Use field access instead!")]] int& dyn_bitCount();
     // Get instance field reference: System.Boolean firstByte
-    [[deprecated]] bool& dyn_firstByte();
+    [[deprecated("Use field access instead!")]] bool& dyn_firstByte();
     // public System.Void .ctor(System.Text.UTF7Encoding encoding)
     // Offset: 0x189A6E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

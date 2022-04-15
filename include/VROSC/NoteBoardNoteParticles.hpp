@@ -132,29 +132,36 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteAnimator _target
-    [[deprecated]] ::VROSC::NoteBoardNoteAnimator*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteAnimator*& dyn__target();
     // Get instance field reference: private System.Single _rate
-    [[deprecated]] float& dyn__rate();
+    [[deprecated("Use field access instead!")]] float& dyn__rate();
     // Get instance field reference: private System.Single _size
-    [[deprecated]] float& dyn__size();
+    [[deprecated("Use field access instead!")]] float& dyn__size();
     // Get instance field reference: private System.Int32 _multiplier
-    [[deprecated]] int& dyn__multiplier();
+    [[deprecated("Use field access instead!")]] int& dyn__multiplier();
     // Get instance field reference: private System.Boolean _useRandomColor
-    [[deprecated]] bool& dyn__useRandomColor();
+    [[deprecated("Use field access instead!")]] bool& dyn__useRandomColor();
     // Get instance field reference: private UnityEngine.Gradient _randomColor
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__randomColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__randomColor();
     // Get instance field reference: private System.Boolean _remap
-    [[deprecated]] bool& dyn__remap();
+    [[deprecated("Use field access instead!")]] bool& dyn__remap();
     // Get instance field reference: private UnityEngine.Color _remapR
-    [[deprecated]] ::UnityEngine::Color& dyn__remapR();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__remapR();
     // Get instance field reference: private UnityEngine.Color _remapG
-    [[deprecated]] ::UnityEngine::Color& dyn__remapG();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__remapG();
     // Get instance field reference: private UnityEngine.Color _remapB
-    [[deprecated]] ::UnityEngine::Color& dyn__remapB();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__remapB();
     // Get instance field reference: private VROSC.NoteBoardNoteParticles/VROSC.Emission _red
-    [[deprecated]] ::VROSC::NoteBoardNoteParticles::Emission*& dyn__red();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteParticles::Emission*& dyn__red();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    // public System.Void .ctor()
+    // Offset: 0xC56E90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteBoardNoteParticles* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteParticles::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteParticles*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xC56A54
     void Awake();
@@ -167,25 +174,16 @@ namespace VROSC {
     // private System.Void OnDrawGizmosSelected()
     // Offset: 0xC56E40
     void OnDrawGizmosSelected();
-    // public System.Void .ctor()
-    // Offset: 0xC56E90
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteBoardNoteParticles* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteParticles::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteParticles*, creationType>()));
-    }
   }; // VROSC.NoteBoardNoteParticles
   #pragma pack(pop)
   static check_size<sizeof(NoteBoardNoteParticles), 120 + sizeof(::UnityEngine::ParticleSystem*)> __VROSC_NoteBoardNoteParticlesSizeCheck;
   static_assert(sizeof(NoteBoardNoteParticles) == 0x80);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::NoteBoardNoteParticles::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteBoardNoteParticles::Awake
 // Il2CppName: Awake
 template<>
@@ -219,7 +217,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardNoteParticles*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteBoardNoteParticles::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

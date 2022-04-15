@@ -49,30 +49,32 @@ namespace DG::Tweening {
     static_assert(sizeof(::DG::Tweening::Core::DOSetter_1<float>*) == 0x8);
     public:
     // Get instance field reference: public System.Single v
-    [[deprecated]] float& dyn_v();
+    [[deprecated("Use field access instead!")]] float& dyn_v();
     // Get instance field reference: public DG.Tweening.Core.DOSetter`1<System.Single> setter
-    [[deprecated]] ::DG::Tweening::Core::DOSetter_1<float>*& dyn_setter();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Core::DOSetter_1<float>*& dyn_setter();
+    // public System.Void .ctor()
+    // Offset: 0x1862E74
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTween::$$c__DisplayClass60_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTween::$$c__DisplayClass60_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTween::$$c__DisplayClass60_0*, creationType>()));
+    }
     // System.Single <To>b__0()
     // Offset: 0x1862E7C
     float $To$b__0();
     // System.Void <To>b__1(System.Single x)
     // Offset: 0x1862E84
     void $To$b__1(float x);
-    // public System.Void .ctor()
-    // Offset: 0x1862E74
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTween::$$c__DisplayClass60_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTween::$$c__DisplayClass60_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTween::$$c__DisplayClass60_0*, creationType>()));
-    }
   }; // DG.Tweening.DOTween/DG.Tweening.<>c__DisplayClass60_0
   #pragma pack(pop)
   static check_size<sizeof(DOTween::$$c__DisplayClass60_0), 24 + sizeof(::DG::Tweening::Core::DOSetter_1<float>*)> __DG_Tweening_DOTween_$$c__DisplayClass60_0SizeCheck;
   static_assert(sizeof(DOTween::$$c__DisplayClass60_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTween::$$c__DisplayClass60_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTween::$$c__DisplayClass60_0::$To$b__0
 // Il2CppName: <To>b__0
 template<>
@@ -90,7 +92,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTween::$$c__DisplayClass60_0*), "<To>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTween::$$c__DisplayClass60_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

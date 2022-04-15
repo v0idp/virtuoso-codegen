@@ -211,6 +211,13 @@ namespace OVRSimpleJSON {
     // static System.Text.StringBuilder get_EscapeBuilder()
     // Offset: 0x98AA28
     static ::System::Text::StringBuilder* get_EscapeBuilder();
+    // protected System.Void .ctor()
+    // Offset: 0x988A00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JSONNode* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVRSimpleJSON::JSONNode::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JSONNode*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x98D380
     static void _cctor();
@@ -316,15 +323,6 @@ namespace OVRSimpleJSON {
     // public OVRSimpleJSON.JSONNode WriteMatrix(UnityEngine.Matrix4x4 aMatrix)
     // Offset: 0x98D2D0
     ::OVRSimpleJSON::JSONNode* WriteMatrix(::UnityEngine::Matrix4x4 aMatrix);
-    // protected System.Void .ctor()
-    // Offset: 0x988A00
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JSONNode* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVRSimpleJSON::JSONNode::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JSONNode*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x989C48
     // Implemented from: System.Object
@@ -635,6 +633,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(OVRSimpleJSON::JSONNode*), "get_EscapeBuilder", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OVRSimpleJSON::JSONNode::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVRSimpleJSON::JSONNode::_cctor
 // Il2CppName: .cctor
 template<>
@@ -954,10 +956,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::OVRSimple
     return ::il2cpp_utils::FindMethod(classof(OVRSimpleJSON::JSONNode*), "WriteMatrix", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{aMatrix});
   }
 };
-// Writing MetadataGetter for method: OVRSimpleJSON::JSONNode::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVRSimpleJSON::JSONNode::ToString
 // Il2CppName: ToString
 template<>

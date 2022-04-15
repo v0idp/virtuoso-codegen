@@ -91,15 +91,15 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private System.Data.DataRelation _inTransition
-    [[deprecated]] ::System::Data::DataRelation*& dyn__inTransition();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRelation*& dyn__inTransition();
     // Get instance field reference: private System.Int32 _defaultNameIndex
-    [[deprecated]] int& dyn__defaultNameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__defaultNameIndex();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler _onCollectionChangedDelegate
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangedDelegate();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler _onCollectionChangingDelegate
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangingDelegate();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // System.Int32 get_ObjectID()
     // Offset: 0xF9CC70
     int get_ObjectID();
@@ -164,7 +164,6 @@ namespace System::Data {
     // Offset: 0xF9E118
     // Implemented from: System.Data.InternalDataCollectionBase
     // Base method: System.Void InternalDataCollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DataRelationCollection* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataRelationCollection::.ctor");

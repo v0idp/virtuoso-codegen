@@ -72,15 +72,15 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::ArrayW<int64_t>) == 0x8);
     public:
     // Get instance field reference: private readonly System.Xml.Serialization.EnumMap/System.Xml.Serialization.EnumMapMember[] _members
-    [[deprecated]] ::ArrayW<::System::Xml::Serialization::EnumMap::EnumMapMember*>& dyn__members();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Serialization::EnumMap::EnumMapMember*>& dyn__members();
     // Get instance field reference: private readonly System.Boolean _isFlags
-    [[deprecated]] bool& dyn__isFlags();
+    [[deprecated("Use field access instead!")]] bool& dyn__isFlags();
     // Get instance field reference: private readonly System.String[] _enumNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__enumNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__enumNames();
     // Get instance field reference: private readonly System.String[] _xmlNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__xmlNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__xmlNames();
     // Get instance field reference: private readonly System.Int64[] _values
-    [[deprecated]] ::ArrayW<int64_t>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int64_t>& dyn__values();
     // public System.Boolean get_IsFlags()
     // Offset: 0xAED9BC
     bool get_IsFlags();

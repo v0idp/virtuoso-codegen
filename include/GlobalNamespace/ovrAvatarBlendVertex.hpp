@@ -86,23 +86,23 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    [[deprecated]] float& dyn_z();
+    [[deprecated("Use field access instead!")]] float& dyn_z();
     // Get instance field reference: public System.Single nx
-    [[deprecated]] float& dyn_nx();
+    [[deprecated("Use field access instead!")]] float& dyn_nx();
     // Get instance field reference: public System.Single ny
-    [[deprecated]] float& dyn_ny();
+    [[deprecated("Use field access instead!")]] float& dyn_ny();
     // Get instance field reference: public System.Single nz
-    [[deprecated]] float& dyn_nz();
+    [[deprecated("Use field access instead!")]] float& dyn_nz();
     // Get instance field reference: public System.Single tx
-    [[deprecated]] float& dyn_tx();
+    [[deprecated("Use field access instead!")]] float& dyn_tx();
     // Get instance field reference: public System.Single ty
-    [[deprecated]] float& dyn_ty();
+    [[deprecated("Use field access instead!")]] float& dyn_ty();
     // Get instance field reference: public System.Single tz
-    [[deprecated]] float& dyn_tz();
+    [[deprecated("Use field access instead!")]] float& dyn_tz();
   }; // ovrAvatarBlendVertex
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarBlendVertex), 32 + sizeof(float)> __GlobalNamespace_ovrAvatarBlendVertexSizeCheck;

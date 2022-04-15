@@ -60,7 +60,7 @@ namespace Unity::RemoteConfig {
     // Set static field: static public Unity.RemoteConfig.ConfigOrigin Remote
     static void _set_Remote(::Unity::RemoteConfig::ConfigOrigin value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Unity.RemoteConfig.ConfigOrigin
   #pragma pack(pop)
   static check_size<sizeof(ConfigOrigin), 0 + sizeof(int)> __Unity_RemoteConfig_ConfigOriginSizeCheck;

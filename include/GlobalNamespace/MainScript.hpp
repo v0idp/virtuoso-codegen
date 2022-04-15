@@ -74,9 +74,16 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private readonly System.String basePath
-    [[deprecated]] ::StringW& dyn_basePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_basePath();
     // Get instance field reference: private Proyecto26.RequestHelper currentRequest
-    [[deprecated]] ::Proyecto26::RequestHelper*& dyn_currentRequest();
+    [[deprecated("Use field access instead!")]] ::Proyecto26::RequestHelper*& dyn_currentRequest();
+    // public System.Void .ctor()
+    // Offset: 0x197C85C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MainScript* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MainScript::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MainScript*, creationType>()));
+    }
     // private System.Void LogMessage(System.String title, System.String message)
     // Offset: 0x197B850
     void LogMessage(::StringW title, ::StringW message);
@@ -116,25 +123,16 @@ namespace GlobalNamespace {
     // private System.Void <DownloadFile>b__8_1(System.Exception err)
     // Offset: 0x197CB6C
     void $DownloadFile$b__8_1(::System::Exception* err);
-    // public System.Void .ctor()
-    // Offset: 0x197C85C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MainScript* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MainScript::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MainScript*, creationType>()));
-    }
   }; // MainScript
   #pragma pack(pop)
   static check_size<sizeof(MainScript), 32 + sizeof(::Proyecto26::RequestHelper*)> __GlobalNamespace_MainScriptSizeCheck;
   static_assert(sizeof(MainScript) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::MainScript::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::MainScript::LogMessage
 // Il2CppName: LogMessage
 template<>
@@ -250,7 +248,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MainScript*), "<DownloadFile>b__8_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{err});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::MainScript::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

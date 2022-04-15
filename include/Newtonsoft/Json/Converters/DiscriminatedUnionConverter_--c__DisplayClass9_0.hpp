@@ -50,27 +50,29 @@ namespace Newtonsoft::Json::Converters {
     static_assert(sizeof(::System::Func_2<::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase*, bool>*) == 0x8);
     public:
     // Get instance field reference: public System.String caseName
-    [[deprecated]] ::StringW& dyn_caseName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_caseName();
     // Get instance field reference: public System.Func`2<Newtonsoft.Json.Converters.DiscriminatedUnionConverter/Newtonsoft.Json.Converters.UnionCase,System.Boolean> <>9__0
-    [[deprecated]] ::System::Func_2<::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase*, bool>*& dyn_$$9__0();
-    // System.Boolean <ReadJson>b__0(Newtonsoft.Json.Converters.DiscriminatedUnionConverter/Newtonsoft.Json.Converters.UnionCase c)
-    // Offset: 0x159D95C
-    bool $ReadJson$b__0(::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase* c);
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase*, bool>*& dyn_$$9__0();
     // public System.Void .ctor()
     // Offset: 0x159D954
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DiscriminatedUnionConverter::$$c__DisplayClass9_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::$$c__DisplayClass9_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DiscriminatedUnionConverter::$$c__DisplayClass9_0*, creationType>()));
     }
+    // System.Boolean <ReadJson>b__0(Newtonsoft.Json.Converters.DiscriminatedUnionConverter/Newtonsoft.Json.Converters.UnionCase c)
+    // Offset: 0x159D95C
+    bool $ReadJson$b__0(::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase* c);
   }; // Newtonsoft.Json.Converters.DiscriminatedUnionConverter/Newtonsoft.Json.Converters.<>c__DisplayClass9_0
   #pragma pack(pop)
   static check_size<sizeof(DiscriminatedUnionConverter::$$c__DisplayClass9_0), 24 + sizeof(::System::Func_2<::Newtonsoft::Json::Converters::DiscriminatedUnionConverter::UnionCase*, bool>*)> __Newtonsoft_Json_Converters_DiscriminatedUnionConverter_$$c__DisplayClass9_0SizeCheck;
   static_assert(sizeof(DiscriminatedUnionConverter::$$c__DisplayClass9_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Converters::DiscriminatedUnionConverter::$$c__DisplayClass9_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Converters::DiscriminatedUnionConverter::$$c__DisplayClass9_0::$ReadJson$b__0
 // Il2CppName: <ReadJson>b__0
 template<>
@@ -80,7 +82,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Converters::DiscriminatedUnionConverter::$$c__DisplayClass9_0*), "<ReadJson>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{c});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Converters::DiscriminatedUnionConverter::$$c__DisplayClass9_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

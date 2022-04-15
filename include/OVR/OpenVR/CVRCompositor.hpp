@@ -76,7 +76,7 @@ namespace OVR::OpenVR {
       return FnTable;
     }
     // Get instance field reference: private OVR.OpenVR.IVRCompositor FnTable
-    [[deprecated]] ::OVR::OpenVR::IVRCompositor& dyn_FnTable();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRCompositor& dyn_FnTable();
     // System.Void .ctor(System.IntPtr pInterface)
     // Offset: 0x982FC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

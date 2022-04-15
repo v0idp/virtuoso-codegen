@@ -86,13 +86,13 @@ namespace System::Dynamic {
     // Set static field: static public readonly System.Dynamic.DynamicMetaObject[] EmptyMetaObjects
     static void _set_EmptyMetaObjects(::ArrayW<::System::Dynamic::DynamicMetaObject*> value);
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Expression>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Expression$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Expression$k__BackingField();
     // Get instance field reference: private readonly System.Dynamic.BindingRestrictions <Restrictions>k__BackingField
-    [[deprecated]] ::System::Dynamic::BindingRestrictions*& dyn_$Restrictions$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::BindingRestrictions*& dyn_$Restrictions$k__BackingField();
     // Get instance field reference: private readonly System.Object <Value>k__BackingField
-    [[deprecated]] ::Il2CppObject*& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$Value$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <HasValue>k__BackingField
-    [[deprecated]] bool& dyn_$HasValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasValue$k__BackingField();
     // public System.Linq.Expressions.Expression get_Expression()
     // Offset: 0x11FAFC8
     ::System::Linq::Expressions::Expression* get_Expression();

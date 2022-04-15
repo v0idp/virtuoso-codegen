@@ -91,7 +91,7 @@ namespace UnityEngine::XR {
     // Set static field: static public UnityEngine.XR.InputTrackingState All
     static void _set_All(::UnityEngine::XR::InputTrackingState value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // UnityEngine.XR.InputTrackingState
   #pragma pack(pop)
   static check_size<sizeof(InputTrackingState), 0 + sizeof(uint)> __UnityEngine_XR_InputTrackingStateSizeCheck;

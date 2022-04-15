@@ -96,19 +96,19 @@ namespace UnityEngine::UI {
     // Set static field: static public UnityEngine.UI.ColorBlock defaultColorBlock
     static void _set_defaultColorBlock(::UnityEngine::UI::ColorBlock value);
     // Get instance field reference: private UnityEngine.Color m_NormalColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_NormalColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_NormalColor();
     // Get instance field reference: private UnityEngine.Color m_HighlightedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_HighlightedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_HighlightedColor();
     // Get instance field reference: private UnityEngine.Color m_PressedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_PressedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_PressedColor();
     // Get instance field reference: private UnityEngine.Color m_SelectedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_SelectedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_SelectedColor();
     // Get instance field reference: private UnityEngine.Color m_DisabledColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_DisabledColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_DisabledColor();
     // Get instance field reference: private System.Single m_ColorMultiplier
-    [[deprecated]] float& dyn_m_ColorMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ColorMultiplier();
     // Get instance field reference: private System.Single m_FadeDuration
-    [[deprecated]] float& dyn_m_FadeDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FadeDuration();
     // public UnityEngine.Color get_normalColor()
     // Offset: 0xEAF4A4
     ::UnityEngine::Color get_normalColor();

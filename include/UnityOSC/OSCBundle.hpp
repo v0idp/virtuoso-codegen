@@ -57,7 +57,6 @@ namespace UnityOSC {
     // Offset: 0xC5B5FC
     // Implemented from: UnityOSC.OSCPacket
     // Base method: System.Void OSCPacket::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OSCBundle* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityOSC::OSCBundle::.ctor");

@@ -54,9 +54,9 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32 _edges
-    [[deprecated]] int& dyn__edges();
+    [[deprecated("Use field access instead!")]] int& dyn__edges();
     // Get instance field reference: private System.Boolean _noVerticalUV
-    [[deprecated]] bool& dyn__noVerticalUV();
+    [[deprecated("Use field access instead!")]] bool& dyn__noVerticalUV();
     // private System.Int32 get_vertexPairs()
     // Offset: 0xB25E74
     int get_vertexPairs();
@@ -75,9 +75,6 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xB26588
     // Implemented from: VROSC.UI.Meshes.ProceduralMeshData
     // Base method: System.Void ProceduralMeshData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralRing* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralRing::.ctor");

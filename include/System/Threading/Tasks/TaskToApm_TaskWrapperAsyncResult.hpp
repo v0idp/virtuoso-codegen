@@ -62,11 +62,11 @@ namespace System::Threading::Tasks {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: readonly System.Threading.Tasks.Task Task
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_Task();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_Task();
     // Get instance field reference: private readonly System.Object m_state
-    [[deprecated]] ::Il2CppObject*& dyn_m_state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_state();
     // Get instance field reference: private readonly System.Boolean m_completedSynchronously
-    [[deprecated]] bool& dyn_m_completedSynchronously();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_completedSynchronously();
     // private System.Object System.IAsyncResult.get_AsyncState()
     // Offset: 0xE5F4BC
     ::Il2CppObject* System_IAsyncResult_get_AsyncState();

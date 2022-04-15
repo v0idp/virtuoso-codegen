@@ -56,11 +56,11 @@ namespace DG::Tweening::Core {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly UnityEngine.GameObject target
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_target();
     // Get instance field reference: public readonly DG.Tweening.LinkBehaviour behaviour
-    [[deprecated]] ::DG::Tweening::LinkBehaviour& dyn_behaviour();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::LinkBehaviour& dyn_behaviour();
     // Get instance field reference: public System.Boolean lastSeenActive
-    [[deprecated]] bool& dyn_lastSeenActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_lastSeenActive();
     // public System.Void .ctor(UnityEngine.GameObject target, DG.Tweening.LinkBehaviour behaviour)
     // Offset: 0x15B18B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

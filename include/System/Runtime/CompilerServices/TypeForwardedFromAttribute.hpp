@@ -43,7 +43,7 @@ namespace System::Runtime::CompilerServices {
       return assemblyFullName;
     }
     // Get instance field reference: private System.String assemblyFullName
-    [[deprecated]] ::StringW& dyn_assemblyFullName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assemblyFullName();
     // public System.String get_AssemblyFullName()
     // Offset: 0x12B1D7C
     ::StringW get_AssemblyFullName();

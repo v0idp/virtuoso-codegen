@@ -47,9 +47,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(uint64_t) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.SdkAccountType AccountType
-    [[deprecated]] ::Oculus::Platform::SdkAccountType& dyn_AccountType();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::SdkAccountType& dyn_AccountType();
     // Get instance field reference: public readonly System.UInt64 UserId
-    [[deprecated]] uint64_t& dyn_UserId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_UserId();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x171B6B8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -67,7 +67,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarButton Joystick
     static void _set_Joystick(::GlobalNamespace::ovrAvatarButton value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // ovrAvatarButton
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarButton), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarButtonSizeCheck;

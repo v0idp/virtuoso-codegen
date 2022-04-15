@@ -58,9 +58,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.RadioButton> _radioButtons
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::RadioButton*>*& dyn__radioButtons();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::RadioButton*>*& dyn__radioButtons();
     // Get instance field reference: private System.Boolean _changedThisFrame
-    [[deprecated]] bool& dyn__changedThisFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn__changedThisFrame();
     // protected System.Void LateUpdate()
     // Offset: 0xB2DAEC
     void LateUpdate();
@@ -74,11 +74,6 @@ namespace VROSC {
     // Offset: 0xB2DAF4
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RadioButtonParent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::RadioButtonParent::.ctor");

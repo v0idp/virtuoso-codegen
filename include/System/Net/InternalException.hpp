@@ -30,10 +30,6 @@ namespace System::Net {
     public:
     // System.Void .ctor()
     // Offset: 0x10F5DB0
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InternalException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::InternalException::.ctor");

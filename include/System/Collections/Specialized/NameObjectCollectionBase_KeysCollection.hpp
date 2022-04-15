@@ -55,28 +55,26 @@ namespace System::Collections::Specialized {
       return coll;
     }
     // Get instance field reference: private System.Collections.Specialized.NameObjectCollectionBase _coll
-    [[deprecated]] ::System::Collections::Specialized::NameObjectCollectionBase*& dyn__coll();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::NameObjectCollectionBase*& dyn__coll();
     // public System.Int32 get_Count()
     // Offset: 0x9FB764
     int get_Count();
     // private System.Object System.Collections.ICollection.get_SyncRoot()
     // Offset: 0x9FBAC4
     ::Il2CppObject* System_Collections_ICollection_get_SyncRoot();
+    // System.Void .ctor()
+    // Offset: 0x9FBB74
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NameObjectCollectionBase::KeysCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::NameObjectCollectionBase::KeysCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NameObjectCollectionBase::KeysCollection*, creationType>()));
+    }
     // public System.Collections.IEnumerator GetEnumerator()
     // Offset: 0x9FB6C0
     ::System::Collections::IEnumerator* GetEnumerator();
     // private System.Void System.Collections.ICollection.CopyTo(System.Array array, System.Int32 index)
     // Offset: 0x9FB788
     void System_Collections_ICollection_CopyTo(::System::Array* array, int index);
-    // System.Void .ctor()
-    // Offset: 0x9FBB74
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NameObjectCollectionBase::KeysCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::NameObjectCollectionBase::KeysCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NameObjectCollectionBase::KeysCollection*, creationType>()));
-    }
   }; // System.Collections.Specialized.NameObjectCollectionBase/System.Collections.Specialized.KeysCollection
   #pragma pack(pop)
   static check_size<sizeof(NameObjectCollectionBase::KeysCollection), 16 + sizeof(::System::Collections::Specialized::NameObjectCollectionBase*)> __System_Collections_Specialized_NameObjectCollectionBase_KeysCollectionSizeCheck;
@@ -99,6 +97,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::NameObjectCollectionBase::KeysCollection*), "System.Collections.ICollection.get_SyncRoot", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Collections::Specialized::NameObjectCollectionBase::KeysCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Collections::Specialized::NameObjectCollectionBase::KeysCollection::GetEnumerator
 // Il2CppName: GetEnumerator
 template<>
@@ -117,7 +119,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::NameObjectCollectionBase::KeysCollection*), "System.Collections.ICollection.CopyTo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{array, index});
   }
 };
-// Writing MetadataGetter for method: System::Collections::Specialized::NameObjectCollectionBase::KeysCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

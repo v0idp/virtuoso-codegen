@@ -63,9 +63,9 @@ namespace System::Runtime::Remoting::Lifetime {
     static_assert(sizeof(::System::Threading::Timer*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.ArrayList _objects
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__objects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__objects();
     // Get instance field reference: private System.Threading.Timer _timer
-    [[deprecated]] ::System::Threading::Timer*& dyn__timer();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Timer*& dyn__timer();
     // public System.Void SetPollTime(System.TimeSpan timeSpan)
     // Offset: 0x10778B4
     void SetPollTime(::System::TimeSpan timeSpan);

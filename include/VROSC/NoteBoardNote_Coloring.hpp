@@ -63,7 +63,7 @@ namespace VROSC {
     // Set static field: static public VROSC.NoteBoardNote/VROSC.Coloring AlwaysZ
     static void _set_AlwaysZ(::VROSC::NoteBoardNote::Coloring value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.NoteBoardNote/VROSC.Coloring
   #pragma pack(pop)
   static check_size<sizeof(NoteBoardNote::Coloring), 0 + sizeof(int)> __VROSC_NoteBoardNote_ColoringSizeCheck;

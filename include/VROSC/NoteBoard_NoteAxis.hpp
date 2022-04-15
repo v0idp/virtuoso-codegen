@@ -127,33 +127,33 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.Scale <Scale>k__BackingField
-    [[deprecated]] ::VROSC::Scale& dyn_$Scale$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn_$Scale$k__BackingField();
     // Get instance field reference: private VROSC.Note <StartNote>k__BackingField
-    [[deprecated]] ::VROSC::Note& dyn_$StartNote$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn_$StartNote$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.Axis <Axis>k__BackingField
-    [[deprecated]] ::VROSC::NoteBoard::Axis& dyn_$Axis$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::Axis& dyn_$Axis$k__BackingField();
     // Get instance field reference: public System.Boolean OverrideBoard
-    [[deprecated]] bool& dyn_OverrideBoard();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideBoard();
     // Get instance field reference: public VROSC.ScaleNode OverrideScale
-    [[deprecated]] ::VROSC::ScaleNode*& dyn_OverrideScale();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScaleNode*& dyn_OverrideScale();
     // Get instance field reference: public VROSC.NoteField OverrideStartNote
-    [[deprecated]] ::VROSC::NoteField*& dyn_OverrideStartNote();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteField*& dyn_OverrideStartNote();
     // Get instance field reference: public VROSC.IntField StartOctave
-    [[deprecated]] ::VROSC::IntField*& dyn_StartOctave();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn_StartOctave();
     // Get instance field reference: public VROSC.IntField NumberOfNotes
-    [[deprecated]] ::VROSC::IntField*& dyn_NumberOfNotes();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn_NumberOfNotes();
     // Get instance field reference: public VROSC.IntField IntervalBetweenNotes
-    [[deprecated]] ::VROSC::IntField*& dyn_IntervalBetweenNotes();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn_IntervalBetweenNotes();
     // Get instance field reference: private VROSC.Scale _lastScale
-    [[deprecated]] ::VROSC::Scale& dyn__lastScale();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn__lastScale();
     // Get instance field reference: private VROSC.Note _lastStartNote
-    [[deprecated]] ::VROSC::Note& dyn__lastStartNote();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn__lastStartNote();
     // Get instance field reference: private System.Int32 _lastStartOctave
-    [[deprecated]] int& dyn__lastStartOctave();
+    [[deprecated("Use field access instead!")]] int& dyn__lastStartOctave();
     // Get instance field reference: private System.Int32 _lastNumberOfNotes
-    [[deprecated]] int& dyn__lastNumberOfNotes();
+    [[deprecated("Use field access instead!")]] int& dyn__lastNumberOfNotes();
     // Get instance field reference: private System.Int32 _lastIntervalBetweenNotes
-    [[deprecated]] int& dyn__lastIntervalBetweenNotes();
+    [[deprecated("Use field access instead!")]] int& dyn__lastIntervalBetweenNotes();
     // public VROSC.Scale get_Scale()
     // Offset: 0x1965B78
     ::VROSC::Scale get_Scale();
@@ -172,21 +172,19 @@ namespace VROSC {
     // private System.Void set_Axis(VROSC.NoteBoard/VROSC.Axis value)
     // Offset: 0x1965BA0
     void set_Axis(::VROSC::NoteBoard::Axis value);
+    // public System.Void .ctor()
+    // Offset: 0x1965D5C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteBoard::NoteAxis* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoard::NoteAxis::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteBoard::NoteAxis*, creationType>()));
+    }
     // public System.Void Init(VROSC.NoteBoard/VROSC.Axis axis)
     // Offset: 0x1965B70
     void Init(::VROSC::NoteBoard::Axis axis);
     // public System.Boolean UpdateAndReturnIsDirty(VROSC.Scale noteBoardScale, VROSC.Note noteBoardStartNote)
     // Offset: 0x1965BA8
     bool UpdateAndReturnIsDirty(::VROSC::Scale noteBoardScale, ::VROSC::Note noteBoardStartNote);
-    // public System.Void .ctor()
-    // Offset: 0x1965D5C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteBoard::NoteAxis* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoard::NoteAxis::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteBoard::NoteAxis*, creationType>()));
-    }
   }; // VROSC.NoteBoard/VROSC.NoteAxis
   #pragma pack(pop)
   static check_size<sizeof(NoteBoard::NoteAxis), 88 + sizeof(int)> __VROSC_NoteBoard_NoteAxisSizeCheck;
@@ -244,6 +242,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoard::NoteAxis*), "set_Axis", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::NoteBoard::NoteAxis::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteBoard::NoteAxis::Init
 // Il2CppName: Init
 template<>
@@ -263,7 +265,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoard::NoteAxis*), "UpdateAndReturnIsDirty", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{noteBoardScale, noteBoardStartNote});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteBoard::NoteAxis::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

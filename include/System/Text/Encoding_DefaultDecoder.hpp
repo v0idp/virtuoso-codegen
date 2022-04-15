@@ -62,9 +62,9 @@ namespace System::Text {
       return *reinterpret_cast<::System::Runtime::Serialization::IObjectReference*>(this);
     }
     // Get instance field reference: private System.Text.Encoding m_encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_m_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_m_encoding();
     // Get instance field reference: private System.Boolean m_hasInitializedEncoding
-    [[deprecated]] bool& dyn_m_hasInitializedEncoding();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_hasInitializedEncoding();
     // public System.Void .ctor(System.Text.Encoding encoding)
     // Offset: 0xE4F190
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

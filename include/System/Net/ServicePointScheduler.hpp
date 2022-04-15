@@ -154,31 +154,31 @@ namespace System::Net {
     // Set static field: static private System.Int32 nextId
     static void _set_nextId(int value);
     // Get instance field reference: private readonly System.Net.ServicePoint <ServicePoint>k__BackingField
-    [[deprecated]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePoint*& dyn_$ServicePoint$k__BackingField();
     // Get instance field reference: private System.Int32 running
-    [[deprecated]] int& dyn_running();
+    [[deprecated("Use field access instead!")]] int& dyn_running();
     // Get instance field reference: private System.Int32 maxIdleTime
-    [[deprecated]] int& dyn_maxIdleTime();
+    [[deprecated("Use field access instead!")]] int& dyn_maxIdleTime();
     // Get instance field reference: private System.Net.ServicePointScheduler/System.Net.AsyncManualResetEvent schedulerEvent
-    [[deprecated]] ::System::Net::ServicePointScheduler::AsyncManualResetEvent*& dyn_schedulerEvent();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePointScheduler::AsyncManualResetEvent*& dyn_schedulerEvent();
     // Get instance field reference: private System.Net.ServicePointScheduler/System.Net.ConnectionGroup defaultGroup
-    [[deprecated]] ::System::Net::ServicePointScheduler::ConnectionGroup*& dyn_defaultGroup();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePointScheduler::ConnectionGroup*& dyn_defaultGroup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Net.ServicePointScheduler/System.Net.ConnectionGroup> groups
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Net::ServicePointScheduler::ConnectionGroup*>*& dyn_groups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Net::ServicePointScheduler::ConnectionGroup*>*& dyn_groups();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.ValueTuple`2<System.Net.ServicePointScheduler/System.Net.ConnectionGroup,System.Net.WebOperation>> operations
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_2<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebOperation*>>*& dyn_operations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_2<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebOperation*>>*& dyn_operations();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.ValueTuple`3<System.Net.ServicePointScheduler/System.Net.ConnectionGroup,System.Net.WebConnection,System.Threading.Tasks.Task>> idleConnections
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_3<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebConnection*, ::System::Threading::Tasks::Task*>>*& dyn_idleConnections();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::System::ValueTuple_3<::System::Net::ServicePointScheduler::ConnectionGroup*, ::System::Net::WebConnection*, ::System::Threading::Tasks::Task*>>*& dyn_idleConnections();
     // Get instance field reference: private System.Int32 currentConnections
-    [[deprecated]] int& dyn_currentConnections();
+    [[deprecated("Use field access instead!")]] int& dyn_currentConnections();
     // Get instance field reference: private System.Int32 connectionLimit
-    [[deprecated]] int& dyn_connectionLimit();
+    [[deprecated("Use field access instead!")]] int& dyn_connectionLimit();
     // Get instance field reference: private System.DateTime idleSince
-    [[deprecated]] ::System::DateTime& dyn_idleSince();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_idleSince();
     // Get instance field reference: public readonly System.Int32 ID
-    [[deprecated]] int& dyn_ID();
+    [[deprecated("Use field access instead!")]] int& dyn_ID();
     // Get instance field reference: private readonly System.String <ME>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ME$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ME$k__BackingField();
     // public System.Net.ServicePoint get_ServicePoint()
     // Offset: 0xD9BC80
     ::System::Net::ServicePoint* get_ServicePoint();

@@ -54,7 +54,7 @@ namespace VROSC {
       return platformSelector;
     }
     // Get instance field reference: private VROSC.PlatformSelector _platformSelector
-    [[deprecated]] ::VROSC::PlatformSelector*& dyn__platformSelector();
+    [[deprecated("Use field access instead!")]] ::VROSC::PlatformSelector*& dyn__platformSelector();
     // public System.Void .ctor(VROSC.PlatformSelector platformSelector)
     // Offset: 0x19269E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -41,7 +41,7 @@ namespace Firebase::Firestore {
       return swigCPtr;
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean futureUse)
     // Offset: 0xD4E0F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

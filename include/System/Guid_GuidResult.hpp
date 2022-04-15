@@ -84,19 +84,19 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Guid parsedGuid
-    [[deprecated]] ::System::Guid& dyn_parsedGuid();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_parsedGuid();
     // Get instance field reference: System.Guid/System.GuidParseThrowStyle throwStyle
-    [[deprecated]] ::System::Guid::GuidParseThrowStyle& dyn_throwStyle();
+    [[deprecated("Use field access instead!")]] ::System::Guid::GuidParseThrowStyle& dyn_throwStyle();
     // Get instance field reference: System.Guid/System.ParseFailureKind m_failure
-    [[deprecated]] ::System::Guid::ParseFailureKind& dyn_m_failure();
+    [[deprecated("Use field access instead!")]] ::System::Guid::ParseFailureKind& dyn_m_failure();
     // Get instance field reference: System.String m_failureMessageID
-    [[deprecated]] ::StringW& dyn_m_failureMessageID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_failureMessageID();
     // Get instance field reference: System.Object m_failureMessageFormatArgument
-    [[deprecated]] ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
     // Get instance field reference: System.String m_failureArgumentName
-    [[deprecated]] ::StringW& dyn_m_failureArgumentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_failureArgumentName();
     // Get instance field reference: System.Exception m_innerException
-    [[deprecated]] ::System::Exception*& dyn_m_innerException();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_m_innerException();
     // System.Void Init(System.Guid/System.GuidParseThrowStyle canThrow)
     // Offset: 0xE5171C
     void Init(::System::Guid::GuidParseThrowStyle canThrow);

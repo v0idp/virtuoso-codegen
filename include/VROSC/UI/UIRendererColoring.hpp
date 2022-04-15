@@ -57,11 +57,11 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: protected System.Boolean _hideWhenNotHovering
-    [[deprecated]] bool& dyn__hideWhenNotHovering();
+    [[deprecated("Use field access instead!")]] bool& dyn__hideWhenNotHovering();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // private System.Void Awake()
     // Offset: 0x1912DE4
     void Awake();
@@ -75,11 +75,6 @@ namespace VROSC::UI {
     // Offset: 0x19131D4
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIRendererColoring* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIRendererColoring::.ctor");

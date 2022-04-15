@@ -45,9 +45,9 @@ namespace System::Dynamic {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _expression
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__expression();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__expression();
     // Get instance field reference: private readonly System.Object _instance
-    [[deprecated]] ::Il2CppObject*& dyn__instance();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__instance();
     // System.Void .ctor(System.Linq.Expressions.Expression parameter, System.Object instance)
     // Offset: 0xEA5A18
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

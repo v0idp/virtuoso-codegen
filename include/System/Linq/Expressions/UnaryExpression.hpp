@@ -77,13 +77,13 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Reflection::MethodInfo*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.ExpressionType <NodeType>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::ExpressionType& dyn_$NodeType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::ExpressionType& dyn_$NodeType$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Operand>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Operand$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Operand$k__BackingField();
     // Get instance field reference: private readonly System.Reflection.MethodInfo <Method>k__BackingField
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_$Method$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_$Method$k__BackingField();
     // public System.Linq.Expressions.Expression get_Operand()
     // Offset: 0xEA1BF8
     ::System::Linq::Expressions::Expression* get_Operand();

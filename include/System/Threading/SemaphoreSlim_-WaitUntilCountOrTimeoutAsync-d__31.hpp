@@ -107,25 +107,25 @@ namespace System::Threading {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<bool>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<bool>& dyn_$$t__builder();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: public System.Threading.SemaphoreSlim/System.Threading.TaskNode asyncWaiter
-    [[deprecated]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_asyncWaiter();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_asyncWaiter();
     // Get instance field reference: public System.Int32 millisecondsTimeout
-    [[deprecated]] int& dyn_millisecondsTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn_millisecondsTimeout();
     // Get instance field reference: private System.Threading.CancellationTokenSource <cts>5__1
-    [[deprecated]] ::System::Threading::CancellationTokenSource*& dyn_$cts$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationTokenSource*& dyn_$cts$5__1();
     // Get instance field reference: public System.Threading.SemaphoreSlim <>4__this
-    [[deprecated]] ::System::Threading::SemaphoreSlim*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim*& dyn_$$4__this();
     // Get instance field reference: private System.Object <>7__wrap1
-    [[deprecated]] ::Il2CppObject*& dyn_$$7__wrap1();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$7__wrap1();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Threading.Tasks.Task> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Threading::Tasks::Task*>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Threading::Tasks::Task*>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Boolean> <>u__2
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<bool>::ConfiguredTaskAwaiter& dyn_$$u__2();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<bool>::ConfiguredTaskAwaiter& dyn_$$u__2();
     // private System.Void MoveNext()
     // Offset: 0xE588E4
     void MoveNext();

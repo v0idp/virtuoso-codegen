@@ -185,7 +185,7 @@ namespace Newtonsoft::Json {
       // Set static field: static public Newtonsoft.Json.JsonReader/Newtonsoft.Json.State Finished
       static void _set_Finished(::Newtonsoft::Json::JsonReader::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Newtonsoft.Json.JsonReader/Newtonsoft.Json.State
     #pragma pack(pop)
     static check_size<sizeof(JsonReader::State), 0 + sizeof(int)> __Newtonsoft_Json_JsonReader_StateSizeCheck;
@@ -285,35 +285,35 @@ namespace Newtonsoft::Json {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private Newtonsoft.Json.JsonToken _tokenType
-    [[deprecated]] ::Newtonsoft::Json::JsonToken& dyn__tokenType();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonToken& dyn__tokenType();
     // Get instance field reference: private System.Object _value
-    [[deprecated]] ::Il2CppObject*& dyn__value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__value();
     // Get instance field reference: System.Char _quoteChar
-    [[deprecated]] ::Il2CppChar& dyn__quoteChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__quoteChar();
     // Get instance field reference: Newtonsoft.Json.JsonReader/Newtonsoft.Json.State _currentState
-    [[deprecated]] ::Newtonsoft::Json::JsonReader::State& dyn__currentState();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonReader::State& dyn__currentState();
     // Get instance field reference: private Newtonsoft.Json.JsonPosition _currentPosition
-    [[deprecated]] ::Newtonsoft::Json::JsonPosition& dyn__currentPosition();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonPosition& dyn__currentPosition();
     // Get instance field reference: private System.Globalization.CultureInfo _culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__culture();
     // Get instance field reference: private Newtonsoft.Json.DateTimeZoneHandling _dateTimeZoneHandling
-    [[deprecated]] ::Newtonsoft::Json::DateTimeZoneHandling& dyn__dateTimeZoneHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::DateTimeZoneHandling& dyn__dateTimeZoneHandling();
     // Get instance field reference: private System.Nullable`1<System.Int32> _maxDepth
-    [[deprecated]] ::System::Nullable_1<int>& dyn__maxDepth();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn__maxDepth();
     // Get instance field reference: private System.Boolean _hasExceededMaxDepth
-    [[deprecated]] bool& dyn__hasExceededMaxDepth();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasExceededMaxDepth();
     // Get instance field reference: Newtonsoft.Json.DateParseHandling _dateParseHandling
-    [[deprecated]] ::Newtonsoft::Json::DateParseHandling& dyn__dateParseHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::DateParseHandling& dyn__dateParseHandling();
     // Get instance field reference: Newtonsoft.Json.FloatParseHandling _floatParseHandling
-    [[deprecated]] ::Newtonsoft::Json::FloatParseHandling& dyn__floatParseHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::FloatParseHandling& dyn__floatParseHandling();
     // Get instance field reference: private System.String _dateFormatString
-    [[deprecated]] ::StringW& dyn__dateFormatString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__dateFormatString();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.JsonPosition> _stack
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::JsonPosition>*& dyn__stack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::JsonPosition>*& dyn__stack();
     // Get instance field reference: private System.Boolean <CloseInput>k__BackingField
-    [[deprecated]] bool& dyn_$CloseInput$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$CloseInput$k__BackingField();
     // Get instance field reference: private System.Boolean <SupportMultipleContent>k__BackingField
-    [[deprecated]] bool& dyn_$SupportMultipleContent$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$SupportMultipleContent$k__BackingField();
     // protected Newtonsoft.Json.JsonReader/Newtonsoft.Json.State get_CurrentState()
     // Offset: 0xF49D30
     ::Newtonsoft::Json::JsonReader::State get_CurrentState();
@@ -380,6 +380,13 @@ namespace Newtonsoft::Json {
     // public System.Void set_Culture(System.Globalization.CultureInfo value)
     // Offset: 0xF4A1C8
     void set_Culture(::System::Globalization::CultureInfo* value);
+    // protected System.Void .ctor()
+    // Offset: 0xF4A274
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JsonReader* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonReader::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JsonReader*, creationType>()));
+    }
     // Newtonsoft.Json.JsonPosition GetPosition(System.Int32 depth)
     // Offset: 0xF4A1D0
     ::Newtonsoft::Json::JsonPosition GetPosition(int depth);
@@ -509,15 +516,6 @@ namespace Newtonsoft::Json {
     // private Newtonsoft.Json.JsonToken GetContentToken()
     // Offset: 0xF4AA70
     ::Newtonsoft::Json::JsonToken GetContentToken();
-    // protected System.Void .ctor()
-    // Offset: 0xF4A274
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JsonReader* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonReader::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JsonReader*, creationType>()));
-    }
   }; // Newtonsoft.Json.JsonReader
   // WARNING Not writing size check since size may be invalid!
 }
@@ -708,6 +706,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::JsonReader*), "set_Culture", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::JsonReader::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::JsonReader::GetPosition
 // Il2CppName: GetPosition
 template<>
@@ -1075,7 +1077,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Newtonsof
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::JsonReader*), "GetContentToken", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::JsonReader::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

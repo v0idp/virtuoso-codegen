@@ -115,23 +115,23 @@ namespace System::Data {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Xml.XmlDocument _doc
-    [[deprecated]] ::System::Xml::XmlDocument*& dyn__doc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocument*& dyn__doc();
     // Get instance field reference: System.Data.DataSet _ds
-    [[deprecated]] ::System::Data::DataSet*& dyn__ds();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__ds();
     // Get instance field reference: System.Data.DataTable _dt
-    [[deprecated]] ::System::Data::DataTable*& dyn__dt();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__dt();
     // Get instance field reference: System.Xml.XmlWriter _xmlw
-    [[deprecated]] ::System::Xml::XmlWriter*& dyn__xmlw();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWriter*& dyn__xmlw();
     // Get instance field reference: private System.Boolean _fBefore
-    [[deprecated]] bool& dyn__fBefore();
+    [[deprecated("Use field access instead!")]] bool& dyn__fBefore();
     // Get instance field reference: private System.Boolean _fErrors
-    [[deprecated]] bool& dyn__fErrors();
+    [[deprecated("Use field access instead!")]] bool& dyn__fErrors();
     // Get instance field reference: System.Collections.Hashtable _rowsOrder
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__rowsOrder();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__rowsOrder();
     // Get instance field reference: private System.Collections.ArrayList _tables
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__tables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__tables();
     // Get instance field reference: private System.Boolean _writeHierarchy
-    [[deprecated]] bool& dyn__writeHierarchy();
+    [[deprecated("Use field access instead!")]] bool& dyn__writeHierarchy();
     // System.Void .ctor(System.Data.DataSet ds)
     // Offset: 0x13BB340
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

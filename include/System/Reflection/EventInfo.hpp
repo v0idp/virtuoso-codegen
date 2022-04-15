@@ -78,7 +78,7 @@ namespace System::Reflection {
       return cached_add_event;
     }
     // Get instance field reference: private System.Reflection.EventInfo/System.Reflection.AddEventAdapter cached_add_event
-    [[deprecated]] ::System::Reflection::EventInfo::AddEventAdapter*& dyn_cached_add_event();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::EventInfo::AddEventAdapter*& dyn_cached_add_event();
     // public System.Type get_EventHandlerType()
     // Offset: 0x14F8254
     ::System::Type* get_EventHandlerType();

@@ -63,6 +63,13 @@ namespace TMPro {
     // static private System.Void .cctor()
     // Offset: 0x9B07E4
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x9B08D4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_ResourceManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_ResourceManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_ResourceManager*, creationType>()));
+    }
     // static TMPro.TMP_Settings GetTextSettings()
     // Offset: 0x9B08DC
     static ::TMPro::TMP_Settings* GetTextSettings();
@@ -75,15 +82,6 @@ namespace TMPro {
     // static System.Void RebuildFontAssetCache(System.Int32 instanceID)
     // Offset: 0x9B0BDC
     static void RebuildFontAssetCache(int instanceID);
-    // public System.Void .ctor()
-    // Offset: 0x9B08D4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_ResourceManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_ResourceManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_ResourceManager*, creationType>()));
-    }
   }; // TMPro.TMP_ResourceManager
   #pragma pack(pop)
 }
@@ -96,6 +94,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_ResourceManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_ResourceManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_ResourceManager::GetTextSettings
 // Il2CppName: GetTextSettings
 template<>
@@ -132,7 +134,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(in
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_ResourceManager*), "RebuildFontAssetCache", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{instanceID});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_ResourceManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

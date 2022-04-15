@@ -83,17 +83,17 @@ namespace System::IO::Compression {
     // Set static field: static private readonly System.IO.Compression.HuffmanTree <StaticDistanceTree>k__BackingField
     static void _set_$StaticDistanceTree$k__BackingField(::System::IO::Compression::HuffmanTree* value);
     // Get instance field reference: private readonly System.Int32 _tableBits
-    [[deprecated]] int& dyn__tableBits();
+    [[deprecated("Use field access instead!")]] int& dyn__tableBits();
     // Get instance field reference: private readonly System.Int16[] _table
-    [[deprecated]] ::ArrayW<int16_t>& dyn__table();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int16_t>& dyn__table();
     // Get instance field reference: private readonly System.Int16[] _left
-    [[deprecated]] ::ArrayW<int16_t>& dyn__left();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int16_t>& dyn__left();
     // Get instance field reference: private readonly System.Int16[] _right
-    [[deprecated]] ::ArrayW<int16_t>& dyn__right();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int16_t>& dyn__right();
     // Get instance field reference: private readonly System.Byte[] _codeLengthArray
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__codeLengthArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__codeLengthArray();
     // Get instance field reference: private readonly System.Int32 _tableMask
-    [[deprecated]] int& dyn__tableMask();
+    [[deprecated("Use field access instead!")]] int& dyn__tableMask();
     // static public System.IO.Compression.HuffmanTree get_StaticLiteralLengthTree()
     // Offset: 0x1696510
     static ::System::IO::Compression::HuffmanTree* get_StaticLiteralLengthTree();

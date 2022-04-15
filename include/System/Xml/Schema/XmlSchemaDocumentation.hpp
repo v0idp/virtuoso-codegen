@@ -69,11 +69,11 @@ namespace System::Xml::Schema {
     // Set static field: static private System.Xml.Schema.XmlSchemaSimpleType languageType
     static void _set_languageType(::System::Xml::Schema::XmlSchemaSimpleType* value);
     // Get instance field reference: private System.String source
-    [[deprecated]] ::StringW& dyn_source();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_source();
     // Get instance field reference: private System.String language
-    [[deprecated]] ::StringW& dyn_language();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_language();
     // Get instance field reference: private System.Xml.XmlNode[] markup
-    [[deprecated]] ::ArrayW<::System::Xml::XmlNode*>& dyn_markup();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlNode*>& dyn_markup();
     // public System.Void set_Source(System.String value)
     // Offset: 0x110DAB8
     void set_Source(::StringW value);
@@ -90,7 +90,6 @@ namespace System::Xml::Schema {
     // Offset: 0x110DB94
     // Implemented from: System.Xml.Schema.XmlSchemaObject
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaDocumentation* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaDocumentation::.ctor");

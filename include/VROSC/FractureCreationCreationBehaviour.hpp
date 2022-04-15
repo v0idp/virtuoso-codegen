@@ -93,11 +93,11 @@ namespace VROSC {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private readonly UnityEngine.Vector3 <Position>k__BackingField
-      [[deprecated]] ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
       // Get instance field reference: private readonly UnityEngine.Quaternion <Rotation>k__BackingField
-      [[deprecated]] ::UnityEngine::Quaternion& dyn_$Rotation$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_$Rotation$k__BackingField();
       // Get instance field reference: private readonly UnityEngine.Vector3 <Scale>k__BackingField
-      [[deprecated]] ::UnityEngine::Vector3& dyn_$Scale$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$Scale$k__BackingField();
       // public UnityEngine.Vector3 get_Position()
       // Offset: 0x1956514
       ::UnityEngine::Vector3 get_Position();
@@ -161,19 +161,26 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.FracturedObjectController _target
-    [[deprecated]] ::VROSC::FracturedObjectController*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::VROSC::FracturedObjectController*& dyn__target();
     // Get instance field reference: private VROSC.FractureCreationCreationBehaviour/VROSC.AnimationData[] _startData
-    [[deprecated]] ::ArrayW<::VROSC::FractureCreationCreationBehaviour::AnimationData>& dyn__startData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::FractureCreationCreationBehaviour::AnimationData>& dyn__startData();
     // Get instance field reference: private VROSC.FractureCreationCreationBehaviour/VROSC.AnimationData[] _endData
-    [[deprecated]] ::ArrayW<::VROSC::FractureCreationCreationBehaviour::AnimationData>& dyn__endData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::FractureCreationCreationBehaviour::AnimationData>& dyn__endData();
     // Get instance field reference: private System.Boolean _assembling
-    [[deprecated]] bool& dyn__assembling();
+    [[deprecated("Use field access instead!")]] bool& dyn__assembling();
     // Get instance field reference: public VROSC.MinMaxFloat FractureLength
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn_FractureLength();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn_FractureLength();
     // Get instance field reference: public System.Single StartPoint
-    [[deprecated]] float& dyn_StartPoint();
+    [[deprecated("Use field access instead!")]] float& dyn_StartPoint();
     // Get instance field reference: public System.Single EndPoint
-    [[deprecated]] float& dyn_EndPoint();
+    [[deprecated("Use field access instead!")]] float& dyn_EndPoint();
+    // public System.Void .ctor()
+    // Offset: 0x19A0900
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FractureCreationCreationBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FractureCreationCreationBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FractureCreationCreationBehaviour*, creationType>()));
+    }
     // System.Void Setup(VROSC.FracturedObjectController target, UnityEngine.Transform _fracturePosition, System.Boolean assembling)
     // Offset: 0x199FB2C
     void Setup(::VROSC::FracturedObjectController* target, ::UnityEngine::Transform* _fracturePosition, bool assembling);
@@ -198,16 +205,6 @@ namespace VROSC {
     // private UnityEngine.Vector3 GetFracturePos(UnityEngine.Vector3 fracturePos)
     // Offset: 0x19A0724
     ::UnityEngine::Vector3 GetFracturePos(::UnityEngine::Vector3 fracturePos);
-    // public System.Void .ctor()
-    // Offset: 0x19A0900
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FractureCreationCreationBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FractureCreationCreationBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FractureCreationCreationBehaviour*, creationType>()));
-    }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x19A0134
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -221,6 +218,10 @@ namespace VROSC {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::FractureCreationCreationBehaviour::AnimationData, "VROSC", "FractureCreationCreationBehaviour/AnimationData");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FractureCreationCreationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FractureCreationCreationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -299,10 +300,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::FractureCreationCreationBehaviour*), "GetFracturePos", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{fracturePos});
   }
 };
-// Writing MetadataGetter for method: VROSC::FractureCreationCreationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FractureCreationCreationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

@@ -46,11 +46,11 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String <ContractTypeName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ContractTypeName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ContractTypeName$k__BackingField();
     // Get instance field reference: private System.String <CreatedTypeName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$CreatedTypeName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$CreatedTypeName$k__BackingField();
     // Get instance field reference: private System.String <BuilderTypeName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$BuilderTypeName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$BuilderTypeName$k__BackingField();
     // public System.String get_ContractTypeName()
     // Offset: 0x159EC28
     ::StringW get_ContractTypeName();

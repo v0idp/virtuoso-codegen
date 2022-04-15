@@ -50,9 +50,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::NetSyncSessionList*) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int64 ConnectionId
-    [[deprecated]] int64_t& dyn_ConnectionId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_ConnectionId();
     // Get instance field reference: public readonly Oculus.Platform.Models.NetSyncSessionList Sessions
-    [[deprecated]] ::Oculus::Platform::Models::NetSyncSessionList*& dyn_Sessions();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::NetSyncSessionList*& dyn_Sessions();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB4E274
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

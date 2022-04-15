@@ -35,7 +35,7 @@ namespace UnityEngine::SubsystemsImplementation {
       return m_Running;
     }
     // Get instance field reference: System.Boolean m_Running
-    [[deprecated]] bool& dyn_m_Running();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Running();
   }; // UnityEngine.SubsystemsImplementation.SubsystemProvider
   #pragma pack(pop)
   static check_size<sizeof(SubsystemProvider), 16 + sizeof(bool)> __UnityEngine_SubsystemsImplementation_SubsystemProviderSizeCheck;

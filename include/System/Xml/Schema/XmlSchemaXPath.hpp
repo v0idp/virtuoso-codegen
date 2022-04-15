@@ -42,7 +42,7 @@ namespace System::Xml::Schema {
       return xpath;
     }
     // Get instance field reference: private System.String xpath
-    [[deprecated]] ::StringW& dyn_xpath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xpath();
     // public System.String get_XPath()
     // Offset: 0xF43654
     ::StringW get_XPath();
@@ -54,7 +54,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaAnnotated
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaXPath* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaXPath::.ctor");

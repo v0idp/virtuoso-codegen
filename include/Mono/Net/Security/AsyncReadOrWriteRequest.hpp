@@ -54,9 +54,9 @@ namespace Mono::Net::Security {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly Mono.Net.Security.BufferOffsetSize <UserBuffer>k__BackingField
-    [[deprecated]] ::Mono::Net::Security::BufferOffsetSize*& dyn_$UserBuffer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::BufferOffsetSize*& dyn_$UserBuffer$k__BackingField();
     // Get instance field reference: private System.Int32 <CurrentSize>k__BackingField
-    [[deprecated]] int& dyn_$CurrentSize$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$CurrentSize$k__BackingField();
     // protected Mono.Net.Security.BufferOffsetSize get_UserBuffer()
     // Offset: 0x10D722C
     ::Mono::Net::Security::BufferOffsetSize* get_UserBuffer();

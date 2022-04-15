@@ -41,9 +41,9 @@ namespace System::Xml::Linq {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 lineNumber
-    [[deprecated]] int& dyn_lineNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNumber();
     // Get instance field reference: System.Int32 linePosition
-    [[deprecated]] int& dyn_linePosition();
+    [[deprecated("Use field access instead!")]] int& dyn_linePosition();
     // public System.Void .ctor(System.Int32 lineNumber, System.Int32 linePosition)
     // Offset: 0x1853EAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

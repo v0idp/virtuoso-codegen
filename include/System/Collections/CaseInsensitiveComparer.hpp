@@ -55,7 +55,7 @@ namespace System::Collections {
       return m_compareInfo;
     }
     // Get instance field reference: private System.Globalization.CompareInfo m_compareInfo
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn_m_compareInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn_m_compareInfo();
     // static public System.Collections.CaseInsensitiveComparer get_Default()
     // Offset: 0xE2C49C
     static ::System::Collections::CaseInsensitiveComparer* get_Default();

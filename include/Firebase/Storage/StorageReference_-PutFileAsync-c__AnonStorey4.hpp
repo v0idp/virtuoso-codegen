@@ -52,13 +52,11 @@ namespace Firebase::Storage {
     static_assert(sizeof(::Firebase::Storage::StorageReference*) == 0x8);
     public:
     // Get instance field reference: System.Threading.Tasks.TaskCompletionSource`1<Firebase.Storage.StorageMetadata> result
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Storage::StorageMetadata*>*& dyn_result();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Storage::StorageMetadata*>*& dyn_result();
     // Get instance field reference: Firebase.Storage.StorageReference $this
-    [[deprecated]] ::Firebase::Storage::StorageReference*& dyn_$this();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReference*& dyn_$this();
     // public System.Void .ctor()
     // Offset: 0x1838814
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StorageReference::$PutFileAsync$c__AnonStorey4* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey4::.ctor");

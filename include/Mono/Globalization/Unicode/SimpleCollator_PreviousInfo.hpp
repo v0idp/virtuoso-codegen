@@ -44,9 +44,9 @@ namespace Mono::Globalization::Unicode {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 Code
-    [[deprecated]] int& dyn_Code();
+    [[deprecated("Use field access instead!")]] int& dyn_Code();
     // Get instance field reference: public System.Byte* SortKey
-    [[deprecated]] uint8_t*& dyn_SortKey();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_SortKey();
     // public System.Void .ctor(System.Boolean dummy)
     // Offset: 0xE59198
     PreviousInfo(bool dummy);

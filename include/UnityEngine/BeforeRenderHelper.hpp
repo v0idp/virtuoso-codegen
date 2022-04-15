@@ -69,9 +69,9 @@ namespace UnityEngine {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Int32 order
-      [[deprecated]] int& dyn_order();
+      [[deprecated("Use field access instead!")]] int& dyn_order();
       // Get instance field reference: UnityEngine.Events.UnityAction callback
-      [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_callback();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityAction*& dyn_callback();
     }; // UnityEngine.BeforeRenderHelper/UnityEngine.OrderBlock
     #pragma pack(pop)
     static check_size<sizeof(BeforeRenderHelper::OrderBlock), 8 + sizeof(::UnityEngine::Events::UnityAction*)> __UnityEngine_BeforeRenderHelper_OrderBlockSizeCheck;

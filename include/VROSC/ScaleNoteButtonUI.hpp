@@ -123,23 +123,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Note _note
-    [[deprecated]] ::VROSC::Note& dyn__note();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn__note();
     // Get instance field reference: private VROSC.UIToggle _toggleButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__toggleButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__toggleButton();
     // Get instance field reference: private VROSC.UIToggle _startNoteToggle
-    [[deprecated]] ::VROSC::UIToggle*& dyn__startNoteToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__startNoteToggle();
     // Get instance field reference: private VROSC.ControllerInputNode _inputNode
-    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__inputNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerInputNode*& dyn__inputNode();
     // Get instance field reference: private TMPro.TextMeshPro _display
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__display();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__display();
     // Get instance field reference: private VROSC.UI.UIScalePanelButtonColoring _backgroundColoring
-    [[deprecated]] ::VROSC::UI::UIScalePanelButtonColoring*& dyn__backgroundColoring();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIScalePanelButtonColoring*& dyn__backgroundColoring();
     // Get instance field reference: public System.Action`1<VROSC.Note> OnSetAsStartNode
-    [[deprecated]] ::System::Action_1<::VROSC::Note>*& dyn_OnSetAsStartNode();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Note>*& dyn_OnSetAsStartNode();
     // Get instance field reference: public System.Action`2<VROSC.Note,System.Boolean> OnSetNoteActive
-    [[deprecated]] ::System::Action_2<::VROSC::Note, bool>*& dyn_OnSetNoteActive();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::Note, bool>*& dyn_OnSetNoteActive();
     // Get instance field reference: public System.Action`2<VROSC.Note,System.Boolean> OnNoteHovered
-    [[deprecated]] ::System::Action_2<::VROSC::Note, bool>*& dyn_OnNoteHovered();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::Note, bool>*& dyn_OnNoteHovered();
+    // public System.Void .ctor()
+    // Offset: 0xDE32F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ScaleNoteButtonUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleNoteButtonUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ScaleNoteButtonUI*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xDE2BC4
     void Start();
@@ -164,25 +171,16 @@ namespace VROSC {
     // private System.Void IsHovering(System.Boolean hovering)
     // Offset: 0xDE327C
     void IsHovering(bool hovering);
-    // public System.Void .ctor()
-    // Offset: 0xDE32F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ScaleNoteButtonUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleNoteButtonUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ScaleNoteButtonUI*, creationType>()));
-    }
   }; // VROSC.ScaleNoteButtonUI
   #pragma pack(pop)
   static check_size<sizeof(ScaleNoteButtonUI), 88 + sizeof(::System::Action_2<::VROSC::Note, bool>*)> __VROSC_ScaleNoteButtonUISizeCheck;
   static_assert(sizeof(ScaleNoteButtonUI) == 0x60);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ScaleNoteButtonUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ScaleNoteButtonUI::Start
 // Il2CppName: Start
 template<>
@@ -255,7 +253,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScaleNoteButtonUI*), "IsHovering", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hovering});
   }
 };
-// Writing MetadataGetter for method: VROSC::ScaleNoteButtonUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

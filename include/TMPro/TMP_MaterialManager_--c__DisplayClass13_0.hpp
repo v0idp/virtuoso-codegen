@@ -44,25 +44,27 @@ namespace TMPro {
       return baseMaterial;
     }
     // Get instance field reference: public UnityEngine.Material baseMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_baseMaterial();
-    // System.Boolean <ReleaseBaseMaterial>b__0(TMPro.TMP_MaterialManager/TMPro.MaskingMaterial item)
-    // Offset: 0x18210E0
-    bool $ReleaseBaseMaterial$b__0(::TMPro::TMP_MaterialManager::MaskingMaterial* item);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_baseMaterial();
     // public System.Void .ctor()
     // Offset: 0x18210D8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_MaterialManager::$$c__DisplayClass13_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_MaterialManager::$$c__DisplayClass13_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_MaterialManager::$$c__DisplayClass13_0*, creationType>()));
     }
+    // System.Boolean <ReleaseBaseMaterial>b__0(TMPro.TMP_MaterialManager/TMPro.MaskingMaterial item)
+    // Offset: 0x18210E0
+    bool $ReleaseBaseMaterial$b__0(::TMPro::TMP_MaterialManager::MaskingMaterial* item);
   }; // TMPro.TMP_MaterialManager/TMPro.<>c__DisplayClass13_0
   #pragma pack(pop)
   static check_size<sizeof(TMP_MaterialManager::$$c__DisplayClass13_0), 16 + sizeof(::UnityEngine::Material*)> __TMPro_TMP_MaterialManager_$$c__DisplayClass13_0SizeCheck;
   static_assert(sizeof(TMP_MaterialManager::$$c__DisplayClass13_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: TMPro::TMP_MaterialManager::$$c__DisplayClass13_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_MaterialManager::$$c__DisplayClass13_0::$ReleaseBaseMaterial$b__0
 // Il2CppName: <ReleaseBaseMaterial>b__0
 template<>
@@ -72,7 +74,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_MaterialManager::$$c__DisplayClass13_0*), "<ReleaseBaseMaterial>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{item});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_MaterialManager::$$c__DisplayClass13_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

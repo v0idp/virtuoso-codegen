@@ -98,17 +98,24 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Interactable _reactTo
-    [[deprecated]] ::VROSC::Interactable*& dyn__reactTo();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__reactTo();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.WidgetHoveringNode> _nodes
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::WidgetHoveringNode*>*& dyn__nodes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::WidgetHoveringNode*>*& dyn__nodes();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> _hideWhenNotPointingAt
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__hideWhenNotPointingAt();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__hideWhenNotPointingAt();
     // Get instance field reference: private System.Single _closeAfterSeconds
-    [[deprecated]] float& dyn__closeAfterSeconds();
+    [[deprecated("Use field access instead!")]] float& dyn__closeAfterSeconds();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> _shouldBeVisibleWhenPointedAtAgain
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__shouldBeVisibleWhenPointedAtAgain();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__shouldBeVisibleWhenPointedAtAgain();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.MonoBehaviour> _activators
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::MonoBehaviour*>*& dyn__activators();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::MonoBehaviour*>*& dyn__activators();
+    // public System.Void .ctor()
+    // Offset: 0x95217C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WidgetHoveringController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetHoveringController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WidgetHoveringController*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x951924
     void Awake();
@@ -127,25 +134,16 @@ namespace VROSC {
     // private System.Void ActivateSubObjects(System.Boolean shouldBeVisible)
     // Offset: 0x951C44
     void ActivateSubObjects(bool shouldBeVisible);
-    // public System.Void .ctor()
-    // Offset: 0x95217C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WidgetHoveringController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetHoveringController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WidgetHoveringController*, creationType>()));
-    }
   }; // VROSC.WidgetHoveringController
   #pragma pack(pop)
   static check_size<sizeof(WidgetHoveringController), 64 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::MonoBehaviour*>*)> __VROSC_WidgetHoveringControllerSizeCheck;
   static_assert(sizeof(WidgetHoveringController) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::WidgetHoveringController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::WidgetHoveringController::Awake
 // Il2CppName: Awake
 template<>
@@ -198,7 +196,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetHoveringController*), "ActivateSubObjects", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{shouldBeVisible});
   }
 };
-// Writing MetadataGetter for method: VROSC::WidgetHoveringController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

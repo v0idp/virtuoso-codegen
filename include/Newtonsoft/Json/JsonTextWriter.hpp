@@ -145,27 +145,27 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(::ArrayW<::Il2CppChar>) == 0x8);
     public:
     // Get instance field reference: private readonly System.Boolean _safeAsync
-    [[deprecated]] bool& dyn__safeAsync();
+    [[deprecated("Use field access instead!")]] bool& dyn__safeAsync();
     // Get instance field reference: private readonly System.IO.TextWriter _writer
-    [[deprecated]] ::System::IO::TextWriter*& dyn__writer();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextWriter*& dyn__writer();
     // Get instance field reference: private Newtonsoft.Json.Utilities.Base64Encoder _base64Encoder
-    [[deprecated]] ::Newtonsoft::Json::Utilities::Base64Encoder*& dyn__base64Encoder();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::Base64Encoder*& dyn__base64Encoder();
     // Get instance field reference: private System.Char _indentChar
-    [[deprecated]] ::Il2CppChar& dyn__indentChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__indentChar();
     // Get instance field reference: private System.Int32 _indentation
-    [[deprecated]] int& dyn__indentation();
+    [[deprecated("Use field access instead!")]] int& dyn__indentation();
     // Get instance field reference: private System.Char _quoteChar
-    [[deprecated]] ::Il2CppChar& dyn__quoteChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__quoteChar();
     // Get instance field reference: private System.Boolean _quoteName
-    [[deprecated]] bool& dyn__quoteName();
+    [[deprecated("Use field access instead!")]] bool& dyn__quoteName();
     // Get instance field reference: private System.Boolean[] _charEscapeFlags
-    [[deprecated]] ::ArrayW<bool>& dyn__charEscapeFlags();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn__charEscapeFlags();
     // Get instance field reference: private System.Char[] _writeBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__writeBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__writeBuffer();
     // Get instance field reference: private Newtonsoft.Json.IArrayPool`1<System.Char> _arrayPool
-    [[deprecated]] ::Newtonsoft::Json::IArrayPool_1<::Il2CppChar>*& dyn__arrayPool();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::IArrayPool_1<::Il2CppChar>*& dyn__arrayPool();
     // Get instance field reference: private System.Char[] _indentChars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__indentChars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__indentChars();
     // private Newtonsoft.Json.Utilities.Base64Encoder get_Base64Encoder()
     // Offset: 0x133D634
     ::Newtonsoft::Json::Utilities::Base64Encoder* get_Base64Encoder();

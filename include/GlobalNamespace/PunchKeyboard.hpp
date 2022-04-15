@@ -192,33 +192,43 @@ namespace GlobalNamespace {
     // Set static field: static public System.String KeyboardLayerName
     static void _set_KeyboardLayerName(::StringW value);
     // Get instance field reference: private PunchKeyboardInputField _previewInputField
-    [[deprecated]] ::GlobalNamespace::PunchKeyboardInputField*& dyn__previewInputField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PunchKeyboardInputField*& dyn__previewInputField();
     // Get instance field reference: private KeySoundController _keySoundController
-    [[deprecated]] ::GlobalNamespace::KeySoundController*& dyn__keySoundController();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::KeySoundController*& dyn__keySoundController();
     // Get instance field reference: private System.Single _simultaneousKeyPressFilterDuration
-    [[deprecated]] float& dyn__simultaneousKeyPressFilterDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__simultaneousKeyPressFilterDuration();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _clearButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__clearButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__clearButton();
     // Get instance field reference: private VROSC.ObjectActivation _objectActivation
-    [[deprecated]] ::VROSC::ObjectActivation*& dyn__objectActivation();
+    [[deprecated("Use field access instead!")]] ::VROSC::ObjectActivation*& dyn__objectActivation();
     // Get instance field reference: private System.Single _openAnimationDuration
-    [[deprecated]] float& dyn__openAnimationDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__openAnimationDuration();
     // Get instance field reference: private System.Single _closeAnimationDuration
-    [[deprecated]] float& dyn__closeAnimationDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__closeAnimationDuration();
     // Get instance field reference: private Key[] _keys
-    [[deprecated]] ::ArrayW<::GlobalNamespace::Key*>& dyn__keys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::Key*>& dyn__keys();
     // Get instance field reference: private System.Collections.Generic.List`1<PunchKeyboard/HitKey> _hitKeys
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::PunchKeyboard::HitKey*>*& dyn__hitKeys();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::PunchKeyboard::HitKey*>*& dyn__hitKeys();
     // Get instance field reference: private System.Boolean _isActive
-    [[deprecated]] bool& dyn__isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__isActive();
     // Get instance field reference: private System.Single _filterTimer
-    [[deprecated]] float& dyn__filterTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__filterTimer();
     // Get instance field reference: private System.Boolean _hasSubmitted
-    [[deprecated]] bool& dyn__hasSubmitted();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasSubmitted();
     // Get instance field reference: private System.Boolean _isMultiline
-    [[deprecated]] bool& dyn__isMultiline();
+    [[deprecated("Use field access instead!")]] bool& dyn__isMultiline();
+    // public System.Void .ctor()
+    // Offset: 0xB2B918
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PunchKeyboard* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PunchKeyboard::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PunchKeyboard*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xB2B9CC
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0xB2A8B4
     void Awake();
@@ -267,30 +277,24 @@ namespace GlobalNamespace {
     // private System.Void <Toggle>b__25_0()
     // Offset: 0xB2B9D0
     void $Toggle$b__25_0();
-    // public System.Void .ctor()
-    // Offset: 0xB2B918
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PunchKeyboard* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PunchKeyboard::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PunchKeyboard*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xB2B9CC
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // PunchKeyboard
   #pragma pack(pop)
   static check_size<sizeof(PunchKeyboard), 105 + sizeof(bool)> __GlobalNamespace_PunchKeyboardSizeCheck;
   static_assert(sizeof(PunchKeyboard) == 0x6A);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::PunchKeyboard::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::PunchKeyboard::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::PunchKeyboard::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PunchKeyboard*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::PunchKeyboard::Awake
 // Il2CppName: Awake
 template<>
@@ -427,17 +431,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::PunchKeyboard::*)()>(&GlobalNamespace::PunchKeyboard::$Toggle$b__25_0)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PunchKeyboard*), "<Toggle>b__25_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::PunchKeyboard::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::PunchKeyboard::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::PunchKeyboard::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PunchKeyboard*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

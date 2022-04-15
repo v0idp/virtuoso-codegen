@@ -118,21 +118,21 @@ namespace System {
       return *reinterpret_cast<::System::Runtime::Serialization::IObjectReference*>(this);
     }
     // Get instance field reference: private System.Type[] m_instantiation
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_m_instantiation();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_m_instantiation();
     // Get instance field reference: private System.Int32[] m_elementTypes
-    [[deprecated]] ::ArrayW<int>& dyn_m_elementTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_elementTypes();
     // Get instance field reference: private System.Int32 m_genericParameterPosition
-    [[deprecated]] int& dyn_m_genericParameterPosition();
+    [[deprecated("Use field access instead!")]] int& dyn_m_genericParameterPosition();
     // Get instance field reference: private System.Type m_declaringType
-    [[deprecated]] ::System::Type*& dyn_m_declaringType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_m_declaringType();
     // Get instance field reference: private System.Reflection.MethodBase m_declaringMethod
-    [[deprecated]] ::System::Reflection::MethodBase*& dyn_m_declaringMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodBase*& dyn_m_declaringMethod();
     // Get instance field reference: private System.String m_data
-    [[deprecated]] ::StringW& dyn_m_data();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_data();
     // Get instance field reference: private System.String m_assemblyName
-    [[deprecated]] ::StringW& dyn_m_assemblyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_assemblyName();
     // Get instance field reference: private System.Int32 m_unityType
-    [[deprecated]] int& dyn_m_unityType();
+    [[deprecated("Use field access instead!")]] int& dyn_m_unityType();
     // System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x120973C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

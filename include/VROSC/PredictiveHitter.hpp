@@ -222,59 +222,66 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.InputDevice _device
-    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PredictiveHitter/VROSC.PredictedHit> _predictedHits
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PredictiveHitter::PredictedHit*>*& dyn__predictedHits();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::PredictiveHitter::PredictedHit*>*& dyn__predictedHits();
     // Get instance field reference: private VROSC.PredictiveHitWisp _visualObject
-    [[deprecated]] ::VROSC::PredictiveHitWisp*& dyn__visualObject();
+    [[deprecated("Use field access instead!")]] ::VROSC::PredictiveHitWisp*& dyn__visualObject();
     // Get instance field reference: private System.Boolean _disablePrediction
-    [[deprecated]] bool& dyn__disablePrediction();
+    [[deprecated("Use field access instead!")]] bool& dyn__disablePrediction();
     // Get instance field reference: private System.Single _lookAheadMaxDistance
-    [[deprecated]] float& dyn__lookAheadMaxDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__lookAheadMaxDistance();
     // Get instance field reference: private System.Single _lookAheadTime
-    [[deprecated]] float& dyn__lookAheadTime();
+    [[deprecated("Use field access instead!")]] float& dyn__lookAheadTime();
     // Get instance field reference: private System.Single _baseLatencyAdjustment
-    [[deprecated]] float& dyn__baseLatencyAdjustment();
+    [[deprecated("Use field access instead!")]] float& dyn__baseLatencyAdjustment();
     // Get instance field reference: private System.Single _postPredictionBuffer
-    [[deprecated]] float& dyn__postPredictionBuffer();
+    [[deprecated("Use field access instead!")]] float& dyn__postPredictionBuffer();
     // Get instance field reference: private System.Single _minVelocityForHit
-    [[deprecated]] float& dyn__minVelocityForHit();
+    [[deprecated("Use field access instead!")]] float& dyn__minVelocityForHit();
     // Get instance field reference: private System.Int32 _smoothFrames
-    [[deprecated]] int& dyn__smoothFrames();
+    [[deprecated("Use field access instead!")]] int& dyn__smoothFrames();
     // Get instance field reference: private System.Single _bendAngle
-    [[deprecated]] float& dyn__bendAngle();
+    [[deprecated("Use field access instead!")]] float& dyn__bendAngle();
     // Get instance field reference: private System.Single _latencyAdjustment
-    [[deprecated]] float& dyn__latencyAdjustment();
+    [[deprecated("Use field access instead!")]] float& dyn__latencyAdjustment();
     // Get instance field reference: private UnityEngine.Vector3 _lastFramePosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lastFramePosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lastFramePosition();
     // Get instance field reference: private UnityEngine.Vector3 _velocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn__velocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__velocity();
     // Get instance field reference: private System.Single[] _velocitySmoothingBuffer
-    [[deprecated]] ::ArrayW<float>& dyn__velocitySmoothingBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__velocitySmoothingBuffer();
     // Get instance field reference: private System.Int32 _velocityBufferIndex
-    [[deprecated]] int& dyn__velocityBufferIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__velocityBufferIndex();
     // Get instance field reference: private UnityEngine.RaycastHit[] _raycastHits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit>& dyn__raycastHits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit>& dyn__raycastHits();
     // Get instance field reference: private UnityEngine.Vector3[] _hitPoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__hitPoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__hitPoints();
     // Get instance field reference: private VROSC.PredictiveHittable[] _hittables
-    [[deprecated]] ::ArrayW<::VROSC::PredictiveHittable*>& dyn__hittables();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::PredictiveHittable*>& dyn__hittables();
     // Get instance field reference: private System.Int32 _raycastAllocSize
-    [[deprecated]] int& dyn__raycastAllocSize();
+    [[deprecated("Use field access instead!")]] int& dyn__raycastAllocSize();
     // Get instance field reference: private UnityEngine.GameObject _debugObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__debugObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__debugObject();
     // Get instance field reference: private System.Boolean <IsMalletOrOnlyHitter>k__BackingField
-    [[deprecated]] bool& dyn_$IsMalletOrOnlyHitter$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsMalletOrOnlyHitter$k__BackingField();
     // Get instance field reference: private System.Boolean _disabled
-    [[deprecated]] bool& dyn__disabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__disabled();
     // Get instance field reference: public System.Action`2<System.Single,System.Boolean> OnHitDSP
-    [[deprecated]] ::System::Action_2<float, bool>*& dyn_OnHitDSP();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<float, bool>*& dyn_OnHitDSP();
     // public System.Boolean get_IsMalletOrOnlyHitter()
     // Offset: 0xAE2E98
     bool get_IsMalletOrOnlyHitter();
     // public System.Void set_IsMalletOrOnlyHitter(System.Boolean value)
     // Offset: 0xAE2EA0
     void set_IsMalletOrOnlyHitter(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xAE40C8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PredictiveHitter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PredictiveHitter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PredictiveHitter*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InputDevice device, System.Boolean isMalletOrOnlyHitter)
     // Offset: 0xAE2EAC
     void Setup(::VROSC::InputDevice* device, bool isMalletOrOnlyHitter);
@@ -305,19 +312,6 @@ namespace VROSC {
     // private System.Void SpawnDebugObject()
     // Offset: 0xAE3FFC
     void SpawnDebugObject();
-    // public System.Void .ctor()
-    // Offset: 0xAE40C8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PredictiveHitter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PredictiveHitter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PredictiveHitter*, creationType>()));
-    }
   }; // VROSC.PredictiveHitter
   #pragma pack(pop)
   static check_size<sizeof(PredictiveHitter), 176 + sizeof(::System::Action_2<float, bool>*)> __VROSC_PredictiveHitterSizeCheck;
@@ -341,6 +335,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PredictiveHitter*), "set_IsMalletOrOnlyHitter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::PredictiveHitter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PredictiveHitter::Setup
 // Il2CppName: Setup
 template<>
@@ -434,7 +432,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PredictiveHitter*), "SpawnDebugObject", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::PredictiveHitter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

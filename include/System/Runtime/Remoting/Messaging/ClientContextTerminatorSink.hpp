@@ -59,7 +59,7 @@ namespace System::Runtime::Remoting::Messaging {
       return context;
     }
     // Get instance field reference: private System.Runtime.Remoting.Contexts.Context _context
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::Context*& dyn__context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::Context*& dyn__context();
     // public System.Void .ctor(System.Runtime.Remoting.Contexts.Context ctx)
     // Offset: 0xE381C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

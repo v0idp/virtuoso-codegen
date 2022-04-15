@@ -70,7 +70,7 @@ namespace UnityEngine::Audio {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableOutputHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
     // static public UnityEngine.Audio.AudioPlayableOutput get_Null()
     // Offset: 0x18D8A80
     static ::UnityEngine::Audio::AudioPlayableOutput get_Null();

@@ -135,27 +135,27 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.ScalePanelUI _scalePanelUI
-    [[deprecated]] ::VROSC::ScalePanelUI*& dyn__scalePanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScalePanelUI*& dyn__scalePanelUI();
     // Get instance field reference: private VROSC.EffectsPanel _effectspanel
-    [[deprecated]] ::VROSC::EffectsPanel*& dyn__effectspanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::EffectsPanel*& dyn__effectspanel();
     // Get instance field reference: private VROSC.SynthControlPanelUI _synthControlPanelUI
-    [[deprecated]] ::VROSC::SynthControlPanelUI*& dyn__synthControlPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthControlPanelUI*& dyn__synthControlPanelUI();
     // Get instance field reference: private VROSC.ParameterLinksPreset _defaultPreset
-    [[deprecated]] ::VROSC::ParameterLinksPreset*& dyn__defaultPreset();
+    [[deprecated("Use field access instead!")]] ::VROSC::ParameterLinksPreset*& dyn__defaultPreset();
     // Get instance field reference: private VROSC.ParameterLinksPreset _classicPreset
-    [[deprecated]] ::VROSC::ParameterLinksPreset*& dyn__classicPreset();
+    [[deprecated("Use field access instead!")]] ::VROSC::ParameterLinksPreset*& dyn__classicPreset();
     // Get instance field reference: private System.Int32 _selectedParameterLinksPreset
-    [[deprecated]] int& dyn__selectedParameterLinksPreset();
+    [[deprecated("Use field access instead!")]] int& dyn__selectedParameterLinksPreset();
     // Get instance field reference: private System.Single _lastSendTimeLeft
-    [[deprecated]] float& dyn__lastSendTimeLeft();
+    [[deprecated("Use field access instead!")]] float& dyn__lastSendTimeLeft();
     // Get instance field reference: private System.Single _lastSendTimeRight
-    [[deprecated]] float& dyn__lastSendTimeRight();
+    [[deprecated("Use field access instead!")]] float& dyn__lastSendTimeRight();
     // Get instance field reference: private System.Single _maxExternalSendFrequency
-    [[deprecated]] float& dyn__maxExternalSendFrequency();
+    [[deprecated("Use field access instead!")]] float& dyn__maxExternalSendFrequency();
     // Get instance field reference: public System.Action OnPatchChanged
-    [[deprecated]] ::System::Action*& dyn_OnPatchChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnPatchChanged();
     // Get instance field reference: private System.Boolean _panelsAreSetup
-    [[deprecated]] bool& dyn__panelsAreSetup();
+    [[deprecated("Use field access instead!")]] bool& dyn__panelsAreSetup();
     // public VROSC.SynthDataController get_SynthDataController()
     // Offset: 0x1931FA4
     ::VROSC::SynthDataController* get_SynthDataController();
@@ -216,11 +216,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentController
     // Base method: System.Void InstrumentController::.ctor()
     // Base method: System.Void WidgetController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthController::.ctor");

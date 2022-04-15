@@ -126,22 +126,29 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.InputDevice,UnityEngine.Vector2> OnThumbStickDirection
     static void _set_OnThumbStickDirection(::System::Action_2<::VROSC::InputDevice*, ::UnityEngine::Vector2>* value);
     // Get instance field reference: private VROSC.TriggerButton[] _allTriggerButtons
-    [[deprecated]] ::ArrayW<::VROSC::TriggerButton>& dyn__allTriggerButtons();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::TriggerButton>& dyn__allTriggerButtons();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputSettings*& dyn__inputSettings();
     // Get instance field reference: private System.Boolean _setupComplete
-    [[deprecated]] bool& dyn__setupComplete();
+    [[deprecated("Use field access instead!")]] bool& dyn__setupComplete();
     // Get instance field reference: private HandMover _debugHandMover
-    [[deprecated]] ::GlobalNamespace::HandMover*& dyn__debugHandMover();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandMover*& dyn__debugHandMover();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TriggerButton> triggerButtonsBeginning
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsBeginning();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsBeginning();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TriggerButton> triggerButtonsStaying
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsStaying();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsStaying();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TriggerButton> triggerButtonsEnding
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsEnding();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TriggerButton>*& dyn_triggerButtonsEnding();
     // public VROSC.InputSettings get_InputSettings()
     // Offset: 0x19455FC
     ::VROSC::InputSettings* get_InputSettings();
+    // public System.Void .ctor()
+    // Offset: 0x1945C68
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InputManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InputManager*, creationType>()));
+    }
     // protected System.Void Update()
     // Offset: 0x1945604
     void Update();
@@ -160,19 +167,6 @@ namespace VROSC {
     // public System.Boolean IsPlayerLookingDown(System.Single angleThreshhold)
     // Offset: 0x1945B64
     bool IsPlayerLookingDown(float angleThreshhold);
-    // public System.Void .ctor()
-    // Offset: 0x1945C68
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InputManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InputManager*, creationType>()));
-    }
   }; // VROSC.InputManager
   #pragma pack(pop)
   static check_size<sizeof(InputManager), 72 + sizeof(::System::Collections::Generic::List_1<::VROSC::TriggerButton>*)> __VROSC_InputManagerSizeCheck;
@@ -187,6 +181,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::In
     return ::il2cpp_utils::FindMethod(classof(VROSC::InputManager*), "get_InputSettings", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::InputManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InputManager::Update
 // Il2CppName: Update
 template<>
@@ -241,7 +239,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::InputManager*), "IsPlayerLookingDown", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{angleThreshhold});
   }
 };
-// Writing MetadataGetter for method: VROSC::InputManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

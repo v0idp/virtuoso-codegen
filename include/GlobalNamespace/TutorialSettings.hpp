@@ -62,31 +62,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.AnimationCurve _pattern
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__pattern();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__pattern();
     // Get instance field reference: private System.Single _patternDuration
-    [[deprecated]] float& dyn__patternDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__patternDuration();
     // Get instance field reference: private UnityEngine.Color _flashColor
-    [[deprecated]] ::UnityEngine::Color& dyn__flashColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__flashColor();
     // public UnityEngine.Color get_FlashColor()
     // Offset: 0xA31FB0
     ::UnityEngine::Color get_FlashColor();
+    // public System.Void .ctor()
+    // Offset: 0xA32068
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TutorialSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TutorialSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TutorialSettings*, creationType>()));
+    }
     // public System.Single GetBlink()
     // Offset: 0xA31FBC
     float GetBlink();
     // System.Single GetNextBlinkStart()
     // Offset: 0xA3200C
     float GetNextBlinkStart();
-    // public System.Void .ctor()
-    // Offset: 0xA32068
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TutorialSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TutorialSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TutorialSettings*, creationType>()));
-    }
   }; // TutorialSettings
   #pragma pack(pop)
   static check_size<sizeof(TutorialSettings), 36 + sizeof(::UnityEngine::Color)> __GlobalNamespace_TutorialSettingsSizeCheck;
@@ -101,6 +97,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TutorialSettings*), "get_FlashColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::TutorialSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::TutorialSettings::GetBlink
 // Il2CppName: GetBlink
 template<>
@@ -117,7 +117,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Glob
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TutorialSettings*), "GetNextBlinkStart", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::TutorialSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -66,7 +66,7 @@ namespace DG::Tweening::Plugins::Options {
     // Set static field: static public DG.Tweening.Plugins.Options.OrientType LookAtPosition
     static void _set_LookAtPosition(::DG::Tweening::Plugins::Options::OrientType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // DG.Tweening.Plugins.Options.OrientType
   #pragma pack(pop)
   static check_size<sizeof(OrientType), 0 + sizeof(int)> __DG_Tweening_Plugins_Options_OrientTypeSizeCheck;

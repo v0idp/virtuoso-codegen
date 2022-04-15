@@ -62,7 +62,7 @@ namespace System::IO {
     // Set static field: static public System.IO.FileAccess ReadWrite
     static void _set_ReadWrite(::System::IO::FileAccess value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.IO.FileAccess
   #pragma pack(pop)
   static check_size<sizeof(FileAccess), 0 + sizeof(int)> __System_IO_FileAccessSizeCheck;

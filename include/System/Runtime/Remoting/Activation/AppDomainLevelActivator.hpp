@@ -57,9 +57,9 @@ namespace System::Runtime::Remoting::Activation {
       return *reinterpret_cast<::System::Runtime::Remoting::Activation::IActivator*>(this);
     }
     // Get instance field reference: private System.String _activationUrl
-    [[deprecated]] ::StringW& dyn__activationUrl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__activationUrl();
     // Get instance field reference: private System.Runtime.Remoting.Activation.IActivator _next
-    [[deprecated]] ::System::Runtime::Remoting::Activation::IActivator*& dyn__next();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Activation::IActivator*& dyn__next();
     // public System.Runtime.Remoting.Activation.IActivator get_NextActivator()
     // Offset: 0x113CFEC
     ::System::Runtime::Remoting::Activation::IActivator* get_NextActivator();

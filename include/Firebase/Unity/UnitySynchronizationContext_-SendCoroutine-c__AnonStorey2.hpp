@@ -26,8 +26,6 @@ namespace Firebase::Unity {
     public:
     // public System.Void .ctor()
     // Offset: 0x18CB7F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnitySynchronizationContext::$SendCoroutine$c__AnonStorey2* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Unity::UnitySynchronizationContext::$SendCoroutine$c__AnonStorey2::.ctor");

@@ -94,6 +94,13 @@ namespace System::Linq::Expressions {
   // [TokenAttribute] Offset: FFFFFFFF
   class ExpressionVisitor : public ::Il2CppObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x15D0194
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ExpressionVisitor* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::ExpressionVisitor::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ExpressionVisitor*, creationType>()));
+    }
     // public System.Linq.Expressions.Expression Visit(System.Linq.Expressions.Expression node)
     // Offset: 0x15D24C8
     ::System::Linq::Expressions::Expression* Visit(::System::Linq::Expressions::Expression* node);
@@ -213,19 +220,14 @@ namespace System::Linq::Expressions {
     // static private System.Void ValidateChildType(System.Type before, System.Type after, System.String methodName)
     // Offset: 0x15D329C
     static void ValidateChildType(::System::Type* before, ::System::Type* after, ::StringW methodName);
-    // protected System.Void .ctor()
-    // Offset: 0x15D0194
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ExpressionVisitor* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::ExpressionVisitor::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ExpressionVisitor*, creationType>()));
-    }
   }; // System.Linq.Expressions.ExpressionVisitor
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Linq::Expressions::ExpressionVisitor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::ExpressionVisitor::Visit
 // Il2CppName: Visit
 template<>
@@ -486,7 +488,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::ExpressionVisitor*), "ValidateChildType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{before, after, methodName});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::ExpressionVisitor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

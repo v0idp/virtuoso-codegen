@@ -49,11 +49,11 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: protected UnityEngine.Color _baseColor
-    [[deprecated]] ::UnityEngine::Color& dyn__baseColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__baseColor();
     // Get instance field reference: protected UnityEngine.Color _hoverColor
-    [[deprecated]] ::UnityEngine::Color& dyn__hoverColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__hoverColor();
     // Get instance field reference: protected UnityEngine.Color _disabledColor
-    [[deprecated]] ::UnityEngine::Color& dyn__disabledColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__disabledColor();
     // public UnityEngine.Color get_BaseColor()
     // Offset: 0x190F340
     ::UnityEngine::Color get_BaseColor();

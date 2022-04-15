@@ -69,15 +69,15 @@ namespace VROSC::UI {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Boolean _natural
-    [[deprecated]] bool& dyn__natural();
+    [[deprecated("Use field access instead!")]] bool& dyn__natural();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // Get instance field reference: private System.Boolean _toggled
-    [[deprecated]] bool& dyn__toggled();
+    [[deprecated("Use field access instead!")]] bool& dyn__toggled();
     // Get instance field reference: private System.Int32 _axis
-    [[deprecated]] int& dyn__axis();
+    [[deprecated("Use field access instead!")]] int& dyn__axis();
     // private System.Void Awake()
     // Offset: 0x19131E4
     void Awake();
@@ -94,11 +94,6 @@ namespace VROSC::UI {
     // Offset: 0x1913524
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIScalePanelButtonColoring* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIScalePanelButtonColoring::.ctor");

@@ -66,7 +66,7 @@ namespace Newtonsoft::Json::Utilities {
     // Set static field: static public Newtonsoft.Json.Utilities.ParseResult Invalid
     static void _set_Invalid(::Newtonsoft::Json::Utilities::ParseResult value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.Utilities.ParseResult
   #pragma pack(pop)
   static check_size<sizeof(ParseResult), 0 + sizeof(int)> __Newtonsoft_Json_Utilities_ParseResultSizeCheck;

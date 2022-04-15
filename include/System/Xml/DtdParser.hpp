@@ -318,7 +318,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.DtdParser/System.Xml.ScanningFunction None
       static void _set_None(::System::Xml::DtdParser::ScanningFunction value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.DtdParser/System.Xml.ScanningFunction
     #pragma pack(pop)
     static check_size<sizeof(DtdParser::ScanningFunction), 0 + sizeof(int)> __System_Xml_DtdParser_ScanningFunctionSizeCheck;
@@ -536,71 +536,71 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Xml::IDtdParser*>(this);
     }
     // Get instance field reference: private System.Xml.IDtdParserAdapter readerAdapter
-    [[deprecated]] ::System::Xml::IDtdParserAdapter*& dyn_readerAdapter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IDtdParserAdapter*& dyn_readerAdapter();
     // Get instance field reference: private System.Xml.IDtdParserAdapterWithValidation readerAdapterWithValidation
-    [[deprecated]] ::System::Xml::IDtdParserAdapterWithValidation*& dyn_readerAdapterWithValidation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IDtdParserAdapterWithValidation*& dyn_readerAdapterWithValidation();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Xml.Schema.SchemaInfo schemaInfo
-    [[deprecated]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
     // Get instance field reference: private System.Xml.XmlCharType xmlCharType
-    [[deprecated]] ::System::Xml::XmlCharType& dyn_xmlCharType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlCharType& dyn_xmlCharType();
     // Get instance field reference: private System.String systemId
-    [[deprecated]] ::StringW& dyn_systemId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_systemId();
     // Get instance field reference: private System.String publicId
-    [[deprecated]] ::StringW& dyn_publicId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_publicId();
     // Get instance field reference: private System.Boolean normalize
-    [[deprecated]] bool& dyn_normalize();
+    [[deprecated("Use field access instead!")]] bool& dyn_normalize();
     // Get instance field reference: private System.Boolean validate
-    [[deprecated]] bool& dyn_validate();
+    [[deprecated("Use field access instead!")]] bool& dyn_validate();
     // Get instance field reference: private System.Boolean supportNamespaces
-    [[deprecated]] bool& dyn_supportNamespaces();
+    [[deprecated("Use field access instead!")]] bool& dyn_supportNamespaces();
     // Get instance field reference: private System.Boolean v1Compat
-    [[deprecated]] bool& dyn_v1Compat();
+    [[deprecated("Use field access instead!")]] bool& dyn_v1Compat();
     // Get instance field reference: private System.Char[] chars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_chars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_chars();
     // Get instance field reference: private System.Int32 charsUsed
-    [[deprecated]] int& dyn_charsUsed();
+    [[deprecated("Use field access instead!")]] int& dyn_charsUsed();
     // Get instance field reference: private System.Int32 curPos
-    [[deprecated]] int& dyn_curPos();
+    [[deprecated("Use field access instead!")]] int& dyn_curPos();
     // Get instance field reference: private System.Xml.DtdParser/System.Xml.ScanningFunction scanningFunction
-    [[deprecated]] ::System::Xml::DtdParser::ScanningFunction& dyn_scanningFunction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DtdParser::ScanningFunction& dyn_scanningFunction();
     // Get instance field reference: private System.Xml.DtdParser/System.Xml.ScanningFunction nextScaningFunction
-    [[deprecated]] ::System::Xml::DtdParser::ScanningFunction& dyn_nextScaningFunction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DtdParser::ScanningFunction& dyn_nextScaningFunction();
     // Get instance field reference: private System.Xml.DtdParser/System.Xml.ScanningFunction savedScanningFunction
-    [[deprecated]] ::System::Xml::DtdParser::ScanningFunction& dyn_savedScanningFunction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DtdParser::ScanningFunction& dyn_savedScanningFunction();
     // Get instance field reference: private System.Boolean whitespaceSeen
-    [[deprecated]] bool& dyn_whitespaceSeen();
+    [[deprecated("Use field access instead!")]] bool& dyn_whitespaceSeen();
     // Get instance field reference: private System.Int32 tokenStartPos
-    [[deprecated]] int& dyn_tokenStartPos();
+    [[deprecated("Use field access instead!")]] int& dyn_tokenStartPos();
     // Get instance field reference: private System.Int32 colonPos
-    [[deprecated]] int& dyn_colonPos();
+    [[deprecated("Use field access instead!")]] int& dyn_colonPos();
     // Get instance field reference: private System.Text.StringBuilder internalSubsetValueSb
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_internalSubsetValueSb();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_internalSubsetValueSb();
     // Get instance field reference: private System.Int32 externalEntitiesDepth
-    [[deprecated]] int& dyn_externalEntitiesDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_externalEntitiesDepth();
     // Get instance field reference: private System.Int32 currentEntityId
-    [[deprecated]] int& dyn_currentEntityId();
+    [[deprecated("Use field access instead!")]] int& dyn_currentEntityId();
     // Get instance field reference: private System.Boolean freeFloatingDtd
-    [[deprecated]] bool& dyn_freeFloatingDtd();
+    [[deprecated("Use field access instead!")]] bool& dyn_freeFloatingDtd();
     // Get instance field reference: private System.Boolean hasFreeFloatingInternalSubset
-    [[deprecated]] bool& dyn_hasFreeFloatingInternalSubset();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasFreeFloatingInternalSubset();
     // Get instance field reference: private System.Text.StringBuilder stringBuilder
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_stringBuilder();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_stringBuilder();
     // Get instance field reference: private System.Int32 condSectionDepth
-    [[deprecated]] int& dyn_condSectionDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_condSectionDepth();
     // Get instance field reference: private System.Xml.LineInfo literalLineInfo
-    [[deprecated]] ::System::Xml::LineInfo& dyn_literalLineInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::LineInfo& dyn_literalLineInfo();
     // Get instance field reference: private System.Char literalQuoteChar
-    [[deprecated]] ::Il2CppChar& dyn_literalQuoteChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_literalQuoteChar();
     // Get instance field reference: private System.String documentBaseUri
-    [[deprecated]] ::StringW& dyn_documentBaseUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_documentBaseUri();
     // Get instance field reference: private System.String externalDtdBaseUri
-    [[deprecated]] ::StringW& dyn_externalDtdBaseUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_externalDtdBaseUri();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Xml.DtdParser/System.Xml.UndeclaredNotation> undeclaredNotations
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Xml::DtdParser::UndeclaredNotation*>*& dyn_undeclaredNotations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Xml::DtdParser::UndeclaredNotation*>*& dyn_undeclaredNotations();
     // Get instance field reference: private System.Int32[] condSectionEntityIds
-    [[deprecated]] ::ArrayW<int>& dyn_condSectionEntityIds();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_condSectionEntityIds();
     // private System.Boolean get_ParsingInternalSubset()
     // Offset: 0x10B130C
     bool get_ParsingInternalSubset();
@@ -628,6 +628,13 @@ namespace System::Xml {
     // private System.String get_BaseUriStr()
     // Offset: 0x10B15F8
     ::StringW get_BaseUriStr();
+    // private System.Void .ctor()
+    // Offset: 0x10B06DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DtdParser* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::DtdParser::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DtdParser*, creationType>()));
+    }
     // static System.Xml.IDtdParser Create()
     // Offset: 0x10B07AC
     static ::System::Xml::IDtdParser* Create();
@@ -910,15 +917,6 @@ namespace System::Xml {
     // static System.String StripSpaces(System.String value)
     // Offset: 0x10BA7C8
     static ::StringW StripSpaces(::StringW value);
-    // private System.Void .ctor()
-    // Offset: 0x10B06DC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DtdParser* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::DtdParser::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DtdParser*, creationType>()));
-    }
   }; // System.Xml.DtdParser
   #pragma pack(pop)
   static check_size<sizeof(DtdParser), 192 + sizeof(::ArrayW<int>)> __System_Xml_DtdParserSizeCheck;
@@ -999,6 +997,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::DtdParser*), "get_BaseUriStr", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::DtdParser::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::DtdParser::Create
 // Il2CppName: Create
 template<>
@@ -1835,7 +1837,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::DtdParser*), "StripSpaces", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: System::Xml::DtdParser::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -46,9 +46,9 @@ namespace System::Threading {
     static_assert(sizeof(::System::Threading::SemaphoreSlim::TaskNode*) == 0x8);
     public:
     // Get instance field reference: System.Threading.SemaphoreSlim/System.Threading.TaskNode Prev
-    [[deprecated]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_Prev();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_Prev();
     // Get instance field reference: System.Threading.SemaphoreSlim/System.Threading.TaskNode Next
-    [[deprecated]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_Next();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_Next();
     // private System.Void System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
     // Offset: 0xE59128
     void System_Threading_IThreadPoolWorkItem_ExecuteWorkItem();

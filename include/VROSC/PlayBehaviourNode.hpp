@@ -39,7 +39,7 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteBoardPlayer::PlayBehaviour) == 0x4);
     public:
     // Get instance field reference: private VROSC.NoteBoardPlayer/VROSC.PlayBehaviour _playBehaviour
-    [[deprecated]] ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn__playBehaviour();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn__playBehaviour();
     // public VROSC.NoteBoardPlayer/VROSC.PlayBehaviour get_PlayBehaviour()
     // Offset: 0xADFECC
     ::VROSC::NoteBoardPlayer::PlayBehaviour get_PlayBehaviour();
@@ -51,11 +51,6 @@ namespace VROSC {
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayBehaviourNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PlayBehaviourNode::.ctor");

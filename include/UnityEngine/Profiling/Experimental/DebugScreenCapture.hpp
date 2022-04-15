@@ -62,13 +62,13 @@ namespace UnityEngine::Profiling::Experimental {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private Unity.Collections.NativeArray`1<System.Byte> <rawImageDataReference>k__BackingField
-    [[deprecated]] ::Unity::Collections::NativeArray_1<uint8_t>& dyn_$rawImageDataReference$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<uint8_t>& dyn_$rawImageDataReference$k__BackingField();
     // Get instance field reference: private UnityEngine.TextureFormat <imageFormat>k__BackingField
-    [[deprecated]] ::UnityEngine::TextureFormat& dyn_$imageFormat$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextureFormat& dyn_$imageFormat$k__BackingField();
     // Get instance field reference: private System.Int32 <width>k__BackingField
-    [[deprecated]] int& dyn_$width$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$width$k__BackingField();
     // Get instance field reference: private System.Int32 <height>k__BackingField
-    [[deprecated]] int& dyn_$height$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$height$k__BackingField();
     // public System.Void set_rawImageDataReference(Unity.Collections.NativeArray`1<System.Byte> value)
     // Offset: 0x11265A0
     void set_rawImageDataReference(::Unity::Collections::NativeArray_1<uint8_t> value);

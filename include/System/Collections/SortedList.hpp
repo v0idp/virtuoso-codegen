@@ -135,21 +135,21 @@ namespace System::Collections {
     // Set static field: static private System.Object[] emptyArray
     static void _set_emptyArray(::ArrayW<::Il2CppObject*> value);
     // Get instance field reference: private System.Object[] keys
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_keys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_keys();
     // Get instance field reference: private System.Object[] values
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_values();
     // Get instance field reference: private System.Int32 _size
-    [[deprecated]] int& dyn__size();
+    [[deprecated("Use field access instead!")]] int& dyn__size();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Collections.IComparer comparer
-    [[deprecated]] ::System::Collections::IComparer*& dyn_comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IComparer*& dyn_comparer();
     // Get instance field reference: private System.Collections.SortedList/System.Collections.KeyList keyList
-    [[deprecated]] ::System::Collections::SortedList::KeyList*& dyn_keyList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList::KeyList*& dyn_keyList();
     // Get instance field reference: private System.Collections.SortedList/System.Collections.ValueList valueList
-    [[deprecated]] ::System::Collections::SortedList::ValueList*& dyn_valueList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList::ValueList*& dyn_valueList();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // public System.Int32 get_Capacity()
     // Offset: 0x12514F8
     int get_Capacity();

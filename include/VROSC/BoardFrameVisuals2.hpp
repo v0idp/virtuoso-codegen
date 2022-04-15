@@ -123,23 +123,23 @@ namespace VROSC {
     // Set static field: static private System.Int32 _FlowY
     static void _set__FlowY(int value);
     // Get instance field reference: private VROSC.NoteFieldMonitor _monitor
-    [[deprecated]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Single _speed
-    [[deprecated]] float& dyn__speed();
+    [[deprecated("Use field access instead!")]] float& dyn__speed();
     // Get instance field reference: private UnityEngine.Color[,] _flowColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__flowColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__flowColors();
     // Get instance field reference: private System.Single _lastFlowMove
-    [[deprecated]] float& dyn__lastFlowMove();
+    [[deprecated("Use field access instead!")]] float& dyn__lastFlowMove();
     // Get instance field reference: private UnityEngine.Vector4[] _flowAsVectorsCached
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn__flowAsVectorsCached();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn__flowAsVectorsCached();
     // Get instance field reference: private UnityEngine.Color[] _currentFlowColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__currentFlowColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__currentFlowColors();
     // Get instance field reference: private System.Single[] _x
-    [[deprecated]] ::ArrayW<float>& dyn__x();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__x();
     // Get instance field reference: private System.Single[] _z
-    [[deprecated]] ::ArrayW<float>& dyn__z();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__z();
     // private System.Void Start()
     // Offset: 0x938618
     void Start();
@@ -159,11 +159,6 @@ namespace VROSC {
     // Offset: 0x938AAC
     // Implemented from: VROSC.FrameVisuals
     // Base method: System.Void FrameVisuals::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BoardFrameVisuals2* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BoardFrameVisuals2::.ctor");

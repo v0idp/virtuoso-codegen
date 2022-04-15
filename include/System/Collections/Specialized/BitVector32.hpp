@@ -47,7 +47,7 @@ namespace System::Collections::Specialized {
       return data;
     }
     // Get instance field reference: private System.UInt32 data
-    [[deprecated]] uint& dyn_data();
+    [[deprecated("Use field access instead!")]] uint& dyn_data();
     // public System.Boolean get_Item(System.Int32 bit)
     // Offset: 0x10DA814
     bool get_Item(int bit);

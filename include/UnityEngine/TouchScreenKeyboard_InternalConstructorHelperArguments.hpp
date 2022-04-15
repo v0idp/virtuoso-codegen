@@ -68,17 +68,17 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 keyboardType
-    [[deprecated]] uint& dyn_keyboardType();
+    [[deprecated("Use field access instead!")]] uint& dyn_keyboardType();
     // Get instance field reference: public System.UInt32 autocorrection
-    [[deprecated]] uint& dyn_autocorrection();
+    [[deprecated("Use field access instead!")]] uint& dyn_autocorrection();
     // Get instance field reference: public System.UInt32 multiline
-    [[deprecated]] uint& dyn_multiline();
+    [[deprecated("Use field access instead!")]] uint& dyn_multiline();
     // Get instance field reference: public System.UInt32 secure
-    [[deprecated]] uint& dyn_secure();
+    [[deprecated("Use field access instead!")]] uint& dyn_secure();
     // Get instance field reference: public System.UInt32 alert
-    [[deprecated]] uint& dyn_alert();
+    [[deprecated("Use field access instead!")]] uint& dyn_alert();
     // Get instance field reference: public System.Int32 characterLimit
-    [[deprecated]] int& dyn_characterLimit();
+    [[deprecated("Use field access instead!")]] int& dyn_characterLimit();
   }; // UnityEngine.TouchScreenKeyboard_InternalConstructorHelperArguments
   #pragma pack(pop)
   static check_size<sizeof(TouchScreenKeyboard_InternalConstructorHelperArguments), 20 + sizeof(int)> __UnityEngine_TouchScreenKeyboard_InternalConstructorHelperArgumentsSizeCheck;

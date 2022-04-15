@@ -162,27 +162,27 @@ namespace System {
     // Set static field: static private System.Security.Cryptography.RandomNumberGenerator _fastRng
     static void _set__fastRng(::System::Security::Cryptography::RandomNumberGenerator* value);
     // Get instance field reference: private System.Int32 _a
-    [[deprecated]] int& dyn__a();
+    [[deprecated("Use field access instead!")]] int& dyn__a();
     // Get instance field reference: private System.Int16 _b
-    [[deprecated]] int16_t& dyn__b();
+    [[deprecated("Use field access instead!")]] int16_t& dyn__b();
     // Get instance field reference: private System.Int16 _c
-    [[deprecated]] int16_t& dyn__c();
+    [[deprecated("Use field access instead!")]] int16_t& dyn__c();
     // Get instance field reference: private System.Byte _d
-    [[deprecated]] uint8_t& dyn__d();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__d();
     // Get instance field reference: private System.Byte _e
-    [[deprecated]] uint8_t& dyn__e();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__e();
     // Get instance field reference: private System.Byte _f
-    [[deprecated]] uint8_t& dyn__f();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__f();
     // Get instance field reference: private System.Byte _g
-    [[deprecated]] uint8_t& dyn__g();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__g();
     // Get instance field reference: private System.Byte _h
-    [[deprecated]] uint8_t& dyn__h();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__h();
     // Get instance field reference: private System.Byte _i
-    [[deprecated]] uint8_t& dyn__i();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__i();
     // Get instance field reference: private System.Byte _j
-    [[deprecated]] uint8_t& dyn__j();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__j();
     // Get instance field reference: private System.Byte _k
-    [[deprecated]] uint8_t& dyn__k();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__k();
     // public System.Void .ctor(System.Byte[] b)
     // Offset: 0x1457AB0
     Guid(::ArrayW<uint8_t> b);

@@ -50,7 +50,7 @@ namespace System {
       return objectName;
     }
     // Get instance field reference: private System.String objectName
-    [[deprecated]] ::StringW& dyn_objectName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_objectName();
     // public System.String get_ObjectName()
     // Offset: 0x146C670
     ::StringW get_ObjectName();

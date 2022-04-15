@@ -52,7 +52,7 @@ namespace System::Net {
       return webProxy;
     }
     // Get instance field reference: protected readonly System.Net.WebProxy webProxy
-    [[deprecated]] ::System::Net::WebProxy*& dyn_webProxy();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebProxy*& dyn_webProxy();
     // public System.Net.ICredentials get_Credentials()
     // Offset: 0xA09774
     ::System::Net::ICredentials* get_Credentials();

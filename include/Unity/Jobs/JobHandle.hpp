@@ -48,9 +48,9 @@ namespace Unity::Jobs {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.IntPtr jobGroup
-    [[deprecated]] ::System::IntPtr& dyn_jobGroup();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_jobGroup();
     // Get instance field reference: System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // static public System.Void ScheduleBatchedJobs()
     // Offset: 0x111E104
     static void ScheduleBatchedJobs();

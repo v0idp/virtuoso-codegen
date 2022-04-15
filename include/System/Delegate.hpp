@@ -138,27 +138,27 @@ namespace System {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: private System.IntPtr method_ptr
-    [[deprecated]] ::System::IntPtr& dyn_method_ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_method_ptr();
     // Get instance field reference: private System.IntPtr invoke_impl
-    [[deprecated]] ::System::IntPtr& dyn_invoke_impl();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_invoke_impl();
     // Get instance field reference: private System.Object m_target
-    [[deprecated]] ::Il2CppObject*& dyn_m_target();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_target();
     // Get instance field reference: private System.IntPtr method
-    [[deprecated]] ::System::IntPtr& dyn_method();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_method();
     // Get instance field reference: private System.IntPtr delegate_trampoline
-    [[deprecated]] ::System::IntPtr& dyn_delegate_trampoline();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_delegate_trampoline();
     // Get instance field reference: private System.IntPtr extra_arg
-    [[deprecated]] ::System::IntPtr& dyn_extra_arg();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_extra_arg();
     // Get instance field reference: private System.IntPtr method_code
-    [[deprecated]] ::System::IntPtr& dyn_method_code();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_method_code();
     // Get instance field reference: private System.Reflection.MethodInfo method_info
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_method_info();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_method_info();
     // Get instance field reference: private System.Reflection.MethodInfo original_method_info
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_original_method_info();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_original_method_info();
     // Get instance field reference: private System.DelegateData data
-    [[deprecated]] ::System::DelegateData*& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::DelegateData*& dyn_data();
     // Get instance field reference: private System.Boolean method_is_virtual
-    [[deprecated]] bool& dyn_method_is_virtual();
+    [[deprecated("Use field access instead!")]] bool& dyn_method_is_virtual();
     // public System.Reflection.MethodInfo get_Method()
     // Offset: 0x129A598
     ::System::Reflection::MethodInfo* get_Method();

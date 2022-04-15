@@ -60,7 +60,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.LoopType Incremental
     static void _set_Incremental(::DG::Tweening::LoopType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // DG.Tweening.LoopType
   #pragma pack(pop)
   static check_size<sizeof(LoopType), 0 + sizeof(int)> __DG_Tweening_LoopTypeSizeCheck;

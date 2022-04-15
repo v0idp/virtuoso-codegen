@@ -65,7 +65,7 @@ namespace System::Security::Cryptography {
       return m_list;
     }
     // Get instance field reference: private System.Collections.ArrayList m_list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_m_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_m_list();
     // public System.Security.Cryptography.Oid get_Item(System.Int32 index)
     // Offset: 0x1407CA8
     ::System::Security::Cryptography::Oid* get_Item(int index);
@@ -75,6 +75,13 @@ namespace System::Security::Cryptography {
     // public System.Object get_SyncRoot()
     // Offset: 0x1407FD0
     ::Il2CppObject* get_SyncRoot();
+    // public System.Void .ctor()
+    // Offset: 0x1407C1C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OidCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::OidCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OidCollection*, creationType>()));
+    }
     // public System.Int32 Add(System.Security.Cryptography.Oid oid)
     // Offset: 0x1407C84
     int Add(::System::Security::Cryptography::Oid* oid);
@@ -84,15 +91,6 @@ namespace System::Security::Cryptography {
     // private System.Void System.Collections.ICollection.CopyTo(System.Array array, System.Int32 index)
     // Offset: 0x1407DEC
     void System_Collections_ICollection_CopyTo(::System::Array* array, int index);
-    // public System.Void .ctor()
-    // Offset: 0x1407C1C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OidCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::OidCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OidCollection*, creationType>()));
-    }
   }; // System.Security.Cryptography.OidCollection
   #pragma pack(pop)
   static check_size<sizeof(OidCollection), 16 + sizeof(::System::Collections::ArrayList*)> __System_Security_Cryptography_OidCollectionSizeCheck;
@@ -124,6 +122,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::OidCollection*), "get_SyncRoot", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Security::Cryptography::OidCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::OidCollection::Add
 // Il2CppName: Add
 template<>
@@ -151,7 +153,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::OidCollection*), "System.Collections.ICollection.CopyTo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{array, index});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::OidCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

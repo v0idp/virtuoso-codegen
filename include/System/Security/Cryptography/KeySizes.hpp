@@ -49,11 +49,11 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 m_minSize
-    [[deprecated]] int& dyn_m_minSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_minSize();
     // Get instance field reference: private System.Int32 m_maxSize
-    [[deprecated]] int& dyn_m_maxSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_maxSize();
     // Get instance field reference: private System.Int32 m_skipSize
-    [[deprecated]] int& dyn_m_skipSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_skipSize();
     // public System.Int32 get_MinSize()
     // Offset: 0x1075FC8
     int get_MinSize();

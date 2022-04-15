@@ -65,7 +65,14 @@ namespace Newtonsoft::Json::Linq {
     // Set static field: static private readonly System.Collections.Generic.IEqualityComparer`1<System.String> Comparer
     static void _set_Comparer(::System::Collections::Generic::IEqualityComparer_1<::StringW>* value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,Newtonsoft.Json.Linq.JToken> _dictionary
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Newtonsoft::Json::Linq::JToken*>*& dyn__dictionary();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Newtonsoft::Json::Linq::JToken*>*& dyn__dictionary();
+    // public System.Void .ctor()
+    // Offset: 0xEDE80C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JPropertyKeyedCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JPropertyKeyedCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JPropertyKeyedCollection*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xEE1D7C
     static void _cctor();
@@ -93,16 +100,6 @@ namespace Newtonsoft::Json::Linq {
     // public System.Int32 IndexOfReference(Newtonsoft.Json.Linq.JToken t)
     // Offset: 0xEDE928
     int IndexOfReference(::Newtonsoft::Json::Linq::JToken* t);
-    // public System.Void .ctor()
-    // Offset: 0xEDE80C
-    // Implemented from: System.Collections.ObjectModel.Collection`1
-    // Base method: System.Void Collection_1::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JPropertyKeyedCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JPropertyKeyedCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JPropertyKeyedCollection*, creationType>()));
-    }
     // protected override System.Void ClearItems()
     // Offset: 0xEE186C
     // Implemented from: System.Collections.ObjectModel.Collection`1
@@ -117,6 +114,10 @@ namespace Newtonsoft::Json::Linq {
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Linq::JPropertyKeyedCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Linq::JPropertyKeyedCollection::_cctor
 // Il2CppName: .cctor
 template<>
@@ -200,10 +201,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Newton
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Linq::JPropertyKeyedCollection*), "IndexOfReference", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Linq::JPropertyKeyedCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Linq::JPropertyKeyedCollection::ClearItems
 // Il2CppName: ClearItems
 template<>

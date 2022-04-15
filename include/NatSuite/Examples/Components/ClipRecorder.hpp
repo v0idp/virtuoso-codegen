@@ -60,11 +60,11 @@ namespace NatSuite::Examples::Components {
     static_assert(sizeof(::System::IO::MemoryStream*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Int32 sampleRate
-    [[deprecated]] int& dyn_sampleRate();
+    [[deprecated("Use field access instead!")]] int& dyn_sampleRate();
     // Get instance field reference: private readonly System.Int32 channelCount
-    [[deprecated]] int& dyn_channelCount();
+    [[deprecated("Use field access instead!")]] int& dyn_channelCount();
     // Get instance field reference: private readonly System.IO.MemoryStream audioBuffer
-    [[deprecated]] ::System::IO::MemoryStream*& dyn_audioBuffer();
+    [[deprecated("Use field access instead!")]] ::System::IO::MemoryStream*& dyn_audioBuffer();
     // public System.Void .ctor(System.Int32 sampleRate, System.Int32 channelCount)
     // Offset: 0x945D80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

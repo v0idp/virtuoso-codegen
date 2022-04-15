@@ -50,11 +50,11 @@ namespace System::Globalization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.String tokenString
-    [[deprecated]] ::StringW& dyn_tokenString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_tokenString();
     // Get instance field reference: System.TokenType tokenType
-    [[deprecated]] ::System::TokenType& dyn_tokenType();
+    [[deprecated("Use field access instead!")]] ::System::TokenType& dyn_tokenType();
     // Get instance field reference: System.Int32 tokenValue
-    [[deprecated]] int& dyn_tokenValue();
+    [[deprecated("Use field access instead!")]] int& dyn_tokenValue();
     // System.Void .ctor(System.String tokenString, System.TokenType tokenType, System.Int32 tokenValue)
     // Offset: 0x12A9F6C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

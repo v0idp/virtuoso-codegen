@@ -84,19 +84,26 @@ namespace UnityEngine::Timeline {
     // Set static field: static private System.Single kUnsetTime
     static void _set_kUnsetTime(float value);
     // Get instance field reference: private System.Single m_LastPlayableTime
-    [[deprecated]] float& dyn_m_LastPlayableTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LastPlayableTime();
     // Get instance field reference: private System.Single m_LastParticleTime
-    [[deprecated]] float& dyn_m_LastParticleTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LastParticleTime();
     // Get instance field reference: private System.UInt32 m_RandomSeed
-    [[deprecated]] uint& dyn_m_RandomSeed();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_RandomSeed();
     // Get instance field reference: private UnityEngine.ParticleSystem <particleSystem>k__BackingField
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_$particleSystem$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn_$particleSystem$k__BackingField();
     // public UnityEngine.ParticleSystem get_particleSystem()
     // Offset: 0xC79C30
     ::UnityEngine::ParticleSystem* get_particleSystem();
     // private System.Void set_particleSystem(UnityEngine.ParticleSystem value)
     // Offset: 0xC79C38
     void set_particleSystem(::UnityEngine::ParticleSystem* value);
+    // public System.Void .ctor()
+    // Offset: 0xC79FBC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ParticleControlPlayable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ParticleControlPlayable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ParticleControlPlayable*, creationType>()));
+    }
     // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.ParticleControlPlayable> Create(UnityEngine.Playables.PlayableGraph graph, UnityEngine.ParticleSystem component, System.UInt32 randomSeed)
     // Offset: 0xC73AA4
     static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ParticleControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::ParticleSystem* component, uint randomSeed);
@@ -109,16 +116,6 @@ namespace UnityEngine::Timeline {
     // private System.Void Simulate(System.Single time, System.Boolean restart)
     // Offset: 0xC79EDC
     void Simulate(float time, bool restart);
-    // public System.Void .ctor()
-    // Offset: 0xC79FBC
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ParticleControlPlayable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ParticleControlPlayable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ParticleControlPlayable*, creationType>()));
-    }
     // public override System.Void PrepareFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData data)
     // Offset: 0xC79D88
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -157,6 +154,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ParticleControlPlayable*), "set_particleSystem", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::ParticleControlPlayable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::ParticleControlPlayable::Create
 // Il2CppName: Create
 template<>
@@ -198,10 +199,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ParticleControlPlayable*), "Simulate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{time, restart});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::ParticleControlPlayable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::ParticleControlPlayable::PrepareFrame
 // Il2CppName: PrepareFrame
 template<>

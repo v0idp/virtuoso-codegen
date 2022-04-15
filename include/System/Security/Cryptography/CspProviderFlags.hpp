@@ -98,7 +98,7 @@ namespace System::Security::Cryptography {
     // Set static field: static public System.Security.Cryptography.CspProviderFlags CreateEphemeralKey
     static void _set_CreateEphemeralKey(::System::Security::Cryptography::CspProviderFlags value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Security.Cryptography.CspProviderFlags
   #pragma pack(pop)
   static check_size<sizeof(CspProviderFlags), 0 + sizeof(int)> __System_Security_Cryptography_CspProviderFlagsSizeCheck;

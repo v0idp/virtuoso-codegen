@@ -56,9 +56,9 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authManager
-    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::AuthenticationManager*& dyn__authManager();
     // Get instance field reference: private System.Boolean <HasCheckedForData>k__BackingField
-    [[deprecated]] bool& dyn_$HasCheckedForData$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasCheckedForData$k__BackingField();
     // public System.Boolean get_HasCheckedForData()
     // Offset: 0x9458EC
     bool get_HasCheckedForData();

@@ -139,27 +139,27 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteFieldNoteData*) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteBoard _noteBoard
-    [[deprecated]] ::VROSC::NoteBoard*& dyn__noteBoard();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard*& dyn__noteBoard();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.PlayAxis _playAxis
-    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn__playAxis();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::PlayAxis& dyn__playAxis();
     // Get instance field reference: private VROSC.NoteBoardNote/VROSC.Coloring _coloring
-    [[deprecated]] ::VROSC::NoteBoardNote::Coloring& dyn__coloring();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote::Coloring& dyn__coloring();
     // Get instance field reference: private VROSC.IntField _octave
-    [[deprecated]] ::VROSC::IntField*& dyn__octave();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__octave();
     // Get instance field reference: private VROSC.PlayBehaviourField _playBehaviour
-    [[deprecated]] ::VROSC::PlayBehaviourField*& dyn__playBehaviour();
+    [[deprecated("Use field access instead!")]] ::VROSC::PlayBehaviourField*& dyn__playBehaviour();
     // Get instance field reference: private VROSC.IntField _scaleOffset
-    [[deprecated]] ::VROSC::IntField*& dyn__scaleOffset();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__scaleOffset();
     // Get instance field reference: private System.Boolean _avoidTritone
-    [[deprecated]] bool& dyn__avoidTritone();
+    [[deprecated("Use field access instead!")]] bool& dyn__avoidTritone();
     // Get instance field reference: private System.Boolean _isMultiNote
-    [[deprecated]] bool& dyn__isMultiNote();
+    [[deprecated("Use field access instead!")]] bool& dyn__isMultiNote();
     // Get instance field reference: private System.Int32 _multiNote
-    [[deprecated]] int& dyn__multiNote();
+    [[deprecated("Use field access instead!")]] int& dyn__multiNote();
     // Get instance field reference: private System.Single _multiNoteValue
-    [[deprecated]] float& dyn__multiNoteValue();
+    [[deprecated("Use field access instead!")]] float& dyn__multiNoteValue();
     // Get instance field reference: private VROSC.NoteFieldNoteData _currentPlayingNoteField
-    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn__currentPlayingNoteField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldNoteData*& dyn__currentPlayingNoteField();
     // public VROSC.InstrumentController get_Instrument()
     // Offset: 0xC57470
     ::VROSC::InstrumentController* get_Instrument();
@@ -177,11 +177,6 @@ namespace VROSC {
     // Base method: System.Void NotePlayer::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardPlayer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardPlayer::.ctor");

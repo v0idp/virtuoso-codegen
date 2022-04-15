@@ -57,15 +57,22 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.SignalAsset> m_Signals
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>*& dyn_m_Signals();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>*& dyn_m_Signals();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Events.UnityEvent> m_Events
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>*& dyn_m_Events();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>*& dyn_m_Events();
     // public System.Collections.Generic.List`1<UnityEngine.Timeline.SignalAsset> get_signals()
     // Offset: 0x18D50A8
     ::System::Collections::Generic::List_1<::UnityEngine::Timeline::SignalAsset*>* get_signals();
     // public System.Collections.Generic.List`1<UnityEngine.Events.UnityEvent> get_events()
     // Offset: 0x18D50B0
     ::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>* get_events();
+    // public System.Void .ctor()
+    // Offset: 0x18D50B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SignalReceiver::EventKeyValue* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::SignalReceiver::EventKeyValue::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SignalReceiver::EventKeyValue*, creationType>()));
+    }
     // public System.Boolean TryGetValue(UnityEngine.Timeline.SignalAsset key, out UnityEngine.Events.UnityEvent value)
     // Offset: 0x18D4DE4
     bool TryGetValue(::UnityEngine::Timeline::SignalAsset* key, ByRef<::UnityEngine::Events::UnityEvent*> value);
@@ -78,15 +85,6 @@ namespace UnityEngine::Timeline {
     // public System.Void Remove(UnityEngine.Timeline.SignalAsset key)
     // Offset: 0x18D4FD8
     void Remove(::UnityEngine::Timeline::SignalAsset* key);
-    // public System.Void .ctor()
-    // Offset: 0x18D50B8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SignalReceiver::EventKeyValue* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::SignalReceiver::EventKeyValue::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SignalReceiver::EventKeyValue*, creationType>()));
-    }
   }; // UnityEngine.Timeline.SignalReceiver/UnityEngine.Timeline.EventKeyValue
   #pragma pack(pop)
   static check_size<sizeof(SignalReceiver::EventKeyValue), 24 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::Events::UnityEvent*>*)> __UnityEngine_Timeline_SignalReceiver_EventKeyValueSizeCheck;
@@ -109,6 +107,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::SignalReceiver::EventKeyValue*), "get_events", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::SignalReceiver::EventKeyValue::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::SignalReceiver::EventKeyValue::TryGetValue
 // Il2CppName: TryGetValue
 template<>
@@ -147,7 +149,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::SignalReceiver::EventKeyValue*), "Remove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{key});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::SignalReceiver::EventKeyValue::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

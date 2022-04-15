@@ -55,9 +55,9 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Xml.Schema.BitSet curpos
-    [[deprecated]] ::System::Xml::Schema::BitSet*& dyn_curpos();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::BitSet*& dyn_curpos();
     // Get instance field reference: public System.Decimal[] rangeCounters
-    [[deprecated]] ::ArrayW<::System::Decimal>& dyn_rangeCounters();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Decimal>& dyn_rangeCounters();
   }; // System.Xml.Schema.RangePositionInfo
   #pragma pack(pop)
   static check_size<sizeof(RangePositionInfo), 8 + sizeof(::ArrayW<::System::Decimal>)> __System_Xml_Schema_RangePositionInfoSizeCheck;

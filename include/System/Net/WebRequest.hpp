@@ -175,15 +175,15 @@ namespace System::Net {
     // Set static field: static private System.Boolean s_DefaultWebProxyInitialized
     static void _set_s_DefaultWebProxyInitialized(bool value);
     // Get instance field reference: private System.Net.Security.AuthenticationLevel m_AuthenticationLevel
-    [[deprecated]] ::System::Net::Security::AuthenticationLevel& dyn_m_AuthenticationLevel();
+    [[deprecated("Use field access instead!")]] ::System::Net::Security::AuthenticationLevel& dyn_m_AuthenticationLevel();
     // Get instance field reference: private System.Security.Principal.TokenImpersonationLevel m_ImpersonationLevel
-    [[deprecated]] ::System::Security::Principal::TokenImpersonationLevel& dyn_m_ImpersonationLevel();
+    [[deprecated("Use field access instead!")]] ::System::Security::Principal::TokenImpersonationLevel& dyn_m_ImpersonationLevel();
     // Get instance field reference: private System.Net.Cache.RequestCachePolicy m_CachePolicy
-    [[deprecated]] ::System::Net::Cache::RequestCachePolicy*& dyn_m_CachePolicy();
+    [[deprecated("Use field access instead!")]] ::System::Net::Cache::RequestCachePolicy*& dyn_m_CachePolicy();
     // Get instance field reference: private System.Net.Cache.RequestCacheProtocol m_CacheProtocol
-    [[deprecated]] ::System::Net::Cache::RequestCacheProtocol*& dyn_m_CacheProtocol();
+    [[deprecated("Use field access instead!")]] ::System::Net::Cache::RequestCacheProtocol*& dyn_m_CacheProtocol();
     // Get instance field reference: private System.Net.Cache.RequestCacheBinding m_CacheBinding
-    [[deprecated]] ::System::Net::Cache::RequestCacheBinding*& dyn_m_CacheBinding();
+    [[deprecated("Use field access instead!")]] ::System::Net::Cache::RequestCacheBinding*& dyn_m_CacheBinding();
     // static private System.Object get_InternalSyncObject()
     // Offset: 0xC4933C
     static ::Il2CppObject* get_InternalSyncObject();
@@ -244,6 +244,13 @@ namespace System::Net {
     // static public System.Net.IWebProxy get_DefaultWebProxy()
     // Offset: 0xC4A844
     static ::System::Net::IWebProxy* get_DefaultWebProxy();
+    // protected System.Void .ctor()
+    // Offset: 0xC49E80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WebRequest* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebRequest::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WebRequest*, creationType>()));
+    }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     // Offset: 0xC49EB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -302,16 +309,6 @@ namespace System::Net {
     // private System.Threading.Tasks.Task`1<System.Net.WebResponse> <GetResponseAsync>b__79_0()
     // Offset: 0xC4A958
     ::System::Threading::Tasks::Task_1<::System::Net::WebResponse*>* $GetResponseAsync$b__79_0();
-    // protected System.Void .ctor()
-    // Offset: 0xC49E80
-    // Implemented from: System.MarshalByRefObject
-    // Base method: System.Void MarshalByRefObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WebRequest* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebRequest::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WebRequest*, creationType>()));
-    }
   }; // System.Net.WebRequest
   #pragma pack(pop)
   static check_size<sizeof(WebRequest), 48 + sizeof(::System::Net::Cache::RequestCacheBinding*)> __System_Net_WebRequestSizeCheck;
@@ -489,6 +486,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::N
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Net::WebRequest::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::WebRequest::_cctor
 // Il2CppName: .cctor
 template<>
@@ -640,7 +641,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebRequest*), "<GetResponseAsync>b__79_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::WebRequest::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

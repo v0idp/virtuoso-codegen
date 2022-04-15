@@ -62,11 +62,11 @@ namespace System::Runtime::Remoting::Channels {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: private System.String sinkName
-    [[deprecated]] ::StringW& dyn_sinkName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sinkName();
     // Get instance field reference: private System.Collections.ArrayList children
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_children();
     // Get instance field reference: private System.Collections.Hashtable properties
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_properties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_properties();
     // public System.Collections.IList get_Children()
     // Offset: 0x124BEAC
     ::System::Collections::IList* get_Children();

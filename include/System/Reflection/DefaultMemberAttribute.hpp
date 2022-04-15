@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_memberName;
     }
     // Get instance field reference: private System.String m_memberName
-    [[deprecated]] ::StringW& dyn_m_memberName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_memberName();
     // public System.String get_MemberName()
     // Offset: 0x129A590
     ::StringW get_MemberName();

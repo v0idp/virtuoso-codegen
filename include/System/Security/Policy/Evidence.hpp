@@ -76,11 +76,11 @@ namespace System::Security::Policy {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: private System.Boolean _locked
-    [[deprecated]] bool& dyn__locked();
+    [[deprecated("Use field access instead!")]] bool& dyn__locked();
     // Get instance field reference: private System.Collections.ArrayList hostEvidenceList
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_hostEvidenceList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_hostEvidenceList();
     // Get instance field reference: private System.Collections.ArrayList assemblyEvidenceList
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_assemblyEvidenceList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_assemblyEvidenceList();
     // public System.Int32 get_Count()
     // Offset: 0x14F8C40
     int get_Count();

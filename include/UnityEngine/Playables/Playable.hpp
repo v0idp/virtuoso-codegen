@@ -77,7 +77,7 @@ namespace UnityEngine::Playables {
     // Set static field: static private readonly UnityEngine.Playables.Playable m_NullPlayable
     static void _set_m_NullPlayable(::UnityEngine::Playables::Playable value);
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // static public UnityEngine.Playables.Playable get_Null()
     // Offset: 0xBC2268
     static ::UnityEngine::Playables::Playable get_Null();

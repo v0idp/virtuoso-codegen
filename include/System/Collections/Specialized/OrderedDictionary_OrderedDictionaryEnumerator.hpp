@@ -56,9 +56,9 @@ namespace System::Collections::Specialized {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Int32 _objectReturnType
-    [[deprecated]] int& dyn__objectReturnType();
+    [[deprecated("Use field access instead!")]] int& dyn__objectReturnType();
     // Get instance field reference: private System.Collections.IEnumerator arrayEnumerator
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_arrayEnumerator();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_arrayEnumerator();
     // public System.Object get_Current()
     // Offset: 0x9FBF10
     ::Il2CppObject* get_Current();

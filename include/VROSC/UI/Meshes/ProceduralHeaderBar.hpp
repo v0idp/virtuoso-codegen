@@ -60,11 +60,11 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32 _edges
-    [[deprecated]] int& dyn__edges();
+    [[deprecated("Use field access instead!")]] int& dyn__edges();
     // Get instance field reference: private System.Boolean _buttonOnLeft
-    [[deprecated]] bool& dyn__buttonOnLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn__buttonOnLeft();
     // Get instance field reference: private System.Boolean _buttonOnRight
-    [[deprecated]] bool& dyn__buttonOnRight();
+    [[deprecated("Use field access instead!")]] bool& dyn__buttonOnRight();
     // private System.Int32 get_edgeVertexPairs()
     // Offset: 0xB230EC
     int get_edgeVertexPairs();
@@ -83,9 +83,6 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xB23A18
     // Implemented from: VROSC.UI.Meshes.ProceduralMeshData
     // Base method: System.Void ProceduralMeshData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralHeaderBar* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralHeaderBar::.ctor");

@@ -60,7 +60,7 @@ namespace UnityEngine {
     // Set static field: static private System.Action`1<UnityEngine.Font> textureRebuilt
     static void _set_textureRebuilt(::System::Action_1<::UnityEngine::Font*>* value);
     // Get instance field reference: private UnityEngine.Font/UnityEngine.FontTextureRebuildCallback m_FontTextureRebuildCallback
-    [[deprecated]] ::UnityEngine::Font::FontTextureRebuildCallback*& dyn_m_FontTextureRebuildCallback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Font::FontTextureRebuildCallback*& dyn_m_FontTextureRebuildCallback();
     // public UnityEngine.Material get_material()
     // Offset: 0x18FBAAC
     ::UnityEngine::Material* get_material();

@@ -57,9 +57,9 @@ namespace Oculus::Platform::Samples::VrHoops {
     static_assert(sizeof(::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*) == 0x8);
     public:
     // Get instance field reference: private Oculus.Platform.Models.User m_user
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_m_user();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_m_user();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.P2PNetworkGoal m_goal
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*& dyn_m_goal();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::P2PNetworkGoal*& dyn_m_goal();
     // public System.Void set_User(Oculus.Platform.Models.User value)
     // Offset: 0x1713554
     void set_User(::Oculus::Platform::Models::User* value);
@@ -84,11 +84,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Offset: 0x1713590
     // Implemented from: Oculus.Platform.Samples.VrHoops.Player
     // Base method: System.Void Player::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RemotePlayer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::RemotePlayer::.ctor");

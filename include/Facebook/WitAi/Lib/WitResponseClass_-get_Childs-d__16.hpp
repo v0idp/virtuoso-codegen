@@ -80,15 +80,15 @@ namespace Facebook::WitAi::Lib {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Facebook::WitAi::Lib::WitResponseNode*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private Facebook.WitAi.Lib.WitResponseNode <>2__current
-    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public Facebook.WitAi.Lib.WitResponseClass <>4__this
-    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseClass*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Lib::WitResponseClass*& dyn_$$4__this();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2/System.Collections.Generic.Enumerator<System.String,Facebook.WitAi.Lib.WitResponseNode> <>7__wrap1
-    [[deprecated]] typename ::System::Collections::Generic::Dictionary_2<::StringW, ::Facebook::WitAi::Lib::WitResponseNode*>::Enumerator& dyn_$$7__wrap1();
+    [[deprecated("Use field access instead!")]] typename ::System::Collections::Generic::Dictionary_2<::StringW, ::Facebook::WitAi::Lib::WitResponseNode*>::Enumerator& dyn_$$7__wrap1();
     // private Facebook.WitAi.Lib.WitResponseNode System.Collections.Generic.IEnumerator<Facebook.WitAi.Lib.WitResponseNode>.get_Current()
     // Offset: 0x167E6C0
     ::Facebook::WitAi::Lib::WitResponseNode* System_Collections_Generic_IEnumerator$Facebook_WitAi_Lib_WitResponseNode$_get_Current();

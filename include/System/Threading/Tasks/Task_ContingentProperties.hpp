@@ -101,21 +101,21 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>*) == 0x8);
     public:
     // Get instance field reference: System.Threading.ExecutionContext m_capturedContext
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_capturedContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_m_capturedContext();
     // Get instance field reference: System.Threading.ManualResetEventSlim m_completionEvent
-    [[deprecated]] ::System::Threading::ManualResetEventSlim*& dyn_m_completionEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEventSlim*& dyn_m_completionEvent();
     // Get instance field reference: System.Threading.Tasks.TaskExceptionHolder m_exceptionsHolder
-    [[deprecated]] ::System::Threading::Tasks::TaskExceptionHolder*& dyn_m_exceptionsHolder();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskExceptionHolder*& dyn_m_exceptionsHolder();
     // Get instance field reference: System.Threading.CancellationToken m_cancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_m_cancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_m_cancellationToken();
     // Get instance field reference: System.Threading.Tasks.Shared`1<System.Threading.CancellationTokenRegistration> m_cancellationRegistration
-    [[deprecated]] ::System::Threading::Tasks::Shared_1<::System::Threading::CancellationTokenRegistration>*& dyn_m_cancellationRegistration();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Shared_1<::System::Threading::CancellationTokenRegistration>*& dyn_m_cancellationRegistration();
     // Get instance field reference: System.Int32 m_internalCancellationRequested
-    [[deprecated]] int& dyn_m_internalCancellationRequested();
+    [[deprecated("Use field access instead!")]] int& dyn_m_internalCancellationRequested();
     // Get instance field reference: System.Int32 m_completionCountdown
-    [[deprecated]] int& dyn_m_completionCountdown();
+    [[deprecated("Use field access instead!")]] int& dyn_m_completionCountdown();
     // Get instance field reference: System.Collections.Generic.List`1<System.Threading.Tasks.Task> m_exceptionalChildren
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>*& dyn_m_exceptionalChildren();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Threading::Tasks::Task*>*& dyn_m_exceptionalChildren();
     // System.Void SetCompleted()
     // Offset: 0xE5ECB4
     void SetCompleted();

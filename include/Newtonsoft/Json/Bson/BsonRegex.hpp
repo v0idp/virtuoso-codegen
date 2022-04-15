@@ -55,9 +55,9 @@ namespace Newtonsoft::Json::Bson {
     // Deleting conversion operator: operator ::Newtonsoft::Json::Bson::BsonToken*
     constexpr operator ::Newtonsoft::Json::Bson::BsonToken*() const noexcept = delete;
     // Get instance field reference: private Newtonsoft.Json.Bson.BsonString <Pattern>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Bson::BsonString*& dyn_$Pattern$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Bson::BsonString*& dyn_$Pattern$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Bson.BsonString <Options>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Bson::BsonString*& dyn_$Options$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Bson::BsonString*& dyn_$Options$k__BackingField();
     // public System.Void set_Pattern(Newtonsoft.Json.Bson.BsonString value)
     // Offset: 0xDB8290
     void set_Pattern(::Newtonsoft::Json::Bson::BsonString* value);

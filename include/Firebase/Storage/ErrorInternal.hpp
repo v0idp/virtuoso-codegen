@@ -114,7 +114,7 @@ namespace Firebase::Storage {
     // Set static field: static public Firebase.Storage.ErrorInternal ErrorCancelled
     static void _set_ErrorCancelled(::Firebase::Storage::ErrorInternal value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Firebase.Storage.ErrorInternal
   #pragma pack(pop)
   static check_size<sizeof(ErrorInternal), 0 + sizeof(int)> __Firebase_Storage_ErrorInternalSizeCheck;

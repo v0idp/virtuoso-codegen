@@ -56,7 +56,7 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.RefreshPropertiesAttribute Default
     static void _set_Default(::System::ComponentModel::RefreshPropertiesAttribute* value);
     // Get instance field reference: private System.ComponentModel.RefreshProperties refresh
-    [[deprecated]] ::System::ComponentModel::RefreshProperties& dyn_refresh();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::RefreshProperties& dyn_refresh();
     // public System.ComponentModel.RefreshProperties get_RefreshProperties()
     // Offset: 0x1417E78
     ::System::ComponentModel::RefreshProperties get_RefreshProperties();

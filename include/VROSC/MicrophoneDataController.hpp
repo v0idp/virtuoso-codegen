@@ -73,9 +73,9 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.MicrophoneDataController> OnDataLoaded
     static void _set_OnDataLoaded(::System::Action_1<::VROSC::MicrophoneDataController*>* value);
     // Get instance field reference: private VROSC.TransformDataController _transformData
-    [[deprecated]] ::VROSC::TransformDataController*& dyn__transformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataController*& dyn__transformData();
     // Get instance field reference: private VROSC.MicrophoneSettings _microphoneDefaultSettings
-    [[deprecated]] ::VROSC::MicrophoneSettings*& dyn__microphoneDefaultSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::MicrophoneSettings*& dyn__microphoneDefaultSettings();
     // private VROSC.MicrophoneDataModel get_MicrophoneDataModel()
     // Offset: 0xAC5F0C
     ::VROSC::MicrophoneDataModel* get_MicrophoneDataModel();
@@ -151,7 +151,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolDataController
     // Base method: System.Void ToolDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MicrophoneDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneDataController::.ctor");

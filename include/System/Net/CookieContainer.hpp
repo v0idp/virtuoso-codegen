@@ -120,17 +120,24 @@ namespace System::Net {
     // Set static field: static private readonly System.Net.HeaderVariantInfo[] HeaderInfo
     static void _set_HeaderInfo(::ArrayW<::System::Net::HeaderVariantInfo> value);
     // Get instance field reference: private System.Collections.Hashtable m_domainTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_m_domainTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_m_domainTable();
     // Get instance field reference: private System.Int32 m_maxCookieSize
-    [[deprecated]] int& dyn_m_maxCookieSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_maxCookieSize();
     // Get instance field reference: private System.Int32 m_maxCookies
-    [[deprecated]] int& dyn_m_maxCookies();
+    [[deprecated("Use field access instead!")]] int& dyn_m_maxCookies();
     // Get instance field reference: private System.Int32 m_maxCookiesPerDomain
-    [[deprecated]] int& dyn_m_maxCookiesPerDomain();
+    [[deprecated("Use field access instead!")]] int& dyn_m_maxCookiesPerDomain();
     // Get instance field reference: private System.Int32 m_count
-    [[deprecated]] int& dyn_m_count();
+    [[deprecated("Use field access instead!")]] int& dyn_m_count();
     // Get instance field reference: private System.String m_fqdnMyDomain
-    [[deprecated]] ::StringW& dyn_m_fqdnMyDomain();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_fqdnMyDomain();
+    // public System.Void .ctor()
+    // Offset: 0x10E664C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CookieContainer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::CookieContainer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CookieContainer*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x10EA6A4
     static void _cctor();
@@ -167,21 +174,16 @@ namespace System::Net {
     // System.String GetCookieHeader(System.Uri uri, out System.String optCookie2)
     // Offset: 0x10EA340
     ::StringW GetCookieHeader(::System::Uri* uri, ByRef<::StringW> optCookie2);
-    // public System.Void .ctor()
-    // Offset: 0x10E664C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CookieContainer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::CookieContainer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CookieContainer*, creationType>()));
-    }
   }; // System.Net.CookieContainer
   #pragma pack(pop)
   static check_size<sizeof(CookieContainer), 40 + sizeof(::StringW)> __System_Net_CookieContainerSizeCheck;
   static_assert(sizeof(CookieContainer) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Net::CookieContainer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::CookieContainer::_cctor
 // Il2CppName: .cctor
 template<>
@@ -304,7 +306,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Net::CookieContainer*), "GetCookieHeader", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{uri, optCookie2});
   }
 };
-// Writing MetadataGetter for method: System::Net::CookieContainer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

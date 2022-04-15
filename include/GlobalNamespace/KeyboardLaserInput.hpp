@@ -79,17 +79,17 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private Key _key
-    [[deprecated]] ::GlobalNamespace::Key*& dyn__key();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::Key*& dyn__key();
     // Get instance field reference: private UnityEngine.Collider _collider
-    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__collider();
     // Get instance field reference: private System.Single _startRepeatedPressesDelay
-    [[deprecated]] float& dyn__startRepeatedPressesDelay();
+    [[deprecated("Use field access instead!")]] float& dyn__startRepeatedPressesDelay();
     // Get instance field reference: private System.Single _repeatedPressDelay
-    [[deprecated]] float& dyn__repeatedPressDelay();
+    [[deprecated("Use field access instead!")]] float& dyn__repeatedPressDelay();
     // Get instance field reference: private System.Single _repeatedClickStartTime
-    [[deprecated]] float& dyn__repeatedClickStartTime();
+    [[deprecated("Use field access instead!")]] float& dyn__repeatedClickStartTime();
     // Get instance field reference: private System.Int32 _sentRepeatedClicks
-    [[deprecated]] int& dyn__sentRepeatedClicks();
+    [[deprecated("Use field access instead!")]] int& dyn__sentRepeatedClicks();
     // private System.Void Awake()
     // Offset: 0x194C570
     void Awake();
@@ -118,11 +118,6 @@ namespace GlobalNamespace {
     // Implemented from: VROSC.Clickable
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static KeyboardLaserInput* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::KeyboardLaserInput::.ctor");

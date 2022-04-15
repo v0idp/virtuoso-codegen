@@ -48,7 +48,7 @@ namespace RSG {
       return Exception;
     }
     // Get instance field reference: private System.Exception <Exception>k__BackingField
-    [[deprecated]] ::System::Exception*& dyn_$Exception$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_$Exception$k__BackingField();
     // public System.Exception get_Exception()
     // Offset: 0x8F03B0
     ::System::Exception* get_Exception();

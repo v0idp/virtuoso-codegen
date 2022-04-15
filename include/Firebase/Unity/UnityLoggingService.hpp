@@ -39,18 +39,16 @@ namespace Firebase::Unity {
     // static public Firebase.Unity.UnityLoggingService get_Instance()
     // Offset: 0x18CAD38
     static ::Firebase::Unity::UnityLoggingService* get_Instance();
-    // static private System.Void .cctor()
-    // Offset: 0x18CAD9C
-    static void _cctor();
     // public System.Void .ctor()
     // Offset: 0x18CAD30
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnityLoggingService* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Unity::UnityLoggingService::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UnityLoggingService*, creationType>()));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x18CAD9C
+    static void _cctor();
   }; // Firebase.Unity.UnityLoggingService
   #pragma pack(pop)
 }
@@ -63,6 +61,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Unity::UnityLoggingService*), "get_Instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Unity::UnityLoggingService::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Unity::UnityLoggingService::_cctor
 // Il2CppName: .cctor
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Unity::UnityLoggingService*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Unity::UnityLoggingService::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

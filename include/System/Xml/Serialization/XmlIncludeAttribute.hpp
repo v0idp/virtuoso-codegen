@@ -45,7 +45,7 @@ namespace System::Xml::Serialization {
       return type;
     }
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.Type get_Type()
     // Offset: 0x1285E78
     ::System::Type* get_Type();

@@ -47,7 +47,7 @@ namespace System::Threading {
       return m_ec;
     }
     // Get instance field reference: private System.Threading.ExecutionContext m_ec
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_ec();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_m_ec();
     // public System.Boolean get_IsNull()
     // Offset: 0xE50C74
     bool get_IsNull();

@@ -26,7 +26,7 @@ namespace System {
 // Forward declaring namespace: Mono::Security::X509
 namespace Mono::Security::X509 {
   // Forward declaring type: X509Certificate
-  class X509Certificate;
+  class X509Certificate_;
 }
 // Completed forward declares
 // Type namespace: System.Security.Cryptography.X509Certificates

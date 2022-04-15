@@ -101,32 +101,29 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _textMesh
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textMesh();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__textMesh();
     // Get instance field reference: public System.Single Activation
-    [[deprecated]] float& dyn_Activation();
+    [[deprecated("Use field access instead!")]] float& dyn_Activation();
     // Get instance field reference: private UnityEngine.Vector3[] _vertices
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__vertices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__vertices();
     // Get instance field reference: private UnityEngine.Vector3[] _endVertices
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__endVertices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__endVertices();
     // Get instance field reference: private UnityEngine.Vector3[] _posOffset
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__posOffset();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__posOffset();
     // Get instance field reference: public System.Single Deviation
-    [[deprecated]] float& dyn_Deviation();
+    [[deprecated("Use field access instead!")]] float& dyn_Deviation();
     // Get instance field reference: public UnityEngine.AnimationCurve DeviationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_DeviationCurve();
-    // public System.Void Setup(TMPro.TextMeshPro textMesh, System.String text)
-    // Offset: 0xA247CC
-    void Setup(::TMPro::TextMeshPro* textMesh, ::StringW text);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_DeviationCurve();
     // public System.Void .ctor()
     // Offset: 0xA24C24
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextActivationBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TextActivationBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TextActivationBehaviour*, creationType>()));
     }
+    // public System.Void Setup(TMPro.TextMeshPro textMesh, System.String text)
+    // Offset: 0xA247CC
+    void Setup(::TMPro::TextMeshPro* textMesh, ::StringW text);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0xA24944
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -138,6 +135,10 @@ namespace VROSC {
   static_assert(sizeof(TextActivationBehaviour) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TextActivationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TextActivationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -148,10 +149,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TextActivationBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{textMesh, text});
   }
 };
-// Writing MetadataGetter for method: VROSC::TextActivationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TextActivationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

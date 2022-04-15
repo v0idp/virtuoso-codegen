@@ -49,9 +49,9 @@ namespace System::Security::Cryptography::X509Certificates {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2 certificate
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2*& dyn_certificate();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate2*& dyn_certificate();
     // Get instance field reference: private System.String info
-    [[deprecated]] ::StringW& dyn_info();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_info();
     // public System.Security.Cryptography.X509Certificates.X509Certificate2 get_Certificate()
     // Offset: 0xC52CEC
     ::System::Security::Cryptography::X509Certificates::X509Certificate2* get_Certificate();

@@ -71,15 +71,15 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(::System::Threading::Tasks::InternalTaskOptions) == 0x4);
     public:
     // Get instance field reference: public System.Threading.Tasks.Task root
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_root();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_root();
     // Get instance field reference: public System.Boolean replicasAreQuitting
-    [[deprecated]] bool& dyn_replicasAreQuitting();
+    [[deprecated("Use field access instead!")]] bool& dyn_replicasAreQuitting();
     // Get instance field reference: public System.Action`1<System.Object> taskReplicaDelegate
-    [[deprecated]] ::System::Action_1<::Il2CppObject*>*& dyn_taskReplicaDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Il2CppObject*>*& dyn_taskReplicaDelegate();
     // Get instance field reference: public System.Threading.Tasks.TaskCreationOptions creationOptionsForReplicas
-    [[deprecated]] ::System::Threading::Tasks::TaskCreationOptions& dyn_creationOptionsForReplicas();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCreationOptions& dyn_creationOptionsForReplicas();
     // Get instance field reference: public System.Threading.Tasks.InternalTaskOptions internalOptionsForReplicas
-    [[deprecated]] ::System::Threading::Tasks::InternalTaskOptions& dyn_internalOptionsForReplicas();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::InternalTaskOptions& dyn_internalOptionsForReplicas();
     // System.Void <ExecuteSelfReplicating>b__0(System.Object <p0>)
     // Offset: 0xE5E8C4
     void $ExecuteSelfReplicating$b__0(::Il2CppObject* $p0$);

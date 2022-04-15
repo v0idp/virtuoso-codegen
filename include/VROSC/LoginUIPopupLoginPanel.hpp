@@ -86,17 +86,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private UIInputField _emailInput
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__emailInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__emailInput();
     // Get instance field reference: private UIInputField _passwordInput
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__passwordInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__passwordInput();
     // Get instance field reference: private VROSC.UISlideToggle _rememberMeToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__rememberMeToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__rememberMeToggle();
     // Get instance field reference: private VROSC.UIButton _loginButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__loginButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__loginButton();
     // Get instance field reference: private VROSC.UIButton _createAccountButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__createAccountButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__createAccountButton();
     // Get instance field reference: private VROSC.UIButton _resetPasswordButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__resetPasswordButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__resetPasswordButton();
     // private System.Void Awake()
     // Offset: 0x19B29D4
     void Awake();
@@ -131,11 +131,6 @@ namespace VROSC {
     // Offset: 0x19B4098
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoginUIPopupLoginPanel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopupLoginPanel::.ctor");

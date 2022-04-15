@@ -54,7 +54,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return cachedCertificateHash;
     }
     // Get instance field reference: private System.Byte[] cachedCertificateHash
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_cachedCertificateHash();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_cachedCertificateHash();
     // public System.Boolean get_IsValid()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_IsValid();

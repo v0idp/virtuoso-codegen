@@ -31,8 +31,6 @@ namespace Firebase::Firestore::Internal {
     public:
     // public System.Void .ctor(System.String message)
     // Offset: 0xD47D58
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AssertFailedException* New_ctor(::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Internal::AssertFailedException::.ctor");

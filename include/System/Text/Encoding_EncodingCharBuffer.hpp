@@ -98,25 +98,25 @@ namespace System::Text {
     static_assert(sizeof(::System::Text::DecoderFallbackBuffer*) == 0x8);
     public:
     // Get instance field reference: private System.Char* chars
-    [[deprecated]] ::Il2CppChar*& dyn_chars();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_chars();
     // Get instance field reference: private System.Char* charStart
-    [[deprecated]] ::Il2CppChar*& dyn_charStart();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_charStart();
     // Get instance field reference: private System.Char* charEnd
-    [[deprecated]] ::Il2CppChar*& dyn_charEnd();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_charEnd();
     // Get instance field reference: private System.Int32 charCountResult
-    [[deprecated]] int& dyn_charCountResult();
+    [[deprecated("Use field access instead!")]] int& dyn_charCountResult();
     // Get instance field reference: private System.Text.Encoding enc
-    [[deprecated]] ::System::Text::Encoding*& dyn_enc();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_enc();
     // Get instance field reference: private System.Text.DecoderNLS decoder
-    [[deprecated]] ::System::Text::DecoderNLS*& dyn_decoder();
+    [[deprecated("Use field access instead!")]] ::System::Text::DecoderNLS*& dyn_decoder();
     // Get instance field reference: private System.Byte* byteStart
-    [[deprecated]] uint8_t*& dyn_byteStart();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_byteStart();
     // Get instance field reference: private System.Byte* byteEnd
-    [[deprecated]] uint8_t*& dyn_byteEnd();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_byteEnd();
     // Get instance field reference: private System.Byte* bytes
-    [[deprecated]] uint8_t*& dyn_bytes();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_bytes();
     // Get instance field reference: private System.Text.DecoderFallbackBuffer fallbackBuffer
-    [[deprecated]] ::System::Text::DecoderFallbackBuffer*& dyn_fallbackBuffer();
+    [[deprecated("Use field access instead!")]] ::System::Text::DecoderFallbackBuffer*& dyn_fallbackBuffer();
     // System.Boolean get_MoreData()
     // Offset: 0xE500A8
     bool get_MoreData();

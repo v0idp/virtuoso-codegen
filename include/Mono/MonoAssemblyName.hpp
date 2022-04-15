@@ -56,7 +56,7 @@ namespace Mono {
         return FixedElementField;
       }
       // Get instance field reference: public System.Byte FixedElementField
-      [[deprecated]] uint8_t& dyn_FixedElementField();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_FixedElementField();
     }; // Mono.MonoAssemblyName/Mono.<public_key_token>e__FixedBuffer
     #pragma pack(pop)
     static check_size<sizeof(MonoAssemblyName::$public_key_token$e__FixedBuffer), 0 + sizeof(uint8_t)> __Mono_MonoAssemblyName_$public_key_token$e__FixedBufferSizeCheck;
@@ -151,31 +151,31 @@ namespace Mono {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.IntPtr name
-    [[deprecated]] ::System::IntPtr& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_name();
     // Get instance field reference: System.IntPtr culture
-    [[deprecated]] ::System::IntPtr& dyn_culture();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_culture();
     // Get instance field reference: System.IntPtr hash_value
-    [[deprecated]] ::System::IntPtr& dyn_hash_value();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hash_value();
     // Get instance field reference: System.IntPtr public_key
-    [[deprecated]] ::System::IntPtr& dyn_public_key();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_public_key();
     // Get instance field reference: Mono.MonoAssemblyName/Mono.<public_key_token>e__FixedBuffer public_key_token
-    [[deprecated]] ::Mono::MonoAssemblyName::$public_key_token$e__FixedBuffer& dyn_public_key_token();
+    [[deprecated("Use field access instead!")]] ::Mono::MonoAssemblyName::$public_key_token$e__FixedBuffer& dyn_public_key_token();
     // Get instance field reference: System.UInt32 hash_alg
-    [[deprecated]] uint& dyn_hash_alg();
+    [[deprecated("Use field access instead!")]] uint& dyn_hash_alg();
     // Get instance field reference: System.UInt32 hash_len
-    [[deprecated]] uint& dyn_hash_len();
+    [[deprecated("Use field access instead!")]] uint& dyn_hash_len();
     // Get instance field reference: System.UInt32 flags
-    [[deprecated]] uint& dyn_flags();
+    [[deprecated("Use field access instead!")]] uint& dyn_flags();
     // Get instance field reference: System.UInt16 major
-    [[deprecated]] uint16_t& dyn_major();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_major();
     // Get instance field reference: System.UInt16 minor
-    [[deprecated]] uint16_t& dyn_minor();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_minor();
     // Get instance field reference: System.UInt16 build
-    [[deprecated]] uint16_t& dyn_build();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_build();
     // Get instance field reference: System.UInt16 revision
-    [[deprecated]] uint16_t& dyn_revision();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_revision();
     // Get instance field reference: System.UInt16 arch
-    [[deprecated]] uint16_t& dyn_arch();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_arch();
   }; // Mono.MonoAssemblyName
   #pragma pack(pop)
   static check_size<sizeof(MonoAssemblyName), 72 + sizeof(uint16_t)> __Mono_MonoAssemblyNameSizeCheck;

@@ -58,9 +58,9 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private System.Linq.Expressions.Interpreter.Instruction[][][] s_caches
     static void _set_s_caches(::ArrayW<::ArrayW<::ArrayW<::System::Linq::Expressions::Interpreter::Instruction*>>> value);
     // Get instance field reference: readonly System.Boolean _hasResult
-    [[deprecated]] bool& dyn__hasResult();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasResult();
     // Get instance field reference: readonly System.Boolean _hasValue
-    [[deprecated]] bool& dyn__hasValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasValue();
     // public System.Void .ctor(System.Boolean hasResult, System.Boolean hasValue)
     // Offset: 0x11F58F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -93,7 +93,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Implemented from: System.Linq.Expressions.Interpreter.OffsetInstruction
     // Base method: System.Void OffsetInstruction::.ctor()
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BranchInstruction* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::BranchInstruction::.ctor");

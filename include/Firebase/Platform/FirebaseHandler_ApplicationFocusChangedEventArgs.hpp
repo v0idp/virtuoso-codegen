@@ -39,15 +39,12 @@ namespace Firebase::Platform {
       return HasFocus;
     }
     // Get instance field reference: private System.Boolean <HasFocus>k__BackingField
-    [[deprecated]] bool& dyn_$HasFocus$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasFocus$k__BackingField();
     // public System.Void set_HasFocus(System.Boolean value)
     // Offset: 0x18CB6BC
     void set_HasFocus(bool value);
     // public System.Void .ctor()
     // Offset: 0x18C9AA8
-    // Implemented from: System.EventArgs
-    // Base method: System.Void EventArgs::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseHandler::ApplicationFocusChangedEventArgs* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::FirebaseHandler::ApplicationFocusChangedEventArgs::.ctor");

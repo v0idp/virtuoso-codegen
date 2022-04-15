@@ -56,11 +56,11 @@ namespace System::Runtime::CompilerServices {
     static_assert(sizeof(::System::Threading::Tasks::Task*) == 0x8);
     public:
     // Get instance field reference: readonly System.Action m_continuation
-    [[deprecated]] ::System::Action*& dyn_m_continuation();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_m_continuation();
     // Get instance field reference: private readonly System.Action m_invokeAction
-    [[deprecated]] ::System::Action*& dyn_m_invokeAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_m_invokeAction();
     // Get instance field reference: readonly System.Threading.Tasks.Task m_innerTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_innerTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_innerTask();
     // System.Void .ctor(System.Action continuation, System.Action invokeAction, System.Threading.Tasks.Task innerTask)
     // Offset: 0x13A4CB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

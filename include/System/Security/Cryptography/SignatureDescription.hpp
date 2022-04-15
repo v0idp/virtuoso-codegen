@@ -55,13 +55,13 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _strKey
-    [[deprecated]] ::StringW& dyn__strKey();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__strKey();
     // Get instance field reference: private System.String _strDigest
-    [[deprecated]] ::StringW& dyn__strDigest();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__strDigest();
     // Get instance field reference: private System.String _strFormatter
-    [[deprecated]] ::StringW& dyn__strFormatter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__strFormatter();
     // Get instance field reference: private System.String _strDeformatter
-    [[deprecated]] ::StringW& dyn__strDeformatter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__strDeformatter();
     // public System.Void set_KeyAlgorithm(System.String value)
     // Offset: 0x117C940
     void set_KeyAlgorithm(::StringW value);

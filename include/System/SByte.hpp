@@ -110,7 +110,7 @@ namespace System {
     // Set static field: static public System.SByte MinValue
     static void _set_MinValue(int8_t value);
     // Get instance field reference: private System.SByte m_value
-    [[deprecated]] int8_t& dyn_m_value();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_m_value();
     // public System.Int32 CompareTo(System.Object obj)
     // Offset: 0x116AF90
     int CompareTo(::Il2CppObject* obj);

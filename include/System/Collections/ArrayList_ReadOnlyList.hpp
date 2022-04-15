@@ -55,7 +55,7 @@ namespace System::Collections {
       return list;
     }
     // Get instance field reference: private System.Collections.IList _list
-    [[deprecated]] ::System::Collections::IList*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IList*& dyn__list();
     // public System.Int32 get_Count()
     // Offset: 0x13A43CC
     int get_Count();

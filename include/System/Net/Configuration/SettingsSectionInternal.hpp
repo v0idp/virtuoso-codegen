@@ -49,27 +49,25 @@ namespace System::Net::Configuration {
     // Set static field: static private readonly System.Net.Configuration.SettingsSectionInternal instance
     static void _set_instance(::System::Net::Configuration::SettingsSectionInternal* value);
     // Get instance field reference: readonly System.Boolean HttpListenerUnescapeRequestUrl
-    [[deprecated]] bool& dyn_HttpListenerUnescapeRequestUrl();
+    [[deprecated("Use field access instead!")]] bool& dyn_HttpListenerUnescapeRequestUrl();
     // Get instance field reference: readonly System.Net.Sockets.IPProtectionLevel IPProtectionLevel
-    [[deprecated]] ::System::Net::Sockets::IPProtectionLevel& dyn_IPProtectionLevel();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::IPProtectionLevel& dyn_IPProtectionLevel();
     // static System.Net.Configuration.SettingsSectionInternal get_Section()
     // Offset: 0xD9C9D4
     static ::System::Net::Configuration::SettingsSectionInternal* get_Section();
     // System.Boolean get_Ipv6Enabled()
     // Offset: 0xD9CA38
     bool get_Ipv6Enabled();
-    // static private System.Void .cctor()
-    // Offset: 0xD9CA58
-    static void _cctor();
     // public System.Void .ctor()
     // Offset: 0xD9CA40
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SettingsSectionInternal* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Configuration::SettingsSectionInternal::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SettingsSectionInternal*, creationType>()));
     }
+    // static private System.Void .cctor()
+    // Offset: 0xD9CA58
+    static void _cctor();
   }; // System.Net.Configuration.SettingsSectionInternal
   #pragma pack(pop)
   static check_size<sizeof(SettingsSectionInternal), 20 + sizeof(::System::Net::Sockets::IPProtectionLevel)> __System_Net_Configuration_SettingsSectionInternalSizeCheck;
@@ -92,6 +90,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::Configuration::SettingsSectionInternal*), "get_Ipv6Enabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::Configuration::SettingsSectionInternal::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Configuration::SettingsSectionInternal::_cctor
 // Il2CppName: .cctor
 template<>
@@ -100,7 +102,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Net::Configuration::SettingsSectionInternal*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::Configuration::SettingsSectionInternal::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

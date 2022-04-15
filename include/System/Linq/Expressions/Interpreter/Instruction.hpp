@@ -49,21 +49,19 @@ namespace System::Linq::Expressions::Interpreter {
     // public System.String get_InstructionName()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::StringW get_InstructionName();
+    // protected System.Void .ctor()
+    // Offset: 0xF14740
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Instruction* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::Instruction::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Instruction*, creationType>()));
+    }
     // public System.Int32 Run(System.Linq.Expressions.Interpreter.InterpretedFrame frame)
     // Offset: 0xFFFFFFFFFFFFFFFF
     int Run(::System::Linq::Expressions::Interpreter::InterpretedFrame* frame);
     // static protected System.Void NullCheck(System.Object o)
     // Offset: 0xF180F4
     static void NullCheck(::Il2CppObject* o);
-    // protected System.Void .ctor()
-    // Offset: 0xF14740
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Instruction* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::Instruction::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Instruction*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0xF18098
     // Implemented from: System.Object
@@ -113,6 +111,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::Instruction*), "get_InstructionName", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::Instruction::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::Instruction::Run
 // Il2CppName: Run
 template<>
@@ -131,10 +133,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::Instruction*), "NullCheck", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{o});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::Instruction::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::Instruction::ToString
 // Il2CppName: ToString
 template<>

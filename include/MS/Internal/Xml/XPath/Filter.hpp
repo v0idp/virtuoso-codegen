@@ -50,9 +50,9 @@ namespace MS::Internal::Xml::XPath {
     static_assert(sizeof(::MS::Internal::Xml::XPath::AstNode*) == 0x8);
     public:
     // Get instance field reference: private MS.Internal.Xml.XPath.AstNode input
-    [[deprecated]] ::MS::Internal::Xml::XPath::AstNode*& dyn_input();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::AstNode*& dyn_input();
     // Get instance field reference: private MS.Internal.Xml.XPath.AstNode condition
-    [[deprecated]] ::MS::Internal::Xml::XPath::AstNode*& dyn_condition();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::AstNode*& dyn_condition();
     // public System.Void .ctor(MS.Internal.Xml.XPath.AstNode input, MS.Internal.Xml.XPath.AstNode condition)
     // Offset: 0xAEE83C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

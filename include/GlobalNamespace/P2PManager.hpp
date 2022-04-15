@@ -52,6 +52,13 @@ namespace GlobalNamespace {
     public:
     // Nested type: ::GlobalNamespace::P2PManager::MessageType
     struct MessageType;
+    // public System.Void .ctor()
+    // Offset: 0xAD9E68
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static P2PManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::P2PManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<P2PManager*, creationType>()));
+    }
     // public System.Void ConnectTo(System.UInt64 userID)
     // Offset: 0xAD9F48
     void ConnectTo(uint64_t userID);
@@ -97,19 +104,14 @@ namespace GlobalNamespace {
     // private System.UInt32 ReadUInt32(System.Byte[] buf, ref System.Int32 offset)
     // Offset: 0xADADD0
     uint ReadUInt32(::ArrayW<uint8_t> buf, ByRef<int> offset);
-    // public System.Void .ctor()
-    // Offset: 0xAD9E68
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static P2PManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::P2PManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<P2PManager*, creationType>()));
-    }
   }; // P2PManager
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::P2PManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::P2PManager::ConnectTo
 // Il2CppName: ConnectTo
 template<>
@@ -261,7 +263,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::P2PManager*), "ReadUInt32", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{buf, offset});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::P2PManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

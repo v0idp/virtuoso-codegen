@@ -189,43 +189,43 @@ namespace System::Text::RegularExpressions {
     // Set static field: static readonly System.Byte[] _category
     static void _set__category(::ArrayW<uint8_t> value);
     // Get instance field reference: System.Text.RegularExpressions.RegexNode _stack
-    [[deprecated]] ::System::Text::RegularExpressions::RegexNode*& dyn__stack();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexNode*& dyn__stack();
     // Get instance field reference: System.Text.RegularExpressions.RegexNode _group
-    [[deprecated]] ::System::Text::RegularExpressions::RegexNode*& dyn__group();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexNode*& dyn__group();
     // Get instance field reference: System.Text.RegularExpressions.RegexNode _alternation
-    [[deprecated]] ::System::Text::RegularExpressions::RegexNode*& dyn__alternation();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexNode*& dyn__alternation();
     // Get instance field reference: System.Text.RegularExpressions.RegexNode _concatenation
-    [[deprecated]] ::System::Text::RegularExpressions::RegexNode*& dyn__concatenation();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexNode*& dyn__concatenation();
     // Get instance field reference: System.Text.RegularExpressions.RegexNode _unit
-    [[deprecated]] ::System::Text::RegularExpressions::RegexNode*& dyn__unit();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexNode*& dyn__unit();
     // Get instance field reference: System.String _pattern
-    [[deprecated]] ::StringW& dyn__pattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__pattern();
     // Get instance field reference: System.Int32 _currentPos
-    [[deprecated]] int& dyn__currentPos();
+    [[deprecated("Use field access instead!")]] int& dyn__currentPos();
     // Get instance field reference: System.Globalization.CultureInfo _culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__culture();
     // Get instance field reference: System.Int32 _autocap
-    [[deprecated]] int& dyn__autocap();
+    [[deprecated("Use field access instead!")]] int& dyn__autocap();
     // Get instance field reference: System.Int32 _capcount
-    [[deprecated]] int& dyn__capcount();
+    [[deprecated("Use field access instead!")]] int& dyn__capcount();
     // Get instance field reference: System.Int32 _captop
-    [[deprecated]] int& dyn__captop();
+    [[deprecated("Use field access instead!")]] int& dyn__captop();
     // Get instance field reference: System.Int32 _capsize
-    [[deprecated]] int& dyn__capsize();
+    [[deprecated("Use field access instead!")]] int& dyn__capsize();
     // Get instance field reference: System.Collections.Hashtable _caps
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__caps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__caps();
     // Get instance field reference: System.Collections.Hashtable _capnames
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__capnames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__capnames();
     // Get instance field reference: System.Int32[] _capnumlist
-    [[deprecated]] ::ArrayW<int>& dyn__capnumlist();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__capnumlist();
     // Get instance field reference: System.Collections.Generic.List`1<System.String> _capnamelist
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__capnamelist();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__capnamelist();
     // Get instance field reference: System.Text.RegularExpressions.RegexOptions _options
-    [[deprecated]] ::System::Text::RegularExpressions::RegexOptions& dyn__options();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexOptions& dyn__options();
     // Get instance field reference: System.Collections.Generic.List`1<System.Text.RegularExpressions.RegexOptions> _optionsStack
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexOptions>*& dyn__optionsStack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexOptions>*& dyn__optionsStack();
     // Get instance field reference: System.Boolean _ignoreNextParen
-    [[deprecated]] bool& dyn__ignoreNextParen();
+    [[deprecated("Use field access instead!")]] bool& dyn__ignoreNextParen();
     // private System.Void .ctor(System.Globalization.CultureInfo culture)
     // Offset: 0x184AEB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

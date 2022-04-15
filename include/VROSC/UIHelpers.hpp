@@ -78,15 +78,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _useHelpers
-    [[deprecated]] bool& dyn__useHelpers();
+    [[deprecated("Use field access instead!")]] bool& dyn__useHelpers();
     // Get instance field reference: private VROSC.UISliderHelper _sliderHelper
-    [[deprecated]] ::VROSC::UISliderHelper*& dyn__sliderHelper();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISliderHelper*& dyn__sliderHelper();
     // Get instance field reference: private VROSC.UISpinnerHelper _spinnerHelper
-    [[deprecated]] ::VROSC::UISpinnerHelper*& dyn__spinnerHelper();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinnerHelper*& dyn__spinnerHelper();
     // Get instance field reference: private VROSC.UIColorPickerHelper _colorPickerHelper
-    [[deprecated]] ::VROSC::UIColorPickerHelper*& dyn__colorPickerHelper();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIColorPickerHelper*& dyn__colorPickerHelper();
     // Get instance field reference: private VROSC.UIHelperInfoIcon _infoIcon
-    [[deprecated]] ::VROSC::UIHelperInfoIcon*& dyn__infoIcon();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHelperInfoIcon*& dyn__infoIcon();
     // public System.Boolean get_UseHelpers()
     // Offset: 0x190FB84
     bool get_UseHelpers();
@@ -104,12 +104,6 @@ namespace VROSC {
     ::VROSC::UIHelperInfoIcon* get_InfoIcon();
     // public System.Void .ctor()
     // Offset: 0x190FBAC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIHelpers* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIHelpers::.ctor");

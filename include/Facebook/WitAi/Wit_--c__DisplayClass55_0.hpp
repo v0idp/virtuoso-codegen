@@ -46,27 +46,29 @@ namespace Facebook::WitAi {
     static_assert(sizeof(::Facebook::WitAi::WitRequest*) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.Wit <>4__this
-    [[deprecated]] ::Facebook::WitAi::Wit*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Wit*& dyn_$$4__this();
     // Get instance field reference: public Facebook.WitAi.WitRequest request
-    [[deprecated]] ::Facebook::WitAi::WitRequest*& dyn_request();
-    // System.Void <QueueResult>b__0()
-    // Offset: 0x167DA24
-    void $QueueResult$b__0();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::WitRequest*& dyn_request();
     // public System.Void .ctor()
     // Offset: 0x1673CC4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Wit::$$c__DisplayClass55_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Wit::$$c__DisplayClass55_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Wit::$$c__DisplayClass55_0*, creationType>()));
     }
+    // System.Void <QueueResult>b__0()
+    // Offset: 0x167DA24
+    void $QueueResult$b__0();
   }; // Facebook.WitAi.Wit/Facebook.WitAi.<>c__DisplayClass55_0
   #pragma pack(pop)
   static check_size<sizeof(Wit::$$c__DisplayClass55_0), 24 + sizeof(::Facebook::WitAi::WitRequest*)> __Facebook_WitAi_Wit_$$c__DisplayClass55_0SizeCheck;
   static_assert(sizeof(Wit::$$c__DisplayClass55_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Facebook::WitAi::Wit::$$c__DisplayClass55_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Wit::$$c__DisplayClass55_0::$QueueResult$b__0
 // Il2CppName: <QueueResult>b__0
 template<>
@@ -75,7 +77,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Wit::$$c__DisplayClass55_0*), "<QueueResult>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::Wit::$$c__DisplayClass55_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

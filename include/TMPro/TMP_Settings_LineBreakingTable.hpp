@@ -46,13 +46,11 @@ namespace TMPro {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.Int32,System.Char> leadingCharacters
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_leadingCharacters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_leadingCharacters();
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.Int32,System.Char> followingCharacters
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_followingCharacters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::Il2CppChar>*& dyn_followingCharacters();
     // public System.Void .ctor()
     // Offset: 0x1821200
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_Settings::LineBreakingTable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Settings::LineBreakingTable::.ctor");

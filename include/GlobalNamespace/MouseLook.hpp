@@ -76,7 +76,7 @@ namespace GlobalNamespace {
       // Set static field: static public MouseLook/RotationAxes MouseY
       static void _set_MouseY(::GlobalNamespace::MouseLook::RotationAxes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MouseLook/RotationAxes
     #pragma pack(pop)
     static check_size<sizeof(MouseLook::RotationAxes), 0 + sizeof(int)> __GlobalNamespace_MouseLook_RotationAxesSizeCheck;
@@ -134,40 +134,34 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public MouseLook/RotationAxes axes
-    [[deprecated]] ::GlobalNamespace::MouseLook::RotationAxes& dyn_axes();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MouseLook::RotationAxes& dyn_axes();
     // Get instance field reference: public System.Single sensitivityX
-    [[deprecated]] float& dyn_sensitivityX();
+    [[deprecated("Use field access instead!")]] float& dyn_sensitivityX();
     // Get instance field reference: public System.Single sensitivityY
-    [[deprecated]] float& dyn_sensitivityY();
+    [[deprecated("Use field access instead!")]] float& dyn_sensitivityY();
     // Get instance field reference: public System.Single minimumX
-    [[deprecated]] float& dyn_minimumX();
+    [[deprecated("Use field access instead!")]] float& dyn_minimumX();
     // Get instance field reference: public System.Single maximumX
-    [[deprecated]] float& dyn_maximumX();
+    [[deprecated("Use field access instead!")]] float& dyn_maximumX();
     // Get instance field reference: public System.Single minimumY
-    [[deprecated]] float& dyn_minimumY();
+    [[deprecated("Use field access instead!")]] float& dyn_minimumY();
     // Get instance field reference: public System.Single maximumY
-    [[deprecated]] float& dyn_maximumY();
+    [[deprecated("Use field access instead!")]] float& dyn_maximumY();
     // Get instance field reference: private System.Single rotationY
-    [[deprecated]] float& dyn_rotationY();
+    [[deprecated("Use field access instead!")]] float& dyn_rotationY();
+    // public System.Void .ctor()
+    // Offset: 0x175F240
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MouseLook* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MouseLook::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MouseLook*, creationType>()));
+    }
     // private System.Void Update()
     // Offset: 0x175EFA0
     void Update();
     // private System.Void Start()
     // Offset: 0x175F178
     void Start();
-    // public System.Void .ctor()
-    // Offset: 0x175F240
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MouseLook* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MouseLook::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MouseLook*, creationType>()));
-    }
   }; // MouseLook
   #pragma pack(pop)
   static check_size<sizeof(MouseLook), 52 + sizeof(float)> __GlobalNamespace_MouseLookSizeCheck;
@@ -176,6 +170,10 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::MouseLook::RotationAxes, "", "MouseLook/RotationAxes");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::MouseLook::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::MouseLook::Update
 // Il2CppName: Update
 template<>
@@ -192,7 +190,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MouseLook*), "Start", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::MouseLook::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

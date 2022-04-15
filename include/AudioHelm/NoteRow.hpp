@@ -60,30 +60,32 @@ namespace AudioHelm {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: public System.Collections.Generic.List`1<AudioHelm.Note> notes
-    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
     // Get instance field reference: private System.Collections.Generic.List`1<AudioHelm.Note> oldNotes
-    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_oldNotes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_oldNotes();
+    // public System.Void .ctor()
+    // Offset: 0xC5AD98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteRow* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::NoteRow::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteRow*, creationType>()));
+    }
     // public System.Void OnBeforeSerialize()
     // Offset: 0xC5AADC
     void OnBeforeSerialize();
     // public System.Void OnAfterDeserialize()
     // Offset: 0xC5AB5C
     void OnAfterDeserialize();
-    // public System.Void .ctor()
-    // Offset: 0xC5AD98
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteRow* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::NoteRow::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteRow*, creationType>()));
-    }
   }; // AudioHelm.NoteRow
   #pragma pack(pop)
   static check_size<sizeof(NoteRow), 24 + sizeof(::System::Collections::Generic::List_1<::AudioHelm::Note*>*)> __AudioHelm_NoteRowSizeCheck;
   static_assert(sizeof(NoteRow) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::NoteRow::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::NoteRow::OnBeforeSerialize
 // Il2CppName: OnBeforeSerialize
 template<>
@@ -100,7 +102,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::NoteRow*), "OnAfterDeserialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::NoteRow::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

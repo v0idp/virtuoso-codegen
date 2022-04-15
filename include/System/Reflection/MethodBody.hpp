@@ -79,17 +79,17 @@ namespace System::Reflection {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Reflection.ExceptionHandlingClause[] clauses
-    [[deprecated]] ::ArrayW<::System::Reflection::ExceptionHandlingClause*>& dyn_clauses();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Reflection::ExceptionHandlingClause*>& dyn_clauses();
     // Get instance field reference: private System.Reflection.LocalVariableInfo[] locals
-    [[deprecated]] ::ArrayW<::System::Reflection::LocalVariableInfo*>& dyn_locals();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Reflection::LocalVariableInfo*>& dyn_locals();
     // Get instance field reference: private System.Byte[] il
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_il();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_il();
     // Get instance field reference: private System.Boolean init_locals
-    [[deprecated]] bool& dyn_init_locals();
+    [[deprecated("Use field access instead!")]] bool& dyn_init_locals();
     // Get instance field reference: private System.Int32 sig_token
-    [[deprecated]] int& dyn_sig_token();
+    [[deprecated("Use field access instead!")]] int& dyn_sig_token();
     // Get instance field reference: private System.Int32 max_stack
-    [[deprecated]] int& dyn_max_stack();
+    [[deprecated("Use field access instead!")]] int& dyn_max_stack();
     // protected System.Void .ctor()
     // Offset: 0x1002918
     // Implemented from: System.Object

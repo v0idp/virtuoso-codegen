@@ -50,7 +50,7 @@ namespace UnityEngine {
       return m_Mask;
     }
     // Get instance field reference: private System.Int32 m_Mask
-    [[deprecated]] int& dyn_m_Mask();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Mask();
     // public System.Int32 get_value()
     // Offset: 0x112BDA0
     int get_value();

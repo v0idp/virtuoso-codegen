@@ -66,7 +66,7 @@ namespace Newtonsoft::Json::Converters {
       return xmlObject;
     }
     // Get instance field reference: private readonly System.Xml.Linq.XObject _xmlObject
-    [[deprecated]] ::System::Xml::Linq::XObject*& dyn__xmlObject();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XObject*& dyn__xmlObject();
     // public System.Object get_WrappedNode()
     // Offset: 0x1592A54
     ::Il2CppObject* get_WrappedNode();

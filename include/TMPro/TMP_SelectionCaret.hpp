@@ -38,15 +38,6 @@ namespace TMPro {
     public:
     // public System.Void .ctor()
     // Offset: 0x9B0F78
-    // Implemented from: UnityEngine.UI.MaskableGraphic
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SelectionCaret* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SelectionCaret::.ctor");

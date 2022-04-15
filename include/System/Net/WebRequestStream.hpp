@@ -164,29 +164,29 @@ namespace System::Net {
     // Set static field: static private System.Byte[] crlf
     static void _set_crlf(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.IO.MemoryStream writeBuffer
-    [[deprecated]] ::System::IO::MemoryStream*& dyn_writeBuffer();
+    [[deprecated("Use field access instead!")]] ::System::IO::MemoryStream*& dyn_writeBuffer();
     // Get instance field reference: private System.Boolean requestWritten
-    [[deprecated]] bool& dyn_requestWritten();
+    [[deprecated("Use field access instead!")]] bool& dyn_requestWritten();
     // Get instance field reference: private System.Boolean allowBuffering
-    [[deprecated]] bool& dyn_allowBuffering();
+    [[deprecated("Use field access instead!")]] bool& dyn_allowBuffering();
     // Get instance field reference: private System.Boolean sendChunked
-    [[deprecated]] bool& dyn_sendChunked();
+    [[deprecated("Use field access instead!")]] bool& dyn_sendChunked();
     // Get instance field reference: private System.Net.WebCompletionSource pendingWrite
-    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_pendingWrite();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebCompletionSource*& dyn_pendingWrite();
     // Get instance field reference: private System.Int64 totalWritten
-    [[deprecated]] int64_t& dyn_totalWritten();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_totalWritten();
     // Get instance field reference: private System.Byte[] headers
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_headers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_headers();
     // Get instance field reference: private System.Boolean headersSent
-    [[deprecated]] bool& dyn_headersSent();
+    [[deprecated("Use field access instead!")]] bool& dyn_headersSent();
     // Get instance field reference: private System.Int32 completeRequestWritten
-    [[deprecated]] int& dyn_completeRequestWritten();
+    [[deprecated("Use field access instead!")]] int& dyn_completeRequestWritten();
     // Get instance field reference: private System.Int32 chunkTrailerWritten
-    [[deprecated]] int& dyn_chunkTrailerWritten();
+    [[deprecated("Use field access instead!")]] int& dyn_chunkTrailerWritten();
     // Get instance field reference: readonly System.String ME
-    [[deprecated]] ::StringW& dyn_ME();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ME();
     // Get instance field reference: private readonly System.Boolean <KeepAlive>k__BackingField
-    [[deprecated]] bool& dyn_$KeepAlive$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$KeepAlive$k__BackingField();
     // public System.Boolean get_KeepAlive()
     // Offset: 0xC4AD24
     bool get_KeepAlive();
@@ -203,6 +203,9 @@ namespace System::Net {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebRequestStream::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WebRequestStream*, creationType>(connection, operation, stream, tunnel)));
     }
+    // static private System.Void .cctor()
+    // Offset: 0xC4BAC0
+    static void _cctor();
     // System.Net.BufferOffsetSize GetWriteBuffer()
     // Offset: 0xC4ADF8
     ::System::Net::BufferOffsetSize* GetWriteBuffer();
@@ -248,11 +251,6 @@ namespace System::Net {
     // Implemented from: System.IO.Stream
     // Base method: System.Boolean Stream::get_CanWrite()
     bool get_CanWrite();
-    // static private System.Void .cctor()
-    // Offset: 0xC4BAC0
-    // Implemented from: System.IO.Stream
-    // Base method: System.Void Stream::.cctor()
-    static void _cctor();
     // public override System.Threading.Tasks.Task WriteAsync(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Threading.CancellationToken cancellationToken)
     // Offset: 0xC4AFEC
     // Implemented from: System.IO.Stream
@@ -302,6 +300,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Net::WebRequestStream::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Net::WebRequestStream::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Net::WebRequestStream*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::Net::WebRequestStream::GetWriteBuffer
 // Il2CppName: GetWriteBuffer
 template<>
@@ -417,14 +423,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (System::Net::WebRequestStream::*)()>(&System::Net::WebRequestStream::get_CanWrite)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebRequestStream*), "get_CanWrite", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: System::Net::WebRequestStream::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Net::WebRequestStream::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(System::Net::WebRequestStream*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::Net::WebRequestStream::WriteAsync

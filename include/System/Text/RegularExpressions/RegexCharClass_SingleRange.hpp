@@ -38,9 +38,9 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::Il2CppChar) == 0x2);
     public:
     // Get instance field reference: System.Char _first
-    [[deprecated]] ::Il2CppChar& dyn__first();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__first();
     // Get instance field reference: System.Char _last
-    [[deprecated]] ::Il2CppChar& dyn__last();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__last();
     // System.Void .ctor(System.Char first, System.Char last)
     // Offset: 0x9FDDFC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

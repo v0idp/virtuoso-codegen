@@ -112,21 +112,21 @@ namespace System::Data {
     // Deleting conversion operator: operator ::System::Data::DataTable*
     constexpr operator ::System::Data::DataTable*() const noexcept = delete;
     // Get instance field reference: private readonly System.Data.AggregateType _type
-    [[deprecated]] ::System::Data::AggregateType& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Data::AggregateType& dyn__type();
     // Get instance field reference: private readonly System.Data.Aggregate _aggregate
-    [[deprecated]] ::System::Data::Aggregate& dyn__aggregate();
+    [[deprecated("Use field access instead!")]] ::System::Data::Aggregate& dyn__aggregate();
     // Get instance field reference: private readonly System.Boolean _local
-    [[deprecated]] bool& dyn__local();
+    [[deprecated("Use field access instead!")]] bool& dyn__local();
     // Get instance field reference: private readonly System.String _relationName
-    [[deprecated]] ::StringW& dyn__relationName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__relationName();
     // Get instance field reference: private readonly System.String _columnName
-    [[deprecated]] ::StringW& dyn__columnName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__columnName();
     // Get instance field reference: private System.Data.DataTable _childTable
-    [[deprecated]] ::System::Data::DataTable*& dyn__childTable();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__childTable();
     // Get instance field reference: private System.Data.DataColumn _column
-    [[deprecated]] ::System::Data::DataColumn*& dyn__column();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__column();
     // Get instance field reference: private System.Data.DataRelation _relation
-    [[deprecated]] ::System::Data::DataRelation*& dyn__relation();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRelation*& dyn__relation();
     // System.Void .ctor(System.Data.DataTable table, System.Data.FunctionId aggregateType, System.String columnName)
     // Offset: 0x14A1B30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -90,11 +90,11 @@ namespace System::Data {
     // Deleting conversion operator: operator ::System::Data::DataTable*
     constexpr operator ::System::Data::DataTable*() const noexcept = delete;
     // Get instance field reference: System.Int32 _op
-    [[deprecated]] int& dyn__op();
+    [[deprecated("Use field access instead!")]] int& dyn__op();
     // Get instance field reference: System.Data.ExpressionNode _left
-    [[deprecated]] ::System::Data::ExpressionNode*& dyn__left();
+    [[deprecated("Use field access instead!")]] ::System::Data::ExpressionNode*& dyn__left();
     // Get instance field reference: System.Data.ExpressionNode _right
-    [[deprecated]] ::System::Data::ExpressionNode*& dyn__right();
+    [[deprecated("Use field access instead!")]] ::System::Data::ExpressionNode*& dyn__right();
     // System.Void .ctor(System.Data.DataTable table, System.Int32 op, System.Data.ExpressionNode left, System.Data.ExpressionNode right)
     // Offset: 0x14A4F58
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -73,16 +73,23 @@ namespace TMPro {
     // Set static field: static private TMPro.TMP_UpdateRegistry s_Instance
     static void _set_s_Instance(::TMPro::TMP_UpdateRegistry* value);
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.UI.ICanvasElement> m_LayoutRebuildQueue
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_LayoutRebuildQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_LayoutRebuildQueue();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.Int32> m_LayoutQueueLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_LayoutQueueLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_LayoutQueueLookup();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.UI.ICanvasElement> m_GraphicRebuildQueue
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_GraphicRebuildQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_GraphicRebuildQueue();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.Int32> m_GraphicQueueLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_GraphicQueueLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_GraphicQueueLookup();
     // static public TMPro.TMP_UpdateRegistry get_instance()
     // Offset: 0xD14FB8
     static ::TMPro::TMP_UpdateRegistry* get_instance();
+    // protected System.Void .ctor()
+    // Offset: 0xD15030
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_UpdateRegistry* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_UpdateRegistry::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_UpdateRegistry*, creationType>()));
+    }
     // static public System.Void RegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement element)
     // Offset: 0xD15178
     static void RegisterCanvasElementForLayoutRebuild(::UnityEngine::UI::ICanvasElement* element);
@@ -110,15 +117,6 @@ namespace TMPro {
     // private System.Void InternalUnRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement element)
     // Offset: 0xD15814
     void InternalUnRegisterCanvasElementForGraphicRebuild(::UnityEngine::UI::ICanvasElement* element);
-    // protected System.Void .ctor()
-    // Offset: 0xD15030
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_UpdateRegistry* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_UpdateRegistry::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_UpdateRegistry*, creationType>()));
-    }
   }; // TMPro.TMP_UpdateRegistry
   #pragma pack(pop)
   static check_size<sizeof(TMP_UpdateRegistry), 40 + sizeof(::System::Collections::Generic::HashSet_1<int>*)> __TMPro_TMP_UpdateRegistrySizeCheck;
@@ -133,6 +131,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::TM
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_UpdateRegistry*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_UpdateRegistry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_UpdateRegistry::RegisterCanvasElementForLayoutRebuild
 // Il2CppName: RegisterCanvasElementForLayoutRebuild
 template<>
@@ -212,7 +214,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_UpdateRegistry*), "InternalUnRegisterCanvasElementForGraphicRebuild", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{element});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_UpdateRegistry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

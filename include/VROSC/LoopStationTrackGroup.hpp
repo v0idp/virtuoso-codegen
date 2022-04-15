@@ -101,27 +101,25 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: public System.String GroupId
-    [[deprecated]] ::StringW& dyn_GroupId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_GroupId();
     // Get instance field reference: public System.String GroupName
-    [[deprecated]] ::StringW& dyn_GroupName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_GroupName();
     // Get instance field reference: public System.Single GroupVolume
-    [[deprecated]] float& dyn_GroupVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_GroupVolume();
     // Get instance field reference: public System.Boolean IsUserGroup
-    [[deprecated]] bool& dyn_IsUserGroup();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsUserGroup();
     // Get instance field reference: public VROSC.TransformDataModel TransformData
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn_TransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn_TransformData();
     // Get instance field reference: public System.Boolean GroupMuted
-    [[deprecated]] bool& dyn_GroupMuted();
+    [[deprecated("Use field access instead!")]] bool& dyn_GroupMuted();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData PlaybackConfigData
-    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
     // Get instance field reference: public VROSC.LoopPlaybackConfigOverrideFlags PlaybackOverrideFlags
-    [[deprecated]] ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_PlaybackOverrideFlags();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_PlaybackOverrideFlags();
     // Get instance field reference: public UnityEngine.Color Color
-    [[deprecated]] ::UnityEngine::Color& dyn_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_Color();
     // public System.Void .ctor()
     // Offset: 0x196D36C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationTrackGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationTrackGroup::.ctor");

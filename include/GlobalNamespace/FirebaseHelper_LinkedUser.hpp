@@ -97,29 +97,27 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String localId
-    [[deprecated]] ::StringW& dyn_localId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localId();
     // Get instance field reference: public System.String email
-    [[deprecated]] ::StringW& dyn_email();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_email();
     // Get instance field reference: public System.String displayName
-    [[deprecated]] ::StringW& dyn_displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_displayName();
     // Get instance field reference: public System.String photoUrl
-    [[deprecated]] ::StringW& dyn_photoUrl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_photoUrl();
     // Get instance field reference: public System.String passwordHash
-    [[deprecated]] ::StringW& dyn_passwordHash();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_passwordHash();
     // Get instance field reference: public System.Collections.Generic.List`1<System.Object> providerUserInfo
-    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_providerUserInfo();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_providerUserInfo();
     // Get instance field reference: public System.Boolean emailVerified
-    [[deprecated]] bool& dyn_emailVerified();
+    [[deprecated("Use field access instead!")]] bool& dyn_emailVerified();
     // Get instance field reference: public System.String idToken
-    [[deprecated]] ::StringW& dyn_idToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_idToken();
     // Get instance field reference: public System.String refreshToken
-    [[deprecated]] ::StringW& dyn_refreshToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_refreshToken();
     // Get instance field reference: public System.String expiresIn
-    [[deprecated]] ::StringW& dyn_expiresIn();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_expiresIn();
     // public System.Void .ctor()
     // Offset: 0x1952868
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseHelper::LinkedUser* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FirebaseHelper::LinkedUser::.ctor");

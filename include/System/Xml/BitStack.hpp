@@ -48,11 +48,18 @@ namespace System::Xml {
     static_assert(sizeof(uint) == 0x4);
     public:
     // Get instance field reference: private System.UInt32[] bitStack
-    [[deprecated]] ::ArrayW<uint>& dyn_bitStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_bitStack();
     // Get instance field reference: private System.Int32 stackPos
-    [[deprecated]] int& dyn_stackPos();
+    [[deprecated("Use field access instead!")]] int& dyn_stackPos();
     // Get instance field reference: private System.UInt32 curr
-    [[deprecated]] uint& dyn_curr();
+    [[deprecated("Use field access instead!")]] uint& dyn_curr();
+    // public System.Void .ctor()
+    // Offset: 0xB636B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BitStack* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::BitStack::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BitStack*, creationType>()));
+    }
     // public System.Void PushBit(System.Boolean bit)
     // Offset: 0xB636DC
     void PushBit(bool bit);
@@ -68,21 +75,16 @@ namespace System::Xml {
     // private System.Void PopCurr()
     // Offset: 0xB6383C
     void PopCurr();
-    // public System.Void .ctor()
-    // Offset: 0xB636B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BitStack* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::BitStack::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BitStack*, creationType>()));
-    }
   }; // System.Xml.BitStack
   #pragma pack(pop)
   static check_size<sizeof(BitStack), 28 + sizeof(uint)> __System_Xml_BitStackSizeCheck;
   static_assert(sizeof(BitStack) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::BitStack::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::BitStack::PushBit
 // Il2CppName: PushBit
 template<>
@@ -124,7 +126,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::BitStack*), "PopCurr", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::BitStack::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

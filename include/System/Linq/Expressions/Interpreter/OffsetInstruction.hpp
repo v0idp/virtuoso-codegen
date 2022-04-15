@@ -43,7 +43,7 @@ namespace System::Linq::Expressions::Interpreter {
       return offset;
     }
     // Get instance field reference: protected System.Int32 _offset
-    [[deprecated]] int& dyn__offset();
+    [[deprecated("Use field access instead!")]] int& dyn__offset();
     // public System.Linq.Expressions.Interpreter.Instruction[] get_Cache()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::ArrayW<::System::Linq::Expressions::Interpreter::Instruction*> get_Cache();
@@ -54,7 +54,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Offset: 0xE96084
     // Implemented from: System.Linq.Expressions.Interpreter.Instruction
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OffsetInstruction* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::OffsetInstruction::.ctor");

@@ -54,7 +54,7 @@ namespace System::Xml::Linq {
     // Deleting conversion operator: operator ::System::Xml::Linq::XNode*
     constexpr operator ::System::Xml::Linq::XNode*() const noexcept = delete;
     // Get instance field reference: System.String text
-    [[deprecated]] ::StringW& dyn_text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_text();
     // public System.String get_Value()
     // Offset: 0x185DF58
     ::StringW get_Value();

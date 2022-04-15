@@ -33,9 +33,6 @@ namespace VROSC {
     // Offset: 0xA28DC0
     // Implemented from: VROSC.WidgetSettings
     // Base method: System.Void WidgetSettings::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ToolSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ToolSettings::.ctor");

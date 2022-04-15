@@ -97,11 +97,11 @@ namespace System::Runtime::Remoting::Proxies {
     // Set static field: static private System.Reflection.MethodInfo _cache_GetHashCodeMethod
     static void _set__cache_GetHashCodeMethod(::System::Reflection::MethodInfo* value);
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink _sink
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__sink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__sink();
     // Get instance field reference: private System.Boolean _hasEnvoySink
-    [[deprecated]] bool& dyn__hasEnvoySink();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasEnvoySink();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.ConstructionCall _ctorCall
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::ConstructionCall*& dyn__ctorCall();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::ConstructionCall*& dyn__ctorCall();
     // public System.String get_TypeName()
     // Offset: 0xCD62D4
     ::StringW get_TypeName();

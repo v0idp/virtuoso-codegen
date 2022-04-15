@@ -47,25 +47,23 @@ namespace Firebase::Storage {
       return metadata;
     }
     // Get instance field reference: private readonly Firebase.Storage.StorageMetadata metadata
-    [[deprecated]] ::Firebase::Storage::StorageMetadata*& dyn_metadata();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageMetadata*& dyn_metadata();
     // public System.Void set_ContentType(System.String value)
     // Offset: 0x1834B44
     void set_ContentType(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x1834980
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MetadataChange* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::MetadataChange::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MetadataChange*, creationType>()));
+    }
     // Firebase.Storage.StorageMetadata Build()
     // Offset: 0x1834A90
     ::Firebase::Storage::StorageMetadata* Build();
     // static Firebase.Storage.StorageMetadata Build(Firebase.Storage.MetadataChange metadataChange)
     // Offset: 0x1834B38
     static ::Firebase::Storage::StorageMetadata* Build(::Firebase::Storage::MetadataChange* metadataChange);
-    // public System.Void .ctor()
-    // Offset: 0x1834980
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MetadataChange* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::MetadataChange::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MetadataChange*, creationType>()));
-    }
   }; // Firebase.Storage.MetadataChange
   #pragma pack(pop)
   static check_size<sizeof(MetadataChange), 16 + sizeof(::Firebase::Storage::StorageMetadata*)> __Firebase_Storage_MetadataChangeSizeCheck;
@@ -81,6 +79,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::MetadataChange*), "set_ContentType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Firebase::Storage::MetadataChange::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::MetadataChange::Build
 // Il2CppName: Build
 template<>
@@ -98,7 +100,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::MetadataChange*), "Build", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{metadataChange});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::MetadataChange::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

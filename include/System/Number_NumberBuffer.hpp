@@ -65,15 +65,15 @@ namespace System {
     // Set static field: static public readonly System.Int32 NumberBufferBytes
     static void _set_NumberBufferBytes(int value);
     // Get instance field reference: private System.Byte* baseAddress
-    [[deprecated]] uint8_t*& dyn_baseAddress();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_baseAddress();
     // Get instance field reference: public System.Char* digits
-    [[deprecated]] ::Il2CppChar*& dyn_digits();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_digits();
     // Get instance field reference: public System.Int32 precision
-    [[deprecated]] int& dyn_precision();
+    [[deprecated("Use field access instead!")]] int& dyn_precision();
     // Get instance field reference: public System.Int32 scale
-    [[deprecated]] int& dyn_scale();
+    [[deprecated("Use field access instead!")]] int& dyn_scale();
     // Get instance field reference: public System.Boolean sign
-    [[deprecated]] bool& dyn_sign();
+    [[deprecated("Use field access instead!")]] bool& dyn_sign();
     // public System.Void .ctor(System.Byte* stackBuffer)
     // Offset: 0xE545A4
     NumberBuffer(uint8_t* stackBuffer);

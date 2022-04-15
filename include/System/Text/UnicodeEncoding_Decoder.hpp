@@ -47,9 +47,9 @@ namespace System::Text {
     static_assert(sizeof(::Il2CppChar) == 0x2);
     public:
     // Get instance field reference: System.Int32 lastByte
-    [[deprecated]] int& dyn_lastByte();
+    [[deprecated("Use field access instead!")]] int& dyn_lastByte();
     // Get instance field reference: System.Char lastChar
-    [[deprecated]] ::Il2CppChar& dyn_lastChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_lastChar();
     // public System.Void .ctor(System.Text.UnicodeEncoding encoding)
     // Offset: 0x189BA0C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

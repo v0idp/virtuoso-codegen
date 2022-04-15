@@ -62,22 +62,17 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.IntField _transposeAmount
-    [[deprecated]] ::VROSC::IntField*& dyn__transposeAmount();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__transposeAmount();
     // Get instance field reference: private System.Boolean _resetOnNodeEnd
-    [[deprecated]] bool& dyn__resetOnNodeEnd();
+    [[deprecated("Use field access instead!")]] bool& dyn__resetOnNodeEnd();
     // Get instance field reference: private System.Int32 changeAmount
-    [[deprecated]] int& dyn_changeAmount();
+    [[deprecated("Use field access instead!")]] int& dyn_changeAmount();
     // public System.Void .ctor()
     // Offset: 0xA2E478
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Transpose* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Transpose::.ctor");

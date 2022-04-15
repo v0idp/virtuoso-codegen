@@ -65,11 +65,11 @@ namespace VROSC::UI {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private VROSC.UI.UIMaterialSettings _transparencySwitch
-    [[deprecated]] ::VROSC::UI::UIMaterialSettings*& dyn__transparencySwitch();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIMaterialSettings*& dyn__transparencySwitch();
     // Get instance field reference: protected System.Boolean _hideWhenNotHovering
-    [[deprecated]] bool& dyn__hideWhenNotHovering();
+    [[deprecated("Use field access instead!")]] bool& dyn__hideWhenNotHovering();
     // private System.Void Awake()
     // Offset: 0xA33058
     void Awake();
@@ -86,11 +86,6 @@ namespace VROSC::UI {
     // Offset: 0xA33654
     // Implemented from: VROSC.UI.UIInteractableColoring
     // Base method: System.Void UIInteractableColoring::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIAdjustableMeshColoring* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIAdjustableMeshColoring::.ctor");

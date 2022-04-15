@@ -78,7 +78,7 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Set static field: static public Facebook.WitAi.CallbackHandlers.ComparisonMethod LessThanOrEqualTo
     static void _set_LessThanOrEqualTo(::Facebook::WitAi::CallbackHandlers::ComparisonMethod value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Facebook.WitAi.CallbackHandlers.ComparisonMethod
   #pragma pack(pop)
   static check_size<sizeof(ComparisonMethod), 0 + sizeof(int)> __Facebook_WitAi_CallbackHandlers_ComparisonMethodSizeCheck;

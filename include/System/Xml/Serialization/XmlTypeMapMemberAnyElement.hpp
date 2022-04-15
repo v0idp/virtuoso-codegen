@@ -41,7 +41,6 @@ namespace System::Xml::Serialization {
     // Base method: System.Void XmlTypeMapMemberExpandable::.ctor()
     // Base method: System.Void XmlTypeMapMemberElement::.ctor()
     // Base method: System.Void XmlTypeMapMember::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapMemberAnyElement* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMemberAnyElement::.ctor");

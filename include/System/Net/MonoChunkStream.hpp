@@ -107,7 +107,7 @@ namespace System::Net {
       // Set static field: static public System.Net.MonoChunkStream/System.Net.State Trailer
       static void _set_Trailer(::System::Net::MonoChunkStream::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Net.MonoChunkStream/System.Net.State
     #pragma pack(pop)
     static check_size<sizeof(MonoChunkStream::State), 0 + sizeof(int)> __System_Net_MonoChunkStream_StateSizeCheck;
@@ -177,25 +177,25 @@ namespace System::Net {
     static_assert(sizeof(::System::Collections::ArrayList*) == 0x8);
     public:
     // Get instance field reference: System.Net.WebHeaderCollection headers
-    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_headers();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollection*& dyn_headers();
     // Get instance field reference: private System.Int32 chunkSize
-    [[deprecated]] int& dyn_chunkSize();
+    [[deprecated("Use field access instead!")]] int& dyn_chunkSize();
     // Get instance field reference: private System.Int32 chunkRead
-    [[deprecated]] int& dyn_chunkRead();
+    [[deprecated("Use field access instead!")]] int& dyn_chunkRead();
     // Get instance field reference: private System.Int32 totalWritten
-    [[deprecated]] int& dyn_totalWritten();
+    [[deprecated("Use field access instead!")]] int& dyn_totalWritten();
     // Get instance field reference: private System.Net.MonoChunkStream/System.Net.State state
-    [[deprecated]] ::System::Net::MonoChunkStream::State& dyn_state();
+    [[deprecated("Use field access instead!")]] ::System::Net::MonoChunkStream::State& dyn_state();
     // Get instance field reference: private System.Text.StringBuilder saved
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_saved();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_saved();
     // Get instance field reference: private System.Boolean sawCR
-    [[deprecated]] bool& dyn_sawCR();
+    [[deprecated("Use field access instead!")]] bool& dyn_sawCR();
     // Get instance field reference: private System.Boolean gotit
-    [[deprecated]] bool& dyn_gotit();
+    [[deprecated("Use field access instead!")]] bool& dyn_gotit();
     // Get instance field reference: private System.Int32 trailerState
-    [[deprecated]] int& dyn_trailerState();
+    [[deprecated("Use field access instead!")]] int& dyn_trailerState();
     // Get instance field reference: private System.Collections.ArrayList chunks
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_chunks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_chunks();
     // public System.Boolean get_WantMore()
     // Offset: 0x10FF1A8
     bool get_WantMore();

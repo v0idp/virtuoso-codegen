@@ -143,33 +143,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single <ActivationAmount>k__BackingField
-    [[deprecated]] float& dyn_$ActivationAmount$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$ActivationAmount$k__BackingField();
     // Get instance field reference: private System.Boolean <ShouldBeDropped>k__BackingField
-    [[deprecated]] bool& dyn_$ShouldBeDropped$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ShouldBeDropped$k__BackingField();
     // Get instance field reference: private VROSC.DashboardSpawnPoint <OtherHand>k__BackingField
-    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn_$OtherHand$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardSpawnPoint*& dyn_$OtherHand$k__BackingField();
     // Get instance field reference: private System.Boolean <IsRightHand>k__BackingField
-    [[deprecated]] bool& dyn_$IsRightHand$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsRightHand$k__BackingField();
     // Get instance field reference: private System.Boolean <DashboardIsAtHand>k__BackingField
-    [[deprecated]] bool& dyn_$DashboardIsAtHand$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$DashboardIsAtHand$k__BackingField();
     // Get instance field reference: private VROSC.InputDevice <InputDevice>k__BackingField
-    [[deprecated]] ::VROSC::InputDevice*& dyn_$InputDevice$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_$InputDevice$k__BackingField();
     // Get instance field reference: private System.Single _lookAtSensitivity
-    [[deprecated]] float& dyn__lookAtSensitivity();
+    [[deprecated("Use field access instead!")]] float& dyn__lookAtSensitivity();
     // Get instance field reference: private System.Single _lookatTimeRequired
-    [[deprecated]] float& dyn__lookatTimeRequired();
+    [[deprecated("Use field access instead!")]] float& dyn__lookatTimeRequired();
     // Get instance field reference: private UnityEngine.Vector3 _offset
-    [[deprecated]] ::UnityEngine::Vector3& dyn__offset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__offset();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralArc _arc
-    [[deprecated]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
     // Get instance field reference: private System.Boolean _YPressed
-    [[deprecated]] bool& dyn__YPressed();
+    [[deprecated("Use field access instead!")]] bool& dyn__YPressed();
     // Get instance field reference: private System.Boolean _showingTooltip
-    [[deprecated]] bool& dyn__showingTooltip();
+    [[deprecated("Use field access instead!")]] bool& dyn__showingTooltip();
     // Get instance field reference: private VROSC.TooltipData _openTooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__openTooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__openTooltip();
     // Get instance field reference: private VROSC.TooltipData _dropTooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__dropTooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__dropTooltip();
     // public System.Single get_ActivationAmount()
     // Offset: 0x8E0DB4
     float get_ActivationAmount();
@@ -209,6 +209,13 @@ namespace VROSC {
     // private System.Void set_InputDevice(VROSC.InputDevice value)
     // Offset: 0x8E0E40
     void set_InputDevice(::VROSC::InputDevice* value);
+    // public System.Void .ctor()
+    // Offset: 0x8E1660
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DashboardSpawnPoint* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DashboardSpawnPoint::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DashboardSpawnPoint*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InputDevice inputDevice, VROSC.DashboardSpawnPoint otherHand, System.Boolean isRightHand)
     // Offset: 0x8E0E50
     void Setup(::VROSC::InputDevice* inputDevice, ::VROSC::DashboardSpawnPoint* otherHand, bool isRightHand);
@@ -239,19 +246,6 @@ namespace VROSC {
     // private System.Void OnDrawGizmos()
     // Offset: 0x8E15B0
     void OnDrawGizmos();
-    // public System.Void .ctor()
-    // Offset: 0x8E1660
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DashboardSpawnPoint* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DashboardSpawnPoint::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DashboardSpawnPoint*, creationType>()));
-    }
   }; // VROSC.DashboardSpawnPoint
   #pragma pack(pop)
   static check_size<sizeof(DashboardSpawnPoint), 104 + sizeof(::VROSC::TooltipData*)> __VROSC_DashboardSpawnPointSizeCheck;
@@ -368,6 +362,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::DashboardSpawnPoint*), "set_InputDevice", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::DashboardSpawnPoint::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::DashboardSpawnPoint::Setup
 // Il2CppName: Setup
 template<>
@@ -462,7 +460,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::DashboardSpawnPoint*), "OnDrawGizmos", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::DashboardSpawnPoint::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -85,9 +85,9 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 _loglength
     static void _set__loglength(int value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,ClientLog> _clients
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ClientLog>*& dyn__clients();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ClientLog>*& dyn__clients();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,ServerLog> _servers
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ServerLog>*& dyn__servers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ServerLog>*& dyn__servers();
     // static public OSCHandler get_Instance()
     // Offset: 0xC5BD94
     static ::GlobalNamespace::OSCHandler* get_Instance();
@@ -97,6 +97,16 @@ namespace GlobalNamespace {
     // public System.Collections.Generic.Dictionary`2<System.String,ServerLog> get_Servers()
     // Offset: 0xC5BF00
     ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ServerLog>* get_Servers();
+    // static private System.Void .cctor()
+    // Offset: 0xC5BCD8
+    static void _cctor();
+    // private System.Void .ctor()
+    // Offset: 0xC5BCDC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OSCHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OSCHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OSCHandler*, creationType>()));
+    }
     // public System.Void Init()
     // Offset: 0xC5BEF4
     void Init();
@@ -139,24 +149,6 @@ namespace GlobalNamespace {
     // private System.String FormatMilliseconds(System.Int32 milliseconds)
     // Offset: 0xC5C7F8
     ::StringW FormatMilliseconds(int milliseconds);
-    // static private System.Void .cctor()
-    // Offset: 0xC5BCD8
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
-    // private System.Void .ctor()
-    // Offset: 0xC5BCDC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OSCHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OSCHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OSCHandler*, creationType>()));
-    }
   }; // OSCHandler
   #pragma pack(pop)
   static check_size<sizeof(OSCHandler), 32 + sizeof(::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::ServerLog>*)> __GlobalNamespace_OSCHandlerSizeCheck;
@@ -187,6 +179,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OSCHandler*), "get_Servers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OSCHandler::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OSCHandler::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OSCHandler*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::OSCHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OSCHandler::Init
 // Il2CppName: Init
 template<>
@@ -266,15 +270,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OSCHandler*), "FormatMilliseconds", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{milliseconds});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OSCHandler::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OSCHandler::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OSCHandler*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OSCHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

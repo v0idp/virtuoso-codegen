@@ -53,7 +53,14 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SampleGroup[] _samplegroups
-    [[deprecated]] ::ArrayW<::VROSC::SampleGroup*>& dyn__samplegroups();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SampleGroup*>& dyn__samplegroups();
+    // public System.Void .ctor()
+    // Offset: 0xDDBF14
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SampleDatabase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SampleDatabase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SampleDatabase*, creationType>()));
+    }
     // public VROSC.SampleGroup GetGroup(System.Int32 groupId)
     // Offset: 0xDDB9E0
     ::VROSC::SampleGroup* GetGroup(int groupId);
@@ -63,23 +70,16 @@ namespace VROSC {
     // public UnityEngine.AudioClip GetSampleAudioClip(System.Int32 sampleId)
     // Offset: 0xDDBC8C
     ::UnityEngine::AudioClip* GetSampleAudioClip(int sampleId);
-    // public System.Void .ctor()
-    // Offset: 0xDDBF14
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SampleDatabase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SampleDatabase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SampleDatabase*, creationType>()));
-    }
   }; // VROSC.SampleDatabase
   #pragma pack(pop)
   static check_size<sizeof(SampleDatabase), 24 + sizeof(::ArrayW<::VROSC::SampleGroup*>)> __VROSC_SampleDatabaseSizeCheck;
   static_assert(sizeof(SampleDatabase) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SampleDatabase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SampleDatabase::GetGroup
 // Il2CppName: GetGroup
 template<>
@@ -108,7 +108,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::SampleDatabase*), "GetSampleAudioClip", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sampleId});
   }
 };
-// Writing MetadataGetter for method: VROSC::SampleDatabase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -99,19 +99,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISlideToggle _autoPlayToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__autoPlayToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__autoPlayToggle();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.UIButton _playButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__playButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__playButton();
     // Get instance field reference: private VROSC.SessionsLibraryPreviewPlayer _previewPlayer
-    [[deprecated]] ::VROSC::SessionsLibraryPreviewPlayer*& dyn__previewPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsLibraryPreviewPlayer*& dyn__previewPlayer();
     // Get instance field reference: private VROSC.TimeSlider _timeSlider
-    [[deprecated]] ::VROSC::TimeSlider*& dyn__timeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::TimeSlider*& dyn__timeSlider();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__playIcon();
     // Get instance field reference: private UnityEngine.GameObject _pauseIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__pauseIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__pauseIcon();
+    // public System.Void .ctor()
+    // Offset: 0xAE5E04
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PreviewOptionsUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PreviewOptionsUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PreviewOptionsUI*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xAE540C
     void Awake();
@@ -142,25 +149,16 @@ namespace VROSC {
     // private System.Void PreferencesDataLoaded(VROSC.UserDataControllers userDataControllers)
     // Offset: 0xAE5D78
     void PreferencesDataLoaded(::VROSC::UserDataControllers* userDataControllers);
-    // public System.Void .ctor()
-    // Offset: 0xAE5E04
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PreviewOptionsUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PreviewOptionsUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PreviewOptionsUI*, creationType>()));
-    }
   }; // VROSC.PreviewOptionsUI
   #pragma pack(pop)
   static check_size<sizeof(PreviewOptionsUI), 72 + sizeof(::UnityEngine::GameObject*)> __VROSC_PreviewOptionsUISizeCheck;
   static_assert(sizeof(PreviewOptionsUI) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::PreviewOptionsUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PreviewOptionsUI::Awake
 // Il2CppName: Awake
 template<>
@@ -247,7 +245,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PreviewOptionsUI*), "PreferencesDataLoaded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{userDataControllers});
   }
 };
-// Writing MetadataGetter for method: VROSC::PreviewOptionsUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

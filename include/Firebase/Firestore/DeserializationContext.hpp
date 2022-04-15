@@ -60,7 +60,7 @@ namespace Firebase::Firestore {
       return Snapshot;
     }
     // Get instance field reference: readonly Firebase.Firestore.DocumentSnapshot Snapshot
-    [[deprecated]] ::Firebase::Firestore::DocumentSnapshot*& dyn_Snapshot();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::DocumentSnapshot*& dyn_Snapshot();
     // Firebase.Firestore.FirebaseFirestore get_Firestore()
     // Offset: 0xD4D028
     ::Firebase::Firestore::FirebaseFirestore* get_Firestore();

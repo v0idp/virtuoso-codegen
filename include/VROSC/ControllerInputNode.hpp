@@ -193,47 +193,47 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action`1<VROSC.InputDevice> OnHoverBegin
-    [[deprecated]] ::System::Action_1<::VROSC::InputDevice*>*& dyn_OnHoverBegin();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::InputDevice*>*& dyn_OnHoverBegin();
     // Get instance field reference: public System.Action`1<VROSC.InputDevice> OnHoverStay
-    [[deprecated]] ::System::Action_1<::VROSC::InputDevice*>*& dyn_OnHoverStay();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::InputDevice*>*& dyn_OnHoverStay();
     // Get instance field reference: public System.Action`1<VROSC.InputDevice> OnHoverEnd
-    [[deprecated]] ::System::Action_1<::VROSC::InputDevice*>*& dyn_OnHoverEnd();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::InputDevice*>*& dyn_OnHoverEnd();
     // Get instance field reference: public System.Action`2<VROSC.InputDevice,VROSC.TriggerButton> OnPressBegin
-    [[deprecated]] ::System::Action_2<::VROSC::InputDevice*, ::VROSC::TriggerButton>*& dyn_OnPressBegin();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::InputDevice*, ::VROSC::TriggerButton>*& dyn_OnPressBegin();
     // Get instance field reference: public System.Action`2<VROSC.InputDevice,VROSC.TriggerButton> OnPressStay
-    [[deprecated]] ::System::Action_2<::VROSC::InputDevice*, ::VROSC::TriggerButton>*& dyn_OnPressStay();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::InputDevice*, ::VROSC::TriggerButton>*& dyn_OnPressStay();
     // Get instance field reference: public System.Action`2<VROSC.InputDevice,VROSC.TriggerButton> OnPressEnd
-    [[deprecated]] ::System::Action_2<::VROSC::InputDevice*, ::VROSC::TriggerButton>*& dyn_OnPressEnd();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::InputDevice*, ::VROSC::TriggerButton>*& dyn_OnPressEnd();
     // Get instance field reference: private VROSC.SignalNode[] _leftHoverOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftHoverOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftHoverOutput();
     // Get instance field reference: private VROSC.SignalNode[] _rightHoverOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightHoverOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightHoverOutput();
     // Get instance field reference: private VROSC.SignalNode[] _leftTriggerOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftTriggerOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftTriggerOutput();
     // Get instance field reference: private VROSC.SignalNode[] _rightTriggerOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightTriggerOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightTriggerOutput();
     // Get instance field reference: private VROSC.SignalNode[] _leftGripOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftGripOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftGripOutput();
     // Get instance field reference: private VROSC.SignalNode[] _rightGripOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightGripOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightGripOutput();
     // Get instance field reference: private VROSC.SignalNode[] _leftTouchpadXAOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftTouchpadXAOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftTouchpadXAOutput();
     // Get instance field reference: private VROSC.SignalNode[] _rightTouchpadXAOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightTouchpadXAOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightTouchpadXAOutput();
     // Get instance field reference: private VROSC.SignalNode[] _leftAppMenuYBOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftAppMenuYBOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__leftAppMenuYBOutput();
     // Get instance field reference: private VROSC.SignalNode[] _rightAppMenuYBOutput
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightAppMenuYBOutput();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__rightAppMenuYBOutput();
     // Get instance field reference: private System.Boolean _useColliderScale
-    [[deprecated]] bool& dyn__useColliderScale();
+    [[deprecated("Use field access instead!")]] bool& dyn__useColliderScale();
     // Get instance field reference: private UnityEngine.Collider _collider
-    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__collider();
     // Get instance field reference: private System.Boolean _disablePointing
-    [[deprecated]] bool& dyn__disablePointing();
+    [[deprecated("Use field access instead!")]] bool& dyn__disablePointing();
     // Get instance field reference: private System.Boolean _pointGripOnly
-    [[deprecated]] bool& dyn__pointGripOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__pointGripOnly();
     // Get instance field reference: private System.Boolean _disablesGrip
-    [[deprecated]] bool& dyn__disablesGrip();
+    [[deprecated("Use field access instead!")]] bool& dyn__disablesGrip();
     // public System.Boolean get_DisablePointing()
     // Offset: 0x94E4EC
     bool get_DisablePointing();
@@ -286,11 +286,6 @@ namespace VROSC {
     // Offset: 0x94F368
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ControllerInputNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerInputNode::.ctor");

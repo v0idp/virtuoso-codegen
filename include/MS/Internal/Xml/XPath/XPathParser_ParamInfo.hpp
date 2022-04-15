@@ -57,13 +57,13 @@ namespace MS::Internal::Xml::XPath {
     static_assert(sizeof(::ArrayW<::System::Xml::XPath::XPathResultType>) == 0x8);
     public:
     // Get instance field reference: private MS.Internal.Xml.XPath.Function/MS.Internal.Xml.XPath.FunctionType ftype
-    [[deprecated]] ::MS::Internal::Xml::XPath::Function::FunctionType& dyn_ftype();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::Function::FunctionType& dyn_ftype();
     // Get instance field reference: private System.Int32 minargs
-    [[deprecated]] int& dyn_minargs();
+    [[deprecated("Use field access instead!")]] int& dyn_minargs();
     // Get instance field reference: private System.Int32 maxargs
-    [[deprecated]] int& dyn_maxargs();
+    [[deprecated("Use field access instead!")]] int& dyn_maxargs();
     // Get instance field reference: private System.Xml.XPath.XPathResultType[] argTypes
-    [[deprecated]] ::ArrayW<::System::Xml::XPath::XPathResultType>& dyn_argTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XPath::XPathResultType>& dyn_argTypes();
     // public MS.Internal.Xml.XPath.Function/MS.Internal.Xml.XPath.FunctionType get_FType()
     // Offset: 0xC1ED9C
     ::MS::Internal::Xml::XPath::Function::FunctionType get_FType();

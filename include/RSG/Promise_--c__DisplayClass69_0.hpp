@@ -48,30 +48,32 @@ namespace RSG {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public RSG.Promise promise
-    [[deprecated]] ::RSG::Promise*& dyn_promise();
+    [[deprecated("Use field access instead!")]] ::RSG::Promise*& dyn_promise();
     // Get instance field reference: public System.Action onComplete
-    [[deprecated]] ::System::Action*& dyn_onComplete();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onComplete();
+    // public System.Void .ctor()
+    // Offset: 0x8CF670
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Promise::$$c__DisplayClass69_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::$$c__DisplayClass69_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Promise::$$c__DisplayClass69_0*, creationType>()));
+    }
     // System.Void <Finally>b__0()
     // Offset: 0x8CF678
     void $Finally$b__0();
     // System.Void <Finally>b__1(System.Exception e)
     // Offset: 0x8CF694
     void $Finally$b__1(::System::Exception* e);
-    // public System.Void .ctor()
-    // Offset: 0x8CF670
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Promise::$$c__DisplayClass69_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::$$c__DisplayClass69_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Promise::$$c__DisplayClass69_0*, creationType>()));
-    }
   }; // RSG.Promise/RSG.<>c__DisplayClass69_0
   #pragma pack(pop)
   static check_size<sizeof(Promise::$$c__DisplayClass69_0), 24 + sizeof(::System::Action*)> __RSG_Promise_$$c__DisplayClass69_0SizeCheck;
   static_assert(sizeof(Promise::$$c__DisplayClass69_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass69_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass69_0::$Finally$b__0
 // Il2CppName: <Finally>b__0
 template<>
@@ -89,7 +91,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (RSG::
     return ::il2cpp_utils::FindMethod(classof(RSG::Promise::$$c__DisplayClass69_0*), "<Finally>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e});
   }
 };
-// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass69_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

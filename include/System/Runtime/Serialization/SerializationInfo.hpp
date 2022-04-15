@@ -150,29 +150,29 @@ namespace System::Runtime::Serialization {
     // Set static field: static private System.String s_mscorlibFileName
     static void _set_s_mscorlibFileName(::StringW value);
     // Get instance field reference: System.String[] m_members
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_members();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_members();
     // Get instance field reference: System.Object[] m_data
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_m_data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_m_data();
     // Get instance field reference: System.Type[] m_types
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_m_types();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_m_types();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Int32> m_nameToIndex
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_m_nameToIndex();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_m_nameToIndex();
     // Get instance field reference: System.Int32 m_currMember
-    [[deprecated]] int& dyn_m_currMember();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currMember();
     // Get instance field reference: System.Runtime.Serialization.IFormatterConverter m_converter
-    [[deprecated]] ::System::Runtime::Serialization::IFormatterConverter*& dyn_m_converter();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::IFormatterConverter*& dyn_m_converter();
     // Get instance field reference: private System.String m_fullTypeName
-    [[deprecated]] ::StringW& dyn_m_fullTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_fullTypeName();
     // Get instance field reference: private System.String m_assemName
-    [[deprecated]] ::StringW& dyn_m_assemName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_assemName();
     // Get instance field reference: private System.Type objectType
-    [[deprecated]] ::System::Type*& dyn_objectType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_objectType();
     // Get instance field reference: private System.Boolean isFullTypeNameSetExplicit
-    [[deprecated]] bool& dyn_isFullTypeNameSetExplicit();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFullTypeNameSetExplicit();
     // Get instance field reference: private System.Boolean isAssemblyNameSetExplicit
-    [[deprecated]] bool& dyn_isAssemblyNameSetExplicit();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAssemblyNameSetExplicit();
     // Get instance field reference: private System.Boolean requireSameTokenInPartialTrust
-    [[deprecated]] bool& dyn_requireSameTokenInPartialTrust();
+    [[deprecated("Use field access instead!")]] bool& dyn_requireSameTokenInPartialTrust();
     // public System.String get_FullTypeName()
     // Offset: 0x1179F58
     ::StringW get_FullTypeName();

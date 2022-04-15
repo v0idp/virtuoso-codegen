@@ -40,9 +40,9 @@ namespace System {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: public System.UInt64[] Values
-    [[deprecated]] ::ArrayW<uint64_t>& dyn_Values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint64_t>& dyn_Values();
     // Get instance field reference: public System.String[] Names
-    [[deprecated]] ::ArrayW<::StringW>& dyn_Names();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_Names();
     // public System.Void .ctor(System.UInt64[] values, System.String[] names)
     // Offset: 0xE504E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

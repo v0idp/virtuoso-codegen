@@ -62,13 +62,13 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.Stack _stack
-    [[deprecated]] ::System::Collections::Stack*& dyn__stack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn__stack();
     // Get instance field reference: private System.Int32 _index
-    [[deprecated]] int& dyn__index();
+    [[deprecated("Use field access instead!")]] int& dyn__index();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // Get instance field reference: private System.Object currentElement
-    [[deprecated]] ::Il2CppObject*& dyn_currentElement();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_currentElement();
     // public System.Object get_Current()
     // Offset: 0xE5B8D4
     ::Il2CppObject* get_Current();

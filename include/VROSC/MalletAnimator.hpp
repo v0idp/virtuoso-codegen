@@ -102,19 +102,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action`1<System.Boolean> OnFinished
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnFinished();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnFinished();
     // Get instance field reference: private UnityEngine.Playables.PlayableDirector _playableDirector
-    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableDirector*& dyn__playableDirector();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _enterTimeline
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _exitTimeline
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
     // Get instance field reference: private UnityEngine.Transform _startPosition
-    [[deprecated]] ::UnityEngine::Transform*& dyn__startPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__startPosition();
     // Get instance field reference: private VROSC.LocalTransformData _defaultStartPosition
-    [[deprecated]] ::VROSC::LocalTransformData*& dyn__defaultStartPosition();
+    [[deprecated("Use field access instead!")]] ::VROSC::LocalTransformData*& dyn__defaultStartPosition();
     // Get instance field reference: private System.Boolean _isActive
-    [[deprecated]] bool& dyn__isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__isActive();
+    // public System.Void .ctor()
+    // Offset: 0x197DACC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MalletAnimator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MalletAnimator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MalletAnimator*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x197D894
     void Awake();
@@ -130,25 +137,16 @@ namespace VROSC {
     // private System.Void OnPlayableDirectorStopped(UnityEngine.Playables.PlayableDirector aDirector)
     // Offset: 0x197DA18
     void OnPlayableDirectorStopped(::UnityEngine::Playables::PlayableDirector* aDirector);
-    // public System.Void .ctor()
-    // Offset: 0x197DACC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MalletAnimator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MalletAnimator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MalletAnimator*, creationType>()));
-    }
   }; // VROSC.MalletAnimator
   #pragma pack(pop)
   static check_size<sizeof(MalletAnimator), 72 + sizeof(bool)> __VROSC_MalletAnimatorSizeCheck;
   static_assert(sizeof(MalletAnimator) == 0x49);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::MalletAnimator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MalletAnimator::Awake
 // Il2CppName: Awake
 template<>
@@ -192,7 +190,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::MalletAnimator*), "OnPlayableDirectorStopped", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{aDirector});
   }
 };
-// Writing MetadataGetter for method: VROSC::MalletAnimator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

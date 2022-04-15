@@ -96,17 +96,17 @@ namespace System::IO {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: private readonly System.Object _stateObject
-    [[deprecated]] ::Il2CppObject*& dyn__stateObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__stateObject();
     // Get instance field reference: private readonly System.Boolean _isWrite
-    [[deprecated]] bool& dyn__isWrite();
+    [[deprecated("Use field access instead!")]] bool& dyn__isWrite();
     // Get instance field reference: private System.Threading.ManualResetEvent _waitHandle
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn__waitHandle();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn__waitHandle();
     // Get instance field reference: private System.Runtime.ExceptionServices.ExceptionDispatchInfo _exceptionInfo
-    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn__exceptionInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn__exceptionInfo();
     // Get instance field reference: private System.Boolean _endXxxCalled
-    [[deprecated]] bool& dyn__endXxxCalled();
+    [[deprecated("Use field access instead!")]] bool& dyn__endXxxCalled();
     // Get instance field reference: private System.Int32 _bytesRead
-    [[deprecated]] int& dyn__bytesRead();
+    [[deprecated("Use field access instead!")]] int& dyn__bytesRead();
     // public System.Boolean get_IsCompleted()
     // Offset: 0xE5C8C8
     bool get_IsCompleted();

@@ -62,15 +62,15 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 firstCharacterIndex
-    [[deprecated]] int& dyn_firstCharacterIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_firstCharacterIndex();
     // Get instance field reference: public System.Int32 lastCharacterIndex
-    [[deprecated]] int& dyn_lastCharacterIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_lastCharacterIndex();
     // Get instance field reference: public System.Single ascender
-    [[deprecated]] float& dyn_ascender();
+    [[deprecated("Use field access instead!")]] float& dyn_ascender();
     // Get instance field reference: public System.Single baseLine
-    [[deprecated]] float& dyn_baseLine();
+    [[deprecated("Use field access instead!")]] float& dyn_baseLine();
     // Get instance field reference: public System.Single descender
-    [[deprecated]] float& dyn_descender();
+    [[deprecated("Use field access instead!")]] float& dyn_descender();
   }; // TMPro.TMP_PageInfo
   #pragma pack(pop)
   static check_size<sizeof(TMP_PageInfo), 16 + sizeof(float)> __TMPro_TMP_PageInfoSizeCheck;

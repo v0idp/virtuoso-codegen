@@ -39,25 +39,27 @@ namespace Firebase::Storage {
       return controllerPtr;
     }
     // Get instance field reference: System.IntPtr controllerPtr
-    [[deprecated]] ::System::IntPtr& dyn_controllerPtr();
-    // System.Void <>m__0()
-    // Offset: 0x183A4A0
-    void $$m__0();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_controllerPtr();
     // public System.Void .ctor()
     // Offset: 0x183663C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MonitorControllerInternal::$OnProgress$c__AnonStorey2* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::MonitorControllerInternal::$OnProgress$c__AnonStorey2::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MonitorControllerInternal::$OnProgress$c__AnonStorey2*, creationType>()));
     }
+    // System.Void <>m__0()
+    // Offset: 0x183A4A0
+    void $$m__0();
   }; // Firebase.Storage.MonitorControllerInternal/Firebase.Storage.<OnProgress>c__AnonStorey2
   #pragma pack(pop)
   static check_size<sizeof(MonitorControllerInternal::$OnProgress$c__AnonStorey2), 16 + sizeof(::System::IntPtr)> __Firebase_Storage_MonitorControllerInternal_$OnProgress$c__AnonStorey2SizeCheck;
   static_assert(sizeof(MonitorControllerInternal::$OnProgress$c__AnonStorey2) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Storage::MonitorControllerInternal::$OnProgress$c__AnonStorey2::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::MonitorControllerInternal::$OnProgress$c__AnonStorey2::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -66,7 +68,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::MonitorControllerInternal::$OnProgress$c__AnonStorey2*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::MonitorControllerInternal::$OnProgress$c__AnonStorey2::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -46,27 +46,29 @@ namespace RSG {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public RSG.Promise <>4__this
-    [[deprecated]] ::RSG::Promise*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::RSG::Promise*& dyn_$$4__this();
     // Get instance field reference: public System.Single progress
-    [[deprecated]] float& dyn_progress();
-    // System.Void <InvokeProgressHandlers>b__0(RSG.ProgressHandler handler)
-    // Offset: 0x8CE304
-    void $InvokeProgressHandlers$b__0(::RSG::ProgressHandler handler);
+    [[deprecated("Use field access instead!")]] float& dyn_progress();
     // public System.Void .ctor()
     // Offset: 0x8CE2FC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Promise::$$c__DisplayClass36_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::$$c__DisplayClass36_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Promise::$$c__DisplayClass36_0*, creationType>()));
     }
+    // System.Void <InvokeProgressHandlers>b__0(RSG.ProgressHandler handler)
+    // Offset: 0x8CE304
+    void $InvokeProgressHandlers$b__0(::RSG::ProgressHandler handler);
   }; // RSG.Promise/RSG.<>c__DisplayClass36_0
   #pragma pack(pop)
   static check_size<sizeof(Promise::$$c__DisplayClass36_0), 24 + sizeof(float)> __RSG_Promise_$$c__DisplayClass36_0SizeCheck;
   static_assert(sizeof(Promise::$$c__DisplayClass36_0) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass36_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass36_0::$InvokeProgressHandlers$b__0
 // Il2CppName: <InvokeProgressHandlers>b__0
 template<>
@@ -76,7 +78,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (RSG::
     return ::il2cpp_utils::FindMethod(classof(RSG::Promise::$$c__DisplayClass36_0*), "<InvokeProgressHandlers>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{handler});
   }
 };
-// Writing MetadataGetter for method: RSG::Promise::$$c__DisplayClass36_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

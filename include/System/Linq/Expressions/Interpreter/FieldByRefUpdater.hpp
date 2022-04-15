@@ -64,9 +64,9 @@ namespace System::Linq::Expressions::Interpreter {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private readonly System.Nullable`1<System.Linq.Expressions.Interpreter.LocalDefinition> _object
-    [[deprecated]] ::System::Nullable_1<::System::Linq::Expressions::Interpreter::LocalDefinition>& dyn__object();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::System::Linq::Expressions::Interpreter::LocalDefinition>& dyn__object();
     // Get instance field reference: private readonly System.Reflection.FieldInfo _field
-    [[deprecated]] ::System::Reflection::FieldInfo*& dyn__field();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::FieldInfo*& dyn__field();
     // public System.Void .ctor(System.Nullable`1<System.Linq.Expressions.Interpreter.LocalDefinition> obj, System.Reflection.FieldInfo field, System.Int32 argumentIndex)
     // Offset: 0xF144DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

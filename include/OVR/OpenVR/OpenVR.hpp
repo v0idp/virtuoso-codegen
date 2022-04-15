@@ -1451,6 +1451,13 @@ namespace OVR::OpenVR {
     // static public OVR.OpenVR.CVRSpatialAnchors get_SpatialAnchors()
     // Offset: 0x8041CC
     static ::OVR::OpenVR::CVRSpatialAnchors* get_SpatialAnchors();
+    // public System.Void .ctor()
+    // Offset: 0x80451C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OpenVR* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::OpenVR::OpenVR::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OpenVR*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x804524
     static void _cctor();
@@ -1487,15 +1494,6 @@ namespace OVR::OpenVR {
     // static public System.Void Shutdown()
     // Offset: 0x8044C4
     static void Shutdown();
-    // public System.Void .ctor()
-    // Offset: 0x80451C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OpenVR* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::OpenVR::OpenVR::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OpenVR*, creationType>()));
-    }
   }; // OVR.OpenVR.OpenVR
   #pragma pack(pop)
 }
@@ -1629,6 +1627,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::OVR::Open
     return ::il2cpp_utils::FindMethod(classof(OVR::OpenVR::OpenVR*), "get_SpatialAnchors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OVR::OpenVR::OpenVR::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::OpenVR::OpenVR::_cctor
 // Il2CppName: .cctor
 template<>
@@ -1737,7 +1739,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(OVR::OpenVR::OpenVR*), "Shutdown", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OVR::OpenVR::OpenVR::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

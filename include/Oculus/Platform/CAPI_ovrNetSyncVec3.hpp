@@ -48,11 +48,11 @@ namespace Oculus::Platform {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    [[deprecated]] float& dyn_z();
+    [[deprecated("Use field access instead!")]] float& dyn_z();
   }; // Oculus.Platform.CAPI/Oculus.Platform.ovrNetSyncVec3
   #pragma pack(pop)
   static check_size<sizeof(CAPI::ovrNetSyncVec3), 8 + sizeof(float)> __Oculus_Platform_CAPI_ovrNetSyncVec3SizeCheck;

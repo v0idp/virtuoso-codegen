@@ -141,29 +141,39 @@ namespace VROSC::FBDebug {
     // Set static field: static private System.String _data
     static void _set__data(::StringW value);
     // Get instance field reference: private UnityEngine.UI.Button _getNewDataButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn__getNewDataButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn__getNewDataButton();
     // Get instance field reference: private UnityEngine.UI.Button _writeDataButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn__writeDataButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn__writeDataButton();
     // Get instance field reference: private UnityEngine.UI.Button _deleteDataButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn__deleteDataButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn__deleteDataButton();
     // Get instance field reference: private TMPro.TextMeshProUGUI _dataText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn__dataText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn__dataText();
     // Get instance field reference: private System.String _sessionId
-    [[deprecated]] ::StringW& dyn__sessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sessionId();
     // Get instance field reference: private System.Boolean _alwaysHoldMallets
-    [[deprecated]] bool& dyn__alwaysHoldMallets();
+    [[deprecated("Use field access instead!")]] bool& dyn__alwaysHoldMallets();
     // Get instance field reference: private System.Single _malletAngle
-    [[deprecated]] float& dyn__malletAngle();
+    [[deprecated("Use field access instead!")]] float& dyn__malletAngle();
     // Get instance field reference: private System.Single _malletLength
-    [[deprecated]] float& dyn__malletLength();
+    [[deprecated("Use field access instead!")]] float& dyn__malletLength();
     // Get instance field reference: private VROSC.CommunitySessionsDataController _communitySessionsDataController
-    [[deprecated]] ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
     // Get instance field reference: private VROSC.CloudSessionsDataController _cloudSessionsDataController
-    [[deprecated]] ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
     // Get instance field reference: private VROSC.UserPreferencesDataController _userPreferencesDataController
-    [[deprecated]] ::VROSC::UserPreferencesDataController*& dyn__userPreferencesDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserPreferencesDataController*& dyn__userPreferencesDataController();
     // Get instance field reference: private VROSC.UserFavoritesDataController _userFavoritesDataController
-    [[deprecated]] ::VROSC::UserFavoritesDataController*& dyn__userFavoritesDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserFavoritesDataController*& dyn__userFavoritesDataController();
+    // public System.Void .ctor()
+    // Offset: 0x191C734
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UserDataDebugPanel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FBDebug::UserDataDebugPanel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UserDataDebugPanel*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x191C73C
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x191B2F4
     void Awake();
@@ -230,30 +240,24 @@ namespace VROSC::FBDebug {
     // static public System.Void PrintData(System.String data, System.Boolean clear)
     // Offset: 0x191BD50
     static void PrintData(::StringW data, bool clear);
-    // public System.Void .ctor()
-    // Offset: 0x191C734
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UserDataDebugPanel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FBDebug::UserDataDebugPanel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UserDataDebugPanel*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x191C73C
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // VROSC.FBDebug.UserDataDebugPanel
   #pragma pack(pop)
   static check_size<sizeof(UserDataDebugPanel), 104 + sizeof(::VROSC::UserFavoritesDataController*)> __VROSC_FBDebug_UserDataDebugPanelSizeCheck;
   static_assert(sizeof(UserDataDebugPanel) == 0x70);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FBDebug::UserDataDebugPanel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: VROSC::FBDebug::UserDataDebugPanel::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::FBDebug::UserDataDebugPanel::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::FBDebug::UserDataDebugPanel*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::FBDebug::UserDataDebugPanel::Awake
 // Il2CppName: Awake
 template<>
@@ -437,17 +441,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     static auto* data = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     static auto* clear = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::FBDebug::UserDataDebugPanel*), "PrintData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data, clear});
-  }
-};
-// Writing MetadataGetter for method: VROSC::FBDebug::UserDataDebugPanel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: VROSC::FBDebug::UserDataDebugPanel::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::FBDebug::UserDataDebugPanel::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::FBDebug::UserDataDebugPanel*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

@@ -62,9 +62,9 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.Xml.Schema.XmlSchemaObjectTable/System.Xml.Schema.XmlSchemaObjectEntry> entries
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Xml::Schema::XmlSchemaObjectTable::XmlSchemaObjectEntry>*& dyn_entries();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Xml::Schema::XmlSchemaObjectTable::XmlSchemaObjectEntry>*& dyn_entries();
     // Get instance field reference: private System.Int32 size
-    [[deprecated]] int& dyn_size();
+    [[deprecated("Use field access instead!")]] int& dyn_size();
     // public System.Int32 get_Count()
     // Offset: 0xC2167C
     int get_Count();

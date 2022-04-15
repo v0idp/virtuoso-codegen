@@ -41,7 +41,7 @@ namespace Newtonsoft::Json::Bson {
       return Value;
     }
     // Get instance field reference: private readonly System.Byte[] <Value>k__BackingField
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_$Value$k__BackingField();
     // public System.Byte[] get_Value()
     // Offset: 0xDB7D7C
     ::ArrayW<uint8_t> get_Value();

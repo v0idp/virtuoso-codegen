@@ -85,21 +85,21 @@ namespace TMPro {
     // Set static field: static TMPro.TMP_Style k_NormalStyle
     static void _set_k_NormalStyle(::TMPro::TMP_Style* value);
     // Get instance field reference: private System.String m_Name
-    [[deprecated]] ::StringW& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Name();
     // Get instance field reference: private System.Int32 m_HashCode
-    [[deprecated]] int& dyn_m_HashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_m_HashCode();
     // Get instance field reference: private System.String m_OpeningDefinition
-    [[deprecated]] ::StringW& dyn_m_OpeningDefinition();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_OpeningDefinition();
     // Get instance field reference: private System.String m_ClosingDefinition
-    [[deprecated]] ::StringW& dyn_m_ClosingDefinition();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_ClosingDefinition();
     // Get instance field reference: private System.Int32[] m_OpeningTagArray
-    [[deprecated]] ::ArrayW<int>& dyn_m_OpeningTagArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_OpeningTagArray();
     // Get instance field reference: private System.Int32[] m_ClosingTagArray
-    [[deprecated]] ::ArrayW<int>& dyn_m_ClosingTagArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_ClosingTagArray();
     // Get instance field reference: System.UInt32[] m_OpeningTagUnicodeArray
-    [[deprecated]] ::ArrayW<uint>& dyn_m_OpeningTagUnicodeArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_m_OpeningTagUnicodeArray();
     // Get instance field reference: System.UInt32[] m_ClosingTagUnicodeArray
-    [[deprecated]] ::ArrayW<uint>& dyn_m_ClosingTagUnicodeArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_m_ClosingTagUnicodeArray();
     // static public TMPro.TMP_Style get_NormalStyle()
     // Offset: 0x9B3D50
     static ::TMPro::TMP_Style* get_NormalStyle();

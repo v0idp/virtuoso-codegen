@@ -49,9 +49,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteFieldNoteData*) == 0x8);
     public:
     // Get instance field reference: private readonly VROSC.NotePlayer <Source>k__BackingField
-    [[deprecated]] ::VROSC::NotePlayer*& dyn_$Source$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotePlayer*& dyn_$Source$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldNoteData <CurrentNote>k__BackingField
-    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn_$CurrentNote$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldNoteData*& dyn_$CurrentNote$k__BackingField();
     // public VROSC.NotePlayer get_Source()
     // Offset: 0x19666E0
     ::VROSC::NotePlayer* get_Source();

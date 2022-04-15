@@ -82,17 +82,17 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.GameObject CapsuleGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_CapsuleGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_CapsuleGO();
     // Get instance field reference: private OVRBoneCapsule BoneCapsule
-    [[deprecated]] ::GlobalNamespace::OVRBoneCapsule*& dyn_BoneCapsule();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRBoneCapsule*& dyn_BoneCapsule();
     // Get instance field reference: private UnityEngine.Vector3 capsuleScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn_capsuleScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_capsuleScale();
     // Get instance field reference: private UnityEngine.MeshRenderer Renderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_Renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn_Renderer();
     // Get instance field reference: private UnityEngine.Material RenderMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_RenderMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_RenderMaterial();
     // Get instance field reference: private UnityEngine.Material SystemGestureMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_SystemGestureMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_SystemGestureMaterial();
     // public System.Void .ctor(UnityEngine.GameObject rootGO, UnityEngine.Material renderMat, UnityEngine.Material systemGestureMat, System.Single scale, OVRBoneCapsule boneCapsule)
     // Offset: 0x13EF46C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

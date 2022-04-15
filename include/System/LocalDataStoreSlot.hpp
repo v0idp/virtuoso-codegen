@@ -57,11 +57,11 @@ namespace System {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: private System.LocalDataStoreMgr m_mgr
-    [[deprecated]] ::System::LocalDataStoreMgr*& dyn_m_mgr();
+    [[deprecated("Use field access instead!")]] ::System::LocalDataStoreMgr*& dyn_m_mgr();
     // Get instance field reference: private System.Int32 m_slot
-    [[deprecated]] int& dyn_m_slot();
+    [[deprecated("Use field access instead!")]] int& dyn_m_slot();
     // Get instance field reference: private System.Int64 m_cookie
-    [[deprecated]] int64_t& dyn_m_cookie();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_cookie();
     // System.LocalDataStoreMgr get_Manager()
     // Offset: 0x107A30C
     ::System::LocalDataStoreMgr* get_Manager();

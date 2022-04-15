@@ -51,11 +51,11 @@ namespace System::Linq::Expressions::Interpreter {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly System.Int32 Index
-    [[deprecated]] int& dyn_Index();
+    [[deprecated("Use field access instead!")]] int& dyn_Index();
     // Get instance field reference: public readonly System.Int32 StackDepth
-    [[deprecated]] int& dyn_StackDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_StackDepth();
     // Get instance field reference: public readonly System.Int32 ContinuationStackDepth
-    [[deprecated]] int& dyn_ContinuationStackDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_ContinuationStackDepth();
     // public System.Void .ctor(System.Int32 index, System.Int32 continuationStackDepth, System.Int32 stackDepth)
     // Offset: 0xE993E0
     // ABORTED: conflicts with another method.  RuntimeLabel(int index, int continuationStackDepth, int stackDepth);

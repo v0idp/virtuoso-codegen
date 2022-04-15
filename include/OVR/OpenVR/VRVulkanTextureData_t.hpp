@@ -95,25 +95,25 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt64 m_nImage
-    [[deprecated]] uint64_t& dyn_m_nImage();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_nImage();
     // Get instance field reference: public System.IntPtr m_pDevice
-    [[deprecated]] ::System::IntPtr& dyn_m_pDevice();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_pDevice();
     // Get instance field reference: public System.IntPtr m_pPhysicalDevice
-    [[deprecated]] ::System::IntPtr& dyn_m_pPhysicalDevice();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_pPhysicalDevice();
     // Get instance field reference: public System.IntPtr m_pInstance
-    [[deprecated]] ::System::IntPtr& dyn_m_pInstance();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_pInstance();
     // Get instance field reference: public System.IntPtr m_pQueue
-    [[deprecated]] ::System::IntPtr& dyn_m_pQueue();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_pQueue();
     // Get instance field reference: public System.UInt32 m_nQueueFamilyIndex
-    [[deprecated]] uint& dyn_m_nQueueFamilyIndex();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_nQueueFamilyIndex();
     // Get instance field reference: public System.UInt32 m_nWidth
-    [[deprecated]] uint& dyn_m_nWidth();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_nWidth();
     // Get instance field reference: public System.UInt32 m_nHeight
-    [[deprecated]] uint& dyn_m_nHeight();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_nHeight();
     // Get instance field reference: public System.UInt32 m_nFormat
-    [[deprecated]] uint& dyn_m_nFormat();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_nFormat();
     // Get instance field reference: public System.UInt32 m_nSampleCount
-    [[deprecated]] uint& dyn_m_nSampleCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_nSampleCount();
   }; // OVR.OpenVR.VRVulkanTextureData_t
   #pragma pack(pop)
   static check_size<sizeof(VRVulkanTextureData_t), 56 + sizeof(uint)> __OVR_OpenVR_VRVulkanTextureData_tSizeCheck;

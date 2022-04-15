@@ -288,7 +288,7 @@ namespace System::Data::Common {
     // Set static field: static public System.Data.Common.StorageType SqlString
     static void _set_SqlString(::System::Data::Common::StorageType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Data.Common.StorageType
   #pragma pack(pop)
   static check_size<sizeof(StorageType), 0 + sizeof(int)> __System_Data_Common_StorageTypeSizeCheck;

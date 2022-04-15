@@ -292,51 +292,51 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrEntry[] S_SchemaEntries
     static void _set_S_SchemaEntries(::ArrayW<::System::Xml::Schema::XdrBuilder::XdrEntry*> value);
     // Get instance field reference: private System.Xml.Schema.SchemaInfo _SchemaInfo
-    [[deprecated]] ::System::Xml::Schema::SchemaInfo*& dyn__SchemaInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaInfo*& dyn__SchemaInfo();
     // Get instance field reference: private System.String _TargetNamespace
-    [[deprecated]] ::StringW& dyn__TargetNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__TargetNamespace();
     // Get instance field reference: private System.Xml.XmlReader _reader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn__reader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn__reader();
     // Get instance field reference: private System.Xml.PositionInfo positionInfo
-    [[deprecated]] ::System::Xml::PositionInfo*& dyn_positionInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::PositionInfo*& dyn_positionInfo();
     // Get instance field reference: private System.Xml.Schema.ParticleContentValidator _contentValidator
-    [[deprecated]] ::System::Xml::Schema::ParticleContentValidator*& dyn__contentValidator();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ParticleContentValidator*& dyn__contentValidator();
     // Get instance field reference: private System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrEntry _CurState
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::XdrEntry*& dyn__CurState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::XdrEntry*& dyn__CurState();
     // Get instance field reference: private System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrEntry _NextState
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::XdrEntry*& dyn__NextState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::XdrEntry*& dyn__NextState();
     // Get instance field reference: private System.Xml.HWStack _StateHistory
-    [[deprecated]] ::System::Xml::HWStack*& dyn__StateHistory();
+    [[deprecated("Use field access instead!")]] ::System::Xml::HWStack*& dyn__StateHistory();
     // Get instance field reference: private System.Xml.HWStack _GroupStack
-    [[deprecated]] ::System::Xml::HWStack*& dyn__GroupStack();
+    [[deprecated("Use field access instead!")]] ::System::Xml::HWStack*& dyn__GroupStack();
     // Get instance field reference: private System.String _XdrName
-    [[deprecated]] ::StringW& dyn__XdrName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__XdrName();
     // Get instance field reference: private System.String _XdrPrefix
-    [[deprecated]] ::StringW& dyn__XdrPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__XdrPrefix();
     // Get instance field reference: private System.Xml.Schema.XdrBuilder/System.Xml.Schema.ElementContent _ElementDef
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::ElementContent*& dyn__ElementDef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::ElementContent*& dyn__ElementDef();
     // Get instance field reference: private System.Xml.Schema.XdrBuilder/System.Xml.Schema.GroupContent _GroupDef
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::GroupContent*& dyn__GroupDef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::GroupContent*& dyn__GroupDef();
     // Get instance field reference: private System.Xml.Schema.XdrBuilder/System.Xml.Schema.AttributeContent _AttributeDef
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::AttributeContent*& dyn__AttributeDef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::AttributeContent*& dyn__AttributeDef();
     // Get instance field reference: private System.Xml.Schema.XdrBuilder/System.Xml.Schema.DeclBaseInfo _UndefinedAttributeTypes
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::DeclBaseInfo*& dyn__UndefinedAttributeTypes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::DeclBaseInfo*& dyn__UndefinedAttributeTypes();
     // Get instance field reference: private System.Xml.Schema.XdrBuilder/System.Xml.Schema.DeclBaseInfo _BaseDecl
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::DeclBaseInfo*& dyn__BaseDecl();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::DeclBaseInfo*& dyn__BaseDecl();
     // Get instance field reference: private System.Xml.XmlNameTable _NameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn__NameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn__NameTable();
     // Get instance field reference: private System.Xml.Schema.SchemaNames _SchemaNames
-    [[deprecated]] ::System::Xml::Schema::SchemaNames*& dyn__SchemaNames();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames*& dyn__SchemaNames();
     // Get instance field reference: private System.Xml.XmlNamespaceManager _CurNsMgr
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn__CurNsMgr();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn__CurNsMgr();
     // Get instance field reference: private System.String _Text
-    [[deprecated]] ::StringW& dyn__Text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__Text();
     // Get instance field reference: private System.Xml.Schema.ValidationEventHandler validationEventHandler
-    [[deprecated]] ::System::Xml::Schema::ValidationEventHandler*& dyn_validationEventHandler();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ValidationEventHandler*& dyn_validationEventHandler();
     // Get instance field reference: private System.Collections.Hashtable _UndeclaredElements
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__UndeclaredElements();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__UndeclaredElements();
     // Get instance field reference: private System.Xml.XmlResolver xmlResolver
-    [[deprecated]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
     // System.Void set_XmlResolver(System.Xml.XmlResolver value)
     // Offset: 0x11A6160
     void set_XmlResolver(::System::Xml::XmlResolver* value);

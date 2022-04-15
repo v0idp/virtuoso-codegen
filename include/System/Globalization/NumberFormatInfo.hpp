@@ -284,73 +284,73 @@ namespace System::Globalization {
     // Set static field: static private System.Globalization.NumberStyles InvalidNumberStyles
     static void _set_InvalidNumberStyles(::System::Globalization::NumberStyles value);
     // Get instance field reference: System.Int32[] numberGroupSizes
-    [[deprecated]] ::ArrayW<int>& dyn_numberGroupSizes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_numberGroupSizes();
     // Get instance field reference: System.Int32[] currencyGroupSizes
-    [[deprecated]] ::ArrayW<int>& dyn_currencyGroupSizes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_currencyGroupSizes();
     // Get instance field reference: System.Int32[] percentGroupSizes
-    [[deprecated]] ::ArrayW<int>& dyn_percentGroupSizes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_percentGroupSizes();
     // Get instance field reference: System.String positiveSign
-    [[deprecated]] ::StringW& dyn_positiveSign();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_positiveSign();
     // Get instance field reference: System.String negativeSign
-    [[deprecated]] ::StringW& dyn_negativeSign();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_negativeSign();
     // Get instance field reference: System.String numberDecimalSeparator
-    [[deprecated]] ::StringW& dyn_numberDecimalSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_numberDecimalSeparator();
     // Get instance field reference: System.String numberGroupSeparator
-    [[deprecated]] ::StringW& dyn_numberGroupSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_numberGroupSeparator();
     // Get instance field reference: System.String currencyGroupSeparator
-    [[deprecated]] ::StringW& dyn_currencyGroupSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currencyGroupSeparator();
     // Get instance field reference: System.String currencyDecimalSeparator
-    [[deprecated]] ::StringW& dyn_currencyDecimalSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currencyDecimalSeparator();
     // Get instance field reference: System.String currencySymbol
-    [[deprecated]] ::StringW& dyn_currencySymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currencySymbol();
     // Get instance field reference: System.String ansiCurrencySymbol
-    [[deprecated]] ::StringW& dyn_ansiCurrencySymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ansiCurrencySymbol();
     // Get instance field reference: System.String nanSymbol
-    [[deprecated]] ::StringW& dyn_nanSymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nanSymbol();
     // Get instance field reference: System.String positiveInfinitySymbol
-    [[deprecated]] ::StringW& dyn_positiveInfinitySymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_positiveInfinitySymbol();
     // Get instance field reference: System.String negativeInfinitySymbol
-    [[deprecated]] ::StringW& dyn_negativeInfinitySymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_negativeInfinitySymbol();
     // Get instance field reference: System.String percentDecimalSeparator
-    [[deprecated]] ::StringW& dyn_percentDecimalSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_percentDecimalSeparator();
     // Get instance field reference: System.String percentGroupSeparator
-    [[deprecated]] ::StringW& dyn_percentGroupSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_percentGroupSeparator();
     // Get instance field reference: System.String percentSymbol
-    [[deprecated]] ::StringW& dyn_percentSymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_percentSymbol();
     // Get instance field reference: System.String perMilleSymbol
-    [[deprecated]] ::StringW& dyn_perMilleSymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_perMilleSymbol();
     // Get instance field reference: System.String[] nativeDigits
-    [[deprecated]] ::ArrayW<::StringW>& dyn_nativeDigits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_nativeDigits();
     // Get instance field reference: System.Int32 m_dataItem
-    [[deprecated]] int& dyn_m_dataItem();
+    [[deprecated("Use field access instead!")]] int& dyn_m_dataItem();
     // Get instance field reference: System.Int32 numberDecimalDigits
-    [[deprecated]] int& dyn_numberDecimalDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_numberDecimalDigits();
     // Get instance field reference: System.Int32 currencyDecimalDigits
-    [[deprecated]] int& dyn_currencyDecimalDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_currencyDecimalDigits();
     // Get instance field reference: System.Int32 currencyPositivePattern
-    [[deprecated]] int& dyn_currencyPositivePattern();
+    [[deprecated("Use field access instead!")]] int& dyn_currencyPositivePattern();
     // Get instance field reference: System.Int32 currencyNegativePattern
-    [[deprecated]] int& dyn_currencyNegativePattern();
+    [[deprecated("Use field access instead!")]] int& dyn_currencyNegativePattern();
     // Get instance field reference: System.Int32 numberNegativePattern
-    [[deprecated]] int& dyn_numberNegativePattern();
+    [[deprecated("Use field access instead!")]] int& dyn_numberNegativePattern();
     // Get instance field reference: System.Int32 percentPositivePattern
-    [[deprecated]] int& dyn_percentPositivePattern();
+    [[deprecated("Use field access instead!")]] int& dyn_percentPositivePattern();
     // Get instance field reference: System.Int32 percentNegativePattern
-    [[deprecated]] int& dyn_percentNegativePattern();
+    [[deprecated("Use field access instead!")]] int& dyn_percentNegativePattern();
     // Get instance field reference: System.Int32 percentDecimalDigits
-    [[deprecated]] int& dyn_percentDecimalDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_percentDecimalDigits();
     // Get instance field reference: System.Int32 digitSubstitution
-    [[deprecated]] int& dyn_digitSubstitution();
+    [[deprecated("Use field access instead!")]] int& dyn_digitSubstitution();
     // Get instance field reference: System.Boolean isReadOnly
-    [[deprecated]] bool& dyn_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_isReadOnly();
     // Get instance field reference: System.Boolean m_useUserOverride
-    [[deprecated]] bool& dyn_m_useUserOverride();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_useUserOverride();
     // Get instance field reference: System.Boolean m_isInvariant
-    [[deprecated]] bool& dyn_m_isInvariant();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isInvariant();
     // Get instance field reference: System.Boolean validForParseAsNumber
-    [[deprecated]] bool& dyn_validForParseAsNumber();
+    [[deprecated("Use field access instead!")]] bool& dyn_validForParseAsNumber();
     // Get instance field reference: System.Boolean validForParseAsCurrency
-    [[deprecated]] bool& dyn_validForParseAsCurrency();
+    [[deprecated("Use field access instead!")]] bool& dyn_validForParseAsCurrency();
     // static public System.Globalization.NumberFormatInfo get_InvariantInfo()
     // Offset: 0x1466714
     static ::System::Globalization::NumberFormatInfo* get_InvariantInfo();

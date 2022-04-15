@@ -44,7 +44,7 @@ namespace System::Runtime::CompilerServices {
       return Flag;
     }
     // Get instance field reference: public readonly System.Byte Flag
-    [[deprecated]] uint8_t& dyn_Flag();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_Flag();
     // public System.Void .ctor(System.Byte param_00009fc3)
     // Offset: 0x1348AA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

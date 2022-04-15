@@ -1639,7 +1639,7 @@ namespace Mono::Security::Interface {
     // Set static field: static public Mono.Security.Interface.CipherSuiteCode TLS_FALLBACK_SCSV
     static void _set_TLS_FALLBACK_SCSV(::Mono::Security::Interface::CipherSuiteCode value);
     // Get instance field reference: public System.UInt16 value__
-    [[deprecated]] uint16_t& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_value__();
   }; // Mono.Security.Interface.CipherSuiteCode
   #pragma pack(pop)
   static check_size<sizeof(CipherSuiteCode), 0 + sizeof(uint16_t)> __Mono_Security_Interface_CipherSuiteCodeSizeCheck;

@@ -31,9 +31,6 @@ namespace System::Diagnostics::CodeAnalysis {
     public:
     // public System.Void .ctor()
     // Offset: 0x13489B8
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NotNullAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Diagnostics::CodeAnalysis::NotNullAttribute::.ctor");

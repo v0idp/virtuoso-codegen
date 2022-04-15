@@ -77,7 +77,7 @@ namespace VROSC {
       // Set static field: static public VROSC.IntNode/VROSC.OverflowBehaviour Wrap
       static void _set_Wrap(::VROSC::IntNode::OverflowBehaviour value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.IntNode/VROSC.OverflowBehaviour
     #pragma pack(pop)
     static check_size<sizeof(IntNode::OverflowBehaviour), 0 + sizeof(int)> __VROSC_IntNode_OverflowBehaviourSizeCheck;
@@ -117,15 +117,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Int32 _minValue
-    [[deprecated]] int& dyn__minValue();
+    [[deprecated("Use field access instead!")]] int& dyn__minValue();
     // Get instance field reference: protected System.Int32 _maxValue
-    [[deprecated]] int& dyn__maxValue();
+    [[deprecated("Use field access instead!")]] int& dyn__maxValue();
     // Get instance field reference: protected VROSC.IntNode/VROSC.OverflowBehaviour _overflowBehaviour
-    [[deprecated]] ::VROSC::IntNode::OverflowBehaviour& dyn__overflowBehaviour();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntNode::OverflowBehaviour& dyn__overflowBehaviour();
     // Get instance field reference: private System.Int32 _value
-    [[deprecated]] int& dyn__value();
+    [[deprecated("Use field access instead!")]] int& dyn__value();
     // Get instance field reference: public System.Action`1<System.Int32> OnValueChanged
-    [[deprecated]] ::System::Action_1<int>*& dyn_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<int>*& dyn_OnValueChanged();
     // public System.Int32 get_MinValue()
     // Offset: 0x1948BEC
     int get_MinValue();
@@ -148,11 +148,6 @@ namespace VROSC {
     // Offset: 0x1948D0C
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IntNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IntNode::.ctor");

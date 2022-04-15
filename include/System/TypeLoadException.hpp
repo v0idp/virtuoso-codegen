@@ -64,13 +64,13 @@ namespace System {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String ClassName
-    [[deprecated]] ::StringW& dyn_ClassName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ClassName();
     // Get instance field reference: private System.String AssemblyName
-    [[deprecated]] ::StringW& dyn_AssemblyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_AssemblyName();
     // Get instance field reference: private System.String MessageArg
-    [[deprecated]] ::StringW& dyn_MessageArg();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MessageArg();
     // Get instance field reference: System.Int32 ResourceId
-    [[deprecated]] int& dyn_ResourceId();
+    [[deprecated("Use field access instead!")]] int& dyn_ResourceId();
     // private System.Void .ctor(System.String className, System.String assemblyName)
     // Offset: 0x12B29DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

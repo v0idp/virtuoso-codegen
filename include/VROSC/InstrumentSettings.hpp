@@ -96,21 +96,21 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::InstrumentSettings::ScaleSettings*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.MidiSettings _midiSettings
-    [[deprecated]] ::VROSC::MidiSettings*& dyn__midiSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::MidiSettings*& dyn__midiSettings();
     // Get instance field reference: private VROSC.PatchGroup _patches
-    [[deprecated]] ::VROSC::PatchGroup*& dyn__patches();
+    [[deprecated("Use field access instead!")]] ::VROSC::PatchGroup*& dyn__patches();
     // Get instance field reference: private System.Int32 _startingPatch
-    [[deprecated]] int& dyn__startingPatch();
+    [[deprecated("Use field access instead!")]] int& dyn__startingPatch();
     // Get instance field reference: private System.Int32 _startMidiChannel
-    [[deprecated]] int& dyn__startMidiChannel();
+    [[deprecated("Use field access instead!")]] int& dyn__startMidiChannel();
     // Get instance field reference: private System.Int32 _startOctave
-    [[deprecated]] int& dyn__startOctave();
+    [[deprecated("Use field access instead!")]] int& dyn__startOctave();
     // Get instance field reference: private System.Int32 _minOctave
-    [[deprecated]] int& dyn__minOctave();
+    [[deprecated("Use field access instead!")]] int& dyn__minOctave();
     // Get instance field reference: private System.Int32 _maxOctave
-    [[deprecated]] int& dyn__maxOctave();
+    [[deprecated("Use field access instead!")]] int& dyn__maxOctave();
     // Get instance field reference: private VROSC.InstrumentSettings/VROSC.ScaleSettings[] _scalesSettings
-    [[deprecated]] ::ArrayW<::VROSC::InstrumentSettings::ScaleSettings*>& dyn__scalesSettings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::InstrumentSettings::ScaleSettings*>& dyn__scalesSettings();
     // public VROSC.MidiSettings get_MidiSettings()
     // Offset: 0x1948770
     ::VROSC::MidiSettings* get_MidiSettings();
@@ -139,9 +139,6 @@ namespace VROSC {
     // Offset: 0x19487B0
     // Implemented from: VROSC.WidgetSettings
     // Base method: System.Void WidgetSettings::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentSettings::.ctor");

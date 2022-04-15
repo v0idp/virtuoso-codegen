@@ -45,9 +45,9 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::Serialization::XmlTypeMapping*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Serialization.XmlSerializationReaderInterpreter _sri
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializationReaderInterpreter*& dyn__sri();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializationReaderInterpreter*& dyn__sri();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapping _typeMap
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapping*& dyn__typeMap();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapping*& dyn__typeMap();
     // public System.Void .ctor(System.Xml.Serialization.XmlSerializationReaderInterpreter sri, System.Xml.Serialization.XmlTypeMapping typeMap)
     // Offset: 0xC22238
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

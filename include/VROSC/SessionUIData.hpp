@@ -96,7 +96,7 @@ namespace VROSC {
       // Set static field: static public VROSC.SessionUIData/VROSC.Type Community
       static void _set_Community(::VROSC::SessionUIData::Type value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.SessionUIData/VROSC.Type
     #pragma pack(pop)
     static check_size<sizeof(SessionUIData::Type), 0 + sizeof(int)> __VROSC_SessionUIData_TypeSizeCheck;
@@ -176,29 +176,29 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String <SessionId>k__BackingField
-    [[deprecated]] ::StringW& dyn_$SessionId$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$SessionId$k__BackingField();
     // Get instance field reference: private System.DateTime <Date>k__BackingField
-    [[deprecated]] ::System::DateTime& dyn_$Date$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_$Date$k__BackingField();
     // Get instance field reference: private System.String <DisplayName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$DisplayName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$DisplayName$k__BackingField();
     // Get instance field reference: private System.String <Description>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Description$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Description$k__BackingField();
     // Get instance field reference: private System.String <AuthorName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$AuthorName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$AuthorName$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> <ContributorsNames>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_$ContributorsNames$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_$ContributorsNames$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> <Tags>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_$Tags$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_$Tags$k__BackingField();
     // Get instance field reference: private System.Int32 <UpVotesCount>k__BackingField
-    [[deprecated]] int& dyn_$UpVotesCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$UpVotesCount$k__BackingField();
     // Get instance field reference: private System.Int32 <FavoritesCount>k__BackingField
-    [[deprecated]] int& dyn_$FavoritesCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$FavoritesCount$k__BackingField();
     // Get instance field reference: private System.Int32 <DownloadsCount>k__BackingField
-    [[deprecated]] int& dyn_$DownloadsCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$DownloadsCount$k__BackingField();
     // Get instance field reference: private VROSC.SessionUIData/VROSC.Type <SessionType>k__BackingField
-    [[deprecated]] ::VROSC::SessionUIData::Type& dyn_$SessionType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionUIData::Type& dyn_$SessionType$k__BackingField();
     // Get instance field reference: private System.Boolean <HasPreview>k__BackingField
-    [[deprecated]] bool& dyn_$HasPreview$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasPreview$k__BackingField();
     // public System.String get_SessionId()
     // Offset: 0x19882D4
     ::StringW get_SessionId();

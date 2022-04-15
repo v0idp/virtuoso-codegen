@@ -126,25 +126,32 @@ namespace VROSC {
     // Set static field: static private System.String ReflectionsString
     static void _set_ReflectionsString(::StringW value);
     // Get instance field reference: private System.Single _drumsSendOff
-    [[deprecated]] float& dyn__drumsSendOff();
+    [[deprecated("Use field access instead!")]] float& dyn__drumsSendOff();
     // Get instance field reference: private System.Single _drumsSendMin
-    [[deprecated]] float& dyn__drumsSendMin();
+    [[deprecated("Use field access instead!")]] float& dyn__drumsSendMin();
     // Get instance field reference: private System.Single _drumsSendMax
-    [[deprecated]] float& dyn__drumsSendMax();
+    [[deprecated("Use field access instead!")]] float& dyn__drumsSendMax();
     // Get instance field reference: private UnityEngine.AnimationCurve _drumsSendCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__drumsSendCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__drumsSendCurve();
     // Get instance field reference: private System.Single _decayTimeMin
-    [[deprecated]] float& dyn__decayTimeMin();
+    [[deprecated("Use field access instead!")]] float& dyn__decayTimeMin();
     // Get instance field reference: private System.Single _decayTimeMax
-    [[deprecated]] float& dyn__decayTimeMax();
+    [[deprecated("Use field access instead!")]] float& dyn__decayTimeMax();
     // Get instance field reference: private UnityEngine.AnimationCurve _decayTimeCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__decayTimeCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__decayTimeCurve();
     // Get instance field reference: private System.Single _reflectionsMin
-    [[deprecated]] float& dyn__reflectionsMin();
+    [[deprecated("Use field access instead!")]] float& dyn__reflectionsMin();
     // Get instance field reference: private System.Single _reflectionsMax
-    [[deprecated]] float& dyn__reflectionsMax();
+    [[deprecated("Use field access instead!")]] float& dyn__reflectionsMax();
     // Get instance field reference: private UnityEngine.AnimationCurve _reflectionsCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__reflectionsCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__reflectionsCurve();
+    // public System.Void .ctor()
+    // Offset: 0xB35FD8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ReverbManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ReverbManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ReverbManager*, creationType>()));
+    }
     // public System.Void SetDrumsReverbAmount(System.Single amount)
     // Offset: 0xB35DE0
     void SetDrumsReverbAmount(float amount);
@@ -154,25 +161,16 @@ namespace VROSC {
     // private System.Void SetReverbParameter(System.String name, System.Single amount, UnityEngine.AnimationCurve curve, System.Single min, System.Single max)
     // Offset: 0xB35E9C
     void SetReverbParameter(::StringW name, float amount, ::UnityEngine::AnimationCurve* curve, float min, float max);
-    // public System.Void .ctor()
-    // Offset: 0xB35FD8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ReverbManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ReverbManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ReverbManager*, creationType>()));
-    }
   }; // VROSC.ReverbManager
   #pragma pack(pop)
   static check_size<sizeof(ReverbManager), 72 + sizeof(::UnityEngine::AnimationCurve*)> __VROSC_ReverbManagerSizeCheck;
   static_assert(sizeof(ReverbManager) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ReverbManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ReverbManager::SetDrumsReverbAmount
 // Il2CppName: SetDrumsReverbAmount
 template<>
@@ -204,7 +202,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ReverbManager*), "SetReverbParameter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{name, amount, curve, min, max});
   }
 };
-// Writing MetadataGetter for method: VROSC::ReverbManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

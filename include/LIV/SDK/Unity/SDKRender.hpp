@@ -264,65 +264,65 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private UnityEngine.Rendering.CommandBuffer _clipPlaneCommandBuffer
-    [[deprecated]] ::UnityEngine::Rendering::CommandBuffer*& dyn__clipPlaneCommandBuffer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CommandBuffer*& dyn__clipPlaneCommandBuffer();
     // Get instance field reference: private UnityEngine.Rendering.CommandBuffer _combineAlphaCommandBuffer
-    [[deprecated]] ::UnityEngine::Rendering::CommandBuffer*& dyn__combineAlphaCommandBuffer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CommandBuffer*& dyn__combineAlphaCommandBuffer();
     // Get instance field reference: private UnityEngine.Rendering.CommandBuffer _captureTextureCommandBuffer
-    [[deprecated]] ::UnityEngine::Rendering::CommandBuffer*& dyn__captureTextureCommandBuffer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CommandBuffer*& dyn__captureTextureCommandBuffer();
     // Get instance field reference: private UnityEngine.Rendering.CommandBuffer _applyTextureCommandBuffer
-    [[deprecated]] ::UnityEngine::Rendering::CommandBuffer*& dyn__applyTextureCommandBuffer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CommandBuffer*& dyn__applyTextureCommandBuffer();
     // Get instance field reference: private UnityEngine.Rendering.CommandBuffer _optimizedRenderingCommandBuffer
-    [[deprecated]] ::UnityEngine::Rendering::CommandBuffer*& dyn__optimizedRenderingCommandBuffer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CommandBuffer*& dyn__optimizedRenderingCommandBuffer();
     // Get instance field reference: private UnityEngine.Rendering.CameraEvent _clipPlaneCameraEvent
-    [[deprecated]] ::UnityEngine::Rendering::CameraEvent& dyn__clipPlaneCameraEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CameraEvent& dyn__clipPlaneCameraEvent();
     // Get instance field reference: private UnityEngine.Rendering.CameraEvent _clipPlaneCombineAlphaCameraEvent
-    [[deprecated]] ::UnityEngine::Rendering::CameraEvent& dyn__clipPlaneCombineAlphaCameraEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CameraEvent& dyn__clipPlaneCombineAlphaCameraEvent();
     // Get instance field reference: private UnityEngine.Rendering.CameraEvent _captureTextureEvent
-    [[deprecated]] ::UnityEngine::Rendering::CameraEvent& dyn__captureTextureEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CameraEvent& dyn__captureTextureEvent();
     // Get instance field reference: private UnityEngine.Rendering.CameraEvent _applyTextureEvent
-    [[deprecated]] ::UnityEngine::Rendering::CameraEvent& dyn__applyTextureEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CameraEvent& dyn__applyTextureEvent();
     // Get instance field reference: private UnityEngine.Rendering.CameraEvent _optimizedRenderingCameraEvent
-    [[deprecated]] ::UnityEngine::Rendering::CameraEvent& dyn__optimizedRenderingCameraEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::CameraEvent& dyn__optimizedRenderingCameraEvent();
     // Get instance field reference: private UnityEngine.Mesh _clipPlaneMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__clipPlaneMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__clipPlaneMesh();
     // Get instance field reference: private UnityEngine.Material _clipPlaneSimpleMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__clipPlaneSimpleMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__clipPlaneSimpleMaterial();
     // Get instance field reference: private UnityEngine.Material _clipPlaneSimpleDebugMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__clipPlaneSimpleDebugMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__clipPlaneSimpleDebugMaterial();
     // Get instance field reference: private UnityEngine.Material _clipPlaneComplexMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__clipPlaneComplexMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__clipPlaneComplexMaterial();
     // Get instance field reference: private UnityEngine.Material _clipPlaneComplexDebugMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__clipPlaneComplexDebugMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__clipPlaneComplexDebugMaterial();
     // Get instance field reference: private UnityEngine.Material _writeOpaqueToAlphaMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__writeOpaqueToAlphaMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__writeOpaqueToAlphaMaterial();
     // Get instance field reference: private UnityEngine.Material _combineAlphaMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__combineAlphaMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__combineAlphaMaterial();
     // Get instance field reference: private UnityEngine.Material _writeMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__writeMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__writeMaterial();
     // Get instance field reference: private UnityEngine.Material _forceForwardRenderingMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__forceForwardRenderingMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__forceForwardRenderingMaterial();
     // Get instance field reference: private UnityEngine.RenderTexture _backgroundRenderTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn__backgroundRenderTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn__backgroundRenderTexture();
     // Get instance field reference: private UnityEngine.RenderTexture _foregroundRenderTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn__foregroundRenderTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn__foregroundRenderTexture();
     // Get instance field reference: private UnityEngine.RenderTexture _optimizedRenderTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn__optimizedRenderTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn__optimizedRenderTexture();
     // Get instance field reference: private UnityEngine.RenderTexture _complexClipPlaneRenderTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn__complexClipPlaneRenderTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn__complexClipPlaneRenderTexture();
     // Get instance field reference: private LIV.SDK.Unity.LIV _liv
-    [[deprecated]] ::LIV::SDK::Unity::LIV*& dyn__liv();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::LIV*& dyn__liv();
     // Get instance field reference: private LIV.SDK.Unity.SDKOutputFrame _outputFrame
-    [[deprecated]] ::LIV::SDK::Unity::SDKOutputFrame& dyn__outputFrame();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKOutputFrame& dyn__outputFrame();
     // Get instance field reference: private LIV.SDK.Unity.SDKInputFrame _inputFrame
-    [[deprecated]] ::LIV::SDK::Unity::SDKInputFrame& dyn__inputFrame();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKInputFrame& dyn__inputFrame();
     // Get instance field reference: private LIV.SDK.Unity.SDKResolution _resolution
-    [[deprecated]] ::LIV::SDK::Unity::SDKResolution& dyn__resolution();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKResolution& dyn__resolution();
     // Get instance field reference: private UnityEngine.Camera _cameraInstance
-    [[deprecated]] ::UnityEngine::Camera*& dyn__cameraInstance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__cameraInstance();
     // Get instance field reference: private LIV.SDK.Unity.SDKPose _requestedPose
-    [[deprecated]] ::LIV::SDK::Unity::SDKPose& dyn__requestedPose();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKPose& dyn__requestedPose();
     // Get instance field reference: private System.Int32 _requestedPoseFrameIndex
-    [[deprecated]] int& dyn__requestedPoseFrameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__requestedPoseFrameIndex();
     // public UnityEngine.RenderTexture get_BackgroundRenderTexture()
     // Offset: 0xDD5C74
     ::UnityEngine::RenderTexture* get_BackgroundRenderTexture();

@@ -42,7 +42,7 @@ namespace System::Security::Cryptography {
       return hashAlgorithm;
     }
     // Get instance field reference: private System.String _hashAlgorithm
-    [[deprecated]] ::StringW& dyn__hashAlgorithm();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__hashAlgorithm();
     // protected System.Void .ctor(System.String hashAlgorithm, System.String digestAlgorithm)
     // Offset: 0x16113C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

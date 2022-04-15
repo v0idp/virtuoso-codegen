@@ -63,22 +63,19 @@ namespace System::Security::Cryptography::X509Certificates {
     // System.Security.Cryptography.X509Certificates.X509CertificateImplCollection get_IntermediateCertificates()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection* get_IntermediateCertificates();
+    // protected System.Void .ctor()
+    // Offset: 0xC5017C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509Certificate2Impl* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2Impl::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509Certificate2Impl*, creationType>()));
+    }
     // public System.Void Import(System.Byte[] rawData, System.String password, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags keyStorageFlags)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Import(::ArrayW<uint8_t> rawData, ::StringW password, ::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);
     // public System.Void Reset()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Reset();
-    // protected System.Void .ctor()
-    // Offset: 0xC5017C
-    // Implemented from: System.Security.Cryptography.X509Certificates.X509CertificateImpl
-    // Base method: System.Void X509CertificateImpl::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509Certificate2Impl* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2Impl::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509Certificate2Impl*, creationType>()));
-    }
   }; // System.Security.Cryptography.X509Certificates.X509Certificate2Impl
   #pragma pack(pop)
 }
@@ -123,6 +120,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::S
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509Certificate2Impl*), "get_IntermediateCertificates", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2Impl::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2Impl::Import
 // Il2CppName: Import
 template<>
@@ -142,7 +143,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509Certificate2Impl*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Certificate2Impl::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

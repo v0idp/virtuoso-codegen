@@ -73,19 +73,19 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly UnityEngine.Color <Trigger>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Trigger$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Trigger$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Grip>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Grip$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Grip$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Top>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Top$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Top$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Bottom>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Bottom$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Bottom$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Menu>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Menu$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Menu$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Stick>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Stick$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Stick$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Color <Special>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Special$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Special$k__BackingField();
     // public UnityEngine.Color get_Trigger()
     // Offset: 0x95DC38
     ::UnityEngine::Color get_Trigger();

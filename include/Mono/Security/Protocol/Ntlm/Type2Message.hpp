@@ -51,11 +51,11 @@ namespace Mono::Security::Protocol::Ntlm {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private System.Byte[] _nonce
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__nonce();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__nonce();
     // Get instance field reference: private System.String _targetName
-    [[deprecated]] ::StringW& dyn__targetName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__targetName();
     // Get instance field reference: private System.Byte[] _targetInfo
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__targetInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__targetInfo();
     // public System.Byte[] get_Nonce()
     // Offset: 0x163A034
     ::ArrayW<uint8_t> get_Nonce();

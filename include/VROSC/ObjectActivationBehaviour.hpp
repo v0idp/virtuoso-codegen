@@ -58,22 +58,19 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.ObjectActivation _objectActivation
-    [[deprecated]] ::VROSC::ObjectActivation*& dyn__objectActivation();
+    [[deprecated("Use field access instead!")]] ::VROSC::ObjectActivation*& dyn__objectActivation();
     // Get instance field reference: public System.Single Activation
-    [[deprecated]] float& dyn_Activation();
-    // public System.Void Setup(VROSC.ObjectActivation objectActivation)
-    // Offset: 0xC63A5C
-    void Setup(::VROSC::ObjectActivation* objectActivation);
+    [[deprecated("Use field access instead!")]] float& dyn_Activation();
     // public System.Void .ctor()
     // Offset: 0xC63A84
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ObjectActivationBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ObjectActivationBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ObjectActivationBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.ObjectActivation objectActivation)
+    // Offset: 0xC63A5C
+    void Setup(::VROSC::ObjectActivation* objectActivation);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0xC63A64
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -85,6 +82,10 @@ namespace VROSC {
   static_assert(sizeof(ObjectActivationBehaviour) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ObjectActivationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ObjectActivationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -94,10 +95,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ObjectActivationBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{objectActivation});
   }
 };
-// Writing MetadataGetter for method: VROSC::ObjectActivationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ObjectActivationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

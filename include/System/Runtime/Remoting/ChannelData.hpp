@@ -81,19 +81,19 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: System.String Ref
-    [[deprecated]] ::StringW& dyn_Ref();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Ref();
     // Get instance field reference: System.String Type
-    [[deprecated]] ::StringW& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Type();
     // Get instance field reference: System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: System.String DelayLoadAsClientChannel
-    [[deprecated]] ::StringW& dyn_DelayLoadAsClientChannel();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DelayLoadAsClientChannel();
     // Get instance field reference: private System.Collections.ArrayList _serverProviders
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__serverProviders();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__serverProviders();
     // Get instance field reference: private System.Collections.ArrayList _clientProviders
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__clientProviders();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__clientProviders();
     // Get instance field reference: private System.Collections.Hashtable _customProperties
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__customProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__customProperties();
     // System.Collections.ArrayList get_ServerProviders()
     // Offset: 0xE2CAC8
     ::System::Collections::ArrayList* get_ServerProviders();

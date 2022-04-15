@@ -50,7 +50,7 @@ namespace System::Runtime::Remoting {
       return obj_type;
     }
     // Get instance field reference: private System.Type obj_type
-    [[deprecated]] ::System::Type*& dyn_obj_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_obj_type();
     // public System.Type get_ObjectType()
     // Offset: 0x1138A98
     ::System::Type* get_ObjectType();

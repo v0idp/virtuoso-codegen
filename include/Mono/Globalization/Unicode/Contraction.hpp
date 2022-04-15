@@ -57,13 +57,13 @@ namespace Mono::Globalization::Unicode {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: public System.Int32 Index
-    [[deprecated]] int& dyn_Index();
+    [[deprecated("Use field access instead!")]] int& dyn_Index();
     // Get instance field reference: public readonly System.Char[] Source
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_Source();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_Source();
     // Get instance field reference: public readonly System.String Replacement
-    [[deprecated]] ::StringW& dyn_Replacement();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Replacement();
     // Get instance field reference: public readonly System.Byte[] SortKey
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_SortKey();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_SortKey();
     // public System.Void .ctor(System.Int32 index, System.Char[] source, System.String replacement, System.Byte[] sortkey)
     // Offset: 0xE454D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

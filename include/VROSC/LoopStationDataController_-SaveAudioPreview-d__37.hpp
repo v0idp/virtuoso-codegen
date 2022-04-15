@@ -93,19 +93,19 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Action`2<System.Boolean,System.Single> onSuccess
-    [[deprecated]] ::System::Action_2<bool, float>*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, float>*& dyn_onSuccess();
     // Get instance field reference: public VROSC.LoopStationDataController <>4__this
-    [[deprecated]] ::VROSC::LoopStationDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationDataController*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x195DF70
     void MoveNext();

@@ -93,13 +93,13 @@ namespace System::Security::Cryptography::X509Certificates {
       return *reinterpret_cast<::System::Runtime::Serialization::IDeserializationCallback*>(this);
     }
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509CertificateImpl impl
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509CertificateImpl*& dyn_impl();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509CertificateImpl*& dyn_impl();
     // Get instance field reference: private System.Boolean hideDates
-    [[deprecated]] bool& dyn_hideDates();
+    [[deprecated("Use field access instead!")]] bool& dyn_hideDates();
     // Get instance field reference: private System.String issuer_name
-    [[deprecated]] ::StringW& dyn_issuer_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_issuer_name();
     // Get instance field reference: private System.String subject_name
-    [[deprecated]] ::StringW& dyn_subject_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_subject_name();
     // System.Security.Cryptography.X509Certificates.X509CertificateImpl get_Impl()
     // Offset: 0x12171D4
     ::System::Security::Cryptography::X509Certificates::X509CertificateImpl* get_Impl();

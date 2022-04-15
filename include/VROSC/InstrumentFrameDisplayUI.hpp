@@ -56,9 +56,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _useFrame
-    [[deprecated]] ::VROSC::UIToggle*& dyn__useFrame();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__useFrame();
     // Get instance field reference: private VROSC.InstrumentController _instrumentController
-    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrumentController();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentController*& dyn__instrumentController();
+    // public System.Void .ctor()
+    // Offset: 0x1947A34
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InstrumentFrameDisplayUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentFrameDisplayUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InstrumentFrameDisplayUI*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x194785C
     void Awake();
@@ -74,25 +81,16 @@ namespace VROSC {
     // private System.Void FrameToggled(VROSC.InputDevice inputDevice, System.Boolean isOn)
     // Offset: 0x1947A0C
     void FrameToggled(::VROSC::InputDevice* inputDevice, bool isOn);
-    // public System.Void .ctor()
-    // Offset: 0x1947A34
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InstrumentFrameDisplayUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentFrameDisplayUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InstrumentFrameDisplayUI*, creationType>()));
-    }
   }; // VROSC.InstrumentFrameDisplayUI
   #pragma pack(pop)
   static check_size<sizeof(InstrumentFrameDisplayUI), 32 + sizeof(::VROSC::InstrumentController*)> __VROSC_InstrumentFrameDisplayUISizeCheck;
   static_assert(sizeof(InstrumentFrameDisplayUI) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::InstrumentFrameDisplayUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InstrumentFrameDisplayUI::Awake
 // Il2CppName: Awake
 template<>
@@ -137,7 +135,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentFrameDisplayUI*), "FrameToggled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{inputDevice, isOn});
   }
 };
-// Writing MetadataGetter for method: VROSC::InstrumentFrameDisplayUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -52,9 +52,9 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteboardControlller
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteboardControlller();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__noteboardControlller();
     // Get instance field reference: private System.Boolean _hideAllNotesAtStart
-    [[deprecated]] bool& dyn__hideAllNotesAtStart();
+    [[deprecated("Use field access instead!")]] bool& dyn__hideAllNotesAtStart();
     // private System.Void HideNotes()
     // Offset: 0xA27450
     void HideNotes();
@@ -62,11 +62,6 @@ namespace VROSC {
     // Offset: 0xA275D0
     // Implemented from: VROSC.TimelineActivation
     // Base method: System.Void TimelineActivation::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TimelineInstrumentActivation* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TimelineInstrumentActivation::.ctor");

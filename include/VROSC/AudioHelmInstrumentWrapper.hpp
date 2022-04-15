@@ -35,6 +35,13 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class AudioHelmInstrumentWrapper : public ::UnityEngine::MonoBehaviour {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x96FBE8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioHelmInstrumentWrapper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioHelmInstrumentWrapper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioHelmInstrumentWrapper*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InternalSynthesizer internalSynthesizer)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Setup(::VROSC::InternalSynthesizer* internalSynthesizer);
@@ -53,23 +60,14 @@ namespace VROSC {
     // public System.Void SetPitchBend(System.Single pitchBendValue)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetPitchBend(float pitchBendValue);
-    // protected System.Void .ctor()
-    // Offset: 0x96FBE8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioHelmInstrumentWrapper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioHelmInstrumentWrapper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioHelmInstrumentWrapper*, creationType>()));
-    }
   }; // VROSC.AudioHelmInstrumentWrapper
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AudioHelmInstrumentWrapper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AudioHelmInstrumentWrapper::Setup
 // Il2CppName: Setup
 template<>
@@ -127,7 +125,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioHelmInstrumentWrapper*), "SetPitchBend", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{pitchBendValue});
   }
 };
-// Writing MetadataGetter for method: VROSC::AudioHelmInstrumentWrapper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

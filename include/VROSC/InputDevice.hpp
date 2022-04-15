@@ -289,61 +289,61 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Boolean> GrabDisabledChanged
     static void _set_GrabDisabledChanged(::System::Action_1<bool>* value);
     // Get instance field reference: private VROSC.UI.UIInputHand _uIInput
-    [[deprecated]] ::VROSC::UI::UIInputHand*& dyn__uIInput();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIInputHand*& dyn__uIInput();
     // Get instance field reference: private VROSC.InputVisualizer _inputVisualizer
-    [[deprecated]] ::VROSC::InputVisualizer*& dyn__inputVisualizer();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputVisualizer*& dyn__inputVisualizer();
     // Get instance field reference: private UnityEngine.Transform _centerPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__centerPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__centerPoint();
     // Get instance field reference: private VROSC.PredictiveHitter _predictiveHitter
-    [[deprecated]] ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
+    [[deprecated("Use field access instead!")]] ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
     // Get instance field reference: private VROSC.KeyHitter _keyBoardHitter
-    [[deprecated]] ::VROSC::KeyHitter*& dyn__keyBoardHitter();
+    [[deprecated("Use field access instead!")]] ::VROSC::KeyHitter*& dyn__keyBoardHitter();
     // Get instance field reference: private VROSC.HighlightControllerComponents _highLight
-    [[deprecated]] ::VROSC::HighlightControllerComponents*& dyn__highLight();
+    [[deprecated("Use field access instead!")]] ::VROSC::HighlightControllerComponents*& dyn__highLight();
     // Get instance field reference: private VROSC.TutorialInputDevice _tutorial
-    [[deprecated]] ::VROSC::TutorialInputDevice*& dyn__tutorial();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialInputDevice*& dyn__tutorial();
     // Get instance field reference: private VROSC.DashboardSpawnPoint _dashboardSpawnPoint
-    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn__dashboardSpawnPoint();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardSpawnPoint*& dyn__dashboardSpawnPoint();
     // Get instance field reference: private VROSC.ControllerRecordingUI _recordingUI
-    [[deprecated]] ::VROSC::ControllerRecordingUI*& dyn__recordingUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerRecordingUI*& dyn__recordingUI();
     // Get instance field reference: private VROSC.UIHelpers <UIHelpers>k__BackingField
-    [[deprecated]] ::VROSC::UIHelpers*& dyn_$UIHelpers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHelpers*& dyn_$UIHelpers$k__BackingField();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputSettings*& dyn__inputSettings();
     // Get instance field reference: private System.Int32 _overlapColliderAllocSize
-    [[deprecated]] int& dyn__overlapColliderAllocSize();
+    [[deprecated("Use field access instead!")]] int& dyn__overlapColliderAllocSize();
     // Get instance field reference: private System.Single _overlapSize
-    [[deprecated]] float& dyn__overlapSize();
+    [[deprecated("Use field access instead!")]] float& dyn__overlapSize();
     // Get instance field reference: private VROSC.HandType <HandType>k__BackingField
-    [[deprecated]] ::VROSC::HandType& dyn_$HandType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn_$HandType$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <TouchPointTransform>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$TouchPointTransform$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$TouchPointTransform$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <InteractionPointTransform>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$InteractionPointTransform$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$InteractionPointTransform$k__BackingField();
     // Get instance field reference: private UnityEngine.Collider[] _hoveredColliders
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__hoveredColliders();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__hoveredColliders();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HoveredInputNode> <HoveredInputNodes>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::InputDevice::HoveredInputNode*>*& dyn_$HoveredInputNodes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::InputDevice::HoveredInputNode*>*& dyn_$HoveredInputNodes$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.InputDevice/VROSC.HeldInputNode> <HeldInputNodes>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::InputDevice::HeldInputNode*>*& dyn_$HeldInputNodes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::InputDevice::HeldInputNode*>*& dyn_$HeldInputNodes$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <StickPadValue>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$StickPadValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$StickPadValue$k__BackingField();
     // Get instance field reference: private System.Single <IndexTriggerValue>k__BackingField
-    [[deprecated]] float& dyn_$IndexTriggerValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$IndexTriggerValue$k__BackingField();
     // Get instance field reference: private System.Single <GripTriggerValue>k__BackingField
-    [[deprecated]] float& dyn_$GripTriggerValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$GripTriggerValue$k__BackingField();
     // Get instance field reference: private System.Boolean <IndexAsButtonPressed>k__BackingField
-    [[deprecated]] bool& dyn_$IndexAsButtonPressed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IndexAsButtonPressed$k__BackingField();
     // Get instance field reference: private System.Boolean <LastIndexAsButtonPressed>k__BackingField
-    [[deprecated]] bool& dyn_$LastIndexAsButtonPressed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$LastIndexAsButtonPressed$k__BackingField();
     // Get instance field reference: private System.Single <IndexAsButtonEdgeValue>k__BackingField
-    [[deprecated]] float& dyn_$IndexAsButtonEdgeValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$IndexAsButtonEdgeValue$k__BackingField();
     // Get instance field reference: private VROSC.InputDevice <OtherController>k__BackingField
-    [[deprecated]] ::VROSC::InputDevice*& dyn_$OtherController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_$OtherController$k__BackingField();
     // Get instance field reference: private System.Boolean <AnyButtonTriggering>k__BackingField
-    [[deprecated]] bool& dyn_$AnyButtonTriggering$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$AnyButtonTriggering$k__BackingField();
     // Get instance field reference: private VROSC.InputDeviceTransformData <Data>k__BackingField
-    [[deprecated]] ::VROSC::InputDeviceTransformData*& dyn_$Data$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDeviceTransformData*& dyn_$Data$k__BackingField();
     // public VROSC.UI.UIInputHand get_UIInputHand()
     // Offset: 0x1943A58
     ::VROSC::UI::UIInputHand* get_UIInputHand();
@@ -464,6 +464,13 @@ namespace VROSC {
     // private System.Void set_Data(VROSC.InputDeviceTransformData value)
     // Offset: 0x1943C4C
     void set_Data(::VROSC::InputDeviceTransformData* value);
+    // public System.Void .ctor()
+    // Offset: 0x194559C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InputDevice* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputDevice::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InputDevice*, creationType>()));
+    }
     // public System.Void Setup(VROSC.VRPlayer player, VROSC.InputSettings inputSettings, VROSC.InputDevice other, VROSC.HandType handtype, VROSC.UIHelpers uiHelpers)
     // Offset: 0x1943C5C
     void Setup(::VROSC::VRPlayer* player, ::VROSC::InputSettings* inputSettings, ::VROSC::InputDevice* other, ::VROSC::HandType handtype, ::VROSC::UIHelpers* uiHelpers);
@@ -491,19 +498,6 @@ namespace VROSC {
     // static public System.Void DisableGrab(System.Boolean disable)
     // Offset: 0x19454BC
     static void DisableGrab(bool disable);
-    // public System.Void .ctor()
-    // Offset: 0x194559C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InputDevice* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputDevice::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InputDevice*, creationType>()));
-    }
   }; // VROSC.InputDevice
   #pragma pack(pop)
   static check_size<sizeof(InputDevice), 208 + sizeof(::VROSC::InputDeviceTransformData*)> __VROSC_InputDeviceSizeCheck;
@@ -846,6 +840,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::InputDevice*), "set_Data", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::InputDevice::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InputDevice::Setup
 // Il2CppName: Setup
 template<>
@@ -928,7 +926,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(bo
     return ::il2cpp_utils::FindMethod(classof(VROSC::InputDevice*), "DisableGrab", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{disable});
   }
 };
-// Writing MetadataGetter for method: VROSC::InputDevice::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

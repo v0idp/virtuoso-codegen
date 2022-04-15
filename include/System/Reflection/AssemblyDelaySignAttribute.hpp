@@ -43,7 +43,7 @@ namespace System::Reflection {
       return m_delaySign;
     }
     // Get instance field reference: private System.Boolean m_delaySign
-    [[deprecated]] bool& dyn_m_delaySign();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_delaySign();
     // public System.Void .ctor(System.Boolean delaySign)
     // Offset: 0x1144644
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

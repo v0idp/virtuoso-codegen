@@ -55,7 +55,7 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public UnityEngine.Keyframe get_Item(System.Int32 index)
     // Offset: 0x111B23C
     ::UnityEngine::Keyframe get_Item(int index);
@@ -68,6 +68,13 @@ namespace UnityEngine {
     static AnimationCurve* New_ctor(::ArrayW<::UnityEngine::Keyframe> keys) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationCurve::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimationCurve*, creationType>(keys)));
+    }
+    // public System.Void .ctor()
+    // Offset: 0x111B6F4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AnimationCurve* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationCurve::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AnimationCurve*, creationType>()));
     }
     // static private System.Void Internal_Destroy(System.IntPtr ptr)
     // Offset: 0x111B080
@@ -96,15 +103,6 @@ namespace UnityEngine {
     // private System.Void GetKey_Injected(System.Int32 index, out UnityEngine.Keyframe ret)
     // Offset: 0x111B398
     void GetKey_Injected(int index, ByRef<::UnityEngine::Keyframe> ret);
-    // public System.Void .ctor()
-    // Offset: 0x111B6F4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AnimationCurve* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationCurve::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AnimationCurve*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x111B150
     // Implemented from: System.Object
@@ -143,6 +141,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::AnimationCurve*), "get_length", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::AnimationCurve::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AnimationCurve::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -235,10 +237,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::AnimationCurve*), "GetKey_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index, ret});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::AnimationCurve::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AnimationCurve::Finalize
 // Il2CppName: Finalize
 template<>

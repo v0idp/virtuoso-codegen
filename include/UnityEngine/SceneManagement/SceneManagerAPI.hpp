@@ -54,6 +54,13 @@ namespace UnityEngine::SceneManagement {
     // static public UnityEngine.SceneManagement.SceneManagerAPI get_overrideAPI()
     // Offset: 0xBD2338
     static ::UnityEngine::SceneManagement::SceneManagerAPI* get_overrideAPI();
+    // protected internal System.Void .ctor()
+    // Offset: 0xBD239C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SceneManagerAPI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::SceneManagement::SceneManagerAPI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SceneManagerAPI*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xBD2484
     static void _cctor();
@@ -63,15 +70,6 @@ namespace UnityEngine::SceneManagement {
     // protected internal UnityEngine.AsyncOperation LoadFirstScene(System.Boolean mustLoadAsync)
     // Offset: 0xBD247C
     ::UnityEngine::AsyncOperation* LoadFirstScene(bool mustLoadAsync);
-    // protected internal System.Void .ctor()
-    // Offset: 0xBD239C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SceneManagerAPI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::SceneManagement::SceneManagerAPI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SceneManagerAPI*, creationType>()));
-    }
   }; // UnityEngine.SceneManagement.SceneManagerAPI
   #pragma pack(pop)
 }
@@ -92,6 +90,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::SceneManagement::SceneManagerAPI*), "get_overrideAPI", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::SceneManagement::SceneManagerAPI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::SceneManagement::SceneManagerAPI::_cctor
 // Il2CppName: .cctor
 template<>
@@ -121,7 +123,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::SceneManagement::SceneManagerAPI*), "LoadFirstScene", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mustLoadAsync});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::SceneManagement::SceneManagerAPI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

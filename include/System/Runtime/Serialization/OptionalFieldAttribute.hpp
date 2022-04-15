@@ -43,7 +43,7 @@ namespace System::Runtime::Serialization {
       return versionAdded;
     }
     // Get instance field reference: private System.Int32 versionAdded
-    [[deprecated]] int& dyn_versionAdded();
+    [[deprecated("Use field access instead!")]] int& dyn_versionAdded();
     // public System.Void set_VersionAdded(System.Int32 value)
     // Offset: 0x14BF778
     void set_VersionAdded(int value);

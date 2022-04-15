@@ -56,11 +56,11 @@ namespace Oculus::Platform {
     // Set static field: static private Oculus.Platform.PlatformSettings instance
     static void _set_instance(::Oculus::Platform::PlatformSettings* value);
     // Get instance field reference: private System.String ovrAppID
-    [[deprecated]] ::StringW& dyn_ovrAppID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ovrAppID();
     // Get instance field reference: private System.String ovrMobileAppID
-    [[deprecated]] ::StringW& dyn_ovrMobileAppID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ovrMobileAppID();
     // Get instance field reference: private System.Boolean ovrUseStandalonePlatform
-    [[deprecated]] bool& dyn_ovrUseStandalonePlatform();
+    [[deprecated("Use field access instead!")]] bool& dyn_ovrUseStandalonePlatform();
     // static public System.String get_AppID()
     // Offset: 0x17122E8
     static ::StringW get_AppID();
@@ -87,10 +87,6 @@ namespace Oculus::Platform {
     static void set_Instance(::Oculus::Platform::PlatformSettings* value);
     // public System.Void .ctor()
     // Offset: 0x1712560
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlatformSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::PlatformSettings::.ctor");

@@ -117,23 +117,23 @@ namespace System::Net {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: private System.Net.FtpWebResponse response
-    [[deprecated]] ::System::Net::FtpWebResponse*& dyn_response();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpWebResponse*& dyn_response();
     // Get instance field reference: private System.Threading.ManualResetEvent waitHandle
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_waitHandle();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_waitHandle();
     // Get instance field reference: private System.Exception exception
-    [[deprecated]] ::System::Exception*& dyn_exception();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_exception();
     // Get instance field reference: private System.AsyncCallback callback
-    [[deprecated]] ::System::AsyncCallback*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::AsyncCallback*& dyn_callback();
     // Get instance field reference: private System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private System.Object state
-    [[deprecated]] ::Il2CppObject*& dyn_state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_state();
     // Get instance field reference: private System.Boolean completed
-    [[deprecated]] bool& dyn_completed();
+    [[deprecated("Use field access instead!")]] bool& dyn_completed();
     // Get instance field reference: private System.Boolean synch
-    [[deprecated]] bool& dyn_synch();
+    [[deprecated("Use field access instead!")]] bool& dyn_synch();
     // Get instance field reference: private System.Object locker
-    [[deprecated]] ::Il2CppObject*& dyn_locker();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_locker();
     // public System.Object get_AsyncState()
     // Offset: 0xF03F48
     ::Il2CppObject* get_AsyncState();

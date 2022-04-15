@@ -50,11 +50,11 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(::System::Security::Cryptography::OidGroup) == 0x4);
     public:
     // Get instance field reference: private System.String m_value
-    [[deprecated]] ::StringW& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_value();
     // Get instance field reference: private System.String m_friendlyName
-    [[deprecated]] ::StringW& dyn_m_friendlyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_friendlyName();
     // Get instance field reference: private System.Security.Cryptography.OidGroup m_group
-    [[deprecated]] ::System::Security::Cryptography::OidGroup& dyn_m_group();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::OidGroup& dyn_m_group();
     // public System.String get_Value()
     // Offset: 0x1407BC4
     ::StringW get_Value();

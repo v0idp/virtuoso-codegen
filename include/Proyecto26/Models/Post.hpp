@@ -54,17 +54,15 @@ namespace Proyecto26::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Int32 id
-    [[deprecated]] int& dyn_id();
+    [[deprecated("Use field access instead!")]] int& dyn_id();
     // Get instance field reference: public System.Int32 userId
-    [[deprecated]] int& dyn_userId();
+    [[deprecated("Use field access instead!")]] int& dyn_userId();
     // Get instance field reference: public System.String title
-    [[deprecated]] ::StringW& dyn_title();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_title();
     // Get instance field reference: public System.String body
-    [[deprecated]] ::StringW& dyn_body();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_body();
     // public System.Void .ctor()
     // Offset: 0xAE2B74
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Post* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::Models::Post::.ctor");

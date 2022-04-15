@@ -103,23 +103,23 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Renderer _outputRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__outputRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__outputRenderer();
     // Get instance field reference: private UnityEngine.Color _emissionColor
-    [[deprecated]] ::UnityEngine::Color& dyn__emissionColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__emissionColor();
     // Get instance field reference: private System.Single _zeroBrightness
-    [[deprecated]] float& dyn__zeroBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__zeroBrightness();
     // Get instance field reference: private System.Single _oneBrightness
-    [[deprecated]] float& dyn__oneBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__oneBrightness();
     // Get instance field reference: private System.Single _rampUpTime
-    [[deprecated]] float& dyn__rampUpTime();
+    [[deprecated("Use field access instead!")]] float& dyn__rampUpTime();
     // Get instance field reference: private System.Single _rampDownTime
-    [[deprecated]] float& dyn__rampDownTime();
+    [[deprecated("Use field access instead!")]] float& dyn__rampDownTime();
     // Get instance field reference: private UnityEngine.Material _materialInstance
-    [[deprecated]] ::UnityEngine::Material*& dyn__materialInstance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__materialInstance();
     // Get instance field reference: private System.Single _targetBrightness
-    [[deprecated]] float& dyn__targetBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__targetBrightness();
     // Get instance field reference: private System.Single _currentBrightness
-    [[deprecated]] float& dyn__currentBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__currentBrightness();
     // public System.Void SetColor(UnityEngine.Color color)
     // Offset: 0x8EB2D0
     void SetColor(::UnityEngine::Color color);
@@ -146,11 +146,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EmissionOnSignal* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EmissionOnSignal::.ctor");

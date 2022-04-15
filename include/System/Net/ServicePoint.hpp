@@ -169,37 +169,37 @@ namespace System::Net {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Uri uri
-    [[deprecated]] ::System::Uri*& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_uri();
     // Get instance field reference: private System.DateTime lastDnsResolve
-    [[deprecated]] ::System::DateTime& dyn_lastDnsResolve();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_lastDnsResolve();
     // Get instance field reference: private System.Version protocolVersion
-    [[deprecated]] ::System::Version*& dyn_protocolVersion();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_protocolVersion();
     // Get instance field reference: private System.Net.IPHostEntry host
-    [[deprecated]] ::System::Net::IPHostEntry*& dyn_host();
+    [[deprecated("Use field access instead!")]] ::System::Net::IPHostEntry*& dyn_host();
     // Get instance field reference: private System.Boolean usesProxy
-    [[deprecated]] bool& dyn_usesProxy();
+    [[deprecated("Use field access instead!")]] bool& dyn_usesProxy();
     // Get instance field reference: private System.Boolean sendContinue
-    [[deprecated]] bool& dyn_sendContinue();
+    [[deprecated("Use field access instead!")]] bool& dyn_sendContinue();
     // Get instance field reference: private System.Boolean useConnect
-    [[deprecated]] bool& dyn_useConnect();
+    [[deprecated("Use field access instead!")]] bool& dyn_useConnect();
     // Get instance field reference: private System.Object hostE
-    [[deprecated]] ::Il2CppObject*& dyn_hostE();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_hostE();
     // Get instance field reference: private System.Boolean useNagle
-    [[deprecated]] bool& dyn_useNagle();
+    [[deprecated("Use field access instead!")]] bool& dyn_useNagle();
     // Get instance field reference: private System.Net.BindIPEndPoint endPointCallback
-    [[deprecated]] ::System::Net::BindIPEndPoint*& dyn_endPointCallback();
+    [[deprecated("Use field access instead!")]] ::System::Net::BindIPEndPoint*& dyn_endPointCallback();
     // Get instance field reference: private System.Boolean tcp_keepalive
-    [[deprecated]] bool& dyn_tcp_keepalive();
+    [[deprecated("Use field access instead!")]] bool& dyn_tcp_keepalive();
     // Get instance field reference: private System.Int32 tcp_keepalive_time
-    [[deprecated]] int& dyn_tcp_keepalive_time();
+    [[deprecated("Use field access instead!")]] int& dyn_tcp_keepalive_time();
     // Get instance field reference: private System.Int32 tcp_keepalive_interval
-    [[deprecated]] int& dyn_tcp_keepalive_interval();
+    [[deprecated("Use field access instead!")]] int& dyn_tcp_keepalive_interval();
     // Get instance field reference: private readonly System.Net.ServicePointScheduler <Scheduler>k__BackingField
-    [[deprecated]] ::System::Net::ServicePointScheduler*& dyn_$Scheduler$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePointScheduler*& dyn_$Scheduler$k__BackingField();
     // Get instance field reference: private System.Object m_ServerCertificateOrBytes
-    [[deprecated]] ::Il2CppObject*& dyn_m_ServerCertificateOrBytes();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_ServerCertificateOrBytes();
     // Get instance field reference: private System.Object m_ClientCertificateOrBytes
-    [[deprecated]] ::Il2CppObject*& dyn_m_ClientCertificateOrBytes();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_ClientCertificateOrBytes();
     // System.Net.ServicePointScheduler get_Scheduler()
     // Offset: 0xD9A360
     ::System::Net::ServicePointScheduler* get_Scheduler();

@@ -56,7 +56,7 @@ namespace System::Collections {
       return list;
     }
     // Get instance field reference: private System.Collections.ArrayList _list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__list();
     // System.Void .ctor(System.Collections.ArrayList l)
     // Offset: 0x13A3CE8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

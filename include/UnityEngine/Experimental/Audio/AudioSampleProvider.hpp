@@ -48,9 +48,9 @@ namespace UnityEngine::Experimental::Audio {
     static_assert(sizeof(::UnityEngine::Experimental::Audio::AudioSampleProvider::SampleFramesHandler*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Experimental.Audio.AudioSampleProvider/UnityEngine.Experimental.Audio.SampleFramesHandler sampleFramesAvailable
-    [[deprecated]] ::UnityEngine::Experimental::Audio::AudioSampleProvider::SampleFramesHandler*& dyn_sampleFramesAvailable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::Audio::AudioSampleProvider::SampleFramesHandler*& dyn_sampleFramesAvailable();
     // Get instance field reference: private UnityEngine.Experimental.Audio.AudioSampleProvider/UnityEngine.Experimental.Audio.SampleFramesHandler sampleFramesOverflow
-    [[deprecated]] ::UnityEngine::Experimental::Audio::AudioSampleProvider::SampleFramesHandler*& dyn_sampleFramesOverflow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::Audio::AudioSampleProvider::SampleFramesHandler*& dyn_sampleFramesOverflow();
     // private System.Void InvokeSampleFramesAvailable(System.Int32 sampleFrameCount)
     // Offset: 0x18D8D5C
     void InvokeSampleFramesAvailable(int sampleFrameCount);

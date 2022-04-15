@@ -66,9 +66,16 @@ namespace System::Xml::Serialization {
     // Set static field: static private readonly System.Reflection.ParameterModifier[] empty_modifiers
     static void _set_empty_modifiers(::ArrayW<::System::Reflection::ParameterModifier> value);
     // Get instance field reference: private System.Collections.Hashtable _clrTypes
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__clrTypes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__clrTypes();
     // Get instance field reference: private System.Collections.Hashtable _schemaTypes
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__schemaTypes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__schemaTypes();
+    // public System.Void .ctor()
+    // Offset: 0xDE8840
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ReflectionHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::ReflectionHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ReflectionHelper*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xDE88C4
     static void _cctor();
@@ -87,21 +94,16 @@ namespace System::Xml::Serialization {
     // static public System.Void CheckSerializableType(System.Type type, System.Boolean allowPrivateConstructors)
     // Offset: 0xDE8524
     static void CheckSerializableType(::System::Type* type, bool allowPrivateConstructors);
-    // public System.Void .ctor()
-    // Offset: 0xDE8840
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ReflectionHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::ReflectionHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ReflectionHelper*, creationType>()));
-    }
   }; // System.Xml.Serialization.ReflectionHelper
   #pragma pack(pop)
   static check_size<sizeof(ReflectionHelper), 24 + sizeof(::System::Collections::Hashtable*)> __System_Xml_Serialization_ReflectionHelperSizeCheck;
   static_assert(sizeof(ReflectionHelper) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::Serialization::ReflectionHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::ReflectionHelper::_cctor
 // Il2CppName: .cctor
 template<>
@@ -162,7 +164,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::ReflectionHelper*), "CheckSerializableType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{type, allowPrivateConstructors});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::ReflectionHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

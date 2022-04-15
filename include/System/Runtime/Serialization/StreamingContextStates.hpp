@@ -98,7 +98,7 @@ namespace System::Runtime::Serialization {
     // Set static field: static public System.Runtime.Serialization.StreamingContextStates All
     static void _set_All(::System::Runtime::Serialization::StreamingContextStates value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Runtime.Serialization.StreamingContextStates
   #pragma pack(pop)
   static check_size<sizeof(StreamingContextStates), 0 + sizeof(int)> __System_Runtime_Serialization_StreamingContextStatesSizeCheck;

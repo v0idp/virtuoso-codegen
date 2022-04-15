@@ -48,7 +48,7 @@ namespace DG::Tweening::Plugins::Options {
       return isNegativeChangeValue;
     }
     // Get instance field reference: public System.Boolean isNegativeChangeValue
-    [[deprecated]] bool& dyn_isNegativeChangeValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNegativeChangeValue();
     // public System.Void Reset()
     // Offset: 0x185EC18
     void Reset();

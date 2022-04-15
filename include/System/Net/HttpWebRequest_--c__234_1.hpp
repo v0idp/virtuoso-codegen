@@ -70,21 +70,19 @@ namespace System::Net {
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<HttpWebRequest::$$c__234_1<T>*>::get(), ".cctor", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___internal__method);
     }
+    // public System.Void .ctor()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HttpWebRequest::$$c__234_1<T>* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::HttpWebRequest::$$c__234_1::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HttpWebRequest::$$c__234_1<T>*, creationType>()));
+    }
     // System.Nullable`1<System.Int32> <RunWithTimeout>b__234_0(System.Threading.Tasks.Task`1<T> t)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Nullable_1<int> $RunWithTimeout$b__234_0(::System::Threading::Tasks::Task_1<T>* t) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::HttpWebRequest::$$c__234_1::<RunWithTimeout>b__234_0");
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "<RunWithTimeout>b__234_0", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(t)})));
       return ::il2cpp_utils::RunMethodRethrow<::System::Nullable_1<int>, false>(this, ___internal__method, t);
-    }
-    // public System.Void .ctor()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HttpWebRequest::$$c__234_1<T>* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::HttpWebRequest::$$c__234_1::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HttpWebRequest::$$c__234_1<T>*, creationType>()));
     }
   }; // System.Net.HttpWebRequest/System.Net.<>c__234`1
   // Could not write size check! Type: System.Net.HttpWebRequest/System.Net.<>c__234`1 is generic, or has no fields that are valid for size checks!

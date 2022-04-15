@@ -115,17 +115,17 @@ namespace UnityEngine::UI {
     // Set static field: static protected UnityEngine.Material s_DefaultText
     static void _set_s_DefaultText(::UnityEngine::Material* value);
     // Get instance field reference: private UnityEngine.UI.FontData m_FontData
-    [[deprecated]] ::UnityEngine::UI::FontData*& dyn_m_FontData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::FontData*& dyn_m_FontData();
     // Get instance field reference: protected System.String m_Text
-    [[deprecated]] ::StringW& dyn_m_Text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Text();
     // Get instance field reference: private UnityEngine.TextGenerator m_TextCache
-    [[deprecated]] ::UnityEngine::TextGenerator*& dyn_m_TextCache();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextGenerator*& dyn_m_TextCache();
     // Get instance field reference: private UnityEngine.TextGenerator m_TextCacheForLayout
-    [[deprecated]] ::UnityEngine::TextGenerator*& dyn_m_TextCacheForLayout();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextGenerator*& dyn_m_TextCacheForLayout();
     // Get instance field reference: protected System.Boolean m_DisableFontTextureRebuiltCallback
-    [[deprecated]] bool& dyn_m_DisableFontTextureRebuiltCallback();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DisableFontTextureRebuiltCallback();
     // Get instance field reference: private readonly UnityEngine.UIVertex[] m_TempVerts
-    [[deprecated]] ::ArrayW<::UnityEngine::UIVertex>& dyn_m_TempVerts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIVertex>& dyn_m_TempVerts();
     // public UnityEngine.TextGenerator get_cachedTextGenerator()
     // Offset: 0x16D29C8
     ::UnityEngine::TextGenerator* get_cachedTextGenerator();
@@ -263,11 +263,6 @@ namespace UnityEngine::UI {
     // Base method: System.Void MaskableGraphic::.ctor()
     // Base method: System.Void Graphic::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Text* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Text::.ctor");
@@ -277,7 +272,6 @@ namespace UnityEngine::UI {
     // Offset: 0x16D4528
     // Implemented from: UnityEngine.UI.Graphic
     // Base method: System.Void Graphic::.cctor()
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
     // protected override System.Void OnEnable()
     // Offset: 0x16D36E4

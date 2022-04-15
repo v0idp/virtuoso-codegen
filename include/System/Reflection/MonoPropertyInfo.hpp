@@ -89,17 +89,17 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Type parent
-    [[deprecated]] ::System::Type*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_parent();
     // Get instance field reference: public System.Type declaring_type
-    [[deprecated]] ::System::Type*& dyn_declaring_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_declaring_type();
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public System.Reflection.MethodInfo get_method
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_get_method();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_get_method();
     // Get instance field reference: public System.Reflection.MethodInfo set_method
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_set_method();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_set_method();
     // Get instance field reference: public System.Reflection.PropertyAttributes attrs
-    [[deprecated]] ::System::Reflection::PropertyAttributes& dyn_attrs();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::PropertyAttributes& dyn_attrs();
     // static System.Void get_property_info(System.Reflection.MonoProperty prop, ref System.Reflection.MonoPropertyInfo info, System.Reflection.PInfo req_info)
     // Offset: 0x100F424
     static void get_property_info(::System::Reflection::MonoProperty* prop, ByRef<::System::Reflection::MonoPropertyInfo> info, ::System::Reflection::PInfo req_info);

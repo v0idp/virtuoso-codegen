@@ -47,6 +47,13 @@ namespace System::Data::Common {
     static ::System::Collections::Generic::IEqualityComparer_1<::System::Collections::Generic::KeyValuePair_2<::System::Type*, ::System::Xml::Serialization::XmlRootAttribute*>>* _get_s_default();
     // Set static field: static readonly System.Collections.Generic.IEqualityComparer`1<System.Collections.Generic.KeyValuePair`2<System.Type,System.Xml.Serialization.XmlRootAttribute>> s_default
     static void _set_s_default(::System::Collections::Generic::IEqualityComparer_1<::System::Collections::Generic::KeyValuePair_2<::System::Type*, ::System::Xml::Serialization::XmlRootAttribute*>>* value);
+    // private System.Void .ctor()
+    // Offset: 0x18CE2EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ObjectStorage::TempAssemblyComparer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::Common::ObjectStorage::TempAssemblyComparer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ObjectStorage::TempAssemblyComparer*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x18CE4DC
     static void _cctor();
@@ -56,19 +63,14 @@ namespace System::Data::Common {
     // public System.Int32 GetHashCode(System.Collections.Generic.KeyValuePair`2<System.Type,System.Xml.Serialization.XmlRootAttribute> obj)
     // Offset: 0x18CE448
     int GetHashCode(::System::Collections::Generic::KeyValuePair_2<::System::Type*, ::System::Xml::Serialization::XmlRootAttribute*> obj);
-    // private System.Void .ctor()
-    // Offset: 0x18CE2EC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ObjectStorage::TempAssemblyComparer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::Common::ObjectStorage::TempAssemblyComparer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ObjectStorage::TempAssemblyComparer*, creationType>()));
-    }
   }; // System.Data.Common.ObjectStorage/System.Data.Common.TempAssemblyComparer
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::Common::ObjectStorage::TempAssemblyComparer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::Common::ObjectStorage::TempAssemblyComparer::_cctor
 // Il2CppName: .cctor
 template<>
@@ -96,7 +98,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Data::Common::ObjectStorage::TempAssemblyComparer*), "GetHashCode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };
-// Writing MetadataGetter for method: System::Data::Common::ObjectStorage::TempAssemblyComparer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

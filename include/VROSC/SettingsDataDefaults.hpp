@@ -195,57 +195,53 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.MalletSettings MalletSettings
-    [[deprecated]] ::VROSC::MalletSettings*& dyn_MalletSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::MalletSettings*& dyn_MalletSettings();
     // Get instance field reference: public VROSC.ScalePresets ScalePresets
-    [[deprecated]] ::VROSC::ScalePresets*& dyn_ScalePresets();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScalePresets*& dyn_ScalePresets();
     // Get instance field reference: public VROSC.Metronome/VROSC.Mode MetronomeMode
-    [[deprecated]] ::VROSC::Metronome::Mode& dyn_MetronomeMode();
+    [[deprecated("Use field access instead!")]] ::VROSC::Metronome::Mode& dyn_MetronomeMode();
     // Get instance field reference: public VROSC.Metronome/VROSC.Medium MetronomeMedium
-    [[deprecated]] ::VROSC::Metronome::Medium& dyn_MetronomeMedium();
+    [[deprecated("Use field access instead!")]] ::VROSC::Metronome::Medium& dyn_MetronomeMedium();
     // Get instance field reference: public System.Boolean UseExternalSynthesizer
-    [[deprecated]] bool& dyn_UseExternalSynthesizer();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseExternalSynthesizer();
     // Get instance field reference: public System.Int32 SelectedSpectatorCamera
-    [[deprecated]] int& dyn_SelectedSpectatorCamera();
+    [[deprecated("Use field access instead!")]] int& dyn_SelectedSpectatorCamera();
     // Get instance field reference: public System.Single GlobalVolume
-    [[deprecated]] float& dyn_GlobalVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_GlobalVolume();
     // Get instance field reference: public System.Boolean PlayAudioWhenUnfocused
-    [[deprecated]] bool& dyn_PlayAudioWhenUnfocused();
+    [[deprecated("Use field access instead!")]] bool& dyn_PlayAudioWhenUnfocused();
     // Get instance field reference: public System.Boolean UseClassicControls
-    [[deprecated]] bool& dyn_UseClassicControls();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseClassicControls();
     // Get instance field reference: public System.Single VideoPlayerVolume
-    [[deprecated]] float& dyn_VideoPlayerVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_VideoPlayerVolume();
     // Get instance field reference: public System.Boolean AutoPlayPreviews
-    [[deprecated]] bool& dyn_AutoPlayPreviews();
+    [[deprecated("Use field access instead!")]] bool& dyn_AutoPlayPreviews();
     // Get instance field reference: public System.Single PreviewsVolume
-    [[deprecated]] float& dyn_PreviewsVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_PreviewsVolume();
     // Get instance field reference: public System.Boolean SpectatorHideBackground
-    [[deprecated]] bool& dyn_SpectatorHideBackground();
+    [[deprecated("Use field access instead!")]] bool& dyn_SpectatorHideBackground();
     // Get instance field reference: public System.Boolean PreviewDrums
-    [[deprecated]] bool& dyn_PreviewDrums();
+    [[deprecated("Use field access instead!")]] bool& dyn_PreviewDrums();
     // Get instance field reference: public System.Single PreviewDrumsVolume
-    [[deprecated]] float& dyn_PreviewDrumsVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_PreviewDrumsVolume();
     // Get instance field reference: public System.Boolean AllowExternalKeyboard
-    [[deprecated]] bool& dyn_AllowExternalKeyboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_AllowExternalKeyboard();
     // Get instance field reference: public System.Boolean UseTouchForKeyboard
-    [[deprecated]] bool& dyn_UseTouchForKeyboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseTouchForKeyboard();
     // Get instance field reference: public System.Boolean UsePointAndClickForKeyboard
-    [[deprecated]] bool& dyn_UsePointAndClickForKeyboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_UsePointAndClickForKeyboard();
     // Get instance field reference: public System.Boolean KeyboardPlaysClickSound
-    [[deprecated]] bool& dyn_KeyboardPlaysClickSound();
+    [[deprecated("Use field access instead!")]] bool& dyn_KeyboardPlaysClickSound();
     // Get instance field reference: public System.Boolean Overdub
-    [[deprecated]] bool& dyn_Overdub();
+    [[deprecated("Use field access instead!")]] bool& dyn_Overdub();
     // Get instance field reference: public System.Boolean SetRecordingLengthToFirstLoopLength
-    [[deprecated]] bool& dyn_SetRecordingLengthToFirstLoopLength();
+    [[deprecated("Use field access instead!")]] bool& dyn_SetRecordingLengthToFirstLoopLength();
     // Get instance field reference: public System.String SelectedEnvironment
-    [[deprecated]] ::StringW& dyn_SelectedEnvironment();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SelectedEnvironment();
     // Get instance field reference: public System.Single EnvironmentEffectsAmount
-    [[deprecated]] float& dyn_EnvironmentEffectsAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_EnvironmentEffectsAmount();
     // public System.Void .ctor()
     // Offset: 0x1925D6C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SettingsDataDefaults* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SettingsDataDefaults::.ctor");

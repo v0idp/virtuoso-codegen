@@ -41,15 +41,12 @@ namespace UnityEngine {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private readonly System.Boolean <isAnimatorMotion>k__BackingField
-    [[deprecated]] bool& dyn_$isAnimatorMotion$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isAnimatorMotion$k__BackingField();
     // public System.Boolean get_isLooping()
     // Offset: 0x18D2768
     bool get_isLooping();
     // protected System.Void .ctor()
     // Offset: 0x18CEC4C
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Motion* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Motion::.ctor");

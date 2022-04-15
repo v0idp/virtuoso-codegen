@@ -59,7 +59,7 @@ namespace System::Runtime::Remoting::Contexts {
       return properties;
     }
     // Get instance field reference: private System.Collections.ArrayList _properties
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__properties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__properties();
     // public System.Boolean get_HasProperties()
     // Offset: 0x12A0284
     bool get_HasProperties();

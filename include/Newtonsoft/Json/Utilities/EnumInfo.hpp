@@ -59,13 +59,13 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: public readonly System.Boolean IsFlags
-    [[deprecated]] bool& dyn_IsFlags();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsFlags();
     // Get instance field reference: public readonly System.UInt64[] Values
-    [[deprecated]] ::ArrayW<uint64_t>& dyn_Values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint64_t>& dyn_Values();
     // Get instance field reference: public readonly System.String[] Names
-    [[deprecated]] ::ArrayW<::StringW>& dyn_Names();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_Names();
     // Get instance field reference: public readonly System.String[] ResolvedNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_ResolvedNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_ResolvedNames();
     // public System.Void .ctor(System.Boolean isFlags, System.UInt64[] values, System.String[] names, System.String[] resolvedNames)
     // Offset: 0xDCE438
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

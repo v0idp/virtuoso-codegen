@@ -80,19 +80,19 @@ namespace System::Security::Cryptography {
     // Deleting conversion operator: operator ::ArrayW<uint8_t>
     constexpr operator ::ArrayW<uint8_t>() const noexcept = delete;
     // Get instance field reference: private System.Int32 blockSizeValue
-    [[deprecated]] int& dyn_blockSizeValue();
+    [[deprecated("Use field access instead!")]] int& dyn_blockSizeValue();
     // Get instance field reference: System.String m_hashName
-    [[deprecated]] ::StringW& dyn_m_hashName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_hashName();
     // Get instance field reference: System.Security.Cryptography.HashAlgorithm m_hash1
-    [[deprecated]] ::System::Security::Cryptography::HashAlgorithm*& dyn_m_hash1();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::HashAlgorithm*& dyn_m_hash1();
     // Get instance field reference: System.Security.Cryptography.HashAlgorithm m_hash2
-    [[deprecated]] ::System::Security::Cryptography::HashAlgorithm*& dyn_m_hash2();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::HashAlgorithm*& dyn_m_hash2();
     // Get instance field reference: private System.Byte[] m_inner
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_inner();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_inner();
     // Get instance field reference: private System.Byte[] m_outer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_outer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_outer();
     // Get instance field reference: private System.Boolean m_hashing
-    [[deprecated]] bool& dyn_m_hashing();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_hashing();
     // protected System.Int32 get_BlockSizeValue()
     // Offset: 0x145AAF4
     int get_BlockSizeValue();

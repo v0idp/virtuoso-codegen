@@ -45,11 +45,9 @@ namespace Firebase::Auth {
       return stateChangeClosure;
     }
     // Get instance field reference: System.Action`1<Firebase.Auth.FirebaseAuth> stateChangeClosure
-    [[deprecated]] ::System::Action_1<::Firebase::Auth::FirebaseAuth*>*& dyn_stateChangeClosure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Firebase::Auth::FirebaseAuth*>*& dyn_stateChangeClosure();
     // public System.Void .ctor()
     // Offset: 0x18B09C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseAuth::$ForwardStateChange$c__AnonStorey3* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::FirebaseAuth::$ForwardStateChange$c__AnonStorey3::.ctor");

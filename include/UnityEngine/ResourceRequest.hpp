@@ -49,9 +49,9 @@ namespace UnityEngine {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: System.String m_Path
-    [[deprecated]] ::StringW& dyn_m_Path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Path();
     // Get instance field reference: System.Type m_Type
-    [[deprecated]] ::System::Type*& dyn_m_Type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_m_Type();
   }; // UnityEngine.ResourceRequest
   #pragma pack(pop)
   static check_size<sizeof(ResourceRequest), 40 + sizeof(::System::Type*)> __UnityEngine_ResourceRequestSizeCheck;

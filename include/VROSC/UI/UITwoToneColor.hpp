@@ -43,9 +43,9 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: protected UnityEngine.Color _startColor
-    [[deprecated]] ::UnityEngine::Color& dyn__startColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__startColor();
     // Get instance field reference: protected UnityEngine.Color _endColor
-    [[deprecated]] ::UnityEngine::Color& dyn__endColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__endColor();
     // public UnityEngine.Color get_StartColor()
     // Offset: 0x1919AB8
     ::UnityEngine::Color get_StartColor();

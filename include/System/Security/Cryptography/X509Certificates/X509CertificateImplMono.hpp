@@ -18,7 +18,7 @@
 // Forward declaring namespace: Mono::Security::X509
 namespace Mono::Security::X509 {
   // Forward declaring type: X509Certificate
-  class X509Certificate;
+  class X509Certificate_;
 }
 // Forward declaring namespace: System
 namespace System {
@@ -53,7 +53,7 @@ namespace System::Security::Cryptography::X509Certificates {
     // Deleting conversion operator: operator ::ArrayW<uint8_t>
     constexpr operator ::ArrayW<uint8_t>() const noexcept = delete;
     // Get instance field reference: private Mono.Security.X509.X509Certificate x509
-    [[deprecated]] ::Mono::Security::X509::X509Certificate_*& dyn_x509();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::X509::X509Certificate_*& dyn_x509();
     // public System.Void .ctor(Mono.Security.X509.X509Certificate x509)
     // Offset: 0x1218134
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

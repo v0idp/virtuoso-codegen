@@ -93,7 +93,7 @@ namespace VROSC {
       // Set static field: static public VROSC.Metronome/VROSC.Mode Off
       static void _set_Off(::VROSC::Metronome::Mode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.Metronome/VROSC.Mode
     #pragma pack(pop)
     static check_size<sizeof(Metronome::Mode), 0 + sizeof(int)> __VROSC_Metronome_ModeSizeCheck;
@@ -141,7 +141,7 @@ namespace VROSC {
       // Set static field: static public VROSC.Metronome/VROSC.Medium Both
       static void _set_Both(::VROSC::Metronome::Medium value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.Metronome/VROSC.Medium
     #pragma pack(pop)
     static check_size<sizeof(Metronome::Medium), 0 + sizeof(int)> __VROSC_Metronome_MediumSizeCheck;
@@ -181,15 +181,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _hapticMetronome
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__hapticMetronome();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__hapticMetronome();
     // Get instance field reference: private UnityEngine.GameObject _soundMetronome
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__soundMetronome();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__soundMetronome();
     // Get instance field reference: private VROSC.UserPreferencesDataController _preferencesController
-    [[deprecated]] ::VROSC::UserPreferencesDataController*& dyn__preferencesController();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserPreferencesDataController*& dyn__preferencesController();
     // Get instance field reference: private VROSC.Metronome/VROSC.Mode _mode
-    [[deprecated]] ::VROSC::Metronome::Mode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::VROSC::Metronome::Mode& dyn__mode();
     // Get instance field reference: private VROSC.Metronome/VROSC.Medium _medium
-    [[deprecated]] ::VROSC::Metronome::Medium& dyn__medium();
+    [[deprecated("Use field access instead!")]] ::VROSC::Metronome::Medium& dyn__medium();
+    // public System.Void .ctor()
+    // Offset: 0xAC26D8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Metronome* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Metronome::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Metronome*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xAC1D98
     void Awake();
@@ -217,19 +224,6 @@ namespace VROSC {
     // private System.Void UpdateMetronome(System.Single bpm, System.Int32 trackCount)
     // Offset: 0xAC22D0
     void UpdateMetronome(float bpm, int trackCount);
-    // public System.Void .ctor()
-    // Offset: 0xAC26D8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Metronome* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Metronome::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Metronome*, creationType>()));
-    }
   }; // VROSC.Metronome
   #pragma pack(pop)
   static check_size<sizeof(Metronome), 52 + sizeof(::VROSC::Metronome::Medium)> __VROSC_MetronomeSizeCheck;
@@ -240,6 +234,10 @@ DEFINE_IL2CPP_ARG_TYPE(::VROSC::Metronome::Medium, "VROSC", "Metronome/Medium");
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::Metronome::Mode, "VROSC", "Metronome/Mode");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::Metronome::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Metronome::Awake
 // Il2CppName: Awake
 template<>
@@ -320,7 +318,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Metronome*), "UpdateMetronome", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{bpm, trackCount});
   }
 };
-// Writing MetadataGetter for method: VROSC::Metronome::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

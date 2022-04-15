@@ -105,23 +105,23 @@ namespace VROSC::Credits {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsSectionData> _sections
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsSectionData*>*& dyn__sections();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsSectionData*>*& dyn__sections();
     // Get instance field reference: private System.Single _namePadding
-    [[deprecated]] float& dyn__namePadding();
+    [[deprecated("Use field access instead!")]] float& dyn__namePadding();
     // Get instance field reference: private System.Single _sectionPadding
-    [[deprecated]] float& dyn__sectionPadding();
+    [[deprecated("Use field access instead!")]] float& dyn__sectionPadding();
     // Get instance field reference: private VROSC.Credits.CreditsObject _postCreditsObject
-    [[deprecated]] ::VROSC::Credits::CreditsObject*& dyn__postCreditsObject();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsObject*& dyn__postCreditsObject();
     // Get instance field reference: private System.Single _scrollSpeed
-    [[deprecated]] float& dyn__scrollSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__scrollSpeed();
     // Get instance field reference: private System.Single _secondsBeforeScroll
-    [[deprecated]] float& dyn__secondsBeforeScroll();
+    [[deprecated("Use field access instead!")]] float& dyn__secondsBeforeScroll();
     // Get instance field reference: private System.Single _startOffset
-    [[deprecated]] float& dyn__startOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__startOffset();
     // Get instance field reference: private System.Single _grabScrollInfluence
-    [[deprecated]] float& dyn__grabScrollInfluence();
+    [[deprecated("Use field access instead!")]] float& dyn__grabScrollInfluence();
     // Get instance field reference: private System.Single _grabScrollSmoothing
-    [[deprecated]] float& dyn__grabScrollSmoothing();
+    [[deprecated("Use field access instead!")]] float& dyn__grabScrollSmoothing();
     // public System.Collections.Generic.List`1<VROSC.Credits.CreditsSectionData> get_Sections()
     // Offset: 0x8DF440
     ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsSectionData*>* get_Sections();
@@ -151,10 +151,6 @@ namespace VROSC::Credits {
     float get_GrabScrollSmoothing();
     // public System.Void .ctor()
     // Offset: 0x8DF488
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreditsData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsData::.ctor");

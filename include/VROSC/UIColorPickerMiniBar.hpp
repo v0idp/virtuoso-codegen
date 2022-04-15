@@ -87,7 +87,7 @@ namespace VROSC {
       // Set static field: static public VROSC.UIColorPickerMiniBar/VROSC.Type Value
       static void _set_Value(::VROSC::UIColorPickerMiniBar::Type value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.UIColorPickerMiniBar/VROSC.Type
     #pragma pack(pop)
     static check_size<sizeof(UIColorPickerMiniBar::Type), 0 + sizeof(int)> __VROSC_UIColorPickerMiniBar_TypeSizeCheck;
@@ -123,13 +123,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIColorPickerMiniBar/VROSC.Type _type
-    [[deprecated]] ::VROSC::UIColorPickerMiniBar::Type& dyn__type();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIColorPickerMiniBar::Type& dyn__type();
     // Get instance field reference: private VROSC.UI.Meshes.ColorPickerMesh _mesh
-    [[deprecated]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__mesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__mesh();
     // Get instance field reference: private UnityEngine.Transform _marker
-    [[deprecated]] ::UnityEngine::Transform*& dyn__marker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__marker();
     // Get instance field reference: private System.Single _width
-    [[deprecated]] float& dyn__width();
+    [[deprecated("Use field access instead!")]] float& dyn__width();
+    // public System.Void .ctor()
+    // Offset: 0xA34F3C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIColorPickerMiniBar* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPickerMiniBar::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIColorPickerMiniBar*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xA34EF0
     void Awake();
@@ -142,19 +149,6 @@ namespace VROSC {
     // private System.Void SetMarker(System.Single value)
     // Offset: 0xA34EF8
     void SetMarker(float value);
-    // public System.Void .ctor()
-    // Offset: 0xA34F3C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIColorPickerMiniBar* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPickerMiniBar::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIColorPickerMiniBar*, creationType>()));
-    }
   }; // VROSC.UIColorPickerMiniBar
   #pragma pack(pop)
   static check_size<sizeof(UIColorPickerMiniBar), 48 + sizeof(float)> __VROSC_UIColorPickerMiniBarSizeCheck;
@@ -163,6 +157,10 @@ namespace VROSC {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::UIColorPickerMiniBar::Type, "VROSC", "UIColorPickerMiniBar/Type");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UIColorPickerMiniBar::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIColorPickerMiniBar::Awake
 // Il2CppName: Awake
 template<>
@@ -200,7 +198,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIColorPickerMiniBar*), "SetMarker", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIColorPickerMiniBar::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

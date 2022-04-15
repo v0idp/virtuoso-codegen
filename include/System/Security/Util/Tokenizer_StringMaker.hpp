@@ -71,17 +71,17 @@ namespace System::Security::Util {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String[] aStrings
-    [[deprecated]] ::ArrayW<::StringW>& dyn_aStrings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_aStrings();
     // Get instance field reference: private System.UInt32 cStringsMax
-    [[deprecated]] uint& dyn_cStringsMax();
+    [[deprecated("Use field access instead!")]] uint& dyn_cStringsMax();
     // Get instance field reference: private System.UInt32 cStringsUsed
-    [[deprecated]] uint& dyn_cStringsUsed();
+    [[deprecated("Use field access instead!")]] uint& dyn_cStringsUsed();
     // Get instance field reference: public System.Text.StringBuilder _outStringBuilder
-    [[deprecated]] ::System::Text::StringBuilder*& dyn__outStringBuilder();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn__outStringBuilder();
     // Get instance field reference: public System.Char[] _outChars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__outChars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__outChars();
     // Get instance field reference: public System.Int32 _outIndex
-    [[deprecated]] int& dyn__outIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__outIndex();
     // static private System.UInt32 HashString(System.String str)
     // Offset: 0x189A018
     static uint HashString(::StringW str);

@@ -117,15 +117,15 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Vector3 GLTFToUnityTangent
     static void _set_GLTFToUnityTangent(::UnityEngine::Vector3 value);
     // Get instance field reference: private OVRSimpleJSON.JSONNode m_jsonData
-    [[deprecated]] ::OVRSimpleJSON::JSONNode*& dyn_m_jsonData();
+    [[deprecated("Use field access instead!")]] ::OVRSimpleJSON::JSONNode*& dyn_m_jsonData();
     // Get instance field reference: private System.IO.Stream m_glbStream
-    [[deprecated]] ::System::IO::Stream*& dyn_m_glbStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_m_glbStream();
     // Get instance field reference: private OVRBinaryChunk m_binaryChunk
-    [[deprecated]] ::GlobalNamespace::OVRBinaryChunk& dyn_m_binaryChunk();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRBinaryChunk& dyn_m_binaryChunk();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> m_Nodes
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_m_Nodes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_m_Nodes();
     // Get instance field reference: private UnityEngine.Shader m_Shader
-    [[deprecated]] ::UnityEngine::Shader*& dyn_m_Shader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_m_Shader();
     // public System.Void .ctor(System.String fileName)
     // Offset: 0xFB83F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

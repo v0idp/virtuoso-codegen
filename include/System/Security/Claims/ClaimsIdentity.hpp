@@ -155,31 +155,31 @@ namespace System::Security::Claims {
       return *reinterpret_cast<::System::Security::Principal::IIdentity*>(this);
     }
     // Get instance field reference: private System.Byte[] m_userSerializationData
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_userSerializationData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_userSerializationData();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Security.Claims.Claim> m_instanceClaims
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Security::Claims::Claim*>*& dyn_m_instanceClaims();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Security::Claims::Claim*>*& dyn_m_instanceClaims();
     // Get instance field reference: private System.Collections.ObjectModel.Collection`1<System.Collections.Generic.IEnumerable`1<System.Security.Claims.Claim>> m_externalClaims
-    [[deprecated]] ::System::Collections::ObjectModel::Collection_1<::System::Collections::Generic::IEnumerable_1<::System::Security::Claims::Claim*>*>*& dyn_m_externalClaims();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::Collection_1<::System::Collections::Generic::IEnumerable_1<::System::Security::Claims::Claim*>*>*& dyn_m_externalClaims();
     // Get instance field reference: private System.String m_nameType
-    [[deprecated]] ::StringW& dyn_m_nameType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_nameType();
     // Get instance field reference: private System.String m_roleType
-    [[deprecated]] ::StringW& dyn_m_roleType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_roleType();
     // Get instance field reference: private System.String m_version
-    [[deprecated]] ::StringW& dyn_m_version();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_version();
     // Get instance field reference: private System.Security.Claims.ClaimsIdentity m_actor
-    [[deprecated]] ::System::Security::Claims::ClaimsIdentity*& dyn_m_actor();
+    [[deprecated("Use field access instead!")]] ::System::Security::Claims::ClaimsIdentity*& dyn_m_actor();
     // Get instance field reference: private System.String m_authenticationType
-    [[deprecated]] ::StringW& dyn_m_authenticationType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_authenticationType();
     // Get instance field reference: private System.Object m_bootstrapContext
-    [[deprecated]] ::Il2CppObject*& dyn_m_bootstrapContext();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_bootstrapContext();
     // Get instance field reference: private System.String m_label
-    [[deprecated]] ::StringW& dyn_m_label();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_label();
     // Get instance field reference: private System.String m_serializedNameType
-    [[deprecated]] ::StringW& dyn_m_serializedNameType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_serializedNameType();
     // Get instance field reference: private System.String m_serializedRoleType
-    [[deprecated]] ::StringW& dyn_m_serializedRoleType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_serializedRoleType();
     // Get instance field reference: private System.String m_serializedClaims
-    [[deprecated]] ::StringW& dyn_m_serializedClaims();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_serializedClaims();
     // public System.String get_AuthenticationType()
     // Offset: 0xE36688
     ::StringW get_AuthenticationType();

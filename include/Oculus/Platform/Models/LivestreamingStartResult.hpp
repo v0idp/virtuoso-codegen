@@ -43,7 +43,7 @@ namespace Oculus::Platform::Models {
       return StreamingResult;
     }
     // Get instance field reference: public readonly Oculus.Platform.LivestreamingStartStatus StreamingResult
-    [[deprecated]] ::Oculus::Platform::LivestreamingStartStatus& dyn_StreamingResult();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::LivestreamingStartStatus& dyn_StreamingResult();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3DA44
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

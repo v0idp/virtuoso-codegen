@@ -45,18 +45,16 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x195CF24
     static void _cctor();
-    // System.Void <FirebaseLoginUserWithEmailSuccess>b__20_2(VROSC.Error error)
-    // Offset: 0x195CF8C
-    void $FirebaseLoginUserWithEmailSuccess$b__20_2(::VROSC::Error error);
     // public System.Void .ctor()
     // Offset: 0x195CF84
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoginWithEmailState::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginWithEmailState::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LoginWithEmailState::$$c*, creationType>()));
     }
+    // System.Void <FirebaseLoginUserWithEmailSuccess>b__20_2(VROSC.Error error)
+    // Offset: 0x195CF8C
+    void $FirebaseLoginUserWithEmailSuccess$b__20_2(::VROSC::Error error);
   }; // VROSC.LoginWithEmailState/VROSC.<>c
   #pragma pack(pop)
 }
@@ -69,6 +67,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoginWithEmailState::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoginWithEmailState::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoginWithEmailState::$$c::$FirebaseLoginUserWithEmailSuccess$b__20_2
 // Il2CppName: <FirebaseLoginUserWithEmailSuccess>b__20_2
 template<>
@@ -78,7 +80,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoginWithEmailState::$$c*), "<FirebaseLoginUserWithEmailSuccess>b__20_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoginWithEmailState::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

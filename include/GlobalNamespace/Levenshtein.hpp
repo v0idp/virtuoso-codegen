@@ -107,40 +107,38 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 minLevenshteinCost
     static void _set_minLevenshteinCost(int value);
     // Get instance field reference: public NGramGenerator NGramHandler
-    [[deprecated]] ::GlobalNamespace::NGramGenerator*& dyn_NGramHandler();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NGramGenerator*& dyn_NGramHandler();
     // Get instance field reference: public UnityEngine.UI.Text[] ButtonLabels
-    [[deprecated]] ::ArrayW<::UnityEngine::UI::Text*>& dyn_ButtonLabels();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UI::Text*>& dyn_ButtonLabels();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> corpus
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_corpus();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_corpus();
     // Get instance field reference: private System.Boolean isUppercase
-    [[deprecated]] bool& dyn_isUppercase();
+    [[deprecated("Use field access instead!")]] bool& dyn_isUppercase();
     // Get instance field reference: private System.Boolean isFirstLetterUpper
-    [[deprecated]] bool& dyn_isFirstLetterUpper();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFirstLetterUpper();
+    // public System.Void .ctor()
+    // Offset: 0x1950B58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Levenshtein* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Levenshtein::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Levenshtein*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1950298
     void Start();
     // public System.Void RunAutoComplete(System.String input)
     // Offset: 0x195036C
     void RunAutoComplete(::StringW input);
-    // public System.Void .ctor()
-    // Offset: 0x1950B58
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Levenshtein* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Levenshtein::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Levenshtein*, creationType>()));
-    }
   }; // Levenshtein
   #pragma pack(pop)
   static check_size<sizeof(Levenshtein), 49 + sizeof(bool)> __GlobalNamespace_LevenshteinSizeCheck;
   static_assert(sizeof(Levenshtein) == 0x32);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::Levenshtein::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::Levenshtein::Start
 // Il2CppName: Start
 template<>
@@ -158,7 +156,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Levenshtein*), "RunAutoComplete", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{input});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::Levenshtein::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

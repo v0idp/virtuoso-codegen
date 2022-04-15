@@ -46,13 +46,11 @@ namespace Firebase::Auth {
     static_assert(sizeof(::Firebase::Auth::FirebaseAuth*) == 0x8);
     public:
     // Get instance field reference: Firebase.FirebaseApp app
-    [[deprecated]] ::Firebase::FirebaseApp*& dyn_app();
+    [[deprecated("Use field access instead!")]] ::Firebase::FirebaseApp*& dyn_app();
     // Get instance field reference: Firebase.Auth.FirebaseAuth auth
-    [[deprecated]] ::Firebase::Auth::FirebaseAuth*& dyn_auth();
+    [[deprecated("Use field access instead!")]] ::Firebase::Auth::FirebaseAuth*& dyn_auth();
     // public System.Void .ctor()
     // Offset: 0x18B0574
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseAuth::$GetAuth$c__AnonStorey1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1::.ctor");

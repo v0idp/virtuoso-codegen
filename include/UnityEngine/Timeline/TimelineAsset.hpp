@@ -137,7 +137,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.DurationMode FixedLength
       static void _set_FixedLength(::UnityEngine::Timeline::TimelineAsset::DurationMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.DurationMode
     #pragma pack(pop)
     static check_size<sizeof(TimelineAsset::DurationMode), 0 + sizeof(int)> __UnityEngine_Timeline_TimelineAsset_DurationModeSizeCheck;
@@ -223,23 +223,23 @@ namespace UnityEngine::Timeline {
     // Set static field: static private System.Int32 k_LatestVersion
     static void _set_k_LatestVersion(int value);
     // Get instance field reference: private System.Int32 m_Version
-    [[deprecated]] int& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Version();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.ScriptableObject> m_Tracks
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*& dyn_m_Tracks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*& dyn_m_Tracks();
     // Get instance field reference: private System.Double m_FixedDuration
-    [[deprecated]] double& dyn_m_FixedDuration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_FixedDuration();
     // Get instance field reference: private UnityEngine.Timeline.TrackAsset[] m_CacheOutputTracks
-    [[deprecated]] ::ArrayW<::UnityEngine::Timeline::TrackAsset*>& dyn_m_CacheOutputTracks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Timeline::TrackAsset*>& dyn_m_CacheOutputTracks();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.TrackAsset> m_CacheRootTracks
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_m_CacheRootTracks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_m_CacheRootTracks();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.TrackAsset> m_CacheFlattenedTracks
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_m_CacheFlattenedTracks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_m_CacheFlattenedTracks();
     // Get instance field reference: private UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.EditorSettings m_EditorSettings
-    [[deprecated]] ::UnityEngine::Timeline::TimelineAsset::EditorSettings*& dyn_m_EditorSettings();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineAsset::EditorSettings*& dyn_m_EditorSettings();
     // Get instance field reference: private UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.DurationMode m_DurationMode
-    [[deprecated]] ::UnityEngine::Timeline::TimelineAsset::DurationMode& dyn_m_DurationMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineAsset::DurationMode& dyn_m_DurationMode();
     // Get instance field reference: private UnityEngine.Timeline.MarkerTrack m_MarkerTrack
-    [[deprecated]] ::UnityEngine::Timeline::MarkerTrack*& dyn_m_MarkerTrack();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::MarkerTrack*& dyn_m_MarkerTrack();
     // public UnityEngine.Timeline.TimelineAsset/UnityEngine.Timeline.EditorSettings get_editorSettings()
     // Offset: 0xC7EAA0
     ::UnityEngine::Timeline::TimelineAsset::EditorSettings* get_editorSettings();
@@ -273,6 +273,13 @@ namespace UnityEngine::Timeline {
     // System.Collections.Generic.List`1<UnityEngine.ScriptableObject> get_trackObjects()
     // Offset: 0xC80300
     ::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>* get_trackObjects();
+    // public System.Void .ctor()
+    // Offset: 0xC82800
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimelineAsset* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimelineAsset::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimelineAsset*, creationType>()));
+    }
     // private System.Void UpgradeToLatestVersion()
     // Offset: 0xC7EA9C
     void UpgradeToLatestVersion();
@@ -394,18 +401,6 @@ namespace UnityEngine::Timeline {
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Collections.Generic.IEnumerable`1<UnityEngine.Playables.PlayableBinding> PlayableAsset::get_outputs()
     ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* get_outputs();
-    // public System.Void .ctor()
-    // Offset: 0xC82800
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimelineAsset* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimelineAsset::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimelineAsset*, creationType>()));
-    }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject go)
     // Offset: 0xC80534
     // Implemented from: UnityEngine.Playables.PlayableAsset
@@ -509,6 +504,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TimelineAsset*), "get_trackObjects", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::TimelineAsset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::TimelineAsset::UpgradeToLatestVersion
 // Il2CppName: UpgradeToLatestVersion
 template<>
@@ -770,10 +769,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TimelineAsset*), "get_outputs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::TimelineAsset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::TimelineAsset::CreatePlayable
 // Il2CppName: CreatePlayable
 template<>

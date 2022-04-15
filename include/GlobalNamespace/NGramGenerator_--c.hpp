@@ -78,6 +78,13 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x1964BF0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1964C50
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NGramGenerator::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::NGramGenerator::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NGramGenerator::$$c*, creationType>()));
+    }
     // System.Int32 <OrderDictionary>b__6_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> entry)
     // Offset: 0x1964C58
     int $OrderDictionary$b__6_0(::System::Collections::Generic::KeyValuePair_2<::StringW, int> entry);
@@ -105,15 +112,6 @@ namespace GlobalNamespace {
     // System.Int32 <GenerateLevenshteinDict>b__9_2(System.Collections.Generic.KeyValuePair`2<System.String,System.Int32> pair)
     // Offset: 0x1964E58
     int $GenerateLevenshteinDict$b__9_2(::System::Collections::Generic::KeyValuePair_2<::StringW, int> pair);
-    // public System.Void .ctor()
-    // Offset: 0x1964C50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NGramGenerator::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::NGramGenerator::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NGramGenerator::$$c*, creationType>()));
-    }
   }; // NGramGenerator/<>c
   #pragma pack(pop)
 }
@@ -126,6 +124,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::NGramGenerator::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::NGramGenerator::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::NGramGenerator::$$c::$OrderDictionary$b__6_0
 // Il2CppName: <OrderDictionary>b__6_0
 template<>
@@ -207,7 +209,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Global
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::NGramGenerator::$$c*), "<GenerateLevenshteinDict>b__9_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{pair});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::NGramGenerator::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

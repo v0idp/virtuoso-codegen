@@ -42,7 +42,7 @@ namespace System::Threading {
       return m_count;
     }
     // Get instance field reference: private System.Int32 m_count
-    [[deprecated]] int& dyn_m_count();
+    [[deprecated("Use field access instead!")]] int& dyn_m_count();
     // public System.Boolean get_NextSpinWillYield()
     // Offset: 0x12530A4
     bool get_NextSpinWillYield();

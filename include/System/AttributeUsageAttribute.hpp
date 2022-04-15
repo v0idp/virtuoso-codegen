@@ -57,11 +57,11 @@ namespace System {
     // Set static field: static System.AttributeUsageAttribute Default
     static void _set_Default(::System::AttributeUsageAttribute* value);
     // Get instance field reference: System.AttributeTargets m_attributeTarget
-    [[deprecated]] ::System::AttributeTargets& dyn_m_attributeTarget();
+    [[deprecated("Use field access instead!")]] ::System::AttributeTargets& dyn_m_attributeTarget();
     // Get instance field reference: System.Boolean m_allowMultiple
-    [[deprecated]] bool& dyn_m_allowMultiple();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_allowMultiple();
     // Get instance field reference: System.Boolean m_inherited
-    [[deprecated]] bool& dyn_m_inherited();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_inherited();
     // public System.Boolean get_AllowMultiple()
     // Offset: 0xFE2B1C
     bool get_AllowMultiple();

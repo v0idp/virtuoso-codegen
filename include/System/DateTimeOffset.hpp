@@ -112,9 +112,9 @@ namespace System {
     // Set static field: static public readonly System.DateTimeOffset MaxValue
     static void _set_MaxValue(::System::DateTimeOffset value);
     // Get instance field reference: private System.DateTime m_dateTime
-    [[deprecated]] ::System::DateTime& dyn_m_dateTime();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_dateTime();
     // Get instance field reference: private System.Int16 m_offsetMinutes
-    [[deprecated]] int16_t& dyn_m_offsetMinutes();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_m_offsetMinutes();
     // static public System.DateTimeOffset get_Now()
     // Offset: 0xFD71E8
     static ::System::DateTimeOffset get_Now();

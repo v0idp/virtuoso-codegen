@@ -70,13 +70,13 @@ namespace UnityEngine::TextCore::LowLevel {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::TextCore::LowLevel::GlyphValueRecord>*>(this);
     }
     // Get instance field reference: private System.Single m_XPlacement
-    [[deprecated]] float& dyn_m_XPlacement();
+    [[deprecated("Use field access instead!")]] float& dyn_m_XPlacement();
     // Get instance field reference: private System.Single m_YPlacement
-    [[deprecated]] float& dyn_m_YPlacement();
+    [[deprecated("Use field access instead!")]] float& dyn_m_YPlacement();
     // Get instance field reference: private System.Single m_XAdvance
-    [[deprecated]] float& dyn_m_XAdvance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_XAdvance();
     // Get instance field reference: private System.Single m_YAdvance
-    [[deprecated]] float& dyn_m_YAdvance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_YAdvance();
     // public System.Single get_xPlacement()
     // Offset: 0x18ECBC8
     float get_xPlacement();

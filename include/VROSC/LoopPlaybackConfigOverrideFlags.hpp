@@ -65,21 +65,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean OverrideStartMode
-    [[deprecated]] bool& dyn_OverrideStartMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideStartMode();
     // Get instance field reference: public System.Boolean OverrideStopMode
-    [[deprecated]] bool& dyn_OverrideStopMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideStopMode();
     // Get instance field reference: public System.Boolean OverrideFadeIn
-    [[deprecated]] bool& dyn_OverrideFadeIn();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideFadeIn();
     // Get instance field reference: public System.Boolean OverrideFadeOut
-    [[deprecated]] bool& dyn_OverrideFadeOut();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideFadeOut();
     // Get instance field reference: public System.Boolean OverrideOneShot
-    [[deprecated]] bool& dyn_OverrideOneShot();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideOneShot();
     // Get instance field reference: public System.Boolean OverrideRetrigger
-    [[deprecated]] bool& dyn_OverrideRetrigger();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideRetrigger();
     // public System.Void .ctor()
     // Offset: 0x19B70B8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlaybackConfigOverrideFlags* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlaybackConfigOverrideFlags::.ctor");

@@ -57,9 +57,9 @@ namespace System::Text {
     static_assert(sizeof(::System::Text::EncoderFallbackBuffer*) == 0x8);
     public:
     // Get instance field reference: System.Text.EncoderFallback m_fallback
-    [[deprecated]] ::System::Text::EncoderFallback*& dyn_m_fallback();
+    [[deprecated("Use field access instead!")]] ::System::Text::EncoderFallback*& dyn_m_fallback();
     // Get instance field reference: System.Text.EncoderFallbackBuffer m_fallbackBuffer
-    [[deprecated]] ::System::Text::EncoderFallbackBuffer*& dyn_m_fallbackBuffer();
+    [[deprecated("Use field access instead!")]] ::System::Text::EncoderFallbackBuffer*& dyn_m_fallbackBuffer();
     // public System.Text.EncoderFallback get_Fallback()
     // Offset: 0x12A159C
     ::System::Text::EncoderFallback* get_Fallback();

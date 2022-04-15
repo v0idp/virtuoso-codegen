@@ -119,25 +119,32 @@ namespace OVR {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVR.SoundFXRef[] ambientSounds
-    [[deprecated]] ::ArrayW<::OVR::SoundFXRef*>& dyn_ambientSounds();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::OVR::SoundFXRef*>& dyn_ambientSounds();
     // Get instance field reference: public System.Boolean autoActivate
-    [[deprecated]] bool& dyn_autoActivate();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoActivate();
     // Get instance field reference: public System.Boolean autoRetrigger
-    [[deprecated]] bool& dyn_autoRetrigger();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoRetrigger();
     // Get instance field reference: public UnityEngine.Vector2 randomRetriggerDelaySecs
-    [[deprecated]] ::UnityEngine::Vector2& dyn_randomRetriggerDelaySecs();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_randomRetriggerDelaySecs();
     // Get instance field reference: public UnityEngine.Transform[] playPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_playPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn_playPositions();
     // Get instance field reference: private System.Boolean activated
-    [[deprecated]] bool& dyn_activated();
+    [[deprecated("Use field access instead!")]] bool& dyn_activated();
     // Get instance field reference: private System.Int32 playingIdx
-    [[deprecated]] int& dyn_playingIdx();
+    [[deprecated("Use field access instead!")]] int& dyn_playingIdx();
     // Get instance field reference: private System.Single nextPlayTime
-    [[deprecated]] float& dyn_nextPlayTime();
+    [[deprecated("Use field access instead!")]] float& dyn_nextPlayTime();
     // Get instance field reference: private System.Single fadeTime
-    [[deprecated]] float& dyn_fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn_fadeTime();
     // Get instance field reference: private System.Int32 lastPosIdx
-    [[deprecated]] int& dyn_lastPosIdx();
+    [[deprecated("Use field access instead!")]] int& dyn_lastPosIdx();
+    // public System.Void .ctor()
+    // Offset: 0x189D954
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AmbienceEmitter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::AmbienceEmitter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AmbienceEmitter*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x189D330
     void Awake();
@@ -153,25 +160,16 @@ namespace OVR {
     // public System.Void EnableEmitter(System.Boolean enable)
     // Offset: 0x189D7E8
     void EnableEmitter(bool enable);
-    // public System.Void .ctor()
-    // Offset: 0x189D954
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AmbienceEmitter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::AmbienceEmitter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AmbienceEmitter*, creationType>()));
-    }
   }; // OVR.AmbienceEmitter
   #pragma pack(pop)
   static check_size<sizeof(AmbienceEmitter), 72 + sizeof(int)> __OVR_AmbienceEmitterSizeCheck;
   static_assert(sizeof(AmbienceEmitter) == 0x4C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: OVR::AmbienceEmitter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::AmbienceEmitter::Awake
 // Il2CppName: Awake
 template<>
@@ -214,7 +212,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::AmbienceEmitter*), "EnableEmitter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{enable});
   }
 };
-// Writing MetadataGetter for method: OVR::AmbienceEmitter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

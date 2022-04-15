@@ -54,9 +54,9 @@ namespace System {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Hashtable map
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_map();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_map();
     // Get instance field reference: private System.Collections.Hashtable starts
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_starts();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_starts();
     // public System.Void AddMapping(System.TermInfoStrings key, System.Byte[] val)
     // Offset: 0xFF00B4
     void AddMapping(::System::TermInfoStrings key, ::ArrayW<uint8_t> val);

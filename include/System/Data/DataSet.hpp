@@ -312,59 +312,59 @@ namespace System::Data {
     // Set static field: static private System.Xml.Schema.XmlSchemaComplexType s_schemaTypeForWSDL
     static void _set_s_schemaTypeForWSDL(::System::Xml::Schema::XmlSchemaComplexType* value);
     // Get instance field reference: private System.Data.DataViewManager _defaultViewManager
-    [[deprecated]] ::System::Data::DataViewManager*& dyn__defaultViewManager();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewManager*& dyn__defaultViewManager();
     // Get instance field reference: private readonly System.Data.DataTableCollection _tableCollection
-    [[deprecated]] ::System::Data::DataTableCollection*& dyn__tableCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTableCollection*& dyn__tableCollection();
     // Get instance field reference: private readonly System.Data.DataRelationCollection _relationCollection
-    [[deprecated]] ::System::Data::DataRelationCollection*& dyn__relationCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRelationCollection*& dyn__relationCollection();
     // Get instance field reference: System.Data.PropertyCollection _extendedProperties
-    [[deprecated]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
+    [[deprecated("Use field access instead!")]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
     // Get instance field reference: private System.String _dataSetName
-    [[deprecated]] ::StringW& dyn__dataSetName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__dataSetName();
     // Get instance field reference: private System.String _datasetPrefix
-    [[deprecated]] ::StringW& dyn__datasetPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__datasetPrefix();
     // Get instance field reference: System.String _namespaceURI
-    [[deprecated]] ::StringW& dyn__namespaceURI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__namespaceURI();
     // Get instance field reference: private System.Boolean _enforceConstraints
-    [[deprecated]] bool& dyn__enforceConstraints();
+    [[deprecated("Use field access instead!")]] bool& dyn__enforceConstraints();
     // Get instance field reference: private System.Boolean _caseSensitive
-    [[deprecated]] bool& dyn__caseSensitive();
+    [[deprecated("Use field access instead!")]] bool& dyn__caseSensitive();
     // Get instance field reference: private System.Globalization.CultureInfo _culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__culture();
     // Get instance field reference: private System.Boolean _cultureUserSet
-    [[deprecated]] bool& dyn__cultureUserSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__cultureUserSet();
     // Get instance field reference: System.Boolean _fInReadXml
-    [[deprecated]] bool& dyn__fInReadXml();
+    [[deprecated("Use field access instead!")]] bool& dyn__fInReadXml();
     // Get instance field reference: System.Boolean _fInLoadDiffgram
-    [[deprecated]] bool& dyn__fInLoadDiffgram();
+    [[deprecated("Use field access instead!")]] bool& dyn__fInLoadDiffgram();
     // Get instance field reference: System.Boolean _fTopLevelTable
-    [[deprecated]] bool& dyn__fTopLevelTable();
+    [[deprecated("Use field access instead!")]] bool& dyn__fTopLevelTable();
     // Get instance field reference: System.Boolean _fInitInProgress
-    [[deprecated]] bool& dyn__fInitInProgress();
+    [[deprecated("Use field access instead!")]] bool& dyn__fInitInProgress();
     // Get instance field reference: System.Boolean _fEnableCascading
-    [[deprecated]] bool& dyn__fEnableCascading();
+    [[deprecated("Use field access instead!")]] bool& dyn__fEnableCascading();
     // Get instance field reference: System.Boolean _fIsSchemaLoading
-    [[deprecated]] bool& dyn__fIsSchemaLoading();
+    [[deprecated("Use field access instead!")]] bool& dyn__fIsSchemaLoading();
     // Get instance field reference: System.String _mainTableName
-    [[deprecated]] ::StringW& dyn__mainTableName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__mainTableName();
     // Get instance field reference: private System.Data.SerializationFormat _remotingFormat
-    [[deprecated]] ::System::Data::SerializationFormat& dyn__remotingFormat();
+    [[deprecated("Use field access instead!")]] ::System::Data::SerializationFormat& dyn__remotingFormat();
     // Get instance field reference: private System.Object _defaultViewManagerLock
-    [[deprecated]] ::Il2CppObject*& dyn__defaultViewManagerLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__defaultViewManagerLock();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // Get instance field reference: System.Boolean _useDataSetSchemaOnly
-    [[deprecated]] bool& dyn__useDataSetSchemaOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__useDataSetSchemaOnly();
     // Get instance field reference: System.Boolean _udtIsWrapped
-    [[deprecated]] bool& dyn__udtIsWrapped();
+    [[deprecated("Use field access instead!")]] bool& dyn__udtIsWrapped();
     // Get instance field reference: private System.ComponentModel.PropertyChangedEventHandler PropertyChanging
-    [[deprecated]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanging();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanging();
     // Get instance field reference: private System.Data.MergeFailedEventHandler MergeFailed
-    [[deprecated]] ::System::Data::MergeFailedEventHandler*& dyn_MergeFailed();
+    [[deprecated("Use field access instead!")]] ::System::Data::MergeFailedEventHandler*& dyn_MergeFailed();
     // Get instance field reference: private System.Data.DataRowCreatedEventHandler DataRowCreated
-    [[deprecated]] ::System::Data::DataRowCreatedEventHandler*& dyn_DataRowCreated();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowCreatedEventHandler*& dyn_DataRowCreated();
     // Get instance field reference: private System.Data.DataSetClearEventhandler ClearFunctionCalled
-    [[deprecated]] ::System::Data::DataSetClearEventhandler*& dyn_ClearFunctionCalled();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSetClearEventhandler*& dyn_ClearFunctionCalled();
     // public System.Data.SerializationFormat get_RemotingFormat()
     // Offset: 0xFA3290
     ::System::Data::SerializationFormat get_RemotingFormat();
@@ -428,6 +428,13 @@ namespace System::Data {
     // System.Int32 get_ObjectID()
     // Offset: 0xFAF334
     int get_ObjectID();
+    // public System.Void .ctor()
+    // Offset: 0xFA2EA8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataSet* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataSet::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataSet*, creationType>()));
+    }
     // public System.Void .ctor(System.String dataSetName)
     // Offset: 0xFA3110
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -628,16 +635,6 @@ namespace System::Data {
     // Implemented from: System.ComponentModel.MarshalByValueComponent
     // Base method: System.ComponentModel.ISite MarshalByValueComponent::get_Site()
     ::System::ComponentModel::ISite* get_Site();
-    // public System.Void .ctor()
-    // Offset: 0xFA2EA8
-    // Implemented from: System.ComponentModel.MarshalByValueComponent
-    // Base method: System.Void MarshalByValueComponent::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataSet* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataSet::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataSet*, creationType>()));
-    }
   }; // System.Data.DataSet
   #pragma pack(pop)
   static check_size<sizeof(DataSet), 168 + sizeof(::System::Data::DataSetClearEventhandler*)> __System_Data_DataSetSizeCheck;
@@ -820,6 +817,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataSet*), "get_ObjectID", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::DataSet::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataSet::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -1381,7 +1382,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataSet*), "get_Site", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Data::DataSet::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

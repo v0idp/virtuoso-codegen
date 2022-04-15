@@ -54,13 +54,13 @@ namespace Mono::Security::Interface {
     ::System::Nullable_1<::Mono::Security::Interface::MonoSslPolicyErrors> policy_errors;
     public:
     // Get instance field reference: private System.Boolean trusted
-    [[deprecated]] bool& dyn_trusted();
+    [[deprecated("Use field access instead!")]] bool& dyn_trusted();
     // Get instance field reference: private System.Boolean user_denied
-    [[deprecated]] bool& dyn_user_denied();
+    [[deprecated("Use field access instead!")]] bool& dyn_user_denied();
     // Get instance field reference: private System.Int32 error_code
-    [[deprecated]] int& dyn_error_code();
+    [[deprecated("Use field access instead!")]] int& dyn_error_code();
     // Get instance field reference: private System.Nullable`1<Mono.Security.Interface.MonoSslPolicyErrors> policy_errors
-    [[deprecated]] ::System::Nullable_1<::Mono::Security::Interface::MonoSslPolicyErrors>& dyn_policy_errors();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Mono::Security::Interface::MonoSslPolicyErrors>& dyn_policy_errors();
     // public System.Boolean get_Trusted()
     // Offset: 0x1646C8C
     bool get_Trusted();

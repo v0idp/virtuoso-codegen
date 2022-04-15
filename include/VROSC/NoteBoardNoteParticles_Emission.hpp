@@ -69,15 +69,15 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private System.Single _rate
-    [[deprecated]] float& dyn__rate();
+    [[deprecated("Use field access instead!")]] float& dyn__rate();
     // Get instance field reference: private System.Single _size
-    [[deprecated]] float& dyn__size();
+    [[deprecated("Use field access instead!")]] float& dyn__size();
     // Get instance field reference: private System.Single _coolDown
-    [[deprecated]] float& dyn__coolDown();
+    [[deprecated("Use field access instead!")]] float& dyn__coolDown();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
     // Get instance field reference: private UnityEngine.Transform _emitter
-    [[deprecated]] ::UnityEngine::Transform*& dyn__emitter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__emitter();
     // public System.Void .ctor(UnityEngine.ParticleSystem particleSystem, System.Single rate, System.Single size, UnityEngine.Transform emitter)
     // Offset: 0x19662D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

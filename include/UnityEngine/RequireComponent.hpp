@@ -58,11 +58,11 @@ namespace UnityEngine {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: public System.Type m_Type0
-    [[deprecated]] ::System::Type*& dyn_m_Type0();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_m_Type0();
     // Get instance field reference: public System.Type m_Type1
-    [[deprecated]] ::System::Type*& dyn_m_Type1();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_m_Type1();
     // Get instance field reference: public System.Type m_Type2
-    [[deprecated]] ::System::Type*& dyn_m_Type2();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_m_Type2();
     // public System.Void .ctor(System.Type requiredComponent)
     // Offset: 0xBD080C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

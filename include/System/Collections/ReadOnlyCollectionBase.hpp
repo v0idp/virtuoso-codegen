@@ -60,7 +60,7 @@ namespace System::Collections {
       return list;
     }
     // Get instance field reference: private System.Collections.ArrayList list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_list();
     // protected System.Collections.ArrayList get_InnerList()
     // Offset: 0x1613248
     ::System::Collections::ArrayList* get_InnerList();

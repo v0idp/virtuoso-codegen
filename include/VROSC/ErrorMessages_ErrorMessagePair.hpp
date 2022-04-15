@@ -43,13 +43,11 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public VROSC.Error Id
-    [[deprecated]] ::VROSC::Error& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::VROSC::Error& dyn_Id();
     // Get instance field reference: public System.String Message
-    [[deprecated]] ::StringW& dyn_Message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Message();
     // public System.Void .ctor()
     // Offset: 0x95F77C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ErrorMessages::ErrorMessagePair* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ErrorMessages::ErrorMessagePair::.ctor");

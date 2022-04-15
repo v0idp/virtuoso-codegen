@@ -116,15 +116,15 @@ namespace System::Data::SqlTypes {
       return *reinterpret_cast<::System::Data::SqlTypes::INullable*>(this);
     }
     // Get instance field reference: System.Char[] _rgchBuf
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__rgchBuf();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__rgchBuf();
     // Get instance field reference: private System.Int64 _lCurLen
-    [[deprecated]] int64_t& dyn__lCurLen();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__lCurLen();
     // Get instance field reference: System.Data.SqlTypes.SqlStreamChars _stream
-    [[deprecated]] ::System::Data::SqlTypes::SqlStreamChars*& dyn__stream();
+    [[deprecated("Use field access instead!")]] ::System::Data::SqlTypes::SqlStreamChars*& dyn__stream();
     // Get instance field reference: private System.Data.SqlTypes.SqlBytesCharsState _state
-    [[deprecated]] ::System::Data::SqlTypes::SqlBytesCharsState& dyn__state();
+    [[deprecated("Use field access instead!")]] ::System::Data::SqlTypes::SqlBytesCharsState& dyn__state();
     // Get instance field reference: private System.Char[] _rgchWorkBuf
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__rgchWorkBuf();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__rgchWorkBuf();
     // public System.Boolean get_IsNull()
     // Offset: 0x1227040
     bool get_IsNull();
@@ -140,6 +140,13 @@ namespace System::Data::SqlTypes {
     // static public System.Data.SqlTypes.SqlChars get_Null()
     // Offset: 0x1227774
     static ::System::Data::SqlTypes::SqlChars* get_Null();
+    // public System.Void .ctor()
+    // Offset: 0x1226F50
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SqlChars* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlChars::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SqlChars*, creationType>()));
+    }
     // public System.Void .ctor(System.Char[] buffer)
     // Offset: 0x1226F90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -181,15 +188,6 @@ namespace System::Data::SqlTypes {
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x1227734
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context);
-    // public System.Void .ctor()
-    // Offset: 0x1226F50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SqlChars* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlChars::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SqlChars*, creationType>()));
-    }
   }; // System.Data.SqlTypes.SqlChars
   #pragma pack(pop)
   static check_size<sizeof(SqlChars), 48 + sizeof(::ArrayW<::Il2CppChar>)> __System_Data_SqlTypes_SqlCharsSizeCheck;
@@ -236,6 +234,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::D
     return ::il2cpp_utils::FindMethod(classof(System::Data::SqlTypes::SqlChars*), "get_Null", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::SqlTypes::SqlChars::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::SqlTypes::SqlChars::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -322,7 +324,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::SqlTypes::SqlChars*), "System.Runtime.Serialization.ISerializable.GetObjectData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{info, context});
   }
 };
-// Writing MetadataGetter for method: System::Data::SqlTypes::SqlChars::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

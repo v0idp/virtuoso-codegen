@@ -77,15 +77,15 @@ namespace NatSuite::Devices {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public System.Boolean camera
-    [[deprecated]] bool& dyn_camera();
+    [[deprecated("Use field access instead!")]] bool& dyn_camera();
     // Get instance field reference: public System.Action`1<System.Boolean> completionHandler
-    [[deprecated]] ::System::Action_1<bool>*& dyn_completionHandler();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_completionHandler();
     // Get instance field reference: private UnityEngine.UserAuthorization <permission>5__2
-    [[deprecated]] ::UnityEngine::UserAuthorization& dyn_$permission$5__2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UserAuthorization& dyn_$permission$5__2();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0xE8BE40
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

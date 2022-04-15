@@ -53,9 +53,9 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapElementInfoList _itemInfo
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapElementInfoList*& dyn__itemInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapElementInfoList*& dyn__itemInfo();
     // Get instance field reference: private System.String _choiceMember
-    [[deprecated]] ::StringW& dyn__choiceMember();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__choiceMember();
     // public System.Void set_ChoiceMember(System.String value)
     // Offset: 0xAF37F0
     void set_ChoiceMember(::StringW value);
@@ -81,7 +81,6 @@ namespace System::Xml::Serialization {
     // Offset: 0xAF4988
     // Implemented from: System.Xml.Serialization.ObjectMap
     // Base method: System.Void ObjectMap::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ListMap* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::ListMap::.ctor");

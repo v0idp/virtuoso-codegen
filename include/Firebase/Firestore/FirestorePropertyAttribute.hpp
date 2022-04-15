@@ -50,9 +50,9 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private System.Type <ConverterType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$ConverterType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$ConverterType$k__BackingField();
     // public System.String get_Name()
     // Offset: 0xD5EC20
     ::StringW get_Name();

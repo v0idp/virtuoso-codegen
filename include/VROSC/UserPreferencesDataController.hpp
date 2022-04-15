@@ -67,7 +67,7 @@ namespace VROSC {
       return moveableCameraTransformData;
     }
     // Get instance field reference: private VROSC.TransformDataController _moveableCameraTransformData
-    [[deprecated]] ::VROSC::TransformDataController*& dyn__moveableCameraTransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataController*& dyn__moveableCameraTransformData();
     // protected VROSC.UserPreferencesDataModel get_DataModel()
     // Offset: 0x191D5E0
     ::VROSC::UserPreferencesDataModel* get_DataModel();
@@ -252,7 +252,6 @@ namespace VROSC {
     // Offset: 0x191A330
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserPreferencesDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserPreferencesDataController::.ctor");

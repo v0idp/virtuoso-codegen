@@ -53,9 +53,9 @@ namespace TMPro {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String m_Name
-    [[deprecated]] ::StringW& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Name();
     // Get instance field reference: private System.Int32 m_HashCode
-    [[deprecated]] int& dyn_m_HashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_m_HashCode();
     // public System.String get_name()
     // Offset: 0x9B3AA0
     ::StringW get_name();
@@ -90,7 +90,6 @@ namespace TMPro {
     // Offset: 0x9B392C
     // Implemented from: TMPro.TMP_TextElement
     // Base method: System.Void TMP_TextElement::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SpriteCharacter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SpriteCharacter::.ctor");

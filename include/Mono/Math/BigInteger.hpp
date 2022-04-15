@@ -89,7 +89,7 @@ namespace Mono::Math {
       // Set static field: static public Mono.Math.BigInteger/Mono.Math.Sign Positive
       static void _set_Positive(::Mono::Math::BigInteger::Sign value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Mono.Math.BigInteger/Mono.Math.Sign
     #pragma pack(pop)
     static check_size<sizeof(BigInteger::Sign), 0 + sizeof(int)> __Mono_Math_BigInteger_SignSizeCheck;
@@ -119,9 +119,9 @@ namespace Mono::Math {
     // Set static field: static private System.Security.Cryptography.RandomNumberGenerator rng
     static void _set_rng(::System::Security::Cryptography::RandomNumberGenerator* value);
     // Get instance field reference: private System.UInt32 length
-    [[deprecated]] uint& dyn_length();
+    [[deprecated("Use field access instead!")]] uint& dyn_length();
     // Get instance field reference: private System.UInt32[] data
-    [[deprecated]] ::ArrayW<uint>& dyn_data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_data();
     // static private System.Security.Cryptography.RandomNumberGenerator get_Rng()
     // Offset: 0x16364A4
     static ::System::Security::Cryptography::RandomNumberGenerator* get_Rng();

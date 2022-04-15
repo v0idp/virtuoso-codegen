@@ -46,9 +46,9 @@ namespace System::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Boolean bigEndian
-    [[deprecated]] bool& dyn_bigEndian();
+    [[deprecated("Use field access instead!")]] bool& dyn_bigEndian();
     // Get instance field reference: private System.Int32 lastByte
-    [[deprecated]] int& dyn_lastByte();
+    [[deprecated("Use field access instead!")]] int& dyn_lastByte();
     // public System.Void .ctor(System.Boolean bigEndian)
     // Offset: 0xF767E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

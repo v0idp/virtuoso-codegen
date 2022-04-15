@@ -53,29 +53,31 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: public UnityEngine.Vector3 Size
-    [[deprecated]] ::UnityEngine::Vector3& dyn_Size();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_Size();
     // Get instance field reference: public UnityEngine.Vector3 Center
-    [[deprecated]] ::UnityEngine::Vector3& dyn_Center();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_Center();
     // Get instance field reference: public UnityEngine.Vector3 SpawnPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn_SpawnPoint();
-    // public System.Boolean IsPointInside(UnityEngine.Transform transform, UnityEngine.Vector3 worldPosition)
-    // Offset: 0xE8A3AC
-    bool IsPointInside(::UnityEngine::Transform* transform, ::UnityEngine::Vector3 worldPosition);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_SpawnPoint();
     // public System.Void .ctor()
     // Offset: 0xE8A424
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WidgetController::WidgetPositionalData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetController::WidgetPositionalData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WidgetController::WidgetPositionalData*, creationType>()));
     }
+    // public System.Boolean IsPointInside(UnityEngine.Transform transform, UnityEngine.Vector3 worldPosition)
+    // Offset: 0xE8A3AC
+    bool IsPointInside(::UnityEngine::Transform* transform, ::UnityEngine::Vector3 worldPosition);
   }; // VROSC.WidgetController/VROSC.WidgetPositionalData
   #pragma pack(pop)
   static check_size<sizeof(WidgetController::WidgetPositionalData), 40 + sizeof(::UnityEngine::Vector3)> __VROSC_WidgetController_WidgetPositionalDataSizeCheck;
   static_assert(sizeof(WidgetController::WidgetPositionalData) == 0x34);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::WidgetController::WidgetPositionalData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::WidgetController::WidgetPositionalData::IsPointInside
 // Il2CppName: IsPointInside
 template<>
@@ -86,7 +88,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController::WidgetPositionalData*), "IsPointInside", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{transform, worldPosition});
   }
 };
-// Writing MetadataGetter for method: VROSC::WidgetController::WidgetPositionalData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

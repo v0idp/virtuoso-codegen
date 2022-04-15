@@ -122,7 +122,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation Continue
       static void _set_Continue(::UnityEngine::Timeline::TimelineClip::ClipExtrapolation value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation
     #pragma pack(pop)
     static check_size<sizeof(TimelineClip::ClipExtrapolation), 0 + sizeof(int)> __UnityEngine_Timeline_TimelineClip_ClipExtrapolationSizeCheck;
@@ -164,7 +164,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.BlendCurveMode Manual
       static void _set_Manual(::UnityEngine::Timeline::TimelineClip::BlendCurveMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.BlendCurveMode
     #pragma pack(pop)
     static check_size<sizeof(TimelineClip::BlendCurveMode), 0 + sizeof(int)> __UnityEngine_Timeline_TimelineClip_BlendCurveModeSizeCheck;
@@ -359,51 +359,51 @@ namespace UnityEngine::Timeline {
     // Set static field: static readonly System.Double kMaxTimeValue
     static void _set_kMaxTimeValue(double value);
     // Get instance field reference: private System.Int32 m_Version
-    [[deprecated]] int& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Version();
     // Get instance field reference: private System.Double m_Start
-    [[deprecated]] double& dyn_m_Start();
+    [[deprecated("Use field access instead!")]] double& dyn_m_Start();
     // Get instance field reference: private System.Double m_ClipIn
-    [[deprecated]] double& dyn_m_ClipIn();
+    [[deprecated("Use field access instead!")]] double& dyn_m_ClipIn();
     // Get instance field reference: private UnityEngine.Object m_Asset
-    [[deprecated]] ::UnityEngine::Object*& dyn_m_Asset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Object*& dyn_m_Asset();
     // Get instance field reference: private System.Double m_Duration
-    [[deprecated]] double& dyn_m_Duration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_Duration();
     // Get instance field reference: private System.Double m_TimeScale
-    [[deprecated]] double& dyn_m_TimeScale();
+    [[deprecated("Use field access instead!")]] double& dyn_m_TimeScale();
     // Get instance field reference: private UnityEngine.Timeline.TrackAsset m_ParentTrack
-    [[deprecated]] ::UnityEngine::Timeline::TrackAsset*& dyn_m_ParentTrack();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TrackAsset*& dyn_m_ParentTrack();
     // Get instance field reference: private System.Double m_EaseInDuration
-    [[deprecated]] double& dyn_m_EaseInDuration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_EaseInDuration();
     // Get instance field reference: private System.Double m_EaseOutDuration
-    [[deprecated]] double& dyn_m_EaseOutDuration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_EaseOutDuration();
     // Get instance field reference: private System.Double m_BlendInDuration
-    [[deprecated]] double& dyn_m_BlendInDuration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_BlendInDuration();
     // Get instance field reference: private System.Double m_BlendOutDuration
-    [[deprecated]] double& dyn_m_BlendOutDuration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_BlendOutDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve m_MixInCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_m_MixInCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_m_MixInCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve m_MixOutCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_m_MixOutCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_m_MixOutCurve();
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.BlendCurveMode m_BlendInCurveMode
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip::BlendCurveMode& dyn_m_BlendInCurveMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip::BlendCurveMode& dyn_m_BlendInCurveMode();
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.BlendCurveMode m_BlendOutCurveMode
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip::BlendCurveMode& dyn_m_BlendOutCurveMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip::BlendCurveMode& dyn_m_BlendOutCurveMode();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> m_ExposedParameterNames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_ExposedParameterNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_ExposedParameterNames();
     // Get instance field reference: private UnityEngine.AnimationClip m_AnimationCurves
-    [[deprecated]] ::UnityEngine::AnimationClip*& dyn_m_AnimationCurves();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationClip*& dyn_m_AnimationCurves();
     // Get instance field reference: private System.Boolean m_Recordable
-    [[deprecated]] bool& dyn_m_Recordable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Recordable();
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation m_PostExtrapolationMode
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_PostExtrapolationMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_PostExtrapolationMode();
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation m_PreExtrapolationMode
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_PreExtrapolationMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_PreExtrapolationMode();
     // Get instance field reference: private System.Double m_PostExtrapolationTime
-    [[deprecated]] double& dyn_m_PostExtrapolationTime();
+    [[deprecated("Use field access instead!")]] double& dyn_m_PostExtrapolationTime();
     // Get instance field reference: private System.Double m_PreExtrapolationTime
-    [[deprecated]] double& dyn_m_PreExtrapolationTime();
+    [[deprecated("Use field access instead!")]] double& dyn_m_PreExtrapolationTime();
     // Get instance field reference: private System.String m_DisplayName
-    [[deprecated]] ::StringW& dyn_m_DisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_DisplayName();
     // public System.Boolean get_hasPreExtrapolation()
     // Offset: 0xC829CC
     bool get_hasPreExtrapolation();

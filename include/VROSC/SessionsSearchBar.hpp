@@ -105,19 +105,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.OrderToggleButton _newestOrderToggle
-    [[deprecated]] ::VROSC::OrderToggleButton*& dyn__newestOrderToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::OrderToggleButton*& dyn__newestOrderToggle();
     // Get instance field reference: private VROSC.OrderToggleButton _azOrderToggle
-    [[deprecated]] ::VROSC::OrderToggleButton*& dyn__azOrderToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::OrderToggleButton*& dyn__azOrderToggle();
     // Get instance field reference: private VROSC.OrderToggleButton _popularityOrderToggle
-    [[deprecated]] ::VROSC::OrderToggleButton*& dyn__popularityOrderToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::OrderToggleButton*& dyn__popularityOrderToggle();
     // Get instance field reference: private UIInputField _searchField
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__searchField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__searchField();
     // Get instance field reference: private VROSC.UIButton _clearSerachButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__clearSerachButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__clearSerachButton();
     // Get instance field reference: public System.Action`2<VROSC.SessionsLibraryUI/VROSC.OrderingType,VROSC.SessionsLibraryUI/VROSC.OrderingDirection> OnOrderingChanged
-    [[deprecated]] ::System::Action_2<::VROSC::SessionsLibraryUI::OrderingType, ::VROSC::SessionsLibraryUI::OrderingDirection>*& dyn_OnOrderingChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::SessionsLibraryUI::OrderingType, ::VROSC::SessionsLibraryUI::OrderingDirection>*& dyn_OnOrderingChanged();
     // Get instance field reference: public System.Action`1<System.String> OnSearchChanged
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnSearchChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_OnSearchChanged();
+    // public System.Void .ctor()
+    // Offset: 0x1997F68
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SessionsSearchBar* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsSearchBar::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SessionsSearchBar*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1997330
     void Awake();
@@ -151,25 +158,16 @@ namespace VROSC {
     // private System.Void ClearSearchField()
     // Offset: 0x1997F10
     void ClearSearchField();
-    // public System.Void .ctor()
-    // Offset: 0x1997F68
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SessionsSearchBar* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsSearchBar::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SessionsSearchBar*, creationType>()));
-    }
   }; // VROSC.SessionsSearchBar
   #pragma pack(pop)
   static check_size<sizeof(SessionsSearchBar), 72 + sizeof(::System::Action_1<::StringW>*)> __VROSC_SessionsSearchBarSizeCheck;
   static_assert(sizeof(SessionsSearchBar) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SessionsSearchBar::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SessionsSearchBar::Awake
 // Il2CppName: Awake
 template<>
@@ -269,7 +267,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsSearchBar*), "ClearSearchField", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsSearchBar::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

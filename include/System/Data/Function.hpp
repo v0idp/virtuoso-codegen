@@ -90,19 +90,19 @@ namespace System::Data {
     // Set static field: static System.String[] s_functionName
     static void _set_s_functionName(::ArrayW<::StringW> value);
     // Get instance field reference: readonly System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: readonly System.Data.FunctionId _id
-    [[deprecated]] ::System::Data::FunctionId& dyn__id();
+    [[deprecated("Use field access instead!")]] ::System::Data::FunctionId& dyn__id();
     // Get instance field reference: readonly System.Type _result
-    [[deprecated]] ::System::Type*& dyn__result();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__result();
     // Get instance field reference: readonly System.Boolean _isValidateArguments
-    [[deprecated]] bool& dyn__isValidateArguments();
+    [[deprecated("Use field access instead!")]] bool& dyn__isValidateArguments();
     // Get instance field reference: readonly System.Boolean _isVariantArgumentList
-    [[deprecated]] bool& dyn__isVariantArgumentList();
+    [[deprecated("Use field access instead!")]] bool& dyn__isVariantArgumentList();
     // Get instance field reference: readonly System.Int32 _argumentCount
-    [[deprecated]] int& dyn__argumentCount();
+    [[deprecated("Use field access instead!")]] int& dyn__argumentCount();
     // Get instance field reference: readonly System.Type[] _parameters
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn__parameters();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn__parameters();
     // System.Void .ctor(System.String name, System.Data.FunctionId id, System.Type result, System.Boolean IsValidateArguments, System.Boolean IsVariantArgumentList, System.Int32 argumentCount, System.Type a1, System.Type a2, System.Type a3)
     // Offset: 0x13AAAB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

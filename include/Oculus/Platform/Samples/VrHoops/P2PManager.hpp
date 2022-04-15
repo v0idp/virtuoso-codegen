@@ -196,25 +196,32 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.UInt32 SCORE_UPDATE_MESSAGE_SIZE
     static void _set_SCORE_UPDATE_MESSAGE_SIZE(uint value);
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.RemotePlayerData> m_remotePlayers
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Samples::VrHoops::P2PManager::RemotePlayerData*>*& dyn_m_remotePlayers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::Oculus::Platform::Samples::VrHoops::P2PManager::RemotePlayerData*>*& dyn_m_remotePlayers();
     // Get instance field reference: private System.Single m_timeForNextBallUpdate
-    [[deprecated]] float& dyn_m_timeForNextBallUpdate();
+    [[deprecated("Use field access instead!")]] float& dyn_m_timeForNextBallUpdate();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall> m_localBalls
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_m_localBalls();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_m_localBalls();
     // Get instance field reference: private readonly System.Byte[] readBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_readBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_readBuffer();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,System.Collections.Generic.List`1<System.Single>> m_remoteSyncTimeCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::List_1<float>*>*& dyn_m_remoteSyncTimeCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::System::Collections::Generic::List_1<float>*>*& dyn_m_remoteSyncTimeCache();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt64,System.Single> m_remoteSentTimeCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, float>*& dyn_m_remoteSentTimeCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, float>*& dyn_m_remoteSentTimeCache();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.StartTimeOffer m_startTimeOfferCallback
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer*& dyn_m_startTimeOfferCallback();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer*& dyn_m_startTimeOfferCallback();
     // private Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.StartTimeOffer get_StartTimeOfferCallback()
     // Offset: 0xB546D0
     ::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer* get_StartTimeOfferCallback();
     // public System.Void set_StartTimeOfferCallback(Oculus.Platform.Samples.VrHoops.P2PManager/Oculus.Platform.Samples.VrHoops.StartTimeOffer value)
     // Offset: 0xB546D8
     void set_StartTimeOfferCallback(::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer* value);
+    // public System.Void .ctor()
+    // Offset: 0xB52650
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static P2PManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::P2PManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<P2PManager*, creationType>()));
+    }
     // public System.Void UpdateNetwork()
     // Offset: 0xB5284C
     void UpdateNetwork();
@@ -305,15 +312,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // private System.Boolean UnpackBool(System.Byte[] buf, ref System.Int32 offset)
     // Offset: 0xB54CE4
     bool UnpackBool(::ArrayW<uint8_t> buf, ByRef<int> offset);
-    // public System.Void .ctor()
-    // Offset: 0xB52650
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static P2PManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::P2PManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<P2PManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.P2PManager
   #pragma pack(pop)
   static check_size<sizeof(P2PManager), 64 + sizeof(::Oculus::Platform::Samples::VrHoops::P2PManager::StartTimeOffer*)> __Oculus_Platform_Samples_VrHoops_P2PManagerSizeCheck;
@@ -337,6 +335,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::P2PManager*), "set_StartTimeOfferCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::P2PManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::P2PManager::UpdateNetwork
 // Il2CppName: UpdateNetwork
 template<>
@@ -632,7 +634,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::P2PManager*), "UnpackBool", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{buf, offset});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::P2PManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

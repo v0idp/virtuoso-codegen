@@ -46,7 +46,7 @@ namespace UnityEngine {
       return m_ParticleSystem;
     }
     // Get instance field reference: UnityEngine.ParticleSystem m_ParticleSystem
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
     // public System.Single get_duration()
     // Offset: 0x19008BC
     float get_duration();

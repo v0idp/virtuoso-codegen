@@ -101,19 +101,26 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.NetNoteboard _netNoteboard
-    [[deprecated]] ::VROSC::NetNoteboard*& dyn__netNoteboard();
+    [[deprecated("Use field access instead!")]] ::VROSC::NetNoteboard*& dyn__netNoteboard();
     // Get instance field reference: private UnityEngine.Transform _fromPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__fromPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__fromPoint();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // Get instance field reference: private UnityEngine.Vector3[] _positionOffset
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
     // Get instance field reference: private UnityEngine.Quaternion[] _rotationOffset
-    [[deprecated]] ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
     // Get instance field reference: public System.Single StartPoint
-    [[deprecated]] float& dyn_StartPoint();
+    [[deprecated("Use field access instead!")]] float& dyn_StartPoint();
     // Get instance field reference: public System.Single EndPoint
-    [[deprecated]] float& dyn_EndPoint();
+    [[deprecated("Use field access instead!")]] float& dyn_EndPoint();
+    // public System.Void .ctor()
+    // Offset: 0xAD4534
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NetNoteboardCreationBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NetNoteboardCreationBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NetNoteboardCreationBehaviour*, creationType>()));
+    }
     // public System.Void Setup(VROSC.NetNoteboard netNoteboard, UnityEngine.Transform fromPoint, UnityEngine.AnimationCurve curve)
     // Offset: 0xAD3C9C
     void Setup(::VROSC::NetNoteboard* netNoteboard, ::UnityEngine::Transform* fromPoint, ::UnityEngine::AnimationCurve* curve);
@@ -123,16 +130,6 @@ namespace VROSC {
     // private System.Void OnPlayableDestroy()
     // Offset: 0xAD448C
     void OnPlayableDestroy();
-    // public System.Void .ctor()
-    // Offset: 0xAD4534
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NetNoteboardCreationBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NetNoteboardCreationBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NetNoteboardCreationBehaviour*, creationType>()));
-    }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0xAD3EF0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -144,6 +141,10 @@ namespace VROSC {
   static_assert(sizeof(NetNoteboardCreationBehaviour) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::NetNoteboardCreationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NetNoteboardCreationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -175,10 +176,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NetNoteboardCreationBehaviour*), "OnPlayableDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::NetNoteboardCreationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NetNoteboardCreationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

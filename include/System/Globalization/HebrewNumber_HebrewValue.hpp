@@ -40,9 +40,9 @@ namespace System::Globalization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Globalization.HebrewNumber/System.Globalization.HebrewToken token
-    [[deprecated]] ::System::Globalization::HebrewNumber::HebrewToken& dyn_token();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::HebrewNumber::HebrewToken& dyn_token();
     // Get instance field reference: System.Int32 value
-    [[deprecated]] int& dyn_value();
+    [[deprecated("Use field access instead!")]] int& dyn_value();
     // System.Void .ctor(System.Globalization.HebrewNumber/System.Globalization.HebrewToken token, System.Int32 value)
     // Offset: 0xE5307C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

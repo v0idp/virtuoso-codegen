@@ -64,7 +64,17 @@ namespace VROSC {
     // Set static field: static private System.Collections.Generic.Dictionary`2<VROSC.Error,System.String> _errorsDict
     static void _set__errorsDict(::System::Collections::Generic::Dictionary_2<::VROSC::Error, ::StringW>* value);
     // Get instance field reference: private VROSC.ErrorMessages _errorMessages
-    [[deprecated]] ::VROSC::ErrorMessages*& dyn__errorMessages();
+    [[deprecated("Use field access instead!")]] ::VROSC::ErrorMessages*& dyn__errorMessages();
+    // public System.Void .ctor()
+    // Offset: 0x8F0230
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ErrorHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ErrorHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ErrorHandler*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x8F0238
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x8EF90C
     void Awake();
@@ -80,30 +90,24 @@ namespace VROSC {
     // static public VROSC.Error GetError(System.Exception e)
     // Offset: 0x8EFF80
     static ::VROSC::Error GetError(::System::Exception* e);
-    // public System.Void .ctor()
-    // Offset: 0x8F0230
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ErrorHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ErrorHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ErrorHandler*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x8F0238
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // VROSC.ErrorHandler
   #pragma pack(pop)
   static check_size<sizeof(ErrorHandler), 24 + sizeof(::VROSC::ErrorMessages*)> __VROSC_ErrorHandlerSizeCheck;
   static_assert(sizeof(ErrorHandler) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ErrorHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: VROSC::ErrorHandler::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::ErrorHandler::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::ErrorHandler*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::ErrorHandler::Awake
 // Il2CppName: Awake
 template<>
@@ -146,17 +150,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Er
   static const MethodInfo* get() {
     static auto* e = &::il2cpp_utils::GetClassFromName("System", "Exception")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::ErrorHandler*), "GetError", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e});
-  }
-};
-// Writing MetadataGetter for method: VROSC::ErrorHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: VROSC::ErrorHandler::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::ErrorHandler::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::ErrorHandler*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

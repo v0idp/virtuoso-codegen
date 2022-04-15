@@ -39,7 +39,7 @@ namespace System::Runtime::Serialization {
       return value;
     }
     // Get instance field reference: private System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // public System.String get_Value()
     // Offset: 0x190EBA4
     ::StringW get_Value();

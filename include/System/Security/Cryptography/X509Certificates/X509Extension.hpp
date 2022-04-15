@@ -43,7 +43,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return critical;
     }
     // Get instance field reference: private System.Boolean _critical
-    [[deprecated]] bool& dyn__critical();
+    [[deprecated("Use field access instead!")]] bool& dyn__critical();
     // public System.Boolean get_Critical()
     // Offset: 0xC54520
     bool get_Critical();
@@ -57,7 +57,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // Offset: 0xC4E8E0
     // Implemented from: System.Security.Cryptography.AsnEncodedData
     // Base method: System.Void AsnEncodedData::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509Extension* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Extension::.ctor");

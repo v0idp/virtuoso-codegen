@@ -106,31 +106,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 <Note>k__BackingField
-    [[deprecated]] int& dyn_$Note$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Note$k__BackingField();
     // Get instance field reference: private System.Single _height
-    [[deprecated]] float& dyn__height();
+    [[deprecated("Use field access instead!")]] float& dyn__height();
     // Get instance field reference: private System.Single _diameter
-    [[deprecated]] float& dyn__diameter();
+    [[deprecated("Use field access instead!")]] float& dyn__diameter();
     // Get instance field reference: private System.Single _appear
-    [[deprecated]] float& dyn__appear();
+    [[deprecated("Use field access instead!")]] float& dyn__appear();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Single _fallSpeed
-    [[deprecated]] float& dyn__fallSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__fallSpeed();
     // Get instance field reference: private System.Single _playAmount
-    [[deprecated]] float& dyn__playAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__playAmount();
     // Get instance field reference: private UnityEngine.Color _offColor
-    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private UnityEngine.Vector4 _playingColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn__playingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn__playingColor();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // public System.Int32 get_Note()
     // Offset: 0xC68750
     int get_Note();
     // private System.Void set_Note(System.Int32 value)
     // Offset: 0xC68748
     void set_Note(int value);
+    // public System.Void .ctor()
+    // Offset: 0xC68AC4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OrganPipe* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrganPipe::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OrganPipe*, creationType>()));
+    }
     // public System.Void SetColor(UnityEngine.Color offColor, UnityEngine.Color playingColor)
     // Offset: 0xC68758
     void SetColor(::UnityEngine::Color offColor, ::UnityEngine::Color playingColor);
@@ -158,19 +165,6 @@ namespace VROSC {
     // public System.Void SetNote(System.Int32 note)
     // Offset: 0xC68ABC
     void SetNote(int note);
-    // public System.Void .ctor()
-    // Offset: 0xC68AC4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OrganPipe* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrganPipe::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OrganPipe*, creationType>()));
-    }
   }; // VROSC.OrganPipe
   #pragma pack(pop)
   static check_size<sizeof(OrganPipe), 88 + sizeof(::UnityEngine::MaterialPropertyBlock*)> __VROSC_OrganPipeSizeCheck;
@@ -194,6 +188,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::OrganPipe*), "set_Note", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::OrganPipe::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::OrganPipe::SetColor
 // Il2CppName: SetColor
 template<>
@@ -273,7 +271,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::OrganPipe*), "SetNote", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{note});
   }
 };
-// Writing MetadataGetter for method: VROSC::OrganPipe::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

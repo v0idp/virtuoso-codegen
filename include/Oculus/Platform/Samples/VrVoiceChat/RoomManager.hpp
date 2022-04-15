@@ -85,9 +85,9 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.UInt64 RoomID
-      [[deprecated]] uint64_t& dyn_RoomID();
+      [[deprecated("Use field access instead!")]] uint64_t& dyn_RoomID();
       // Get instance field reference: public readonly System.String OwnerID
-      [[deprecated]] ::StringW& dyn_OwnerID();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_OwnerID();
       // public System.Void .ctor(System.UInt64 roomID, System.String owner)
       // Offset: 0x17185F0
       // ABORTED: conflicts with another method.  Invite(uint64_t roomID, ::StringW owner);
@@ -134,15 +134,15 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // Set static field: static private readonly System.Single INVITE_POLL_FREQ_SECONDS
     static void _set_INVITE_POLL_FREQ_SECONDS(float value);
     // Get instance field reference: private System.UInt64 m_roomID
-    [[deprecated]] uint64_t& dyn_m_roomID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_roomID();
     // Get instance field reference: private Oculus.Platform.Models.User m_remoteUser
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_m_remoteUser();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_m_remoteUser();
     // Get instance field reference: private System.Single m_nextPollTime
-    [[deprecated]] float& dyn_m_nextPollTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_nextPollTime();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.UInt64> m_pendingRoomRequests
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_m_pendingRoomRequests();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_m_pendingRoomRequests();
     // Get instance field reference: private System.Collections.Generic.List`1<Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite> m_invites
-    [[deprecated]] ::System::Collections::Generic::List_1<::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite>*& dyn_m_invites();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite>*& dyn_m_invites();
     // public System.UInt64 get_RemoteUserID()
     // Offset: 0x17173EC
     uint64_t get_RemoteUserID();
@@ -152,6 +152,13 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // public System.Boolean get_ShouldPollInviteList()
     // Offset: 0x1717C74
     bool get_ShouldPollInviteList();
+    // public System.Void .ctor()
+    // Offset: 0x17171F4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RoomManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrVoiceChat::RoomManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RoomManager*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x1719420
     static void _cctor();
@@ -191,15 +198,6 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // public System.Void LeaveCurrentRoom()
     // Offset: 0x171921C
     void LeaveCurrentRoom();
-    // public System.Void .ctor()
-    // Offset: 0x17171F4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RoomManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrVoiceChat::RoomManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RoomManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrVoiceChat.RoomManager
   #pragma pack(pop)
   static check_size<sizeof(RoomManager), 48 + sizeof(::System::Collections::Generic::List_1<::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite>*)> __Oculus_Platform_Samples_VrVoiceChat_RoomManagerSizeCheck;
@@ -232,6 +230,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrVoiceChat::RoomManager*), "get_ShouldPollInviteList", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::RoomManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::RoomManager::_cctor
 // Il2CppName: .cctor
 template<>
@@ -344,7 +346,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrVoiceChat::RoomManager*), "LeaveCurrentRoom", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::RoomManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

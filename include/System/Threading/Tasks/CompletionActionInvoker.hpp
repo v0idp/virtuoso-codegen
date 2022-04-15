@@ -61,9 +61,9 @@ namespace System::Threading::Tasks {
       return *reinterpret_cast<::System::Threading::IThreadPoolWorkItem*>(this);
     }
     // Get instance field reference: private readonly System.Threading.Tasks.ITaskCompletionAction m_action
-    [[deprecated]] ::System::Threading::Tasks::ITaskCompletionAction*& dyn_m_action();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::ITaskCompletionAction*& dyn_m_action();
     // Get instance field reference: private readonly System.Threading.Tasks.Task m_completingTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_completingTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_completingTask();
     // System.Void .ctor(System.Threading.Tasks.ITaskCompletionAction action, System.Threading.Tasks.Task completingTask)
     // Offset: 0xE3C2EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

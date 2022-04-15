@@ -127,21 +127,21 @@ namespace Mono::Net::Security {
       return *reinterpret_cast<::Mono::Security::Interface::ICertificateValidator2*>(this);
     }
     // Get instance field reference: private readonly System.Object sender
-    [[deprecated]] ::Il2CppObject*& dyn_sender();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_sender();
     // Get instance field reference: private readonly Mono.Security.Interface.MonoTlsSettings settings
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_settings();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_settings();
     // Get instance field reference: private readonly Mono.Security.Interface.MonoTlsProvider provider
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_provider();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_provider();
     // Get instance field reference: private readonly System.Net.ServerCertValidationCallback certValidationCallback
-    [[deprecated]] ::System::Net::ServerCertValidationCallback*& dyn_certValidationCallback();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServerCertValidationCallback*& dyn_certValidationCallback();
     // Get instance field reference: private readonly System.Net.Security.LocalCertSelectionCallback certSelectionCallback
-    [[deprecated]] ::System::Net::Security::LocalCertSelectionCallback*& dyn_certSelectionCallback();
+    [[deprecated("Use field access instead!")]] ::System::Net::Security::LocalCertSelectionCallback*& dyn_certSelectionCallback();
     // Get instance field reference: private readonly Mono.Net.Security.ServerCertValidationCallbackWrapper callbackWrapper
-    [[deprecated]] ::Mono::Net::Security::ServerCertValidationCallbackWrapper*& dyn_callbackWrapper();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::ServerCertValidationCallbackWrapper*& dyn_callbackWrapper();
     // Get instance field reference: private readonly Mono.Net.Security.MonoTlsStream tlsStream
-    [[deprecated]] ::Mono::Net::Security::MonoTlsStream*& dyn_tlsStream();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::MonoTlsStream*& dyn_tlsStream();
     // Get instance field reference: private readonly System.Net.HttpWebRequest request
-    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_request();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_request();
     // public Mono.Security.Interface.MonoTlsSettings get_Settings()
     // Offset: 0x10E1A4C
     ::Mono::Security::Interface::MonoTlsSettings* get_Settings();

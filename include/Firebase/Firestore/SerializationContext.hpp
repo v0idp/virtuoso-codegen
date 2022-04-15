@@ -67,7 +67,7 @@ namespace Firebase::Firestore {
     // Set static field: static private readonly Firebase.Firestore.SerializationContext <Default>k__BackingField
     static void _set_$Default$k__BackingField(::Firebase::Firestore::SerializationContext* value);
     // Get instance field reference: private readonly System.Collections.Generic.IDictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> _customConverters
-    [[deprecated]] ::System::Collections::Generic::IDictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__customConverters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IDictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__customConverters();
     // static Firebase.Firestore.SerializationContext get_Default()
     // Offset: 0xD63A04
     static ::Firebase::Firestore::SerializationContext* get_Default();

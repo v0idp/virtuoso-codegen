@@ -67,7 +67,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.PreserveReferencesHandling All
     static void _set_All(::Newtonsoft::Json::PreserveReferencesHandling value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.PreserveReferencesHandling
   #pragma pack(pop)
   static check_size<sizeof(PreserveReferencesHandling), 0 + sizeof(int)> __Newtonsoft_Json_PreserveReferencesHandlingSizeCheck;

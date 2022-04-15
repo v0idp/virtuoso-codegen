@@ -114,25 +114,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _depth
-    [[deprecated]] float& dyn__depth();
+    [[deprecated("Use field access instead!")]] float& dyn__depth();
     // Get instance field reference: private System.Single _push
-    [[deprecated]] float& dyn__push();
+    [[deprecated("Use field access instead!")]] float& dyn__push();
     // Get instance field reference: private VROSC.MinMaxFloat _marginX
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__marginX();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__marginX();
     // Get instance field reference: private VROSC.MinMaxFloat _marginY
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__marginY();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__marginY();
     // Get instance field reference: private UnityEngine.Vector2 _offset
-    [[deprecated]] ::UnityEngine::Vector2& dyn__offset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__offset();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private UnityEngine.Collider _collider
-    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__collider();
     // Get instance field reference: private System.Boolean _valid
-    [[deprecated]] bool& dyn__valid();
+    [[deprecated("Use field access instead!")]] bool& dyn__valid();
     // Get instance field reference: private System.Single _lastHeight
-    [[deprecated]] float& dyn__lastHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__lastHeight();
     // Get instance field reference: private System.Single _lastWidth
-    [[deprecated]] float& dyn__lastWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__lastWidth();
+    // public System.Void .ctor()
+    // Offset: 0x965F98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AdjustColliderToRect* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustColliderToRect::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AdjustColliderToRect*, creationType>()));
+    }
     // private System.Void ResizeCollider()
     // Offset: 0x9659B8
     void ResizeCollider();
@@ -145,25 +152,16 @@ namespace VROSC {
     // private System.Void GetValues()
     // Offset: 0x965E98
     void GetValues();
-    // public System.Void .ctor()
-    // Offset: 0x965F98
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AdjustColliderToRect* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustColliderToRect::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AdjustColliderToRect*, creationType>()));
-    }
   }; // VROSC.AdjustColliderToRect
   #pragma pack(pop)
   static check_size<sizeof(AdjustColliderToRect), 80 + sizeof(float)> __VROSC_AdjustColliderToRectSizeCheck;
   static_assert(sizeof(AdjustColliderToRect) == 0x54);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AdjustColliderToRect::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AdjustColliderToRect::ResizeCollider
 // Il2CppName: ResizeCollider
 template<>
@@ -197,7 +195,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AdjustColliderToRect*), "GetValues", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AdjustColliderToRect::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -70,7 +70,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.KeyValuePairType Unknown
     static void _set_Unknown(::Oculus::Platform::KeyValuePairType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Platform.KeyValuePairType
   #pragma pack(pop)
   static check_size<sizeof(KeyValuePairType), 0 + sizeof(int)> __Oculus_Platform_KeyValuePairTypeSizeCheck;

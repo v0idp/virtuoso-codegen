@@ -55,11 +55,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 id
-    [[deprecated]] uint& dyn_id();
+    [[deprecated("Use field access instead!")]] uint& dyn_id();
     // Get instance field reference: public UnityEngine.Vector3 worldPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_worldPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_worldPosition();
     // Get instance field reference: public ovrAvatarGazeTargetType type
-    [[deprecated]] ::GlobalNamespace::ovrAvatarGazeTargetType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarGazeTargetType& dyn_type();
   }; // ovrAvatarGazeTarget
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarGazeTarget), 16 + sizeof(::GlobalNamespace::ovrAvatarGazeTargetType)> __GlobalNamespace_ovrAvatarGazeTargetSizeCheck;

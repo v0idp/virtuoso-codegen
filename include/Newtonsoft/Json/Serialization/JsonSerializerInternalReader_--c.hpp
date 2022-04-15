@@ -66,6 +66,13 @@ namespace Newtonsoft::Json::Serialization {
     // static private System.Void .cctor()
     // Offset: 0x159F770
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x159F7D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JsonSerializerInternalReader::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::JsonSerializerInternalReader::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JsonSerializerInternalReader::$$c*, creationType>()));
+    }
     // System.String <CreateObjectUsingCreatorWithParameters>b__38_0(Newtonsoft.Json.Serialization.JsonProperty p)
     // Offset: 0x159F7D8
     ::StringW $CreateObjectUsingCreatorWithParameters$b__38_0(::Newtonsoft::Json::Serialization::JsonProperty* p);
@@ -78,15 +85,6 @@ namespace Newtonsoft::Json::Serialization {
     // Newtonsoft.Json.Serialization.JsonSerializerInternalReader/Newtonsoft.Json.Serialization.PropertyPresence <PopulateObject>b__42_1(Newtonsoft.Json.Serialization.JsonProperty m)
     // Offset: 0x159F810
     ::Newtonsoft::Json::Serialization::JsonSerializerInternalReader::PropertyPresence $PopulateObject$b__42_1(::Newtonsoft::Json::Serialization::JsonProperty* m);
-    // public System.Void .ctor()
-    // Offset: 0x159F7D0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JsonSerializerInternalReader::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::JsonSerializerInternalReader::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JsonSerializerInternalReader::$$c*, creationType>()));
-    }
   }; // Newtonsoft.Json.Serialization.JsonSerializerInternalReader/Newtonsoft.Json.Serialization.<>c
   #pragma pack(pop)
 }
@@ -99,6 +97,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::JsonSerializerInternalReader::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::JsonSerializerInternalReader::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Serialization::JsonSerializerInternalReader::$$c::$CreateObjectUsingCreatorWithParameters$b__38_0
 // Il2CppName: <CreateObjectUsingCreatorWithParameters>b__38_0
 template<>
@@ -135,7 +137,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Newtonsof
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::JsonSerializerInternalReader::$$c*), "<PopulateObject>b__42_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{m});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::JsonSerializerInternalReader::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

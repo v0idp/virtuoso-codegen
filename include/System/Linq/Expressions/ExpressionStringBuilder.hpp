@@ -114,9 +114,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::Il2CppObject*, int>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Text.StringBuilder _out
-    [[deprecated]] ::System::Text::StringBuilder*& dyn__out();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn__out();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Object,System.Int32> _ids
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::Il2CppObject*, int>*& dyn__ids();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::Il2CppObject*, int>*& dyn__ids();
     // private System.Int32 GetLabelId(System.Linq.Expressions.LabelTarget label)
     // Offset: 0x15D01BC
     int GetLabelId(::System::Linq::Expressions::LabelTarget* label);
@@ -171,7 +171,6 @@ namespace System::Linq::Expressions {
     // Offset: 0x15D012C
     // Implemented from: System.Linq.Expressions.ExpressionVisitor
     // Base method: System.Void ExpressionVisitor::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExpressionStringBuilder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::ExpressionStringBuilder::.ctor");

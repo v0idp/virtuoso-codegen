@@ -78,17 +78,24 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public AudioHelm.HelmSequencer sequencer
-    [[deprecated]] ::AudioHelm::HelmSequencer*& dyn_sequencer();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmSequencer*& dyn_sequencer();
     // Get instance field reference: public System.Int32[] scale
-    [[deprecated]] ::ArrayW<int>& dyn_scale();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_scale();
     // Get instance field reference: public System.Int32 minNote
-    [[deprecated]] int& dyn_minNote();
+    [[deprecated("Use field access instead!")]] int& dyn_minNote();
     // Get instance field reference: public System.Int32 octaveSpan
-    [[deprecated]] int& dyn_octaveSpan();
+    [[deprecated("Use field access instead!")]] int& dyn_octaveSpan();
     // Get instance field reference: public System.Single minDensity
-    [[deprecated]] float& dyn_minDensity();
+    [[deprecated("Use field access instead!")]] float& dyn_minDensity();
     // Get instance field reference: public System.Single maxDensity
-    [[deprecated]] float& dyn_maxDensity();
+    [[deprecated("Use field access instead!")]] float& dyn_maxDensity();
+    // public System.Void .ctor()
+    // Offset: 0x19823A4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SequenceGenerator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::SequenceGenerator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SequenceGenerator*, creationType>()));
+    }
     // private System.Void GenerateRhythm()
     // Offset: 0x1981CBC
     void GenerateRhythm();
@@ -107,25 +114,16 @@ namespace AudioHelm {
     // public System.Void Generate()
     // Offset: 0x1981CC8
     void Generate();
-    // public System.Void .ctor()
-    // Offset: 0x19823A4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SequenceGenerator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::SequenceGenerator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SequenceGenerator*, creationType>()));
-    }
   }; // AudioHelm.SequenceGenerator
   #pragma pack(pop)
   static check_size<sizeof(SequenceGenerator), 52 + sizeof(float)> __AudioHelm_SequenceGeneratorSizeCheck;
   static_assert(sizeof(SequenceGenerator) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::SequenceGenerator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::SequenceGenerator::GenerateRhythm
 // Il2CppName: GenerateRhythm
 template<>
@@ -177,7 +175,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::SequenceGenerator*), "Generate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::SequenceGenerator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

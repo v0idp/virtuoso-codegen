@@ -130,25 +130,25 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_2<::VROSC::HandType, ::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.InstrumentControlPanelUI _controlPanelUI
-    [[deprecated]] ::VROSC::InstrumentControlPanelUI*& dyn__controlPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentControlPanelUI*& dyn__controlPanelUI();
     // Get instance field reference: protected VROSC.InfoPanel _infoPanel
-    [[deprecated]] ::VROSC::InfoPanel*& dyn__infoPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::InfoPanel*& dyn__infoPanel();
     // Get instance field reference: private UnityEngine.Transform _spawnPosition
-    [[deprecated]] ::UnityEngine::Transform*& dyn__spawnPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__spawnPosition();
     // Get instance field reference: private VROSC.InstrumentFrameController _frameController
-    [[deprecated]] ::VROSC::InstrumentFrameController*& dyn__frameController();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentFrameController*& dyn__frameController();
     // Get instance field reference: private UnityEngine.Vector3 _spawnOriginalPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__spawnOriginalPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__spawnOriginalPosition();
     // Get instance field reference: private System.Boolean _spawnPointSet
-    [[deprecated]] bool& dyn__spawnPointSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__spawnPointSet();
     // Get instance field reference: protected VROSC.InstrumentDataController _dataController
-    [[deprecated]] ::VROSC::InstrumentDataController*& dyn__dataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentDataController*& dyn__dataController();
     // Get instance field reference: public System.Action`1<System.Boolean> OnUseMidiChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnUseMidiChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnUseMidiChanged();
     // Get instance field reference: public System.Action`2<VROSC.HandType,System.Object> OnPlayNote
-    [[deprecated]] ::System::Action_2<::VROSC::HandType, ::Il2CppObject*>*& dyn_OnPlayNote();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::HandType, ::Il2CppObject*>*& dyn_OnPlayNote();
     // Get instance field reference: public System.Action`2<VROSC.HandType,System.Object> OnStopNote
-    [[deprecated]] ::System::Action_2<::VROSC::HandType, ::Il2CppObject*>*& dyn_OnStopNote();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::HandType, ::Il2CppObject*>*& dyn_OnStopNote();
     // public VROSC.InstrumentSettings get_InstrumentSettings()
     // Offset: 0x1946338
     ::VROSC::InstrumentSettings* get_InstrumentSettings();
@@ -207,11 +207,6 @@ namespace VROSC {
     // Offset: 0x1947404
     // Implemented from: VROSC.WidgetController
     // Base method: System.Void WidgetController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentController::.ctor");

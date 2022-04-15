@@ -56,9 +56,9 @@ namespace System::Linq::Expressions::Interpreter {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly System.Int32 <Index>k__BackingField
-    [[deprecated]] int& dyn_$Index$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Index$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.ParameterExpression <Parameter>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::ParameterExpression*& dyn_$Parameter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::ParameterExpression*& dyn_$Parameter$k__BackingField();
     // public System.Int32 get_Index()
     // Offset: 0xE90298
     int get_Index();

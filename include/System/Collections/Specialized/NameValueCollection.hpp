@@ -65,9 +65,9 @@ namespace System::Collections::Specialized {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: private System.String[] _all
-    [[deprecated]] ::ArrayW<::StringW>& dyn__all();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__all();
     // Get instance field reference: private System.String[] _allKeys
-    [[deprecated]] ::ArrayW<::StringW>& dyn__allKeys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__allKeys();
     // public System.String get_Item(System.String name)
     // Offset: 0x10EECDC
     ::StringW get_Item(::StringW name);
@@ -108,7 +108,6 @@ namespace System::Collections::Specialized {
     // Offset: 0x1102330
     // Implemented from: System.Collections.Specialized.NameObjectCollectionBase
     // Base method: System.Void NameObjectCollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NameValueCollection* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::NameValueCollection::.ctor");

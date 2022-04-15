@@ -52,9 +52,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::SyntaxTreeNode*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Schema.SyntaxTreeNode leftChild
-    [[deprecated]] ::System::Xml::Schema::SyntaxTreeNode*& dyn_leftChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SyntaxTreeNode*& dyn_leftChild();
     // Get instance field reference: private System.Xml.Schema.SyntaxTreeNode rightChild
-    [[deprecated]] ::System::Xml::Schema::SyntaxTreeNode*& dyn_rightChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SyntaxTreeNode*& dyn_rightChild();
     // public System.Xml.Schema.SyntaxTreeNode get_LeftChild()
     // Offset: 0xAF24D4
     ::System::Xml::Schema::SyntaxTreeNode* get_LeftChild();
@@ -74,7 +74,6 @@ namespace System::Xml::Schema {
     // Offset: 0xAF2754
     // Implemented from: System.Xml.Schema.SyntaxTreeNode
     // Base method: System.Void SyntaxTreeNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InteriorNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::InteriorNode::.ctor");

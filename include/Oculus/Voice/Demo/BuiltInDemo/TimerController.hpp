@@ -81,15 +81,22 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _time
-    [[deprecated]] float& dyn__time();
+    [[deprecated("Use field access instead!")]] float& dyn__time();
     // Get instance field reference: private System.Boolean _timerExist
-    [[deprecated]] bool& dyn__timerExist();
+    [[deprecated("Use field access instead!")]] bool& dyn__timerExist();
     // Get instance field reference: private System.Boolean _timerRunning
-    [[deprecated]] bool& dyn__timerRunning();
+    [[deprecated("Use field access instead!")]] bool& dyn__timerRunning();
     // Get instance field reference: public UnityEngine.UI.Text logText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_logText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_logText();
     // Get instance field reference: public UnityEngine.AudioClip buzzSound
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_buzzSound();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_buzzSound();
+    // public System.Void .ctor()
+    // Offset: 0xA27FD4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimerController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::BuiltInDemo::TimerController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimerController*, creationType>()));
+    }
     // private System.Void Update()
     // Offset: 0xA276F4
     void Update();
@@ -129,25 +136,16 @@ namespace Oculus::Voice::Demo::BuiltInDemo {
     // private System.Boolean ParseTime(System.String[] entityValues, out System.Single time)
     // Offset: 0xA27AE0
     bool ParseTime(::ArrayW<::StringW> entityValues, ByRef<float> time);
-    // public System.Void .ctor()
-    // Offset: 0xA27FD4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimerController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::BuiltInDemo::TimerController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimerController*, creationType>()));
-    }
   }; // Oculus.Voice.Demo.BuiltInDemo.TimerController
   #pragma pack(pop)
   static check_size<sizeof(TimerController), 40 + sizeof(::UnityEngine::AudioClip*)> __Oculus_Voice_Demo_BuiltInDemo_TimerControllerSizeCheck;
   static_assert(sizeof(TimerController) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Voice::Demo::BuiltInDemo::TimerController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Voice::Demo::BuiltInDemo::TimerController::Update
 // Il2CppName: Update
 template<>
@@ -258,7 +256,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Demo::BuiltInDemo::TimerController*), "ParseTime", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{entityValues, time});
   }
 };
-// Writing MetadataGetter for method: Oculus::Voice::Demo::BuiltInDemo::TimerController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

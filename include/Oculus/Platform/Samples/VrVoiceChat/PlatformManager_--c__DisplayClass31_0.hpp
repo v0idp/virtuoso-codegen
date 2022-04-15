@@ -39,25 +39,27 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
       return invite;
     }
     // Get instance field reference: public Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite invite
-    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite& dyn_invite();
-    // System.Void <SetActiveInvites>b__0()
-    // Offset: 0x172351C
-    void $SetActiveInvites$b__0();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite& dyn_invite();
     // public System.Void .ctor()
     // Offset: 0x1723514
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlatformManager::$$c__DisplayClass31_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::$$c__DisplayClass31_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PlatformManager::$$c__DisplayClass31_0*, creationType>()));
     }
+    // System.Void <SetActiveInvites>b__0()
+    // Offset: 0x172351C
+    void $SetActiveInvites$b__0();
   }; // Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.<>c__DisplayClass31_0
   #pragma pack(pop)
   static check_size<sizeof(PlatformManager::$$c__DisplayClass31_0), 16 + sizeof(::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite)> __Oculus_Platform_Samples_VrVoiceChat_PlatformManager_$$c__DisplayClass31_0SizeCheck;
   static_assert(sizeof(PlatformManager::$$c__DisplayClass31_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::$$c__DisplayClass31_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::$$c__DisplayClass31_0::$SetActiveInvites$b__0
 // Il2CppName: <SetActiveInvites>b__0
 template<>
@@ -66,7 +68,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrVoiceChat::PlatformManager::$$c__DisplayClass31_0*), "<SetActiveInvites>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::$$c__DisplayClass31_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

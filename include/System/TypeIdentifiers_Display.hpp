@@ -47,9 +47,9 @@ namespace System {
       return *reinterpret_cast<::System::TypeIdentifier*>(this);
     }
     // Get instance field reference: private System.String displayName
-    [[deprecated]] ::StringW& dyn_displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_displayName();
     // Get instance field reference: private System.String internal_name
-    [[deprecated]] ::StringW& dyn_internal_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_internal_name();
     // public System.String get_InternalName()
     // Offset: 0x189A4F4
     ::StringW get_InternalName();

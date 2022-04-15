@@ -108,46 +108,44 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.RectTransform _sortArea
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sortArea();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__sortArea();
     // Get instance field reference: private System.Single _padding
-    [[deprecated]] float& dyn__padding();
+    [[deprecated("Use field access instead!")]] float& dyn__padding();
     // Get instance field reference: private System.Single _keepGroupIfLargerThanPercent
-    [[deprecated]] float& dyn__keepGroupIfLargerThanPercent();
+    [[deprecated("Use field access instead!")]] float& dyn__keepGroupIfLargerThanPercent();
     // Get instance field reference: private System.Boolean _rightToLeft
-    [[deprecated]] bool& dyn__rightToLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn__rightToLeft();
     // Get instance field reference: private System.Boolean _bySize
-    [[deprecated]] bool& dyn__bySize();
+    [[deprecated("Use field access instead!")]] bool& dyn__bySize();
     // Get instance field reference: private System.Int32 _currentRowCount
-    [[deprecated]] int& dyn__currentRowCount();
+    [[deprecated("Use field access instead!")]] int& dyn__currentRowCount();
     // Get instance field reference: private System.Single _groupWidth
-    [[deprecated]] float& dyn__groupWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__groupWidth();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
+    // public System.Void .ctor()
+    // Offset: 0x19AAC58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GroupArranger* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GroupArranger::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GroupArranger*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopStation loopStation, System.Single groupWidth)
     // Offset: 0x19AA710
     void Setup(::VROSC::LoopStation* loopStation, float groupWidth);
     // public System.Void ArrangeGroups(System.Collections.Generic.List`1<VROSC.LoopStationGroup> groups, System.Boolean allowRowChange)
     // Offset: 0x19AA71C
     void ArrangeGroups(::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>* groups, bool allowRowChange);
-    // public System.Void .ctor()
-    // Offset: 0x19AAC58
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GroupArranger* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GroupArranger::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GroupArranger*, creationType>()));
-    }
   }; // VROSC.GroupArranger
   #pragma pack(pop)
   static check_size<sizeof(GroupArranger), 56 + sizeof(::VROSC::LoopStation*)> __VROSC_GroupArrangerSizeCheck;
   static_assert(sizeof(GroupArranger) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::GroupArranger::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GroupArranger::Setup
 // Il2CppName: Setup
 template<>
@@ -168,7 +166,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::GroupArranger*), "ArrangeGroups", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{groups, allowRowChange});
   }
 };
-// Writing MetadataGetter for method: VROSC::GroupArranger::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

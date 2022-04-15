@@ -112,25 +112,25 @@ namespace UnityEngine::Rendering {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public Unity.Jobs.JobHandle cullingJobsFence
-    [[deprecated]] ::Unity::Jobs::JobHandle& dyn_cullingJobsFence();
+    [[deprecated("Use field access instead!")]] ::Unity::Jobs::JobHandle& dyn_cullingJobsFence();
     // Get instance field reference: public UnityEngine.Matrix4x4 cullingMatrix
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_cullingMatrix();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_cullingMatrix();
     // Get instance field reference: public UnityEngine.Plane* cullingPlanes
-    [[deprecated]] ::UnityEngine::Plane*& dyn_cullingPlanes();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Plane*& dyn_cullingPlanes();
     // Get instance field reference: public UnityEngine.Rendering.BatchVisibility* batchVisibility
-    [[deprecated]] ::UnityEngine::Rendering::BatchVisibility*& dyn_batchVisibility();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::BatchVisibility*& dyn_batchVisibility();
     // Get instance field reference: public System.Int32* visibleIndices
-    [[deprecated]] int*& dyn_visibleIndices();
+    [[deprecated("Use field access instead!")]] int*& dyn_visibleIndices();
     // Get instance field reference: public System.Int32* visibleIndicesY
-    [[deprecated]] int*& dyn_visibleIndicesY();
+    [[deprecated("Use field access instead!")]] int*& dyn_visibleIndicesY();
     // Get instance field reference: public System.Int32 cullingPlanesCount
-    [[deprecated]] int& dyn_cullingPlanesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_cullingPlanesCount();
     // Get instance field reference: public System.Int32 batchVisibilityCount
-    [[deprecated]] int& dyn_batchVisibilityCount();
+    [[deprecated("Use field access instead!")]] int& dyn_batchVisibilityCount();
     // Get instance field reference: public System.Int32 visibleIndicesCount
-    [[deprecated]] int& dyn_visibleIndicesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_visibleIndicesCount();
     // Get instance field reference: public System.Single nearPlane
-    [[deprecated]] float& dyn_nearPlane();
+    [[deprecated("Use field access instead!")]] float& dyn_nearPlane();
   }; // UnityEngine.Rendering.BatchRendererCullingOutput
   #pragma pack(pop)
   static check_size<sizeof(BatchRendererCullingOutput), 124 + sizeof(float)> __UnityEngine_Rendering_BatchRendererCullingOutputSizeCheck;

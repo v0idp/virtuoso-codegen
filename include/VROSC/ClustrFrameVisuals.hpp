@@ -80,15 +80,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MinMaxFloat _height
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__height();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__height();
     // Get instance field reference: private VROSC.MinMaxFloat _width
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__width();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__width();
     // Get instance field reference: private VROSC.ClustrFrameString _clustrStringPrefab
-    [[deprecated]] ::VROSC::ClustrFrameString*& dyn__clustrStringPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::ClustrFrameString*& dyn__clustrStringPrefab();
     // Get instance field reference: private VROSC.NoteFieldMonitor _monitor
-    [[deprecated]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
     // Get instance field reference: private VROSC.ClustrFrameString[] _strings
-    [[deprecated]] ::ArrayW<::VROSC::ClustrFrameString*>& dyn__strings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::ClustrFrameString*>& dyn__strings();
+    // public System.Void .ctor()
+    // Offset: 0x9482BC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ClustrFrameVisuals* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ClustrFrameVisuals::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ClustrFrameVisuals*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x9479CC
     void Start();
@@ -104,25 +111,16 @@ namespace VROSC {
     // private System.Void OnDrawGizmosSelected()
     // Offset: 0x947FB8
     void OnDrawGizmosSelected();
-    // public System.Void .ctor()
-    // Offset: 0x9482BC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ClustrFrameVisuals* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ClustrFrameVisuals::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ClustrFrameVisuals*, creationType>()));
-    }
   }; // VROSC.ClustrFrameVisuals
   #pragma pack(pop)
   static check_size<sizeof(ClustrFrameVisuals), 56 + sizeof(::ArrayW<::VROSC::ClustrFrameString*>)> __VROSC_ClustrFrameVisualsSizeCheck;
   static_assert(sizeof(ClustrFrameVisuals) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ClustrFrameVisuals::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ClustrFrameVisuals::Start
 // Il2CppName: Start
 template<>
@@ -164,7 +162,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ClustrFrameVisuals*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ClustrFrameVisuals::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

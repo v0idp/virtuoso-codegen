@@ -60,11 +60,11 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::System::Runtime::Remoting::WellKnownObjectMode) == 0x4);
     public:
     // Get instance field reference: private System.Type obj_type
-    [[deprecated]] ::System::Type*& dyn_obj_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_obj_type();
     // Get instance field reference: private System.String obj_uri
-    [[deprecated]] ::StringW& dyn_obj_uri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_obj_uri();
     // Get instance field reference: private System.Runtime.Remoting.WellKnownObjectMode obj_mode
-    [[deprecated]] ::System::Runtime::Remoting::WellKnownObjectMode& dyn_obj_mode();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::WellKnownObjectMode& dyn_obj_mode();
     // public System.Runtime.Remoting.WellKnownObjectMode get_Mode()
     // Offset: 0x12112D8
     ::System::Runtime::Remoting::WellKnownObjectMode get_Mode();

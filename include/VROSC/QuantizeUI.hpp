@@ -112,23 +112,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISpinner _quantize
-    [[deprecated]] ::VROSC::UISpinner*& dyn__quantize();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinner*& dyn__quantize();
     // Get instance field reference: private VROSC.UISlideToggle _quantizeLateHits
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__quantizeLateHits();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__quantizeLateHits();
     // Get instance field reference: private VROSC.TempoSyncDisplay _tempoSyncDisplay
-    [[deprecated]] ::VROSC::TempoSyncDisplay*& dyn__tempoSyncDisplay();
+    [[deprecated("Use field access instead!")]] ::VROSC::TempoSyncDisplay*& dyn__tempoSyncDisplay();
     // Get instance field reference: private VROSC.InstrumentController _instrument
-    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrument();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentController*& dyn__instrument();
     // Get instance field reference: private System.Int32 _setQuantization
-    [[deprecated]] int& dyn__setQuantization();
+    [[deprecated("Use field access instead!")]] int& dyn__setQuantization();
     // Get instance field reference: private System.Boolean _setupDone
-    [[deprecated]] bool& dyn__setupDone();
+    [[deprecated("Use field access instead!")]] bool& dyn__setupDone();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _quantizeSelectionValues
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__quantizeSelectionValues();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__quantizeSelectionValues();
     // Get instance field reference: private System.Int32[] _quantizeMap
-    [[deprecated]] ::ArrayW<int>& dyn__quantizeMap();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__quantizeMap();
     // Get instance field reference: private System.Boolean _hasStartedBeatCounter
-    [[deprecated]] bool& dyn__hasStartedBeatCounter();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasStartedBeatCounter();
+    // public System.Void .ctor()
+    // Offset: 0xB2D4B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static QuantizeUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::QuantizeUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<QuantizeUI*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InstrumentController instrument)
     // Offset: 0xB2CC28
     void Setup(::VROSC::InstrumentController* instrument);
@@ -156,25 +163,16 @@ namespace VROSC {
     // private System.Void SetQuantize(System.Int32 quantize)
     // Offset: 0xB2D1B8
     void SetQuantize(int quantize);
-    // public System.Void .ctor()
-    // Offset: 0xB2D4B8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static QuantizeUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::QuantizeUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<QuantizeUI*, creationType>()));
-    }
   }; // VROSC.QuantizeUI
   #pragma pack(pop)
   static check_size<sizeof(QuantizeUI), 80 + sizeof(bool)> __VROSC_QuantizeUISizeCheck;
   static_assert(sizeof(QuantizeUI) == 0x51);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::QuantizeUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::QuantizeUI::Setup
 // Il2CppName: Setup
 template<>
@@ -253,7 +251,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::QuantizeUI*), "SetQuantize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{quantize});
   }
 };
-// Writing MetadataGetter for method: VROSC::QuantizeUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

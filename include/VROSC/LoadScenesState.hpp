@@ -58,9 +58,9 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    [[deprecated("Use field access instead!")]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
     // Get instance field reference: private VROSC.EnvironmentController _environmentController
-    [[deprecated]] ::VROSC::EnvironmentController*& dyn__environmentController();
+    [[deprecated("Use field access instead!")]] ::VROSC::EnvironmentController*& dyn__environmentController();
     // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController, VROSC.EnvironmentController environmentController)
     // Offset: 0x1951280
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

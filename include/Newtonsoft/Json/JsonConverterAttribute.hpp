@@ -51,9 +51,9 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(::ArrayW<::Il2CppObject*>) == 0x8);
     public:
     // Get instance field reference: private readonly System.Type _converterType
-    [[deprecated]] ::System::Type*& dyn__converterType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__converterType();
     // Get instance field reference: private readonly System.Object[] <ConverterParameters>k__BackingField
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_$ConverterParameters$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_$ConverterParameters$k__BackingField();
     // public System.Type get_ConverterType()
     // Offset: 0xEF459C
     ::System::Type* get_ConverterType();

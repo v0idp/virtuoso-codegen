@@ -47,30 +47,30 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings _filterSettings
-    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings*& dyn__filterSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings*& dyn__filterSettings();
+    // public System.Void .ctor()
+    // Offset: 0x971890
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioReactiveFilter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveFilter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioReactiveFilter*, creationType>()));
+    }
     // public System.Boolean Filter(VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings filterSettings, System.Int32 beat)
     // Offset: 0x971854
     bool Filter(::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings* filterSettings, int beat);
     // public VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings Get()
     // Offset: 0x971874
     ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings* Get();
-    // public System.Void .ctor()
-    // Offset: 0x971890
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioReactiveFilter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveFilter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioReactiveFilter*, creationType>()));
-    }
   }; // VROSC.AudioReactive.AudioReactiveFilter
   #pragma pack(pop)
   static check_size<sizeof(AudioReactiveFilter), 24 + sizeof(::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings*)> __VROSC_AudioReactive_AudioReactiveFilterSizeCheck;
   static_assert(sizeof(AudioReactiveFilter) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveFilter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveFilter::Filter
 // Il2CppName: Filter
 template<>
@@ -89,7 +89,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Au
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioReactive::AudioReactiveFilter*), "Get", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AudioReactive::AudioReactiveFilter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

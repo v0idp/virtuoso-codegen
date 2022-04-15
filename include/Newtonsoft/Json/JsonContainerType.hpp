@@ -66,7 +66,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.JsonContainerType Constructor
     static void _set_Constructor(::Newtonsoft::Json::JsonContainerType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.JsonContainerType
   #pragma pack(pop)
   static check_size<sizeof(JsonContainerType), 0 + sizeof(int)> __Newtonsoft_Json_JsonContainerTypeSizeCheck;

@@ -66,11 +66,11 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Linq::Expressions::LabelTarget*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Body>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Body$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Body$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.LabelTarget <BreakLabel>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::LabelTarget*& dyn_$BreakLabel$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::LabelTarget*& dyn_$BreakLabel$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.LabelTarget <ContinueLabel>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::LabelTarget*& dyn_$ContinueLabel$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::LabelTarget*& dyn_$ContinueLabel$k__BackingField();
     // public System.Linq.Expressions.Expression get_Body()
     // Offset: 0xE90DEC
     ::System::Linq::Expressions::Expression* get_Body();

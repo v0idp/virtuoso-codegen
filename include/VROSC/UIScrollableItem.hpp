@@ -70,17 +70,17 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _length
-    [[deprecated]] float& dyn__length();
+    [[deprecated("Use field access instead!")]] float& dyn__length();
     // Get instance field reference: private System.Int32 <Index>k__BackingField
-    [[deprecated]] int& dyn_$Index$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Index$k__BackingField();
     // Get instance field reference: private System.String <Value>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Value$k__BackingField();
     // Get instance field reference: private System.Boolean <IsActive>k__BackingField
-    [[deprecated]] bool& dyn_$IsActive$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsActive$k__BackingField();
     // Get instance field reference: private System.Boolean <IsHovering>k__BackingField
-    [[deprecated]] bool& dyn_$IsHovering$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsHovering$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDisabled>k__BackingField
-    [[deprecated]] bool& dyn_$IsDisabled$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDisabled$k__BackingField();
     // public System.Int32 get_Index()
     // Offset: 0x1915440
     int get_Index();
@@ -114,6 +114,13 @@ namespace VROSC {
     // private System.Void set_IsDisabled(System.Boolean value)
     // Offset: 0x1915498
     void set_IsDisabled(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x1915538
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIScrollableItem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIScrollableItem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIScrollableItem*, creationType>()));
+    }
     // public System.Void Setup(System.Int32 index, System.String value)
     // Offset: 0x19154A4
     void Setup(int index, ::StringW value);
@@ -135,19 +142,6 @@ namespace VROSC {
     // private System.Void OnDrawGizmosSelected()
     // Offset: 0x19154F0
     void OnDrawGizmosSelected();
-    // public System.Void .ctor()
-    // Offset: 0x1915538
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIScrollableItem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIScrollableItem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIScrollableItem*, creationType>()));
-    }
   }; // VROSC.UIScrollableItem
   #pragma pack(pop)
   static check_size<sizeof(UIScrollableItem), 42 + sizeof(bool)> __VROSC_UIScrollableItemSizeCheck;
@@ -247,6 +241,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIScrollableItem*), "set_IsDisabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::UIScrollableItem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIScrollableItem::Setup
 // Il2CppName: Setup
 template<>
@@ -309,7 +307,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIScrollableItem*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIScrollableItem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

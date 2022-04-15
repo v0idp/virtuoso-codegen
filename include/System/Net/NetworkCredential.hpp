@@ -66,11 +66,11 @@ namespace System::Net {
       return *reinterpret_cast<::System::Net::ICredentials*>(this);
     }
     // Get instance field reference: private System.String m_domain
-    [[deprecated]] ::StringW& dyn_m_domain();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_domain();
     // Get instance field reference: private System.String m_userName
-    [[deprecated]] ::StringW& dyn_m_userName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_userName();
     // Get instance field reference: private System.Security.SecureString m_password
-    [[deprecated]] ::System::Security::SecureString*& dyn_m_password();
+    [[deprecated("Use field access instead!")]] ::System::Security::SecureString*& dyn_m_password();
     // public System.String get_UserName()
     // Offset: 0x11035B4
     ::StringW get_UserName();

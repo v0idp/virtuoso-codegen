@@ -75,15 +75,15 @@ namespace System::Xml::Linq {
     // Deleting conversion operator: operator ::System::Xml::Linq::XNode*
     constexpr operator ::System::Xml::Linq::XNode*() const noexcept = delete;
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String publicId
-    [[deprecated]] ::StringW& dyn_publicId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_publicId();
     // Get instance field reference: private System.String systemId
-    [[deprecated]] ::StringW& dyn_systemId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_systemId();
     // Get instance field reference: private System.String internalSubset
-    [[deprecated]] ::StringW& dyn_internalSubset();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_internalSubset();
     // Get instance field reference: private System.Xml.IDtdInfo dtdInfo
-    [[deprecated]] ::System::Xml::IDtdInfo*& dyn_dtdInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IDtdInfo*& dyn_dtdInfo();
     // public System.String get_InternalSubset()
     // Offset: 0x185A89C
     ::StringW get_InternalSubset();

@@ -54,7 +54,7 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.BrowsableAttribute Default
     static void _set_Default(::System::ComponentModel::BrowsableAttribute* value);
     // Get instance field reference: private System.Boolean browsable
-    [[deprecated]] bool& dyn_browsable();
+    [[deprecated("Use field access instead!")]] bool& dyn_browsable();
     // public System.Boolean get_Browsable()
     // Offset: 0x10DAEDC
     bool get_Browsable();

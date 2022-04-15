@@ -83,17 +83,17 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.AudioSource audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: public OVRLipSync/ContextProviders provider
-    [[deprecated]] ::GlobalNamespace::OVRLipSync::ContextProviders& dyn_provider();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRLipSync::ContextProviders& dyn_provider();
     // Get instance field reference: public System.Boolean enableAcceleration
-    [[deprecated]] bool& dyn_enableAcceleration();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableAcceleration();
     // Get instance field reference: private OVRLipSync/Frame frame
-    [[deprecated]] ::GlobalNamespace::OVRLipSync::Frame*& dyn_frame();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRLipSync::Frame*& dyn_frame();
     // Get instance field reference: private System.UInt32 context
-    [[deprecated]] uint& dyn_context();
+    [[deprecated("Use field access instead!")]] uint& dyn_context();
     // Get instance field reference: private System.Int32 _smoothing
-    [[deprecated]] int& dyn__smoothing();
+    [[deprecated("Use field access instead!")]] int& dyn__smoothing();
     // public System.Int32 get_Smoothing()
     // Offset: 0x18AA5EC
     int get_Smoothing();
@@ -106,6 +106,13 @@ namespace GlobalNamespace {
     // protected OVRLipSync/Frame get_Frame()
     // Offset: 0x18AA5FC
     ::GlobalNamespace::OVRLipSync::Frame* get_Frame();
+    // public System.Void .ctor()
+    // Offset: 0x18AA474
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRLipSyncContextBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSyncContextBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRLipSyncContextBase*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x18AA604
     void Awake();
@@ -124,19 +131,6 @@ namespace GlobalNamespace {
     // public OVRLipSync/Result ResetContext()
     // Offset: 0x18AAB48
     ::GlobalNamespace::OVRLipSync::Result ResetContext();
-    // public System.Void .ctor()
-    // Offset: 0x18AA474
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRLipSyncContextBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSyncContextBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRLipSyncContextBase*, creationType>()));
-    }
   }; // OVRLipSyncContextBase
   #pragma pack(pop)
   static check_size<sizeof(OVRLipSyncContextBase), 52 + sizeof(int)> __GlobalNamespace_OVRLipSyncContextBaseSizeCheck;
@@ -176,6 +170,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRLipSyncContextBase*), "get_Frame", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncContextBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncContextBase::Awake
 // Il2CppName: Awake
 template<>
@@ -227,7 +225,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRLipSyncContextBase*), "ResetContext", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncContextBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

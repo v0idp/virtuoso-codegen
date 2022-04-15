@@ -71,6 +71,13 @@ namespace UnityEngine::Timeline {
     // public System.Collections.Generic.IEnumerable`1<UnityEngine.Playables.PlayableBinding> get_outputs()
     // Offset: 0xC714C4
     ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* get_outputs();
+    // public System.Void .ctor()
+    // Offset: 0xC715F8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BasicPlayableBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::BasicPlayableBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BasicPlayableBehaviour*, creationType>()));
+    }
     // public System.Void OnGraphStart(UnityEngine.Playables.Playable playable)
     // Offset: 0xC71528
     void OnGraphStart(::UnityEngine::Playables::Playable playable);
@@ -98,17 +105,6 @@ namespace UnityEngine::Timeline {
     // public UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject owner)
     // Offset: 0xC71548
     ::UnityEngine::Playables::Playable CreatePlayable(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* owner);
-    // public System.Void .ctor()
-    // Offset: 0xC715F8
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BasicPlayableBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::BasicPlayableBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BasicPlayableBehaviour*, creationType>()));
-    }
   }; // UnityEngine.Timeline.BasicPlayableBehaviour
   #pragma pack(pop)
 }
@@ -129,6 +125,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::BasicPlayableBehaviour*), "get_outputs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::BasicPlayableBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::BasicPlayableBehaviour::OnGraphStart
 // Il2CppName: OnGraphStart
 template<>
@@ -216,7 +216,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::BasicPlayableBehaviour*), "CreatePlayable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{graph, owner});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::BasicPlayableBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

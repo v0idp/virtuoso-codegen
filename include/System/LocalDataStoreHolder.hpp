@@ -46,7 +46,7 @@ namespace System {
       return m_Store;
     }
     // Get instance field reference: private System.LocalDataStore m_Store
-    [[deprecated]] ::System::LocalDataStore*& dyn_m_Store();
+    [[deprecated("Use field access instead!")]] ::System::LocalDataStore*& dyn_m_Store();
     // public System.LocalDataStore get_Store()
     // Offset: 0x107992C
     ::System::LocalDataStore* get_Store();

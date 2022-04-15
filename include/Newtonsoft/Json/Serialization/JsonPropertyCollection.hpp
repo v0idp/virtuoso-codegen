@@ -65,9 +65,9 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::JsonProperty*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Type _type
-    [[deprecated]] ::System::Type*& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__type();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<Newtonsoft.Json.Serialization.JsonProperty> _list
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::JsonProperty*>*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Serialization::JsonProperty*>*& dyn__list();
     // public System.Void .ctor(System.Type type)
     // Offset: 0xF496A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -94,9 +94,9 @@ namespace System::Xml::Linq {
     // Set static field: static private System.Collections.Generic.IEnumerable`1<System.Xml.Linq.XElement> emptySequence
     static void _set_emptySequence(::System::Collections::Generic::IEnumerable_1<::System::Xml::Linq::XElement*>* value);
     // Get instance field reference: System.Xml.Linq.XName name
-    [[deprecated]] ::System::Xml::Linq::XName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XName*& dyn_name();
     // Get instance field reference: System.Xml.Linq.XAttribute lastAttr
-    [[deprecated]] ::System::Xml::Linq::XAttribute*& dyn_lastAttr();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XAttribute*& dyn_lastAttr();
     // static public System.Collections.Generic.IEnumerable`1<System.Xml.Linq.XElement> get_EmptySequence()
     // Offset: 0x18575C4
     static ::System::Collections::Generic::IEnumerable_1<::System::Xml::Linq::XElement*>* get_EmptySequence();

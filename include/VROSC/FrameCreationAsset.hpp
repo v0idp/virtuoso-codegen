@@ -71,18 +71,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.FrameCreationBehaviour template
-    [[deprecated]] ::VROSC::FrameCreationBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::FrameCreationBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.FrameVisuals> _target
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::FrameVisuals*>& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::FrameVisuals*>& dyn__target();
     // Get instance field reference: public System.Boolean _assembling
-    [[deprecated]] bool& dyn__assembling();
+    [[deprecated("Use field access instead!")]] bool& dyn__assembling();
     // public System.Void .ctor()
     // Offset: 0x19A0D44
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FrameCreationAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FrameCreationAsset::.ctor");

@@ -208,33 +208,33 @@ namespace UnityEngine::Timeline {
     // Set static field: static private System.Collections.Generic.HashSet`1<UnityEngine.GameObject> s_CreatedPrefabs
     static void _set_s_CreatedPrefabs(::System::Collections::Generic::HashSet_1<::UnityEngine::GameObject*>* value);
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.GameObject> sourceGameObject
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::GameObject*>& dyn_sourceGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::UnityEngine::GameObject*>& dyn_sourceGameObject();
     // Get instance field reference: public UnityEngine.GameObject prefabGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_prefabGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_prefabGameObject();
     // Get instance field reference: public System.Boolean updateParticle
-    [[deprecated]] bool& dyn_updateParticle();
+    [[deprecated("Use field access instead!")]] bool& dyn_updateParticle();
     // Get instance field reference: public System.UInt32 particleRandomSeed
-    [[deprecated]] uint& dyn_particleRandomSeed();
+    [[deprecated("Use field access instead!")]] uint& dyn_particleRandomSeed();
     // Get instance field reference: public System.Boolean updateDirector
-    [[deprecated]] bool& dyn_updateDirector();
+    [[deprecated("Use field access instead!")]] bool& dyn_updateDirector();
     // Get instance field reference: public System.Boolean updateITimeControl
-    [[deprecated]] bool& dyn_updateITimeControl();
+    [[deprecated("Use field access instead!")]] bool& dyn_updateITimeControl();
     // Get instance field reference: public System.Boolean searchHierarchy
-    [[deprecated]] bool& dyn_searchHierarchy();
+    [[deprecated("Use field access instead!")]] bool& dyn_searchHierarchy();
     // Get instance field reference: public System.Boolean active
-    [[deprecated]] bool& dyn_active();
+    [[deprecated("Use field access instead!")]] bool& dyn_active();
     // Get instance field reference: public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState postPlayback
-    [[deprecated]] ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState& dyn_postPlayback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState& dyn_postPlayback();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset m_ControlDirectorAsset
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn_m_ControlDirectorAsset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn_m_ControlDirectorAsset();
     // Get instance field reference: private System.Double m_Duration
-    [[deprecated]] double& dyn_m_Duration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_Duration();
     // Get instance field reference: private System.Boolean m_SupportLoop
-    [[deprecated]] bool& dyn_m_SupportLoop();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SupportLoop();
     // Get instance field reference: private System.Boolean <controllingDirectors>k__BackingField
-    [[deprecated]] bool& dyn_$controllingDirectors$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$controllingDirectors$k__BackingField();
     // Get instance field reference: private System.Boolean <controllingParticles>k__BackingField
-    [[deprecated]] bool& dyn_$controllingParticles$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$controllingParticles$k__BackingField();
     // System.Boolean get_controllingDirectors()
     // Offset: 0xC71600
     bool get_controllingDirectors();
@@ -250,6 +250,16 @@ namespace UnityEngine::Timeline {
     // public UnityEngine.Timeline.ClipCaps get_clipCaps()
     // Offset: 0xC7166C
     ::UnityEngine::Timeline::ClipCaps get_clipCaps();
+    // public System.Void .ctor()
+    // Offset: 0xC75800
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControlPlayableAsset* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ControlPlayableAsset::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControlPlayableAsset*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xC75890
+    static void _cctor();
     // public System.Void OnEnable()
     // Offset: 0xC71628
     void OnEnable();
@@ -315,23 +325,6 @@ namespace UnityEngine::Timeline {
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Double PlayableAsset::get_duration()
     double get_duration();
-    // public System.Void .ctor()
-    // Offset: 0xC75800
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControlPlayableAsset* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ControlPlayableAsset::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControlPlayableAsset*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xC75890
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject go)
     // Offset: 0xC71678
     // Implemented from: UnityEngine.Playables.PlayableAsset
@@ -381,6 +374,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Timeline::ClipCaps (UnityEngine::Timeline::ControlPlayableAsset::*)()>(&UnityEngine::Timeline::ControlPlayableAsset::get_clipCaps)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ControlPlayableAsset*), "get_clipCaps", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: UnityEngine::Timeline::ControlPlayableAsset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::Timeline::ControlPlayableAsset::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::Timeline::ControlPlayableAsset::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ControlPlayableAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::Timeline::ControlPlayableAsset::OnEnable
@@ -567,18 +572,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (UnityEngine::Timeline::ControlPlayableAsset::*)()>(&UnityEngine::Timeline::ControlPlayableAsset::get_duration)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ControlPlayableAsset*), "get_duration", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::Timeline::ControlPlayableAsset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::Timeline::ControlPlayableAsset::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::Timeline::ControlPlayableAsset::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ControlPlayableAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::Timeline::ControlPlayableAsset::CreatePlayable

@@ -81,15 +81,22 @@ namespace System::Net {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_IsCacheFresh
-    [[deprecated]] bool& dyn_m_IsCacheFresh();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsCacheFresh();
     // Get instance field reference: private System.Boolean m_IsFromCache
-    [[deprecated]] bool& dyn_m_IsFromCache();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsFromCache();
     // public System.Uri get_ResponseUri()
     // Offset: 0xC4BCC8
     ::System::Uri* get_ResponseUri();
     // public System.Net.WebHeaderCollection get_Headers()
     // Offset: 0xC4BCF8
     ::System::Net::WebHeaderCollection* get_Headers();
+    // protected System.Void .ctor()
+    // Offset: 0xC4BB60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WebResponse* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebResponse::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WebResponse*, creationType>()));
+    }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     // Offset: 0xC4BB68
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -115,16 +122,6 @@ namespace System::Net {
     // public System.IO.Stream GetResponseStream()
     // Offset: 0xC4BC98
     ::System::IO::Stream* GetResponseStream();
-    // protected System.Void .ctor()
-    // Offset: 0xC4BB60
-    // Implemented from: System.MarshalByRefObject
-    // Base method: System.Void MarshalByRefObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WebResponse* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebResponse::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WebResponse*, creationType>()));
-    }
   }; // System.Net.WebResponse
   #pragma pack(pop)
   static check_size<sizeof(WebResponse), 25 + sizeof(bool)> __System_Net_WebResponseSizeCheck;
@@ -147,6 +144,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::N
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebResponse*), "get_Headers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::WebResponse::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::WebResponse::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -204,7 +205,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebResponse*), "GetResponseStream", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::WebResponse::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

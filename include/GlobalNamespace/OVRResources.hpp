@@ -59,6 +59,13 @@ namespace GlobalNamespace {
     static ::System::Collections::Generic::List_1<::StringW>* _get_assetNames();
     // Set static field: static private System.Collections.Generic.List`1<System.String> assetNames
     static void _set_assetNames(::System::Collections::Generic::List_1<::StringW>* value);
+    // public System.Void .ctor()
+    // Offset: 0xE7A168
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRResources* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRResources::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRResources*, creationType>()));
+    }
     // static public UnityEngine.Object Load(System.String path)
     // Offset: 0xE79E80
     static ::UnityEngine::Object* Load(::StringW path);
@@ -75,23 +82,14 @@ namespace GlobalNamespace {
     // static public System.Void SetResourceBundle(UnityEngine.AssetBundle bundle)
     // Offset: 0xE7A090
     static void SetResourceBundle(::UnityEngine::AssetBundle* bundle);
-    // public System.Void .ctor()
-    // Offset: 0xE7A168
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRResources* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRResources::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRResources*, creationType>()));
-    }
   }; // OVRResources
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRResources::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRResources::Load
 // Il2CppName: Load
 template<>
@@ -113,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRResources*), "SetResourceBundle", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{bundle});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRResources::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

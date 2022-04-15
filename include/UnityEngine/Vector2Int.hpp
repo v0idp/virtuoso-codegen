@@ -99,9 +99,9 @@ namespace UnityEngine {
     // Set static field: static private readonly UnityEngine.Vector2Int s_Right
     static void _set_s_Right(::UnityEngine::Vector2Int value);
     // Get instance field reference: private System.Int32 m_X
-    [[deprecated]] int& dyn_m_X();
+    [[deprecated("Use field access instead!")]] int& dyn_m_X();
     // Get instance field reference: private System.Int32 m_Y
-    [[deprecated]] int& dyn_m_Y();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Y();
     // public System.Int32 get_x()
     // Offset: 0x183F0DC
     int get_x();

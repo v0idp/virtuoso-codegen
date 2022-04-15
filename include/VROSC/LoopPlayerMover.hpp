@@ -101,27 +101,34 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean <IsGrabbed>k__BackingField
-    [[deprecated]] bool& dyn_$IsGrabbed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsGrabbed$k__BackingField();
     // Get instance field reference: private VROSC.MoveOnPlane _mover
-    [[deprecated]] ::VROSC::MoveOnPlane*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::VROSC::MoveOnPlane*& dyn__mover();
     // Get instance field reference: private UnityEngine.Collider _checkvolume
-    [[deprecated]] ::UnityEngine::Collider*& dyn__checkvolume();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__checkvolume();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private VROSC.LoopStationGroup _belongsToGroup
-    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__belongsToGroup();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroup*& dyn__belongsToGroup();
     // Get instance field reference: private VROSC.LoopStationGroup _hoveredGroup
-    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__hoveredGroup();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroup*& dyn__hoveredGroup();
     // Get instance field reference: private System.Boolean _onlyAllowDropOnOwnGroupOrUserGroups
-    [[deprecated]] bool& dyn__onlyAllowDropOnOwnGroupOrUserGroups();
+    [[deprecated("Use field access instead!")]] bool& dyn__onlyAllowDropOnOwnGroupOrUserGroups();
     // public System.Boolean get_IsGrabbed()
     // Offset: 0x19BB414
     bool get_IsGrabbed();
     // System.Void set_IsGrabbed(System.Boolean value)
     // Offset: 0x19BB41C
     void set_IsGrabbed(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x19BBAB0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayerMover* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerMover::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerMover*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopPlayer loopPlayer, VROSC.LoopStation loopStation)
     // Offset: 0x19B9F0C
     void Setup(::VROSC::LoopPlayer* loopPlayer, ::VROSC::LoopStation* loopStation);
@@ -143,19 +150,6 @@ namespace VROSC {
     // private System.Void GrabEnd()
     // Offset: 0x19BB8F4
     void GrabEnd();
-    // public System.Void .ctor()
-    // Offset: 0x19BBAB0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayerMover* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerMover::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerMover*, creationType>()));
-    }
   }; // VROSC.LoopPlayerMover
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerMover), 80 + sizeof(bool)> __VROSC_LoopPlayerMoverSizeCheck;
@@ -179,6 +173,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerMover*), "set_IsGrabbed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopPlayerMover::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayerMover::Setup
 // Il2CppName: Setup
 template<>
@@ -239,7 +237,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerMover*), "GrabEnd", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayerMover::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

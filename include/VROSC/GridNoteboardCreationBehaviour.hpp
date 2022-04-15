@@ -113,23 +113,30 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.GridNoteboard _gridNoteboard
-    [[deprecated]] ::VROSC::GridNoteboard*& dyn__gridNoteboard();
+    [[deprecated("Use field access instead!")]] ::VROSC::GridNoteboard*& dyn__gridNoteboard();
     // Get instance field reference: private UnityEngine.Transform _fromPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__fromPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__fromPoint();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // Get instance field reference: private UnityEngine.Vector3[] _positionOffset
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__positionOffset();
     // Get instance field reference: private UnityEngine.Quaternion[] _rotationOffset
-    [[deprecated]] ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Quaternion>& dyn__rotationOffset();
     // Get instance field reference: public System.Single StartPoint
-    [[deprecated]] float& dyn_StartPoint();
+    [[deprecated("Use field access instead!")]] float& dyn_StartPoint();
     // Get instance field reference: public System.Single EndPoint
-    [[deprecated]] float& dyn_EndPoint();
+    [[deprecated("Use field access instead!")]] float& dyn_EndPoint();
     // Get instance field reference: public UnityEngine.AnimationCurve Clustr
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_Clustr();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_Clustr();
     // Get instance field reference: public System.Boolean zPos
-    [[deprecated]] bool& dyn_zPos();
+    [[deprecated("Use field access instead!")]] bool& dyn_zPos();
+    // public System.Void .ctor()
+    // Offset: 0x19A8D44
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GridNoteboardCreationBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GridNoteboardCreationBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GridNoteboardCreationBehaviour*, creationType>()));
+    }
     // public System.Void Setup(VROSC.GridNoteboard gridNoteboard, UnityEngine.Transform fromPoint, UnityEngine.AnimationCurve curve)
     // Offset: 0x19A813C
     void Setup(::VROSC::GridNoteboard* gridNoteboard, ::UnityEngine::Transform* fromPoint, ::UnityEngine::AnimationCurve* curve);
@@ -145,16 +152,6 @@ namespace VROSC {
     // private System.Void OnPlayableDestroy()
     // Offset: 0x19A8C9C
     void OnPlayableDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x19A8D44
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GridNoteboardCreationBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GridNoteboardCreationBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GridNoteboardCreationBehaviour*, creationType>()));
-    }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x19A8390
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -166,6 +163,10 @@ namespace VROSC {
   static_assert(sizeof(GridNoteboardCreationBehaviour) == 0x49);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::GridNoteboardCreationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GridNoteboardCreationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -221,10 +222,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::GridNoteboardCreationBehaviour*), "OnPlayableDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::GridNoteboardCreationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GridNoteboardCreationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

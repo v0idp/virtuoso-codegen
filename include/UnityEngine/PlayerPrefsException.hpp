@@ -31,8 +31,6 @@ namespace UnityEngine {
     public:
     // public System.Void .ctor(System.String error)
     // Offset: 0xBC78BC
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String error)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayerPrefsException* New_ctor(::StringW error) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::PlayerPrefsException::.ctor");

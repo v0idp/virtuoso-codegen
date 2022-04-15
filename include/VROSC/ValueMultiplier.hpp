@@ -52,9 +52,9 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.FloatField _factor
-    [[deprecated]] ::VROSC::FloatField*& dyn__factor();
+    [[deprecated("Use field access instead!")]] ::VROSC::FloatField*& dyn__factor();
     // Get instance field reference: private System.Boolean _centerOnHalf
-    [[deprecated]] bool& dyn__centerOnHalf();
+    [[deprecated("Use field access instead!")]] bool& dyn__centerOnHalf();
     // private VROSC.Signal TransformValue(VROSC.Signal signal)
     // Offset: 0x1921858
     ::VROSC::Signal* TransformValue(::VROSC::Signal* signal);
@@ -63,11 +63,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ValueMultiplier* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ValueMultiplier::.ctor");

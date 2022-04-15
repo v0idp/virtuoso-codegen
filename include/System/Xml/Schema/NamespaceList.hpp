@@ -92,7 +92,7 @@ namespace System::Xml::Schema {
       // Set static field: static public System.Xml.Schema.NamespaceList/System.Xml.Schema.ListType Set
       static void _set_Set(::System::Xml::Schema::NamespaceList::ListType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.Schema.NamespaceList/System.Xml.Schema.ListType
     #pragma pack(pop)
     static check_size<sizeof(NamespaceList::ListType), 0 + sizeof(int)> __System_Xml_Schema_NamespaceList_ListTypeSizeCheck;
@@ -120,11 +120,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Schema.NamespaceList/System.Xml.Schema.ListType type
-    [[deprecated]] ::System::Xml::Schema::NamespaceList::ListType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::NamespaceList::ListType& dyn_type();
     // Get instance field reference: private System.Collections.Hashtable set
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_set();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_set();
     // Get instance field reference: private System.String targetNamespace
-    [[deprecated]] ::StringW& dyn_targetNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_targetNamespace();
     // public System.Xml.Schema.NamespaceList/System.Xml.Schema.ListType get_Type()
     // Offset: 0xAF55DC
     ::System::Xml::Schema::NamespaceList::ListType get_Type();
@@ -134,6 +134,13 @@ namespace System::Xml::Schema {
     // public System.Collections.ICollection get_Enumerate()
     // Offset: 0xAF55EC
     ::System::Collections::ICollection* get_Enumerate();
+    // public System.Void .ctor()
+    // Offset: 0xAF5214
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NamespaceList* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::NamespaceList::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NamespaceList*, creationType>()));
+    }
     // public System.Void .ctor(System.String namespaces, System.String targetNamespace)
     // Offset: 0xAF521C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -165,15 +172,6 @@ namespace System::Xml::Schema {
     // private System.Void RemoveNamespace(System.String tns)
     // Offset: 0xAF6AD4
     void RemoveNamespace(::StringW tns);
-    // public System.Void .ctor()
-    // Offset: 0xAF5214
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NamespaceList* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::NamespaceList::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NamespaceList*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0xAF570C
     // Implemented from: System.Object
@@ -211,6 +209,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::NamespaceList*), "get_Enumerate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::NamespaceList::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::NamespaceList::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -291,10 +293,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::NamespaceList*), "RemoveNamespace", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tns});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::NamespaceList::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::NamespaceList::ToString
 // Il2CppName: ToString
 template<>

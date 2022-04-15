@@ -104,7 +104,7 @@ namespace UnityEngine::TextCore::LowLevel {
     // Set static field: static public UnityEngine.TextCore.LowLevel.GlyphLoadFlags LOAD_BITMAP_METRICS_ONLY
     static void _set_LOAD_BITMAP_METRICS_ONLY(::UnityEngine::TextCore::LowLevel::GlyphLoadFlags value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.TextCore.LowLevel.GlyphLoadFlags
   #pragma pack(pop)
   static check_size<sizeof(GlyphLoadFlags), 0 + sizeof(int)> __UnityEngine_TextCore_LowLevel_GlyphLoadFlagsSizeCheck;

@@ -63,13 +63,13 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.ListDictionaryInternal list
-    [[deprecated]] ::System::Collections::ListDictionaryInternal*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ListDictionaryInternal*& dyn_list();
     // Get instance field reference: private System.Collections.ListDictionaryInternal/System.Collections.DictionaryNode current
-    [[deprecated]] ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_current();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_current();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Boolean start
-    [[deprecated]] bool& dyn_start();
+    [[deprecated("Use field access instead!")]] bool& dyn_start();
     // public System.Object get_Current()
     // Offset: 0xE534E0
     ::Il2CppObject* get_Current();

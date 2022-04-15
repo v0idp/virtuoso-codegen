@@ -61,7 +61,7 @@ namespace System::Net {
       return *reinterpret_cast<::System::Net::ICloseEx*>(this);
     }
     // Get instance field reference: private System.Net.FileWebRequest m_request
-    [[deprecated]] ::System::Net::FileWebRequest*& dyn_m_request();
+    [[deprecated("Use field access instead!")]] ::System::Net::FileWebRequest*& dyn_m_request();
     // public System.Void .ctor(System.Net.FileWebRequest request, System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare sharing)
     // Offset: 0xF02468
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

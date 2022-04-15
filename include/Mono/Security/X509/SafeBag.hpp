@@ -49,9 +49,9 @@ namespace Mono::Security::X509 {
     static_assert(sizeof(::Mono::Security::ASN1*) == 0x8);
     public:
     // Get instance field reference: private System.String _bagOID
-    [[deprecated]] ::StringW& dyn__bagOID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__bagOID();
     // Get instance field reference: private Mono.Security.ASN1 _asn1
-    [[deprecated]] ::Mono::Security::ASN1*& dyn__asn1();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::ASN1*& dyn__asn1();
     // public System.String get_BagOID()
     // Offset: 0x16452C0
     ::StringW get_BagOID();

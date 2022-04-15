@@ -297,67 +297,67 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(::System::EventHandler_1<::Newtonsoft::Json::Serialization::ErrorEventArgs*>*) == 0x8);
     public:
     // Get instance field reference: Newtonsoft.Json.TypeNameHandling _typeNameHandling
-    [[deprecated]] ::Newtonsoft::Json::TypeNameHandling& dyn__typeNameHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::TypeNameHandling& dyn__typeNameHandling();
     // Get instance field reference: Newtonsoft.Json.TypeNameAssemblyFormatHandling _typeNameAssemblyFormatHandling
-    [[deprecated]] ::Newtonsoft::Json::TypeNameAssemblyFormatHandling& dyn__typeNameAssemblyFormatHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::TypeNameAssemblyFormatHandling& dyn__typeNameAssemblyFormatHandling();
     // Get instance field reference: Newtonsoft.Json.PreserveReferencesHandling _preserveReferencesHandling
-    [[deprecated]] ::Newtonsoft::Json::PreserveReferencesHandling& dyn__preserveReferencesHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::PreserveReferencesHandling& dyn__preserveReferencesHandling();
     // Get instance field reference: Newtonsoft.Json.ReferenceLoopHandling _referenceLoopHandling
-    [[deprecated]] ::Newtonsoft::Json::ReferenceLoopHandling& dyn__referenceLoopHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::ReferenceLoopHandling& dyn__referenceLoopHandling();
     // Get instance field reference: Newtonsoft.Json.MissingMemberHandling _missingMemberHandling
-    [[deprecated]] ::Newtonsoft::Json::MissingMemberHandling& dyn__missingMemberHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::MissingMemberHandling& dyn__missingMemberHandling();
     // Get instance field reference: Newtonsoft.Json.ObjectCreationHandling _objectCreationHandling
-    [[deprecated]] ::Newtonsoft::Json::ObjectCreationHandling& dyn__objectCreationHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::ObjectCreationHandling& dyn__objectCreationHandling();
     // Get instance field reference: Newtonsoft.Json.NullValueHandling _nullValueHandling
-    [[deprecated]] ::Newtonsoft::Json::NullValueHandling& dyn__nullValueHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::NullValueHandling& dyn__nullValueHandling();
     // Get instance field reference: Newtonsoft.Json.DefaultValueHandling _defaultValueHandling
-    [[deprecated]] ::Newtonsoft::Json::DefaultValueHandling& dyn__defaultValueHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::DefaultValueHandling& dyn__defaultValueHandling();
     // Get instance field reference: Newtonsoft.Json.ConstructorHandling _constructorHandling
-    [[deprecated]] ::Newtonsoft::Json::ConstructorHandling& dyn__constructorHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::ConstructorHandling& dyn__constructorHandling();
     // Get instance field reference: Newtonsoft.Json.MetadataPropertyHandling _metadataPropertyHandling
-    [[deprecated]] ::Newtonsoft::Json::MetadataPropertyHandling& dyn__metadataPropertyHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::MetadataPropertyHandling& dyn__metadataPropertyHandling();
     // Get instance field reference: Newtonsoft.Json.JsonConverterCollection _converters
-    [[deprecated]] ::Newtonsoft::Json::JsonConverterCollection*& dyn__converters();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonConverterCollection*& dyn__converters();
     // Get instance field reference: Newtonsoft.Json.Serialization.IContractResolver _contractResolver
-    [[deprecated]] ::Newtonsoft::Json::Serialization::IContractResolver*& dyn__contractResolver();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::IContractResolver*& dyn__contractResolver();
     // Get instance field reference: Newtonsoft.Json.Serialization.ITraceWriter _traceWriter
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ITraceWriter*& dyn__traceWriter();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ITraceWriter*& dyn__traceWriter();
     // Get instance field reference: System.Collections.IEqualityComparer _equalityComparer
-    [[deprecated]] ::System::Collections::IEqualityComparer*& dyn__equalityComparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEqualityComparer*& dyn__equalityComparer();
     // Get instance field reference: Newtonsoft.Json.Serialization.ISerializationBinder _serializationBinder
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ISerializationBinder*& dyn__serializationBinder();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ISerializationBinder*& dyn__serializationBinder();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext _context
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn__context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContext& dyn__context();
     // Get instance field reference: private Newtonsoft.Json.Serialization.IReferenceResolver _referenceResolver
-    [[deprecated]] ::Newtonsoft::Json::Serialization::IReferenceResolver*& dyn__referenceResolver();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::IReferenceResolver*& dyn__referenceResolver();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.Formatting> _formatting
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::Formatting>& dyn__formatting();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::Formatting>& dyn__formatting();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.DateFormatHandling> _dateFormatHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DateFormatHandling>& dyn__dateFormatHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DateFormatHandling>& dyn__dateFormatHandling();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.DateTimeZoneHandling> _dateTimeZoneHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DateTimeZoneHandling>& dyn__dateTimeZoneHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DateTimeZoneHandling>& dyn__dateTimeZoneHandling();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.DateParseHandling> _dateParseHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DateParseHandling>& dyn__dateParseHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DateParseHandling>& dyn__dateParseHandling();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.FloatFormatHandling> _floatFormatHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::FloatFormatHandling>& dyn__floatFormatHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::FloatFormatHandling>& dyn__floatFormatHandling();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.FloatParseHandling> _floatParseHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::FloatParseHandling>& dyn__floatParseHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::FloatParseHandling>& dyn__floatParseHandling();
     // Get instance field reference: private System.Nullable`1<Newtonsoft.Json.StringEscapeHandling> _stringEscapeHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::StringEscapeHandling>& dyn__stringEscapeHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::StringEscapeHandling>& dyn__stringEscapeHandling();
     // Get instance field reference: private System.Globalization.CultureInfo _culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__culture();
     // Get instance field reference: private System.Nullable`1<System.Int32> _maxDepth
-    [[deprecated]] ::System::Nullable_1<int>& dyn__maxDepth();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn__maxDepth();
     // Get instance field reference: private System.Boolean _maxDepthSet
-    [[deprecated]] bool& dyn__maxDepthSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__maxDepthSet();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _checkAdditionalContent
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__checkAdditionalContent();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__checkAdditionalContent();
     // Get instance field reference: private System.String _dateFormatString
-    [[deprecated]] ::StringW& dyn__dateFormatString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__dateFormatString();
     // Get instance field reference: private System.Boolean _dateFormatStringSet
-    [[deprecated]] bool& dyn__dateFormatStringSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__dateFormatStringSet();
     // Get instance field reference: private System.EventHandler`1<Newtonsoft.Json.Serialization.ErrorEventArgs> Error
-    [[deprecated]] ::System::EventHandler_1<::Newtonsoft::Json::Serialization::ErrorEventArgs*>*& dyn_Error();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::Newtonsoft::Json::Serialization::ErrorEventArgs*>*& dyn_Error();
     // public System.Void set_ReferenceResolver(Newtonsoft.Json.Serialization.IReferenceResolver value)
     // Offset: 0xF4EA04
     void set_ReferenceResolver(::Newtonsoft::Json::Serialization::IReferenceResolver* value);
@@ -439,6 +439,13 @@ namespace Newtonsoft::Json {
     // public System.Void remove_Error(System.EventHandler`1<Newtonsoft.Json.Serialization.ErrorEventArgs> value)
     // Offset: 0xF4E964
     void remove_Error(::System::EventHandler_1<::Newtonsoft::Json::Serialization::ErrorEventArgs*>* value);
+    // public System.Void .ctor()
+    // Offset: 0xF4F170
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JsonSerializer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonSerializer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JsonSerializer*, creationType>()));
+    }
     // System.Boolean IsCheckAdditionalContentSet()
     // Offset: 0xF4F130
     bool IsCheckAdditionalContentSet();
@@ -502,15 +509,6 @@ namespace Newtonsoft::Json {
     // System.Void OnError(Newtonsoft.Json.Serialization.ErrorEventArgs e)
     // Offset: 0xF51170
     void OnError(::Newtonsoft::Json::Serialization::ErrorEventArgs* e);
-    // public System.Void .ctor()
-    // Offset: 0xF4F170
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JsonSerializer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonSerializer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JsonSerializer*, creationType>()));
-    }
   }; // Newtonsoft.Json.JsonSerializer
   // WARNING Not writing size check since size may be invalid!
 }
@@ -750,6 +748,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::JsonSerializer*), "remove_Error", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::JsonSerializer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::JsonSerializer::IsCheckAdditionalContentSet
 // Il2CppName: IsCheckAdditionalContentSet
 template<>
@@ -932,7 +934,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::JsonSerializer*), "OnError", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::JsonSerializer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

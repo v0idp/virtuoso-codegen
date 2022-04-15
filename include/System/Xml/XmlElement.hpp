@@ -72,11 +72,11 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::XmlLinkedNode*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlName name
-    [[deprecated]] ::System::Xml::XmlName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlName*& dyn_name();
     // Get instance field reference: private System.Xml.XmlAttributeCollection attributes
-    [[deprecated]] ::System::Xml::XmlAttributeCollection*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlAttributeCollection*& dyn_attributes();
     // Get instance field reference: private System.Xml.XmlLinkedNode lastChild
-    [[deprecated]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
     // System.Xml.XmlName get_XmlName()
     // Offset: 0x127BBA8
     ::System::Xml::XmlName* get_XmlName();

@@ -80,37 +80,39 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::LinkedList_1<float>*) == 0x8);
     public:
     // Get instance field reference: public System.Single FakeLatencyMax
-    [[deprecated]] float& dyn_FakeLatencyMax();
+    [[deprecated("Use field access instead!")]] float& dyn_FakeLatencyMax();
     // Get instance field reference: public System.Single FakeLatencyMin
-    [[deprecated]] float& dyn_FakeLatencyMin();
+    [[deprecated("Use field access instead!")]] float& dyn_FakeLatencyMin();
     // Get instance field reference: public System.Single LatencyWeight
-    [[deprecated]] float& dyn_LatencyWeight();
+    [[deprecated("Use field access instead!")]] float& dyn_LatencyWeight();
     // Get instance field reference: public System.Int32 MaxSamples
-    [[deprecated]] int& dyn_MaxSamples();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxSamples();
     // Get instance field reference: System.Single AverageWindow
-    [[deprecated]] float& dyn_AverageWindow();
+    [[deprecated("Use field access instead!")]] float& dyn_AverageWindow();
     // Get instance field reference: System.Single LatencySum
-    [[deprecated]] float& dyn_LatencySum();
+    [[deprecated("Use field access instead!")]] float& dyn_LatencySum();
     // Get instance field reference: System.Collections.Generic.LinkedList`1<System.Single> LatencyValues
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<float>*& dyn_LatencyValues();
-    // public System.Single NextValue()
-    // Offset: 0x8D0098
-    float NextValue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<float>*& dyn_LatencyValues();
     // public System.Void .ctor()
     // Offset: 0x8D01D0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RemoteLoopbackManager::SimulatedLatencySettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RemoteLoopbackManager::SimulatedLatencySettings*, creationType>()));
     }
+    // public System.Single NextValue()
+    // Offset: 0x8D0098
+    float NextValue();
   }; // RemoteLoopbackManager/SimulatedLatencySettings
   #pragma pack(pop)
   static check_size<sizeof(RemoteLoopbackManager::SimulatedLatencySettings), 40 + sizeof(::System::Collections::Generic::LinkedList_1<float>*)> __GlobalNamespace_RemoteLoopbackManager_SimulatedLatencySettingsSizeCheck;
   static_assert(sizeof(RemoteLoopbackManager::SimulatedLatencySettings) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings::NextValue
 // Il2CppName: NextValue
 template<>
@@ -119,7 +121,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Glob
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings*), "NextValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RemoteLoopbackManager::SimulatedLatencySettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

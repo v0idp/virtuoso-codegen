@@ -76,15 +76,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.DashboardSpawnPoint/VROSC.TriggerCondition _condition
-    [[deprecated]] ::VROSC::DashboardSpawnPoint::TriggerCondition& dyn__condition();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardSpawnPoint::TriggerCondition& dyn__condition();
     // Get instance field reference: private VROSC.DashboardSpawnPoint _leftHand
-    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn__leftHand();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardSpawnPoint*& dyn__leftHand();
     // Get instance field reference: private VROSC.DashboardSpawnPoint _rightHand
-    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn__rightHand();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardSpawnPoint*& dyn__rightHand();
     // Get instance field reference: private VROSC.DashboardSpawnPoint <MostActivePoint>k__BackingField
-    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn_$MostActivePoint$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardSpawnPoint*& dyn_$MostActivePoint$k__BackingField();
     // Get instance field reference: private VROSC.DashboardSpawnPoint <DashBoardAtHand>k__BackingField
-    [[deprecated]] ::VROSC::DashboardSpawnPoint*& dyn_$DashBoardAtHand$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardSpawnPoint*& dyn_$DashBoardAtHand$k__BackingField();
     // public VROSC.DashboardSpawnPoint get_MostActivePoint()
     // Offset: 0x19AB870
     ::VROSC::DashboardSpawnPoint* get_MostActivePoint();
@@ -97,6 +97,13 @@ namespace VROSC {
     // private System.Void set_DashBoardAtHand(VROSC.DashboardSpawnPoint value)
     // Offset: 0x19AB878
     void set_DashBoardAtHand(::VROSC::DashboardSpawnPoint* value);
+    // public System.Void .ctor()
+    // Offset: 0x19AB9DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HandPlacedDashboardHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HandPlacedDashboardHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HandPlacedDashboardHelper*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InputDevice left, VROSC.InputDevice right)
     // Offset: 0x19AB888
     void Setup(::VROSC::InputDevice* left, ::VROSC::InputDevice* right);
@@ -115,19 +122,6 @@ namespace VROSC {
     // System.Boolean EvaluateDropCondition()
     // Offset: 0x19AB588
     bool EvaluateDropCondition();
-    // public System.Void .ctor()
-    // Offset: 0x19AB9DC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HandPlacedDashboardHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HandPlacedDashboardHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HandPlacedDashboardHelper*, creationType>()));
-    }
   }; // VROSC.HandPlacedDashboardHelper
   #pragma pack(pop)
   static check_size<sizeof(HandPlacedDashboardHelper), 56 + sizeof(::VROSC::DashboardSpawnPoint*)> __VROSC_HandPlacedDashboardHelperSizeCheck;
@@ -168,6 +162,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboardHelper*), "set_DashBoardAtHand", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::HandPlacedDashboardHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::HandPlacedDashboardHelper::Setup
 // Il2CppName: Setup
 template<>
@@ -219,7 +217,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::HandPlacedDashboardHelper*), "EvaluateDropCondition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::HandPlacedDashboardHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

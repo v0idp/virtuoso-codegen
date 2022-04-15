@@ -43,9 +43,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::PeerConnectionState) == 0x4);
     public:
     // Get instance field reference: private System.UInt64 <ID>k__BackingField
-    [[deprecated]] uint64_t& dyn_$ID$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$ID$k__BackingField();
     // Get instance field reference: private Oculus.Platform.PeerConnectionState <State>k__BackingField
-    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_$State$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PeerConnectionState& dyn_$State$k__BackingField();
     // public System.UInt64 get_ID()
     // Offset: 0xB5211C
     uint64_t get_ID();

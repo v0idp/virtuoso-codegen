@@ -51,17 +51,15 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: public System.String SessionId
-    [[deprecated]] ::StringW& dyn_SessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SessionId();
     // Get instance field reference: public System.String SessionUpVoteId
-    [[deprecated]] ::StringW& dyn_SessionUpVoteId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SessionUpVoteId();
     // Get instance field reference: public System.String Date
-    [[deprecated]] ::StringW& dyn_Date();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Date();
     // public System.Void .ctor()
     // Offset: 0xE88FE0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserUpVotesDataModel::UpVote* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserUpVotesDataModel::UpVote::.ctor");

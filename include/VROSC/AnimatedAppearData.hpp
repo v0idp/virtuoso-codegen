@@ -115,21 +115,21 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::AnimatedAppearData::SimpleAppear*>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private VROSC.Interactable[] _interactables
-    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::Interactable*>& dyn__interactables();
     // Get instance field reference: private VROSC.AdjustableMesh[] _adjustableMeshes
-    [[deprecated]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__adjustableMeshes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__adjustableMeshes();
     // Get instance field reference: private TMPro.TextMeshPro[] _textMeshPros
-    [[deprecated]] ::ArrayW<::TMPro::TextMeshPro*>& dyn__textMeshPros();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TextMeshPro*>& dyn__textMeshPros();
     // Get instance field reference: private VROSC.SimpleAppearObject[] _simpleAppearObjects
-    [[deprecated]] ::ArrayW<::VROSC::SimpleAppearObject*>& dyn__simpleAppearObjects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SimpleAppearObject*>& dyn__simpleAppearObjects();
     // Get instance field reference: private VROSC.AnimatedAppearData/VROSC.TextMeshAppear[] _textAppears
-    [[deprecated]] ::ArrayW<::VROSC::AnimatedAppearData::TextMeshAppear*>& dyn__textAppears();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AnimatedAppearData::TextMeshAppear*>& dyn__textAppears();
     // Get instance field reference: private VROSC.AnimatedAppearData/VROSC.AdjustableMeshAppear[] _meshAppears
-    [[deprecated]] ::ArrayW<::VROSC::AnimatedAppearData::AdjustableMeshAppear*>& dyn__meshAppears();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AnimatedAppearData::AdjustableMeshAppear*>& dyn__meshAppears();
     // Get instance field reference: private VROSC.AnimatedAppearData/VROSC.SimpleAppear[] _simpleAppears
-    [[deprecated]] ::ArrayW<::VROSC::AnimatedAppearData::SimpleAppear*>& dyn__simpleAppears();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AnimatedAppearData::SimpleAppear*>& dyn__simpleAppears();
     // public System.Void .ctor(UnityEngine.GameObject parent, UnityEngine.RectTransform rectTransform)
     // Offset: 0x969574
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

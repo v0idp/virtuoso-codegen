@@ -47,9 +47,9 @@ namespace System::Runtime::Remoting::Contexts {
     static_assert(sizeof(::System::Runtime::Remoting::Contexts::IDynamicMessageSink*) == 0x8);
     public:
     // Get instance field reference: public System.Runtime.Remoting.Contexts.IDynamicProperty Property
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::IDynamicProperty*& dyn_Property();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::IDynamicProperty*& dyn_Property();
     // Get instance field reference: public System.Runtime.Remoting.Contexts.IDynamicMessageSink Sink
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::IDynamicMessageSink*& dyn_Sink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::IDynamicMessageSink*& dyn_Sink();
     // public System.Void .ctor()
     // Offset: 0xE4F004
     // Implemented from: System.Object

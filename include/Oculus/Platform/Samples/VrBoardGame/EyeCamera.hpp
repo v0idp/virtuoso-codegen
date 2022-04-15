@@ -95,39 +95,37 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.EventSystems.EventSystem m_eventSystem
-    [[deprecated]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_eventSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_eventSystem();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
     // Get instance field reference: private UnityEngine.SphereCollider m_gazeTracker
-    [[deprecated]] ::UnityEngine::SphereCollider*& dyn_m_gazeTracker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SphereCollider*& dyn_m_gazeTracker();
     // Get instance field reference: private UnityEngine.UI.Button m_currentButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_m_currentButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_m_currentButton();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_currentPiece
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_currentPiece();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_currentPiece();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.BoardPosition m_boardPosition
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_boardPosition();
-    // private System.Void Update()
-    // Offset: 0x92E69C
-    void Update();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_boardPosition();
     // public System.Void .ctor()
     // Offset: 0x92EF78
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EyeCamera* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::EyeCamera::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EyeCamera*, creationType>()));
     }
+    // private System.Void Update()
+    // Offset: 0x92E69C
+    void Update();
   }; // Oculus.Platform.Samples.VrBoardGame.EyeCamera
   #pragma pack(pop)
   static check_size<sizeof(EyeCamera), 64 + sizeof(::Oculus::Platform::Samples::VrBoardGame::BoardPosition*)> __Oculus_Platform_Samples_VrBoardGame_EyeCameraSizeCheck;
   static_assert(sizeof(EyeCamera) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::EyeCamera::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::EyeCamera::Update
 // Il2CppName: Update
 template<>
@@ -136,7 +134,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::EyeCamera*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::EyeCamera::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

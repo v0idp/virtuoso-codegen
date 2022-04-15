@@ -66,7 +66,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRManager/PassthroughInitializationState Failed
     static void _set_Failed(::GlobalNamespace::OVRManager_PassthroughInitializationState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OVRManager/PassthroughInitializationState
   #pragma pack(pop)
   static check_size<sizeof(OVRManager_PassthroughInitializationState), 0 + sizeof(int)> __GlobalNamespace_OVRManager_PassthroughInitializationStateSizeCheck;

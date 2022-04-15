@@ -108,19 +108,19 @@ namespace NatSuite::Devices {
       return *reinterpret_cast<::NatSuite::Devices::ICameraDevice*>(this);
     }
     // Get instance field reference: public readonly UnityEngine.WebCamDevice device
-    [[deprecated]] ::UnityEngine::WebCamDevice& dyn_device();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::WebCamDevice& dyn_device();
     // Get instance field reference: private System.ValueTuple`2<System.Int32,System.Int32> <previewResolution>k__BackingField
-    [[deprecated]] ::System::ValueTuple_2<int, int>& dyn_$previewResolution$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::ValueTuple_2<int, int>& dyn_$previewResolution$k__BackingField();
     // Get instance field reference: private System.Int32 <frameRate>k__BackingField
-    [[deprecated]] int& dyn_$frameRate$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$frameRate$k__BackingField();
     // Get instance field reference: private UnityEngine.WebCamTexture webCamTexture
-    [[deprecated]] ::UnityEngine::WebCamTexture*& dyn_webCamTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::WebCamTexture*& dyn_webCamTexture();
     // Get instance field reference: private UnityEngine.Texture2D previewTexture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_previewTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_previewTexture();
     // Get instance field reference: private UnityEngine.Color32[] pixelBuffer
-    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn_pixelBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color32>& dyn_pixelBuffer();
     // Get instance field reference: private NatSuite.Devices.WebCameraDevice/NatSuite.Devices.WebCameraDeviceAttachment attachment
-    [[deprecated]] ::NatSuite::Devices::WebCameraDevice::WebCameraDeviceAttachment*& dyn_attachment();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::WebCameraDevice::WebCameraDeviceAttachment*& dyn_attachment();
     // public System.String get_uniqueID()
     // Offset: 0x950B30
     ::StringW get_uniqueID();

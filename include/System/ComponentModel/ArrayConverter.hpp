@@ -50,7 +50,6 @@ namespace System::ComponentModel {
     // Implemented from: System.ComponentModel.CollectionConverter
     // Base method: System.Void CollectionConverter::.ctor()
     // Base method: System.Void TypeConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ArrayConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::ArrayConverter::.ctor");

@@ -106,11 +106,11 @@ namespace Firebase::Unity {
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.ManualResetEvent> signalDictionary
     static void _set_signalDictionary(::System::Collections::Generic::Dictionary_2<int, ::System::Threading::ManualResetEvent*>* value);
     // Get instance field reference: private System.Collections.Generic.Queue`1<System.Tuple`2<System.Threading.SendOrPostCallback,System.Object>> queue
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*>*& dyn_queue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*>*& dyn_queue();
     // Get instance field reference: private Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.SynchronizationContextBehavoir behavior
-    [[deprecated]] ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_behavior();
+    [[deprecated("Use field access instead!")]] ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_behavior();
     // Get instance field reference: private System.Int32 mainThreadId
-    [[deprecated]] int& dyn_mainThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_mainThreadId();
     // private System.Void .ctor(UnityEngine.GameObject gameObject)
     // Offset: 0x18CADFC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

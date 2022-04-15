@@ -61,7 +61,7 @@ namespace UnityEngine::Experimental::Playables {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // public UnityEngine.Playables.PlayableHandle GetHandle()
     // Offset: 0x1120CE0
     ::UnityEngine::Playables::PlayableHandle GetHandle();

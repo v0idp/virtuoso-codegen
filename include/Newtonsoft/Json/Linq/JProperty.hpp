@@ -73,9 +73,9 @@ namespace Newtonsoft::Json::Linq {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly Newtonsoft.Json.Linq.JProperty/Newtonsoft.Json.Linq.JPropertyList _content
-    [[deprecated]] ::Newtonsoft::Json::Linq::JProperty::JPropertyList*& dyn__content();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JProperty::JPropertyList*& dyn__content();
     // Get instance field reference: private readonly System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // public System.String get_Name()
     // Offset: 0xEE09F4
     ::StringW get_Name();

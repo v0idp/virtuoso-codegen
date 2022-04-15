@@ -92,25 +92,25 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 ConnectedControllers
-    [[deprecated]] uint& dyn_ConnectedControllers();
+    [[deprecated("Use field access instead!")]] uint& dyn_ConnectedControllers();
     // Get instance field reference: public System.UInt32 Buttons
-    [[deprecated]] uint& dyn_Buttons();
+    [[deprecated("Use field access instead!")]] uint& dyn_Buttons();
     // Get instance field reference: public System.UInt32 Touches
-    [[deprecated]] uint& dyn_Touches();
+    [[deprecated("Use field access instead!")]] uint& dyn_Touches();
     // Get instance field reference: public System.UInt32 NearTouches
-    [[deprecated]] uint& dyn_NearTouches();
+    [[deprecated("Use field access instead!")]] uint& dyn_NearTouches();
     // Get instance field reference: public System.Single LIndexTrigger
-    [[deprecated]] float& dyn_LIndexTrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_LIndexTrigger();
     // Get instance field reference: public System.Single RIndexTrigger
-    [[deprecated]] float& dyn_RIndexTrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_RIndexTrigger();
     // Get instance field reference: public System.Single LHandTrigger
-    [[deprecated]] float& dyn_LHandTrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_LHandTrigger();
     // Get instance field reference: public System.Single RHandTrigger
-    [[deprecated]] float& dyn_RHandTrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_RHandTrigger();
     // Get instance field reference: public OVRPlugin/Vector2f LThumbstick
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector2f& dyn_LThumbstick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Vector2f& dyn_LThumbstick();
     // Get instance field reference: public OVRPlugin/Vector2f RThumbstick
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector2f& dyn_RThumbstick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Vector2f& dyn_RThumbstick();
   }; // OVRPlugin/ControllerState
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::ControllerState), 40 + sizeof(::GlobalNamespace::OVRPlugin::Vector2f)> __GlobalNamespace_OVRPlugin_ControllerStateSizeCheck;

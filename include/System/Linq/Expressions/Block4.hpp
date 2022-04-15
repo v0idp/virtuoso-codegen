@@ -70,13 +70,13 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Linq::Expressions::Expression*) == 0x8);
     public:
     // Get instance field reference: private System.Object _arg0
-    [[deprecated]] ::Il2CppObject*& dyn__arg0();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__arg0();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg1
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg1();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg1();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg2
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg2();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg2();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg3
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg3();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg3();
     // System.Void .ctor(System.Linq.Expressions.Expression arg0, System.Linq.Expressions.Expression arg1, System.Linq.Expressions.Expression arg2, System.Linq.Expressions.Expression arg3)
     // Offset: 0x11F491C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

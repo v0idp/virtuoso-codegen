@@ -35,6 +35,13 @@ namespace System::Xml::Schema {
   // [TokenAttribute] Offset: FFFFFFFF
   class SchemaBuilder : public ::Il2CppObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0xDE9070
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SchemaBuilder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SchemaBuilder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SchemaBuilder*, creationType>()));
+    }
     // System.Boolean ProcessElement(System.String prefix, System.String name, System.String ns)
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool ProcessElement(::StringW prefix, ::StringW name, ::StringW ns);
@@ -56,19 +63,14 @@ namespace System::Xml::Schema {
     // System.Void EndChildren()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void EndChildren();
-    // protected System.Void .ctor()
-    // Offset: 0xDE9070
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SchemaBuilder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SchemaBuilder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SchemaBuilder*, creationType>()));
-    }
   }; // System.Xml.Schema.SchemaBuilder
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::Schema::SchemaBuilder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::SchemaBuilder::ProcessElement
 // Il2CppName: ProcessElement
 template<>
@@ -134,7 +136,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::SchemaBuilder*), "EndChildren", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::SchemaBuilder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

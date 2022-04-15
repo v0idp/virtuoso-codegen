@@ -48,7 +48,7 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _edges
-    [[deprecated]] int& dyn__edges();
+    [[deprecated("Use field access instead!")]] int& dyn__edges();
     // private System.Void OnValidate()
     // Offset: 0xAE9164
     void OnValidate();
@@ -64,9 +64,6 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xAE975C
     // Implemented from: VROSC.UI.Meshes.ProceduralMeshData
     // Base method: System.Void ProceduralMeshData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralCircle* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralCircle::.ctor");

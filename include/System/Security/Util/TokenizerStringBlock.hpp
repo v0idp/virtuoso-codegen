@@ -43,9 +43,9 @@ namespace System::Security::Util {
     static_assert(sizeof(::System::Security::Util::TokenizerStringBlock*) == 0x8);
     public:
     // Get instance field reference: System.String[] m_block
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_block();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_block();
     // Get instance field reference: System.Security.Util.TokenizerStringBlock m_next
-    [[deprecated]] ::System::Security::Util::TokenizerStringBlock*& dyn_m_next();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::TokenizerStringBlock*& dyn_m_next();
     // public System.Void .ctor()
     // Offset: 0x12AAE50
     // Implemented from: System.Object

@@ -72,17 +72,17 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: public Newtonsoft.Json.Serialization.JsonProperty Property
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonProperty*& dyn_Property();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonProperty*& dyn_Property();
     // Get instance field reference: public Newtonsoft.Json.Serialization.JsonProperty ConstructorProperty
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonProperty*& dyn_ConstructorProperty();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonProperty*& dyn_ConstructorProperty();
     // Get instance field reference: public System.Nullable`1<Newtonsoft.Json.Serialization.JsonSerializerInternalReader/Newtonsoft.Json.Serialization.PropertyPresence> Presence
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::Serialization::JsonSerializerInternalReader::PropertyPresence>& dyn_Presence();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::Serialization::JsonSerializerInternalReader::PropertyPresence>& dyn_Presence();
     // Get instance field reference: public System.Object Value
-    [[deprecated]] ::Il2CppObject*& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Value();
     // Get instance field reference: public System.Boolean Used
-    [[deprecated]] bool& dyn_Used();
+    [[deprecated("Use field access instead!")]] bool& dyn_Used();
     // public System.Void .ctor(System.String name)
     // Offset: 0x159F844
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

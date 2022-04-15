@@ -120,7 +120,7 @@ namespace System {
     // Set static field: static public readonly System.String FalseString
     static void _set_FalseString(::StringW value);
     // Get instance field reference: private System.Boolean m_value
-    [[deprecated]] bool& dyn_m_value();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_value();
     // static private System.Void .cctor()
     // Offset: 0xFEE5C0
     static void _cctor();

@@ -58,11 +58,11 @@ namespace System::Text {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String strDefault
-    [[deprecated]] ::StringW& dyn_strDefault();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strDefault();
     // Get instance field reference: private System.Int32 fallbackCount
-    [[deprecated]] int& dyn_fallbackCount();
+    [[deprecated("Use field access instead!")]] int& dyn_fallbackCount();
     // Get instance field reference: private System.Int32 fallbackIndex
-    [[deprecated]] int& dyn_fallbackIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_fallbackIndex();
     // public System.Void .ctor(System.Text.DecoderReplacementFallback fallback)
     // Offset: 0x1295314
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

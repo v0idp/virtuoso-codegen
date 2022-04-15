@@ -54,7 +54,7 @@ namespace UnityEngine::Timeline {
     // Set static field: static private readonly System.Int64 kIntervalEnd
     static void _set_kIntervalEnd(int64_t value);
     // Get instance field reference: private UnityEngine.Playables.Playable m_Playable
-    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
     // public System.Void .ctor(UnityEngine.Playables.Playable playable)
     // Offset: 0xC6ECB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

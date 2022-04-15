@@ -96,19 +96,26 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _heightPercentage
-    [[deprecated]] float& dyn__heightPercentage();
+    [[deprecated("Use field access instead!")]] float& dyn__heightPercentage();
     // Get instance field reference: private System.Single _distanceTolerance
-    [[deprecated]] float& dyn__distanceTolerance();
+    [[deprecated("Use field access instead!")]] float& dyn__distanceTolerance();
     // Get instance field reference: private System.Single _moveSpeed
-    [[deprecated]] float& dyn__moveSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__moveSpeed();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
     // Get instance field reference: private UnityEngine.Camera _mainCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__mainCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__mainCamera();
     // Get instance field reference: private UnityEngine.Vector3 _currentPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__currentPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__currentPosition();
     // Get instance field reference: private UnityEngine.Vector3 _targetPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__targetPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__targetPosition();
+    // public System.Void .ctor()
+    // Offset: 0x94D0F4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControlPanel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::ControlPanel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControlPanel*, creationType>()));
+    }
     // private UnityEngine.Vector3 GetCorrectPosition()
     // Offset: 0x94CED8
     ::UnityEngine::Vector3 GetCorrectPosition();
@@ -118,25 +125,16 @@ namespace VROSC::UI {
     // private System.Collections.IEnumerator ModifyPosition(UnityEngine.Vector3 correctPosition)
     // Offset: 0x94D064
     ::System::Collections::IEnumerator* ModifyPosition(::UnityEngine::Vector3 correctPosition);
-    // public System.Void .ctor()
-    // Offset: 0x94D0F4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControlPanel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::ControlPanel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControlPanel*, creationType>()));
-    }
   }; // VROSC.UI.ControlPanel
   #pragma pack(pop)
   static check_size<sizeof(ControlPanel), 68 + sizeof(::UnityEngine::Vector3)> __VROSC_UI_ControlPanelSizeCheck;
   static_assert(sizeof(ControlPanel) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UI::ControlPanel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::ControlPanel::GetCorrectPosition
 // Il2CppName: GetCorrectPosition
 template<>
@@ -162,7 +160,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::ControlPanel*), "ModifyPosition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{correctPosition});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::ControlPanel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -62,11 +62,11 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 NumberOfDiskWithZip64EOCD
-    [[deprecated]] uint& dyn_NumberOfDiskWithZip64EOCD();
+    [[deprecated("Use field access instead!")]] uint& dyn_NumberOfDiskWithZip64EOCD();
     // Get instance field reference: public System.UInt64 OffsetOfZip64EOCD
-    [[deprecated]] uint64_t& dyn_OffsetOfZip64EOCD();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_OffsetOfZip64EOCD();
     // Get instance field reference: public System.UInt32 TotalNumberOfDisks
-    [[deprecated]] uint& dyn_TotalNumberOfDisks();
+    [[deprecated("Use field access instead!")]] uint& dyn_TotalNumberOfDisks();
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, out System.IO.Compression.Zip64EndOfCentralDirectoryLocator zip64EOCDLocator)
     // Offset: 0x1699AC4
     static bool TryReadBlock(::System::IO::BinaryReader* reader, ByRef<::System::IO::Compression::Zip64EndOfCentralDirectoryLocator> zip64EOCDLocator);

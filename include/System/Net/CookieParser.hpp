@@ -49,7 +49,7 @@ namespace System::Net {
       return m_tokenizer;
     }
     // Get instance field reference: private System.Net.CookieTokenizer m_tokenizer
-    [[deprecated]] ::System::Net::CookieTokenizer*& dyn_m_tokenizer();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieTokenizer*& dyn_m_tokenizer();
     // System.Void .ctor(System.String cookieString)
     // Offset: 0x10E8F50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -122,29 +122,29 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.ParticleSystem/UnityEngine.Particle m_Particle
-    [[deprecated]] ::UnityEngine::ParticleSystem::Particle& dyn_m_Particle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem::Particle& dyn_m_Particle();
     // Get instance field reference: private System.Boolean m_PositionSet
-    [[deprecated]] bool& dyn_m_PositionSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PositionSet();
     // Get instance field reference: private System.Boolean m_VelocitySet
-    [[deprecated]] bool& dyn_m_VelocitySet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_VelocitySet();
     // Get instance field reference: private System.Boolean m_AxisOfRotationSet
-    [[deprecated]] bool& dyn_m_AxisOfRotationSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AxisOfRotationSet();
     // Get instance field reference: private System.Boolean m_RotationSet
-    [[deprecated]] bool& dyn_m_RotationSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RotationSet();
     // Get instance field reference: private System.Boolean m_AngularVelocitySet
-    [[deprecated]] bool& dyn_m_AngularVelocitySet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AngularVelocitySet();
     // Get instance field reference: private System.Boolean m_StartSizeSet
-    [[deprecated]] bool& dyn_m_StartSizeSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_StartSizeSet();
     // Get instance field reference: private System.Boolean m_StartColorSet
-    [[deprecated]] bool& dyn_m_StartColorSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_StartColorSet();
     // Get instance field reference: private System.Boolean m_RandomSeedSet
-    [[deprecated]] bool& dyn_m_RandomSeedSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RandomSeedSet();
     // Get instance field reference: private System.Boolean m_StartLifetimeSet
-    [[deprecated]] bool& dyn_m_StartLifetimeSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_StartLifetimeSet();
     // Get instance field reference: private System.Boolean m_MeshIndexSet
-    [[deprecated]] bool& dyn_m_MeshIndexSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_MeshIndexSet();
     // Get instance field reference: private System.Boolean m_ApplyShapeToPosition
-    [[deprecated]] bool& dyn_m_ApplyShapeToPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ApplyShapeToPosition();
     // public System.Void set_position(UnityEngine.Vector3 value)
     // Offset: 0x1900898
     void set_position(::UnityEngine::Vector3 value);

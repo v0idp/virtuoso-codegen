@@ -174,15 +174,15 @@ namespace System::Data::SqlTypes {
     // Set static field: static private readonly System.Int32 s_lcidBinary
     static void _set_s_lcidBinary(int value);
     // Get instance field reference: private System.String m_value
-    [[deprecated]] ::StringW& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_value();
     // Get instance field reference: private System.Globalization.CompareInfo m_cmpInfo
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn_m_cmpInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn_m_cmpInfo();
     // Get instance field reference: private System.Int32 m_lcid
-    [[deprecated]] int& dyn_m_lcid();
+    [[deprecated("Use field access instead!")]] int& dyn_m_lcid();
     // Get instance field reference: private System.Data.SqlTypes.SqlCompareOptions m_flag
-    [[deprecated]] ::System::Data::SqlTypes::SqlCompareOptions& dyn_m_flag();
+    [[deprecated("Use field access instead!")]] ::System::Data::SqlTypes::SqlCompareOptions& dyn_m_flag();
     // Get instance field reference: private System.Boolean m_fNotNull
-    [[deprecated]] bool& dyn_m_fNotNull();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_fNotNull();
     // public System.Boolean get_IsNull()
     // Offset: 0x13DA594
     bool get_IsNull();

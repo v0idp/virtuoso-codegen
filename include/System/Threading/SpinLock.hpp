@@ -56,7 +56,7 @@ namespace System::Threading {
     // Set static field: static private System.Int32 MAXIMUM_WAITERS
     static void _set_MAXIMUM_WAITERS(int value);
     // Get instance field reference: private System.Int32 m_owner
-    [[deprecated]] int& dyn_m_owner();
+    [[deprecated("Use field access instead!")]] int& dyn_m_owner();
     // public System.Boolean get_IsHeldByCurrentThread()
     // Offset: 0x1253210
     bool get_IsHeldByCurrentThread();

@@ -63,7 +63,7 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // System.Void .ctor(System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.ParameterExpression> variables, System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> expressions, System.Type type)
     // Offset: 0xE9A0BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

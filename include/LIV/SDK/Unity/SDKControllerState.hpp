@@ -97,25 +97,25 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 hmdposition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_hmdposition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_hmdposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion hmdrotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_hmdrotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_hmdrotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 calibrationcameraposition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_calibrationcameraposition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_calibrationcameraposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion calibrationcamerarotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_calibrationcamerarotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_calibrationcamerarotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 cameraposition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_cameraposition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_cameraposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion camerarotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_camerarotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_camerarotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 leftposition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_leftposition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_leftposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion leftrotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_leftrotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_leftrotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 rightposition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_rightposition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_rightposition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion rightrotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_rightrotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_rightrotation();
     // static public LIV.SDK.Unity.SDKControllerState get_empty()
     // Offset: 0xDD400C
     static ::LIV::SDK::Unity::SDKControllerState get_empty();

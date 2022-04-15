@@ -47,9 +47,9 @@ namespace Newtonsoft::Json::Bson {
     // Deleting conversion operator: operator ::Newtonsoft::Json::Bson::BsonToken*
     constexpr operator ::Newtonsoft::Json::Bson::BsonToken*() const noexcept = delete;
     // Get instance field reference: private readonly System.Object _value
-    [[deprecated]] ::Il2CppObject*& dyn__value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__value();
     // Get instance field reference: private readonly Newtonsoft.Json.Bson.BsonType _type
-    [[deprecated]] ::Newtonsoft::Json::Bson::BsonType& dyn__type();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Bson::BsonType& dyn__type();
     // public System.Void .ctor(System.Object value, Newtonsoft.Json.Bson.BsonType type)
     // Offset: 0xDB835C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -68,7 +68,7 @@ namespace Microsoft::Win32 {
       return NativeBytesPerCharacter;
     }
     // Get instance field reference: private readonly System.Int32 NativeBytesPerCharacter
-    [[deprecated]] int& dyn_NativeBytesPerCharacter();
+    [[deprecated("Use field access instead!")]] int& dyn_NativeBytesPerCharacter();
     // static private System.Int32 RegCloseKey(System.IntPtr keyHandle)
     // Offset: 0x1211504
     static int RegCloseKey(::System::IntPtr keyHandle);

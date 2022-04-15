@@ -77,15 +77,15 @@ namespace System::Xml::XPath {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::MS::Internal::Xml::Cache::XPathNodeRef, ::MS::Internal::Xml::Cache::XPathNodeRef>*) == 0x8);
     public:
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNode[] pageXmlNmsp
-    [[deprecated]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageXmlNmsp();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_pageXmlNmsp();
     // Get instance field reference: private System.Int32 idxXmlNmsp
-    [[deprecated]] int& dyn_idxXmlNmsp();
+    [[deprecated("Use field access instead!")]] int& dyn_idxXmlNmsp();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Boolean hasLineInfo
-    [[deprecated]] bool& dyn_hasLineInfo();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasLineInfo();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<MS.Internal.Xml.Cache.XPathNodeRef,MS.Internal.Xml.Cache.XPathNodeRef> mapNmsp
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::MS::Internal::Xml::Cache::XPathNodeRef, ::MS::Internal::Xml::Cache::XPathNodeRef>*& dyn_mapNmsp();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::MS::Internal::Xml::Cache::XPathNodeRef, ::MS::Internal::Xml::Cache::XPathNodeRef>*& dyn_mapNmsp();
     // System.Xml.XmlNameTable get_NameTable()
     // Offset: 0xF79BF0
     ::System::Xml::XmlNameTable* get_NameTable();

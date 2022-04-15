@@ -111,25 +111,25 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: private System.Int32 _index
-    [[deprecated]] int& dyn__index();
+    [[deprecated("Use field access instead!")]] int& dyn__index();
     // Get instance field reference: private System.Int32 _globalIndex
-    [[deprecated]] int& dyn__globalIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__globalIndex();
     // Get instance field reference: private System.Int32 _specifiedGlobalIndex
-    [[deprecated]] int& dyn__specifiedGlobalIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__specifiedGlobalIndex();
     // Get instance field reference: private System.Xml.Serialization.TypeData _typeData
-    [[deprecated]] ::System::Xml::Serialization::TypeData*& dyn__typeData();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::TypeData*& dyn__typeData();
     // Get instance field reference: private System.Reflection.MemberInfo _member
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn__member();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn__member();
     // Get instance field reference: private System.Reflection.MemberInfo _specifiedMember
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn__specifiedMember();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn__specifiedMember();
     // Get instance field reference: private System.Reflection.MethodInfo _shouldSerialize
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn__shouldSerialize();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn__shouldSerialize();
     // Get instance field reference: private System.Object _defaultValue
-    [[deprecated]] ::Il2CppObject*& dyn__defaultValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__defaultValue();
     // Get instance field reference: private System.Int32 _flags
-    [[deprecated]] int& dyn__flags();
+    [[deprecated("Use field access instead!")]] int& dyn__flags();
     // public System.String get_Name()
     // Offset: 0x1086F0C
     ::StringW get_Name();
@@ -172,6 +172,13 @@ namespace System::Xml::Serialization {
     // public System.Void set_IsReturnValue(System.Boolean value)
     // Offset: 0x1087830
     void set_IsReturnValue(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x1086E90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlTypeMapMember* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMember::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlTypeMapMember*, creationType>()));
+    }
     // public System.Boolean IsReadOnly(System.Type type)
     // Offset: 0x1086F2C
     bool IsReadOnly(::System::Type* type);
@@ -199,15 +206,6 @@ namespace System::Xml::Serialization {
     // public System.Void SetValueSpecified(System.Object ob, System.Boolean value)
     // Offset: 0x1087B54
     void SetValueSpecified(::Il2CppObject* ob, bool value);
-    // public System.Void .ctor()
-    // Offset: 0x1086E90
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlTypeMapMember* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMember::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlTypeMapMember*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlTypeMapMember
   #pragma pack(pop)
   static check_size<sizeof(XmlTypeMapMember), 80 + sizeof(int)> __System_Xml_Serialization_XmlTypeMapMemberSizeCheck;
@@ -333,6 +331,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlTypeMapMember*), "set_IsReturnValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlTypeMapMember::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlTypeMapMember::IsReadOnly
 // Il2CppName: IsReadOnly
 template<>
@@ -419,7 +421,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlTypeMapMember*), "SetValueSpecified", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ob, value});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlTypeMapMember::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -47,9 +47,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_ClipInstanceID
-    [[deprecated]] int& dyn_m_ClipInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ClipInstanceID();
     // Get instance field reference: private System.Single m_Weight
-    [[deprecated]] float& dyn_m_Weight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Weight();
   }; // UnityEngine.AnimatorClipInfo
   #pragma pack(pop)
   static check_size<sizeof(AnimatorClipInfo), 4 + sizeof(float)> __UnityEngine_AnimatorClipInfoSizeCheck;

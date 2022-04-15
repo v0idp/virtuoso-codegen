@@ -63,10 +63,17 @@ namespace System::ComponentModel {
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.Int32,System.String> s_ErrorMessage
     static void _set_s_ErrorMessage(::System::Collections::Generic::Dictionary_2<int, ::StringW>* value);
     // Get instance field reference: private readonly System.Int32 nativeErrorCode
-    [[deprecated]] int& dyn_nativeErrorCode();
+    [[deprecated("Use field access instead!")]] int& dyn_nativeErrorCode();
     // public System.Int32 get_NativeErrorCode()
     // Offset: 0xC4D820
     int get_NativeErrorCode();
+    // public System.Void .ctor()
+    // Offset: 0xC4D534
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Win32Exception* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Win32Exception::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Win32Exception*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 error)
     // Offset: 0xC4D5A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -81,6 +88,16 @@ namespace System::ComponentModel {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Win32Exception::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Win32Exception*, creationType>(error, message)));
     }
+    // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+    // Offset: 0xC4D78C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Win32Exception* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Win32Exception::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Win32Exception*, creationType>(info, context)));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xC4E5BC
+    static void _cctor();
     // static System.String GetErrorMessage(System.Int32 error)
     // Offset: 0xC4D624
     static ::StringW GetErrorMessage(int error);
@@ -90,34 +107,6 @@ namespace System::ComponentModel {
     // static public System.Void InitializeErrorMessages1()
     // Offset: 0xC4DA8C
     static void InitializeErrorMessages1();
-    // public System.Void .ctor()
-    // Offset: 0xC4D534
-    // Implemented from: System.Runtime.InteropServices.ExternalException
-    // Base method: System.Void ExternalException::.ctor()
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Win32Exception* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Win32Exception::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Win32Exception*, creationType>()));
-    }
-    // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0xC4D78C
-    // Implemented from: System.Runtime.InteropServices.ExternalException
-    // Base method: System.Void ExternalException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Win32Exception* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Win32Exception::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Win32Exception*, creationType>(info, context)));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xC4E5BC
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.cctor()
-    static void _cctor();
     // public override System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0xC4D828
     // Implemented from: System.Exception
@@ -145,6 +134,22 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::ComponentModel::Win32Exception::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::ComponentModel::Win32Exception::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::ComponentModel::Win32Exception::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::ComponentModel::Win32Exception::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::Win32Exception*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::ComponentModel::Win32Exception::GetErrorMessage
 // Il2CppName: GetErrorMessage
 template<>
@@ -168,22 +173,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::ComponentModel::Win32Exception::InitializeErrorMessages1)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::Win32Exception*), "InitializeErrorMessages1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: System::ComponentModel::Win32Exception::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::ComponentModel::Win32Exception::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::ComponentModel::Win32Exception::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::ComponentModel::Win32Exception::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::Win32Exception*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: System::ComponentModel::Win32Exception::GetObjectData

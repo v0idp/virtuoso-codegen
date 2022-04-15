@@ -124,23 +124,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TextSpinner _spinner
-    [[deprecated]] ::VROSC::TextSpinner*& dyn__spinner();
+    [[deprecated("Use field access instead!")]] ::VROSC::TextSpinner*& dyn__spinner();
     // Get instance field reference: private TMPro.TextMeshPro _name
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private System.Single _inputHeightPerTick
-    [[deprecated]] float& dyn__inputHeightPerTick();
+    [[deprecated("Use field access instead!")]] float& dyn__inputHeightPerTick();
     // Get instance field reference: private System.Single _thumbStickInputSpeed
-    [[deprecated]] float& dyn__thumbStickInputSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__thumbStickInputSpeed();
     // Get instance field reference: private System.Boolean _continuous
-    [[deprecated]] bool& dyn__continuous();
+    [[deprecated("Use field access instead!")]] bool& dyn__continuous();
     // Get instance field reference: private UnityEngine.GameObject _visual
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__visual();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__visual();
     // Get instance field reference: private VROSC.UIHelperPositioning _positioning
-    [[deprecated]] ::VROSC::UIHelperPositioning*& dyn__positioning();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHelperPositioning*& dyn__positioning();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private System.Single _thumbstickInput
-    [[deprecated]] float& dyn__thumbstickInput();
+    [[deprecated("Use field access instead!")]] float& dyn__thumbstickInput();
+    // public System.Void .ctor()
+    // Offset: 0x1919090
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UISpinnerHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISpinnerHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UISpinnerHelper*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1918CF4
     void Awake();
@@ -162,25 +169,16 @@ namespace VROSC {
     // private System.Void EvaluateThumbstickInput(VROSC.InputDevice device, UnityEngine.Vector2 vector)
     // Offset: 0x1918FE4
     void EvaluateThumbstickInput(::VROSC::InputDevice* device, ::UnityEngine::Vector2 vector);
-    // public System.Void .ctor()
-    // Offset: 0x1919090
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UISpinnerHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISpinnerHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UISpinnerHelper*, creationType>()));
-    }
   }; // VROSC.UISpinnerHelper
   #pragma pack(pop)
   static check_size<sizeof(UISpinnerHelper), 80 + sizeof(float)> __VROSC_UISpinnerHelperSizeCheck;
   static_assert(sizeof(UISpinnerHelper) == 0x54);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UISpinnerHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UISpinnerHelper::Awake
 // Il2CppName: Awake
 template<>
@@ -244,7 +242,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISpinnerHelper*), "EvaluateThumbstickInput", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{device, vector});
   }
 };
-// Writing MetadataGetter for method: VROSC::UISpinnerHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

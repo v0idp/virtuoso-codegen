@@ -46,9 +46,9 @@ namespace System::IO {
     static_assert(sizeof(::System::Runtime::InteropServices::GCHandle) == 0x4);
     public:
     // Get instance field reference: private System.Byte[] _array
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__array();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__array();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle _pinningHandle
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn__pinningHandle();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn__pinningHandle();
     // System.Void .ctor(System.Byte[] array)
     // Offset: 0x14CFA90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

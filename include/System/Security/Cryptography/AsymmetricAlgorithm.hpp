@@ -59,9 +59,9 @@ namespace System::Security::Cryptography {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: protected System.Int32 KeySizeValue
-    [[deprecated]] int& dyn_KeySizeValue();
+    [[deprecated("Use field access instead!")]] int& dyn_KeySizeValue();
     // Get instance field reference: protected System.Security.Cryptography.KeySizes[] LegalKeySizesValue
-    [[deprecated]] ::ArrayW<::System::Security::Cryptography::KeySizes*>& dyn_LegalKeySizesValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Security::Cryptography::KeySizes*>& dyn_LegalKeySizesValue();
     // public System.Int32 get_KeySize()
     // Offset: 0x1145F18
     int get_KeySize();

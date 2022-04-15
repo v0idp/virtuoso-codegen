@@ -60,21 +60,19 @@ namespace Unity::XR::Oculus {
     // static public System.Void remove_InputFocusLost(System.Action value)
     // Offset: 0x18DBCFC
     static void remove_InputFocusLost(::System::Action* value);
+    // public System.Void .ctor()
+    // Offset: 0x18DBF90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InputFocus* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::InputFocus::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InputFocus*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x18DBF98
     static void _cctor();
     // static System.Void Update()
     // Offset: 0x18DBDFC
     static void Update();
-    // public System.Void .ctor()
-    // Offset: 0x18DBF90
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InputFocus* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::InputFocus::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InputFocus*, creationType>()));
-    }
   }; // Unity.XR.Oculus.InputFocus
   #pragma pack(pop)
 }
@@ -123,6 +121,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::InputFocus*), "remove_InputFocusLost", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Unity::XR::Oculus::InputFocus::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Unity::XR::Oculus::InputFocus::_cctor
 // Il2CppName: .cctor
 template<>
@@ -139,7 +141,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::InputFocus*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Unity::XR::Oculus::InputFocus::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

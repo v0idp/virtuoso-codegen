@@ -108,9 +108,9 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Texture2D[] Textures
-      [[deprecated]] ::ArrayW<::UnityEngine::Texture2D*>& dyn_Textures();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Texture2D*>& dyn_Textures();
       // Get instance field reference: public UnityEngine.Texture2DArray TextureArray
-      [[deprecated]] ::UnityEngine::Texture2DArray*& dyn_TextureArray();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2DArray*& dyn_TextureArray();
     }; // OvrAvatarMaterialManager/AvatarTextureArrayProperties
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarMaterialManager::AvatarTextureArrayProperties), 8 + sizeof(::UnityEngine::Texture2DArray*)> __GlobalNamespace_OvrAvatarMaterialManager_AvatarTextureArrayPropertiesSizeCheck;
@@ -268,17 +268,27 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single LOADING_ANIMATION_DIMMER_MIN
     static void _set_LOADING_ANIMATION_DIMMER_MIN(float value);
     // Get instance field reference: private UnityEngine.Renderer TargetRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_TargetRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_TargetRenderer();
     // Get instance field reference: private OvrAvatarMaterialManager/AvatarTextureArrayProperties[] TextureArrays
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarTextureArrayProperties>& dyn_TextureArrays();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarTextureArrayProperties>& dyn_TextureArrays();
     // Get instance field reference: private readonly System.String[] TextureTypeToShaderProperties
-    [[deprecated]] ::ArrayW<::StringW>& dyn_TextureTypeToShaderProperties();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_TextureTypeToShaderProperties();
     // Get instance field reference: public OvrAvatarMaterialManager/AvatarMaterialConfig LocalAvatarConfig
-    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialConfig*& dyn_LocalAvatarConfig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialConfig*& dyn_LocalAvatarConfig();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Rendering.ReflectionProbeBlendInfo> ReflectionProbes
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Rendering::ReflectionProbeBlendInfo>*& dyn_ReflectionProbes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Rendering::ReflectionProbeBlendInfo>*& dyn_ReflectionProbes();
     // Get instance field reference: private UnityEngine.Shader CombinedShader
-    [[deprecated]] ::UnityEngine::Shader*& dyn_CombinedShader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_CombinedShader();
+    // public System.Void .ctor()
+    // Offset: 0xF8DE90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OvrAvatarMaterialManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarMaterialManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarMaterialManager*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xF8E040
+    static void _cctor();
     // public System.Void CreateTextureArrays()
     // Offset: 0xF8C0EC
     void CreateTextureArrays();
@@ -318,24 +328,6 @@ namespace GlobalNamespace {
     // private System.Collections.IEnumerator RunLoadingAnimation(System.Action callBack)
     // Offset: 0xF8C984
     ::System::Collections::IEnumerator* RunLoadingAnimation(::System::Action* callBack);
-    // public System.Void .ctor()
-    // Offset: 0xF8DE90
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OvrAvatarMaterialManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarMaterialManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarMaterialManager*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xF8E040
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OvrAvatarMaterialManager
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarMaterialManager), 64 + sizeof(::UnityEngine::Shader*)> __GlobalNamespace_OvrAvatarMaterialManagerSizeCheck;
@@ -344,6 +336,18 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OvrAvatarMaterialManager::AvatarTextureArrayProperties, "", "OvrAvatarMaterialManager/AvatarTextureArrayProperties");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMaterialManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMaterialManager::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OvrAvatarMaterialManager::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarMaterialManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMaterialManager::CreateTextureArrays
 // Il2CppName: CreateTextureArrays
 template<>
@@ -457,17 +461,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
   static const MethodInfo* get() {
     static auto* callBack = &::il2cpp_utils::GetClassFromName("System", "Action")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarMaterialManager*), "RunLoadingAnimation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{callBack});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMaterialManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMaterialManager::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OvrAvatarMaterialManager::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarMaterialManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

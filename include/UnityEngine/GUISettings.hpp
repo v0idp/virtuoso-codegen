@@ -64,19 +64,17 @@ namespace UnityEngine {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private System.Boolean m_DoubleClickSelectsWord
-    [[deprecated]] bool& dyn_m_DoubleClickSelectsWord();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DoubleClickSelectsWord();
     // Get instance field reference: private System.Boolean m_TripleClickSelectsLine
-    [[deprecated]] bool& dyn_m_TripleClickSelectsLine();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_TripleClickSelectsLine();
     // Get instance field reference: private UnityEngine.Color m_CursorColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_CursorColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_CursorColor();
     // Get instance field reference: private System.Single m_CursorFlashSpeed
-    [[deprecated]] float& dyn_m_CursorFlashSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CursorFlashSpeed();
     // Get instance field reference: private UnityEngine.Color m_SelectionColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_SelectionColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_SelectionColor();
     // public System.Void .ctor()
     // Offset: 0x187E090
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GUISettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUISettings::.ctor");

@@ -51,7 +51,7 @@ namespace System::Linq::Expressions::Interpreter {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private System.Linq.Expressions.Interpreter.TryFaultHandler _tryHandler
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::TryFaultHandler*& dyn__tryHandler();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::TryFaultHandler*& dyn__tryHandler();
     // System.Void SetTryHandler(System.Linq.Expressions.Interpreter.TryFaultHandler tryHandler)
     // Offset: 0x11FD0A4
     void SetTryHandler(::System::Linq::Expressions::Interpreter::TryFaultHandler* tryHandler);

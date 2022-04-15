@@ -55,7 +55,7 @@ namespace System::Data {
       return Relation;
     }
     // Get instance field reference: private readonly System.Data.DataRelation <Relation>k__BackingField
-    [[deprecated]] ::System::Data::DataRelation*& dyn_$Relation$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRelation*& dyn_$Relation$k__BackingField();
     // System.Data.DataRelation get_Relation()
     // Offset: 0xF9E1FC
     ::System::Data::DataRelation* get_Relation();

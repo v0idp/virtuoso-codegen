@@ -82,7 +82,7 @@ namespace VROSC {
       // Set static field: static public VROSC.DirectionalFilter/VROSC.Space World
       static void _set_World(::VROSC::DirectionalFilter::Space value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.DirectionalFilter/VROSC.Space
     #pragma pack(pop)
     static check_size<sizeof(DirectionalFilter::Space), 0 + sizeof(int)> __VROSC_DirectionalFilter_SpaceSizeCheck;
@@ -120,26 +120,21 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _filterDirection
-    [[deprecated]] ::UnityEngine::Vector3& dyn__filterDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__filterDirection();
     // Get instance field reference: private VROSC.DirectionalFilter/VROSC.Space _relativeTo
-    [[deprecated]] ::VROSC::DirectionalFilter::Space& dyn__relativeTo();
+    [[deprecated("Use field access instead!")]] ::VROSC::DirectionalFilter::Space& dyn__relativeTo();
     // Get instance field reference: private System.Single _filterAngle
-    [[deprecated]] float& dyn__filterAngle();
+    [[deprecated("Use field access instead!")]] float& dyn__filterAngle();
     // Get instance field reference: private System.Boolean _checkFirstFrameOnly
-    [[deprecated]] bool& dyn__checkFirstFrameOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__checkFirstFrameOnly();
     // Get instance field reference: private System.Boolean _firstFramePassed
-    [[deprecated]] bool& dyn__firstFramePassed();
+    [[deprecated("Use field access instead!")]] bool& dyn__firstFramePassed();
     // public System.Void .ctor()
     // Offset: 0x8E48F0
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DirectionalFilter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DirectionalFilter::.ctor");

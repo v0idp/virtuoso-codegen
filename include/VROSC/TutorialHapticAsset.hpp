@@ -80,20 +80,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.HandType _hand
-    [[deprecated]] ::VROSC::HandType& dyn__hand();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private System.Single _frequency
-    [[deprecated]] float& dyn__frequency();
+    [[deprecated("Use field access instead!")]] float& dyn__frequency();
     // Get instance field reference: private System.Single _amplitude
-    [[deprecated]] float& dyn__amplitude();
+    [[deprecated("Use field access instead!")]] float& dyn__amplitude();
     // Get instance field reference: public VROSC.TutorialHapticBehaviour animation
-    [[deprecated]] ::VROSC::TutorialHapticBehaviour*& dyn_animation();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialHapticBehaviour*& dyn_animation();
     // public System.Void .ctor()
     // Offset: 0xA2F4B4
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TutorialHapticAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialHapticAsset::.ctor");

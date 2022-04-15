@@ -110,7 +110,7 @@ namespace System::Globalization {
       // Set static field: static public System.Globalization.TimeSpanParse/System.Globalization.TTT NumOverflow
       static void _set_NumOverflow(::System::Globalization::TimeSpanParse::TTT value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Globalization.TimeSpanParse/System.Globalization.TTT
     #pragma pack(pop)
     static check_size<sizeof(TimeSpanParse::TTT), 0 + sizeof(int)> __System_Globalization_TimeSpanParse_TTTSizeCheck;
@@ -157,13 +157,13 @@ namespace System::Globalization {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Globalization.TimeSpanParse/System.Globalization.TTT ttt
-      [[deprecated]] ::System::Globalization::TimeSpanParse::TTT& dyn_ttt();
+      [[deprecated("Use field access instead!")]] ::System::Globalization::TimeSpanParse::TTT& dyn_ttt();
       // Get instance field reference: System.Int32 num
-      [[deprecated]] int& dyn_num();
+      [[deprecated("Use field access instead!")]] int& dyn_num();
       // Get instance field reference: System.Int32 zeroes
-      [[deprecated]] int& dyn_zeroes();
+      [[deprecated("Use field access instead!")]] int& dyn_zeroes();
       // Get instance field reference: System.String sep
-      [[deprecated]] ::StringW& dyn_sep();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_sep();
       // public System.Void .ctor(System.Int32 number)
       // Offset: 0xE630FC
       TimeSpanToken(int number);

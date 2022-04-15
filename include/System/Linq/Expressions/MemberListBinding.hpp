@@ -50,7 +50,7 @@ namespace System::Linq::Expressions {
       return Initializers;
     }
     // Get instance field reference: private readonly System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ElementInit> <Initializers>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ElementInit*>*& dyn_$Initializers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ElementInit*>*& dyn_$Initializers$k__BackingField();
     // public System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ElementInit> get_Initializers()
     // Offset: 0xE911BC
     ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ElementInit*>* get_Initializers();

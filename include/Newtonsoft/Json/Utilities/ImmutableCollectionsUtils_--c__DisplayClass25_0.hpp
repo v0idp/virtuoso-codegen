@@ -39,25 +39,27 @@ namespace Newtonsoft::Json::Utilities {
       return name;
     }
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
-    // System.Boolean <TryBuildImmutableForDictionaryContract>b__0(Newtonsoft.Json.Utilities.ImmutableCollectionsUtils/Newtonsoft.Json.Utilities.ImmutableCollectionTypeInfo d)
-    // Offset: 0x159EBC4
-    bool $TryBuildImmutableForDictionaryContract$b__0(::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils::ImmutableCollectionTypeInfo* d);
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // public System.Void .ctor()
     // Offset: 0x159EBBC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ImmutableCollectionsUtils::$$c__DisplayClass25_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils::$$c__DisplayClass25_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ImmutableCollectionsUtils::$$c__DisplayClass25_0*, creationType>()));
     }
+    // System.Boolean <TryBuildImmutableForDictionaryContract>b__0(Newtonsoft.Json.Utilities.ImmutableCollectionsUtils/Newtonsoft.Json.Utilities.ImmutableCollectionTypeInfo d)
+    // Offset: 0x159EBC4
+    bool $TryBuildImmutableForDictionaryContract$b__0(::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils::ImmutableCollectionTypeInfo* d);
   }; // Newtonsoft.Json.Utilities.ImmutableCollectionsUtils/Newtonsoft.Json.Utilities.<>c__DisplayClass25_0
   #pragma pack(pop)
   static check_size<sizeof(ImmutableCollectionsUtils::$$c__DisplayClass25_0), 16 + sizeof(::StringW)> __Newtonsoft_Json_Utilities_ImmutableCollectionsUtils_$$c__DisplayClass25_0SizeCheck;
   static_assert(sizeof(ImmutableCollectionsUtils::$$c__DisplayClass25_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ImmutableCollectionsUtils::$$c__DisplayClass25_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ImmutableCollectionsUtils::$$c__DisplayClass25_0::$TryBuildImmutableForDictionaryContract$b__0
 // Il2CppName: <TryBuildImmutableForDictionaryContract>b__0
 template<>
@@ -67,7 +69,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Utilities::ImmutableCollectionsUtils::$$c__DisplayClass25_0*), "<TryBuildImmutableForDictionaryContract>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{d});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ImmutableCollectionsUtils::$$c__DisplayClass25_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

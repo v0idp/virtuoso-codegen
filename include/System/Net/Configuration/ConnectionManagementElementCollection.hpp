@@ -32,8 +32,6 @@ namespace System::Net::Configuration {
     public:
     // public System.Void .ctor()
     // Offset: 0x10E3520
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ConnectionManagementElementCollection* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Configuration::ConnectionManagementElementCollection::.ctor");

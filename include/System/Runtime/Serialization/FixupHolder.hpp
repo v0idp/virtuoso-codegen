@@ -47,11 +47,11 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int64 m_id
-    [[deprecated]] int64_t& dyn_m_id();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_id();
     // Get instance field reference: System.Object m_fixupInfo
-    [[deprecated]] ::Il2CppObject*& dyn_m_fixupInfo();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_fixupInfo();
     // Get instance field reference: System.Int32 m_fixupType
-    [[deprecated]] int& dyn_m_fixupType();
+    [[deprecated("Use field access instead!")]] int& dyn_m_fixupType();
     // System.Void .ctor(System.Int64 id, System.Object fixupInfo, System.Int32 fixupType)
     // Offset: 0x14518B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

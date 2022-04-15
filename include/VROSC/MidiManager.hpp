@@ -121,15 +121,15 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.PatchSettings> OnAnyNotePlayed
     static void _set_OnAnyNotePlayed(::System::Action_2<::VROSC::WidgetSettings::Identifier, ::VROSC::PatchSettings*>* value);
     // Get instance field reference: private VROSC.ExternalSynthesizer _externalSynthesizer
-    [[deprecated]] ::VROSC::ExternalSynthesizer*& dyn__externalSynthesizer();
+    [[deprecated("Use field access instead!")]] ::VROSC::ExternalSynthesizer*& dyn__externalSynthesizer();
     // Get instance field reference: private VROSC.InternalSynthesizer _internalSynthesizer
-    [[deprecated]] ::VROSC::InternalSynthesizer*& dyn__internalSynthesizer();
+    [[deprecated("Use field access instead!")]] ::VROSC::InternalSynthesizer*& dyn__internalSynthesizer();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.MidiManager/VROSC.ActiveNote> _activeNotes
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::MidiManager::ActiveNote*>*& dyn__activeNotes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::MidiManager::ActiveNote*>*& dyn__activeNotes();
     // Get instance field reference: private System.Boolean _retriggerExternalNotes
-    [[deprecated]] bool& dyn__retriggerExternalNotes();
+    [[deprecated("Use field access instead!")]] bool& dyn__retriggerExternalNotes();
     // Get instance field reference: private System.Boolean <IsReady>k__BackingField
-    [[deprecated]] bool& dyn_$IsReady$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsReady$k__BackingField();
     // public VROSC.ExternalSynthesizer get_ExternalSynthesizer()
     // Offset: 0xAC7748
     ::VROSC::ExternalSynthesizer* get_ExternalSynthesizer();
@@ -142,6 +142,13 @@ namespace VROSC {
     // private System.Void set_IsReady(System.Boolean value)
     // Offset: 0xAC7760
     void set_IsReady(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xAC895C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MidiManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MidiManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MidiManager*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0xAC776C
     void Awake();
@@ -187,19 +194,6 @@ namespace VROSC {
     // private System.Void UserDataLoaded(VROSC.UserDataControllers user)
     // Offset: 0xAC8864
     void UserDataLoaded(::VROSC::UserDataControllers* user);
-    // public System.Void .ctor()
-    // Offset: 0xAC895C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MidiManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MidiManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MidiManager*, creationType>()));
-    }
   }; // VROSC.MidiManager
   #pragma pack(pop)
   static check_size<sizeof(MidiManager), 49 + sizeof(bool)> __VROSC_MidiManagerSizeCheck;
@@ -239,6 +233,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::MidiManager*), "set_IsReady", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::MidiManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MidiManager::Awake
 // Il2CppName: Awake
 template<>
@@ -395,7 +393,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::MidiManager*), "UserDataLoaded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{user});
   }
 };
-// Writing MetadataGetter for method: VROSC::MidiManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

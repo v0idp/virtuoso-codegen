@@ -103,27 +103,34 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.OverridePlaybackSettingsUI _overridePlaybackSettingsUI
-    [[deprecated]] ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
     // Get instance field reference: private VROSC.LoopPlayButton _playButton
-    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__playButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayButton*& dyn__playButton();
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverride <PlaybackConfig>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationGroup _loopGroup
-    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__loopGroup();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroup*& dyn__loopGroup();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopPlayer _firstLoopPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__firstLoopPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__firstLoopPlayer();
     // Get instance field reference: private VROSC.LoopPlayer _longestLoopPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__longestLoopPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__longestLoopPlayer();
     // Get instance field reference: private System.Boolean _shouldUpdatePlayback
-    [[deprecated]] bool& dyn__shouldUpdatePlayback();
+    [[deprecated("Use field access instead!")]] bool& dyn__shouldUpdatePlayback();
     // public VROSC.LoopPlaybackConfigOverride get_PlaybackConfig()
     // Offset: 0x1970464
     ::VROSC::LoopPlaybackConfigOverride* get_PlaybackConfig();
     // private System.Void set_PlaybackConfig(VROSC.LoopPlaybackConfigOverride value)
     // Offset: 0x197045C
     void set_PlaybackConfig(::VROSC::LoopPlaybackConfigOverride* value);
+    // public System.Void .ctor()
+    // Offset: 0x19711DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationGroupPlaybackUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationGroupPlaybackUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroupPlaybackUI*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroup loopGroup, VROSC.LoopPlaybackConfigOverride configOverride)
     // Offset: 0x197046C
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationGroup* loopGroup, ::VROSC::LoopPlaybackConfigOverride* configOverride);
@@ -157,19 +164,6 @@ namespace VROSC {
     // public System.Void SetColor(UnityEngine.Color color)
     // Offset: 0x19711C0
     void SetColor(::UnityEngine::Color color);
-    // public System.Void .ctor()
-    // Offset: 0x19711DC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationGroupPlaybackUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationGroupPlaybackUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroupPlaybackUI*, creationType>()));
-    }
   }; // VROSC.LoopStationGroupPlaybackUI
   #pragma pack(pop)
   static check_size<sizeof(LoopStationGroupPlaybackUI), 80 + sizeof(bool)> __VROSC_LoopStationGroupPlaybackUISizeCheck;
@@ -193,6 +187,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroupPlaybackUI*), "set_PlaybackConfig", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStationGroupPlaybackUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationGroupPlaybackUI::Setup
 // Il2CppName: Setup
 template<>
@@ -289,7 +287,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroupPlaybackUI*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationGroupPlaybackUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

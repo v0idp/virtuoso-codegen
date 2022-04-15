@@ -307,7 +307,7 @@ namespace System::Runtime::InteropServices {
     // Set static field: static public System.Runtime.InteropServices.VarEnum VT_BYREF
     static void _set_VT_BYREF(::System::Runtime::InteropServices::VarEnum value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Runtime.InteropServices.VarEnum
   #pragma pack(pop)
   static check_size<sizeof(VarEnum), 0 + sizeof(int)> __System_Runtime_InteropServices_VarEnumSizeCheck;

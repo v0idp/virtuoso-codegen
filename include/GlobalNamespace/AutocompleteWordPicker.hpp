@@ -58,34 +58,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.InputField TextField
-    [[deprecated]] ::UnityEngine::UI::InputField*& dyn_TextField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField*& dyn_TextField();
     // Get instance field reference: public NGramGenerator WordPredictor
-    [[deprecated]] ::GlobalNamespace::NGramGenerator*& dyn_WordPredictor();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NGramGenerator*& dyn_WordPredictor();
+    // public System.Void .ctor()
+    // Offset: 0x9738D4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AutocompleteWordPicker* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AutocompleteWordPicker::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AutocompleteWordPicker*, creationType>()));
+    }
     // public System.Void ReplaceWord(System.String correctWord)
     // Offset: 0x965668
     void ReplaceWord(::StringW correctWord);
     // static public System.String ReverseString(System.String s)
     // Offset: 0x973894
     static ::StringW ReverseString(::StringW s);
-    // public System.Void .ctor()
-    // Offset: 0x9738D4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AutocompleteWordPicker* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AutocompleteWordPicker::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AutocompleteWordPicker*, creationType>()));
-    }
   }; // AutocompleteWordPicker
   #pragma pack(pop)
   static check_size<sizeof(AutocompleteWordPicker), 32 + sizeof(::GlobalNamespace::NGramGenerator*)> __GlobalNamespace_AutocompleteWordPickerSizeCheck;
   static_assert(sizeof(AutocompleteWordPicker) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::AutocompleteWordPicker::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::AutocompleteWordPicker::ReplaceWord
 // Il2CppName: ReplaceWord
 template<>
@@ -104,7 +102,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AutocompleteWordPicker*), "ReverseString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{s});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::AutocompleteWordPicker::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

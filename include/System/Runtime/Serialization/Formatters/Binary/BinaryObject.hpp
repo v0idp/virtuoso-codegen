@@ -50,9 +50,9 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 objectId
-    [[deprecated]] int& dyn_objectId();
+    [[deprecated("Use field access instead!")]] int& dyn_objectId();
     // Get instance field reference: System.Int32 mapId
-    [[deprecated]] int& dyn_mapId();
+    [[deprecated("Use field access instead!")]] int& dyn_mapId();
     // System.Void Set(System.Int32 objectId, System.Int32 mapId)
     // Offset: 0xFE84D4
     void Set(int objectId, int mapId);

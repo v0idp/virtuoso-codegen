@@ -70,27 +70,23 @@ namespace VROSC {
     // Set static field: static public System.String MicrophoneName
     static void _set_MicrophoneName(::StringW value);
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Object> _patches
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Object*>*& dyn__patches();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Object*>*& dyn__patches();
     // public System.Collections.Generic.List`1<UnityEngine.Object> get_Patches()
     // Offset: 0xADD4AC
     ::System::Collections::Generic::List_1<::UnityEngine::Object*>* get_Patches();
+    // public System.Void .ctor()
+    // Offset: 0xADD5DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PatchGroup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PatchGroup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PatchGroup*, creationType>()));
+    }
     // static public System.String GetPatchName(System.Object patch)
     // Offset: 0xADD4B4
     static ::StringW GetPatchName(::Il2CppObject* patch);
     // static public System.Boolean PatchIsDrums(System.Object patch)
     // Offset: 0xADD560
     static bool PatchIsDrums(::Il2CppObject* patch);
-    // public System.Void .ctor()
-    // Offset: 0xADD5DC
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PatchGroup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PatchGroup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PatchGroup*, creationType>()));
-    }
   }; // VROSC.PatchGroup
   #pragma pack(pop)
   static check_size<sizeof(PatchGroup), 24 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::Object*>*)> __VROSC_PatchGroupSizeCheck;
@@ -105,6 +101,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(VROSC::PatchGroup*), "get_Patches", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::PatchGroup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PatchGroup::GetPatchName
 // Il2CppName: GetPatchName
 template<>
@@ -123,7 +123,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::
     return ::il2cpp_utils::FindMethod(classof(VROSC::PatchGroup*), "PatchIsDrums", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{patch});
   }
 };
-// Writing MetadataGetter for method: VROSC::PatchGroup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

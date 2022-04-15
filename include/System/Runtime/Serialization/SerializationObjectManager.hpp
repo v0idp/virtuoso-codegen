@@ -61,11 +61,11 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
     public:
     // Get instance field reference: private System.Collections.Hashtable m_objectSeenTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_m_objectSeenTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_m_objectSeenTable();
     // Get instance field reference: private System.Runtime.Serialization.SerializationEventHandler m_onSerializedHandler
-    [[deprecated]] ::System::Runtime::Serialization::SerializationEventHandler*& dyn_m_onSerializedHandler();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationEventHandler*& dyn_m_onSerializedHandler();
     // Get instance field reference: private System.Runtime.Serialization.StreamingContext m_context
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
     // public System.Void .ctor(System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x117B9E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

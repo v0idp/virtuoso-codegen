@@ -180,39 +180,39 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MovementPlane _movementPlane
-    [[deprecated]] ::VROSC::MovementPlane*& dyn__movementPlane();
+    [[deprecated("Use field access instead!")]] ::VROSC::MovementPlane*& dyn__movementPlane();
     // Get instance field reference: private VROSC.LoopStationButtons _buttons
-    [[deprecated]] ::VROSC::LoopStationButtons*& dyn__buttons();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationButtons*& dyn__buttons();
     // Get instance field reference: private VROSC.LoopStationLoopHandler _loopHandler
-    [[deprecated]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
     // Get instance field reference: private VROSC.LoopStationRecorder _recorder
-    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__recorder();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecorder*& dyn__recorder();
     // Get instance field reference: private VROSC.LoopStationRecordingButton _recordingButton
-    [[deprecated]] ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
     // Get instance field reference: private VROSC.LoopStationGroupCore _groups
-    [[deprecated]] ::VROSC::LoopStationGroupCore*& dyn__groups();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroupCore*& dyn__groups();
     // Get instance field reference: private VROSC.TransformMover _mover
-    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private UnityEngine.Transform _loopLocation
-    [[deprecated]] ::UnityEngine::Transform*& dyn__loopLocation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__loopLocation();
     // Get instance field reference: private UnityEngine.Transform _launchpadParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__launchpadParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__launchpadParent();
     // Get instance field reference: private VROSC.SelectionBar _loopLengthSelectionBar
-    [[deprecated]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
+    [[deprecated("Use field access instead!")]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
     // Get instance field reference: private UnityEngine.GameObject _loopLengthUIParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__loopLengthUIParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__loopLengthUIParent();
     // Get instance field reference: private VROSC.LoopStationSoloHandler _soloHandler
-    [[deprecated]] ::VROSC::LoopStationSoloHandler*& dyn__soloHandler();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationSoloHandler*& dyn__soloHandler();
     // Get instance field reference: public System.Action`1<System.Single> OnBPMSet
-    [[deprecated]] ::System::Action_1<float>*& dyn_OnBPMSet();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<float>*& dyn_OnBPMSet();
     // Get instance field reference: public System.Action`1<System.Single> OnVolumeChanged
-    [[deprecated]] ::System::Action_1<float>*& dyn_OnVolumeChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<float>*& dyn_OnVolumeChanged();
     // Get instance field reference: private System.Int32 <LongestLoopLengthSamples>k__BackingField
-    [[deprecated]] int& dyn_$LongestLoopLengthSamples$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$LongestLoopLengthSamples$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationDataController <Data>k__BackingField
-    [[deprecated]] ::VROSC::LoopStationDataController*& dyn_$Data$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationDataController*& dyn_$Data$k__BackingField();
     // Get instance field reference: private System.Boolean <IsSetup>k__BackingField
-    [[deprecated]] bool& dyn_$IsSetup$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsSetup$k__BackingField();
     // public VROSC.MovementPlane get_MovementPlane()
     // Offset: 0x19BF704
     ::VROSC::MovementPlane* get_MovementPlane();
@@ -249,6 +249,13 @@ namespace VROSC {
     // private System.Void set_IsSetup(System.Boolean value)
     // Offset: 0x19BF75C
     void set_IsSetup(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x19C10FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStation* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStation::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStation*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x19BF768
     void Awake();
@@ -321,19 +328,6 @@ namespace VROSC {
     // private System.Void LoadLaunchPads()
     // Offset: 0x19C0E20
     void LoadLaunchPads();
-    // public System.Void .ctor()
-    // Offset: 0x19C10FC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStation* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStation::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStation*, creationType>()));
-    }
   }; // VROSC.LoopStation
   #pragma pack(pop)
   static check_size<sizeof(LoopStation), 152 + sizeof(bool)> __VROSC_LoopStationSizeCheck;
@@ -439,6 +433,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStation*), "set_IsSetup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStation::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStation::Awake
 // Il2CppName: Awake
 template<>
@@ -644,7 +642,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStation*), "LoadLaunchPads", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStation::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

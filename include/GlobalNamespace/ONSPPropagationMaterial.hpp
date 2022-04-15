@@ -247,7 +247,7 @@ namespace GlobalNamespace {
       // Set static field: static public ONSPPropagationMaterial/Preset WoodOnConcrete
       static void _set_WoodOnConcrete(::GlobalNamespace::ONSPPropagationMaterial::Preset value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // ONSPPropagationMaterial/Preset
     #pragma pack(pop)
     static check_size<sizeof(ONSPPropagationMaterial::Preset), 0 + sizeof(int)> __GlobalNamespace_ONSPPropagationMaterial_PresetSizeCheck;
@@ -290,21 +290,28 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.IntPtr materialHandle
-    [[deprecated]] ::System::IntPtr& dyn_materialHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_materialHandle();
     // Get instance field reference: public ONSPPropagationMaterial/Spectrum absorption
-    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_absorption();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_absorption();
     // Get instance field reference: public ONSPPropagationMaterial/Spectrum transmission
-    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_transmission();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_transmission();
     // Get instance field reference: public ONSPPropagationMaterial/Spectrum scattering
-    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_scattering();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ONSPPropagationMaterial::Spectrum*& dyn_scattering();
     // Get instance field reference: private ONSPPropagationMaterial/Preset preset_
-    [[deprecated]] ::GlobalNamespace::ONSPPropagationMaterial::Preset& dyn_preset_();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ONSPPropagationMaterial::Preset& dyn_preset_();
     // public ONSPPropagationMaterial/Preset get_preset()
     // Offset: 0x1764114
     ::GlobalNamespace::ONSPPropagationMaterial::Preset get_preset();
     // public System.Void set_preset(ONSPPropagationMaterial/Preset value)
     // Offset: 0x176411C
     void set_preset(::GlobalNamespace::ONSPPropagationMaterial::Preset value);
+    // public System.Void .ctor()
+    // Offset: 0x176C3B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ONSPPropagationMaterial* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationMaterial::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagationMaterial*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1764144
     void Start();
@@ -410,19 +417,6 @@ namespace GlobalNamespace {
     // static private System.Void WoodOnConcrete(ref ONSPPropagationMaterial material)
     // Offset: 0x176BEF8
     static void WoodOnConcrete(ByRef<::GlobalNamespace::ONSPPropagationMaterial*> material);
-    // public System.Void .ctor()
-    // Offset: 0x176C3B0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ONSPPropagationMaterial* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationMaterial::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagationMaterial*, creationType>()));
-    }
   }; // ONSPPropagationMaterial
   #pragma pack(pop)
   static check_size<sizeof(ONSPPropagationMaterial), 56 + sizeof(::GlobalNamespace::ONSPPropagationMaterial::Preset)> __GlobalNamespace_ONSPPropagationMaterialSizeCheck;
@@ -448,6 +442,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationMaterial*), "set_preset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationMaterial::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationMaterial::Start
 // Il2CppName: Start
 template<>
@@ -758,7 +756,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(By
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationMaterial*), "WoodOnConcrete", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{material});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationMaterial::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

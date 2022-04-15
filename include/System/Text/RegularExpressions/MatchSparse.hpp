@@ -58,7 +58,7 @@ namespace System::Text::RegularExpressions {
       return caps;
     }
     // Get instance field reference: System.Collections.Hashtable _caps
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__caps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__caps();
     // System.Void .ctor(System.Text.RegularExpressions.Regex regex, System.Collections.Hashtable caps, System.Int32 capcount, System.String text, System.Int32 begpos, System.Int32 len, System.Int32 startpos)
     // Offset: 0x10FA4B8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

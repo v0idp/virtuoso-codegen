@@ -48,11 +48,9 @@ namespace MS::Internal::Xml::Linq::ComponentModel {
       return element;
     }
     // Get instance field reference: private System.Xml.Linq.XElement element
-    [[deprecated]] ::System::Xml::Linq::XElement*& dyn_element();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XElement*& dyn_element();
     // public System.Void .ctor()
     // Offset: 0x185C6E8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XElementXmlPropertyDescriptor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::Linq::ComponentModel::XElementXmlPropertyDescriptor::.ctor");

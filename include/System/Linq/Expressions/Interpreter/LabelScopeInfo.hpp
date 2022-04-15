@@ -66,11 +66,11 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Linq::Expressions::Interpreter::LabelScopeInfo*) == 0x8);
     public:
     // Get instance field reference: private System.Linq.Expressions.Interpreter.HybridReferenceDictionary`2<System.Linq.Expressions.LabelTarget,System.Linq.Expressions.Interpreter.LabelInfo> _labels
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<::System::Linq::Expressions::LabelTarget*, ::System::Linq::Expressions::Interpreter::LabelInfo*>*& dyn__labels();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<::System::Linq::Expressions::LabelTarget*, ::System::Linq::Expressions::Interpreter::LabelInfo*>*& dyn__labels();
     // Get instance field reference: readonly System.Linq.Expressions.Interpreter.LabelScopeKind Kind
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LabelScopeKind& dyn_Kind();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LabelScopeKind& dyn_Kind();
     // Get instance field reference: readonly System.Linq.Expressions.Interpreter.LabelScopeInfo Parent
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LabelScopeInfo*& dyn_Parent();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LabelScopeInfo*& dyn_Parent();
     // System.Boolean get_CanJumpInto()
     // Offset: 0xF20CE0
     bool get_CanJumpInto();

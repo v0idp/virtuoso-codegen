@@ -50,7 +50,7 @@ namespace System::Linq::Expressions {
       return NodeType;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.ExpressionType <NodeType>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::ExpressionType& dyn_$NodeType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::ExpressionType& dyn_$NodeType$k__BackingField();
     // System.Void .ctor(System.Linq.Expressions.ExpressionType nodeType, System.Linq.Expressions.Expression left, System.Linq.Expressions.Expression right)
     // Offset: 0xE90C10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

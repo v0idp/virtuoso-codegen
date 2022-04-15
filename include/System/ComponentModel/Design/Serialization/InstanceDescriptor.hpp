@@ -59,11 +59,11 @@ namespace System::ComponentModel::Design::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Reflection.MemberInfo member
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn_member();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn_member();
     // Get instance field reference: private System.Collections.ICollection arguments
-    [[deprecated]] ::System::Collections::ICollection*& dyn_arguments();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ICollection*& dyn_arguments();
     // Get instance field reference: private System.Boolean isComplete
-    [[deprecated]] bool& dyn_isComplete();
+    [[deprecated("Use field access instead!")]] bool& dyn_isComplete();
     // public System.Void .ctor(System.Reflection.MemberInfo member, System.Collections.ICollection arguments)
     // Offset: 0x10F4E80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

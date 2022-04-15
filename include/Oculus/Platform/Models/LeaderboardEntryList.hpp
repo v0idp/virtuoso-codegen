@@ -49,7 +49,7 @@ namespace Oculus::Platform::Models {
       return TotalCount;
     }
     // Get instance field reference: public readonly System.UInt64 TotalCount
-    [[deprecated]] uint64_t& dyn_TotalCount();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_TotalCount();
     // public System.Void .ctor(System.IntPtr a)
     // Offset: 0xB3B528
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

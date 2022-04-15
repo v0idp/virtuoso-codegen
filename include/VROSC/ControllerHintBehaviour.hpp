@@ -117,38 +117,35 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteboardController
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__noteboardController();
     // Get instance field reference: private VROSC.HighlightControllerComponents _highlight
-    [[deprecated]] ::VROSC::HighlightControllerComponents*& dyn__highlight();
+    [[deprecated("Use field access instead!")]] ::VROSC::HighlightControllerComponents*& dyn__highlight();
     // Get instance field reference: private VROSC.TouchableObjectsController _touchables
-    [[deprecated]] ::VROSC::TouchableObjectsController*& dyn__touchables();
+    [[deprecated("Use field access instead!")]] ::VROSC::TouchableObjectsController*& dyn__touchables();
     // Get instance field reference: public VROSC.HighlightControllerComponents/VROSC.Component component
-    [[deprecated]] ::VROSC::HighlightControllerComponents::Component& dyn_component();
+    [[deprecated("Use field access instead!")]] ::VROSC::HighlightControllerComponents::Component& dyn_component();
     // Get instance field reference: public System.Single Visible
-    [[deprecated]] float& dyn_Visible();
+    [[deprecated("Use field access instead!")]] float& dyn_Visible();
     // Get instance field reference: public UnityEngine.Color FromColor
-    [[deprecated]] ::UnityEngine::Color& dyn_FromColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_FromColor();
     // Get instance field reference: public UnityEngine.Color ToColor
-    [[deprecated]] ::UnityEngine::Color& dyn_ToColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_ToColor();
     // Get instance field reference: public VROSC.NoteBoard/VROSC.PlayAxis Axis
-    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
     // Get instance field reference: public System.Boolean UpdateAllTouchables
-    [[deprecated]] bool& dyn_UpdateAllTouchables();
+    [[deprecated("Use field access instead!")]] bool& dyn_UpdateAllTouchables();
     // Get instance field reference: public System.Boolean OnlyHovering
-    [[deprecated]] bool& dyn_OnlyHovering();
-    // public System.Void Setup(VROSC.HighlightControllerComponents highlight, VROSC.TouchableObjectsController touchables)
-    // Offset: 0x94E268
-    void Setup(::VROSC::HighlightControllerComponents* highlight, ::VROSC::TouchableObjectsController* touchables);
+    [[deprecated("Use field access instead!")]] bool& dyn_OnlyHovering();
     // public System.Void .ctor()
     // Offset: 0x94E380
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ControllerHintBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerHintBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ControllerHintBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.HighlightControllerComponents highlight, VROSC.TouchableObjectsController touchables)
+    // Offset: 0x94E268
+    void Setup(::VROSC::HighlightControllerComponents* highlight, ::VROSC::TouchableObjectsController* touchables);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x94E288
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -160,6 +157,10 @@ namespace VROSC {
   static_assert(sizeof(ControllerHintBehaviour) == 0x56);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ControllerHintBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ControllerHintBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -170,10 +171,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControllerHintBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{highlight, touchables});
   }
 };
-// Writing MetadataGetter for method: VROSC::ControllerHintBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ControllerHintBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

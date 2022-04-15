@@ -125,9 +125,9 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlInt32 MaxValue
     static void _set_MaxValue(::System::Data::SqlTypes::SqlInt32 value);
     // Get instance field reference: private System.Boolean m_fNotNull
-    [[deprecated]] bool& dyn_m_fNotNull();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_fNotNull();
     // Get instance field reference: private System.Int32 m_value
-    [[deprecated]] int& dyn_m_value();
+    [[deprecated("Use field access instead!")]] int& dyn_m_value();
     // public System.Boolean get_IsNull()
     // Offset: 0x13C6BAC
     bool get_IsNull();

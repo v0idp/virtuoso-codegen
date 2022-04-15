@@ -48,21 +48,19 @@ namespace MS::Internal::Xml::Linq::ComponentModel {
       return attribute;
     }
     // Get instance field reference: private System.Xml.Linq.XAttribute attribute
-    [[deprecated]] ::System::Xml::Linq::XAttribute*& dyn_attribute();
-    // public override System.Boolean get_IsReadOnly()
-    // Offset: 0x1855F5C
-    // Implemented from: MS.Internal.Xml.Linq.ComponentModel.XPropertyDescriptor`2
-    // Base method: System.Boolean XPropertyDescriptor_2::get_IsReadOnly()
-    bool get_IsReadOnly();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XAttribute*& dyn_attribute();
     // public System.Void .ctor()
     // Offset: 0x1855EF8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XAttributeValuePropertyDescriptor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::Linq::ComponentModel::XAttributeValuePropertyDescriptor::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XAttributeValuePropertyDescriptor*, creationType>()));
     }
+    // public override System.Boolean get_IsReadOnly()
+    // Offset: 0x1855F5C
+    // Implemented from: MS.Internal.Xml.Linq.ComponentModel.XPropertyDescriptor`2
+    // Base method: System.Boolean XPropertyDescriptor_2::get_IsReadOnly()
+    bool get_IsReadOnly();
     // public override System.Object GetValue(System.Object component)
     // Offset: 0x1855F64
     // Implemented from: System.ComponentModel.PropertyDescriptor
@@ -77,6 +75,10 @@ namespace MS::Internal::Xml::Linq::ComponentModel {
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: MS::Internal::Xml::Linq::ComponentModel::XAttributeValuePropertyDescriptor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: MS::Internal::Xml::Linq::ComponentModel::XAttributeValuePropertyDescriptor::get_IsReadOnly
 // Il2CppName: get_IsReadOnly
 template<>
@@ -85,10 +87,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (MS::I
     return ::il2cpp_utils::FindMethod(classof(MS::Internal::Xml::Linq::ComponentModel::XAttributeValuePropertyDescriptor*), "get_IsReadOnly", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: MS::Internal::Xml::Linq::ComponentModel::XAttributeValuePropertyDescriptor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: MS::Internal::Xml::Linq::ComponentModel::XAttributeValuePropertyDescriptor::GetValue
 // Il2CppName: GetValue
 template<>

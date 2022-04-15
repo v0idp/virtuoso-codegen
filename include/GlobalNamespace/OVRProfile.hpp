@@ -62,9 +62,6 @@ namespace GlobalNamespace {
     ::GlobalNamespace::OVRProfile::State get_state();
     // public System.Void .ctor()
     // Offset: 0xE7860C
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRProfile* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRProfile::.ctor");

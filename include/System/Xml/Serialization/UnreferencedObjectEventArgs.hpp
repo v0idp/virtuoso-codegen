@@ -44,9 +44,9 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Object o
-    [[deprecated]] ::Il2CppObject*& dyn_o();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_o();
     // Get instance field reference: private System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // public System.Void .ctor(System.Object o, System.String id)
     // Offset: 0xF784A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

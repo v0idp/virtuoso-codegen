@@ -59,13 +59,13 @@ namespace System::Net {
     // Set static field: static private System.String[] keywords
     static void _set_keywords(::ArrayW<::StringW> value);
     // Get instance field reference: private System.String header
-    [[deprecated]] ::StringW& dyn_header();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_header();
     // Get instance field reference: private System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // Get instance field reference: private System.Int32 pos
-    [[deprecated]] int& dyn_pos();
+    [[deprecated("Use field access instead!")]] int& dyn_pos();
     // Get instance field reference: private System.String[] values
-    [[deprecated]] ::ArrayW<::StringW>& dyn_values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_values();
     // public System.String get_Realm()
     // Offset: 0xEFA568
     ::StringW get_Realm();

@@ -47,9 +47,9 @@ namespace System::Text {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 bits
-    [[deprecated]] int& dyn_bits();
+    [[deprecated("Use field access instead!")]] int& dyn_bits();
     // Get instance field reference: System.Int32 bitCount
-    [[deprecated]] int& dyn_bitCount();
+    [[deprecated("Use field access instead!")]] int& dyn_bitCount();
     // public System.Void .ctor(System.Text.UTF7Encoding encoding)
     // Offset: 0x189AD00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

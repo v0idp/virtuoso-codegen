@@ -73,11 +73,11 @@ namespace Newtonsoft::Json::Serialization {
       return *reinterpret_cast<::System::Runtime::Serialization::IFormatterConverter*>(this);
     }
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.JsonSerializerInternalReader _reader
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonSerializerInternalReader*& dyn__reader();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonSerializerInternalReader*& dyn__reader();
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.JsonISerializableContract _contract
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonISerializableContract*& dyn__contract();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonISerializableContract*& dyn__contract();
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.JsonProperty _member
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonProperty*& dyn__member();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonProperty*& dyn__member();
     // public System.Void .ctor(Newtonsoft.Json.Serialization.JsonSerializerInternalReader reader, Newtonsoft.Json.Serialization.JsonISerializableContract contract, Newtonsoft.Json.Serialization.JsonProperty member)
     // Offset: 0xEF5F80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -45,27 +45,29 @@ namespace Firebase::Extensions {
     static_assert(sizeof(::Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0*) == 0x8);
     public:
     // Get instance field reference: System.Threading.Tasks.Task t
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_t();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_t();
     // Get instance field reference: Firebase.Extensions.TaskExtension/Firebase.Extensions.<ContinueWithOnMainThread>c__AnonStorey0 <>f__ref$0
-    [[deprecated]] ::Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0*& dyn_$$f__ref$0();
-    // System.Boolean <>m__0()
-    // Offset: 0x190CB6C
-    bool $$m__0();
+    [[deprecated("Use field access instead!")]] ::Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0*& dyn_$$f__ref$0();
     // public System.Void .ctor()
     // Offset: 0x190CB64
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1*, creationType>()));
     }
+    // System.Boolean <>m__0()
+    // Offset: 0x190CB6C
+    bool $$m__0();
   }; // Firebase.Extensions.TaskExtension/Firebase.Extensions.<ContinueWithOnMainThread>c__AnonStorey0/Firebase.Extensions.<ContinueWithOnMainThread>c__AnonStorey1
   #pragma pack(pop)
   static check_size<sizeof(TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1), 24 + sizeof(::Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0*)> __Firebase_Extensions_TaskExtension_$ContinueWithOnMainThread$c__AnonStorey0_$ContinueWithOnMainThread$c__AnonStorey1SizeCheck;
   static_assert(sizeof(TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -74,7 +76,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Extensions::TaskExtension::$ContinueWithOnMainThread$c__AnonStorey0::$ContinueWithOnMainThread$c__AnonStorey1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

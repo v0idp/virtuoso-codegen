@@ -44,9 +44,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 start
-    [[deprecated]] int& dyn_start();
+    [[deprecated("Use field access instead!")]] int& dyn_start();
     // Get instance field reference: public System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // public System.Int32 get_end()
     // Offset: 0xBC9568
     int get_end();

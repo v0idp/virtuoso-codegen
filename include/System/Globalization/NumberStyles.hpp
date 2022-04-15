@@ -146,7 +146,7 @@ namespace System::Globalization {
     // Set static field: static public System.Globalization.NumberStyles Any
     static void _set_Any(::System::Globalization::NumberStyles value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Globalization.NumberStyles
   #pragma pack(pop)
   static check_size<sizeof(NumberStyles), 0 + sizeof(int)> __System_Globalization_NumberStylesSizeCheck;

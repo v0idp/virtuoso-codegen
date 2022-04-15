@@ -66,7 +66,7 @@ namespace System::Data {
     // Set static field: static public System.Data.DataSetDateTime Utc
     static void _set_Utc(::System::Data::DataSetDateTime value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Data.DataSetDateTime
   #pragma pack(pop)
   static check_size<sizeof(DataSetDateTime), 0 + sizeof(int)> __System_Data_DataSetDateTimeSizeCheck;

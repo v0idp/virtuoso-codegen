@@ -62,11 +62,11 @@ namespace System::Xml::Linq {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 scope
-    [[deprecated]] int& dyn_scope();
+    [[deprecated("Use field access instead!")]] int& dyn_scope();
     // Get instance field reference: private System.Xml.Linq.NamespaceResolver/System.Xml.Linq.NamespaceDeclaration declaration
-    [[deprecated]] ::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration*& dyn_declaration();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration*& dyn_declaration();
     // Get instance field reference: private System.Xml.Linq.NamespaceResolver/System.Xml.Linq.NamespaceDeclaration rover
-    [[deprecated]] ::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration*& dyn_rover();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration*& dyn_rover();
     // public System.Void PushScope()
     // Offset: 0x1853D88
     void PushScope();

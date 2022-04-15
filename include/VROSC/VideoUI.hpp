@@ -159,33 +159,40 @@ namespace VROSC {
     // Set static field: static public System.Action OnClose
     static void _set_OnClose(::System::Action* value);
     // Get instance field reference: private UnityEngine.Video.VideoPlayer _videoPlayer
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _playPauseButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__playPauseButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__playPauseButton();
     // Get instance field reference: private VROSC.UIButton _videoAreaButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__videoAreaButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__videoAreaButton();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__playIcon();
     // Get instance field reference: private UnityEngine.GameObject _pauseIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__pauseIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__pauseIcon();
     // Get instance field reference: private UnityEngine.GameObject _loadingIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__loadingIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__loadingIcon();
     // Get instance field reference: private UnityEngine.GameObject _videoSurface
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__videoSurface();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__videoSurface();
     // Get instance field reference: private TMPro.TextMeshPro _header
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__header();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__header();
     // Get instance field reference: private TMPro.TextMeshPro _timeText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__timeText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__timeText();
     // Get instance field reference: private UnityEngine.AudioSource _audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__audioSource();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.TimeSlider _timeSlider
-    [[deprecated]] ::VROSC::TimeSlider*& dyn__timeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::TimeSlider*& dyn__timeSlider();
     // Get instance field reference: private System.Boolean _shouldPlay
-    [[deprecated]] bool& dyn__shouldPlay();
+    [[deprecated("Use field access instead!")]] bool& dyn__shouldPlay();
+    // public System.Void .ctor()
+    // Offset: 0x19230A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VideoUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VideoUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VideoUI*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x1922CE0
     void Awake();
@@ -219,25 +226,16 @@ namespace VROSC {
     // private System.Void EndReached(UnityEngine.Video.VideoPlayer videoPlayer)
     // Offset: 0x192309C
     void EndReached(::UnityEngine::Video::VideoPlayer* videoPlayer);
-    // public System.Void .ctor()
-    // Offset: 0x19230A0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VideoUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VideoUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VideoUI*, creationType>()));
-    }
   }; // VROSC.VideoUI
   #pragma pack(pop)
   static check_size<sizeof(VideoUI), 128 + sizeof(bool)> __VROSC_VideoUISizeCheck;
   static_assert(sizeof(VideoUI) == 0x81);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::VideoUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::VideoUI::Awake
 // Il2CppName: Awake
 template<>
@@ -331,7 +329,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::VideoUI*), "EndReached", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{videoPlayer});
   }
 };
-// Writing MetadataGetter for method: VROSC::VideoUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

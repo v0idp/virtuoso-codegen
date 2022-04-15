@@ -285,67 +285,67 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._AddApplicationManifest AddApplicationManifest
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_AddApplicationManifest*& dyn_AddApplicationManifest();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_AddApplicationManifest*& dyn_AddApplicationManifest();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._RemoveApplicationManifest RemoveApplicationManifest
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_RemoveApplicationManifest*& dyn_RemoveApplicationManifest();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_RemoveApplicationManifest*& dyn_RemoveApplicationManifest();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._IsApplicationInstalled IsApplicationInstalled
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_IsApplicationInstalled*& dyn_IsApplicationInstalled();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_IsApplicationInstalled*& dyn_IsApplicationInstalled();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationCount GetApplicationCount
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationCount*& dyn_GetApplicationCount();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationCount*& dyn_GetApplicationCount();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationKeyByIndex GetApplicationKeyByIndex
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationKeyByIndex*& dyn_GetApplicationKeyByIndex();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationKeyByIndex*& dyn_GetApplicationKeyByIndex();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationKeyByProcessId GetApplicationKeyByProcessId
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationKeyByProcessId*& dyn_GetApplicationKeyByProcessId();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationKeyByProcessId*& dyn_GetApplicationKeyByProcessId();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._LaunchApplication LaunchApplication
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_LaunchApplication*& dyn_LaunchApplication();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_LaunchApplication*& dyn_LaunchApplication();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._LaunchTemplateApplication LaunchTemplateApplication
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_LaunchTemplateApplication*& dyn_LaunchTemplateApplication();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_LaunchTemplateApplication*& dyn_LaunchTemplateApplication();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._LaunchApplicationFromMimeType LaunchApplicationFromMimeType
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_LaunchApplicationFromMimeType*& dyn_LaunchApplicationFromMimeType();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_LaunchApplicationFromMimeType*& dyn_LaunchApplicationFromMimeType();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._LaunchDashboardOverlay LaunchDashboardOverlay
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_LaunchDashboardOverlay*& dyn_LaunchDashboardOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_LaunchDashboardOverlay*& dyn_LaunchDashboardOverlay();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._CancelApplicationLaunch CancelApplicationLaunch
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_CancelApplicationLaunch*& dyn_CancelApplicationLaunch();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_CancelApplicationLaunch*& dyn_CancelApplicationLaunch();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._IdentifyApplication IdentifyApplication
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_IdentifyApplication*& dyn_IdentifyApplication();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_IdentifyApplication*& dyn_IdentifyApplication();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationProcessId GetApplicationProcessId
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationProcessId*& dyn_GetApplicationProcessId();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationProcessId*& dyn_GetApplicationProcessId();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationsErrorNameFromEnum GetApplicationsErrorNameFromEnum
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationsErrorNameFromEnum*& dyn_GetApplicationsErrorNameFromEnum();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationsErrorNameFromEnum*& dyn_GetApplicationsErrorNameFromEnum();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationPropertyString GetApplicationPropertyString
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationPropertyString*& dyn_GetApplicationPropertyString();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationPropertyString*& dyn_GetApplicationPropertyString();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationPropertyBool GetApplicationPropertyBool
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationPropertyBool*& dyn_GetApplicationPropertyBool();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationPropertyBool*& dyn_GetApplicationPropertyBool();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationPropertyUint64 GetApplicationPropertyUint64
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationPropertyUint64*& dyn_GetApplicationPropertyUint64();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationPropertyUint64*& dyn_GetApplicationPropertyUint64();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._SetApplicationAutoLaunch SetApplicationAutoLaunch
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_SetApplicationAutoLaunch*& dyn_SetApplicationAutoLaunch();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_SetApplicationAutoLaunch*& dyn_SetApplicationAutoLaunch();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationAutoLaunch GetApplicationAutoLaunch
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationAutoLaunch*& dyn_GetApplicationAutoLaunch();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationAutoLaunch*& dyn_GetApplicationAutoLaunch();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._SetDefaultApplicationForMimeType SetDefaultApplicationForMimeType
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_SetDefaultApplicationForMimeType*& dyn_SetDefaultApplicationForMimeType();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_SetDefaultApplicationForMimeType*& dyn_SetDefaultApplicationForMimeType();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetDefaultApplicationForMimeType GetDefaultApplicationForMimeType
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetDefaultApplicationForMimeType*& dyn_GetDefaultApplicationForMimeType();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetDefaultApplicationForMimeType*& dyn_GetDefaultApplicationForMimeType();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationSupportedMimeTypes GetApplicationSupportedMimeTypes
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationSupportedMimeTypes*& dyn_GetApplicationSupportedMimeTypes();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationSupportedMimeTypes*& dyn_GetApplicationSupportedMimeTypes();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationsThatSupportMimeType GetApplicationsThatSupportMimeType
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationsThatSupportMimeType*& dyn_GetApplicationsThatSupportMimeType();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationsThatSupportMimeType*& dyn_GetApplicationsThatSupportMimeType();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationLaunchArguments GetApplicationLaunchArguments
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationLaunchArguments*& dyn_GetApplicationLaunchArguments();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationLaunchArguments*& dyn_GetApplicationLaunchArguments();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetStartingApplication GetStartingApplication
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetStartingApplication*& dyn_GetStartingApplication();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetStartingApplication*& dyn_GetStartingApplication();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetTransitionState GetTransitionState
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetTransitionState*& dyn_GetTransitionState();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetTransitionState*& dyn_GetTransitionState();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._PerformApplicationPrelaunchCheck PerformApplicationPrelaunchCheck
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_PerformApplicationPrelaunchCheck*& dyn_PerformApplicationPrelaunchCheck();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_PerformApplicationPrelaunchCheck*& dyn_PerformApplicationPrelaunchCheck();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetApplicationsTransitionStateNameFromEnum GetApplicationsTransitionStateNameFromEnum
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetApplicationsTransitionStateNameFromEnum*& dyn_GetApplicationsTransitionStateNameFromEnum();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetApplicationsTransitionStateNameFromEnum*& dyn_GetApplicationsTransitionStateNameFromEnum();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._IsQuitUserPromptRequested IsQuitUserPromptRequested
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_IsQuitUserPromptRequested*& dyn_IsQuitUserPromptRequested();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_IsQuitUserPromptRequested*& dyn_IsQuitUserPromptRequested();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._LaunchInternalProcess LaunchInternalProcess
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_LaunchInternalProcess*& dyn_LaunchInternalProcess();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_LaunchInternalProcess*& dyn_LaunchInternalProcess();
     // Get instance field reference: OVR.OpenVR.IVRApplications/OVR.OpenVR._GetCurrentSceneProcessId GetCurrentSceneProcessId
-    [[deprecated]] ::OVR::OpenVR::IVRApplications::_GetCurrentSceneProcessId*& dyn_GetCurrentSceneProcessId();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVRApplications::_GetCurrentSceneProcessId*& dyn_GetCurrentSceneProcessId();
   }; // OVR.OpenVR.IVRApplications
   #pragma pack(pop)
   static check_size<sizeof(IVRApplications), 240 + sizeof(::OVR::OpenVR::IVRApplications::_GetCurrentSceneProcessId*)> __OVR_OpenVR_IVRApplicationsSizeCheck;

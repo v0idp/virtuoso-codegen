@@ -50,7 +50,7 @@ namespace System {
       return m_paramName;
     }
     // Get instance field reference: private System.String m_paramName
-    [[deprecated]] ::StringW& dyn_m_paramName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_paramName();
     // public System.Void .ctor(System.String message, System.String paramName, System.Exception innerException)
     // Offset: 0x113DBC0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

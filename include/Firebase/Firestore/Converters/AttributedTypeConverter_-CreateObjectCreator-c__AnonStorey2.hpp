@@ -44,25 +44,27 @@ namespace Firebase::Firestore::Converters {
       return ctor;
     }
     // Get instance field reference: System.Reflection.ConstructorInfo ctor
-    [[deprecated]] ::System::Reflection::ConstructorInfo*& dyn_ctor();
-    // System.Object <>m__0()
-    // Offset: 0xD66904
-    ::Il2CppObject* $$m__0();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::ConstructorInfo*& dyn_ctor();
     // public System.Void .ctor()
     // Offset: 0xD49634
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Converters::AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2*, creationType>()));
     }
+    // System.Object <>m__0()
+    // Offset: 0xD66904
+    ::Il2CppObject* $$m__0();
   }; // Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.<CreateObjectCreator>c__AnonStorey2
   #pragma pack(pop)
   static check_size<sizeof(AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2), 16 + sizeof(::System::Reflection::ConstructorInfo*)> __Firebase_Firestore_Converters_AttributedTypeConverter_$CreateObjectCreator$c__AnonStorey2SizeCheck;
   static_assert(sizeof(AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::Converters::AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::Converters::AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Converters::AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::Converters::AttributedTypeConverter::$CreateObjectCreator$c__AnonStorey2::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

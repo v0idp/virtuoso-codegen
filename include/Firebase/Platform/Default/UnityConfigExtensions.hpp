@@ -45,7 +45,6 @@ namespace Firebase::Platform::Default {
     // Offset: 0x18CAC0C
     // Implemented from: Firebase.Platform.Default.AppConfigExtensions
     // Base method: System.Void AppConfigExtensions::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnityConfigExtensions* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::Default::UnityConfigExtensions::.ctor");

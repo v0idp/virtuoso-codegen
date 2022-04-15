@@ -721,101 +721,101 @@ namespace GlobalNamespace {
     // Set static field: static private OVRManager/PassthroughInitializationState _passthroughInitializationState
     static void _set__passthroughInitializationState(::GlobalNamespace::OVRManager_PassthroughInitializationState value);
     // Get instance field reference: private System.Collections.Generic.IEnumerable`1<UnityEngine.Camera> disabledCameras
-    [[deprecated]] ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Camera*>*& dyn_disabledCameras();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Camera*>*& dyn_disabledCameras();
     // Get instance field reference: private System.Single prevTimeScale
-    [[deprecated]] float& dyn_prevTimeScale();
+    [[deprecated("Use field access instead!")]] float& dyn_prevTimeScale();
     // Get instance field reference: public System.Boolean useRecommendedMSAALevel
-    [[deprecated]] bool& dyn_useRecommendedMSAALevel();
+    [[deprecated("Use field access instead!")]] bool& dyn_useRecommendedMSAALevel();
     // Get instance field reference: private System.Boolean _monoscopic
-    [[deprecated]] bool& dyn__monoscopic();
+    [[deprecated("Use field access instead!")]] bool& dyn__monoscopic();
     // Get instance field reference: private OVRManager/ColorSpace _colorGamut
-    [[deprecated]] ::GlobalNamespace::OVRManager_ColorSpace& dyn__colorGamut();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_ColorSpace& dyn__colorGamut();
     // Get instance field reference: public System.Single minRenderScale
-    [[deprecated]] float& dyn_minRenderScale();
+    [[deprecated("Use field access instead!")]] float& dyn_minRenderScale();
     // Get instance field reference: public System.Single maxRenderScale
-    [[deprecated]] float& dyn_maxRenderScale();
+    [[deprecated("Use field access instead!")]] float& dyn_maxRenderScale();
     // Get instance field reference: private UnityEngine.Vector3 _headPoseRelativeOffsetRotation
-    [[deprecated]] ::UnityEngine::Vector3& dyn__headPoseRelativeOffsetRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__headPoseRelativeOffsetRotation();
     // Get instance field reference: private UnityEngine.Vector3 _headPoseRelativeOffsetTranslation
-    [[deprecated]] ::UnityEngine::Vector3& dyn__headPoseRelativeOffsetTranslation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__headPoseRelativeOffsetTranslation();
     // Get instance field reference: public System.Int32 profilerTcpPort
-    [[deprecated]] int& dyn_profilerTcpPort();
+    [[deprecated("Use field access instead!")]] int& dyn_profilerTcpPort();
     // Get instance field reference: public System.Boolean expandMixedRealityCapturePropertySheet
-    [[deprecated]] bool& dyn_expandMixedRealityCapturePropertySheet();
+    [[deprecated("Use field access instead!")]] bool& dyn_expandMixedRealityCapturePropertySheet();
     // Get instance field reference: public System.Boolean enableMixedReality
-    [[deprecated]] bool& dyn_enableMixedReality();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableMixedReality();
     // Get instance field reference: public OVRManager/CompositionMethod compositionMethod
-    [[deprecated]] ::GlobalNamespace::OVRManager_CompositionMethod& dyn_compositionMethod();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_CompositionMethod& dyn_compositionMethod();
     // Get instance field reference: public UnityEngine.LayerMask extraHiddenLayers
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_extraHiddenLayers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_extraHiddenLayers();
     // Get instance field reference: public UnityEngine.LayerMask extraVisibleLayers
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_extraVisibleLayers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_extraVisibleLayers();
     // Get instance field reference: public System.Boolean dynamicCullingMask
-    [[deprecated]] bool& dyn_dynamicCullingMask();
+    [[deprecated("Use field access instead!")]] bool& dyn_dynamicCullingMask();
     // Get instance field reference: public UnityEngine.Color externalCompositionBackdropColorRift
-    [[deprecated]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorRift();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorRift();
     // Get instance field reference: public UnityEngine.Color externalCompositionBackdropColorQuest
-    [[deprecated]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorQuest();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorQuest();
     // Get instance field reference: public OVRManager/CameraDevice capturingCameraDevice
-    [[deprecated]] ::GlobalNamespace::OVRManager_CameraDevice& dyn_capturingCameraDevice();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_CameraDevice& dyn_capturingCameraDevice();
     // Get instance field reference: public System.Boolean flipCameraFrameHorizontally
-    [[deprecated]] bool& dyn_flipCameraFrameHorizontally();
+    [[deprecated("Use field access instead!")]] bool& dyn_flipCameraFrameHorizontally();
     // Get instance field reference: public System.Boolean flipCameraFrameVertically
-    [[deprecated]] bool& dyn_flipCameraFrameVertically();
+    [[deprecated("Use field access instead!")]] bool& dyn_flipCameraFrameVertically();
     // Get instance field reference: public System.Single handPoseStateLatency
-    [[deprecated]] float& dyn_handPoseStateLatency();
+    [[deprecated("Use field access instead!")]] float& dyn_handPoseStateLatency();
     // Get instance field reference: public System.Single sandwichCompositionRenderLatency
-    [[deprecated]] float& dyn_sandwichCompositionRenderLatency();
+    [[deprecated("Use field access instead!")]] float& dyn_sandwichCompositionRenderLatency();
     // Get instance field reference: public System.Int32 sandwichCompositionBufferedFrames
-    [[deprecated]] int& dyn_sandwichCompositionBufferedFrames();
+    [[deprecated("Use field access instead!")]] int& dyn_sandwichCompositionBufferedFrames();
     // Get instance field reference: public UnityEngine.Color chromaKeyColor
-    [[deprecated]] ::UnityEngine::Color& dyn_chromaKeyColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_chromaKeyColor();
     // Get instance field reference: public System.Single chromaKeySimilarity
-    [[deprecated]] float& dyn_chromaKeySimilarity();
+    [[deprecated("Use field access instead!")]] float& dyn_chromaKeySimilarity();
     // Get instance field reference: public System.Single chromaKeySmoothRange
-    [[deprecated]] float& dyn_chromaKeySmoothRange();
+    [[deprecated("Use field access instead!")]] float& dyn_chromaKeySmoothRange();
     // Get instance field reference: public System.Single chromaKeySpillRange
-    [[deprecated]] float& dyn_chromaKeySpillRange();
+    [[deprecated("Use field access instead!")]] float& dyn_chromaKeySpillRange();
     // Get instance field reference: public System.Boolean useDynamicLighting
-    [[deprecated]] bool& dyn_useDynamicLighting();
+    [[deprecated("Use field access instead!")]] bool& dyn_useDynamicLighting();
     // Get instance field reference: public OVRManager/DepthQuality depthQuality
-    [[deprecated]] ::GlobalNamespace::OVRManager_DepthQuality& dyn_depthQuality();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_DepthQuality& dyn_depthQuality();
     // Get instance field reference: public System.Single dynamicLightingSmoothFactor
-    [[deprecated]] float& dyn_dynamicLightingSmoothFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_dynamicLightingSmoothFactor();
     // Get instance field reference: public System.Single dynamicLightingDepthVariationClampingValue
-    [[deprecated]] float& dyn_dynamicLightingDepthVariationClampingValue();
+    [[deprecated("Use field access instead!")]] float& dyn_dynamicLightingDepthVariationClampingValue();
     // Get instance field reference: public OVRManager/VirtualGreenScreenType virtualGreenScreenType
-    [[deprecated]] ::GlobalNamespace::OVRManager_VirtualGreenScreenType& dyn_virtualGreenScreenType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_VirtualGreenScreenType& dyn_virtualGreenScreenType();
     // Get instance field reference: public System.Single virtualGreenScreenTopY
-    [[deprecated]] float& dyn_virtualGreenScreenTopY();
+    [[deprecated("Use field access instead!")]] float& dyn_virtualGreenScreenTopY();
     // Get instance field reference: public System.Single virtualGreenScreenBottomY
-    [[deprecated]] float& dyn_virtualGreenScreenBottomY();
+    [[deprecated("Use field access instead!")]] float& dyn_virtualGreenScreenBottomY();
     // Get instance field reference: public System.Boolean virtualGreenScreenApplyDepthCulling
-    [[deprecated]] bool& dyn_virtualGreenScreenApplyDepthCulling();
+    [[deprecated("Use field access instead!")]] bool& dyn_virtualGreenScreenApplyDepthCulling();
     // Get instance field reference: public System.Single virtualGreenScreenDepthTolerance
-    [[deprecated]] float& dyn_virtualGreenScreenDepthTolerance();
+    [[deprecated("Use field access instead!")]] float& dyn_virtualGreenScreenDepthTolerance();
     // Get instance field reference: public OVRManager/MrcActivationMode mrcActivationMode
-    [[deprecated]] ::GlobalNamespace::OVRManager_MrcActivationMode& dyn_mrcActivationMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_MrcActivationMode& dyn_mrcActivationMode();
     // Get instance field reference: public OVRManager/InstantiateMrcCameraDelegate instantiateMixedRealityCameraGameObject
-    [[deprecated]] ::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate*& dyn_instantiateMixedRealityCameraGameObject();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate*& dyn_instantiateMixedRealityCameraGameObject();
     // Get instance field reference: public System.Boolean isInsightPassthroughEnabled
-    [[deprecated]] bool& dyn_isInsightPassthroughEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_isInsightPassthroughEnabled();
     // Get instance field reference: private OVRManager/TrackingOrigin _trackingOriginType
-    [[deprecated]] ::GlobalNamespace::OVRManager_TrackingOrigin& dyn__trackingOriginType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_TrackingOrigin& dyn__trackingOriginType();
     // Get instance field reference: public System.Boolean usePositionTracking
-    [[deprecated]] bool& dyn_usePositionTracking();
+    [[deprecated("Use field access instead!")]] bool& dyn_usePositionTracking();
     // Get instance field reference: public System.Boolean useRotationTracking
-    [[deprecated]] bool& dyn_useRotationTracking();
+    [[deprecated("Use field access instead!")]] bool& dyn_useRotationTracking();
     // Get instance field reference: public System.Boolean useIPDInPositionTracking
-    [[deprecated]] bool& dyn_useIPDInPositionTracking();
+    [[deprecated("Use field access instead!")]] bool& dyn_useIPDInPositionTracking();
     // Get instance field reference: public System.Boolean resetTrackerOnLoad
-    [[deprecated]] bool& dyn_resetTrackerOnLoad();
+    [[deprecated("Use field access instead!")]] bool& dyn_resetTrackerOnLoad();
     // Get instance field reference: public System.Boolean AllowRecenter
-    [[deprecated]] bool& dyn_AllowRecenter();
+    [[deprecated("Use field access instead!")]] bool& dyn_AllowRecenter();
     // Get instance field reference: public System.Boolean LateControllerUpdate
-    [[deprecated]] bool& dyn_LateControllerUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_LateControllerUpdate();
     // Get instance field reference: private System.Boolean <isSupportedPlatform>k__BackingField
-    [[deprecated]] bool& dyn_$isSupportedPlatform$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isSupportedPlatform$k__BackingField();
     // static public OVRManager get_instance()
     // Offset: 0xE154C0
     static ::GlobalNamespace::OVRManager* get_instance();
@@ -1269,6 +1269,16 @@ namespace GlobalNamespace {
     // static public System.Void remove_HSWDismissed(System.Action value)
     // Offset: 0xE17400
     static void remove_HSWDismissed(::System::Action* value);
+    // public System.Void .ctor()
+    // Offset: 0xE21F24
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRManager*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xE21FF8
+    static void _cctor();
     // static public System.Boolean IsAdaptiveResSupportedByEngine()
     // Offset: 0xE17D60
     static bool IsAdaptiveResSupportedByEngine();
@@ -1389,24 +1399,6 @@ namespace GlobalNamespace {
     // static public System.Boolean IsInsightPassthroughInitPending()
     // Offset: 0xE21EB8
     static bool IsInsightPassthroughInitPending();
-    // public System.Void .ctor()
-    // Offset: 0xE21F24
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRManager*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xE21FF8
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVRManager
   #pragma pack(pop)
   static check_size<sizeof(OVRManager), 246 + sizeof(bool)> __GlobalNamespace_OVRManagerSizeCheck;
@@ -2700,6 +2692,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRManager*), "remove_HSWDismissed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVRManager::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRManager::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::OVRManager::IsAdaptiveResSupportedByEngine
 // Il2CppName: IsAdaptiveResSupportedByEngine
 template<>
@@ -3036,17 +3040,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)()>(&GlobalNamespace::OVRManager::IsInsightPassthroughInitPending)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRManager*), "IsInsightPassthroughInitPending", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVRManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVRManager::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRManager::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

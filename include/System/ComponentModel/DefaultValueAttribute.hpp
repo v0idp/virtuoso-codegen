@@ -43,7 +43,7 @@ namespace System::ComponentModel {
       return value;
     }
     // Get instance field reference: private System.Object value
-    [[deprecated]] ::Il2CppObject*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_value();
     // public System.Object get_Value()
     // Offset: 0x10EC7D0
     ::Il2CppObject* get_Value();

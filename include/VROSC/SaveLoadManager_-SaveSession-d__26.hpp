@@ -94,21 +94,21 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Boolean isCloud
-    [[deprecated]] bool& dyn_isCloud();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCloud();
     // Get instance field reference: public System.Boolean isCommunity
-    [[deprecated]] bool& dyn_isCommunity();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCommunity();
     // Get instance field reference: public VROSC.SaveLoadManager <>4__this
-    [[deprecated]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    [[deprecated]] ::StringW& dyn_sessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Boolean hasPreview
-    [[deprecated]] bool& dyn_hasPreview();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasPreview();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x8D3920
     void MoveNext();

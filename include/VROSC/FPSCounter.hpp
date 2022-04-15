@@ -46,32 +46,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.TextMesh _textMesh
-    [[deprecated]] ::UnityEngine::TextMesh*& dyn__textMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextMesh*& dyn__textMesh();
+    // public System.Void .ctor()
+    // Offset: 0x8F1448
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FPSCounter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FPSCounter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FPSCounter*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x8F12D4
     void Start();
     // private System.Void Update()
     // Offset: 0x8F13BC
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x8F1448
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FPSCounter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FPSCounter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FPSCounter*, creationType>()));
-    }
   }; // VROSC.FPSCounter
   #pragma pack(pop)
   static check_size<sizeof(FPSCounter), 24 + sizeof(::UnityEngine::TextMesh*)> __VROSC_FPSCounterSizeCheck;
   static_assert(sizeof(FPSCounter) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FPSCounter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FPSCounter::Start
 // Il2CppName: Start
 template<>
@@ -88,7 +86,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FPSCounter*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::FPSCounter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

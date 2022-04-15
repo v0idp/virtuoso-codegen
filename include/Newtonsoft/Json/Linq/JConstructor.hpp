@@ -76,9 +76,9 @@ namespace Newtonsoft::Json::Linq {
     static_assert(sizeof(::System::Collections::Generic::List_1<::Newtonsoft::Json::Linq::JToken*>*) == 0x8);
     public:
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<Newtonsoft.Json.Linq.JToken> _values
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Linq::JToken*>*& dyn__values();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Linq::JToken*>*& dyn__values();
     // public System.String get_Name()
     // Offset: 0xEDAD48
     ::StringW get_Name();

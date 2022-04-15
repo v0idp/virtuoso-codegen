@@ -87,7 +87,7 @@ namespace VROSC {
     // Set static field: static public System.Int32 SessionsVersion
     static void _set_SessionsVersion(int value);
     // Get instance field reference: protected VROSC.Session _tempSession
-    [[deprecated]] ::VROSC::Session*& dyn__tempSession();
+    [[deprecated("Use field access instead!")]] ::VROSC::Session*& dyn__tempSession();
     // protected VROSC.SessionsDataModel get_SessionsDataModel()
     // Offset: 0x198863C
     ::VROSC::SessionsDataModel* get_SessionsDataModel();
@@ -158,7 +158,6 @@ namespace VROSC {
     // Offset: 0x19886B8
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionsDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsDataController::.ctor");

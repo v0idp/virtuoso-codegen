@@ -50,11 +50,11 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int32 Offset
-    [[deprecated]] int& dyn_Offset();
+    [[deprecated("Use field access instead!")]] int& dyn_Offset();
     // Get instance field reference: public readonly System.Boolean IsDst
-    [[deprecated]] bool& dyn_IsDst();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsDst();
     // Get instance field reference: public System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // public System.Void .ctor(System.Int32 offset, System.Boolean is_dst, System.String abbrev)
     // Offset: 0x11E3120
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

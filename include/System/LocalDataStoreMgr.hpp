@@ -103,15 +103,15 @@ namespace System {
     // Set static field: static private System.Int32 LargeSlotTableSizeIncrease
     static void _set_LargeSlotTableSizeIncrease(int value);
     // Get instance field reference: private System.Boolean[] m_SlotInfoTable
-    [[deprecated]] ::ArrayW<bool>& dyn_m_SlotInfoTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_m_SlotInfoTable();
     // Get instance field reference: private System.Int32 m_FirstAvailableSlot
-    [[deprecated]] int& dyn_m_FirstAvailableSlot();
+    [[deprecated("Use field access instead!")]] int& dyn_m_FirstAvailableSlot();
     // Get instance field reference: private System.Collections.Generic.List`1<System.LocalDataStore> m_ManagedLocalDataStores
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::LocalDataStore*>*& dyn_m_ManagedLocalDataStores();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::LocalDataStore*>*& dyn_m_ManagedLocalDataStores();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.LocalDataStoreSlot> m_KeyToSlotMap
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::LocalDataStoreSlot*>*& dyn_m_KeyToSlotMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::LocalDataStoreSlot*>*& dyn_m_KeyToSlotMap();
     // Get instance field reference: private System.Int64 m_CookieGenerator
-    [[deprecated]] int64_t& dyn_m_CookieGenerator();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_CookieGenerator();
     // public System.LocalDataStoreHolder CreateLocalDataStore()
     // Offset: 0x1079934
     ::System::LocalDataStoreHolder* CreateLocalDataStore();

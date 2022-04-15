@@ -62,11 +62,11 @@ namespace System::IO {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: private System.String _s
-    [[deprecated]] ::StringW& dyn__s();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__s();
     // Get instance field reference: private System.Int32 _pos
-    [[deprecated]] int& dyn__pos();
+    [[deprecated("Use field access instead!")]] int& dyn__pos();
     // Get instance field reference: private System.Int32 _length
-    [[deprecated]] int& dyn__length();
+    [[deprecated("Use field access instead!")]] int& dyn__length();
     // public System.Void .ctor(System.String s)
     // Offset: 0x1267F14
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

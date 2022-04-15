@@ -48,9 +48,9 @@ namespace System::Runtime::ConstrainedExecution {
     static_assert(sizeof(::System::Runtime::ConstrainedExecution::Cer) == 0x4);
     public:
     // Get instance field reference: private System.Runtime.ConstrainedExecution.Consistency _consistency
-    [[deprecated]] ::System::Runtime::ConstrainedExecution::Consistency& dyn__consistency();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ConstrainedExecution::Consistency& dyn__consistency();
     // Get instance field reference: private System.Runtime.ConstrainedExecution.Cer _cer
-    [[deprecated]] ::System::Runtime::ConstrainedExecution::Cer& dyn__cer();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ConstrainedExecution::Cer& dyn__cer();
     // public System.Void .ctor(System.Runtime.ConstrainedExecution.Consistency consistencyGuarantee, System.Runtime.ConstrainedExecution.Cer cer)
     // Offset: 0xCD2E60
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

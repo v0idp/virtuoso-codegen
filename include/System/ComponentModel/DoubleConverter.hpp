@@ -56,7 +56,6 @@ namespace System::ComponentModel {
     // Implemented from: System.ComponentModel.BaseNumberConverter
     // Base method: System.Void BaseNumberConverter::.ctor()
     // Base method: System.Void TypeConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DoubleConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::DoubleConverter::.ctor");

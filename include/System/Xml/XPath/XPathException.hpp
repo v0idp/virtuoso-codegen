@@ -58,11 +58,32 @@ namespace System::Xml::XPath {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String res
-    [[deprecated]] ::StringW& dyn_res();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_res();
     // Get instance field reference: private System.String[] args
-    [[deprecated]] ::ArrayW<::StringW>& dyn_args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_args();
     // Get instance field reference: private System.String message
-    [[deprecated]] ::StringW& dyn_message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_message();
+    // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+    // Offset: 0xF7ABA0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XPathException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XPath::XPathException::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XPathException*, creationType>(info, context)));
+    }
+    // public System.Void .ctor()
+    // Offset: 0xF7B008
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XPathException* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XPath::XPathException::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XPathException*, creationType>()));
+    }
+    // public System.Void .ctor(System.String message, System.Exception innerException)
+    // Offset: 0xF7B060
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XPathException* New_ctor(::StringW message, ::System::Exception* innerException) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XPath::XPathException::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XPathException*, creationType>(message, innerException)));
+    }
     // private System.Void .ctor(System.String res, System.String[] args)
     // Offset: 0xF7B234
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -94,37 +115,6 @@ namespace System::Xml::XPath {
     // Implemented from: System.Exception
     // Base method: System.String Exception::get_Message()
     ::StringW get_Message();
-    // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Offset: 0xF7ABA0
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XPathException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XPath::XPathException::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XPathException*, creationType>(info, context)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0xF7B008
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XPathException* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XPath::XPathException::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XPathException*, creationType>()));
-    }
-    // public System.Void .ctor(System.String message, System.Exception innerException)
-    // Offset: 0xF7B060
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.String message, System.Exception innerException)
-    // Base method: System.Void Exception::.ctor(System.String message, System.Exception innerException)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XPathException* New_ctor(::StringW message, ::System::Exception* innerException) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XPath::XPathException::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XPathException*, creationType>(message, innerException)));
-    }
     // public override System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0xF7AF14
     // Implemented from: System.Exception
@@ -136,6 +126,18 @@ namespace System::Xml::XPath {
   static_assert(sizeof(XPathException) == 0xA0);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::XPath::XPathException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::XPath::XPathException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::XPath::XPathException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XPath::XPathException::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -192,18 +194,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XPath::XPathException*), "get_Message", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XPath::XPathException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Xml::XPath::XPathException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Xml::XPath::XPathException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XPath::XPathException::GetObjectData
 // Il2CppName: GetObjectData
 template<>

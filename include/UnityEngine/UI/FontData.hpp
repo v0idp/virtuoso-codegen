@@ -131,29 +131,29 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private UnityEngine.Font m_Font
-    [[deprecated]] ::UnityEngine::Font*& dyn_m_Font();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Font*& dyn_m_Font();
     // Get instance field reference: private System.Int32 m_FontSize
-    [[deprecated]] int& dyn_m_FontSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_FontSize();
     // Get instance field reference: private UnityEngine.FontStyle m_FontStyle
-    [[deprecated]] ::UnityEngine::FontStyle& dyn_m_FontStyle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::FontStyle& dyn_m_FontStyle();
     // Get instance field reference: private System.Boolean m_BestFit
-    [[deprecated]] bool& dyn_m_BestFit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_BestFit();
     // Get instance field reference: private System.Int32 m_MinSize
-    [[deprecated]] int& dyn_m_MinSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MinSize();
     // Get instance field reference: private System.Int32 m_MaxSize
-    [[deprecated]] int& dyn_m_MaxSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MaxSize();
     // Get instance field reference: private UnityEngine.TextAnchor m_Alignment
-    [[deprecated]] ::UnityEngine::TextAnchor& dyn_m_Alignment();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextAnchor& dyn_m_Alignment();
     // Get instance field reference: private System.Boolean m_AlignByGeometry
-    [[deprecated]] bool& dyn_m_AlignByGeometry();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AlignByGeometry();
     // Get instance field reference: private System.Boolean m_RichText
-    [[deprecated]] bool& dyn_m_RichText();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RichText();
     // Get instance field reference: private UnityEngine.HorizontalWrapMode m_HorizontalOverflow
-    [[deprecated]] ::UnityEngine::HorizontalWrapMode& dyn_m_HorizontalOverflow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::HorizontalWrapMode& dyn_m_HorizontalOverflow();
     // Get instance field reference: private UnityEngine.VerticalWrapMode m_VerticalOverflow
-    [[deprecated]] ::UnityEngine::VerticalWrapMode& dyn_m_VerticalOverflow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::VerticalWrapMode& dyn_m_VerticalOverflow();
     // Get instance field reference: private System.Single m_LineSpacing
-    [[deprecated]] float& dyn_m_LineSpacing();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LineSpacing();
     // static public UnityEngine.UI.FontData get_defaultFontData()
     // Offset: 0xEBA504
     static ::UnityEngine::UI::FontData* get_defaultFontData();
@@ -229,21 +229,19 @@ namespace UnityEngine::UI {
     // public System.Void set_lineSpacing(System.Single value)
     // Offset: 0xEBA664
     void set_lineSpacing(float value);
+    // public System.Void .ctor()
+    // Offset: 0xEBA598
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FontData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::FontData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FontData*, creationType>()));
+    }
     // private System.Void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
     // Offset: 0xEBA66C
     void UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize();
     // private System.Void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
     // Offset: 0xEBA670
     void UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize();
-    // public System.Void .ctor()
-    // Offset: 0xEBA598
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FontData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::FontData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FontData*, creationType>()));
-    }
   }; // UnityEngine.UI.FontData
   #pragma pack(pop)
   static check_size<sizeof(FontData), 60 + sizeof(float)> __UnityEngine_UI_FontDataSizeCheck;
@@ -462,6 +460,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::FontData*), "set_lineSpacing", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::FontData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::FontData::UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize
 // Il2CppName: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
 template<>
@@ -478,7 +480,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::FontData*), "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::FontData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

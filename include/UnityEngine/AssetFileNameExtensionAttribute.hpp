@@ -58,9 +58,9 @@ namespace UnityEngine {
     static_assert(sizeof(::System::Collections::Generic::IEnumerable_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.String <preferredExtension>k__BackingField
-    [[deprecated]] ::StringW& dyn_$preferredExtension$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$preferredExtension$k__BackingField();
     // Get instance field reference: private readonly System.Collections.Generic.IEnumerable`1<System.String> <otherExtensions>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::IEnumerable_1<::StringW>*& dyn_$otherExtensions$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IEnumerable_1<::StringW>*& dyn_$otherExtensions$k__BackingField();
     // public System.Void .ctor(System.String preferredExtension, params System.String[] otherExtensions)
     // Offset: 0x18FF538
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

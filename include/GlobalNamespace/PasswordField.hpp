@@ -45,7 +45,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(::TMPro::TextMeshPro*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _hiddenText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__hiddenText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__hiddenText();
     // private System.Void EnteredPasswordChanged(System.String password)
     // Offset: 0xADD43C
     void EnteredPasswordChanged(::StringW password);
@@ -56,11 +56,6 @@ namespace GlobalNamespace {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PasswordField* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PasswordField::.ctor");

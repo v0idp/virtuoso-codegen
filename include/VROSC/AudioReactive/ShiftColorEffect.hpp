@@ -75,11 +75,11 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::VROSC::AudioReactive::ShiftColorData*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ShiftColorEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::ShiftColorEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ShiftColorEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Renderer[] _renderers
-    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
     // Get instance field reference: private VROSC.AudioReactive.ShiftColorData[] _shiftColorDatas
-    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::ShiftColorData*>& dyn__shiftColorDatas();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AudioReactive::ShiftColorData*>& dyn__shiftColorDatas();
     // public VROSC.AudioReactive.ShiftColorEffectData get_Data()
     // Offset: 0x192747C
     ::VROSC::AudioReactive::ShiftColorEffectData* get_Data();
@@ -91,7 +91,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ShiftColorEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ShiftColorEffect::.ctor");

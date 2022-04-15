@@ -83,17 +83,17 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean _bypass
-    [[deprecated]] bool& dyn__bypass();
+    [[deprecated("Use field access instead!")]] bool& dyn__bypass();
     // Get instance field reference: protected VROSC.SignalNode[] _output
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__output();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__output();
     // Get instance field reference: protected System.Boolean _blockPassOnThisFrame
-    [[deprecated]] bool& dyn__blockPassOnThisFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn__blockPassOnThisFrame();
     // Get instance field reference: protected System.Int32 _receivedSignalsThisFrame
-    [[deprecated]] int& dyn__receivedSignalsThisFrame();
+    [[deprecated("Use field access instead!")]] int& dyn__receivedSignalsThisFrame();
     // Get instance field reference: protected System.Boolean _nodeProcessingSignal
-    [[deprecated]] bool& dyn__nodeProcessingSignal();
+    [[deprecated("Use field access instead!")]] bool& dyn__nodeProcessingSignal();
     // Get instance field reference: private VROSC.Signal _cachedSignal
-    [[deprecated]] ::VROSC::Signal*& dyn__cachedSignal();
+    [[deprecated("Use field access instead!")]] ::VROSC::Signal*& dyn__cachedSignal();
     // protected System.Int32 get_MaxInputs()
     // Offset: 0x1928504
     int get_MaxInputs();
@@ -128,11 +128,6 @@ namespace VROSC {
     // Offset: 0x1925C8C
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SignalNode::.ctor");

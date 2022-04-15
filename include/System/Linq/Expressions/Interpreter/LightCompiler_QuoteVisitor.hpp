@@ -68,9 +68,9 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Collections::Generic::HashSet_1<::System::Linq::Expressions::ParameterExpression*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Int32> _definedParameters
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, int>*& dyn__definedParameters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, int>*& dyn__definedParameters();
     // Get instance field reference: public readonly System.Collections.Generic.HashSet`1<System.Linq.Expressions.ParameterExpression> _hoistedParameters
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::System::Linq::Expressions::ParameterExpression*>*& dyn__hoistedParameters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::System::Linq::Expressions::ParameterExpression*>*& dyn__hoistedParameters();
     // private System.Void PushParameters(System.Collections.Generic.IEnumerable`1<System.Linq.Expressions.ParameterExpression> parameters)
     // Offset: 0x16A9950
     void PushParameters(::System::Collections::Generic::IEnumerable_1<::System::Linq::Expressions::ParameterExpression*>* parameters);
@@ -81,7 +81,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Offset: 0x16AA150
     // Implemented from: System.Linq.Expressions.ExpressionVisitor
     // Base method: System.Void ExpressionVisitor::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LightCompiler::QuoteVisitor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LightCompiler::QuoteVisitor::.ctor");

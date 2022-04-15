@@ -75,7 +75,6 @@ namespace System::Dynamic {
     // Offset: 0x11FB514
     // Implemented from: System.Runtime.CompilerServices.CallSiteBinder
     // Base method: System.Void CallSiteBinder::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DynamicMetaObjectBinder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::DynamicMetaObjectBinder::.ctor");

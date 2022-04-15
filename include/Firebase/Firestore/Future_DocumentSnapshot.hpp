@@ -88,11 +88,18 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Object CallbackLock
     static void _set_CallbackLock(::Il2CppObject* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.IntPtr callbackData
-    [[deprecated]] ::System::IntPtr& dyn_callbackData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_callbackData();
     // Get instance field reference: private Firebase.Firestore.Future_DocumentSnapshot/Firebase.Firestore.SWIG_CompletionDelegate SWIG_CompletionCB
-    [[deprecated]] ::Firebase::Firestore::Future_DocumentSnapshot::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::Future_DocumentSnapshot::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
+    // Offset: 0xD53298
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Future_DocumentSnapshot* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Future_DocumentSnapshot::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Future_DocumentSnapshot*, creationType>(cPtr, cMemoryOwn)));
+    }
     // static private System.Void .cctor()
     // Offset: 0xD5FEB4
     static void _cctor();
@@ -120,15 +127,6 @@ namespace Firebase::Firestore {
     // public Firebase.Firestore.DocumentSnapshotProxy GetResult()
     // Offset: 0xD5FDE8
     ::Firebase::Firestore::DocumentSnapshotProxy* GetResult();
-    // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0xD53298
-    // Implemented from: Firebase.FutureBase
-    // Base method: System.Void FutureBase::.ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Future_DocumentSnapshot* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Future_DocumentSnapshot::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Future_DocumentSnapshot*, creationType>(cPtr, cMemoryOwn)));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xD5F530
     // Implemented from: Firebase.FutureBase
@@ -145,6 +143,10 @@ namespace Firebase::Firestore {
   static_assert(sizeof(Future_DocumentSnapshot) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::Future_DocumentSnapshot::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::Future_DocumentSnapshot::_cctor
 // Il2CppName: .cctor
 template<>
@@ -224,10 +226,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Future_DocumentSnapshot*), "GetResult", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::Future_DocumentSnapshot::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::Future_DocumentSnapshot::Finalize
 // Il2CppName: Finalize
 template<>

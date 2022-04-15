@@ -61,11 +61,11 @@ namespace Oculus::Voice::Core::Bindings::Android {
       return *reinterpret_cast<::Oculus::Voice::Core::Bindings::Interfaces::IConnection*>(this);
     }
     // Get instance field reference: private UnityEngine.AndroidJavaObject mAssistantServiceConnection
-    [[deprecated]] ::UnityEngine::AndroidJavaObject*& dyn_mAssistantServiceConnection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AndroidJavaObject*& dyn_mAssistantServiceConnection();
     // Get instance field reference: private System.String serviceFragmentClass
-    [[deprecated]] ::StringW& dyn_serviceFragmentClass();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_serviceFragmentClass();
     // Get instance field reference: private System.String serviceGetter
-    [[deprecated]] ::StringW& dyn_serviceGetter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_serviceGetter();
     // public System.Boolean get_IsConnected()
     // Offset: 0x190E540
     bool get_IsConnected();

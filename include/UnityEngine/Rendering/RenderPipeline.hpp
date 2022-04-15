@@ -56,7 +56,7 @@ namespace UnityEngine::Rendering {
       return disposed;
     }
     // Get instance field reference: private System.Boolean <disposed>k__BackingField
-    [[deprecated]] bool& dyn_$disposed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposed$k__BackingField();
     // public System.Boolean get_disposed()
     // Offset: 0xBCBFBC
     bool get_disposed();

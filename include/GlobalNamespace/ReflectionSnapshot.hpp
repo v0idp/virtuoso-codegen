@@ -51,9 +51,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Audio.AudioMixerSnapshot mixerSnapshot
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_mixerSnapshot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerSnapshot*& dyn_mixerSnapshot();
     // Get instance field reference: public System.Single fadeTime
-    [[deprecated]] float& dyn_fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn_fadeTime();
   }; // ReflectionSnapshot
   #pragma pack(pop)
   static check_size<sizeof(ReflectionSnapshot), 8 + sizeof(float)> __GlobalNamespace_ReflectionSnapshotSizeCheck;

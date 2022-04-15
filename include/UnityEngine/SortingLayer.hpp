@@ -43,7 +43,7 @@ namespace UnityEngine {
       return m_Id;
     }
     // Get instance field reference: private System.Int32 m_Id
-    [[deprecated]] int& dyn_m_Id();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Id();
     // static public System.Int32 GetLayerValueFromID(System.Int32 id)
     // Offset: 0xBD3CC8
     static int GetLayerValueFromID(int id);

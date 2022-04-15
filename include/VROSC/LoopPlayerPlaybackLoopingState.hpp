@@ -49,7 +49,7 @@ namespace VROSC {
       return Looping;
     }
     // Get instance field reference: private System.Boolean <Looping>k__BackingField
-    [[deprecated]] bool& dyn_$Looping$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Looping$k__BackingField();
     // public System.Boolean get_Looping()
     // Offset: 0x19BD344
     bool get_Looping();
@@ -63,7 +63,6 @@ namespace VROSC {
     // Offset: 0x19BD488
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlayerPlaybackLoopingState* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackLoopingState::.ctor");

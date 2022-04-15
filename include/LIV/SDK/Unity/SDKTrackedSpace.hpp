@@ -69,15 +69,15 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 trackedSpaceWorldPosition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceWorldPosition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceWorldPosition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion trackedSpaceWorldRotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_trackedSpaceWorldRotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_trackedSpaceWorldRotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 trackedSpaceLocalScale
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceLocalScale();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_trackedSpaceLocalScale();
     // Get instance field reference: public LIV.SDK.Unity.SDKMatrix4x4 trackedSpaceLocalToWorldMatrix
-    [[deprecated]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceLocalToWorldMatrix();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceLocalToWorldMatrix();
     // Get instance field reference: public LIV.SDK.Unity.SDKMatrix4x4 trackedSpaceWorldToLocalMatrix
-    [[deprecated]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceWorldToLocalMatrix();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_trackedSpaceWorldToLocalMatrix();
     // static public LIV.SDK.Unity.SDKTrackedSpace get_empty()
     // Offset: 0xDD514C
     static ::LIV::SDK::Unity::SDKTrackedSpace get_empty();

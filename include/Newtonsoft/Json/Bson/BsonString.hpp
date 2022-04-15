@@ -37,7 +37,7 @@ namespace Newtonsoft::Json::Bson {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Boolean <IncludeLength>k__BackingField
-    [[deprecated]] bool& dyn_$IncludeLength$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IncludeLength$k__BackingField();
     // public System.Void .ctor(System.Object value, System.Boolean includeLength)
     // Offset: 0xDB7D2C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

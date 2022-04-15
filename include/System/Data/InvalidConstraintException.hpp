@@ -40,8 +40,6 @@ namespace System::Data {
     // Offset: 0x13B6C5C
     // Implemented from: System.Data.DataException
     // Base method: System.Void DataException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InvalidConstraintException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::InvalidConstraintException::.ctor");
@@ -51,9 +49,6 @@ namespace System::Data {
     // Offset: 0x13B6CA4
     // Implemented from: System.Data.DataException
     // Base method: System.Void DataException::.ctor()
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InvalidConstraintException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::InvalidConstraintException::.ctor");
@@ -63,8 +58,6 @@ namespace System::Data {
     // Offset: 0x13B6D04
     // Implemented from: System.Data.DataException
     // Base method: System.Void DataException::.ctor(System.String s)
-    // Base method: System.Void SystemException::.ctor(System.String s)
-    // Base method: System.Void Exception::.ctor(System.String s)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InvalidConstraintException* New_ctor(::StringW s) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::InvalidConstraintException::.ctor");

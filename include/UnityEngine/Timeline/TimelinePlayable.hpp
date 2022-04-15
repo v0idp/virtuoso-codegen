@@ -121,17 +121,24 @@ namespace UnityEngine::Timeline {
     // Set static field: static System.Boolean muteAudioScrubbing
     static void _set_muteAudioScrubbing(bool value);
     // Get instance field reference: private UnityEngine.Timeline.IntervalTree`1<UnityEngine.Timeline.RuntimeElement> m_IntervalTree
-    [[deprecated]] ::UnityEngine::Timeline::IntervalTree_1<::UnityEngine::Timeline::RuntimeElement*>*& dyn_m_IntervalTree();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::IntervalTree_1<::UnityEngine::Timeline::RuntimeElement*>*& dyn_m_IntervalTree();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.RuntimeElement> m_ActiveClips
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>*& dyn_m_ActiveClips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>*& dyn_m_ActiveClips();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.RuntimeElement> m_CurrentListOfActiveClips
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>*& dyn_m_CurrentListOfActiveClips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::RuntimeElement*>*& dyn_m_CurrentListOfActiveClips();
     // Get instance field reference: private System.Int32 m_ActiveBit
-    [[deprecated]] int& dyn_m_ActiveBit();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ActiveBit();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.ITimelineEvaluateCallback> m_EvaluateCallbacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::ITimelineEvaluateCallback*>*& dyn_m_EvaluateCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::ITimelineEvaluateCallback*>*& dyn_m_EvaluateCallbacks();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.Timeline.TrackAsset,UnityEngine.Playables.Playable> m_PlayableCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Timeline::TrackAsset*, ::UnityEngine::Playables::Playable>*& dyn_m_PlayableCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Timeline::TrackAsset*, ::UnityEngine::Playables::Playable>*& dyn_m_PlayableCache();
+    // public System.Void .ctor()
+    // Offset: 0xC8642C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimelinePlayable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimelinePlayable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimelinePlayable*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xC86564
     static void _cctor();
@@ -168,16 +175,6 @@ namespace UnityEngine::Timeline {
     // static private System.Void ForAOTCompilationOnly()
     // Offset: 0xC863CC
     static void ForAOTCompilationOnly();
-    // public System.Void .ctor()
-    // Offset: 0xC8642C
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimelinePlayable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimelinePlayable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimelinePlayable*, creationType>()));
-    }
     // public override System.Void PrepareFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     // Offset: 0xC85D4C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -189,6 +186,10 @@ namespace UnityEngine::Timeline {
   static_assert(sizeof(TimelinePlayable) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Timeline::TimelinePlayable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::TimelinePlayable::_cctor
 // Il2CppName: .cctor
 template<>
@@ -326,10 +327,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TimelinePlayable*), "ForAOTCompilationOnly", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::TimelinePlayable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::TimelinePlayable::PrepareFrame
 // Il2CppName: PrepareFrame
 template<>

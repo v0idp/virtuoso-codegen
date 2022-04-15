@@ -43,6 +43,13 @@ namespace UnityEngine::XR::Management {
   // [TokenAttribute] Offset: FFFFFFFF
   class XRLoader : public ::UnityEngine::ScriptableObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x18FAD6C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRLoader* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRLoader::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRLoader*, creationType>()));
+    }
     // public System.Boolean Initialize()
     // Offset: 0x18FACE0
     bool Initialize();
@@ -68,21 +75,14 @@ namespace UnityEngine::XR::Management {
     // public System.Collections.Generic.List`1<UnityEngine.Rendering.GraphicsDeviceType> GetSupportedGraphicsDeviceTypes(System.Boolean buildingPlayer)
     // Offset: 0x18FAD00
     ::System::Collections::Generic::List_1<::UnityEngine::Rendering::GraphicsDeviceType>* GetSupportedGraphicsDeviceTypes(bool buildingPlayer);
-    // protected System.Void .ctor()
-    // Offset: 0x18FAD6C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRLoader* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRLoader::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRLoader*, creationType>()));
-    }
   }; // UnityEngine.XR.Management.XRLoader
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::XR::Management::XRLoader::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Management::XRLoader::Initialize
 // Il2CppName: Initialize
 template<>
@@ -127,7 +127,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Management::XRLoader*), "GetSupportedGraphicsDeviceTypes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{buildingPlayer});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Management::XRLoader::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

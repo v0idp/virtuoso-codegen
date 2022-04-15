@@ -83,19 +83,19 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.String <GroupID>k__BackingField
-    [[deprecated]] ::StringW& dyn_$GroupID$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$GroupID$k__BackingField();
     // Get instance field reference: private System.String <DisplayName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$DisplayName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$DisplayName$k__BackingField();
     // Get instance field reference: private System.Single <Volume>k__BackingField
-    [[deprecated]] float& dyn_$Volume$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Volume$k__BackingField();
     // Get instance field reference: private System.Boolean <Muted>k__BackingField
-    [[deprecated]] bool& dyn_$Muted$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Muted$k__BackingField();
     // Get instance field reference: private System.Boolean <Solo>k__BackingField
-    [[deprecated]] bool& dyn_$Solo$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Solo$k__BackingField();
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverride <PlaybackConfig>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigOverride*& dyn_$PlaybackConfig$k__BackingField();
     // public System.String get_GroupID()
     // Offset: 0x195EF98
     ::StringW get_GroupID();

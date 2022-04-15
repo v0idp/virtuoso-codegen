@@ -48,7 +48,7 @@ namespace System::Xml::Schema {
       return choice;
     }
     // Get instance field reference: private System.Xml.Schema.XmlSchemaChoice choice
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaChoice*& dyn_choice();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaChoice*& dyn_choice();
     // System.Xml.Schema.XmlSchemaChoice get_Choice()
     // Offset: 0xF3731C
     ::System::Xml::Schema::XmlSchemaChoice* get_Choice();
@@ -57,7 +57,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaSubstitutionGroup
     // Base method: System.Void XmlSchemaSubstitutionGroup::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaSubstitutionGroupV1Compat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSubstitutionGroupV1Compat::.ctor");

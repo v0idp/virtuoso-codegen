@@ -67,11 +67,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String attributeOverridesHash
-    [[deprecated]] ::StringW& dyn_attributeOverridesHash();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_attributeOverridesHash();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: private System.String rootHash
-    [[deprecated]] ::StringW& dyn_rootHash();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_rootHash();
     // public System.Void .ctor(System.Type type, System.Xml.Serialization.XmlRootAttribute root, System.Xml.Serialization.XmlAttributeOverrides attributeOverrides, System.String namspace, System.Type[] includedTypes)
     // Offset: 0x10892F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -61,7 +61,7 @@ namespace Newtonsoft::Json::Serialization {
     // Set static field: static private readonly System.Collections.Generic.Dictionary`2<System.Type,Newtonsoft.Json.ReadType> ReadTypeMap
     static void _set_ReadTypeMap(::System::Collections::Generic::Dictionary_2<::System::Type*, ::Newtonsoft::Json::ReadType>* value);
     // Get instance field reference: private Newtonsoft.Json.Utilities.PrimitiveTypeCode <TypeCode>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::PrimitiveTypeCode& dyn_$TypeCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::PrimitiveTypeCode& dyn_$TypeCode$k__BackingField();
     // Newtonsoft.Json.Utilities.PrimitiveTypeCode get_TypeCode()
     // Offset: 0xF48D78
     ::Newtonsoft::Json::Utilities::PrimitiveTypeCode get_TypeCode();

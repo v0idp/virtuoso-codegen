@@ -86,11 +86,18 @@ namespace Firebase::Storage {
     // Set static field: static private System.Object CallbackLock
     static void _set_CallbackLock(::Il2CppObject* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.IntPtr callbackData
-    [[deprecated]] ::System::IntPtr& dyn_callbackData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_callbackData();
     // Get instance field reference: private Firebase.Storage.Future_Size/Firebase.Storage.SWIG_CompletionDelegate SWIG_CompletionCB
-    [[deprecated]] ::Firebase::Storage::Future_Size::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::Future_Size::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
+    // Offset: 0x183278C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Future_Size* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::Future_Size::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Future_Size*, creationType>(cPtr, cMemoryOwn)));
+    }
     // static private System.Void .cctor()
     // Offset: 0x18337A4
     static void _cctor();
@@ -118,15 +125,6 @@ namespace Firebase::Storage {
     // public System.UInt32 GetResult()
     // Offset: 0x1833680
     uint GetResult();
-    // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    // Offset: 0x183278C
-    // Implemented from: Firebase.FutureBase
-    // Base method: System.Void FutureBase::.ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Future_Size* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::Future_Size::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Future_Size*, creationType>(cPtr, cMemoryOwn)));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x18328CC
     // Implemented from: Firebase.FutureBase
@@ -143,6 +141,10 @@ namespace Firebase::Storage {
   static_assert(sizeof(Future_Size) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Storage::Future_Size::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::Future_Size::_cctor
 // Il2CppName: .cctor
 template<>
@@ -222,10 +224,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::Future_Size*), "GetResult", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::Future_Size::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::Future_Size::Finalize
 // Il2CppName: Finalize
 template<>

@@ -245,53 +245,53 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: System.IO.Stream m_stream
-    [[deprecated]] ::System::IO::Stream*& dyn_m_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_m_stream();
     // Get instance field reference: System.Runtime.Serialization.ISurrogateSelector m_surrogates
-    [[deprecated]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn_m_surrogates();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn_m_surrogates();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext m_context
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
     // Get instance field reference: System.Runtime.Serialization.ObjectManager m_objectManager
-    [[deprecated]] ::System::Runtime::Serialization::ObjectManager*& dyn_m_objectManager();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ObjectManager*& dyn_m_objectManager();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalFE formatterEnums
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalFE*& dyn_formatterEnums();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalFE*& dyn_formatterEnums();
     // Get instance field reference: System.Runtime.Serialization.SerializationBinder m_binder
-    [[deprecated]] ::System::Runtime::Serialization::SerializationBinder*& dyn_m_binder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationBinder*& dyn_m_binder();
     // Get instance field reference: System.Int64 topId
-    [[deprecated]] int64_t& dyn_topId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_topId();
     // Get instance field reference: System.Boolean bSimpleAssembly
-    [[deprecated]] bool& dyn_bSimpleAssembly();
+    [[deprecated("Use field access instead!")]] bool& dyn_bSimpleAssembly();
     // Get instance field reference: System.Object handlerObject
-    [[deprecated]] ::Il2CppObject*& dyn_handlerObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_handlerObject();
     // Get instance field reference: System.Object m_topObject
-    [[deprecated]] ::Il2CppObject*& dyn_m_topObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_topObject();
     // Get instance field reference: System.Runtime.Remoting.Messaging.Header[] headers
-    [[deprecated]] ::ArrayW<::System::Runtime::Remoting::Messaging::Header*>& dyn_headers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Remoting::Messaging::Header*>& dyn_headers();
     // Get instance field reference: System.Runtime.Remoting.Messaging.HeaderHandler handler
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::HeaderHandler*& dyn_handler();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::HeaderHandler*& dyn_handler();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.SerObjectInfoInit serObjectInfoInit
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit*& dyn_serObjectInfoInit();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit*& dyn_serObjectInfoInit();
     // Get instance field reference: System.Runtime.Serialization.IFormatterConverter m_formatterConverter
-    [[deprecated]] ::System::Runtime::Serialization::IFormatterConverter*& dyn_m_formatterConverter();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::IFormatterConverter*& dyn_m_formatterConverter();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.SerStack stack
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerStack*& dyn_stack();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::SerStack*& dyn_stack();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.SerStack valueFixupStack
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerStack*& dyn_valueFixupStack();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::SerStack*& dyn_valueFixupStack();
     // Get instance field reference: System.Object[] crossAppDomainArray
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_crossAppDomainArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_crossAppDomainArray();
     // Get instance field reference: private System.Boolean bFullDeserialization
-    [[deprecated]] bool& dyn_bFullDeserialization();
+    [[deprecated("Use field access instead!")]] bool& dyn_bFullDeserialization();
     // Get instance field reference: private System.Boolean bOldFormatDetected
-    [[deprecated]] bool& dyn_bOldFormatDetected();
+    [[deprecated("Use field access instead!")]] bool& dyn_bOldFormatDetected();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.IntSizedArray valTypeObjectIdTable
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::IntSizedArray*& dyn_valTypeObjectIdTable();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::IntSizedArray*& dyn_valTypeObjectIdTable();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.NameCache typeCache
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::NameCache*& dyn_typeCache();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::NameCache*& dyn_typeCache();
     // Get instance field reference: private System.String previousAssemblyString
-    [[deprecated]] ::StringW& dyn_previousAssemblyString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_previousAssemblyString();
     // Get instance field reference: private System.String previousName
-    [[deprecated]] ::StringW& dyn_previousName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_previousName();
     // Get instance field reference: private System.Type previousType
-    [[deprecated]] ::System::Type*& dyn_previousType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_previousType();
     // private System.Runtime.Serialization.Formatters.Binary.SerStack get_ValueFixupStack()
     // Offset: 0x1471B28
     ::System::Runtime::Serialization::Formatters::Binary::SerStack* get_ValueFixupStack();

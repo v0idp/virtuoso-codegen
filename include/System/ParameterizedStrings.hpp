@@ -68,9 +68,9 @@ namespace System {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private readonly System.Int32 _int32
-      [[deprecated]] int& dyn__int32();
+      [[deprecated("Use field access instead!")]] int& dyn__int32();
       // Get instance field reference: private readonly System.String _string
-      [[deprecated]] ::StringW& dyn__string();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn__string();
       // public System.Int32 get_Int32()
       // Offset: 0xE577BC
       int get_Int32();

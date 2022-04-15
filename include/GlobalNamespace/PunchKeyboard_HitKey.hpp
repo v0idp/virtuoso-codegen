@@ -45,13 +45,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public Key Key
-    [[deprecated]] ::GlobalNamespace::Key*& dyn_Key();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::Key*& dyn_Key();
     // Get instance field reference: public System.Single Strength
-    [[deprecated]] float& dyn_Strength();
+    [[deprecated("Use field access instead!")]] float& dyn_Strength();
     // public System.Void .ctor()
     // Offset: 0x8CFA30
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PunchKeyboard::HitKey* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PunchKeyboard::HitKey::.ctor");

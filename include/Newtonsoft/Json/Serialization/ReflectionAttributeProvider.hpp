@@ -47,7 +47,7 @@ namespace Newtonsoft::Json::Serialization {
       return attributeProvider;
     }
     // Get instance field reference: private readonly System.Object _attributeProvider
-    [[deprecated]] ::Il2CppObject*& dyn__attributeProvider();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__attributeProvider();
     // public System.Void .ctor(System.Object attributeProvider)
     // Offset: 0x1348AD4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

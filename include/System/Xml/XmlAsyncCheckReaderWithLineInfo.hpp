@@ -53,7 +53,7 @@ namespace System::Xml {
       return readerAsIXmlLineInfo;
     }
     // Get instance field reference: private readonly System.Xml.IXmlLineInfo readerAsIXmlLineInfo
-    [[deprecated]] ::System::Xml::IXmlLineInfo*& dyn_readerAsIXmlLineInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IXmlLineInfo*& dyn_readerAsIXmlLineInfo();
     // public System.Int32 get_LineNumber()
     // Offset: 0x11B5018
     int get_LineNumber();

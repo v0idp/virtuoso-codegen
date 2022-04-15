@@ -44,9 +44,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private UnityEngine.Transform outer
-    [[deprecated]] ::UnityEngine::Transform*& dyn_outer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_outer();
     // Get instance field reference: private System.Int32 currentIndex
-    [[deprecated]] int& dyn_currentIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_currentIndex();
     // public System.Object get_Current()
     // Offset: 0x1844C6C
     ::Il2CppObject* get_Current();

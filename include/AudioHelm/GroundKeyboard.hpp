@@ -132,27 +132,34 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public AudioHelm.GroundKey keyModel
-    [[deprecated]] ::AudioHelm::GroundKey*& dyn_keyModel();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::GroundKey*& dyn_keyModel();
     // Get instance field reference: public AudioHelm.HelmController synth
-    [[deprecated]] ::AudioHelm::HelmController*& dyn_synth();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmController*& dyn_synth();
     // Get instance field reference: public UnityEngine.Vector3 keyOffset
-    [[deprecated]] ::UnityEngine::Vector3& dyn_keyOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_keyOffset();
     // Get instance field reference: public System.Single verticalOffset
-    [[deprecated]] float& dyn_verticalOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_verticalOffset();
     // Get instance field reference: public System.Int32 numKeys
-    [[deprecated]] int& dyn_numKeys();
+    [[deprecated("Use field access instead!")]] int& dyn_numKeys();
     // Get instance field reference: public System.Int32 startingKey
-    [[deprecated]] int& dyn_startingKey();
+    [[deprecated("Use field access instead!")]] int& dyn_startingKey();
     // Get instance field reference: public System.Int32[] scale
-    [[deprecated]] ::ArrayW<int>& dyn_scale();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_scale();
     // Get instance field reference: public System.Int32 octaveSize
-    [[deprecated]] int& dyn_octaveSize();
+    [[deprecated("Use field access instead!")]] int& dyn_octaveSize();
     // Get instance field reference: private AudioHelm.GroundKey[] keys
-    [[deprecated]] ::ArrayW<::AudioHelm::GroundKey*>& dyn_keys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::AudioHelm::GroundKey*>& dyn_keys();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.Int32> currentIndices
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_currentIndices();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_currentIndices();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.Int32> newIndices
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_newIndices();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_newIndices();
+    // public System.Void .ctor()
+    // Offset: 0x19AA610
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GroundKeyboard* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::GroundKeyboard::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GroundKeyboard*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x19A9C24
     void Start();
@@ -186,25 +193,16 @@ namespace AudioHelm {
     // private System.Void FixedUpdate()
     // Offset: 0x19AA468
     void FixedUpdate();
-    // public System.Void .ctor()
-    // Offset: 0x19AA610
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GroundKeyboard* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::GroundKeyboard::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GroundKeyboard*, creationType>()));
-    }
   }; // AudioHelm.GroundKeyboard
   #pragma pack(pop)
   static check_size<sizeof(GroundKeyboard), 96 + sizeof(::System::Collections::Generic::HashSet_1<int>*)> __AudioHelm_GroundKeyboardSizeCheck;
   static_assert(sizeof(GroundKeyboard) == 0x68);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::GroundKeyboard::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::GroundKeyboard::Start
 // Il2CppName: Start
 template<>
@@ -303,7 +301,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::GroundKeyboard*), "FixedUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::GroundKeyboard::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

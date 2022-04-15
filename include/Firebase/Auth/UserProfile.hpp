@@ -50,9 +50,9 @@ namespace Firebase::Auth {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // public System.Void set_DisplayName(System.String value)
     // Offset: 0x18B3480
     void set_DisplayName(::StringW value);
@@ -63,21 +63,19 @@ namespace Firebase::Auth {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::UserProfile::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UserProfile*, creationType>(cPtr, cMemoryOwn)));
     }
+    // public System.Void .ctor()
+    // Offset: 0x18B31E8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UserProfile* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::UserProfile::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UserProfile*, creationType>()));
+    }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Auth.UserProfile obj)
     // Offset: 0x18B2190
     static ::System::Runtime::InteropServices::HandleRef getCPtr(::Firebase::Auth::UserProfile* obj);
     // public System.Void Dispose()
     // Offset: 0x18B32F0
     void Dispose();
-    // public System.Void .ctor()
-    // Offset: 0x18B31E8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UserProfile* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::UserProfile::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UserProfile*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x18B3288
     // Implemented from: System.Object
@@ -102,6 +100,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Firebase::Auth::UserProfile::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Auth::UserProfile::getCPtr
 // Il2CppName: getCPtr
 template<>
@@ -119,10 +121,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::UserProfile*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Auth::UserProfile::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Auth::UserProfile::Finalize
 // Il2CppName: Finalize
 template<>

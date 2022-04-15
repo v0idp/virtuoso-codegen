@@ -63,7 +63,7 @@ namespace System::Linq::Expressions {
       return body;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _body
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__body();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__body();
     // System.Type get_TypeCore()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Type* get_TypeCore();

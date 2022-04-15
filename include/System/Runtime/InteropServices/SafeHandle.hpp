@@ -78,13 +78,13 @@ namespace System::Runtime::InteropServices {
     // Set static field: static private System.Int32 RefCount_One
     static void _set_RefCount_One(int value);
     // Get instance field reference: protected System.IntPtr handle
-    [[deprecated]] ::System::IntPtr& dyn_handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_handle();
     // Get instance field reference: private System.Int32 _state
-    [[deprecated]] int& dyn__state();
+    [[deprecated("Use field access instead!")]] int& dyn__state();
     // Get instance field reference: private System.Boolean _ownsHandle
-    [[deprecated]] bool& dyn__ownsHandle();
+    [[deprecated("Use field access instead!")]] bool& dyn__ownsHandle();
     // Get instance field reference: private System.Boolean _fullyInitialized
-    [[deprecated]] bool& dyn__fullyInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__fullyInitialized();
     // public System.Boolean get_IsClosed()
     // Offset: 0x11710B0
     bool get_IsClosed();

@@ -143,13 +143,13 @@ namespace Firebase {
     // Set static field: static private System.Func`1<System.Boolean> <>f__am$cache1
     static void _set_$$f__am$cache1(::System::Func_1<bool>* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.EventHandler AppDisposed
-    [[deprecated]] ::System::EventHandler*& dyn_AppDisposed();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler*& dyn_AppDisposed();
     // static public Firebase.FirebaseApp get_DefaultInstance()
     // Offset: 0x18857D8
     static ::Firebase::FirebaseApp* get_DefaultInstance();

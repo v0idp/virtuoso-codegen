@@ -98,19 +98,19 @@ namespace Facebook::WitAi::Interfaces {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean overrideMicLevel
-    [[deprecated]] bool& dyn_overrideMicLevel();
+    [[deprecated("Use field access instead!")]] bool& dyn_overrideMicLevel();
     // Get instance field reference: private Facebook.WitAi.Events.WitTranscriptionEvent onPartialTranscription
-    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onPartialTranscription();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onPartialTranscription();
     // Get instance field reference: private Facebook.WitAi.Events.WitTranscriptionEvent onFullTranscription
-    [[deprecated]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onFullTranscription();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitTranscriptionEvent*& dyn_onFullTranscription();
     // Get instance field reference: private UnityEngine.Events.UnityEvent onStoppedListening
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onStoppedListening();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_onStoppedListening();
     // Get instance field reference: private UnityEngine.Events.UnityEvent onStartListening
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onStartListening();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_onStartListening();
     // Get instance field reference: private Facebook.WitAi.Events.WitMicLevelChangedEvent onMicLevelChanged
-    [[deprecated]] ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_onMicLevelChanged();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::WitMicLevelChangedEvent*& dyn_onMicLevelChanged();
     // Get instance field reference: private readonly System.String <LastTranscription>k__BackingField
-    [[deprecated]] ::StringW& dyn_$LastTranscription$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$LastTranscription$k__BackingField();
     // public System.String get_LastTranscription()
     // Offset: 0x166E964
     ::StringW get_LastTranscription();
@@ -132,25 +132,19 @@ namespace Facebook::WitAi::Interfaces {
     // public System.Boolean get_OverrideMicLevel()
     // Offset: 0x166E994
     bool get_OverrideMicLevel();
+    // protected System.Void .ctor()
+    // Offset: 0x166E99C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CustomTranscriptionProvider* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Interfaces::CustomTranscriptionProvider::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CustomTranscriptionProvider*, creationType>()));
+    }
     // public System.Void Activate()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Activate();
     // public System.Void Deactivate()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Deactivate();
-    // protected System.Void .ctor()
-    // Offset: 0x166E99C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CustomTranscriptionProvider* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Interfaces::CustomTranscriptionProvider::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CustomTranscriptionProvider*, creationType>()));
-    }
   }; // Facebook.WitAi.Interfaces.CustomTranscriptionProvider
   #pragma pack(pop)
   static check_size<sizeof(CustomTranscriptionProvider), 72 + sizeof(::StringW)> __Facebook_WitAi_Interfaces_CustomTranscriptionProviderSizeCheck;
@@ -213,6 +207,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Interfaces::CustomTranscriptionProvider*), "get_OverrideMicLevel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Facebook::WitAi::Interfaces::CustomTranscriptionProvider::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Interfaces::CustomTranscriptionProvider::Activate
 // Il2CppName: Activate
 template<>
@@ -229,7 +227,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Interfaces::CustomTranscriptionProvider*), "Deactivate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::Interfaces::CustomTranscriptionProvider::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

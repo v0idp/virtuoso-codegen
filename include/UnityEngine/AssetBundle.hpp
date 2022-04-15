@@ -49,6 +49,13 @@ namespace UnityEngine {
   // [NativeHeaderAttribute] Offset: 6E1A98
   class AssetBundle : public ::UnityEngine::Object {
     public:
+    // private System.Void .ctor()
+    // Offset: 0x190C57C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AssetBundle* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AssetBundle::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AssetBundle*, creationType>()));
+    }
     // static UnityEngine.AssetBundle LoadFromFile_Internal(System.String path, System.UInt32 crc, System.UInt64 offset)
     // Offset: 0x190C5E0
     static ::UnityEngine::AssetBundle* LoadFromFile_Internal(::StringW path, uint crc, uint64_t offset);
@@ -83,20 +90,14 @@ namespace UnityEngine {
     // public System.String[] GetAllScenePaths()
     // Offset: 0x190C904
     ::ArrayW<::StringW> GetAllScenePaths();
-    // private System.Void .ctor()
-    // Offset: 0x190C57C
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AssetBundle* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AssetBundle::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AssetBundle*, creationType>()));
-    }
   }; // UnityEngine.AssetBundle
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::AssetBundle::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AssetBundle::LoadFromFile_Internal
 // Il2CppName: LoadFromFile_Internal
 template<>
@@ -174,7 +175,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::AssetBundle*), "GetAllScenePaths", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::AssetBundle::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

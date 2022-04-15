@@ -138,21 +138,21 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static private System.Byte[] signedData
     static void _set_signedData(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.Boolean _archived
-    [[deprecated]] bool& dyn__archived();
+    [[deprecated("Use field access instead!")]] bool& dyn__archived();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ExtensionCollection _extensions
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ExtensionCollection*& dyn__extensions();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509ExtensionCollection*& dyn__extensions();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.PublicKey _publicKey
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::PublicKey*& dyn__publicKey();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::PublicKey*& dyn__publicKey();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X500DistinguishedName issuer_name
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X500DistinguishedName*& dyn_issuer_name();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X500DistinguishedName*& dyn_issuer_name();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X500DistinguishedName subject_name
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X500DistinguishedName*& dyn_subject_name();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X500DistinguishedName*& dyn_subject_name();
     // Get instance field reference: private System.Security.Cryptography.Oid signature_algorithm
-    [[deprecated]] ::System::Security::Cryptography::Oid*& dyn_signature_algorithm();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::Oid*& dyn_signature_algorithm();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509CertificateImplCollection intermediateCerts
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection*& dyn_intermediateCerts();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection*& dyn_intermediateCerts();
     // Get instance field reference: private Mono.Security.X509.X509Certificate _cert
-    [[deprecated]] ::Mono::Security::X509::X509Certificate*& dyn__cert();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::X509::X509Certificate*& dyn__cert();
     // private System.Void .ctor(Mono.Security.X509.X509Certificate cert)
     // Offset: 0xC50194
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -210,8 +210,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // Offset: 0xC505B8
     // Implemented from: System.Security.Cryptography.X509Certificates.X509Certificate2Impl
     // Base method: System.Void X509Certificate2Impl::.ctor()
-    // Base method: System.Void X509CertificateImpl::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509Certificate2ImplMono* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Certificate2ImplMono::.ctor");

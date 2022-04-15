@@ -40,9 +40,9 @@ namespace System::Text {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 iChar
-    [[deprecated]] int& dyn_iChar();
+    [[deprecated("Use field access instead!")]] int& dyn_iChar();
     // Get instance field reference: System.Int32 readByteCount
-    [[deprecated]] int& dyn_readByteCount();
+    [[deprecated("Use field access instead!")]] int& dyn_readByteCount();
     // public System.Void .ctor(System.Text.UTF32Encoding encoding)
     // Offset: 0x189A6AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

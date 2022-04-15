@@ -58,11 +58,11 @@ namespace System::Data {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Data.DataColumn _column
-    [[deprecated]] ::System::Data::DataColumn*& dyn__column();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__column();
     // Get instance field reference: private readonly System.Data.DataRow <Row>k__BackingField
-    [[deprecated]] ::System::Data::DataRow*& dyn_$Row$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRow*& dyn_$Row$k__BackingField();
     // Get instance field reference: private System.Object <ProposedValue>k__BackingField
-    [[deprecated]] ::Il2CppObject*& dyn_$ProposedValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$ProposedValue$k__BackingField();
     // public System.Object get_ProposedValue()
     // Offset: 0xF94484
     ::Il2CppObject* get_ProposedValue();

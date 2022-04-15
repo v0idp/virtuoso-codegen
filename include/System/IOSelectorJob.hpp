@@ -72,11 +72,11 @@ namespace System {
       return *reinterpret_cast<::System::Threading::IThreadPoolWorkItem*>(this);
     }
     // Get instance field reference: private System.IOOperation operation
-    [[deprecated]] ::System::IOOperation& dyn_operation();
+    [[deprecated("Use field access instead!")]] ::System::IOOperation& dyn_operation();
     // Get instance field reference: private System.IOAsyncCallback callback
-    [[deprecated]] ::System::IOAsyncCallback*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::IOAsyncCallback*& dyn_callback();
     // Get instance field reference: private System.IOAsyncResult state
-    [[deprecated]] ::System::IOAsyncResult*& dyn_state();
+    [[deprecated("Use field access instead!")]] ::System::IOAsyncResult*& dyn_state();
     // public System.Void .ctor(System.IOOperation operation, System.IOAsyncCallback callback, System.IOAsyncResult state)
     // Offset: 0x10F1324
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

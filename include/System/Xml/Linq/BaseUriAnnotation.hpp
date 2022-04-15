@@ -40,7 +40,7 @@ namespace System::Xml::Linq {
       return baseUri;
     }
     // Get instance field reference: System.String baseUri
-    [[deprecated]] ::StringW& dyn_baseUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_baseUri();
     // public System.Void .ctor(System.String baseUri)
     // Offset: 0x1853404
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -76,13 +76,20 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: private VROSC.OrganPipeRow _row
-    [[deprecated]] ::VROSC::OrganPipeRow*& dyn__row();
+    [[deprecated("Use field access instead!")]] ::VROSC::OrganPipeRow*& dyn__row();
     // Get instance field reference: public System.Single Appear
-    [[deprecated]] float& dyn_Appear();
+    [[deprecated("Use field access instead!")]] float& dyn_Appear();
     // Get instance field reference: private UnityEngine.AnimationCurve _animationStartCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animationStartCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__animationStartCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _animateionEndCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animateionEndCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__animateionEndCurve();
+    // public System.Void .ctor()
+    // Offset: 0xC68F60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OrganPipeCreationBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrganPipeCreationBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OrganPipeCreationBehaviour*, creationType>()));
+    }
     // public System.Void Setup(VROSC.OrganPipeRow row, UnityEngine.AnimationCurve animationStartCurve, UnityEngine.AnimationCurve animateionEndCurve)
     // Offset: 0xC68C10
     void Setup(::VROSC::OrganPipeRow* row, ::UnityEngine::AnimationCurve* animationStartCurve, ::UnityEngine::AnimationCurve* animateionEndCurve);
@@ -92,16 +99,6 @@ namespace VROSC {
     // private System.Void OnPlayableDestroy()
     // Offset: 0xC68EBC
     void OnPlayableDestroy();
-    // public System.Void .ctor()
-    // Offset: 0xC68F60
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OrganPipeCreationBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrganPipeCreationBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OrganPipeCreationBehaviour*, creationType>()));
-    }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0xC68CE8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -113,6 +110,10 @@ namespace VROSC {
   static_assert(sizeof(OrganPipeCreationBehaviour) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::OrganPipeCreationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::OrganPipeCreationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -142,10 +143,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::OrganPipeCreationBehaviour*), "OnPlayableDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::OrganPipeCreationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::OrganPipeCreationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

@@ -97,13 +97,13 @@ namespace VROSC {
     // Set static field: static public System.Action OnMainStateEntered
     static void _set_OnMainStateEntered(::System::Action* value);
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    [[deprecated("Use field access instead!")]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
     // Get instance field reference: private VROSC.StartMenu _startMenuPrefab
-    [[deprecated]] ::VROSC::StartMenu*& dyn__startMenuPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::StartMenu*& dyn__startMenuPrefab();
     // Get instance field reference: private UnityEngine.AudioSource _startMenuMusic
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__startMenuMusic();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__startMenuMusic();
     // Get instance field reference: private System.Boolean _steamHasInputFocus
-    [[deprecated]] bool& dyn__steamHasInputFocus();
+    [[deprecated("Use field access instead!")]] bool& dyn__steamHasInputFocus();
     // public System.Void .ctor(VROSC.FullScreenFxController fullScreenFxController, VROSC.StartMenu startMenuPrefab, UnityEngine.AudioSource startMenuMusic)
     // Offset: 0x197CBC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -62,11 +62,11 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(::System::Threading::Tasks::TaskScheduler*) == 0x8);
     public:
     // Get instance field reference: readonly System.Threading.Tasks.Task m_task
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_task();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_task();
     // Get instance field reference: readonly System.Threading.Tasks.TaskContinuationOptions m_options
-    [[deprecated]] ::System::Threading::Tasks::TaskContinuationOptions& dyn_m_options();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskContinuationOptions& dyn_m_options();
     // Get instance field reference: private readonly System.Threading.Tasks.TaskScheduler m_taskScheduler
-    [[deprecated]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_taskScheduler();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_taskScheduler();
     // System.Void .ctor(System.Threading.Tasks.Task task, System.Threading.Tasks.TaskContinuationOptions options, System.Threading.Tasks.TaskScheduler scheduler)
     // Offset: 0x1255A38
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

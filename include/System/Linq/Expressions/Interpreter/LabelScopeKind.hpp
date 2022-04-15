@@ -96,7 +96,7 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static public System.Linq.Expressions.Interpreter.LabelScopeKind Expression
     static void _set_Expression(::System::Linq::Expressions::Interpreter::LabelScopeKind value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Linq.Expressions.Interpreter.LabelScopeKind
   #pragma pack(pop)
   static check_size<sizeof(LabelScopeKind), 0 + sizeof(int)> __System_Linq_Expressions_Interpreter_LabelScopeKindSizeCheck;

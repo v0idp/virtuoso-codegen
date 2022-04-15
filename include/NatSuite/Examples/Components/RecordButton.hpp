@@ -109,15 +109,22 @@ namespace NatSuite::Examples::Components {
     // Set static field: static private System.Single MaxRecordingTime
     static void _set_MaxRecordingTime(float value);
     // Get instance field reference: public UnityEngine.UI.Image button
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_button();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_button();
     // Get instance field reference: public UnityEngine.UI.Image countdown
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_countdown();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_countdown();
     // Get instance field reference: public UnityEngine.Events.UnityEvent onTouchDown
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onTouchDown();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_onTouchDown();
     // Get instance field reference: public UnityEngine.Events.UnityEvent onTouchUp
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onTouchUp();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_onTouchUp();
     // Get instance field reference: private System.Boolean pressed
-    [[deprecated]] bool& dyn_pressed();
+    [[deprecated("Use field access instead!")]] bool& dyn_pressed();
+    // public System.Void .ctor()
+    // Offset: 0xB311FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RecordButton* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Examples::Components::RecordButton::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RecordButton*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xB3107C
     void Start();
@@ -133,25 +140,16 @@ namespace NatSuite::Examples::Components {
     // private System.Collections.IEnumerator Countdown()
     // Offset: 0xB31188
     ::System::Collections::IEnumerator* Countdown();
-    // public System.Void .ctor()
-    // Offset: 0xB311FC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RecordButton* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Examples::Components::RecordButton::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RecordButton*, creationType>()));
-    }
   }; // NatSuite.Examples.Components.RecordButton
   #pragma pack(pop)
   static check_size<sizeof(RecordButton), 56 + sizeof(bool)> __NatSuite_Examples_Components_RecordButtonSizeCheck;
   static_assert(sizeof(RecordButton) == 0x39);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: NatSuite::Examples::Components::RecordButton::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Examples::Components::RecordButton::Start
 // Il2CppName: Start
 template<>
@@ -194,7 +192,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Examples::Components::RecordButton*), "Countdown", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Examples::Components::RecordButton::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -91,13 +91,13 @@ namespace System::Data {
     // Set static field: static private readonly System.Data.Function[] s_funcs
     static void _set_s_funcs(::ArrayW<::System::Data::Function*> value);
     // Get instance field reference: readonly System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: readonly System.Int32 _info
-    [[deprecated]] int& dyn__info();
+    [[deprecated("Use field access instead!")]] int& dyn__info();
     // Get instance field reference: System.Int32 _argumentCount
-    [[deprecated]] int& dyn__argumentCount();
+    [[deprecated("Use field access instead!")]] int& dyn__argumentCount();
     // Get instance field reference: System.Data.ExpressionNode[] _arguments
-    [[deprecated]] ::ArrayW<::System::Data::ExpressionNode*>& dyn__arguments();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::ExpressionNode*>& dyn__arguments();
     // System.Data.FunctionId get_Aggregate()
     // Offset: 0x13AEA7C
     ::System::Data::FunctionId get_Aggregate();

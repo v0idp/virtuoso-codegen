@@ -64,17 +64,15 @@ namespace DG::Tweening::Core {
     static_assert(sizeof(::DG::Tweening::TweenCallback*) == 0x8);
     public:
     // Get instance field reference: DG.Tweening.TweenType tweenType
-    [[deprecated]] ::DG::Tweening::TweenType& dyn_tweenType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenType& dyn_tweenType();
     // Get instance field reference: System.Single sequencedPosition
-    [[deprecated]] float& dyn_sequencedPosition();
+    [[deprecated("Use field access instead!")]] float& dyn_sequencedPosition();
     // Get instance field reference: System.Single sequencedEndPosition
-    [[deprecated]] float& dyn_sequencedEndPosition();
+    [[deprecated("Use field access instead!")]] float& dyn_sequencedEndPosition();
     // Get instance field reference: DG.Tweening.TweenCallback onStart
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStart();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onStart();
     // protected System.Void .ctor()
     // Offset: 0x15D333C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ABSSequentiable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::ABSSequentiable::.ctor");

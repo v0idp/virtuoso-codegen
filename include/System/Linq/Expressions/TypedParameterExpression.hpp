@@ -47,7 +47,7 @@ namespace System::Linq::Expressions {
     // Deleting conversion operator: operator ::StringW
     constexpr operator ::StringW() const noexcept = delete;
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // System.Void .ctor(System.Type type, System.String name)
     // Offset: 0xE96E40
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

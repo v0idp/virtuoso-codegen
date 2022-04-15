@@ -84,15 +84,15 @@ namespace System::Xml::Linq {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Xml::Linq::XNode*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Xml.Linq.XNode <>2__current
-    [[deprecated]] ::System::Xml::Linq::XNode*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XNode*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public System.Xml.Linq.XContainer <>4__this
-    [[deprecated]] ::System::Xml::Linq::XContainer*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XContainer*& dyn_$$4__this();
     // Get instance field reference: private System.Xml.Linq.XNode <n>5__1
-    [[deprecated]] ::System::Xml::Linq::XNode*& dyn_$n$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XNode*& dyn_$n$5__1();
     // private System.Xml.Linq.XNode System.Collections.Generic.IEnumerator<System.Xml.Linq.XNode>.get_Current()
     // Offset: 0x185E710
     ::System::Xml::Linq::XNode* System_Collections_Generic_IEnumerator$System_Xml_Linq_XNode$_get_Current();

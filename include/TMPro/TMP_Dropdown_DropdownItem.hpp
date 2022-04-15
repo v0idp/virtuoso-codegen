@@ -92,13 +92,13 @@ namespace TMPro {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TMP_Text m_Text
-    [[deprecated]] ::TMPro::TMP_Text*& dyn_m_Text();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Text*& dyn_m_Text();
     // Get instance field reference: private UnityEngine.UI.Image m_Image
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_Image();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_m_Image();
     // Get instance field reference: private UnityEngine.RectTransform m_RectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
     // Get instance field reference: private UnityEngine.UI.Toggle m_Toggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_m_Toggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_m_Toggle();
     // public TMPro.TMP_Text get_text()
     // Offset: 0x1820118
     ::TMPro::TMP_Text* get_text();
@@ -123,25 +123,19 @@ namespace TMPro {
     // public System.Void set_toggle(UnityEngine.UI.Toggle value)
     // Offset: 0x1820150
     void set_toggle(::UnityEngine::UI::Toggle* value);
+    // public System.Void .ctor()
+    // Offset: 0x1820290
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_Dropdown::DropdownItem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Dropdown::DropdownItem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_Dropdown::DropdownItem*, creationType>()));
+    }
     // public System.Void OnPointerEnter(UnityEngine.EventSystems.PointerEventData eventData)
     // Offset: 0x1820158
     void OnPointerEnter(::UnityEngine::EventSystems::PointerEventData* eventData);
     // public System.Void OnCancel(UnityEngine.EventSystems.BaseEventData eventData)
     // Offset: 0x18201E0
     void OnCancel(::UnityEngine::EventSystems::BaseEventData* eventData);
-    // public System.Void .ctor()
-    // Offset: 0x1820290
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_Dropdown::DropdownItem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Dropdown::DropdownItem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_Dropdown::DropdownItem*, creationType>()));
-    }
   }; // TMPro.TMP_Dropdown/TMPro.DropdownItem
   #pragma pack(pop)
   static check_size<sizeof(TMP_Dropdown::DropdownItem), 48 + sizeof(::UnityEngine::UI::Toggle*)> __TMPro_TMP_Dropdown_DropdownItemSizeCheck;
@@ -216,6 +210,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Dropdown::DropdownItem*), "set_toggle", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_Dropdown::DropdownItem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_Dropdown::DropdownItem::OnPointerEnter
 // Il2CppName: OnPointerEnter
 template<>
@@ -234,7 +232,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Dropdown::DropdownItem*), "OnCancel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{eventData});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_Dropdown::DropdownItem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

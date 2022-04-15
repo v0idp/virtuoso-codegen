@@ -64,10 +64,17 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.String LIKES_TO_WIN
     static void _set_LIKES_TO_WIN(::StringW value);
     // Get instance field reference: private System.Boolean m_likesToWinUnlocked
-    [[deprecated]] bool& dyn_m_likesToWinUnlocked();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_likesToWinUnlocked();
     // public System.Boolean get_LikesToWin()
     // Offset: 0x8F7844
     bool get_LikesToWin();
+    // public System.Void .ctor()
+    // Offset: 0x8F79E4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AchievementsManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::AchievementsManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AchievementsManager*, creationType>()));
+    }
     // public System.Void CheckForAchievmentUpdates()
     // Offset: 0x8F784C
     void CheckForAchievmentUpdates();
@@ -77,15 +84,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // private System.Void <CheckForAchievmentUpdates>b__4_0(Oculus.Platform.Message`1<Oculus.Platform.Models.AchievementProgressList> msg)
     // Offset: 0x8F79EC
     void $CheckForAchievmentUpdates$b__4_0(::Oculus::Platform::Message_1<::Oculus::Platform::Models::AchievementProgressList*>* msg);
-    // public System.Void .ctor()
-    // Offset: 0x8F79E4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AchievementsManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::AchievementsManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AchievementsManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.AchievementsManager
   #pragma pack(pop)
   static check_size<sizeof(AchievementsManager), 16 + sizeof(bool)> __Oculus_Platform_Samples_VrHoops_AchievementsManagerSizeCheck;
@@ -100,6 +98,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::AchievementsManager*), "get_LikesToWin", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::AchievementsManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::AchievementsManager::CheckForAchievmentUpdates
 // Il2CppName: CheckForAchievmentUpdates
 template<>
@@ -125,7 +127,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::AchievementsManager*), "<CheckForAchievmentUpdates>b__4_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::AchievementsManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

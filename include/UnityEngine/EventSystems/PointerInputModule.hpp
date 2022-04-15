@@ -98,9 +98,9 @@ namespace UnityEngine::EventSystems {
     // Set static field: static public System.Int32 kFakeTouchesId
     static void _set_kFakeTouchesId(int value);
     // Get instance field reference: protected System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData> m_PointerData
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::UnityEngine::EventSystems::PointerEventData*>*& dyn_m_PointerData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::UnityEngine::EventSystems::PointerEventData*>*& dyn_m_PointerData();
     // Get instance field reference: private readonly UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.MouseState m_MouseState
-    [[deprecated]] ::UnityEngine::EventSystems::PointerInputModule::MouseState*& dyn_m_MouseState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::PointerInputModule::MouseState*& dyn_m_MouseState();
     // protected System.Boolean GetPointerData(System.Int32 id, out UnityEngine.EventSystems.PointerEventData data, System.Boolean create)
     // Offset: 0x14292A4
     bool GetPointerData(int id, ByRef<::UnityEngine::EventSystems::PointerEventData*> data, bool create);
@@ -145,11 +145,6 @@ namespace UnityEngine::EventSystems {
     // Implemented from: UnityEngine.EventSystems.BaseInputModule
     // Base method: System.Void BaseInputModule::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PointerInputModule* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::PointerInputModule::.ctor");

@@ -153,35 +153,35 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Single[] samples
-    [[deprecated]] ::ArrayW<float>& dyn_samples();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_samples();
     // Get instance field reference: public System.Int32 sampleRate
-    [[deprecated]] int& dyn_sampleRate();
+    [[deprecated("Use field access instead!")]] int& dyn_sampleRate();
     // Get instance field reference: public System.Int32 channels
-    [[deprecated]] int& dyn_channels();
+    [[deprecated("Use field access instead!")]] int& dyn_channels();
     // Get instance field reference: public System.Int32 startIndex
-    [[deprecated]] int& dyn_startIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_startIndex();
     // Get instance field reference: public System.Int32 endIndex
-    [[deprecated]] int& dyn_endIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_endIndex();
     // Get instance field reference: public System.String songName
-    [[deprecated]] ::StringW& dyn_songName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_songName();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: private VROSC.FileWriter/VROSC.<>c__DisplayClass19_0 <>8__1
-    [[deprecated]] ::VROSC::FileWriter::$$c__DisplayClass19_0*& dyn_$$8__1();
+    [[deprecated("Use field access instead!")]] ::VROSC::FileWriter::$$c__DisplayClass19_0*& dyn_$$8__1();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: private UnityEngine.AndroidJavaClass <unityPlayer>5__2
-    [[deprecated]] ::UnityEngine::AndroidJavaClass*& dyn_$unityPlayer$5__2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AndroidJavaClass*& dyn_$unityPlayer$5__2();
     // Get instance field reference: private UnityEngine.AndroidJavaObject <context>5__3
-    [[deprecated]] ::UnityEngine::AndroidJavaObject*& dyn_$context$5__3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AndroidJavaObject*& dyn_$context$5__3();
     // Get instance field reference: private UnityEngine.AndroidJavaClass <environment>5__4
-    [[deprecated]] ::UnityEngine::AndroidJavaClass*& dyn_$environment$5__4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AndroidJavaClass*& dyn_$environment$5__4();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x95FE58
     void MoveNext();

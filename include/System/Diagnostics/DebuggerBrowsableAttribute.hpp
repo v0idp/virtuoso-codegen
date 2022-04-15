@@ -45,7 +45,7 @@ namespace System::Diagnostics {
       return state;
     }
     // Get instance field reference: private System.Diagnostics.DebuggerBrowsableState state
-    [[deprecated]] ::System::Diagnostics::DebuggerBrowsableState& dyn_state();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::DebuggerBrowsableState& dyn_state();
     // public System.Void .ctor(System.Diagnostics.DebuggerBrowsableState state)
     // Offset: 0x128FB50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

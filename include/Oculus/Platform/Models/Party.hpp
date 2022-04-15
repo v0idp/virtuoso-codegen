@@ -100,23 +100,23 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::UserList*) == 0x8);
     public:
     // Get instance field reference: public readonly System.UInt64 ID
-    [[deprecated]] uint64_t& dyn_ID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList InvitedUsersOptional
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsersOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsersOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList InvitedUsers
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
     // Get instance field reference: public readonly Oculus.Platform.Models.User LeaderOptional
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_LeaderOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_LeaderOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.User Leader
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_Leader();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_Leader();
     // Get instance field reference: public readonly Oculus.Platform.Models.Room RoomOptional
-    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_RoomOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Room*& dyn_RoomOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.Room Room
-    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_Room();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Room*& dyn_Room();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList UsersOptional
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_UsersOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList Users
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_Users();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_Users();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB4EC6C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

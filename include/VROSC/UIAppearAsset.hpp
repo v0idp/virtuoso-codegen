@@ -64,16 +64,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.UIAppearBehaviour template
-    [[deprecated]] ::VROSC::UIAppearBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIAppearBehaviour*& dyn_template();
     // Get instance field reference: public System.Boolean enter
-    [[deprecated]] bool& dyn_enter();
+    [[deprecated("Use field access instead!")]] bool& dyn_enter();
     // public System.Void .ctor()
     // Offset: 0xA3384C
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIAppearAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIAppearAsset::.ctor");

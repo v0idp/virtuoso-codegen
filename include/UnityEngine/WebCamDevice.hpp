@@ -75,15 +75,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.String m_Name
-    [[deprecated]] ::StringW& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Name();
     // Get instance field reference: System.String m_DepthCameraName
-    [[deprecated]] ::StringW& dyn_m_DepthCameraName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_DepthCameraName();
     // Get instance field reference: System.Int32 m_Flags
-    [[deprecated]] int& dyn_m_Flags();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Flags();
     // Get instance field reference: UnityEngine.WebCamKind m_Kind
-    [[deprecated]] ::UnityEngine::WebCamKind& dyn_m_Kind();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::WebCamKind& dyn_m_Kind();
     // Get instance field reference: UnityEngine.Resolution[] m_Resolutions
-    [[deprecated]] ::ArrayW<::UnityEngine::Resolution>& dyn_m_Resolutions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Resolution>& dyn_m_Resolutions();
     // public System.String get_name()
     // Offset: 0x18DAE5C
     ::StringW get_name();

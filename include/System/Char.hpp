@@ -140,7 +140,7 @@ namespace System {
     // Set static field: static System.Int32 LOW_SURROGATE_END
     static void _set_LOW_SURROGATE_END(int value);
     // Get instance field reference: System.Char m_value
-    [[deprecated]] ::Il2CppChar& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_m_value();
     // static private System.Void .cctor()
     // Offset: 0xE343C4
     static void _cctor();

@@ -70,11 +70,11 @@ namespace Mono::Xml {
       return *reinterpret_cast<::Mono::Xml::SmallXmlParser::IContentHandler*>(this);
     }
     // Get instance field reference: private System.Security.SecurityElement root
-    [[deprecated]] ::System::Security::SecurityElement*& dyn_root();
+    [[deprecated("Use field access instead!")]] ::System::Security::SecurityElement*& dyn_root();
     // Get instance field reference: private System.Security.SecurityElement current
-    [[deprecated]] ::System::Security::SecurityElement*& dyn_current();
+    [[deprecated("Use field access instead!")]] ::System::Security::SecurityElement*& dyn_current();
     // Get instance field reference: private System.Collections.Stack stack
-    [[deprecated]] ::System::Collections::Stack*& dyn_stack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn_stack();
     // public System.Void LoadXml(System.String xml)
     // Offset: 0x1174CF4
     void LoadXml(::StringW xml);

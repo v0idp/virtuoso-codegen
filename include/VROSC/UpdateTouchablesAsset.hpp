@@ -65,16 +65,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.UpdateTouchablesBehaviour template
-    [[deprecated]] ::VROSC::UpdateTouchablesBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::UpdateTouchablesBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.TouchableObjectsController> _touchables
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObjectsController*>& dyn__touchables();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObjectsController*>& dyn__touchables();
     // public System.Void .ctor()
     // Offset: 0x1919CB4
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UpdateTouchablesAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UpdateTouchablesAsset::.ctor");

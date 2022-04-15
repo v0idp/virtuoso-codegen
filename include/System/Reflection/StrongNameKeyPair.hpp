@@ -79,13 +79,13 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::Runtime::Serialization::IDeserializationCallback*>(this);
     }
     // Get instance field reference: private System.Byte[] _publicKey
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__publicKey();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__publicKey();
     // Get instance field reference: private System.String _keyPairContainer
-    [[deprecated]] ::StringW& dyn__keyPairContainer();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__keyPairContainer();
     // Get instance field reference: private System.Boolean _keyPairExported
-    [[deprecated]] bool& dyn__keyPairExported();
+    [[deprecated("Use field access instead!")]] bool& dyn__keyPairExported();
     // Get instance field reference: private System.Byte[] _keyPairArray
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__keyPairArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__keyPairArray();
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x1268C40
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

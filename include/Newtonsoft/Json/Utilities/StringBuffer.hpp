@@ -57,9 +57,9 @@ namespace Newtonsoft::Json::Utilities {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Char[] _buffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__buffer();
     // Get instance field reference: private System.Int32 _position
-    [[deprecated]] int& dyn__position();
+    [[deprecated("Use field access instead!")]] int& dyn__position();
     // public System.Int32 get_Position()
     // Offset: 0x158CA4C
     int get_Position();

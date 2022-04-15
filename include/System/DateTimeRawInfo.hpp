@@ -95,25 +95,25 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32* num
-    [[deprecated]] int*& dyn_num();
+    [[deprecated("Use field access instead!")]] int*& dyn_num();
     // Get instance field reference: System.Int32 numCount
-    [[deprecated]] int& dyn_numCount();
+    [[deprecated("Use field access instead!")]] int& dyn_numCount();
     // Get instance field reference: System.Int32 month
-    [[deprecated]] int& dyn_month();
+    [[deprecated("Use field access instead!")]] int& dyn_month();
     // Get instance field reference: System.Int32 year
-    [[deprecated]] int& dyn_year();
+    [[deprecated("Use field access instead!")]] int& dyn_year();
     // Get instance field reference: System.Int32 dayOfWeek
-    [[deprecated]] int& dyn_dayOfWeek();
+    [[deprecated("Use field access instead!")]] int& dyn_dayOfWeek();
     // Get instance field reference: System.Int32 era
-    [[deprecated]] int& dyn_era();
+    [[deprecated("Use field access instead!")]] int& dyn_era();
     // Get instance field reference: System.DateTimeParse/System.TM timeMark
-    [[deprecated]] ::System::DateTimeParse::TM& dyn_timeMark();
+    [[deprecated("Use field access instead!")]] ::System::DateTimeParse::TM& dyn_timeMark();
     // Get instance field reference: System.Double fraction
-    [[deprecated]] double& dyn_fraction();
+    [[deprecated("Use field access instead!")]] double& dyn_fraction();
     // Get instance field reference: System.Boolean hasSameDateAndTimeSeparators
-    [[deprecated]] bool& dyn_hasSameDateAndTimeSeparators();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasSameDateAndTimeSeparators();
     // Get instance field reference: System.Boolean timeZone
-    [[deprecated]] bool& dyn_timeZone();
+    [[deprecated("Use field access instead!")]] bool& dyn_timeZone();
     // System.Void Init(System.Int32* numberBuffer)
     // Offset: 0x128F9D0
     void Init(int* numberBuffer);

@@ -55,7 +55,7 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _errorMessage
-    [[deprecated]] ::StringW& dyn__errorMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__errorMessage();
     // private System.Void UserLoggedIn()
     // Offset: 0xACE144
     void UserLoggedIn();
@@ -75,11 +75,6 @@ namespace VROSC {
     // Offset: 0xACE41C
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MySessionsPanelUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MySessionsPanelUI::.ctor");

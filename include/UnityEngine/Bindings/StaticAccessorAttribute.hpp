@@ -50,9 +50,9 @@ namespace UnityEngine::Bindings {
     static_assert(sizeof(::UnityEngine::Bindings::StaticAccessorType) == 0x4);
     public:
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private UnityEngine.Bindings.StaticAccessorType <Type>k__BackingField
-    [[deprecated]] ::UnityEngine::Bindings::StaticAccessorType& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bindings::StaticAccessorType& dyn_$Type$k__BackingField();
     // public System.Void set_Name(System.String value)
     // Offset: 0x18FFE38
     void set_Name(::StringW value);

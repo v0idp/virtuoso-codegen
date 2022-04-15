@@ -54,7 +54,7 @@ namespace System::Data {
       return id;
     }
     // Get instance field reference: private System.Data.XmlToDatasetMap/System.Data.XmlNodeIdentety _id
-    [[deprecated]] ::System::Data::XmlToDatasetMap::XmlNodeIdentety*& dyn__id();
+    [[deprecated("Use field access instead!")]] ::System::Data::XmlToDatasetMap::XmlNodeIdentety*& dyn__id();
     // public System.Object get_Item(System.Xml.XmlNode node)
     // Offset: 0x18CE810
     ::Il2CppObject* get_Item(::System::Xml::XmlNode* node);
@@ -69,8 +69,6 @@ namespace System::Data {
     ::Il2CppObject* get_Item(::StringW name);
     // public System.Void .ctor(System.Int32 capacity)
     // Offset: 0x18CE740
-    // Implemented from: System.Collections.Hashtable
-    // Base method: System.Void Hashtable::.ctor(System.Int32 capacity)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlToDatasetMap::XmlNodeIdHashtable* New_ctor(int capacity) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::XmlToDatasetMap::XmlNodeIdHashtable::.ctor");

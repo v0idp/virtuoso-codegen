@@ -52,7 +52,6 @@ namespace VROSC {
     // Implemented from: VROSC.LoopPlayerPlaybackFadeState
     // Base method: System.Void LoopPlayerPlaybackFadeState::.ctor()
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlayerPlaybackWillStopState* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackWillStopState::.ctor");

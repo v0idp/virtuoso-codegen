@@ -77,11 +77,11 @@ namespace System::ComponentModel {
       return *reinterpret_cast<::System::ComponentModel::ICustomTypeDescriptor*>(this);
     }
     // Get instance field reference: private System.ComponentModel.TypeDescriptor/System.ComponentModel.TypeDescriptionNode _node
-    [[deprecated]] ::System::ComponentModel::TypeDescriptor::TypeDescriptionNode*& dyn__node();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::TypeDescriptor::TypeDescriptionNode*& dyn__node();
     // Get instance field reference: private System.Type _objectType
-    [[deprecated]] ::System::Type*& dyn__objectType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__objectType();
     // Get instance field reference: private System.Object _instance
-    [[deprecated]] ::Il2CppObject*& dyn__instance();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__instance();
     // System.Void .ctor(System.ComponentModel.TypeDescriptor/System.ComponentModel.TypeDescriptionNode node, System.Type objectType, System.Object instance)
     // Offset: 0x17D12E4
     // ABORTED: conflicts with another method.  DefaultTypeDescriptor(::System::ComponentModel::TypeDescriptor::TypeDescriptionNode* node, ::System::Type* objectType, ::Il2CppObject* instance);

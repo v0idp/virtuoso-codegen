@@ -44,9 +44,9 @@ namespace System::Numerics {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Double dbl
-    [[deprecated]] double& dyn_dbl();
+    [[deprecated("Use field access instead!")]] double& dyn_dbl();
     // Get instance field reference: public System.UInt64 uu
-    [[deprecated]] uint64_t& dyn_uu();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_uu();
   }; // System.Numerics.DoubleUlong
   // WARNING Not writing size check since size may be invalid!
 }

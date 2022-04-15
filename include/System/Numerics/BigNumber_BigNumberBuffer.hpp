@@ -61,13 +61,13 @@ namespace System::Numerics {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Text.StringBuilder digits
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_digits();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_digits();
     // Get instance field reference: public System.Int32 precision
-    [[deprecated]] int& dyn_precision();
+    [[deprecated("Use field access instead!")]] int& dyn_precision();
     // Get instance field reference: public System.Int32 scale
-    [[deprecated]] int& dyn_scale();
+    [[deprecated("Use field access instead!")]] int& dyn_scale();
     // Get instance field reference: public System.Boolean sign
-    [[deprecated]] bool& dyn_sign();
+    [[deprecated("Use field access instead!")]] bool& dyn_sign();
     // static public System.Numerics.BigNumber/System.Numerics.BigNumberBuffer Create()
     // Offset: 0x1893040
     static ::System::Numerics::BigNumber::BigNumberBuffer Create();

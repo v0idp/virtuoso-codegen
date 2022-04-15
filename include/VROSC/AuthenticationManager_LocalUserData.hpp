@@ -59,22 +59,20 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String Email
-    [[deprecated]] ::StringW& dyn_Email();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Email();
     // Get instance field reference: public System.String Password
-    [[deprecated]] ::StringW& dyn_Password();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Password();
     // Get instance field reference: public System.DateTime LastLoginDate
-    [[deprecated]] ::System::DateTime& dyn_LastLoginDate();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_LastLoginDate();
     // Get instance field reference: public System.Boolean RememberMe
-    [[deprecated]] bool& dyn_RememberMe();
+    [[deprecated("Use field access instead!")]] bool& dyn_RememberMe();
     // Get instance field reference: public System.Boolean SentVerificationEmail
-    [[deprecated]] bool& dyn_SentVerificationEmail();
+    [[deprecated("Use field access instead!")]] bool& dyn_SentVerificationEmail();
     // public System.Boolean get_HasData()
     // Offset: 0x957B2C
     bool get_HasData();
     // public System.Void .ctor()
     // Offset: 0x957B50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AuthenticationManager::LocalUserData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AuthenticationManager::LocalUserData::.ctor");

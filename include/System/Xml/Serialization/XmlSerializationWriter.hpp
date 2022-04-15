@@ -129,21 +129,21 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: private System.Runtime.Serialization.ObjectIDGenerator idGenerator
-    [[deprecated]] ::System::Runtime::Serialization::ObjectIDGenerator*& dyn_idGenerator();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ObjectIDGenerator*& dyn_idGenerator();
     // Get instance field reference: private System.Int32 qnameCount
-    [[deprecated]] int& dyn_qnameCount();
+    [[deprecated("Use field access instead!")]] int& dyn_qnameCount();
     // Get instance field reference: private System.Boolean topLevelElement
-    [[deprecated]] bool& dyn_topLevelElement();
+    [[deprecated("Use field access instead!")]] bool& dyn_topLevelElement();
     // Get instance field reference: private System.Collections.ArrayList namespaces
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_namespaces();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_namespaces();
     // Get instance field reference: private System.Xml.XmlWriter writer
-    [[deprecated]] ::System::Xml::XmlWriter*& dyn_writer();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWriter*& dyn_writer();
     // Get instance field reference: private System.Collections.Queue referencedElements
-    [[deprecated]] ::System::Collections::Queue*& dyn_referencedElements();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Queue*& dyn_referencedElements();
     // Get instance field reference: private System.Collections.Hashtable callbacks
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_callbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_callbacks();
     // Get instance field reference: private System.Collections.Hashtable serializedObjects
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_serializedObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_serializedObjects();
     // protected System.Xml.XmlWriter get_Writer()
     // Offset: 0x1324920
     ::System::Xml::XmlWriter* get_Writer();
@@ -295,7 +295,6 @@ namespace System::Xml::Serialization {
     // Offset: 0x1324684
     // Implemented from: System.Xml.Serialization.XmlSerializationGeneratedCode
     // Base method: System.Void XmlSerializationGeneratedCode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSerializationWriter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializationWriter::.ctor");

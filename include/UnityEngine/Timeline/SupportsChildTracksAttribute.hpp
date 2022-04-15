@@ -51,9 +51,9 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public readonly System.Type childType
-    [[deprecated]] ::System::Type*& dyn_childType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_childType();
     // Get instance field reference: public readonly System.Int32 levels
-    [[deprecated]] int& dyn_levels();
+    [[deprecated("Use field access instead!")]] int& dyn_levels();
     // public System.Void .ctor(System.Type childType, System.Int32 levels)
     // Offset: 0xC7C5F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

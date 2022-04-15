@@ -172,49 +172,49 @@ namespace Mono::Globalization::Unicode {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Byte[] l1b
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l1b();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l1b();
     // Get instance field reference: private System.Byte[] l2b
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l2b();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l2b();
     // Get instance field reference: private System.Byte[] l3b
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l3b();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l3b();
     // Get instance field reference: private System.Byte[] l4sb
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4sb();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l4sb();
     // Get instance field reference: private System.Byte[] l4tb
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4tb();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l4tb();
     // Get instance field reference: private System.Byte[] l4kb
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4kb();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l4kb();
     // Get instance field reference: private System.Byte[] l4wb
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l4wb();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l4wb();
     // Get instance field reference: private System.Byte[] l5b
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_l5b();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_l5b();
     // Get instance field reference: private System.String source
-    [[deprecated]] ::StringW& dyn_source();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_source();
     // Get instance field reference: private System.Int32 l1
-    [[deprecated]] int& dyn_l1();
+    [[deprecated("Use field access instead!")]] int& dyn_l1();
     // Get instance field reference: private System.Int32 l2
-    [[deprecated]] int& dyn_l2();
+    [[deprecated("Use field access instead!")]] int& dyn_l2();
     // Get instance field reference: private System.Int32 l3
-    [[deprecated]] int& dyn_l3();
+    [[deprecated("Use field access instead!")]] int& dyn_l3();
     // Get instance field reference: private System.Int32 l4s
-    [[deprecated]] int& dyn_l4s();
+    [[deprecated("Use field access instead!")]] int& dyn_l4s();
     // Get instance field reference: private System.Int32 l4t
-    [[deprecated]] int& dyn_l4t();
+    [[deprecated("Use field access instead!")]] int& dyn_l4t();
     // Get instance field reference: private System.Int32 l4k
-    [[deprecated]] int& dyn_l4k();
+    [[deprecated("Use field access instead!")]] int& dyn_l4k();
     // Get instance field reference: private System.Int32 l4w
-    [[deprecated]] int& dyn_l4w();
+    [[deprecated("Use field access instead!")]] int& dyn_l4w();
     // Get instance field reference: private System.Int32 l5
-    [[deprecated]] int& dyn_l5();
+    [[deprecated("Use field access instead!")]] int& dyn_l5();
     // Get instance field reference: private System.Int32 lcid
-    [[deprecated]] int& dyn_lcid();
+    [[deprecated("Use field access instead!")]] int& dyn_lcid();
     // Get instance field reference: private System.Globalization.CompareOptions options
-    [[deprecated]] ::System::Globalization::CompareOptions& dyn_options();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareOptions& dyn_options();
     // Get instance field reference: private System.Boolean processLevel2
-    [[deprecated]] bool& dyn_processLevel2();
+    [[deprecated("Use field access instead!")]] bool& dyn_processLevel2();
     // Get instance field reference: private System.Boolean frenchSort
-    [[deprecated]] bool& dyn_frenchSort();
+    [[deprecated("Use field access instead!")]] bool& dyn_frenchSort();
     // Get instance field reference: private System.Boolean frenchSorted
-    [[deprecated]] bool& dyn_frenchSorted();
+    [[deprecated("Use field access instead!")]] bool& dyn_frenchSorted();
     // public System.Void .ctor(System.Int32 lcid)
     // Offset: 0x125049C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

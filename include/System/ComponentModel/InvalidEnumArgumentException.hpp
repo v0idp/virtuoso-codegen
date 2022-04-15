@@ -38,11 +38,6 @@ namespace System::ComponentModel {
     public:
     // public System.Void .ctor()
     // Offset: 0x10F5E8C
-    // Implemented from: System.ArgumentException
-    // Base method: System.Void ArgumentException::.ctor()
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InvalidEnumArgumentException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::InvalidEnumArgumentException::.ctor");
@@ -50,10 +45,6 @@ namespace System::ComponentModel {
     }
     // public System.Void .ctor(System.String message)
     // Offset: 0x10F5E98
-    // Implemented from: System.ArgumentException
-    // Base method: System.Void ArgumentException::.ctor(System.String message)
-    // Base method: System.Void SystemException::.ctor(System.String message)
-    // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InvalidEnumArgumentException* New_ctor(::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::InvalidEnumArgumentException::.ctor");
@@ -61,10 +52,6 @@ namespace System::ComponentModel {
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x10F5EA0
-    // Implemented from: System.ArgumentException
-    // Base method: System.Void ArgumentException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InvalidEnumArgumentException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::InvalidEnumArgumentException::.ctor");

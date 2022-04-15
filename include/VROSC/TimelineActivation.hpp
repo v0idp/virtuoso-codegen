@@ -66,13 +66,20 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Playables.PlayableDirector _director
-    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn__director();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableDirector*& dyn__director();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _enterTimeline
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__enterTimeline();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _exitTimeline
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__exitTimeline();
     // Get instance field reference: private System.Boolean _stopBeforePlay
-    [[deprecated]] bool& dyn__stopBeforePlay();
+    [[deprecated("Use field access instead!")]] bool& dyn__stopBeforePlay();
+    // public System.Void .ctor()
+    // Offset: 0xA27444
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimelineActivation* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TimelineActivation::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimelineActivation*, creationType>()));
+    }
     // public System.Void Activate(System.Boolean shouldBeActive)
     // Offset: 0xA271C8
     void Activate(bool shouldBeActive);
@@ -88,25 +95,16 @@ namespace VROSC {
     // public System.Void EditorLoadDirector(System.Boolean enter)
     // Offset: 0xA27394
     void EditorLoadDirector(bool enter);
-    // public System.Void .ctor()
-    // Offset: 0xA27444
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimelineActivation* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TimelineActivation::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimelineActivation*, creationType>()));
-    }
   }; // VROSC.TimelineActivation
   #pragma pack(pop)
   static check_size<sizeof(TimelineActivation), 48 + sizeof(bool)> __VROSC_TimelineActivationSizeCheck;
   static_assert(sizeof(TimelineActivation) == 0x31);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TimelineActivation::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TimelineActivation::Activate
 // Il2CppName: Activate
 template<>
@@ -149,7 +147,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TimelineActivation*), "EditorLoadDirector", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{enter});
   }
 };
-// Writing MetadataGetter for method: VROSC::TimelineActivation::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

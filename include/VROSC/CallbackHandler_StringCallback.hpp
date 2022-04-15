@@ -47,13 +47,11 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Action`1<System.String> Action
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_Action();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_Action();
     // Get instance field reference: public System.String Argument
-    [[deprecated]] ::StringW& dyn_Argument();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Argument();
     // public System.Void .ctor()
     // Offset: 0x9593D8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CallbackHandler::StringCallback* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CallbackHandler::StringCallback::.ctor");

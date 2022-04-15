@@ -33,9 +33,6 @@ namespace UnityEngine {
     public:
     // protected System.Void .ctor()
     // Offset: 0x18D27A8
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RuntimeAnimatorController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::RuntimeAnimatorController::.ctor");

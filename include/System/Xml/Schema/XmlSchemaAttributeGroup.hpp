@@ -96,21 +96,21 @@ namespace System::Xml::Schema {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection attributes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_attributes();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnyAttribute anyAttribute
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
     // Get instance field reference: private System.Xml.XmlQualifiedName qname
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_qname();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_qname();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAttributeGroup redefined
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAttributeGroup*& dyn_redefined();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAttributeGroup*& dyn_redefined();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable attributeUses
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeUses();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeUses();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnyAttribute attributeWildcard
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_attributeWildcard();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_attributeWildcard();
     // Get instance field reference: private System.Int32 selfReferenceCount
-    [[deprecated]] int& dyn_selfReferenceCount();
+    [[deprecated("Use field access instead!")]] int& dyn_selfReferenceCount();
     // public System.String get_Name()
     // Offset: 0x1109A14
     ::StringW get_Name();
@@ -171,7 +171,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaAnnotated
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaAttributeGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaAttributeGroup::.ctor");

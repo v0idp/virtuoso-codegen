@@ -57,7 +57,7 @@ namespace System::Buffers {
     // Set static field: static public System.Buffers.ArrayPoolEventSource/System.Buffers.BufferAllocatedReason PoolExhausted
     static void _set_PoolExhausted(::System::Buffers::ArrayPoolEventSource::BufferAllocatedReason value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Buffers.ArrayPoolEventSource/System.Buffers.BufferAllocatedReason
   #pragma pack(pop)
   static check_size<sizeof(ArrayPoolEventSource::BufferAllocatedReason), 0 + sizeof(int)> __System_Buffers_ArrayPoolEventSource_BufferAllocatedReasonSizeCheck;

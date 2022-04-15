@@ -61,6 +61,13 @@ namespace System::ComponentModel {
     static bool _get_useCompatibleTypeConversion();
     // Set static field: static private System.Boolean useCompatibleTypeConversion
     static void _set_useCompatibleTypeConversion(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xDA712C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TypeConverter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::TypeConverter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TypeConverter*, creationType>()));
+    }
     // public System.Boolean CanConvertFrom(System.Type sourceType)
     // Offset: 0xDA9DFC
     bool CanConvertFrom(::System::Type* sourceType);
@@ -100,19 +107,14 @@ namespace System::ComponentModel {
     // protected System.Exception GetConvertToException(System.Object value, System.Type destinationType)
     // Offset: 0xDA9F64
     ::System::Exception* GetConvertToException(::Il2CppObject* value, ::System::Type* destinationType);
-    // public System.Void .ctor()
-    // Offset: 0xDA712C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TypeConverter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::TypeConverter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TypeConverter*, creationType>()));
-    }
   }; // System.ComponentModel.TypeConverter
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::ComponentModel::TypeConverter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::TypeConverter::CanConvertFrom
 // Il2CppName: CanConvertFrom
 template<>
@@ -241,7 +243,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::E
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::TypeConverter*), "GetConvertToException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value, destinationType});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::TypeConverter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

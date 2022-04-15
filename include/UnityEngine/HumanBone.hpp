@@ -58,11 +58,11 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.String m_BoneName
-    [[deprecated]] ::StringW& dyn_m_BoneName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_BoneName();
     // Get instance field reference: private System.String m_HumanName
-    [[deprecated]] ::StringW& dyn_m_HumanName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_HumanName();
     // Get instance field reference: public UnityEngine.HumanLimit limit
-    [[deprecated]] ::UnityEngine::HumanLimit& dyn_limit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::HumanLimit& dyn_limit();
   }; // UnityEngine.HumanBone
   #pragma pack(pop)
   static check_size<sizeof(HumanBone), 16 + sizeof(::UnityEngine::HumanLimit)> __UnityEngine_HumanBoneSizeCheck;

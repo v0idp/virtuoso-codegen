@@ -39,7 +39,14 @@ namespace Oculus::Platform {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean IsPersistantBetweenSceneLoads
-    [[deprecated]] bool& dyn_IsPersistantBetweenSceneLoads();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsPersistantBetweenSceneLoads();
+    // public System.Void .ctor()
+    // Offset: 0x9216A8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CallbackRunner* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::CallbackRunner::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CallbackRunner*, creationType>()));
+    }
     // static private System.Void ovr_UnityResetTestPlatform()
     // Offset: 0x9214B4
     static void ovr_UnityResetTestPlatform();
@@ -55,25 +62,16 @@ namespace Oculus::Platform {
     // private System.Void OnApplicationQuit()
     // Offset: 0x921650
     void OnApplicationQuit();
-    // public System.Void .ctor()
-    // Offset: 0x9216A8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CallbackRunner* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::CallbackRunner::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CallbackRunner*, creationType>()));
-    }
   }; // Oculus.Platform.CallbackRunner
   #pragma pack(pop)
   static check_size<sizeof(CallbackRunner), 24 + sizeof(bool)> __Oculus_Platform_CallbackRunnerSizeCheck;
   static_assert(sizeof(CallbackRunner) == 0x19);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::CallbackRunner::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::CallbackRunner::ovr_UnityResetTestPlatform
 // Il2CppName: ovr_UnityResetTestPlatform
 template<>
@@ -114,7 +112,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::CallbackRunner*), "OnApplicationQuit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::CallbackRunner::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

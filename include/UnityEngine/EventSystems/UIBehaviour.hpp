@@ -28,6 +28,13 @@ namespace UnityEngine::EventSystems {
   // [TokenAttribute] Offset: FFFFFFFF
   class UIBehaviour : public ::UnityEngine::MonoBehaviour {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x16D54E0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::UIBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIBehaviour*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x16D67F8
     void Awake();
@@ -67,23 +74,14 @@ namespace UnityEngine::EventSystems {
     // public System.Boolean IsDestroyed()
     // Offset: 0x16D6820
     bool IsDestroyed();
-    // protected System.Void .ctor()
-    // Offset: 0x16D54E0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::UIBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIBehaviour*, creationType>()));
-    }
   }; // UnityEngine.EventSystems.UIBehaviour
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::EventSystems::UIBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::EventSystems::UIBehaviour::Awake
 // Il2CppName: Awake
 template<>
@@ -188,7 +186,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::UIBehaviour*), "IsDestroyed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::EventSystems::UIBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

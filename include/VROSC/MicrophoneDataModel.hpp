@@ -77,19 +77,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean MicrophoneIsAttached
-    [[deprecated]] bool& dyn_MicrophoneIsAttached();
+    [[deprecated("Use field access instead!")]] bool& dyn_MicrophoneIsAttached();
     // Get instance field reference: public System.Single[] MicrophonePosition
-    [[deprecated]] ::ArrayW<float>& dyn_MicrophonePosition();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_MicrophonePosition();
     // Get instance field reference: public System.Single[] MicrophoneRotation
-    [[deprecated]] ::ArrayW<float>& dyn_MicrophoneRotation();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_MicrophoneRotation();
     // Get instance field reference: public System.Single[] MicrophoneScale
-    [[deprecated]] ::ArrayW<float>& dyn_MicrophoneScale();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_MicrophoneScale();
     // Get instance field reference: public System.Single PreampVolume
-    [[deprecated]] float& dyn_PreampVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_PreampVolume();
     // Get instance field reference: public System.Single PreampReverb
-    [[deprecated]] float& dyn_PreampReverb();
+    [[deprecated("Use field access instead!")]] float& dyn_PreampReverb();
     // Get instance field reference: public System.Boolean UseProximity
-    [[deprecated]] bool& dyn_UseProximity();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseProximity();
     // public override System.String get_Key()
     // Offset: 0xAC637C
     // Implemented from: VROSC.BaseDataModel
@@ -105,7 +105,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolDataModel
     // Base method: System.Void ToolDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MicrophoneDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneDataModel::.ctor");

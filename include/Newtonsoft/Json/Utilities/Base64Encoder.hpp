@@ -64,13 +64,13 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Char[] _charsLine
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__charsLine();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__charsLine();
     // Get instance field reference: private readonly System.IO.TextWriter _writer
-    [[deprecated]] ::System::IO::TextWriter*& dyn__writer();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextWriter*& dyn__writer();
     // Get instance field reference: private System.Byte[] _leftOverBytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__leftOverBytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__leftOverBytes();
     // Get instance field reference: private System.Int32 _leftOverBytesCount
-    [[deprecated]] int& dyn__leftOverBytesCount();
+    [[deprecated("Use field access instead!")]] int& dyn__leftOverBytesCount();
     // public System.Void .ctor(System.IO.TextWriter writer)
     // Offset: 0xDB6944
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

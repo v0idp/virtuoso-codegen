@@ -39,32 +39,30 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _height
-    [[deprecated]] float& dyn__height();
+    [[deprecated("Use field access instead!")]] float& dyn__height();
+    // public System.Void .ctor()
+    // Offset: 0x194DB64
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LanternLookAtCenter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LanternLookAtCenter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LanternLookAtCenter*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x194DAC4
     void OnEnable();
     // private System.Void LookAtCenter()
     // Offset: 0x194DB14
     void LookAtCenter();
-    // public System.Void .ctor()
-    // Offset: 0x194DB64
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LanternLookAtCenter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LanternLookAtCenter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LanternLookAtCenter*, creationType>()));
-    }
   }; // LanternLookAtCenter
   #pragma pack(pop)
   static check_size<sizeof(LanternLookAtCenter), 24 + sizeof(float)> __GlobalNamespace_LanternLookAtCenterSizeCheck;
   static_assert(sizeof(LanternLookAtCenter) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::LanternLookAtCenter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LanternLookAtCenter::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -81,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LanternLookAtCenter*), "LookAtCenter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LanternLookAtCenter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

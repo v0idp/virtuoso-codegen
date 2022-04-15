@@ -94,11 +94,11 @@ namespace System::Data::Common {
     // Set static field: static private readonly System.Collections.Generic.Dictionary`2<System.Type,System.Object> s_typeToNull
     static void _set_s_typeToNull(::System::Collections::Generic::Dictionary_2<::System::Type*, ::Il2CppObject*>* value);
     // Get instance field reference: private System.Object[] _values
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__values();
     // Get instance field reference: private readonly System.Boolean _implementsIXmlSerializable
-    [[deprecated]] bool& dyn__implementsIXmlSerializable();
+    [[deprecated("Use field access instead!")]] bool& dyn__implementsIXmlSerializable();
     // Get instance field reference: private readonly System.Boolean _implementsIComparable
-    [[deprecated]] bool& dyn__implementsIComparable();
+    [[deprecated("Use field access instead!")]] bool& dyn__implementsIComparable();
     // public System.Void .ctor(System.Data.DataColumn column, System.Type type)
     // Offset: 0x13DCFF4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

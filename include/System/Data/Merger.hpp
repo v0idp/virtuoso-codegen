@@ -84,17 +84,17 @@ namespace System::Data {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: private System.Data.DataTable _dataTable
-    [[deprecated]] ::System::Data::DataTable*& dyn__dataTable();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__dataTable();
     // Get instance field reference: private System.Boolean _preserveChanges
-    [[deprecated]] bool& dyn__preserveChanges();
+    [[deprecated("Use field access instead!")]] bool& dyn__preserveChanges();
     // Get instance field reference: private System.Data.MissingSchemaAction _missingSchemaAction
-    [[deprecated]] ::System::Data::MissingSchemaAction& dyn__missingSchemaAction();
+    [[deprecated("Use field access instead!")]] ::System::Data::MissingSchemaAction& dyn__missingSchemaAction();
     // Get instance field reference: private System.Boolean _isStandAlonetable
-    [[deprecated]] bool& dyn__isStandAlonetable();
+    [[deprecated("Use field access instead!")]] bool& dyn__isStandAlonetable();
     // Get instance field reference: private System.Boolean _IgnoreNSforTableLookup
-    [[deprecated]] bool& dyn__IgnoreNSforTableLookup();
+    [[deprecated("Use field access instead!")]] bool& dyn__IgnoreNSforTableLookup();
     // System.Void .ctor(System.Data.DataSet dataSet, System.Boolean preserveChanges, System.Data.MissingSchemaAction missingSchemaAction)
     // Offset: 0x13B7E9C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

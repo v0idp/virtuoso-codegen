@@ -61,16 +61,13 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single volume
-    [[deprecated]] float& dyn_volume();
+    [[deprecated("Use field access instead!")]] float& dyn_volume();
     // Get instance field reference: public System.Single stereoPan
-    [[deprecated]] float& dyn_stereoPan();
+    [[deprecated("Use field access instead!")]] float& dyn_stereoPan();
     // Get instance field reference: public System.Single spatialBlend
-    [[deprecated]] float& dyn_spatialBlend();
+    [[deprecated("Use field access instead!")]] float& dyn_spatialBlend();
     // public System.Void .ctor()
     // Offset: 0xC700B0
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioMixerProperties* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AudioMixerProperties::.ctor");

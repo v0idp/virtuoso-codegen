@@ -100,17 +100,17 @@ namespace System::Data {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private readonly System.Collections.ArrayList _list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__list();
     // Get instance field reference: private System.Int32 _defaultNameIndex
-    [[deprecated]] int& dyn__defaultNameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__defaultNameIndex();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler _onCollectionChanged
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChanged();
     // Get instance field reference: private System.Data.Constraint[] _delayLoadingConstraints
-    [[deprecated]] ::ArrayW<::System::Data::Constraint*>& dyn__delayLoadingConstraints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::Constraint*>& dyn__delayLoadingConstraints();
     // Get instance field reference: private System.Boolean _fLoadForeignKeyConstraintsOnly
-    [[deprecated]] bool& dyn__fLoadForeignKeyConstraintsOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__fLoadForeignKeyConstraintsOnly();
     // public System.Data.Constraint get_Item(System.Int32 index)
     // Offset: 0x14B26E0
     ::System::Data::Constraint* get_Item(int index);

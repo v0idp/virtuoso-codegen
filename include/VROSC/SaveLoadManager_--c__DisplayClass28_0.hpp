@@ -38,25 +38,27 @@ namespace VROSC {
       return sessionName;
     }
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
-    // System.Void <DeleteSession>b__0(System.String s)
-    // Offset: 0x8D0E40
-    void $DeleteSession$b__0(::StringW s);
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // public System.Void .ctor()
     // Offset: 0x8D0E38
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SaveLoadManager::$$c__DisplayClass28_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveLoadManager::$$c__DisplayClass28_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SaveLoadManager::$$c__DisplayClass28_0*, creationType>()));
     }
+    // System.Void <DeleteSession>b__0(System.String s)
+    // Offset: 0x8D0E40
+    void $DeleteSession$b__0(::StringW s);
   }; // VROSC.SaveLoadManager/VROSC.<>c__DisplayClass28_0
   #pragma pack(pop)
   static check_size<sizeof(SaveLoadManager::$$c__DisplayClass28_0), 16 + sizeof(::StringW)> __VROSC_SaveLoadManager_$$c__DisplayClass28_0SizeCheck;
   static_assert(sizeof(SaveLoadManager::$$c__DisplayClass28_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass28_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass28_0::$DeleteSession$b__0
 // Il2CppName: <DeleteSession>b__0
 template<>
@@ -66,7 +68,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c__DisplayClass28_0*), "<DeleteSession>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{s});
   }
 };
-// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass28_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

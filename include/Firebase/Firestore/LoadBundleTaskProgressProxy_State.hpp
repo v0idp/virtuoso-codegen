@@ -57,7 +57,7 @@ namespace Firebase::Firestore {
     // Set static field: static public Firebase.Firestore.LoadBundleTaskProgressProxy/Firebase.Firestore.State Success
     static void _set_Success(::Firebase::Firestore::LoadBundleTaskProgressProxy::State value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Firebase.Firestore.LoadBundleTaskProgressProxy/Firebase.Firestore.State
   #pragma pack(pop)
   static check_size<sizeof(LoadBundleTaskProgressProxy::State), 0 + sizeof(int)> __Firebase_Firestore_LoadBundleTaskProgressProxy_StateSizeCheck;

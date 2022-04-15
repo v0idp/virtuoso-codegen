@@ -68,16 +68,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.TMPTextAppearBehaviour template
-    [[deprecated]] ::VROSC::TMPTextAppearBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::TMPTextAppearBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<TMPro.TextMeshPro> _text
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::TMPro::TextMeshPro*>& dyn__text();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::TMPro::TextMeshPro*>& dyn__text();
     // public System.Void .ctor()
     // Offset: 0x193A260
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMPTextAppearAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TMPTextAppearAsset::.ctor");

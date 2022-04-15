@@ -64,9 +64,9 @@ namespace System::Collections::Specialized {
     // Set static field: static private System.Collections.IHashCodeProvider defaultHashProvider
     static void _set_defaultHashProvider(::System::Collections::IHashCodeProvider* value);
     // Get instance field reference: private System.Collections.IComparer _comparer
-    [[deprecated]] ::System::Collections::IComparer*& dyn__comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IComparer*& dyn__comparer();
     // Get instance field reference: private System.Collections.IHashCodeProvider _hcp
-    [[deprecated]] ::System::Collections::IHashCodeProvider*& dyn__hcp();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IHashCodeProvider*& dyn__hcp();
     // public System.Collections.IComparer get_Comparer()
     // Offset: 0x10E2CBC
     ::System::Collections::IComparer* get_Comparer();

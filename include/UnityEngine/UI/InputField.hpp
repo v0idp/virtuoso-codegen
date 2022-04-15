@@ -218,7 +218,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.InputField/UnityEngine.UI.ContentType Custom
       static void _set_Custom(::UnityEngine::UI::InputField::ContentType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.InputField/UnityEngine.UI.ContentType
     #pragma pack(pop)
     static check_size<sizeof(InputField::ContentType), 0 + sizeof(int)> __UnityEngine_UI_InputField_ContentTypeSizeCheck;
@@ -266,7 +266,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.InputField/UnityEngine.UI.InputType Password
       static void _set_Password(::UnityEngine::UI::InputField::InputType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.InputField/UnityEngine.UI.InputType
     #pragma pack(pop)
     static check_size<sizeof(InputField::InputType), 0 + sizeof(int)> __UnityEngine_UI_InputField_InputTypeSizeCheck;
@@ -332,7 +332,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.InputField/UnityEngine.UI.CharacterValidation EmailAddress
       static void _set_EmailAddress(::UnityEngine::UI::InputField::CharacterValidation value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.InputField/UnityEngine.UI.CharacterValidation
     #pragma pack(pop)
     static check_size<sizeof(InputField::CharacterValidation), 0 + sizeof(int)> __UnityEngine_UI_InputField_CharacterValidationSizeCheck;
@@ -380,7 +380,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.InputField/UnityEngine.UI.LineType MultiLineNewline
       static void _set_MultiLineNewline(::UnityEngine::UI::InputField::LineType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.InputField/UnityEngine.UI.LineType
     #pragma pack(pop)
     static check_size<sizeof(InputField::LineType), 0 + sizeof(int)> __UnityEngine_UI_InputField_LineTypeSizeCheck;
@@ -763,97 +763,97 @@ namespace UnityEngine::UI {
     // Set static field: static private System.Int32 k_MaxTextLength
     static void _set_k_MaxTextLength(int value);
     // Get instance field reference: protected UnityEngine.TouchScreenKeyboard m_Keyboard
-    [[deprecated]] ::UnityEngine::TouchScreenKeyboard*& dyn_m_Keyboard();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TouchScreenKeyboard*& dyn_m_Keyboard();
     // Get instance field reference: protected UnityEngine.UI.Text m_TextComponent
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_TextComponent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_TextComponent();
     // Get instance field reference: protected UnityEngine.UI.Graphic m_Placeholder
-    [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_m_Placeholder();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_m_Placeholder();
     // Get instance field reference: private UnityEngine.UI.InputField/UnityEngine.UI.ContentType m_ContentType
-    [[deprecated]] ::UnityEngine::UI::InputField::ContentType& dyn_m_ContentType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField::ContentType& dyn_m_ContentType();
     // Get instance field reference: private UnityEngine.UI.InputField/UnityEngine.UI.InputType m_InputType
-    [[deprecated]] ::UnityEngine::UI::InputField::InputType& dyn_m_InputType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField::InputType& dyn_m_InputType();
     // Get instance field reference: private System.Char m_AsteriskChar
-    [[deprecated]] ::Il2CppChar& dyn_m_AsteriskChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_m_AsteriskChar();
     // Get instance field reference: private UnityEngine.TouchScreenKeyboardType m_KeyboardType
-    [[deprecated]] ::UnityEngine::TouchScreenKeyboardType& dyn_m_KeyboardType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TouchScreenKeyboardType& dyn_m_KeyboardType();
     // Get instance field reference: private UnityEngine.UI.InputField/UnityEngine.UI.LineType m_LineType
-    [[deprecated]] ::UnityEngine::UI::InputField::LineType& dyn_m_LineType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField::LineType& dyn_m_LineType();
     // Get instance field reference: private System.Boolean m_HideMobileInput
-    [[deprecated]] bool& dyn_m_HideMobileInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HideMobileInput();
     // Get instance field reference: private UnityEngine.UI.InputField/UnityEngine.UI.CharacterValidation m_CharacterValidation
-    [[deprecated]] ::UnityEngine::UI::InputField::CharacterValidation& dyn_m_CharacterValidation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField::CharacterValidation& dyn_m_CharacterValidation();
     // Get instance field reference: private System.Int32 m_CharacterLimit
-    [[deprecated]] int& dyn_m_CharacterLimit();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CharacterLimit();
     // Get instance field reference: private UnityEngine.UI.InputField/UnityEngine.UI.SubmitEvent m_OnEndEdit
-    [[deprecated]] ::UnityEngine::UI::InputField::SubmitEvent*& dyn_m_OnEndEdit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField::SubmitEvent*& dyn_m_OnEndEdit();
     // Get instance field reference: private UnityEngine.UI.InputField/UnityEngine.UI.OnChangeEvent m_OnValueChanged
-    [[deprecated]] ::UnityEngine::UI::InputField::OnChangeEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField::OnChangeEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private UnityEngine.UI.InputField/UnityEngine.UI.OnValidateInput m_OnValidateInput
-    [[deprecated]] ::UnityEngine::UI::InputField::OnValidateInput*& dyn_m_OnValidateInput();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::InputField::OnValidateInput*& dyn_m_OnValidateInput();
     // Get instance field reference: private UnityEngine.Color m_CaretColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_CaretColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_CaretColor();
     // Get instance field reference: private System.Boolean m_CustomCaretColor
-    [[deprecated]] bool& dyn_m_CustomCaretColor();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CustomCaretColor();
     // Get instance field reference: private UnityEngine.Color m_SelectionColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_SelectionColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_SelectionColor();
     // Get instance field reference: protected System.String m_Text
-    [[deprecated]] ::StringW& dyn_m_Text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Text();
     // Get instance field reference: private System.Single m_CaretBlinkRate
-    [[deprecated]] float& dyn_m_CaretBlinkRate();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CaretBlinkRate();
     // Get instance field reference: private System.Int32 m_CaretWidth
-    [[deprecated]] int& dyn_m_CaretWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CaretWidth();
     // Get instance field reference: private System.Boolean m_ReadOnly
-    [[deprecated]] bool& dyn_m_ReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ReadOnly();
     // Get instance field reference: private System.Boolean m_ShouldActivateOnSelect
-    [[deprecated]] bool& dyn_m_ShouldActivateOnSelect();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShouldActivateOnSelect();
     // Get instance field reference: protected System.Int32 m_CaretPosition
-    [[deprecated]] int& dyn_m_CaretPosition();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CaretPosition();
     // Get instance field reference: protected System.Int32 m_CaretSelectPosition
-    [[deprecated]] int& dyn_m_CaretSelectPosition();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CaretSelectPosition();
     // Get instance field reference: private UnityEngine.RectTransform caretRectTrans
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_caretRectTrans();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_caretRectTrans();
     // Get instance field reference: protected UnityEngine.UIVertex[] m_CursorVerts
-    [[deprecated]] ::ArrayW<::UnityEngine::UIVertex>& dyn_m_CursorVerts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIVertex>& dyn_m_CursorVerts();
     // Get instance field reference: private UnityEngine.TextGenerator m_InputTextCache
-    [[deprecated]] ::UnityEngine::TextGenerator*& dyn_m_InputTextCache();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextGenerator*& dyn_m_InputTextCache();
     // Get instance field reference: private UnityEngine.CanvasRenderer m_CachedInputRenderer
-    [[deprecated]] ::UnityEngine::CanvasRenderer*& dyn_m_CachedInputRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CanvasRenderer*& dyn_m_CachedInputRenderer();
     // Get instance field reference: private System.Boolean m_PreventFontCallback
-    [[deprecated]] bool& dyn_m_PreventFontCallback();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PreventFontCallback();
     // Get instance field reference: protected UnityEngine.Mesh m_Mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_m_Mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_m_Mesh();
     // Get instance field reference: private System.Boolean m_AllowInput
-    [[deprecated]] bool& dyn_m_AllowInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AllowInput();
     // Get instance field reference: private System.Boolean m_ShouldActivateNextUpdate
-    [[deprecated]] bool& dyn_m_ShouldActivateNextUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShouldActivateNextUpdate();
     // Get instance field reference: private System.Boolean m_UpdateDrag
-    [[deprecated]] bool& dyn_m_UpdateDrag();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UpdateDrag();
     // Get instance field reference: private System.Boolean m_DragPositionOutOfBounds
-    [[deprecated]] bool& dyn_m_DragPositionOutOfBounds();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DragPositionOutOfBounds();
     // Get instance field reference: protected System.Boolean m_CaretVisible
-    [[deprecated]] bool& dyn_m_CaretVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CaretVisible();
     // Get instance field reference: private UnityEngine.Coroutine m_BlinkCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_BlinkCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_BlinkCoroutine();
     // Get instance field reference: private System.Single m_BlinkStartTime
-    [[deprecated]] float& dyn_m_BlinkStartTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_BlinkStartTime();
     // Get instance field reference: protected System.Int32 m_DrawStart
-    [[deprecated]] int& dyn_m_DrawStart();
+    [[deprecated("Use field access instead!")]] int& dyn_m_DrawStart();
     // Get instance field reference: protected System.Int32 m_DrawEnd
-    [[deprecated]] int& dyn_m_DrawEnd();
+    [[deprecated("Use field access instead!")]] int& dyn_m_DrawEnd();
     // Get instance field reference: private UnityEngine.Coroutine m_DragCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_DragCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_DragCoroutine();
     // Get instance field reference: private System.String m_OriginalText
-    [[deprecated]] ::StringW& dyn_m_OriginalText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_OriginalText();
     // Get instance field reference: private System.Boolean m_WasCanceled
-    [[deprecated]] bool& dyn_m_WasCanceled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_WasCanceled();
     // Get instance field reference: private System.Boolean m_HasDoneFocusTransition
-    [[deprecated]] bool& dyn_m_HasDoneFocusTransition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasDoneFocusTransition();
     // Get instance field reference: private UnityEngine.WaitForSecondsRealtime m_WaitForSecondsRealtime
-    [[deprecated]] ::UnityEngine::WaitForSecondsRealtime*& dyn_m_WaitForSecondsRealtime();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::WaitForSecondsRealtime*& dyn_m_WaitForSecondsRealtime();
     // Get instance field reference: private System.Boolean m_TouchKeyboardAllowsInPlaceEditing
-    [[deprecated]] bool& dyn_m_TouchKeyboardAllowsInPlaceEditing();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_TouchKeyboardAllowsInPlaceEditing();
     // Get instance field reference: private UnityEngine.Event m_ProcessingEvent
-    [[deprecated]] ::UnityEngine::Event*& dyn_m_ProcessingEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Event*& dyn_m_ProcessingEvent();
     // private UnityEngine.EventSystems.BaseInput get_input()
     // Offset: 0x1685CF8
     ::UnityEngine::EventSystems::BaseInput* get_input();
@@ -1314,11 +1314,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InputField* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::InputField::.ctor");
@@ -1328,7 +1323,6 @@ namespace UnityEngine::UI {
     // Offset: 0x168F0D8
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.cctor()
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
     // protected override System.Void OnEnable()
     // Offset: 0x1687B24

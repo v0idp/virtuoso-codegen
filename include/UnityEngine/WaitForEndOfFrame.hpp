@@ -33,7 +33,6 @@ namespace UnityEngine {
     // Offset: 0x184159C
     // Implemented from: UnityEngine.YieldInstruction
     // Base method: System.Void YieldInstruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WaitForEndOfFrame* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::WaitForEndOfFrame::.ctor");

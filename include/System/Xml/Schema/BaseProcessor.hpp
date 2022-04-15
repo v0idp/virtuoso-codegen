@@ -100,17 +100,17 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Xml.Schema.SchemaNames schemaNames
-    [[deprecated]] ::System::Xml::Schema::SchemaNames*& dyn_schemaNames();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames*& dyn_schemaNames();
     // Get instance field reference: private System.Xml.Schema.ValidationEventHandler eventHandler
-    [[deprecated]] ::System::Xml::Schema::ValidationEventHandler*& dyn_eventHandler();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ValidationEventHandler*& dyn_eventHandler();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaCompilationSettings compilationSettings
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaCompilationSettings*& dyn_compilationSettings();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaCompilationSettings*& dyn_compilationSettings();
     // Get instance field reference: private System.Int32 errorCount
-    [[deprecated]] int& dyn_errorCount();
+    [[deprecated("Use field access instead!")]] int& dyn_errorCount();
     // Get instance field reference: private System.String NsXml
-    [[deprecated]] ::StringW& dyn_NsXml();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXml();
     // protected System.Xml.XmlNameTable get_NameTable()
     // Offset: 0xB5CEB0
     ::System::Xml::XmlNameTable* get_NameTable();

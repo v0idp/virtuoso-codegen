@@ -43,9 +43,9 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _min
-    [[deprecated]] ::UnityEngine::Vector3& dyn__min();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__min();
     // Get instance field reference: private UnityEngine.Vector3 _max
-    [[deprecated]] ::UnityEngine::Vector3& dyn__max();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__max();
     // public UnityEngine.Vector3 get_Min()
     // Offset: 0xAC8D9C
     ::UnityEngine::Vector3 get_Min();

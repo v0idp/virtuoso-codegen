@@ -82,9 +82,9 @@ namespace Firebase::Firestore {
     // Set static field: static private readonly System.DateTime s_unixEpoch
     static void _set_s_unixEpoch(::System::DateTime value);
     // Get instance field reference: private readonly System.Int64 _seconds
-    [[deprecated]] int64_t& dyn__seconds();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__seconds();
     // Get instance field reference: private readonly System.Int32 _nanoseconds
-    [[deprecated]] int& dyn__nanoseconds();
+    [[deprecated("Use field access instead!")]] int& dyn__nanoseconds();
     // System.Void .ctor(System.Int64 seconds, System.Int32 nanoseconds)
     // Offset: 0xD6480C
     // ABORTED: conflicts with another method.  Timestamp(int64_t seconds, int nanoseconds);

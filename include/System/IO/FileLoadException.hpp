@@ -54,9 +54,9 @@ namespace System::IO {
     // Deleting conversion operator: operator ::StringW
     constexpr operator ::StringW() const noexcept = delete;
     // Get instance field reference: private System.String _fileName
-    [[deprecated]] ::StringW& dyn__fileName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__fileName();
     // Get instance field reference: private System.String _fusionLog
-    [[deprecated]] ::StringW& dyn__fusionLog();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__fusionLog();
     // public System.String get_FusionLog()
     // Offset: 0x144D200
     ::StringW get_FusionLog();

@@ -126,25 +126,25 @@ namespace VROSC::AudioReactive {
     // Set static field: static public System.Action`2<UnityEngine.Color,System.Single> OnColor4Change
     static void _set_OnColor4Change(::System::Action_2<::UnityEngine::Color, float>* value);
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
     // Get instance field reference: private System.Int32 _channel
-    [[deprecated]] int& dyn__channel();
+    [[deprecated("Use field access instead!")]] int& dyn__channel();
     // Get instance field reference: private System.Single _shift
-    [[deprecated]] float& dyn__shift();
+    [[deprecated("Use field access instead!")]] float& dyn__shift();
     // Get instance field reference: private System.Single _currentHue
-    [[deprecated]] float& dyn__currentHue();
+    [[deprecated("Use field access instead!")]] float& dyn__currentHue();
     // Get instance field reference: private System.Single _currentSaturation
-    [[deprecated]] float& dyn__currentSaturation();
+    [[deprecated("Use field access instead!")]] float& dyn__currentSaturation();
     // Get instance field reference: private System.Single _currentValue
-    [[deprecated]] float& dyn__currentValue();
+    [[deprecated("Use field access instead!")]] float& dyn__currentValue();
     // Get instance field reference: private System.Single _startSaturation
-    [[deprecated]] float& dyn__startSaturation();
+    [[deprecated("Use field access instead!")]] float& dyn__startSaturation();
     // Get instance field reference: private System.Single _intensityShift
-    [[deprecated]] float& dyn__intensityShift();
+    [[deprecated("Use field access instead!")]] float& dyn__intensityShift();
     // Get instance field reference: private System.Single _saturationShift
-    [[deprecated]] float& dyn__saturationShift();
+    [[deprecated("Use field access instead!")]] float& dyn__saturationShift();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _block
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__block();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__block();
     // public UnityEngine.Color get_Color()
     // Offset: 0x19A51D4
     ::UnityEngine::Color get_Color();

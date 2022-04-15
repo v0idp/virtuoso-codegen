@@ -75,18 +75,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.TextActivationBehaviour template
-    [[deprecated]] ::VROSC::TextActivationBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::TextActivationBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<TMPro.TextMeshPro> _textMesh
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::TMPro::TextMeshPro*>& dyn__textMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::TMPro::TextMeshPro*>& dyn__textMesh();
     // Get instance field reference: public System.String _text
-    [[deprecated]] ::StringW& dyn__text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__text();
     // public System.Void .ctor()
     // Offset: 0xA2493C
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextActivationAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TextActivationAsset::.ctor");

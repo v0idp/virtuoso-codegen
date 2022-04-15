@@ -50,11 +50,11 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean <ProcessDictionaryKeys>k__BackingField
-    [[deprecated]] bool& dyn_$ProcessDictionaryKeys$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ProcessDictionaryKeys$k__BackingField();
     // Get instance field reference: private System.Boolean <ProcessExtensionDataNames>k__BackingField
-    [[deprecated]] bool& dyn_$ProcessExtensionDataNames$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ProcessExtensionDataNames$k__BackingField();
     // Get instance field reference: private System.Boolean <OverrideSpecifiedNames>k__BackingField
-    [[deprecated]] bool& dyn_$OverrideSpecifiedNames$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$OverrideSpecifiedNames$k__BackingField();
     // public System.Boolean get_ProcessDictionaryKeys()
     // Offset: 0x1348228
     bool get_ProcessDictionaryKeys();
@@ -64,6 +64,13 @@ namespace Newtonsoft::Json::Serialization {
     // public System.Boolean get_OverrideSpecifiedNames()
     // Offset: 0x1348238
     bool get_OverrideSpecifiedNames();
+    // protected System.Void .ctor()
+    // Offset: 0x13484DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NamingStrategy* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::NamingStrategy::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NamingStrategy*, creationType>()));
+    }
     // public System.String GetPropertyName(System.String name, System.Boolean hasSpecifiedName)
     // Offset: 0x1348240
     ::StringW GetPropertyName(::StringW name, bool hasSpecifiedName);
@@ -79,15 +86,6 @@ namespace Newtonsoft::Json::Serialization {
     // protected System.Boolean Equals(Newtonsoft.Json.Serialization.NamingStrategy other)
     // Offset: 0x13483D4
     bool Equals(::Newtonsoft::Json::Serialization::NamingStrategy* other);
-    // protected System.Void .ctor()
-    // Offset: 0x13484DC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NamingStrategy* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::NamingStrategy::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NamingStrategy*, creationType>()));
-    }
     // public override System.Int32 GetHashCode()
     // Offset: 0x1348298
     // Implemented from: System.Object
@@ -128,6 +126,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::NamingStrategy*), "get_OverrideSpecifiedNames", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::NamingStrategy::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Serialization::NamingStrategy::GetPropertyName
 // Il2CppName: GetPropertyName
 template<>
@@ -174,10 +176,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::NamingStrategy*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::NamingStrategy::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Serialization::NamingStrategy::GetHashCode
 // Il2CppName: GetHashCode
 template<>

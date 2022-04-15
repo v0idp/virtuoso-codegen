@@ -120,27 +120,34 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _distanceFromHand
-    [[deprecated]] float& dyn__distanceFromHand();
+    [[deprecated("Use field access instead!")]] float& dyn__distanceFromHand();
     // Get instance field reference: private System.Single _moveTowardsCamera
-    [[deprecated]] float& dyn__moveTowardsCamera();
+    [[deprecated("Use field access instead!")]] float& dyn__moveTowardsCamera();
     // Get instance field reference: private System.Single _lookAtPointAbovePlayer
-    [[deprecated]] float& dyn__lookAtPointAbovePlayer();
+    [[deprecated("Use field access instead!")]] float& dyn__lookAtPointAbovePlayer();
     // Get instance field reference: private System.Single _debugPlayerDepth
-    [[deprecated]] float& dyn__debugPlayerDepth();
+    [[deprecated("Use field access instead!")]] float& dyn__debugPlayerDepth();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private System.Boolean _isInRightHand
-    [[deprecated]] bool& dyn__isInRightHand();
+    [[deprecated("Use field access instead!")]] bool& dyn__isInRightHand();
     // Get instance field reference: private UnityEngine.Vector3 _lookAtPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lookAtPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lookAtPoint();
     // Get instance field reference: private UnityEngine.Vector3 _controllerPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__controllerPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__controllerPosition();
     // Get instance field reference: private UnityEngine.Vector3 _cameraPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__cameraPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__cameraPosition();
     // Get instance field reference: private UnityEngine.Vector3 _dashboardPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__dashboardPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__dashboardPosition();
     // Get instance field reference: private UnityEngine.Vector3 _cameraCenter
-    [[deprecated]] ::UnityEngine::Vector3& dyn__cameraCenter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__cameraCenter();
+    // public System.Void .ctor()
+    // Offset: 0x8E0D98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DashboardPositioning* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DashboardPositioning::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DashboardPositioning*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x8E097C
     void Awake();
@@ -156,25 +163,16 @@ namespace VROSC {
     // private System.Void OnDrawGizmos()
     // Offset: 0x8E0D00
     void OnDrawGizmos();
-    // public System.Void .ctor()
-    // Offset: 0x8E0D98
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DashboardPositioning* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DashboardPositioning::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DashboardPositioning*, creationType>()));
-    }
   }; // VROSC.DashboardPositioning
   #pragma pack(pop)
   static check_size<sizeof(DashboardPositioning), 100 + sizeof(::UnityEngine::Vector3)> __VROSC_DashboardPositioningSizeCheck;
   static_assert(sizeof(DashboardPositioning) == 0x70);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::DashboardPositioning::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::DashboardPositioning::Awake
 // Il2CppName: Awake
 template<>
@@ -220,7 +218,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::DashboardPositioning*), "OnDrawGizmos", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::DashboardPositioning::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

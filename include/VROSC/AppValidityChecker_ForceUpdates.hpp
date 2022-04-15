@@ -45,15 +45,13 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String EULATermsVersion
-    [[deprecated]] ::StringW& dyn_EULATermsVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_EULATermsVersion();
     // Get instance field reference: public System.String MinVersionForApp
-    [[deprecated]] ::StringW& dyn_MinVersionForApp();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MinVersionForApp();
     // Get instance field reference: public System.String MinVersionForLibrary
-    [[deprecated]] ::StringW& dyn_MinVersionForLibrary();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MinVersionForLibrary();
     // public System.Void .ctor()
     // Offset: 0x956B3C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AppValidityChecker::ForceUpdates* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppValidityChecker::ForceUpdates::.ctor");

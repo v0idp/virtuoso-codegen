@@ -77,13 +77,13 @@ namespace System::Dynamic {
       return *reinterpret_cast<::System::Collections::Generic::ICollection_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private readonly System.Dynamic.ExpandoObject _expando
-    [[deprecated]] ::System::Dynamic::ExpandoObject*& dyn__expando();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoObject*& dyn__expando();
     // Get instance field reference: private readonly System.Int32 _expandoVersion
-    [[deprecated]] int& dyn__expandoVersion();
+    [[deprecated("Use field access instead!")]] int& dyn__expandoVersion();
     // Get instance field reference: private readonly System.Int32 _expandoCount
-    [[deprecated]] int& dyn__expandoCount();
+    [[deprecated("Use field access instead!")]] int& dyn__expandoCount();
     // Get instance field reference: private readonly System.Dynamic.ExpandoObject/System.Dynamic.ExpandoData _expandoData
-    [[deprecated]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn__expandoData();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn__expandoData();
     // public System.Int32 get_Count()
     // Offset: 0x16A4C50
     int get_Count();

@@ -108,7 +108,7 @@ namespace VROSC {
       // Set static field: static public VROSC.OrganPipeRow/VROSC.Alignment Right
       static void _set_Right(::VROSC::OrganPipeRow::Alignment value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.OrganPipeRow/VROSC.Alignment
     #pragma pack(pop)
     static check_size<sizeof(OrganPipeRow::Alignment), 0 + sizeof(int)> __VROSC_OrganPipeRow_AlignmentSizeCheck;
@@ -237,43 +237,43 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteController _controller
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__controller();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__controller();
     // Get instance field reference: private VROSC.SynthController _instrument
-    [[deprecated]] ::VROSC::SynthController*& dyn__instrument();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthController*& dyn__instrument();
     // Get instance field reference: private VROSC.OrganPipe _pipePrefab
-    [[deprecated]] ::VROSC::OrganPipe*& dyn__pipePrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::OrganPipe*& dyn__pipePrefab();
     // Get instance field reference: private VROSC.NoteFieldMonitor _monitor
-    [[deprecated]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
     // Get instance field reference: private System.Int32 _monitorIndex
-    [[deprecated]] int& dyn__monitorIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__monitorIndex();
     // Get instance field reference: private VROSC.MinMaxFloat _height
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__height();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__height();
     // Get instance field reference: private VROSC.MinMaxFloat _base
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__base();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__base();
     // Get instance field reference: private UnityEngine.AnimationCurve _heightCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__heightCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__heightCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _baseCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__baseCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__baseCurve();
     // Get instance field reference: private System.Single _diameter
-    [[deprecated]] float& dyn__diameter();
+    [[deprecated("Use field access instead!")]] float& dyn__diameter();
     // Get instance field reference: private System.Single _step
-    [[deprecated]] float& dyn__step();
+    [[deprecated("Use field access instead!")]] float& dyn__step();
     // Get instance field reference: private VROSC.OrganPipeRow/VROSC.Alignment _alignment
-    [[deprecated]] ::VROSC::OrganPipeRow::Alignment& dyn__alignment();
+    [[deprecated("Use field access instead!")]] ::VROSC::OrganPipeRow::Alignment& dyn__alignment();
     // Get instance field reference: private VROSC.Axis _axis
-    [[deprecated]] ::VROSC::Axis& dyn__axis();
+    [[deprecated("Use field access instead!")]] ::VROSC::Axis& dyn__axis();
     // Get instance field reference: private UnityEngine.Color _offColor
-    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private UnityEngine.Color _PlayingColor
-    [[deprecated]] ::UnityEngine::Color& dyn__PlayingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__PlayingColor();
     // Get instance field reference: private System.Int32 _preview
-    [[deprecated]] int& dyn__preview();
+    [[deprecated("Use field access instead!")]] int& dyn__preview();
     // Get instance field reference: private System.Int32 _octaveAtSetup
-    [[deprecated]] int& dyn__octaveAtSetup();
+    [[deprecated("Use field access instead!")]] int& dyn__octaveAtSetup();
     // Get instance field reference: private System.Boolean _setupDone
-    [[deprecated]] bool& dyn__setupDone();
+    [[deprecated("Use field access instead!")]] bool& dyn__setupDone();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.OrganPipe> <Pipes>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::OrganPipe*>*& dyn_$Pipes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::OrganPipe*>*& dyn_$Pipes$k__BackingField();
     // public System.Int32 get_PreviewPipes()
     // Offset: 0xF7EA14
     int get_PreviewPipes();
@@ -283,6 +283,13 @@ namespace VROSC {
     // private System.Void set_Pipes(System.Collections.Generic.List`1<VROSC.OrganPipe> value)
     // Offset: 0xF7EA1C
     void set_Pipes(::System::Collections::Generic::List_1<::VROSC::OrganPipe*>* value);
+    // public System.Void .ctor()
+    // Offset: 0xF7FA9C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OrganPipeRow* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrganPipeRow::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OrganPipeRow*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xF7EA2C
     void Awake();
@@ -319,19 +326,6 @@ namespace VROSC {
     // System.Void Clear()
     // Offset: 0xF7F91C
     void Clear();
-    // public System.Void .ctor()
-    // Offset: 0xF7FA9C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OrganPipeRow* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrganPipeRow::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OrganPipeRow*, creationType>()));
-    }
   }; // VROSC.OrganPipeRow
   #pragma pack(pop)
   static check_size<sizeof(OrganPipeRow), 160 + sizeof(::System::Collections::Generic::List_1<::VROSC::OrganPipe*>*)> __VROSC_OrganPipeRowSizeCheck;
@@ -365,6 +359,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::OrganPipeRow*), "set_Pipes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::OrganPipeRow::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::OrganPipeRow::Awake
 // Il2CppName: Awake
 template<>
@@ -472,7 +470,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::OrganPipeRow*), "Clear", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::OrganPipeRow::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

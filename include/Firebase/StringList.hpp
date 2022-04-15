@@ -76,9 +76,9 @@ namespace Firebase {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // public System.Boolean get_IsReadOnly()
     // Offset: 0x188A0F8
     bool get_IsReadOnly();
@@ -97,6 +97,13 @@ namespace Firebase {
     static StringList* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::StringList::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<StringList*, creationType>(cPtr, cMemoryOwn)));
+    }
+    // public System.Void .ctor()
+    // Offset: 0x1889DF0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StringList* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::StringList::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StringList*, creationType>()));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.StringList obj)
     // Offset: 0x1889E88
@@ -149,15 +156,6 @@ namespace Firebase {
     // public System.Boolean Remove(System.String value)
     // Offset: 0x188AADC
     bool Remove(::StringW value);
-    // public System.Void .ctor()
-    // Offset: 0x1889DF0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StringList* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::StringList::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StringList*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x1889EF4
     // Implemented from: System.Object
@@ -204,6 +202,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Fireba
     return ::il2cpp_utils::FindMethod(classof(Firebase::StringList*), "get_Count", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::StringList::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::StringList::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -362,10 +364,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::StringList*), "Remove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: Firebase::StringList::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::StringList::Finalize
 // Il2CppName: Finalize
 template<>

@@ -76,11 +76,11 @@ namespace System::Collections::Specialized {
       return *reinterpret_cast<::System::Collections::IDictionary*>(this);
     }
     // Get instance field reference: private System.Collections.Specialized.ListDictionary list
-    [[deprecated]] ::System::Collections::Specialized::ListDictionary*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::ListDictionary*& dyn_list();
     // Get instance field reference: private System.Collections.Hashtable hashtable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_hashtable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_hashtable();
     // Get instance field reference: private System.Boolean caseInsensitive
-    [[deprecated]] bool& dyn_caseInsensitive();
+    [[deprecated("Use field access instead!")]] bool& dyn_caseInsensitive();
     // public System.Object get_Item(System.Object key)
     // Offset: 0x10EF644
     ::Il2CppObject* get_Item(::Il2CppObject* key);
@@ -99,6 +99,13 @@ namespace System::Collections::Specialized {
     // public System.Object get_SyncRoot()
     // Offset: 0x10F00BC
     ::Il2CppObject* get_SyncRoot();
+    // public System.Void .ctor()
+    // Offset: 0x10EF60C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HybridDictionary* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::HybridDictionary::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HybridDictionary*, creationType>()));
+    }
     // public System.Void .ctor(System.Boolean caseInsensitive)
     // Offset: 0x10EF614
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -127,15 +134,6 @@ namespace System::Collections::Specialized {
     // public System.Void Remove(System.Object key)
     // Offset: 0x10F0ABC
     void Remove(::Il2CppObject* key);
-    // public System.Void .ctor()
-    // Offset: 0x10EF60C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HybridDictionary* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::HybridDictionary::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HybridDictionary*, creationType>()));
-    }
   }; // System.Collections.Specialized.HybridDictionary
   #pragma pack(pop)
   static check_size<sizeof(HybridDictionary), 32 + sizeof(bool)> __System_Collections_Specialized_HybridDictionarySizeCheck;
@@ -193,6 +191,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::HybridDictionary*), "get_SyncRoot", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Collections::Specialized::HybridDictionary::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Collections::Specialized::HybridDictionary::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -259,7 +261,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::HybridDictionary*), "Remove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{key});
   }
 };
-// Writing MetadataGetter for method: System::Collections::Specialized::HybridDictionary::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

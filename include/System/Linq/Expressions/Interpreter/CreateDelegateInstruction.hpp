@@ -51,7 +51,7 @@ namespace System::Linq::Expressions::Interpreter {
       return creator;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.LightDelegateCreator _creator
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LightDelegateCreator*& dyn__creator();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LightDelegateCreator*& dyn__creator();
     // System.Void .ctor(System.Linq.Expressions.Interpreter.LightDelegateCreator delegateCreator)
     // Offset: 0x11F97F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

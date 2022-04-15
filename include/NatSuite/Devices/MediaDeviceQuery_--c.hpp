@@ -50,18 +50,16 @@ namespace NatSuite::Devices {
     // static private System.Void .cctor()
     // Offset: 0x19611F8
     static void _cctor();
-    // NatSuite.Devices.WebCameraDevice <WebCamDevices>b__14_0(UnityEngine.WebCamDevice device)
-    // Offset: 0x1961260
-    ::NatSuite::Devices::WebCameraDevice* $WebCamDevices$b__14_0(::UnityEngine::WebCamDevice device);
     // public System.Void .ctor()
     // Offset: 0x1961258
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MediaDeviceQuery::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::MediaDeviceQuery::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MediaDeviceQuery::$$c*, creationType>()));
     }
+    // NatSuite.Devices.WebCameraDevice <WebCamDevices>b__14_0(UnityEngine.WebCamDevice device)
+    // Offset: 0x1961260
+    ::NatSuite::Devices::WebCameraDevice* $WebCamDevices$b__14_0(::UnityEngine::WebCamDevice device);
   }; // NatSuite.Devices.MediaDeviceQuery/NatSuite.Devices.<>c
   #pragma pack(pop)
 }
@@ -74,6 +72,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::MediaDeviceQuery::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: NatSuite::Devices::MediaDeviceQuery::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Devices::MediaDeviceQuery::$$c::$WebCamDevices$b__14_0
 // Il2CppName: <WebCamDevices>b__14_0
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::NatSuite:
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::MediaDeviceQuery::$$c*), "<WebCamDevices>b__14_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{device});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Devices::MediaDeviceQuery::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

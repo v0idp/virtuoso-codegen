@@ -44,7 +44,7 @@ namespace OggVorbis {
       return NativeErrorCode;
     }
     // Get instance field reference: private readonly OggVorbis.NativeErrorCode <NativeErrorCode>k__BackingField
-    [[deprecated]] ::OggVorbis::NativeErrorCode& dyn_$NativeErrorCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::OggVorbis::NativeErrorCode& dyn_$NativeErrorCode$k__BackingField();
     // public OggVorbis.NativeErrorCode get_NativeErrorCode()
     // Offset: 0x1909308
     ::OggVorbis::NativeErrorCode get_NativeErrorCode();

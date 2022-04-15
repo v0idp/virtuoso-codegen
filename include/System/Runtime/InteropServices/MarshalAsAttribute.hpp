@@ -104,25 +104,25 @@ namespace System::Runtime::InteropServices {
     static_assert(sizeof(int16_t) == 0x2);
     public:
     // Get instance field reference: public System.String MarshalCookie
-    [[deprecated]] ::StringW& dyn_MarshalCookie();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MarshalCookie();
     // Get instance field reference: public System.String MarshalType
-    [[deprecated]] ::StringW& dyn_MarshalType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MarshalType();
     // Get instance field reference: public System.Type MarshalTypeRef
-    [[deprecated]] ::System::Type*& dyn_MarshalTypeRef();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_MarshalTypeRef();
     // Get instance field reference: public System.Type SafeArrayUserDefinedSubType
-    [[deprecated]] ::System::Type*& dyn_SafeArrayUserDefinedSubType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_SafeArrayUserDefinedSubType();
     // Get instance field reference: private System.Runtime.InteropServices.UnmanagedType utype
-    [[deprecated]] ::System::Runtime::InteropServices::UnmanagedType& dyn_utype();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::UnmanagedType& dyn_utype();
     // Get instance field reference: public System.Runtime.InteropServices.UnmanagedType ArraySubType
-    [[deprecated]] ::System::Runtime::InteropServices::UnmanagedType& dyn_ArraySubType();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::UnmanagedType& dyn_ArraySubType();
     // Get instance field reference: public System.Runtime.InteropServices.VarEnum SafeArraySubType
-    [[deprecated]] ::System::Runtime::InteropServices::VarEnum& dyn_SafeArraySubType();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::VarEnum& dyn_SafeArraySubType();
     // Get instance field reference: public System.Int32 SizeConst
-    [[deprecated]] int& dyn_SizeConst();
+    [[deprecated("Use field access instead!")]] int& dyn_SizeConst();
     // Get instance field reference: public System.Int32 IidParameterIndex
-    [[deprecated]] int& dyn_IidParameterIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_IidParameterIndex();
     // Get instance field reference: public System.Int16 SizeParamIndex
-    [[deprecated]] int16_t& dyn_SizeParamIndex();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_SizeParamIndex();
     // System.Runtime.InteropServices.MarshalAsAttribute Copy()
     // Offset: 0xFFBA1C
     ::System::Runtime::InteropServices::MarshalAsAttribute* Copy();

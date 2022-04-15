@@ -61,9 +61,9 @@ namespace System::Linq::Expressions {
       return *reinterpret_cast<::System::Linq::Expressions::IArgumentProvider*>(this);
     }
     // Get instance field reference: private readonly System.Reflection.MethodInfo <AddMethod>k__BackingField
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_$AddMethod$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_$AddMethod$k__BackingField();
     // Get instance field reference: private readonly System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.Expression> <Arguments>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*& dyn_$Arguments$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::Expression*>*& dyn_$Arguments$k__BackingField();
     // public System.Reflection.MethodInfo get_AddMethod()
     // Offset: 0x11FC184
     ::System::Reflection::MethodInfo* get_AddMethod();

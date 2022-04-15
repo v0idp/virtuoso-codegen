@@ -71,18 +71,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.ControllerHintBehaviour template
-    [[deprecated]] ::VROSC::ControllerHintBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerHintBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.HighlightControllerComponents> _highlighting
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::HighlightControllerComponents*>& dyn__highlighting();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::HighlightControllerComponents*>& dyn__highlighting();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.TouchableObjectsController> _touchables
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObjectsController*>& dyn__touchables();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::TouchableObjectsController*>& dyn__touchables();
     // public System.Void .ctor()
     // Offset: 0x94E280
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ControllerHintAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerHintAsset::.ctor");

@@ -95,21 +95,21 @@ namespace System::Xml {
     // Deleting conversion operator: operator ::System::Xml::XmlNode*
     constexpr operator ::System::Xml::XmlNode*() const noexcept = delete;
     // Get instance field reference: private System.String publicId
-    [[deprecated]] ::StringW& dyn_publicId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_publicId();
     // Get instance field reference: private System.String systemId
-    [[deprecated]] ::StringW& dyn_systemId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_systemId();
     // Get instance field reference: private System.String notationName
-    [[deprecated]] ::StringW& dyn_notationName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_notationName();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String unparsedReplacementStr
-    [[deprecated]] ::StringW& dyn_unparsedReplacementStr();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_unparsedReplacementStr();
     // Get instance field reference: private System.String baseURI
-    [[deprecated]] ::StringW& dyn_baseURI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_baseURI();
     // Get instance field reference: private System.Xml.XmlLinkedNode lastChild
-    [[deprecated]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
     // Get instance field reference: private System.Boolean childrenFoliating
-    [[deprecated]] bool& dyn_childrenFoliating();
+    [[deprecated("Use field access instead!")]] bool& dyn_childrenFoliating();
     // public System.String get_SystemId()
     // Offset: 0x12827CC
     ::StringW get_SystemId();

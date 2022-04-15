@@ -108,23 +108,23 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebConnection <>4__this
-    [[deprecated]] ::System::Net::WebConnection*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebConnection*& dyn_$$4__this();
     // Get instance field reference: public System.Net.WebOperation operation
-    [[deprecated]] ::System::Net::WebOperation*& dyn_operation();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebOperation*& dyn_operation();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: private System.Exception <connectException>5__1
-    [[deprecated]] ::System::Exception*& dyn_$connectException$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_$connectException$5__1();
     // Get instance field reference: private System.Net.IPAddress[] <>7__wrap1
-    [[deprecated]] ::ArrayW<::System::Net::IPAddress*>& dyn_$$7__wrap1();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Net::IPAddress*>& dyn_$$7__wrap1();
     // Get instance field reference: private System.Int32 <>7__wrap2
-    [[deprecated]] int& dyn_$$7__wrap2();
+    [[deprecated("Use field access instead!")]] int& dyn_$$7__wrap2();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xA05934
     void MoveNext();

@@ -63,9 +63,9 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::UnityEngine::ParticleSystem*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.EmitParticlesEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::EmitParticlesEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::EmitParticlesEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.ParticleSystem[] _particleSystems
-    [[deprecated]] ::ArrayW<::UnityEngine::ParticleSystem*>& dyn__particleSystems();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::ParticleSystem*>& dyn__particleSystems();
     // public VROSC.AudioReactive.EmitParticlesEffectData get_Data()
     // Offset: 0x8EB61C
     ::VROSC::AudioReactive::EmitParticlesEffectData* get_Data();
@@ -77,7 +77,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EmitParticlesEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::EmitParticlesEffect::.ctor");

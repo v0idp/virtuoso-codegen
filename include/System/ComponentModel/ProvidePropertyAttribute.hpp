@@ -41,9 +41,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly System.String propertyName
-    [[deprecated]] ::StringW& dyn_propertyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_propertyName();
     // Get instance field reference: private readonly System.String receiverTypeName
-    [[deprecated]] ::StringW& dyn_receiverTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_receiverTypeName();
     // public System.String get_PropertyName()
     // Offset: 0x140CB58
     ::StringW get_PropertyName();

@@ -72,16 +72,23 @@ namespace Mono::Security::Cryptography {
     static_assert(sizeof(::System::Collections::ArrayList*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // Get instance field reference: private System.String _algorithm
-    [[deprecated]] ::StringW& dyn__algorithm();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__algorithm();
     // Get instance field reference: private System.Byte[] _key
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__key();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__key();
     // Get instance field reference: private System.Collections.ArrayList _list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__list();
     // public System.Byte[] get_PrivateKey()
     // Offset: 0x18E2334
     ::ArrayW<uint8_t> get_PrivateKey();
+    // public System.Void .ctor()
+    // Offset: 0x18E2038
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PKCS8::PrivateKeyInfo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Cryptography::PKCS8::PrivateKeyInfo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PKCS8::PrivateKeyInfo*, creationType>()));
+    }
     // public System.Void .ctor(System.Byte[] data)
     // Offset: 0x18E20A4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -113,15 +120,6 @@ namespace Mono::Security::Cryptography {
     // static public System.Byte[] Encode(System.Security.Cryptography.AsymmetricAlgorithm aa)
     // Offset: 0x18E2C48
     static ::ArrayW<uint8_t> Encode(::System::Security::Cryptography::AsymmetricAlgorithm* aa);
-    // public System.Void .ctor()
-    // Offset: 0x18E2038
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PKCS8::PrivateKeyInfo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Cryptography::PKCS8::PrivateKeyInfo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PKCS8::PrivateKeyInfo*, creationType>()));
-    }
   }; // Mono.Security.Cryptography.PKCS8/Mono.Security.Cryptography.PrivateKeyInfo
   #pragma pack(pop)
   static check_size<sizeof(PKCS8::PrivateKeyInfo), 40 + sizeof(::System::Collections::ArrayList*)> __Mono_Security_Cryptography_PKCS8_PrivateKeyInfoSizeCheck;
@@ -136,6 +134,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::Cryptography::PKCS8::PrivateKeyInfo*), "get_PrivateKey", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Mono::Security::Cryptography::PKCS8::PrivateKeyInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::Cryptography::PKCS8::PrivateKeyInfo::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -214,7 +216,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::Cryptography::PKCS8::PrivateKeyInfo*), "Encode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{aa});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::Cryptography::PKCS8::PrivateKeyInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

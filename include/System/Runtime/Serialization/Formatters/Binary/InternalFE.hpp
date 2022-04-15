@@ -61,13 +61,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE) == 0x4);
     public:
     // Get instance field reference: System.Runtime.Serialization.Formatters.FormatterTypeStyle FEtypeFormat
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::FormatterTypeStyle& dyn_FEtypeFormat();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::FormatterTypeStyle& dyn_FEtypeFormat();
     // Get instance field reference: System.Runtime.Serialization.Formatters.FormatterAssemblyStyle FEassemblyFormat
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle& dyn_FEassemblyFormat();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle& dyn_FEassemblyFormat();
     // Get instance field reference: System.Runtime.Serialization.Formatters.TypeFilterLevel FEsecurityLevel
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::TypeFilterLevel& dyn_FEsecurityLevel();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::TypeFilterLevel& dyn_FEsecurityLevel();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalSerializerTypeE FEserializerTypeEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE& dyn_FEserializerTypeEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalSerializerTypeE& dyn_FEserializerTypeEnum();
     // public System.Void .ctor()
     // Offset: 0x106DBD8
     // Implemented from: System.Object

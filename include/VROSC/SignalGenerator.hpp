@@ -79,7 +79,7 @@ namespace VROSC {
       // Set static field: static public VROSC.SignalGenerator/VROSC.Type Beat
       static void _set_Beat(::VROSC::SignalGenerator::Type value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.SignalGenerator/VROSC.Type
     #pragma pack(pop)
     static check_size<sizeof(SignalGenerator::Type), 0 + sizeof(int)> __VROSC_SignalGenerator_TypeSizeCheck;
@@ -115,13 +115,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean _bypass
-    [[deprecated]] bool& dyn__bypass();
+    [[deprecated("Use field access instead!")]] bool& dyn__bypass();
     // Get instance field reference: protected VROSC.SignalNode[] _output
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__output();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__output();
     // Get instance field reference: private VROSC.Signal _signal
-    [[deprecated]] ::VROSC::Signal*& dyn__signal();
+    [[deprecated("Use field access instead!")]] ::VROSC::Signal*& dyn__signal();
     // Get instance field reference: private VROSC.SignalGenerator/VROSC.Type _type
-    [[deprecated]] ::VROSC::SignalGenerator::Type& dyn__type();
+    [[deprecated("Use field access instead!")]] ::VROSC::SignalGenerator::Type& dyn__type();
     // protected System.Void Update()
     // Offset: 0x192832C
     void Update();
@@ -129,11 +129,6 @@ namespace VROSC {
     // Offset: 0x192848C
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalGenerator* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SignalGenerator::.ctor");

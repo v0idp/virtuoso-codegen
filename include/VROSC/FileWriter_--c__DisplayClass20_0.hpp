@@ -71,37 +71,39 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.String filePath
-    [[deprecated]] ::StringW& dyn_filePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_filePath();
     // Get instance field reference: public System.Single[] samples
-    [[deprecated]] ::ArrayW<float>& dyn_samples();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_samples();
     // Get instance field reference: public System.Int32 sampleRate
-    [[deprecated]] int& dyn_sampleRate();
+    [[deprecated("Use field access instead!")]] int& dyn_sampleRate();
     // Get instance field reference: public System.Int32 channels
-    [[deprecated]] int& dyn_channels();
+    [[deprecated("Use field access instead!")]] int& dyn_channels();
     // Get instance field reference: public System.Single normalizeMultiplier
-    [[deprecated]] float& dyn_normalizeMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_normalizeMultiplier();
     // Get instance field reference: public System.Int32 startIndex
-    [[deprecated]] int& dyn_startIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_startIndex();
     // Get instance field reference: public System.Int32 endIndex
-    [[deprecated]] int& dyn_endIndex();
-    // System.Void <SaveAudioToFile>b__0()
-    // Offset: 0x95FAE4
-    void $SaveAudioToFile$b__0();
+    [[deprecated("Use field access instead!")]] int& dyn_endIndex();
     // public System.Void .ctor()
     // Offset: 0x95FADC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FileWriter::$$c__DisplayClass20_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FileWriter::$$c__DisplayClass20_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FileWriter::$$c__DisplayClass20_0*, creationType>()));
     }
+    // System.Void <SaveAudioToFile>b__0()
+    // Offset: 0x95FAE4
+    void $SaveAudioToFile$b__0();
   }; // VROSC.FileWriter/VROSC.<>c__DisplayClass20_0
   #pragma pack(pop)
   static check_size<sizeof(FileWriter::$$c__DisplayClass20_0), 48 + sizeof(int)> __VROSC_FileWriter_$$c__DisplayClass20_0SizeCheck;
   static_assert(sizeof(FileWriter::$$c__DisplayClass20_0) == 0x34);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass20_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass20_0::$SaveAudioToFile$b__0
 // Il2CppName: <SaveAudioToFile>b__0
 template<>
@@ -110,7 +112,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter::$$c__DisplayClass20_0*), "<SaveAudioToFile>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass20_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

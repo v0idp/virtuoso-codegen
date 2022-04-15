@@ -115,25 +115,32 @@ namespace VROSC {
     // Set static field: static private System.Int32 VisualizationXRes
     static void _set_VisualizationXRes(int value);
     // Get instance field reference: private UnityEngine.Renderer _visualizationRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__visualizationRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__visualizationRenderer();
     // Get instance field reference: private System.Single _defaultVisualNormalization
-    [[deprecated]] float& dyn__defaultVisualNormalization();
+    [[deprecated("Use field access instead!")]] float& dyn__defaultVisualNormalization();
     // Get instance field reference: private System.Single _visualizationWindowLength
-    [[deprecated]] float& dyn__visualizationWindowLength();
+    [[deprecated("Use field access instead!")]] float& dyn__visualizationWindowLength();
     // Get instance field reference: private System.Int32 _currentVisualizationPixel
-    [[deprecated]] int& dyn__currentVisualizationPixel();
+    [[deprecated("Use field access instead!")]] int& dyn__currentVisualizationPixel();
     // Get instance field reference: private System.Single _lastMeasuredPeakValue
-    [[deprecated]] float& dyn__lastMeasuredPeakValue();
+    [[deprecated("Use field access instead!")]] float& dyn__lastMeasuredPeakValue();
     // Get instance field reference: private System.Int32 _visualizationStartIndex
-    [[deprecated]] int& dyn__visualizationStartIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__visualizationStartIndex();
     // Get instance field reference: private UnityEngine.Texture2D _visualizationTexture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn__visualizationTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn__visualizationTexture();
     // Get instance field reference: private UnityEngine.Color[] _barColorArray
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__barColorArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__barColorArray();
     // Get instance field reference: private UnityEngine.Color[] _wipeColorArray
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__wipeColorArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__wipeColorArray();
     // Get instance field reference: private System.Single _pixelOverflow
-    [[deprecated]] float& dyn__pixelOverflow();
+    [[deprecated("Use field access instead!")]] float& dyn__pixelOverflow();
+    // public System.Void .ctor()
+    // Offset: 0x9507D8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WaveformVisualizer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WaveformVisualizer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WaveformVisualizer*, creationType>()));
+    }
     // public System.Void Setup()
     // Offset: 0x950104
     void Setup();
@@ -155,25 +162,16 @@ namespace VROSC {
     // private System.Void DrawPixelsToTexture(System.Int32 xPos, UnityEngine.Color[] colors)
     // Offset: 0x950504
     void DrawPixelsToTexture(int xPos, ::ArrayW<::UnityEngine::Color> colors);
-    // public System.Void .ctor()
-    // Offset: 0x9507D8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WaveformVisualizer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WaveformVisualizer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WaveformVisualizer*, creationType>()));
-    }
   }; // VROSC.WaveformVisualizer
   #pragma pack(pop)
   static check_size<sizeof(WaveformVisualizer), 80 + sizeof(float)> __VROSC_WaveformVisualizerSizeCheck;
   static_assert(sizeof(WaveformVisualizer) == 0x54);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::WaveformVisualizer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::WaveformVisualizer::Setup
 // Il2CppName: Setup
 template<>
@@ -241,7 +239,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WaveformVisualizer*), "DrawPixelsToTexture", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{xPos, colors});
   }
 };
-// Writing MetadataGetter for method: VROSC::WaveformVisualizer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

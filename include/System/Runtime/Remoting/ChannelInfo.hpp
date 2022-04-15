@@ -46,7 +46,7 @@ namespace System::Runtime::Remoting {
       return channelData;
     }
     // Get instance field reference: private System.Object[] channelData
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_channelData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_channelData();
     // public System.Object[] get_ChannelData()
     // Offset: 0xE2DAB4
     ::ArrayW<::Il2CppObject*> get_ChannelData();

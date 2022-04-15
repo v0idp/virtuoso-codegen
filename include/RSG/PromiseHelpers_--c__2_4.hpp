@@ -71,21 +71,19 @@ namespace RSG {
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<PromiseHelpers::$$c__2_4<T1, T2, T3, T4>*>::get(), ".cctor", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___internal__method);
     }
+    // public System.Void .ctor()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PromiseHelpers::$$c__2_4<T1, T2, T3, T4>* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseHelpers::$$c__2_4::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PromiseHelpers::$$c__2_4<T1, T2, T3, T4>*, creationType>()));
+    }
     // RSG.Tuple`4<T1,T2,T3,T4> <All>b__2_0(RSG.Tuple`2<RSG.Tuple`2<T1,T2>,RSG.Tuple`2<T3,T4>> vals)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::RSG::Tuple_4<T1, T2, T3, T4>* $All$b__2_0(::RSG::Tuple_2<::RSG::Tuple_2<T1, T2>*, ::RSG::Tuple_2<T3, T4>*>* vals) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseHelpers::$$c__2_4::<All>b__2_0");
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "<All>b__2_0", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(vals)})));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::Tuple_4<T1, T2, T3, T4>*, false>(this, ___internal__method, vals);
-    }
-    // public System.Void .ctor()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PromiseHelpers::$$c__2_4<T1, T2, T3, T4>* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseHelpers::$$c__2_4::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PromiseHelpers::$$c__2_4<T1, T2, T3, T4>*, creationType>()));
     }
   }; // RSG.PromiseHelpers/RSG.<>c__2`4
   // Could not write size check! Type: RSG.PromiseHelpers/RSG.<>c__2`4 is generic, or has no fields that are valid for size checks!

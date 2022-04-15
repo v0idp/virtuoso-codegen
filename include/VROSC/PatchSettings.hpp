@@ -48,7 +48,14 @@ namespace VROSC {
       return Patch;
     }
     // Get instance field reference: public AudioHelm.HelmPatchFormat Patch
-    [[deprecated]] ::AudioHelm::HelmPatchFormat*& dyn_Patch();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmPatchFormat*& dyn_Patch();
+    // public System.Void .ctor()
+    // Offset: 0xADE81C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PatchSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PatchSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PatchSettings*, creationType>()));
+    }
     // static public System.Single GetVirtuosoAdjustedPercentValue(AudioHelm.Param parameter, System.Single percent)
     // Offset: 0xADD5E4
     static float GetVirtuosoAdjustedPercentValue(::AudioHelm::Param parameter, float percent);
@@ -64,21 +71,16 @@ namespace VROSC {
     // public System.Single GetParameterValue(AudioHelm.Param parameter)
     // Offset: 0xADE0C0
     float GetParameterValue(::AudioHelm::Param parameter);
-    // public System.Void .ctor()
-    // Offset: 0xADE81C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PatchSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PatchSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PatchSettings*, creationType>()));
-    }
   }; // VROSC.PatchSettings
   #pragma pack(pop)
   static check_size<sizeof(PatchSettings), 16 + sizeof(::AudioHelm::HelmPatchFormat*)> __VROSC_PatchSettingsSizeCheck;
   static_assert(sizeof(PatchSettings) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::PatchSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PatchSettings::GetVirtuosoAdjustedPercentValue
 // Il2CppName: GetVirtuosoAdjustedPercentValue
 template<>
@@ -127,7 +129,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::PatchSettings*), "GetParameterValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{parameter});
   }
 };
-// Writing MetadataGetter for method: VROSC::PatchSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

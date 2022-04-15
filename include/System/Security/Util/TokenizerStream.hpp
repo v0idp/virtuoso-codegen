@@ -91,21 +91,21 @@ namespace System::Security::Util {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 m_countTokens
-    [[deprecated]] int& dyn_m_countTokens();
+    [[deprecated("Use field access instead!")]] int& dyn_m_countTokens();
     // Get instance field reference: private System.Security.Util.TokenizerShortBlock m_headTokens
-    [[deprecated]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_headTokens();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_headTokens();
     // Get instance field reference: private System.Security.Util.TokenizerShortBlock m_lastTokens
-    [[deprecated]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_lastTokens();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_lastTokens();
     // Get instance field reference: private System.Security.Util.TokenizerShortBlock m_currentTokens
-    [[deprecated]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_currentTokens();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_currentTokens();
     // Get instance field reference: private System.Int32 m_indexTokens
-    [[deprecated]] int& dyn_m_indexTokens();
+    [[deprecated("Use field access instead!")]] int& dyn_m_indexTokens();
     // Get instance field reference: private System.Security.Util.TokenizerStringBlock m_headStrings
-    [[deprecated]] ::System::Security::Util::TokenizerStringBlock*& dyn_m_headStrings();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::TokenizerStringBlock*& dyn_m_headStrings();
     // Get instance field reference: private System.Security.Util.TokenizerStringBlock m_currentStrings
-    [[deprecated]] ::System::Security::Util::TokenizerStringBlock*& dyn_m_currentStrings();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::TokenizerStringBlock*& dyn_m_currentStrings();
     // Get instance field reference: private System.Int32 m_indexStrings
-    [[deprecated]] int& dyn_m_indexStrings();
+    [[deprecated("Use field access instead!")]] int& dyn_m_indexStrings();
     // System.Void AddToken(System.Int16 token)
     // Offset: 0x12AAB50
     void AddToken(int16_t token);

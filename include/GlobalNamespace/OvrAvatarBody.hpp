@@ -47,7 +47,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::ovrAvatarBodyComponent) == 0x80);
     public:
     // Get instance field reference: public ovrAvatarBodyComponent component
-    [[deprecated]] ::GlobalNamespace::ovrAvatarBodyComponent& dyn_component();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarBodyComponent& dyn_component();
     // public System.Nullable`1<ovrAvatarComponent> GetNativeAvatarComponent()
     // Offset: 0xF85894
     ::System::Nullable_1<::GlobalNamespace::ovrAvatarComponent> GetNativeAvatarComponent();
@@ -58,11 +58,6 @@ namespace GlobalNamespace {
     // Offset: 0xF897C0
     // Implemented from: OvrAvatarComponent
     // Base method: System.Void OvrAvatarComponent_::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarBody* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarBody::.ctor");

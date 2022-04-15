@@ -145,27 +145,34 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.Single LEADERBOARD_POLL_FREQ
     static void _set_LEADERBOARD_POLL_FREQ(float value);
     // Get instance field reference: private System.Single m_nextCheckTime
-    [[deprecated]] float& dyn_m_nextCheckTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_nextCheckTime();
     // Get instance field reference: private System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> m_mostWins
-    [[deprecated]] ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_mostWins();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_mostWins();
     // Get instance field reference: private System.Boolean m_foundLocalUserMostWinsEntry
-    [[deprecated]] bool& dyn_m_foundLocalUserMostWinsEntry();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_foundLocalUserMostWinsEntry();
     // Get instance field reference: private System.Int64 m_numWins
-    [[deprecated]] int64_t& dyn_m_numWins();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_numWins();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnMostWinsLeaderboardUpdated m_mostWinsCallback
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnMostWinsLeaderboardUpdated*& dyn_m_mostWinsCallback();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnMostWinsLeaderboardUpdated*& dyn_m_mostWinsCallback();
     // Get instance field reference: private System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry> m_highScores
-    [[deprecated]] ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_highScores();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::SortedDictionary_2<int, ::Oculus::Platform::Models::LeaderboardEntry*>*& dyn_m_highScores();
     // Get instance field reference: private System.Boolean m_foundLocalUserHighScore
-    [[deprecated]] bool& dyn_m_foundLocalUserHighScore();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_foundLocalUserHighScore();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnHighScoreLeaderboardUpdated m_highScoreCallback
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated*& dyn_m_highScoreCallback();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated*& dyn_m_highScoreCallback();
     // public System.Void set_MostWinsLeaderboardUpdatedCallback(Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnMostWinsLeaderboardUpdated value)
     // Offset: 0xB3BD28
     void set_MostWinsLeaderboardUpdatedCallback(::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnMostWinsLeaderboardUpdated* value);
     // public System.Void set_HighScoreLeaderboardUpdatedCallback(Oculus.Platform.Samples.VrHoops.LeaderboardManager/Oculus.Platform.Samples.VrHoops.OnHighScoreLeaderboardUpdated value)
     // Offset: 0xB3C554
     void set_HighScoreLeaderboardUpdatedCallback(::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated* value);
+    // public System.Void .ctor()
+    // Offset: 0xB3CBE4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LeaderboardManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::LeaderboardManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LeaderboardManager*, creationType>()));
+    }
     // public System.Void CheckForUpdates()
     // Offset: 0xB3B9D0
     void CheckForUpdates();
@@ -184,15 +191,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // public System.Void SubmitMatchScores(System.Boolean wonMatch, System.UInt32 score)
     // Offset: 0xB3C96C
     void SubmitMatchScores(bool wonMatch, uint score);
-    // public System.Void .ctor()
-    // Offset: 0xB3CBE4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LeaderboardManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::LeaderboardManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LeaderboardManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.LeaderboardManager
   #pragma pack(pop)
   static check_size<sizeof(LeaderboardManager), 72 + sizeof(::Oculus::Platform::Samples::VrHoops::LeaderboardManager::OnHighScoreLeaderboardUpdated*)> __Oculus_Platform_Samples_VrHoops_LeaderboardManagerSizeCheck;
@@ -217,6 +215,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::LeaderboardManager*), "set_HighScoreLeaderboardUpdatedCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::LeaderboardManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::LeaderboardManager::CheckForUpdates
 // Il2CppName: CheckForUpdates
 template<>
@@ -269,7 +271,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::LeaderboardManager*), "SubmitMatchScores", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{wonMatch, score});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::LeaderboardManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

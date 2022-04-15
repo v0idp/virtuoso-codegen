@@ -42,9 +42,9 @@ namespace System::Net::Cache {
     // Set static field: static readonly System.Char[] LineSplits
     static void _set_LineSplits(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: private System.Boolean _IsPrivateCache
-    [[deprecated]] bool& dyn__IsPrivateCache();
+    [[deprecated("Use field access instead!")]] bool& dyn__IsPrivateCache();
     // Get instance field reference: private System.Boolean _CanWrite
-    [[deprecated]] bool& dyn__CanWrite();
+    [[deprecated("Use field access instead!")]] bool& dyn__CanWrite();
     // static private System.Void .cctor()
     // Offset: 0xD9827C
     static void _cctor();

@@ -73,13 +73,13 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SignalNode*) == 0x8);
     public:
     // Get instance field reference: private VROSC.SignalNode _prefab
-    [[deprecated]] ::VROSC::SignalNode*& dyn__prefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::SignalNode*& dyn__prefab();
     // Get instance field reference: private UnityEngine.Transform _spawnLocation
-    [[deprecated]] ::UnityEngine::Transform*& dyn__spawnLocation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__spawnLocation();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.SignalNode> _instances
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::SignalNode*>*& dyn__instances();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::SignalNode*>*& dyn__instances();
     // Get instance field reference: private VROSC.SignalNode _currentlySignalingInstance
-    [[deprecated]] ::VROSC::SignalNode*& dyn__currentlySignalingInstance();
+    [[deprecated("Use field access instead!")]] ::VROSC::SignalNode*& dyn__currentlySignalingInstance();
     // public System.Void Clear()
     // Offset: 0xAE44D4
     void Clear();
@@ -88,11 +88,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PrefabSpawner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PrefabSpawner::.ctor");

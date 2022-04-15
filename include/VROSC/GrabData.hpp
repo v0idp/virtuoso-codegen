@@ -67,13 +67,13 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly VROSC.InputDevice <Device>k__BackingField
-    [[deprecated]] ::VROSC::InputDevice*& dyn_$Device$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_$Device$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Collider <GrabbedCollider>k__BackingField
-    [[deprecated]] ::UnityEngine::Collider*& dyn_$GrabbedCollider$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn_$GrabbedCollider$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Vector3 <Position>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$Position$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <PointedAt>k__BackingField
-    [[deprecated]] bool& dyn_$PointedAt$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$PointedAt$k__BackingField();
     // public VROSC.InputDevice get_Device()
     // Offset: 0x19A57D8
     ::VROSC::InputDevice* get_Device();

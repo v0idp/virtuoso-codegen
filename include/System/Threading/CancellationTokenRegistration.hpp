@@ -65,9 +65,9 @@ namespace System::Threading {
       return *reinterpret_cast<::System::IEquatable_1<::System::Threading::CancellationTokenRegistration>*>(this);
     }
     // Get instance field reference: private readonly System.Threading.CancellationCallbackInfo m_callbackInfo
-    [[deprecated]] ::System::Threading::CancellationCallbackInfo*& dyn_m_callbackInfo();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationCallbackInfo*& dyn_m_callbackInfo();
     // Get instance field reference: private readonly System.Threading.SparselyPopulatedArrayAddInfo`1<System.Threading.CancellationCallbackInfo> m_registrationInfo
-    [[deprecated]] ::System::Threading::SparselyPopulatedArrayAddInfo_1<::System::Threading::CancellationCallbackInfo*>& dyn_m_registrationInfo();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SparselyPopulatedArrayAddInfo_1<::System::Threading::CancellationCallbackInfo*>& dyn_m_registrationInfo();
     // System.Void .ctor(System.Threading.CancellationCallbackInfo callbackInfo, System.Threading.SparselyPopulatedArrayAddInfo`1<System.Threading.CancellationCallbackInfo> registrationInfo)
     // Offset: 0xFF7D74
     // ABORTED: conflicts with another method.  CancellationTokenRegistration(::System::Threading::CancellationCallbackInfo* callbackInfo, ::System::Threading::SparselyPopulatedArrayAddInfo_1<::System::Threading::CancellationCallbackInfo*> registrationInfo);

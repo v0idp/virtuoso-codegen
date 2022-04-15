@@ -95,19 +95,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _headerText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__headerText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__headerText();
     // Get instance field reference: private TMPro.TextMeshPro _bodyText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__bodyText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__bodyText();
     // Get instance field reference: private TMPro.TextMeshPro _errorText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__errorText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__errorText();
     // Get instance field reference: private VROSC.UIButton _confirmButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__confirmButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__confirmButton();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__cancelButton();
     // Get instance field reference: private System.Action _onConfirmedCallback
-    [[deprecated]] ::System::Action*& dyn__onConfirmedCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__onConfirmedCallback();
     // Get instance field reference: private System.Action _onCanceledCallback
-    [[deprecated]] ::System::Action*& dyn__onCanceledCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__onCanceledCallback();
+    // public System.Void .ctor()
+    // Offset: 0x94CC78
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ConfirmationUIPopup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ConfirmationUIPopup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ConfirmationUIPopup*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x94C770
     void Awake();
@@ -129,25 +136,16 @@ namespace VROSC {
     // private System.Void CancelButtonPressed()
     // Offset: 0x94CC44
     void CancelButtonPressed();
-    // public System.Void .ctor()
-    // Offset: 0x94CC78
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ConfirmationUIPopup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ConfirmationUIPopup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ConfirmationUIPopup*, creationType>()));
-    }
   }; // VROSC.ConfirmationUIPopup
   #pragma pack(pop)
   static check_size<sizeof(ConfirmationUIPopup), 72 + sizeof(::System::Action*)> __VROSC_ConfirmationUIPopupSizeCheck;
   static_assert(sizeof(ConfirmationUIPopup) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ConfirmationUIPopup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ConfirmationUIPopup::Awake
 // Il2CppName: Awake
 template<>
@@ -210,7 +208,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ConfirmationUIPopup*), "CancelButtonPressed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ConfirmationUIPopup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

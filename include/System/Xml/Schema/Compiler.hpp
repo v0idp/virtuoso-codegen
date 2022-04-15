@@ -209,31 +209,31 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchema*) == 0x8);
     public:
     // Get instance field reference: private System.String restrictionErrorMsg
-    [[deprecated]] ::StringW& dyn_restrictionErrorMsg();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_restrictionErrorMsg();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable attributes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributes();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable attributeGroups
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeGroups();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeGroups();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable elements
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_elements();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_elements();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable schemaTypes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_schemaTypes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_schemaTypes();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable groups
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_groups();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_groups();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable notations
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_notations();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_notations();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable examplars
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_examplars();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_examplars();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable identityConstraints
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_identityConstraints();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_identityConstraints();
     // Get instance field reference: private System.Collections.Stack complexTypeStack
-    [[deprecated]] ::System::Collections::Stack*& dyn_complexTypeStack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn_complexTypeStack();
     // Get instance field reference: private System.Collections.Hashtable schemasToCompile
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_schemasToCompile();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_schemasToCompile();
     // Get instance field reference: private System.Collections.Hashtable importedSchemas
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_importedSchemas();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_importedSchemas();
     // Get instance field reference: private System.Xml.Schema.XmlSchema schemaForSchema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_schemaForSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_schemaForSchema();
     // public System.Void .ctor(System.Xml.XmlNameTable nameTable, System.Xml.Schema.ValidationEventHandler eventHandler, System.Xml.Schema.XmlSchema schemaForSchema, System.Xml.Schema.XmlSchemaCompilationSettings compilationSettings)
     // Offset: 0xB6760C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

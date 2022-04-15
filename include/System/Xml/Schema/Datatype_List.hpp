@@ -75,9 +75,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Xml.Schema.DatatypeImplementation itemType
-    [[deprecated]] ::System::Xml::Schema::DatatypeImplementation*& dyn_itemType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::DatatypeImplementation*& dyn_itemType();
     // Get instance field reference: private System.Int32 minListSize
-    [[deprecated]] int& dyn_minListSize();
+    [[deprecated("Use field access instead!")]] int& dyn_minListSize();
     // System.Void .ctor(System.Xml.Schema.DatatypeImplementation type, System.Int32 minListSize)
     // Offset: 0x10A47C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -42,9 +42,9 @@ namespace System::Threading {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_total
-    [[deprecated]] int& dyn_m_total();
+    [[deprecated("Use field access instead!")]] int& dyn_m_total();
     // Get instance field reference: private System.Int32 m_start
-    [[deprecated]] int& dyn_m_start();
+    [[deprecated("Use field access instead!")]] int& dyn_m_start();
     // public System.Int32 get_RemainingMilliseconds()
     // Offset: 0x16B1CCC
     int get_RemainingMilliseconds();

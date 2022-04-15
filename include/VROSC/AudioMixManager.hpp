@@ -126,18 +126,25 @@ namespace VROSC {
     // Set static field: static public System.String MasterVolume
     static void _set_MasterVolume(::StringW value);
     // Get instance field reference: private UnityEngine.Audio.AudioMixer _audioMixer
-    [[deprecated]] ::UnityEngine::Audio::AudioMixer*& dyn__audioMixer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixer*& dyn__audioMixer();
     // Get instance field reference: private VROSC.ReverbManager _reverbManager
-    [[deprecated]] ::VROSC::ReverbManager*& dyn__reverbManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::ReverbManager*& dyn__reverbManager();
     // Get instance field reference: private VROSC.CompressionManager _compressionManager
-    [[deprecated]] ::VROSC::CompressionManager*& dyn__compressionManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::CompressionManager*& dyn__compressionManager();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,VROSC.AudioMixManager/VROSC.VolumeParameter> _volumeParameters
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::AudioMixManager::VolumeParameter*>*& dyn__volumeParameters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::AudioMixManager::VolumeParameter*>*& dyn__volumeParameters();
     // Get instance field reference: private System.Boolean _fadedOutMaster
-    [[deprecated]] bool& dyn__fadedOutMaster();
+    [[deprecated("Use field access instead!")]] bool& dyn__fadedOutMaster();
     // public UnityEngine.Audio.AudioMixer get_AudioMixer()
     // Offset: 0x96FBF0
     ::UnityEngine::Audio::AudioMixer* get_AudioMixer();
+    // public System.Void .ctor()
+    // Offset: 0x970B90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioMixManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioMixManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioMixManager*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x96FBF8
     void Awake();
@@ -189,19 +196,6 @@ namespace VROSC {
     // public System.Void SetDrumsCompression(System.Single compression)
     // Offset: 0x970B74
     void SetDrumsCompression(float compression);
-    // public System.Void .ctor()
-    // Offset: 0x970B90
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioMixManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioMixManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioMixManager*, creationType>()));
-    }
   }; // VROSC.AudioMixManager
   #pragma pack(pop)
   static check_size<sizeof(AudioMixManager), 56 + sizeof(bool)> __VROSC_AudioMixManagerSizeCheck;
@@ -216,6 +210,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioMixManager*), "get_AudioMixer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::AudioMixManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AudioMixManager::Awake
 // Il2CppName: Awake
 template<>
@@ -377,7 +375,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioMixManager*), "SetDrumsCompression", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{compression});
   }
 };
-// Writing MetadataGetter for method: VROSC::AudioMixManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -43,7 +43,7 @@ namespace System::Runtime::InteropServices {
       return val;
     }
     // Get instance field reference: System.Int32 _val
-    [[deprecated]] int& dyn__val();
+    [[deprecated("Use field access instead!")]] int& dyn__val();
     // public System.Void .ctor(System.Int32 dispId)
     // Offset: 0x129E73C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

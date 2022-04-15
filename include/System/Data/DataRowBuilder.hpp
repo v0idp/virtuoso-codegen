@@ -48,9 +48,9 @@ namespace System::Data {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: System.Int32 _record
-    [[deprecated]] int& dyn__record();
+    [[deprecated("Use field access instead!")]] int& dyn__record();
     // System.Void .ctor(System.Data.DataTable table, System.Int32 record)
     // Offset: 0xFA18C4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

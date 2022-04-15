@@ -88,23 +88,23 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_Name
-    [[deprecated]] int& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Name();
     // Get instance field reference: private System.Int32 m_Path
-    [[deprecated]] int& dyn_m_Path();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Path();
     // Get instance field reference: private System.Int32 m_FullPath
-    [[deprecated]] int& dyn_m_FullPath();
+    [[deprecated("Use field access instead!")]] int& dyn_m_FullPath();
     // Get instance field reference: private System.Single m_NormalizedTime
-    [[deprecated]] float& dyn_m_NormalizedTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_NormalizedTime();
     // Get instance field reference: private System.Single m_Length
-    [[deprecated]] float& dyn_m_Length();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Length();
     // Get instance field reference: private System.Single m_Speed
-    [[deprecated]] float& dyn_m_Speed();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Speed();
     // Get instance field reference: private System.Single m_SpeedMultiplier
-    [[deprecated]] float& dyn_m_SpeedMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SpeedMultiplier();
     // Get instance field reference: private System.Int32 m_Tag
-    [[deprecated]] int& dyn_m_Tag();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Tag();
     // Get instance field reference: private System.Int32 m_Loop
-    [[deprecated]] int& dyn_m_Loop();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Loop();
   }; // UnityEngine.AnimatorStateInfo
   #pragma pack(pop)
   static check_size<sizeof(AnimatorStateInfo), 32 + sizeof(int)> __UnityEngine_AnimatorStateInfoSizeCheck;

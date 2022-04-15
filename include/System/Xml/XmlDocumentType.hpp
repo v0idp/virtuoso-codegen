@@ -100,21 +100,21 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::Schema::SchemaInfo*) == 0x8);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String publicId
-    [[deprecated]] ::StringW& dyn_publicId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_publicId();
     // Get instance field reference: private System.String systemId
-    [[deprecated]] ::StringW& dyn_systemId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_systemId();
     // Get instance field reference: private System.String internalSubset
-    [[deprecated]] ::StringW& dyn_internalSubset();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_internalSubset();
     // Get instance field reference: private System.Boolean namespaces
-    [[deprecated]] bool& dyn_namespaces();
+    [[deprecated("Use field access instead!")]] bool& dyn_namespaces();
     // Get instance field reference: private System.Xml.XmlNamedNodeMap entities
-    [[deprecated]] ::System::Xml::XmlNamedNodeMap*& dyn_entities();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamedNodeMap*& dyn_entities();
     // Get instance field reference: private System.Xml.XmlNamedNodeMap notations
-    [[deprecated]] ::System::Xml::XmlNamedNodeMap*& dyn_notations();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamedNodeMap*& dyn_notations();
     // Get instance field reference: private System.Xml.Schema.SchemaInfo schemaInfo
-    [[deprecated]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
     // public System.Xml.XmlNamedNodeMap get_Entities()
     // Offset: 0x127AF2C
     ::System::Xml::XmlNamedNodeMap* get_Entities();

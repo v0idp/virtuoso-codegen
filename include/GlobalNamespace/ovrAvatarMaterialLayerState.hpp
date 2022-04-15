@@ -97,23 +97,23 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarMaterialLayerBlendMode blendMode
-    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialLayerBlendMode& dyn_blendMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarMaterialLayerBlendMode& dyn_blendMode();
     // Get instance field reference: public ovrAvatarMaterialLayerSampleMode sampleMode
-    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
     // Get instance field reference: public ovrAvatarMaterialMaskType maskType
-    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_maskType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_maskType();
     // Get instance field reference: public UnityEngine.Vector4 layerColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_layerColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_layerColor();
     // Get instance field reference: public UnityEngine.Vector4 sampleParameters
-    [[deprecated]] ::UnityEngine::Vector4& dyn_sampleParameters();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_sampleParameters();
     // Get instance field reference: public System.UInt64 sampleTexture
-    [[deprecated]] uint64_t& dyn_sampleTexture();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_sampleTexture();
     // Get instance field reference: public UnityEngine.Vector4 sampleScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_sampleScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_sampleScaleOffset();
     // Get instance field reference: public UnityEngine.Vector4 maskParameters
-    [[deprecated]] ::UnityEngine::Vector4& dyn_maskParameters();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_maskParameters();
     // Get instance field reference: public UnityEngine.Vector4 maskAxis
-    [[deprecated]] ::UnityEngine::Vector4& dyn_maskAxis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_maskAxis();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
     // Offset: 0x9552C0
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);

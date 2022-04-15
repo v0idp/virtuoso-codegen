@@ -47,9 +47,9 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private UnityEngine.Color _baseColor
-    [[deprecated]] ::UnityEngine::Color& dyn__baseColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__baseColor();
     // private System.Void Awake()
     // Offset: 0x967210
     void Awake();
@@ -60,11 +60,6 @@ namespace VROSC {
     // Offset: 0x9672E8
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AdjustableMeshColorChangeEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMeshColorChangeEffect::.ctor");

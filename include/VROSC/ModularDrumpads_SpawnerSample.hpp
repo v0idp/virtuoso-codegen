@@ -47,13 +47,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SampleGroup*) == 0x8);
     public:
     // Get instance field reference: public VROSC.DrumpadSpawner Spawner
-    [[deprecated]] ::VROSC::DrumpadSpawner*& dyn_Spawner();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumpadSpawner*& dyn_Spawner();
     // Get instance field reference: public VROSC.SampleGroup SampleGroup
-    [[deprecated]] ::VROSC::SampleGroup*& dyn_SampleGroup();
+    [[deprecated("Use field access instead!")]] ::VROSC::SampleGroup*& dyn_SampleGroup();
     // public System.Void .ctor()
     // Offset: 0x196492C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ModularDrumpads::SpawnerSample* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ModularDrumpads::SpawnerSample::.ctor");

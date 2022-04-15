@@ -91,15 +91,15 @@ namespace UnityEngine::XR {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::XR::MeshGenerationResult>*>(this);
     }
     // Get instance field reference: private readonly UnityEngine.XR.MeshId <MeshId>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::MeshId& dyn_$MeshId$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::MeshId& dyn_$MeshId$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Mesh <Mesh>k__BackingField
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_$Mesh$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_$Mesh$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.MeshCollider <MeshCollider>k__BackingField
-    [[deprecated]] ::UnityEngine::MeshCollider*& dyn_$MeshCollider$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshCollider*& dyn_$MeshCollider$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.XR.MeshGenerationStatus <Status>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::MeshGenerationStatus& dyn_$Status$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::MeshGenerationStatus& dyn_$Status$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.XR.MeshVertexAttributes <Attributes>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::MeshVertexAttributes& dyn_$Attributes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::MeshVertexAttributes& dyn_$Attributes$k__BackingField();
     // public UnityEngine.XR.MeshId get_MeshId()
     // Offset: 0x18C64E4
     ::UnityEngine::XR::MeshId get_MeshId();

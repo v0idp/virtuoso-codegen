@@ -51,27 +51,29 @@ namespace Unity::RemoteConfig {
     static_assert(sizeof(::Unity::RemoteConfig::RCUnityWebRequest*) == 0x8);
     public:
     // Get instance field reference: public Unity.RemoteConfig.ConfigManagerImpl <>4__this
-    [[deprecated]] ::Unity::RemoteConfig::ConfigManagerImpl*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::ConfigManagerImpl*& dyn_$$4__this();
     // Get instance field reference: public Unity.RemoteConfig.RCUnityWebRequest request
-    [[deprecated]] ::Unity::RemoteConfig::RCUnityWebRequest*& dyn_request();
-    // System.Void <DoRequest>b__0(UnityEngine.AsyncOperation op)
-    // Offset: 0x18C43E8
-    void $DoRequest$b__0(::UnityEngine::AsyncOperation* op);
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::RCUnityWebRequest*& dyn_request();
     // public System.Void .ctor()
     // Offset: 0x18C3798
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ConfigManagerImpl::$$c__DisplayClass38_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Unity::RemoteConfig::ConfigManagerImpl::$$c__DisplayClass38_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ConfigManagerImpl::$$c__DisplayClass38_0*, creationType>()));
     }
+    // System.Void <DoRequest>b__0(UnityEngine.AsyncOperation op)
+    // Offset: 0x18C43E8
+    void $DoRequest$b__0(::UnityEngine::AsyncOperation* op);
   }; // Unity.RemoteConfig.ConfigManagerImpl/Unity.RemoteConfig.<>c__DisplayClass38_0
   #pragma pack(pop)
   static check_size<sizeof(ConfigManagerImpl::$$c__DisplayClass38_0), 24 + sizeof(::Unity::RemoteConfig::RCUnityWebRequest*)> __Unity_RemoteConfig_ConfigManagerImpl_$$c__DisplayClass38_0SizeCheck;
   static_assert(sizeof(ConfigManagerImpl::$$c__DisplayClass38_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Unity::RemoteConfig::ConfigManagerImpl::$$c__DisplayClass38_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Unity::RemoteConfig::ConfigManagerImpl::$$c__DisplayClass38_0::$DoRequest$b__0
 // Il2CppName: <DoRequest>b__0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(Unity::RemoteConfig::ConfigManagerImpl::$$c__DisplayClass38_0*), "<DoRequest>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{op});
   }
 };
-// Writing MetadataGetter for method: Unity::RemoteConfig::ConfigManagerImpl::$$c__DisplayClass38_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

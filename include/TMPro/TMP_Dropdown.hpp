@@ -227,37 +227,37 @@ namespace TMPro {
     // Set static field: static private TMPro.TMP_Dropdown/TMPro.OptionData s_NoOptionData
     static void _set_s_NoOptionData(::TMPro::TMP_Dropdown::OptionData* value);
     // Get instance field reference: private UnityEngine.RectTransform m_Template
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_Template();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_Template();
     // Get instance field reference: private TMPro.TMP_Text m_CaptionText
-    [[deprecated]] ::TMPro::TMP_Text*& dyn_m_CaptionText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Text*& dyn_m_CaptionText();
     // Get instance field reference: private UnityEngine.UI.Image m_CaptionImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_CaptionImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_m_CaptionImage();
     // Get instance field reference: private UnityEngine.UI.Graphic m_Placeholder
-    [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_m_Placeholder();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_m_Placeholder();
     // Get instance field reference: private TMPro.TMP_Text m_ItemText
-    [[deprecated]] ::TMPro::TMP_Text*& dyn_m_ItemText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Text*& dyn_m_ItemText();
     // Get instance field reference: private UnityEngine.UI.Image m_ItemImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_ItemImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_m_ItemImage();
     // Get instance field reference: private System.Int32 m_Value
-    [[deprecated]] int& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Value();
     // Get instance field reference: private TMPro.TMP_Dropdown/TMPro.OptionDataList m_Options
-    [[deprecated]] ::TMPro::TMP_Dropdown::OptionDataList*& dyn_m_Options();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Dropdown::OptionDataList*& dyn_m_Options();
     // Get instance field reference: private TMPro.TMP_Dropdown/TMPro.DropdownEvent m_OnValueChanged
-    [[deprecated]] ::TMPro::TMP_Dropdown::DropdownEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Dropdown::DropdownEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private System.Single m_AlphaFadeSpeed
-    [[deprecated]] float& dyn_m_AlphaFadeSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AlphaFadeSpeed();
     // Get instance field reference: private UnityEngine.GameObject m_Dropdown
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_Dropdown();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_Dropdown();
     // Get instance field reference: private UnityEngine.GameObject m_Blocker
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_Blocker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_Blocker();
     // Get instance field reference: private System.Collections.Generic.List`1<TMPro.TMP_Dropdown/TMPro.DropdownItem> m_Items
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Dropdown::DropdownItem*>*& dyn_m_Items();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Dropdown::DropdownItem*>*& dyn_m_Items();
     // Get instance field reference: private TMPro.TweenRunner`1<TMPro.FloatTween> m_AlphaTweenRunner
-    [[deprecated]] ::TMPro::TweenRunner_1<::TMPro::FloatTween>*& dyn_m_AlphaTweenRunner();
+    [[deprecated("Use field access instead!")]] ::TMPro::TweenRunner_1<::TMPro::FloatTween>*& dyn_m_AlphaTweenRunner();
     // Get instance field reference: private System.Boolean validTemplate
-    [[deprecated]] bool& dyn_validTemplate();
+    [[deprecated("Use field access instead!")]] bool& dyn_validTemplate();
     // Get instance field reference: private UnityEngine.Coroutine m_Coroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_Coroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_Coroutine();
     // public UnityEngine.RectTransform get_template()
     // Offset: 0xC30338
     ::UnityEngine::RectTransform* get_template();
@@ -321,6 +321,16 @@ namespace TMPro {
     // public System.Boolean get_IsExpanded()
     // Offset: 0xC30520
     bool get_IsExpanded();
+    // protected System.Void .ctor()
+    // Offset: 0xC3058C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_Dropdown* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Dropdown::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_Dropdown*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xC32FE0
+    static void _cctor();
     // public System.Void SetValueWithoutNotify(System.Int32 input)
     // Offset: 0xC30518
     void SetValueWithoutNotify(int input);
@@ -409,27 +419,6 @@ namespace TMPro {
     // private System.Void OnSelectItem(UnityEngine.UI.Toggle toggle)
     // Offset: 0xC32EA0
     void OnSelectItem(::UnityEngine::UI::Toggle* toggle);
-    // protected System.Void .ctor()
-    // Offset: 0xC3058C
-    // Implemented from: UnityEngine.UI.Selectable
-    // Base method: System.Void Selectable::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_Dropdown* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_Dropdown::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_Dropdown*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xC32FE0
-    // Implemented from: UnityEngine.UI.Selectable
-    // Base method: System.Void Selectable::.cctor()
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void Awake()
     // Offset: 0xC30694
     // Implemented from: UnityEngine.UI.Selectable
@@ -627,6 +616,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (TMPro::TMP_Dropdown::*)()>(&TMPro::TMP_Dropdown::get_IsExpanded)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Dropdown*), "get_IsExpanded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: TMPro::TMP_Dropdown::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: TMPro::TMP_Dropdown::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TMP_Dropdown::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Dropdown*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: TMPro::TMP_Dropdown::SetValueWithoutNotify
@@ -865,18 +866,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
   static const MethodInfo* get() {
     static auto* toggle = &::il2cpp_utils::GetClassFromName("UnityEngine.UI", "Toggle")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Dropdown*), "OnSelectItem", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{toggle});
-  }
-};
-// Writing MetadataGetter for method: TMPro::TMP_Dropdown::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: TMPro::TMP_Dropdown::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TMP_Dropdown::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_Dropdown*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: TMPro::TMP_Dropdown::Awake

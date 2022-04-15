@@ -74,9 +74,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SaveLoadManager*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LocalSessionsDataController _localSessionsDataController
-    [[deprecated]] ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
     // Get instance field reference: private VROSC.SaveLoadManager _saveLoadManager
-    [[deprecated]] ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
     // public System.Void .ctor(VROSC.SaveLoadManager saveLoadManager, VROSC.LocalSessionsDataController localSessionsDataController)
     // Offset: 0xC66260
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -64,13 +64,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTransform transform
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
     // Get instance field reference: public System.UInt32 renderPartCount
-    [[deprecated]] uint& dyn_renderPartCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_renderPartCount();
     // Get instance field reference: public System.IntPtr renderParts
-    [[deprecated]] ::System::IntPtr& dyn_renderParts();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_renderParts();
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
   }; // ovrAvatarComponent
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarComponent), 56 + sizeof(::StringW)> __GlobalNamespace_ovrAvatarComponentSizeCheck;

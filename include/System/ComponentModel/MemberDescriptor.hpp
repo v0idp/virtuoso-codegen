@@ -134,29 +134,29 @@ namespace System::ComponentModel {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String displayName
-    [[deprecated]] ::StringW& dyn_displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_displayName();
     // Get instance field reference: private System.Int32 nameHash
-    [[deprecated]] int& dyn_nameHash();
+    [[deprecated("Use field access instead!")]] int& dyn_nameHash();
     // Get instance field reference: private System.ComponentModel.AttributeCollection attributeCollection
-    [[deprecated]] ::System::ComponentModel::AttributeCollection*& dyn_attributeCollection();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::AttributeCollection*& dyn_attributeCollection();
     // Get instance field reference: private System.Attribute[] attributes
-    [[deprecated]] ::ArrayW<::System::Attribute*>& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Attribute*>& dyn_attributes();
     // Get instance field reference: private System.Attribute[] originalAttributes
-    [[deprecated]] ::ArrayW<::System::Attribute*>& dyn_originalAttributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Attribute*>& dyn_originalAttributes();
     // Get instance field reference: private System.Boolean attributesFiltered
-    [[deprecated]] bool& dyn_attributesFiltered();
+    [[deprecated("Use field access instead!")]] bool& dyn_attributesFiltered();
     // Get instance field reference: private System.Boolean attributesFilled
-    [[deprecated]] bool& dyn_attributesFilled();
+    [[deprecated("Use field access instead!")]] bool& dyn_attributesFilled();
     // Get instance field reference: private System.Int32 metadataVersion
-    [[deprecated]] int& dyn_metadataVersion();
+    [[deprecated("Use field access instead!")]] int& dyn_metadataVersion();
     // Get instance field reference: private System.String category
-    [[deprecated]] ::StringW& dyn_category();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_category();
     // Get instance field reference: private System.String description
-    [[deprecated]] ::StringW& dyn_description();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_description();
     // Get instance field reference: private System.Object lockCookie
-    [[deprecated]] ::Il2CppObject*& dyn_lockCookie();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_lockCookie();
     // protected System.Attribute[] get_AttributeArray()
     // Offset: 0x10FAB8C
     ::ArrayW<::System::Attribute*> get_AttributeArray();

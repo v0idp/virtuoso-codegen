@@ -61,11 +61,11 @@ namespace System::Xml {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String version
-    [[deprecated]] ::StringW& dyn_version();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_version();
     // Get instance field reference: private System.String encoding
-    [[deprecated]] ::StringW& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_encoding();
     // Get instance field reference: private System.String standalone
-    [[deprecated]] ::StringW& dyn_standalone();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_standalone();
     // public System.String get_Version()
     // Offset: 0x119BEFC
     ::StringW get_Version();

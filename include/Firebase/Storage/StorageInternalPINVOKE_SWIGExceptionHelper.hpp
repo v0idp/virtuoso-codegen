@@ -92,6 +92,13 @@ namespace Firebase::Storage {
     // static private System.Void .cctor()
     // Offset: 0x183AEF0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x18378A4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StorageInternalPINVOKE::SWIGExceptionHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StorageInternalPINVOKE::SWIGExceptionHelper*, creationType>()));
+    }
     // static System.Void SWIGRegisterExceptionCallbacks_StorageInternal(Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate applicationDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate arithmeticDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate divideByZeroDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate indexOutOfRangeDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate invalidCastDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate invalidOperationDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate ioDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate nullReferenceDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate outOfMemoryDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate overflowDelegate, Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper/Firebase.Storage.ExceptionDelegate systemExceptionDelegate)
     // Offset: 0x183B2C8
     static void SWIGRegisterExceptionCallbacks_StorageInternal(::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* applicationDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* arithmeticDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* divideByZeroDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* indexOutOfRangeDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidCastDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidOperationDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* ioDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* nullReferenceDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* outOfMemoryDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* overflowDelegate, ::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::ExceptionDelegate* systemExceptionDelegate);
@@ -140,15 +147,6 @@ namespace Firebase::Storage {
     // static private System.Void SetPendingArgumentOutOfRangeException(System.String message, System.String paramName)
     // Offset: 0x183AE40
     static void SetPendingArgumentOutOfRangeException(::StringW message, ::StringW paramName);
-    // public System.Void .ctor()
-    // Offset: 0x18378A4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StorageInternalPINVOKE::SWIGExceptionHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StorageInternalPINVOKE::SWIGExceptionHelper*, creationType>()));
-    }
   }; // Firebase.Storage.StorageInternalPINVOKE/Firebase.Storage.SWIGExceptionHelper
   #pragma pack(pop)
 }
@@ -161,6 +159,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::SWIGRegisterExceptionCallbacks_StorageInternal
 // Il2CppName: SWIGRegisterExceptionCallbacks_StorageInternal
 template<>
@@ -320,7 +322,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper*), "SetPendingArgumentOutOfRangeException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message, paramName});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::StorageInternalPINVOKE::SWIGExceptionHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

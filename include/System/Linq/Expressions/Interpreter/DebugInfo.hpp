@@ -74,30 +74,28 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private readonly System.Linq.Expressions.Interpreter.DebugInfo/System.Linq.Expressions.Interpreter.DebugInfoComparer s_debugComparer
     static void _set_s_debugComparer(::System::Linq::Expressions::Interpreter::DebugInfo::DebugInfoComparer* value);
     // Get instance field reference: public System.Int32 StartLine
-    [[deprecated]] int& dyn_StartLine();
+    [[deprecated("Use field access instead!")]] int& dyn_StartLine();
     // Get instance field reference: public System.Int32 EndLine
-    [[deprecated]] int& dyn_EndLine();
+    [[deprecated("Use field access instead!")]] int& dyn_EndLine();
     // Get instance field reference: public System.Int32 Index
-    [[deprecated]] int& dyn_Index();
+    [[deprecated("Use field access instead!")]] int& dyn_Index();
     // Get instance field reference: public System.String FileName
-    [[deprecated]] ::StringW& dyn_FileName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_FileName();
     // Get instance field reference: public System.Boolean IsClear
-    [[deprecated]] bool& dyn_IsClear();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsClear();
+    // public System.Void .ctor()
+    // Offset: 0x11F9B14
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DebugInfo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::DebugInfo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DebugInfo*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x11F9D74
     static void _cctor();
     // static public System.Linq.Expressions.Interpreter.DebugInfo GetMatchingDebugInfo(System.Linq.Expressions.Interpreter.DebugInfo[] debugInfos, System.Int32 index)
     // Offset: 0x11F9A1C
     static ::System::Linq::Expressions::Interpreter::DebugInfo* GetMatchingDebugInfo(::ArrayW<::System::Linq::Expressions::Interpreter::DebugInfo*> debugInfos, int index);
-    // public System.Void .ctor()
-    // Offset: 0x11F9B14
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DebugInfo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::DebugInfo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DebugInfo*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x11F9B1C
     // Implemented from: System.Object
@@ -109,6 +107,10 @@ namespace System::Linq::Expressions::Interpreter {
   static_assert(sizeof(DebugInfo) == 0x29);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::DebugInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::DebugInfo::_cctor
 // Il2CppName: .cctor
 template<>
@@ -127,10 +129,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::L
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::DebugInfo*), "GetMatchingDebugInfo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{debugInfos, index});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::DebugInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::DebugInfo::ToString
 // Il2CppName: ToString
 template<>

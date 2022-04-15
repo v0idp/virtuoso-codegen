@@ -53,7 +53,7 @@ namespace UnityEngine::Networking {
       return webRequest;
     }
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <webRequest>k__BackingField
-    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$webRequest$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$webRequest$k__BackingField();
     // public UnityEngine.Networking.UnityWebRequest get_webRequest()
     // Offset: 0x18BFFA8
     ::UnityEngine::Networking::UnityWebRequest* get_webRequest();
@@ -62,10 +62,6 @@ namespace UnityEngine::Networking {
     void set_webRequest(::UnityEngine::Networking::UnityWebRequest* value);
     // public System.Void .ctor()
     // Offset: 0x18BFFB8
-    // Implemented from: UnityEngine.AsyncOperation
-    // Base method: System.Void AsyncOperation::.ctor()
-    // Base method: System.Void YieldInstruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnityWebRequestAsyncOperation* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::UnityWebRequestAsyncOperation::.ctor");

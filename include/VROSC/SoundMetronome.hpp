@@ -72,40 +72,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.AudioSource _barSound
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__barSound();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__barSound();
     // Get instance field reference: private UnityEngine.AudioSource _beatSound
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__beatSound();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__beatSound();
     // Get instance field reference: private System.Boolean _beatScheduled
-    [[deprecated]] bool& dyn__beatScheduled();
+    [[deprecated("Use field access instead!")]] bool& dyn__beatScheduled();
     // Get instance field reference: private System.Double _lastScheduledBeatTime
-    [[deprecated]] double& dyn__lastScheduledBeatTime();
+    [[deprecated("Use field access instead!")]] double& dyn__lastScheduledBeatTime();
     // Get instance field reference: private System.Double _updateMargin
-    [[deprecated]] double& dyn__updateMargin();
+    [[deprecated("Use field access instead!")]] double& dyn__updateMargin();
+    // public System.Void .ctor()
+    // Offset: 0x192CB00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SoundMetronome* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SoundMetronome::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SoundMetronome*, creationType>()));
+    }
     // protected System.Void OnEnable()
     // Offset: 0x192C970
     void OnEnable();
     // protected System.Void Update()
     // Offset: 0x192C9F8
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x192CB00
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SoundMetronome* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SoundMetronome::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SoundMetronome*, creationType>()));
-    }
   }; // VROSC.SoundMetronome
   #pragma pack(pop)
   static check_size<sizeof(SoundMetronome), 56 + sizeof(double)> __VROSC_SoundMetronomeSizeCheck;
   static_assert(sizeof(SoundMetronome) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SoundMetronome::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SoundMetronome::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -122,7 +120,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SoundMetronome*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SoundMetronome::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

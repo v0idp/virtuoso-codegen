@@ -113,7 +113,7 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
       // Set static field: static public Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step Ready
       static void _set_Ready(::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step
     #pragma pack(pop)
     static check_size<sizeof(Instructions::Step), 0 + sizeof(int)> __Oculus_Voice_Demo_UIShapesDemo_Instructions_StepSizeCheck;
@@ -139,15 +139,25 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     // Set static field: static private readonly System.String[] steps
     static void _set_steps(::ArrayW<::StringW> value);
     // Get instance field reference: private UnityEngine.UI.Text instructionText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_instructionText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_instructionText();
     // Get instance field reference: private Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step currentStep
-    [[deprecated]] ::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step& dyn_currentStep();
+    [[deprecated("Use field access instead!")]] ::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step& dyn_currentStep();
     // Oculus.Voice.Demo.UIShapesDemo.Instructions/Oculus.Voice.Demo.UIShapesDemo.Step get_CurrentStep()
     // Offset: 0x1945F00
     ::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step get_CurrentStep();
     // System.String get_CurrentStepText()
     // Offset: 0x1945F08
     ::StringW get_CurrentStepText();
+    // public System.Void .ctor()
+    // Offset: 0x1945FAC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Instructions* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::UIShapesDemo::Instructions::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Instructions*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x1945FBC
+    static void _cctor();
     // private System.Void OnValidate()
     // Offset: 0x1945F9C
     void OnValidate();
@@ -160,24 +170,6 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     // private System.Void UpdateStep()
     // Offset: 0x1945FA0
     void UpdateStep();
-    // public System.Void .ctor()
-    // Offset: 0x1945FAC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Instructions* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::UIShapesDemo::Instructions::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Instructions*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x1945FBC
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // Oculus.Voice.Demo.UIShapesDemo.Instructions
   #pragma pack(pop)
   static check_size<sizeof(Instructions), 32 + sizeof(::Oculus::Voice::Demo::UIShapesDemo::Instructions::Step)> __Oculus_Voice_Demo_UIShapesDemo_InstructionsSizeCheck;
@@ -200,6 +192,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (Oculus::Voice::Demo::UIShapesDemo::Instructions::*)()>(&Oculus::Voice::Demo::UIShapesDemo::Instructions::get_CurrentStepText)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Demo::UIShapesDemo::Instructions*), "get_CurrentStepText", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::Instructions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::Instructions::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Oculus::Voice::Demo::UIShapesDemo::Instructions::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Demo::UIShapesDemo::Instructions*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::Instructions::OnValidate
@@ -232,17 +236,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculus::Voice::Demo::UIShapesDemo::Instructions::*)()>(&Oculus::Voice::Demo::UIShapesDemo::Instructions::UpdateStep)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Demo::UIShapesDemo::Instructions*), "UpdateStep", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::Instructions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::Instructions::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Oculus::Voice::Demo::UIShapesDemo::Instructions::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Demo::UIShapesDemo::Instructions*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

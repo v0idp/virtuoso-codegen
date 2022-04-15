@@ -108,27 +108,27 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<float>) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <NoteNumberX>k__BackingField
-    [[deprecated]] int& dyn_$NoteNumberX$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$NoteNumberX$k__BackingField();
     // Get instance field reference: private System.Int32 <NoteNumberY>k__BackingField
-    [[deprecated]] int& dyn_$NoteNumberY$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$NoteNumberY$k__BackingField();
     // Get instance field reference: private System.Int32 <NoteNumberZ>k__BackingField
-    [[deprecated]] int& dyn_$NoteNumberZ$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$NoteNumberZ$k__BackingField();
     // Get instance field reference: private System.Int32 <NoteNumber3D>k__BackingField
-    [[deprecated]] int& dyn_$NoteNumber3D$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$NoteNumber3D$k__BackingField();
     // Get instance field reference: private System.Boolean <IsOdd>k__BackingField
-    [[deprecated]] bool& dyn_$IsOdd$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsOdd$k__BackingField();
     // Get instance field reference: private System.Boolean <IsOctave>k__BackingField
-    [[deprecated]] bool& dyn_$IsOctave$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsOctave$k__BackingField();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPlaying$k__BackingField();
     // Get instance field reference: private System.Boolean <IsHovering>k__BackingField
-    [[deprecated]] bool& dyn_$IsHovering$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsHovering$k__BackingField();
     // Get instance field reference: public System.Action`2<System.Boolean,VROSC.PlayData> OnPlay
-    [[deprecated]] ::System::Action_2<bool, ::VROSC::PlayData>*& dyn_OnPlay();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, ::VROSC::PlayData>*& dyn_OnPlay();
     // Get instance field reference: public System.Action`2<System.Boolean,System.Boolean> OnHovering
-    [[deprecated]] ::System::Action_2<bool, bool>*& dyn_OnHovering();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, bool>*& dyn_OnHovering();
     // Get instance field reference: private System.Single[] <MultiNote>k__BackingField
-    [[deprecated]] ::ArrayW<float>& dyn_$MultiNote$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_$MultiNote$k__BackingField();
     // public System.Int32 get_NoteNumberX()
     // Offset: 0xC59B9C
     int get_NoteNumberX();

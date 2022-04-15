@@ -66,7 +66,7 @@ namespace System::Linq::Expressions {
     // Set static field: static public System.Linq.Expressions.AnalyzeTypeIsResult Unknown
     static void _set_Unknown(::System::Linq::Expressions::AnalyzeTypeIsResult value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Linq.Expressions.AnalyzeTypeIsResult
   #pragma pack(pop)
   static check_size<sizeof(AnalyzeTypeIsResult), 0 + sizeof(int)> __System_Linq_Expressions_AnalyzeTypeIsResultSizeCheck;

@@ -278,45 +278,45 @@ namespace OVR {
     // Set static field: static private readonly UnityEngine.AnimationCurve defaultReverbZoneMix
     static void _set_defaultReverbZoneMix(::UnityEngine::AnimationCurve* value);
     // Get instance field reference: public System.Boolean makePersistent
-    [[deprecated]] bool& dyn_makePersistent();
+    [[deprecated("Use field access instead!")]] bool& dyn_makePersistent();
     // Get instance field reference: public System.Boolean enableSpatializedAudio
-    [[deprecated]] bool& dyn_enableSpatializedAudio();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableSpatializedAudio();
     // Get instance field reference: public System.Boolean enableSpatializedFastOverride
-    [[deprecated]] bool& dyn_enableSpatializedFastOverride();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableSpatializedFastOverride();
     // Get instance field reference: public UnityEngine.Audio.AudioMixer audioMixer
-    [[deprecated]] ::UnityEngine::Audio::AudioMixer*& dyn_audioMixer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixer*& dyn_audioMixer();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup defaultMixerGroup
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_defaultMixerGroup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_defaultMixerGroup();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup reservedMixerGroup
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_reservedMixerGroup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_reservedMixerGroup();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup voiceChatMixerGroup
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_voiceChatMixerGroup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_voiceChatMixerGroup();
     // Get instance field reference: public System.Boolean verboseLogging
-    [[deprecated]] bool& dyn_verboseLogging();
+    [[deprecated("Use field access instead!")]] bool& dyn_verboseLogging();
     // Get instance field reference: public System.Int32 maxSoundEmitters
-    [[deprecated]] int& dyn_maxSoundEmitters();
+    [[deprecated("Use field access instead!")]] int& dyn_maxSoundEmitters();
     // Get instance field reference: public System.Single volumeSoundFX
-    [[deprecated]] float& dyn_volumeSoundFX();
+    [[deprecated("Use field access instead!")]] float& dyn_volumeSoundFX();
     // Get instance field reference: public System.Single soundFxFadeSecs
-    [[deprecated]] float& dyn_soundFxFadeSecs();
+    [[deprecated("Use field access instead!")]] float& dyn_soundFxFadeSecs();
     // Get instance field reference: public System.Single audioMinFallOffDistance
-    [[deprecated]] float& dyn_audioMinFallOffDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_audioMinFallOffDistance();
     // Get instance field reference: public System.Single audioMaxFallOffDistance
-    [[deprecated]] float& dyn_audioMaxFallOffDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_audioMaxFallOffDistance();
     // Get instance field reference: public OVR.SoundGroup[] soundGroupings
-    [[deprecated]] ::ArrayW<::OVR::SoundGroup*>& dyn_soundGroupings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::OVR::SoundGroup*>& dyn_soundGroupings();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,OVR.SoundFX> soundFXCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::OVR::SoundFX*>*& dyn_soundFXCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::OVR::SoundFX*>*& dyn_soundFXCache();
     // Get instance field reference: private System.Single audioMaxFallOffDistanceSqr
-    [[deprecated]] float& dyn_audioMaxFallOffDistanceSqr();
+    [[deprecated("Use field access instead!")]] float& dyn_audioMaxFallOffDistanceSqr();
     // Get instance field reference: private OVR.SoundEmitter[] soundEmitters
-    [[deprecated]] ::ArrayW<::OVR::SoundEmitter*>& dyn_soundEmitters();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::OVR::SoundEmitter*>& dyn_soundEmitters();
     // Get instance field reference: private FastList`1<OVR.SoundEmitter> playingEmitters
-    [[deprecated]] ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_playingEmitters();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_playingEmitters();
     // Get instance field reference: private FastList`1<OVR.SoundEmitter> nextFreeEmitters
-    [[deprecated]] ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_nextFreeEmitters();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::FastList_1<::OVR::SoundEmitter*>*& dyn_nextFreeEmitters();
     // Get instance field reference: private OVR.MixerSnapshot currentSnapshot
-    [[deprecated]] ::OVR::MixerSnapshot*& dyn_currentSnapshot();
+    [[deprecated("Use field access instead!")]] ::OVR::MixerSnapshot*& dyn_currentSnapshot();
     // static public System.Boolean get_enableSpatialization()
     // Offset: 0x189D9FC
     static bool get_enableSpatialization();
@@ -341,6 +341,16 @@ namespace OVR {
     // static public System.Boolean get_SoundEnabled()
     // Offset: 0x189FBA4
     static bool get_SoundEnabled();
+    // public System.Void .ctor()
+    // Offset: 0x18A3D04
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::AudioManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioManager*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x18A3DE8
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x189DD78
     void Awake();
@@ -470,24 +480,6 @@ namespace OVR {
     // static public System.Void BlendWithCurrentSnapshot(OVR.MixerSnapshot blendSnapshot, System.Single weight, System.Single blendTime)
     // Offset: 0x18A3900
     static void BlendWithCurrentSnapshot(::OVR::MixerSnapshot* blendSnapshot, float weight, float blendTime);
-    // public System.Void .ctor()
-    // Offset: 0x18A3D04
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::AudioManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioManager*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x18A3DE8
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVR.AudioManager
   #pragma pack(pop)
   static check_size<sizeof(AudioManager), 136 + sizeof(::OVR::MixerSnapshot*)> __OVR_AudioManagerSizeCheck;
@@ -556,6 +548,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)()>(&OVR::AudioManager::get_SoundEnabled)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(OVR::AudioManager*), "get_SoundEnabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: OVR::AudioManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: OVR::AudioManager::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&OVR::AudioManager::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(OVR::AudioManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: OVR::AudioManager::Awake
@@ -977,17 +981,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     static auto* weight = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     static auto* blendTime = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(OVR::AudioManager*), "BlendWithCurrentSnapshot", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{blendSnapshot, weight, blendTime});
-  }
-};
-// Writing MetadataGetter for method: OVR::AudioManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: OVR::AudioManager::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&OVR::AudioManager::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(OVR::AudioManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

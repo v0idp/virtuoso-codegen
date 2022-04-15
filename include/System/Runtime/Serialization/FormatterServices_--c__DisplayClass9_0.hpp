@@ -55,7 +55,7 @@ namespace System::Runtime::Serialization {
       return type;
     }
     // Get instance field reference: public System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // System.Reflection.MemberInfo[] <GetSerializableMembers>b__0(System.Runtime.Serialization.MemberHolder _)
     // Offset: 0xE51660
     ::ArrayW<::System::Reflection::MemberInfo*> $GetSerializableMembers$b__0(::System::Runtime::Serialization::MemberHolder* _);

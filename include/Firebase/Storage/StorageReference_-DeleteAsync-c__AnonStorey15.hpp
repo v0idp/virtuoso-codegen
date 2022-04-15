@@ -44,25 +44,27 @@ namespace Firebase::Storage {
       return task;
     }
     // Get instance field reference: System.Threading.Tasks.Task task
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_task();
-    // System.Void <>m__0()
-    // Offset: 0x183B7A4
-    void $$m__0();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_task();
     // public System.Void .ctor()
     // Offset: 0x1839570
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StorageReference::$DeleteAsync$c__AnonStorey15* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageReference::$DeleteAsync$c__AnonStorey15::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<StorageReference::$DeleteAsync$c__AnonStorey15*, creationType>()));
     }
+    // System.Void <>m__0()
+    // Offset: 0x183B7A4
+    void $$m__0();
   }; // Firebase.Storage.StorageReference/Firebase.Storage.<DeleteAsync>c__AnonStorey15
   #pragma pack(pop)
   static check_size<sizeof(StorageReference::$DeleteAsync$c__AnonStorey15), 16 + sizeof(::System::Threading::Tasks::Task*)> __Firebase_Storage_StorageReference_$DeleteAsync$c__AnonStorey15SizeCheck;
   static_assert(sizeof(StorageReference::$DeleteAsync$c__AnonStorey15) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Storage::StorageReference::$DeleteAsync$c__AnonStorey15::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::StorageReference::$DeleteAsync$c__AnonStorey15::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageReference::$DeleteAsync$c__AnonStorey15*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::StorageReference::$DeleteAsync$c__AnonStorey15::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -74,7 +74,7 @@ namespace System::Globalization {
     // Set static field: static System.Globalization.Calendar s_defaultInstance
     static void _set_s_defaultInstance(::System::Globalization::Calendar* value);
     // Get instance field reference: System.Globalization.GregorianCalendarHelper helper
-    [[deprecated]] ::System::Globalization::GregorianCalendarHelper*& dyn_helper();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::GregorianCalendarHelper*& dyn_helper();
     // static private System.Void .cctor()
     // Offset: 0x106F824
     static void _cctor();

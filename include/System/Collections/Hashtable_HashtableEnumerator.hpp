@@ -89,19 +89,19 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.Hashtable hashtable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_hashtable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_hashtable();
     // Get instance field reference: private System.Int32 bucket
-    [[deprecated]] int& dyn_bucket();
+    [[deprecated("Use field access instead!")]] int& dyn_bucket();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Boolean current
-    [[deprecated]] bool& dyn_current();
+    [[deprecated("Use field access instead!")]] bool& dyn_current();
     // Get instance field reference: private System.Int32 getObjectRetType
-    [[deprecated]] int& dyn_getObjectRetType();
+    [[deprecated("Use field access instead!")]] int& dyn_getObjectRetType();
     // Get instance field reference: private System.Object currentKey
-    [[deprecated]] ::Il2CppObject*& dyn_currentKey();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_currentKey();
     // Get instance field reference: private System.Object currentValue
-    [[deprecated]] ::Il2CppObject*& dyn_currentValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_currentValue();
     // public System.Object get_Key()
     // Offset: 0xE51A48
     ::Il2CppObject* get_Key();

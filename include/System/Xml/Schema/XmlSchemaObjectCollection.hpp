@@ -49,13 +49,20 @@ namespace System::Xml::Schema {
     // Deleting conversion operator: operator ::System::Collections::ArrayList*
     constexpr operator ::System::Collections::ArrayList*() const noexcept = delete;
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObject parent
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObject*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObject*& dyn_parent();
     // public System.Xml.Schema.XmlSchemaObject get_Item(System.Int32 index)
     // Offset: 0x1119674
     ::System::Xml::Schema::XmlSchemaObject* get_Item(int index);
     // public System.Void set_Item(System.Int32 index, System.Xml.Schema.XmlSchemaObject value)
     // Offset: 0x1119788
     void set_Item(int index, ::System::Xml::Schema::XmlSchemaObject* value);
+    // public System.Void .ctor()
+    // Offset: 0x1106E44
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSchemaObjectCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaObjectCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaObjectCollection*, creationType>()));
+    }
     // public System.Xml.Schema.XmlSchemaObjectEnumerator GetEnumerator()
     // Offset: 0x111985C
     ::System::Xml::Schema::XmlSchemaObjectEnumerator* GetEnumerator();
@@ -74,16 +81,6 @@ namespace System::Xml::Schema {
     // private System.Void Add(System.Xml.Schema.XmlSchemaObjectCollection collToAdd)
     // Offset: 0x1119A94
     void Add(::System::Xml::Schema::XmlSchemaObjectCollection* collToAdd);
-    // public System.Void .ctor()
-    // Offset: 0x1106E44
-    // Implemented from: System.Collections.CollectionBase
-    // Base method: System.Void CollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSchemaObjectCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaObjectCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaObjectCollection*, creationType>()));
-    }
     // protected override System.Void OnInsert(System.Int32 index, System.Object item)
     // Offset: 0x11199E0
     // Implemented from: System.Collections.CollectionBase
@@ -129,6 +126,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaObjectCollection*), "set_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index, value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaObjectCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaObjectCollection::GetEnumerator
 // Il2CppName: GetEnumerator
 template<>
@@ -182,10 +183,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaObjectCollection*), "Add", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{collToAdd});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaObjectCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaObjectCollection::OnInsert
 // Il2CppName: OnInsert
 template<>

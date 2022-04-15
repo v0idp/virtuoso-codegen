@@ -111,21 +111,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopPlayer <ConnectedPlayer>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn_$ConnectedPlayer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn_$ConnectedPlayer$k__BackingField();
     // Get instance field reference: private VROSC.UIToggle _playButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__playButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__playButton();
     // Get instance field reference: private VROSC.LooperProgressSliderUpdater _progressUpdater
-    [[deprecated]] ::VROSC::LooperProgressSliderUpdater*& dyn__progressUpdater();
+    [[deprecated("Use field access instead!")]] ::VROSC::LooperProgressSliderUpdater*& dyn__progressUpdater();
     // Get instance field reference: private VROSC.LaunchPadEffectOnSignal _padVisual
-    [[deprecated]] ::VROSC::LaunchPadEffectOnSignal*& dyn__padVisual();
+    [[deprecated("Use field access instead!")]] ::VROSC::LaunchPadEffectOnSignal*& dyn__padVisual();
     // Get instance field reference: public System.Action`1<System.Boolean> OnPlayToggleChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnPlayToggleChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnPlayToggleChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnPlayingChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnPlayingChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnPlayingChanged();
     // Get instance field reference: public System.Action OnNewLoopPlayerAssigned
-    [[deprecated]] ::System::Action*& dyn_OnNewLoopPlayerAssigned();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnNewLoopPlayerAssigned();
     // Get instance field reference: private System.Boolean _playing
-    [[deprecated]] bool& dyn__playing();
+    [[deprecated("Use field access instead!")]] bool& dyn__playing();
     // public VROSC.LooperProgressSliderUpdater get_ProgressUpdater()
     // Offset: 0x19B5514
     ::VROSC::LooperProgressSliderUpdater* get_ProgressUpdater();
@@ -135,6 +135,13 @@ namespace VROSC {
     // private System.Void set_ConnectedPlayer(VROSC.LoopPlayer value)
     // Offset: 0x19B551C
     void set_ConnectedPlayer(::VROSC::LoopPlayer* value);
+    // public System.Void .ctor()
+    // Offset: 0x19B5C9C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayButton* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayButton::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayButton*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x19B552C
     void Awake();
@@ -171,19 +178,6 @@ namespace VROSC {
     // System.Void SetColor(UnityEngine.Color color)
     // Offset: 0x19B5C18
     void SetColor(::UnityEngine::Color color);
-    // public System.Void .ctor()
-    // Offset: 0x19B5C9C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayButton* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayButton::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayButton*, creationType>()));
-    }
   }; // VROSC.LoopPlayButton
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayButton), 80 + sizeof(bool)> __VROSC_LoopPlayButtonSizeCheck;
@@ -215,6 +209,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayButton*), "set_ConnectedPlayer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopPlayButton::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayButton::Awake
 // Il2CppName: Awake
 template<>
@@ -320,7 +318,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayButton*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayButton::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

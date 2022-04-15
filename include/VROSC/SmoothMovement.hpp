@@ -49,11 +49,11 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Vector3 <SmoothPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$SmoothPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$SmoothPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 _smoothingVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn__smoothingVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__smoothingVelocity();
     // Get instance field reference: private System.Boolean _needsReset
-    [[deprecated]] bool& dyn__needsReset();
+    [[deprecated("Use field access instead!")]] bool& dyn__needsReset();
     // public UnityEngine.Vector3 get_SmoothPosition()
     // Offset: 0x1928D58
     ::UnityEngine::Vector3 get_SmoothPosition();

@@ -65,10 +65,17 @@ namespace System::Xml {
       return writeNodeBuffer;
     }
     // Get instance field reference: private System.Char[] writeNodeBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_writeNodeBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_writeNodeBuffer();
     // public System.Xml.WriteState get_WriteState()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Xml::WriteState get_WriteState();
+    // protected System.Void .ctor()
+    // Offset: 0xEC3CEC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlWriter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlWriter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlWriter*, creationType>()));
+    }
     // public System.Void WriteStartDocument()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void WriteStartDocument();
@@ -180,15 +187,6 @@ namespace System::Xml {
     // static public System.Xml.XmlWriter Create(System.IO.TextWriter output, System.Xml.XmlWriterSettings settings)
     // Offset: 0xEC3974
     static ::System::Xml::XmlWriter* Create(::System::IO::TextWriter* output, ::System::Xml::XmlWriterSettings* settings);
-    // protected System.Void .ctor()
-    // Offset: 0xEC3CEC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlWriter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlWriter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlWriter*, creationType>()));
-    }
   }; // System.Xml.XmlWriter
   #pragma pack(pop)
   static check_size<sizeof(XmlWriter), 16 + sizeof(::ArrayW<::Il2CppChar>)> __System_Xml_XmlWriterSizeCheck;
@@ -203,6 +201,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlWriter*), "get_WriteState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlWriter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlWriter::WriteStartDocument
 // Il2CppName: WriteStartDocument
 template<>
@@ -558,7 +560,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlWriter*), "Create", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{output, settings});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlWriter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

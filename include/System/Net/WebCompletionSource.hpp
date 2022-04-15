@@ -64,10 +64,17 @@ namespace System::Net {
       return completion;
     }
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Net.WebCompletionSource/System.Net.Result> completion
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource::Result*>*& dyn_completion();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource::Result*>*& dyn_completion();
     // public System.Boolean get_IsCompleted()
     // Offset: 0xC40FA0
     bool get_IsCompleted();
+    // public System.Void .ctor()
+    // Offset: 0xC40D24
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WebCompletionSource* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebCompletionSource::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WebCompletionSource*, creationType>()));
+    }
     // public System.Boolean TrySetCompleted()
     // Offset: 0xC40DA0
     bool TrySetCompleted();
@@ -83,15 +90,6 @@ namespace System::Net {
     // public System.Threading.Tasks.Task`1<System.Boolean> WaitForCompletion(System.Boolean throwOnError)
     // Offset: 0xC41098
     ::System::Threading::Tasks::Task_1<bool>* WaitForCompletion(bool throwOnError);
-    // public System.Void .ctor()
-    // Offset: 0xC40D24
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WebCompletionSource* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebCompletionSource::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WebCompletionSource*, creationType>()));
-    }
   }; // System.Net.WebCompletionSource
   #pragma pack(pop)
   static check_size<sizeof(WebCompletionSource), 16 + sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::System::Net::WebCompletionSource::Result*>*)> __System_Net_WebCompletionSourceSizeCheck;
@@ -106,6 +104,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebCompletionSource*), "get_IsCompleted", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::WebCompletionSource::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::WebCompletionSource::TrySetCompleted
 // Il2CppName: TrySetCompleted
 template<>
@@ -148,7 +150,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebCompletionSource*), "WaitForCompletion", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{throwOnError});
   }
 };
-// Writing MetadataGetter for method: System::Net::WebCompletionSource::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

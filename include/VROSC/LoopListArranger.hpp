@@ -123,31 +123,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _onlyAllowRearrangeOfLoops
-    [[deprecated]] bool& dyn__onlyAllowRearrangeOfLoops();
+    [[deprecated("Use field access instead!")]] bool& dyn__onlyAllowRearrangeOfLoops();
     // Get instance field reference: private System.Single _loopHeightOffset
-    [[deprecated]] float& dyn__loopHeightOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__loopHeightOffset();
     // Get instance field reference: private UnityEngine.RectTransform _dropPositionPreview
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__dropPositionPreview();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__dropPositionPreview();
     // Get instance field reference: private UnityEngine.Transform _loopsParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__loopsParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__loopsParent();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationGroup _owner
-    [[deprecated]] ::VROSC::LoopStationGroup*& dyn__owner();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroup*& dyn__owner();
     // Get instance field reference: private VROSC.LoopPlayer _hoveringingPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__hoveringingPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__hoveringingPlayer();
     // Get instance field reference: private System.Boolean _sortNeeded
-    [[deprecated]] bool& dyn__sortNeeded();
+    [[deprecated("Use field access instead!")]] bool& dyn__sortNeeded();
     // Get instance field reference: private System.Boolean _dataShouldUpdate
-    [[deprecated]] bool& dyn__dataShouldUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn__dataShouldUpdate();
     // Get instance field reference: public System.Action OnSortComplete
-    [[deprecated]] ::System::Action*& dyn_OnSortComplete();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnSortComplete();
     // public System.Single get_ListHeight()
     // Offset: 0x19B4C88
     float get_ListHeight();
     // public System.Boolean get_OnlyAllowRearrangeOfLoops()
     // Offset: 0x19B4D84
     bool get_OnlyAllowRearrangeOfLoops();
+    // public System.Void .ctor()
+    // Offset: 0x19B550C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopListArranger* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopListArranger::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopListArranger*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopStationGroup loopStationGroup, VROSC.LoopStation loopStation, UnityEngine.Transform loopsParent)
     // Offset: 0x19B4D8C
     void Setup(::VROSC::LoopStationGroup* loopStationGroup, ::VROSC::LoopStation* loopStation, ::UnityEngine::Transform* loopsParent);
@@ -178,19 +185,6 @@ namespace VROSC {
     // public UnityEngine.Vector3 GetLooperPositionByOrderInList(System.Int32 order)
     // Offset: 0x19B5498
     ::UnityEngine::Vector3 GetLooperPositionByOrderInList(int order);
-    // public System.Void .ctor()
-    // Offset: 0x19B550C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopListArranger* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopListArranger::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopListArranger*, creationType>()));
-    }
   }; // VROSC.LoopListArranger
   #pragma pack(pop)
   static check_size<sizeof(LoopListArranger), 80 + sizeof(::System::Action*)> __VROSC_LoopListArrangerSizeCheck;
@@ -213,6 +207,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopListArranger*), "get_OnlyAllowRearrangeOfLoops", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopListArranger::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopListArranger::Setup
 // Il2CppName: Setup
 template<>
@@ -301,7 +299,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopListArranger*), "GetLooperPositionByOrderInList", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{order});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopListArranger::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -43,7 +43,7 @@ namespace System {
       return comment;
     }
     // Get instance field reference: private System.String comment
-    [[deprecated]] ::StringW& dyn_comment();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_comment();
     // public System.Void .ctor(System.String comment)
     // Offset: 0x100D464
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

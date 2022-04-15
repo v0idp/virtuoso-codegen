@@ -63,7 +63,7 @@ namespace System::Net {
     // Set static field: static public System.Net.WebCompletionSource/System.Net.State Faulted
     static void _set_Faulted(::System::Net::WebCompletionSource::State value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Net.WebCompletionSource/System.Net.State
   #pragma pack(pop)
   static check_size<sizeof(WebCompletionSource::State), 0 + sizeof(int)> __System_Net_WebCompletionSource_StateSizeCheck;

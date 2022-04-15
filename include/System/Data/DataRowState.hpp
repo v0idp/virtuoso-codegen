@@ -73,7 +73,7 @@ namespace System::Data {
     // Set static field: static public System.Data.DataRowState Modified
     static void _set_Modified(::System::Data::DataRowState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Data.DataRowState
   #pragma pack(pop)
   static check_size<sizeof(DataRowState), 0 + sizeof(int)> __System_Data_DataRowStateSizeCheck;

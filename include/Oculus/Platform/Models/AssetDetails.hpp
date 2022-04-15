@@ -88,21 +88,21 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.UInt64 AssetId
-    [[deprecated]] uint64_t& dyn_AssetId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_AssetId();
     // Get instance field reference: public readonly System.String AssetType
-    [[deprecated]] ::StringW& dyn_AssetType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_AssetType();
     // Get instance field reference: public readonly System.String DownloadStatus
-    [[deprecated]] ::StringW& dyn_DownloadStatus();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DownloadStatus();
     // Get instance field reference: public readonly System.String Filepath
-    [[deprecated]] ::StringW& dyn_Filepath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Filepath();
     // Get instance field reference: public readonly System.String IapStatus
-    [[deprecated]] ::StringW& dyn_IapStatus();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_IapStatus();
     // Get instance field reference: public readonly Oculus.Platform.Models.LanguagePackInfo LanguageOptional
-    [[deprecated]] ::Oculus::Platform::Models::LanguagePackInfo*& dyn_LanguageOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::LanguagePackInfo*& dyn_LanguageOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.LanguagePackInfo Language
-    [[deprecated]] ::Oculus::Platform::Models::LanguagePackInfo*& dyn_Language();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::LanguagePackInfo*& dyn_Language();
     // Get instance field reference: public readonly System.String Metadata
-    [[deprecated]] ::StringW& dyn_Metadata();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Metadata();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x8F9AA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

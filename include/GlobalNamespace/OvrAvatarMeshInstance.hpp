@@ -107,21 +107,28 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.HashSet`1<System.UInt64> AssetsToLoad
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_AssetsToLoad();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<uint64_t>*& dyn_AssetsToLoad();
     // Get instance field reference: public System.UInt64 MeshID
-    [[deprecated]] uint64_t& dyn_MeshID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_MeshID();
     // Get instance field reference: private System.UInt64 MaterialID
-    [[deprecated]] uint64_t& dyn_MaterialID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_MaterialID();
     // Get instance field reference: private System.UInt64 FadeTextureID
-    [[deprecated]] uint64_t& dyn_FadeTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_FadeTextureID();
     // Get instance field reference: public ovrAvatarBodyPartType MeshType
-    [[deprecated]] ::GlobalNamespace::ovrAvatarBodyPartType& dyn_MeshType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarBodyPartType& dyn_MeshType();
     // Get instance field reference: public ovrAvatarMaterialState MaterialState
-    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialState& dyn_MaterialState();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarMaterialState& dyn_MaterialState();
     // Get instance field reference: private UnityEngine.MeshFilter Mesh
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn_Mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn_Mesh();
     // Get instance field reference: private UnityEngine.MeshRenderer MeshInstance
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_MeshInstance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn_MeshInstance();
+    // public System.Void .ctor()
+    // Offset: 0xF8F180
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OvrAvatarMeshInstance* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarMeshInstance::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarMeshInstance*, creationType>()));
+    }
     // public System.Void AssetLoadedCallback(OvrAvatarAsset asset)
     // Offset: 0xF8E3D4
     void AssetLoadedCallback(::GlobalNamespace::OvrAvatarAsset* asset);
@@ -146,25 +153,16 @@ namespace GlobalNamespace {
     // private System.Void UpdateMaterial()
     // Offset: 0xF8E684
     void UpdateMaterial();
-    // public System.Void .ctor()
-    // Offset: 0xF8F180
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OvrAvatarMeshInstance* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarMeshInstance::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarMeshInstance*, creationType>()));
-    }
   }; // OvrAvatarMeshInstance
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarMeshInstance), 240 + sizeof(::UnityEngine::MeshRenderer*)> __GlobalNamespace_OvrAvatarMeshInstanceSizeCheck;
   static_assert(sizeof(OvrAvatarMeshInstance) == 0xF8);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMeshInstance::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMeshInstance::AssetLoadedCallback
 // Il2CppName: AssetLoadedCallback
 template<>
@@ -238,7 +236,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarMeshInstance*), "UpdateMaterial", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarMeshInstance::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

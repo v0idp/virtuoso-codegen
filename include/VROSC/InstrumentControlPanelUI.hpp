@@ -55,9 +55,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InstrumentFrameDisplayUI*) == 0x8);
     public:
     // Get instance field reference: private VROSC.QuantizeUI _quantizeUI
-    [[deprecated]] ::VROSC::QuantizeUI*& dyn__quantizeUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::QuantizeUI*& dyn__quantizeUI();
     // Get instance field reference: private VROSC.InstrumentFrameDisplayUI _frameDisplayUI
-    [[deprecated]] ::VROSC::InstrumentFrameDisplayUI*& dyn__frameDisplayUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentFrameDisplayUI*& dyn__frameDisplayUI();
     // System.Void UpdateFrameIsVisible(System.Boolean frameIsVisible)
     // Offset: 0x19462F8
     void UpdateFrameIsVisible(bool frameIsVisible);
@@ -65,11 +65,6 @@ namespace VROSC {
     // Offset: 0x1946330
     // Implemented from: VROSC.ControlPanelUI
     // Base method: System.Void ControlPanelUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentControlPanelUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentControlPanelUI::.ctor");

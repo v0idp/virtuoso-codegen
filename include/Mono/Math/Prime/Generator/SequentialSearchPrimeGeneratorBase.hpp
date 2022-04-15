@@ -48,7 +48,6 @@ namespace Mono::Math::Prime::Generator {
     // Offset: 0x16377F8
     // Implemented from: Mono.Math.Prime.Generator.PrimeGeneratorBase
     // Base method: System.Void PrimeGeneratorBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SequentialSearchPrimeGeneratorBase* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase::.ctor");

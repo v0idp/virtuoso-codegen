@@ -48,7 +48,7 @@ namespace DG::Tweening::Plugins::Options {
       return alphaOnly;
     }
     // Get instance field reference: public System.Boolean alphaOnly
-    [[deprecated]] bool& dyn_alphaOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_alphaOnly();
     // public System.Void Reset()
     // Offset: 0x15D5584
     void Reset();

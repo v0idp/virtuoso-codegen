@@ -114,15 +114,15 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Reflection::MonoProperty::GetterAdapter*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr klass
-    [[deprecated]] ::System::IntPtr& dyn_klass();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_klass();
     // Get instance field reference: System.IntPtr prop
-    [[deprecated]] ::System::IntPtr& dyn_prop();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_prop();
     // Get instance field reference: private System.Reflection.MonoPropertyInfo info
-    [[deprecated]] ::System::Reflection::MonoPropertyInfo& dyn_info();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MonoPropertyInfo& dyn_info();
     // Get instance field reference: private System.Reflection.PInfo cached
-    [[deprecated]] ::System::Reflection::PInfo& dyn_cached();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::PInfo& dyn_cached();
     // Get instance field reference: private System.Reflection.MonoProperty/System.Reflection.GetterAdapter cached_getter
-    [[deprecated]] ::System::Reflection::MonoProperty::GetterAdapter*& dyn_cached_getter();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MonoProperty::GetterAdapter*& dyn_cached_getter();
     // private System.Void CachePropertyInfo(System.Reflection.PInfo flags)
     // Offset: 0x100F3E0
     void CachePropertyInfo(::System::Reflection::PInfo flags);

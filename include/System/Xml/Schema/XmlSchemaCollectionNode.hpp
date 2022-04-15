@@ -57,11 +57,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchema*) == 0x8);
     public:
     // Get instance field reference: private System.String namespaceUri
-    [[deprecated]] ::StringW& dyn_namespaceUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceUri();
     // Get instance field reference: private System.Xml.Schema.SchemaInfo schemaInfo
-    [[deprecated]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaInfo*& dyn_schemaInfo();
     // Get instance field reference: private System.Xml.Schema.XmlSchema schema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_schema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_schema();
     // System.Void set_NamespaceURI(System.String value)
     // Offset: 0x110AE0C
     void set_NamespaceURI(::StringW value);
@@ -79,8 +79,6 @@ namespace System::Xml::Schema {
     void set_Schema(::System::Xml::Schema::XmlSchema* value);
     // public System.Void .ctor()
     // Offset: 0x110AA78
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaCollectionNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaCollectionNode::.ctor");

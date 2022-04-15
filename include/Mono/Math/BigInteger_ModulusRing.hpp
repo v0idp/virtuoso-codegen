@@ -38,9 +38,9 @@ namespace Mono::Math {
     static_assert(sizeof(::Mono::Math::BigInteger*) == 0x8);
     public:
     // Get instance field reference: private Mono.Math.BigInteger mod
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_mod();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_mod();
     // Get instance field reference: private Mono.Math.BigInteger constant
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_constant();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_constant();
     // public System.Void .ctor(Mono.Math.BigInteger modulus)
     // Offset: 0x18E02CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

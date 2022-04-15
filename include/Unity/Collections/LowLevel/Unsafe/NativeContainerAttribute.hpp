@@ -32,9 +32,6 @@ namespace Unity::Collections::LowLevel::Unsafe {
     public:
     // public System.Void .ctor()
     // Offset: 0xBBFF58
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NativeContainerAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Unity::Collections::LowLevel::Unsafe::NativeContainerAttribute::.ctor");

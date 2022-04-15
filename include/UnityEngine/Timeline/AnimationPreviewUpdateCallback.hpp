@@ -74,11 +74,11 @@ namespace UnityEngine::Timeline {
       return *reinterpret_cast<::UnityEngine::Timeline::ITimelineEvaluateCallback*>(this);
     }
     // Get instance field reference: private UnityEngine.Animations.AnimationPlayableOutput m_Output
-    [[deprecated]] ::UnityEngine::Animations::AnimationPlayableOutput& dyn_m_Output();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Animations::AnimationPlayableOutput& dyn_m_Output();
     // Get instance field reference: private UnityEngine.Playables.PlayableGraph m_Graph
-    [[deprecated]] ::UnityEngine::Playables::PlayableGraph& dyn_m_Graph();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableGraph& dyn_m_Graph();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Animations.IAnimationWindowPreview> m_PreviewComponents
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Animations::IAnimationWindowPreview*>*& dyn_m_PreviewComponents();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Animations::IAnimationWindowPreview*>*& dyn_m_PreviewComponents();
     // public System.Void .ctor(UnityEngine.Animations.AnimationPlayableOutput output)
     // Offset: 0xC6B390
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

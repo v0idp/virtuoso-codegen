@@ -74,17 +74,17 @@ namespace TMPro {
     // Set static field: static TMPro.KerningPair empty
     static void _set_empty(::TMPro::KerningPair* value);
     // Get instance field reference: private System.UInt32 m_FirstGlyph
-    [[deprecated]] uint& dyn_m_FirstGlyph();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_FirstGlyph();
     // Get instance field reference: private TMPro.GlyphValueRecord_Legacy m_FirstGlyphAdjustments
-    [[deprecated]] ::TMPro::GlyphValueRecord_Legacy& dyn_m_FirstGlyphAdjustments();
+    [[deprecated("Use field access instead!")]] ::TMPro::GlyphValueRecord_Legacy& dyn_m_FirstGlyphAdjustments();
     // Get instance field reference: private System.UInt32 m_SecondGlyph
-    [[deprecated]] uint& dyn_m_SecondGlyph();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_SecondGlyph();
     // Get instance field reference: private TMPro.GlyphValueRecord_Legacy m_SecondGlyphAdjustments
-    [[deprecated]] ::TMPro::GlyphValueRecord_Legacy& dyn_m_SecondGlyphAdjustments();
+    [[deprecated("Use field access instead!")]] ::TMPro::GlyphValueRecord_Legacy& dyn_m_SecondGlyphAdjustments();
     // Get instance field reference: public System.Single xOffset
-    [[deprecated]] float& dyn_xOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_xOffset();
     // Get instance field reference: private System.Boolean m_IgnoreSpacingAdjustments
-    [[deprecated]] bool& dyn_m_IgnoreSpacingAdjustments();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IgnoreSpacingAdjustments();
     // public System.UInt32 get_firstGlyph()
     // Offset: 0xC29B5C
     uint get_firstGlyph();
@@ -106,6 +106,13 @@ namespace TMPro {
     // public System.Boolean get_ignoreSpacingAdjustments()
     // Offset: 0xC29B94
     bool get_ignoreSpacingAdjustments();
+    // public System.Void .ctor()
+    // Offset: 0xC29B9C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static KerningPair* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::KerningPair::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<KerningPair*, creationType>()));
+    }
     // public System.Void .ctor(System.UInt32 left, System.UInt32 right, System.Single offset)
     // Offset: 0xC29BCC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -126,15 +133,6 @@ namespace TMPro {
     // System.Void ConvertLegacyKerningData()
     // Offset: 0xC29CA4
     void ConvertLegacyKerningData();
-    // public System.Void .ctor()
-    // Offset: 0xC29B9C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static KerningPair* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::KerningPair::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<KerningPair*, creationType>()));
-    }
   }; // TMPro.KerningPair
   #pragma pack(pop)
   static check_size<sizeof(KerningPair), 60 + sizeof(bool)> __TMPro_KerningPairSizeCheck;
@@ -207,6 +205,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (TMPro
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: TMPro::KerningPair::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::KerningPair::_cctor
 // Il2CppName: .cctor
 template<>
@@ -223,7 +225,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::KerningPair*), "ConvertLegacyKerningData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: TMPro::KerningPair::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

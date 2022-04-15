@@ -50,7 +50,7 @@ namespace System::Security {
       return permissionState;
     }
     // Get instance field reference: private System.String permissionState
-    [[deprecated]] ::StringW& dyn_permissionState();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_permissionState();
     // public System.Void .ctor()
     // Offset: 0x1175A3C
     // Implemented from: System.SystemException

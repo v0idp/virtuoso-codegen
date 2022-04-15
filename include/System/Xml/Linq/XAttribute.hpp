@@ -65,11 +65,11 @@ namespace System::Xml::Linq {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Xml.Linq.XAttribute next
-    [[deprecated]] ::System::Xml::Linq::XAttribute*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XAttribute*& dyn_next();
     // Get instance field reference: System.Xml.Linq.XName name
-    [[deprecated]] ::System::Xml::Linq::XName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XName*& dyn_name();
     // Get instance field reference: System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // public System.Boolean get_IsNamespaceDeclaration()
     // Offset: 0x1853AE0
     bool get_IsNamespaceDeclaration();

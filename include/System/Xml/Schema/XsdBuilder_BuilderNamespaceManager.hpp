@@ -48,9 +48,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::XmlReader*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlNamespaceManager nsMgr
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn_nsMgr();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn_nsMgr();
     // Get instance field reference: private System.Xml.XmlReader reader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn_reader();
     // public System.Void .ctor(System.Xml.XmlNamespaceManager nsMgr, System.Xml.XmlReader reader)
     // Offset: 0xC25AA0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

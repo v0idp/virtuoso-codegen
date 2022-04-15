@@ -41,8 +41,6 @@ namespace System::Data {
     // Implemented from: System.Data.InvalidExpressionException
     // Base method: System.Void InvalidExpressionException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Base method: System.Void DataException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SyntaxErrorException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SyntaxErrorException::.ctor");
@@ -53,9 +51,6 @@ namespace System::Data {
     // Implemented from: System.Data.InvalidExpressionException
     // Base method: System.Void InvalidExpressionException::.ctor()
     // Base method: System.Void DataException::.ctor()
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SyntaxErrorException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SyntaxErrorException::.ctor");
@@ -66,8 +61,6 @@ namespace System::Data {
     // Implemented from: System.Data.InvalidExpressionException
     // Base method: System.Void InvalidExpressionException::.ctor(System.String s)
     // Base method: System.Void DataException::.ctor(System.String s)
-    // Base method: System.Void SystemException::.ctor(System.String s)
-    // Base method: System.Void Exception::.ctor(System.String s)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SyntaxErrorException* New_ctor(::StringW s) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SyntaxErrorException::.ctor");

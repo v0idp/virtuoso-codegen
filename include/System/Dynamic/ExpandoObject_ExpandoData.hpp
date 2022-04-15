@@ -57,11 +57,11 @@ namespace System::Dynamic {
     // Set static field: static System.Dynamic.ExpandoObject/System.Dynamic.ExpandoData Empty
     static void _set_Empty(::System::Dynamic::ExpandoObject::ExpandoData* value);
     // Get instance field reference: readonly System.Dynamic.ExpandoClass Class
-    [[deprecated]] ::System::Dynamic::ExpandoClass*& dyn_Class();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoClass*& dyn_Class();
     // Get instance field reference: private readonly System.Object[] _dataArray
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__dataArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__dataArray();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // System.Object get_Item(System.Int32 index)
     // Offset: 0x16A2FC4
     ::Il2CppObject* get_Item(int index);
@@ -74,6 +74,13 @@ namespace System::Dynamic {
     // System.Int32 get_Length()
     // Offset: 0x16A3138
     int get_Length();
+    // private System.Void .ctor()
+    // Offset: 0x16A3154
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ExpandoObject::ExpandoData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::ExpandoObject::ExpandoData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ExpandoObject::ExpandoData*, creationType>()));
+    }
     // System.Void .ctor(System.Dynamic.ExpandoClass klass, System.Object[] data, System.Int32 version)
     // Offset: 0x16A3270
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -90,15 +97,6 @@ namespace System::Dynamic {
     // static private System.Int32 GetAlignedSize(System.Int32 len)
     // Offset: 0x16A3470
     static int GetAlignedSize(int len);
-    // private System.Void .ctor()
-    // Offset: 0x16A3154
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ExpandoObject::ExpandoData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::ExpandoObject::ExpandoData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ExpandoObject::ExpandoData*, creationType>()));
-    }
   }; // System.Dynamic.ExpandoObject/System.Dynamic.ExpandoData
   #pragma pack(pop)
   static check_size<sizeof(ExpandoObject::ExpandoData), 32 + sizeof(int)> __System_Dynamic_ExpandoObject_ExpandoDataSizeCheck;
@@ -144,6 +142,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Dynamic::ExpandoObject::ExpandoData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Dynamic::ExpandoObject::ExpandoData::_cctor
 // Il2CppName: .cctor
 template<>
@@ -170,7 +172,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(int
     return ::il2cpp_utils::FindMethod(classof(System::Dynamic::ExpandoObject::ExpandoData*), "GetAlignedSize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{len});
   }
 };
-// Writing MetadataGetter for method: System::Dynamic::ExpandoObject::ExpandoData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

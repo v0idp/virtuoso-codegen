@@ -88,11 +88,18 @@ namespace System::Net::Sockets {
     // Set static field: static private System.Boolean THROW_ON_ABORT_RETRIES
     static void _set_THROW_ON_ABORT_RETRIES(bool value);
     // Get instance field reference: private System.Collections.Generic.List`1<System.Threading.Thread> blocking_threads
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Threading::Thread*>*& dyn_blocking_threads();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Threading::Thread*>*& dyn_blocking_threads();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Threading.Thread,System.Diagnostics.StackTrace> threads_stacktraces
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Threading::Thread*, ::System::Diagnostics::StackTrace*>*& dyn_threads_stacktraces();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Threading::Thread*, ::System::Diagnostics::StackTrace*>*& dyn_threads_stacktraces();
     // Get instance field reference: private System.Boolean in_cleanup
-    [[deprecated]] bool& dyn_in_cleanup();
+    [[deprecated("Use field access instead!")]] bool& dyn_in_cleanup();
+    // public System.Void .ctor(System.IntPtr preexistingHandle, System.Boolean ownsHandle)
+    // Offset: 0xD98858
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SafeSocketHandle* New_ctor(::System::IntPtr preexistingHandle, bool ownsHandle) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SafeSocketHandle::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SafeSocketHandle*, creationType>(preexistingHandle, ownsHandle)));
+    }
     // static private System.Void .cctor()
     // Offset: 0xD99450
     static void _cctor();
@@ -102,15 +109,6 @@ namespace System::Net::Sockets {
     // public System.Void UnRegisterForBlockingSyscall()
     // Offset: 0xD99254
     void UnRegisterForBlockingSyscall();
-    // public System.Void .ctor(System.IntPtr preexistingHandle, System.Boolean ownsHandle)
-    // Offset: 0xD98858
-    // Implemented from: System.Runtime.InteropServices.SafeHandle
-    // Base method: System.Void SafeHandle::.ctor(System.IntPtr preexistingHandle, System.Boolean ownsHandle)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SafeSocketHandle* New_ctor(::System::IntPtr preexistingHandle, bool ownsHandle) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SafeSocketHandle::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SafeSocketHandle*, creationType>(preexistingHandle, ownsHandle)));
-    }
     // protected override System.Boolean ReleaseHandle()
     // Offset: 0xD98928
     // Implemented from: System.Runtime.InteropServices.SafeHandle
@@ -122,6 +120,10 @@ namespace System::Net::Sockets {
   static_assert(sizeof(SafeSocketHandle) == 0x31);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Net::Sockets::SafeSocketHandle::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Sockets::SafeSocketHandle::_cctor
 // Il2CppName: .cctor
 template<>
@@ -146,10 +148,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::SafeSocketHandle*), "UnRegisterForBlockingSyscall", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::Sockets::SafeSocketHandle::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Sockets::SafeSocketHandle::ReleaseHandle
 // Il2CppName: ReleaseHandle
 template<>

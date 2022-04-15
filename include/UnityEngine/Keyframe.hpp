@@ -75,19 +75,19 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Single m_Time
-    [[deprecated]] float& dyn_m_Time();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Time();
     // Get instance field reference: private System.Single m_Value
-    [[deprecated]] float& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Value();
     // Get instance field reference: private System.Single m_InTangent
-    [[deprecated]] float& dyn_m_InTangent();
+    [[deprecated("Use field access instead!")]] float& dyn_m_InTangent();
     // Get instance field reference: private System.Single m_OutTangent
-    [[deprecated]] float& dyn_m_OutTangent();
+    [[deprecated("Use field access instead!")]] float& dyn_m_OutTangent();
     // Get instance field reference: private System.Int32 m_WeightedMode
-    [[deprecated]] int& dyn_m_WeightedMode();
+    [[deprecated("Use field access instead!")]] int& dyn_m_WeightedMode();
     // Get instance field reference: private System.Single m_InWeight
-    [[deprecated]] float& dyn_m_InWeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_InWeight();
     // Get instance field reference: private System.Single m_OutWeight
-    [[deprecated]] float& dyn_m_OutWeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_OutWeight();
     // public System.Single get_time()
     // Offset: 0x112BBF8
     float get_time();

@@ -20,7 +20,7 @@ namespace Mono::Security::Cryptography {
 // Forward declaring namespace: Mono::Math
 namespace Mono::Math {
   // Forward declaring type: BigInteger
-  class BigInteger;
+  class BigInteger_;
 }
 // Forward declaring namespace: System::Security::Cryptography
 namespace System::Security::Cryptography {
@@ -134,31 +134,31 @@ namespace Mono::Security::Cryptography {
     static_assert(sizeof(::Mono::Security::Cryptography::DSAManaged::KeyGeneratedEventHandler*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean keypairGenerated
-    [[deprecated]] bool& dyn_keypairGenerated();
+    [[deprecated("Use field access instead!")]] bool& dyn_keypairGenerated();
     // Get instance field reference: private System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // Get instance field reference: private Mono.Math.BigInteger p
-    [[deprecated]] ::Mono::Math::BigInteger_*& dyn_p();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger_*& dyn_p();
     // Get instance field reference: private Mono.Math.BigInteger q
-    [[deprecated]] ::Mono::Math::BigInteger_*& dyn_q();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger_*& dyn_q();
     // Get instance field reference: private Mono.Math.BigInteger g
-    [[deprecated]] ::Mono::Math::BigInteger_*& dyn_g();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger_*& dyn_g();
     // Get instance field reference: private Mono.Math.BigInteger x
-    [[deprecated]] ::Mono::Math::BigInteger_*& dyn_x();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger_*& dyn_x();
     // Get instance field reference: private Mono.Math.BigInteger y
-    [[deprecated]] ::Mono::Math::BigInteger_*& dyn_y();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger_*& dyn_y();
     // Get instance field reference: private Mono.Math.BigInteger j
-    [[deprecated]] ::Mono::Math::BigInteger_*& dyn_j();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger_*& dyn_j();
     // Get instance field reference: private Mono.Math.BigInteger seed
-    [[deprecated]] ::Mono::Math::BigInteger_*& dyn_seed();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger_*& dyn_seed();
     // Get instance field reference: private System.Int32 counter
-    [[deprecated]] int& dyn_counter();
+    [[deprecated("Use field access instead!")]] int& dyn_counter();
     // Get instance field reference: private System.Boolean j_missing
-    [[deprecated]] bool& dyn_j_missing();
+    [[deprecated("Use field access instead!")]] bool& dyn_j_missing();
     // Get instance field reference: private System.Security.Cryptography.RandomNumberGenerator rng
-    [[deprecated]] ::System::Security::Cryptography::RandomNumberGenerator*& dyn_rng();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::RandomNumberGenerator*& dyn_rng();
     // Get instance field reference: private Mono.Security.Cryptography.DSAManaged/Mono.Security.Cryptography.KeyGeneratedEventHandler KeyGenerated
-    [[deprecated]] ::Mono::Security::Cryptography::DSAManaged::KeyGeneratedEventHandler*& dyn_KeyGenerated();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Cryptography::DSAManaged::KeyGeneratedEventHandler*& dyn_KeyGenerated();
     // private System.Security.Cryptography.RandomNumberGenerator get_Random()
     // Offset: 0xFC8984
     ::System::Security::Cryptography::RandomNumberGenerator* get_Random();

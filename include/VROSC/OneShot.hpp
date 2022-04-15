@@ -50,20 +50,15 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _signalDuration
-    [[deprecated]] float& dyn__signalDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__signalDuration();
     // Get instance field reference: private System.Single _currentSignalTime
-    [[deprecated]] float& dyn__currentSignalTime();
+    [[deprecated("Use field access instead!")]] float& dyn__currentSignalTime();
     // public System.Void .ctor()
     // Offset: 0xC67070
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OneShot* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OneShot::.ctor");

@@ -49,9 +49,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Int32 m_RenderTextureInstanceID
-    [[deprecated]] int& dyn_m_RenderTextureInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_RenderTextureInstanceID();
     // Get instance field reference: System.IntPtr m_BufferPtr
-    [[deprecated]] ::System::IntPtr& dyn_m_BufferPtr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_BufferPtr();
   }; // UnityEngine.RenderBuffer
   #pragma pack(pop)
   static check_size<sizeof(RenderBuffer), 8 + sizeof(::System::IntPtr)> __UnityEngine_RenderBufferSizeCheck;

@@ -68,15 +68,15 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String _valueName
-    [[deprecated]] ::StringW& dyn__valueName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__valueName();
     // Get instance field reference: private VROSC.MinMaxFloat _valueRange
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__valueRange();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__valueRange();
     // Get instance field reference: private System.Int32 _precission
-    [[deprecated]] int& dyn__precission();
+    [[deprecated("Use field access instead!")]] int& dyn__precission();
     // Get instance field reference: private System.Boolean _canBeSetToInteger
-    [[deprecated]] bool& dyn__canBeSetToInteger();
+    [[deprecated("Use field access instead!")]] bool& dyn__canBeSetToInteger();
     // Get instance field reference: private System.Boolean _isInIntegerMode
-    [[deprecated]] bool& dyn__isInIntegerMode();
+    [[deprecated("Use field access instead!")]] bool& dyn__isInIntegerMode();
     // public System.String get_ValueName()
     // Offset: 0x191728C
     ::StringW get_ValueName();
@@ -92,6 +92,13 @@ namespace VROSC {
     // public System.Boolean get_IsIntegerMode()
     // Offset: 0x191732C
     bool get_IsIntegerMode();
+    // public System.Void .ctor()
+    // Offset: 0x191753C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UISliderData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISliderData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UISliderData*, creationType>()));
+    }
     // public System.String ValueToString(System.Single value)
     // Offset: 0x1917334
     ::StringW ValueToString(float value);
@@ -113,15 +120,6 @@ namespace VROSC {
     // System.Void ToggleIntegerMode()
     // Offset: 0x1917524
     void ToggleIntegerMode();
-    // public System.Void .ctor()
-    // Offset: 0x191753C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UISliderData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISliderData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UISliderData*, creationType>()));
-    }
   }; // VROSC.UISliderData
   #pragma pack(pop)
   static check_size<sizeof(UISliderData), 37 + sizeof(bool)> __VROSC_UISliderDataSizeCheck;
@@ -168,6 +166,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISliderData*), "get_IsIntegerMode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UISliderData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UISliderData::ValueToString
 // Il2CppName: ValueToString
 template<>
@@ -231,7 +233,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISliderData*), "ToggleIntegerMode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UISliderData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

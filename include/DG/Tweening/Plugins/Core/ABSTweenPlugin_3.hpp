@@ -62,6 +62,13 @@ namespace DG::Tweening::Plugins::Core {
     operator ::DG::Tweening::Plugins::Core::ITweenPlugin() noexcept {
       return *reinterpret_cast<::DG::Tweening::Plugins::Core::ITweenPlugin*>(this);
     }
+    // protected System.Void .ctor()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ABSTweenPlugin_3<T1, T2, TPlugOptions>* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ABSTweenPlugin_3<T1, T2, TPlugOptions>*, creationType>()));
+    }
     // public System.Void Reset(DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions> t)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Reset(::DG::Tweening::Core::TweenerCore_3<T1, T2, TPlugOptions>* t) {
@@ -117,15 +124,6 @@ namespace DG::Tweening::Plugins::Core {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::EvaluateAndApply");
       auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::ResolveVtableSlot(this, classof(::DG::Tweening::Plugins::Core::ABSTweenPlugin_3<T1, T2, TPlugOptions>*), -1)));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, options, t, isRelative, getter, setter, elapsed, startValue, changeValue, duration, usingInversePosition, updateNotice);
-    }
-    // protected System.Void .ctor()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ABSTweenPlugin_3<T1, T2, TPlugOptions>* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::ABSTweenPlugin_3::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ABSTweenPlugin_3<T1, T2, TPlugOptions>*, creationType>()));
     }
   }; // DG.Tweening.Plugins.Core.ABSTweenPlugin`3
   // Could not write size check! Type: DG.Tweening.Plugins.Core.ABSTweenPlugin`3 is generic, or has no fields that are valid for size checks!

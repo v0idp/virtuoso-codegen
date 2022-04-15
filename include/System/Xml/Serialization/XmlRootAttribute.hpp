@@ -66,13 +66,13 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String dataType
-    [[deprecated]] ::StringW& dyn_dataType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dataType();
     // Get instance field reference: private System.String elementName
-    [[deprecated]] ::StringW& dyn_elementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_elementName();
     // Get instance field reference: private System.Boolean isNullable
-    [[deprecated]] bool& dyn_isNullable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNullable();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // public System.String get_DataType()
     // Offset: 0x1106B50
     ::StringW get_DataType();
@@ -97,6 +97,13 @@ namespace System::Xml::Serialization {
     // public System.Void set_Namespace(System.String value)
     // Offset: 0x1106C2C
     void set_Namespace(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x1106B0C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlRootAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlRootAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlRootAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.String elementName)
     // Offset: 0x1106B1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -107,16 +114,6 @@ namespace System::Xml::Serialization {
     // System.Void AddKeyHash(System.Text.StringBuilder sb)
     // Offset: 0x1106C34
     void AddKeyHash(::System::Text::StringBuilder* sb);
-    // public System.Void .ctor()
-    // Offset: 0x1106B0C
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlRootAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlRootAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlRootAttribute*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlRootAttribute
   #pragma pack(pop)
   static check_size<sizeof(XmlRootAttribute), 40 + sizeof(::StringW)> __System_Xml_Serialization_XmlRootAttributeSizeCheck;
@@ -195,6 +192,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlRootAttribute::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlRootAttribute::AddKeyHash
 // Il2CppName: AddKeyHash
 template<>
@@ -204,7 +205,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlRootAttribute*), "AddKeyHash", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sb});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlRootAttribute::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

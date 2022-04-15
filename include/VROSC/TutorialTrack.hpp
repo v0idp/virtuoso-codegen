@@ -33,12 +33,6 @@ namespace VROSC {
     public:
     // public System.Void .ctor()
     // Offset: 0xA32B4C
-    // Implemented from: UnityEngine.Timeline.TrackAsset
-    // Base method: System.Void TrackAsset::.ctor()
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TutorialTrack* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialTrack::.ctor");

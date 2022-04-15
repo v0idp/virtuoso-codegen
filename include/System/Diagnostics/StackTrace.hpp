@@ -91,11 +91,11 @@ namespace System::Diagnostics {
     // Set static field: static private System.String aotid
     static void _set_aotid(::StringW value);
     // Get instance field reference: private System.Diagnostics.StackFrame[] frames
-    [[deprecated]] ::ArrayW<::System::Diagnostics::StackFrame*>& dyn_frames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Diagnostics::StackFrame*>& dyn_frames();
     // Get instance field reference: private readonly System.Diagnostics.StackTrace[] captured_traces
-    [[deprecated]] ::ArrayW<::System::Diagnostics::StackTrace*>& dyn_captured_traces();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Diagnostics::StackTrace*>& dyn_captured_traces();
     // Get instance field reference: private System.Boolean debug_info
-    [[deprecated]] bool& dyn_debug_info();
+    [[deprecated("Use field access instead!")]] bool& dyn_debug_info();
     // public System.Int32 get_FrameCount()
     // Offset: 0x1254D2C
     int get_FrameCount();

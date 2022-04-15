@@ -53,14 +53,11 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Ray worldSpaceRay
-    [[deprecated]] ::UnityEngine::Ray& dyn_worldSpaceRay();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Ray& dyn_worldSpaceRay();
     // Get instance field reference: public UnityEngine.Vector2 swipeStart
-    [[deprecated]] ::UnityEngine::Vector2& dyn_swipeStart();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_swipeStart();
     // public System.Void .ctor(UnityEngine.EventSystems.EventSystem eventSystem)
     // Offset: 0xE77CC4
-    // Implemented from: UnityEngine.EventSystems.PointerEventData
-    // Base method: System.Void PointerEventData::.ctor(UnityEngine.EventSystems.EventSystem eventSystem)
-    // Base method: System.Void BaseEventData::.ctor(UnityEngine.EventSystems.EventSystem eventSystem)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRPointerEventData* New_ctor(::UnityEngine::EventSystems::EventSystem* eventSystem) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::OVRPointerEventData::.ctor");

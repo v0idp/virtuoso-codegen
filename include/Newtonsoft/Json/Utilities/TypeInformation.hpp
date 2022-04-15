@@ -52,9 +52,9 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::Newtonsoft::Json::Utilities::PrimitiveTypeCode) == 0x4);
     public:
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // Get instance field reference: private readonly Newtonsoft.Json.Utilities.PrimitiveTypeCode <TypeCode>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::PrimitiveTypeCode& dyn_$TypeCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::PrimitiveTypeCode& dyn_$TypeCode$k__BackingField();
     // public System.Type get_Type()
     // Offset: 0x1590608
     ::System::Type* get_Type();

@@ -63,21 +63,19 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String AppVersion
-    [[deprecated]] ::StringW& dyn_AppVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_AppVersion();
     // Get instance field reference: public System.String Date
-    [[deprecated]] ::StringW& dyn_Date();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Date();
     // Get instance field reference: public System.String Device
-    [[deprecated]] ::StringW& dyn_Device();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Device();
     // Get instance field reference: public System.String OperatingSystem
-    [[deprecated]] ::StringW& dyn_OperatingSystem();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_OperatingSystem();
     // Get instance field reference: public System.String Message
-    [[deprecated]] ::StringW& dyn_Message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Message();
     // Get instance field reference: public System.String Stack
-    [[deprecated]] ::StringW& dyn_Stack();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Stack();
     // public System.Void .ctor()
     // Offset: 0x1952858
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseHelper::ErrorLog* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FirebaseHelper::ErrorLog::.ctor");

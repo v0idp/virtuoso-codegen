@@ -51,7 +51,7 @@ namespace Newtonsoft::Json::Bson {
     // Deleting conversion operator: operator ::Newtonsoft::Json::Bson::BsonToken*
     constexpr operator ::Newtonsoft::Json::Bson::BsonToken*() const noexcept = delete;
     // Get instance field reference: private readonly System.Collections.Generic.List`1<Newtonsoft.Json.Bson.BsonProperty> _children
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Bson::BsonProperty*>*& dyn__children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Bson::BsonProperty*>*& dyn__children();
     // public System.Void Add(System.String name, Newtonsoft.Json.Bson.BsonToken token)
     // Offset: 0xDB7C40
     void Add(::StringW name, ::Newtonsoft::Json::Bson::BsonToken* token);

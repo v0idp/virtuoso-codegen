@@ -131,7 +131,7 @@ namespace System {
     // Set static field: static System.Double NegativeZero
     static void _set_NegativeZero(double value);
     // Get instance field reference: System.Double m_value
-    [[deprecated]] double& dyn_m_value();
+    [[deprecated("Use field access instead!")]] double& dyn_m_value();
     // static private System.Void .cctor()
     // Offset: 0x129FE84
     static void _cctor();

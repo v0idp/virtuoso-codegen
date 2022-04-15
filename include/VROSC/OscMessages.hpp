@@ -37,26 +37,24 @@ namespace VROSC {
   // [TokenAttribute] Offset: FFFFFFFF
   class OscMessages : public ::UnityEngine::MonoBehaviour {
     public:
-    // static public System.String GetOSCMessageString(VROSC.OscMessage message, System.Object[] arguments)
-    // Offset: 0xF7FB14
-    static ::StringW GetOSCMessageString(::VROSC::OscMessage message, ::ArrayW<::Il2CppObject*> arguments);
     // public System.Void .ctor()
     // Offset: 0xF7FC40
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OscMessages* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OscMessages::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OscMessages*, creationType>()));
     }
+    // static public System.String GetOSCMessageString(VROSC.OscMessage message, System.Object[] arguments)
+    // Offset: 0xF7FB14
+    static ::StringW GetOSCMessageString(::VROSC::OscMessage message, ::ArrayW<::Il2CppObject*> arguments);
   }; // VROSC.OscMessages
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::OscMessages::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::OscMessages::GetOSCMessageString
 // Il2CppName: GetOSCMessageString
 template<>
@@ -67,7 +65,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(VROSC::OscMessages*), "GetOSCMessageString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message, arguments});
   }
 };
-// Writing MetadataGetter for method: VROSC::OscMessages::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

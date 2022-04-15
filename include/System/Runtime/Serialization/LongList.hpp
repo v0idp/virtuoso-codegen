@@ -54,13 +54,13 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int64[] m_values
-    [[deprecated]] ::ArrayW<int64_t>& dyn_m_values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int64_t>& dyn_m_values();
     // Get instance field reference: private System.Int32 m_count
-    [[deprecated]] int& dyn_m_count();
+    [[deprecated("Use field access instead!")]] int& dyn_m_count();
     // Get instance field reference: private System.Int32 m_totalItems
-    [[deprecated]] int& dyn_m_totalItems();
+    [[deprecated("Use field access instead!")]] int& dyn_m_totalItems();
     // Get instance field reference: private System.Int32 m_currentItem
-    [[deprecated]] int& dyn_m_currentItem();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currentItem();
     // System.Int32 get_Count()
     // Offset: 0x107BB2C
     int get_Count();

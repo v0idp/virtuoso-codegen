@@ -54,9 +54,9 @@ namespace Facebook::WitAi::Lib {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private Facebook.WitAi.Lib.WitResponseNode m_Node
-    [[deprecated]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_m_Node();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Lib::WitResponseNode*& dyn_m_Node();
     // Get instance field reference: private System.String m_Key
-    [[deprecated]] ::StringW& dyn_m_Key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Key();
     // public System.Void .ctor(Facebook.WitAi.Lib.WitResponseNode aNode)
     // Offset: 0x1676F34
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

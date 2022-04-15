@@ -44,9 +44,9 @@ namespace Oculus::Voice::Core::Utilities {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String varname
-    [[deprecated]] ::StringW& dyn_varname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_varname();
     // Get instance field reference: public System.String fallbackName
-    [[deprecated]] ::StringW& dyn_fallbackName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fallbackName();
     // public System.Void .ctor(System.String elementTitleVar, System.String fallbackName)
     // Offset: 0x190EA1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

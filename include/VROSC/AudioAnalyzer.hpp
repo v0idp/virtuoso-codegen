@@ -159,27 +159,37 @@ namespace VROSC {
     // Set static field: static private System.Boolean _hasCachedBandsPlaying
     static void _set__hasCachedBandsPlaying(bool value);
     // Get instance field reference: private System.Single[] _currentlyPlayingData
-    [[deprecated]] ::ArrayW<float>& dyn__currentlyPlayingData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__currentlyPlayingData();
     // Get instance field reference: private UnityEngine.AudioSource _currentlyPlayingAudioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__currentlyPlayingAudioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__currentlyPlayingAudioSource();
     // Get instance field reference: private UnityEngine.FFTWindow _fftWindow
-    [[deprecated]] ::UnityEngine::FFTWindow& dyn__fftWindow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::FFTWindow& dyn__fftWindow();
     // Get instance field reference: private System.Single[] _leftMasterSamplesRaw
-    [[deprecated]] ::ArrayW<float>& dyn__leftMasterSamplesRaw();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__leftMasterSamplesRaw();
     // Get instance field reference: private System.Single[] _rightMasterSamplesRaw
-    [[deprecated]] ::ArrayW<float>& dyn__rightMasterSamplesRaw();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__rightMasterSamplesRaw();
     // Get instance field reference: private System.Single[] _leftPlayingSamplesRaw
-    [[deprecated]] ::ArrayW<float>& dyn__leftPlayingSamplesRaw();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__leftPlayingSamplesRaw();
     // Get instance field reference: private System.Single[] _rightPlayingSamplesRaw
-    [[deprecated]] ::ArrayW<float>& dyn__rightPlayingSamplesRaw();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__rightPlayingSamplesRaw();
     // Get instance field reference: private System.Single _normalizeFloor
-    [[deprecated]] float& dyn__normalizeFloor();
+    [[deprecated("Use field access instead!")]] float& dyn__normalizeFloor();
     // Get instance field reference: private System.Single _normalizeCeiling
-    [[deprecated]] float& dyn__normalizeCeiling();
+    [[deprecated("Use field access instead!")]] float& dyn__normalizeCeiling();
     // Get instance field reference: private System.Single _smoothingSpeed
-    [[deprecated]] float& dyn__smoothingSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__smoothingSpeed();
     // Get instance field reference: private System.Boolean _masterIsMono
-    [[deprecated]] bool& dyn__masterIsMono();
+    [[deprecated("Use field access instead!")]] bool& dyn__masterIsMono();
+    // public System.Void .ctor()
+    // Offset: 0x96F0CC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioAnalyzer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioAnalyzer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioAnalyzer*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x96F184
+    static void _cctor();
     // static protected System.Void RoutingDemo_GetData(System.Int32 target, System.Single[] data, System.Int32 numsamples, System.Int32 numchannels)
     // Offset: 0x96E180
     static void RoutingDemo_GetData(int target, ::ArrayW<float> data, int numsamples, int numchannels);
@@ -216,30 +226,24 @@ namespace VROSC {
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
     // Offset: 0x96EFD8
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
-    // public System.Void .ctor()
-    // Offset: 0x96F0CC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioAnalyzer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioAnalyzer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioAnalyzer*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x96F184
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // VROSC.AudioAnalyzer
   #pragma pack(pop)
   static check_size<sizeof(AudioAnalyzer), 92 + sizeof(bool)> __VROSC_AudioAnalyzerSizeCheck;
   static_assert(sizeof(AudioAnalyzer) == 0x5D);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AudioAnalyzer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: VROSC::AudioAnalyzer::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::AudioAnalyzer::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::AudioAnalyzer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::AudioAnalyzer::RoutingDemo_GetData
 // Il2CppName: RoutingDemo_GetData
 template<>
@@ -356,17 +360,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     static auto* data = &il2cpp_functions::array_class_get(::il2cpp_utils::GetClassFromName("System", "Single"), 1)->byval_arg;
     static auto* channels = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioAnalyzer*), "OnAudioFilterRead", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data, channels});
-  }
-};
-// Writing MetadataGetter for method: VROSC::AudioAnalyzer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: VROSC::AudioAnalyzer::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::AudioAnalyzer::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::AudioAnalyzer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

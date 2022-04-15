@@ -39,7 +39,7 @@ namespace UnityEngine {
       return m_ParticleSystem;
     }
     // Get instance field reference: UnityEngine.ParticleSystem m_ParticleSystem
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
     // public System.Void set_enabled(System.Boolean value)
     // Offset: 0x1900D9C
     void set_enabled(bool value);

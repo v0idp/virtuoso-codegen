@@ -59,9 +59,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::List_1<::UnityEngine::Transform*>*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _applyBoneTranslations
-    [[deprecated]] bool& dyn__applyBoneTranslations();
+    [[deprecated("Use field access instead!")]] bool& dyn__applyBoneTranslations();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Transform> _customBones_V2
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Transform*>*& dyn__customBones_V2();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Transform*>*& dyn__customBones_V2();
     // public System.Collections.Generic.List`1<UnityEngine.Transform> get_CustomBones()
     // Offset: 0x996AE4
     ::System::Collections::Generic::List_1<::UnityEngine::Transform*>* get_CustomBones();
@@ -69,11 +69,6 @@ namespace GlobalNamespace {
     // Offset: 0x996DE8
     // Implemented from: OVRSkeleton
     // Base method: System.Void OVRSkeleton::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRCustomSkeleton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCustomSkeleton::.ctor");

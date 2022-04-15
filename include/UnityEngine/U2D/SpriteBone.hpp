@@ -78,15 +78,15 @@ namespace UnityEngine::U2D {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.String m_Name
-    [[deprecated]] ::StringW& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Name();
     // Get instance field reference: private UnityEngine.Vector3 m_Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Quaternion m_Rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_Rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_Rotation();
     // Get instance field reference: private System.Single m_Length
-    [[deprecated]] float& dyn_m_Length();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Length();
     // Get instance field reference: private System.Int32 m_ParentId
-    [[deprecated]] int& dyn_m_ParentId();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ParentId();
   }; // UnityEngine.U2D.SpriteBone
   #pragma pack(pop)
   static check_size<sizeof(SpriteBone), 40 + sizeof(int)> __UnityEngine_U2D_SpriteBoneSizeCheck;

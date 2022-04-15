@@ -83,15 +83,15 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _buttonBackground
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__buttonBackground();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__buttonBackground();
     // Get instance field reference: private VROSC.UIInteractableColorSettings _backgroundColors
-    [[deprecated]] ::VROSC::UIInteractableColorSettings*& dyn__backgroundColors();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIInteractableColorSettings*& dyn__backgroundColors();
     // Get instance field reference: private TMPro.TextMeshPro _text
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__text();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__text();
     // Get instance field reference: private VROSC.UIInteractableColorSettings _textColors
-    [[deprecated]] ::VROSC::UIInteractableColorSettings*& dyn__textColors();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIInteractableColorSettings*& dyn__textColors();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // protected System.Void Awake()
     // Offset: 0x19819BC
     void Awake();
@@ -108,11 +108,6 @@ namespace VROSC {
     // Offset: 0x1981CB4
     // Implemented from: VROSC.UIScrollableItem
     // Base method: System.Void UIScrollableItem::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SelectionBarButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SelectionBarButton::.ctor");

@@ -79,11 +79,11 @@ namespace System::Data {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: readonly System.String _word
-      [[deprecated]] ::StringW& dyn__word();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn__word();
       // Get instance field reference: readonly System.Data.Tokens _token
-      [[deprecated]] ::System::Data::Tokens& dyn__token();
+      [[deprecated("Use field access instead!")]] ::System::Data::Tokens& dyn__token();
       // Get instance field reference: readonly System.Int32 _op
-      [[deprecated]] int& dyn__op();
+      [[deprecated("Use field access instead!")]] int& dyn__op();
       // System.Void .ctor(System.String word, System.Data.Tokens token, System.Int32 op)
       // Offset: 0x18CE17C
       // ABORTED: conflicts with another method.  ReservedWords(::StringW word, ::System::Data::Tokens token, int op);
@@ -204,39 +204,39 @@ namespace System::Data {
     // Set static field: static private readonly System.Data.ExpressionParser/System.Data.ReservedWords[] s_reservedwords
     static void _set_s_reservedwords(::ArrayW<::System::Data::ExpressionParser::ReservedWords> value);
     // Get instance field reference: private System.Char _escape
-    [[deprecated]] ::Il2CppChar& dyn__escape();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__escape();
     // Get instance field reference: private System.Char _decimalSeparator
-    [[deprecated]] ::Il2CppChar& dyn__decimalSeparator();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__decimalSeparator();
     // Get instance field reference: private System.Char _listSeparator
-    [[deprecated]] ::Il2CppChar& dyn__listSeparator();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__listSeparator();
     // Get instance field reference: private System.Char _exponentL
-    [[deprecated]] ::Il2CppChar& dyn__exponentL();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__exponentL();
     // Get instance field reference: private System.Char _exponentU
-    [[deprecated]] ::Il2CppChar& dyn__exponentU();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__exponentU();
     // Get instance field reference: System.Char[] _text
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__text();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__text();
     // Get instance field reference: System.Int32 _pos
-    [[deprecated]] int& dyn__pos();
+    [[deprecated("Use field access instead!")]] int& dyn__pos();
     // Get instance field reference: System.Int32 _start
-    [[deprecated]] int& dyn__start();
+    [[deprecated("Use field access instead!")]] int& dyn__start();
     // Get instance field reference: System.Data.Tokens _token
-    [[deprecated]] ::System::Data::Tokens& dyn__token();
+    [[deprecated("Use field access instead!")]] ::System::Data::Tokens& dyn__token();
     // Get instance field reference: System.Int32 _op
-    [[deprecated]] int& dyn__op();
+    [[deprecated("Use field access instead!")]] int& dyn__op();
     // Get instance field reference: System.Data.OperatorInfo[] _ops
-    [[deprecated]] ::ArrayW<::System::Data::OperatorInfo*>& dyn__ops();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::OperatorInfo*>& dyn__ops();
     // Get instance field reference: System.Int32 _topOperator
-    [[deprecated]] int& dyn__topOperator();
+    [[deprecated("Use field access instead!")]] int& dyn__topOperator();
     // Get instance field reference: System.Int32 _topNode
-    [[deprecated]] int& dyn__topNode();
+    [[deprecated("Use field access instead!")]] int& dyn__topNode();
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: System.Data.ExpressionNode[] _nodeStack
-    [[deprecated]] ::ArrayW<::System::Data::ExpressionNode*>& dyn__nodeStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::ExpressionNode*>& dyn__nodeStack();
     // Get instance field reference: System.Int32 _prevOperand
-    [[deprecated]] int& dyn__prevOperand();
+    [[deprecated("Use field access instead!")]] int& dyn__prevOperand();
     // Get instance field reference: System.Data.ExpressionNode _expression
-    [[deprecated]] ::System::Data::ExpressionNode*& dyn__expression();
+    [[deprecated("Use field access instead!")]] ::System::Data::ExpressionNode*& dyn__expression();
     // System.Void .ctor(System.Data.DataTable table)
     // Offset: 0x12F3FD8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

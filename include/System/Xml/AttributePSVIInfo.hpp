@@ -61,31 +61,33 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::Schema::XmlSchemaInfo*) == 0x8);
     public:
     // Get instance field reference: System.String localName
-    [[deprecated]] ::StringW& dyn_localName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
     // Get instance field reference: System.String namespaceUri
-    [[deprecated]] ::StringW& dyn_namespaceUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceUri();
     // Get instance field reference: System.Object typedAttributeValue
-    [[deprecated]] ::Il2CppObject*& dyn_typedAttributeValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_typedAttributeValue();
     // Get instance field reference: System.Xml.Schema.XmlSchemaInfo attributeSchemaInfo
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaInfo*& dyn_attributeSchemaInfo();
-    // System.Void Reset()
-    // Offset: 0xB5BCD8
-    void Reset();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaInfo*& dyn_attributeSchemaInfo();
     // System.Void .ctor()
     // Offset: 0xB5BC70
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AttributePSVIInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::AttributePSVIInfo::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AttributePSVIInfo*, creationType>()));
     }
+    // System.Void Reset()
+    // Offset: 0xB5BCD8
+    void Reset();
   }; // System.Xml.AttributePSVIInfo
   #pragma pack(pop)
   static check_size<sizeof(AttributePSVIInfo), 40 + sizeof(::System::Xml::Schema::XmlSchemaInfo*)> __System_Xml_AttributePSVIInfoSizeCheck;
   static_assert(sizeof(AttributePSVIInfo) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::AttributePSVIInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::AttributePSVIInfo::Reset
 // Il2CppName: Reset
 template<>
@@ -94,7 +96,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::AttributePSVIInfo*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::AttributePSVIInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

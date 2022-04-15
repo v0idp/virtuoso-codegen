@@ -86,11 +86,11 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Collections::Generic::Stack_1<::System::Collections::Generic::HashSet_1<::System::Linq::Expressions::ParameterExpression*>*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariable> _variables
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn__variables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn__variables();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.InterpretedFrame _frame
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn__frame();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn__frame();
     // Get instance field reference: private readonly System.Collections.Generic.Stack`1<System.Collections.Generic.HashSet`1<System.Linq.Expressions.ParameterExpression>> _shadowedVars
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::System::Collections::Generic::HashSet_1<::System::Linq::Expressions::ParameterExpression*>*>*& dyn__shadowedVars();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::System::Collections::Generic::HashSet_1<::System::Linq::Expressions::ParameterExpression*>*>*& dyn__shadowedVars();
     // System.Void .ctor(System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariable> hoistedVariables, System.Linq.Expressions.Interpreter.InterpretedFrame frame)
     // Offset: 0x16B1664
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

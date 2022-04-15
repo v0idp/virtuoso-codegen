@@ -82,7 +82,7 @@ namespace VROSC {
       // Set static field: static public VROSC.EnumDisplay/VROSC.DisplayEnum Quantize
       static void _set_Quantize(::VROSC::EnumDisplay::DisplayEnum value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.EnumDisplay/VROSC.DisplayEnum
     #pragma pack(pop)
     static check_size<sizeof(EnumDisplay::DisplayEnum), 0 + sizeof(int)> __VROSC_EnumDisplay_DisplayEnumSizeCheck;
@@ -102,9 +102,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::EnumDisplay::DisplayEnum) == 0x4);
     public:
     // Get instance field reference: private VROSC.IntNode _intNode
-    [[deprecated]] ::VROSC::IntNode*& dyn__intNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntNode*& dyn__intNode();
     // Get instance field reference: private VROSC.EnumDisplay/VROSC.DisplayEnum _displayEnum
-    [[deprecated]] ::VROSC::EnumDisplay::DisplayEnum& dyn__displayEnum();
+    [[deprecated("Use field access instead!")]] ::VROSC::EnumDisplay::DisplayEnum& dyn__displayEnum();
     // private System.Void UpdateDisplayEnum(System.Int32 value)
     // Offset: 0x8ED340
     void UpdateDisplayEnum(int value);
@@ -116,11 +116,6 @@ namespace VROSC {
     // Implemented from: VROSC.TextDisplay
     // Base method: System.Void TextDisplay::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EnumDisplay* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EnumDisplay::.ctor");

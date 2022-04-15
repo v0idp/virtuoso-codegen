@@ -46,7 +46,7 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::ScaleEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ScaleEffect _scaleAnimation
-    [[deprecated]] ::VROSC::AudioReactive::ScaleEffect*& dyn__scaleAnimation();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ScaleEffect*& dyn__scaleAnimation();
     // public VROSC.AudioReactive.ScaleEffect get_ScaleAnimation()
     // Offset: 0xDE32F8
     ::VROSC::AudioReactive::ScaleEffect* get_ScaleAnimation();
@@ -54,11 +54,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0xDE3374
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleOnBeat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ScaleOnBeat::.ctor");

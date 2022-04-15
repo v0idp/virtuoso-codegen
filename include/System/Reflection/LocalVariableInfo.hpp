@@ -59,11 +59,11 @@ namespace System::Reflection {
     static_assert(sizeof(uint16_t) == 0x2);
     public:
     // Get instance field reference: System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: System.Boolean is_pinned
-    [[deprecated]] bool& dyn_is_pinned();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_pinned();
     // Get instance field reference: System.UInt16 position
-    [[deprecated]] uint16_t& dyn_position();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_position();
     // protected System.Void .ctor()
     // Offset: 0x107A3A4
     // Implemented from: System.Object

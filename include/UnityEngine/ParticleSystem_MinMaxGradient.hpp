@@ -74,15 +74,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.ParticleSystemGradientMode m_Mode
-    [[deprecated]] ::UnityEngine::ParticleSystemGradientMode& dyn_m_Mode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystemGradientMode& dyn_m_Mode();
     // Get instance field reference: private UnityEngine.Gradient m_GradientMin
-    [[deprecated]] ::UnityEngine::Gradient*& dyn_m_GradientMin();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn_m_GradientMin();
     // Get instance field reference: private UnityEngine.Gradient m_GradientMax
-    [[deprecated]] ::UnityEngine::Gradient*& dyn_m_GradientMax();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn_m_GradientMax();
     // Get instance field reference: private UnityEngine.Color m_ColorMin
-    [[deprecated]] ::UnityEngine::Color& dyn_m_ColorMin();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_ColorMin();
     // Get instance field reference: private UnityEngine.Color m_ColorMax
-    [[deprecated]] ::UnityEngine::Color& dyn_m_ColorMax();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_ColorMax();
     // public System.Void .ctor(UnityEngine.Color color)
     // Offset: 0x1900CDC
     MinMaxGradient(::UnityEngine::Color color);

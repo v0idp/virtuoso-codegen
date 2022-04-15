@@ -49,9 +49,9 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Reflection::Assembly*) == 0x8);
     public:
     // Get instance field reference: System.String assemblyString
-    [[deprecated]] ::StringW& dyn_assemblyString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assemblyString();
     // Get instance field reference: private System.Reflection.Assembly assembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_assembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_assembly();
     // System.Void .ctor(System.String assemblyString)
     // Offset: 0xFE6D24
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

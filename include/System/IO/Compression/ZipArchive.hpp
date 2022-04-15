@@ -183,37 +183,37 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.IO.Stream _archiveStream
-    [[deprecated]] ::System::IO::Stream*& dyn__archiveStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__archiveStream();
     // Get instance field reference: private System.IO.Compression.ZipArchiveEntry _archiveStreamOwner
-    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry*& dyn__archiveStreamOwner();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchiveEntry*& dyn__archiveStreamOwner();
     // Get instance field reference: private System.IO.BinaryReader _archiveReader
-    [[deprecated]] ::System::IO::BinaryReader*& dyn__archiveReader();
+    [[deprecated("Use field access instead!")]] ::System::IO::BinaryReader*& dyn__archiveReader();
     // Get instance field reference: private System.IO.Compression.ZipArchiveMode _mode
-    [[deprecated]] ::System::IO::Compression::ZipArchiveMode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchiveMode& dyn__mode();
     // Get instance field reference: private System.Collections.Generic.List`1<System.IO.Compression.ZipArchiveEntry> _entries
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entries();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entries();
     // Get instance field reference: private System.Collections.ObjectModel.ReadOnlyCollection`1<System.IO.Compression.ZipArchiveEntry> _entriesCollection
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesCollection();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesCollection();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.IO.Compression.ZipArchiveEntry> _entriesDictionary
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::IO::Compression::ZipArchiveEntry*>*& dyn__entriesDictionary();
     // Get instance field reference: private System.Boolean _readEntries
-    [[deprecated]] bool& dyn__readEntries();
+    [[deprecated("Use field access instead!")]] bool& dyn__readEntries();
     // Get instance field reference: private System.Boolean _leaveOpen
-    [[deprecated]] bool& dyn__leaveOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__leaveOpen();
     // Get instance field reference: private System.Int64 _centralDirectoryStart
-    [[deprecated]] int64_t& dyn__centralDirectoryStart();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__centralDirectoryStart();
     // Get instance field reference: private System.Boolean _isDisposed
-    [[deprecated]] bool& dyn__isDisposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDisposed();
     // Get instance field reference: private System.UInt32 _numberOfThisDisk
-    [[deprecated]] uint& dyn__numberOfThisDisk();
+    [[deprecated("Use field access instead!")]] uint& dyn__numberOfThisDisk();
     // Get instance field reference: private System.Int64 _expectedNumberOfEntries
-    [[deprecated]] int64_t& dyn__expectedNumberOfEntries();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__expectedNumberOfEntries();
     // Get instance field reference: private System.IO.Stream _backingStream
-    [[deprecated]] ::System::IO::Stream*& dyn__backingStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__backingStream();
     // Get instance field reference: private System.Byte[] _archiveComment
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__archiveComment();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__archiveComment();
     // Get instance field reference: private System.Text.Encoding _entryNameEncoding
-    [[deprecated]] ::System::Text::Encoding*& dyn__entryNameEncoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn__entryNameEncoding();
     // public System.Collections.ObjectModel.ReadOnlyCollection`1<System.IO.Compression.ZipArchiveEntry> get_Entries()
     // Offset: 0x169B7DC
     ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::IO::Compression::ZipArchiveEntry*>* get_Entries();

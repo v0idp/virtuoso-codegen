@@ -43,27 +43,29 @@ namespace Firebase::Auth {
     static_assert(sizeof(::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1*) == 0x8);
     public:
     // Get instance field reference: Firebase.InitResult init_result
-    [[deprecated]] ::Firebase::InitResult& dyn_init_result();
+    [[deprecated("Use field access instead!")]] ::Firebase::InitResult& dyn_init_result();
     // Get instance field reference: Firebase.Auth.FirebaseAuth/Firebase.Auth.<GetAuth>c__AnonStorey1 <>f__ref$1
-    [[deprecated]] ::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1*& dyn_$$f__ref$1();
-    // System.Void <>m__0()
-    // Offset: 0x18B458C
-    void $$m__0();
+    [[deprecated("Use field access instead!")]] ::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1*& dyn_$$f__ref$1();
     // public System.Void .ctor()
     // Offset: 0x18B057C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseAuth::$GetAuth$c__AnonStorey2* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey2::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseAuth::$GetAuth$c__AnonStorey2*, creationType>()));
     }
+    // System.Void <>m__0()
+    // Offset: 0x18B458C
+    void $$m__0();
   }; // Firebase.Auth.FirebaseAuth/Firebase.Auth.<GetAuth>c__AnonStorey2
   #pragma pack(pop)
   static check_size<sizeof(FirebaseAuth::$GetAuth$c__AnonStorey2), 24 + sizeof(::Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey1*)> __Firebase_Auth_FirebaseAuth_$GetAuth$c__AnonStorey2SizeCheck;
   static_assert(sizeof(FirebaseAuth::$GetAuth$c__AnonStorey2) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey2::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey2::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -72,7 +74,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey2*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Auth::FirebaseAuth::$GetAuth$c__AnonStorey2::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

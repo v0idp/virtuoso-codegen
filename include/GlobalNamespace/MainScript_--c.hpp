@@ -48,18 +48,16 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x19603D8
     static void _cctor();
-    // System.Void <Put>b__5_1(Proyecto26.RequestException err, System.Int32 retries)
-    // Offset: 0x1960440
-    void $Put$b__5_1(::Proyecto26::RequestException* err, int retries);
     // public System.Void .ctor()
     // Offset: 0x1960438
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MainScript::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MainScript::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MainScript::$$c*, creationType>()));
     }
+    // System.Void <Put>b__5_1(Proyecto26.RequestException err, System.Int32 retries)
+    // Offset: 0x1960440
+    void $Put$b__5_1(::Proyecto26::RequestException* err, int retries);
   }; // MainScript/<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MainScript::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::MainScript::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::MainScript::$$c::$Put$b__5_1
 // Il2CppName: <Put>b__5_1
 template<>
@@ -82,7 +84,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MainScript::$$c*), "<Put>b__5_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{err, retries});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::MainScript::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

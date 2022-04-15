@@ -67,15 +67,15 @@ namespace System::Xml {
       return *reinterpret_cast<::System::ICloneable*>(this);
     }
     // Get instance field reference: private System.Object[] stack
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_stack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_stack();
     // Get instance field reference: private System.Int32 growthRate
-    [[deprecated]] int& dyn_growthRate();
+    [[deprecated("Use field access instead!")]] int& dyn_growthRate();
     // Get instance field reference: private System.Int32 used
-    [[deprecated]] int& dyn_used();
+    [[deprecated("Use field access instead!")]] int& dyn_used();
     // Get instance field reference: private System.Int32 size
-    [[deprecated]] int& dyn_size();
+    [[deprecated("Use field access instead!")]] int& dyn_size();
     // Get instance field reference: private System.Int32 limit
-    [[deprecated]] int& dyn_limit();
+    [[deprecated("Use field access instead!")]] int& dyn_limit();
     // System.Object get_Item(System.Int32 index)
     // Offset: 0xAEED18
     ::Il2CppObject* get_Item(int index);

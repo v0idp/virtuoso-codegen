@@ -62,11 +62,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::ActiveAxis*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.ArrayList stack
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_stack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_stack();
     // Get instance field reference: private System.Xml.Schema.ForwardAxis subtree
-    [[deprecated]] ::System::Xml::Schema::ForwardAxis*& dyn_subtree();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ForwardAxis*& dyn_subtree();
     // Get instance field reference: private System.Xml.Schema.ActiveAxis parent
-    [[deprecated]] ::System::Xml::Schema::ActiveAxis*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ActiveAxis*& dyn_parent();
     // System.Xml.Schema.ForwardAxis get_Subtree()
     // Offset: 0xB5C818
     ::System::Xml::Schema::ForwardAxis* get_Subtree();

@@ -80,11 +80,11 @@ namespace Oculus::Voice {
       return *reinterpret_cast<::Facebook::WitAi::IWitRuntimeConfigProvider*>(this);
     }
     // Get instance field reference: private Facebook.WitAi.Configuration.WitRuntimeConfiguration witRuntimeConfiguration
-    [[deprecated]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_witRuntimeConfiguration();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_witRuntimeConfiguration();
     // Get instance field reference: private Oculus.Voice.Interfaces.IPlatformVoiceService platformService
-    [[deprecated]] ::Oculus::Voice::Interfaces::IPlatformVoiceService*& dyn_platformService();
+    [[deprecated("Use field access instead!")]] ::Oculus::Voice::Interfaces::IPlatformVoiceService*& dyn_platformService();
     // Get instance field reference: private Facebook.WitAi.IVoiceService voiceServiceImpl
-    [[deprecated]] ::Facebook::WitAi::IVoiceService*& dyn_voiceServiceImpl();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::IVoiceService*& dyn_voiceServiceImpl();
     // public Facebook.WitAi.Configuration.WitRuntimeConfiguration get_RuntimeConfiguration()
     // Offset: 0x18E86BC
     ::Facebook::WitAi::Configuration::WitRuntimeConfiguration* get_RuntimeConfiguration();
@@ -94,6 +94,13 @@ namespace Oculus::Voice {
     // public System.Boolean get_HasPlatformIntegrations()
     // Offset: 0x18E8AB0
     bool get_HasPlatformIntegrations();
+    // public System.Void .ctor()
+    // Offset: 0x18E92BC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AppVoiceExperience* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::AppVoiceExperience::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AppVoiceExperience*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x18E8FD0
     void Start();
@@ -136,20 +143,6 @@ namespace Oculus::Voice {
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Boolean VoiceService::get_ShouldSendMicData()
     bool get_ShouldSendMicData();
-    // public System.Void .ctor()
-    // Offset: 0x18E92BC
-    // Implemented from: Facebook.WitAi.VoiceService
-    // Base method: System.Void VoiceService::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AppVoiceExperience* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::AppVoiceExperience::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AppVoiceExperience*, creationType>()));
-    }
     // public override System.Void Activate()
     // Offset: 0x18E8AB8
     // Implemented from: Facebook.WitAi.VoiceService
@@ -216,6 +209,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::AppVoiceExperience*), "get_HasPlatformIntegrations", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Voice::AppVoiceExperience::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Voice::AppVoiceExperience::Start
 // Il2CppName: Start
 template<>
@@ -297,10 +294,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::AppVoiceExperience*), "get_ShouldSendMicData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Voice::AppVoiceExperience::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Voice::AppVoiceExperience::Activate
 // Il2CppName: Activate
 template<>

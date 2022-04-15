@@ -81,7 +81,7 @@ namespace VROSC {
       // Set static field: static public VROSC.RotationalTicker/VROSC.TrackedDirection CounterClockwise
       static void _set_CounterClockwise(::VROSC::RotationalTicker::TrackedDirection value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.RotationalTicker/VROSC.TrackedDirection
     #pragma pack(pop)
     static check_size<sizeof(RotationalTicker::TrackedDirection), 0 + sizeof(int)> __VROSC_RotationalTicker_TrackedDirectionSizeCheck;
@@ -146,23 +146,23 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.RotationalTicker/VROSC.TrackedDirection _trackedDirection
-    [[deprecated]] ::VROSC::RotationalTicker::TrackedDirection& dyn__trackedDirection();
+    [[deprecated("Use field access instead!")]] ::VROSC::RotationalTicker::TrackedDirection& dyn__trackedDirection();
     // Get instance field reference: private UnityEngine.Transform _transformToTrack
-    [[deprecated]] ::UnityEngine::Transform*& dyn__transformToTrack();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__transformToTrack();
     // Get instance field reference: private UnityEngine.Transform _lastTrackedTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__lastTrackedTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__lastTrackedTransform();
     // Get instance field reference: private System.Single _tickDegrees
-    [[deprecated]] float& dyn__tickDegrees();
+    [[deprecated("Use field access instead!")]] float& dyn__tickDegrees();
     // Get instance field reference: private UnityEngine.Vector3 _rotationalAxis
-    [[deprecated]] ::UnityEngine::Vector3& dyn__rotationalAxis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__rotationalAxis();
     // Get instance field reference: private UnityEngine.Vector3 _lastFrameLookDirection
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lastFrameLookDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lastFrameLookDirection();
     // Get instance field reference: private UnityEngine.Vector3 _currentFrameLookDirection
-    [[deprecated]] ::UnityEngine::Vector3& dyn__currentFrameLookDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__currentFrameLookDirection();
     // Get instance field reference: private System.Single _angleDifference
-    [[deprecated]] float& dyn__angleDifference();
+    [[deprecated("Use field access instead!")]] float& dyn__angleDifference();
     // Get instance field reference: private System.Boolean _tickedLastFrame
-    [[deprecated]] bool& dyn__tickedLastFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn__tickedLastFrame();
     // private System.Void TickCounterClockwise()
     // Offset: 0xB3794C
     void TickCounterClockwise();
@@ -175,11 +175,6 @@ namespace VROSC {
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RotationalTicker* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::RotationalTicker::.ctor");

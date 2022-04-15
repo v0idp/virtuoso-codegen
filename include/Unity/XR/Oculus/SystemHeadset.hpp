@@ -162,7 +162,7 @@ namespace Unity::XR::Oculus {
     // Set static field: static public Unity.XR.Oculus.SystemHeadset PC_Placeholder_4107
     static void _set_PC_Placeholder_4107(::Unity::XR::Oculus::SystemHeadset value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Unity.XR.Oculus.SystemHeadset
   #pragma pack(pop)
   static check_size<sizeof(SystemHeadset), 0 + sizeof(int)> __Unity_XR_Oculus_SystemHeadsetSizeCheck;

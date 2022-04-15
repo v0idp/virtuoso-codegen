@@ -54,9 +54,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // private System.Void CloseButtonPressed()
     // Offset: 0x196A240
     void CloseButtonPressed();
@@ -65,11 +65,6 @@ namespace GlobalNamespace {
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::.ctor()
     // Base method: System.Void WidgetController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LoopStationController::.ctor");

@@ -86,9 +86,9 @@ namespace System::Xml::Schema {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Char match
-      [[deprecated]] ::Il2CppChar& dyn_match();
+      [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_match();
       // Get instance field reference: System.String replacement
-      [[deprecated]] ::StringW& dyn_replacement();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_replacement();
       // System.Void .ctor(System.Char m, System.String r)
       // Offset: 0xC1E79C
       // ABORTED: conflicts with another method.  Map(::Il2CppChar m, ::StringW r);
@@ -179,27 +179,27 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Xml.Schema.FacetsChecker/System.Xml.Schema.FacetsCompiler/System.Xml.Schema.Map[] c_map
     static void _set_c_map(::ArrayW<::System::Xml::Schema::FacetsChecker::FacetsCompiler::Map> value);
     // Get instance field reference: private System.Xml.Schema.DatatypeImplementation datatype
-    [[deprecated]] ::System::Xml::Schema::DatatypeImplementation*& dyn_datatype();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::DatatypeImplementation*& dyn_datatype();
     // Get instance field reference: private System.Xml.Schema.RestrictionFacets derivedRestriction
-    [[deprecated]] ::System::Xml::Schema::RestrictionFacets*& dyn_derivedRestriction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::RestrictionFacets*& dyn_derivedRestriction();
     // Get instance field reference: private System.Xml.Schema.RestrictionFlags baseFlags
-    [[deprecated]] ::System::Xml::Schema::RestrictionFlags& dyn_baseFlags();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::RestrictionFlags& dyn_baseFlags();
     // Get instance field reference: private System.Xml.Schema.RestrictionFlags baseFixedFlags
-    [[deprecated]] ::System::Xml::Schema::RestrictionFlags& dyn_baseFixedFlags();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::RestrictionFlags& dyn_baseFixedFlags();
     // Get instance field reference: private System.Xml.Schema.RestrictionFlags validRestrictionFlags
-    [[deprecated]] ::System::Xml::Schema::RestrictionFlags& dyn_validRestrictionFlags();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::RestrictionFlags& dyn_validRestrictionFlags();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDatatype nonNegativeInt
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn_nonNegativeInt();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn_nonNegativeInt();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDatatype builtInType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn_builtInType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn_builtInType();
     // Get instance field reference: private System.Xml.Schema.XmlTypeCode builtInEnum
-    [[deprecated]] ::System::Xml::Schema::XmlTypeCode& dyn_builtInEnum();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlTypeCode& dyn_builtInEnum();
     // Get instance field reference: private System.Boolean firstPattern
-    [[deprecated]] bool& dyn_firstPattern();
+    [[deprecated("Use field access instead!")]] bool& dyn_firstPattern();
     // Get instance field reference: private System.Text.StringBuilder regStr
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_regStr();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_regStr();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaPatternFacet pattern_facet
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaPatternFacet*& dyn_pattern_facet();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaPatternFacet*& dyn_pattern_facet();
     // public System.Void .ctor(System.Xml.Schema.DatatypeImplementation baseDatatype, System.Xml.Schema.RestrictionFacets restriction)
     // Offset: 0xC1B58C
     FacetsCompiler(::System::Xml::Schema::DatatypeImplementation* baseDatatype, ::System::Xml::Schema::RestrictionFacets* restriction);

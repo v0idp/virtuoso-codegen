@@ -114,29 +114,29 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::ArrayW<uint64_t>) == 0x8);
     public:
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE code
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_code();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_code();
     // Get instance field reference: private System.Boolean[] booleanA
-    [[deprecated]] ::ArrayW<bool>& dyn_booleanA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_booleanA();
     // Get instance field reference: private System.Char[] charA
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_charA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_charA();
     // Get instance field reference: private System.Double[] doubleA
-    [[deprecated]] ::ArrayW<double>& dyn_doubleA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<double>& dyn_doubleA();
     // Get instance field reference: private System.Int16[] int16A
-    [[deprecated]] ::ArrayW<int16_t>& dyn_int16A();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int16_t>& dyn_int16A();
     // Get instance field reference: private System.Int32[] int32A
-    [[deprecated]] ::ArrayW<int>& dyn_int32A();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_int32A();
     // Get instance field reference: private System.Int64[] int64A
-    [[deprecated]] ::ArrayW<int64_t>& dyn_int64A();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int64_t>& dyn_int64A();
     // Get instance field reference: private System.SByte[] sbyteA
-    [[deprecated]] ::ArrayW<int8_t>& dyn_sbyteA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int8_t>& dyn_sbyteA();
     // Get instance field reference: private System.Single[] singleA
-    [[deprecated]] ::ArrayW<float>& dyn_singleA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_singleA();
     // Get instance field reference: private System.UInt16[] uint16A
-    [[deprecated]] ::ArrayW<uint16_t>& dyn_uint16A();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint16_t>& dyn_uint16A();
     // Get instance field reference: private System.UInt32[] uint32A
-    [[deprecated]] ::ArrayW<uint>& dyn_uint32A();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_uint32A();
     // Get instance field reference: private System.UInt64[] uint64A
-    [[deprecated]] ::ArrayW<uint64_t>& dyn_uint64A();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint64_t>& dyn_uint64A();
     // System.Void .ctor(System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE code, System.Array array)
     // Offset: 0x14D0F44
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

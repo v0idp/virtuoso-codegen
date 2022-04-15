@@ -68,11 +68,11 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.String[] _statesText
-    [[deprecated]] ::ArrayW<::StringW>& dyn__statesText();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__statesText();
     // Get instance field reference: private System.Int32 <CurrentState>k__BackingField
-    [[deprecated]] int& dyn_$CurrentState$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$CurrentState$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Int32> OnStateChanged
-    [[deprecated]] ::System::Action_1<int>*& dyn_OnStateChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<int>*& dyn_OnStateChanged();
     // public System.Int32 get_CurrentState()
     // Offset: 0xC685A4
     int get_CurrentState();
@@ -86,11 +86,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OrderToggleButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OrderToggleButton::.ctor");

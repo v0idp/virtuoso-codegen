@@ -67,9 +67,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::SymbolsDictionary*) == 0x8);
     public:
     // Get instance field reference: private System.Int32[][] transitionTable
-    [[deprecated]] ::ArrayW<::ArrayW<int>>& dyn_transitionTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::ArrayW<int>>& dyn_transitionTable();
     // Get instance field reference: private System.Xml.Schema.SymbolsDictionary symbols
-    [[deprecated]] ::System::Xml::Schema::SymbolsDictionary*& dyn_symbols();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SymbolsDictionary*& dyn_symbols();
     // System.Void .ctor(System.Int32[][] transitionTable, System.Xml.Schema.SymbolsDictionary symbols, System.Xml.Schema.XmlSchemaContentType contentType, System.Boolean isOpen, System.Boolean isEmptiable)
     // Offset: 0x10AF9DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

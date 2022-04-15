@@ -61,13 +61,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTransform leftEyeTransform
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_leftEyeTransform();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTransform& dyn_leftEyeTransform();
     // Get instance field reference: public ovrAvatarTransform rightEyeTransform
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_rightEyeTransform();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTransform& dyn_rightEyeTransform();
     // Get instance field reference: public ovrAvatarTransform centerEyeTransform
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_centerEyeTransform();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTransform& dyn_centerEyeTransform();
     // Get instance field reference: public System.IntPtr renderComponent
-    [[deprecated]] ::System::IntPtr& dyn_renderComponent();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_renderComponent();
   }; // ovrAvatarBodyComponent
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarBodyComponent), 120 + sizeof(::System::IntPtr)> __GlobalNamespace_ovrAvatarBodyComponentSizeCheck;

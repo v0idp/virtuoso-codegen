@@ -95,15 +95,15 @@ namespace System::Net {
     // Set static field: static System.Net.KnownHttpVerb MkCol
     static void _set_MkCol(::System::Net::KnownHttpVerb* value);
     // Get instance field reference: System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: System.Boolean RequireContentBody
-    [[deprecated]] bool& dyn_RequireContentBody();
+    [[deprecated("Use field access instead!")]] bool& dyn_RequireContentBody();
     // Get instance field reference: System.Boolean ContentBodyNotAllowed
-    [[deprecated]] bool& dyn_ContentBodyNotAllowed();
+    [[deprecated("Use field access instead!")]] bool& dyn_ContentBodyNotAllowed();
     // Get instance field reference: System.Boolean ConnectRequest
-    [[deprecated]] bool& dyn_ConnectRequest();
+    [[deprecated("Use field access instead!")]] bool& dyn_ConnectRequest();
     // Get instance field reference: System.Boolean ExpectNoContentResponse
-    [[deprecated]] bool& dyn_ExpectNoContentResponse();
+    [[deprecated("Use field access instead!")]] bool& dyn_ExpectNoContentResponse();
     // System.Void .ctor(System.String name, System.Boolean requireContentBody, System.Boolean contentBodyNotAllowed, System.Boolean connectRequest, System.Boolean expectNoContentResponse)
     // Offset: 0x10F6F78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

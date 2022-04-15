@@ -189,21 +189,21 @@ namespace System {
     // Set static field: static private System.Collections.ObjectModel.ReadOnlyCollection`1<System.TimeZoneInfo> systemTimeZones
     static void _set_systemTimeZones(::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::TimeZoneInfo*>* value);
     // Get instance field reference: private System.TimeSpan baseUtcOffset
-    [[deprecated]] ::System::TimeSpan& dyn_baseUtcOffset();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn_baseUtcOffset();
     // Get instance field reference: private System.String daylightDisplayName
-    [[deprecated]] ::StringW& dyn_daylightDisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_daylightDisplayName();
     // Get instance field reference: private System.String displayName
-    [[deprecated]] ::StringW& dyn_displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_displayName();
     // Get instance field reference: private System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<System.DateTime,System.TimeType>> transitions
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<::System::DateTime, ::System::TimeType*>>*& dyn_transitions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<::System::DateTime, ::System::TimeType*>>*& dyn_transitions();
     // Get instance field reference: private System.String standardDisplayName
-    [[deprecated]] ::StringW& dyn_standardDisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_standardDisplayName();
     // Get instance field reference: private System.Boolean supportsDaylightSavingTime
-    [[deprecated]] bool& dyn_supportsDaylightSavingTime();
+    [[deprecated("Use field access instead!")]] bool& dyn_supportsDaylightSavingTime();
     // Get instance field reference: private System.TimeZoneInfo/System.AdjustmentRule[] adjustmentRules
-    [[deprecated]] ::ArrayW<::System::TimeZoneInfo::AdjustmentRule*>& dyn_adjustmentRules();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::TimeZoneInfo::AdjustmentRule*>& dyn_adjustmentRules();
     // public System.TimeSpan get_BaseUtcOffset()
     // Offset: 0x11E5C08
     ::System::TimeSpan get_BaseUtcOffset();

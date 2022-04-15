@@ -45,9 +45,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: readonly System.Linq.Expressions.ExpressionType NodeType
-    [[deprecated]] ::System::Linq::Expressions::ExpressionType& dyn_NodeType();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::ExpressionType& dyn_NodeType();
     // Get instance field reference: readonly System.Type Type
-    [[deprecated]] ::System::Type*& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_Type();
   }; // System.Linq.Expressions.Expression/System.Linq.Expressions.ExtensionInfo
   #pragma pack(pop)
   static check_size<sizeof(Expression::ExtensionInfo), 24 + sizeof(::System::Type*)> __System_Linq_Expressions_Expression_ExtensionInfoSizeCheck;

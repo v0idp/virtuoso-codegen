@@ -30,6 +30,13 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRTouchpadHelper : public ::UnityEngine::MonoBehaviour {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x18AD458
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRTouchpadHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRTouchpadHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRTouchpadHelper*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x18AD26C
     void Awake();
@@ -45,23 +52,14 @@ namespace GlobalNamespace {
     // private System.Void LocalTouchEventCallback(OVRTouchpad/TouchEvent touchEvent)
     // Offset: 0x18AD454
     void LocalTouchEventCallback(::GlobalNamespace::OVRTouchpad::TouchEvent touchEvent);
-    // public System.Void .ctor()
-    // Offset: 0x18AD458
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRTouchpadHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRTouchpadHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRTouchpadHelper*, creationType>()));
-    }
   }; // OVRTouchpadHelper
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRTouchpadHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRTouchpadHelper::Awake
 // Il2CppName: Awake
 template<>
@@ -103,7 +101,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRTouchpadHelper*), "LocalTouchEventCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{touchEvent});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRTouchpadHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -69,7 +69,7 @@ namespace System::Data::Common {
     // Set static field: static public System.Data.Common.ObjectStorage/System.Data.Common.Families ARRAY
     static void _set_ARRAY(::System::Data::Common::ObjectStorage::Families value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Data.Common.ObjectStorage/System.Data.Common.Families
   #pragma pack(pop)
   static check_size<sizeof(ObjectStorage::Families), 0 + sizeof(int)> __System_Data_Common_ObjectStorage_FamiliesSizeCheck;

@@ -54,25 +54,22 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TutorialEvent) == 0x4);
     public:
     // Get instance field reference: private VROSC.TutorialEvent _startEvent
-    [[deprecated]] ::VROSC::TutorialEvent& dyn__startEvent();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialEvent& dyn__startEvent();
     // Get instance field reference: private VROSC.TutorialEvent _endEvent
-    [[deprecated]] ::VROSC::TutorialEvent& dyn__endEvent();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialEvent& dyn__endEvent();
+    // public System.Void .ctor()
+    // Offset: 0xA2F398
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TutorialEventBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialEventBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TutorialEventBehaviour*, creationType>()));
+    }
     // public System.Void Setup(VROSC.TutorialEvent startEvent, VROSC.TutorialEvent endEvent)
     // Offset: 0xA2F068
     void Setup(::VROSC::TutorialEvent startEvent, ::VROSC::TutorialEvent endEvent);
     // private System.Void SentTutorialEvent(VROSC.TutorialEvent tutorialEvent)
     // Offset: 0xA2F0C0
     void SentTutorialEvent(::VROSC::TutorialEvent tutorialEvent);
-    // public System.Void .ctor()
-    // Offset: 0xA2F398
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TutorialEventBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialEventBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TutorialEventBehaviour*, creationType>()));
-    }
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     // Offset: 0xA2F078
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -89,6 +86,10 @@ namespace VROSC {
   static_assert(sizeof(TutorialEventBehaviour) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TutorialEventBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TutorialEventBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -108,10 +109,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialEventBehaviour*), "SentTutorialEvent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tutorialEvent});
   }
 };
-// Writing MetadataGetter for method: VROSC::TutorialEventBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TutorialEventBehaviour::OnBehaviourPlay
 // Il2CppName: OnBehaviourPlay
 template<>

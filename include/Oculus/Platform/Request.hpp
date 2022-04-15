@@ -43,9 +43,9 @@ namespace Oculus::Platform {
     static_assert(sizeof(uint64_t) == 0x8);
     public:
     // Get instance field reference: private Oculus.Platform.Message/Oculus.Platform.Callback callback_
-    [[deprecated]] ::Oculus::Platform::Message::Callback*& dyn_callback_();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Message::Callback*& dyn_callback_();
     // Get instance field reference: private System.UInt64 <RequestID>k__BackingField
-    [[deprecated]] uint64_t& dyn_$RequestID$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$RequestID$k__BackingField();
     // public System.UInt64 get_RequestID()
     // Offset: 0x17135C0
     uint64_t get_RequestID();

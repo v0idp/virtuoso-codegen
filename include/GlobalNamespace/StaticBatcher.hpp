@@ -51,32 +51,30 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _delay
-    [[deprecated]] float& dyn__delay();
+    [[deprecated("Use field access instead!")]] float& dyn__delay();
+    // public System.Void .ctor()
+    // Offset: 0x1930CB0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StaticBatcher* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::StaticBatcher::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StaticBatcher*, creationType>()));
+    }
     // private System.Collections.IEnumerator Start()
     // Offset: 0x1930AD8
     ::System::Collections::IEnumerator* Start();
     // private System.Void Batch()
     // Offset: 0x1930B44
     void Batch();
-    // public System.Void .ctor()
-    // Offset: 0x1930CB0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StaticBatcher* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::StaticBatcher::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StaticBatcher*, creationType>()));
-    }
   }; // StaticBatcher
   #pragma pack(pop)
   static check_size<sizeof(StaticBatcher), 24 + sizeof(float)> __GlobalNamespace_StaticBatcherSizeCheck;
   static_assert(sizeof(StaticBatcher) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::StaticBatcher::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::StaticBatcher::Start
 // Il2CppName: Start
 template<>
@@ -93,7 +91,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::StaticBatcher*), "Batch", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::StaticBatcher::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

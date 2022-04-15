@@ -113,21 +113,21 @@ namespace GlobalNamespace {
     // Set static field: static private ONSPAudioSource RoomReflectionGizmoAS
     static void _set_RoomReflectionGizmoAS(::GlobalNamespace::ONSPAudioSource* value);
     // Get instance field reference: private System.Boolean enableSpatialization
-    [[deprecated]] bool& dyn_enableSpatialization();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableSpatialization();
     // Get instance field reference: private System.Single gain
-    [[deprecated]] float& dyn_gain();
+    [[deprecated("Use field access instead!")]] float& dyn_gain();
     // Get instance field reference: private System.Boolean useInvSqr
-    [[deprecated]] bool& dyn_useInvSqr();
+    [[deprecated("Use field access instead!")]] bool& dyn_useInvSqr();
     // Get instance field reference: private System.Single near
-    [[deprecated]] float& dyn_near();
+    [[deprecated("Use field access instead!")]] float& dyn_near();
     // Get instance field reference: private System.Single far
-    [[deprecated]] float& dyn_far();
+    [[deprecated("Use field access instead!")]] float& dyn_far();
     // Get instance field reference: private System.Single volumetricRadius
-    [[deprecated]] float& dyn_volumetricRadius();
+    [[deprecated("Use field access instead!")]] float& dyn_volumetricRadius();
     // Get instance field reference: private System.Single reverbSend
-    [[deprecated]] float& dyn_reverbSend();
+    [[deprecated("Use field access instead!")]] float& dyn_reverbSend();
     // Get instance field reference: private System.Boolean enableRfl
-    [[deprecated]] bool& dyn_enableRfl();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableRfl();
     // public System.Boolean get_EnableSpatialization()
     // Offset: 0x175F888
     bool get_EnableSpatialization();
@@ -176,6 +176,16 @@ namespace GlobalNamespace {
     // public System.Void set_EnableRfl(System.Boolean value)
     // Offset: 0x175F9E0
     void set_EnableRfl(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x17600EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ONSPAudioSource* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPAudioSource::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ONSPAudioSource*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x1760108
+    static void _cctor();
     // static private System.Void ONSP_GetGlobalRoomReflectionValues(ref System.Boolean reflOn, ref System.Boolean reverbOn, ref System.Single width, ref System.Single height, ref System.Single length)
     // Offset: 0x175F7A8
     static void ONSP_GetGlobalRoomReflectionValues(ByRef<bool> reflOn, ByRef<bool> reverbOn, ByRef<float> width, ByRef<float> height, ByRef<float> length);
@@ -197,24 +207,6 @@ namespace GlobalNamespace {
     // private System.Void OnDestroy()
     // Offset: 0x1760014
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x17600EC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ONSPAudioSource* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPAudioSource::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ONSPAudioSource*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x1760108
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // ONSPAudioSource
   #pragma pack(pop)
   static check_size<sizeof(ONSPAudioSource), 52 + sizeof(bool)> __GlobalNamespace_ONSPAudioSourceSizeCheck;
@@ -357,6 +349,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPAudioSource*), "set_EnableRfl", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::ONSPAudioSource::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::ONSPAudioSource::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPAudioSource::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPAudioSource*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::ONSPAudioSource::ONSP_GetGlobalRoomReflectionValues
 // Il2CppName: ONSP_GetGlobalRoomReflectionValues
 template<>
@@ -417,17 +421,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::ONSPAudioSource::*)()>(&GlobalNamespace::ONSPAudioSource::OnDestroy)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPAudioSource*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::ONSPAudioSource::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::ONSPAudioSource::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPAudioSource::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPAudioSource*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

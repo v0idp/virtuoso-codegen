@@ -84,9 +84,9 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.ModularDrumsDataController> OnDataLoaded
     static void _set_OnDataLoaded(::System::Action_1<::VROSC::ModularDrumsDataController*>* value);
     // Get instance field reference: private VROSC.TransformDataController _transformData
-    [[deprecated]] ::VROSC::TransformDataController*& dyn__transformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataController*& dyn__transformData();
     // Get instance field reference: private System.Int32 _nextInstanceId
-    [[deprecated]] int& dyn__nextInstanceId();
+    [[deprecated("Use field access instead!")]] int& dyn__nextInstanceId();
     // private VROSC.ModularDrumsDataModel get_DataModel()
     // Offset: 0xACAC68
     ::VROSC::ModularDrumsDataModel* get_DataModel();
@@ -255,7 +255,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentDataController
     // Base method: System.Void InstrumentDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ModularDrumsDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ModularDrumsDataController::.ctor");

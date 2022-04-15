@@ -62,9 +62,9 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private VROSC.TransformDataModel _dataModel
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn__dataModel();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn__dataModel();
     // Get instance field reference: private System.Action OnChange
-    [[deprecated]] ::System::Action*& dyn_OnChange();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnChange();
     // public System.Boolean get_IsOpen()
     // Offset: 0xA2A418
     bool get_IsOpen();

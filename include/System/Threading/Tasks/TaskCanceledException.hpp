@@ -51,7 +51,7 @@ namespace System::Threading::Tasks {
     // Deleting conversion operator: operator ::System::Threading::CancellationToken
     constexpr operator ::System::Threading::CancellationToken() const noexcept = delete;
     // Get instance field reference: private System.Threading.Tasks.Task m_canceledTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_canceledTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_canceledTask();
     // public System.Void .ctor(System.Threading.Tasks.Task task)
     // Offset: 0x126F69C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

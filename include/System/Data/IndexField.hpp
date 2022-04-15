@@ -54,9 +54,9 @@ namespace System::Data {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly System.Data.DataColumn Column
-    [[deprecated]] ::System::Data::DataColumn*& dyn_Column();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn_Column();
     // Get instance field reference: public readonly System.Boolean IsDescending
-    [[deprecated]] bool& dyn_IsDescending();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsDescending();
     // System.Void .ctor(System.Data.DataColumn column, System.Boolean isDescending)
     // Offset: 0x13AFD54
     // ABORTED: conflicts with another method.  IndexField(::System::Data::DataColumn* column, bool isDescending);

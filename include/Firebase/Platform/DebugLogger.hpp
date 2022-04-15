@@ -39,18 +39,16 @@ namespace Firebase::Platform {
     // static public Firebase.Platform.DebugLogger get_Instance()
     // Offset: 0x18C7474
     static ::Firebase::Platform::DebugLogger* get_Instance();
-    // static private System.Void .cctor()
-    // Offset: 0x18C74D8
-    static void _cctor();
     // public System.Void .ctor()
     // Offset: 0x18C746C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DebugLogger* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::DebugLogger::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DebugLogger*, creationType>()));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x18C74D8
+    static void _cctor();
   }; // Firebase.Platform.DebugLogger
   #pragma pack(pop)
 }
@@ -63,6 +61,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::DebugLogger*), "get_Instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Platform::DebugLogger::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Platform::DebugLogger::_cctor
 // Il2CppName: .cctor
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::DebugLogger*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Platform::DebugLogger::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

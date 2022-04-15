@@ -58,9 +58,9 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Reflection.CustomAttributeTypedArgument typedArgument
-    [[deprecated]] ::System::Reflection::CustomAttributeTypedArgument& dyn_typedArgument();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::CustomAttributeTypedArgument& dyn_typedArgument();
     // Get instance field reference: private System.Reflection.MemberInfo memberInfo
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn_memberInfo();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn_memberInfo();
     // public System.Void .ctor(System.Reflection.MemberInfo memberInfo, System.Object value)
     // Offset: 0x1403078
     CustomAttributeNamedArgument(::System::Reflection::MemberInfo* memberInfo, ::Il2CppObject* value);

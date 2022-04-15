@@ -68,7 +68,7 @@ namespace System {
     // Set static field: static public readonly System.UIntPtr Zero
     static void _set_Zero(::System::UIntPtr value);
     // Get instance field reference: private System.Void* _pointer
-    [[deprecated]] void*& dyn__pointer();
+    [[deprecated("Use field access instead!")]] void*& dyn__pointer();
     // static public System.Int32 get_Size()
     // Offset: 0x12B7388
     static int get_Size();

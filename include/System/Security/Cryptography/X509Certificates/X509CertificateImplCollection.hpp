@@ -59,13 +59,20 @@ namespace System::Security::Cryptography::X509Certificates {
       return list;
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.Security.Cryptography.X509Certificates.X509CertificateImpl> list
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509CertificateImpl*>*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509CertificateImpl*>*& dyn_list();
     // public System.Int32 get_Count()
     // Offset: 0xC525A4
     int get_Count();
     // public System.Security.Cryptography.X509Certificates.X509CertificateImpl get_Item(System.Int32 index)
     // Offset: 0xC525F0
     ::System::Security::Cryptography::X509Certificates::X509CertificateImpl* get_Item(int index);
+    // public System.Void .ctor()
+    // Offset: 0xC513C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509CertificateImplCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509CertificateImplCollection*, creationType>()));
+    }
     // private System.Void .ctor(System.Security.Cryptography.X509Certificates.X509CertificateImplCollection other)
     // Offset: 0xC523F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -85,15 +92,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // protected System.Void Dispose(System.Boolean disposing)
     // Offset: 0xC52664
     void Dispose(bool disposing);
-    // public System.Void .ctor()
-    // Offset: 0xC513C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509CertificateImplCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509CertificateImplCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509CertificateImplCollection*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xC52898
     // Implemented from: System.Object
@@ -122,6 +120,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::S
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509CertificateImplCollection*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index});
   }
 };
+// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateImplCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateImplCollection::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -161,10 +163,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509CertificateImplCollection*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{disposing});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateImplCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateImplCollection::Finalize
 // Il2CppName: Finalize
 template<>

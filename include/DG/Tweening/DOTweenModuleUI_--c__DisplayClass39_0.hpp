@@ -48,30 +48,32 @@ namespace DG::Tweening {
     static_assert(sizeof(::UnityEngine::UI::Text*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Color to
-    [[deprecated]] ::UnityEngine::Color& dyn_to();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_to();
     // Get instance field reference: public UnityEngine.UI.Text target
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_target();
+    // public System.Void .ctor()
+    // Offset: 0x17E18B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTweenModuleUI::$$c__DisplayClass39_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleUI::$$c__DisplayClass39_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleUI::$$c__DisplayClass39_0*, creationType>()));
+    }
     // UnityEngine.Color <DOBlendableColor>b__0()
     // Offset: 0x17E3C20
     ::UnityEngine::Color $DOBlendableColor$b__0();
     // System.Void <DOBlendableColor>b__1(UnityEngine.Color x)
     // Offset: 0x17E3C2C
     void $DOBlendableColor$b__1(::UnityEngine::Color x);
-    // public System.Void .ctor()
-    // Offset: 0x17E18B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTweenModuleUI::$$c__DisplayClass39_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleUI::$$c__DisplayClass39_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleUI::$$c__DisplayClass39_0*, creationType>()));
-    }
   }; // DG.Tweening.DOTweenModuleUI/DG.Tweening.<>c__DisplayClass39_0
   #pragma pack(pop)
   static check_size<sizeof(DOTweenModuleUI::$$c__DisplayClass39_0), 32 + sizeof(::UnityEngine::UI::Text*)> __DG_Tweening_DOTweenModuleUI_$$c__DisplayClass39_0SizeCheck;
   static_assert(sizeof(DOTweenModuleUI::$$c__DisplayClass39_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleUI::$$c__DisplayClass39_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTweenModuleUI::$$c__DisplayClass39_0::$DOBlendableColor$b__0
 // Il2CppName: <DOBlendableColor>b__0
 template<>
@@ -89,7 +91,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTweenModuleUI::$$c__DisplayClass39_0*), "<DOBlendableColor>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleUI::$$c__DisplayClass39_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

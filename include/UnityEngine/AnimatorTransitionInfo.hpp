@@ -94,21 +94,21 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_FullPath
-    [[deprecated]] int& dyn_m_FullPath();
+    [[deprecated("Use field access instead!")]] int& dyn_m_FullPath();
     // Get instance field reference: private System.Int32 m_UserName
-    [[deprecated]] int& dyn_m_UserName();
+    [[deprecated("Use field access instead!")]] int& dyn_m_UserName();
     // Get instance field reference: private System.Int32 m_Name
-    [[deprecated]] int& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Name();
     // Get instance field reference: private System.Boolean m_HasFixedDuration
-    [[deprecated]] bool& dyn_m_HasFixedDuration();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasFixedDuration();
     // Get instance field reference: private System.Single m_Duration
-    [[deprecated]] float& dyn_m_Duration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Duration();
     // Get instance field reference: private System.Single m_NormalizedTime
-    [[deprecated]] float& dyn_m_NormalizedTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_NormalizedTime();
     // Get instance field reference: private System.Boolean m_AnyState
-    [[deprecated]] bool& dyn_m_AnyState();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AnyState();
     // Get instance field reference: private System.Int32 m_TransitionType
-    [[deprecated]] int& dyn_m_TransitionType();
+    [[deprecated("Use field access instead!")]] int& dyn_m_TransitionType();
   }; // UnityEngine.AnimatorTransitionInfo
   #pragma pack(pop)
   static check_size<sizeof(AnimatorTransitionInfo), 28 + sizeof(int)> __UnityEngine_AnimatorTransitionInfoSizeCheck;

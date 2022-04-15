@@ -111,7 +111,7 @@ namespace System::Xml::Schema {
       // Set static field: static public System.Xml.Schema.XmlSchemaInference/System.Xml.Schema.InferenceOption Relaxed
       static void _set_Relaxed(::System::Xml::Schema::XmlSchemaInference::InferenceOption value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.Schema.XmlSchemaInference/System.Xml.Schema.InferenceOption
     #pragma pack(pop)
     static check_size<sizeof(XmlSchemaInference::InferenceOption), 0 + sizeof(int)> __System_Xml_Schema_XmlSchemaInference_InferenceOptionSizeCheck;
@@ -257,23 +257,23 @@ namespace System::Xml::Schema {
     // Set static field: static System.Xml.XmlQualifiedName[] SimpleTypes
     static void _set_SimpleTypes(::ArrayW<::System::Xml::XmlQualifiedName*> value);
     // Get instance field reference: private System.Xml.Schema.XmlSchema rootSchema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_rootSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_rootSchema();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSet schemaSet
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSet*& dyn_schemaSet();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSet*& dyn_schemaSet();
     // Get instance field reference: private System.Xml.XmlReader xtr
-    [[deprecated]] ::System::Xml::XmlReader*& dyn_xtr();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn_xtr();
     // Get instance field reference: private System.Xml.NameTable nametable
-    [[deprecated]] ::System::Xml::NameTable*& dyn_nametable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::NameTable*& dyn_nametable();
     // Get instance field reference: private System.String TargetNamespace
-    [[deprecated]] ::StringW& dyn_TargetNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TargetNamespace();
     // Get instance field reference: private System.Xml.XmlNamespaceManager NamespaceManager
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn_NamespaceManager();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn_NamespaceManager();
     // Get instance field reference: private System.Collections.ArrayList schemaList
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_schemaList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_schemaList();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaInference/System.Xml.Schema.InferenceOption occurrence
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaInference::InferenceOption& dyn_occurrence();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaInference::InferenceOption& dyn_occurrence();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaInference/System.Xml.Schema.InferenceOption typeInference
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaInference::InferenceOption& dyn_typeInference();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaInference::InferenceOption& dyn_typeInference();
     // public System.Xml.Schema.XmlSchemaInference/System.Xml.Schema.InferenceOption get_Occurrence()
     // Offset: 0x110F2C4
     ::System::Xml::Schema::XmlSchemaInference::InferenceOption get_Occurrence();
@@ -283,6 +283,13 @@ namespace System::Xml::Schema {
     // public System.Void set_TypeInference(System.Xml.Schema.XmlSchemaInference/System.Xml.Schema.InferenceOption value)
     // Offset: 0x110F2CC
     void set_TypeInference(::System::Xml::Schema::XmlSchemaInference::InferenceOption value);
+    // public System.Void .ctor()
+    // Offset: 0x110F2D4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSchemaInference* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaInference::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaInference*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x111872C
     static void _cctor();
@@ -361,15 +368,6 @@ namespace System::Xml::Schema {
     // System.Void SetMinMaxOccurs(System.Xml.Schema.XmlSchemaElement el, System.Boolean setMaxOccurs)
     // Offset: 0x1116824
     void SetMinMaxOccurs(::System::Xml::Schema::XmlSchemaElement* el, bool setMaxOccurs);
-    // public System.Void .ctor()
-    // Offset: 0x110F2D4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSchemaInference* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaInference::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaInference*, creationType>()));
-    }
   }; // System.Xml.Schema.XmlSchemaInference
   #pragma pack(pop)
   static check_size<sizeof(XmlSchemaInference), 76 + sizeof(::System::Xml::Schema::XmlSchemaInference::InferenceOption)> __System_Xml_Schema_XmlSchemaInferenceSizeCheck;
@@ -404,6 +402,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaInference*), "set_TypeInference", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaInference::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaInference::_cctor
 // Il2CppName: .cctor
 template<>
@@ -680,7 +682,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaInference*), "SetMinMaxOccurs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{el, setMaxOccurs});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaInference::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

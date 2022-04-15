@@ -139,33 +139,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.AnimationCurve _animationStartCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animationStartCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__animationStartCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _animateionEndCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animateionEndCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__animateionEndCurve();
     // Get instance field reference: private VROSC.NotefieldAnimationSettings/VROSC.TimelineSettings _creation
-    [[deprecated]] ::VROSC::NotefieldAnimationSettings::TimelineSettings*& dyn__creation();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotefieldAnimationSettings::TimelineSettings*& dyn__creation();
     // Get instance field reference: private VROSC.NotefieldAnimationSettings/VROSC.TimelineSettings _destruction
-    [[deprecated]] ::VROSC::NotefieldAnimationSettings::TimelineSettings*& dyn__destruction();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotefieldAnimationSettings::TimelineSettings*& dyn__destruction();
     // Get instance field reference: private UnityEngine.AnimationCurve _sizeCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__sizeCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__sizeCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _positionDeviationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionDeviationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__positionDeviationCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _rotationDeviationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationDeviationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__rotationDeviationCurve();
     // Get instance field reference: private System.Single _positionDeviationAmount
-    [[deprecated]] float& dyn__positionDeviationAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__positionDeviationAmount();
     // Get instance field reference: private System.Single _rotationDeviationAmount
-    [[deprecated]] float& dyn__rotationDeviationAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__rotationDeviationAmount();
     // Get instance field reference: private System.Boolean _useZDirection
-    [[deprecated]] bool& dyn__useZDirection();
+    [[deprecated("Use field access instead!")]] bool& dyn__useZDirection();
     // Get instance field reference: private System.Int32 previewX
-    [[deprecated]] int& dyn_previewX();
+    [[deprecated("Use field access instead!")]] int& dyn_previewX();
     // Get instance field reference: private System.Int32 previewY
-    [[deprecated]] int& dyn_previewY();
+    [[deprecated("Use field access instead!")]] int& dyn_previewY();
     // Get instance field reference: private System.Int32 previewZ
-    [[deprecated]] int& dyn_previewZ();
+    [[deprecated("Use field access instead!")]] int& dyn_previewZ();
     // Get instance field reference: private VROSC.Scale previewScale
-    [[deprecated]] ::VROSC::Scale& dyn_previewScale();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn_previewScale();
     // public VROSC.NotefieldAnimationSettings/VROSC.TimelineSettings get_Creation()
     // Offset: 0xC5AFC4
     ::VROSC::NotefieldAnimationSettings::TimelineSettings* get_Creation();
@@ -175,23 +175,19 @@ namespace VROSC {
     // public System.Boolean get_UseZDirection()
     // Offset: 0xC5AFD4
     bool get_UseZDirection();
+    // public System.Void .ctor()
+    // Offset: 0xC5B388
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NotefieldAnimationSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NotefieldAnimationSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NotefieldAnimationSettings*, creationType>()));
+    }
     // public System.Single GetAnimationValue(System.Single note, System.Single time)
     // Offset: 0xC5AFDC
     float GetAnimationValue(float note, float time);
     // public System.Void CreatePreviewNoteboard(VROSC.NoteBoardNoteController noteboardController)
     // Offset: 0xC5B054
     void CreatePreviewNoteboard(::VROSC::NoteBoardNoteController* noteboardController);
-    // public System.Void .ctor()
-    // Offset: 0xC5B388
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NotefieldAnimationSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NotefieldAnimationSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NotefieldAnimationSettings*, creationType>()));
-    }
   }; // VROSC.NotefieldAnimationSettings
   #pragma pack(pop)
   static check_size<sizeof(NotefieldAnimationSettings), 104 + sizeof(::VROSC::Scale)> __VROSC_NotefieldAnimationSettingsSizeCheck;
@@ -222,6 +218,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NotefieldAnimationSettings*), "get_UseZDirection", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::NotefieldAnimationSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NotefieldAnimationSettings::GetAnimationValue
 // Il2CppName: GetAnimationValue
 template<>
@@ -241,7 +241,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NotefieldAnimationSettings*), "CreatePreviewNoteboard", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{noteboardController});
   }
 };
-// Writing MetadataGetter for method: VROSC::NotefieldAnimationSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

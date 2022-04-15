@@ -197,41 +197,41 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _nameLabel
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__nameLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__nameLabel();
     // Get instance field reference: private VROSC.LoopPlayerRecordingState _IsRecordingState
-    [[deprecated]] ::VROSC::LoopPlayerRecordingState*& dyn__IsRecordingState();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerRecordingState*& dyn__IsRecordingState();
     // Get instance field reference: private UnityEngine.GameObject _HasRecordingState
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__HasRecordingState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__HasRecordingState();
     // Get instance field reference: private VROSC.Grabable _hoverCheck
-    [[deprecated]] ::VROSC::Grabable*& dyn__hoverCheck();
+    [[deprecated("Use field access instead!")]] ::VROSC::Grabable*& dyn__hoverCheck();
     // Get instance field reference: private UnityEngine.GameObject _hoveringState
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__hoveringState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__hoveringState();
     // Get instance field reference: private VROSC.LoopPlaybackSettingsUI _settingsMenu
-    [[deprecated]] ::VROSC::LoopPlaybackSettingsUI*& dyn__settingsMenu();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackSettingsUI*& dyn__settingsMenu();
     // Get instance field reference: private VROSC.LoopPlayButton _playButton
-    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__playButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayButton*& dyn__playButton();
     // Get instance field reference: private VROSC.UIHoldButton _deleteButton
-    [[deprecated]] ::VROSC::UIHoldButton*& dyn__deleteButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHoldButton*& dyn__deleteButton();
     // Get instance field reference: private VROSC.LoopPlayerColorizer _playerColorizer
-    [[deprecated]] ::VROSC::LoopPlayerColorizer*& dyn__playerColorizer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerColorizer*& dyn__playerColorizer();
     // Get instance field reference: private VROSC.LoopVolumeController _volumeController
-    [[deprecated]] ::VROSC::LoopVolumeController*& dyn__volumeController();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopVolumeController*& dyn__volumeController();
     // Get instance field reference: private VROSC.UIButton _renameButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__renameButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__renameButton();
     // Get instance field reference: private VROSC.LoopStationLaunchpadHandler _launchpadHandler
-    [[deprecated]] ::VROSC::LoopStationLaunchpadHandler*& dyn__launchpadHandler();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationLaunchpadHandler*& dyn__launchpadHandler();
     // Get instance field reference: private System.String <DisplayName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$DisplayName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$DisplayName$k__BackingField();
     // Get instance field reference: public System.Action OnDeletePressed
-    [[deprecated]] ::System::Action*& dyn_OnDeletePressed();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnDeletePressed();
     // Get instance field reference: public System.Action`1<System.String> OnRename
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnRename();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_OnRename();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnRecolor
-    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnRecolor();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnRecolor();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // public UnityEngine.Color get_MainColor()
     // Offset: 0x19BEA28
     ::UnityEngine::Color get_MainColor();
@@ -247,6 +247,13 @@ namespace VROSC {
     // public VROSC.LoopPlayButton get_PlayButton()
     // Offset: 0x19BEA60
     ::VROSC::LoopPlayButton* get_PlayButton();
+    // public System.Void .ctor()
+    // Offset: 0x19BF6FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayerUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerUI*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x19BEA68
     void Awake();
@@ -292,19 +299,6 @@ namespace VROSC {
     // System.Void LoadLaunchPad(System.String padID, VROSC.TransformDataController transformData)
     // Offset: 0x19BF6E0
     void LoadLaunchPad(::StringW padID, ::VROSC::TransformDataController* transformData);
-    // public System.Void .ctor()
-    // Offset: 0x19BF6FC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayerUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerUI*, creationType>()));
-    }
   }; // VROSC.LoopPlayerUI
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerUI), 160 + sizeof(::VROSC::LoopStation*)> __VROSC_LoopPlayerUISizeCheck;
@@ -352,6 +346,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Lo
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerUI*), "get_PlayButton", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopPlayerUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayerUI::Awake
 // Il2CppName: Awake
 template<>
@@ -487,7 +485,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerUI*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, transformData});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayerUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

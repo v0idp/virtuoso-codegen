@@ -60,7 +60,7 @@ namespace System::Data::SqlTypes {
     // Set static field: static public System.Data.SqlTypes.SqlBytesCharsState Stream
     static void _set_Stream(::System::Data::SqlTypes::SqlBytesCharsState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Data.SqlTypes.SqlBytesCharsState
   #pragma pack(pop)
   static check_size<sizeof(SqlBytesCharsState), 0 + sizeof(int)> __System_Data_SqlTypes_SqlBytesCharsStateSizeCheck;

@@ -126,25 +126,25 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // Set static field: static private readonly System.Byte PACKET_FORMAT
     static void _set_PACKET_FORMAT(uint8_t value);
     // Get instance field reference: private System.UInt64 m_remoteID
-    [[deprecated]] uint64_t& dyn_m_remoteID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_remoteID();
     // Get instance field reference: private Oculus.Platform.PeerConnectionState m_state
-    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_m_state();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PeerConnectionState& dyn_m_state();
     // Get instance field reference: private System.Single m_timeForNextUpdate
-    [[deprecated]] float& dyn_m_timeForNextUpdate();
+    [[deprecated("Use field access instead!")]] float& dyn_m_timeForNextUpdate();
     // Get instance field reference: private readonly System.Byte[] sendTransformBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_sendTransformBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_sendTransformBuffer();
     // Get instance field reference: private readonly System.Byte[] receiveTransformBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_receiveTransformBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_receiveTransformBuffer();
     // Get instance field reference: private UnityEngine.Vector3 receivedPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_receivedPosition();
     // Get instance field reference: private UnityEngine.Vector3 receivedPositionPrior
-    [[deprecated]] ::UnityEngine::Vector3& dyn_receivedPositionPrior();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_receivedPositionPrior();
     // Get instance field reference: private UnityEngine.Quaternion receivedRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_receivedRotation();
     // Get instance field reference: private UnityEngine.Quaternion receivedRotationPrior
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_receivedRotationPrior();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_receivedRotationPrior();
     // Get instance field reference: private System.Single receivedTime
-    [[deprecated]] float& dyn_receivedTime();
+    [[deprecated("Use field access instead!")]] float& dyn_receivedTime();
     // public System.Boolean get_Connected()
     // Offset: 0xB553D8
     bool get_Connected();

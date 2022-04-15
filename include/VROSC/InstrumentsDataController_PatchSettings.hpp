@@ -42,13 +42,11 @@ namespace VROSC {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: public VROSC.WidgetSettings/VROSC.Identifier InstrumentId
-    [[deprecated]] ::VROSC::WidgetSettings::Identifier& dyn_InstrumentId();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetSettings::Identifier& dyn_InstrumentId();
     // Get instance field reference: public System.Object Patch
-    [[deprecated]] ::Il2CppObject*& dyn_Patch();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Patch();
     // public System.Void .ctor()
     // Offset: 0x1958A24
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentsDataController::PatchSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentsDataController::PatchSettings::.ctor");

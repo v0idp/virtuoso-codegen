@@ -65,15 +65,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.AudioSpeakerMode speakerMode
-    [[deprecated]] ::UnityEngine::AudioSpeakerMode& dyn_speakerMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSpeakerMode& dyn_speakerMode();
     // Get instance field reference: public System.Int32 dspBufferSize
-    [[deprecated]] int& dyn_dspBufferSize();
+    [[deprecated("Use field access instead!")]] int& dyn_dspBufferSize();
     // Get instance field reference: public System.Int32 sampleRate
-    [[deprecated]] int& dyn_sampleRate();
+    [[deprecated("Use field access instead!")]] int& dyn_sampleRate();
     // Get instance field reference: public System.Int32 numRealVoices
-    [[deprecated]] int& dyn_numRealVoices();
+    [[deprecated("Use field access instead!")]] int& dyn_numRealVoices();
     // Get instance field reference: public System.Int32 numVirtualVoices
-    [[deprecated]] int& dyn_numVirtualVoices();
+    [[deprecated("Use field access instead!")]] int& dyn_numVirtualVoices();
   }; // UnityEngine.AudioConfiguration
   #pragma pack(pop)
   static check_size<sizeof(AudioConfiguration), 16 + sizeof(int)> __UnityEngine_AudioConfigurationSizeCheck;

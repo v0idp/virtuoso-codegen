@@ -42,7 +42,7 @@ namespace System::ComponentModel {
       return propertyName;
     }
     // Get instance field reference: private readonly System.String propertyName
-    [[deprecated]] ::StringW& dyn_propertyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_propertyName();
     // public System.Void .ctor(System.String propertyName)
     // Offset: 0x1409EFC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -61,7 +61,7 @@ namespace System::ComponentModel {
     // Set static field: static public System.ComponentModel.DesignerSerializationVisibility Content
     static void _set_Content(::System::ComponentModel::DesignerSerializationVisibility value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.ComponentModel.DesignerSerializationVisibility
   #pragma pack(pop)
   static check_size<sizeof(DesignerSerializationVisibility), 0 + sizeof(int)> __System_ComponentModel_DesignerSerializationVisibilitySizeCheck;

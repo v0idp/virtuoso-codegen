@@ -69,15 +69,15 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Color[] _colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
     // Get instance field reference: private UnityEngine.Color[] _originalColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__originalColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__originalColors();
     // Get instance field reference: private UnityEngine.Color[] _adjustedColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__adjustedColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__adjustedColors();
     // Get instance field reference: private UnityEngine.Color[] _shownColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__shownColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__shownColors();
     // Get instance field reference: private System.Single _multiplyValue
-    [[deprecated]] float& dyn__multiplyValue();
+    [[deprecated("Use field access instead!")]] float& dyn__multiplyValue();
     // private System.Void CalculateColorMultiplication()
     // Offset: 0x966E54
     void CalculateColorMultiplication();

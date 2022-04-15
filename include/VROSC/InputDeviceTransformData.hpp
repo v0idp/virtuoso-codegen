@@ -76,17 +76,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InputSettings*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 <LastPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$LastPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$LastPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <Velocity>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$Velocity$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$Velocity$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <SmoothPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$SmoothPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$SmoothPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 _smoothingVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn__smoothingVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__smoothingVelocity();
     // Get instance field reference: private VROSC.InputDevice _inputDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__inputDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__inputDevice();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputSettings*& dyn__inputSettings();
     // public UnityEngine.Vector3 get_LastPosition()
     // Offset: 0x19455C0
     ::UnityEngine::Vector3 get_LastPosition();

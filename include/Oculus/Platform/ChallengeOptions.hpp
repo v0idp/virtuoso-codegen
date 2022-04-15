@@ -56,7 +56,14 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    [[deprecated]] ::System::IntPtr& dyn_Handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Handle();
+    // public System.Void .ctor()
+    // Offset: 0x922084
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ChallengeOptions* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::ChallengeOptions::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ChallengeOptions*, creationType>()));
+    }
     // public System.Void SetDescription(System.String value)
     // Offset: 0x9220F4
     void SetDescription(::StringW value);
@@ -90,15 +97,6 @@ namespace Oculus::Platform {
     // static public System.IntPtr op_Explicit(Oculus.Platform.ChallengeOptions options)
     // Offset: 0x92257C
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
-    // public System.Void .ctor()
-    // Offset: 0x922084
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ChallengeOptions* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::ChallengeOptions::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ChallengeOptions*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x9225C8
     // Implemented from: System.Object
@@ -110,6 +108,10 @@ namespace Oculus::Platform {
   static_assert(sizeof(ChallengeOptions) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::ChallengeOptions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::ChallengeOptions::SetDescription
 // Il2CppName: SetDescription
 template<>
@@ -203,10 +205,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
 // Writing MetadataGetter for method: Oculus::Platform::ChallengeOptions::operator ::System::IntPtr
 // Il2CppName: op_Explicit
 // Cannot perform method pointer template specialization from operators!
-// Writing MetadataGetter for method: Oculus::Platform::ChallengeOptions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::ChallengeOptions::Finalize
 // Il2CppName: Finalize
 template<>

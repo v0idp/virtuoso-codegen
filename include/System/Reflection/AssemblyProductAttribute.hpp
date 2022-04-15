@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_product;
     }
     // Get instance field reference: private System.String m_product
-    [[deprecated]] ::StringW& dyn_m_product();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_product();
     // public System.Void .ctor(System.String product)
     // Offset: 0x1145E0C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

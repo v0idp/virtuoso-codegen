@@ -259,23 +259,23 @@ namespace VROSC {
     // Set static field: static public System.Action OnFavoritesChanged
     static void _set_OnFavoritesChanged(::System::Action* value);
     // Get instance field reference: private VROSC.UserDataControllers _userDataControllers
-    [[deprecated]] ::VROSC::UserDataControllers*& dyn__userDataControllers();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserDataControllers*& dyn__userDataControllers();
     // Get instance field reference: private VROSC.SaveLoadManager _saveLoadManager
-    [[deprecated]] ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::SaveLoadManager*& dyn__saveLoadManager();
     // Get instance field reference: private VROSC.OldSavesHandler _oldSavesHandler
-    [[deprecated]] ::VROSC::OldSavesHandler*& dyn__oldSavesHandler();
+    [[deprecated("Use field access instead!")]] ::VROSC::OldSavesHandler*& dyn__oldSavesHandler();
     // Get instance field reference: private VROSC.LocalSessionsDataController _localSessionsDataController
-    [[deprecated]] ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::LocalSessionsDataController*& dyn__localSessionsDataController();
     // Get instance field reference: private VROSC.CloudSessionsDataController _cloudSessionsDataController
-    [[deprecated]] ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::CloudSessionsDataController*& dyn__cloudSessionsDataController();
     // Get instance field reference: private VROSC.CommunitySessionsDataController _communitySessionsDataController
-    [[deprecated]] ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::CommunitySessionsDataController*& dyn__communitySessionsDataController();
     // Get instance field reference: private System.String _loadedSessionId
-    [[deprecated]] ::StringW& dyn__loadedSessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__loadedSessionId();
     // Get instance field reference: private System.Boolean <IsSessionDataValidated>k__BackingField
-    [[deprecated]] bool& dyn_$IsSessionDataValidated$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsSessionDataValidated$k__BackingField();
     // Get instance field reference: private System.String <CurrentSessionDisplayName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$CurrentSessionDisplayName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$CurrentSessionDisplayName$k__BackingField();
     // public System.Boolean get_IsSessionDataValidated()
     // Offset: 0x1993594
     bool get_IsSessionDataValidated();

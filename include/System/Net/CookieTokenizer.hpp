@@ -60,9 +60,9 @@ namespace System::Net {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private System.String m_name
-      [[deprecated]] ::StringW& dyn_m_name();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
       // Get instance field reference: private System.Net.CookieToken m_token
-      [[deprecated]] ::System::Net::CookieToken& dyn_m_token();
+      [[deprecated("Use field access instead!")]] ::System::Net::CookieToken& dyn_m_token();
       // System.Net.CookieToken get_Token()
       // Offset: 0x9F4EC4
       ::System::Net::CookieToken get_Token();
@@ -153,25 +153,25 @@ namespace System::Net {
     // Set static field: static private System.Net.CookieTokenizer/System.Net.RecognizedAttribute[] RecognizedServerAttributes
     static void _set_RecognizedServerAttributes(::ArrayW<::System::Net::CookieTokenizer::RecognizedAttribute> value);
     // Get instance field reference: private System.Boolean m_eofCookie
-    [[deprecated]] bool& dyn_m_eofCookie();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_eofCookie();
     // Get instance field reference: private System.Int32 m_index
-    [[deprecated]] int& dyn_m_index();
+    [[deprecated("Use field access instead!")]] int& dyn_m_index();
     // Get instance field reference: private System.Int32 m_length
-    [[deprecated]] int& dyn_m_length();
+    [[deprecated("Use field access instead!")]] int& dyn_m_length();
     // Get instance field reference: private System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private System.Boolean m_quoted
-    [[deprecated]] bool& dyn_m_quoted();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_quoted();
     // Get instance field reference: private System.Int32 m_start
-    [[deprecated]] int& dyn_m_start();
+    [[deprecated("Use field access instead!")]] int& dyn_m_start();
     // Get instance field reference: private System.Net.CookieToken m_token
-    [[deprecated]] ::System::Net::CookieToken& dyn_m_token();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieToken& dyn_m_token();
     // Get instance field reference: private System.Int32 m_tokenLength
-    [[deprecated]] int& dyn_m_tokenLength();
+    [[deprecated("Use field access instead!")]] int& dyn_m_tokenLength();
     // Get instance field reference: private System.String m_tokenStream
-    [[deprecated]] ::StringW& dyn_m_tokenStream();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_tokenStream();
     // Get instance field reference: private System.String m_value
-    [[deprecated]] ::StringW& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_value();
     // System.Boolean get_EndOfCookie()
     // Offset: 0x10EA91C
     bool get_EndOfCookie();

@@ -50,11 +50,11 @@ namespace RSG {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single elapsedTime
-    [[deprecated]] float& dyn_elapsedTime();
+    [[deprecated("Use field access instead!")]] float& dyn_elapsedTime();
     // Get instance field reference: public System.Single deltaTime
-    [[deprecated]] float& dyn_deltaTime();
+    [[deprecated("Use field access instead!")]] float& dyn_deltaTime();
     // Get instance field reference: public System.Int32 elapsedUpdates
-    [[deprecated]] int& dyn_elapsedUpdates();
+    [[deprecated("Use field access instead!")]] int& dyn_elapsedUpdates();
   }; // RSG.TimeData
   #pragma pack(pop)
   static check_size<sizeof(TimeData), 8 + sizeof(int)> __RSG_TimeDataSizeCheck;

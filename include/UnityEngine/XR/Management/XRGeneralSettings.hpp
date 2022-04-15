@@ -82,15 +82,15 @@ namespace UnityEngine::XR::Management {
     // Set static field: static UnityEngine.XR.Management.XRGeneralSettings s_RuntimeSettingsInstance
     static void _set_s_RuntimeSettingsInstance(::UnityEngine::XR::Management::XRGeneralSettings* value);
     // Get instance field reference: UnityEngine.XR.Management.XRManagerSettings m_LoaderManagerInstance
-    [[deprecated]] ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_LoaderManagerInstance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_LoaderManagerInstance();
     // Get instance field reference: System.Boolean m_InitManagerOnStart
-    [[deprecated]] bool& dyn_m_InitManagerOnStart();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_InitManagerOnStart();
     // Get instance field reference: private UnityEngine.XR.Management.XRManagerSettings m_XRManager
-    [[deprecated]] ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_XRManager();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Management::XRManagerSettings*& dyn_m_XRManager();
     // Get instance field reference: private System.Boolean m_ProviderIntialized
-    [[deprecated]] bool& dyn_m_ProviderIntialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ProviderIntialized();
     // Get instance field reference: private System.Boolean m_ProviderStarted
-    [[deprecated]] bool& dyn_m_ProviderStarted();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ProviderStarted();
     // public UnityEngine.XR.Management.XRManagerSettings get_Manager()
     // Offset: 0x18F9D30
     ::UnityEngine::XR::Management::XRManagerSettings* get_Manager();
@@ -106,6 +106,16 @@ namespace UnityEngine::XR::Management {
     // public System.Boolean get_InitManagerOnStart()
     // Offset: 0x18F9DAC
     bool get_InitManagerOnStart();
+    // public System.Void .ctor()
+    // Offset: 0x18FAC60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRGeneralSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRGeneralSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRGeneralSettings*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x18FAC70
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x18F9DB4
     void Awake();
@@ -136,22 +146,6 @@ namespace UnityEngine::XR::Management {
     // private System.Void DeInitXRSDK()
     // Offset: 0x18F9FF0
     void DeInitXRSDK();
-    // public System.Void .ctor()
-    // Offset: 0x18FAC60
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRGeneralSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRGeneralSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRGeneralSettings*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x18FAC70
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // UnityEngine.XR.Management.XRGeneralSettings
   #pragma pack(pop)
   static check_size<sizeof(XRGeneralSettings), 49 + sizeof(bool)> __UnityEngine_XR_Management_XRGeneralSettingsSizeCheck;
@@ -197,6 +191,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (UnityEngine::XR::Management::XRGeneralSettings::*)()>(&UnityEngine::XR::Management::XRGeneralSettings::get_InitManagerOnStart)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Management::XRGeneralSettings*), "get_InitManagerOnStart", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: UnityEngine::XR::Management::XRGeneralSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::XR::Management::XRGeneralSettings::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Management::XRGeneralSettings::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Management::XRGeneralSettings*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::XR::Management::XRGeneralSettings::Awake
@@ -277,17 +283,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (UnityEngine::XR::Management::XRGeneralSettings::*)()>(&UnityEngine::XR::Management::XRGeneralSettings::DeInitXRSDK)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Management::XRGeneralSettings*), "DeInitXRSDK", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::XR::Management::XRGeneralSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::XR::Management::XRGeneralSettings::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Management::XRGeneralSettings::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Management::XRGeneralSettings*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

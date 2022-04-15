@@ -81,18 +81,25 @@ namespace VROSC::UI::Meshes {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Int32 _meshDataExistsForVertCount
-    [[deprecated]] int& dyn__meshDataExistsForVertCount();
+    [[deprecated("Use field access instead!")]] int& dyn__meshDataExistsForVertCount();
     // Get instance field reference: protected UnityEngine.Vector3[] _normals
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__normals();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__normals();
     // Get instance field reference: protected UnityEngine.Color[] _colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
     // Get instance field reference: protected System.Int32[] _tris
-    [[deprecated]] ::ArrayW<int>& dyn__tris();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__tris();
     // Get instance field reference: protected UnityEngine.Vector2[] _uv
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // protected System.Int32 get_VertCount()
     // Offset: 0xFFFFFFFFFFFFFFFF
     int get_VertCount();
+    // protected System.Void .ctor()
+    // Offset: 0xB230D4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ProceduralMeshData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralMeshData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ProceduralMeshData*, creationType>()));
+    }
     // public UnityEngine.Mesh GenerateMesh(UnityEngine.Rect rect, System.Single depth, System.Single border)
     // Offset: 0xB24620
     ::UnityEngine::Mesh* GenerateMesh(::UnityEngine::Rect rect, float depth, float border);
@@ -114,17 +121,6 @@ namespace VROSC::UI::Meshes {
     // protected UnityEngine.Rect AnimateFromCenter(UnityEngine.Rect rect, System.Single appear)
     // Offset: 0xB22F8C
     ::UnityEngine::Rect AnimateFromCenter(::UnityEngine::Rect rect, float appear);
-    // protected System.Void .ctor()
-    // Offset: 0xB230D4
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ProceduralMeshData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralMeshData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ProceduralMeshData*, creationType>()));
-    }
   }; // VROSC.UI.Meshes.ProceduralMeshData
   #pragma pack(pop)
   static check_size<sizeof(ProceduralMeshData), 56 + sizeof(::ArrayW<::UnityEngine::Vector2>)> __VROSC_UI_Meshes_ProceduralMeshDataSizeCheck;
@@ -139,6 +135,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC:
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::ProceduralMeshData*), "get_VertCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::Meshes::ProceduralMeshData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::Meshes::ProceduralMeshData::GenerateMesh
 // Il2CppName: GenerateMesh
 template<>
@@ -210,7 +210,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::ProceduralMeshData*), "AnimateFromCenter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{rect, appear});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::Meshes::ProceduralMeshData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

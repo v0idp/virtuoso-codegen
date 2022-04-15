@@ -136,23 +136,30 @@ namespace VROSC {
     // Set static field: static public System.Action OnActivePatchChanged
     static void _set_OnActivePatchChanged(::System::Action* value);
     // Get instance field reference: private AudioHelm.AudioHelmClock _audioHelmClock
-    [[deprecated]] ::AudioHelm::AudioHelmClock*& dyn__audioHelmClock();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::AudioHelmClock*& dyn__audioHelmClock();
     // Get instance field reference: private VROSC.VirtuosoSampler _sampler
-    [[deprecated]] ::VROSC::VirtuosoSampler*& dyn__sampler();
+    [[deprecated("Use field access instead!")]] ::VROSC::VirtuosoSampler*& dyn__sampler();
     // Get instance field reference: private VROSC.HelmWrapper _helmOne
-    [[deprecated]] ::VROSC::HelmWrapper*& dyn__helmOne();
+    [[deprecated("Use field access instead!")]] ::VROSC::HelmWrapper*& dyn__helmOne();
     // Get instance field reference: private VROSC.HelmWrapper _helmTwo
-    [[deprecated]] ::VROSC::HelmWrapper*& dyn__helmTwo();
+    [[deprecated("Use field access instead!")]] ::VROSC::HelmWrapper*& dyn__helmTwo();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.HelmWrapper> _helms
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::HelmWrapper*>*& dyn__helms();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::HelmWrapper*>*& dyn__helms();
     // Get instance field reference: private VROSC.HelmWrapper _activeHelm
-    [[deprecated]] ::VROSC::HelmWrapper*& dyn__activeHelm();
+    [[deprecated("Use field access instead!")]] ::VROSC::HelmWrapper*& dyn__activeHelm();
     // Get instance field reference: private VROSC.SoundSource _currentSoundSource
-    [[deprecated]] ::VROSC::SoundSource& dyn__currentSoundSource();
+    [[deprecated("Use field access instead!")]] ::VROSC::SoundSource& dyn__currentSoundSource();
     // Get instance field reference: private VROSC.WidgetSettings/VROSC.Identifier _currentInstrumentId
-    [[deprecated]] ::VROSC::WidgetSettings::Identifier& dyn__currentInstrumentId();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetSettings::Identifier& dyn__currentInstrumentId();
     // Get instance field reference: private System.Boolean _patchSet
-    [[deprecated]] bool& dyn__patchSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__patchSet();
+    // public System.Void .ctor()
+    // Offset: 0x194AF74
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InternalSynthesizer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InternalSynthesizer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InternalSynthesizer*, creationType>()));
+    }
     // public System.Threading.Tasks.Task Setup()
     // Offset: 0x1949C1C
     ::System::Threading::Tasks::Task* Setup();
@@ -204,25 +211,16 @@ namespace VROSC {
     // public VROSC.SoundSource GetCurrentSoundSource()
     // Offset: 0x194AF6C
     ::VROSC::SoundSource GetCurrentSoundSource();
-    // public System.Void .ctor()
-    // Offset: 0x194AF74
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InternalSynthesizer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InternalSynthesizer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InternalSynthesizer*, creationType>()));
-    }
   }; // VROSC.InternalSynthesizer
   #pragma pack(pop)
   static check_size<sizeof(InternalSynthesizer), 80 + sizeof(bool)> __VROSC_InternalSynthesizerSizeCheck;
   static_assert(sizeof(InternalSynthesizer) == 0x51);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::InternalSynthesizer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InternalSynthesizer::Setup
 // Il2CppName: Setup
 template<>
@@ -394,7 +392,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::So
     return ::il2cpp_utils::FindMethod(classof(VROSC::InternalSynthesizer*), "GetCurrentSoundSource", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::InternalSynthesizer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

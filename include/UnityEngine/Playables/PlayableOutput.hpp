@@ -65,7 +65,7 @@ namespace UnityEngine::Playables {
     // Set static field: static private readonly UnityEngine.Playables.PlayableOutput m_NullPlayableOutput
     static void _set_m_NullPlayableOutput(::UnityEngine::Playables::PlayableOutput value);
     // Get instance field reference: private UnityEngine.Playables.PlayableOutputHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
     // static public UnityEngine.Playables.PlayableOutput get_Null()
     // Offset: 0xBC2998
     static ::UnityEngine::Playables::PlayableOutput get_Null();

@@ -60,7 +60,7 @@ namespace System::Xml {
     // Deleting conversion operator: operator ::System::Xml::IXmlLineInfo*
     constexpr operator ::System::Xml::IXmlLineInfo*() const noexcept = delete;
     // Get instance field reference: private readonly System.Xml.IXmlNamespaceResolver readerAsIXmlNamespaceResolver
-    [[deprecated]] ::System::Xml::IXmlNamespaceResolver*& dyn_readerAsIXmlNamespaceResolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IXmlNamespaceResolver*& dyn_readerAsIXmlNamespaceResolver();
     // private System.Collections.Generic.IDictionary`2<System.String,System.String> System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope scope)
     // Offset: 0x11B5178
     ::System::Collections::Generic::IDictionary_2<::StringW, ::StringW>* System_Xml_IXmlNamespaceResolver_GetNamespacesInScope(::System::Xml::XmlNamespaceScope scope);

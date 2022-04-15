@@ -69,13 +69,13 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Linq::Expressions::Expression*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.ParameterExpression <Variable>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::ParameterExpression*& dyn_$Variable$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::ParameterExpression*& dyn_$Variable$k__BackingField();
     // Get instance field reference: private readonly System.Type <Test>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Test$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Test$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Body>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Body$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Body$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Filter>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Filter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Filter$k__BackingField();
     // public System.Linq.Expressions.ParameterExpression get_Variable()
     // Offset: 0x11F8B98
     ::System::Linq::Expressions::ParameterExpression* get_Variable();

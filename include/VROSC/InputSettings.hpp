@@ -193,45 +193,45 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.PointingLaser _pointerPrefab
-    [[deprecated]] ::VROSC::PointingLaser*& dyn__pointerPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::PointingLaser*& dyn__pointerPrefab();
     // Get instance field reference: private System.Single _pointingDistance
-    [[deprecated]] float& dyn__pointingDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__pointingDistance();
     // Get instance field reference: private System.Single _overlapDistance
-    [[deprecated]] float& dyn__overlapDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__overlapDistance();
     // Get instance field reference: private System.Int32 _maxOverlapColliders
-    [[deprecated]] int& dyn__maxOverlapColliders();
+    [[deprecated("Use field access instead!")]] int& dyn__maxOverlapColliders();
     // Get instance field reference: private System.Single _positionSmoothing
-    [[deprecated]] float& dyn__positionSmoothing();
+    [[deprecated("Use field access instead!")]] float& dyn__positionSmoothing();
     // Get instance field reference: private System.Single _grabSmoothing
-    [[deprecated]] float& dyn__grabSmoothing();
+    [[deprecated("Use field access instead!")]] float& dyn__grabSmoothing();
     // Get instance field reference: private System.Single _rotationSmoothing
-    [[deprecated]] float& dyn__rotationSmoothing();
+    [[deprecated("Use field access instead!")]] float& dyn__rotationSmoothing();
     // Get instance field reference: private UnityEngine.LayerMask _uiInteractionMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn__uiInteractionMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn__uiInteractionMask();
     // Get instance field reference: private UnityEngine.LayerMask _overlapLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn__overlapLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn__overlapLayerMask();
     // Get instance field reference: private UnityEngine.LayerMask _gripOnlyLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn__gripOnlyLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn__gripOnlyLayerMask();
     // Get instance field reference: private VROSC.TriggerButton _pinButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn__pinButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__pinButton();
     // Get instance field reference: private VROSC.TriggerButton _attractButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn__attractButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__attractButton();
     // Get instance field reference: private System.Single _attractInDuration
-    [[deprecated]] float& dyn__attractInDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__attractInDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve _attractAnimationInCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__attractAnimationInCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__attractAnimationInCurve();
     // Get instance field reference: private System.Single _isPinnedHapticWarningDistance
-    [[deprecated]] float& dyn__isPinnedHapticWarningDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__isPinnedHapticWarningDistance();
     // Get instance field reference: private VROSC.SimpleHaptic _isPinnedHapticWarning
-    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__isPinnedHapticWarning();
+    [[deprecated("Use field access instead!")]] ::VROSC::SimpleHaptic*& dyn__isPinnedHapticWarning();
     // Get instance field reference: private System.Single _activationTime
-    [[deprecated]] float& dyn__activationTime();
+    [[deprecated("Use field access instead!")]] float& dyn__activationTime();
     // Get instance field reference: private VROSC.UI.IconData _pinIcon
-    [[deprecated]] ::VROSC::UI::IconData*& dyn__pinIcon();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::IconData*& dyn__pinIcon();
     // Get instance field reference: private VROSC.UI.IconData _grabIcon
-    [[deprecated]] ::VROSC::UI::IconData*& dyn__grabIcon();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::IconData*& dyn__grabIcon();
     // Get instance field reference: private VROSC.UI.IconData _attractIcon
-    [[deprecated]] ::VROSC::UI::IconData*& dyn__attractIcon();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::IconData*& dyn__attractIcon();
     // public VROSC.PointingLaser get_PointerPrefab()
     // Offset: 0x1945D60
     ::VROSC::PointingLaser* get_PointerPrefab();
@@ -294,10 +294,6 @@ namespace VROSC {
     float get_ActivationTime();
     // public System.Void .ctor()
     // Offset: 0x1945E0C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InputSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputSettings::.ctor");

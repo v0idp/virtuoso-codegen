@@ -170,7 +170,7 @@ namespace System::Net {
       // Set static field: static public System.Net.FtpWebRequest/System.Net.RequestState Error
       static void _set_Error(::System::Net::FtpWebRequest::RequestState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Net.FtpWebRequest/System.Net.RequestState
     #pragma pack(pop)
     static check_size<sizeof(FtpWebRequest::RequestState), 0 + sizeof(int)> __System_Net_FtpWebRequest_RequestStateSizeCheck;
@@ -354,61 +354,61 @@ namespace System::Net {
     // Set static field: static private readonly System.String[] supportedCommands
     static void _set_supportedCommands(::ArrayW<::StringW> value);
     // Get instance field reference: private System.Uri requestUri
-    [[deprecated]] ::System::Uri*& dyn_requestUri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_requestUri();
     // Get instance field reference: private System.String file_name
-    [[deprecated]] ::StringW& dyn_file_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_file_name();
     // Get instance field reference: private System.Net.ServicePoint servicePoint
-    [[deprecated]] ::System::Net::ServicePoint*& dyn_servicePoint();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePoint*& dyn_servicePoint();
     // Get instance field reference: private System.IO.Stream origDataStream
-    [[deprecated]] ::System::IO::Stream*& dyn_origDataStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_origDataStream();
     // Get instance field reference: private System.IO.Stream dataStream
-    [[deprecated]] ::System::IO::Stream*& dyn_dataStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_dataStream();
     // Get instance field reference: private System.IO.Stream controlStream
-    [[deprecated]] ::System::IO::Stream*& dyn_controlStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_controlStream();
     // Get instance field reference: private System.IO.StreamReader controlReader
-    [[deprecated]] ::System::IO::StreamReader*& dyn_controlReader();
+    [[deprecated("Use field access instead!")]] ::System::IO::StreamReader*& dyn_controlReader();
     // Get instance field reference: private System.Net.NetworkCredential credentials
-    [[deprecated]] ::System::Net::NetworkCredential*& dyn_credentials();
+    [[deprecated("Use field access instead!")]] ::System::Net::NetworkCredential*& dyn_credentials();
     // Get instance field reference: private System.Net.IPHostEntry hostEntry
-    [[deprecated]] ::System::Net::IPHostEntry*& dyn_hostEntry();
+    [[deprecated("Use field access instead!")]] ::System::Net::IPHostEntry*& dyn_hostEntry();
     // Get instance field reference: private System.Net.IPEndPoint localEndPoint
-    [[deprecated]] ::System::Net::IPEndPoint*& dyn_localEndPoint();
+    [[deprecated("Use field access instead!")]] ::System::Net::IPEndPoint*& dyn_localEndPoint();
     // Get instance field reference: private System.Net.IPEndPoint remoteEndPoint
-    [[deprecated]] ::System::Net::IPEndPoint*& dyn_remoteEndPoint();
+    [[deprecated("Use field access instead!")]] ::System::Net::IPEndPoint*& dyn_remoteEndPoint();
     // Get instance field reference: private System.Net.IWebProxy proxy
-    [[deprecated]] ::System::Net::IWebProxy*& dyn_proxy();
+    [[deprecated("Use field access instead!")]] ::System::Net::IWebProxy*& dyn_proxy();
     // Get instance field reference: private System.Int32 timeout
-    [[deprecated]] int& dyn_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_timeout();
     // Get instance field reference: private System.Int32 rwTimeout
-    [[deprecated]] int& dyn_rwTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn_rwTimeout();
     // Get instance field reference: private System.Int64 offset
-    [[deprecated]] int64_t& dyn_offset();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_offset();
     // Get instance field reference: private System.Boolean binary
-    [[deprecated]] bool& dyn_binary();
+    [[deprecated("Use field access instead!")]] bool& dyn_binary();
     // Get instance field reference: private System.Boolean enableSsl
-    [[deprecated]] bool& dyn_enableSsl();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableSsl();
     // Get instance field reference: private System.Boolean usePassive
-    [[deprecated]] bool& dyn_usePassive();
+    [[deprecated("Use field access instead!")]] bool& dyn_usePassive();
     // Get instance field reference: private System.Boolean keepAlive
-    [[deprecated]] bool& dyn_keepAlive();
+    [[deprecated("Use field access instead!")]] bool& dyn_keepAlive();
     // Get instance field reference: private System.String method
-    [[deprecated]] ::StringW& dyn_method();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_method();
     // Get instance field reference: private System.String renameTo
-    [[deprecated]] ::StringW& dyn_renameTo();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_renameTo();
     // Get instance field reference: private System.Object locker
-    [[deprecated]] ::Il2CppObject*& dyn_locker();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_locker();
     // Get instance field reference: private System.Net.FtpWebRequest/System.Net.RequestState requestState
-    [[deprecated]] ::System::Net::FtpWebRequest::RequestState& dyn_requestState();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpWebRequest::RequestState& dyn_requestState();
     // Get instance field reference: private System.Net.FtpAsyncResult asyncResult
-    [[deprecated]] ::System::Net::FtpAsyncResult*& dyn_asyncResult();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpAsyncResult*& dyn_asyncResult();
     // Get instance field reference: private System.Net.FtpWebResponse ftpResponse
-    [[deprecated]] ::System::Net::FtpWebResponse*& dyn_ftpResponse();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpWebResponse*& dyn_ftpResponse();
     // Get instance field reference: private System.IO.Stream requestStream
-    [[deprecated]] ::System::IO::Stream*& dyn_requestStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_requestStream();
     // Get instance field reference: private System.String initial_path
-    [[deprecated]] ::StringW& dyn_initial_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_initial_path();
     // Get instance field reference: private System.Text.Encoding dataEncoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_dataEncoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_dataEncoding();
     // public System.Boolean get_EnableSsl()
     // Offset: 0xF0594C
     bool get_EnableSsl();

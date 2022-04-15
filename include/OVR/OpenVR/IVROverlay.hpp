@@ -693,169 +693,169 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._FindOverlay FindOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_FindOverlay*& dyn_FindOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_FindOverlay*& dyn_FindOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._CreateOverlay CreateOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_CreateOverlay*& dyn_CreateOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_CreateOverlay*& dyn_CreateOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._DestroyOverlay DestroyOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_DestroyOverlay*& dyn_DestroyOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_DestroyOverlay*& dyn_DestroyOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetHighQualityOverlay SetHighQualityOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetHighQualityOverlay*& dyn_SetHighQualityOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetHighQualityOverlay*& dyn_SetHighQualityOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetHighQualityOverlay GetHighQualityOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetHighQualityOverlay*& dyn_GetHighQualityOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetHighQualityOverlay*& dyn_GetHighQualityOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayKey GetOverlayKey
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayKey*& dyn_GetOverlayKey();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayKey*& dyn_GetOverlayKey();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayName GetOverlayName
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayName*& dyn_GetOverlayName();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayName*& dyn_GetOverlayName();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayName SetOverlayName
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayName*& dyn_SetOverlayName();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayName*& dyn_SetOverlayName();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayImageData GetOverlayImageData
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayImageData*& dyn_GetOverlayImageData();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayImageData*& dyn_GetOverlayImageData();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayErrorNameFromEnum GetOverlayErrorNameFromEnum
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayErrorNameFromEnum*& dyn_GetOverlayErrorNameFromEnum();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayErrorNameFromEnum*& dyn_GetOverlayErrorNameFromEnum();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayRenderingPid SetOverlayRenderingPid
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayRenderingPid*& dyn_SetOverlayRenderingPid();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayRenderingPid*& dyn_SetOverlayRenderingPid();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayRenderingPid GetOverlayRenderingPid
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayRenderingPid*& dyn_GetOverlayRenderingPid();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayRenderingPid*& dyn_GetOverlayRenderingPid();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayFlag SetOverlayFlag
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayFlag*& dyn_SetOverlayFlag();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayFlag*& dyn_SetOverlayFlag();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayFlag GetOverlayFlag
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayFlag*& dyn_GetOverlayFlag();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayFlag*& dyn_GetOverlayFlag();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayColor SetOverlayColor
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayColor*& dyn_SetOverlayColor();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayColor*& dyn_SetOverlayColor();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayColor GetOverlayColor
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayColor*& dyn_GetOverlayColor();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayColor*& dyn_GetOverlayColor();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayAlpha SetOverlayAlpha
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayAlpha*& dyn_SetOverlayAlpha();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayAlpha*& dyn_SetOverlayAlpha();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayAlpha GetOverlayAlpha
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayAlpha*& dyn_GetOverlayAlpha();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayAlpha*& dyn_GetOverlayAlpha();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTexelAspect SetOverlayTexelAspect
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTexelAspect*& dyn_SetOverlayTexelAspect();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTexelAspect*& dyn_SetOverlayTexelAspect();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTexelAspect GetOverlayTexelAspect
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTexelAspect*& dyn_GetOverlayTexelAspect();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTexelAspect*& dyn_GetOverlayTexelAspect();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlaySortOrder SetOverlaySortOrder
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlaySortOrder*& dyn_SetOverlaySortOrder();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlaySortOrder*& dyn_SetOverlaySortOrder();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlaySortOrder GetOverlaySortOrder
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlaySortOrder*& dyn_GetOverlaySortOrder();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlaySortOrder*& dyn_GetOverlaySortOrder();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayWidthInMeters SetOverlayWidthInMeters
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayWidthInMeters*& dyn_SetOverlayWidthInMeters();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayWidthInMeters*& dyn_SetOverlayWidthInMeters();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayWidthInMeters GetOverlayWidthInMeters
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayWidthInMeters*& dyn_GetOverlayWidthInMeters();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayWidthInMeters*& dyn_GetOverlayWidthInMeters();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayAutoCurveDistanceRangeInMeters SetOverlayAutoCurveDistanceRangeInMeters
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayAutoCurveDistanceRangeInMeters*& dyn_SetOverlayAutoCurveDistanceRangeInMeters();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayAutoCurveDistanceRangeInMeters*& dyn_SetOverlayAutoCurveDistanceRangeInMeters();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayAutoCurveDistanceRangeInMeters GetOverlayAutoCurveDistanceRangeInMeters
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayAutoCurveDistanceRangeInMeters*& dyn_GetOverlayAutoCurveDistanceRangeInMeters();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayAutoCurveDistanceRangeInMeters*& dyn_GetOverlayAutoCurveDistanceRangeInMeters();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTextureColorSpace SetOverlayTextureColorSpace
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTextureColorSpace*& dyn_SetOverlayTextureColorSpace();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTextureColorSpace*& dyn_SetOverlayTextureColorSpace();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTextureColorSpace GetOverlayTextureColorSpace
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTextureColorSpace*& dyn_GetOverlayTextureColorSpace();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTextureColorSpace*& dyn_GetOverlayTextureColorSpace();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTextureBounds SetOverlayTextureBounds
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTextureBounds*& dyn_SetOverlayTextureBounds();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTextureBounds*& dyn_SetOverlayTextureBounds();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTextureBounds GetOverlayTextureBounds
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTextureBounds*& dyn_GetOverlayTextureBounds();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTextureBounds*& dyn_GetOverlayTextureBounds();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayRenderModel GetOverlayRenderModel
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayRenderModel*& dyn_GetOverlayRenderModel();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayRenderModel*& dyn_GetOverlayRenderModel();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayRenderModel SetOverlayRenderModel
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayRenderModel*& dyn_SetOverlayRenderModel();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayRenderModel*& dyn_SetOverlayRenderModel();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTransformType GetOverlayTransformType
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformType*& dyn_GetOverlayTransformType();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformType*& dyn_GetOverlayTransformType();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTransformAbsolute SetOverlayTransformAbsolute
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformAbsolute*& dyn_SetOverlayTransformAbsolute();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformAbsolute*& dyn_SetOverlayTransformAbsolute();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTransformAbsolute GetOverlayTransformAbsolute
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformAbsolute*& dyn_GetOverlayTransformAbsolute();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformAbsolute*& dyn_GetOverlayTransformAbsolute();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTransformTrackedDeviceRelative SetOverlayTransformTrackedDeviceRelative
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformTrackedDeviceRelative*& dyn_SetOverlayTransformTrackedDeviceRelative();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformTrackedDeviceRelative*& dyn_SetOverlayTransformTrackedDeviceRelative();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTransformTrackedDeviceRelative GetOverlayTransformTrackedDeviceRelative
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformTrackedDeviceRelative*& dyn_GetOverlayTransformTrackedDeviceRelative();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformTrackedDeviceRelative*& dyn_GetOverlayTransformTrackedDeviceRelative();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTransformTrackedDeviceComponent SetOverlayTransformTrackedDeviceComponent
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformTrackedDeviceComponent*& dyn_SetOverlayTransformTrackedDeviceComponent();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformTrackedDeviceComponent*& dyn_SetOverlayTransformTrackedDeviceComponent();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTransformTrackedDeviceComponent GetOverlayTransformTrackedDeviceComponent
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformTrackedDeviceComponent*& dyn_GetOverlayTransformTrackedDeviceComponent();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformTrackedDeviceComponent*& dyn_GetOverlayTransformTrackedDeviceComponent();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTransformOverlayRelative GetOverlayTransformOverlayRelative
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformOverlayRelative*& dyn_GetOverlayTransformOverlayRelative();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTransformOverlayRelative*& dyn_GetOverlayTransformOverlayRelative();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTransformOverlayRelative SetOverlayTransformOverlayRelative
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformOverlayRelative*& dyn_SetOverlayTransformOverlayRelative();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTransformOverlayRelative*& dyn_SetOverlayTransformOverlayRelative();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ShowOverlay ShowOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ShowOverlay*& dyn_ShowOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ShowOverlay*& dyn_ShowOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._HideOverlay HideOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_HideOverlay*& dyn_HideOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_HideOverlay*& dyn_HideOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._IsOverlayVisible IsOverlayVisible
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_IsOverlayVisible*& dyn_IsOverlayVisible();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_IsOverlayVisible*& dyn_IsOverlayVisible();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetTransformForOverlayCoordinates GetTransformForOverlayCoordinates
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetTransformForOverlayCoordinates*& dyn_GetTransformForOverlayCoordinates();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetTransformForOverlayCoordinates*& dyn_GetTransformForOverlayCoordinates();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._PollNextOverlayEvent PollNextOverlayEvent
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_PollNextOverlayEvent*& dyn_PollNextOverlayEvent();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_PollNextOverlayEvent*& dyn_PollNextOverlayEvent();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayInputMethod GetOverlayInputMethod
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayInputMethod*& dyn_GetOverlayInputMethod();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayInputMethod*& dyn_GetOverlayInputMethod();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayInputMethod SetOverlayInputMethod
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayInputMethod*& dyn_SetOverlayInputMethod();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayInputMethod*& dyn_SetOverlayInputMethod();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayMouseScale GetOverlayMouseScale
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayMouseScale*& dyn_GetOverlayMouseScale();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayMouseScale*& dyn_GetOverlayMouseScale();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayMouseScale SetOverlayMouseScale
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayMouseScale*& dyn_SetOverlayMouseScale();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayMouseScale*& dyn_SetOverlayMouseScale();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ComputeOverlayIntersection ComputeOverlayIntersection
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ComputeOverlayIntersection*& dyn_ComputeOverlayIntersection();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ComputeOverlayIntersection*& dyn_ComputeOverlayIntersection();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._IsHoverTargetOverlay IsHoverTargetOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_IsHoverTargetOverlay*& dyn_IsHoverTargetOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_IsHoverTargetOverlay*& dyn_IsHoverTargetOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetGamepadFocusOverlay GetGamepadFocusOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetGamepadFocusOverlay*& dyn_GetGamepadFocusOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetGamepadFocusOverlay*& dyn_GetGamepadFocusOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetGamepadFocusOverlay SetGamepadFocusOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetGamepadFocusOverlay*& dyn_SetGamepadFocusOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetGamepadFocusOverlay*& dyn_SetGamepadFocusOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayNeighbor SetOverlayNeighbor
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayNeighbor*& dyn_SetOverlayNeighbor();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayNeighbor*& dyn_SetOverlayNeighbor();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._MoveGamepadFocusToNeighbor MoveGamepadFocusToNeighbor
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_MoveGamepadFocusToNeighbor*& dyn_MoveGamepadFocusToNeighbor();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_MoveGamepadFocusToNeighbor*& dyn_MoveGamepadFocusToNeighbor();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayDualAnalogTransform SetOverlayDualAnalogTransform
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayDualAnalogTransform*& dyn_SetOverlayDualAnalogTransform();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayDualAnalogTransform*& dyn_SetOverlayDualAnalogTransform();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayDualAnalogTransform GetOverlayDualAnalogTransform
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayDualAnalogTransform*& dyn_GetOverlayDualAnalogTransform();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayDualAnalogTransform*& dyn_GetOverlayDualAnalogTransform();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayTexture SetOverlayTexture
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayTexture*& dyn_SetOverlayTexture();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayTexture*& dyn_SetOverlayTexture();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ClearOverlayTexture ClearOverlayTexture
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ClearOverlayTexture*& dyn_ClearOverlayTexture();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ClearOverlayTexture*& dyn_ClearOverlayTexture();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayRaw SetOverlayRaw
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayRaw*& dyn_SetOverlayRaw();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayRaw*& dyn_SetOverlayRaw();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayFromFile SetOverlayFromFile
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayFromFile*& dyn_SetOverlayFromFile();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayFromFile*& dyn_SetOverlayFromFile();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTexture GetOverlayTexture
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTexture*& dyn_GetOverlayTexture();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTexture*& dyn_GetOverlayTexture();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ReleaseNativeOverlayHandle ReleaseNativeOverlayHandle
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ReleaseNativeOverlayHandle*& dyn_ReleaseNativeOverlayHandle();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ReleaseNativeOverlayHandle*& dyn_ReleaseNativeOverlayHandle();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayTextureSize GetOverlayTextureSize
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayTextureSize*& dyn_GetOverlayTextureSize();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayTextureSize*& dyn_GetOverlayTextureSize();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._CreateDashboardOverlay CreateDashboardOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_CreateDashboardOverlay*& dyn_CreateDashboardOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_CreateDashboardOverlay*& dyn_CreateDashboardOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._IsDashboardVisible IsDashboardVisible
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_IsDashboardVisible*& dyn_IsDashboardVisible();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_IsDashboardVisible*& dyn_IsDashboardVisible();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._IsActiveDashboardOverlay IsActiveDashboardOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_IsActiveDashboardOverlay*& dyn_IsActiveDashboardOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_IsActiveDashboardOverlay*& dyn_IsActiveDashboardOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetDashboardOverlaySceneProcess SetDashboardOverlaySceneProcess
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetDashboardOverlaySceneProcess*& dyn_SetDashboardOverlaySceneProcess();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetDashboardOverlaySceneProcess*& dyn_SetDashboardOverlaySceneProcess();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetDashboardOverlaySceneProcess GetDashboardOverlaySceneProcess
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetDashboardOverlaySceneProcess*& dyn_GetDashboardOverlaySceneProcess();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetDashboardOverlaySceneProcess*& dyn_GetDashboardOverlaySceneProcess();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ShowDashboard ShowDashboard
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ShowDashboard*& dyn_ShowDashboard();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ShowDashboard*& dyn_ShowDashboard();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetPrimaryDashboardDevice GetPrimaryDashboardDevice
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetPrimaryDashboardDevice*& dyn_GetPrimaryDashboardDevice();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetPrimaryDashboardDevice*& dyn_GetPrimaryDashboardDevice();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ShowKeyboard ShowKeyboard
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ShowKeyboard*& dyn_ShowKeyboard();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ShowKeyboard*& dyn_ShowKeyboard();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ShowKeyboardForOverlay ShowKeyboardForOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ShowKeyboardForOverlay*& dyn_ShowKeyboardForOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ShowKeyboardForOverlay*& dyn_ShowKeyboardForOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetKeyboardText GetKeyboardText
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetKeyboardText*& dyn_GetKeyboardText();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetKeyboardText*& dyn_GetKeyboardText();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._HideKeyboard HideKeyboard
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_HideKeyboard*& dyn_HideKeyboard();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_HideKeyboard*& dyn_HideKeyboard();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetKeyboardTransformAbsolute SetKeyboardTransformAbsolute
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetKeyboardTransformAbsolute*& dyn_SetKeyboardTransformAbsolute();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetKeyboardTransformAbsolute*& dyn_SetKeyboardTransformAbsolute();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetKeyboardPositionForOverlay SetKeyboardPositionForOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetKeyboardPositionForOverlay*& dyn_SetKeyboardPositionForOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetKeyboardPositionForOverlay*& dyn_SetKeyboardPositionForOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._SetOverlayIntersectionMask SetOverlayIntersectionMask
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_SetOverlayIntersectionMask*& dyn_SetOverlayIntersectionMask();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_SetOverlayIntersectionMask*& dyn_SetOverlayIntersectionMask();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._GetOverlayFlags GetOverlayFlags
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_GetOverlayFlags*& dyn_GetOverlayFlags();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_GetOverlayFlags*& dyn_GetOverlayFlags();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._ShowMessageOverlay ShowMessageOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_ShowMessageOverlay*& dyn_ShowMessageOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_ShowMessageOverlay*& dyn_ShowMessageOverlay();
     // Get instance field reference: OVR.OpenVR.IVROverlay/OVR.OpenVR._CloseMessageOverlay CloseMessageOverlay
-    [[deprecated]] ::OVR::OpenVR::IVROverlay::_CloseMessageOverlay*& dyn_CloseMessageOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::IVROverlay::_CloseMessageOverlay*& dyn_CloseMessageOverlay();
   }; // OVR.OpenVR.IVROverlay
   #pragma pack(pop)
   static check_size<sizeof(IVROverlay), 648 + sizeof(::OVR::OpenVR::IVROverlay::_CloseMessageOverlay*)> __OVR_OpenVR_IVROverlaySizeCheck;

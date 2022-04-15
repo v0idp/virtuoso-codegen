@@ -82,9 +82,9 @@ namespace UnityEngine::Experimental::TerrainAPI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.Int32 tileX
-      [[deprecated]] int& dyn_tileX();
+      [[deprecated("Use field access instead!")]] int& dyn_tileX();
       // Get instance field reference: public readonly System.Int32 tileZ
-      [[deprecated]] int& dyn_tileZ();
+      [[deprecated("Use field access instead!")]] int& dyn_tileZ();
       // public System.Void .ctor(System.Int32 tileX, System.Int32 tileZ)
       // Offset: 0x18E6830
       // ABORTED: conflicts with another method.  TileCoord(int tileX, int tileZ);
@@ -141,7 +141,7 @@ namespace UnityEngine::Experimental::TerrainAPI {
       // Set static field: static public UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode EdgeAlignmentMismatch
       static void _set_EdgeAlignmentMismatch(::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode
     #pragma pack(pop)
     static check_size<sizeof(TerrainUtility::TerrainMap::ErrorCode), 0 + sizeof(int)> __UnityEngine_Experimental_TerrainAPI_TerrainUtility_TerrainMap_ErrorCodeSizeCheck;
@@ -167,11 +167,18 @@ namespace UnityEngine::Experimental::TerrainAPI {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, ::UnityEngine::Terrain*>*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 m_patchSize
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_patchSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_patchSize();
     // Get instance field reference: public UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode m_errorCode
-    [[deprecated]] ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode& dyn_m_errorCode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode& dyn_m_errorCode();
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.TileCoord,UnityEngine.Terrain> m_terrainTiles
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, ::UnityEngine::Terrain*>*& dyn_m_terrainTiles();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, ::UnityEngine::Terrain*>*& dyn_m_terrainTiles();
+    // public System.Void .ctor()
+    // Offset: 0x18E6AD8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TerrainUtility::TerrainMap* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TerrainUtility::TerrainMap*, creationType>()));
+    }
     // public UnityEngine.Terrain GetTerrain(System.Int32 tileX, System.Int32 tileZ)
     // Offset: 0x18E6378
     ::UnityEngine::Terrain* GetTerrain(int tileX, int tileZ);
@@ -193,15 +200,6 @@ namespace UnityEngine::Experimental::TerrainAPI {
     // private UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap/UnityEngine.Experimental.TerrainAPI.ErrorCode Validate()
     // Offset: 0x18E7008
     ::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::ErrorCode Validate();
-    // public System.Void .ctor()
-    // Offset: 0x18E6AD8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TerrainUtility::TerrainMap* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TerrainUtility::TerrainMap*, creationType>()));
-    }
   }; // UnityEngine.Experimental.TerrainAPI.TerrainUtility/UnityEngine.Experimental.TerrainAPI.TerrainMap
   #pragma pack(pop)
   static check_size<sizeof(TerrainUtility::TerrainMap), 32 + sizeof(::System::Collections::Generic::Dictionary_2<::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, ::UnityEngine::Terrain*>*)> __UnityEngine_Experimental_TerrainAPI_TerrainUtility_TerrainMapSizeCheck;
@@ -212,6 +210,10 @@ DEFINE_IL2CPP_ARG_TYPE(::UnityEngine::Experimental::TerrainAPI::TerrainUtility::
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::TileCoord, "UnityEngine.Experimental.TerrainAPI", "TerrainUtility/TerrainMap/TileCoord");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::GetTerrain
 // Il2CppName: GetTerrain
 template<>
@@ -285,7 +287,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap*), "Validate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Experimental::TerrainAPI::TerrainUtility::TerrainMap::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

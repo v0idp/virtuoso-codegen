@@ -92,9 +92,9 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.SynthsDataController> OnDataLoaded
     static void _set_OnDataLoaded(::System::Action_1<::VROSC::SynthsDataController*>* value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<VROSC.InstrumentsDataController/VROSC.PatchSettings>> _instrumentsPatches
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::List_1<::VROSC::InstrumentsDataController::PatchSettings*>*>*& dyn__instrumentsPatches();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::List_1<::VROSC::InstrumentsDataController::PatchSettings*>*>*& dyn__instrumentsPatches();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Int32> _selectedPatchesIndexes
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__selectedPatchesIndexes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__selectedPatchesIndexes();
     // public System.Void AddPatch(VROSC.WidgetSettings/VROSC.Identifier id, System.Object patch)
     // Offset: 0x1935EE4
     void AddPatch(::VROSC::WidgetSettings::Identifier id, ::Il2CppObject* patch);
@@ -166,7 +166,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentsDataController
     // Base method: System.Void InstrumentsDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthsDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthsDataController::.ctor");

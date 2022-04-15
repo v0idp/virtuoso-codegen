@@ -50,9 +50,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchema*) == 0x8);
     public:
     // Get instance field reference: System.Xml.Schema.XmlSchemaRedefine redefine
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaRedefine*& dyn_redefine();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaRedefine*& dyn_redefine();
     // Get instance field reference: System.Xml.Schema.XmlSchema schemaToUpdate
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_schemaToUpdate();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_schemaToUpdate();
     // public System.Void .ctor(System.Xml.Schema.XmlSchemaRedefine external, System.Xml.Schema.XmlSchema schema)
     // Offset: 0xDE8068
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

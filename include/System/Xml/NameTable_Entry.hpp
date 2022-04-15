@@ -47,11 +47,11 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::NameTable::Entry*) == 0x8);
     public:
     // Get instance field reference: System.String str
-    [[deprecated]] ::StringW& dyn_str();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_str();
     // Get instance field reference: System.Int32 hashCode
-    [[deprecated]] int& dyn_hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCode();
     // Get instance field reference: System.Xml.NameTable/System.Xml.Entry next
-    [[deprecated]] ::System::Xml::NameTable::Entry*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Xml::NameTable::Entry*& dyn_next();
     // System.Void .ctor(System.String str, System.Int32 hashCode, System.Xml.NameTable/System.Xml.Entry next)
     // Offset: 0xC1E7A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

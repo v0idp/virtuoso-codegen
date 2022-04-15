@@ -60,11 +60,11 @@ namespace System::Threading {
     // Set static field: static public System.Threading.ThreadPoolWorkQueueThreadLocals threadLocals
     static void _set_threadLocals(::System::Threading::ThreadPoolWorkQueueThreadLocals* value);
     // Get instance field reference: public readonly System.Threading.ThreadPoolWorkQueue workQueue
-    [[deprecated]] ::System::Threading::ThreadPoolWorkQueue*& dyn_workQueue();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ThreadPoolWorkQueue*& dyn_workQueue();
     // Get instance field reference: public readonly System.Threading.ThreadPoolWorkQueue/System.Threading.WorkStealingQueue workStealingQueue
-    [[deprecated]] ::System::Threading::ThreadPoolWorkQueue::WorkStealingQueue*& dyn_workStealingQueue();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ThreadPoolWorkQueue::WorkStealingQueue*& dyn_workStealingQueue();
     // Get instance field reference: public readonly System.Random random
-    [[deprecated]] ::System::Random*& dyn_random();
+    [[deprecated("Use field access instead!")]] ::System::Random*& dyn_random();
     // public System.Void .ctor(System.Threading.ThreadPoolWorkQueue tpq)
     // Offset: 0x11DC328
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

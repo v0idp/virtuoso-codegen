@@ -98,21 +98,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform[] _objects
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__objects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn__objects();
     // Get instance field reference: private UnityEngine.Vector3[] _assembledPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__assembledPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__assembledPositions();
     // Get instance field reference: private UnityEngine.Quaternion[] _assembledRotations
-    [[deprecated]] ::ArrayW<::UnityEngine::Quaternion>& dyn__assembledRotations();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Quaternion>& dyn__assembledRotations();
     // Get instance field reference: private VROSC.MinMaxFloat _positionOffset
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__positionOffset();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__positionOffset();
     // Get instance field reference: private VROSC.MinMaxFloat _rotationOffset
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__rotationOffset();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__rotationOffset();
     // Get instance field reference: private UnityEngine.AnimationCurve _positionCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _rotationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _scaleCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // public VROSC.MinMaxFloat get_PositionOffset()
     // Offset: 0x19A0908
     ::VROSC::MinMaxFloat* get_PositionOffset();
@@ -137,6 +137,13 @@ namespace VROSC {
     // public UnityEngine.Quaternion[] get_AssembledRotations()
     // Offset: 0x19A0940
     ::ArrayW<::UnityEngine::Quaternion> get_AssembledRotations();
+    // public System.Void .ctor()
+    // Offset: 0x19A0C08
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FracturedObjectController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FracturedObjectController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FracturedObjectController*, creationType>()));
+    }
     // private System.Void GetAllChildren()
     // Offset: 0x19A0948
     void GetAllChildren();
@@ -146,19 +153,6 @@ namespace VROSC {
     // public System.Void ResetObjects()
     // Offset: 0x19A0604
     void ResetObjects();
-    // public System.Void .ctor()
-    // Offset: 0x19A0C08
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FracturedObjectController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FracturedObjectController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FracturedObjectController*, creationType>()));
-    }
   }; // VROSC.FracturedObjectController
   #pragma pack(pop)
   static check_size<sizeof(FracturedObjectController), 80 + sizeof(::UnityEngine::AnimationCurve*)> __VROSC_FracturedObjectControllerSizeCheck;
@@ -229,6 +223,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(VROSC::FracturedObjectController*), "get_AssembledRotations", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::FracturedObjectController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FracturedObjectController::GetAllChildren
 // Il2CppName: GetAllChildren
 template<>
@@ -253,7 +251,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FracturedObjectController*), "ResetObjects", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::FracturedObjectController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -75,11 +75,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Shader surface
-    [[deprecated]] ::UnityEngine::Shader*& dyn_surface();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_surface();
     // Get instance field reference: private UnityEngine.Shader surfaceSelfOccluding
-    [[deprecated]] ::UnityEngine::Shader*& dyn_surfaceSelfOccluding();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_surfaceSelfOccluding();
     // Get instance field reference: private System.Boolean previouslyActive
-    [[deprecated]] bool& dyn_previouslyActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_previouslyActive();
     // System.Void Initialize(ovrAvatarRenderPart_SkinnedMeshRender skinnedMeshRender, UnityEngine.Shader surface, UnityEngine.Shader surfaceSelfOccluding, System.Int32 thirdPersonLayer, System.Int32 firstPersonLayer)
     // Offset: 0xAD8090
     void Initialize(::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRender skinnedMeshRender, ::UnityEngine::Shader* surface, ::UnityEngine::Shader* surfaceSelfOccluding, int thirdPersonLayer, int firstPersonLayer);
@@ -93,11 +93,6 @@ namespace GlobalNamespace {
     // Offset: 0xAD85A0
     // Implemented from: OvrAvatarRenderComponent
     // Base method: System.Void OvrAvatarRenderComponent::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarSkinnedMeshRenderComponent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarSkinnedMeshRenderComponent::.ctor");

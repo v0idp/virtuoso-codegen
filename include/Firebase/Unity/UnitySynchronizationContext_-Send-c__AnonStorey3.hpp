@@ -44,11 +44,9 @@ namespace Firebase::Unity {
       return d;
     }
     // Get instance field reference: System.Threading.SendOrPostCallback d
-    [[deprecated]] ::System::Threading::SendOrPostCallback*& dyn_d();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SendOrPostCallback*& dyn_d();
     // public System.Void .ctor()
     // Offset: 0x18CB384
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnitySynchronizationContext::$Send$c__AnonStorey3* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3::.ctor");

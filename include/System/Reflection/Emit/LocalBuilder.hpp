@@ -64,13 +64,13 @@ namespace System::Reflection::Emit {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: System.Reflection.Emit.ILGenerator ilgen
-    [[deprecated]] ::System::Reflection::Emit::ILGenerator*& dyn_ilgen();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Emit::ILGenerator*& dyn_ilgen();
     // Get instance field reference: private System.Int32 startOffset
-    [[deprecated]] int& dyn_startOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_startOffset();
     // Get instance field reference: private System.Int32 endOffset
-    [[deprecated]] int& dyn_endOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_endOffset();
   }; // System.Reflection.Emit.LocalBuilder
   #pragma pack(pop)
   static check_size<sizeof(LocalBuilder), 52 + sizeof(int)> __System_Reflection_Emit_LocalBuilderSizeCheck;

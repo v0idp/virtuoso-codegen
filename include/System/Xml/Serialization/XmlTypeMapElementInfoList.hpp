@@ -30,9 +30,6 @@ namespace System::Xml::Serialization {
     public:
     // public System.Void .ctor()
     // Offset: 0x1086E2C
-    // Implemented from: System.Collections.ArrayList
-    // Base method: System.Void ArrayList::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapElementInfoList* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapElementInfoList::.ctor");

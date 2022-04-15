@@ -61,29 +61,31 @@ namespace Firebase::Storage {
     static_assert(sizeof(::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6*) == 0x8);
     public:
     // Get instance field reference: System.Threading.Tasks.Task`1<Firebase.Storage.MetadataInternal> task
-    [[deprecated]] ::System::Threading::Tasks::Task_1<::Firebase::Storage::MetadataInternal*>*& dyn_task();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task_1<::Firebase::Storage::MetadataInternal*>*& dyn_task();
     // Get instance field reference: Firebase.Storage.StorageReference/Firebase.Storage.<PutFileAsync>c__AnonStorey4 <>f__ref$4
-    [[deprecated]] ::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey4*& dyn_$$f__ref$4();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey4*& dyn_$$f__ref$4();
     // Get instance field reference: Firebase.Storage.StorageReference/Firebase.Storage.<PutFileAsync>c__AnonStorey6 <>f__ref$6
-    [[deprecated]] ::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6*& dyn_$$f__ref$6();
-    // Firebase.Storage.StorageMetadata <>m__0()
-    // Offset: 0x183C534
-    ::Firebase::Storage::StorageMetadata* $$m__0();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6*& dyn_$$f__ref$6();
     // public System.Void .ctor()
     // Offset: 0x183B988
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5*, creationType>()));
     }
+    // Firebase.Storage.StorageMetadata <>m__0()
+    // Offset: 0x183C534
+    ::Firebase::Storage::StorageMetadata* $$m__0();
   }; // Firebase.Storage.StorageReference/Firebase.Storage.<PutFileAsync>c__AnonStorey6/Firebase.Storage.<PutFileAsync>c__AnonStorey5
   #pragma pack(pop)
   static check_size<sizeof(StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5), 32 + sizeof(::Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6*)> __Firebase_Storage_StorageReference_$PutFileAsync$c__AnonStorey6_$PutFileAsync$c__AnonStorey5SizeCheck;
   static_assert(sizeof(StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -92,7 +94,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::StorageReference::$PutFileAsync$c__AnonStorey6::$PutFileAsync$c__AnonStorey5::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

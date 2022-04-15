@@ -233,41 +233,41 @@ namespace UnityEngine::UI {
     // Set static field: static private readonly UnityEngine.UI.VertexHelper s_VertexHelper
     static void _set_s_VertexHelper(::UnityEngine::UI::VertexHelper* value);
     // Get instance field reference: protected UnityEngine.Material m_Material
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_Material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_Material();
     // Get instance field reference: private UnityEngine.Color m_Color
-    [[deprecated]] ::UnityEngine::Color& dyn_m_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_Color();
     // Get instance field reference: protected System.Boolean m_SkipLayoutUpdate
-    [[deprecated]] bool& dyn_m_SkipLayoutUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SkipLayoutUpdate();
     // Get instance field reference: protected System.Boolean m_SkipMaterialUpdate
-    [[deprecated]] bool& dyn_m_SkipMaterialUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SkipMaterialUpdate();
     // Get instance field reference: private System.Boolean m_RaycastTarget
-    [[deprecated]] bool& dyn_m_RaycastTarget();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RaycastTarget();
     // Get instance field reference: private UnityEngine.Vector4 m_RaycastPadding
-    [[deprecated]] ::UnityEngine::Vector4& dyn_m_RaycastPadding();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_m_RaycastPadding();
     // Get instance field reference: private UnityEngine.RectTransform m_RectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
     // Get instance field reference: private UnityEngine.CanvasRenderer m_CanvasRenderer
-    [[deprecated]] ::UnityEngine::CanvasRenderer*& dyn_m_CanvasRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CanvasRenderer*& dyn_m_CanvasRenderer();
     // Get instance field reference: private UnityEngine.Canvas m_Canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_m_Canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_m_Canvas();
     // Get instance field reference: private System.Boolean m_VertsDirty
-    [[deprecated]] bool& dyn_m_VertsDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_VertsDirty();
     // Get instance field reference: private System.Boolean m_MaterialDirty
-    [[deprecated]] bool& dyn_m_MaterialDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_MaterialDirty();
     // Get instance field reference: protected UnityEngine.Events.UnityAction m_OnDirtyLayoutCallback
-    [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_m_OnDirtyLayoutCallback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityAction*& dyn_m_OnDirtyLayoutCallback();
     // Get instance field reference: protected UnityEngine.Events.UnityAction m_OnDirtyVertsCallback
-    [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_m_OnDirtyVertsCallback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityAction*& dyn_m_OnDirtyVertsCallback();
     // Get instance field reference: protected UnityEngine.Events.UnityAction m_OnDirtyMaterialCallback
-    [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_m_OnDirtyMaterialCallback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityAction*& dyn_m_OnDirtyMaterialCallback();
     // Get instance field reference: protected UnityEngine.Mesh m_CachedMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_m_CachedMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_m_CachedMesh();
     // Get instance field reference: protected UnityEngine.Vector2[] m_CachedUvs
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn_m_CachedUvs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn_m_CachedUvs();
     // Get instance field reference: private readonly UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween> m_ColorTweenRunner
-    [[deprecated]] ::UnityEngine::UI::CoroutineTween::TweenRunner_1<::UnityEngine::UI::CoroutineTween::ColorTween>*& dyn_m_ColorTweenRunner();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CoroutineTween::TweenRunner_1<::UnityEngine::UI::CoroutineTween::ColorTween>*& dyn_m_ColorTweenRunner();
     // Get instance field reference: private System.Boolean <useLegacyMeshGeneration>k__BackingField
-    [[deprecated]] bool& dyn_$useLegacyMeshGeneration$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$useLegacyMeshGeneration$k__BackingField();
     // static public UnityEngine.Material get_defaultGraphicMaterial()
     // Offset: 0xEBAD98
     static ::UnityEngine::Material* get_defaultGraphicMaterial();
@@ -328,6 +328,9 @@ namespace UnityEngine::UI {
     // private UnityEngine.Transform UnityEngine.UI.ICanvasElement.get_transform()
     // Offset: 0xEBE648
     ::UnityEngine::Transform* UnityEngine_UI_ICanvasElement_get_transform();
+    // static private System.Void .cctor()
+    // Offset: 0xEBE5BC
+    static void _cctor();
     // public System.Void SetAllDirty()
     // Offset: 0xEBB510
     void SetAllDirty();
@@ -422,21 +425,11 @@ namespace UnityEngine::UI {
     // Offset: 0xEBB450
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Graphic* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Graphic::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Graphic*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0xEBE5BC
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void OnRectTransformDimensionsChange()
     // Offset: 0xEBB7B4
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
@@ -646,6 +639,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Transform* (UnityEngine::UI::Graphic::*)()>(&UnityEngine::UI::Graphic::UnityEngine_UI_ICanvasElement_get_transform)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Graphic*), "UnityEngine.UI.ICanvasElement.get_transform", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: UnityEngine::UI::Graphic::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::UI::Graphic::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Graphic*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::UI::Graphic::SetAllDirty
@@ -918,14 +919,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::UI::Graphic::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::UI::Graphic::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Graphic*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: UnityEngine::UI::Graphic::OnRectTransformDimensionsChange
 // Il2CppName: OnRectTransformDimensionsChange
 template<>

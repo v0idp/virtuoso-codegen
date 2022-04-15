@@ -59,15 +59,22 @@ namespace Firebase::Storage {
     // Set static field: static private readonly System.DateTime UnixEpoch
     static void _set_UnixEpoch(::System::DateTime value);
     // Get instance field reference: private readonly Firebase.Storage.StorageReference storageReference
-    [[deprecated]] ::Firebase::Storage::StorageReference*& dyn_storageReference();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReference*& dyn_storageReference();
     // Get instance field reference: private Firebase.Storage.MetadataInternal <Internal>k__BackingField
-    [[deprecated]] ::Firebase::Storage::MetadataInternal*& dyn_$Internal$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::MetadataInternal*& dyn_$Internal$k__BackingField();
     // Firebase.Storage.MetadataInternal get_Internal()
     // Offset: 0x1837D40
     ::Firebase::Storage::MetadataInternal* get_Internal();
     // private System.Void set_Internal(Firebase.Storage.MetadataInternal value)
     // Offset: 0x1837D48
     void set_Internal(::Firebase::Storage::MetadataInternal* value);
+    // public System.Void .ctor()
+    // Offset: 0x18349E4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StorageMetadata* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageMetadata::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StorageMetadata*, creationType>()));
+    }
     // System.Void .ctor(Firebase.Storage.StorageReference reference, Firebase.Storage.MetadataInternal metadata)
     // Offset: 0x1837D08
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -91,15 +98,6 @@ namespace Firebase::Storage {
     // static Firebase.Storage.MetadataInternal BuildMetadataInternal(Firebase.Storage.MetadataChange metadataChange)
     // Offset: 0x1837D5C
     static ::Firebase::Storage::MetadataInternal* BuildMetadataInternal(::Firebase::Storage::MetadataChange* metadataChange);
-    // public System.Void .ctor()
-    // Offset: 0x18349E4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StorageMetadata* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::StorageMetadata::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StorageMetadata*, creationType>()));
-    }
   }; // Firebase.Storage.StorageMetadata
   #pragma pack(pop)
   static check_size<sizeof(StorageMetadata), 24 + sizeof(::Firebase::Storage::MetadataInternal*)> __Firebase_Storage_StorageMetadataSizeCheck;
@@ -123,6 +121,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageMetadata*), "set_Internal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Firebase::Storage::StorageMetadata::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::StorageMetadata::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -157,7 +159,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::StorageMetadata*), "BuildMetadataInternal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{metadataChange});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::StorageMetadata::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

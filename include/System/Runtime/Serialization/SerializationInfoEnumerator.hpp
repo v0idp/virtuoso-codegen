@@ -86,17 +86,17 @@ namespace System::Runtime::Serialization {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.String[] m_members
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_members();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_members();
     // Get instance field reference: private System.Object[] m_data
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_m_data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_m_data();
     // Get instance field reference: private System.Type[] m_types
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_m_types();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_m_types();
     // Get instance field reference: private System.Int32 m_numItems
-    [[deprecated]] int& dyn_m_numItems();
+    [[deprecated("Use field access instead!")]] int& dyn_m_numItems();
     // Get instance field reference: private System.Int32 m_currItem
-    [[deprecated]] int& dyn_m_currItem();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currItem();
     // Get instance field reference: private System.Boolean m_current
-    [[deprecated]] bool& dyn_m_current();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_current();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0x117B730
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

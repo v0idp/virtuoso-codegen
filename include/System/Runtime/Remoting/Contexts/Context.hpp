@@ -163,25 +163,25 @@ namespace System::Runtime::Remoting::Contexts {
     // Set static field: static private System.Runtime.Remoting.Contexts.DynamicPropertyCollection global_dynamic_properties
     static void _set_global_dynamic_properties(::System::Runtime::Remoting::Contexts::DynamicPropertyCollection* value);
     // Get instance field reference: private System.Int32 domain_id
-    [[deprecated]] int& dyn_domain_id();
+    [[deprecated("Use field access instead!")]] int& dyn_domain_id();
     // Get instance field reference: private System.Int32 context_id
-    [[deprecated]] int& dyn_context_id();
+    [[deprecated("Use field access instead!")]] int& dyn_context_id();
     // Get instance field reference: private System.UIntPtr static_data
-    [[deprecated]] ::System::UIntPtr& dyn_static_data();
+    [[deprecated("Use field access instead!")]] ::System::UIntPtr& dyn_static_data();
     // Get instance field reference: private System.UIntPtr data
-    [[deprecated]] ::System::UIntPtr& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::UIntPtr& dyn_data();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink server_context_sink_chain
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_server_context_sink_chain();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_server_context_sink_chain();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink client_context_sink_chain
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_client_context_sink_chain();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_client_context_sink_chain();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Runtime.Remoting.Contexts.IContextProperty> context_properties
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Runtime::Remoting::Contexts::IContextProperty*>*& dyn_context_properties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Runtime::Remoting::Contexts::IContextProperty*>*& dyn_context_properties();
     // Get instance field reference: private System.LocalDataStoreHolder _localDataStore
-    [[deprecated]] ::System::LocalDataStoreHolder*& dyn__localDataStore();
+    [[deprecated("Use field access instead!")]] ::System::LocalDataStoreHolder*& dyn__localDataStore();
     // Get instance field reference: private System.Runtime.Remoting.Contexts.DynamicPropertyCollection context_dynamic_properties
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection*& dyn_context_dynamic_properties();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection*& dyn_context_dynamic_properties();
     // Get instance field reference: private System.Runtime.Remoting.Contexts.ContextCallbackObject callback_object
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::ContextCallbackObject*& dyn_callback_object();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::ContextCallbackObject*& dyn_callback_object();
     // static public System.Runtime.Remoting.Contexts.Context get_DefaultContext()
     // Offset: 0xE42F80
     static ::System::Runtime::Remoting::Contexts::Context* get_DefaultContext();

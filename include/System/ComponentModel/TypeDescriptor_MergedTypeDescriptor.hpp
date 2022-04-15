@@ -63,9 +63,9 @@ namespace System::ComponentModel {
       return *reinterpret_cast<::System::ComponentModel::ICustomTypeDescriptor*>(this);
     }
     // Get instance field reference: private System.ComponentModel.ICustomTypeDescriptor _primary
-    [[deprecated]] ::System::ComponentModel::ICustomTypeDescriptor*& dyn__primary();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ICustomTypeDescriptor*& dyn__primary();
     // Get instance field reference: private System.ComponentModel.ICustomTypeDescriptor _secondary
-    [[deprecated]] ::System::ComponentModel::ICustomTypeDescriptor*& dyn__secondary();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ICustomTypeDescriptor*& dyn__secondary();
     // System.Void .ctor(System.ComponentModel.ICustomTypeDescriptor primary, System.ComponentModel.ICustomTypeDescriptor secondary)
     // Offset: 0xA02950
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

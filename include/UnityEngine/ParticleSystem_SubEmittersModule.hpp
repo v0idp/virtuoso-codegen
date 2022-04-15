@@ -39,7 +39,7 @@ namespace UnityEngine {
       return m_ParticleSystem;
     }
     // Get instance field reference: UnityEngine.ParticleSystem m_ParticleSystem
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn_m_ParticleSystem();
     // public System.Int32 get_subEmittersCount()
     // Offset: 0x1900E3C
     int get_subEmittersCount();

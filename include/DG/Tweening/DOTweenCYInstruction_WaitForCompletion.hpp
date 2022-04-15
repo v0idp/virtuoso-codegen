@@ -45,7 +45,7 @@ namespace DG::Tweening {
       return t;
     }
     // Get instance field reference: private readonly DG.Tweening.Tween t
-    [[deprecated]] ::DG::Tweening::Tween*& dyn_t();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Tween*& dyn_t();
     // public System.Void .ctor(DG.Tweening.Tween tween)
     // Offset: 0x17E1D6C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

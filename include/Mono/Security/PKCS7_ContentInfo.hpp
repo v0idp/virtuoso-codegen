@@ -47,9 +47,9 @@ namespace Mono::Security {
     static_assert(sizeof(::Mono::Security::ASN1*) == 0x8);
     public:
     // Get instance field reference: private System.String contentType
-    [[deprecated]] ::StringW& dyn_contentType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_contentType();
     // Get instance field reference: private Mono.Security.ASN1 content
-    [[deprecated]] ::Mono::Security::ASN1*& dyn_content();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::ASN1*& dyn_content();
     // public Mono.Security.ASN1 get_ASN1()
     // Offset: 0x18E179C
     ::Mono::Security::ASN1* get_ASN1();
@@ -65,6 +65,13 @@ namespace Mono::Security {
     // public System.Void set_ContentType(System.String value)
     // Offset: 0x18E1864
     void set_ContentType(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x18E1528
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PKCS7::ContentInfo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::PKCS7::ContentInfo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PKCS7::ContentInfo*, creationType>()));
+    }
     // public System.Void .ctor(System.String oid)
     // Offset: 0x18E1594
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -89,15 +96,6 @@ namespace Mono::Security {
     // Mono.Security.ASN1 GetASN1()
     // Offset: 0x18E17A0
     ::Mono::Security::ASN1* GetASN1();
-    // public System.Void .ctor()
-    // Offset: 0x18E1528
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PKCS7::ContentInfo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::PKCS7::ContentInfo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PKCS7::ContentInfo*, creationType>()));
-    }
   }; // Mono.Security.PKCS7/Mono.Security.ContentInfo
   #pragma pack(pop)
   static check_size<sizeof(PKCS7::ContentInfo), 24 + sizeof(::Mono::Security::ASN1*)> __Mono_Security_PKCS7_ContentInfoSizeCheck;
@@ -158,6 +156,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Mono:
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Mono::Security::PKCS7::ContentInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::PKCS7::ContentInfo::GetASN1
 // Il2CppName: GetASN1
 template<>
@@ -166,7 +168,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Mono::Sec
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::PKCS7::ContentInfo*), "GetASN1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::PKCS7::ContentInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

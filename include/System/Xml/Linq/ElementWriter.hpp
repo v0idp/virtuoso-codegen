@@ -61,9 +61,9 @@ namespace System::Xml::Linq {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Xml.XmlWriter writer
-    [[deprecated]] ::System::Xml::XmlWriter*& dyn_writer();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWriter*& dyn_writer();
     // Get instance field reference: private System.Xml.Linq.NamespaceResolver resolver
-    [[deprecated]] ::System::Xml::Linq::NamespaceResolver& dyn_resolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::NamespaceResolver& dyn_resolver();
     // public System.Void .ctor(System.Xml.XmlWriter writer)
     // Offset: 0x1853430
     ElementWriter(::System::Xml::XmlWriter* writer);

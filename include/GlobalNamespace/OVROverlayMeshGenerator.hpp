@@ -200,43 +200,53 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Vector3[] UpVector
     static void _set_UpVector(::ArrayW<::UnityEngine::Vector3> value);
     // Get instance field reference: private UnityEngine.Mesh _Mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__Mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__Mesh();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> _Verts
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn__Verts();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn__Verts();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector2> _UV
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector2>*& dyn__UV();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector2>*& dyn__UV();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> _Tris
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn__Tris();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn__Tris();
     // Get instance field reference: private OVROverlay _Overlay
-    [[deprecated]] ::GlobalNamespace::OVROverlay*& dyn__Overlay();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay*& dyn__Overlay();
     // Get instance field reference: private UnityEngine.MeshFilter _MeshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__MeshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn__MeshFilter();
     // Get instance field reference: private UnityEngine.MeshCollider _MeshCollider
-    [[deprecated]] ::UnityEngine::MeshCollider*& dyn__MeshCollider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshCollider*& dyn__MeshCollider();
     // Get instance field reference: private UnityEngine.MeshRenderer _MeshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__MeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__MeshRenderer();
     // Get instance field reference: private UnityEngine.Transform _CameraRoot
-    [[deprecated]] ::UnityEngine::Transform*& dyn__CameraRoot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__CameraRoot();
     // Get instance field reference: private UnityEngine.Transform _Transform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__Transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__Transform();
     // Get instance field reference: private OVROverlay/OverlayShape _LastShape
-    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn__LastShape();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn__LastShape();
     // Get instance field reference: private UnityEngine.Vector3 _LastPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__LastPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__LastPosition();
     // Get instance field reference: private UnityEngine.Quaternion _LastRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__LastRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__LastRotation();
     // Get instance field reference: private UnityEngine.Vector3 _LastScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__LastScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__LastScale();
     // Get instance field reference: private UnityEngine.Rect _LastDestRectLeft
-    [[deprecated]] ::UnityEngine::Rect& dyn__LastDestRectLeft();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn__LastDestRectLeft();
     // Get instance field reference: private UnityEngine.Rect _LastDestRectRight
-    [[deprecated]] ::UnityEngine::Rect& dyn__LastDestRectRight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn__LastDestRectRight();
     // Get instance field reference: private UnityEngine.Rect _LastSrcRectLeft
-    [[deprecated]] ::UnityEngine::Rect& dyn__LastSrcRectLeft();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn__LastSrcRectLeft();
     // Get instance field reference: private UnityEngine.Texture _LastTexture
-    [[deprecated]] ::UnityEngine::Texture*& dyn__LastTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn__LastTexture();
     // Get instance field reference: private System.Boolean _Awake
-    [[deprecated]] bool& dyn__Awake();
+    [[deprecated("Use field access instead!")]] bool& dyn__Awake();
+    // public System.Void .ctor()
+    // Offset: 0xE2BF4C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVROverlayMeshGenerator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVROverlayMeshGenerator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVROverlayMeshGenerator*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xE2C044
+    static void _cctor();
     // protected System.Void Awake()
     // Offset: 0xE29F64
     void Awake();
@@ -285,30 +295,24 @@ namespace GlobalNamespace {
     // static public System.Void BuildHemicylinder(System.Collections.Generic.List`1<UnityEngine.Vector3> verts, System.Collections.Generic.List`1<UnityEngine.Vector2> uv, System.Collections.Generic.List`1<System.Int32> triangles, UnityEngine.Vector3 scale, UnityEngine.Rect rect, System.Int32 longitudes)
     // Offset: 0xE2B92C
     static void BuildHemicylinder(::System::Collections::Generic::List_1<::UnityEngine::Vector3>* verts, ::System::Collections::Generic::List_1<::UnityEngine::Vector2>* uv, ::System::Collections::Generic::List_1<int>* triangles, ::UnityEngine::Vector3 scale, ::UnityEngine::Rect rect, int longitudes);
-    // public System.Void .ctor()
-    // Offset: 0xE2BF4C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVROverlayMeshGenerator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVROverlayMeshGenerator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVROverlayMeshGenerator*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xE2C044
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVROverlayMeshGenerator
   #pragma pack(pop)
   static check_size<sizeof(OVROverlayMeshGenerator), 208 + sizeof(bool)> __GlobalNamespace_OVROverlayMeshGeneratorSizeCheck;
   static_assert(sizeof(OVROverlayMeshGenerator) == 0xD1);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVROverlayMeshGenerator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVROverlayMeshGenerator::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVROverlayMeshGenerator::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVROverlayMeshGenerator*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::OVROverlayMeshGenerator::Awake
 // Il2CppName: Awake
 template<>
@@ -492,17 +496,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     static auto* rect = &::il2cpp_utils::GetClassFromName("UnityEngine", "Rect")->byval_arg;
     static auto* longitudes = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVROverlayMeshGenerator*), "BuildHemicylinder", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{verts, uv, triangles, scale, rect, longitudes});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVROverlayMeshGenerator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVROverlayMeshGenerator::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVROverlayMeshGenerator::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVROverlayMeshGenerator*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

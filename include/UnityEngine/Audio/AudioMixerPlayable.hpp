@@ -70,7 +70,7 @@ namespace UnityEngine::Audio {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // System.Void .ctor(UnityEngine.Playables.PlayableHandle handle)
     // Offset: 0x18D8574
     // ABORTED: conflicts with another method.  AudioMixerPlayable(::UnityEngine::Playables::PlayableHandle handle);

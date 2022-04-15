@@ -89,7 +89,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRMesh/MeshType HandRight
       static void _set_HandRight(::GlobalNamespace::OVRMesh::MeshType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRMesh/MeshType
     #pragma pack(pop)
     static check_size<sizeof(OVRMesh::MeshType), 0 + sizeof(int)> __GlobalNamespace_OVRMesh_MeshTypeSizeCheck;
@@ -125,13 +125,13 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private OVRMesh/IOVRMeshDataProvider _dataProvider
-    [[deprecated]] ::GlobalNamespace::OVRMesh::IOVRMeshDataProvider*& dyn__dataProvider();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMesh::IOVRMeshDataProvider*& dyn__dataProvider();
     // Get instance field reference: private OVRMesh/MeshType _meshType
-    [[deprecated]] ::GlobalNamespace::OVRMesh::MeshType& dyn__meshType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMesh::MeshType& dyn__meshType();
     // Get instance field reference: private UnityEngine.Mesh _mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__mesh();
     // Get instance field reference: private System.Boolean <IsInitialized>k__BackingField
-    [[deprecated]] bool& dyn_$IsInitialized$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsInitialized$k__BackingField();
     // public System.Boolean get_IsInitialized()
     // Offset: 0xE221D8
     bool get_IsInitialized();
@@ -141,6 +141,13 @@ namespace GlobalNamespace {
     // public UnityEngine.Mesh get_Mesh()
     // Offset: 0xE221EC
     ::UnityEngine::Mesh* get_Mesh();
+    // public System.Void .ctor()
+    // Offset: 0xE22860
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRMesh* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMesh::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRMesh*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xE221F4
     void Awake();
@@ -150,19 +157,6 @@ namespace GlobalNamespace {
     // private System.Void Initialize(OVRMesh/MeshType meshType)
     // Offset: 0xE22314
     void Initialize(::GlobalNamespace::OVRMesh::MeshType meshType);
-    // public System.Void .ctor()
-    // Offset: 0xE22860
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRMesh* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMesh::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRMesh*, creationType>()));
-    }
   }; // OVRMesh
   #pragma pack(pop)
   static check_size<sizeof(OVRMesh), 48 + sizeof(bool)> __GlobalNamespace_OVRMeshSizeCheck;
@@ -196,6 +190,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRMesh*), "get_Mesh", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRMesh::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRMesh::Awake
 // Il2CppName: Awake
 template<>
@@ -221,7 +219,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRMesh*), "Initialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{meshType});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRMesh::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

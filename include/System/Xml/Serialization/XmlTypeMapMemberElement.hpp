@@ -71,13 +71,13 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::Serialization::TypeData*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapElementInfoList _elementInfo
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapElementInfoList*& dyn__elementInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapElementInfoList*& dyn__elementInfo();
     // Get instance field reference: private System.String _choiceMember
-    [[deprecated]] ::StringW& dyn__choiceMember();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__choiceMember();
     // Get instance field reference: private System.Boolean _isTextCollector
-    [[deprecated]] bool& dyn__isTextCollector();
+    [[deprecated("Use field access instead!")]] bool& dyn__isTextCollector();
     // Get instance field reference: private System.Xml.Serialization.TypeData _choiceTypeData
-    [[deprecated]] ::System::Xml::Serialization::TypeData*& dyn__choiceTypeData();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::TypeData*& dyn__choiceTypeData();
     // public System.Xml.Serialization.XmlTypeMapElementInfoList get_ElementInfo()
     // Offset: 0x1088134
     ::System::Xml::Serialization::XmlTypeMapElementInfoList* get_ElementInfo();
@@ -112,7 +112,6 @@ namespace System::Xml::Serialization {
     // Offset: 0x1088504
     // Implemented from: System.Xml.Serialization.XmlTypeMapMember
     // Base method: System.Void XmlTypeMapMember::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapMemberElement* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMemberElement::.ctor");

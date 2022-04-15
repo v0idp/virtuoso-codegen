@@ -123,31 +123,31 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.String NIFullName
-    [[deprecated]] ::StringW& dyn_NIFullName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NIFullName();
     // Get instance field reference: System.Int64 NIobjectId
-    [[deprecated]] int64_t& dyn_NIobjectId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_NIobjectId();
     // Get instance field reference: System.Int64 NIassemId
-    [[deprecated]] int64_t& dyn_NIassemId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_NIassemId();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE NIprimitiveTypeEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_NIprimitiveTypeEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_NIprimitiveTypeEnum();
     // Get instance field reference: System.Type NItype
-    [[deprecated]] ::System::Type*& dyn_NItype();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_NItype();
     // Get instance field reference: System.Boolean NIisSealed
-    [[deprecated]] bool& dyn_NIisSealed();
+    [[deprecated("Use field access instead!")]] bool& dyn_NIisSealed();
     // Get instance field reference: System.Boolean NIisArray
-    [[deprecated]] bool& dyn_NIisArray();
+    [[deprecated("Use field access instead!")]] bool& dyn_NIisArray();
     // Get instance field reference: System.Boolean NIisArrayItem
-    [[deprecated]] bool& dyn_NIisArrayItem();
+    [[deprecated("Use field access instead!")]] bool& dyn_NIisArrayItem();
     // Get instance field reference: System.Boolean NItransmitTypeOnObject
-    [[deprecated]] bool& dyn_NItransmitTypeOnObject();
+    [[deprecated("Use field access instead!")]] bool& dyn_NItransmitTypeOnObject();
     // Get instance field reference: System.Boolean NItransmitTypeOnMember
-    [[deprecated]] bool& dyn_NItransmitTypeOnMember();
+    [[deprecated("Use field access instead!")]] bool& dyn_NItransmitTypeOnMember();
     // Get instance field reference: System.Boolean NIisParentTypeOnObject
-    [[deprecated]] bool& dyn_NIisParentTypeOnObject();
+    [[deprecated("Use field access instead!")]] bool& dyn_NIisParentTypeOnObject();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalArrayTypeE NIarrayEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE& dyn_NIarrayEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE& dyn_NIarrayEnum();
     // Get instance field reference: private System.Boolean NIsealedStatusChecked
-    [[deprecated]] bool& dyn_NIsealedStatusChecked();
+    [[deprecated("Use field access instead!")]] bool& dyn_NIsealedStatusChecked();
     // public System.Boolean get_IsSealed()
     // Offset: 0x1011228
     bool get_IsSealed();

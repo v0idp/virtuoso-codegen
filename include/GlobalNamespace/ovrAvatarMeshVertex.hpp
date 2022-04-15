@@ -118,33 +118,33 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    [[deprecated]] float& dyn_z();
+    [[deprecated("Use field access instead!")]] float& dyn_z();
     // Get instance field reference: public System.Single nx
-    [[deprecated]] float& dyn_nx();
+    [[deprecated("Use field access instead!")]] float& dyn_nx();
     // Get instance field reference: public System.Single ny
-    [[deprecated]] float& dyn_ny();
+    [[deprecated("Use field access instead!")]] float& dyn_ny();
     // Get instance field reference: public System.Single nz
-    [[deprecated]] float& dyn_nz();
+    [[deprecated("Use field access instead!")]] float& dyn_nz();
     // Get instance field reference: public System.Single tx
-    [[deprecated]] float& dyn_tx();
+    [[deprecated("Use field access instead!")]] float& dyn_tx();
     // Get instance field reference: public System.Single ty
-    [[deprecated]] float& dyn_ty();
+    [[deprecated("Use field access instead!")]] float& dyn_ty();
     // Get instance field reference: public System.Single tz
-    [[deprecated]] float& dyn_tz();
+    [[deprecated("Use field access instead!")]] float& dyn_tz();
     // Get instance field reference: public System.Single tw
-    [[deprecated]] float& dyn_tw();
+    [[deprecated("Use field access instead!")]] float& dyn_tw();
     // Get instance field reference: public System.Single u
-    [[deprecated]] float& dyn_u();
+    [[deprecated("Use field access instead!")]] float& dyn_u();
     // Get instance field reference: public System.Single v
-    [[deprecated]] float& dyn_v();
+    [[deprecated("Use field access instead!")]] float& dyn_v();
     // Get instance field reference: public System.Byte[] blendIndices
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_blendIndices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_blendIndices();
     // Get instance field reference: public System.Single[] blendWeights
-    [[deprecated]] ::ArrayW<float>& dyn_blendWeights();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_blendWeights();
   }; // ovrAvatarMeshVertex
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarMeshVertex), 56 + sizeof(::ArrayW<float>)> __GlobalNamespace_ovrAvatarMeshVertexSizeCheck;

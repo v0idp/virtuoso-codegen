@@ -77,15 +77,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private UIInputField _currentPasswordInput
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__currentPasswordInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__currentPasswordInput();
     // Get instance field reference: private UIInputField _newPasswordInput
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__newPasswordInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__newPasswordInput();
     // Get instance field reference: private UIInputField _repeatPasswordInput
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__repeatPasswordInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__repeatPasswordInput();
     // Get instance field reference: private VROSC.UIButton _confirmButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__confirmButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__confirmButton();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__cancelButton();
     // private System.Void Awake()
     // Offset: 0x19B0E08
     void Awake();
@@ -108,11 +108,6 @@ namespace VROSC {
     // Offset: 0x19B1B64
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoginUIPopupChangePasswordPanel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopupChangePasswordPanel::.ctor");

@@ -111,27 +111,27 @@ namespace System::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String localName
-    [[deprecated]] ::StringW& dyn_localName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
     // Get instance field reference: private System.String namespaceUri
-    [[deprecated]] ::StringW& dyn_namespaceUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceUri();
     // Get instance field reference: private System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: private System.String nameWPrefix
-    [[deprecated]] ::StringW& dyn_nameWPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nameWPrefix();
     // Get instance field reference: private System.String rawValue
-    [[deprecated]] ::StringW& dyn_rawValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_rawValue();
     // Get instance field reference: private System.String originalStringValue
-    [[deprecated]] ::StringW& dyn_originalStringValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_originalStringValue();
     // Get instance field reference: private System.Int32 depth
-    [[deprecated]] int& dyn_depth();
+    [[deprecated("Use field access instead!")]] int& dyn_depth();
     // Get instance field reference: private System.Xml.AttributePSVIInfo attributePSVIInfo
-    [[deprecated]] ::System::Xml::AttributePSVIInfo*& dyn_attributePSVIInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::AttributePSVIInfo*& dyn_attributePSVIInfo();
     // Get instance field reference: private System.Xml.XmlNodeType nodeType
-    [[deprecated]] ::System::Xml::XmlNodeType& dyn_nodeType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeType& dyn_nodeType();
     // Get instance field reference: private System.Int32 lineNo
-    [[deprecated]] int& dyn_lineNo();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNo();
     // Get instance field reference: private System.Int32 linePos
-    [[deprecated]] int& dyn_linePos();
+    [[deprecated("Use field access instead!")]] int& dyn_linePos();
     // public System.String get_LocalName()
     // Offset: 0xF7978C
     ::StringW get_LocalName();
@@ -183,6 +183,13 @@ namespace System::Xml {
     // public System.Int32 get_LinePosition()
     // Offset: 0xF798AC
     int get_LinePosition();
+    // public System.Void .ctor()
+    // Offset: 0xF79690
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ValidatingReaderNodeData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::ValidatingReaderNodeData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ValidatingReaderNodeData*, creationType>()));
+    }
     // public System.Void .ctor(System.Xml.XmlNodeType nodeType)
     // Offset: 0xF7975C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -211,15 +218,6 @@ namespace System::Xml {
     // System.Void SetItemData(System.String value, System.String originalStringValue)
     // Offset: 0xF79A68
     void SetItemData(::StringW value, ::StringW originalStringValue);
-    // public System.Void .ctor()
-    // Offset: 0xF79690
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ValidatingReaderNodeData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::ValidatingReaderNodeData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ValidatingReaderNodeData*, creationType>()));
-    }
   }; // System.Xml.ValidatingReaderNodeData
   #pragma pack(pop)
   static check_size<sizeof(ValidatingReaderNodeData), 88 + sizeof(int)> __System_Xml_ValidatingReaderNodeDataSizeCheck;
@@ -373,6 +371,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::ValidatingReaderNodeData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::ValidatingReaderNodeData::GetAtomizedNameWPrefix
 // Il2CppName: GetAtomizedNameWPrefix
 template<>
@@ -441,7 +443,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::ValidatingReaderNodeData*), "SetItemData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value, originalStringValue});
   }
 };
-// Writing MetadataGetter for method: System::Xml::ValidatingReaderNodeData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

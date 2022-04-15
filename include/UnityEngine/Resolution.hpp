@@ -52,11 +52,11 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_Width
-    [[deprecated]] int& dyn_m_Width();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Width();
     // Get instance field reference: private System.Int32 m_Height
-    [[deprecated]] int& dyn_m_Height();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Height();
     // Get instance field reference: private System.Int32 m_RefreshRate
-    [[deprecated]] int& dyn_m_RefreshRate();
+    [[deprecated("Use field access instead!")]] int& dyn_m_RefreshRate();
     // public override System.String ToString()
     // Offset: 0xBD0870
     // Implemented from: System.ValueType

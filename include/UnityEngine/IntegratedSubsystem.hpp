@@ -59,15 +59,22 @@ namespace UnityEngine {
       return *reinterpret_cast<::UnityEngine::ISubsystem*>(this);
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: UnityEngine.ISubsystemDescriptor m_SubsystemDescriptor
-    [[deprecated]] ::UnityEngine::ISubsystemDescriptor*& dyn_m_SubsystemDescriptor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ISubsystemDescriptor*& dyn_m_SubsystemDescriptor();
     // public System.Boolean get_running()
     // Offset: 0x19038D0
     bool get_running();
     // System.Boolean get_valid()
     // Offset: 0x1903928
     bool get_valid();
+    // public System.Void .ctor()
+    // Offset: 0x19039B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static IntegratedSubsystem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::IntegratedSubsystem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<IntegratedSubsystem*, creationType>()));
+    }
     // System.Void SetHandle(UnityEngine.IntegratedSubsystem subsystem)
     // Offset: 0x1903578
     void SetHandle(::UnityEngine::IntegratedSubsystem* subsystem);
@@ -83,15 +90,6 @@ namespace UnityEngine {
     // System.Boolean IsRunning()
     // Offset: 0x1903970
     bool IsRunning();
-    // public System.Void .ctor()
-    // Offset: 0x19039B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static IntegratedSubsystem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::IntegratedSubsystem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<IntegratedSubsystem*, creationType>()));
-    }
   }; // UnityEngine.IntegratedSubsystem
   #pragma pack(pop)
   static check_size<sizeof(IntegratedSubsystem), 24 + sizeof(::UnityEngine::ISubsystemDescriptor*)> __UnityEngine_IntegratedSubsystemSizeCheck;
@@ -114,6 +112,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::IntegratedSubsystem*), "get_valid", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::IntegratedSubsystem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::IntegratedSubsystem::SetHandle
 // Il2CppName: SetHandle
 template<>
@@ -155,7 +157,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::IntegratedSubsystem*), "IsRunning", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::IntegratedSubsystem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

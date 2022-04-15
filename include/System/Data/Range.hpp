@@ -50,11 +50,11 @@ namespace System::Data {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 _min
-    [[deprecated]] int& dyn__min();
+    [[deprecated("Use field access instead!")]] int& dyn__min();
     // Get instance field reference: private System.Int32 _max
-    [[deprecated]] int& dyn__max();
+    [[deprecated("Use field access instead!")]] int& dyn__max();
     // Get instance field reference: private System.Boolean _isNotNull
-    [[deprecated]] bool& dyn__isNotNull();
+    [[deprecated("Use field access instead!")]] bool& dyn__isNotNull();
     // public System.Int32 get_Count()
     // Offset: 0x13B255C
     int get_Count();

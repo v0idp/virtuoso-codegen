@@ -62,7 +62,7 @@ namespace UnityEngine::Experimental::Video {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // public UnityEngine.Playables.PlayableHandle GetHandle()
     // Offset: 0x190A248
     ::UnityEngine::Playables::PlayableHandle GetHandle();

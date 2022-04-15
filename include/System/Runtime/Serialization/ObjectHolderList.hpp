@@ -51,9 +51,9 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Runtime.Serialization.ObjectHolder[] m_values
-    [[deprecated]] ::ArrayW<::System::Runtime::Serialization::ObjectHolder*>& dyn_m_values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Serialization::ObjectHolder*>& dyn_m_values();
     // Get instance field reference: System.Int32 m_count
-    [[deprecated]] int& dyn_m_count();
+    [[deprecated("Use field access instead!")]] int& dyn_m_count();
     // System.Int32 get_Version()
     // Offset: 0x146DD28
     int get_Version();

@@ -47,11 +47,11 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public readonly System.Int32 LabelIndex
-    [[deprecated]] int& dyn_LabelIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_LabelIndex();
     // Get instance field reference: public readonly System.Int32 StartIndex
-    [[deprecated]] int& dyn_StartIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_StartIndex();
     // Get instance field reference: public readonly System.Int32 EndIndex
-    [[deprecated]] int& dyn_EndIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_EndIndex();
     // System.Void .ctor(System.Int32 labelIndex, System.Int32 start, System.Int32 end)
     // Offset: 0x12025E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -56,7 +56,7 @@ namespace System::Xml::Linq {
     static_assert(sizeof(::System::Xml::Linq::XDeclaration*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Linq.XDeclaration declaration
-    [[deprecated]] ::System::Xml::Linq::XDeclaration*& dyn_declaration();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XDeclaration*& dyn_declaration();
     // public System.Xml.Linq.XDeclaration get_Declaration()
     // Offset: 0x185A07C
     ::System::Xml::Linq::XDeclaration* get_Declaration();
@@ -100,7 +100,6 @@ namespace System::Xml::Linq {
     // Base method: System.Void XContainer::.ctor()
     // Base method: System.Void XNode::.ctor()
     // Base method: System.Void XObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XDocument* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XDocument::.ctor");

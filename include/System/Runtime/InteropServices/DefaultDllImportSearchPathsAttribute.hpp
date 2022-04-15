@@ -45,7 +45,7 @@ namespace System::Runtime::InteropServices {
       return paths;
     }
     // Get instance field reference: System.Runtime.InteropServices.DllImportSearchPath _paths
-    [[deprecated]] ::System::Runtime::InteropServices::DllImportSearchPath& dyn__paths();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::DllImportSearchPath& dyn__paths();
     // public System.Void .ctor(System.Runtime.InteropServices.DllImportSearchPath paths)
     // Offset: 0x129A538
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

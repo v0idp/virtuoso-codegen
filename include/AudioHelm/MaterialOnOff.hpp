@@ -76,15 +76,22 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Material offMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_offMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_offMaterial();
     // Get instance field reference: public UnityEngine.Material onMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_onMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_onMaterial();
     // Get instance field reference: private UnityEngine.UI.RawImage rawImage
-    [[deprecated]] ::UnityEngine::UI::RawImage*& dyn_rawImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::RawImage*& dyn_rawImage();
     // Get instance field reference: private System.Single progress
-    [[deprecated]] float& dyn_progress();
+    [[deprecated("Use field access instead!")]] float& dyn_progress();
     // Get instance field reference: private System.Boolean on
-    [[deprecated]] bool& dyn_on();
+    [[deprecated("Use field access instead!")]] bool& dyn_on();
+    // public System.Void .ctor()
+    // Offset: 0xAC1124
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MaterialOnOff* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::MaterialOnOff::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MaterialOnOff*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xAC0F40
     void Start();
@@ -97,25 +104,16 @@ namespace AudioHelm {
     // private System.Void Update()
     // Offset: 0xAC0FF4
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0xAC1124
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MaterialOnOff* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::MaterialOnOff::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MaterialOnOff*, creationType>()));
-    }
   }; // AudioHelm.MaterialOnOff
   #pragma pack(pop)
   static check_size<sizeof(MaterialOnOff), 52 + sizeof(bool)> __AudioHelm_MaterialOnOffSizeCheck;
   static_assert(sizeof(MaterialOnOff) == 0x35);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::MaterialOnOff::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::MaterialOnOff::Start
 // Il2CppName: Start
 template<>
@@ -148,7 +146,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::MaterialOnOff*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::MaterialOnOff::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

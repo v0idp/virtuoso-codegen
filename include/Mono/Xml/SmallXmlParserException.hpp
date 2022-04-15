@@ -44,9 +44,9 @@ namespace Mono::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 line
-    [[deprecated]] int& dyn_line();
+    [[deprecated("Use field access instead!")]] int& dyn_line();
     // Get instance field reference: private System.Int32 column
-    [[deprecated]] int& dyn_column();
+    [[deprecated("Use field access instead!")]] int& dyn_column();
     // public System.Void .ctor(System.String msg, System.Int32 line, System.Int32 column)
     // Offset: 0x124C66C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -120,9 +120,9 @@ namespace UnityEngine {
     // Set static field: static public System.Single kEpsilonNormalSqrt
     static void _set_kEpsilonNormalSqrt(float value);
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // public System.Single get_Item(System.Int32 index)
     // Offset: 0x183E768
     float get_Item(int index);

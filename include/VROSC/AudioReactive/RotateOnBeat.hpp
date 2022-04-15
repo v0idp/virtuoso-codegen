@@ -46,7 +46,7 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::RotateEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.RotateEffect _rotationAnimation
-    [[deprecated]] ::VROSC::AudioReactive::RotateEffect*& dyn__rotationAnimation();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::RotateEffect*& dyn__rotationAnimation();
     // public VROSC.AudioReactive.RotateEffect get_RotateAnimation()
     // Offset: 0xB37670
     ::VROSC::AudioReactive::RotateEffect* get_RotateAnimation();
@@ -54,11 +54,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0xB376EC
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RotateOnBeat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::RotateOnBeat::.ctor");

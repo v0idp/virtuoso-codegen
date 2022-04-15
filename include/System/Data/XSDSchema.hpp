@@ -227,43 +227,43 @@ namespace System::Data {
     // Set static field: static private readonly System.Data.XSDSchema/System.Data.NameType[] s_mapNameTypeXsd
     static void _set_s_mapNameTypeXsd(::ArrayW<::System::Data::XSDSchema::NameType*> value);
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSet _schemaSet
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSet*& dyn__schemaSet();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSet*& dyn__schemaSet();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaElement _dsElement
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaElement*& dyn__dsElement();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaElement*& dyn__dsElement();
     // Get instance field reference: private System.Data.DataSet _ds
-    [[deprecated]] ::System::Data::DataSet*& dyn__ds();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__ds();
     // Get instance field reference: private System.String _schemaName
-    [[deprecated]] ::StringW& dyn__schemaName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__schemaName();
     // Get instance field reference: private System.Collections.ArrayList _columnExpressions
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__columnExpressions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__columnExpressions();
     // Get instance field reference: private System.Collections.Hashtable _constraintNodes
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__constraintNodes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__constraintNodes();
     // Get instance field reference: private System.Collections.ArrayList _refTables
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__refTables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__refTables();
     // Get instance field reference: private System.Collections.ArrayList _complexTypes
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__complexTypes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__complexTypes();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection _annotations
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn__annotations();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn__annotations();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection _elements
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn__elements();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn__elements();
     // Get instance field reference: private System.Collections.Hashtable _attributes
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__attributes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__attributes();
     // Get instance field reference: private System.Collections.Hashtable _elementsTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__elementsTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__elementsTable();
     // Get instance field reference: private System.Collections.Hashtable _attributeGroups
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__attributeGroups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__attributeGroups();
     // Get instance field reference: private System.Collections.Hashtable _schemaTypes
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__schemaTypes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__schemaTypes();
     // Get instance field reference: private System.Collections.Hashtable _expressions
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__expressions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__expressions();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Data.DataTable,System.Collections.Generic.List`1<System.Data.DataTable>> _tableDictionary
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Data::DataTable*, ::System::Collections::Generic::List_1<::System::Data::DataTable*>*>*& dyn__tableDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Data::DataTable*, ::System::Collections::Generic::List_1<::System::Data::DataTable*>*>*& dyn__tableDictionary();
     // Get instance field reference: private System.Collections.Hashtable _udSimpleTypes
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__udSimpleTypes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__udSimpleTypes();
     // Get instance field reference: private System.Collections.Hashtable _existingSimpleTypeMap
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__existingSimpleTypeMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__existingSimpleTypeMap();
     // Get instance field reference: private System.Boolean _fromInference
-    [[deprecated]] bool& dyn__fromInference();
+    [[deprecated("Use field access instead!")]] bool& dyn__fromInference();
     // System.Boolean get_FromInference()
     // Offset: 0x11C5208
     bool get_FromInference();
@@ -430,7 +430,6 @@ namespace System::Data {
     // Offset: 0x11D3DFC
     // Implemented from: System.Data.XMLSchema
     // Base method: System.Void XMLSchema::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XSDSchema* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::XSDSchema::.ctor");

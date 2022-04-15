@@ -55,13 +55,13 @@ namespace OVR {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single minDefaultVal
-    [[deprecated]] float& dyn_minDefaultVal();
+    [[deprecated("Use field access instead!")]] float& dyn_minDefaultVal();
     // Get instance field reference: public System.Single maxDefaultVal
-    [[deprecated]] float& dyn_maxDefaultVal();
+    [[deprecated("Use field access instead!")]] float& dyn_maxDefaultVal();
     // Get instance field reference: public System.Single min
-    [[deprecated]] float& dyn_min();
+    [[deprecated("Use field access instead!")]] float& dyn_min();
     // Get instance field reference: public System.Single max
-    [[deprecated]] float& dyn_max();
+    [[deprecated("Use field access instead!")]] float& dyn_max();
     // public System.Void .ctor(System.Single minDefaultVal, System.Single maxDefaultVal, System.Single min, System.Single max)
     // Offset: 0x18A45D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

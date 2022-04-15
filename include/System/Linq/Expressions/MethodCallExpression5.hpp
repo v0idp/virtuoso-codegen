@@ -80,15 +80,15 @@ namespace System::Linq::Expressions {
     // Deleting conversion operator: operator ::System::Reflection::MethodInfo*
     constexpr operator ::System::Reflection::MethodInfo*() const noexcept = delete;
     // Get instance field reference: private System.Object _arg0
-    [[deprecated]] ::Il2CppObject*& dyn__arg0();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__arg0();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg1
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg1();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg1();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg2
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg2();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg2();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg3
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg3();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg3();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg4
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg4();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg4();
     // public System.Void .ctor(System.Reflection.MethodInfo method, System.Linq.Expressions.Expression arg0, System.Linq.Expressions.Expression arg1, System.Linq.Expressions.Expression arg2, System.Linq.Expressions.Expression arg3, System.Linq.Expressions.Expression arg4)
     // Offset: 0xE92014
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

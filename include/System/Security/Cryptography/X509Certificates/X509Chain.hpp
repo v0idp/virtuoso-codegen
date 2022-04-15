@@ -56,7 +56,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return impl;
     }
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainImpl impl
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainImpl*& dyn_impl();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509ChainImpl*& dyn_impl();
     // System.Security.Cryptography.X509Certificates.X509ChainImpl get_Impl()
     // Offset: 0xC5290C
     ::System::Security::Cryptography::X509Certificates::X509ChainImpl* get_Impl();
@@ -66,6 +66,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // public System.Void set_ChainPolicy(System.Security.Cryptography.X509Certificates.X509ChainPolicy value)
     // Offset: 0xC52AAC
     void set_ChainPolicy(::System::Security::Cryptography::X509Certificates::X509ChainPolicy* value);
+    // public System.Void .ctor()
+    // Offset: 0xC52980
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509Chain* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Chain::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509Chain*, creationType>()));
+    }
     // public System.Void .ctor(System.Boolean useMachineContext)
     // Offset: 0xC529B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -86,15 +93,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // protected System.Void Dispose(System.Boolean disposing)
     // Offset: 0xC52B64
     void Dispose(bool disposing);
-    // public System.Void .ctor()
-    // Offset: 0xC52980
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509Chain* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509Chain::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509Chain*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xC52C08
     // Implemented from: System.Object
@@ -139,6 +137,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Chain::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Chain::Dispose
 // Il2CppName: Dispose
 template<>
@@ -156,10 +158,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509Chain*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{disposing});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Chain::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509Chain::Finalize
 // Il2CppName: Finalize
 template<>

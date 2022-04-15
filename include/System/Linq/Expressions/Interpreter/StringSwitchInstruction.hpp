@@ -63,9 +63,9 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Runtime::CompilerServices::StrongBox_1<int>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,System.Int32> _cases
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__cases();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn__cases();
     // Get instance field reference: private readonly System.Runtime.CompilerServices.StrongBox`1<System.Int32> _nullCase
-    [[deprecated]] ::System::Runtime::CompilerServices::StrongBox_1<int>*& dyn__nullCase();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::StrongBox_1<int>*& dyn__nullCase();
     // System.Void .ctor(System.Collections.Generic.Dictionary`2<System.String,System.Int32> cases, System.Runtime.CompilerServices.StrongBox`1<System.Int32> nullCase)
     // Offset: 0xE9B018
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

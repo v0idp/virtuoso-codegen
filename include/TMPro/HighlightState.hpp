@@ -51,9 +51,9 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Color32 color
-    [[deprecated]] ::UnityEngine::Color32& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_color();
     // Get instance field reference: public TMPro.TMP_Offset padding
-    [[deprecated]] ::TMPro::TMP_Offset& dyn_padding();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Offset& dyn_padding();
     // public System.Void .ctor(UnityEngine.Color32 color, TMPro.TMP_Offset padding)
     // Offset: 0xC29858
     // ABORTED: conflicts with another method.  HighlightState(::UnityEngine::Color32 color, ::TMPro::TMP_Offset padding);

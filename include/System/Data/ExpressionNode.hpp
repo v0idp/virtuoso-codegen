@@ -69,7 +69,7 @@ namespace System::Data {
       return table;
     }
     // Get instance field reference: private System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // System.IFormatProvider get_FormatProvider()
     // Offset: 0x12F3CFC
     ::System::IFormatProvider* get_FormatProvider();

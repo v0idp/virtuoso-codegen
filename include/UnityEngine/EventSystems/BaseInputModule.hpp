@@ -100,17 +100,17 @@ namespace UnityEngine::EventSystems {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult> m_RaycastResultCache
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*& dyn_m_RaycastResultCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>*& dyn_m_RaycastResultCache();
     // Get instance field reference: private UnityEngine.EventSystems.AxisEventData m_AxisEventData
-    [[deprecated]] ::UnityEngine::EventSystems::AxisEventData*& dyn_m_AxisEventData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::AxisEventData*& dyn_m_AxisEventData();
     // Get instance field reference: private UnityEngine.EventSystems.EventSystem m_EventSystem
-    [[deprecated]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_EventSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_EventSystem();
     // Get instance field reference: private UnityEngine.EventSystems.BaseEventData m_BaseEventData
-    [[deprecated]] ::UnityEngine::EventSystems::BaseEventData*& dyn_m_BaseEventData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::BaseEventData*& dyn_m_BaseEventData();
     // Get instance field reference: protected UnityEngine.EventSystems.BaseInput m_InputOverride
-    [[deprecated]] ::UnityEngine::EventSystems::BaseInput*& dyn_m_InputOverride();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::BaseInput*& dyn_m_InputOverride();
     // Get instance field reference: private UnityEngine.EventSystems.BaseInput m_DefaultInput
-    [[deprecated]] ::UnityEngine::EventSystems::BaseInput*& dyn_m_DefaultInput();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::BaseInput*& dyn_m_DefaultInput();
     // public UnityEngine.EventSystems.BaseInput get_input()
     // Offset: 0xEAB310
     ::UnityEngine::EventSystems::BaseInput* get_input();
@@ -169,11 +169,6 @@ namespace UnityEngine::EventSystems {
     // Offset: 0xEAC2A0
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BaseInputModule* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::BaseInputModule::.ctor");

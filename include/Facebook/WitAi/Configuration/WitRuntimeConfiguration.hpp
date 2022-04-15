@@ -116,29 +116,27 @@ namespace Facebook::WitAi::Configuration {
     static_assert(sizeof(::Facebook::WitAi::Interfaces::CustomTranscriptionProvider*) == 0x8);
     public:
     // Get instance field reference: public Facebook.WitAi.Data.Configuration.WitConfiguration witConfiguration
-    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
     // Get instance field reference: public System.Single minKeepAliveVolume
-    [[deprecated]] float& dyn_minKeepAliveVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_minKeepAliveVolume();
     // Get instance field reference: public System.Single minKeepAliveTimeInSeconds
-    [[deprecated]] float& dyn_minKeepAliveTimeInSeconds();
+    [[deprecated("Use field access instead!")]] float& dyn_minKeepAliveTimeInSeconds();
     // Get instance field reference: public System.Single minTranscriptionKeepAliveTimeInSeconds
-    [[deprecated]] float& dyn_minTranscriptionKeepAliveTimeInSeconds();
+    [[deprecated("Use field access instead!")]] float& dyn_minTranscriptionKeepAliveTimeInSeconds();
     // Get instance field reference: public System.Single maxRecordingTime
-    [[deprecated]] float& dyn_maxRecordingTime();
+    [[deprecated("Use field access instead!")]] float& dyn_maxRecordingTime();
     // Get instance field reference: public System.Single soundWakeThreshold
-    [[deprecated]] float& dyn_soundWakeThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_soundWakeThreshold();
     // Get instance field reference: public System.Int32 sampleLengthInMs
-    [[deprecated]] int& dyn_sampleLengthInMs();
+    [[deprecated("Use field access instead!")]] int& dyn_sampleLengthInMs();
     // Get instance field reference: public System.Single micBufferLengthInSeconds
-    [[deprecated]] float& dyn_micBufferLengthInSeconds();
+    [[deprecated("Use field access instead!")]] float& dyn_micBufferLengthInSeconds();
     // Get instance field reference: public System.Boolean sendAudioToWit
-    [[deprecated]] bool& dyn_sendAudioToWit();
+    [[deprecated("Use field access instead!")]] bool& dyn_sendAudioToWit();
     // Get instance field reference: public Facebook.WitAi.Interfaces.CustomTranscriptionProvider customTranscriptionProvider
-    [[deprecated]] ::Facebook::WitAi::Interfaces::CustomTranscriptionProvider*& dyn_customTranscriptionProvider();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Interfaces::CustomTranscriptionProvider*& dyn_customTranscriptionProvider();
     // public System.Void .ctor()
     // Offset: 0x1673F20
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitRuntimeConfiguration* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Configuration::WitRuntimeConfiguration::.ctor");

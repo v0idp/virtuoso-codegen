@@ -70,7 +70,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.AbuseReportVideoMode Skip
     static void _set_Skip(::Oculus::Platform::AbuseReportVideoMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Platform.AbuseReportVideoMode
   #pragma pack(pop)
   static check_size<sizeof(AbuseReportVideoMode), 0 + sizeof(int)> __Oculus_Platform_AbuseReportVideoModeSizeCheck;

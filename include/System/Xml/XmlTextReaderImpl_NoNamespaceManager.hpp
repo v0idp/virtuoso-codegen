@@ -53,7 +53,6 @@ namespace System::Xml {
     // Offset: 0xC2332C
     // Implemented from: System.Xml.XmlNamespaceManager
     // Base method: System.Void XmlNamespaceManager::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTextReaderImpl::NoNamespaceManager* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlTextReaderImpl::NoNamespaceManager::.ctor");

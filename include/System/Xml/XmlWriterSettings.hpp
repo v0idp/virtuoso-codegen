@@ -221,51 +221,51 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean useAsync
-    [[deprecated]] bool& dyn_useAsync();
+    [[deprecated("Use field access instead!")]] bool& dyn_useAsync();
     // Get instance field reference: private System.Text.Encoding encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
     // Get instance field reference: private System.Boolean omitXmlDecl
-    [[deprecated]] bool& dyn_omitXmlDecl();
+    [[deprecated("Use field access instead!")]] bool& dyn_omitXmlDecl();
     // Get instance field reference: private System.Xml.NewLineHandling newLineHandling
-    [[deprecated]] ::System::Xml::NewLineHandling& dyn_newLineHandling();
+    [[deprecated("Use field access instead!")]] ::System::Xml::NewLineHandling& dyn_newLineHandling();
     // Get instance field reference: private System.String newLineChars
-    [[deprecated]] ::StringW& dyn_newLineChars();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_newLineChars();
     // Get instance field reference: private System.Xml.TriState indent
-    [[deprecated]] ::System::Xml::TriState& dyn_indent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::TriState& dyn_indent();
     // Get instance field reference: private System.String indentChars
-    [[deprecated]] ::StringW& dyn_indentChars();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_indentChars();
     // Get instance field reference: private System.Boolean newLineOnAttributes
-    [[deprecated]] bool& dyn_newLineOnAttributes();
+    [[deprecated("Use field access instead!")]] bool& dyn_newLineOnAttributes();
     // Get instance field reference: private System.Boolean closeOutput
-    [[deprecated]] bool& dyn_closeOutput();
+    [[deprecated("Use field access instead!")]] bool& dyn_closeOutput();
     // Get instance field reference: private System.Xml.NamespaceHandling namespaceHandling
-    [[deprecated]] ::System::Xml::NamespaceHandling& dyn_namespaceHandling();
+    [[deprecated("Use field access instead!")]] ::System::Xml::NamespaceHandling& dyn_namespaceHandling();
     // Get instance field reference: private System.Xml.ConformanceLevel conformanceLevel
-    [[deprecated]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
     // Get instance field reference: private System.Boolean checkCharacters
-    [[deprecated]] bool& dyn_checkCharacters();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkCharacters();
     // Get instance field reference: private System.Boolean writeEndDocumentOnClose
-    [[deprecated]] bool& dyn_writeEndDocumentOnClose();
+    [[deprecated("Use field access instead!")]] bool& dyn_writeEndDocumentOnClose();
     // Get instance field reference: private System.Xml.XmlOutputMethod outputMethod
-    [[deprecated]] ::System::Xml::XmlOutputMethod& dyn_outputMethod();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlOutputMethod& dyn_outputMethod();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Xml.XmlQualifiedName> cdataSections
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Xml::XmlQualifiedName*>*& dyn_cdataSections();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Xml::XmlQualifiedName*>*& dyn_cdataSections();
     // Get instance field reference: private System.Boolean doNotEscapeUriAttributes
-    [[deprecated]] bool& dyn_doNotEscapeUriAttributes();
+    [[deprecated("Use field access instead!")]] bool& dyn_doNotEscapeUriAttributes();
     // Get instance field reference: private System.Boolean mergeCDataSections
-    [[deprecated]] bool& dyn_mergeCDataSections();
+    [[deprecated("Use field access instead!")]] bool& dyn_mergeCDataSections();
     // Get instance field reference: private System.String mediaType
-    [[deprecated]] ::StringW& dyn_mediaType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_mediaType();
     // Get instance field reference: private System.String docTypeSystem
-    [[deprecated]] ::StringW& dyn_docTypeSystem();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_docTypeSystem();
     // Get instance field reference: private System.String docTypePublic
-    [[deprecated]] ::StringW& dyn_docTypePublic();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_docTypePublic();
     // Get instance field reference: private System.Xml.XmlStandalone standalone
-    [[deprecated]] ::System::Xml::XmlStandalone& dyn_standalone();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlStandalone& dyn_standalone();
     // Get instance field reference: private System.Boolean autoXmlDecl
-    [[deprecated]] bool& dyn_autoXmlDecl();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoXmlDecl();
     // Get instance field reference: private System.Boolean isReadOnly
-    [[deprecated]] bool& dyn_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_isReadOnly();
     // public System.Boolean get_Async()
     // Offset: 0xEC3DC4
     bool get_Async();
@@ -356,6 +356,13 @@ namespace System::Xml {
     // System.Void set_ReadOnly(System.Boolean value)
     // Offset: 0xEC42AC
     void set_ReadOnly(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xEC3478
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlWriterSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlWriterSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlWriterSettings*, creationType>()));
+    }
     // public System.Xml.XmlWriterSettings Clone()
     // Offset: 0xEC4124
     ::System::Xml::XmlWriterSettings* Clone();
@@ -371,15 +378,6 @@ namespace System::Xml {
     // private System.Void Initialize()
     // Offset: 0xEC3CF4
     void Initialize();
-    // public System.Void .ctor()
-    // Offset: 0xEC3478
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlWriterSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlWriterSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlWriterSettings*, creationType>()));
-    }
   }; // System.Xml.XmlWriterSettings
   #pragma pack(pop)
   static check_size<sizeof(XmlWriterSettings), 133 + sizeof(bool)> __System_Xml_XmlWriterSettingsSizeCheck;
@@ -632,6 +630,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlWriterSettings*), "set_ReadOnly", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlWriterSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlWriterSettings::Clone
 // Il2CppName: Clone
 template<>
@@ -675,7 +677,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlWriterSettings*), "Initialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlWriterSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

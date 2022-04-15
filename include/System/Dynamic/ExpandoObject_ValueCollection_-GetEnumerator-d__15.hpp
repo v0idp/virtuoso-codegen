@@ -67,15 +67,15 @@ namespace System::Dynamic {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public System.Dynamic.ExpandoObject/System.Dynamic.ValueCollection <>4__this
-    [[deprecated]] ::System::Dynamic::ExpandoObject::ValueCollection*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoObject::ValueCollection*& dyn_$$4__this();
     // Get instance field reference: private System.Dynamic.ExpandoObject/System.Dynamic.ExpandoData <data>5__1
-    [[deprecated]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn_$data$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn_$data$5__1();
     // Get instance field reference: private System.Int32 <i>5__2
-    [[deprecated]] int& dyn_$i$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__2();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x16B4218
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

@@ -76,12 +76,19 @@ namespace System::ComponentModel {
     // Set static field: static private readonly System.Object EventDisposed
     static void _set_EventDisposed(::Il2CppObject* value);
     // Get instance field reference: private System.ComponentModel.ISite site
-    [[deprecated]] ::System::ComponentModel::ISite*& dyn_site();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ISite*& dyn_site();
     // Get instance field reference: private System.ComponentModel.EventHandlerList events
-    [[deprecated]] ::System::ComponentModel::EventHandlerList*& dyn_events();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::EventHandlerList*& dyn_events();
     // public System.ComponentModel.ISite get_Site()
     // Offset: 0x10F8C14
     ::System::ComponentModel::ISite* get_Site();
+    // public System.Void .ctor()
+    // Offset: 0x10F8B98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MarshalByValueComponent* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::MarshalByValueComponent::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MarshalByValueComponent*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x10F91CC
     static void _cctor();
@@ -94,15 +101,6 @@ namespace System::ComponentModel {
     // public System.Object GetService(System.Type service)
     // Offset: 0x10F8FC4
     ::Il2CppObject* GetService(::System::Type* service);
-    // public System.Void .ctor()
-    // Offset: 0x10F8B98
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MarshalByValueComponent* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::MarshalByValueComponent::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MarshalByValueComponent*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x10F8BA0
     // Implemented from: System.Object
@@ -127,6 +125,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::MarshalByValueComponent*), "get_Site", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::ComponentModel::MarshalByValueComponent::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::MarshalByValueComponent::_cctor
 // Il2CppName: .cctor
 template<>
@@ -161,10 +163,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::MarshalByValueComponent*), "GetService", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{service});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::MarshalByValueComponent::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::MarshalByValueComponent::Finalize
 // Il2CppName: Finalize
 template<>

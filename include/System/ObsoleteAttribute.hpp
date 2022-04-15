@@ -46,9 +46,9 @@ namespace System {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String _message
-    [[deprecated]] ::StringW& dyn__message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__message();
     // Get instance field reference: private System.Boolean _error
-    [[deprecated]] bool& dyn__error();
+    [[deprecated("Use field access instead!")]] bool& dyn__error();
     // public System.String get_Message()
     // Offset: 0x14BEFC8
     ::StringW get_Message();

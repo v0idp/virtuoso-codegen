@@ -121,25 +121,25 @@ namespace System::IO {
     // Set static field: static private System.Int32 MemStreamMaxLength
     static void _set_MemStreamMaxLength(int value);
     // Get instance field reference: private System.Byte[] _buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: private System.Int32 _origin
-    [[deprecated]] int& dyn__origin();
+    [[deprecated("Use field access instead!")]] int& dyn__origin();
     // Get instance field reference: private System.Int32 _position
-    [[deprecated]] int& dyn__position();
+    [[deprecated("Use field access instead!")]] int& dyn__position();
     // Get instance field reference: private System.Int32 _length
-    [[deprecated]] int& dyn__length();
+    [[deprecated("Use field access instead!")]] int& dyn__length();
     // Get instance field reference: private System.Int32 _capacity
-    [[deprecated]] int& dyn__capacity();
+    [[deprecated("Use field access instead!")]] int& dyn__capacity();
     // Get instance field reference: private System.Boolean _expandable
-    [[deprecated]] bool& dyn__expandable();
+    [[deprecated("Use field access instead!")]] bool& dyn__expandable();
     // Get instance field reference: private System.Boolean _writable
-    [[deprecated]] bool& dyn__writable();
+    [[deprecated("Use field access instead!")]] bool& dyn__writable();
     // Get instance field reference: private System.Boolean _exposable
-    [[deprecated]] bool& dyn__exposable();
+    [[deprecated("Use field access instead!")]] bool& dyn__exposable();
     // Get instance field reference: private System.Boolean _isOpen
-    [[deprecated]] bool& dyn__isOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__isOpen();
     // Get instance field reference: private System.Threading.Tasks.Task`1<System.Int32> _lastReadTask
-    [[deprecated]] ::System::Threading::Tasks::Task_1<int>*& dyn__lastReadTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task_1<int>*& dyn__lastReadTask();
     // public System.Int32 get_Capacity()
     // Offset: 0xFFEE2C
     int get_Capacity();

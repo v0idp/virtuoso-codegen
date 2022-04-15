@@ -50,6 +50,13 @@ namespace GlobalNamespace {
     // public System.Int32 get_count()
     // Offset: 0x8013B4
     int get_count();
+    // public System.Void .ctor()
+    // Offset: 0x8019B4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRTracker* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRTracker::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRTracker*, creationType>()));
+    }
     // public OVRTracker/Frustum GetFrustum(System.Int32 tracker)
     // Offset: 0x801538
     ::GlobalNamespace::OVRTracker::Frustum GetFrustum(int tracker);
@@ -62,15 +69,6 @@ namespace GlobalNamespace {
     // public System.Boolean GetPresent(System.Int32 tracker)
     // Offset: 0x8013F4
     bool GetPresent(int tracker);
-    // public System.Void .ctor()
-    // Offset: 0x8019B4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRTracker* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRTracker::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRTracker*, creationType>()));
-    }
   }; // OVRTracker
   #pragma pack(pop)
 }
@@ -116,6 +114,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Global
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRTracker*), "get_count", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRTracker::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRTracker::GetFrustum
 // Il2CppName: GetFrustum
 template<>
@@ -152,7 +154,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRTracker*), "GetPresent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tracker});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRTracker::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

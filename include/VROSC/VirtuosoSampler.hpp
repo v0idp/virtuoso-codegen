@@ -87,13 +87,13 @@ namespace VROSC {
     // Set static field: static public System.Action`1<UnityEngine.AudioClip> OnSamplePlayed
     static void _set_OnSamplePlayed(::System::Action_1<::UnityEngine::AudioClip*>* value);
     // Get instance field reference: private UnityEngine.Audio.AudioMixerGroup _audioMixerGroup
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn__audioMixerGroup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerGroup*& dyn__audioMixerGroup();
     // Get instance field reference: private System.Int32 _numberOfSources
-    [[deprecated]] int& dyn__numberOfSources();
+    [[deprecated("Use field access instead!")]] int& dyn__numberOfSources();
     // Get instance field reference: private System.Int32 _sourceIndex
-    [[deprecated]] int& dyn__sourceIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__sourceIndex();
     // Get instance field reference: private UnityEngine.AudioSource[] _audioSources
-    [[deprecated]] ::ArrayW<::UnityEngine::AudioSource*>& dyn__audioSources();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::AudioSource*>& dyn__audioSources();
     // private UnityEngine.AudioClip GetAudioClip(System.Int32 id)
     // Offset: 0x1923CC0
     ::UnityEngine::AudioClip* GetAudioClip(int id);
@@ -101,11 +101,6 @@ namespace VROSC {
     // Offset: 0x1923D30
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VirtuosoSampler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VirtuosoSampler::.ctor");

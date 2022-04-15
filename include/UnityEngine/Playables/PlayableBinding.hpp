@@ -87,13 +87,13 @@ namespace UnityEngine::Playables {
     // Set static field: static public readonly System.Double DefaultDuration
     static void _set_DefaultDuration(double value);
     // Get instance field reference: private System.String m_StreamName
-    [[deprecated]] ::StringW& dyn_m_StreamName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_StreamName();
     // Get instance field reference: private UnityEngine.Object m_SourceObject
-    [[deprecated]] ::UnityEngine::Object*& dyn_m_SourceObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Object*& dyn_m_SourceObject();
     // Get instance field reference: private System.Type m_SourceBindingType
-    [[deprecated]] ::System::Type*& dyn_m_SourceBindingType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_m_SourceBindingType();
     // Get instance field reference: private UnityEngine.Playables.PlayableBinding/UnityEngine.Playables.CreateOutputMethod m_CreateOutputMethod
-    [[deprecated]] ::UnityEngine::Playables::PlayableBinding::CreateOutputMethod*& dyn_m_CreateOutputMethod();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableBinding::CreateOutputMethod*& dyn_m_CreateOutputMethod();
     // public UnityEngine.Object get_sourceObject()
     // Offset: 0xBC28F4
     ::UnityEngine::Object* get_sourceObject();

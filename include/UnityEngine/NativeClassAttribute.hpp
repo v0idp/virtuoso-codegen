@@ -48,9 +48,9 @@ namespace UnityEngine {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String <QualifiedNativeName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$QualifiedNativeName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$QualifiedNativeName$k__BackingField();
     // Get instance field reference: private System.String <Declaration>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Declaration$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Declaration$k__BackingField();
     // private System.Void set_QualifiedNativeName(System.String value)
     // Offset: 0x18FF688
     void set_QualifiedNativeName(::StringW value);

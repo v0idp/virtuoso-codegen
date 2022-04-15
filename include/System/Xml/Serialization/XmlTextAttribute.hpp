@@ -57,28 +57,25 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.String dataType
-    [[deprecated]] ::StringW& dyn_dataType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dataType();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.String get_DataType()
     // Offset: 0x155E874
     ::StringW get_DataType();
     // public System.Type get_Type()
     // Offset: 0x155E8CC
     ::System::Type* get_Type();
-    // System.Void AddKeyHash(System.Text.StringBuilder sb)
-    // Offset: 0x155E8D4
-    void AddKeyHash(::System::Text::StringBuilder* sb);
     // public System.Void .ctor()
     // Offset: 0x155E86C
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTextAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTextAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XmlTextAttribute*, creationType>()));
     }
+    // System.Void AddKeyHash(System.Text.StringBuilder sb)
+    // Offset: 0x155E8D4
+    void AddKeyHash(::System::Text::StringBuilder* sb);
   }; // System.Xml.Serialization.XmlTextAttribute
   #pragma pack(pop)
   static check_size<sizeof(XmlTextAttribute), 24 + sizeof(::System::Type*)> __System_Xml_Serialization_XmlTextAttributeSizeCheck;
@@ -101,6 +98,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlTextAttribute*), "get_Type", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlTextAttribute::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlTextAttribute::AddKeyHash
 // Il2CppName: AddKeyHash
 template<>
@@ -110,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlTextAttribute*), "AddKeyHash", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sb});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlTextAttribute::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

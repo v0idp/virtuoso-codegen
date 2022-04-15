@@ -47,9 +47,9 @@ namespace System::Collections {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Object _key
-    [[deprecated]] ::Il2CppObject*& dyn__key();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__key();
     // Get instance field reference: private System.Object _value
-    [[deprecated]] ::Il2CppObject*& dyn__value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__value();
     // public System.Object get_Key()
     // Offset: 0x129CB98
     ::Il2CppObject* get_Key();

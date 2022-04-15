@@ -112,26 +112,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SpectatorCameraUI _spectatorCameraUI
-    [[deprecated]] ::VROSC::SpectatorCameraUI*& dyn__spectatorCameraUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::SpectatorCameraUI*& dyn__spectatorCameraUI();
     // Get instance field reference: private VROSC.UIHoldButton _resetAllButton
-    [[deprecated]] ::VROSC::UIHoldButton*& dyn__resetAllButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHoldButton*& dyn__resetAllButton();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.UISlideToggle _audioWhenUnfocusedButton
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__audioWhenUnfocusedButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__audioWhenUnfocusedButton();
     // Get instance field reference: private VROSC.UISlideToggle _useClassicControls
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__useClassicControls();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__useClassicControls();
     // Get instance field reference: private VROSC.UIButton _resetMalletsButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__resetMalletsButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__resetMalletsButton();
     // Get instance field reference: private VROSC.UISlideToggle _autoDimLasersToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__autoDimLasersToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__autoDimLasersToggle();
     // Get instance field reference: private System.Boolean _spectatorCameraEnabled
-    [[deprecated]] bool& dyn__spectatorCameraEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__spectatorCameraEnabled();
     // Get instance field reference: private VROSC.PassthroughManager _passthroughManager
-    [[deprecated]] ::VROSC::PassthroughManager*& dyn__passthroughManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::PassthroughManager*& dyn__passthroughManager();
     // public System.Boolean get_IsOpen()
     // Offset: 0xAE4648
     bool get_IsOpen();
+    // public System.Void .ctor()
+    // Offset: 0xAE5404
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PreferencesPanelUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PreferencesPanelUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PreferencesPanelUI*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0xAE466C
     void Awake();
@@ -171,19 +178,6 @@ namespace VROSC {
     // private System.Void TogglePassthrough(VROSC.InputDevice device, System.Boolean active)
     // Offset: 0xAE5334
     void TogglePassthrough(::VROSC::InputDevice* device, bool active);
-    // public System.Void .ctor()
-    // Offset: 0xAE5404
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PreferencesPanelUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PreferencesPanelUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PreferencesPanelUI*, creationType>()));
-    }
   }; // VROSC.PreferencesPanelUI
   #pragma pack(pop)
   static check_size<sizeof(PreferencesPanelUI), 88 + sizeof(::VROSC::PassthroughManager*)> __VROSC_PreferencesPanelUISizeCheck;
@@ -198,6 +192,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PreferencesPanelUI*), "get_IsOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::PreferencesPanelUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PreferencesPanelUI::Awake
 // Il2CppName: Awake
 template<>
@@ -313,7 +311,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PreferencesPanelUI*), "TogglePassthrough", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{device, active});
   }
 };
-// Writing MetadataGetter for method: VROSC::PreferencesPanelUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

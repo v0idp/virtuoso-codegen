@@ -84,7 +84,7 @@ namespace UnityEngine {
     // Set static field: static private System.String cloneDestroyedMessage
     static void _set_cloneDestroyedMessage(::StringW value);
     // Get instance field reference: private System.IntPtr m_CachedPtr
-    [[deprecated]] ::System::IntPtr& dyn_m_CachedPtr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_CachedPtr();
     // public System.String get_name()
     // Offset: 0xBBDEE8
     ::StringW get_name();
@@ -97,6 +97,13 @@ namespace UnityEngine {
     // public System.Void set_hideFlags(UnityEngine.HideFlags value)
     // Offset: 0xBC0E84
     void set_hideFlags(::UnityEngine::HideFlags value);
+    // public System.Void .ctor()
+    // Offset: 0xBBC128
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Object* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Object::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Object*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xBC11FC
     static void _cctor();
@@ -238,15 +245,6 @@ namespace UnityEngine {
     // static private UnityEngine.Object Internal_InstantiateSingle_Injected(UnityEngine.Object data, ref UnityEngine.Vector3 pos, ref UnityEngine.Quaternion rot)
     // Offset: 0xBC1164
     static ::UnityEngine::Object* Internal_InstantiateSingle_Injected(::UnityEngine::Object* data, ByRef<::UnityEngine::Vector3> pos, ByRef<::UnityEngine::Quaternion> rot);
-    // public System.Void .ctor()
-    // Offset: 0xBBC128
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Object* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Object::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Object*, creationType>()));
-    }
     // public override System.Int32 GetHashCode()
     // Offset: 0xBC0194
     // Implemented from: System.Object
@@ -308,6 +306,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Object*), "set_hideFlags", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Object::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Object::_cctor
 // Il2CppName: .cctor
 template<>
@@ -582,10 +584,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Object*), "Internal_InstantiateSingle_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data, pos, rot});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Object::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Object::GetHashCode
 // Il2CppName: GetHashCode
 template<>

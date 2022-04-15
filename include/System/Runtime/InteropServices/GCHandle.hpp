@@ -59,7 +59,7 @@ namespace System::Runtime::InteropServices {
       return handle;
     }
     // Get instance field reference: private System.Int32 handle
-    [[deprecated]] int& dyn_handle();
+    [[deprecated("Use field access instead!")]] int& dyn_handle();
     // public System.Boolean get_IsAllocated()
     // Offset: 0x1454874
     bool get_IsAllocated();

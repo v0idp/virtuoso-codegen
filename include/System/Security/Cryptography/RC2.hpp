@@ -58,7 +58,7 @@ namespace System::Security::Cryptography {
     // Set static field: static private System.Security.Cryptography.KeySizes[] s_legalKeySizes
     static void _set_s_legalKeySizes(::ArrayW<::System::Security::Cryptography::KeySizes*> value);
     // Get instance field reference: protected System.Int32 EffectiveKeySizeValue
-    [[deprecated]] int& dyn_EffectiveKeySizeValue();
+    [[deprecated("Use field access instead!")]] int& dyn_EffectiveKeySizeValue();
     // public System.Int32 get_EffectiveKeySize()
     // Offset: 0x160ACB4
     int get_EffectiveKeySize();

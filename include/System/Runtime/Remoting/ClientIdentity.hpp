@@ -60,7 +60,7 @@ namespace System::Runtime::Remoting {
       return proxyReference;
     }
     // Get instance field reference: private System.WeakReference _proxyReference
-    [[deprecated]] ::System::WeakReference*& dyn__proxyReference();
+    [[deprecated("Use field access instead!")]] ::System::WeakReference*& dyn__proxyReference();
     // public System.MarshalByRefObject get_ClientProxy()
     // Offset: 0xE3884C
     ::System::MarshalByRefObject* get_ClientProxy();

@@ -222,39 +222,39 @@ namespace VROSC {
     // Set static field: static public System.Action`2<System.String,System.Single> OnSaveLoadSessionProgress
     static void _set_OnSaveLoadSessionProgress(::System::Action_2<::StringW, float>* value);
     // Get instance field reference: private System.Int32 _loadSaveStepsFinished
-    [[deprecated]] int& dyn__loadSaveStepsFinished();
+    [[deprecated("Use field access instead!")]] int& dyn__loadSaveStepsFinished();
     // Get instance field reference: private System.Int32 _loadSaveTotalSteps
-    [[deprecated]] int& dyn__loadSaveTotalSteps();
+    [[deprecated("Use field access instead!")]] int& dyn__loadSaveTotalSteps();
     // Get instance field reference: private System.String _loadSaveSessionId
-    [[deprecated]] ::StringW& dyn__loadSaveSessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__loadSaveSessionId();
     // Get instance field reference: private System.Boolean <IsLocalDataLoaded>k__BackingField
-    [[deprecated]] bool& dyn_$IsLocalDataLoaded$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsLocalDataLoaded$k__BackingField();
     // Get instance field reference: private System.Boolean <IsCloudDataLoaded>k__BackingField
-    [[deprecated]] bool& dyn_$IsCloudDataLoaded$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsCloudDataLoaded$k__BackingField();
     // Get instance field reference: private VROSC.SessionsManager <SessionsManager>k__BackingField
-    [[deprecated]] ::VROSC::SessionsManager*& dyn_$SessionsManager$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsManager*& dyn_$SessionsManager$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.InstrumentDataController> _instrumentsDataControllers
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>*& dyn__instrumentsDataControllers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>*& dyn__instrumentsDataControllers();
     // Get instance field reference: private VROSC.UserProfileDataController <UserProfileDataController>k__BackingField
-    [[deprecated]] ::VROSC::UserProfileDataController*& dyn_$UserProfileDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserProfileDataController*& dyn_$UserProfileDataController$k__BackingField();
     // Get instance field reference: private VROSC.UserPreferencesDataController <UserPreferencesDataController>k__BackingField
-    [[deprecated]] ::VROSC::UserPreferencesDataController*& dyn_$UserPreferencesDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserPreferencesDataController*& dyn_$UserPreferencesDataController$k__BackingField();
     // Get instance field reference: private VROSC.UserFavoritesDataController <UserFavoritesDataController>k__BackingField
-    [[deprecated]] ::VROSC::UserFavoritesDataController*& dyn_$UserFavoritesDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserFavoritesDataController*& dyn_$UserFavoritesDataController$k__BackingField();
     // Get instance field reference: private VROSC.UserUpVotesDataController <UserUpVotesDataController>k__BackingField
-    [[deprecated]] ::VROSC::UserUpVotesDataController*& dyn_$UserUpVotesDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserUpVotesDataController*& dyn_$UserUpVotesDataController$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationDataController <LoopStationDataController>k__BackingField
-    [[deprecated]] ::VROSC::LoopStationDataController*& dyn_$LoopStationDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationDataController*& dyn_$LoopStationDataController$k__BackingField();
     // Get instance field reference: private VROSC.TapeRecorderDataController <TapeRecorderDataController>k__BackingField
-    [[deprecated]] ::VROSC::TapeRecorderDataController*& dyn_$TapeRecorderDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::TapeRecorderDataController*& dyn_$TapeRecorderDataController$k__BackingField();
     // Get instance field reference: private VROSC.SessionSettingsDataController <SessionSettingsDataController>k__BackingField
-    [[deprecated]] ::VROSC::SessionSettingsDataController*& dyn_$SessionSettingsDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionSettingsDataController*& dyn_$SessionSettingsDataController$k__BackingField();
     // Get instance field reference: private VROSC.SynthsDataController <SynthsDataController>k__BackingField
-    [[deprecated]] ::VROSC::SynthsDataController*& dyn_$SynthsDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthsDataController*& dyn_$SynthsDataController$k__BackingField();
     // Get instance field reference: private VROSC.ModularDrumsDataController <ModularDrumsDataController>k__BackingField
-    [[deprecated]] ::VROSC::ModularDrumsDataController*& dyn_$ModularDrumsDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::ModularDrumsDataController*& dyn_$ModularDrumsDataController$k__BackingField();
     // Get instance field reference: private VROSC.MicrophoneDataController <MicrophoneDataController>k__BackingField
-    [[deprecated]] ::VROSC::MicrophoneDataController*& dyn_$MicrophoneDataController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::MicrophoneDataController*& dyn_$MicrophoneDataController$k__BackingField();
     // public System.Boolean get_IsLocalDataLoaded()
     // Offset: 0x1919CEC
     bool get_IsLocalDataLoaded();
@@ -333,6 +333,13 @@ namespace VROSC {
     // private System.Void set_MicrophoneDataController(VROSC.MicrophoneDataController value)
     // Offset: 0x1919DBC
     void set_MicrophoneDataController(::VROSC::MicrophoneDataController* value);
+    // public System.Void .ctor()
+    // Offset: 0x1919E28
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UserDataControllers* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserDataControllers::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UserDataControllers*, creationType>()));
+    }
     // public VROSC.InstrumentDataController GetInstrumentDataController(VROSC.WidgetSettings/VROSC.Identifier id)
     // Offset: 0x1919DC4
     ::VROSC::InstrumentDataController* GetInstrumentDataController(::VROSC::WidgetSettings::Identifier id);
@@ -372,15 +379,6 @@ namespace VROSC {
     // private System.Void <LoadCloudData>b__65_4()
     // Offset: 0x191B270
     void $LoadCloudData$b__65_4();
-    // public System.Void .ctor()
-    // Offset: 0x1919E28
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UserDataControllers* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserDataControllers::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UserDataControllers*, creationType>()));
-    }
   }; // VROSC.UserDataControllers
   #pragma pack(pop)
   static check_size<sizeof(UserDataControllers), 128 + sizeof(::VROSC::MicrophoneDataController*)> __VROSC_UserDataControllersSizeCheck;
@@ -608,6 +606,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserDataControllers*), "set_MicrophoneDataController", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::UserDataControllers::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UserDataControllers::GetInstrumentDataController
 // Il2CppName: GetInstrumentDataController
 template<>
@@ -725,7 +727,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserDataControllers*), "<LoadCloudData>b__65_4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UserDataControllers::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

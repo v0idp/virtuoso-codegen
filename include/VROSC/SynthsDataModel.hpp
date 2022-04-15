@@ -56,7 +56,7 @@ namespace VROSC {
       return Synths;
     }
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.SynthData> Synths
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::SynthData*>*& dyn_Synths();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::SynthData*>*& dyn_Synths();
     // public override System.String get_Key()
     // Offset: 0x193A0E0
     // Implemented from: VROSC.BaseDataModel
@@ -71,7 +71,6 @@ namespace VROSC {
     // Offset: 0x19354C0
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthsDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthsDataModel::.ctor");

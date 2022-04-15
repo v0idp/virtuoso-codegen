@@ -87,21 +87,21 @@ namespace UnityEngine::UI {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: protected System.Single m_Spacing
-    [[deprecated]] float& dyn_m_Spacing();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Spacing();
     // Get instance field reference: protected System.Boolean m_ChildForceExpandWidth
-    [[deprecated]] bool& dyn_m_ChildForceExpandWidth();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ChildForceExpandWidth();
     // Get instance field reference: protected System.Boolean m_ChildForceExpandHeight
-    [[deprecated]] bool& dyn_m_ChildForceExpandHeight();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ChildForceExpandHeight();
     // Get instance field reference: protected System.Boolean m_ChildControlWidth
-    [[deprecated]] bool& dyn_m_ChildControlWidth();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ChildControlWidth();
     // Get instance field reference: protected System.Boolean m_ChildControlHeight
-    [[deprecated]] bool& dyn_m_ChildControlHeight();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ChildControlHeight();
     // Get instance field reference: protected System.Boolean m_ChildScaleWidth
-    [[deprecated]] bool& dyn_m_ChildScaleWidth();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ChildScaleWidth();
     // Get instance field reference: protected System.Boolean m_ChildScaleHeight
-    [[deprecated]] bool& dyn_m_ChildScaleHeight();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ChildScaleHeight();
     // Get instance field reference: protected System.Boolean m_ReverseArrangement
-    [[deprecated]] bool& dyn_m_ReverseArrangement();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ReverseArrangement();
     // public System.Single get_spacing()
     // Offset: 0xEC13CC
     float get_spacing();
@@ -164,11 +164,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.LayoutGroup
     // Base method: System.Void LayoutGroup::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HorizontalOrVerticalLayoutGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::HorizontalOrVerticalLayoutGroup::.ctor");

@@ -57,11 +57,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.Int32 m_numBytes
-    [[deprecated]] int& dyn_m_numBytes();
+    [[deprecated("Use field access instead!")]] int& dyn_m_numBytes();
     // Get instance field reference: private System.IntPtr m_ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_ptr();
     // public System.Void .ctor(System.Int32 numBytes)
     // Offset: 0xE24B00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

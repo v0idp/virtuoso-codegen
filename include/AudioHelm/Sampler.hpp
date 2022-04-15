@@ -109,7 +109,7 @@ namespace AudioHelm {
       // Set static field: static public AudioHelm.Sampler/AudioHelm.KeyzonePlayMode kRandom
       static void _set_kRandom(::AudioHelm::Sampler::KeyzonePlayMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // AudioHelm.Sampler/AudioHelm.KeyzonePlayMode
     #pragma pack(pop)
     static check_size<sizeof(Sampler::KeyzonePlayMode), 0 + sizeof(int)> __AudioHelm_Sampler_KeyzonePlayModeSizeCheck;
@@ -178,25 +178,32 @@ namespace AudioHelm {
     // Set static field: static private System.Double endEarlyTime
     static void _set_endEarlyTime(double value);
     // Get instance field reference: public System.Collections.Generic.List`1<AudioHelm.Keyzone> keyzones
-    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Keyzone*>*& dyn_keyzones();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AudioHelm::Keyzone*>*& dyn_keyzones();
     // Get instance field reference: public AudioHelm.Sampler/AudioHelm.KeyzonePlayMode keyzonePlayMode
-    [[deprecated]] ::AudioHelm::Sampler::KeyzonePlayMode& dyn_keyzonePlayMode();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sampler::KeyzonePlayMode& dyn_keyzonePlayMode();
     // Get instance field reference: public System.Single velocityTracking
-    [[deprecated]] float& dyn_velocityTracking();
+    [[deprecated("Use field access instead!")]] float& dyn_velocityTracking();
     // Get instance field reference: public System.Int32 numVoices
-    [[deprecated]] int& dyn_numVoices();
+    [[deprecated("Use field access instead!")]] int& dyn_numVoices();
     // Get instance field reference: private System.Boolean useNoteOff_
-    [[deprecated]] bool& dyn_useNoteOff_();
+    [[deprecated("Use field access instead!")]] bool& dyn_useNoteOff_();
     // Get instance field reference: private System.Int32 audioIndex
-    [[deprecated]] int& dyn_audioIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_audioIndex();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<AudioHelm.Sampler/AudioHelm.ActiveNote> activeNotes
-    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Sampler::ActiveNote*>*& dyn_activeNotes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AudioHelm::Sampler::ActiveNote*>*& dyn_activeNotes();
     // public System.Boolean get_useNoteOff()
     // Offset: 0xDDCBB0
     bool get_useNoteOff();
     // public System.Void set_useNoteOff(System.Boolean value)
     // Offset: 0xDDCBB8
     void set_useNoteOff(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xDDDCC0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Sampler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sampler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Sampler*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xDDCBCC
     void Awake();
@@ -257,19 +264,6 @@ namespace AudioHelm {
     // private System.Void DoNoteOff(System.Int32 note)
     // Offset: 0xDDDB48
     void DoNoteOff(int note);
-    // public System.Void .ctor()
-    // Offset: 0xDDDCC0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Sampler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sampler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Sampler*, creationType>()));
-    }
   }; // AudioHelm.Sampler
   #pragma pack(pop)
   static check_size<sizeof(Sampler), 56 + sizeof(::System::Collections::Generic::List_1<::AudioHelm::Sampler::ActiveNote*>*)> __AudioHelm_SamplerSizeCheck;
@@ -295,6 +289,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Sampler*), "set_useNoteOff", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: AudioHelm::Sampler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::Sampler::Awake
 // Il2CppName: Awake
 template<>
@@ -480,7 +478,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Sampler*), "DoNoteOff", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{note});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::Sampler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

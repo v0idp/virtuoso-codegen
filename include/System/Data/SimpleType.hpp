@@ -160,33 +160,33 @@ namespace System::Data {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: private System.String _baseType
-    [[deprecated]] ::StringW& dyn__baseType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__baseType();
     // Get instance field reference: private System.Data.SimpleType _baseSimpleType
-    [[deprecated]] ::System::Data::SimpleType*& dyn__baseSimpleType();
+    [[deprecated("Use field access instead!")]] ::System::Data::SimpleType*& dyn__baseSimpleType();
     // Get instance field reference: private System.Xml.XmlQualifiedName _xmlBaseType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn__xmlBaseType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn__xmlBaseType();
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: private System.Int32 _length
-    [[deprecated]] int& dyn__length();
+    [[deprecated("Use field access instead!")]] int& dyn__length();
     // Get instance field reference: private System.Int32 _minLength
-    [[deprecated]] int& dyn__minLength();
+    [[deprecated("Use field access instead!")]] int& dyn__minLength();
     // Get instance field reference: private System.Int32 _maxLength
-    [[deprecated]] int& dyn__maxLength();
+    [[deprecated("Use field access instead!")]] int& dyn__maxLength();
     // Get instance field reference: private System.String _pattern
-    [[deprecated]] ::StringW& dyn__pattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__pattern();
     // Get instance field reference: private System.String _ns
-    [[deprecated]] ::StringW& dyn__ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__ns();
     // Get instance field reference: private System.String _maxExclusive
-    [[deprecated]] ::StringW& dyn__maxExclusive();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__maxExclusive();
     // Get instance field reference: private System.String _maxInclusive
-    [[deprecated]] ::StringW& dyn__maxInclusive();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__maxInclusive();
     // Get instance field reference: private System.String _minExclusive
-    [[deprecated]] ::StringW& dyn__minExclusive();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__minExclusive();
     // Get instance field reference: private System.String _minInclusive
-    [[deprecated]] ::StringW& dyn__minInclusive();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__minInclusive();
     // Get instance field reference: System.String _enumeration
-    [[deprecated]] ::StringW& dyn__enumeration();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__enumeration();
     // System.String get_BaseType()
     // Offset: 0x121CFBC
     ::StringW get_BaseType();

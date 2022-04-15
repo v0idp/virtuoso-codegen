@@ -131,36 +131,43 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNote _note
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__note();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__note();
     // Get instance field reference: private VROSC.NoteBoardNote _xUp
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__xUp();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__xUp();
     // Get instance field reference: private VROSC.NoteBoardNote _xDown
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__xDown();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__xDown();
     // Get instance field reference: private VROSC.NoteBoardNote _yUp
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__yUp();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__yUp();
     // Get instance field reference: private VROSC.NoteBoardNote _yDown
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__yDown();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__yDown();
     // Get instance field reference: private VROSC.NoteBoardNote _zUp
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__zUp();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__zUp();
     // Get instance field reference: private VROSC.NoteBoardNote _zDown
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__zDown();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__zDown();
     // Get instance field reference: private System.Int32 _x
-    [[deprecated]] int& dyn__x();
+    [[deprecated("Use field access instead!")]] int& dyn__x();
     // Get instance field reference: private System.Int32 _y
-    [[deprecated]] int& dyn__y();
+    [[deprecated("Use field access instead!")]] int& dyn__y();
     // Get instance field reference: private System.Int32 _z
-    [[deprecated]] int& dyn__z();
+    [[deprecated("Use field access instead!")]] int& dyn__z();
     // Get instance field reference: private System.Int32 _3d
-    [[deprecated]] int& dyn__3d();
+    [[deprecated("Use field access instead!")]] int& dyn__3d();
     // Get instance field reference: private UnityEngine.Vector3 _playingPower
-    [[deprecated]] ::UnityEngine::Vector3& dyn__playingPower();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__playingPower();
     // Get instance field reference: private System.Boolean _playing
-    [[deprecated]] bool& dyn__playing();
+    [[deprecated("Use field access instead!")]] bool& dyn__playing();
     // Get instance field reference: private System.Single _height
-    [[deprecated]] float& dyn__height();
+    [[deprecated("Use field access instead!")]] float& dyn__height();
     // public VROSC.NoteBoardNote get_Note()
     // Offset: 0xA28E24
     ::VROSC::NoteBoardNote* get_Note();
+    // public System.Void .ctor()
+    // Offset: 0xA29B1C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TouchableObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TouchableObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TouchableObject*, creationType>()));
+    }
     // public System.Void Setup(VROSC.NoteFieldParameters parameters, VROSC.NoteFieldData noteFieldData, UnityEngine.Vector3 fieldSize)
     // Offset: 0xA28E2C
     void Setup(::VROSC::NoteFieldParameters* parameters, ::VROSC::NoteFieldData* noteFieldData, ::UnityEngine::Vector3 fieldSize);
@@ -185,19 +192,6 @@ namespace VROSC {
     // private System.Void OnDrawGizmosSelected()
     // Offset: 0xA29730
     void OnDrawGizmosSelected();
-    // public System.Void .ctor()
-    // Offset: 0xA29B1C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TouchableObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TouchableObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TouchableObject*, creationType>()));
-    }
   }; // VROSC.TouchableObject
   #pragma pack(pop)
   static check_size<sizeof(TouchableObject), 112 + sizeof(float)> __VROSC_TouchableObjectSizeCheck;
@@ -212,6 +206,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::No
     return ::il2cpp_utils::FindMethod(classof(VROSC::TouchableObject*), "get_Note", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::TouchableObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TouchableObject::Setup
 // Il2CppName: Setup
 template<>
@@ -284,7 +282,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TouchableObject*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::TouchableObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

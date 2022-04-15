@@ -106,13 +106,13 @@ namespace System {
     // Set static field: static private System.Int32 ZERO_CHAR_VALUE
     static void _set_ZERO_CHAR_VALUE(int value);
     // Get instance field reference: private System.Int32 _Major
-    [[deprecated]] int& dyn__Major();
+    [[deprecated("Use field access instead!")]] int& dyn__Major();
     // Get instance field reference: private System.Int32 _Minor
-    [[deprecated]] int& dyn__Minor();
+    [[deprecated("Use field access instead!")]] int& dyn__Minor();
     // Get instance field reference: private System.Int32 _Build
-    [[deprecated]] int& dyn__Build();
+    [[deprecated("Use field access instead!")]] int& dyn__Build();
     // Get instance field reference: private System.Int32 _Revision
-    [[deprecated]] int& dyn__Revision();
+    [[deprecated("Use field access instead!")]] int& dyn__Revision();
     // public System.Int32 get_Major()
     // Offset: 0x120E1CC
     int get_Major();

@@ -30,7 +30,6 @@ namespace System::Xml::Schema {
     // Offset: 0xC1B52C
     // Implemented from: System.Xml.XmlNamespaceManager
     // Base method: System.Void XmlNamespaceManager::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DtdValidator::NamespaceManager* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::DtdValidator::NamespaceManager::.ctor");

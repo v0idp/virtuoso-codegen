@@ -57,7 +57,7 @@ namespace System::Linq::Expressions {
       return method;
     }
     // Get instance field reference: private readonly System.Reflection.MethodInfo _method
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn__method();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn__method();
     // System.Void .ctor(System.Linq.Expressions.ExpressionType nodeType, System.Linq.Expressions.Expression left, System.Linq.Expressions.Expression right, System.Type type, System.Reflection.MethodInfo method)
     // Offset: 0xE911CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

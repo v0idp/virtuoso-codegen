@@ -79,9 +79,9 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Func`2<System.String,System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::StringW, bool>* value);
     // Get instance field reference: private readonly System.String[] _segments
-    [[deprecated]] ::ArrayW<::StringW>& dyn__segments();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__segments();
     // Get instance field reference: private System.String _encodedPath
-    [[deprecated]] ::StringW& dyn__encodedPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__encodedPath();
     // System.String get_EncodedPath()
     // Offset: 0xD55DDC
     ::StringW get_EncodedPath();

@@ -67,15 +67,15 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.String s
-    [[deprecated]] ::StringW& dyn_s();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_s();
     // Get instance field reference: System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // Get instance field reference: System.DTSubStringType type
-    [[deprecated]] ::System::DTSubStringType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::DTSubStringType& dyn_type();
     // Get instance field reference: System.Int32 value
-    [[deprecated]] int& dyn_value();
+    [[deprecated("Use field access instead!")]] int& dyn_value();
     // System.Char get_Item(System.Int32 relativeIndex)
     // Offset: 0xFC94C8
     ::Il2CppChar get_Item(int relativeIndex);

@@ -102,21 +102,21 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::Xml::Schema::IXmlSchemaInfo*>(this);
     }
     // Get instance field reference: private System.Boolean isDefault
-    [[deprecated]] bool& dyn_isDefault();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDefault();
     // Get instance field reference: private System.Boolean isNil
-    [[deprecated]] bool& dyn_isNil();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNil();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaElement schemaElement
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaElement*& dyn_schemaElement();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaElement*& dyn_schemaElement();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAttribute schemaAttribute
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAttribute*& dyn_schemaAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAttribute*& dyn_schemaAttribute();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaType schemaType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaType*& dyn_schemaType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaType*& dyn_schemaType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType memberType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_memberType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_memberType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaValidity validity
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaValidity& dyn_validity();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaValidity& dyn_validity();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaContentType contentType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaContentType& dyn_contentType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaContentType& dyn_contentType();
     // public System.Xml.Schema.XmlSchemaValidity get_Validity()
     // Offset: 0x111911C
     ::System::Xml::Schema::XmlSchemaValidity get_Validity();
@@ -171,6 +171,13 @@ namespace System::Xml::Schema {
     // System.Boolean get_IsUnionType()
     // Offset: 0x111920C
     bool get_IsUnionType();
+    // public System.Void .ctor()
+    // Offset: 0x1119090
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSchemaInfo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaInfo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaInfo*, creationType>()));
+    }
     // System.Void .ctor(System.Xml.Schema.XmlSchemaValidity validity)
     // Offset: 0x11190E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -181,15 +188,6 @@ namespace System::Xml::Schema {
     // System.Void Clear()
     // Offset: 0x11190C8
     void Clear();
-    // public System.Void .ctor()
-    // Offset: 0x1119090
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSchemaInfo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaInfo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaInfo*, creationType>()));
-    }
   }; // System.Xml.Schema.XmlSchemaInfo
   #pragma pack(pop)
   static check_size<sizeof(XmlSchemaInfo), 60 + sizeof(::System::Xml::Schema::XmlSchemaContentType)> __System_Xml_Schema_XmlSchemaInfoSizeCheck;
@@ -351,6 +349,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaInfo::Clear
 // Il2CppName: Clear
 template<>
@@ -359,7 +361,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaInfo*), "Clear", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

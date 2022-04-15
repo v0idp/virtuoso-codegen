@@ -50,9 +50,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::Collections::ICollection*) == 0x8);
     public:
     // Get instance field reference: private System.ComponentModel.Design.ITypeDescriptorFilterService _filterService
-    [[deprecated]] ::System::ComponentModel::Design::ITypeDescriptorFilterService*& dyn__filterService();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::Design::ITypeDescriptorFilterService*& dyn__filterService();
     // Get instance field reference: System.Collections.ICollection FilteredMembers
-    [[deprecated]] ::System::Collections::ICollection*& dyn_FilteredMembers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ICollection*& dyn_FilteredMembers();
     // System.Void .ctor(System.ComponentModel.Design.ITypeDescriptorFilterService filterService, System.Collections.ICollection filteredMembers)
     // Offset: 0xA02720
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

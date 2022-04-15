@@ -68,13 +68,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Collections::ArrayList*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 currentDepth
-    [[deprecated]] int& dyn_currentDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_currentDepth();
     // Get instance field reference: private System.Boolean isActive
-    [[deprecated]] bool& dyn_isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_isActive();
     // Get instance field reference: private System.Xml.Schema.Asttree axisTree
-    [[deprecated]] ::System::Xml::Schema::Asttree*& dyn_axisTree();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::Asttree*& dyn_axisTree();
     // Get instance field reference: private System.Collections.ArrayList axisStack
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_axisStack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_axisStack();
     // public System.Int32 get_CurrentDepth()
     // Offset: 0xB598C4
     int get_CurrentDepth();

@@ -56,9 +56,9 @@ namespace TMPro {
     // Set static field: static TMPro.Extents uninitialized
     static void _set_uninitialized(::TMPro::Extents value);
     // Get instance field reference: public UnityEngine.Vector2 min
-    [[deprecated]] ::UnityEngine::Vector2& dyn_min();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_min();
     // Get instance field reference: public UnityEngine.Vector2 max
-    [[deprecated]] ::UnityEngine::Vector2& dyn_max();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_max();
     // public System.Void .ctor(UnityEngine.Vector2 min, UnityEngine.Vector2 max)
     // Offset: 0xC28F04
     // ABORTED: conflicts with another method.  Extents(::UnityEngine::Vector2 min, ::UnityEngine::Vector2 max);

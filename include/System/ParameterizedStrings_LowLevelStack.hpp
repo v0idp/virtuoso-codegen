@@ -39,9 +39,9 @@ namespace System {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.ParameterizedStrings/System.FormatParam[] _arr
-    [[deprecated]] ::ArrayW<::System::ParameterizedStrings::FormatParam>& dyn__arr();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::ParameterizedStrings::FormatParam>& dyn__arr();
     // Get instance field reference: private System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // public System.ParameterizedStrings/System.FormatParam Pop()
     // Offset: 0xE578E4
     ::System::ParameterizedStrings::FormatParam Pop();

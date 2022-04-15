@@ -184,39 +184,39 @@ namespace UnityEngine {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private UnityEngine.Vector3 m_Position
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
       // Get instance field reference: private UnityEngine.Vector3 m_Velocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_Velocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Velocity();
       // Get instance field reference: private UnityEngine.Vector3 m_AnimatedVelocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_AnimatedVelocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AnimatedVelocity();
       // Get instance field reference: private UnityEngine.Vector3 m_InitialVelocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_InitialVelocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_InitialVelocity();
       // Get instance field reference: private UnityEngine.Vector3 m_AxisOfRotation
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_AxisOfRotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AxisOfRotation();
       // Get instance field reference: private UnityEngine.Vector3 m_Rotation
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_Rotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Rotation();
       // Get instance field reference: private UnityEngine.Vector3 m_AngularVelocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_AngularVelocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AngularVelocity();
       // Get instance field reference: private UnityEngine.Vector3 m_StartSize
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_StartSize();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_StartSize();
       // Get instance field reference: private UnityEngine.Color32 m_StartColor
-      [[deprecated]] ::UnityEngine::Color32& dyn_m_StartColor();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_m_StartColor();
       // Get instance field reference: private System.UInt32 m_RandomSeed
-      [[deprecated]] uint& dyn_m_RandomSeed();
+      [[deprecated("Use field access instead!")]] uint& dyn_m_RandomSeed();
       // Get instance field reference: private System.UInt32 m_ParentRandomSeed
-      [[deprecated]] uint& dyn_m_ParentRandomSeed();
+      [[deprecated("Use field access instead!")]] uint& dyn_m_ParentRandomSeed();
       // Get instance field reference: private System.Single m_Lifetime
-      [[deprecated]] float& dyn_m_Lifetime();
+      [[deprecated("Use field access instead!")]] float& dyn_m_Lifetime();
       // Get instance field reference: private System.Single m_StartLifetime
-      [[deprecated]] float& dyn_m_StartLifetime();
+      [[deprecated("Use field access instead!")]] float& dyn_m_StartLifetime();
       // Get instance field reference: private System.Int32 m_MeshIndex
-      [[deprecated]] int& dyn_m_MeshIndex();
+      [[deprecated("Use field access instead!")]] int& dyn_m_MeshIndex();
       // Get instance field reference: private System.Single m_EmitAccumulator0
-      [[deprecated]] float& dyn_m_EmitAccumulator0();
+      [[deprecated("Use field access instead!")]] float& dyn_m_EmitAccumulator0();
       // Get instance field reference: private System.Single m_EmitAccumulator1
-      [[deprecated]] float& dyn_m_EmitAccumulator1();
+      [[deprecated("Use field access instead!")]] float& dyn_m_EmitAccumulator1();
       // Get instance field reference: private System.UInt32 m_Flags
-      [[deprecated]] uint& dyn_m_Flags();
+      [[deprecated("Use field access instead!")]] uint& dyn_m_Flags();
       // public System.Void set_lifetime(System.Single value)
       // Offset: 0x190010C
       void set_lifetime(float value);
@@ -278,6 +278,13 @@ namespace UnityEngine {
     // public UnityEngine.ParticleSystem/UnityEngine.TrailModule get_trails()
     // Offset: 0x1900664
     ::UnityEngine::ParticleSystem::TrailModule get_trails();
+    // public System.Void .ctor()
+    // Offset: 0x1900670
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ParticleSystem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ParticleSystem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ParticleSystem*, creationType>()));
+    }
     // public System.Void Emit(UnityEngine.Vector3 position, UnityEngine.Vector3 velocity, System.Single size, System.Single lifetime, UnityEngine.Color32 color)
     // Offset: 0x18FFFDC
     void Emit(::UnityEngine::Vector3 position, ::UnityEngine::Vector3 velocity, float size, float lifetime, ::UnityEngine::Color32 color);
@@ -311,17 +318,6 @@ namespace UnityEngine {
     // private System.Void Emit_Injected(ref UnityEngine.ParticleSystem/UnityEngine.EmitParams emitParams, System.Int32 count)
     // Offset: 0x19005DC
     void Emit_Injected(ByRef<::UnityEngine::ParticleSystem::EmitParams> emitParams, int count);
-    // public System.Void .ctor()
-    // Offset: 0x1900670
-    // Implemented from: UnityEngine.Component
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ParticleSystem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ParticleSystem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ParticleSystem*, creationType>()));
-    }
   }; // UnityEngine.ParticleSystem
   #pragma pack(pop)
 }
@@ -402,6 +398,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::ParticleSystem*), "get_trails", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::ParticleSystem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::ParticleSystem::Emit
 // Il2CppName: Emit
 template<>
@@ -514,7 +514,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::ParticleSystem*), "Emit_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{emitParams, count});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::ParticleSystem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

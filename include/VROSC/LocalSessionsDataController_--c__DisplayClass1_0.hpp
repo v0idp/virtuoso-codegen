@@ -64,13 +64,20 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.LocalSessionsDataController <>4__this
-    [[deprecated]] ::VROSC::LocalSessionsDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::LocalSessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.Action`1<System.String> <>9__2
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_$$9__2();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_$$9__2();
+    // public System.Void .ctor()
+    // Offset: 0x195C9C8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LocalSessionsDataController::$$c__DisplayClass1_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LocalSessionsDataController::$$c__DisplayClass1_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LocalSessionsDataController::$$c__DisplayClass1_0*, creationType>()));
+    }
     // System.Void <LoadLocalData>b__0(System.String data)
     // Offset: 0x195C9D0
     void $LoadLocalData$b__0(::StringW data);
@@ -80,21 +87,16 @@ namespace VROSC {
     // System.Void <LoadLocalData>b__2(System.String data)
     // Offset: 0x195CD94
     void $LoadLocalData$b__2(::StringW data);
-    // public System.Void .ctor()
-    // Offset: 0x195C9C8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LocalSessionsDataController::$$c__DisplayClass1_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LocalSessionsDataController::$$c__DisplayClass1_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LocalSessionsDataController::$$c__DisplayClass1_0*, creationType>()));
-    }
   }; // VROSC.LocalSessionsDataController/VROSC.<>c__DisplayClass1_0
   #pragma pack(pop)
   static check_size<sizeof(LocalSessionsDataController::$$c__DisplayClass1_0), 40 + sizeof(::System::Action_1<::StringW>*)> __VROSC_LocalSessionsDataController_$$c__DisplayClass1_0SizeCheck;
   static_assert(sizeof(LocalSessionsDataController::$$c__DisplayClass1_0) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LocalSessionsDataController::$$c__DisplayClass1_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LocalSessionsDataController::$$c__DisplayClass1_0::$LoadLocalData$b__0
 // Il2CppName: <LoadLocalData>b__0
 template<>
@@ -122,7 +124,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LocalSessionsDataController::$$c__DisplayClass1_0*), "<LoadLocalData>b__2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data});
   }
 };
-// Writing MetadataGetter for method: VROSC::LocalSessionsDataController::$$c__DisplayClass1_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

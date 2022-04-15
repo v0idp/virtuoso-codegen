@@ -48,9 +48,9 @@ namespace UnityEngine {
     static_assert(sizeof(::UnityEngine::CullingGroup::StateChanged*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private UnityEngine.CullingGroup/UnityEngine.StateChanged m_OnStateChanged
-    [[deprecated]] ::UnityEngine::CullingGroup::StateChanged*& dyn_m_OnStateChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CullingGroup::StateChanged*& dyn_m_OnStateChanged();
     // static private System.Void SendEvents(UnityEngine.CullingGroup cullingGroup, System.IntPtr eventsPtr, System.Int32 count)
     // Offset: 0x112489C
     static void SendEvents(::UnityEngine::CullingGroup* cullingGroup, ::System::IntPtr eventsPtr, int count);

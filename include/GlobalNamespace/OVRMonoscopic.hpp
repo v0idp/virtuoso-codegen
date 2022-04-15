@@ -47,31 +47,29 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRInput/RawButton toggleButton
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_toggleButton();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_toggleButton();
     // Get instance field reference: private System.Boolean monoscopic
-    [[deprecated]] bool& dyn_monoscopic();
-    // private System.Void Update()
-    // Offset: 0xE249DC
-    void Update();
+    [[deprecated("Use field access instead!")]] bool& dyn_monoscopic();
     // public System.Void .ctor()
     // Offset: 0xE24AF0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRMonoscopic* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMonoscopic::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRMonoscopic*, creationType>()));
     }
+    // private System.Void Update()
+    // Offset: 0xE249DC
+    void Update();
   }; // OVRMonoscopic
   #pragma pack(pop)
   static check_size<sizeof(OVRMonoscopic), 28 + sizeof(bool)> __GlobalNamespace_OVRMonoscopicSizeCheck;
   static_assert(sizeof(OVRMonoscopic) == 0x1D);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRMonoscopic::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRMonoscopic::Update
 // Il2CppName: Update
 template<>
@@ -80,7 +78,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRMonoscopic*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRMonoscopic::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

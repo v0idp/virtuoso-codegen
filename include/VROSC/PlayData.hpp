@@ -47,9 +47,9 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly UnityEngine.Vector3 <Power>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$Power$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$Power$k__BackingField();
     // Get instance field reference: private readonly System.Single <Velocity>k__BackingField
-    [[deprecated]] float& dyn_$Velocity$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Velocity$k__BackingField();
     // public UnityEngine.Vector3 get_Power()
     // Offset: 0xAE0918
     ::UnityEngine::Vector3 get_Power();

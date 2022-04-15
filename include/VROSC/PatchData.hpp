@@ -47,9 +47,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String _displayName
-    [[deprecated]] ::StringW& dyn__displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__displayName();
     // Get instance field reference: private System.Int32 _helmChannel
-    [[deprecated]] int& dyn__helmChannel();
+    [[deprecated("Use field access instead!")]] int& dyn__helmChannel();
     // public System.String get_DisplayName()
     // Offset: 0xADD494
     ::StringW get_DisplayName();
@@ -58,10 +58,6 @@ namespace VROSC {
     int get_HelmChannel();
     // public System.Void .ctor()
     // Offset: 0xADD4A4
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PatchData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PatchData::.ctor");

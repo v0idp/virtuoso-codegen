@@ -65,15 +65,15 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 ProviderType
-    [[deprecated]] int& dyn_ProviderType();
+    [[deprecated("Use field access instead!")]] int& dyn_ProviderType();
     // Get instance field reference: public System.String ProviderName
-    [[deprecated]] ::StringW& dyn_ProviderName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ProviderName();
     // Get instance field reference: public System.String KeyContainerName
-    [[deprecated]] ::StringW& dyn_KeyContainerName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_KeyContainerName();
     // Get instance field reference: public System.Int32 KeyNumber
-    [[deprecated]] int& dyn_KeyNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_KeyNumber();
     // Get instance field reference: private System.Int32 m_flags
-    [[deprecated]] int& dyn_m_flags();
+    [[deprecated("Use field access instead!")]] int& dyn_m_flags();
     // public System.Security.Cryptography.CspProviderFlags get_Flags()
     // Offset: 0x13FACD4
     ::System::Security::Cryptography::CspProviderFlags get_Flags();

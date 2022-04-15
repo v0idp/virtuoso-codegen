@@ -99,23 +99,23 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.NoteBoardPlayer[] _notePlayers
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardPlayer*>& dyn__notePlayers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardPlayer*>& dyn__notePlayers();
     // Get instance field reference: private UnityEngine.Color[] _playingColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__playingColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__playingColors();
     // Get instance field reference: private System.Int32 _maxNotes
-    [[deprecated]] int& dyn__maxNotes();
+    [[deprecated("Use field access instead!")]] int& dyn__maxNotes();
     // Get instance field reference: private System.Int32[] <HoveredNotes>k__BackingField
-    [[deprecated]] ::ArrayW<int>& dyn_$HoveredNotes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_$HoveredNotes$k__BackingField();
     // Get instance field reference: private System.Int32[] <PlayingNotes>k__BackingField
-    [[deprecated]] ::ArrayW<int>& dyn_$PlayingNotes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_$PlayingNotes$k__BackingField();
     // Get instance field reference: public System.Action OnPlayingChanged
-    [[deprecated]] ::System::Action*& dyn_OnPlayingChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnPlayingChanged();
     // Get instance field reference: public System.Action OnHoveringChanged
-    [[deprecated]] ::System::Action*& dyn_OnHoveringChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnHoveringChanged();
     // Get instance field reference: private VROSC.InputDevice _inputDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__inputDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__inputDevice();
     // Get instance field reference: private System.Boolean _handIsInsideInstrument
-    [[deprecated]] bool& dyn__handIsInsideInstrument();
+    [[deprecated("Use field access instead!")]] bool& dyn__handIsInsideInstrument();
     // public System.Int32 get_MaxNotes()
     // Offset: 0x1966984
     int get_MaxNotes();
@@ -134,6 +134,13 @@ namespace VROSC {
     // public UnityEngine.Color[] get_PlayingColors()
     // Offset: 0x19669AC
     ::ArrayW<::UnityEngine::Color> get_PlayingColors();
+    // public System.Void .ctor()
+    // Offset: 0x1966BBC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteFieldMonitor::HandData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldMonitor::HandData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteFieldMonitor::HandData*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InputDevice inputDevice)
     // Offset: 0x19669B4
     void Setup(::VROSC::InputDevice* inputDevice);
@@ -143,15 +150,6 @@ namespace VROSC {
     // System.Void CheckNotePlayers()
     // Offset: 0x1966AB4
     void CheckNotePlayers();
-    // public System.Void .ctor()
-    // Offset: 0x1966BBC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteFieldMonitor::HandData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldMonitor::HandData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteFieldMonitor::HandData*, creationType>()));
-    }
   }; // VROSC.NoteFieldMonitor/VROSC.HandData
   #pragma pack(pop)
   static check_size<sizeof(NoteFieldMonitor::HandData), 80 + sizeof(bool)> __VROSC_NoteFieldMonitor_HandDataSizeCheck;
@@ -208,6 +206,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteFieldMonitor::HandData*), "get_PlayingColors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::NoteFieldMonitor::HandData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteFieldMonitor::HandData::Setup
 // Il2CppName: Setup
 template<>
@@ -234,7 +236,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteFieldMonitor::HandData*), "CheckNotePlayers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteFieldMonitor::HandData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

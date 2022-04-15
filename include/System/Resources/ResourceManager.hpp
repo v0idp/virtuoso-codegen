@@ -182,27 +182,27 @@ namespace System::Resources {
     // Set static field: static readonly System.Int32 DEBUG
     static void _set_DEBUG(int value);
     // Get instance field reference: protected System.Collections.Hashtable ResourceSets
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_ResourceSets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_ResourceSets();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceSet> _resourceSets
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceSet*>*& dyn__resourceSets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceSet*>*& dyn__resourceSets();
     // Get instance field reference: protected System.Reflection.Assembly MainAssembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_MainAssembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_MainAssembly();
     // Get instance field reference: private System.Globalization.CultureInfo _neutralResourcesCulture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__neutralResourcesCulture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__neutralResourcesCulture();
     // Get instance field reference: private System.Resources.ResourceManager/System.Resources.CultureNameResourceSetPair _lastUsedResourceCache
-    [[deprecated]] ::System::Resources::ResourceManager::CultureNameResourceSetPair*& dyn__lastUsedResourceCache();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceManager::CultureNameResourceSetPair*& dyn__lastUsedResourceCache();
     // Get instance field reference: private System.Boolean UseManifest
-    [[deprecated]] bool& dyn_UseManifest();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseManifest();
     // Get instance field reference: private System.Boolean UseSatelliteAssem
-    [[deprecated]] bool& dyn_UseSatelliteAssem();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseSatelliteAssem();
     // Get instance field reference: private System.Resources.UltimateResourceFallbackLocation _fallbackLoc
-    [[deprecated]] ::System::Resources::UltimateResourceFallbackLocation& dyn__fallbackLoc();
+    [[deprecated("Use field access instead!")]] ::System::Resources::UltimateResourceFallbackLocation& dyn__fallbackLoc();
     // Get instance field reference: private System.Reflection.Assembly _callingAssembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn__callingAssembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn__callingAssembly();
     // Get instance field reference: private System.Reflection.RuntimeAssembly m_callingAssembly
-    [[deprecated]] ::System::Reflection::RuntimeAssembly*& dyn_m_callingAssembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::RuntimeAssembly*& dyn_m_callingAssembly();
     // Get instance field reference: private System.Resources.IResourceGroveler resourceGroveler
-    [[deprecated]] ::System::Resources::IResourceGroveler*& dyn_resourceGroveler();
+    [[deprecated("Use field access instead!")]] ::System::Resources::IResourceGroveler*& dyn_resourceGroveler();
     // static private System.Void .cctor()
     // Offset: 0xCDB9A8
     static void _cctor();

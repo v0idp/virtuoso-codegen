@@ -58,11 +58,11 @@ namespace System::Data::SqlTypes {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.IO.Stream _stream
-    [[deprecated]] ::System::IO::Stream*& dyn__stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__stream();
     // Get instance field reference: private System.Int64 _lPosition
-    [[deprecated]] int64_t& dyn__lPosition();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__lPosition();
     // Get instance field reference: private System.Boolean _isClosed
-    [[deprecated]] bool& dyn__isClosed();
+    [[deprecated("Use field access instead!")]] bool& dyn__isClosed();
     // System.Void .ctor(System.IO.Stream stream)
     // Offset: 0x13DEACC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

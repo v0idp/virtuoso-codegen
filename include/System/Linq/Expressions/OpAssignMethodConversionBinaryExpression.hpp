@@ -57,7 +57,7 @@ namespace System::Linq::Expressions {
     // Deleting conversion operator: operator ::System::Reflection::MethodInfo*
     constexpr operator ::System::Reflection::MethodInfo*() const noexcept = delete;
     // Get instance field reference: private readonly System.Linq.Expressions.LambdaExpression _conversion
-    [[deprecated]] ::System::Linq::Expressions::LambdaExpression*& dyn__conversion();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::LambdaExpression*& dyn__conversion();
     // System.Void .ctor(System.Linq.Expressions.ExpressionType nodeType, System.Linq.Expressions.Expression left, System.Linq.Expressions.Expression right, System.Type type, System.Reflection.MethodInfo method, System.Linq.Expressions.LambdaExpression conversion)
     // Offset: 0xE96094
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

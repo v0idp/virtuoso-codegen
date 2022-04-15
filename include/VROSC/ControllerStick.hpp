@@ -65,11 +65,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _limits
-    [[deprecated]] float& dyn__limits();
+    [[deprecated("Use field access instead!")]] float& dyn__limits();
     // Get instance field reference: private VROSC.InputDevice _device
-    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private UnityEngine.Quaternion _startRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__startRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__startRotation();
+    // public System.Void .ctor()
+    // Offset: 0x8DE464
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControllerStick* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerStick::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControllerStick*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x8DE13C
     void OnEnable();
@@ -79,25 +86,16 @@ namespace VROSC {
     // private System.Void EvaluateThumbstickInput(VROSC.InputDevice device, UnityEngine.Vector2 vector)
     // Offset: 0x8DE338
     void EvaluateThumbstickInput(::VROSC::InputDevice* device, ::UnityEngine::Vector2 vector);
-    // public System.Void .ctor()
-    // Offset: 0x8DE464
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControllerStick* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerStick::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControllerStick*, creationType>()));
-    }
   }; // VROSC.ControllerStick
   #pragma pack(pop)
   static check_size<sizeof(ControllerStick), 40 + sizeof(::UnityEngine::Quaternion)> __VROSC_ControllerStickSizeCheck;
   static_assert(sizeof(ControllerStick) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ControllerStick::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ControllerStick::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -124,7 +122,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControllerStick*), "EvaluateThumbstickInput", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{device, vector});
   }
 };
-// Writing MetadataGetter for method: VROSC::ControllerStick::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

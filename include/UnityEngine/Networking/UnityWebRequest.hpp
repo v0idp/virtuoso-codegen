@@ -175,21 +175,21 @@ namespace UnityEngine::Networking {
     // Set static field: static public System.String kHttpVerbDELETE
     static void _set_kHttpVerbDELETE(::StringW value);
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: UnityEngine.Networking.DownloadHandler m_DownloadHandler
-    [[deprecated]] ::UnityEngine::Networking::DownloadHandler*& dyn_m_DownloadHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::DownloadHandler*& dyn_m_DownloadHandler();
     // Get instance field reference: UnityEngine.Networking.UploadHandler m_UploadHandler
-    [[deprecated]] ::UnityEngine::Networking::UploadHandler*& dyn_m_UploadHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UploadHandler*& dyn_m_UploadHandler();
     // Get instance field reference: UnityEngine.Networking.CertificateHandler m_CertificateHandler
-    [[deprecated]] ::UnityEngine::Networking::CertificateHandler*& dyn_m_CertificateHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::CertificateHandler*& dyn_m_CertificateHandler();
     // Get instance field reference: System.Uri m_Uri
-    [[deprecated]] ::System::Uri*& dyn_m_Uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_m_Uri();
     // Get instance field reference: private System.Boolean <disposeCertificateHandlerOnDispose>k__BackingField
-    [[deprecated]] bool& dyn_$disposeCertificateHandlerOnDispose$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposeCertificateHandlerOnDispose$k__BackingField();
     // Get instance field reference: private System.Boolean <disposeDownloadHandlerOnDispose>k__BackingField
-    [[deprecated]] bool& dyn_$disposeDownloadHandlerOnDispose$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposeDownloadHandlerOnDispose$k__BackingField();
     // Get instance field reference: private System.Boolean <disposeUploadHandlerOnDispose>k__BackingField
-    [[deprecated]] bool& dyn_$disposeUploadHandlerOnDispose$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposeUploadHandlerOnDispose$k__BackingField();
     // public System.Boolean get_disposeCertificateHandlerOnDispose()
     // Offset: 0x18BBA50
     bool get_disposeCertificateHandlerOnDispose();
@@ -277,6 +277,13 @@ namespace UnityEngine::Networking {
     // public System.Void set_timeout(System.Int32 value)
     // Offset: 0x18BDAB4
     void set_timeout(int value);
+    // public System.Void .ctor()
+    // Offset: 0x18BBBF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UnityWebRequest* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::UnityWebRequest::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UnityWebRequest*, creationType>()));
+    }
     // public System.Void .ctor(System.String url, System.String method)
     // Offset: 0x18BBC54
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -411,15 +418,6 @@ namespace UnityEngine::Networking {
     // static public System.Byte[] SerializeSimpleForm(System.Collections.Generic.Dictionary`2<System.String,System.String> formFields)
     // Offset: 0x18BFCE0
     static ::ArrayW<uint8_t> SerializeSimpleForm(::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* formFields);
-    // public System.Void .ctor()
-    // Offset: 0x18BBBF8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UnityWebRequest* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::UnityWebRequest::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UnityWebRequest*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x18BC1C4
     // Implemented from: System.Object
@@ -675,6 +673,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Networking::UnityWebRequest*), "set_timeout", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Networking::UnityWebRequest::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::UnityWebRequest::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -1033,10 +1035,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Networking::UnityWebRequest*), "SerializeSimpleForm", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{formFields});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Networking::UnityWebRequest::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::UnityWebRequest::Finalize
 // Il2CppName: Finalize
 template<>

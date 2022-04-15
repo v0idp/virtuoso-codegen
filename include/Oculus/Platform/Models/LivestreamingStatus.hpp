@@ -63,15 +63,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.Boolean CommentsVisible
-    [[deprecated]] bool& dyn_CommentsVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn_CommentsVisible();
     // Get instance field reference: public readonly System.Boolean IsPaused
-    [[deprecated]] bool& dyn_IsPaused();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsPaused();
     // Get instance field reference: public readonly System.Boolean LivestreamingEnabled
-    [[deprecated]] bool& dyn_LivestreamingEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_LivestreamingEnabled();
     // Get instance field reference: public readonly System.Int32 LivestreamingType
-    [[deprecated]] int& dyn_LivestreamingType();
+    [[deprecated("Use field access instead!")]] int& dyn_LivestreamingType();
     // Get instance field reference: public readonly System.Boolean MicEnabled
-    [[deprecated]] bool& dyn_MicEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_MicEnabled();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3DAC8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

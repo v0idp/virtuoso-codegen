@@ -77,9 +77,16 @@ namespace Firebase {
     static_assert(sizeof(::System::Collections::Generic::Queue_1<::System::Action*>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 ownerThreadId
-    [[deprecated]] int& dyn_ownerThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_ownerThreadId();
     // Get instance field reference: private System.Collections.Generic.Queue`1<System.Action> queue
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::System::Action*>*& dyn_queue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::System::Action*>*& dyn_queue();
+    // public System.Void .ctor()
+    // Offset: 0x18C7538
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Dispatcher* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Dispatcher::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Dispatcher*, creationType>()));
+    }
     // public TResult Run(System.Func`1<TResult> callback)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class TResult>
@@ -113,21 +120,16 @@ namespace Firebase {
     // public System.Void PollJobs()
     // Offset: 0x18C7610
     void PollJobs();
-    // public System.Void .ctor()
-    // Offset: 0x18C7538
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Dispatcher* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Dispatcher::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Dispatcher*, creationType>()));
-    }
   }; // Firebase.Dispatcher
   #pragma pack(pop)
   static check_size<sizeof(Dispatcher), 24 + sizeof(::System::Collections::Generic::Queue_1<::System::Action*>*)> __Firebase_DispatcherSizeCheck;
   static_assert(sizeof(Dispatcher) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Dispatcher::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Dispatcher::Run
 // Il2CppName: Run
 // Cannot write MetadataGetter for generic methods!
@@ -153,7 +155,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Dispatcher*), "PollJobs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Dispatcher::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

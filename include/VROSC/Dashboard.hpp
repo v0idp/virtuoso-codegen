@@ -96,19 +96,19 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Boolean> DashboardVisibilityChanged
     static void _set_DashboardVisibilityChanged(::System::Action_1<bool>* value);
     // Get instance field reference: protected UnityEngine.GameObject _dashboardObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__dashboardObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__dashboardObject();
     // Get instance field reference: protected System.Boolean _showingDashboard
-    [[deprecated]] bool& dyn__showingDashboard();
+    [[deprecated("Use field access instead!")]] bool& dyn__showingDashboard();
     // Get instance field reference: private System.Boolean <KeepFromClosing>k__BackingField
-    [[deprecated]] bool& dyn_$KeepFromClosing$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$KeepFromClosing$k__BackingField();
     // Get instance field reference: protected System.Boolean _allowOpenWhenPlaying
-    [[deprecated]] bool& dyn__allowOpenWhenPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn__allowOpenWhenPlaying();
     // Get instance field reference: protected System.Boolean _freeFloating
-    [[deprecated]] bool& dyn__freeFloating();
+    [[deprecated("Use field access instead!")]] bool& dyn__freeFloating();
     // Get instance field reference: protected System.Boolean _inHand
-    [[deprecated]] bool& dyn__inHand();
+    [[deprecated("Use field access instead!")]] bool& dyn__inHand();
     // Get instance field reference: protected System.Boolean _disabled
-    [[deprecated]] bool& dyn__disabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__disabled();
     // private System.Boolean get_KeepFromClosing()
     // Offset: 0x8E0634
     bool get_KeepFromClosing();
@@ -118,6 +118,13 @@ namespace VROSC {
     // public System.Boolean get_Disabled()
     // Offset: 0x8E0648
     bool get_Disabled();
+    // protected System.Void .ctor()
+    // Offset: 0x8E0974
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Dashboard* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Dashboard::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Dashboard*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x8E0650
     void Awake();
@@ -154,19 +161,6 @@ namespace VROSC {
     // protected System.Void PlaceDashboard()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void PlaceDashboard();
-    // protected System.Void .ctor()
-    // Offset: 0x8E0974
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Dashboard* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Dashboard::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Dashboard*, creationType>()));
-    }
   }; // VROSC.Dashboard
   #pragma pack(pop)
   static check_size<sizeof(Dashboard), 37 + sizeof(bool)> __VROSC_DashboardSizeCheck;
@@ -198,6 +192,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Dashboard*), "get_Disabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::Dashboard::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Dashboard::Awake
 // Il2CppName: Awake
 template<>
@@ -297,7 +295,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Dashboard*), "PlaceDashboard", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::Dashboard::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

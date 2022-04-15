@@ -88,25 +88,32 @@ namespace OVR {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public OVR.SoundFX[] soundList
-    [[deprecated]] ::ArrayW<::OVR::SoundFX*>& dyn_soundList();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::OVR::SoundFX*>& dyn_soundList();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup mixerGroup
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixerGroup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixerGroup();
     // Get instance field reference: public System.Int32 maxPlayingSounds
-    [[deprecated]] int& dyn_maxPlayingSounds();
+    [[deprecated("Use field access instead!")]] int& dyn_maxPlayingSounds();
     // Get instance field reference: public OVR.PreloadSounds preloadAudio
-    [[deprecated]] ::OVR::PreloadSounds& dyn_preloadAudio();
+    [[deprecated("Use field access instead!")]] ::OVR::PreloadSounds& dyn_preloadAudio();
     // Get instance field reference: public System.Single volumeOverride
-    [[deprecated]] float& dyn_volumeOverride();
+    [[deprecated("Use field access instead!")]] float& dyn_volumeOverride();
     // Get instance field reference: public System.Int32 playingSoundCount
-    [[deprecated]] int& dyn_playingSoundCount();
+    [[deprecated("Use field access instead!")]] int& dyn_playingSoundCount();
     // public System.Void .ctor(System.String name)
     // Offset: 0x18A5914
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SoundGroup* New_ctor(::StringW name) {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundGroup::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SoundGroup*, creationType>(name)));
+    }
+    // public System.Void .ctor()
+    // Offset: 0x18A59B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SoundGroup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundGroup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SoundGroup*, creationType>()));
     }
     // public System.Void IncrementPlayCount()
     // Offset: 0x18A4A68
@@ -117,21 +124,16 @@ namespace OVR {
     // public System.Boolean CanPlaySound()
     // Offset: 0x18A4F94
     bool CanPlaySound();
-    // public System.Void .ctor()
-    // Offset: 0x18A59B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SoundGroup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundGroup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SoundGroup*, creationType>()));
-    }
   }; // OVR.SoundGroup
   #pragma pack(pop)
   static check_size<sizeof(SoundGroup), 52 + sizeof(int)> __OVR_SoundGroupSizeCheck;
   static_assert(sizeof(SoundGroup) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: OVR::SoundGroup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::SoundGroup::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -160,7 +162,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::SoundGroup*), "CanPlaySound", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OVR::SoundGroup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

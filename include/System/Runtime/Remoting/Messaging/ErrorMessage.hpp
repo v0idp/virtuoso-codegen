@@ -64,7 +64,7 @@ namespace System::Runtime::Remoting::Messaging {
       return uri;
     }
     // Get instance field reference: private System.String _uri
-    [[deprecated]] ::StringW& dyn__uri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__uri();
     // public System.Int32 get_ArgCount()
     // Offset: 0x14F7D48
     int get_ArgCount();

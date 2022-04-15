@@ -90,23 +90,23 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.AudioMixManager <>4__this
-    [[deprecated]] ::VROSC::AudioMixManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioMixManager*& dyn_$$4__this();
     // Get instance field reference: public System.String parameterName
-    [[deprecated]] ::StringW& dyn_parameterName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_parameterName();
     // Get instance field reference: public System.Single fadeTime
-    [[deprecated]] float& dyn_fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn_fadeTime();
     // Get instance field reference: public System.Single unfadedVolume
-    [[deprecated]] float& dyn_unfadedVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_unfadedVolume();
     // Get instance field reference: public System.Single targetVolumeFractionDb
-    [[deprecated]] float& dyn_targetVolumeFractionDb();
+    [[deprecated("Use field access instead!")]] float& dyn_targetVolumeFractionDb();
     // Get instance field reference: private System.Single <startVolume>5__2
-    [[deprecated]] float& dyn_$startVolume$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$startVolume$5__2();
     // Get instance field reference: private System.Single <progress>5__3
-    [[deprecated]] float& dyn_$progress$5__3();
+    [[deprecated("Use field access instead!")]] float& dyn_$progress$5__3();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x956F64
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

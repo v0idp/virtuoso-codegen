@@ -44,7 +44,7 @@ namespace System::Diagnostics {
       return m_conditionString;
     }
     // Get instance field reference: private System.String m_conditionString
-    [[deprecated]] ::StringW& dyn_m_conditionString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_conditionString();
     // public System.Void .ctor(System.String conditionString)
     // Offset: 0xE3C3DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

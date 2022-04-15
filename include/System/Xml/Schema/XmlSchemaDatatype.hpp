@@ -106,6 +106,13 @@ namespace System::Xml::Schema {
     // System.String get_TypeCodeString()
     // Offset: 0x110C9E0
     ::StringW get_TypeCodeString();
+    // protected System.Void .ctor()
+    // Offset: 0x110DAB0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSchemaDatatype* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaDatatype::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaDatatype*, creationType>()));
+    }
     // public System.Object ParseValue(System.String s, System.Xml.XmlNameTable nameTable, System.Xml.IXmlNamespaceResolver nsmgr)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::Il2CppObject* ParseValue(::StringW s, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::IXmlNamespaceResolver* nsmgr);
@@ -160,15 +167,6 @@ namespace System::Xml::Schema {
     // static System.String XdrCanonizeUri(System.String uri, System.Xml.XmlNameTable nameTable, System.Xml.Schema.SchemaNames schemaNames)
     // Offset: 0x110D8E4
     static ::StringW XdrCanonizeUri(::StringW uri, ::System::Xml::XmlNameTable* nameTable, ::System::Xml::Schema::SchemaNames* schemaNames);
-    // protected System.Void .ctor()
-    // Offset: 0x110DAB0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSchemaDatatype* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaDatatype::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaDatatype*, creationType>()));
-    }
   }; // System.Xml.Schema.XmlSchemaDatatype
   #pragma pack(pop)
 }
@@ -261,6 +259,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaDatatype*), "get_TypeCodeString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaDatatype::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaDatatype::ParseValue
 // Il2CppName: ParseValue
 template<>
@@ -442,7 +444,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaDatatype*), "XdrCanonizeUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{uri, nameTable, schemaNames});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaDatatype::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

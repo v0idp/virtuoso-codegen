@@ -78,13 +78,13 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::ClickData*>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.TriggerButton _reactsTo
-    [[deprecated]] ::VROSC::TriggerButton& dyn__reactsTo();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__reactsTo();
     // Get instance field reference: private System.Boolean <IsPressed>k__BackingField
-    [[deprecated]] bool& dyn_$IsPressed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPressed$k__BackingField();
     // Get instance field reference: public System.Action`2<VROSC.ClickData,System.Boolean> OnPressed
-    [[deprecated]] ::System::Action_2<::VROSC::ClickData*, bool>*& dyn_OnPressed();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::ClickData*, bool>*& dyn_OnPressed();
     // Get instance field reference: public System.Action`1<VROSC.ClickData> OnClick
-    [[deprecated]] ::System::Action_1<::VROSC::ClickData*>*& dyn_OnClick();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::ClickData*>*& dyn_OnClick();
     // public System.Boolean get_InteractionStopsLaser()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_InteractionStopsLaser();
@@ -104,11 +104,6 @@ namespace VROSC {
     // Offset: 0x945D70
     // Implemented from: VROSC.Interactable
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Clickable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Clickable::.ctor");

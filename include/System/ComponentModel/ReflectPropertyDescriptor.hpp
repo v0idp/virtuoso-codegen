@@ -186,25 +186,25 @@ namespace System::ComponentModel {
     // Set static field: static private readonly System.Int32 BitSetOnDemand
     static void _set_BitSetOnDemand(int value);
     // Get instance field reference: private System.Collections.Specialized.BitVector32 state
-    [[deprecated]] ::System::Collections::Specialized::BitVector32& dyn_state();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::BitVector32& dyn_state();
     // Get instance field reference: private System.Type componentClass
-    [[deprecated]] ::System::Type*& dyn_componentClass();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_componentClass();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: private System.Object defaultValue
-    [[deprecated]] ::Il2CppObject*& dyn_defaultValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_defaultValue();
     // Get instance field reference: private System.Reflection.PropertyInfo propInfo
-    [[deprecated]] ::System::Reflection::PropertyInfo*& dyn_propInfo();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::PropertyInfo*& dyn_propInfo();
     // Get instance field reference: private System.Reflection.MethodInfo getMethod
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_getMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_getMethod();
     // Get instance field reference: private System.Reflection.MethodInfo setMethod
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_setMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_setMethod();
     // Get instance field reference: private System.Reflection.MethodInfo shouldSerializeMethod
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_shouldSerializeMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_shouldSerializeMethod();
     // Get instance field reference: private System.ComponentModel.EventDescriptor realChangedEvent
-    [[deprecated]] ::System::ComponentModel::EventDescriptor*& dyn_realChangedEvent();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::EventDescriptor*& dyn_realChangedEvent();
     // Get instance field reference: private System.Type receiverType
-    [[deprecated]] ::System::Type*& dyn_receiverType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_receiverType();
     // private System.Object get_DefaultValue()
     // Offset: 0x140EA50
     ::Il2CppObject* get_DefaultValue();

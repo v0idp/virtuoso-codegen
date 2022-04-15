@@ -45,7 +45,7 @@ namespace System::Linq::Expressions {
       return Document;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.SymbolDocumentInfo <Document>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::SymbolDocumentInfo*& dyn_$Document$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::SymbolDocumentInfo*& dyn_$Document$k__BackingField();
     // public System.Int32 get_StartLine()
     // Offset: 0x11F9DE8
     int get_StartLine();

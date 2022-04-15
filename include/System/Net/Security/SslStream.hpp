@@ -79,9 +79,9 @@ namespace System::Net::Security {
     static_assert(sizeof(::Mono::Security::Interface::IMonoSslStream*) == 0x8);
     public:
     // Get instance field reference: private Mono.Security.Interface.MonoTlsProvider provider
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_provider();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_provider();
     // Get instance field reference: private Mono.Security.Interface.IMonoSslStream impl
-    [[deprecated]] ::Mono::Security::Interface::IMonoSslStream*& dyn_impl();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::IMonoSslStream*& dyn_impl();
     // Mono.Security.Interface.IMonoSslStream get_Impl()
     // Offset: 0xDA5534
     ::Mono::Security::Interface::IMonoSslStream* get_Impl();

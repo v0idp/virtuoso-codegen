@@ -73,7 +73,7 @@ namespace System::Threading {
     // Set static field: static private System.Type s_cachedPreparedType5
     static void _set_s_cachedPreparedType5(::System::Type* value);
     // Get instance field reference: private System.Threading.SynchronizationContextProperties _props
-    [[deprecated]] ::System::Threading::SynchronizationContextProperties& dyn__props();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SynchronizationContextProperties& dyn__props();
     // static public System.Threading.SynchronizationContext get_Current()
     // Offset: 0x126B18C
     static ::System::Threading::SynchronizationContext* get_Current();

@@ -41,9 +41,9 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _min
-    [[deprecated]] float& dyn__min();
+    [[deprecated("Use field access instead!")]] float& dyn__min();
     // Get instance field reference: private System.Single _max
-    [[deprecated]] float& dyn__max();
+    [[deprecated("Use field access instead!")]] float& dyn__max();
     // public System.Single get_Min()
     // Offset: 0xAC8A00
     float get_Min();

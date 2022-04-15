@@ -59,15 +59,22 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
     // Offset: 0xD56A1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FieldToValueMap* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldToValueMap::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FieldToValueMap*, creationType>(cPtr, cMemoryOwn)));
+    }
+    // public System.Void .ctor()
+    // Offset: 0xD4D900
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FieldToValueMap* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldToValueMap::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FieldToValueMap*, creationType>()));
     }
     // static System.Runtime.InteropServices.HandleRef getCPtr(Firebase.Firestore.FieldToValueMap obj)
     // Offset: 0xD56AF4
@@ -81,15 +88,6 @@ namespace Firebase::Firestore {
     // public Firebase.Firestore.FieldToValueMapIterator Iterator()
     // Offset: 0xD49FD0
     ::Firebase::Firestore::FieldToValueMapIterator* Iterator();
-    // public System.Void .ctor()
-    // Offset: 0xD4D900
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FieldToValueMap* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FieldToValueMap::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FieldToValueMap*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xD56B60
     // Implemented from: System.Object
@@ -101,6 +99,10 @@ namespace Firebase::Firestore {
   static_assert(sizeof(FieldToValueMap) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::FieldToValueMap::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::FieldToValueMap::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -140,10 +142,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FieldToValueMap*), "Iterator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FieldToValueMap::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::FieldToValueMap::Finalize
 // Il2CppName: Finalize
 template<>

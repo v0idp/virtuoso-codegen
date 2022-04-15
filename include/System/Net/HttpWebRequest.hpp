@@ -189,7 +189,7 @@ namespace System::Net {
       // Set static field: static public System.Net.HttpWebRequest/System.Net.NtlmAuthState Response
       static void _set_Response(::System::Net::HttpWebRequest::NtlmAuthState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Net.HttpWebRequest/System.Net.NtlmAuthState
     #pragma pack(pop)
     static check_size<sizeof(HttpWebRequest::NtlmAuthState), 0 + sizeof(int)> __System_Net_HttpWebRequest_NtlmAuthStateSizeCheck;
@@ -236,13 +236,13 @@ namespace System::Net {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private readonly System.Net.HttpWebRequest request
-      [[deprecated]] ::System::Net::HttpWebRequest*& dyn_request();
+      [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_request();
       // Get instance field reference: private readonly System.Boolean isProxy
-      [[deprecated]] bool& dyn_isProxy();
+      [[deprecated("Use field access instead!")]] bool& dyn_isProxy();
       // Get instance field reference: private System.Boolean isCompleted
-      [[deprecated]] bool& dyn_isCompleted();
+      [[deprecated("Use field access instead!")]] bool& dyn_isCompleted();
       // Get instance field reference: private System.Net.HttpWebRequest/System.Net.NtlmAuthState ntlm_auth_state
-      [[deprecated]] ::System::Net::HttpWebRequest::NtlmAuthState& dyn_ntlm_auth_state();
+      [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest::NtlmAuthState& dyn_ntlm_auth_state();
       // public System.Boolean get_IsCompleted()
       // Offset: 0x9F8780
       bool get_IsCompleted();
@@ -629,115 +629,115 @@ namespace System::Net {
     // Set static field: static private System.Int32 defaultMaxResponseHeadersLength
     static void _set_defaultMaxResponseHeadersLength(int value);
     // Get instance field reference: private System.Uri requestUri
-    [[deprecated]] ::System::Uri*& dyn_requestUri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_requestUri();
     // Get instance field reference: private System.Uri actualUri
-    [[deprecated]] ::System::Uri*& dyn_actualUri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_actualUri();
     // Get instance field reference: private System.Boolean hostChanged
-    [[deprecated]] bool& dyn_hostChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_hostChanged();
     // Get instance field reference: private System.Boolean allowAutoRedirect
-    [[deprecated]] bool& dyn_allowAutoRedirect();
+    [[deprecated("Use field access instead!")]] bool& dyn_allowAutoRedirect();
     // Get instance field reference: private System.Boolean allowBuffering
-    [[deprecated]] bool& dyn_allowBuffering();
+    [[deprecated("Use field access instead!")]] bool& dyn_allowBuffering();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509CertificateCollection certificates
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_certificates();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509CertificateCollection*& dyn_certificates();
     // Get instance field reference: private System.String connectionGroup
-    [[deprecated]] ::StringW& dyn_connectionGroup();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_connectionGroup();
     // Get instance field reference: private System.Boolean haveContentLength
-    [[deprecated]] bool& dyn_haveContentLength();
+    [[deprecated("Use field access instead!")]] bool& dyn_haveContentLength();
     // Get instance field reference: private System.Int64 contentLength
-    [[deprecated]] int64_t& dyn_contentLength();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_contentLength();
     // Get instance field reference: private System.Net.HttpContinueDelegate continueDelegate
-    [[deprecated]] ::System::Net::HttpContinueDelegate*& dyn_continueDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpContinueDelegate*& dyn_continueDelegate();
     // Get instance field reference: private System.Net.CookieContainer cookieContainer
-    [[deprecated]] ::System::Net::CookieContainer*& dyn_cookieContainer();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieContainer*& dyn_cookieContainer();
     // Get instance field reference: private System.Net.ICredentials credentials
-    [[deprecated]] ::System::Net::ICredentials*& dyn_credentials();
+    [[deprecated("Use field access instead!")]] ::System::Net::ICredentials*& dyn_credentials();
     // Get instance field reference: private System.Boolean haveResponse
-    [[deprecated]] bool& dyn_haveResponse();
+    [[deprecated("Use field access instead!")]] bool& dyn_haveResponse();
     // Get instance field reference: private System.Boolean requestSent
-    [[deprecated]] bool& dyn_requestSent();
+    [[deprecated("Use field access instead!")]] bool& dyn_requestSent();
     // Get instance field reference: private System.Net.WebHeaderCollection webHeaders
-    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_webHeaders();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollection*& dyn_webHeaders();
     // Get instance field reference: private System.Boolean keepAlive
-    [[deprecated]] bool& dyn_keepAlive();
+    [[deprecated("Use field access instead!")]] bool& dyn_keepAlive();
     // Get instance field reference: private System.Int32 maxAutoRedirect
-    [[deprecated]] int& dyn_maxAutoRedirect();
+    [[deprecated("Use field access instead!")]] int& dyn_maxAutoRedirect();
     // Get instance field reference: private System.String mediaType
-    [[deprecated]] ::StringW& dyn_mediaType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_mediaType();
     // Get instance field reference: private System.String method
-    [[deprecated]] ::StringW& dyn_method();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_method();
     // Get instance field reference: private System.String initialMethod
-    [[deprecated]] ::StringW& dyn_initialMethod();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_initialMethod();
     // Get instance field reference: private System.Boolean pipelined
-    [[deprecated]] bool& dyn_pipelined();
+    [[deprecated("Use field access instead!")]] bool& dyn_pipelined();
     // Get instance field reference: private System.Boolean preAuthenticate
-    [[deprecated]] bool& dyn_preAuthenticate();
+    [[deprecated("Use field access instead!")]] bool& dyn_preAuthenticate();
     // Get instance field reference: private System.Boolean usedPreAuth
-    [[deprecated]] bool& dyn_usedPreAuth();
+    [[deprecated("Use field access instead!")]] bool& dyn_usedPreAuth();
     // Get instance field reference: private System.Version version
-    [[deprecated]] ::System::Version*& dyn_version();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_version();
     // Get instance field reference: private System.Boolean force_version
-    [[deprecated]] bool& dyn_force_version();
+    [[deprecated("Use field access instead!")]] bool& dyn_force_version();
     // Get instance field reference: private System.Version actualVersion
-    [[deprecated]] ::System::Version*& dyn_actualVersion();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_actualVersion();
     // Get instance field reference: private System.Net.IWebProxy proxy
-    [[deprecated]] ::System::Net::IWebProxy*& dyn_proxy();
+    [[deprecated("Use field access instead!")]] ::System::Net::IWebProxy*& dyn_proxy();
     // Get instance field reference: private System.Boolean sendChunked
-    [[deprecated]] bool& dyn_sendChunked();
+    [[deprecated("Use field access instead!")]] bool& dyn_sendChunked();
     // Get instance field reference: private System.Net.ServicePoint servicePoint
-    [[deprecated]] ::System::Net::ServicePoint*& dyn_servicePoint();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePoint*& dyn_servicePoint();
     // Get instance field reference: private System.Int32 timeout
-    [[deprecated]] int& dyn_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_timeout();
     // Get instance field reference: private System.Net.WebRequestStream writeStream
-    [[deprecated]] ::System::Net::WebRequestStream*& dyn_writeStream();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebRequestStream*& dyn_writeStream();
     // Get instance field reference: private System.Net.HttpWebResponse webResponse
-    [[deprecated]] ::System::Net::HttpWebResponse*& dyn_webResponse();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebResponse*& dyn_webResponse();
     // Get instance field reference: private System.Net.WebCompletionSource responseTask
-    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_responseTask();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebCompletionSource*& dyn_responseTask();
     // Get instance field reference: private System.Net.WebOperation currentOperation
-    [[deprecated]] ::System::Net::WebOperation*& dyn_currentOperation();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebOperation*& dyn_currentOperation();
     // Get instance field reference: private System.Int32 aborted
-    [[deprecated]] int& dyn_aborted();
+    [[deprecated("Use field access instead!")]] int& dyn_aborted();
     // Get instance field reference: private System.Boolean gotRequestStream
-    [[deprecated]] bool& dyn_gotRequestStream();
+    [[deprecated("Use field access instead!")]] bool& dyn_gotRequestStream();
     // Get instance field reference: private System.Int32 redirects
-    [[deprecated]] int& dyn_redirects();
+    [[deprecated("Use field access instead!")]] int& dyn_redirects();
     // Get instance field reference: private System.Boolean expectContinue
-    [[deprecated]] bool& dyn_expectContinue();
+    [[deprecated("Use field access instead!")]] bool& dyn_expectContinue();
     // Get instance field reference: private System.Boolean getResponseCalled
-    [[deprecated]] bool& dyn_getResponseCalled();
+    [[deprecated("Use field access instead!")]] bool& dyn_getResponseCalled();
     // Get instance field reference: private System.Object locker
-    [[deprecated]] ::Il2CppObject*& dyn_locker();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_locker();
     // Get instance field reference: private System.Boolean finished_reading
-    [[deprecated]] bool& dyn_finished_reading();
+    [[deprecated("Use field access instead!")]] bool& dyn_finished_reading();
     // Get instance field reference: private System.Net.DecompressionMethods auto_decomp
-    [[deprecated]] ::System::Net::DecompressionMethods& dyn_auto_decomp();
+    [[deprecated("Use field access instead!")]] ::System::Net::DecompressionMethods& dyn_auto_decomp();
     // Get instance field reference: private System.Int32 maxResponseHeadersLength
-    [[deprecated]] int& dyn_maxResponseHeadersLength();
+    [[deprecated("Use field access instead!")]] int& dyn_maxResponseHeadersLength();
     // Get instance field reference: private System.Int32 readWriteTimeout
-    [[deprecated]] int& dyn_readWriteTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn_readWriteTimeout();
     // Get instance field reference: private Mono.Security.Interface.MonoTlsProvider tlsProvider
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_tlsProvider();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_tlsProvider();
     // Get instance field reference: private Mono.Security.Interface.MonoTlsSettings tlsSettings
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_tlsSettings();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_tlsSettings();
     // Get instance field reference: private System.Net.ServerCertValidationCallback certValidationCallback
-    [[deprecated]] ::System::Net::ServerCertValidationCallback*& dyn_certValidationCallback();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServerCertValidationCallback*& dyn_certValidationCallback();
     // Get instance field reference: private System.Net.HttpWebRequest/System.Net.AuthorizationState auth_state
-    [[deprecated]] ::System::Net::HttpWebRequest::AuthorizationState& dyn_auth_state();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest::AuthorizationState& dyn_auth_state();
     // Get instance field reference: private System.Net.HttpWebRequest/System.Net.AuthorizationState proxy_auth_state
-    [[deprecated]] ::System::Net::HttpWebRequest::AuthorizationState& dyn_proxy_auth_state();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest::AuthorizationState& dyn_proxy_auth_state();
     // Get instance field reference: private System.String host
-    [[deprecated]] ::StringW& dyn_host();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_host();
     // Get instance field reference: System.Func`2<System.IO.Stream,System.Threading.Tasks.Task> ResendContentFactory
-    [[deprecated]] ::System::Func_2<::System::IO::Stream*, ::System::Threading::Tasks::Task*>*& dyn_ResendContentFactory();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::System::IO::Stream*, ::System::Threading::Tasks::Task*>*& dyn_ResendContentFactory();
     // Get instance field reference: readonly System.Int32 ID
-    [[deprecated]] int& dyn_ID();
+    [[deprecated("Use field access instead!")]] int& dyn_ID();
     // Get instance field reference: private System.Boolean <ThrowOnError>k__BackingField
-    [[deprecated]] bool& dyn_$ThrowOnError$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ThrowOnError$k__BackingField();
     // Get instance field reference: private System.Boolean unsafe_auth_blah
-    [[deprecated]] bool& dyn_unsafe_auth_blah();
+    [[deprecated("Use field access instead!")]] bool& dyn_unsafe_auth_blah();
     // Get instance field reference: private System.Boolean <ReuseConnection>k__BackingField
-    [[deprecated]] bool& dyn_$ReuseConnection$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ReuseConnection$k__BackingField();
     // public System.Uri get_Address()
     // Offset: 0xF0F1DC
     ::System::Uri* get_Address();
@@ -1008,8 +1008,6 @@ namespace System::Net {
     // Offset: 0xF12D60
     // Implemented from: System.Net.WebRequest
     // Base method: System.Void WebRequest::.ctor()
-    // Base method: System.Void MarshalByRefObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HttpWebRequest* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::HttpWebRequest::.ctor");

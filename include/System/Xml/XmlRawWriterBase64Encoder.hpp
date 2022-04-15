@@ -49,7 +49,7 @@ namespace System::Xml {
       return rawWriter;
     }
     // Get instance field reference: private System.Xml.XmlRawWriter rawWriter
-    [[deprecated]] ::System::Xml::XmlRawWriter*& dyn_rawWriter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlRawWriter*& dyn_rawWriter();
     // System.Void .ctor(System.Xml.XmlRawWriter rawWriter)
     // Offset: 0x102512C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

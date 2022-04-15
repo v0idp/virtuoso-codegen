@@ -53,17 +53,15 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<bool>) == 0x8);
     public:
     // Get instance field reference: public System.Int32 StartNoteIndex
-    [[deprecated]] int& dyn_StartNoteIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_StartNoteIndex();
     // Get instance field reference: public System.Int32 DefaultIncludeNotes
-    [[deprecated]] int& dyn_DefaultIncludeNotes();
+    [[deprecated("Use field access instead!")]] int& dyn_DefaultIncludeNotes();
     // Get instance field reference: public System.Boolean OverrideScaleDefaults
-    [[deprecated]] bool& dyn_OverrideScaleDefaults();
+    [[deprecated("Use field access instead!")]] bool& dyn_OverrideScaleDefaults();
     // Get instance field reference: public System.Boolean[] ScaleNotesToggled
-    [[deprecated]] ::ArrayW<bool>& dyn_ScaleNotesToggled();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_ScaleNotesToggled();
     // public System.Void .ctor()
     // Offset: 0x19589C0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentSettings::ScaleSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentSettings::ScaleSettings::.ctor");

@@ -175,37 +175,37 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::MaterialPropertyBlock*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _padRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__padRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__padRenderer();
     // Get instance field reference: private UnityEngine.Renderer _ringRendererOuter
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__ringRendererOuter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__ringRendererOuter();
     // Get instance field reference: private System.Boolean _effectScaledByPower
-    [[deprecated]] bool& dyn__effectScaledByPower();
+    [[deprecated("Use field access instead!")]] bool& dyn__effectScaledByPower();
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: private UnityEngine.AnimationCurve _powerCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _scaleCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // Get instance field reference: private UnityEngine.Transform _scalingTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__scalingTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__scalingTransform();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
     // Get instance field reference: private VROSC.MinMaxInt _particleAmount
-    [[deprecated]] ::VROSC::MinMaxInt*& dyn__particleAmount();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxInt*& dyn__particleAmount();
     // Get instance field reference: private System.Boolean _preview
-    [[deprecated]] bool& dyn__preview();
+    [[deprecated("Use field access instead!")]] bool& dyn__preview();
     // Get instance field reference: private UnityEngine.Color _previewColor
-    [[deprecated]] ::UnityEngine::Color& dyn__previewColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__previewColor();
     // Get instance field reference: private System.Single _previewTiming
-    [[deprecated]] float& dyn__previewTiming();
+    [[deprecated("Use field access instead!")]] float& dyn__previewTiming();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Boolean _meshesVerified
-    [[deprecated]] bool& dyn__meshesVerified();
+    [[deprecated("Use field access instead!")]] bool& dyn__meshesVerified();
     // Get instance field reference: private System.Boolean _pulsating
-    [[deprecated]] bool& dyn__pulsating();
+    [[deprecated("Use field access instead!")]] bool& dyn__pulsating();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // public System.Void SetColor(UnityEngine.Color color, System.Boolean affectVisual)
     // Offset: 0x8E5F88
     void SetColor(::UnityEngine::Color color, bool affectVisual);
@@ -241,11 +241,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DrumPadEffectOnSignal* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DrumPadEffectOnSignal::.ctor");

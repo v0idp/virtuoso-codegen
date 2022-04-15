@@ -140,31 +140,31 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static private System.Security.Cryptography.X509Certificates.X509ChainStatus[] Empty
     static void _set_Empty(::ArrayW<::System::Security::Cryptography::X509Certificates::X509ChainStatus> value);
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.StoreLocation location
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::StoreLocation& dyn_location();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::StoreLocation& dyn_location();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainElementCollection elements
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection*& dyn_elements();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection*& dyn_elements();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainPolicy policy
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainPolicy*& dyn_policy();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509ChainPolicy*& dyn_policy();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainStatus[] status
-    [[deprecated]] ::ArrayW<::System::Security::Cryptography::X509Certificates::X509ChainStatus>& dyn_status();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Security::Cryptography::X509Certificates::X509ChainStatus>& dyn_status();
     // Get instance field reference: private System.Security.Cryptography.AsymmetricAlgorithm working_public_key
-    [[deprecated]] ::System::Security::Cryptography::AsymmetricAlgorithm*& dyn_working_public_key();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsymmetricAlgorithm*& dyn_working_public_key();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainElement bce_restriction
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainElement*& dyn_bce_restriction();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509ChainElement*& dyn_bce_restriction();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2Collection roots
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_roots();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_roots();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2Collection cas
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_cas();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_cas();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Store root_store
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_root_store();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_root_store();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Store ca_store
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_ca_store();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_ca_store();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Store user_root_store
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_user_root_store();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_user_root_store();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Store user_ca_store
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_user_ca_store();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Store*& dyn_user_ca_store();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2Collection collection
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_collection();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_collection();
     // public System.Void .ctor(System.Boolean useMachineContext)
     // Offset: 0xC53394
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

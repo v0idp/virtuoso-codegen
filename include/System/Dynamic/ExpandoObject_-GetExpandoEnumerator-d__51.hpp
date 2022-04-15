@@ -69,17 +69,17 @@ namespace System::Dynamic {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Collections::Generic::KeyValuePair_2<::StringW, ::Il2CppObject*>>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Collections.Generic.KeyValuePair`2<System.String,System.Object> <>2__current
-    [[deprecated]] ::System::Collections::Generic::KeyValuePair_2<::StringW, ::Il2CppObject*>& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::KeyValuePair_2<::StringW, ::Il2CppObject*>& dyn_$$2__current();
     // Get instance field reference: public System.Dynamic.ExpandoObject <>4__this
-    [[deprecated]] ::System::Dynamic::ExpandoObject*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoObject*& dyn_$$4__this();
     // Get instance field reference: public System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: public System.Dynamic.ExpandoObject/System.Dynamic.ExpandoData data
-    [[deprecated]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn_data();
     // Get instance field reference: private System.Int32 <i>5__1
-    [[deprecated]] int& dyn_$i$5__1();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__1();
     // private System.Collections.Generic.KeyValuePair`2<System.String,System.Object> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_Current()
     // Offset: 0x16A3000
     ::System::Collections::Generic::KeyValuePair_2<::StringW, ::Il2CppObject*> System_Collections_Generic_IEnumerator$System_Collections_Generic_KeyValuePair$System_String_System_Object$$_get_Current();

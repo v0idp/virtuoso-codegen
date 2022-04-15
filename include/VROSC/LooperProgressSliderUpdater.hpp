@@ -169,41 +169,41 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Renderer _slider
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__slider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__slider();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private UnityEngine.Color _mutedColor
-    [[deprecated]] ::UnityEngine::Color& dyn__mutedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__mutedColor();
     // Get instance field reference: private System.Single _beatLength
-    [[deprecated]] float& dyn__beatLength();
+    [[deprecated("Use field access instead!")]] float& dyn__beatLength();
     // Get instance field reference: private System.Single _length
-    [[deprecated]] float& dyn__length();
+    [[deprecated("Use field access instead!")]] float& dyn__length();
     // Get instance field reference: private UnityEngine.Renderer _timing
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__timing();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__timing();
     // Get instance field reference: private UnityEngine.Color _waitingColor
-    [[deprecated]] ::UnityEngine::Color& dyn__waitingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__waitingColor();
     // Get instance field reference: private System.Single _previewValue
-    [[deprecated]] float& dyn__previewValue();
+    [[deprecated("Use field access instead!")]] float& dyn__previewValue();
     // Get instance field reference: private System.Single _fadeValue
-    [[deprecated]] float& dyn__fadeValue();
+    [[deprecated("Use field access instead!")]] float& dyn__fadeValue();
     // Get instance field reference: private System.Single _timingValue
-    [[deprecated]] float& dyn__timingValue();
+    [[deprecated("Use field access instead!")]] float& dyn__timingValue();
     // Get instance field reference: private UnityEngine.GameObject _playButtonIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__playButtonIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__playButtonIcon();
     // Get instance field reference: private UnityEngine.GameObject _stopButtonIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__stopButtonIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__stopButtonIcon();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private System.Single _progress
-    [[deprecated]] float& dyn__progress();
+    [[deprecated("Use field access instead!")]] float& dyn__progress();
     // Get instance field reference: private System.Int32 _loops
-    [[deprecated]] int& dyn__loops();
+    [[deprecated("Use field access instead!")]] int& dyn__loops();
     // Get instance field reference: private System.Boolean _muted
-    [[deprecated]] bool& dyn__muted();
+    [[deprecated("Use field access instead!")]] bool& dyn__muted();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlockSlider
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockSlider();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlockTiming
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockTiming();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlockTiming();
     // public UnityEngine.Renderer get_Slider()
     // Offset: 0x197A32C
     ::UnityEngine::Renderer* get_Slider();
@@ -222,6 +222,13 @@ namespace VROSC {
     // public UnityEngine.GameObject get_StopButtonIcon()
     // Offset: 0x197A354
     ::UnityEngine::GameObject* get_StopButtonIcon();
+    // public System.Void .ctor()
+    // Offset: 0x197ACEC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LooperProgressSliderUpdater* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LooperProgressSliderUpdater::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LooperProgressSliderUpdater*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x197A35C
     void Awake();
@@ -255,19 +262,6 @@ namespace VROSC {
     // public System.Void SetMuted(System.Boolean isMuted)
     // Offset: 0x197ACD8
     void SetMuted(bool isMuted);
-    // public System.Void .ctor()
-    // Offset: 0x197ACEC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LooperProgressSliderUpdater* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LooperProgressSliderUpdater::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LooperProgressSliderUpdater*, creationType>()));
-    }
   }; // VROSC.LooperProgressSliderUpdater
   #pragma pack(pop)
   static check_size<sizeof(LooperProgressSliderUpdater), 160 + sizeof(::UnityEngine::MaterialPropertyBlock*)> __VROSC_LooperProgressSliderUpdaterSizeCheck;
@@ -322,6 +316,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::LooperProgressSliderUpdater*), "get_StopButtonIcon", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LooperProgressSliderUpdater::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LooperProgressSliderUpdater::Awake
 // Il2CppName: Awake
 template<>
@@ -419,7 +417,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LooperProgressSliderUpdater*), "SetMuted", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isMuted});
   }
 };
-// Writing MetadataGetter for method: VROSC::LooperProgressSliderUpdater::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

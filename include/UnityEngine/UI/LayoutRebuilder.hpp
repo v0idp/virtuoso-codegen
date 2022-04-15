@@ -85,15 +85,22 @@ namespace UnityEngine::UI {
     // Set static field: static private UnityEngine.UI.ObjectPool`1<UnityEngine.UI.LayoutRebuilder> s_Rebuilders
     static void _set_s_Rebuilders(::UnityEngine::UI::ObjectPool_1<::UnityEngine::UI::LayoutRebuilder*>* value);
     // Get instance field reference: private UnityEngine.RectTransform m_ToRebuild
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_ToRebuild();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_ToRebuild();
     // Get instance field reference: private System.Int32 m_CachedHashFromTransform
-    [[deprecated]] int& dyn_m_CachedHashFromTransform();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CachedHashFromTransform();
     // public UnityEngine.Transform get_transform()
     // Offset: 0x1690DF8
     ::UnityEngine::Transform* get_transform();
     // static private System.Void .cctor()
     // Offset: 0x1690C2C
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1692048
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LayoutRebuilder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::LayoutRebuilder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LayoutRebuilder*, creationType>()));
+    }
     // private System.Void Initialize(UnityEngine.RectTransform controller)
     // Offset: 0x1690BE0
     void Initialize(::UnityEngine::RectTransform* controller);
@@ -136,15 +143,6 @@ namespace UnityEngine::UI {
     // public System.Void GraphicUpdateComplete()
     // Offset: 0x1691F78
     void GraphicUpdateComplete();
-    // public System.Void .ctor()
-    // Offset: 0x1692048
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LayoutRebuilder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::LayoutRebuilder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LayoutRebuilder*, creationType>()));
-    }
     // public override System.Int32 GetHashCode()
     // Offset: 0x1691F7C
     // Implemented from: System.Object
@@ -182,6 +180,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::LayoutRebuilder*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::LayoutRebuilder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::LayoutRebuilder::Initialize
 // Il2CppName: Initialize
 template<>
@@ -307,10 +309,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::LayoutRebuilder*), "GraphicUpdateComplete", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::LayoutRebuilder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::LayoutRebuilder::GetHashCode
 // Il2CppName: GetHashCode
 template<>

@@ -107,19 +107,26 @@ namespace NatSuite::Examples {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.RawImage previewPanel
-    [[deprecated]] ::UnityEngine::UI::RawImage*& dyn_previewPanel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::RawImage*& dyn_previewPanel();
     // Get instance field reference: public UnityEngine.UI.AspectRatioFitter previewAspectFitter
-    [[deprecated]] ::UnityEngine::UI::AspectRatioFitter*& dyn_previewAspectFitter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::AspectRatioFitter*& dyn_previewAspectFitter();
     // Get instance field reference: public UnityEngine.UI.RawImage photoPanel
-    [[deprecated]] ::UnityEngine::UI::RawImage*& dyn_photoPanel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::RawImage*& dyn_photoPanel();
     // Get instance field reference: public UnityEngine.UI.AspectRatioFitter photoAspectFitter
-    [[deprecated]] ::UnityEngine::UI::AspectRatioFitter*& dyn_photoAspectFitter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::AspectRatioFitter*& dyn_photoAspectFitter();
     // Get instance field reference: public UnityEngine.UI.Image flashIcon
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_flashIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_flashIcon();
     // Get instance field reference: public UnityEngine.UI.Image switchIcon
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_switchIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_switchIcon();
     // Get instance field reference: private NatSuite.Devices.MediaDeviceQuery deviceQuery
-    [[deprecated]] ::NatSuite::Devices::MediaDeviceQuery*& dyn_deviceQuery();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::MediaDeviceQuery*& dyn_deviceQuery();
+    // public System.Void .ctor()
+    // Offset: 0xAC9640
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MiniCam* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Examples::MiniCam::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MiniCam*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xAC90A8
     void Start();
@@ -135,25 +142,16 @@ namespace NatSuite::Examples {
     // public System.Void ToggleFlashMode()
     // Offset: 0xAC952C
     void ToggleFlashMode();
-    // public System.Void .ctor()
-    // Offset: 0xAC9640
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MiniCam* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Examples::MiniCam::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MiniCam*, creationType>()));
-    }
   }; // NatSuite.Examples.MiniCam
   #pragma pack(pop)
   static check_size<sizeof(MiniCam), 72 + sizeof(::NatSuite::Devices::MediaDeviceQuery*)> __NatSuite_Examples_MiniCamSizeCheck;
   static_assert(sizeof(MiniCam) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: NatSuite::Examples::MiniCam::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Examples::MiniCam::Start
 // Il2CppName: Start
 template<>
@@ -195,7 +193,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Examples::MiniCam*), "ToggleFlashMode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Examples::MiniCam::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

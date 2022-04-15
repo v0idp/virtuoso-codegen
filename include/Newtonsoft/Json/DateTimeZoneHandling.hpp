@@ -66,7 +66,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.DateTimeZoneHandling RoundtripKind
     static void _set_RoundtripKind(::Newtonsoft::Json::DateTimeZoneHandling value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.DateTimeZoneHandling
   #pragma pack(pop)
   static check_size<sizeof(DateTimeZoneHandling), 0 + sizeof(int)> __Newtonsoft_Json_DateTimeZoneHandlingSizeCheck;

@@ -55,11 +55,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <Count>k__BackingField
-    [[deprecated]] int& dyn_$Count$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Count$k__BackingField();
     // Get instance field reference: private System.Int32 <Capacity>k__BackingField
-    [[deprecated]] int& dyn_$Capacity$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Capacity$k__BackingField();
     // Get instance field reference: private System.Byte[] <Samples>k__BackingField
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_$Samples$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_$Samples$k__BackingField();
     // public System.Int32 get_Count()
     // Offset: 0xFC197C
     int get_Count();
@@ -78,6 +78,13 @@ namespace GlobalNamespace {
     // private System.Void set_Samples(System.Byte[] value)
     // Offset: 0xFC19A4
     void set_Samples(::ArrayW<uint8_t> value);
+    // public System.Void .ctor()
+    // Offset: 0xFC19AC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRHapticsClip* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHapticsClip::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRHapticsClip*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 capacity)
     // Offset: 0xFC1AC8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -115,15 +122,6 @@ namespace GlobalNamespace {
     // private System.Void InitializeFromAudioFloatTrack(System.Single[] sourceData, System.Double sourceFrequency, System.Int32 sourceChannelCount, System.Int32 sourceChannel)
     // Offset: 0xFC2114
     void InitializeFromAudioFloatTrack(::ArrayW<float> sourceData, double sourceFrequency, int sourceChannelCount, int sourceChannel);
-    // public System.Void .ctor()
-    // Offset: 0xFC19AC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRHapticsClip* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHapticsClip::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRHapticsClip*, creationType>()));
-    }
   }; // OVRHapticsClip
   #pragma pack(pop)
   static check_size<sizeof(OVRHapticsClip), 24 + sizeof(::ArrayW<uint8_t>)> __GlobalNamespace_OVRHapticsClipSizeCheck;
@@ -197,6 +195,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVRHapticsClip::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRHapticsClip::WriteSample
 // Il2CppName: WriteSample
 template<>
@@ -226,7 +228,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRHapticsClip*), "InitializeFromAudioFloatTrack", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sourceData, sourceFrequency, sourceChannelCount, sourceChannel});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRHapticsClip::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

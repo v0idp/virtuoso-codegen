@@ -97,15 +97,15 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Reflection::FieldAttributes) == 0x4);
     public:
     // Get instance field reference: System.IntPtr klass
-    [[deprecated]] ::System::IntPtr& dyn_klass();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_klass();
     // Get instance field reference: System.RuntimeFieldHandle fhandle
-    [[deprecated]] ::System::RuntimeFieldHandle& dyn_fhandle();
+    [[deprecated("Use field access instead!")]] ::System::RuntimeFieldHandle& dyn_fhandle();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: private System.Reflection.FieldAttributes attrs
-    [[deprecated]] ::System::Reflection::FieldAttributes& dyn_attrs();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::FieldAttributes& dyn_attrs();
     // private System.Type ResolveType()
     // Offset: 0x100B0C8
     ::System::Type* ResolveType();

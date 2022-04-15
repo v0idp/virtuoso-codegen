@@ -115,21 +115,21 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
     public:
     // Get instance field reference: private System.Runtime.Serialization.DeserializationEventHandler m_onDeserializationHandler
-    [[deprecated]] ::System::Runtime::Serialization::DeserializationEventHandler*& dyn_m_onDeserializationHandler();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::DeserializationEventHandler*& dyn_m_onDeserializationHandler();
     // Get instance field reference: private System.Runtime.Serialization.SerializationEventHandler m_onDeserializedHandler
-    [[deprecated]] ::System::Runtime::Serialization::SerializationEventHandler*& dyn_m_onDeserializedHandler();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationEventHandler*& dyn_m_onDeserializedHandler();
     // Get instance field reference: System.Runtime.Serialization.ObjectHolder[] m_objects
-    [[deprecated]] ::ArrayW<::System::Runtime::Serialization::ObjectHolder*>& dyn_m_objects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Serialization::ObjectHolder*>& dyn_m_objects();
     // Get instance field reference: System.Object m_topObject
-    [[deprecated]] ::Il2CppObject*& dyn_m_topObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_topObject();
     // Get instance field reference: System.Runtime.Serialization.ObjectHolderList m_specialFixupObjects
-    [[deprecated]] ::System::Runtime::Serialization::ObjectHolderList*& dyn_m_specialFixupObjects();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ObjectHolderList*& dyn_m_specialFixupObjects();
     // Get instance field reference: System.Int64 m_fixupCount
-    [[deprecated]] int64_t& dyn_m_fixupCount();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_fixupCount();
     // Get instance field reference: System.Runtime.Serialization.ISurrogateSelector m_selector
-    [[deprecated]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn_m_selector();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn_m_selector();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext m_context
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
     // System.Object get_TopObject()
     // Offset: 0x146E668
     ::Il2CppObject* get_TopObject();

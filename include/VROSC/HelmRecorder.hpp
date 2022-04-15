@@ -38,7 +38,7 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<float>) == 0x8);
     public:
     // Get instance field reference: private System.Single[] _secondaryHelmData
-    [[deprecated]] ::ArrayW<float>& dyn__secondaryHelmData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__secondaryHelmData();
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
     // Offset: 0x193FF9C
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
@@ -46,11 +46,6 @@ namespace VROSC {
     // Offset: 0x1940098
     // Implemented from: VROSC.SourceRecorder
     // Base method: System.Void SourceRecorder::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HelmRecorder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HelmRecorder::.ctor");

@@ -51,7 +51,17 @@ namespace VROSC::FBDebug {
     // Set static field: static private System.String _message
     static void _set__message(::StringW value);
     // Get instance field reference: private TMPro.TextMeshProUGUI _messageText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn__messageText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn__messageText();
+    // public System.Void .ctor()
+    // Offset: 0x8E38D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DebugMessage* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FBDebug::DebugMessage::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DebugMessage*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x8E38D8
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x8E36AC
     void Awake();
@@ -61,30 +71,24 @@ namespace VROSC::FBDebug {
     // static public System.Void AddMessage(System.String message, System.Boolean clear)
     // Offset: 0x8E3790
     static void AddMessage(::StringW message, bool clear);
-    // public System.Void .ctor()
-    // Offset: 0x8E38D0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DebugMessage* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FBDebug::DebugMessage::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DebugMessage*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x8E38D8
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // VROSC.FBDebug.DebugMessage
   #pragma pack(pop)
   static check_size<sizeof(DebugMessage), 24 + sizeof(::TMPro::TextMeshProUGUI*)> __VROSC_FBDebug_DebugMessageSizeCheck;
   static_assert(sizeof(DebugMessage) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FBDebug::DebugMessage::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: VROSC::FBDebug::DebugMessage::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::FBDebug::DebugMessage::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::FBDebug::DebugMessage*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: VROSC::FBDebug::DebugMessage::Awake
 // Il2CppName: Awake
 template<>
@@ -109,17 +113,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     static auto* message = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     static auto* clear = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::FBDebug::DebugMessage*), "AddMessage", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message, clear});
-  }
-};
-// Writing MetadataGetter for method: VROSC::FBDebug::DebugMessage::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: VROSC::FBDebug::DebugMessage::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::FBDebug::DebugMessage::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::FBDebug::DebugMessage*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

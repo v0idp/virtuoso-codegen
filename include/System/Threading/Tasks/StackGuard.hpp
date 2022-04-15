@@ -47,7 +47,7 @@ namespace System::Threading::Tasks {
     // Set static field: static private System.Int32 MAX_UNCHECKED_INLINING_DEPTH
     static void _set_MAX_UNCHECKED_INLINING_DEPTH(int value);
     // Get instance field reference: private System.Int32 m_inliningDepth
-    [[deprecated]] int& dyn_m_inliningDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_m_inliningDepth();
     // System.Boolean TryBeginInliningScope()
     // Offset: 0x12548CC
     bool TryBeginInliningScope();

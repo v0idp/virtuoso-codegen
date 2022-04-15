@@ -50,30 +50,32 @@ namespace DG::Tweening {
     static_assert(sizeof(::UnityEngine::Rigidbody*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Transform trans
-    [[deprecated]] ::UnityEngine::Transform*& dyn_trans();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_trans();
     // Get instance field reference: public UnityEngine.Rigidbody target
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn_target();
+    // public System.Void .ctor()
+    // Offset: 0x17DBB7C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTweenModulePhysics::$$c__DisplayClass10_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass10_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModulePhysics::$$c__DisplayClass10_0*, creationType>()));
+    }
     // UnityEngine.Vector3 <DOLocalPath>b__0()
     // Offset: 0x17E2AB4
     ::UnityEngine::Vector3 $DOLocalPath$b__0();
     // System.Void <DOLocalPath>b__1(UnityEngine.Vector3 x)
     // Offset: 0x17E2AD0
     void $DOLocalPath$b__1(::UnityEngine::Vector3 x);
-    // public System.Void .ctor()
-    // Offset: 0x17DBB7C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTweenModulePhysics::$$c__DisplayClass10_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass10_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModulePhysics::$$c__DisplayClass10_0*, creationType>()));
-    }
   }; // DG.Tweening.DOTweenModulePhysics/DG.Tweening.<>c__DisplayClass10_0
   #pragma pack(pop)
   static check_size<sizeof(DOTweenModulePhysics::$$c__DisplayClass10_0), 24 + sizeof(::UnityEngine::Rigidbody*)> __DG_Tweening_DOTweenModulePhysics_$$c__DisplayClass10_0SizeCheck;
   static_assert(sizeof(DOTweenModulePhysics::$$c__DisplayClass10_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass10_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass10_0::$DOLocalPath$b__0
 // Il2CppName: <DOLocalPath>b__0
 template<>
@@ -91,7 +93,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass10_0*), "<DOLocalPath>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass10_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

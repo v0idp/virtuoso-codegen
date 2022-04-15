@@ -43,7 +43,7 @@ namespace System::Dynamic {
       return expression;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _expression
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__expression();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__expression();
     // System.Void .ctor(System.Linq.Expressions.Expression expression)
     // Offset: 0xEA58E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -65,15 +65,15 @@ namespace System::IO::Compression {
     static_assert(sizeof(::ArrayW<uint16_t>) == 0x8);
     public:
     // Get instance field reference: private System.Byte[] _window
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__window();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__window();
     // Get instance field reference: private System.Int32 _bufPos
-    [[deprecated]] int& dyn__bufPos();
+    [[deprecated("Use field access instead!")]] int& dyn__bufPos();
     // Get instance field reference: private System.Int32 _bufEnd
-    [[deprecated]] int& dyn__bufEnd();
+    [[deprecated("Use field access instead!")]] int& dyn__bufEnd();
     // Get instance field reference: private System.UInt16[] _prev
-    [[deprecated]] ::ArrayW<uint16_t>& dyn__prev();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint16_t>& dyn__prev();
     // Get instance field reference: private System.UInt16[] _lookup
-    [[deprecated]] ::ArrayW<uint16_t>& dyn__lookup();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint16_t>& dyn__lookup();
     // public System.Int32 get_BytesAvailable()
     // Offset: 0x16952C8
     int get_BytesAvailable();

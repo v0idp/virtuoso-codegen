@@ -59,11 +59,11 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::User*) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.Models.Room RoomOptional
-    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_RoomOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Room*& dyn_RoomOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.Room Room
-    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_Room();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Room*& dyn_Room();
     // Get instance field reference: public readonly Oculus.Platform.Models.User User
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_User();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_User();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x171BFB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -54,29 +54,31 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.UserFavoritesDataController <>4__this
-    [[deprecated]] ::VROSC::UserFavoritesDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserFavoritesDataController*& dyn_$$4__this();
     // Get instance field reference: public VROSC.UserFavoritesDataModel/VROSC.Favorite favorite
-    [[deprecated]] ::VROSC::UserFavoritesDataModel::Favorite*& dyn_favorite();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserFavoritesDataModel::Favorite*& dyn_favorite();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
-    // System.Void <RemoveFavoriteFromData>b__0()
-    // Offset: 0xE86038
-    void $RemoveFavoriteFromData$b__0();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // public System.Void .ctor()
     // Offset: 0xE86030
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserFavoritesDataController::$$c__DisplayClass13_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserFavoritesDataController::$$c__DisplayClass13_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UserFavoritesDataController::$$c__DisplayClass13_0*, creationType>()));
     }
+    // System.Void <RemoveFavoriteFromData>b__0()
+    // Offset: 0xE86038
+    void $RemoveFavoriteFromData$b__0();
   }; // VROSC.UserFavoritesDataController/VROSC.<>c__DisplayClass13_0
   #pragma pack(pop)
   static check_size<sizeof(UserFavoritesDataController::$$c__DisplayClass13_0), 32 + sizeof(::System::Action*)> __VROSC_UserFavoritesDataController_$$c__DisplayClass13_0SizeCheck;
   static_assert(sizeof(UserFavoritesDataController::$$c__DisplayClass13_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UserFavoritesDataController::$$c__DisplayClass13_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UserFavoritesDataController::$$c__DisplayClass13_0::$RemoveFavoriteFromData$b__0
 // Il2CppName: <RemoveFavoriteFromData>b__0
 template<>
@@ -85,7 +87,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserFavoritesDataController::$$c__DisplayClass13_0*), "<RemoveFavoriteFromData>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UserFavoritesDataController::$$c__DisplayClass13_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

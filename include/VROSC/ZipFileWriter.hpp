@@ -86,7 +86,14 @@ namespace VROSC {
     // Set static field: static public System.String ZipExtension
     static void _set_ZipExtension(::StringW value);
     // Get instance field reference: private System.Collections.Generic.List`1<System.Action> _zipCallbacks
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Action*>*& dyn__zipCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Action*>*& dyn__zipCallbacks();
+    // public System.Void .ctor()
+    // Offset: 0x953C44
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ZipFileWriter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ZipFileWriter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ZipFileWriter*, creationType>()));
+    }
     // public System.Void Tick()
     // Offset: 0x953880
     void Tick();
@@ -99,21 +106,16 @@ namespace VROSC {
     // public System.Void DeleteZip(System.String path)
     // Offset: 0x953BB4
     void DeleteZip(::StringW path);
-    // public System.Void .ctor()
-    // Offset: 0x953C44
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ZipFileWriter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ZipFileWriter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ZipFileWriter*, creationType>()));
-    }
   }; // VROSC.ZipFileWriter
   #pragma pack(pop)
   static check_size<sizeof(ZipFileWriter), 16 + sizeof(::System::Collections::Generic::List_1<::System::Action*>*)> __VROSC_ZipFileWriterSizeCheck;
   static_assert(sizeof(ZipFileWriter) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ZipFileWriter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ZipFileWriter::Tick
 // Il2CppName: Tick
 template<>
@@ -155,7 +157,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ZipFileWriter*), "DeleteZip", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{path});
   }
 };
-// Writing MetadataGetter for method: VROSC::ZipFileWriter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

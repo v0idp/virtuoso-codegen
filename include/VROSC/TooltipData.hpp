@@ -59,11 +59,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UI::IconData*) == 0x8);
     public:
     // Get instance field reference: private System.String _text
-    [[deprecated]] ::StringW& dyn__text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__text();
     // Get instance field reference: private VROSC.HighlightControllerComponents/VROSC.Component _component
-    [[deprecated]] ::VROSC::HighlightControllerComponents::Component& dyn__component();
+    [[deprecated("Use field access instead!")]] ::VROSC::HighlightControllerComponents::Component& dyn__component();
     // Get instance field reference: private VROSC.UI.IconData _iconData
-    [[deprecated]] ::VROSC::UI::IconData*& dyn__iconData();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::IconData*& dyn__iconData();
     // public System.String get_Text()
     // Offset: 0xA28DC8
     ::StringW get_Text();

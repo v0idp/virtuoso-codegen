@@ -99,15 +99,15 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::System::Runtime::Remoting::Lifetime::Lease*) == 0x8);
     public:
     // Get instance field reference: protected System.Type _objectType
-    [[deprecated]] ::System::Type*& dyn__objectType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__objectType();
     // Get instance field reference: protected System.MarshalByRefObject _serverObject
-    [[deprecated]] ::System::MarshalByRefObject*& dyn__serverObject();
+    [[deprecated("Use field access instead!")]] ::System::MarshalByRefObject*& dyn__serverObject();
     // Get instance field reference: protected System.Runtime.Remoting.Messaging.IMessageSink _serverSink
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__serverSink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__serverSink();
     // Get instance field reference: protected System.Runtime.Remoting.Contexts.Context _context
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::Context*& dyn__context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::Context*& dyn__context();
     // Get instance field reference: protected System.Runtime.Remoting.Lifetime.Lease _lease
-    [[deprecated]] ::System::Runtime::Remoting::Lifetime::Lease*& dyn__lease();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Lifetime::Lease*& dyn__lease();
     // public System.Type get_ObjectType()
     // Offset: 0x117BEE0
     ::System::Type* get_ObjectType();

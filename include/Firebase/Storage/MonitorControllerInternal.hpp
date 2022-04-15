@@ -133,19 +133,19 @@ namespace Firebase::Storage {
     // Set static field: static private Firebase.Storage.MonitorControllerInternal/Firebase.Storage.MonitorControllerEventDelegate <>f__mg$cache1
     static void _set_$$f__mg$cache1(::Firebase::Storage::MonitorControllerInternal::MonitorControllerEventDelegate* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // Get instance field reference: private System.EventHandler`1<System.EventArgs> Paused
-    [[deprecated]] ::System::EventHandler_1<::System::EventArgs*>*& dyn_Paused();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::EventArgs*>*& dyn_Paused();
     // Get instance field reference: private System.EventHandler`1<System.EventArgs> Progress
-    [[deprecated]] ::System::EventHandler_1<::System::EventArgs*>*& dyn_Progress();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::EventArgs*>*& dyn_Progress();
     // Get instance field reference: private System.Action forwardToPausedEvent
-    [[deprecated]] ::System::Action*& dyn_forwardToPausedEvent();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_forwardToPausedEvent();
     // Get instance field reference: private System.Action forwardToProgressEvent
-    [[deprecated]] ::System::Action*& dyn_forwardToProgressEvent();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_forwardToProgressEvent();
     // Get instance field reference: private Firebase.Storage.StorageReferenceInternal storageReference
-    [[deprecated]] ::Firebase::Storage::StorageReferenceInternal*& dyn_storageReference();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReferenceInternal*& dyn_storageReference();
     // Firebase.Storage.ControllerInternal get_Controller()
     // Offset: 0x18369CC
     ::Firebase::Storage::ControllerInternal* get_Controller();

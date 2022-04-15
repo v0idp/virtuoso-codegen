@@ -48,9 +48,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Reflection::MemberInfo*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.MemberBindingType <BindingType>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::MemberBindingType& dyn_$BindingType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::MemberBindingType& dyn_$BindingType$k__BackingField();
     // Get instance field reference: private readonly System.Reflection.MemberInfo <Member>k__BackingField
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn_$Member$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn_$Member$k__BackingField();
     // public System.Linq.Expressions.MemberBindingType get_BindingType()
     // Offset: 0xE90EFC
     ::System::Linq::Expressions::MemberBindingType get_BindingType();

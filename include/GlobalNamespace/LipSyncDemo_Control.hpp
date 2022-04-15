@@ -74,17 +74,24 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.KeyCode rotateLeftKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_rotateLeftKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_rotateLeftKey();
     // Get instance field reference: public UnityEngine.KeyCode rotateRightKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_rotateRightKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_rotateRightKey();
     // Get instance field reference: public UnityEngine.KeyCode resetRotationKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_resetRotationKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_resetRotationKey();
     // Get instance field reference: private System.Single resetRotation
-    [[deprecated]] float& dyn_resetRotation();
+    [[deprecated("Use field access instead!")]] float& dyn_resetRotation();
     // Get instance field reference: private System.Single rotationAmount
-    [[deprecated]] float& dyn_rotationAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_rotationAmount();
     // Get instance field reference: private System.Single rotationMax
-    [[deprecated]] float& dyn_rotationMax();
+    [[deprecated("Use field access instead!")]] float& dyn_rotationMax();
+    // public System.Void .ctor()
+    // Offset: 0x18A7464
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LipSyncDemo_Control* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LipSyncDemo_Control::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LipSyncDemo_Control*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x18A71D4
     void Start();
@@ -94,25 +101,16 @@ namespace GlobalNamespace {
     // private System.Void RotateObject(System.Single amountDegrees, System.Boolean absolute)
     // Offset: 0x18A7258
     void RotateObject(float amountDegrees, bool absolute);
-    // public System.Void .ctor()
-    // Offset: 0x18A7464
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LipSyncDemo_Control* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LipSyncDemo_Control::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LipSyncDemo_Control*, creationType>()));
-    }
   }; // LipSyncDemo_Control
   #pragma pack(pop)
   static check_size<sizeof(LipSyncDemo_Control), 44 + sizeof(float)> __GlobalNamespace_LipSyncDemo_ControlSizeCheck;
   static_assert(sizeof(LipSyncDemo_Control) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::LipSyncDemo_Control::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LipSyncDemo_Control::Start
 // Il2CppName: Start
 template<>
@@ -139,7 +137,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LipSyncDemo_Control*), "RotateObject", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{amountDegrees, absolute});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LipSyncDemo_Control::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -45,7 +45,7 @@ namespace System::Linq::Expressions {
       return Bindings;
     }
     // Get instance field reference: private readonly System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.MemberBinding> <Bindings>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::MemberBinding*>*& dyn_$Bindings$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::MemberBinding*>*& dyn_$Bindings$k__BackingField();
     // public System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.MemberBinding> get_Bindings()
     // Offset: 0xE911C4
     ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::MemberBinding*>* get_Bindings();

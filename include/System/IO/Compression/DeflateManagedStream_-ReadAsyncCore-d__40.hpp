@@ -100,23 +100,23 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
     // Get instance field reference: public System.Threading.Tasks.Task`1<System.Int32> readTask
-    [[deprecated]] ::System::Threading::Tasks::Task_1<int>*& dyn_readTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task_1<int>*& dyn_readTask();
     // Get instance field reference: public System.IO.Compression.DeflateManagedStream <>4__this
-    [[deprecated]] ::System::IO::Compression::DeflateManagedStream*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflateManagedStream*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.CancellationToken cancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_cancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_cancellationToken();
     // Get instance field reference: public System.Byte[] array
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_array();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_array();
     // Get instance field reference: public System.Int32 offset
-    [[deprecated]] int& dyn_offset();
+    [[deprecated("Use field access instead!")]] int& dyn_offset();
     // Get instance field reference: public System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Int32> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x16A1430
     void MoveNext();

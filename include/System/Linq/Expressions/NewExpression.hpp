@@ -53,9 +53,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Reflection::ConstructorInfo*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> _arguments
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__arguments();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__arguments();
     // Get instance field reference: private readonly System.Reflection.ConstructorInfo <Constructor>k__BackingField
-    [[deprecated]] ::System::Reflection::ConstructorInfo*& dyn_$Constructor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::ConstructorInfo*& dyn_$Constructor$k__BackingField();
     // public System.Reflection.ConstructorInfo get_Constructor()
     // Offset: 0xE942EC
     ::System::Reflection::ConstructorInfo* get_Constructor();

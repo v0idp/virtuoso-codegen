@@ -176,43 +176,43 @@ namespace System::Xml {
     // Set static field: static private System.Xml.XmlTextReaderImpl/System.Xml.NodeData s_None
     static void _set_s_None(::System::Xml::XmlTextReaderImpl::NodeData* value);
     // Get instance field reference: System.Xml.XmlNodeType type
-    [[deprecated]] ::System::Xml::XmlNodeType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeType& dyn_type();
     // Get instance field reference: System.String localName
-    [[deprecated]] ::StringW& dyn_localName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
     // Get instance field reference: System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: System.String nameWPrefix
-    [[deprecated]] ::StringW& dyn_nameWPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nameWPrefix();
     // Get instance field reference: private System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // Get instance field reference: private System.Char[] chars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_chars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_chars();
     // Get instance field reference: private System.Int32 valueStartPos
-    [[deprecated]] int& dyn_valueStartPos();
+    [[deprecated("Use field access instead!")]] int& dyn_valueStartPos();
     // Get instance field reference: private System.Int32 valueLength
-    [[deprecated]] int& dyn_valueLength();
+    [[deprecated("Use field access instead!")]] int& dyn_valueLength();
     // Get instance field reference: System.Xml.LineInfo lineInfo
-    [[deprecated]] ::System::Xml::LineInfo& dyn_lineInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::LineInfo& dyn_lineInfo();
     // Get instance field reference: System.Xml.LineInfo lineInfo2
-    [[deprecated]] ::System::Xml::LineInfo& dyn_lineInfo2();
+    [[deprecated("Use field access instead!")]] ::System::Xml::LineInfo& dyn_lineInfo2();
     // Get instance field reference: System.Char quoteChar
-    [[deprecated]] ::Il2CppChar& dyn_quoteChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_quoteChar();
     // Get instance field reference: System.Int32 depth
-    [[deprecated]] int& dyn_depth();
+    [[deprecated("Use field access instead!")]] int& dyn_depth();
     // Get instance field reference: private System.Boolean isEmptyOrDefault
-    [[deprecated]] bool& dyn_isEmptyOrDefault();
+    [[deprecated("Use field access instead!")]] bool& dyn_isEmptyOrDefault();
     // Get instance field reference: System.Int32 entityId
-    [[deprecated]] int& dyn_entityId();
+    [[deprecated("Use field access instead!")]] int& dyn_entityId();
     // Get instance field reference: System.Boolean xmlContextPushed
-    [[deprecated]] bool& dyn_xmlContextPushed();
+    [[deprecated("Use field access instead!")]] bool& dyn_xmlContextPushed();
     // Get instance field reference: System.Xml.XmlTextReaderImpl/System.Xml.NodeData nextAttrValueChunk
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::NodeData*& dyn_nextAttrValueChunk();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::NodeData*& dyn_nextAttrValueChunk();
     // Get instance field reference: System.Object schemaType
-    [[deprecated]] ::Il2CppObject*& dyn_schemaType();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_schemaType();
     // Get instance field reference: System.Object typedValue
-    [[deprecated]] ::Il2CppObject*& dyn_typedValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_typedValue();
     // static System.Xml.XmlTextReaderImpl/System.Xml.NodeData get_None()
     // Offset: 0xC233F8
     static ::System::Xml::XmlTextReaderImpl::NodeData* get_None();
@@ -240,6 +240,13 @@ namespace System::Xml {
     // System.String get_StringValue()
     // Offset: 0xC235CC
     ::StringW get_StringValue();
+    // System.Void .ctor()
+    // Offset: 0xC23494
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlTextReaderImpl::NodeData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlTextReaderImpl::NodeData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlTextReaderImpl::NodeData*, creationType>()));
+    }
     // System.Void TrimSpacesInValue()
     // Offset: 0xC23604
     void TrimSpacesInValue();
@@ -291,15 +298,6 @@ namespace System::Xml {
     // private System.Int32 System.IComparable.CompareTo(System.Object obj)
     // Offset: 0xC23A60
     int System_IComparable_CompareTo(::Il2CppObject* obj);
-    // System.Void .ctor()
-    // Offset: 0xC23494
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlTextReaderImpl::NodeData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlTextReaderImpl::NodeData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlTextReaderImpl::NodeData*, creationType>()));
-    }
   }; // System.Xml.XmlTextReaderImpl/System.Xml.NodeData
   #pragma pack(pop)
   static check_size<sizeof(XmlTextReaderImpl::NodeData), 136 + sizeof(::Il2CppObject*)> __System_Xml_XmlTextReaderImpl_NodeDataSizeCheck;
@@ -380,6 +378,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlTextReaderImpl::NodeData*), "get_StringValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlTextReaderImpl::NodeData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlTextReaderImpl::NodeData::TrimSpacesInValue
 // Il2CppName: TrimSpacesInValue
 template<>
@@ -546,7 +548,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlTextReaderImpl::NodeData*), "System.IComparable.CompareTo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlTextReaderImpl::NodeData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -135,7 +135,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.Image/UnityEngine.UI.Type Filled
       static void _set_Filled(::UnityEngine::UI::Image::Type value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.Image/UnityEngine.UI.Type
     #pragma pack(pop)
     static check_size<sizeof(Image::Type), 0 + sizeof(int)> __UnityEngine_UI_Image_TypeSizeCheck;
@@ -195,7 +195,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.Image/UnityEngine.UI.FillMethod Radial360
       static void _set_Radial360(::UnityEngine::UI::Image::FillMethod value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.Image/UnityEngine.UI.FillMethod
     #pragma pack(pop)
     static check_size<sizeof(Image::FillMethod), 0 + sizeof(int)> __UnityEngine_UI_Image_FillMethodSizeCheck;
@@ -335,33 +335,33 @@ namespace UnityEngine::UI {
     // Set static field: static private System.Boolean s_Initialized
     static void _set_s_Initialized(bool value);
     // Get instance field reference: private UnityEngine.Sprite m_Sprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_Sprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_Sprite();
     // Get instance field reference: private UnityEngine.Sprite m_OverrideSprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_OverrideSprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_OverrideSprite();
     // Get instance field reference: private UnityEngine.UI.Image/UnityEngine.UI.Type m_Type
-    [[deprecated]] ::UnityEngine::UI::Image::Type& dyn_m_Type();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image::Type& dyn_m_Type();
     // Get instance field reference: private System.Boolean m_PreserveAspect
-    [[deprecated]] bool& dyn_m_PreserveAspect();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PreserveAspect();
     // Get instance field reference: private System.Boolean m_FillCenter
-    [[deprecated]] bool& dyn_m_FillCenter();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_FillCenter();
     // Get instance field reference: private UnityEngine.UI.Image/UnityEngine.UI.FillMethod m_FillMethod
-    [[deprecated]] ::UnityEngine::UI::Image::FillMethod& dyn_m_FillMethod();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image::FillMethod& dyn_m_FillMethod();
     // Get instance field reference: private System.Single m_FillAmount
-    [[deprecated]] float& dyn_m_FillAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FillAmount();
     // Get instance field reference: private System.Boolean m_FillClockwise
-    [[deprecated]] bool& dyn_m_FillClockwise();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_FillClockwise();
     // Get instance field reference: private System.Int32 m_FillOrigin
-    [[deprecated]] int& dyn_m_FillOrigin();
+    [[deprecated("Use field access instead!")]] int& dyn_m_FillOrigin();
     // Get instance field reference: private System.Single m_AlphaHitTestMinimumThreshold
-    [[deprecated]] float& dyn_m_AlphaHitTestMinimumThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AlphaHitTestMinimumThreshold();
     // Get instance field reference: private System.Boolean m_Tracked
-    [[deprecated]] bool& dyn_m_Tracked();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Tracked();
     // Get instance field reference: private System.Boolean m_UseSpriteMesh
-    [[deprecated]] bool& dyn_m_UseSpriteMesh();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UseSpriteMesh();
     // Get instance field reference: private System.Single m_PixelsPerUnitMultiplier
-    [[deprecated]] float& dyn_m_PixelsPerUnitMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PixelsPerUnitMultiplier();
     // Get instance field reference: private System.Single m_CachedReferencePixelsPerUnit
-    [[deprecated]] float& dyn_m_CachedReferencePixelsPerUnit();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CachedReferencePixelsPerUnit();
     // public UnityEngine.Sprite get_sprite()
     // Offset: 0x167FFF8
     ::UnityEngine::Sprite* get_sprite();
@@ -566,11 +566,6 @@ namespace UnityEngine::UI {
     // Base method: System.Void MaskableGraphic::.ctor()
     // Base method: System.Void Graphic::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Image* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Image::.ctor");
@@ -580,7 +575,6 @@ namespace UnityEngine::UI {
     // Offset: 0x1685BDC
     // Implemented from: UnityEngine.UI.Graphic
     // Base method: System.Void Graphic::.cctor()
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
     // public override System.Void SetNativeSize()
     // Offset: 0x16814FC

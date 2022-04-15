@@ -75,7 +75,7 @@ namespace MiniJSON {
     // Set static field: static private System.String WORD_BREAK
     static void _set_WORD_BREAK(::StringW value);
     // Get instance field reference: private System.IO.StringReader json
-    [[deprecated]] ::System::IO::StringReader*& dyn_json();
+    [[deprecated("Use field access instead!")]] ::System::IO::StringReader*& dyn_json();
     // private System.Char get_PeekChar()
     // Offset: 0x195A6BC
     ::Il2CppChar get_PeekChar();

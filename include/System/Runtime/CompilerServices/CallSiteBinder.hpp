@@ -87,10 +87,17 @@ namespace System::Runtime::CompilerServices {
     // Set static field: static private readonly System.Linq.Expressions.LabelTarget <UpdateLabel>k__BackingField
     static void _set_$UpdateLabel$k__BackingField(::System::Linq::Expressions::LabelTarget* value);
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.Type,System.Object> Cache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Il2CppObject*>*& dyn_Cache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Il2CppObject*>*& dyn_Cache();
     // static public System.Linq.Expressions.LabelTarget get_UpdateLabel()
     // Offset: 0x11F7CE4
     static ::System::Linq::Expressions::LabelTarget* get_UpdateLabel();
+    // protected System.Void .ctor()
+    // Offset: 0x11F7CDC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CallSiteBinder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::CompilerServices::CallSiteBinder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CallSiteBinder*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x11F7D48
     static void _cctor();
@@ -142,15 +149,6 @@ namespace System::Runtime::CompilerServices {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::System::Runtime::CompilerServices::RuleCache_1<T>*, false>(this, ___generic__method);
     }
-    // protected System.Void .ctor()
-    // Offset: 0x11F7CDC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CallSiteBinder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Runtime::CompilerServices::CallSiteBinder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CallSiteBinder*, creationType>()));
-    }
   }; // System.Runtime.CompilerServices.CallSiteBinder
   #pragma pack(pop)
   static check_size<sizeof(CallSiteBinder), 16 + sizeof(::System::Collections::Generic::Dictionary_2<::System::Type*, ::Il2CppObject*>*)> __System_Runtime_CompilerServices_CallSiteBinderSizeCheck;
@@ -165,6 +163,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::L
     return ::il2cpp_utils::FindMethod(classof(System::Runtime::CompilerServices::CallSiteBinder*), "get_UpdateLabel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Runtime::CompilerServices::CallSiteBinder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Runtime::CompilerServices::CallSiteBinder::_cctor
 // Il2CppName: .cctor
 template<>
@@ -199,7 +201,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::L
 // Writing MetadataGetter for method: System::Runtime::CompilerServices::CallSiteBinder::GetRuleCache
 // Il2CppName: GetRuleCache
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: System::Runtime::CompilerServices::CallSiteBinder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

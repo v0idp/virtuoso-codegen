@@ -70,17 +70,24 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ControllerInputNode _inputNode
-    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__inputNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerInputNode*& dyn__inputNode();
     // Get instance field reference: private VROSC.NoteFieldMonitor/VROSC.HandData _leftHand
-    [[deprecated]] ::VROSC::NoteFieldMonitor::HandData*& dyn__leftHand();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldMonitor::HandData*& dyn__leftHand();
     // Get instance field reference: private VROSC.NoteFieldMonitor/VROSC.HandData _righthand
-    [[deprecated]] ::VROSC::NoteFieldMonitor::HandData*& dyn__righthand();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldMonitor::HandData*& dyn__righthand();
     // public VROSC.NoteFieldMonitor/VROSC.HandData get_Left()
     // Offset: 0xC59158
     ::VROSC::NoteFieldMonitor::HandData* get_Left();
     // public VROSC.NoteFieldMonitor/VROSC.HandData get_Right()
     // Offset: 0xC59160
     ::VROSC::NoteFieldMonitor::HandData* get_Right();
+    // public System.Void .ctor()
+    // Offset: 0xC59B94
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteFieldMonitor* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldMonitor::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteFieldMonitor*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xC59168
     void Awake();
@@ -99,19 +106,6 @@ namespace VROSC {
     // private VROSC.NoteFieldMonitor/VROSC.HandData GetHandDataByInputDevice(VROSC.InputDevice inputDevice)
     // Offset: 0xC59338
     ::VROSC::NoteFieldMonitor::HandData* GetHandDataByInputDevice(::VROSC::InputDevice* inputDevice);
-    // public System.Void .ctor()
-    // Offset: 0xC59B94
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteFieldMonitor* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteFieldMonitor::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteFieldMonitor*, creationType>()));
-    }
   }; // VROSC.NoteFieldMonitor
   #pragma pack(pop)
   static check_size<sizeof(NoteFieldMonitor), 40 + sizeof(::VROSC::NoteFieldMonitor::HandData*)> __VROSC_NoteFieldMonitorSizeCheck;
@@ -134,6 +128,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::No
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteFieldMonitor*), "get_Right", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::NoteFieldMonitor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteFieldMonitor::Awake
 // Il2CppName: Awake
 template<>
@@ -185,7 +183,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::No
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteFieldMonitor*), "GetHandDataByInputDevice", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{inputDevice});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteFieldMonitor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

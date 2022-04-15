@@ -57,9 +57,9 @@ namespace System::Threading::Tasks {
       return *reinterpret_cast<::System::Threading::Tasks::ITaskCompletionAction*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.IList`1<System.Threading.Tasks.Task> _tasks
-    [[deprecated]] ::System::Collections::Generic::IList_1<::System::Threading::Tasks::Task*>*& dyn__tasks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::System::Threading::Tasks::Task*>*& dyn__tasks();
     // Get instance field reference: private System.Int32 m_firstTaskAlreadyCompleted
-    [[deprecated]] int& dyn_m_firstTaskAlreadyCompleted();
+    [[deprecated("Use field access instead!")]] int& dyn_m_firstTaskAlreadyCompleted();
     // public System.Void .ctor(System.Collections.Generic.IList`1<System.Threading.Tasks.Task> tasks)
     // Offset: 0xE5EF3C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

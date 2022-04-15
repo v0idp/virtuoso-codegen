@@ -54,7 +54,7 @@ namespace VROSC {
       return midiManager;
     }
     // Get instance field reference: private VROSC.MidiManager _midiManager
-    [[deprecated]] ::VROSC::MidiManager*& dyn__midiManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::MidiManager*& dyn__midiManager();
     // public System.Void .ctor(VROSC.MidiManager midiManager)
     // Offset: 0x192698C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

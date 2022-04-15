@@ -91,7 +91,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRMeshRenderer/ConfidenceBehavior ToggleRenderer
       static void _set_ToggleRenderer(::GlobalNamespace::OVRMeshRenderer::ConfidenceBehavior value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRMeshRenderer/ConfidenceBehavior
     #pragma pack(pop)
     static check_size<sizeof(OVRMeshRenderer::ConfidenceBehavior), 0 + sizeof(int)> __GlobalNamespace_OVRMeshRenderer_ConfidenceBehaviorSizeCheck;
@@ -133,7 +133,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRMeshRenderer/SystemGestureBehavior SwapMaterial
       static void _set_SwapMaterial(::GlobalNamespace::OVRMeshRenderer::SystemGestureBehavior value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRMeshRenderer/SystemGestureBehavior
     #pragma pack(pop)
     static check_size<sizeof(OVRMeshRenderer::SystemGestureBehavior), 0 + sizeof(int)> __GlobalNamespace_OVRMeshRenderer_SystemGestureBehaviorSizeCheck;
@@ -215,29 +215,29 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private OVRMeshRenderer/IOVRMeshRendererDataProvider _dataProvider
-    [[deprecated]] ::GlobalNamespace::OVRMeshRenderer::IOVRMeshRendererDataProvider*& dyn__dataProvider();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMeshRenderer::IOVRMeshRendererDataProvider*& dyn__dataProvider();
     // Get instance field reference: private OVRMesh _ovrMesh
-    [[deprecated]] ::GlobalNamespace::OVRMesh*& dyn__ovrMesh();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMesh*& dyn__ovrMesh();
     // Get instance field reference: private OVRSkeleton _ovrSkeleton
-    [[deprecated]] ::GlobalNamespace::OVRSkeleton*& dyn__ovrSkeleton();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeleton*& dyn__ovrSkeleton();
     // Get instance field reference: private OVRMeshRenderer/ConfidenceBehavior _confidenceBehavior
-    [[deprecated]] ::GlobalNamespace::OVRMeshRenderer::ConfidenceBehavior& dyn__confidenceBehavior();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMeshRenderer::ConfidenceBehavior& dyn__confidenceBehavior();
     // Get instance field reference: private OVRMeshRenderer/SystemGestureBehavior _systemGestureBehavior
-    [[deprecated]] ::GlobalNamespace::OVRMeshRenderer::SystemGestureBehavior& dyn__systemGestureBehavior();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMeshRenderer::SystemGestureBehavior& dyn__systemGestureBehavior();
     // Get instance field reference: private UnityEngine.Material _systemGestureMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__systemGestureMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__systemGestureMaterial();
     // Get instance field reference: private UnityEngine.Material _originalMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__originalMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__originalMaterial();
     // Get instance field reference: private UnityEngine.SkinnedMeshRenderer _skinnedMeshRenderer
-    [[deprecated]] ::UnityEngine::SkinnedMeshRenderer*& dyn__skinnedMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SkinnedMeshRenderer*& dyn__skinnedMeshRenderer();
     // Get instance field reference: private System.Boolean <IsInitialized>k__BackingField
-    [[deprecated]] bool& dyn_$IsInitialized$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsInitialized$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // Get instance field reference: private System.Boolean <ShouldUseSystemGestureMaterial>k__BackingField
-    [[deprecated]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
     // public System.Boolean get_IsInitialized()
     // Offset: 0xE22870
     bool get_IsInitialized();
@@ -262,6 +262,13 @@ namespace GlobalNamespace {
     // private System.Void set_ShouldUseSystemGestureMaterial(System.Boolean value)
     // Offset: 0xE228B4
     void set_ShouldUseSystemGestureMaterial(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xE23340
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRMeshRenderer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMeshRenderer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRMeshRenderer*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xE228C0
     void Awake();
@@ -277,19 +284,6 @@ namespace GlobalNamespace {
     // private System.Void Update()
     // Offset: 0xE2305C
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0xE23340
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRMeshRenderer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMeshRenderer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRMeshRenderer*, creationType>()));
-    }
   }; // OVRMeshRenderer
   #pragma pack(pop)
   static check_size<sizeof(OVRMeshRenderer), 83 + sizeof(bool)> __GlobalNamespace_OVRMeshRendererSizeCheck;
@@ -368,6 +362,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRMeshRenderer*), "set_ShouldUseSystemGestureMaterial", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRMeshRenderer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRMeshRenderer::Awake
 // Il2CppName: Awake
 template<>
@@ -408,7 +406,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRMeshRenderer*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRMeshRenderer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

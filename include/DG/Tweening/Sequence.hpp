@@ -73,11 +73,11 @@ namespace DG::Tweening {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: readonly System.Collections.Generic.List`1<DG.Tweening.Tween> sequencedTweens
-    [[deprecated]] ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>*& dyn_sequencedTweens();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::DG::Tweening::Tween*>*& dyn_sequencedTweens();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<DG.Tweening.Core.ABSSequentiable> _sequencedObjs
-    [[deprecated]] ::System::Collections::Generic::List_1<::DG::Tweening::Core::ABSSequentiable*>*& dyn__sequencedObjs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::DG::Tweening::Core::ABSSequentiable*>*& dyn__sequencedObjs();
     // Get instance field reference: System.Single lastTweenInsertTime
-    [[deprecated]] float& dyn_lastTweenInsertTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastTweenInsertTime();
     // static DG.Tweening.Sequence DoPrepend(DG.Tweening.Sequence inSequence, DG.Tweening.Tween t)
     // Offset: 0x15E59E8
     static ::DG::Tweening::Sequence* DoPrepend(::DG::Tweening::Sequence* inSequence, ::DG::Tweening::Tween* t);
@@ -116,7 +116,6 @@ namespace DG::Tweening {
     // Implemented from: DG.Tweening.Tween
     // Base method: System.Void Tween::.ctor()
     // Base method: System.Void ABSSequentiable::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Sequence* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Sequence::.ctor");

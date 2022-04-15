@@ -47,7 +47,7 @@ namespace VROSC {
       return adjustableMesh;
     }
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh, VROSC.MinMaxVector2 minMax)
     // Offset: 0x956388
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

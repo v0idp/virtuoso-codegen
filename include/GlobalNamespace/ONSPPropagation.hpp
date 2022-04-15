@@ -50,18 +50,16 @@ namespace GlobalNamespace {
     // static public ONSPPropagation/PropagationInterface get_Interface()
     // Offset: 0x1760260
     static ::GlobalNamespace::ONSPPropagation::PropagationInterface* get_Interface();
-    // static private ONSPPropagation/PropagationInterface FindInterface()
-    // Offset: 0x17602CC
-    static ::GlobalNamespace::ONSPPropagation::PropagationInterface* FindInterface();
     // public System.Void .ctor()
     // Offset: 0x1760738
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ONSPPropagation* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagation::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagation*, creationType>()));
     }
+    // static private ONSPPropagation/PropagationInterface FindInterface()
+    // Offset: 0x17602CC
+    static ::GlobalNamespace::ONSPPropagation::PropagationInterface* FindInterface();
   }; // ONSPPropagation
   #pragma pack(pop)
 }
@@ -74,6 +72,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagation*), "get_Interface", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagation::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ONSPPropagation::FindInterface
 // Il2CppName: FindInterface
 template<>
@@ -82,7 +84,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagation*), "FindInterface", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagation::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

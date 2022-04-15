@@ -53,7 +53,7 @@ namespace UnityEngine {
       return id;
     }
     // Get instance field reference: System.Int32 id
-    [[deprecated]] int& dyn_id();
+    [[deprecated("Use field access instead!")]] int& dyn_id();
     // public System.Void .ctor(System.String name)
     // Offset: 0xBC7E74
     PropertyName(::StringW name);

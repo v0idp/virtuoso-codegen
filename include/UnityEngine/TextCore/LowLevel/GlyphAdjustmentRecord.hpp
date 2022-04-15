@@ -49,9 +49,9 @@ namespace UnityEngine::TextCore::LowLevel {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt32 m_GlyphIndex
-    [[deprecated]] uint& dyn_m_GlyphIndex();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_GlyphIndex();
     // Get instance field reference: private UnityEngine.TextCore.LowLevel.GlyphValueRecord m_GlyphValueRecord
-    [[deprecated]] ::UnityEngine::TextCore::LowLevel::GlyphValueRecord& dyn_m_GlyphValueRecord();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::LowLevel::GlyphValueRecord& dyn_m_GlyphValueRecord();
     // public System.UInt32 get_glyphIndex()
     // Offset: 0x18EC730
     uint get_glyphIndex();

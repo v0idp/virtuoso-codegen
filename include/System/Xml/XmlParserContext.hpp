@@ -108,25 +108,25 @@ namespace System::Xml {
     static_assert(sizeof(::System::Text::Encoding*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlNameTable _nt
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn__nt();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn__nt();
     // Get instance field reference: private System.Xml.XmlNamespaceManager _nsMgr
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn__nsMgr();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn__nsMgr();
     // Get instance field reference: private System.String _docTypeName
-    [[deprecated]] ::StringW& dyn__docTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__docTypeName();
     // Get instance field reference: private System.String _pubId
-    [[deprecated]] ::StringW& dyn__pubId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__pubId();
     // Get instance field reference: private System.String _sysId
-    [[deprecated]] ::StringW& dyn__sysId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sysId();
     // Get instance field reference: private System.String _internalSubset
-    [[deprecated]] ::StringW& dyn__internalSubset();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__internalSubset();
     // Get instance field reference: private System.String _xmlLang
-    [[deprecated]] ::StringW& dyn__xmlLang();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__xmlLang();
     // Get instance field reference: private System.Xml.XmlSpace _xmlSpace
-    [[deprecated]] ::System::Xml::XmlSpace& dyn__xmlSpace();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlSpace& dyn__xmlSpace();
     // Get instance field reference: private System.String _baseURI
-    [[deprecated]] ::StringW& dyn__baseURI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__baseURI();
     // Get instance field reference: private System.Text.Encoding _encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn__encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn__encoding();
     // public System.Xml.XmlNameTable get_NameTable()
     // Offset: 0x10240C4
     ::System::Xml::XmlNameTable* get_NameTable();

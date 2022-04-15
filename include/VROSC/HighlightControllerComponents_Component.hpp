@@ -79,7 +79,7 @@ namespace VROSC {
     // Set static field: static public VROSC.HighlightControllerComponents/VROSC.Component MenuButton
     static void _set_MenuButton(::VROSC::HighlightControllerComponents::Component value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.HighlightControllerComponents/VROSC.Component
   #pragma pack(pop)
   static check_size<sizeof(HighlightControllerComponents::Component), 0 + sizeof(int)> __VROSC_HighlightControllerComponents_ComponentSizeCheck;

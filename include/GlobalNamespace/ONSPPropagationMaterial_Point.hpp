@@ -45,9 +45,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single frequency
-    [[deprecated]] float& dyn_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_frequency();
     // Get instance field reference: public System.Single data
-    [[deprecated]] float& dyn_data();
+    [[deprecated("Use field access instead!")]] float& dyn_data();
     // public System.Void .ctor(System.Single frequency, System.Single data)
     // Offset: 0x176C378
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

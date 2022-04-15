@@ -42,6 +42,13 @@ namespace System::Xml {
   // [TokenAttribute] Offset: FFFFFFFF
   class XmlResolver : public ::Il2CppObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x1106B04
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlResolver* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlResolver::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlResolver*, creationType>()));
+    }
     // public System.Object GetEntity(System.Uri absoluteUri, System.String role, System.Type ofObjectToReturn)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::Il2CppObject* GetEntity(::System::Uri* absoluteUri, ::StringW role, ::System::Type* ofObjectToReturn);
@@ -54,19 +61,14 @@ namespace System::Xml {
     // public System.Threading.Tasks.Task`1<System.Object> GetEntityAsync(System.Uri absoluteUri, System.String role, System.Type ofObjectToReturn)
     // Offset: 0x1106AC4
     ::System::Threading::Tasks::Task_1<::Il2CppObject*>* GetEntityAsync(::System::Uri* absoluteUri, ::StringW role, ::System::Type* ofObjectToReturn);
-    // protected System.Void .ctor()
-    // Offset: 0x1106B04
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlResolver* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlResolver::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlResolver*, creationType>()));
-    }
   }; // System.Xml.XmlResolver
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::XmlResolver::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlResolver::GetEntity
 // Il2CppName: GetEntity
 template<>
@@ -109,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlResolver*), "GetEntityAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{absoluteUri, role, ofObjectToReturn});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlResolver::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

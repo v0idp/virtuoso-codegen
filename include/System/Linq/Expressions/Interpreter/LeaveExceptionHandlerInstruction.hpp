@@ -52,7 +52,7 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private readonly System.Linq.Expressions.Interpreter.LeaveExceptionHandlerInstruction[] s_cache
     static void _set_s_cache(::ArrayW<::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruction*> value);
     // Get instance field reference: private readonly System.Boolean _hasValue
-    [[deprecated]] bool& dyn__hasValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasValue();
     // private System.Void .ctor(System.Int32 labelIndex, System.Boolean hasValue)
     // Offset: 0xF21114
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

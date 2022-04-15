@@ -84,17 +84,17 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::ArrayW<::System::Linq::Expressions::Interpreter::ExceptionHandler*>) == 0x8);
     public:
     // Get instance field reference: readonly System.Int32 TryStartIndex
-    [[deprecated]] int& dyn_TryStartIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_TryStartIndex();
     // Get instance field reference: readonly System.Int32 TryEndIndex
-    [[deprecated]] int& dyn_TryEndIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_TryEndIndex();
     // Get instance field reference: readonly System.Int32 FinallyStartIndex
-    [[deprecated]] int& dyn_FinallyStartIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_FinallyStartIndex();
     // Get instance field reference: readonly System.Int32 FinallyEndIndex
-    [[deprecated]] int& dyn_FinallyEndIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_FinallyEndIndex();
     // Get instance field reference: readonly System.Int32 GotoEndTargetIndex
-    [[deprecated]] int& dyn_GotoEndTargetIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_GotoEndTargetIndex();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.ExceptionHandler[] _handlers
-    [[deprecated]] ::ArrayW<::System::Linq::Expressions::Interpreter::ExceptionHandler*>& dyn__handlers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Linq::Expressions::Interpreter::ExceptionHandler*>& dyn__handlers();
     // System.Boolean get_IsFinallyBlockExist()
     // Offset: 0xE9E3D0
     bool get_IsFinallyBlockExist();

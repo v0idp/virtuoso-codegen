@@ -65,11 +65,11 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.RuntimeTypeHandle type
-    [[deprecated]] ::System::RuntimeTypeHandle& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::RuntimeTypeHandle& dyn_type();
     // Get instance field reference: private System.IntPtr Value
-    [[deprecated]] ::System::IntPtr& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Value();
     // Get instance field reference: private System.IntPtr Type
-    [[deprecated]] ::System::IntPtr& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Type();
     // System.Boolean get_IsNull()
     // Offset: 0x12B52BC
     bool get_IsNull();

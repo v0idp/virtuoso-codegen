@@ -69,21 +69,19 @@ namespace Newtonsoft::Json::Utilities {
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<FSharpUtils::$$c__55_2<TKey, TValue>*>::get(), ".cctor", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___internal__method);
     }
+    // public System.Void .ctor()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FSharpUtils::$$c__55_2<TKey, TValue>* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::FSharpUtils::$$c__55_2::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FSharpUtils::$$c__55_2<TKey, TValue>*, creationType>()));
+    }
     // System.Tuple`2<TKey,TValue> <BuildMapCreator>b__55_1(System.Collections.Generic.KeyValuePair`2<TKey,TValue> kv)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Tuple_2<TKey, TValue>* $BuildMapCreator$b__55_1(::System::Collections::Generic::KeyValuePair_2<TKey, TValue> kv) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::FSharpUtils::$$c__55_2::<BuildMapCreator>b__55_1");
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "<BuildMapCreator>b__55_1", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(kv)})));
       return ::il2cpp_utils::RunMethodRethrow<::System::Tuple_2<TKey, TValue>*, false>(this, ___internal__method, kv);
-    }
-    // public System.Void .ctor()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FSharpUtils::$$c__55_2<TKey, TValue>* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::FSharpUtils::$$c__55_2::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FSharpUtils::$$c__55_2<TKey, TValue>*, creationType>()));
     }
   }; // Newtonsoft.Json.Utilities.FSharpUtils/Newtonsoft.Json.Utilities.<>c__55`2
   // Could not write size check! Type: Newtonsoft.Json.Utilities.FSharpUtils/Newtonsoft.Json.Utilities.<>c__55`2 is generic, or has no fields that are valid for size checks!

@@ -68,13 +68,13 @@ namespace System::Text {
     // Set static field: static private System.Object s_InternalSyncObject
     static void _set_s_InternalSyncObject(::Il2CppObject* value);
     // Get instance field reference: private System.Char cBestFit
-    [[deprecated]] ::Il2CppChar& dyn_cBestFit();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_cBestFit();
     // Get instance field reference: private System.Text.InternalEncoderBestFitFallback oFallback
-    [[deprecated]] ::System::Text::InternalEncoderBestFitFallback*& dyn_oFallback();
+    [[deprecated("Use field access instead!")]] ::System::Text::InternalEncoderBestFitFallback*& dyn_oFallback();
     // Get instance field reference: private System.Int32 iCount
-    [[deprecated]] int& dyn_iCount();
+    [[deprecated("Use field access instead!")]] int& dyn_iCount();
     // Get instance field reference: private System.Int32 iSize
-    [[deprecated]] int& dyn_iSize();
+    [[deprecated("Use field access instead!")]] int& dyn_iSize();
     // static private System.Object get_InternalSyncObject()
     // Offset: 0x106D6F4
     static ::Il2CppObject* get_InternalSyncObject();

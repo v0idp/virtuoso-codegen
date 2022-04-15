@@ -47,9 +47,16 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // Get instance field reference: public System.Boolean isOgg
-    [[deprecated]] bool& dyn_isOgg();
+    [[deprecated("Use field access instead!")]] bool& dyn_isOgg();
+    // public System.Void .ctor()
+    // Offset: 0x95AF68
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CloudStateManager::$$c__DisplayClass22_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CloudStateManager::$$c__DisplayClass22_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CloudStateManager::$$c__DisplayClass22_0*, creationType>()));
+    }
     // System.Void <DownloadPreview>b__0(System.String file)
     // Offset: 0x95AF70
     void $DownloadPreview$b__0(::StringW file);
@@ -59,21 +66,16 @@ namespace VROSC {
     // System.Void <DownloadPreview>b__2(VROSC.Error e)
     // Offset: 0x95B0B4
     void $DownloadPreview$b__2(::VROSC::Error e);
-    // public System.Void .ctor()
-    // Offset: 0x95AF68
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CloudStateManager::$$c__DisplayClass22_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CloudStateManager::$$c__DisplayClass22_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CloudStateManager::$$c__DisplayClass22_0*, creationType>()));
-    }
   }; // VROSC.CloudStateManager/VROSC.<>c__DisplayClass22_0
   #pragma pack(pop)
   static check_size<sizeof(CloudStateManager::$$c__DisplayClass22_0), 24 + sizeof(bool)> __VROSC_CloudStateManager_$$c__DisplayClass22_0SizeCheck;
   static_assert(sizeof(CloudStateManager::$$c__DisplayClass22_0) == 0x19);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::CloudStateManager::$$c__DisplayClass22_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CloudStateManager::$$c__DisplayClass22_0::$DownloadPreview$b__0
 // Il2CppName: <DownloadPreview>b__0
 template<>
@@ -101,7 +103,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::CloudStateManager::$$c__DisplayClass22_0*), "<DownloadPreview>b__2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e});
   }
 };
-// Writing MetadataGetter for method: VROSC::CloudStateManager::$$c__DisplayClass22_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

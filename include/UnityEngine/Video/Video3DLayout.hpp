@@ -61,7 +61,7 @@ namespace UnityEngine::Video {
     // Set static field: static public UnityEngine.Video.Video3DLayout OverUnder3D
     static void _set_OverUnder3D(::UnityEngine::Video::Video3DLayout value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Video.Video3DLayout
   #pragma pack(pop)
   static check_size<sizeof(Video3DLayout), 0 + sizeof(int)> __UnityEngine_Video_Video3DLayoutSizeCheck;

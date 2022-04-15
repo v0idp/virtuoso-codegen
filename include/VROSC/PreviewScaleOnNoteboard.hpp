@@ -87,18 +87,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteboard
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteboard();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__noteboard();
     // Get instance field reference: private VROSC.ScaleRowUI _scaleRow
-    [[deprecated]] ::VROSC::ScaleRowUI*& dyn__scaleRow();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScaleRowUI*& dyn__scaleRow();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.PlayAxis _axis
-    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn__axis();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::PlayAxis& dyn__axis();
     // Get instance field reference: private System.Single _highLightPower
-    [[deprecated]] float& dyn__highLightPower();
+    [[deprecated("Use field access instead!")]] float& dyn__highLightPower();
     // Get instance field reference: private VROSC.ScaleNoteButtonUI[] _noteButtons
-    [[deprecated]] ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__noteButtons();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__noteButtons();
     // private System.Boolean get_Valid()
     // Offset: 0xAE5E0C
     bool get_Valid();
+    // public System.Void .ctor()
+    // Offset: 0xAE6864
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PreviewScaleOnNoteboard* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PreviewScaleOnNoteboard::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PreviewScaleOnNoteboard*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xAE5EA0
     void Awake();
@@ -135,19 +142,6 @@ namespace VROSC {
     // private System.Void OnDisable()
     // Offset: 0xAE6860
     void OnDisable();
-    // public System.Void .ctor()
-    // Offset: 0xAE6864
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PreviewScaleOnNoteboard* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PreviewScaleOnNoteboard::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PreviewScaleOnNoteboard*, creationType>()));
-    }
   }; // VROSC.PreviewScaleOnNoteboard
   #pragma pack(pop)
   static check_size<sizeof(PreviewScaleOnNoteboard), 48 + sizeof(::ArrayW<::VROSC::ScaleNoteButtonUI*>)> __VROSC_PreviewScaleOnNoteboardSizeCheck;
@@ -162,6 +156,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PreviewScaleOnNoteboard*), "get_Valid", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::PreviewScaleOnNoteboard::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PreviewScaleOnNoteboard::Awake
 // Il2CppName: Awake
 template<>
@@ -266,7 +264,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PreviewScaleOnNoteboard*), "OnDisable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::PreviewScaleOnNoteboard::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

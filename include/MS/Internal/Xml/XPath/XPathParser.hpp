@@ -110,9 +110,9 @@ namespace MS::Internal::Xml::XPath {
     // Set static field: static private System.Collections.Hashtable AxesTable
     static void _set_AxesTable(::System::Collections::Hashtable* value);
     // Get instance field reference: private MS.Internal.Xml.XPath.XPathScanner scanner
-    [[deprecated]] ::MS::Internal::Xml::XPath::XPathScanner*& dyn_scanner();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::XPathScanner*& dyn_scanner();
     // Get instance field reference: private System.Int32 parseDepth
-    [[deprecated]] int& dyn_parseDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_parseDepth();
     // private System.Void .ctor(MS.Internal.Xml.XPath.XPathScanner scanner)
     // Offset: 0x11A178C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

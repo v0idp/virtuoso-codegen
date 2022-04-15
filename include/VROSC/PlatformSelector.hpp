@@ -123,7 +123,7 @@ namespace VROSC {
       // Set static field: static public VROSC.PlatformSelector/VROSC.Platform Steam
       static void _set_Steam(::VROSC::PlatformSelector::Platform value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.PlatformSelector/VROSC.Platform
     #pragma pack(pop)
     static check_size<sizeof(PlatformSelector::Platform), 0 + sizeof(int)> __VROSC_PlatformSelector_PlatformSizeCheck;
@@ -233,35 +233,35 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.VRPlayer> OnPlayerInitialized
     static void _set_OnPlayerInitialized(::System::Action_1<::VROSC::VRPlayer*>* value);
     // Get instance field reference: private VROSC.VRPlayer _oculusPrefab
-    [[deprecated]] ::VROSC::VRPlayer*& dyn__oculusPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::VRPlayer*& dyn__oculusPrefab();
     // Get instance field reference: private VROSC.VRPlayer _steamPrefab
-    [[deprecated]] ::VROSC::VRPlayer*& dyn__steamPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::VRPlayer*& dyn__steamPrefab();
     // Get instance field reference: private VROSC.VRPlayer _debugPrefab
-    [[deprecated]] ::VROSC::VRPlayer*& dyn__debugPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::VRPlayer*& dyn__debugPrefab();
     // Get instance field reference: private VROSC.PlatformSelector/VROSC.DebugSettings _debugSettings
-    [[deprecated]] ::VROSC::PlatformSelector::DebugSettings*& dyn__debugSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::PlatformSelector::DebugSettings*& dyn__debugSettings();
     // Get instance field reference: private VROSC.HmdProfile[] _hmdProfiles
-    [[deprecated]] ::ArrayW<::VROSC::HmdProfile*>& dyn__hmdProfiles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::HmdProfile*>& dyn__hmdProfiles();
     // Get instance field reference: private LIV.SDK.Unity.LIV _liv
-    [[deprecated]] ::LIV::SDK::Unity::LIV*& dyn__liv();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::LIV*& dyn__liv();
     // Get instance field reference: private System.Boolean _bypassEntitlementCheck
-    [[deprecated]] bool& dyn__bypassEntitlementCheck();
+    [[deprecated("Use field access instead!")]] bool& dyn__bypassEntitlementCheck();
     // Get instance field reference: private System.UInt64 _applicationUserID
-    [[deprecated]] uint64_t& dyn__applicationUserID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn__applicationUserID();
     // Get instance field reference: private System.Boolean _waitingForUserId
-    [[deprecated]] bool& dyn__waitingForUserId();
+    [[deprecated("Use field access instead!")]] bool& dyn__waitingForUserId();
     // Get instance field reference: private VROSC.VRPlayer <VRPlayer>k__BackingField
-    [[deprecated]] ::VROSC::VRPlayer*& dyn_$VRPlayer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::VRPlayer*& dyn_$VRPlayer$k__BackingField();
     // Get instance field reference: private System.String <PlatformUID>k__BackingField
-    [[deprecated]] ::StringW& dyn_$PlatformUID$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$PlatformUID$k__BackingField();
     // Get instance field reference: private System.String <PlatformUsername>k__BackingField
-    [[deprecated]] ::StringW& dyn_$PlatformUsername$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$PlatformUsername$k__BackingField();
     // Get instance field reference: private System.Boolean <HasPassedEntitlement>k__BackingField
-    [[deprecated]] bool& dyn_$HasPassedEntitlement$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasPassedEntitlement$k__BackingField();
     // Get instance field reference: private VROSC.PlatformSelector/VROSC.Platform <CurrentPlatform>k__BackingField
-    [[deprecated]] ::VROSC::PlatformSelector::Platform& dyn_$CurrentPlatform$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::PlatformSelector::Platform& dyn_$CurrentPlatform$k__BackingField();
     // Get instance field reference: private VROSC.HmdProfile <CurrentHmdProfile>k__BackingField
-    [[deprecated]] ::VROSC::HmdProfile*& dyn_$CurrentHmdProfile$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::HmdProfile*& dyn_$CurrentHmdProfile$k__BackingField();
     // public VROSC.VRPlayer get_VRPlayer()
     // Offset: 0xADEF90
     ::VROSC::VRPlayer* get_VRPlayer();
@@ -298,6 +298,13 @@ namespace VROSC {
     // private System.Void set_CurrentHmdProfile(VROSC.HmdProfile value)
     // Offset: 0xADEFEC
     void set_CurrentHmdProfile(::VROSC::HmdProfile* value);
+    // public System.Void .ctor()
+    // Offset: 0xADFDD8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlatformSelector* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PlatformSelector::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlatformSelector*, creationType>()));
+    }
     // public System.Void Setup()
     // Offset: 0xADEFF4
     void Setup();
@@ -322,19 +329,6 @@ namespace VROSC {
     // private UnityEngine.Component CopyComponent(UnityEngine.Component original, UnityEngine.GameObject destination)
     // Offset: 0xADFCF0
     ::UnityEngine::Component* CopyComponent(::UnityEngine::Component* original, ::UnityEngine::GameObject* destination);
-    // public System.Void .ctor()
-    // Offset: 0xADFDD8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlatformSelector* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PlatformSelector::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlatformSelector*, creationType>()));
-    }
   }; // VROSC.PlatformSelector
   #pragma pack(pop)
   static check_size<sizeof(PlatformSelector), 128 + sizeof(::VROSC::HmdProfile*)> __VROSC_PlatformSelectorSizeCheck;
@@ -445,6 +439,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PlatformSelector*), "set_CurrentHmdProfile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::PlatformSelector::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PlatformSelector::Setup
 // Il2CppName: Setup
 template<>
@@ -514,7 +512,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::PlatformSelector*), "CopyComponent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original, destination});
   }
 };
-// Writing MetadataGetter for method: VROSC::PlatformSelector::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

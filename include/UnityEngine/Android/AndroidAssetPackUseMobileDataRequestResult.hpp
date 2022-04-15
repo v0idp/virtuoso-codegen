@@ -40,7 +40,7 @@ namespace UnityEngine::Android {
       return allowed;
     }
     // Get instance field reference: private readonly System.Boolean <allowed>k__BackingField
-    [[deprecated]] bool& dyn_$allowed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$allowed$k__BackingField();
     // System.Void .ctor(System.Boolean allowed)
     // Offset: 0x18662A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -166,39 +166,39 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public DG.Tweening.PathMode mode
-    [[deprecated]] ::DG::Tweening::PathMode& dyn_mode();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::PathMode& dyn_mode();
     // Get instance field reference: public DG.Tweening.Plugins.Options.OrientType orientType
-    [[deprecated]] ::DG::Tweening::Plugins::Options::OrientType& dyn_orientType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Plugins::Options::OrientType& dyn_orientType();
     // Get instance field reference: public DG.Tweening.AxisConstraint lockPositionAxis
-    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_lockPositionAxis();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::AxisConstraint& dyn_lockPositionAxis();
     // Get instance field reference: public DG.Tweening.AxisConstraint lockRotationAxis
-    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_lockRotationAxis();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::AxisConstraint& dyn_lockRotationAxis();
     // Get instance field reference: public System.Boolean isClosedPath
-    [[deprecated]] bool& dyn_isClosedPath();
+    [[deprecated("Use field access instead!")]] bool& dyn_isClosedPath();
     // Get instance field reference: public UnityEngine.Vector3 lookAtPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_lookAtPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_lookAtPosition();
     // Get instance field reference: public UnityEngine.Transform lookAtTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_lookAtTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_lookAtTransform();
     // Get instance field reference: public System.Single lookAhead
-    [[deprecated]] float& dyn_lookAhead();
+    [[deprecated("Use field access instead!")]] float& dyn_lookAhead();
     // Get instance field reference: public System.Boolean hasCustomForwardDirection
-    [[deprecated]] bool& dyn_hasCustomForwardDirection();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasCustomForwardDirection();
     // Get instance field reference: public UnityEngine.Quaternion forward
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_forward();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_forward();
     // Get instance field reference: public System.Boolean useLocalPosition
-    [[deprecated]] bool& dyn_useLocalPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_useLocalPosition();
     // Get instance field reference: public UnityEngine.Transform parent
-    [[deprecated]] ::UnityEngine::Transform*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_parent();
     // Get instance field reference: public System.Boolean isRigidbody
-    [[deprecated]] bool& dyn_isRigidbody();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRigidbody();
     // Get instance field reference: UnityEngine.Quaternion startupRot
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_startupRot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_startupRot();
     // Get instance field reference: System.Single startupZRot
-    [[deprecated]] float& dyn_startupZRot();
+    [[deprecated("Use field access instead!")]] float& dyn_startupZRot();
     // Get instance field reference: System.Boolean addedExtraStartWp
-    [[deprecated]] bool& dyn_addedExtraStartWp();
+    [[deprecated("Use field access instead!")]] bool& dyn_addedExtraStartWp();
     // Get instance field reference: System.Boolean addedExtraEndWp
-    [[deprecated]] bool& dyn_addedExtraEndWp();
+    [[deprecated("Use field access instead!")]] bool& dyn_addedExtraEndWp();
     // public System.Void Reset()
     // Offset: 0x15E1C2C
     void Reset();

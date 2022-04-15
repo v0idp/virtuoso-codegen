@@ -64,7 +64,7 @@ namespace UnityEngine::Events {
       return m_InvokeArray;
     }
     // Get instance field reference: private System.Object[] m_InvokeArray
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_m_InvokeArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_m_InvokeArray();
     // public System.Void AddListener(UnityEngine.Events.UnityAction call)
     // Offset: 0x183CAD4
     void AddListener(::UnityEngine::Events::UnityAction* call);
@@ -81,7 +81,6 @@ namespace UnityEngine::Events {
     // Offset: 0x183CA30
     // Implemented from: UnityEngine.Events.UnityEventBase
     // Base method: System.Void UnityEventBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnityEvent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::UnityEvent::.ctor");

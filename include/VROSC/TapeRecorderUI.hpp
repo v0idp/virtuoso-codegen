@@ -182,46 +182,53 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TapeRecorder _tapeRecorder
-    [[deprecated]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
+    [[deprecated("Use field access instead!")]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
     // Get instance field reference: private UnityEngine.GameObject _mainPanel
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__mainPanel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__mainPanel();
     // Get instance field reference: private UnityEngine.GameObject _warningPopup
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__warningPopup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__warningPopup();
     // Get instance field reference: private VROSC.UIButton _recordButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__recordButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__recordButton();
     // Get instance field reference: private VROSC.UIButton _playButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__playButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__playButton();
     // Get instance field reference: private VROSC.UIButton _saveButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__saveButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__saveButton();
     // Get instance field reference: private VROSC.UIButton _warningCancelButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__warningCancelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__warningCancelButton();
     // Get instance field reference: private VROSC.UIButton _warningOKButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__warningOKButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__warningOKButton();
     // Get instance field reference: private VROSC.UISlideToggle _previewToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__previewToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__previewToggle();
     // Get instance field reference: private UnityEngine.GameObject _recordIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__recordIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__recordIcon();
     // Get instance field reference: private UnityEngine.GameObject _stopIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__stopIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__stopIcon();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__playIcon();
     // Get instance field reference: private UnityEngine.GameObject _pauseIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__pauseIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__pauseIcon();
     // Get instance field reference: private TMPro.TextMeshPro _textAlert
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textAlert();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__textAlert();
     // Get instance field reference: private TMPro.TextMeshPro _timeCounter
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__timeCounter();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__timeCounter();
     // Get instance field reference: private VROSC.WaveformVisualizer _waveformVisualizer
-    [[deprecated]] ::VROSC::WaveformVisualizer*& dyn__waveformVisualizer();
+    [[deprecated("Use field access instead!")]] ::VROSC::WaveformVisualizer*& dyn__waveformVisualizer();
     // Get instance field reference: private UnityEngine.RectTransform _playHead
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__playHead();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__playHead();
     // Get instance field reference: private VROSC.TimeSlider _timeSlider
-    [[deprecated]] ::VROSC::TimeSlider*& dyn__timeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::TimeSlider*& dyn__timeSlider();
     // Get instance field reference: private System.Single _playHeadFullWidth
-    [[deprecated]] float& dyn__playHeadFullWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__playHeadFullWidth();
     // public VROSC.TimeSlider get_TimeSlider()
     // Offset: 0xA22DD4
     ::VROSC::TimeSlider* get_TimeSlider();
+    // public System.Void .ctor()
+    // Offset: 0xA242B4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TapeRecorderUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TapeRecorderUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TapeRecorderUI*, creationType>()));
+    }
     // public System.Void Setup(VROSC.TapeRecorder tapeRecorder)
     // Offset: 0xA22DDC
     void Setup(::VROSC::TapeRecorder* tapeRecorder);
@@ -297,19 +304,6 @@ namespace VROSC {
     // private System.Void DisplayTextAlert(System.String text, System.Single displayTime)
     // Offset: 0xA23D28
     void DisplayTextAlert(::StringW text, float displayTime);
-    // public System.Void .ctor()
-    // Offset: 0xA242B4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TapeRecorderUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TapeRecorderUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TapeRecorderUI*, creationType>()));
-    }
   }; // VROSC.TapeRecorderUI
   #pragma pack(pop)
   static check_size<sizeof(TapeRecorderUI), 168 + sizeof(float)> __VROSC_TapeRecorderUISizeCheck;
@@ -324,6 +318,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Ti
     return ::il2cpp_utils::FindMethod(classof(VROSC::TapeRecorderUI*), "get_TimeSlider", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::TapeRecorderUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TapeRecorderUI::Setup
 // Il2CppName: Setup
 template<>
@@ -538,7 +536,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TapeRecorderUI*), "DisplayTextAlert", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{text, displayTime});
   }
 };
-// Writing MetadataGetter for method: VROSC::TapeRecorderUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -111,47 +111,49 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformDataModel*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 Id
-    [[deprecated]] int& dyn_Id();
+    [[deprecated("Use field access instead!")]] int& dyn_Id();
     // Get instance field reference: public System.Int32 GroupId
-    [[deprecated]] int& dyn_GroupId();
+    [[deprecated("Use field access instead!")]] int& dyn_GroupId();
     // Get instance field reference: public System.Int32 SampleId
-    [[deprecated]] int& dyn_SampleId();
+    [[deprecated("Use field access instead!")]] int& dyn_SampleId();
     // Get instance field reference: public System.Int32 SelectedIndex
-    [[deprecated]] int& dyn_SelectedIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_SelectedIndex();
     // Get instance field reference: public System.Int32 MidiNote
-    [[deprecated]] int& dyn_MidiNote();
+    [[deprecated("Use field access instead!")]] int& dyn_MidiNote();
     // Get instance field reference: public System.Boolean IsPressureSensitive
-    [[deprecated]] bool& dyn_IsPressureSensitive();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsPressureSensitive();
     // Get instance field reference: public System.Boolean IsSpawner
-    [[deprecated]] bool& dyn_IsSpawner();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsSpawner();
     // Get instance field reference: public System.Int32 Pitch
-    [[deprecated]] int& dyn_Pitch();
+    [[deprecated("Use field access instead!")]] int& dyn_Pitch();
     // Get instance field reference: public System.Single Size
-    [[deprecated]] float& dyn_Size();
+    [[deprecated("Use field access instead!")]] float& dyn_Size();
     // Get instance field reference: public System.Single[] Position
-    [[deprecated]] ::ArrayW<float>& dyn_Position();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_Position();
     // Get instance field reference: public System.Single[] Rotation
-    [[deprecated]] ::ArrayW<float>& dyn_Rotation();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_Rotation();
     // Get instance field reference: public VROSC.TransformDataModel TransformData
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn_TransformData();
-    // public System.Void Upgrade(System.Int32 savedVersion)
-    // Offset: 0x8EB70C
-    void Upgrade(int savedVersion);
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn_TransformData();
     // public System.Void .ctor()
     // Offset: 0x8EB800
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EmpadDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EmpadDataModel::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EmpadDataModel*, creationType>()));
     }
+    // public System.Void Upgrade(System.Int32 savedVersion)
+    // Offset: 0x8EB70C
+    void Upgrade(int savedVersion);
   }; // VROSC.EmpadDataModel
   #pragma pack(pop)
   static check_size<sizeof(EmpadDataModel), 64 + sizeof(::VROSC::TransformDataModel*)> __VROSC_EmpadDataModelSizeCheck;
   static_assert(sizeof(EmpadDataModel) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::EmpadDataModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::EmpadDataModel::Upgrade
 // Il2CppName: Upgrade
 template<>
@@ -161,7 +163,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::EmpadDataModel*), "Upgrade", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{savedVersion});
   }
 };
-// Writing MetadataGetter for method: VROSC::EmpadDataModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

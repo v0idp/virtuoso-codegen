@@ -64,13 +64,13 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(uint64_t) == 0x8);
     public:
     // Get instance field reference: public readonly System.String ApiName
-    [[deprecated]] ::StringW& dyn_ApiName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ApiName();
     // Get instance field reference: public readonly Oculus.Platform.Models.Destination DestinationOptional
-    [[deprecated]] ::Oculus::Platform::Models::Destination*& dyn_DestinationOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Destination*& dyn_DestinationOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.Destination Destination
-    [[deprecated]] ::Oculus::Platform::Models::Destination*& dyn_Destination();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Destination*& dyn_Destination();
     // Get instance field reference: public readonly System.UInt64 ID
-    [[deprecated]] uint64_t& dyn_ID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ID();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3B254
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

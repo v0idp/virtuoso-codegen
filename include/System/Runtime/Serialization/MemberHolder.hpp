@@ -50,9 +50,9 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::System::Runtime::Serialization::StreamingContext) == 0xC);
     public:
     // Get instance field reference: System.Type memberType
-    [[deprecated]] ::System::Type*& dyn_memberType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_memberType();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext context
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContext& dyn_context();
     // System.Void .ctor(System.Type type, System.Runtime.Serialization.StreamingContext ctx)
     // Offset: 0xFFCB5C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

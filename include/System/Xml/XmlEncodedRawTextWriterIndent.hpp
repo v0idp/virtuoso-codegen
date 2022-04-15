@@ -93,17 +93,17 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::ConformanceLevel) == 0x4);
     public:
     // Get instance field reference: protected System.Int32 indentLevel
-    [[deprecated]] int& dyn_indentLevel();
+    [[deprecated("Use field access instead!")]] int& dyn_indentLevel();
     // Get instance field reference: protected System.Boolean newLineOnAttributes
-    [[deprecated]] bool& dyn_newLineOnAttributes();
+    [[deprecated("Use field access instead!")]] bool& dyn_newLineOnAttributes();
     // Get instance field reference: protected System.String indentChars
-    [[deprecated]] ::StringW& dyn_indentChars();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_indentChars();
     // Get instance field reference: protected System.Boolean mixedContent
-    [[deprecated]] bool& dyn_mixedContent();
+    [[deprecated("Use field access instead!")]] bool& dyn_mixedContent();
     // Get instance field reference: private System.Xml.BitStack mixedContentStack
-    [[deprecated]] ::System::Xml::BitStack*& dyn_mixedContentStack();
+    [[deprecated("Use field access instead!")]] ::System::Xml::BitStack*& dyn_mixedContentStack();
     // Get instance field reference: protected System.Xml.ConformanceLevel conformanceLevel
-    [[deprecated]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ConformanceLevel& dyn_conformanceLevel();
     // private System.Void Init(System.Xml.XmlWriterSettings settings)
     // Offset: 0x1281FE0
     void Init(::System::Xml::XmlWriterSettings* settings);

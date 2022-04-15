@@ -162,6 +162,13 @@ namespace VROSC {
     static ::UnityEngine::AudioClip* _get__cachedClip();
     // Set static field: static private UnityEngine.AudioClip _cachedClip
     static void _set__cachedClip(::UnityEngine::AudioClip* value);
+    // public System.Void .ctor()
+    // Offset: 0x8F3E1C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FileWriter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FileWriter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FileWriter*, creationType>()));
+    }
     // static public System.Void RemoveAllPatchesFiles(System.String folderName, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     // Offset: 0x8F20A4
     static void RemoveAllPatchesFiles(::StringW folderName, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
@@ -243,19 +250,14 @@ namespace VROSC {
     // static private System.String GetAudioDataFilePath(System.String folderName, System.String filename)
     // Offset: 0x8F3D54
     static ::StringW GetAudioDataFilePath(::StringW folderName, ::StringW filename);
-    // public System.Void .ctor()
-    // Offset: 0x8F3E1C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FileWriter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FileWriter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FileWriter*, creationType>()));
-    }
   }; // VROSC.FileWriter
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FileWriter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FileWriter::RemoveAllPatchesFiles
 // Il2CppName: RemoveAllPatchesFiles
 template<>
@@ -566,7 +568,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter*), "GetAudioDataFilePath", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{folderName, filename});
   }
 };
-// Writing MetadataGetter for method: VROSC::FileWriter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

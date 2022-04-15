@@ -53,13 +53,13 @@ namespace Newtonsoft::Json {
     ::System::Nullable_1<::Newtonsoft::Json::NullValueHandling> itemNullValueHandling;
     public:
     // Get instance field reference: private Newtonsoft.Json.MemberSerialization _memberSerialization
-    [[deprecated]] ::Newtonsoft::Json::MemberSerialization& dyn__memberSerialization();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::MemberSerialization& dyn__memberSerialization();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.MissingMemberHandling> _missingMemberHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::MissingMemberHandling>& dyn__missingMemberHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::MissingMemberHandling>& dyn__missingMemberHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.Required> _itemRequired
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::Required>& dyn__itemRequired();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::Required>& dyn__itemRequired();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.NullValueHandling> _itemNullValueHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::NullValueHandling>& dyn__itemNullValueHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::NullValueHandling>& dyn__itemNullValueHandling();
     // public Newtonsoft.Json.MemberSerialization get_MemberSerialization()
     // Offset: 0xEF6394
     ::Newtonsoft::Json::MemberSerialization get_MemberSerialization();

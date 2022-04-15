@@ -88,9 +88,9 @@ namespace System::Xml::Serialization {
     // Set static field: static private readonly System.Object[] empty_array
     static void _set_empty_array(::ArrayW<::Il2CppObject*> value);
     // Get instance field reference: private System.Xml.Serialization.XmlMapping _typeMap
-    [[deprecated]] ::System::Xml::Serialization::XmlMapping*& dyn__typeMap();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlMapping*& dyn__typeMap();
     // Get instance field reference: private System.Xml.Serialization.SerializationFormat _format
-    [[deprecated]] ::System::Xml::Serialization::SerializationFormat& dyn__format();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::SerializationFormat& dyn__format();
     // public System.Void .ctor(System.Xml.Serialization.XmlMapping typeMap)
     // Offset: 0x131E7B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

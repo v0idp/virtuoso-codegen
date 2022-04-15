@@ -45,9 +45,9 @@ namespace VROSC {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public VROSC.PredictiveHittable PredictiveHittable
-    [[deprecated]] ::VROSC::PredictiveHittable*& dyn_PredictiveHittable();
+    [[deprecated("Use field access instead!")]] ::VROSC::PredictiveHittable*& dyn_PredictiveHittable();
     // Get instance field reference: public System.Double PredictedDSPTime
-    [[deprecated]] double& dyn_PredictedDSPTime();
+    [[deprecated("Use field access instead!")]] double& dyn_PredictedDSPTime();
     // public System.Void .ctor(VROSC.PredictiveHittable predictiveHittable, System.Double predictedDspTime)
     // Offset: 0x8CE294
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

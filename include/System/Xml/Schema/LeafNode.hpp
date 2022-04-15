@@ -55,7 +55,7 @@ namespace System::Xml::Schema {
       return pos;
     }
     // Get instance field reference: private System.Int32 pos
-    [[deprecated]] int& dyn_pos();
+    [[deprecated("Use field access instead!")]] int& dyn_pos();
     // public System.Int32 get_Pos()
     // Offset: 0xAF332C
     int get_Pos();

@@ -106,21 +106,28 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.KeyCode quitKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_quitKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_quitKey();
     // Get instance field reference: public UnityEngine.Texture fadeInTexture
-    [[deprecated]] ::UnityEngine::Texture*& dyn_fadeInTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_fadeInTexture();
     // Get instance field reference: public System.Single speedRotationIncrement
-    [[deprecated]] float& dyn_speedRotationIncrement();
+    [[deprecated("Use field access instead!")]] float& dyn_speedRotationIncrement();
     // Get instance field reference: private OVRPlayerController playerController
-    [[deprecated]] ::GlobalNamespace::OVRPlayerController*& dyn_playerController();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlayerController*& dyn_playerController();
     // Get instance field reference: private OVRCameraRig cameraController
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraController();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraController();
     // Get instance field reference: public System.String layerName
-    [[deprecated]] ::StringW& dyn_layerName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_layerName();
     // Get instance field reference: private System.Boolean visionMode
-    [[deprecated]] bool& dyn_visionMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_visionMode();
     // Get instance field reference: private OVRGridCube gridCube
-    [[deprecated]] ::GlobalNamespace::OVRGridCube*& dyn_gridCube();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRGridCube*& dyn_gridCube();
+    // public System.Void .ctor()
+    // Offset: 0xE7BDD0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRSceneSampleController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSceneSampleController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRSceneSampleController*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xE7B7AC
     void Awake();
@@ -139,25 +146,16 @@ namespace GlobalNamespace {
     // private System.Void UpdateRecenterPose()
     // Offset: 0xE7BB60
     void UpdateRecenterPose();
-    // public System.Void .ctor()
-    // Offset: 0xE7BDD0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRSceneSampleController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSceneSampleController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRSceneSampleController*, creationType>()));
-    }
   }; // OVRSceneSampleController
   #pragma pack(pop)
   static check_size<sizeof(OVRSceneSampleController), 80 + sizeof(::GlobalNamespace::OVRGridCube*)> __GlobalNamespace_OVRSceneSampleControllerSizeCheck;
   static_assert(sizeof(OVRSceneSampleController) == 0x58);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRSceneSampleController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRSceneSampleController::Awake
 // Il2CppName: Awake
 template<>
@@ -206,7 +204,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSceneSampleController*), "UpdateRecenterPose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRSceneSampleController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

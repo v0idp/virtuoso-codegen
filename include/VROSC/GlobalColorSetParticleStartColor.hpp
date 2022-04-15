@@ -90,7 +90,7 @@ namespace VROSC {
       // Set static field: static public VROSC.GlobalColorSetParticleStartColor/VROSC.Channel Channel4
       static void _set_Channel4(::VROSC::GlobalColorSetParticleStartColor::Channel value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.GlobalColorSetParticleStartColor/VROSC.Channel
     #pragma pack(pop)
     static check_size<sizeof(GlobalColorSetParticleStartColor::Channel), 0 + sizeof(int)> __VROSC_GlobalColorSetParticleStartColor_ChannelSizeCheck;
@@ -114,9 +114,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.GlobalColorSetParticleStartColor/VROSC.Channel _channel
-    [[deprecated]] ::VROSC::GlobalColorSetParticleStartColor::Channel& dyn__channel();
+    [[deprecated("Use field access instead!")]] ::VROSC::GlobalColorSetParticleStartColor::Channel& dyn__channel();
     // Get instance field reference: private UnityEngine.ParticleSystem _particleSystem
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn__particleSystem();
+    // public System.Void .ctor()
+    // Offset: 0x19A4430
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GlobalColorSetParticleStartColor* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GlobalColorSetParticleStartColor::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GlobalColorSetParticleStartColor*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x19A3E70
     void OnEnable();
@@ -126,19 +133,6 @@ namespace VROSC {
     // private System.Void ColorChanged(UnityEngine.Color color, System.Single multiplier)
     // Offset: 0x19A4338
     void ColorChanged(::UnityEngine::Color color, float multiplier);
-    // public System.Void .ctor()
-    // Offset: 0x19A4430
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GlobalColorSetParticleStartColor* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GlobalColorSetParticleStartColor::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GlobalColorSetParticleStartColor*, creationType>()));
-    }
   }; // VROSC.GlobalColorSetParticleStartColor
   #pragma pack(pop)
   static check_size<sizeof(GlobalColorSetParticleStartColor), 32 + sizeof(::UnityEngine::ParticleSystem*)> __VROSC_GlobalColorSetParticleStartColorSizeCheck;
@@ -147,6 +141,10 @@ namespace VROSC {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::GlobalColorSetParticleStartColor::Channel, "VROSC", "GlobalColorSetParticleStartColor/Channel");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::GlobalColorSetParticleStartColor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GlobalColorSetParticleStartColor::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -173,7 +171,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::GlobalColorSetParticleStartColor*), "ColorChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color, multiplier});
   }
 };
-// Writing MetadataGetter for method: VROSC::GlobalColorSetParticleStartColor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

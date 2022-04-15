@@ -53,6 +53,13 @@ namespace System::Data {
   // [TokenAttribute] Offset: FFFFFFFF
   class XMLSchema : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x11BEC90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XMLSchema* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::XMLSchema::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XMLSchema*, creationType>()));
+    }
     // static System.ComponentModel.TypeConverter GetConverter(System.Type type)
     // Offset: 0x11C5048
     static ::System::ComponentModel::TypeConverter* GetConverter(::System::Type* type);
@@ -68,19 +75,14 @@ namespace System::Data {
     // static System.String GenUniqueColumnName(System.String proposedName, System.Data.DataTable table)
     // Offset: 0x11C0CCC
     static ::StringW GenUniqueColumnName(::StringW proposedName, ::System::Data::DataTable* table);
-    // public System.Void .ctor()
-    // Offset: 0x11BEC90
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XMLSchema* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::XMLSchema::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XMLSchema*, creationType>()));
-    }
   }; // System.Data.XMLSchema
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::XMLSchema::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::XMLSchema::GetConverter
 // Il2CppName: GetConverter
 template<>
@@ -133,7 +135,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Data::XMLSchema*), "GenUniqueColumnName", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{proposedName, table});
   }
 };
-// Writing MetadataGetter for method: System::Data::XMLSchema::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

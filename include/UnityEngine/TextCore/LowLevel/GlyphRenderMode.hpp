@@ -103,7 +103,7 @@ namespace UnityEngine::TextCore::LowLevel {
     // Set static field: static public UnityEngine.TextCore.LowLevel.GlyphRenderMode SDFAA
     static void _set_SDFAA(::UnityEngine::TextCore::LowLevel::GlyphRenderMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.TextCore.LowLevel.GlyphRenderMode
   #pragma pack(pop)
   static check_size<sizeof(GlyphRenderMode), 0 + sizeof(int)> __UnityEngine_TextCore_LowLevel_GlyphRenderModeSizeCheck;

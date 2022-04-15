@@ -86,9 +86,9 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private System.Reflection.ConstructorInfo _runtimeWrappedExceptionCtor
     static void _set__runtimeWrappedExceptionCtor(::System::Reflection::ConstructorInfo* value);
     // Get instance field reference: private readonly System.Boolean _hasResult
-    [[deprecated]] bool& dyn__hasResult();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasResult();
     // Get instance field reference: private readonly System.Boolean _rethrow
-    [[deprecated]] bool& dyn__rethrow();
+    [[deprecated("Use field access instead!")]] bool& dyn__rethrow();
     // private System.Void .ctor(System.Boolean hasResult, System.Boolean isRethrow)
     // Offset: 0xE9DECC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

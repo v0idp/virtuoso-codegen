@@ -82,7 +82,7 @@ namespace System::Xml::Linq {
     // Deleting conversion operator: operator ::System::Xml::Linq::XNode*
     constexpr operator ::System::Xml::Linq::XNode*() const noexcept = delete;
     // Get instance field reference: System.Object content
-    [[deprecated]] ::Il2CppObject*& dyn_content();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_content();
     // public System.Xml.Linq.XNode get_LastNode()
     // Offset: 0x18566AC
     ::System::Xml::Linq::XNode* get_LastNode();
@@ -185,7 +185,6 @@ namespace System::Xml::Linq {
     // Implemented from: System.Xml.Linq.XNode
     // Base method: System.Void XNode::.ctor()
     // Base method: System.Void XObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XContainer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XContainer::.ctor");

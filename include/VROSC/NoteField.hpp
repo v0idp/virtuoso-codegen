@@ -52,16 +52,14 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteNode*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.Note EnteredValue
-    [[deprecated]] ::VROSC::Note& dyn_EnteredValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn_EnteredValue();
     // Get instance field reference: public VROSC.NoteNode ConnectedValue
-    [[deprecated]] ::VROSC::NoteNode*& dyn_ConnectedValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteNode*& dyn_ConnectedValue();
     // public System.Int32 get_Value()
     // Offset: 0xC58850
     int get_Value();
     // public System.Void .ctor()
     // Offset: 0xC588E0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteField* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteField::.ctor");

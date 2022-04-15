@@ -46,9 +46,9 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::NoteBoardNote*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteBoardNote[] <Neighbours>k__BackingField
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$Neighbours$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$Neighbours$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoardNote[] <InvertedNeighbours>k__BackingField
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$InvertedNeighbours$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$InvertedNeighbours$k__BackingField();
     // public VROSC.NoteBoardNote[] get_Neighbours()
     // Offset: 0x1966008
     ::ArrayW<::VROSC::NoteBoardNote*> get_Neighbours();

@@ -75,9 +75,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IFormattable*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector3 m_Center
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Center();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Center();
     // Get instance field reference: private UnityEngine.Vector3 m_Extents
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Extents();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Extents();
     // public UnityEngine.Vector3 get_center()
     // Offset: 0x111E900
     ::UnityEngine::Vector3 get_center();

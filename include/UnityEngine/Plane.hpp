@@ -67,9 +67,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IFormattable*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector3 m_Normal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Normal();
     // Get instance field reference: private System.Single m_Distance
-    [[deprecated]] float& dyn_m_Distance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Distance();
     // public UnityEngine.Vector3 get_normal()
     // Offset: 0xBC1EC4
     ::UnityEngine::Vector3 get_normal();

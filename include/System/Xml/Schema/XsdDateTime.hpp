@@ -166,9 +166,9 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Xml.Schema.XmlTypeCode[] typeCodes
     static void _set_typeCodes(::ArrayW<::System::Xml::Schema::XmlTypeCode> value);
     // Get instance field reference: private System.DateTime dt
-    [[deprecated]] ::System::DateTime& dyn_dt();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_dt();
     // Get instance field reference: private System.UInt32 extra
-    [[deprecated]] uint& dyn_extra();
+    [[deprecated("Use field access instead!")]] uint& dyn_extra();
     // private System.Xml.Schema.XsdDateTime/System.Xml.Schema.DateTimeTypeCode get_InternalTypeCode()
     // Offset: 0xED18EC
     ::System::Xml::Schema::XsdDateTime::DateTimeTypeCode get_InternalTypeCode();

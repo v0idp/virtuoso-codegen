@@ -41,27 +41,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRManager/ColorSpace colorSpace
-    [[deprecated]] ::GlobalNamespace::OVRManager_ColorSpace& dyn_colorSpace();
-    // static public OVRRuntimeSettings GetRuntimeSettings()
-    // Offset: 0xE7A170
-    static ::GlobalNamespace::OVRRuntimeSettings* GetRuntimeSettings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_ColorSpace& dyn_colorSpace();
     // public System.Void .ctor()
     // Offset: 0xE7A28C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRRuntimeSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRRuntimeSettings::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRRuntimeSettings*, creationType>()));
     }
+    // static public OVRRuntimeSettings GetRuntimeSettings()
+    // Offset: 0xE7A170
+    static ::GlobalNamespace::OVRRuntimeSettings* GetRuntimeSettings();
   }; // OVRRuntimeSettings
   #pragma pack(pop)
   static check_size<sizeof(OVRRuntimeSettings), 24 + sizeof(::GlobalNamespace::OVRManager_ColorSpace)> __GlobalNamespace_OVRRuntimeSettingsSizeCheck;
   static_assert(sizeof(OVRRuntimeSettings) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRRuntimeSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRRuntimeSettings::GetRuntimeSettings
 // Il2CppName: GetRuntimeSettings
 template<>
@@ -70,7 +70,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRuntimeSettings*), "GetRuntimeSettings", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRRuntimeSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

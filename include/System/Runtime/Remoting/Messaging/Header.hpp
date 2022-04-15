@@ -53,13 +53,13 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: public System.String HeaderNamespace
-    [[deprecated]] ::StringW& dyn_HeaderNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_HeaderNamespace();
     // Get instance field reference: public System.Boolean MustUnderstand
-    [[deprecated]] bool& dyn_MustUnderstand();
+    [[deprecated("Use field access instead!")]] bool& dyn_MustUnderstand();
     // Get instance field reference: public System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: public System.Object Value
-    [[deprecated]] ::Il2CppObject*& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Value();
   }; // System.Runtime.Remoting.Messaging.Header
   #pragma pack(pop)
   static check_size<sizeof(Header), 40 + sizeof(::Il2CppObject*)> __System_Runtime_Remoting_Messaging_HeaderSizeCheck;

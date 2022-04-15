@@ -130,31 +130,31 @@ namespace System::IO {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Boolean haveWrittenPreamble
-    [[deprecated]] bool& dyn_haveWrittenPreamble();
+    [[deprecated("Use field access instead!")]] bool& dyn_haveWrittenPreamble();
     // Get instance field reference: public System.IO.StreamWriter _this
-    [[deprecated]] ::System::IO::StreamWriter*& dyn__this();
+    [[deprecated("Use field access instead!")]] ::System::IO::StreamWriter*& dyn__this();
     // Get instance field reference: public System.Text.Encoding encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
     // Get instance field reference: public System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: public System.Text.Encoder encoder
-    [[deprecated]] ::System::Text::Encoder*& dyn_encoder();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoder*& dyn_encoder();
     // Get instance field reference: public System.Char[] charBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
     // Get instance field reference: public System.Int32 charPos
-    [[deprecated]] int& dyn_charPos();
+    [[deprecated("Use field access instead!")]] int& dyn_charPos();
     // Get instance field reference: public System.Byte[] byteBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_byteBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_byteBuffer();
     // Get instance field reference: public System.Boolean flushEncoder
-    [[deprecated]] bool& dyn_flushEncoder();
+    [[deprecated("Use field access instead!")]] bool& dyn_flushEncoder();
     // Get instance field reference: public System.Boolean flushStream
-    [[deprecated]] bool& dyn_flushStream();
+    [[deprecated("Use field access instead!")]] bool& dyn_flushStream();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xE5DC38
     void MoveNext();

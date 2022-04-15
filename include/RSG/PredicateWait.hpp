@@ -76,19 +76,17 @@ namespace RSG {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Func`2<RSG.TimeData,System.Boolean> predicate
-    [[deprecated]] ::System::Func_2<::RSG::TimeData, bool>*& dyn_predicate();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::RSG::TimeData, bool>*& dyn_predicate();
     // Get instance field reference: public System.Single timeStarted
-    [[deprecated]] float& dyn_timeStarted();
+    [[deprecated("Use field access instead!")]] float& dyn_timeStarted();
     // Get instance field reference: public RSG.IPendingPromise pendingPromise
-    [[deprecated]] ::RSG::IPendingPromise*& dyn_pendingPromise();
+    [[deprecated("Use field access instead!")]] ::RSG::IPendingPromise*& dyn_pendingPromise();
     // Get instance field reference: public RSG.TimeData timeData
-    [[deprecated]] ::RSG::TimeData& dyn_timeData();
+    [[deprecated("Use field access instead!")]] ::RSG::TimeData& dyn_timeData();
     // Get instance field reference: public System.Int32 frameStarted
-    [[deprecated]] int& dyn_frameStarted();
+    [[deprecated("Use field access instead!")]] int& dyn_frameStarted();
     // public System.Void .ctor()
     // Offset: 0xAE2B7C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PredicateWait* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PredicateWait::.ctor");

@@ -50,11 +50,11 @@ namespace System::IO {
     static_assert(sizeof(::Microsoft::Win32::Win32Native::WIN32_FIND_DATA*) == 0x8);
     public:
     // Get instance field reference: private System.String fullPath
-    [[deprecated]] ::StringW& dyn_fullPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fullPath();
     // Get instance field reference: private System.String userPath
-    [[deprecated]] ::StringW& dyn_userPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_userPath();
     // Get instance field reference: private Microsoft.Win32.Win32Native/Microsoft.Win32.WIN32_FIND_DATA findData
-    [[deprecated]] ::Microsoft::Win32::Win32Native::WIN32_FIND_DATA*& dyn_findData();
+    [[deprecated("Use field access instead!")]] ::Microsoft::Win32::Win32Native::WIN32_FIND_DATA*& dyn_findData();
     // System.String get_UserPath()
     // Offset: 0x1172A2C
     ::StringW get_UserPath();

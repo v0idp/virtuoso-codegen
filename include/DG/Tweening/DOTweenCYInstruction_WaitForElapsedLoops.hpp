@@ -47,9 +47,9 @@ namespace DG::Tweening {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly DG.Tweening.Tween t
-    [[deprecated]] ::DG::Tweening::Tween*& dyn_t();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Tween*& dyn_t();
     // Get instance field reference: private readonly System.Int32 elapsedLoops
-    [[deprecated]] int& dyn_elapsedLoops();
+    [[deprecated("Use field access instead!")]] int& dyn_elapsedLoops();
     // public System.Void .ctor(DG.Tweening.Tween tween, System.Int32 elapsedLoops)
     // Offset: 0x17E2040
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

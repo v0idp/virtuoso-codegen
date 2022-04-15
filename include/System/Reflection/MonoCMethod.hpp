@@ -93,11 +93,11 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr mhandle
-    [[deprecated]] ::System::IntPtr& dyn_mhandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_mhandle();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Type reftype
-    [[deprecated]] ::System::Type*& dyn_reftype();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_reftype();
     // System.Object InternalInvoke(System.Object obj, System.Object[] parameters, out System.Exception exc)
     // Offset: 0x1007B5C
     ::Il2CppObject* InternalInvoke(::Il2CppObject* obj, ::ArrayW<::Il2CppObject*> parameters, ByRef<::System::Exception*> exc);

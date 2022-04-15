@@ -85,7 +85,7 @@ namespace System {
     // Set static field: static public System.PlatformID MacOSX
     static void _set_MacOSX(::System::PlatformID value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.PlatformID
   #pragma pack(pop)
   static check_size<sizeof(PlatformID), 0 + sizeof(int)> __System_PlatformIDSizeCheck;

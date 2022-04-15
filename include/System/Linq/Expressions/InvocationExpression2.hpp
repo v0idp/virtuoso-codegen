@@ -55,9 +55,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Linq::Expressions::Expression*) == 0x8);
     public:
     // Get instance field reference: private System.Object _arg0
-    [[deprecated]] ::Il2CppObject*& dyn__arg0();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__arg0();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg1
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg1();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg1();
     // public System.Void .ctor(System.Linq.Expressions.Expression lambda, System.Type returnType, System.Linq.Expressions.Expression arg0, System.Linq.Expressions.Expression arg1)
     // Offset: 0xF1F4EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

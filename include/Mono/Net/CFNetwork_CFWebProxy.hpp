@@ -66,12 +66,19 @@ namespace Mono::Net {
       return *reinterpret_cast<::System::Net::IWebProxy*>(this);
     }
     // Get instance field reference: private System.Net.ICredentials credentials
-    [[deprecated]] ::System::Net::ICredentials*& dyn_credentials();
+    [[deprecated("Use field access instead!")]] ::System::Net::ICredentials*& dyn_credentials();
     // Get instance field reference: private System.Boolean userSpecified
-    [[deprecated]] bool& dyn_userSpecified();
+    [[deprecated("Use field access instead!")]] bool& dyn_userSpecified();
     // public System.Net.ICredentials get_Credentials()
     // Offset: 0x9F440C
     ::System::Net::ICredentials* get_Credentials();
+    // public System.Void .ctor()
+    // Offset: 0x9F4404
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CFNetwork::CFWebProxy* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::CFNetwork::CFWebProxy::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CFNetwork::CFWebProxy*, creationType>()));
+    }
     // static private System.Uri GetProxyUri(Mono.Net.CFProxy proxy, out System.Net.NetworkCredential credentials)
     // Offset: 0x9F4414
     static ::System::Uri* GetProxyUri(::Mono::Net::CFProxy* proxy, ByRef<::System::Net::NetworkCredential*> credentials);
@@ -90,15 +97,6 @@ namespace Mono::Net {
     // public System.Boolean IsBypassed(System.Uri targetUri)
     // Offset: 0x9F4B38
     bool IsBypassed(::System::Uri* targetUri);
-    // public System.Void .ctor()
-    // Offset: 0x9F4404
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CFNetwork::CFWebProxy* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::CFNetwork::CFWebProxy::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CFNetwork::CFWebProxy*, creationType>()));
-    }
   }; // Mono.Net.CFNetwork/Mono.Net.CFWebProxy
   #pragma pack(pop)
   static check_size<sizeof(CFNetwork::CFWebProxy), 24 + sizeof(bool)> __Mono_Net_CFNetwork_CFWebProxySizeCheck;
@@ -113,6 +111,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::N
     return ::il2cpp_utils::FindMethod(classof(Mono::Net::CFNetwork::CFWebProxy*), "get_Credentials", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Mono::Net::CFNetwork::CFWebProxy::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Net::CFNetwork::CFWebProxy::GetProxyUri
 // Il2CppName: GetProxyUri
 template<>
@@ -174,7 +176,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Mono:
     return ::il2cpp_utils::FindMethod(classof(Mono::Net::CFNetwork::CFWebProxy*), "IsBypassed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{targetUri});
   }
 };
-// Writing MetadataGetter for method: Mono::Net::CFNetwork::CFWebProxy::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

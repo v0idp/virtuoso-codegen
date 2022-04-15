@@ -66,13 +66,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.String targetNS
-    [[deprecated]] ::StringW& dyn_targetNS();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_targetNS();
     // Get instance field reference: System.Uri chameleonLocation
-    [[deprecated]] ::System::Uri*& dyn_chameleonLocation();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_chameleonLocation();
     // Get instance field reference: System.Xml.Schema.XmlSchema originalSchema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_originalSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_originalSchema();
     // Get instance field reference: private System.Int32 hashCode
-    [[deprecated]] int& dyn_hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCode();
     // public System.Void .ctor(System.String ns, System.Xml.Schema.XmlSchema originalSchema)
     // Offset: 0xB63FB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

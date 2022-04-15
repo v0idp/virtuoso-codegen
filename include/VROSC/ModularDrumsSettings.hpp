@@ -57,13 +57,13 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single _reverbAmount
-    [[deprecated]] float& dyn__reverbAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__reverbAmount();
     // Get instance field reference: private System.Single _reverbLength
-    [[deprecated]] float& dyn__reverbLength();
+    [[deprecated("Use field access instead!")]] float& dyn__reverbLength();
     // Get instance field reference: private System.Single _dryVolume
-    [[deprecated]] float& dyn__dryVolume();
+    [[deprecated("Use field access instead!")]] float& dyn__dryVolume();
     // Get instance field reference: private System.Single _compression
-    [[deprecated]] float& dyn__compression();
+    [[deprecated("Use field access instead!")]] float& dyn__compression();
     // public System.Single get_ReverbAmount()
     // Offset: 0xACCCA8
     float get_ReverbAmount();
@@ -81,9 +81,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentSettings
     // Base method: System.Void InstrumentSettings::.ctor()
     // Base method: System.Void WidgetSettings::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ModularDrumsSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ModularDrumsSettings::.ctor");

@@ -79,13 +79,13 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.BaseDataModel _dataModel
-    [[deprecated]] ::VROSC::BaseDataModel*& dyn__dataModel();
+    [[deprecated("Use field access instead!")]] ::VROSC::BaseDataModel*& dyn__dataModel();
     // Get instance field reference: private System.Boolean <IsLoaded>k__BackingField
-    [[deprecated]] bool& dyn_$IsLoaded$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsLoaded$k__BackingField();
     // Get instance field reference: private System.Boolean <IsSaved>k__BackingField
-    [[deprecated]] bool& dyn_$IsSaved$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsSaved$k__BackingField();
     // Get instance field reference: public System.Action OnProgressStepFinished
-    [[deprecated]] ::System::Action*& dyn_OnProgressStepFinished();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnProgressStepFinished();
     // public System.Type get_ModelType()
     // Offset: 0x973F00
     ::System::Type* get_ModelType();
@@ -104,6 +104,13 @@ namespace VROSC {
     // public System.Boolean get_HasChanged()
     // Offset: 0x973F44
     bool get_HasChanged();
+    // public System.Void .ctor()
+    // Offset: 0x974498
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BaseDataController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BaseDataController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BaseDataController*, creationType>()));
+    }
     // public System.Void LoadLocalData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     // Offset: 0x973F68
     void LoadLocalData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
@@ -152,15 +159,6 @@ namespace VROSC {
     // public System.Void SaveData(System.String sessionId, System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     // Offset: 0x974444
     void SaveData(::StringW sessionId, ::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
-    // public System.Void .ctor()
-    // Offset: 0x974498
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BaseDataController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BaseDataController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BaseDataController*, creationType>()));
-    }
   }; // VROSC.BaseDataController
   #pragma pack(pop)
   static check_size<sizeof(BaseDataController), 32 + sizeof(::System::Action*)> __VROSC_BaseDataControllerSizeCheck;
@@ -217,6 +215,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BaseDataController*), "get_HasChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::BaseDataController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BaseDataController::LoadLocalData
 // Il2CppName: LoadLocalData
 template<>
@@ -372,7 +374,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BaseDataController*), "SaveData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionId, onSuccess, onFailure});
   }
 };
-// Writing MetadataGetter for method: VROSC::BaseDataController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

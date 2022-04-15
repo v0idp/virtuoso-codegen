@@ -94,42 +94,40 @@ namespace VROSC {
     // Set static field: static private System.String DrumsMakeupString
     static void _set_DrumsMakeupString(::StringW value);
     // Get instance field reference: private System.Single _thresholdMin
-    [[deprecated]] float& dyn__thresholdMin();
+    [[deprecated("Use field access instead!")]] float& dyn__thresholdMin();
     // Get instance field reference: private System.Single _thresholdMax
-    [[deprecated]] float& dyn__thresholdMax();
+    [[deprecated("Use field access instead!")]] float& dyn__thresholdMax();
     // Get instance field reference: private UnityEngine.AnimationCurve _thresholdCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__thresholdCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__thresholdCurve();
     // Get instance field reference: private System.Single _makeupMin
-    [[deprecated]] float& dyn__makeupMin();
+    [[deprecated("Use field access instead!")]] float& dyn__makeupMin();
     // Get instance field reference: private System.Single _makeupMax
-    [[deprecated]] float& dyn__makeupMax();
+    [[deprecated("Use field access instead!")]] float& dyn__makeupMax();
     // Get instance field reference: private UnityEngine.AnimationCurve _makeupCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__makeupCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__makeupCurve();
+    // public System.Void .ctor()
+    // Offset: 0x94C6F8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CompressionManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CompressionManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CompressionManager*, creationType>()));
+    }
     // public System.Void SetDrumsCompression(System.Single compression)
     // Offset: 0x94C5BC
     void SetDrumsCompression(float compression);
     // private System.Void SetCompressionParameter(System.String name, System.Single amount, UnityEngine.AnimationCurve curve, System.Single min, System.Single max)
     // Offset: 0x94C644
     void SetCompressionParameter(::StringW name, float amount, ::UnityEngine::AnimationCurve* curve, float min, float max);
-    // public System.Void .ctor()
-    // Offset: 0x94C6F8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CompressionManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CompressionManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CompressionManager*, creationType>()));
-    }
   }; // VROSC.CompressionManager
   #pragma pack(pop)
   static check_size<sizeof(CompressionManager), 48 + sizeof(::UnityEngine::AnimationCurve*)> __VROSC_CompressionManagerSizeCheck;
   static_assert(sizeof(CompressionManager) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::CompressionManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CompressionManager::SetDrumsCompression
 // Il2CppName: SetDrumsCompression
 template<>
@@ -152,7 +150,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::CompressionManager*), "SetCompressionParameter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{name, amount, curve, min, max});
   }
 };
-// Writing MetadataGetter for method: VROSC::CompressionManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

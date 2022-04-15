@@ -46,7 +46,7 @@ namespace UnityEngine {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: UnityEngine.AnimatorOverrideController/UnityEngine.OnOverrideControllerDirtyCallback OnOverrideControllerDirty
-    [[deprecated]] ::UnityEngine::AnimatorOverrideController::OnOverrideControllerDirtyCallback*& dyn_OnOverrideControllerDirty();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimatorOverrideController::OnOverrideControllerDirtyCallback*& dyn_OnOverrideControllerDirty();
     // static System.Void OnInvalidateOverrideController(UnityEngine.AnimatorOverrideController controller)
     // Offset: 0x18D2280
     static void OnInvalidateOverrideController(::UnityEngine::AnimatorOverrideController* controller);

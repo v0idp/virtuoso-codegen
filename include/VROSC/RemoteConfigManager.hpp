@@ -57,11 +57,11 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String <ABGroupName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ABGroupName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ABGroupName$k__BackingField();
     // Get instance field reference: private System.String <ABTestId>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ABTestId$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ABTestId$k__BackingField();
     // Get instance field reference: private System.String <StartEnvironment>k__BackingField
-    [[deprecated]] ::StringW& dyn_$StartEnvironment$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$StartEnvironment$k__BackingField();
     // public System.String get_ABGroupName()
     // Offset: 0xB31494
     ::StringW get_ABGroupName();
@@ -80,21 +80,19 @@ namespace VROSC {
     // private System.Void set_StartEnvironment(System.String value)
     // Offset: 0xB314BC
     void set_StartEnvironment(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0xB31658
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RemoteConfigManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::RemoteConfigManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RemoteConfigManager*, creationType>()));
+    }
     // public System.Void Setup()
     // Offset: 0xB314C4
     void Setup();
     // private System.Void GetConfigValues()
     // Offset: 0xB31548
     void GetConfigValues();
-    // public System.Void .ctor()
-    // Offset: 0xB31658
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RemoteConfigManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::RemoteConfigManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RemoteConfigManager*, creationType>()));
-    }
   }; // VROSC.RemoteConfigManager
   #pragma pack(pop)
   static check_size<sizeof(RemoteConfigManager), 32 + sizeof(::StringW)> __VROSC_RemoteConfigManagerSizeCheck;
@@ -152,6 +150,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::RemoteConfigManager*), "set_StartEnvironment", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::RemoteConfigManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::RemoteConfigManager::Setup
 // Il2CppName: Setup
 template<>
@@ -168,7 +170,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::RemoteConfigManager*), "GetConfigValues", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::RemoteConfigManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

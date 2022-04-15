@@ -72,11 +72,11 @@ namespace Firebase::Auth {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: Firebase.Auth.FirebaseAuth authProxy
-    [[deprecated]] ::Firebase::Auth::FirebaseAuth*& dyn_authProxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Auth::FirebaseAuth*& dyn_authProxy();
     // public System.Boolean get_IsEmailVerified()
     // Offset: 0x18B22C8
     bool get_IsEmailVerified();

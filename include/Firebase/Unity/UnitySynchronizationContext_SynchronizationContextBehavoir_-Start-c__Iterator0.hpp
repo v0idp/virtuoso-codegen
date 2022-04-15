@@ -84,23 +84,30 @@ namespace Firebase::Unity {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: System.Tuple`2<System.Threading.SendOrPostCallback,System.Object> <entry>__0
-    [[deprecated]] ::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*& dyn_$entry$__0();
+    [[deprecated("Use field access instead!")]] ::System::Tuple_2<::System::Threading::SendOrPostCallback*, ::Il2CppObject*>*& dyn_$entry$__0();
     // Get instance field reference: System.Object $locvar0
-    [[deprecated]] ::Il2CppObject*& dyn_$locvar0();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$locvar0();
     // Get instance field reference: Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.SynchronizationContextBehavoir $this
-    [[deprecated]] ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_$this();
+    [[deprecated("Use field access instead!")]] ::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir*& dyn_$this();
     // Get instance field reference: System.Object $current
-    [[deprecated]] ::Il2CppObject*& dyn_$current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$current();
     // Get instance field reference: System.Boolean $disposing
-    [[deprecated]] bool& dyn_$disposing();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposing();
     // Get instance field reference: System.Int32 $PC
-    [[deprecated]] int& dyn_$PC();
+    [[deprecated("Use field access instead!")]] int& dyn_$PC();
     // private System.Object System.Collections.Generic.IEnumerator<object>.get_Current()
     // Offset: 0x18CBBE4
     ::Il2CppObject* System_Collections_Generic_IEnumerator$object$_get_Current();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0x18CBBEC
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();
+    // public System.Void .ctor()
+    // Offset: 0x18CB99C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0*, creationType>()));
+    }
     // public System.Boolean MoveNext()
     // Offset: 0x18CB9A4
     bool MoveNext();
@@ -110,15 +117,6 @@ namespace Firebase::Unity {
     // public System.Void Reset()
     // Offset: 0x18CBC08
     void Reset();
-    // public System.Void .ctor()
-    // Offset: 0x18CB99C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0*, creationType>()));
-    }
   }; // Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.SynchronizationContextBehavoir/Firebase.Unity.<Start>c__Iterator0
   #pragma pack(pop)
   static check_size<sizeof(UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0), 52 + sizeof(int)> __Firebase_Unity_UnitySynchronizationContext_SynchronizationContextBehavoir_$Start$c__Iterator0SizeCheck;
@@ -141,6 +139,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0*), "System.Collections.IEnumerator.get_Current", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0::MoveNext
 // Il2CppName: MoveNext
 template<>
@@ -165,7 +167,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Unity::UnitySynchronizationContext::SynchronizationContextBehavoir::$Start$c__Iterator0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

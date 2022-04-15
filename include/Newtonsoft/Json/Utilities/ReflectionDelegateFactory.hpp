@@ -67,6 +67,13 @@ namespace Newtonsoft::Json::Utilities {
   // [NullableAttribute] Offset: 672F1C
   class ReflectionDelegateFactory : public ::Il2CppObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x1347AB8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ReflectionDelegateFactory* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::ReflectionDelegateFactory::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ReflectionDelegateFactory*, creationType>()));
+    }
     // public System.Func`2<T,System.Object> CreateGet(System.Reflection.MemberInfo memberInfo)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -142,19 +149,14 @@ namespace Newtonsoft::Json::Utilities {
       auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<::System::Action_2<T, ::Il2CppObject*>*, false>(this, ___generic__method, propertyInfo);
     }
-    // protected System.Void .ctor()
-    // Offset: 0x1347AB8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ReflectionDelegateFactory* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::ReflectionDelegateFactory::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ReflectionDelegateFactory*, creationType>()));
-    }
   }; // Newtonsoft.Json.Utilities.ReflectionDelegateFactory
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionDelegateFactory::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionDelegateFactory::CreateGet
 // Il2CppName: CreateGet
 // Cannot write MetadataGetter for generic methods!
@@ -188,7 +190,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Newtonsof
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionDelegateFactory::CreateSet
 // Il2CppName: CreateSet
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionDelegateFactory::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -158,29 +158,29 @@ namespace Newtonsoft::Json::Utilities {
     // Set static field: static private Newtonsoft.Json.Utilities.FSharpUtils _instance
     static void _set__instance(::Newtonsoft::Json::Utilities::FSharpUtils* value);
     // Get instance field reference: private System.Reflection.MethodInfo _ofSeq
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn__ofSeq();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn__ofSeq();
     // Get instance field reference: private System.Type _mapType
-    [[deprecated]] ::System::Type*& dyn__mapType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__mapType();
     // Get instance field reference: private System.Reflection.Assembly <FSharpCoreAssembly>k__BackingField
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_$FSharpCoreAssembly$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_$FSharpCoreAssembly$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> <IsUnion>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$IsUnion$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$IsUnion$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> <GetUnionCases>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCases$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCases$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> <PreComputeUnionTagReader>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$PreComputeUnionTagReader$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$PreComputeUnionTagReader$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> <PreComputeUnionReader>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$PreComputeUnionReader$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$PreComputeUnionReader$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> <PreComputeUnionConstructor>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$PreComputeUnionConstructor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$PreComputeUnionConstructor$k__BackingField();
     // Get instance field reference: private System.Func`2<System.Object,System.Object> <GetUnionCaseInfoDeclaringType>k__BackingField
-    [[deprecated]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoDeclaringType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoDeclaringType$k__BackingField();
     // Get instance field reference: private System.Func`2<System.Object,System.Object> <GetUnionCaseInfoName>k__BackingField
-    [[deprecated]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoName$k__BackingField();
     // Get instance field reference: private System.Func`2<System.Object,System.Object> <GetUnionCaseInfoTag>k__BackingField
-    [[deprecated]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoTag$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoTag$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> <GetUnionCaseInfoFields>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoFields$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$GetUnionCaseInfoFields$k__BackingField();
     // static public Newtonsoft.Json.Utilities.FSharpUtils get_Instance()
     // Offset: 0xDD12B0
     static ::Newtonsoft::Json::Utilities::FSharpUtils* get_Instance();

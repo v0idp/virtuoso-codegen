@@ -87,7 +87,7 @@ namespace UnityOSC {
     // Set static field: static private System.Char DEFAULT
     static void _set_DEFAULT(::Il2CppChar value);
     // Get instance field reference: private System.String _typeTag
-    [[deprecated]] ::StringW& dyn__typeTag();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__typeTag();
     // public System.Void .ctor(System.String address)
     // Offset: 0xC5D920
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

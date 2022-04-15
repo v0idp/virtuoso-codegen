@@ -44,11 +44,11 @@ namespace VROSC {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public System.Double Frequency
-    [[deprecated]] double& dyn_Frequency();
+    [[deprecated("Use field access instead!")]] double& dyn_Frequency();
     // Get instance field reference: public System.Double Increment
-    [[deprecated]] double& dyn_Increment();
+    [[deprecated("Use field access instead!")]] double& dyn_Increment();
     // Get instance field reference: public System.Double Phase
-    [[deprecated]] double& dyn_Phase();
+    [[deprecated("Use field access instead!")]] double& dyn_Phase();
     // public System.Void .ctor(System.Int32 midiNumber)
     // Offset: 0x8DD1C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

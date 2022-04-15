@@ -64,11 +64,11 @@ namespace System {
     static_assert(sizeof(::System::Globalization::CompareOptions) == 0x4);
     public:
     // Get instance field reference: private System.Globalization.CompareInfo _compareInfo
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn__compareInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn__compareInfo();
     // Get instance field reference: private System.Boolean _ignoreCase
-    [[deprecated]] bool& dyn__ignoreCase();
+    [[deprecated("Use field access instead!")]] bool& dyn__ignoreCase();
     // Get instance field reference: private System.Globalization.CompareOptions _options
-    [[deprecated]] ::System::Globalization::CompareOptions& dyn__options();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareOptions& dyn__options();
     // System.Void .ctor(System.Globalization.CultureInfo culture, System.Boolean ignoreCase)
     // Offset: 0x13FAED4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

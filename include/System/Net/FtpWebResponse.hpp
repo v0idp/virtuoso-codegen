@@ -135,29 +135,29 @@ namespace System::Net {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: private System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private System.Uri uri
-    [[deprecated]] ::System::Uri*& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_uri();
     // Get instance field reference: private System.Net.FtpStatusCode statusCode
-    [[deprecated]] ::System::Net::FtpStatusCode& dyn_statusCode();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpStatusCode& dyn_statusCode();
     // Get instance field reference: private System.DateTime lastModified
-    [[deprecated]] ::System::DateTime& dyn_lastModified();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_lastModified();
     // Get instance field reference: private System.String bannerMessage
-    [[deprecated]] ::StringW& dyn_bannerMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_bannerMessage();
     // Get instance field reference: private System.String welcomeMessage
-    [[deprecated]] ::StringW& dyn_welcomeMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_welcomeMessage();
     // Get instance field reference: private System.String exitMessage
-    [[deprecated]] ::StringW& dyn_exitMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_exitMessage();
     // Get instance field reference: private System.String statusDescription
-    [[deprecated]] ::StringW& dyn_statusDescription();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_statusDescription();
     // Get instance field reference: private System.String method
-    [[deprecated]] ::StringW& dyn_method();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_method();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.Net.FtpWebRequest request
-    [[deprecated]] ::System::Net::FtpWebRequest*& dyn_request();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpWebRequest*& dyn_request();
     // Get instance field reference: System.Int64 contentLength
-    [[deprecated]] int64_t& dyn_contentLength();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_contentLength();
     // System.Void set_LastModified(System.DateTime value)
     // Offset: 0xF0ACC8
     void set_LastModified(::System::DateTime value);

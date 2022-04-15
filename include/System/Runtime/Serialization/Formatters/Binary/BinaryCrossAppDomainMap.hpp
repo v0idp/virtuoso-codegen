@@ -46,7 +46,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
       return crossAppDomainArrayIndex;
     }
     // Get instance field reference: System.Int32 crossAppDomainArrayIndex
-    [[deprecated]] int& dyn_crossAppDomainArrayIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_crossAppDomainArrayIndex();
     // public System.Void Read(System.Runtime.Serialization.Formatters.Binary.__BinaryParser input)
     // Offset: 0xFE7848
     void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input);

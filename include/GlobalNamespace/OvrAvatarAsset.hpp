@@ -39,11 +39,9 @@ namespace GlobalNamespace {
       return assetID;
     }
     // Get instance field reference: public System.UInt64 assetID
-    [[deprecated]] uint64_t& dyn_assetID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_assetID();
     // public System.Void .ctor()
     // Offset: 0xF8736C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarAsset::.ctor");

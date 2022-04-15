@@ -36,7 +36,7 @@ namespace System::Resources {
       return rm;
     }
     // Get instance field reference: private System.Resources.ResourceManager _rm
-    [[deprecated]] ::System::Resources::ResourceManager*& dyn__rm();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceManager*& dyn__rm();
     // System.Void .ctor(System.Resources.ResourceManager rm)
     // Offset: 0xE580FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

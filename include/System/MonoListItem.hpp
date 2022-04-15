@@ -41,9 +41,9 @@ namespace System {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.MonoListItem next
-    [[deprecated]] ::System::MonoListItem*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::MonoListItem*& dyn_next();
     // Get instance field reference: private System.Object data
-    [[deprecated]] ::Il2CppObject*& dyn_data();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_data();
     // public System.Void .ctor()
     // Offset: 0x100D490
     // Implemented from: System.Object

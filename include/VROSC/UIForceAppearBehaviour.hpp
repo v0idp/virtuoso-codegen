@@ -57,22 +57,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.GameObject _target
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__target();
     // Get instance field reference: private System.Boolean _appear
-    [[deprecated]] bool& dyn__appear();
-    // public System.Void Setup(UnityEngine.GameObject target, System.Boolean appear)
-    // Offset: 0x190F4A0
-    void Setup(::UnityEngine::GameObject* target, bool appear);
+    [[deprecated("Use field access instead!")]] bool& dyn__appear();
     // public System.Void .ctor()
     // Offset: 0x190F5FC
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIForceAppearBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIForceAppearBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UIForceAppearBehaviour*, creationType>()));
     }
+    // public System.Void Setup(UnityEngine.GameObject target, System.Boolean appear)
+    // Offset: 0x190F4A0
+    void Setup(::UnityEngine::GameObject* target, bool appear);
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     // Offset: 0x190F4B8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -84,6 +81,10 @@ namespace VROSC {
   static_assert(sizeof(UIForceAppearBehaviour) == 0x19);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UIForceAppearBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIForceAppearBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -94,10 +95,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIForceAppearBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, appear});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIForceAppearBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIForceAppearBehaviour::OnBehaviourPlay
 // Il2CppName: OnBehaviourPlay
 template<>

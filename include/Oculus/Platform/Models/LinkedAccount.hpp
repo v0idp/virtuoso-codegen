@@ -54,11 +54,11 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String AccessToken
-    [[deprecated]] ::StringW& dyn_AccessToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_AccessToken();
     // Get instance field reference: public readonly Oculus.Platform.ServiceProvider ServiceProvider
-    [[deprecated]] ::Oculus::Platform::ServiceProvider& dyn_ServiceProvider();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::ServiceProvider& dyn_ServiceProvider();
     // Get instance field reference: public readonly System.String UserId
-    [[deprecated]] ::StringW& dyn_UserId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserId();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3D684
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

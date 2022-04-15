@@ -85,24 +85,23 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: public VROSC.TransformDataModel TransformData
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn_TransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn_TransformData();
     // Get instance field reference: public VROSC.MidiData MidiData
-    [[deprecated]] ::VROSC::MidiData*& dyn_MidiData();
+    [[deprecated("Use field access instead!")]] ::VROSC::MidiData*& dyn_MidiData();
     // Get instance field reference: public System.Boolean Quantize
-    [[deprecated]] bool& dyn_Quantize();
+    [[deprecated("Use field access instead!")]] bool& dyn_Quantize();
     // Get instance field reference: public System.Single QuantizeTolerance
-    [[deprecated]] float& dyn_QuantizeTolerance();
+    [[deprecated("Use field access instead!")]] float& dyn_QuantizeTolerance();
     // Get instance field reference: public System.Int32 QuantizeBeatDivision
-    [[deprecated]] int& dyn_QuantizeBeatDivision();
+    [[deprecated("Use field access instead!")]] int& dyn_QuantizeBeatDivision();
     // Get instance field reference: public System.Boolean HasBeenOpened
-    [[deprecated]] bool& dyn_HasBeenOpened();
+    [[deprecated("Use field access instead!")]] bool& dyn_HasBeenOpened();
     // public System.Void .ctor()
     // Offset: 0x19475D8
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentDataModel::.ctor");

@@ -37,6 +37,13 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
   // [TokenAttribute] Offset: FFFFFFFF
   class ColorChanger : public ::UnityEngine::MonoBehaviour {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x948588
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ColorChanger* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::UIShapesDemo::ColorChanger::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ColorChanger*, creationType>()));
+    }
     // public System.Void UpdateColor(Facebook.WitAi.Lib.WitResponseNode commandResult)
     // Offset: 0x9482CC
     void UpdateColor(::Facebook::WitAi::Lib::WitResponseNode* commandResult);
@@ -46,23 +53,14 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     // public System.Void UpdateColor(System.String colorName, System.String shape)
     // Offset: 0x948360
     void UpdateColor(::StringW colorName, ::StringW shape);
-    // public System.Void .ctor()
-    // Offset: 0x948588
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ColorChanger* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::UIShapesDemo::ColorChanger::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ColorChanger*, creationType>()));
-    }
   }; // Oculus.Voice.Demo.UIShapesDemo.ColorChanger
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::ColorChanger::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::ColorChanger::UpdateColor
 // Il2CppName: UpdateColor
 template<>
@@ -91,7 +89,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Demo::UIShapesDemo::ColorChanger*), "UpdateColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{colorName, shape});
   }
 };
-// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::ColorChanger::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

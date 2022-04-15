@@ -120,7 +120,7 @@ namespace OggVorbis {
     // Set static field: static public OggVorbis.NativeErrorCode ERROR_INVALID_WRITE_CALLBACK_PARAMETER
     static void _set_ERROR_INVALID_WRITE_CALLBACK_PARAMETER(::OggVorbis::NativeErrorCode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OggVorbis.NativeErrorCode
   #pragma pack(pop)
   static check_size<sizeof(NativeErrorCode), 0 + sizeof(int)> __OggVorbis_NativeErrorCodeSizeCheck;

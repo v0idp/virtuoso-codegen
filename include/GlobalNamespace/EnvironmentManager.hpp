@@ -139,29 +139,36 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public TimeOfDayPreset[] TimeOfDayPresets
-    [[deprecated]] ::ArrayW<::GlobalNamespace::TimeOfDayPreset*>& dyn_TimeOfDayPresets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::TimeOfDayPreset*>& dyn_TimeOfDayPresets();
     // Get instance field reference: public UnityEngine.GameObject DirLightObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_DirLightObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_DirLightObject();
     // Get instance field reference: private UnityEngine.Coroutine _activeCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__activeCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__activeCoroutine();
     // Get instance field reference: private UnityEngine.Light _activeLight
-    [[deprecated]] ::UnityEngine::Light*& dyn__activeLight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Light*& dyn__activeLight();
     // Get instance field reference: private UnityEngine.Material _skyboxMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__skyboxMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__skyboxMaterial();
     // Get instance field reference: public UnityEngine.Material SunMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_SunMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_SunMaterial();
     // Get instance field reference: public UnityEngine.GameObject SunObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_SunObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_SunObject();
     // Get instance field reference: public UnityEngine.GameObject AnimationPivot
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_AnimationPivot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_AnimationPivot();
     // Get instance field reference: private UnityEngine.Material _sunMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__sunMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__sunMaterial();
     // Get instance field reference: private TimeOfDayPreset _currentLighting
-    [[deprecated]] ::GlobalNamespace::TimeOfDayPreset*& dyn__currentLighting();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TimeOfDayPreset*& dyn__currentLighting();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<TimeOfDayType,TimeOfDayPreset> _presetsMap
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::TimeOfDayType, ::GlobalNamespace::TimeOfDayPreset*>*& dyn__presetsMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::TimeOfDayType, ::GlobalNamespace::TimeOfDayPreset*>*& dyn__presetsMap();
     // Get instance field reference: private System.Int32 cycleIndex
-    [[deprecated]] int& dyn_cycleIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_cycleIndex();
+    // public System.Void .ctor()
+    // Offset: 0x8EF0B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EnvironmentManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::EnvironmentManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EnvironmentManager*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x8EEB34
     void Start();
@@ -183,25 +190,16 @@ namespace GlobalNamespace {
     // private System.Void Update()
     // Offset: 0x8EF05C
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x8EF0B8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EnvironmentManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::EnvironmentManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EnvironmentManager*, creationType>()));
-    }
   }; // EnvironmentManager
   #pragma pack(pop)
   static check_size<sizeof(EnvironmentManager), 112 + sizeof(int)> __GlobalNamespace_EnvironmentManagerSizeCheck;
   static_assert(sizeof(EnvironmentManager) == 0x74);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::EnvironmentManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::EnvironmentManager::Start
 // Il2CppName: Start
 template<>
@@ -263,7 +261,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::EnvironmentManager*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::EnvironmentManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

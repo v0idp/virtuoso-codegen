@@ -40,27 +40,29 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SessionsManager::$$c__DisplayClass66_0*) == 0x8);
     public:
     // Get instance field reference: public System.String upVoteId
-    [[deprecated]] ::StringW& dyn_upVoteId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_upVoteId();
     // Get instance field reference: public VROSC.SessionsManager/VROSC.<>c__DisplayClass66_0 CS$<>8__locals1
-    [[deprecated]] ::VROSC::SessionsManager::$$c__DisplayClass66_0*& dyn_CS$$$8__locals1();
-    // System.Void <RemoveSessionUpVote>b__2()
-    // Offset: 0x8D7594
-    void $RemoveSessionUpVote$b__2();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsManager::$$c__DisplayClass66_0*& dyn_CS$$$8__locals1();
     // public System.Void .ctor()
     // Offset: 0x8D70C8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionsManager::$$c__DisplayClass66_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsManager::$$c__DisplayClass66_1::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SessionsManager::$$c__DisplayClass66_1*, creationType>()));
     }
+    // System.Void <RemoveSessionUpVote>b__2()
+    // Offset: 0x8D7594
+    void $RemoveSessionUpVote$b__2();
   }; // VROSC.SessionsManager/VROSC.<>c__DisplayClass66_1
   #pragma pack(pop)
   static check_size<sizeof(SessionsManager::$$c__DisplayClass66_1), 24 + sizeof(::VROSC::SessionsManager::$$c__DisplayClass66_0*)> __VROSC_SessionsManager_$$c__DisplayClass66_1SizeCheck;
   static_assert(sizeof(SessionsManager::$$c__DisplayClass66_1) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass66_1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass66_1::$RemoveSessionUpVote$b__2
 // Il2CppName: <RemoveSessionUpVote>b__2
 template<>
@@ -69,7 +71,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass66_1*), "<RemoveSessionUpVote>b__2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass66_1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

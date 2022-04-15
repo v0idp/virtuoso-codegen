@@ -57,25 +57,27 @@ namespace UnityEngine::Events {
       return m_Calls;
     }
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Events.PersistentCall> m_Calls
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Events::PersistentCall*>*& dyn_m_Calls();
-    // public System.Void Initialize(UnityEngine.Events.InvokableCallList invokableList, UnityEngine.Events.UnityEventBase unityEventBase)
-    // Offset: 0xBC1D64
-    void Initialize(::UnityEngine::Events::InvokableCallList* invokableList, ::UnityEngine::Events::UnityEventBase* unityEventBase);
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Events::PersistentCall*>*& dyn_m_Calls();
     // public System.Void .ctor()
     // Offset: 0xBC1CE8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PersistentCallGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::PersistentCallGroup::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PersistentCallGroup*, creationType>()));
     }
+    // public System.Void Initialize(UnityEngine.Events.InvokableCallList invokableList, UnityEngine.Events.UnityEventBase unityEventBase)
+    // Offset: 0xBC1D64
+    void Initialize(::UnityEngine::Events::InvokableCallList* invokableList, ::UnityEngine::Events::UnityEventBase* unityEventBase);
   }; // UnityEngine.Events.PersistentCallGroup
   #pragma pack(pop)
   static check_size<sizeof(PersistentCallGroup), 16 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::Events::PersistentCall*>*)> __UnityEngine_Events_PersistentCallGroupSizeCheck;
   static_assert(sizeof(PersistentCallGroup) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Events::PersistentCallGroup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Events::PersistentCallGroup::Initialize
 // Il2CppName: Initialize
 template<>
@@ -86,7 +88,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Events::PersistentCallGroup*), "Initialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{invokableList, unityEventBase});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Events::PersistentCallGroup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

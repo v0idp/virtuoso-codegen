@@ -72,7 +72,7 @@ namespace VROSC {
     // Set static field: static public VROSC.SoundSource Master
     static void _set_Master(::VROSC::SoundSource value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.SoundSource
   #pragma pack(pop)
   static check_size<sizeof(SoundSource), 0 + sizeof(int)> __VROSC_SoundSourceSizeCheck;

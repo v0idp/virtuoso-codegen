@@ -104,9 +104,9 @@ namespace System::IO {
     // Set static field: static private System.Int32 _DefaultCopyBufferSize
     static void _set__DefaultCopyBufferSize(int value);
     // Get instance field reference: private System.IO.Stream/System.IO.ReadWriteTask _activeReadWriteTask
-    [[deprecated]] ::System::IO::Stream::ReadWriteTask*& dyn__activeReadWriteTask();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream::ReadWriteTask*& dyn__activeReadWriteTask();
     // Get instance field reference: private System.Threading.SemaphoreSlim _asyncActiveSemaphore
-    [[deprecated]] ::System::Threading::SemaphoreSlim*& dyn__asyncActiveSemaphore();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim*& dyn__asyncActiveSemaphore();
     // public System.Boolean get_CanRead()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_CanRead();

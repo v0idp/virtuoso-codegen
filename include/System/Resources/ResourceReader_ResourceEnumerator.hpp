@@ -65,13 +65,13 @@ namespace System::Resources {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Resources.ResourceReader _reader
-    [[deprecated]] ::System::Resources::ResourceReader*& dyn__reader();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceReader*& dyn__reader();
     // Get instance field reference: private System.Boolean _currentIsValid
-    [[deprecated]] bool& dyn__currentIsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn__currentIsValid();
     // Get instance field reference: private System.Int32 _currentName
-    [[deprecated]] int& dyn__currentName();
+    [[deprecated("Use field access instead!")]] int& dyn__currentName();
     // Get instance field reference: private System.Int32 _dataPosition
-    [[deprecated]] int& dyn__dataPosition();
+    [[deprecated("Use field access instead!")]] int& dyn__dataPosition();
     // public System.Object get_Key()
     // Offset: 0xE58208
     ::Il2CppObject* get_Key();

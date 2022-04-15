@@ -44,11 +44,11 @@ namespace System::Collections {
     static_assert(sizeof(::System::Collections::ListDictionaryInternal::DictionaryNode*) == 0x8);
     public:
     // Get instance field reference: public System.Object key
-    [[deprecated]] ::Il2CppObject*& dyn_key();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_key();
     // Get instance field reference: public System.Object value
-    [[deprecated]] ::Il2CppObject*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_value();
     // Get instance field reference: public System.Collections.ListDictionaryInternal/System.Collections.DictionaryNode next
-    [[deprecated]] ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_next();
     // public System.Void .ctor()
     // Offset: 0xE53490
     // Implemented from: System.Object

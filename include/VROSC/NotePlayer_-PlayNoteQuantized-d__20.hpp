@@ -94,21 +94,21 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Double predictedDspTime
-    [[deprecated]] double& dyn_predictedDspTime();
+    [[deprecated("Use field access instead!")]] double& dyn_predictedDspTime();
     // Get instance field reference: public VROSC.NotePlayer <>4__this
-    [[deprecated]] ::VROSC::NotePlayer*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::NotePlayer*& dyn_$$4__this();
     // Get instance field reference: public System.Int32 note
-    [[deprecated]] int& dyn_note();
+    [[deprecated("Use field access instead!")]] int& dyn_note();
     // Get instance field reference: public System.Single velocity
-    [[deprecated]] float& dyn_velocity();
+    [[deprecated("Use field access instead!")]] float& dyn_velocity();
     // Get instance field reference: public VROSC.HandType handType
-    [[deprecated]] ::VROSC::HandType& dyn_handType();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn_handType();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x8CA2C8
     void MoveNext();

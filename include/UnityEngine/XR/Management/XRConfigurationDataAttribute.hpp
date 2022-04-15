@@ -45,9 +45,9 @@ namespace UnityEngine::XR::Management {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String <displayName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$displayName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$displayName$k__BackingField();
     // Get instance field reference: private System.String <buildSettingsKey>k__BackingField
-    [[deprecated]] ::StringW& dyn_$buildSettingsKey$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$buildSettingsKey$k__BackingField();
     // public System.String get_displayName()
     // Offset: 0x18F9CD0
     ::StringW get_displayName();
@@ -60,22 +60,19 @@ namespace UnityEngine::XR::Management {
     // public System.Void set_buildSettingsKey(System.String value)
     // Offset: 0x18F9CE8
     void set_buildSettingsKey(::StringW value);
+    // private System.Void .ctor()
+    // Offset: 0x18F9CF0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRConfigurationDataAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRConfigurationDataAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRConfigurationDataAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.String displayName, System.String buildSettingsKey)
     // Offset: 0x18F9CF8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRConfigurationDataAttribute* New_ctor(::StringW displayName, ::StringW buildSettingsKey) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRConfigurationDataAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XRConfigurationDataAttribute*, creationType>(displayName, buildSettingsKey)));
-    }
-    // private System.Void .ctor()
-    // Offset: 0x18F9CF0
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRConfigurationDataAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRConfigurationDataAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRConfigurationDataAttribute*, creationType>()));
     }
   }; // UnityEngine.XR.Management.XRConfigurationDataAttribute
   #pragma pack(pop)

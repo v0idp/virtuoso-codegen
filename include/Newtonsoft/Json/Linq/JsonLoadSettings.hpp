@@ -49,11 +49,11 @@ namespace Newtonsoft::Json::Linq {
     static_assert(sizeof(::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling) == 0x4);
     public:
     // Get instance field reference: private Newtonsoft.Json.Linq.CommentHandling _commentHandling
-    [[deprecated]] ::Newtonsoft::Json::Linq::CommentHandling& dyn__commentHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::CommentHandling& dyn__commentHandling();
     // Get instance field reference: private Newtonsoft.Json.Linq.LineInfoHandling _lineInfoHandling
-    [[deprecated]] ::Newtonsoft::Json::Linq::LineInfoHandling& dyn__lineInfoHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::LineInfoHandling& dyn__lineInfoHandling();
     // Get instance field reference: private Newtonsoft.Json.Linq.DuplicatePropertyNameHandling _duplicatePropertyNameHandling
-    [[deprecated]] ::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling& dyn__duplicatePropertyNameHandling();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::DuplicatePropertyNameHandling& dyn__duplicatePropertyNameHandling();
     // public Newtonsoft.Json.Linq.CommentHandling get_CommentHandling()
     // Offset: 0xEF6374
     ::Newtonsoft::Json::Linq::CommentHandling get_CommentHandling();

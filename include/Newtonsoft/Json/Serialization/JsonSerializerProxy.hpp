@@ -110,11 +110,11 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::Newtonsoft::Json::JsonSerializer*) == 0x8);
     public:
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.JsonSerializerInternalReader _serializerReader
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonSerializerInternalReader*& dyn__serializerReader();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonSerializerInternalReader*& dyn__serializerReader();
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.JsonSerializerInternalWriter _serializerWriter
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter*& dyn__serializerWriter();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter*& dyn__serializerWriter();
     // Get instance field reference: private readonly Newtonsoft.Json.JsonSerializer _serializer
-    [[deprecated]] ::Newtonsoft::Json::JsonSerializer*& dyn__serializer();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonSerializer*& dyn__serializer();
     // public System.Void .ctor(Newtonsoft.Json.Serialization.JsonSerializerInternalReader serializerReader)
     // Offset: 0x13363D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

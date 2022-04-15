@@ -101,19 +101,19 @@ namespace System::IO {
     // Set static field: static public readonly System.IO.BinaryWriter Null
     static void _set_Null(::System::IO::BinaryWriter* value);
     // Get instance field reference: protected System.IO.Stream OutStream
-    [[deprecated]] ::System::IO::Stream*& dyn_OutStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_OutStream();
     // Get instance field reference: private System.Byte[] _buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: private System.Text.Encoding _encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn__encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn__encoding();
     // Get instance field reference: private System.Text.Encoder _encoder
-    [[deprecated]] ::System::Text::Encoder*& dyn__encoder();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoder*& dyn__encoder();
     // Get instance field reference: private System.Boolean _leaveOpen
-    [[deprecated]] bool& dyn__leaveOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__leaveOpen();
     // Get instance field reference: private System.Byte[] _largeByteBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__largeByteBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__largeByteBuffer();
     // Get instance field reference: private System.Int32 _maxChars
-    [[deprecated]] int& dyn__maxChars();
+    [[deprecated("Use field access instead!")]] int& dyn__maxChars();
     // public System.IO.Stream get_BaseStream()
     // Offset: 0xFEAAB0
     ::System::IO::Stream* get_BaseStream();

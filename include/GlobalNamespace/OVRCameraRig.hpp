@@ -210,57 +210,57 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform <trackingSpace>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$trackingSpace$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$trackingSpace$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <leftEyeAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$leftEyeAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$leftEyeAnchor$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <centerEyeAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$centerEyeAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$centerEyeAnchor$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <rightEyeAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$rightEyeAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$rightEyeAnchor$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <leftHandAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$leftHandAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$leftHandAnchor$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <rightHandAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$rightHandAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$rightHandAnchor$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <leftControllerAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$leftControllerAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$leftControllerAnchor$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <rightControllerAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$rightControllerAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$rightControllerAnchor$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <trackerAnchor>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$trackerAnchor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$trackerAnchor$k__BackingField();
     // Get instance field reference: private System.Action`1<OVRCameraRig> UpdatedAnchors
-    [[deprecated]] ::System::Action_1<::GlobalNamespace::OVRCameraRig*>*& dyn_UpdatedAnchors();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::GlobalNamespace::OVRCameraRig*>*& dyn_UpdatedAnchors();
     // Get instance field reference: public System.Boolean usePerEyeCameras
-    [[deprecated]] bool& dyn_usePerEyeCameras();
+    [[deprecated("Use field access instead!")]] bool& dyn_usePerEyeCameras();
     // Get instance field reference: public System.Boolean useFixedUpdateForTracking
-    [[deprecated]] bool& dyn_useFixedUpdateForTracking();
+    [[deprecated("Use field access instead!")]] bool& dyn_useFixedUpdateForTracking();
     // Get instance field reference: public System.Boolean disableEyeAnchorCameras
-    [[deprecated]] bool& dyn_disableEyeAnchorCameras();
+    [[deprecated("Use field access instead!")]] bool& dyn_disableEyeAnchorCameras();
     // Get instance field reference: protected System.Boolean _skipUpdate
-    [[deprecated]] bool& dyn__skipUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn__skipUpdate();
     // Get instance field reference: protected readonly System.String trackingSpaceName
-    [[deprecated]] ::StringW& dyn_trackingSpaceName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_trackingSpaceName();
     // Get instance field reference: protected readonly System.String trackerAnchorName
-    [[deprecated]] ::StringW& dyn_trackerAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_trackerAnchorName();
     // Get instance field reference: protected readonly System.String leftEyeAnchorName
-    [[deprecated]] ::StringW& dyn_leftEyeAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_leftEyeAnchorName();
     // Get instance field reference: protected readonly System.String centerEyeAnchorName
-    [[deprecated]] ::StringW& dyn_centerEyeAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_centerEyeAnchorName();
     // Get instance field reference: protected readonly System.String rightEyeAnchorName
-    [[deprecated]] ::StringW& dyn_rightEyeAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_rightEyeAnchorName();
     // Get instance field reference: protected readonly System.String leftHandAnchorName
-    [[deprecated]] ::StringW& dyn_leftHandAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_leftHandAnchorName();
     // Get instance field reference: protected readonly System.String rightHandAnchorName
-    [[deprecated]] ::StringW& dyn_rightHandAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_rightHandAnchorName();
     // Get instance field reference: protected readonly System.String leftControllerAnchorName
-    [[deprecated]] ::StringW& dyn_leftControllerAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_leftControllerAnchorName();
     // Get instance field reference: protected readonly System.String rightControllerAnchorName
-    [[deprecated]] ::StringW& dyn_rightControllerAnchorName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_rightControllerAnchorName();
     // Get instance field reference: protected UnityEngine.Camera _centerEyeCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__centerEyeCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__centerEyeCamera();
     // Get instance field reference: protected UnityEngine.Camera _leftEyeCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__leftEyeCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__leftEyeCamera();
     // Get instance field reference: protected UnityEngine.Camera _rightEyeCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__rightEyeCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__rightEyeCamera();
     // public UnityEngine.Camera get_leftEyeCamera()
     // Offset: 0x98FB6C
     ::UnityEngine::Camera* get_leftEyeCamera();
@@ -327,6 +327,13 @@ namespace GlobalNamespace {
     // public System.Void remove_UpdatedAnchors(System.Action`1<OVRCameraRig> value)
     // Offset: 0x98FCD4
     void remove_UpdatedAnchors(::System::Action_1<::GlobalNamespace::OVRCameraRig*>* value);
+    // public System.Void .ctor()
+    // Offset: 0x991A40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRCameraRig* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCameraRig::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRCameraRig*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x98FD74
     void Awake();
@@ -360,19 +367,6 @@ namespace GlobalNamespace {
     // public UnityEngine.Matrix4x4 ComputeTrackReferenceMatrix()
     // Offset: 0x991790
     ::UnityEngine::Matrix4x4 ComputeTrackReferenceMatrix();
-    // public System.Void .ctor()
-    // Offset: 0x991A40
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRCameraRig* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCameraRig::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRCameraRig*, creationType>()));
-    }
   }; // OVRCameraRig
   #pragma pack(pop)
   static check_size<sizeof(OVRCameraRig), 200 + sizeof(::UnityEngine::Camera*)> __GlobalNamespace_OVRCameraRigSizeCheck;
@@ -566,6 +560,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRCameraRig*), "remove_UpdatedAnchors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRCameraRig::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRCameraRig::Awake
 // Il2CppName: Awake
 template<>
@@ -658,7 +656,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRCameraRig*), "ComputeTrackReferenceMatrix", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRCameraRig::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

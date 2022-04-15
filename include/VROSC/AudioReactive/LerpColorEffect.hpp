@@ -109,21 +109,21 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::UnityEngine::ParticleSystem*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ChangeColorEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ChangeColorEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Renderer[] _renderers
-    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
     // Get instance field reference: private System.Int32 _currentInt
-    [[deprecated]] int& dyn__currentInt();
+    [[deprecated("Use field access instead!")]] int& dyn__currentInt();
     // Get instance field reference: private System.Int32 _pingPongDirection
-    [[deprecated]] int& dyn__pingPongDirection();
+    [[deprecated("Use field access instead!")]] int& dyn__pingPongDirection();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__currentColor();
     // Get instance field reference: private UnityEngine.Renderer[] _normalRenderers
-    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__normalRenderers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Renderer*>& dyn__normalRenderers();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock[] _materialBlocks
-    [[deprecated]] ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
     // Get instance field reference: private UnityEngine.ParticleSystem[] _particleSystems
-    [[deprecated]] ::ArrayW<::UnityEngine::ParticleSystem*>& dyn__particleSystems();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::ParticleSystem*>& dyn__particleSystems();
     // public VROSC.AudioReactive.ChangeColorEffectData get_Data()
     // Offset: 0x194F988
     ::VROSC::AudioReactive::ChangeColorEffectData* get_Data();
@@ -144,7 +144,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LerpColorEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::LerpColorEffect::.ctor");

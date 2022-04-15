@@ -78,19 +78,19 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.PartyUpdateAction Action
-    [[deprecated]] ::Oculus::Platform::PartyUpdateAction& dyn_Action();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PartyUpdateAction& dyn_Action();
     // Get instance field reference: public readonly System.UInt64 PartyId
-    [[deprecated]] uint64_t& dyn_PartyId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_PartyId();
     // Get instance field reference: public readonly System.UInt64 SenderId
-    [[deprecated]] uint64_t& dyn_SenderId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SenderId();
     // Get instance field reference: public readonly System.String UpdateTimestamp
-    [[deprecated]] ::StringW& dyn_UpdateTimestamp();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UpdateTimestamp();
     // Get instance field reference: public readonly System.String UserAlias
-    [[deprecated]] ::StringW& dyn_UserAlias();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserAlias();
     // Get instance field reference: public readonly System.UInt64 UserId
-    [[deprecated]] uint64_t& dyn_UserId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_UserId();
     // Get instance field reference: public readonly System.String UserName
-    [[deprecated]] ::StringW& dyn_UserName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserName();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB4F264
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

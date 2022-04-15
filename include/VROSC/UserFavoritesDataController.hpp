@@ -75,7 +75,7 @@ namespace VROSC {
       return isWaitingForData;
     }
     // Get instance field reference: private System.Boolean _isWaitingForData
-    [[deprecated]] bool& dyn__isWaitingForData();
+    [[deprecated("Use field access instead!")]] bool& dyn__isWaitingForData();
     // protected VROSC.UserFavoritesDataModel get_DataModel()
     // Offset: 0x191C7A0
     ::VROSC::UserFavoritesDataModel* get_DataModel();
@@ -110,7 +110,6 @@ namespace VROSC {
     // Offset: 0x191A428
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserFavoritesDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserFavoritesDataController::.ctor");

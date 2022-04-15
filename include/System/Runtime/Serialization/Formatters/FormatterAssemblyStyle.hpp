@@ -55,7 +55,7 @@ namespace System::Runtime::Serialization::Formatters {
     // Set static field: static public System.Runtime.Serialization.Formatters.FormatterAssemblyStyle Full
     static void _set_Full(::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Runtime.Serialization.Formatters.FormatterAssemblyStyle
   #pragma pack(pop)
   static check_size<sizeof(FormatterAssemblyStyle), 0 + sizeof(int)> __System_Runtime_Serialization_Formatters_FormatterAssemblyStyleSizeCheck;

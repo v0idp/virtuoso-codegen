@@ -54,9 +54,9 @@ namespace System::Data {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Data.DataViewManager _dataViewManager
-    [[deprecated]] ::System::Data::DataViewManager*& dyn__dataViewManager();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewManager*& dyn__dataViewManager();
     // Get instance field reference: private readonly System.Collections.Hashtable _list
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__list();
     // public System.Data.DataViewSetting get_Item(System.Data.DataTable table)
     // Offset: 0x12E7B68
     ::System::Data::DataViewSetting* get_Item(::System::Data::DataTable* table);

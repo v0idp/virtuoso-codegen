@@ -39,8 +39,6 @@ namespace System::Xml {
     // Offset: 0xF77DF4
     // Implemented from: System.Xml.Ucs4Encoding
     // Base method: System.Void Ucs4Encoding::.ctor()
-    // Base method: System.Void Encoding::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Ucs4Encoding1234* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Ucs4Encoding1234::.ctor");

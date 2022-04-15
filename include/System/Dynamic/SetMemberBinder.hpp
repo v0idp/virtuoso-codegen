@@ -59,9 +59,9 @@ namespace System::Dynamic {
     // Deleting conversion operator: operator ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Il2CppObject*>*
     constexpr operator ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Il2CppObject*>*() const noexcept = delete;
     // Get instance field reference: private readonly System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <IgnoreCase>k__BackingField
-    [[deprecated]] bool& dyn_$IgnoreCase$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IgnoreCase$k__BackingField();
     // public System.String get_Name()
     // Offset: 0xE9A9AC
     ::StringW get_Name();

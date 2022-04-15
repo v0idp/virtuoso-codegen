@@ -61,9 +61,9 @@ namespace UnityEngine::XR {
     // Set static field: static private UnityEngine.XR.MeshId s_InvalidId
     static void _set_s_InvalidId(::UnityEngine::XR::MeshId value);
     // Get instance field reference: private System.UInt64 m_SubId1
-    [[deprecated]] uint64_t& dyn_m_SubId1();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_SubId1();
     // Get instance field reference: private System.UInt64 m_SubId2
-    [[deprecated]] uint64_t& dyn_m_SubId2();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_SubId2();
     // static private System.Void .cctor()
     // Offset: 0x18C69A8
     static void _cctor();

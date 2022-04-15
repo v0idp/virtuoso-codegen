@@ -74,9 +74,9 @@ namespace UnityEngine::Playables {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.IntPtr m_Handle
-    [[deprecated]] ::System::IntPtr& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Handle();
     // Get instance field reference: System.UInt32 m_Version
-    [[deprecated]] uint& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_Version();
     // public UnityEngine.Playables.Playable GetRootPlayable(System.Int32 index)
     // Offset: 0xBC2A84
     ::UnityEngine::Playables::Playable GetRootPlayable(int index);

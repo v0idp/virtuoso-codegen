@@ -83,17 +83,17 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::NoteFieldNoteData*>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <XFields>k__BackingField
-    [[deprecated]] int& dyn_$XFields$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$XFields$k__BackingField();
     // Get instance field reference: private System.Int32 <YFields>k__BackingField
-    [[deprecated]] int& dyn_$YFields$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$YFields$k__BackingField();
     // Get instance field reference: private System.Int32 <ZFields>k__BackingField
-    [[deprecated]] int& dyn_$ZFields$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$ZFields$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <FieldSize>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$FieldSize$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$FieldSize$k__BackingField();
     // Get instance field reference: private VROSC.NoteFieldNoteData[,,] _noteFieldArray
-    [[deprecated]] ::ArrayW<::VROSC::NoteFieldNoteData*>& dyn__noteFieldArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteFieldNoteData*>& dyn__noteFieldArray();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.NoteFieldNoteData> _noteFieldList
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::NoteFieldNoteData*>*& dyn__noteFieldList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::NoteFieldNoteData*>*& dyn__noteFieldList();
     // public System.Int32 get_XFields()
     // Offset: 0xC588F0
     int get_XFields();

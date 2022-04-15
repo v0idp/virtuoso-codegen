@@ -85,11 +85,11 @@ namespace Firebase {
     // Set static field: static private System.Object CallbackLock
     static void _set_CallbackLock(::Il2CppObject* value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: private System.IntPtr callbackData
-    [[deprecated]] ::System::IntPtr& dyn_callbackData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_callbackData();
     // Get instance field reference: private Firebase.FutureVoid/Firebase.SWIG_CompletionDelegate SWIG_CompletionCB
-    [[deprecated]] ::Firebase::FutureVoid::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
+    [[deprecated("Use field access instead!")]] ::Firebase::FutureVoid::SWIG_CompletionDelegate*& dyn_SWIG_CompletionCB();
     // static private System.Void .cctor()
     // Offset: 0x1889848
     static void _cctor();

@@ -130,7 +130,7 @@ namespace VROSC {
       // Set static field: static public VROSC.WidgetSettings/VROSC.Identifier TapeRecorder
       static void _set_TapeRecorder(::VROSC::WidgetSettings::Identifier value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.WidgetSettings/VROSC.Identifier
     #pragma pack(pop)
     static check_size<sizeof(WidgetSettings::Identifier), 0 + sizeof(int)> __VROSC_WidgetSettings_IdentifierSizeCheck;
@@ -158,11 +158,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _spawnHeightModifier
-    [[deprecated]] float& dyn__spawnHeightModifier();
+    [[deprecated("Use field access instead!")]] float& dyn__spawnHeightModifier();
     // Get instance field reference: private VROSC.WidgetSettings/VROSC.Identifier _id
-    [[deprecated]] ::VROSC::WidgetSettings::Identifier& dyn__id();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetSettings::Identifier& dyn__id();
     // Get instance field reference: private System.String _displayName
-    [[deprecated]] ::StringW& dyn__displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__displayName();
     // public VROSC.WidgetSettings/VROSC.Identifier get_ID()
     // Offset: 0x952A50
     ::VROSC::WidgetSettings::Identifier get_ID();
@@ -174,10 +174,6 @@ namespace VROSC {
     ::StringW get_DisplayName();
     // public System.Void .ctor()
     // Offset: 0x952A68
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WidgetSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetSettings::.ctor");

@@ -54,9 +54,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _grabSticksButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__grabSticksButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__grabSticksButton();
     // Get instance field reference: private System.Boolean _grabBoth
-    [[deprecated]] bool& dyn__grabBoth();
+    [[deprecated("Use field access instead!")]] bool& dyn__grabBoth();
+    // public System.Void .ctor()
+    // Offset: 0x19A5B60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GrabMalletButton* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GrabMalletButton::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GrabMalletButton*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x19A5864
     void Awake();
@@ -66,25 +73,16 @@ namespace VROSC {
     // private System.Void GrabSticks(VROSC.ClickData clickData)
     // Offset: 0x19A5A0C
     void GrabSticks(::VROSC::ClickData* clickData);
-    // public System.Void .ctor()
-    // Offset: 0x19A5B60
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GrabMalletButton* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GrabMalletButton::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GrabMalletButton*, creationType>()));
-    }
   }; // VROSC.GrabMalletButton
   #pragma pack(pop)
   static check_size<sizeof(GrabMalletButton), 32 + sizeof(bool)> __VROSC_GrabMalletButtonSizeCheck;
   static_assert(sizeof(GrabMalletButton) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::GrabMalletButton::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GrabMalletButton::Awake
 // Il2CppName: Awake
 template<>
@@ -110,7 +108,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::GrabMalletButton*), "GrabSticks", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{clickData});
   }
 };
-// Writing MetadataGetter for method: VROSC::GrabMalletButton::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

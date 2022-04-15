@@ -92,7 +92,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.ContentSizeFitter/UnityEngine.UI.FitMode PreferredSize
       static void _set_PreferredSize(::UnityEngine::UI::ContentSizeFitter::FitMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.ContentSizeFitter/UnityEngine.UI.FitMode
     #pragma pack(pop)
     static check_size<sizeof(ContentSizeFitter::FitMode), 0 + sizeof(int)> __UnityEngine_UI_ContentSizeFitter_FitModeSizeCheck;
@@ -130,13 +130,13 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected UnityEngine.UI.ContentSizeFitter/UnityEngine.UI.FitMode m_HorizontalFit
-    [[deprecated]] ::UnityEngine::UI::ContentSizeFitter::FitMode& dyn_m_HorizontalFit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ContentSizeFitter::FitMode& dyn_m_HorizontalFit();
     // Get instance field reference: protected UnityEngine.UI.ContentSizeFitter/UnityEngine.UI.FitMode m_VerticalFit
-    [[deprecated]] ::UnityEngine::UI::ContentSizeFitter::FitMode& dyn_m_VerticalFit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ContentSizeFitter::FitMode& dyn_m_VerticalFit();
     // Get instance field reference: private UnityEngine.RectTransform m_Rect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_Rect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_Rect();
     // Get instance field reference: private UnityEngine.DrivenRectTransformTracker m_Tracker
-    [[deprecated]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
     // public UnityEngine.UI.ContentSizeFitter/UnityEngine.UI.FitMode get_horizontalFit()
     // Offset: 0xEAFB6C
     ::UnityEngine::UI::ContentSizeFitter::FitMode get_horizontalFit();
@@ -168,11 +168,6 @@ namespace UnityEngine::UI {
     // Offset: 0xEAFDA0
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ContentSizeFitter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::ContentSizeFitter::.ctor");

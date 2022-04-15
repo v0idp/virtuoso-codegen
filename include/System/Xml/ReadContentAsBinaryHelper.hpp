@@ -76,7 +76,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.ReadContentAsBinaryHelper/System.Xml.State InReadElementContent
       static void _set_InReadElementContent(::System::Xml::ReadContentAsBinaryHelper::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.ReadContentAsBinaryHelper/System.Xml.State
     #pragma pack(pop)
     static check_size<sizeof(ReadContentAsBinaryHelper::State), 0 + sizeof(int)> __System_Xml_ReadContentAsBinaryHelper_StateSizeCheck;
@@ -108,13 +108,13 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.XmlReader reader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn_reader();
     // Get instance field reference: private System.Xml.ReadContentAsBinaryHelper/System.Xml.State state
-    [[deprecated]] ::System::Xml::ReadContentAsBinaryHelper::State& dyn_state();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ReadContentAsBinaryHelper::State& dyn_state();
     // Get instance field reference: private System.Int32 valueOffset
-    [[deprecated]] int& dyn_valueOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_valueOffset();
     // Get instance field reference: private System.Boolean isEnd
-    [[deprecated]] bool& dyn_isEnd();
+    [[deprecated("Use field access instead!")]] bool& dyn_isEnd();
     // System.Void Finish()
     // Offset: 0xDE7BE4
     void Finish();

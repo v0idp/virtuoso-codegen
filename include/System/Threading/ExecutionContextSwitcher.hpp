@@ -68,13 +68,13 @@ namespace System::Threading {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Threading.ExecutionContext/System.Threading.Reader outerEC
-    [[deprecated]] ::System::Threading::ExecutionContext::Reader& dyn_outerEC();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext::Reader& dyn_outerEC();
     // Get instance field reference: System.Boolean outerECBelongsToScope
-    [[deprecated]] bool& dyn_outerECBelongsToScope();
+    [[deprecated("Use field access instead!")]] bool& dyn_outerECBelongsToScope();
     // Get instance field reference: System.Object hecsw
-    [[deprecated]] ::Il2CppObject*& dyn_hecsw();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_hecsw();
     // Get instance field reference: System.Threading.Thread thread
-    [[deprecated]] ::System::Threading::Thread*& dyn_thread();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Thread*& dyn_thread();
     // System.Boolean UndoNoThrow()
     // Offset: 0x14FB4A4
     bool UndoNoThrow();

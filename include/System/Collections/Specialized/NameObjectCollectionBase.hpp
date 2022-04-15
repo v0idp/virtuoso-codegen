@@ -198,23 +198,23 @@ namespace System::Collections::Specialized {
     // Set static field: static private System.StringComparer defaultComparer
     static void _set_defaultComparer(::System::StringComparer* value);
     // Get instance field reference: private System.Boolean _readOnly
-    [[deprecated]] bool& dyn__readOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__readOnly();
     // Get instance field reference: private System.Collections.ArrayList _entriesArray
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__entriesArray();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__entriesArray();
     // Get instance field reference: private System.Collections.IEqualityComparer _keyComparer
-    [[deprecated]] ::System::Collections::IEqualityComparer*& dyn__keyComparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEqualityComparer*& dyn__keyComparer();
     // Get instance field reference: private System.Collections.Hashtable _entriesTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__entriesTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__entriesTable();
     // Get instance field reference: private System.Collections.Specialized.NameObjectCollectionBase/System.Collections.Specialized.NameObjectEntry _nullKeyEntry
-    [[deprecated]] ::System::Collections::Specialized::NameObjectCollectionBase::NameObjectEntry*& dyn__nullKeyEntry();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::NameObjectCollectionBase::NameObjectEntry*& dyn__nullKeyEntry();
     // Get instance field reference: private System.Collections.Specialized.NameObjectCollectionBase/System.Collections.Specialized.KeysCollection _keys
-    [[deprecated]] ::System::Collections::Specialized::NameObjectCollectionBase::KeysCollection*& dyn__keys();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::NameObjectCollectionBase::KeysCollection*& dyn__keys();
     // Get instance field reference: private System.Runtime.Serialization.SerializationInfo _serializationInfo
-    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn__serializationInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationInfo*& dyn__serializationInfo();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // protected System.Boolean get_IsReadOnly()
     // Offset: 0x11019F8
     bool get_IsReadOnly();
@@ -224,6 +224,13 @@ namespace System::Collections::Specialized {
     // private System.Object System.Collections.ICollection.get_SyncRoot()
     // Offset: 0x11021FC
     ::Il2CppObject* System_Collections_ICollection_get_SyncRoot();
+    // protected System.Void .ctor()
+    // Offset: 0x11007B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NameObjectCollectionBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::NameObjectCollectionBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NameObjectCollectionBase*, creationType>()));
+    }
     // protected System.Void .ctor(System.Collections.IEqualityComparer equalityComparer)
     // Offset: 0x110081C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -294,15 +301,6 @@ namespace System::Collections::Specialized {
     // private System.Void System.Collections.ICollection.CopyTo(System.Array array, System.Int32 index)
     // Offset: 0x1101EB8
     void System_Collections_ICollection_CopyTo(::System::Array* array, int index);
-    // protected System.Void .ctor()
-    // Offset: 0x11007B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NameObjectCollectionBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::NameObjectCollectionBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NameObjectCollectionBase*, creationType>()));
-    }
   }; // System.Collections.Specialized.NameObjectCollectionBase
   #pragma pack(pop)
   static check_size<sizeof(NameObjectCollectionBase), 80 + sizeof(::Il2CppObject*)> __System_Collections_Specialized_NameObjectCollectionBaseSizeCheck;
@@ -333,6 +331,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::NameObjectCollectionBase*), "System.Collections.ICollection.get_SyncRoot", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Collections::Specialized::NameObjectCollectionBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Collections::Specialized::NameObjectCollectionBase::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -476,7 +478,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::NameObjectCollectionBase*), "System.Collections.ICollection.CopyTo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{array, index});
   }
 };
-// Writing MetadataGetter for method: System::Collections::Specialized::NameObjectCollectionBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

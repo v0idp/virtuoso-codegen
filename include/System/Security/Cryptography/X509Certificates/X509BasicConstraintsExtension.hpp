@@ -82,13 +82,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static System.String friendlyName
     static void _set_friendlyName(::StringW value);
     // Get instance field reference: private System.Boolean _certificateAuthority
-    [[deprecated]] bool& dyn__certificateAuthority();
+    [[deprecated("Use field access instead!")]] bool& dyn__certificateAuthority();
     // Get instance field reference: private System.Boolean _hasPathLengthConstraint
-    [[deprecated]] bool& dyn__hasPathLengthConstraint();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasPathLengthConstraint();
     // Get instance field reference: private System.Int32 _pathLengthConstraint
-    [[deprecated]] int& dyn__pathLengthConstraint();
+    [[deprecated("Use field access instead!")]] int& dyn__pathLengthConstraint();
     // Get instance field reference: private System.Security.Cryptography.AsnDecodeStatus _status
-    [[deprecated]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
     // public System.Boolean get_CertificateAuthority()
     // Offset: 0xC4EE40
     bool get_CertificateAuthority();
@@ -123,7 +123,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // Implemented from: System.Security.Cryptography.X509Certificates.X509Extension
     // Base method: System.Void X509Extension::.ctor()
     // Base method: System.Void AsnEncodedData::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509BasicConstraintsExtension* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509BasicConstraintsExtension::.ctor");

@@ -107,23 +107,23 @@ namespace System::IO {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: private System.Object state
-    [[deprecated]] ::Il2CppObject*& dyn_state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_state();
     // Get instance field reference: private System.Boolean completed
-    [[deprecated]] bool& dyn_completed();
+    [[deprecated("Use field access instead!")]] bool& dyn_completed();
     // Get instance field reference: private System.Threading.ManualResetEvent wh
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_wh();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_wh();
     // Get instance field reference: private System.AsyncCallback cb
-    [[deprecated]] ::System::AsyncCallback*& dyn_cb();
+    [[deprecated("Use field access instead!")]] ::System::AsyncCallback*& dyn_cb();
     // Get instance field reference: private System.Boolean completedSynch
-    [[deprecated]] bool& dyn_completedSynch();
+    [[deprecated("Use field access instead!")]] bool& dyn_completedSynch();
     // Get instance field reference: public System.Int32 Count
-    [[deprecated]] int& dyn_Count();
+    [[deprecated("Use field access instead!")]] int& dyn_Count();
     // Get instance field reference: public System.Int32 OriginalCount
-    [[deprecated]] int& dyn_OriginalCount();
+    [[deprecated("Use field access instead!")]] int& dyn_OriginalCount();
     // Get instance field reference: public System.Int32 BytesRead
-    [[deprecated]] int& dyn_BytesRead();
+    [[deprecated("Use field access instead!")]] int& dyn_BytesRead();
     // Get instance field reference: private System.AsyncCallback realcb
-    [[deprecated]] ::System::AsyncCallback*& dyn_realcb();
+    [[deprecated("Use field access instead!")]] ::System::AsyncCallback*& dyn_realcb();
     // public System.Object get_AsyncState()
     // Offset: 0x145157C
     ::Il2CppObject* get_AsyncState();

@@ -52,20 +52,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::IntField*) == 0x8);
     public:
     // Get instance field reference: private VROSC.IntField _intA
-    [[deprecated]] ::VROSC::IntField*& dyn__intA();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__intA();
     // Get instance field reference: private VROSC.IntField _intB
-    [[deprecated]] ::VROSC::IntField*& dyn__intB();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__intB();
     // public System.Void .ctor()
     // Offset: 0x1948A58
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IntComparer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IntComparer::.ctor");

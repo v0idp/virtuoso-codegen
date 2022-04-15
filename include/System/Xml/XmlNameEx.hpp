@@ -79,13 +79,13 @@ namespace System::Xml {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Byte flags
-    [[deprecated]] uint8_t& dyn_flags();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_flags();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType memberType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_memberType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_memberType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaType schemaType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaType*& dyn_schemaType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaType*& dyn_schemaType();
     // Get instance field reference: private System.Object decl
-    [[deprecated]] ::Il2CppObject*& dyn_decl();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_decl();
     // System.Void .ctor(System.String prefix, System.String localName, System.String ns, System.Int32 hashCode, System.Xml.XmlDocument ownerDoc, System.Xml.XmlName next, System.Xml.Schema.IXmlSchemaInfo schemaInfo)
     // Offset: 0x128DF20
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -59,13 +59,13 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(::ArrayW<uint>) == 0x8);
     public:
     // Get instance field reference: private System.Byte[] _buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: private System.Int64 _count
-    [[deprecated]] int64_t& dyn__count();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__count();
     // Get instance field reference: private System.UInt32[] _stateMD160
-    [[deprecated]] ::ArrayW<uint>& dyn__stateMD160();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn__stateMD160();
     // Get instance field reference: private System.UInt32[] _blockDWords
-    [[deprecated]] ::ArrayW<uint>& dyn__blockDWords();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn__blockDWords();
     // private System.Void InitializeState()
     // Offset: 0x160C798
     void InitializeState();

@@ -80,19 +80,19 @@ namespace Facebook::WitAi::Lib {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public Facebook.WitAi.Lib.Mic <>4__this
-    [[deprecated]] ::Facebook::WitAi::Lib::Mic*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Lib::Mic*& dyn_$$4__this();
     // Get instance field reference: private System.Int32 <loops>5__2
-    [[deprecated]] int& dyn_$loops$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$loops$5__2();
     // Get instance field reference: private System.Int32 <readAbsPos>5__3
-    [[deprecated]] int& dyn_$readAbsPos$5__3();
+    [[deprecated("Use field access instead!")]] int& dyn_$readAbsPos$5__3();
     // Get instance field reference: private System.Int32 <prevPos>5__4
-    [[deprecated]] int& dyn_$prevPos$5__4();
+    [[deprecated("Use field access instead!")]] int& dyn_$prevPos$5__4();
     // Get instance field reference: private System.Single[] <temp>5__5
-    [[deprecated]] ::ArrayW<float>& dyn_$temp$5__5();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_$temp$5__5();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x167D994
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

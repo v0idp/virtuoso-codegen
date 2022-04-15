@@ -59,11 +59,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTransform transform
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
     // Get instance field reference: public ovrAvatarDebugContext context
-    [[deprecated]] ::GlobalNamespace::ovrAvatarDebugContext& dyn_context();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarDebugContext& dyn_context();
     // Get instance field reference: public System.IntPtr text
-    [[deprecated]] ::System::IntPtr& dyn_text();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_text();
   }; // ovrAvatarDebugTransform
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarDebugTransform), 48 + sizeof(::System::IntPtr)> __GlobalNamespace_ovrAvatarDebugTransformSizeCheck;

@@ -52,25 +52,27 @@ namespace VROSC {
       return onSuccess;
     }
     // Get instance field reference: public System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>>> onSuccess
-    [[deprecated]] ::System::Action_1<::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*>*& dyn_onSuccess();
-    // System.Void <GetUserUpVotes>b__0(System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>> upVotesDocuments)
-    // Offset: 0x1954070
-    void $GetUserUpVotes$b__0(::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>* upVotesDocuments);
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*>*& dyn_onSuccess();
     // public System.Void .ctor()
     // Offset: 0x1954068
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseWrapper::$$c__DisplayClass57_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::$$c__DisplayClass57_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseWrapper::$$c__DisplayClass57_0*, creationType>()));
     }
+    // System.Void <GetUserUpVotes>b__0(System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>> upVotesDocuments)
+    // Offset: 0x1954070
+    void $GetUserUpVotes$b__0(::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>* upVotesDocuments);
   }; // VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass57_0
   #pragma pack(pop)
   static check_size<sizeof(FirebaseWrapper::$$c__DisplayClass57_0), 16 + sizeof(::System::Action_1<::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>*>*)> __VROSC_FirebaseWrapper_$$c__DisplayClass57_0SizeCheck;
   static_assert(sizeof(FirebaseWrapper::$$c__DisplayClass57_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass57_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass57_0::$GetUserUpVotes$b__0
 // Il2CppName: <GetUserUpVotes>b__0
 template<>
@@ -80,7 +82,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper::$$c__DisplayClass57_0*), "<GetUserUpVotes>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{upVotesDocuments});
   }
 };
-// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass57_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

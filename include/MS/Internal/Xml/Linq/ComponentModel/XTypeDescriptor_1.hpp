@@ -44,8 +44,6 @@ namespace MS::Internal::Xml::Linq::ComponentModel {
     public:
     // public System.Void .ctor(System.ComponentModel.ICustomTypeDescriptor parent)
     // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.ComponentModel.CustomTypeDescriptor
-    // Base method: System.Void CustomTypeDescriptor::.ctor(System.ComponentModel.ICustomTypeDescriptor parent)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XTypeDescriptor_1<T>* New_ctor(::System::ComponentModel::ICustomTypeDescriptor* parent) {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::Linq::ComponentModel::XTypeDescriptor_1::.ctor");

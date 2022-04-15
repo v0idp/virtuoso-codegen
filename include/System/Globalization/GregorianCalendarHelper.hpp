@@ -95,17 +95,17 @@ namespace System::Globalization {
     // Set static field: static readonly System.Int32[] DaysToMonth366
     static void _set_DaysToMonth366(::ArrayW<int> value);
     // Get instance field reference: System.Int32 m_maxYear
-    [[deprecated]] int& dyn_m_maxYear();
+    [[deprecated("Use field access instead!")]] int& dyn_m_maxYear();
     // Get instance field reference: System.Int32 m_minYear
-    [[deprecated]] int& dyn_m_minYear();
+    [[deprecated("Use field access instead!")]] int& dyn_m_minYear();
     // Get instance field reference: System.Globalization.Calendar m_Cal
-    [[deprecated]] ::System::Globalization::Calendar*& dyn_m_Cal();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::Calendar*& dyn_m_Cal();
     // Get instance field reference: System.Globalization.EraInfo[] m_EraInfo
-    [[deprecated]] ::ArrayW<::System::Globalization::EraInfo*>& dyn_m_EraInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Globalization::EraInfo*>& dyn_m_EraInfo();
     // Get instance field reference: System.Int32[] m_eras
-    [[deprecated]] ::ArrayW<int>& dyn_m_eras();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_eras();
     // Get instance field reference: System.DateTime m_minDate
-    [[deprecated]] ::System::DateTime& dyn_m_minDate();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_minDate();
     // System.Int32 get_MaxYear()
     // Offset: 0x145667C
     int get_MaxYear();

@@ -77,15 +77,15 @@ namespace Mono::Globalization::Unicode {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.Int32 Start
-      [[deprecated]] int& dyn_Start();
+      [[deprecated("Use field access instead!")]] int& dyn_Start();
       // Get instance field reference: public readonly System.Int32 End
-      [[deprecated]] int& dyn_End();
+      [[deprecated("Use field access instead!")]] int& dyn_End();
       // Get instance field reference: public readonly System.Int32 Count
-      [[deprecated]] int& dyn_Count();
+      [[deprecated("Use field access instead!")]] int& dyn_Count();
       // Get instance field reference: public readonly System.Int32 IndexStart
-      [[deprecated]] int& dyn_IndexStart();
+      [[deprecated("Use field access instead!")]] int& dyn_IndexStart();
       // Get instance field reference: public readonly System.Int32 IndexEnd
-      [[deprecated]] int& dyn_IndexEnd();
+      [[deprecated("Use field access instead!")]] int& dyn_IndexEnd();
       // public System.Void .ctor(System.Int32 start, System.Int32 end, System.Int32 indexStart)
       // Offset: 0x13A7DB0
       TableRange(int start, int end, int indexStart);
@@ -120,13 +120,13 @@ namespace Mono::Globalization::Unicode {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly Mono.Globalization.Unicode.CodePointIndexer/Mono.Globalization.Unicode.TableRange[] ranges
-    [[deprecated]] ::ArrayW<::Mono::Globalization::Unicode::CodePointIndexer::TableRange>& dyn_ranges();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Mono::Globalization::Unicode::CodePointIndexer::TableRange>& dyn_ranges();
     // Get instance field reference: public readonly System.Int32 TotalCount
-    [[deprecated]] int& dyn_TotalCount();
+    [[deprecated("Use field access instead!")]] int& dyn_TotalCount();
     // Get instance field reference: private System.Int32 defaultIndex
-    [[deprecated]] int& dyn_defaultIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_defaultIndex();
     // Get instance field reference: private System.Int32 defaultCP
-    [[deprecated]] int& dyn_defaultCP();
+    [[deprecated("Use field access instead!")]] int& dyn_defaultCP();
     // public System.Void .ctor(System.Int32[] starts, System.Int32[] ends, System.Int32 defaultIndex, System.Int32 defaultCP)
     // Offset: 0xE39004
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

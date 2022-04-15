@@ -93,19 +93,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _stick
-    [[deprecated]] ::UnityEngine::Transform*& dyn__stick();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__stick();
     // Get instance field reference: private UnityEngine.Transform _head
-    [[deprecated]] ::UnityEngine::Transform*& dyn__head();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__head();
     // Get instance field reference: private UnityEngine.Renderer _tipRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__tipRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__tipRenderer();
     // Get instance field reference: private UnityEngine.Renderer _stickRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__stickRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__stickRenderer();
     // Get instance field reference: private VROSC.PredictiveHitWisp _wisp
-    [[deprecated]] ::VROSC::PredictiveHitWisp*& dyn__wisp();
+    [[deprecated("Use field access instead!")]] ::VROSC::PredictiveHitWisp*& dyn__wisp();
     // Get instance field reference: private UnityEngine.Material _material
-    [[deprecated]] ::UnityEngine::Material*& dyn__material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__material();
     // Get instance field reference: private UnityEngine.Vector3 _headStartPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__headStartPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__headStartPosition();
+    // public System.Void .ctor()
+    // Offset: 0xAC0908
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MalletVisual* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MalletVisual::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MalletVisual*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xAC0678
     void Awake();
@@ -118,25 +125,16 @@ namespace VROSC {
     // public System.Void SetAngle(System.Single angle)
     // Offset: 0xAC0898
     void SetAngle(float angle);
-    // public System.Void .ctor()
-    // Offset: 0xAC0908
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MalletVisual* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MalletVisual::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MalletVisual*, creationType>()));
-    }
   }; // VROSC.MalletVisual
   #pragma pack(pop)
   static check_size<sizeof(MalletVisual), 72 + sizeof(::UnityEngine::Vector3)> __VROSC_MalletVisualSizeCheck;
   static_assert(sizeof(MalletVisual) == 0x54);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::MalletVisual::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MalletVisual::Awake
 // Il2CppName: Awake
 template<>
@@ -172,7 +170,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::MalletVisual*), "SetAngle", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{angle});
   }
 };
-// Writing MetadataGetter for method: VROSC::MalletVisual::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

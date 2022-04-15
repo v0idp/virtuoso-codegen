@@ -53,9 +53,9 @@ namespace Mono {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private readonly System.String str
-    [[deprecated]] ::StringW& dyn_str();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_str();
     // Get instance field reference: private System.IntPtr marshaled_string
-    [[deprecated]] ::System::IntPtr& dyn_marshaled_string();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_marshaled_string();
     // public System.IntPtr get_Value()
     // Offset: 0x1172868
     ::System::IntPtr get_Value();

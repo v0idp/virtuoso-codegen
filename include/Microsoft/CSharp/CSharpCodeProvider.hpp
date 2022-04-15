@@ -32,7 +32,6 @@ namespace Microsoft::CSharp {
     // Offset: 0xB63BF0
     // Implemented from: Microsoft.CSharp.CodeDomProvider
     // Base method: System.Void CodeDomProvider::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CSharpCodeProvider* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Microsoft::CSharp::CSharpCodeProvider::.ctor");

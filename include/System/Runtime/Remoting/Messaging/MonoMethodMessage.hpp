@@ -177,31 +177,31 @@ namespace System::Runtime::Remoting::Messaging {
     // Set static field: static System.String UriKey
     static void _set_UriKey(::StringW value);
     // Get instance field reference: private System.Reflection.MonoMethod method
-    [[deprecated]] ::System::Reflection::MonoMethod*& dyn_method();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MonoMethod*& dyn_method();
     // Get instance field reference: private System.Object[] args
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_args();
     // Get instance field reference: private System.String[] names
-    [[deprecated]] ::ArrayW<::StringW>& dyn_names();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_names();
     // Get instance field reference: private System.Byte[] arg_types
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_arg_types();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_arg_types();
     // Get instance field reference: public System.Runtime.Remoting.Messaging.LogicalCallContext ctx
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::LogicalCallContext*& dyn_ctx();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::LogicalCallContext*& dyn_ctx();
     // Get instance field reference: public System.Object rval
-    [[deprecated]] ::Il2CppObject*& dyn_rval();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_rval();
     // Get instance field reference: public System.Exception exc
-    [[deprecated]] ::System::Exception*& dyn_exc();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_exc();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.AsyncResult asyncResult
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::AsyncResult*& dyn_asyncResult();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::AsyncResult*& dyn_asyncResult();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.CallType call_type
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::CallType& dyn_call_type();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::CallType& dyn_call_type();
     // Get instance field reference: private System.String uri
-    [[deprecated]] ::StringW& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_uri();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.MCMDictionary properties
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::MCMDictionary*& dyn_properties();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::MCMDictionary*& dyn_properties();
     // Get instance field reference: private System.Type[] methodSignature
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_methodSignature();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_methodSignature();
     // Get instance field reference: private System.Runtime.Remoting.Identity identity
-    [[deprecated]] ::System::Runtime::Remoting::Identity*& dyn_identity();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Identity*& dyn_identity();
     // public System.Collections.IDictionary get_Properties()
     // Offset: 0x100E584
     ::System::Collections::IDictionary* get_Properties();

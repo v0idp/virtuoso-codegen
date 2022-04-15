@@ -212,41 +212,41 @@ namespace Facebook::WitAi {
       return *reinterpret_cast<::Facebook::WitAi::IWitRuntimeConfigProvider*>(this);
     }
     // Get instance field reference: private Facebook.WitAi.Configuration.WitRuntimeConfiguration runtimeConfiguration
-    [[deprecated]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_runtimeConfiguration();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_runtimeConfiguration();
     // Get instance field reference: private System.Single activationTime
-    [[deprecated]] float& dyn_activationTime();
+    [[deprecated("Use field access instead!")]] float& dyn_activationTime();
     // Get instance field reference: private Facebook.WitAi.Interfaces.IAudioInputSource micInput
-    [[deprecated]] ::Facebook::WitAi::Interfaces::IAudioInputSource*& dyn_micInput();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Interfaces::IAudioInputSource*& dyn_micInput();
     // Get instance field reference: private Facebook.WitAi.Configuration.WitRequestOptions currentRequestOptions
-    [[deprecated]] ::Facebook::WitAi::Configuration::WitRequestOptions*& dyn_currentRequestOptions();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Configuration::WitRequestOptions*& dyn_currentRequestOptions();
     // Get instance field reference: private System.Single lastMinVolumeLevelTime
-    [[deprecated]] float& dyn_lastMinVolumeLevelTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastMinVolumeLevelTime();
     // Get instance field reference: private Facebook.WitAi.WitRequest activeRequest
-    [[deprecated]] ::Facebook::WitAi::WitRequest*& dyn_activeRequest();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::WitRequest*& dyn_activeRequest();
     // Get instance field reference: private System.Collections.Concurrent.ConcurrentQueue`1<System.Action> updateQueue
-    [[deprecated]] ::System::Collections::Concurrent::ConcurrentQueue_1<::System::Action*>*& dyn_updateQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Concurrent::ConcurrentQueue_1<::System::Action*>*& dyn_updateQueue();
     // Get instance field reference: private System.Boolean isSoundWakeActive
-    [[deprecated]] bool& dyn_isSoundWakeActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_isSoundWakeActive();
     // Get instance field reference: private Facebook.WitAi.Data.RingBuffer`1<System.Byte> micDataBuffer
-    [[deprecated]] ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>*& dyn_micDataBuffer();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>*& dyn_micDataBuffer();
     // Get instance field reference: private Facebook.WitAi.Data.RingBuffer`1/Facebook.WitAi.Data.Marker<System.Byte> lastSampleMarker
-    [[deprecated]] typename ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>::Marker*& dyn_lastSampleMarker();
+    [[deprecated("Use field access instead!")]] typename ::Facebook::WitAi::Data::RingBuffer_1<uint8_t>::Marker*& dyn_lastSampleMarker();
     // Get instance field reference: private System.Byte[] writeBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_writeBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_writeBuffer();
     // Get instance field reference: private System.Boolean minKeepAliveWasHit
-    [[deprecated]] bool& dyn_minKeepAliveWasHit();
+    [[deprecated("Use field access instead!")]] bool& dyn_minKeepAliveWasHit();
     // Get instance field reference: private System.Boolean isActive
-    [[deprecated]] bool& dyn_isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_isActive();
     // Get instance field reference: private System.Byte[] byteDataBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_byteDataBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_byteDataBuffer();
     // Get instance field reference: private Facebook.WitAi.Interfaces.ITranscriptionProvider activeTranscriptionProvider
-    [[deprecated]] ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_activeTranscriptionProvider();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Interfaces::ITranscriptionProvider*& dyn_activeTranscriptionProvider();
     // Get instance field reference: private UnityEngine.Coroutine timeLimitCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_timeLimitCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_timeLimitCoroutine();
     // Get instance field reference: private System.Boolean receivedTranscription
-    [[deprecated]] bool& dyn_receivedTranscription();
+    [[deprecated("Use field access instead!")]] bool& dyn_receivedTranscription();
     // Get instance field reference: private System.Single lastWordTime
-    [[deprecated]] float& dyn_lastWordTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastWordTime();
     // public Facebook.WitAi.Configuration.WitRuntimeConfiguration get_RuntimeConfiguration()
     // Offset: 0x1670A94
     ::Facebook::WitAi::Configuration::WitRuntimeConfiguration* get_RuntimeConfiguration();
@@ -350,11 +350,6 @@ namespace Facebook::WitAi {
     // Offset: 0x1673E54
     // Implemented from: Facebook.WitAi.VoiceService
     // Base method: System.Void VoiceService::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Wit* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Wit::.ctor");

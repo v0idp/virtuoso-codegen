@@ -103,19 +103,19 @@ namespace System::Globalization {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.String AppCompatLiteral
-      [[deprecated]] ::StringW& dyn_AppCompatLiteral();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_AppCompatLiteral();
       // Get instance field reference: System.Int32 dd
-      [[deprecated]] int& dyn_dd();
+      [[deprecated("Use field access instead!")]] int& dyn_dd();
       // Get instance field reference: System.Int32 hh
-      [[deprecated]] int& dyn_hh();
+      [[deprecated("Use field access instead!")]] int& dyn_hh();
       // Get instance field reference: System.Int32 mm
-      [[deprecated]] int& dyn_mm();
+      [[deprecated("Use field access instead!")]] int& dyn_mm();
       // Get instance field reference: System.Int32 ss
-      [[deprecated]] int& dyn_ss();
+      [[deprecated("Use field access instead!")]] int& dyn_ss();
       // Get instance field reference: System.Int32 ff
-      [[deprecated]] int& dyn_ff();
+      [[deprecated("Use field access instead!")]] int& dyn_ff();
       // Get instance field reference: private System.String[] literals
-      [[deprecated]] ::ArrayW<::StringW>& dyn_literals();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_literals();
       // System.String get_Start()
       // Offset: 0xE61854
       ::StringW get_Start();

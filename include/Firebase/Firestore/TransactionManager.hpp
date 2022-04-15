@@ -78,9 +78,9 @@ namespace Firebase::Firestore {
     // Set static field: static private readonly Firebase.Firestore.ListenerRegistrationMap`1<System.Func`2<Firebase.Firestore.TransactionCallbackProxy,System.Threading.Tasks.Task>> _callbacks
     static void _set__callbacks(::Firebase::Firestore::ListenerRegistrationMap_1<::System::Func_2<::Firebase::Firestore::TransactionCallbackProxy*, ::System::Threading::Tasks::Task*>*>* value);
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // Get instance field reference: private readonly Firebase.Firestore.TransactionManagerProxy _transactionManagerProxy
-    [[deprecated]] ::Firebase::Firestore::TransactionManagerProxy*& dyn__transactionManagerProxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::TransactionManagerProxy*& dyn__transactionManagerProxy();
     // System.Void .ctor(Firebase.Firestore.FirebaseFirestore firestore, Firebase.Firestore.FirestoreProxy firestoreProxy)
     // Offset: 0xD59880
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -48,9 +48,9 @@ namespace System::Resources {
     static_assert(sizeof(::System::Resources::UltimateResourceFallbackLocation) == 0x4);
     public:
     // Get instance field reference: private System.String _culture
-    [[deprecated]] ::StringW& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__culture();
     // Get instance field reference: private System.Resources.UltimateResourceFallbackLocation _fallbackLoc
-    [[deprecated]] ::System::Resources::UltimateResourceFallbackLocation& dyn__fallbackLoc();
+    [[deprecated("Use field access instead!")]] ::System::Resources::UltimateResourceFallbackLocation& dyn__fallbackLoc();
     // public System.String get_CultureName()
     // Offset: 0x1011870
     ::StringW get_CultureName();

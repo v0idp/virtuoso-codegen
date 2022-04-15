@@ -49,11 +49,11 @@ namespace System {
     static_assert(sizeof(::ArrayW<int>) == 0x8);
     public:
     // Get instance field reference: private System.Int32 inext
-    [[deprecated]] int& dyn_inext();
+    [[deprecated("Use field access instead!")]] int& dyn_inext();
     // Get instance field reference: private System.Int32 inextp
-    [[deprecated]] int& dyn_inextp();
+    [[deprecated("Use field access instead!")]] int& dyn_inextp();
     // Get instance field reference: private System.Int32[] SeedArray
-    [[deprecated]] ::ArrayW<int>& dyn_SeedArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_SeedArray();
     // public System.Void .ctor(System.Int32 Seed)
     // Offset: 0x16115D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

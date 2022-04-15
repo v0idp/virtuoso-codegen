@@ -75,13 +75,13 @@ namespace Mono::Unity {
     static_assert(sizeof(::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509ChainStatus>*) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainElementCollection elements
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection*& dyn_elements();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509ChainElementCollection*& dyn_elements();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_x509list_ref nativeCertificateChain
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_x509list_ref& dyn_nativeCertificateChain();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_x509list_ref& dyn_nativeCertificateChain();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509ChainPolicy policy
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509ChainPolicy*& dyn_policy();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509ChainPolicy*& dyn_policy();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Security.Cryptography.X509Certificates.X509ChainStatus> chainStatusList
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509ChainStatus>*& dyn_chainStatusList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Security::Cryptography::X509Certificates::X509ChainStatus>*& dyn_chainStatusList();
     // Mono.Unity.UnityTls/Mono.Unity.unitytls_x509list_ref get_NativeCertificateChain()
     // Offset: 0xC5368C
     ::Mono::Unity::UnityTls::unitytls_x509list_ref get_NativeCertificateChain();

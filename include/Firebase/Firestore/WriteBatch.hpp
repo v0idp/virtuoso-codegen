@@ -64,7 +64,7 @@ namespace Firebase::Firestore {
       return proxy;
     }
     // Get instance field reference: private readonly Firebase.Firestore.WriteBatchProxy _proxy
-    [[deprecated]] ::Firebase::Firestore::WriteBatchProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::WriteBatchProxy*& dyn__proxy();
     // System.Void .ctor(Firebase.Firestore.WriteBatchProxy proxy)
     // Offset: 0xD5ACC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

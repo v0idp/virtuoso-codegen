@@ -77,13 +77,13 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.TransformMoverRelay _moverRelay
-    [[deprecated]] ::VROSC::TransformMoverRelay*& dyn__moverRelay();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMoverRelay*& dyn__moverRelay();
     // Get instance field reference: private VROSC.UIButton _convertButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__convertButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__convertButton();
     // Get instance field reference: private UnityEngine.GameObject[] _objectsToDisable
-    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn__objectsToDisable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::GameObject*>& dyn__objectsToDisable();
     // Get instance field reference: private System.Boolean _isTheUngroupedGroup
-    [[deprecated]] bool& dyn__isTheUngroupedGroup();
+    [[deprecated("Use field access instead!")]] bool& dyn__isTheUngroupedGroup();
     // private System.Void Awake()
     // Offset: 0x19C1104
     void Awake();
@@ -97,11 +97,6 @@ namespace VROSC {
     // Offset: 0x19C15E4
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationBaseGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationBaseGroup::.ctor");

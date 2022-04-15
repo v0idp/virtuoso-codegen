@@ -30,10 +30,6 @@ namespace Facebook::WitAi::Events {
     public:
     // public System.Void .ctor()
     // Offset: 0x167094C
-    // Implemented from: UnityEngine.Events.UnityEvent`2
-    // Base method: System.Void UnityEvent_2::.ctor()
-    // Base method: System.Void UnityEventBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitErrorEvent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Events::WitErrorEvent::.ctor");

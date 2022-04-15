@@ -54,7 +54,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.NullValueHandling Ignore
     static void _set_Ignore(::Newtonsoft::Json::NullValueHandling value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.NullValueHandling
   #pragma pack(pop)
   static check_size<sizeof(NullValueHandling), 0 + sizeof(int)> __Newtonsoft_Json_NullValueHandlingSizeCheck;

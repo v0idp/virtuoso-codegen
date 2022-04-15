@@ -56,7 +56,7 @@ namespace System::Linq::Expressions {
     // Deleting conversion operator: operator ::System::Reflection::MethodInfo*
     constexpr operator ::System::Reflection::MethodInfo*() const noexcept = delete;
     // Get instance field reference: private System.Object _arg0
-    [[deprecated]] ::Il2CppObject*& dyn__arg0();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__arg0();
     // public System.Void .ctor(System.Reflection.MethodInfo method, System.Linq.Expressions.Expression arg0)
     // Offset: 0xE914A4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

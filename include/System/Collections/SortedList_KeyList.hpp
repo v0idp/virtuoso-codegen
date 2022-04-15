@@ -55,7 +55,7 @@ namespace System::Collections {
       return sortedList;
     }
     // Get instance field reference: private System.Collections.SortedList sortedList
-    [[deprecated]] ::System::Collections::SortedList*& dyn_sortedList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn_sortedList();
     // public System.Int32 get_Count()
     // Offset: 0xE5960C
     int get_Count();

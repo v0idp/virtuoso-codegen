@@ -69,9 +69,9 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Char[] signs
     static void _set_signs(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: private System.Decimal maxValue
-    [[deprecated]] ::System::Decimal& dyn_maxValue();
+    [[deprecated("Use field access instead!")]] ::System::Decimal& dyn_maxValue();
     // Get instance field reference: private System.Decimal minValue
-    [[deprecated]] ::System::Decimal& dyn_minValue();
+    [[deprecated("Use field access instead!")]] ::System::Decimal& dyn_minValue();
     // System.Void .ctor(System.Decimal minVal, System.Decimal maxVal)
     // Offset: 0xAF78C8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -60,11 +60,11 @@ namespace System::Net {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: public System.String Prefix
-    [[deprecated]] ::StringW& dyn_Prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Prefix();
     // Get instance field reference: System.Net.IWebRequestCreate creator
-    [[deprecated]] ::System::Net::IWebRequestCreate*& dyn_creator();
+    [[deprecated("Use field access instead!")]] ::System::Net::IWebRequestCreate*& dyn_creator();
     // Get instance field reference: System.Type creatorType
-    [[deprecated]] ::System::Type*& dyn_creatorType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_creatorType();
     // public System.Net.IWebRequestCreate get_Creator()
     // Offset: 0xC49874
     ::System::Net::IWebRequestCreate* get_Creator();

@@ -232,55 +232,55 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVR.OpenVR.VREvent_Reserved_t reserved
-    [[deprecated]] ::OVR::OpenVR::VREvent_Reserved_t& dyn_reserved();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Reserved_t& dyn_reserved();
     // Get instance field reference: public OVR.OpenVR.VREvent_Controller_t controller
-    [[deprecated]] ::OVR::OpenVR::VREvent_Controller_t& dyn_controller();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Controller_t& dyn_controller();
     // Get instance field reference: public OVR.OpenVR.VREvent_Mouse_t mouse
-    [[deprecated]] ::OVR::OpenVR::VREvent_Mouse_t& dyn_mouse();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Mouse_t& dyn_mouse();
     // Get instance field reference: public OVR.OpenVR.VREvent_Scroll_t scroll
-    [[deprecated]] ::OVR::OpenVR::VREvent_Scroll_t& dyn_scroll();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Scroll_t& dyn_scroll();
     // Get instance field reference: public OVR.OpenVR.VREvent_Process_t process
-    [[deprecated]] ::OVR::OpenVR::VREvent_Process_t& dyn_process();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Process_t& dyn_process();
     // Get instance field reference: public OVR.OpenVR.VREvent_Notification_t notification
-    [[deprecated]] ::OVR::OpenVR::VREvent_Notification_t& dyn_notification();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Notification_t& dyn_notification();
     // Get instance field reference: public OVR.OpenVR.VREvent_Overlay_t overlay
-    [[deprecated]] ::OVR::OpenVR::VREvent_Overlay_t& dyn_overlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Overlay_t& dyn_overlay();
     // Get instance field reference: public OVR.OpenVR.VREvent_Status_t status
-    [[deprecated]] ::OVR::OpenVR::VREvent_Status_t& dyn_status();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Status_t& dyn_status();
     // Get instance field reference: public OVR.OpenVR.VREvent_Ipd_t ipd
-    [[deprecated]] ::OVR::OpenVR::VREvent_Ipd_t& dyn_ipd();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Ipd_t& dyn_ipd();
     // Get instance field reference: public OVR.OpenVR.VREvent_Chaperone_t chaperone
-    [[deprecated]] ::OVR::OpenVR::VREvent_Chaperone_t& dyn_chaperone();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Chaperone_t& dyn_chaperone();
     // Get instance field reference: public OVR.OpenVR.VREvent_PerformanceTest_t performanceTest
-    [[deprecated]] ::OVR::OpenVR::VREvent_PerformanceTest_t& dyn_performanceTest();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_PerformanceTest_t& dyn_performanceTest();
     // Get instance field reference: public OVR.OpenVR.VREvent_TouchPadMove_t touchPadMove
-    [[deprecated]] ::OVR::OpenVR::VREvent_TouchPadMove_t& dyn_touchPadMove();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_TouchPadMove_t& dyn_touchPadMove();
     // Get instance field reference: public OVR.OpenVR.VREvent_SeatedZeroPoseReset_t seatedZeroPoseReset
-    [[deprecated]] ::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t& dyn_seatedZeroPoseReset();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_SeatedZeroPoseReset_t& dyn_seatedZeroPoseReset();
     // Get instance field reference: public OVR.OpenVR.VREvent_Screenshot_t screenshot
-    [[deprecated]] ::OVR::OpenVR::VREvent_Screenshot_t& dyn_screenshot();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Screenshot_t& dyn_screenshot();
     // Get instance field reference: public OVR.OpenVR.VREvent_ScreenshotProgress_t screenshotProgress
-    [[deprecated]] ::OVR::OpenVR::VREvent_ScreenshotProgress_t& dyn_screenshotProgress();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_ScreenshotProgress_t& dyn_screenshotProgress();
     // Get instance field reference: public OVR.OpenVR.VREvent_ApplicationLaunch_t applicationLaunch
-    [[deprecated]] ::OVR::OpenVR::VREvent_ApplicationLaunch_t& dyn_applicationLaunch();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_ApplicationLaunch_t& dyn_applicationLaunch();
     // Get instance field reference: public OVR.OpenVR.VREvent_EditingCameraSurface_t cameraSurface
-    [[deprecated]] ::OVR::OpenVR::VREvent_EditingCameraSurface_t& dyn_cameraSurface();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_EditingCameraSurface_t& dyn_cameraSurface();
     // Get instance field reference: public OVR.OpenVR.VREvent_MessageOverlay_t messageOverlay
-    [[deprecated]] ::OVR::OpenVR::VREvent_MessageOverlay_t& dyn_messageOverlay();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_MessageOverlay_t& dyn_messageOverlay();
     // Get instance field reference: public OVR.OpenVR.VREvent_Property_t property
-    [[deprecated]] ::OVR::OpenVR::VREvent_Property_t& dyn_property();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Property_t& dyn_property();
     // Get instance field reference: public OVR.OpenVR.VREvent_DualAnalog_t dualAnalog
-    [[deprecated]] ::OVR::OpenVR::VREvent_DualAnalog_t& dyn_dualAnalog();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_DualAnalog_t& dyn_dualAnalog();
     // Get instance field reference: public OVR.OpenVR.VREvent_HapticVibration_t hapticVibration
-    [[deprecated]] ::OVR::OpenVR::VREvent_HapticVibration_t& dyn_hapticVibration();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_HapticVibration_t& dyn_hapticVibration();
     // Get instance field reference: public OVR.OpenVR.VREvent_WebConsole_t webConsole
-    [[deprecated]] ::OVR::OpenVR::VREvent_WebConsole_t& dyn_webConsole();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_WebConsole_t& dyn_webConsole();
     // Get instance field reference: public OVR.OpenVR.VREvent_InputBindingLoad_t inputBinding
-    [[deprecated]] ::OVR::OpenVR::VREvent_InputBindingLoad_t& dyn_inputBinding();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_InputBindingLoad_t& dyn_inputBinding();
     // Get instance field reference: public OVR.OpenVR.VREvent_SpatialAnchor_t spatialAnchor
-    [[deprecated]] ::OVR::OpenVR::VREvent_SpatialAnchor_t& dyn_spatialAnchor();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_SpatialAnchor_t& dyn_spatialAnchor();
     // Get instance field reference: public OVR.OpenVR.VREvent_Keyboard_t keyboard
-    [[deprecated]] ::OVR::OpenVR::VREvent_Keyboard_t& dyn_keyboard();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VREvent_Keyboard_t& dyn_keyboard();
   }; // OVR.OpenVR.VREvent_Data_t
   // WARNING Not writing size check since size may be invalid!
 }

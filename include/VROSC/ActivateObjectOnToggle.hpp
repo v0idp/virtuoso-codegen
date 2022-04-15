@@ -56,9 +56,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _toggle
-    [[deprecated]] ::VROSC::UIToggle*& dyn__toggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__toggle();
     // Get instance field reference: private VROSC.TooltipData _tooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__tooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__tooltip();
+    // public System.Void .ctor()
+    // Offset: 0x965578
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ActivateObjectOnToggle* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ActivateObjectOnToggle::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ActivateObjectOnToggle*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x965388
     void Awake();
@@ -68,25 +75,16 @@ namespace VROSC {
     // public System.Void SetActive(VROSC.InputDevice device, System.Boolean shouldBeOn)
     // Offset: 0x965544
     void SetActive(::VROSC::InputDevice* device, bool shouldBeOn);
-    // public System.Void .ctor()
-    // Offset: 0x965578
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ActivateObjectOnToggle* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ActivateObjectOnToggle::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ActivateObjectOnToggle*, creationType>()));
-    }
   }; // VROSC.ActivateObjectOnToggle
   #pragma pack(pop)
   static check_size<sizeof(ActivateObjectOnToggle), 32 + sizeof(::VROSC::TooltipData*)> __VROSC_ActivateObjectOnToggleSizeCheck;
   static_assert(sizeof(ActivateObjectOnToggle) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ActivateObjectOnToggle::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ActivateObjectOnToggle::Awake
 // Il2CppName: Awake
 template<>
@@ -113,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ActivateObjectOnToggle*), "SetActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{device, shouldBeOn});
   }
 };
-// Writing MetadataGetter for method: VROSC::ActivateObjectOnToggle::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

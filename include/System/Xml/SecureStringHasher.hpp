@@ -57,7 +57,14 @@ namespace System::Xml {
     // Set static field: static private System.Xml.SecureStringHasher/System.Xml.HashCodeOfStringDelegate hashCodeDelegate
     static void _set_hashCodeDelegate(::System::Xml::SecureStringHasher::HashCodeOfStringDelegate* value);
     // Get instance field reference: private System.Int32 hashCodeRandomizer
-    [[deprecated]] int& dyn_hashCodeRandomizer();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCodeRandomizer();
+    // public System.Void .ctor()
+    // Offset: 0xF6CC18
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SecureStringHasher* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::SecureStringHasher::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SecureStringHasher*, creationType>()));
+    }
     // public System.Boolean Equals(System.String x, System.String y)
     // Offset: 0xF6CC48
     bool Equals(::StringW x, ::StringW y);
@@ -70,21 +77,16 @@ namespace System::Xml {
     // static private System.Xml.SecureStringHasher/System.Xml.HashCodeOfStringDelegate GetHashCodeDelegate()
     // Offset: 0xF6CCF8
     static ::System::Xml::SecureStringHasher::HashCodeOfStringDelegate* GetHashCodeDelegate();
-    // public System.Void .ctor()
-    // Offset: 0xF6CC18
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SecureStringHasher* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::SecureStringHasher::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SecureStringHasher*, creationType>()));
-    }
   }; // System.Xml.SecureStringHasher
   #pragma pack(pop)
   static check_size<sizeof(SecureStringHasher), 16 + sizeof(int)> __System_Xml_SecureStringHasherSizeCheck;
   static_assert(sizeof(SecureStringHasher) == 0x14);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::SecureStringHasher::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::SecureStringHasher::Equals
 // Il2CppName: Equals
 template<>
@@ -123,7 +125,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::SecureStringHasher*), "GetHashCodeDelegate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::SecureStringHasher::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

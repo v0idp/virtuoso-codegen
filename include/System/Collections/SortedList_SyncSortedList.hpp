@@ -53,9 +53,9 @@ namespace System::Collections {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.SortedList _list
-    [[deprecated]] ::System::Collections::SortedList*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn__list();
     // Get instance field reference: private System.Object _root
-    [[deprecated]] ::Il2CppObject*& dyn__root();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__root();
     // System.Void .ctor(System.Collections.SortedList list)
     // Offset: 0xE59FF8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

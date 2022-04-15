@@ -107,7 +107,7 @@ namespace VROSC {
       // Set static field: static public VROSC.NoteBoard/VROSC.Axis Z
       static void _set_Z(::VROSC::NoteBoard::Axis value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.NoteBoard/VROSC.Axis
     #pragma pack(pop)
     static check_size<sizeof(NoteBoard::Axis), 0 + sizeof(int)> __VROSC_NoteBoard_AxisSizeCheck;
@@ -173,23 +173,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ScaleNode _scale
-    [[deprecated]] ::VROSC::ScaleNode*& dyn__scale();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScaleNode*& dyn__scale();
     // Get instance field reference: private VROSC.NoteField _startNote
-    [[deprecated]] ::VROSC::NoteField*& dyn__startNote();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteField*& dyn__startNote();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis _noteAxisX
-    [[deprecated]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisX();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisX();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis _noteAxisY
-    [[deprecated]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisY();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisY();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis _noteAxisZ
-    [[deprecated]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisZ();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::NoteAxis*& dyn__noteAxisZ();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.NoteAxis[] _noteAxes
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoard::NoteAxis*>& dyn__noteAxes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoard::NoteAxis*>& dyn__noteAxes();
     // Get instance field reference: private VROSC.NoteBoard/VROSC.Axis _primaryAxis
-    [[deprecated]] ::VROSC::NoteBoard::Axis& dyn__primaryAxis();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::Axis& dyn__primaryAxis();
     // Get instance field reference: private VROSC.ControllerInputNode _controllerInputNode
-    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerInputNode*& dyn__controllerInputNode();
     // Get instance field reference: private VROSC.NoteBoardNoteController _notefieldController
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__notefieldController();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__notefieldController();
     // protected System.Void Awake()
     // Offset: 0xAD4F78
     void Awake();
@@ -239,11 +239,6 @@ namespace VROSC {
     // Offset: 0xAD5F70
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoard* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoard::.ctor");

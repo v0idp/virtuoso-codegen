@@ -122,9 +122,9 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Int32> OnTrackRemoved
     static void _set_OnTrackRemoved(::System::Action_1<int>* value);
     // Get instance field reference: private VROSC.TransformDataController _transformData
-    [[deprecated]] ::VROSC::TransformDataController*& dyn__transformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataController*& dyn__transformData();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,System.Single[]> _loopStationAudioDatas
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::ArrayW<float>>*& dyn__loopStationAudioDatas();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::ArrayW<float>>*& dyn__loopStationAudioDatas();
     // private VROSC.LoopStationDataModel get_DataModel()
     // Offset: 0x196A254
     ::VROSC::LoopStationDataModel* get_DataModel();
@@ -383,7 +383,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolDataController
     // Base method: System.Void ToolDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationDataController::.ctor");

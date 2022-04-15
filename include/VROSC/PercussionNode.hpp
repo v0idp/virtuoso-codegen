@@ -39,7 +39,7 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MidiPercussion) == 0x4);
     public:
     // Get instance field reference: private VROSC.MidiPercussion _percussionValue
-    [[deprecated]] ::VROSC::MidiPercussion& dyn__percussionValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::MidiPercussion& dyn__percussionValue();
     // public VROSC.MidiPercussion get_PercussionValue()
     // Offset: 0xADE824
     ::VROSC::MidiPercussion get_PercussionValue();
@@ -51,11 +51,6 @@ namespace VROSC {
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PercussionNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PercussionNode::.ctor");

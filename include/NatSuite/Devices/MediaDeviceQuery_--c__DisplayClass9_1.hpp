@@ -44,25 +44,27 @@ namespace NatSuite::Devices {
       return device;
     }
     // Get instance field reference: public NatSuite.Devices.IMediaDevice device
-    [[deprecated]] ::NatSuite::Devices::IMediaDevice*& dyn_device();
-    // System.Boolean <.ctor>b__1(NatSuite.Devices.MediaDeviceQuery/NatSuite.Devices.Criterion criterion)
-    // Offset: 0x19613CC
-    bool $_ctor$b__1(::NatSuite::Devices::MediaDeviceQuery::Criterion* criterion);
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::IMediaDevice*& dyn_device();
     // public System.Void .ctor()
     // Offset: 0x19613C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MediaDeviceQuery::$$c__DisplayClass9_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::MediaDeviceQuery::$$c__DisplayClass9_1::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MediaDeviceQuery::$$c__DisplayClass9_1*, creationType>()));
     }
+    // System.Boolean <.ctor>b__1(NatSuite.Devices.MediaDeviceQuery/NatSuite.Devices.Criterion criterion)
+    // Offset: 0x19613CC
+    bool $_ctor$b__1(::NatSuite::Devices::MediaDeviceQuery::Criterion* criterion);
   }; // NatSuite.Devices.MediaDeviceQuery/NatSuite.Devices.<>c__DisplayClass9_1
   #pragma pack(pop)
   static check_size<sizeof(MediaDeviceQuery::$$c__DisplayClass9_1), 16 + sizeof(::NatSuite::Devices::IMediaDevice*)> __NatSuite_Devices_MediaDeviceQuery_$$c__DisplayClass9_1SizeCheck;
   static_assert(sizeof(MediaDeviceQuery::$$c__DisplayClass9_1) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: NatSuite::Devices::MediaDeviceQuery::$$c__DisplayClass9_1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Devices::MediaDeviceQuery::$$c__DisplayClass9_1::$_ctor$b__1
 // Il2CppName: <.ctor>b__1
 template<>
@@ -72,7 +74,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::MediaDeviceQuery::$$c__DisplayClass9_1*), "<.ctor>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{criterion});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Devices::MediaDeviceQuery::$$c__DisplayClass9_1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

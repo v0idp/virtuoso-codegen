@@ -60,7 +60,7 @@ namespace System::Xml {
     // Set static field: static public System.Xml.XmlNamespaceScope Local
     static void _set_Local(::System::Xml::XmlNamespaceScope value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Xml.XmlNamespaceScope
   #pragma pack(pop)
   static check_size<sizeof(XmlNamespaceScope), 0 + sizeof(int)> __System_Xml_XmlNamespaceScopeSizeCheck;

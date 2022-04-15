@@ -66,7 +66,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.ApplicationSandboxType SandboxBroken
     static void _set_SandboxBroken(::UnityEngine::ApplicationSandboxType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.ApplicationSandboxType
   #pragma pack(pop)
   static check_size<sizeof(ApplicationSandboxType), 0 + sizeof(int)> __UnityEngine_ApplicationSandboxTypeSizeCheck;

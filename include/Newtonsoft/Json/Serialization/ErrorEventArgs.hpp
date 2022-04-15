@@ -53,9 +53,9 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::Newtonsoft::Json::Serialization::ErrorContext*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Object <CurrentObject>k__BackingField
-    [[deprecated]] ::Il2CppObject*& dyn_$CurrentObject$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$CurrentObject$k__BackingField();
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.ErrorContext <ErrorContext>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ErrorContext*& dyn_$ErrorContext$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ErrorContext*& dyn_$ErrorContext$k__BackingField();
     // public System.Void .ctor(System.Object currentObject, Newtonsoft.Json.Serialization.ErrorContext errorContext)
     // Offset: 0xDCFD70
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

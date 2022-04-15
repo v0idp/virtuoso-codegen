@@ -50,9 +50,9 @@ namespace System::IO {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean _includeFiles
-    [[deprecated]] bool& dyn__includeFiles();
+    [[deprecated("Use field access instead!")]] bool& dyn__includeFiles();
     // Get instance field reference: private System.Boolean _includeDirs
-    [[deprecated]] bool& dyn__includeDirs();
+    [[deprecated("Use field access instead!")]] bool& dyn__includeDirs();
     // System.Void .ctor(System.Boolean includeFiles, System.Boolean includeDirs)
     // Offset: 0x1268494
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

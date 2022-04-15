@@ -63,13 +63,13 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Byte[] _Buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__Buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__Buffer();
     // Get instance field reference: private System.Int32 _BufferSize
-    [[deprecated]] int& dyn__BufferSize();
+    [[deprecated("Use field access instead!")]] int& dyn__BufferSize();
     // Get instance field reference: private System.Int32 _BufferIndex
-    [[deprecated]] int& dyn__BufferIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__BufferIndex();
     // Get instance field reference: private System.Boolean _BufferFull
-    [[deprecated]] bool& dyn__BufferFull();
+    [[deprecated("Use field access instead!")]] bool& dyn__BufferFull();
     // public System.Byte[] get_Buffer()
     // Offset: 0x126BBB8
     ::ArrayW<uint8_t> get_Buffer();

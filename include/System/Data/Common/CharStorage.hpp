@@ -59,7 +59,7 @@ namespace System::Data::Common {
       return values;
     }
     // Get instance field reference: private System.Char[] _values
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__values();
     // System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x14AEEC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

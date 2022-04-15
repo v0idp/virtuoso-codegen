@@ -83,21 +83,21 @@ namespace System::Security::Cryptography {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Byte[] P
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_P();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_P();
     // Get instance field reference: public System.Byte[] Q
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Q();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Q();
     // Get instance field reference: public System.Byte[] G
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_G();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_G();
     // Get instance field reference: public System.Byte[] Y
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Y();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Y();
     // Get instance field reference: public System.Byte[] J
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_J();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_J();
     // Get instance field reference: public System.Byte[] X
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_X();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_X();
     // Get instance field reference: public System.Byte[] Seed
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Seed();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Seed();
     // Get instance field reference: public System.Int32 Counter
-    [[deprecated]] int& dyn_Counter();
+    [[deprecated("Use field access instead!")]] int& dyn_Counter();
   }; // System.Security.Cryptography.DSAParameters
   #pragma pack(pop)
   static check_size<sizeof(DSAParameters), 56 + sizeof(int)> __System_Security_Cryptography_DSAParametersSizeCheck;

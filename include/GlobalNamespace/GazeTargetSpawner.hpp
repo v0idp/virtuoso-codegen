@@ -64,38 +64,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject GazeTargetPrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_GazeTargetPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_GazeTargetPrefab();
     // Get instance field reference: public System.Int32 NumberOfDummyTargets
-    [[deprecated]] int& dyn_NumberOfDummyTargets();
+    [[deprecated("Use field access instead!")]] int& dyn_NumberOfDummyTargets();
     // Get instance field reference: public System.Int32 RadiusMultiplier
-    [[deprecated]] int& dyn_RadiusMultiplier();
+    [[deprecated("Use field access instead!")]] int& dyn_RadiusMultiplier();
     // Get instance field reference: private System.Boolean isVisible
-    [[deprecated]] bool& dyn_isVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn_isVisible();
     // public System.Boolean get_IsVisible()
     // Offset: 0x19A2F34
     bool get_IsVisible();
     // public System.Void set_IsVisible(System.Boolean value)
     // Offset: 0x19A2F3C
     void set_IsVisible(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x19A3248
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GazeTargetSpawner* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::GazeTargetSpawner::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GazeTargetSpawner*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x19A3078
     void Start();
     // private System.Void OnValidate()
     // Offset: 0x19A3240
     void OnValidate();
-    // public System.Void .ctor()
-    // Offset: 0x19A3248
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GazeTargetSpawner* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::GazeTargetSpawner::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GazeTargetSpawner*, creationType>()));
-    }
   }; // GazeTargetSpawner
   #pragma pack(pop)
   static check_size<sizeof(GazeTargetSpawner), 40 + sizeof(bool)> __GlobalNamespace_GazeTargetSpawnerSizeCheck;
@@ -119,6 +113,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::GazeTargetSpawner*), "set_IsVisible", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::GazeTargetSpawner::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::GazeTargetSpawner::Start
 // Il2CppName: Start
 template<>
@@ -135,7 +133,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::GazeTargetSpawner*), "OnValidate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::GazeTargetSpawner::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

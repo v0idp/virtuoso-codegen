@@ -87,21 +87,21 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKMatrix4x4 projectionMatrix
-    [[deprecated]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_projectionMatrix();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKMatrix4x4& dyn_projectionMatrix();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 localPosition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion localRotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
     // Get instance field reference: public System.Single verticalFieldOfView
-    [[deprecated]] float& dyn_verticalFieldOfView();
+    [[deprecated("Use field access instead!")]] float& dyn_verticalFieldOfView();
     // Get instance field reference: public System.Single nearClipPlane
-    [[deprecated]] float& dyn_nearClipPlane();
+    [[deprecated("Use field access instead!")]] float& dyn_nearClipPlane();
     // Get instance field reference: public System.Single farClipPlane
-    [[deprecated]] float& dyn_farClipPlane();
+    [[deprecated("Use field access instead!")]] float& dyn_farClipPlane();
     // Get instance field reference: public System.Int32 unused0
-    [[deprecated]] int& dyn_unused0();
+    [[deprecated("Use field access instead!")]] int& dyn_unused0();
     // Get instance field reference: public System.Int32 unused1
-    [[deprecated]] int& dyn_unused1();
+    [[deprecated("Use field access instead!")]] int& dyn_unused1();
     // static public LIV.SDK.Unity.SDKPose get_empty()
     // Offset: 0xDD43F8
     static ::LIV::SDK::Unity::SDKPose get_empty();

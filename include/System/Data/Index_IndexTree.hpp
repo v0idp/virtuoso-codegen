@@ -37,7 +37,7 @@ namespace System::Data {
       return index;
     }
     // Get instance field reference: private readonly System.Data.Index _index
-    [[deprecated]] ::System::Data::Index*& dyn__index();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__index();
     // System.Void .ctor(System.Data.Index index)
     // Offset: 0x18CE250
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

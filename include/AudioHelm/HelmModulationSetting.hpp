@@ -48,15 +48,13 @@ namespace AudioHelm {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.String source
-    [[deprecated]] ::StringW& dyn_source();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_source();
     // Get instance field reference: public System.String destination
-    [[deprecated]] ::StringW& dyn_destination();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_destination();
     // Get instance field reference: public System.Single amount
-    [[deprecated]] float& dyn_amount();
+    [[deprecated("Use field access instead!")]] float& dyn_amount();
     // public System.Void .ctor()
     // Offset: 0x193D128
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HelmModulationSetting* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmModulationSetting::.ctor");

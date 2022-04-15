@@ -47,7 +47,7 @@ namespace System::Linq::Expressions {
       return _false;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _false
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__false();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__false();
     // System.Void .ctor(System.Linq.Expressions.Expression test, System.Linq.Expressions.Expression ifTrue, System.Linq.Expressions.Expression ifFalse)
     // Offset: 0xF148B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

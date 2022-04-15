@@ -41,7 +41,7 @@ namespace System::Xml {
       return nodeBuffer;
     }
     // Get instance field reference: private System.Byte[] nodeBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_nodeBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_nodeBuffer();
     // public System.Void .ctor(System.Byte[] nodeBuffer)
     // Offset: 0xF6FC1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

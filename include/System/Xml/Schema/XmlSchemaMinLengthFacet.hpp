@@ -35,7 +35,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaFacet::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaMinLengthFacet* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaMinLengthFacet::.ctor");

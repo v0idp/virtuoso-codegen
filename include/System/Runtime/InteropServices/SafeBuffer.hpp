@@ -37,7 +37,7 @@ namespace System::Runtime::InteropServices {
       return inited;
     }
     // Get instance field reference: private System.Boolean inited
-    [[deprecated]] bool& dyn_inited();
+    [[deprecated("Use field access instead!")]] bool& dyn_inited();
     // public System.Void AcquirePointer(ref System.Byte* pointer)
     // Offset: 0x1170BF4
     void AcquirePointer(ByRef<uint8_t*> pointer);

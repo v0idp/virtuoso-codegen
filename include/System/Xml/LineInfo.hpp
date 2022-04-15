@@ -44,9 +44,9 @@ namespace System::Xml {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Int32 lineNo
-    [[deprecated]] int& dyn_lineNo();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNo();
     // Get instance field reference: System.Int32 linePos
-    [[deprecated]] int& dyn_linePos();
+    [[deprecated("Use field access instead!")]] int& dyn_linePos();
     // public System.Void .ctor(System.Int32 lineNo, System.Int32 linePos)
     // Offset: 0xAF34C8
     // ABORTED: conflicts with another method.  LineInfo(int lineNo, int linePos);

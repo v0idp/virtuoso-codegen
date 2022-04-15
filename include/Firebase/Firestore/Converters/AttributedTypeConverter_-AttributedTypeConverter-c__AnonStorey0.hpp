@@ -38,25 +38,27 @@ namespace Firebase::Firestore::Converters {
       return firestoreName;
     }
     // Get instance field reference: System.String firestoreName
-    [[deprecated]] ::StringW& dyn_firestoreName();
-    // System.Boolean <>m__0(Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty p)
-    // Offset: 0xD668D4
-    bool $$m__0(::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty* p);
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_firestoreName();
     // public System.Void .ctor()
     // Offset: 0xD491F4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Converters::AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0*, creationType>()));
     }
+    // System.Boolean <>m__0(Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty p)
+    // Offset: 0xD668D4
+    bool $$m__0(::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty* p);
   }; // Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.<AttributedTypeConverter>c__AnonStorey0
   #pragma pack(pop)
   static check_size<sizeof(AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0), 16 + sizeof(::StringW)> __Firebase_Firestore_Converters_AttributedTypeConverter_$AttributedTypeConverter$c__AnonStorey0SizeCheck;
   static_assert(sizeof(AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::Converters::AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::Converters::AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -66,7 +68,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Converters::AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::Converters::AttributedTypeConverter::$AttributedTypeConverter$c__AnonStorey0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

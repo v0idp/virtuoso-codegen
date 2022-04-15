@@ -58,13 +58,13 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.DateTime ExpirationTime
-    [[deprecated]] ::System::DateTime& dyn_ExpirationTime();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_ExpirationTime();
     // Get instance field reference: public readonly System.DateTime GrantTime
-    [[deprecated]] ::System::DateTime& dyn_GrantTime();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_GrantTime();
     // Get instance field reference: public readonly System.String ID
-    [[deprecated]] ::StringW& dyn_ID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ID();
     // Get instance field reference: public readonly System.String Sku
-    [[deprecated]] ::StringW& dyn_Sku();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Sku();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x17131D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

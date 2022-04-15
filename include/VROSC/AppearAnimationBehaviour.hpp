@@ -97,34 +97,31 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.AnimationCurve _positionCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__positionCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _rotationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__rotationCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _scaleCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__scaleCurve();
     // Get instance field reference: private UnityEngine.Transform _target
-    [[deprecated]] ::UnityEngine::Transform*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__target();
     // Get instance field reference: private UnityEngine.Transform _start
-    [[deprecated]] ::UnityEngine::Transform*& dyn__start();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__start();
     // Get instance field reference: private UnityEngine.Transform _end
-    [[deprecated]] ::UnityEngine::Transform*& dyn__end();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__end();
     // Get instance field reference: private UnityEngine.Quaternion _randomStartRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__randomStartRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__randomStartRotation();
     // Get instance field reference: public System.Single animation
-    [[deprecated]] float& dyn_animation();
-    // public System.Void Setup(UnityEngine.Transform target, UnityEngine.Transform start, UnityEngine.Transform end, UnityEngine.AnimationCurve positionCurve, UnityEngine.AnimationCurve rotationCurve, UnityEngine.AnimationCurve scaleCurve, System.Single randomMidPoint)
-    // Offset: 0x96C804
-    void Setup(::UnityEngine::Transform* target, ::UnityEngine::Transform* start, ::UnityEngine::Transform* end, ::UnityEngine::AnimationCurve* positionCurve, ::UnityEngine::AnimationCurve* rotationCurve, ::UnityEngine::AnimationCurve* scaleCurve, float randomMidPoint);
+    [[deprecated("Use field access instead!")]] float& dyn_animation();
     // public System.Void .ctor()
     // Offset: 0x96CB0C
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AppearAnimationBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppearAnimationBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AppearAnimationBehaviour*, creationType>()));
     }
+    // public System.Void Setup(UnityEngine.Transform target, UnityEngine.Transform start, UnityEngine.Transform end, UnityEngine.AnimationCurve positionCurve, UnityEngine.AnimationCurve rotationCurve, UnityEngine.AnimationCurve scaleCurve, System.Single randomMidPoint)
+    // Offset: 0x96C804
+    void Setup(::UnityEngine::Transform* target, ::UnityEngine::Transform* start, ::UnityEngine::Transform* end, ::UnityEngine::AnimationCurve* positionCurve, ::UnityEngine::AnimationCurve* rotationCurve, ::UnityEngine::AnimationCurve* scaleCurve, float randomMidPoint);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x96C8C4
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -136,6 +133,10 @@ namespace VROSC {
   static_assert(sizeof(AppearAnimationBehaviour) == 0x54);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AppearAnimationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AppearAnimationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -151,10 +152,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppearAnimationBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, start, end, positionCurve, rotationCurve, scaleCurve, randomMidPoint});
   }
 };
-// Writing MetadataGetter for method: VROSC::AppearAnimationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AppearAnimationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

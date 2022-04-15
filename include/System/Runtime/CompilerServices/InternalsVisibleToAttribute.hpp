@@ -45,9 +45,9 @@ namespace System::Runtime::CompilerServices {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String _assemblyName
-    [[deprecated]] ::StringW& dyn__assemblyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__assemblyName();
     // Get instance field reference: private System.Boolean _allInternalsVisible
-    [[deprecated]] bool& dyn__allInternalsVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn__allInternalsVisible();
     // public System.String get_AssemblyName()
     // Offset: 0x106E35C
     ::StringW get_AssemblyName();

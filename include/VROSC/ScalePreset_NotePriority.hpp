@@ -40,9 +40,9 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public VROSC.Note Note
-    [[deprecated]] ::VROSC::Note& dyn_Note();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn_Note();
     // Get instance field reference: public System.Int32 Priority
-    [[deprecated]] int& dyn_Priority();
+    [[deprecated("Use field access instead!")]] int& dyn_Priority();
     // public System.Void .ctor(VROSC.Note note, System.Int32 priority)
     // Offset: 0x8D43DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

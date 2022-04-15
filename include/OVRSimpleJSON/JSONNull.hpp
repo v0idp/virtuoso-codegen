@@ -88,7 +88,6 @@ namespace OVRSimpleJSON {
     // Offset: 0x98D384
     // Implemented from: OVRSimpleJSON.JSONNode
     // Base method: System.Void JSONNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JSONNull* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVRSimpleJSON::JSONNull::.ctor");

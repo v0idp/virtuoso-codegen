@@ -43,9 +43,9 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String assembly_name
-    [[deprecated]] ::StringW& dyn_assembly_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assembly_name();
     // Get instance field reference: private System.String type_name
-    [[deprecated]] ::StringW& dyn_type_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_type_name();
     // public System.String get_AssemblyName()
     // Offset: 0x12B18D0
     ::StringW get_AssemblyName();

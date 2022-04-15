@@ -228,47 +228,47 @@ namespace VROSC {
     // Set static field: static public System.Action OnSignal
     static void _set_OnSignal(::System::Action* value);
     // Get instance field reference: private UnityEngine.AudioSource _audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__audioSource();
     // Get instance field reference: private VROSC.MicrophoneEffectsManager _microphoneEffectsManager
-    [[deprecated]] ::VROSC::MicrophoneEffectsManager*& dyn__microphoneEffectsManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::MicrophoneEffectsManager*& dyn__microphoneEffectsManager();
     // Get instance field reference: private System.Int32 _nativeMicrophoneBufferSize
-    [[deprecated]] int& dyn__nativeMicrophoneBufferSize();
+    [[deprecated("Use field access instead!")]] int& dyn__nativeMicrophoneBufferSize();
     // Get instance field reference: private NatSuite.Devices.AudioDevice _microphoneDevice
-    [[deprecated]] ::NatSuite::Devices::AudioDevice*& dyn__microphoneDevice();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::AudioDevice*& dyn__microphoneDevice();
     // Get instance field reference: private System.Single[] _ringBuffer
-    [[deprecated]] ::ArrayW<float>& dyn__ringBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__ringBuffer();
     // Get instance field reference: private System.Int32 _ringBufferWriteIndex
-    [[deprecated]] int& dyn__ringBufferWriteIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__ringBufferWriteIndex();
     // Get instance field reference: private System.Int32 _ringBufferReadIndex
-    [[deprecated]] int& dyn__ringBufferReadIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__ringBufferReadIndex();
     // Get instance field reference: private System.Boolean _takingInput
-    [[deprecated]] bool& dyn__takingInput();
+    [[deprecated("Use field access instead!")]] bool& dyn__takingInput();
     // Get instance field reference: private System.Boolean _microphoneEnabled
-    [[deprecated]] bool& dyn__microphoneEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__microphoneEnabled();
     // Get instance field reference: private System.Boolean _microphoneTakingInput
-    [[deprecated]] bool& dyn__microphoneTakingInput();
+    [[deprecated("Use field access instead!")]] bool& dyn__microphoneTakingInput();
     // Get instance field reference: private System.Boolean _useProximity
-    [[deprecated]] bool& dyn__useProximity();
+    [[deprecated("Use field access instead!")]] bool& dyn__useProximity();
     // Get instance field reference: private System.Single _microphoneProximity
-    [[deprecated]] float& dyn__microphoneProximity();
+    [[deprecated("Use field access instead!")]] float& dyn__microphoneProximity();
     // Get instance field reference: private System.Single <StopFadeTime>k__BackingField
-    [[deprecated]] float& dyn_$StopFadeTime$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$StopFadeTime$k__BackingField();
     // Get instance field reference: private System.Boolean <IsInitialized>k__BackingField
-    [[deprecated]] bool& dyn_$IsInitialized$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsInitialized$k__BackingField();
     // Get instance field reference: private System.Single _preampVolume
-    [[deprecated]] float& dyn__preampVolume();
+    [[deprecated("Use field access instead!")]] float& dyn__preampVolume();
     // Get instance field reference: private System.Single _peakDisplayDuration
-    [[deprecated]] float& dyn__peakDisplayDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__peakDisplayDuration();
     // Get instance field reference: private System.Single _peakValue
-    [[deprecated]] float& dyn__peakValue();
+    [[deprecated("Use field access instead!")]] float& dyn__peakValue();
     // Get instance field reference: private System.Single _peakTimer
-    [[deprecated]] float& dyn__peakTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__peakTimer();
     // Get instance field reference: private System.Boolean _isInPeak
-    [[deprecated]] bool& dyn__isInPeak();
+    [[deprecated("Use field access instead!")]] bool& dyn__isInPeak();
     // Get instance field reference: private System.Int32 _writeAheadBuffers
-    [[deprecated]] int& dyn__writeAheadBuffers();
+    [[deprecated("Use field access instead!")]] int& dyn__writeAheadBuffers();
     // Get instance field reference: private System.Int32 _receivedBuffers
-    [[deprecated]] int& dyn__receivedBuffers();
+    [[deprecated("Use field access instead!")]] int& dyn__receivedBuffers();
     // public NatSuite.Devices.AudioDevice get_MicrophoneDevice()
     // Offset: 0xAC63C8
     ::NatSuite::Devices::AudioDevice* get_MicrophoneDevice();
@@ -296,6 +296,16 @@ namespace VROSC {
     // static private System.Void set_HasWorkingMicrophone(System.Boolean value)
     // Offset: 0xAC652C
     static void set_HasWorkingMicrophone(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xAC7378
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MicrophoneDeviceManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneDeviceManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MicrophoneDeviceManager*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xAC73EC
+    static void _cctor();
     // public System.Void Setup()
     // Offset: 0xAC6598
     void Setup();
@@ -353,24 +363,6 @@ namespace VROSC {
     // protected System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
     // Offset: 0xAC70DC
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
-    // public System.Void .ctor()
-    // Offset: 0xAC7378
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MicrophoneDeviceManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneDeviceManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MicrophoneDeviceManager*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xAC73EC
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // VROSC.MicrophoneDeviceManager
   #pragma pack(pop)
   static check_size<sizeof(MicrophoneDeviceManager), 112 + sizeof(int)> __VROSC_MicrophoneDeviceManagerSizeCheck;
@@ -451,6 +443,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(bo
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneDeviceManager*), "set_HasWorkingMicrophone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: VROSC::MicrophoneDeviceManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: VROSC::MicrophoneDeviceManager::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::MicrophoneDeviceManager::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneDeviceManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::MicrophoneDeviceManager::Setup
@@ -617,17 +621,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     static auto* data = &il2cpp_functions::array_class_get(::il2cpp_utils::GetClassFromName("System", "Single"), 1)->byval_arg;
     static auto* channels = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneDeviceManager*), "OnAudioFilterRead", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data, channels});
-  }
-};
-// Writing MetadataGetter for method: VROSC::MicrophoneDeviceManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: VROSC::MicrophoneDeviceManager::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::MicrophoneDeviceManager::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneDeviceManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

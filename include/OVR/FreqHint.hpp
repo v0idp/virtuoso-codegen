@@ -60,7 +60,7 @@ namespace OVR {
     // Set static field: static public OVR.FreqHint Narrow
     static void _set_Narrow(::OVR::FreqHint value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OVR.FreqHint
   #pragma pack(pop)
   static check_size<sizeof(FreqHint), 0 + sizeof(int)> __OVR_FreqHintSizeCheck;

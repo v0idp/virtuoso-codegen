@@ -337,73 +337,73 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private System.Boolean _allowNull
-    [[deprecated]] bool& dyn__allowNull();
+    [[deprecated("Use field access instead!")]] bool& dyn__allowNull();
     // Get instance field reference: private System.String _caption
-    [[deprecated]] ::StringW& dyn__caption();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__caption();
     // Get instance field reference: private System.String _columnName
-    [[deprecated]] ::StringW& dyn__columnName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__columnName();
     // Get instance field reference: private System.Type _dataType
-    [[deprecated]] ::System::Type*& dyn__dataType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__dataType();
     // Get instance field reference: private System.Data.Common.StorageType _storageType
-    [[deprecated]] ::System::Data::Common::StorageType& dyn__storageType();
+    [[deprecated("Use field access instead!")]] ::System::Data::Common::StorageType& dyn__storageType();
     // Get instance field reference: System.Object _defaultValue
-    [[deprecated]] ::Il2CppObject*& dyn__defaultValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__defaultValue();
     // Get instance field reference: private System.Data.DataSetDateTime _dateTimeMode
-    [[deprecated]] ::System::Data::DataSetDateTime& dyn__dateTimeMode();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSetDateTime& dyn__dateTimeMode();
     // Get instance field reference: private System.Data.DataExpression _expression
-    [[deprecated]] ::System::Data::DataExpression*& dyn__expression();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataExpression*& dyn__expression();
     // Get instance field reference: private System.Int32 _maxLength
-    [[deprecated]] int& dyn__maxLength();
+    [[deprecated("Use field access instead!")]] int& dyn__maxLength();
     // Get instance field reference: private System.Int32 _ordinal
-    [[deprecated]] int& dyn__ordinal();
+    [[deprecated("Use field access instead!")]] int& dyn__ordinal();
     // Get instance field reference: private System.Boolean _readOnly
-    [[deprecated]] bool& dyn__readOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__readOnly();
     // Get instance field reference: System.Data.Index _sortIndex
-    [[deprecated]] ::System::Data::Index*& dyn__sortIndex();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__sortIndex();
     // Get instance field reference: System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private System.Boolean _unique
-    [[deprecated]] bool& dyn__unique();
+    [[deprecated("Use field access instead!")]] bool& dyn__unique();
     // Get instance field reference: System.Data.MappingType _columnMapping
-    [[deprecated]] ::System::Data::MappingType& dyn__columnMapping();
+    [[deprecated("Use field access instead!")]] ::System::Data::MappingType& dyn__columnMapping();
     // Get instance field reference: System.Int32 _hashCode
-    [[deprecated]] int& dyn__hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn__hashCode();
     // Get instance field reference: System.Int32 _errors
-    [[deprecated]] int& dyn__errors();
+    [[deprecated("Use field access instead!")]] int& dyn__errors();
     // Get instance field reference: private System.Boolean _isSqlType
-    [[deprecated]] bool& dyn__isSqlType();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSqlType();
     // Get instance field reference: private System.Boolean _implementsINullable
-    [[deprecated]] bool& dyn__implementsINullable();
+    [[deprecated("Use field access instead!")]] bool& dyn__implementsINullable();
     // Get instance field reference: private System.Boolean _implementsIChangeTracking
-    [[deprecated]] bool& dyn__implementsIChangeTracking();
+    [[deprecated("Use field access instead!")]] bool& dyn__implementsIChangeTracking();
     // Get instance field reference: private System.Boolean _implementsIRevertibleChangeTracking
-    [[deprecated]] bool& dyn__implementsIRevertibleChangeTracking();
+    [[deprecated("Use field access instead!")]] bool& dyn__implementsIRevertibleChangeTracking();
     // Get instance field reference: private System.Boolean _implementsIXMLSerializable
-    [[deprecated]] bool& dyn__implementsIXMLSerializable();
+    [[deprecated("Use field access instead!")]] bool& dyn__implementsIXMLSerializable();
     // Get instance field reference: private System.Boolean _defaultValueIsNull
-    [[deprecated]] bool& dyn__defaultValueIsNull();
+    [[deprecated("Use field access instead!")]] bool& dyn__defaultValueIsNull();
     // Get instance field reference: System.Collections.Generic.List`1<System.Data.DataColumn> _dependentColumns
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Data::DataColumn*>*& dyn__dependentColumns();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Data::DataColumn*>*& dyn__dependentColumns();
     // Get instance field reference: System.Data.PropertyCollection _extendedProperties
-    [[deprecated]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
+    [[deprecated("Use field access instead!")]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
     // Get instance field reference: private System.Data.Common.DataStorage _storage
-    [[deprecated]] ::System::Data::Common::DataStorage*& dyn__storage();
+    [[deprecated("Use field access instead!")]] ::System::Data::Common::DataStorage*& dyn__storage();
     // Get instance field reference: private System.Data.AutoIncrementValue _autoInc
-    [[deprecated]] ::System::Data::AutoIncrementValue*& dyn__autoInc();
+    [[deprecated("Use field access instead!")]] ::System::Data::AutoIncrementValue*& dyn__autoInc();
     // Get instance field reference: System.String _columnUri
-    [[deprecated]] ::StringW& dyn__columnUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__columnUri();
     // Get instance field reference: private System.String _columnPrefix
-    [[deprecated]] ::StringW& dyn__columnPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__columnPrefix();
     // Get instance field reference: System.String _encodedColumnName
-    [[deprecated]] ::StringW& dyn__encodedColumnName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__encodedColumnName();
     // Get instance field reference: System.Data.SimpleType _simpleType
-    [[deprecated]] ::System::Data::SimpleType*& dyn__simpleType();
+    [[deprecated("Use field access instead!")]] ::System::Data::SimpleType*& dyn__simpleType();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // Get instance field reference: private System.String <XmlDataType>k__BackingField
-    [[deprecated]] ::StringW& dyn_$XmlDataType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$XmlDataType$k__BackingField();
     // Get instance field reference: private System.ComponentModel.PropertyChangedEventHandler PropertyChanging
-    [[deprecated]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanging();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanging();
     // public System.Boolean get_AllowDBNull()
     // Offset: 0x14B6070
     bool get_AllowDBNull();
@@ -584,6 +584,13 @@ namespace System::Data {
     // System.Boolean get_ImplementsIXMLSerializable()
     // Offset: 0x14BAD14
     bool get_ImplementsIXMLSerializable();
+    // public System.Void .ctor()
+    // Offset: 0x14B531C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataColumn* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataColumn::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataColumn*, creationType>()));
+    }
     // public System.Void .ctor(System.String columnName, System.Type dataType)
     // Offset: 0x14B56E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -733,16 +740,6 @@ namespace System::Data {
     // System.Void HandleDependentColumnList(System.Data.DataExpression oldExpression, System.Data.DataExpression newExpression)
     // Offset: 0x14B89F4
     void HandleDependentColumnList(::System::Data::DataExpression* oldExpression, ::System::Data::DataExpression* newExpression);
-    // public System.Void .ctor()
-    // Offset: 0x14B531C
-    // Implemented from: System.ComponentModel.MarshalByValueComponent
-    // Base method: System.Void MarshalByValueComponent::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataColumn* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataColumn::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataColumn*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x14BB46C
     // Implemented from: System.ComponentModel.MarshalByValueComponent
@@ -1264,6 +1261,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Data::DataColumn::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataColumn::UpdateColumnType
 // Il2CppName: UpdateColumnType
 template<>
@@ -1677,10 +1678,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataColumn*), "HandleDependentColumnList", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{oldExpression, newExpression});
   }
 };
-// Writing MetadataGetter for method: System::Data::DataColumn::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataColumn::ToString
 // Il2CppName: ToString
 template<>

@@ -53,21 +53,19 @@ namespace System::Data {
     // static private System.Void .cctor()
     // Offset: 0x18CE188
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x18CE1E8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Index::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::Index::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Index::$$c*, creationType>()));
+    }
     // System.Boolean <.ctor>b__22_0(System.Data.DataViewListener listener)
     // Offset: 0x18CE1F0
     bool $_ctor$b__22_0(::System::Data::DataViewListener* listener);
     // System.Void <OnListChanged>b__85_0(System.Data.DataViewListener listener, System.ComponentModel.ListChangedEventArgs args, System.Boolean arg2, System.Boolean arg3)
     // Offset: 0x18CE1FC
     void $OnListChanged$b__85_0(::System::Data::DataViewListener* listener, ::System::ComponentModel::ListChangedEventArgs* args, bool arg2, bool arg3);
-    // public System.Void .ctor()
-    // Offset: 0x18CE1E8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Index::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::Index::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Index::$$c*, creationType>()));
-    }
   }; // System.Data.Index/System.Data.<>c
   #pragma pack(pop)
 }
@@ -80,6 +78,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Data::Index::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::Index::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::Index::$$c::$_ctor$b__22_0
 // Il2CppName: <.ctor>b__22_0
 template<>
@@ -101,7 +103,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::Index::$$c*), "<OnListChanged>b__85_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{listener, args, arg2, arg3});
   }
 };
-// Writing MetadataGetter for method: System::Data::Index::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

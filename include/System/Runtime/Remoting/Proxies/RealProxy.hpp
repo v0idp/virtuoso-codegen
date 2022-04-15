@@ -124,21 +124,21 @@ namespace System::Runtime::Remoting::Proxies {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Type class_to_proxy
-    [[deprecated]] ::System::Type*& dyn_class_to_proxy();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_class_to_proxy();
     // Get instance field reference: System.Runtime.Remoting.Contexts.Context _targetContext
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::Context*& dyn__targetContext();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::Context*& dyn__targetContext();
     // Get instance field reference: System.MarshalByRefObject _server
-    [[deprecated]] ::System::MarshalByRefObject*& dyn__server();
+    [[deprecated("Use field access instead!")]] ::System::MarshalByRefObject*& dyn__server();
     // Get instance field reference: private System.Int32 _targetDomainId
-    [[deprecated]] int& dyn__targetDomainId();
+    [[deprecated("Use field access instead!")]] int& dyn__targetDomainId();
     // Get instance field reference: System.String _targetUri
-    [[deprecated]] ::StringW& dyn__targetUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__targetUri();
     // Get instance field reference: System.Runtime.Remoting.Identity _objectIdentity
-    [[deprecated]] ::System::Runtime::Remoting::Identity*& dyn__objectIdentity();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Identity*& dyn__objectIdentity();
     // Get instance field reference: private System.Object _objTP
-    [[deprecated]] ::Il2CppObject*& dyn__objTP();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__objTP();
     // Get instance field reference: private System.Object _stubData
-    [[deprecated]] ::Il2CppObject*& dyn__stubData();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__stubData();
     // System.Runtime.Remoting.Identity get_ObjectIdentity()
     // Offset: 0x1614210
     ::System::Runtime::Remoting::Identity* get_ObjectIdentity();

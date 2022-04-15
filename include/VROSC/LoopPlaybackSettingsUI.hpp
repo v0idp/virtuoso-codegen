@@ -127,33 +127,40 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Boolean> OnActivated
     static void _set_OnActivated(::System::Action_1<bool>* value);
     // Get instance field reference: private System.Boolean <IsOpen>k__BackingField
-    [[deprecated]] bool& dyn_$IsOpen$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsOpen$k__BackingField();
     // Get instance field reference: protected VROSC.UISlideToggle _oneShotToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__oneShotToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__oneShotToggle();
     // Get instance field reference: protected VROSC.UISlideToggle _retriggerToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__retriggerToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__retriggerToggle();
     // Get instance field reference: protected VROSC.UISpinner _startSpinner
-    [[deprecated]] ::VROSC::UISpinner*& dyn__startSpinner();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinner*& dyn__startSpinner();
     // Get instance field reference: protected VROSC.UISpinner _stopSpinner
-    [[deprecated]] ::VROSC::UISpinner*& dyn__stopSpinner();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinner*& dyn__stopSpinner();
     // Get instance field reference: protected VROSC.UISpinner _fadeInSpinner
-    [[deprecated]] ::VROSC::UISpinner*& dyn__fadeInSpinner();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinner*& dyn__fadeInSpinner();
     // Get instance field reference: protected VROSC.UISpinner _fadeOutSpinner
-    [[deprecated]] ::VROSC::UISpinner*& dyn__fadeOutSpinner();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinner*& dyn__fadeOutSpinner();
     // Get instance field reference: protected System.Boolean _closeWhenOtherWindowOpens
-    [[deprecated]] bool& dyn__closeWhenOtherWindowOpens();
+    [[deprecated("Use field access instead!")]] bool& dyn__closeWhenOtherWindowOpens();
     // Get instance field reference: public System.Action`1<System.Boolean> OnActivatedSelf
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnActivatedSelf();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnActivatedSelf();
     // Get instance field reference: private VROSC.LoopPlaybackConfig _config
-    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn__config();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig*& dyn__config();
     // Get instance field reference: private System.Boolean _setupDone
-    [[deprecated]] bool& dyn__setupDone();
+    [[deprecated("Use field access instead!")]] bool& dyn__setupDone();
     // public System.Boolean get_IsOpen()
     // Offset: 0x19B7D6C
     bool get_IsOpen();
     // private System.Void set_IsOpen(System.Boolean value)
     // Offset: 0x19B7D60
     void set_IsOpen(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x19B92B4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlaybackSettingsUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlaybackSettingsUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlaybackSettingsUI*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x19B7D74
     void Awake();
@@ -208,19 +215,6 @@ namespace VROSC {
     // private System.Void SetFadeOut(System.Int32 selection)
     // Offset: 0x19B92A4
     void SetFadeOut(int selection);
-    // public System.Void .ctor()
-    // Offset: 0x19B92B4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlaybackSettingsUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlaybackSettingsUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlaybackSettingsUI*, creationType>()));
-    }
   }; // VROSC.LoopPlaybackSettingsUI
   #pragma pack(pop)
   static check_size<sizeof(LoopPlaybackSettingsUI), 104 + sizeof(bool)> __VROSC_LoopPlaybackSettingsUISizeCheck;
@@ -244,6 +238,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlaybackSettingsUI*), "set_IsOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopPlaybackSettingsUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlaybackSettingsUI::Awake
 // Il2CppName: Awake
 template<>
@@ -405,7 +403,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlaybackSettingsUI*), "SetFadeOut", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{selection});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlaybackSettingsUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

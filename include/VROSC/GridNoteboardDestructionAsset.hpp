@@ -79,20 +79,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.GridNoteboardDestructionBehaviour template
-    [[deprecated]] ::VROSC::GridNoteboardDestructionBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::GridNoteboardDestructionBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Transform> _toPoint
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__toPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::UnityEngine::Transform*>& dyn__toPoint();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.GridNoteboard> _noteBoard
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::GridNoteboard*>& dyn__noteBoard();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::GridNoteboard*>& dyn__noteBoard();
     // Get instance field reference: public UnityEngine.AnimationCurve _curve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // public System.Void .ctor()
     // Offset: 0x19A9110
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GridNoteboardDestructionAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GridNoteboardDestructionAsset::.ctor");

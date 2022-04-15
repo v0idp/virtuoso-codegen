@@ -42,7 +42,7 @@ namespace System::Runtime::CompilerServices {
       return m_wrapNonExceptionThrows;
     }
     // Get instance field reference: private System.Boolean m_wrapNonExceptionThrows
-    [[deprecated]] bool& dyn_m_wrapNonExceptionThrows();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_wrapNonExceptionThrows();
     // public System.Void set_WrapNonExceptionThrows(System.Boolean value)
     // Offset: 0xCE3DC0
     void set_WrapNonExceptionThrows(bool value);

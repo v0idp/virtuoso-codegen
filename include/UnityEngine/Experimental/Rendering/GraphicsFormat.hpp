@@ -868,7 +868,7 @@ namespace UnityEngine::Experimental::Rendering {
     // Set static field: static public UnityEngine.Experimental.Rendering.GraphicsFormat RGBA_ASTC12X12_UFloat
     static void _set_RGBA_ASTC12X12_UFloat(::UnityEngine::Experimental::Rendering::GraphicsFormat value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Experimental.Rendering.GraphicsFormat
   #pragma pack(pop)
   static check_size<sizeof(GraphicsFormat), 0 + sizeof(int)> __UnityEngine_Experimental_Rendering_GraphicsFormatSizeCheck;

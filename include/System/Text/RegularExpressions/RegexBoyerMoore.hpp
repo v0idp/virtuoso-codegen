@@ -102,23 +102,23 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Int32 infinite
     static void _set_infinite(int value);
     // Get instance field reference: System.Int32[] _positive
-    [[deprecated]] ::ArrayW<int>& dyn__positive();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__positive();
     // Get instance field reference: System.Int32[] _negativeASCII
-    [[deprecated]] ::ArrayW<int>& dyn__negativeASCII();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__negativeASCII();
     // Get instance field reference: System.Int32[][] _negativeUnicode
-    [[deprecated]] ::ArrayW<::ArrayW<int>>& dyn__negativeUnicode();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::ArrayW<int>>& dyn__negativeUnicode();
     // Get instance field reference: System.String _pattern
-    [[deprecated]] ::StringW& dyn__pattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__pattern();
     // Get instance field reference: System.Int32 _lowASCII
-    [[deprecated]] int& dyn__lowASCII();
+    [[deprecated("Use field access instead!")]] int& dyn__lowASCII();
     // Get instance field reference: System.Int32 _highASCII
-    [[deprecated]] int& dyn__highASCII();
+    [[deprecated("Use field access instead!")]] int& dyn__highASCII();
     // Get instance field reference: System.Boolean _rightToLeft
-    [[deprecated]] bool& dyn__rightToLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn__rightToLeft();
     // Get instance field reference: System.Boolean _caseInsensitive
-    [[deprecated]] bool& dyn__caseInsensitive();
+    [[deprecated("Use field access instead!")]] bool& dyn__caseInsensitive();
     // Get instance field reference: System.Globalization.CultureInfo _culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__culture();
     // System.Void .ctor(System.String pattern, System.Boolean caseInsensitive, System.Boolean rightToLeft, System.Globalization.CultureInfo culture)
     // Offset: 0x141A384
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

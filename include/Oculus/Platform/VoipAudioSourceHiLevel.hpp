@@ -85,16 +85,26 @@ namespace Oculus::Platform {
     // Set static field: static private System.Boolean verboseLogging
     static void _set_verboseLogging(bool value);
     // Get instance field reference: private System.Int32 initialPlaybackDelayMS
-    [[deprecated]] int& dyn_initialPlaybackDelayMS();
+    [[deprecated("Use field access instead!")]] int& dyn_initialPlaybackDelayMS();
     // Get instance field reference: public UnityEngine.AudioSource audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: public System.Single peakAmplitude
-    [[deprecated]] float& dyn_peakAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_peakAmplitude();
     // Get instance field reference: protected Oculus.Platform.IVoipPCMSource pcmSource
-    [[deprecated]] ::Oculus::Platform::IVoipPCMSource*& dyn_pcmSource();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::IVoipPCMSource*& dyn_pcmSource();
     // public System.Void set_senderID(System.UInt64 value)
     // Offset: 0x171FA98
     void set_senderID(uint64_t value);
+    // public System.Void .ctor()
+    // Offset: 0x17202BC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VoipAudioSourceHiLevel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::VoipAudioSourceHiLevel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VoipAudioSourceHiLevel*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x17202C4
+    static void _cctor();
     // protected System.Void Stop()
     // Offset: 0x171FB58
     void Stop();
@@ -116,24 +126,6 @@ namespace Oculus::Platform {
     // private System.Void Update()
     // Offset: 0x171FFAC
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x17202BC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VoipAudioSourceHiLevel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::VoipAudioSourceHiLevel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VoipAudioSourceHiLevel*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x17202C4
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // Oculus.Platform.VoipAudioSourceHiLevel
   #pragma pack(pop)
   static check_size<sizeof(VoipAudioSourceHiLevel), 48 + sizeof(::Oculus::Platform::IVoipPCMSource*)> __Oculus_Platform_VoipAudioSourceHiLevelSizeCheck;
@@ -147,6 +139,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "UInt64")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::VoipAudioSourceHiLevel*), "set_senderID", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: Oculus::Platform::VoipAudioSourceHiLevel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: Oculus::Platform::VoipAudioSourceHiLevel::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Oculus::Platform::VoipAudioSourceHiLevel::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::VoipAudioSourceHiLevel*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Oculus::Platform::VoipAudioSourceHiLevel::Stop
@@ -205,17 +209,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculus::Platform::VoipAudioSourceHiLevel::*)()>(&Oculus::Platform::VoipAudioSourceHiLevel::Update)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::VoipAudioSourceHiLevel*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: Oculus::Platform::VoipAudioSourceHiLevel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: Oculus::Platform::VoipAudioSourceHiLevel::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Oculus::Platform::VoipAudioSourceHiLevel::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::VoipAudioSourceHiLevel*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

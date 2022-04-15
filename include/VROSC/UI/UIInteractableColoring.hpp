@@ -82,23 +82,30 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.Interactable _interactable
-    [[deprecated]] ::VROSC::Interactable*& dyn__interactable();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__interactable();
     // Get instance field reference: protected System.Boolean _reactToHovering
-    [[deprecated]] bool& dyn__reactToHovering();
+    [[deprecated("Use field access instead!")]] bool& dyn__reactToHovering();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _colorGetter
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__colorGetter();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__colorGetter();
     // Get instance field reference: private UnityEngine.Color <CurrentColor>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _overrideHovering
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__overrideHovering();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__overrideHovering();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _overrideDisabled
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__overrideDisabled();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__overrideDisabled();
     // public UnityEngine.Color get_CurrentColor()
     // Offset: 0x1912640
     ::UnityEngine::Color get_CurrentColor();
     // private System.Void set_CurrentColor(UnityEngine.Color value)
     // Offset: 0x1912634
     void set_CurrentColor(::UnityEngine::Color value);
+    // public System.Void .ctor()
+    // Offset: 0x1912C48
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIInteractableColoring* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIInteractableColoring::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIInteractableColoring*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x191264C
     void OnEnable();
@@ -129,19 +136,6 @@ namespace VROSC::UI {
     // private System.Void <Start>b__11_2(System.Boolean interacting)
     // Offset: 0x1912C70
     void $Start$b__11_2(bool interacting);
-    // public System.Void .ctor()
-    // Offset: 0x1912C48
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIInteractableColoring* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIInteractableColoring::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIInteractableColoring*, creationType>()));
-    }
   }; // VROSC.UI.UIInteractableColoring
   // WARNING Not writing size check since size may be invalid!
 }
@@ -163,6 +157,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInteractableColoring*), "set_CurrentColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::UIInteractableColoring::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::UIInteractableColoring::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -249,7 +247,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInteractableColoring*), "<Start>b__11_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{interacting});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::UIInteractableColoring::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

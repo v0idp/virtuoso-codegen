@@ -102,13 +102,13 @@ namespace Newtonsoft::Json::Converters {
     // Set static field: static readonly System.Collections.Generic.List`1<Newtonsoft.Json.Converters.IXmlNode> EmptyChildNodes
     static void _set_EmptyChildNodes(::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>* value);
     // Get instance field reference: private System.String <DeserializeRootElementName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$DeserializeRootElementName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$DeserializeRootElementName$k__BackingField();
     // Get instance field reference: private System.Boolean <WriteArrayAttribute>k__BackingField
-    [[deprecated]] bool& dyn_$WriteArrayAttribute$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$WriteArrayAttribute$k__BackingField();
     // Get instance field reference: private System.Boolean <OmitRootObject>k__BackingField
-    [[deprecated]] bool& dyn_$OmitRootObject$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$OmitRootObject$k__BackingField();
     // Get instance field reference: private System.Boolean <EncodeSpecialCharacters>k__BackingField
-    [[deprecated]] bool& dyn_$EncodeSpecialCharacters$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$EncodeSpecialCharacters$k__BackingField();
     // public System.String get_DeserializeRootElementName()
     // Offset: 0x15938A4
     ::StringW get_DeserializeRootElementName();
@@ -209,7 +209,6 @@ namespace Newtonsoft::Json::Converters {
     // Offset: 0x159BF44
     // Implemented from: Newtonsoft.Json.JsonConverter
     // Base method: System.Void JsonConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlNodeConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Converters::XmlNodeConverter::.ctor");

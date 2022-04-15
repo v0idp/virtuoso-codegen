@@ -87,19 +87,19 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Transform _resizeTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__resizeTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__resizeTransform();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private UnityEngine.Vector3 _startScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startScale();
     // Get instance field reference: private System.Boolean _invertX
-    [[deprecated]] bool& dyn__invertX();
+    [[deprecated("Use field access instead!")]] bool& dyn__invertX();
     // Get instance field reference: private System.Boolean _invertY
-    [[deprecated]] bool& dyn__invertY();
+    [[deprecated("Use field access instead!")]] bool& dyn__invertY();
     // Get instance field reference: private System.Boolean _invertZ
-    [[deprecated]] bool& dyn__invertZ();
+    [[deprecated("Use field access instead!")]] bool& dyn__invertZ();
     // Get instance field reference: private System.Single _minSize
-    [[deprecated]] float& dyn__minSize();
+    [[deprecated("Use field access instead!")]] float& dyn__minSize();
     // protected override System.Boolean get_RequireOrigin()
     // Offset: 0xA2C9D8
     // Implemented from: VROSC.SignalNode
@@ -110,11 +110,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransformResizer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TransformResizer::.ctor");

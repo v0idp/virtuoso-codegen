@@ -143,41 +143,39 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: public System.String TrackId
-    [[deprecated]] ::StringW& dyn_TrackId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TrackId();
     // Get instance field reference: public System.Int32 TrackNumber
-    [[deprecated]] int& dyn_TrackNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_TrackNumber();
     // Get instance field reference: public System.String InstrumentName
-    [[deprecated]] ::StringW& dyn_InstrumentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_InstrumentName();
     // Get instance field reference: public System.String PatchName
-    [[deprecated]] ::StringW& dyn_PatchName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PatchName();
     // Get instance field reference: public System.Single Volume
-    [[deprecated]] float& dyn_Volume();
+    [[deprecated("Use field access instead!")]] float& dyn_Volume();
     // Get instance field reference: public System.Single NormalizeMultiplier
-    [[deprecated]] float& dyn_NormalizeMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_NormalizeMultiplier();
     // Get instance field reference: public System.Boolean IsMuted
-    [[deprecated]] bool& dyn_IsMuted();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsMuted();
     // Get instance field reference: public System.String BelongsToGroup
-    [[deprecated]] ::StringW& dyn_BelongsToGroup();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_BelongsToGroup();
     // Get instance field reference: public System.Int32 PositionInGroup
-    [[deprecated]] int& dyn_PositionInGroup();
+    [[deprecated("Use field access instead!")]] int& dyn_PositionInGroup();
     // Get instance field reference: public System.String DisplayName
-    [[deprecated]] ::StringW& dyn_DisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DisplayName();
     // Get instance field reference: public System.Int32 GlobalSyncStartOffset
-    [[deprecated]] int& dyn_GlobalSyncStartOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_GlobalSyncStartOffset();
     // Get instance field reference: public System.Int32 LoopLength
-    [[deprecated]] int& dyn_LoopLength();
+    [[deprecated("Use field access instead!")]] int& dyn_LoopLength();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData PlaybackConfigData
-    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigData*& dyn_PlaybackConfigData();
     // Get instance field reference: public VROSC.LoopPlaybackConfigData StartConfigData
-    [[deprecated]] ::VROSC::LoopPlaybackConfigData*& dyn_StartConfigData();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigData*& dyn_StartConfigData();
     // Get instance field reference: public System.Boolean IsPlaying
-    [[deprecated]] bool& dyn_IsPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsPlaying();
     // Get instance field reference: public UnityEngine.Color Color
-    [[deprecated]] ::UnityEngine::Color& dyn_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_Color();
     // public System.Void .ctor()
     // Offset: 0x196C310
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationTrack* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationTrack::.ctor");

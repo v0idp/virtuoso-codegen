@@ -110,27 +110,27 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.LoopStationGroupMover <>4__this
-    [[deprecated]] ::VROSC::LoopStationGroupMover*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroupMover*& dyn_$$4__this();
     // Get instance field reference: public UnityEngine.Vector3 from
-    [[deprecated]] ::UnityEngine::Vector3& dyn_from();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_from();
     // Get instance field reference: public UnityEngine.Vector3 to
-    [[deprecated]] ::UnityEngine::Vector3& dyn_to();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_to();
     // Get instance field reference: public System.Single zmultiplier
-    [[deprecated]] float& dyn_zmultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_zmultiplier();
     // Get instance field reference: private System.Single <time>5__2
-    [[deprecated]] float& dyn_$time$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$time$5__2();
     // Get instance field reference: private UnityEngine.Transform <parent>5__3
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$parent$5__3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$parent$5__3();
     // Get instance field reference: private UnityEngine.Vector3 <localStartPosition>5__4
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$localStartPosition$5__4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$localStartPosition$5__4();
     // Get instance field reference: private UnityEngine.Vector3 <localEndPosition>5__5
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$localEndPosition$5__5();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$localEndPosition$5__5();
     // Get instance field reference: private System.Single <duration>5__6
-    [[deprecated]] float& dyn_$duration$5__6();
+    [[deprecated("Use field access instead!")]] float& dyn_$duration$5__6();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x195F464
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

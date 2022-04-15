@@ -64,7 +64,6 @@ namespace Newtonsoft::Json::Converters {
     // Offset: 0xDCAB0C
     // Implemented from: Newtonsoft.Json.JsonConverter
     // Base method: System.Void JsonConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExpandoObjectConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Converters::ExpandoObjectConverter::.ctor");

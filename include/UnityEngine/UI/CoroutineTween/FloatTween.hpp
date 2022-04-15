@@ -81,15 +81,15 @@ namespace UnityEngine::UI::CoroutineTween {
       return *reinterpret_cast<::UnityEngine::UI::CoroutineTween::ITweenValue*>(this);
     }
     // Get instance field reference: private UnityEngine.UI.CoroutineTween.FloatTween/UnityEngine.UI.CoroutineTween.FloatTweenCallback m_Target
-    [[deprecated]] ::UnityEngine::UI::CoroutineTween::FloatTween::FloatTweenCallback*& dyn_m_Target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CoroutineTween::FloatTween::FloatTweenCallback*& dyn_m_Target();
     // Get instance field reference: private System.Single m_StartValue
-    [[deprecated]] float& dyn_m_StartValue();
+    [[deprecated("Use field access instead!")]] float& dyn_m_StartValue();
     // Get instance field reference: private System.Single m_TargetValue
-    [[deprecated]] float& dyn_m_TargetValue();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TargetValue();
     // Get instance field reference: private System.Single m_Duration
-    [[deprecated]] float& dyn_m_Duration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Duration();
     // Get instance field reference: private System.Boolean m_IgnoreTimeScale
-    [[deprecated]] bool& dyn_m_IgnoreTimeScale();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IgnoreTimeScale();
     // public System.Single get_startValue()
     // Offset: 0xEBA418
     float get_startValue();

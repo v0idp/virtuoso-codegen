@@ -43,9 +43,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::ArrayW<::System::Decimal>) == 0x8);
     public:
     // Get instance field reference: private System.Boolean isDecimal
-    [[deprecated]] bool& dyn_isDecimal();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDecimal();
     // Get instance field reference: private System.Decimal[] dvalue
-    [[deprecated]] ::ArrayW<::System::Decimal>& dyn_dvalue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Decimal>& dyn_dvalue();
     // public System.Boolean get_IsDecimal()
     // Offset: 0xC1ECB4
     bool get_IsDecimal();
@@ -55,21 +55,19 @@ namespace System::Xml::Schema {
     // public System.Decimal[] get_Dvalue()
     // Offset: 0xC1ECC8
     ::ArrayW<::System::Decimal> get_Dvalue();
+    // public System.Void .ctor()
+    // Offset: 0xC1ECD0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TypedObject::DecimalStruct* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::TypedObject::DecimalStruct::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TypedObject::DecimalStruct*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 dim)
     // Offset: 0xC1ED30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TypedObject::DecimalStruct* New_ctor(int dim) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::TypedObject::DecimalStruct::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TypedObject::DecimalStruct*, creationType>(dim)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0xC1ECD0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TypedObject::DecimalStruct* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::TypedObject::DecimalStruct::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TypedObject::DecimalStruct*, creationType>()));
     }
   }; // System.Xml.Schema.TypedObject/System.Xml.Schema.DecimalStruct
   #pragma pack(pop)

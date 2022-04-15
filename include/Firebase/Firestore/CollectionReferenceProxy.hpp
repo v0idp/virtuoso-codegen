@@ -51,7 +51,7 @@ namespace Firebase::Firestore {
       return swigCPtr;
     }
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // public System.String path()
     // Offset: 0xD4C3F4
     ::StringW path();

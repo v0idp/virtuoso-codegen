@@ -64,11 +64,11 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private readonly System.Linq.Expressions.Interpreter.GotoInstruction[] s_cache
     static void _set_s_cache(::ArrayW<::System::Linq::Expressions::Interpreter::GotoInstruction*> value);
     // Get instance field reference: private readonly System.Boolean _hasResult
-    [[deprecated]] bool& dyn__hasResult();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasResult();
     // Get instance field reference: private readonly System.Boolean _hasValue
-    [[deprecated]] bool& dyn__hasValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasValue();
     // Get instance field reference: private readonly System.Boolean _labelTargetGetsValue
-    [[deprecated]] bool& dyn__labelTargetGetsValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__labelTargetGetsValue();
     // private System.Void .ctor(System.Int32 targetIndex, System.Boolean hasResult, System.Boolean hasValue, System.Boolean labelTargetGetsValue)
     // Offset: 0xF14F30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

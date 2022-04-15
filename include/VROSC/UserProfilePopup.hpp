@@ -90,19 +90,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _usernameText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__usernameText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__usernameText();
     // Get instance field reference: private TMPro.TextMeshPro _emailText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__emailText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__emailText();
     // Get instance field reference: private VROSC.UIButton _changeEmailButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__changeEmailButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__changeEmailButton();
     // Get instance field reference: private VROSC.UIButton _changePasswordButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__changePasswordButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__changePasswordButton();
     // Get instance field reference: private VROSC.UIButton _logoutButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__logoutButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__logoutButton();
     // Get instance field reference: private VROSC.UIButton _deleteDataButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__deleteDataButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__deleteDataButton();
     // Get instance field reference: private VROSC.SessionsLibraryUI _sessionsLibraryUI
-    [[deprecated]] ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
+    // public System.Void .ctor()
+    // Offset: 0x19204AC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UserProfilePopup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserProfilePopup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UserProfilePopup*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x191FAF0
     void Awake();
@@ -139,25 +146,16 @@ namespace VROSC {
     // private System.Void UserEmailChanged()
     // Offset: 0x1920434
     void UserEmailChanged();
-    // public System.Void .ctor()
-    // Offset: 0x19204AC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UserProfilePopup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserProfilePopup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UserProfilePopup*, creationType>()));
-    }
   }; // VROSC.UserProfilePopup
   #pragma pack(pop)
   static check_size<sizeof(UserProfilePopup), 72 + sizeof(::VROSC::SessionsLibraryUI*)> __VROSC_UserProfilePopupSizeCheck;
   static_assert(sizeof(UserProfilePopup) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UserProfilePopup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UserProfilePopup::Awake
 // Il2CppName: Awake
 template<>
@@ -257,7 +255,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserProfilePopup*), "UserEmailChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UserProfilePopup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

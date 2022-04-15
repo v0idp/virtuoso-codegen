@@ -54,21 +54,19 @@ namespace Unity::XR::Oculus {
     // static public System.String get_PluginVersion()
     // Offset: 0x18DDC40
     static ::StringW get_PluginVersion();
+    // public System.Void .ctor()
+    // Offset: 0x18DE0F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Stats* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::Stats::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Stats*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x18DE0F8
     static void _cctor();
     // static private UnityEngine.IntegratedSubsystem GetOculusDisplaySubsystem()
     // Offset: 0x18DDDB0
     static ::UnityEngine::IntegratedSubsystem* GetOculusDisplaySubsystem();
-    // public System.Void .ctor()
-    // Offset: 0x18DE0F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Stats* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::XR::Oculus::Stats::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Stats*, creationType>()));
-    }
   }; // Unity.XR.Oculus.Stats
   #pragma pack(pop)
 }
@@ -81,6 +79,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::Stats*), "get_PluginVersion", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Unity::XR::Oculus::Stats::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Unity::XR::Oculus::Stats::_cctor
 // Il2CppName: .cctor
 template<>
@@ -97,7 +99,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(Unity::XR::Oculus::Stats*), "GetOculusDisplaySubsystem", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Unity::XR::Oculus::Stats::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

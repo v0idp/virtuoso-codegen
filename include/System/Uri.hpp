@@ -430,7 +430,7 @@ namespace System {
       // Set static field: static public System.Uri/System.Flags CompressedSlashes
       static void _set_CompressedSlashes(::System::Uri::Flags value);
       // Get instance field reference: public System.UInt64 value__
-      [[deprecated]] uint64_t& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint64_t& dyn_value__();
     }; // System.Uri/System.Flags
     #pragma pack(pop)
     static check_size<sizeof(Uri::Flags), 0 + sizeof(uint64_t)> __System_Uri_FlagsSizeCheck;
@@ -614,19 +614,19 @@ namespace System {
     // Set static field: static private readonly System.Char[] _WSchars
     static void _set__WSchars(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: private System.String m_String
-    [[deprecated]] ::StringW& dyn_m_String();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_String();
     // Get instance field reference: private System.String m_originalUnicodeString
-    [[deprecated]] ::StringW& dyn_m_originalUnicodeString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_originalUnicodeString();
     // Get instance field reference: private System.UriParser m_Syntax
-    [[deprecated]] ::System::UriParser*& dyn_m_Syntax();
+    [[deprecated("Use field access instead!")]] ::System::UriParser*& dyn_m_Syntax();
     // Get instance field reference: private System.String m_DnsSafeHost
-    [[deprecated]] ::StringW& dyn_m_DnsSafeHost();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_DnsSafeHost();
     // Get instance field reference: private System.Uri/System.Flags m_Flags
-    [[deprecated]] ::System::Uri::Flags& dyn_m_Flags();
+    [[deprecated("Use field access instead!")]] ::System::Uri::Flags& dyn_m_Flags();
     // Get instance field reference: private System.Uri/System.UriInfo m_Info
-    [[deprecated]] ::System::Uri::UriInfo*& dyn_m_Info();
+    [[deprecated("Use field access instead!")]] ::System::Uri::UriInfo*& dyn_m_Info();
     // Get instance field reference: private System.Boolean m_iriParsing
-    [[deprecated]] bool& dyn_m_iriParsing();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_iriParsing();
     // private System.Boolean get_IsImplicitFile()
     // Offset: 0x1822F6C
     bool get_IsImplicitFile();

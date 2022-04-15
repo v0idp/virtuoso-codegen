@@ -42,7 +42,7 @@ namespace System {
       return ignoreCase;
     }
     // Get instance field reference: private System.Boolean _ignoreCase
-    [[deprecated]] bool& dyn__ignoreCase();
+    [[deprecated("Use field access instead!")]] bool& dyn__ignoreCase();
     // System.Void .ctor(System.Boolean ignoreCase)
     // Offset: 0x14BF7E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

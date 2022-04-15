@@ -207,47 +207,47 @@ namespace System::Net {
     // Set static field: static private System.Net.Comparer staticComparer
     static void _set_staticComparer(::System::Net::Comparer* value);
     // Get instance field reference: private System.String m_comment
-    [[deprecated]] ::StringW& dyn_m_comment();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_comment();
     // Get instance field reference: private System.Uri m_commentUri
-    [[deprecated]] ::System::Uri*& dyn_m_commentUri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_m_commentUri();
     // Get instance field reference: private System.Net.CookieVariant m_cookieVariant
-    [[deprecated]] ::System::Net::CookieVariant& dyn_m_cookieVariant();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieVariant& dyn_m_cookieVariant();
     // Get instance field reference: private System.Boolean m_discard
-    [[deprecated]] bool& dyn_m_discard();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_discard();
     // Get instance field reference: private System.String m_domain
-    [[deprecated]] ::StringW& dyn_m_domain();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_domain();
     // Get instance field reference: private System.Boolean m_domain_implicit
-    [[deprecated]] bool& dyn_m_domain_implicit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_domain_implicit();
     // Get instance field reference: private System.DateTime m_expires
-    [[deprecated]] ::System::DateTime& dyn_m_expires();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_expires();
     // Get instance field reference: private System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private System.String m_path
-    [[deprecated]] ::StringW& dyn_m_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_path();
     // Get instance field reference: private System.Boolean m_path_implicit
-    [[deprecated]] bool& dyn_m_path_implicit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_path_implicit();
     // Get instance field reference: private System.String m_port
-    [[deprecated]] ::StringW& dyn_m_port();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_port();
     // Get instance field reference: private System.Boolean m_port_implicit
-    [[deprecated]] bool& dyn_m_port_implicit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_port_implicit();
     // Get instance field reference: private System.Int32[] m_port_list
-    [[deprecated]] ::ArrayW<int>& dyn_m_port_list();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_port_list();
     // Get instance field reference: private System.Boolean m_secure
-    [[deprecated]] bool& dyn_m_secure();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_secure();
     // Get instance field reference: private System.Boolean m_httpOnly
-    [[deprecated]] bool& dyn_m_httpOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_httpOnly();
     // Get instance field reference: private System.DateTime m_timeStamp
-    [[deprecated]] ::System::DateTime& dyn_m_timeStamp();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_timeStamp();
     // Get instance field reference: private System.String m_value
-    [[deprecated]] ::StringW& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_value();
     // Get instance field reference: private System.Int32 m_version
-    [[deprecated]] int& dyn_m_version();
+    [[deprecated("Use field access instead!")]] int& dyn_m_version();
     // Get instance field reference: private System.String m_domainKey
-    [[deprecated]] ::StringW& dyn_m_domainKey();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_domainKey();
     // Get instance field reference: System.Boolean IsQuotedVersion
-    [[deprecated]] bool& dyn_IsQuotedVersion();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsQuotedVersion();
     // Get instance field reference: System.Boolean IsQuotedDomain
-    [[deprecated]] bool& dyn_IsQuotedDomain();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsQuotedDomain();
     // public System.String get_Comment()
     // Offset: 0x10E36E8
     ::StringW get_Comment();
@@ -329,6 +329,13 @@ namespace System::Net {
     // private System.String get__Version()
     // Offset: 0x10E4DA8
     ::StringW get__Version();
+    // public System.Void .ctor()
+    // Offset: 0x10E35D4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Cookie* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Cookie::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Cookie*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x10E55D0
     static void _cctor();
@@ -347,15 +354,6 @@ namespace System::Net {
     // static System.Collections.IComparer GetComparer()
     // Offset: 0x10E4EB8
     static ::System::Collections::IComparer* GetComparer();
-    // public System.Void .ctor()
-    // Offset: 0x10E35D4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Cookie* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Cookie::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Cookie*, creationType>()));
-    }
     // public override System.Boolean Equals(System.Object comparand)
     // Offset: 0x10E4F1C
     // Implemented from: System.Object
@@ -604,6 +602,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Net::Cookie*), "get__Version", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::Cookie::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Cookie::_cctor
 // Il2CppName: .cctor
 template<>
@@ -662,10 +664,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Net::Cookie*), "GetComparer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::Cookie::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Cookie::Equals
 // Il2CppName: Equals
 template<>

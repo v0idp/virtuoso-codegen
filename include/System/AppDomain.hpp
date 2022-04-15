@@ -231,39 +231,39 @@ namespace System {
     // Set static field: static private System.AppDomain default_domain
     static void _set_default_domain(::System::AppDomain* value);
     // Get instance field reference: private System.IntPtr _mono_app_domain
-    [[deprecated]] ::System::IntPtr& dyn__mono_app_domain();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__mono_app_domain();
     // Get instance field reference: private System.Object _evidence
-    [[deprecated]] ::Il2CppObject*& dyn__evidence();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__evidence();
     // Get instance field reference: private System.Object _granted
-    [[deprecated]] ::Il2CppObject*& dyn__granted();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__granted();
     // Get instance field reference: private System.Int32 _principalPolicy
-    [[deprecated]] int& dyn__principalPolicy();
+    [[deprecated("Use field access instead!")]] int& dyn__principalPolicy();
     // Get instance field reference: private System.AssemblyLoadEventHandler AssemblyLoad
-    [[deprecated]] ::System::AssemblyLoadEventHandler*& dyn_AssemblyLoad();
+    [[deprecated("Use field access instead!")]] ::System::AssemblyLoadEventHandler*& dyn_AssemblyLoad();
     // Get instance field reference: private System.ResolveEventHandler AssemblyResolve
-    [[deprecated]] ::System::ResolveEventHandler*& dyn_AssemblyResolve();
+    [[deprecated("Use field access instead!")]] ::System::ResolveEventHandler*& dyn_AssemblyResolve();
     // Get instance field reference: private System.EventHandler DomainUnload
-    [[deprecated]] ::System::EventHandler*& dyn_DomainUnload();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler*& dyn_DomainUnload();
     // Get instance field reference: private System.EventHandler ProcessExit
-    [[deprecated]] ::System::EventHandler*& dyn_ProcessExit();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler*& dyn_ProcessExit();
     // Get instance field reference: private System.ResolveEventHandler ResourceResolve
-    [[deprecated]] ::System::ResolveEventHandler*& dyn_ResourceResolve();
+    [[deprecated("Use field access instead!")]] ::System::ResolveEventHandler*& dyn_ResourceResolve();
     // Get instance field reference: private System.ResolveEventHandler TypeResolve
-    [[deprecated]] ::System::ResolveEventHandler*& dyn_TypeResolve();
+    [[deprecated("Use field access instead!")]] ::System::ResolveEventHandler*& dyn_TypeResolve();
     // Get instance field reference: private System.UnhandledExceptionEventHandler UnhandledException
-    [[deprecated]] ::System::UnhandledExceptionEventHandler*& dyn_UnhandledException();
+    [[deprecated("Use field access instead!")]] ::System::UnhandledExceptionEventHandler*& dyn_UnhandledException();
     // Get instance field reference: private System.EventHandler`1<System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs> FirstChanceException
-    [[deprecated]] ::System::EventHandler_1<::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs*>*& dyn_FirstChanceException();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs*>*& dyn_FirstChanceException();
     // Get instance field reference: private System.Object _domain_manager
-    [[deprecated]] ::Il2CppObject*& dyn__domain_manager();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__domain_manager();
     // Get instance field reference: private System.ResolveEventHandler ReflectionOnlyAssemblyResolve
-    [[deprecated]] ::System::ResolveEventHandler*& dyn_ReflectionOnlyAssemblyResolve();
+    [[deprecated("Use field access instead!")]] ::System::ResolveEventHandler*& dyn_ReflectionOnlyAssemblyResolve();
     // Get instance field reference: private System.Object _activation
-    [[deprecated]] ::Il2CppObject*& dyn__activation();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__activation();
     // Get instance field reference: private System.Object _applicationIdentity
-    [[deprecated]] ::Il2CppObject*& dyn__applicationIdentity();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__applicationIdentity();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> compatibility_switch
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_compatibility_switch();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_compatibility_switch();
     // static public System.AppDomain get_CurrentDomain()
     // Offset: 0x113BC6C
     static ::System::AppDomain* get_CurrentDomain();

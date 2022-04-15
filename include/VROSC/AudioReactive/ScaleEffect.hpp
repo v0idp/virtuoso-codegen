@@ -75,11 +75,11 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::VROSC::AudioReactive::ScaleEffect::ScaleData*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ScaleEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::ScaleEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ScaleEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform[] _transforms
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
     // Get instance field reference: private VROSC.AudioReactive.ScaleEffect/VROSC.AudioReactive.ScaleData[] _scaleDatas
-    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::ScaleEffect::ScaleData*>& dyn__scaleDatas();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AudioReactive::ScaleEffect::ScaleData*>& dyn__scaleDatas();
     // public VROSC.AudioReactive.ScaleEffectData get_Data()
     // Offset: 0xDE2628
     ::VROSC::AudioReactive::ScaleEffectData* get_Data();
@@ -97,7 +97,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ScaleEffect::.ctor");

@@ -45,9 +45,9 @@ namespace VROSC {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: public VROSC.TooltipData Tooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn_Tooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn_Tooltip();
     // Get instance field reference: public System.Object Requester
-    [[deprecated]] ::Il2CppObject*& dyn_Requester();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Requester();
     // public System.Void .ctor(VROSC.TooltipData tooltip, System.Object requester)
     // Offset: 0x95DC00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

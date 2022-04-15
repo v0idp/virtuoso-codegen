@@ -61,7 +61,7 @@ namespace System::Diagnostics {
     // Set static field: static public System.Diagnostics.DebuggerBrowsableState RootHidden
     static void _set_RootHidden(::System::Diagnostics::DebuggerBrowsableState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Diagnostics.DebuggerBrowsableState
   #pragma pack(pop)
   static check_size<sizeof(DebuggerBrowsableState), 0 + sizeof(int)> __System_Diagnostics_DebuggerBrowsableStateSizeCheck;

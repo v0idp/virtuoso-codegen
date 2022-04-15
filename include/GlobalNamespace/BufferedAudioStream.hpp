@@ -101,15 +101,15 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single playbackDelayTimeSeconds
     static void _set_playbackDelayTimeSeconds(float value);
     // Get instance field reference: private UnityEngine.AudioSource audio
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audio();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_audio();
     // Get instance field reference: private System.Single[] audioBuffer
-    [[deprecated]] ::ArrayW<float>& dyn_audioBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_audioBuffer();
     // Get instance field reference: private System.Int32 writePos
-    [[deprecated]] int& dyn_writePos();
+    [[deprecated("Use field access instead!")]] int& dyn_writePos();
     // Get instance field reference: private System.Single playbackDelayRemaining
-    [[deprecated]] float& dyn_playbackDelayRemaining();
+    [[deprecated("Use field access instead!")]] float& dyn_playbackDelayRemaining();
     // Get instance field reference: private System.Single remainingBufferTime
-    [[deprecated]] float& dyn_remainingBufferTime();
+    [[deprecated("Use field access instead!")]] float& dyn_remainingBufferTime();
     // public System.Void .ctor(UnityEngine.AudioSource audio)
     // Offset: 0x8FC7A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

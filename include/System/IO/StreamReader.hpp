@@ -166,37 +166,37 @@ namespace System::IO {
     // Set static field: static public readonly System.IO.StreamReader Null
     static void _set_Null(::System::IO::StreamReader* value);
     // Get instance field reference: private System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private System.Text.Encoding encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
     // Get instance field reference: private System.Text.Decoder decoder
-    [[deprecated]] ::System::Text::Decoder*& dyn_decoder();
+    [[deprecated("Use field access instead!")]] ::System::Text::Decoder*& dyn_decoder();
     // Get instance field reference: private System.Byte[] byteBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_byteBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_byteBuffer();
     // Get instance field reference: private System.Char[] charBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_charBuffer();
     // Get instance field reference: private System.Byte[] _preamble
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__preamble();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__preamble();
     // Get instance field reference: private System.Int32 charPos
-    [[deprecated]] int& dyn_charPos();
+    [[deprecated("Use field access instead!")]] int& dyn_charPos();
     // Get instance field reference: private System.Int32 charLen
-    [[deprecated]] int& dyn_charLen();
+    [[deprecated("Use field access instead!")]] int& dyn_charLen();
     // Get instance field reference: private System.Int32 byteLen
-    [[deprecated]] int& dyn_byteLen();
+    [[deprecated("Use field access instead!")]] int& dyn_byteLen();
     // Get instance field reference: private System.Int32 bytePos
-    [[deprecated]] int& dyn_bytePos();
+    [[deprecated("Use field access instead!")]] int& dyn_bytePos();
     // Get instance field reference: private System.Int32 _maxCharsPerBuffer
-    [[deprecated]] int& dyn__maxCharsPerBuffer();
+    [[deprecated("Use field access instead!")]] int& dyn__maxCharsPerBuffer();
     // Get instance field reference: private System.Boolean _detectEncoding
-    [[deprecated]] bool& dyn__detectEncoding();
+    [[deprecated("Use field access instead!")]] bool& dyn__detectEncoding();
     // Get instance field reference: private System.Boolean _checkPreamble
-    [[deprecated]] bool& dyn__checkPreamble();
+    [[deprecated("Use field access instead!")]] bool& dyn__checkPreamble();
     // Get instance field reference: private System.Boolean _isBlocked
-    [[deprecated]] bool& dyn__isBlocked();
+    [[deprecated("Use field access instead!")]] bool& dyn__isBlocked();
     // Get instance field reference: private System.Boolean _closable
-    [[deprecated]] bool& dyn__closable();
+    [[deprecated("Use field access instead!")]] bool& dyn__closable();
     // Get instance field reference: private System.Threading.Tasks.Task _asyncReadTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn__asyncReadTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn__asyncReadTask();
     // static System.Int32 get_DefaultBufferSize()
     // Offset: 0x1257CB0
     static int get_DefaultBufferSize();

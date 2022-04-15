@@ -48,6 +48,13 @@ namespace UnityEngine::Playables {
     operator ::System::ICloneable() noexcept {
       return *reinterpret_cast<::System::ICloneable*>(this);
     }
+    // public System.Void .ctor()
+    // Offset: 0xBC28C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlayableBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Playables::PlayableBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlayableBehaviour*, creationType>()));
+    }
     // public System.Void OnGraphStart(UnityEngine.Playables.Playable playable)
     // Offset: 0xBC28CC
     void OnGraphStart(::UnityEngine::Playables::Playable playable);
@@ -75,19 +82,14 @@ namespace UnityEngine::Playables {
     // public System.Object Clone()
     // Offset: 0xBC28EC
     ::Il2CppObject* Clone();
-    // public System.Void .ctor()
-    // Offset: 0xBC28C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlayableBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Playables::PlayableBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlayableBehaviour*, creationType>()));
-    }
   }; // UnityEngine.Playables.PlayableBehaviour
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Playables::PlayableBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Playables::PlayableBehaviour::OnGraphStart
 // Il2CppName: OnGraphStart
 template<>
@@ -173,7 +175,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Playables::PlayableBehaviour*), "Clone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Playables::PlayableBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -52,11 +52,11 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int32 CountdownMS
-    [[deprecated]] int& dyn_CountdownMS();
+    [[deprecated("Use field access instead!")]] int& dyn_CountdownMS();
     // Get instance field reference: public readonly System.UInt64 ID
-    [[deprecated]] uint64_t& dyn_ID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly System.String LaunchDetails
-    [[deprecated]] ::StringW& dyn_LaunchDetails();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_LaunchDetails();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x9206CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

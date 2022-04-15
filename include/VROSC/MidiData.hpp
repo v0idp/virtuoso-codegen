@@ -47,15 +47,13 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 SelectedMidiChannel
-    [[deprecated]] int& dyn_SelectedMidiChannel();
+    [[deprecated("Use field access instead!")]] int& dyn_SelectedMidiChannel();
     // Get instance field reference: public System.Int32 MinMidiChannel
-    [[deprecated]] int& dyn_MinMidiChannel();
+    [[deprecated("Use field access instead!")]] int& dyn_MinMidiChannel();
     // Get instance field reference: public System.Int32 MaxMidiChannel
-    [[deprecated]] int& dyn_MaxMidiChannel();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxMidiChannel();
     // public System.Void .ctor()
     // Offset: 0xAC7654
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MidiData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MidiData::.ctor");

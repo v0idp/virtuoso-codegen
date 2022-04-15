@@ -55,7 +55,7 @@ namespace UnityEngine::Experimental::Playables {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableOutputHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
     // public UnityEngine.Playables.PlayableOutputHandle GetHandle()
     // Offset: 0xBD9C70
     ::UnityEngine::Playables::PlayableOutputHandle GetHandle();

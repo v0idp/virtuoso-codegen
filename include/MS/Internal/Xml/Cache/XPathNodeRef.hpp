@@ -47,9 +47,9 @@ namespace MS::Internal::Xml::Cache {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNode[] page
-    [[deprecated]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_page();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::MS::Internal::Xml::Cache::XPathNode>& dyn_page();
     // Get instance field reference: private System.Int32 idx
-    [[deprecated]] int& dyn_idx();
+    [[deprecated("Use field access instead!")]] int& dyn_idx();
     // public MS.Internal.Xml.Cache.XPathNode[] get_Page()
     // Offset: 0x11A1768
     ::ArrayW<::MS::Internal::Xml::Cache::XPathNode> get_Page();

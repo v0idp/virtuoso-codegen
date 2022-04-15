@@ -121,31 +121,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoginUIPopupLoginPanel _loginPanel
-    [[deprecated]] ::VROSC::LoginUIPopupLoginPanel*& dyn__loginPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopupLoginPanel*& dyn__loginPanel();
     // Get instance field reference: private VROSC.LoginUIPopupEmailVerificationPanel _waitingForVerificationPanel
-    [[deprecated]] ::VROSC::LoginUIPopupEmailVerificationPanel*& dyn__waitingForVerificationPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopupEmailVerificationPanel*& dyn__waitingForVerificationPanel();
     // Get instance field reference: private VROSC.LoginUIPopupChangeEmailPanel _changeEmailPanel
-    [[deprecated]] ::VROSC::LoginUIPopupChangeEmailPanel*& dyn__changeEmailPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopupChangeEmailPanel*& dyn__changeEmailPanel();
     // Get instance field reference: private VROSC.LoginUIPopupChangePasswordPanel _changePasswordPanel
-    [[deprecated]] ::VROSC::LoginUIPopupChangePasswordPanel*& dyn__changePasswordPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopupChangePasswordPanel*& dyn__changePasswordPanel();
     // Get instance field reference: private VROSC.LoginUIPopupAcceptTermsPanel _acceptTermsPanel
-    [[deprecated]] ::VROSC::LoginUIPopupAcceptTermsPanel*& dyn__acceptTermsPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopupAcceptTermsPanel*& dyn__acceptTermsPanel();
     // Get instance field reference: private VROSC.UIButton _privacyPolicyButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__privacyPolicyButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__privacyPolicyButton();
     // Get instance field reference: private VROSC.LoginUIPopupPanelBase _previousPanel
-    [[deprecated]] ::VROSC::LoginUIPopupPanelBase*& dyn__previousPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopupPanelBase*& dyn__previousPanel();
     // Get instance field reference: private VROSC.LoginUIPopupPanelBase _currentPanel
-    [[deprecated]] ::VROSC::LoginUIPopupPanelBase*& dyn__currentPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopupPanelBase*& dyn__currentPanel();
     // Get instance field reference: private System.Boolean <IsOpen>k__BackingField
-    [[deprecated]] bool& dyn_$IsOpen$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsOpen$k__BackingField();
     // Get instance field reference: public System.Action OnLoginPopupClosed
-    [[deprecated]] ::System::Action*& dyn_OnLoginPopupClosed();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnLoginPopupClosed();
     // public System.Boolean get_IsOpen()
     // Offset: 0x19AF8B4
     bool get_IsOpen();
     // private System.Void set_IsOpen(System.Boolean value)
     // Offset: 0x19AF8BC
     void set_IsOpen(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x19AFE60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoginUIPopup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopup*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x19AF8C8
     void Awake();
@@ -164,19 +171,6 @@ namespace VROSC {
     // private System.Void PrivacyPolicyPressed()
     // Offset: 0x19AFE18
     void PrivacyPolicyPressed();
-    // public System.Void .ctor()
-    // Offset: 0x19AFE60
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoginUIPopup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopup*, creationType>()));
-    }
   }; // VROSC.LoginUIPopup
   #pragma pack(pop)
   static check_size<sizeof(LoginUIPopup), 96 + sizeof(::System::Action*)> __VROSC_LoginUIPopupSizeCheck;
@@ -200,6 +194,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoginUIPopup*), "set_IsOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoginUIPopup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoginUIPopup::Awake
 // Il2CppName: Awake
 template<>
@@ -249,7 +247,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoginUIPopup*), "PrivacyPolicyPressed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoginUIPopup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

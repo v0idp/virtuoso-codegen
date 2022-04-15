@@ -84,9 +84,16 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Set static field: static private System.String CONSUMABLE_1
     static void _set_CONSUMABLE_1(::StringW value);
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController m_gameController
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GameController*& dyn_m_gameController();
     // Get instance field reference: private UnityEngine.UI.Text m_priceText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_priceText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_priceText();
+    // public System.Void .ctor()
+    // Offset: 0xB3A478
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static IAPManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::IAPManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<IAPManager*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xB3973C
     void Start();
@@ -108,25 +115,16 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // private System.Void LaunchCheckoutFlowCallback(Oculus.Platform.Message`1<Oculus.Platform.Models.Purchase> msg)
     // Offset: 0xB3A38C
     void LaunchCheckoutFlowCallback(::Oculus::Platform::Message_1<::Oculus::Platform::Models::Purchase*>* msg);
-    // public System.Void .ctor()
-    // Offset: 0xB3A478
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static IAPManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::IAPManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<IAPManager*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrBoardGame.IAPManager
   #pragma pack(pop)
   static check_size<sizeof(IAPManager), 32 + sizeof(::UnityEngine::UI::Text*)> __Oculus_Platform_Samples_VrBoardGame_IAPManagerSizeCheck;
   static_assert(sizeof(IAPManager) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::IAPManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::IAPManager::Start
 // Il2CppName: Start
 template<>
@@ -186,7 +184,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::IAPManager*), "LaunchCheckoutFlowCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::IAPManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

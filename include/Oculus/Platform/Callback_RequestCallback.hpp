@@ -38,7 +38,14 @@ namespace Oculus::Platform {
       return messageCallback;
     }
     // Get instance field reference: private Oculus.Platform.Message/Oculus.Platform.Callback messageCallback
-    [[deprecated]] ::Oculus::Platform::Message::Callback*& dyn_messageCallback();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Message::Callback*& dyn_messageCallback();
+    // public System.Void .ctor()
+    // Offset: 0x1721AF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Callback::RequestCallback* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Callback::RequestCallback::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Callback::RequestCallback*, creationType>()));
+    }
     // public System.Void .ctor(Oculus.Platform.Message/Oculus.Platform.Callback callback)
     // Offset: 0x1721B00
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -49,21 +56,16 @@ namespace Oculus::Platform {
     // public System.Void HandleMessage(Oculus.Platform.Message msg)
     // Offset: 0x1721B2C
     void HandleMessage(::Oculus::Platform::Message* msg);
-    // public System.Void .ctor()
-    // Offset: 0x1721AF8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Callback::RequestCallback* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Callback::RequestCallback::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Callback::RequestCallback*, creationType>()));
-    }
   }; // Oculus.Platform.Callback/Oculus.Platform.RequestCallback
   #pragma pack(pop)
   static check_size<sizeof(Callback::RequestCallback), 16 + sizeof(::Oculus::Platform::Message::Callback*)> __Oculus_Platform_Callback_RequestCallbackSizeCheck;
   static_assert(sizeof(Callback::RequestCallback) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Callback::RequestCallback::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Callback::RequestCallback::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -77,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Callback::RequestCallback*), "HandleMessage", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Callback::RequestCallback::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

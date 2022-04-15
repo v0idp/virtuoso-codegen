@@ -70,6 +70,13 @@ namespace System::Data {
     // protected System.Collections.ArrayList get_List()
     // Offset: 0x13B6BD0
     ::System::Collections::ArrayList* get_List();
+    // public System.Void .ctor()
+    // Offset: 0x13B6BD8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InternalDataCollectionBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::InternalDataCollectionBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InternalDataCollectionBase*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x13B6BE0
     static void _cctor();
@@ -82,15 +89,6 @@ namespace System::Data {
     // System.Int32 NamesEqual(System.String s1, System.String s2, System.Boolean fCaseSensitive, System.Globalization.CultureInfo locale)
     // Offset: 0x13B6B14
     int NamesEqual(::StringW s1, ::StringW s2, bool fCaseSensitive, ::System::Globalization::CultureInfo* locale);
-    // public System.Void .ctor()
-    // Offset: 0x13B6BD8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InternalDataCollectionBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::InternalDataCollectionBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InternalDataCollectionBase*, creationType>()));
-    }
   }; // System.Data.InternalDataCollectionBase
   #pragma pack(pop)
 }
@@ -119,6 +117,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Data::InternalDataCollectionBase*), "get_List", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::InternalDataCollectionBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::InternalDataCollectionBase::_cctor
 // Il2CppName: .cctor
 template<>
@@ -157,7 +159,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Data::InternalDataCollectionBase*), "NamesEqual", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{s1, s2, fCaseSensitive, locale});
   }
 };
-// Writing MetadataGetter for method: System::Data::InternalDataCollectionBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -213,80 +213,82 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 frameCount
-    [[deprecated]] int& dyn_frameCount();
+    [[deprecated("Use field access instead!")]] int& dyn_frameCount();
     // Get instance field reference: public System.Single frameTime
-    [[deprecated]] float& dyn_frameTime();
+    [[deprecated("Use field access instead!")]] float& dyn_frameTime();
     // Get instance field reference: public System.Single deltaFrameTime
-    [[deprecated]] float& dyn_deltaFrameTime();
+    [[deprecated("Use field access instead!")]] float& dyn_deltaFrameTime();
     // Get instance field reference: public System.Boolean appCpuTime_IsValid
-    [[deprecated]] bool& dyn_appCpuTime_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_appCpuTime_IsValid();
     // Get instance field reference: public System.Single appCpuTime
-    [[deprecated]] float& dyn_appCpuTime();
+    [[deprecated("Use field access instead!")]] float& dyn_appCpuTime();
     // Get instance field reference: public System.Boolean appGpuTime_IsValid
-    [[deprecated]] bool& dyn_appGpuTime_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_appGpuTime_IsValid();
     // Get instance field reference: public System.Single appGpuTime
-    [[deprecated]] float& dyn_appGpuTime();
+    [[deprecated("Use field access instead!")]] float& dyn_appGpuTime();
     // Get instance field reference: public System.Boolean compositorCpuTime_IsValid
-    [[deprecated]] bool& dyn_compositorCpuTime_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_compositorCpuTime_IsValid();
     // Get instance field reference: public System.Single compositorCpuTime
-    [[deprecated]] float& dyn_compositorCpuTime();
+    [[deprecated("Use field access instead!")]] float& dyn_compositorCpuTime();
     // Get instance field reference: public System.Boolean compositorGpuTime_IsValid
-    [[deprecated]] bool& dyn_compositorGpuTime_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_compositorGpuTime_IsValid();
     // Get instance field reference: public System.Single compositorGpuTime
-    [[deprecated]] float& dyn_compositorGpuTime();
+    [[deprecated("Use field access instead!")]] float& dyn_compositorGpuTime();
     // Get instance field reference: public System.Boolean compositorDroppedFrameCount_IsValid
-    [[deprecated]] bool& dyn_compositorDroppedFrameCount_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_compositorDroppedFrameCount_IsValid();
     // Get instance field reference: public System.Int32 compositorDroppedFrameCount
-    [[deprecated]] int& dyn_compositorDroppedFrameCount();
+    [[deprecated("Use field access instead!")]] int& dyn_compositorDroppedFrameCount();
     // Get instance field reference: public System.Boolean systemGpuUtilPercentage_IsValid
-    [[deprecated]] bool& dyn_systemGpuUtilPercentage_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_systemGpuUtilPercentage_IsValid();
     // Get instance field reference: public System.Single systemGpuUtilPercentage
-    [[deprecated]] float& dyn_systemGpuUtilPercentage();
+    [[deprecated("Use field access instead!")]] float& dyn_systemGpuUtilPercentage();
     // Get instance field reference: public System.Boolean systemCpuUtilAveragePercentage_IsValid
-    [[deprecated]] bool& dyn_systemCpuUtilAveragePercentage_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_systemCpuUtilAveragePercentage_IsValid();
     // Get instance field reference: public System.Single systemCpuUtilAveragePercentage
-    [[deprecated]] float& dyn_systemCpuUtilAveragePercentage();
+    [[deprecated("Use field access instead!")]] float& dyn_systemCpuUtilAveragePercentage();
     // Get instance field reference: public System.Boolean systemCpuUtilWorstPercentage_IsValid
-    [[deprecated]] bool& dyn_systemCpuUtilWorstPercentage_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_systemCpuUtilWorstPercentage_IsValid();
     // Get instance field reference: public System.Single systemCpuUtilWorstPercentage
-    [[deprecated]] float& dyn_systemCpuUtilWorstPercentage();
+    [[deprecated("Use field access instead!")]] float& dyn_systemCpuUtilWorstPercentage();
     // Get instance field reference: public System.Boolean deviceCpuClockFrequencyInMHz_IsValid
-    [[deprecated]] bool& dyn_deviceCpuClockFrequencyInMHz_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_deviceCpuClockFrequencyInMHz_IsValid();
     // Get instance field reference: public System.Single deviceCpuClockFrequencyInMHz
-    [[deprecated]] float& dyn_deviceCpuClockFrequencyInMHz();
+    [[deprecated("Use field access instead!")]] float& dyn_deviceCpuClockFrequencyInMHz();
     // Get instance field reference: public System.Boolean deviceGpuClockFrequencyInMHz_IsValid
-    [[deprecated]] bool& dyn_deviceGpuClockFrequencyInMHz_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_deviceGpuClockFrequencyInMHz_IsValid();
     // Get instance field reference: public System.Single deviceGpuClockFrequencyInMHz
-    [[deprecated]] float& dyn_deviceGpuClockFrequencyInMHz();
+    [[deprecated("Use field access instead!")]] float& dyn_deviceGpuClockFrequencyInMHz();
     // Get instance field reference: public System.Boolean deviceCpuClockLevel_IsValid
-    [[deprecated]] bool& dyn_deviceCpuClockLevel_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_deviceCpuClockLevel_IsValid();
     // Get instance field reference: public System.Int32 deviceCpuClockLevel
-    [[deprecated]] int& dyn_deviceCpuClockLevel();
+    [[deprecated("Use field access instead!")]] int& dyn_deviceCpuClockLevel();
     // Get instance field reference: public System.Boolean deviceGpuClockLevel_IsValid
-    [[deprecated]] bool& dyn_deviceGpuClockLevel_IsValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_deviceGpuClockLevel_IsValid();
     // Get instance field reference: public System.Int32 deviceGpuClockLevel
-    [[deprecated]] int& dyn_deviceGpuClockLevel();
+    [[deprecated("Use field access instead!")]] int& dyn_deviceGpuClockLevel();
+    // public System.Void .ctor()
+    // Offset: 0x13F04B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRSystemPerfMetrics::PerfMetrics* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSystemPerfMetrics::PerfMetrics::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRSystemPerfMetrics::PerfMetrics*, creationType>()));
+    }
     // public System.String ToJSON()
     // Offset: 0x13EFF44
     ::StringW ToJSON();
     // public System.Boolean LoadFromJSON(System.String json)
     // Offset: 0x13F0528
     bool LoadFromJSON(::StringW json);
-    // public System.Void .ctor()
-    // Offset: 0x13F04B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRSystemPerfMetrics::PerfMetrics* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSystemPerfMetrics::PerfMetrics::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRSystemPerfMetrics::PerfMetrics*, creationType>()));
-    }
   }; // OVRSystemPerfMetrics/PerfMetrics
   #pragma pack(pop)
   static check_size<sizeof(OVRSystemPerfMetrics::PerfMetrics), 120 + sizeof(int)> __GlobalNamespace_OVRSystemPerfMetrics_PerfMetricsSizeCheck;
   static_assert(sizeof(OVRSystemPerfMetrics::PerfMetrics) == 0x7C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRSystemPerfMetrics::PerfMetrics::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRSystemPerfMetrics::PerfMetrics::ToJSON
 // Il2CppName: ToJSON
 template<>
@@ -304,7 +306,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSystemPerfMetrics::PerfMetrics*), "LoadFromJSON", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{json});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRSystemPerfMetrics::PerfMetrics::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

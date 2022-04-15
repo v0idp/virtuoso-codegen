@@ -72,7 +72,7 @@ namespace UnityEngine::Rendering {
     // Set static field: static private readonly UnityEngine.Rendering.ShaderTagId kRenderTypeTag
     static void _set_kRenderTypeTag(::UnityEngine::Rendering::ShaderTagId value);
     // Get instance field reference: private System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // System.Void .ctor(System.IntPtr ptr)
     // Offset: 0xBCD0E0
     // ABORTED: conflicts with another method.  ScriptableRenderContext(::System::IntPtr ptr);

@@ -68,15 +68,15 @@ namespace VROSC::AudioReactive {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.AudioReactive.TranslateEffect <>4__this
-    [[deprecated]] ::VROSC::AudioReactive::TranslateEffect*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::TranslateEffect*& dyn_$$4__this();
     // Get instance field reference: private System.Single <time>5__2
-    [[deprecated]] float& dyn_$time$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$time$5__2();
     // Get instance field reference: private VROSC.AudioReactive.TranslateEffect/VROSC.AudioReactive.TranslateData[] <translateDatas>5__3
-    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::TranslateEffect::TranslateData*>& dyn_$translateDatas$5__3();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AudioReactive::TranslateEffect::TranslateData*>& dyn_$translateDatas$5__3();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0xE7F884
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

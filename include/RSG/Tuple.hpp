@@ -40,6 +40,13 @@ namespace RSG {
   // [TokenAttribute] Offset: FFFFFFFF
   class Tuple : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0xA2E734
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Tuple* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Tuple::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Tuple*, creationType>()));
+    }
     // static public RSG.Tuple`2<T1,T2> Create(T1 item1, T2 item2)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T1, class T2>
@@ -67,29 +74,20 @@ namespace RSG {
       static auto* ___generic__method = THROW_UNLESS((::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T1>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T2>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T3>::get(), ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T4>::get()})));
       return ::il2cpp_utils::RunMethodRethrow<::RSG::Tuple_4<T1, T2, T3, T4>*, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, item1, item2, item3, item4);
     }
-    // public System.Void .ctor()
-    // Offset: 0xA2E734
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Tuple* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Tuple::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Tuple*, creationType>()));
-    }
   }; // RSG.Tuple
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: RSG::Tuple::Create
-// Il2CppName: Create
-// Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: RSG::Tuple::Create
-// Il2CppName: Create
-// Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: RSG::Tuple::Create
-// Il2CppName: Create
-// Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: RSG::Tuple::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: RSG::Tuple::Create
+// Il2CppName: Create
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: RSG::Tuple::Create
+// Il2CppName: Create
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: RSG::Tuple::Create
+// Il2CppName: Create
+// Cannot write MetadataGetter for generic methods!

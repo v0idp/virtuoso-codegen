@@ -50,9 +50,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::Models::CloudStorageMetadata*) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.Models.CloudStorageMetadata Local
-    [[deprecated]] ::Oculus::Platform::Models::CloudStorageMetadata*& dyn_Local();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::CloudStorageMetadata*& dyn_Local();
     // Get instance field reference: public readonly Oculus.Platform.Models.CloudStorageMetadata Remote
-    [[deprecated]] ::Oculus::Platform::Models::CloudStorageMetadata*& dyn_Remote();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::CloudStorageMetadata*& dyn_Remote();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x925124
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

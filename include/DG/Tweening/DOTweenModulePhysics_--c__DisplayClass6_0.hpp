@@ -91,19 +91,26 @@ namespace DG::Tweening {
     static_assert(sizeof(::DG::Tweening::Tween*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Rigidbody target
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn_target();
     // Get instance field reference: public System.Single startPosY
-    [[deprecated]] float& dyn_startPosY();
+    [[deprecated("Use field access instead!")]] float& dyn_startPosY();
     // Get instance field reference: public System.Boolean offsetYSet
-    [[deprecated]] bool& dyn_offsetYSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_offsetYSet();
     // Get instance field reference: public System.Single offsetY
-    [[deprecated]] float& dyn_offsetY();
+    [[deprecated("Use field access instead!")]] float& dyn_offsetY();
     // Get instance field reference: public DG.Tweening.Sequence s
-    [[deprecated]] ::DG::Tweening::Sequence*& dyn_s();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Sequence*& dyn_s();
     // Get instance field reference: public UnityEngine.Vector3 endValue
-    [[deprecated]] ::UnityEngine::Vector3& dyn_endValue();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_endValue();
     // Get instance field reference: public DG.Tweening.Tween yTween
-    [[deprecated]] ::DG::Tweening::Tween*& dyn_yTween();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Tween*& dyn_yTween();
+    // public System.Void .ctor()
+    // Offset: 0x17DB2A4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTweenModulePhysics::$$c__DisplayClass6_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass6_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModulePhysics::$$c__DisplayClass6_0*, creationType>()));
+    }
     // UnityEngine.Vector3 <DOJump>b__0()
     // Offset: 0x17E2C5C
     ::UnityEngine::Vector3 $DOJump$b__0();
@@ -119,21 +126,16 @@ namespace DG::Tweening {
     // System.Void <DOJump>b__4()
     // Offset: 0x17E2CE4
     void $DOJump$b__4();
-    // public System.Void .ctor()
-    // Offset: 0x17DB2A4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTweenModulePhysics::$$c__DisplayClass6_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass6_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModulePhysics::$$c__DisplayClass6_0*, creationType>()));
-    }
   }; // DG.Tweening.DOTweenModulePhysics/DG.Tweening.<>c__DisplayClass6_0
   #pragma pack(pop)
   static check_size<sizeof(DOTweenModulePhysics::$$c__DisplayClass6_0), 64 + sizeof(::DG::Tweening::Tween*)> __DG_Tweening_DOTweenModulePhysics_$$c__DisplayClass6_0SizeCheck;
   static_assert(sizeof(DOTweenModulePhysics::$$c__DisplayClass6_0) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass6_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass6_0::$DOJump$b__0
 // Il2CppName: <DOJump>b__0
 template<>
@@ -174,7 +176,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass6_0*), "<DOJump>b__4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics::$$c__DisplayClass6_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -57,7 +57,7 @@ namespace System::Threading::Tasks {
       return m_scheduler;
     }
     // Get instance field reference: private readonly System.Threading.Tasks.TaskScheduler m_scheduler
-    [[deprecated]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_scheduler();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_scheduler();
     // System.Void .ctor(System.Threading.Tasks.TaskScheduler scheduler, System.Action action, System.Boolean flowExecutionContext, ref System.Threading.StackCrawlMark stackMark)
     // Offset: 0x1271770
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

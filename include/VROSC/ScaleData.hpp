@@ -55,17 +55,15 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Int32 StartNoteOffset
-    [[deprecated]] int& dyn_StartNoteOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_StartNoteOffset();
     // Get instance field reference: public VROSC.Scale Scale
-    [[deprecated]] ::VROSC::Scale& dyn_Scale();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn_Scale();
     // Get instance field reference: public System.Boolean Locked
-    [[deprecated]] bool& dyn_Locked();
+    [[deprecated("Use field access instead!")]] bool& dyn_Locked();
     // Get instance field reference: public System.Boolean Customized
-    [[deprecated]] bool& dyn_Customized();
+    [[deprecated("Use field access instead!")]] bool& dyn_Customized();
     // public System.Void .ctor()
     // Offset: 0xDE2620
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleData::.ctor");

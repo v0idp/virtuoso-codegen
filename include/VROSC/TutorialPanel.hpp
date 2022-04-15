@@ -175,41 +175,48 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _closeOKButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeOKButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeOKButton();
     // Get instance field reference: private VROSC.UIButton _closeCancelButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeCancelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeCancelButton();
     // Get instance field reference: private UnityEngine.GameObject _closeWarningPanel
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__closeWarningPanel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__closeWarningPanel();
     // Get instance field reference: private VROSC.UIButton _replayButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__replayButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__replayButton();
     // Get instance field reference: private VROSC.UIButton _continueButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__continueButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__continueButton();
     // Get instance field reference: private TMPro.TextMeshPro _tipText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__tipText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__tipText();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _blinkContinue
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__blinkContinue();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__blinkContinue();
     // Get instance field reference: private VROSC.Grabable[] _panelGrabables
-    [[deprecated]] ::ArrayW<::VROSC::Grabable*>& dyn__panelGrabables();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::Grabable*>& dyn__panelGrabables();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement[] _panelBlinkers
-    [[deprecated]] ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__panelBlinkers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__panelBlinkers();
     // Get instance field reference: private VROSC.TutorialCondition _conditionPrefab
-    [[deprecated]] ::VROSC::TutorialCondition*& dyn__conditionPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialCondition*& dyn__conditionPrefab();
     // Get instance field reference: private UnityEngine.Transform _conditionsParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__conditionsParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__conditionsParent();
     // Get instance field reference: private UnityEngine.RectTransform _mainTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__mainTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__mainTransform();
     // Get instance field reference: private System.Single _conditionsStartY
-    [[deprecated]] float& dyn__conditionsStartY();
+    [[deprecated("Use field access instead!")]] float& dyn__conditionsStartY();
     // Get instance field reference: private System.Single _conditionsSizeY
-    [[deprecated]] float& dyn__conditionsSizeY();
+    [[deprecated("Use field access instead!")]] float& dyn__conditionsSizeY();
     // Get instance field reference: private VROSC.TutorialStep _currentTutorialStep
-    [[deprecated]] ::VROSC::TutorialStep*& dyn__currentTutorialStep();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialStep*& dyn__currentTutorialStep();
     // Get instance field reference: private VROSC.TutorialCondition[] _tutorialConditions
-    [[deprecated]] ::ArrayW<::VROSC::TutorialCondition*>& dyn__tutorialConditions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::TutorialCondition*>& dyn__tutorialConditions();
     // Get instance field reference: private UnityEngine.Vector2 _mainSize
-    [[deprecated]] ::UnityEngine::Vector2& dyn__mainSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__mainSize();
+    // public System.Void .ctor()
+    // Offset: 0xA31F54
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TutorialPanel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialPanel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TutorialPanel*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xA315C0
     void Awake();
@@ -255,25 +262,16 @@ namespace VROSC {
     // private System.Void DisplayTipText()
     // Offset: 0xA31D04
     void DisplayTipText();
-    // public System.Void .ctor()
-    // Offset: 0xA31F54
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TutorialPanel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialPanel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TutorialPanel*, creationType>()));
-    }
   }; // VROSC.TutorialPanel
   #pragma pack(pop)
   static check_size<sizeof(TutorialPanel), 152 + sizeof(::UnityEngine::Vector2)> __VROSC_TutorialPanelSizeCheck;
   static_assert(sizeof(TutorialPanel) == 0xA0);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TutorialPanel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TutorialPanel::Awake
 // Il2CppName: Awake
 template<>
@@ -397,7 +395,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialPanel*), "DisplayTipText", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::TutorialPanel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

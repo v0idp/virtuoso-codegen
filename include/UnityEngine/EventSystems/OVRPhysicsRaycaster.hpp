@@ -76,9 +76,9 @@ namespace UnityEngine::EventSystems {
     // Set static field: static protected System.Int32 kNoEventMaskSet
     static void _set_kNoEventMaskSet(int value);
     // Get instance field reference: protected UnityEngine.LayerMask m_EventMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_EventMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_EventMask();
     // Get instance field reference: public System.Int32 sortOrder
-    [[deprecated]] int& dyn_sortOrder();
+    [[deprecated("Use field access instead!")]] int& dyn_sortOrder();
     // public System.Int32 get_depth()
     // Offset: 0xE65E34
     int get_depth();
@@ -91,6 +91,13 @@ namespace UnityEngine::EventSystems {
     // public System.Void set_eventMask(UnityEngine.LayerMask value)
     // Offset: 0xE65FE8
     void set_eventMask(::UnityEngine::LayerMask value);
+    // protected System.Void .ctor()
+    // Offset: 0xE65DA4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRPhysicsRaycaster* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::OVRPhysicsRaycaster::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRPhysicsRaycaster*, creationType>()));
+    }
     // public System.Void Spherecast(UnityEngine.EventSystems.PointerEventData eventData, System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult> resultAppendList, System.Single radius)
     // Offset: 0xE663C8
     void Spherecast(::UnityEngine::EventSystems::PointerEventData* eventData, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>* resultAppendList, float radius);
@@ -107,21 +114,6 @@ namespace UnityEngine::EventSystems {
     // Implemented from: UnityEngine.EventSystems.BaseRaycaster
     // Base method: System.Int32 BaseRaycaster::get_sortOrderPriority()
     int get_sortOrderPriority();
-    // protected System.Void .ctor()
-    // Offset: 0xE65DA4
-    // Implemented from: UnityEngine.EventSystems.BaseRaycaster
-    // Base method: System.Void BaseRaycaster::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRPhysicsRaycaster* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::OVRPhysicsRaycaster::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRPhysicsRaycaster*, creationType>()));
-    }
     // public override System.Void Raycast(UnityEngine.EventSystems.PointerEventData eventData, System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult> resultAppendList)
     // Offset: 0xE65FF0
     // Implemented from: UnityEngine.EventSystems.BaseRaycaster
@@ -166,6 +158,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::OVRPhysicsRaycaster*), "set_eventMask", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::EventSystems::OVRPhysicsRaycaster::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::EventSystems::OVRPhysicsRaycaster::Spherecast
 // Il2CppName: Spherecast
 template<>
@@ -202,10 +198,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::OVRPhysicsRaycaster*), "get_sortOrderPriority", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::EventSystems::OVRPhysicsRaycaster::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::EventSystems::OVRPhysicsRaycaster::Raycast
 // Il2CppName: Raycast
 template<>

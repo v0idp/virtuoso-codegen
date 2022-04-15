@@ -138,29 +138,29 @@ namespace System::Data {
     static_assert(sizeof(::System::ComponentModel::CollectionChangeEventHandler*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private readonly System.Collections.ArrayList _list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__list();
     // Get instance field reference: private System.Int32 _defaultNameIndex
-    [[deprecated]] int& dyn__defaultNameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__defaultNameIndex();
     // Get instance field reference: private System.Data.DataColumn[] _delayedAddRangeColumns
-    [[deprecated]] ::ArrayW<::System::Data::DataColumn*>& dyn__delayedAddRangeColumns();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataColumn*>& dyn__delayedAddRangeColumns();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,System.Data.DataColumn> _columnFromName
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Data::DataColumn*>*& dyn__columnFromName();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Data::DataColumn*>*& dyn__columnFromName();
     // Get instance field reference: private System.Boolean _fInClear
-    [[deprecated]] bool& dyn__fInClear();
+    [[deprecated("Use field access instead!")]] bool& dyn__fInClear();
     // Get instance field reference: private System.Data.DataColumn[] _columnsImplementingIChangeTracking
-    [[deprecated]] ::ArrayW<::System::Data::DataColumn*>& dyn__columnsImplementingIChangeTracking();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataColumn*>& dyn__columnsImplementingIChangeTracking();
     // Get instance field reference: private System.Int32 _nColumnsImplementingIChangeTracking
-    [[deprecated]] int& dyn__nColumnsImplementingIChangeTracking();
+    [[deprecated("Use field access instead!")]] int& dyn__nColumnsImplementingIChangeTracking();
     // Get instance field reference: private System.Int32 _nColumnsImplementingIRevertibleChangeTracking
-    [[deprecated]] int& dyn__nColumnsImplementingIRevertibleChangeTracking();
+    [[deprecated("Use field access instead!")]] int& dyn__nColumnsImplementingIRevertibleChangeTracking();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler CollectionChanged
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_CollectionChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_CollectionChanged();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler CollectionChanging
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_CollectionChanging();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_CollectionChanging();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler ColumnPropertyChanged
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_ColumnPropertyChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn_ColumnPropertyChanged();
     // System.Data.DataColumn[] get_ColumnsImplementingIChangeTracking()
     // Offset: 0xF94A0C
     ::ArrayW<::System::Data::DataColumn*> get_ColumnsImplementingIChangeTracking();

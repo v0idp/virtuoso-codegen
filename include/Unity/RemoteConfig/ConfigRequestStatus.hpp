@@ -66,7 +66,7 @@ namespace Unity::RemoteConfig {
     // Set static field: static public Unity.RemoteConfig.ConfigRequestStatus Pending
     static void _set_Pending(::Unity::RemoteConfig::ConfigRequestStatus value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Unity.RemoteConfig.ConfigRequestStatus
   #pragma pack(pop)
   static check_size<sizeof(ConfigRequestStatus), 0 + sizeof(int)> __Unity_RemoteConfig_ConfigRequestStatusSizeCheck;

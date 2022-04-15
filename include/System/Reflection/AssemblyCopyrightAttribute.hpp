@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_copyright;
     }
     // Get instance field reference: private System.String m_copyright
-    [[deprecated]] ::StringW& dyn_m_copyright();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_copyright();
     // public System.Void .ctor(System.String copyright)
     // Offset: 0x11445EC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -54,9 +54,9 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _textMesh
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textMesh();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__textMesh();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // public System.Void .ctor(TMPro.TextMeshPro textMesh, VROSC.MinMaxVector2 minMax)
     // Offset: 0x956584
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

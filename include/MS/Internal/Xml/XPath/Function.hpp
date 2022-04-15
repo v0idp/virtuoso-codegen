@@ -234,7 +234,7 @@ namespace MS::Internal::Xml::XPath {
       // Set static field: static public MS.Internal.Xml.XPath.Function/MS.Internal.Xml.XPath.FunctionType FuncUserDefined
       static void _set_FuncUserDefined(::MS::Internal::Xml::XPath::Function::FunctionType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MS.Internal.Xml.XPath.Function/MS.Internal.Xml.XPath.FunctionType
     #pragma pack(pop)
     static check_size<sizeof(Function::FunctionType), 0 + sizeof(int)> __MS_Internal_Xml_XPath_Function_FunctionTypeSizeCheck;
@@ -272,13 +272,13 @@ namespace MS::Internal::Xml::XPath {
     // Set static field: static System.Xml.XPath.XPathResultType[] ReturnTypes
     static void _set_ReturnTypes(::ArrayW<::System::Xml::XPath::XPathResultType> value);
     // Get instance field reference: private MS.Internal.Xml.XPath.Function/MS.Internal.Xml.XPath.FunctionType functionType
-    [[deprecated]] ::MS::Internal::Xml::XPath::Function::FunctionType& dyn_functionType();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::Function::FunctionType& dyn_functionType();
     // Get instance field reference: private System.Collections.ArrayList argumentList
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_argumentList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_argumentList();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // public System.Void .ctor(MS.Internal.Xml.XPath.Function/MS.Internal.Xml.XPath.FunctionType ftype, System.Collections.ArrayList argumentList)
     // Offset: 0xAEE98C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

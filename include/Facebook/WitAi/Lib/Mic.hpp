@@ -158,29 +158,29 @@ namespace Facebook::WitAi::Lib {
     // Set static field: static private Facebook.WitAi.Lib.Mic m_Instance
     static void _set_m_Instance(::Facebook::WitAi::Lib::Mic* value);
     // Get instance field reference: private System.Boolean <IsRecording>k__BackingField
-    [[deprecated]] bool& dyn_$IsRecording$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsRecording$k__BackingField();
     // Get instance field reference: private readonly Facebook.WitAi.Data.AudioEncoding <AudioEncoding>k__BackingField
-    [[deprecated]] ::Facebook::WitAi::Data::AudioEncoding*& dyn_$AudioEncoding$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::AudioEncoding*& dyn_$AudioEncoding$k__BackingField();
     // Get instance field reference: private System.Single[] <Sample>k__BackingField
-    [[deprecated]] ::ArrayW<float>& dyn_$Sample$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_$Sample$k__BackingField();
     // Get instance field reference: private System.Int32 <SampleDurationMS>k__BackingField
-    [[deprecated]] int& dyn_$SampleDurationMS$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$SampleDurationMS$k__BackingField();
     // Get instance field reference: private UnityEngine.AudioClip <AudioClip>k__BackingField
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_$AudioClip$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_$AudioClip$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> devices
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_devices();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_devices();
     // Get instance field reference: private System.Int32 <CurrentDeviceIndex>k__BackingField
-    [[deprecated]] int& dyn_$CurrentDeviceIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$CurrentDeviceIndex$k__BackingField();
     // Get instance field reference: private System.Int32 m_SampleCount
-    [[deprecated]] int& dyn_m_SampleCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_SampleCount();
     // Get instance field reference: private System.Action OnStartRecording
-    [[deprecated]] ::System::Action*& dyn_OnStartRecording();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnStartRecording();
     // Get instance field reference: private System.Action OnStartRecordingFailed
-    [[deprecated]] ::System::Action*& dyn_OnStartRecordingFailed();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnStartRecordingFailed();
     // Get instance field reference: private System.Action`3<System.Int32,System.Single[],System.Single> OnSampleReady
-    [[deprecated]] ::System::Action_3<int, ::ArrayW<float>, float>*& dyn_OnSampleReady();
+    [[deprecated("Use field access instead!")]] ::System::Action_3<int, ::ArrayW<float>, float>*& dyn_OnSampleReady();
     // Get instance field reference: private System.Action OnStopRecording
-    [[deprecated]] ::System::Action*& dyn_OnStopRecording();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnStopRecording();
     // public System.Boolean get_IsRecording()
     // Offset: 0x166ED10
     bool get_IsRecording();
@@ -250,6 +250,13 @@ namespace Facebook::WitAi::Lib {
     // public System.Void remove_OnStopRecording(System.Action value)
     // Offset: 0x166F3D0
     void remove_OnStopRecording(::System::Action* value);
+    // public System.Void .ctor()
+    // Offset: 0x166FBF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Mic* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::Mic::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Mic*, creationType>()));
+    }
     // static public Facebook.WitAi.Lib.Mic Instantiate()
     // Offset: 0x166F640
     static ::Facebook::WitAi::Lib::Mic* Instantiate();
@@ -280,19 +287,6 @@ namespace Facebook::WitAi::Lib {
     // private System.Collections.IEnumerator ReadRawAudio()
     // Offset: 0x166FB60
     ::System::Collections::IEnumerator* ReadRawAudio();
-    // public System.Void .ctor()
-    // Offset: 0x166FBF8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Mic* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::Mic::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Mic*, creationType>()));
-    }
   }; // Facebook.WitAi.Lib.Mic
   #pragma pack(pop)
   static check_size<sizeof(Mic), 104 + sizeof(::System::Action*)> __Facebook_WitAi_Lib_MicSizeCheck;
@@ -496,6 +490,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Lib::Mic*), "remove_OnStopRecording", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Facebook::WitAi::Lib::Mic::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Lib::Mic::Instantiate
 // Il2CppName: Instantiate
 template<>
@@ -578,7 +576,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Lib::Mic*), "ReadRawAudio", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::Lib::Mic::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

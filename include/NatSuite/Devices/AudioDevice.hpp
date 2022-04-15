@@ -66,6 +66,13 @@ namespace NatSuite::Devices {
     // public System.Boolean get_running()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_running();
+    // protected System.Void .ctor()
+    // Offset: 0x96F430
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioDevice* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::AudioDevice::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioDevice*, creationType>()));
+    }
     // public System.Void StartRunning(NatSuite.Devices.SampleBufferDelegate delegate)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void StartRunning(::NatSuite::Devices::SampleBufferDelegate* delegate);
@@ -75,15 +82,6 @@ namespace NatSuite::Devices {
     // public System.Boolean Equals(NatSuite.Devices.IMediaDevice other)
     // Offset: 0x96F2A8
     bool Equals(::NatSuite::Devices::IMediaDevice* other);
-    // protected System.Void .ctor()
-    // Offset: 0x96F430
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioDevice* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::AudioDevice::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioDevice*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x96F3CC
     // Implemented from: System.Object
@@ -159,6 +157,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::AudioDevice*), "get_running", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: NatSuite::Devices::AudioDevice::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Devices::AudioDevice::StartRunning
 // Il2CppName: StartRunning
 template<>
@@ -185,10 +187,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::AudioDevice*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Devices::AudioDevice::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Devices::AudioDevice::ToString
 // Il2CppName: ToString
 template<>

@@ -74,13 +74,13 @@ namespace UnityEngine::TextCore {
     // Set static field: static private readonly UnityEngine.TextCore.GlyphRect s_ZeroGlyphRect
     static void _set_s_ZeroGlyphRect(::UnityEngine::TextCore::GlyphRect value);
     // Get instance field reference: private System.Int32 m_X
-    [[deprecated]] int& dyn_m_X();
+    [[deprecated("Use field access instead!")]] int& dyn_m_X();
     // Get instance field reference: private System.Int32 m_Y
-    [[deprecated]] int& dyn_m_Y();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Y();
     // Get instance field reference: private System.Int32 m_Width
-    [[deprecated]] int& dyn_m_Width();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Width();
     // Get instance field reference: private System.Int32 m_Height
-    [[deprecated]] int& dyn_m_Height();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Height();
     // public System.Int32 get_x()
     // Offset: 0x18EC958
     int get_x();

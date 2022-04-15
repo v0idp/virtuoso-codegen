@@ -72,7 +72,7 @@ namespace System::Threading::Tasks {
     // Set static field: static private System.Threading.ContextCallback s_postActionCallback
     static void _set_s_postActionCallback(::System::Threading::ContextCallback* value);
     // Get instance field reference: private readonly System.Threading.SynchronizationContext m_syncContext
-    [[deprecated]] ::System::Threading::SynchronizationContext*& dyn_m_syncContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SynchronizationContext*& dyn_m_syncContext();
     // System.Void .ctor(System.Threading.SynchronizationContext context, System.Action action, System.Boolean flowExecutionContext, ref System.Threading.StackCrawlMark stackMark)
     // Offset: 0x126B2D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

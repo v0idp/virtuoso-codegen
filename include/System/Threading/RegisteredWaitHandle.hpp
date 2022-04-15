@@ -101,23 +101,23 @@ namespace System::Threading {
     // Deleting conversion operator: operator ::Il2CppObject*
     constexpr operator ::Il2CppObject*() const noexcept = delete;
     // Get instance field reference: private System.Threading.WaitHandle _waitObject
-    [[deprecated]] ::System::Threading::WaitHandle*& dyn__waitObject();
+    [[deprecated("Use field access instead!")]] ::System::Threading::WaitHandle*& dyn__waitObject();
     // Get instance field reference: private System.Threading.WaitOrTimerCallback _callback
-    [[deprecated]] ::System::Threading::WaitOrTimerCallback*& dyn__callback();
+    [[deprecated("Use field access instead!")]] ::System::Threading::WaitOrTimerCallback*& dyn__callback();
     // Get instance field reference: private System.Object _state
-    [[deprecated]] ::Il2CppObject*& dyn__state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__state();
     // Get instance field reference: private System.Threading.WaitHandle _finalEvent
-    [[deprecated]] ::System::Threading::WaitHandle*& dyn__finalEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::WaitHandle*& dyn__finalEvent();
     // Get instance field reference: private System.Threading.ManualResetEvent _cancelEvent
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn__cancelEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn__cancelEvent();
     // Get instance field reference: private System.TimeSpan _timeout
-    [[deprecated]] ::System::TimeSpan& dyn__timeout();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn__timeout();
     // Get instance field reference: private System.Int32 _callsInProcess
-    [[deprecated]] int& dyn__callsInProcess();
+    [[deprecated("Use field access instead!")]] int& dyn__callsInProcess();
     // Get instance field reference: private System.Boolean _executeOnlyOnce
-    [[deprecated]] bool& dyn__executeOnlyOnce();
+    [[deprecated("Use field access instead!")]] bool& dyn__executeOnlyOnce();
     // Get instance field reference: private System.Boolean _unregistered
-    [[deprecated]] bool& dyn__unregistered();
+    [[deprecated("Use field access instead!")]] bool& dyn__unregistered();
     // System.Void .ctor(System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callback, System.Object state, System.TimeSpan timeout, System.Boolean executeOnlyOnce)
     // Offset: 0x16161D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

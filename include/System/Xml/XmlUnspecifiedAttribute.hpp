@@ -48,7 +48,7 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean fSpecified
-    [[deprecated]] bool& dyn_fSpecified();
+    [[deprecated("Use field access instead!")]] bool& dyn_fSpecified();
     // System.Void SetSpecified(System.Boolean f)
     // Offset: 0x1089E80
     void SetSpecified(bool f);

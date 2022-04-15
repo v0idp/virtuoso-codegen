@@ -49,9 +49,9 @@ namespace System::Runtime::Serialization::Formatters::Binary {
       return *reinterpret_cast<::System::ICloneable*>(this);
     }
     // Get instance field reference: System.Int32[] objects
-    [[deprecated]] ::ArrayW<int>& dyn_objects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_objects();
     // Get instance field reference: System.Int32[] negObjects
-    [[deprecated]] ::ArrayW<int>& dyn_negObjects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_negObjects();
     // System.Int32 get_Item(System.Int32 index)
     // Offset: 0x106CB10
     int get_Item(int index);

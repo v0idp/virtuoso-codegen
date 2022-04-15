@@ -78,7 +78,7 @@ namespace OVRSimpleJSON {
       // Set static field: static public OVRSimpleJSON.JSONNode/OVRSimpleJSON.Enumerator/OVRSimpleJSON.Type Object
       static void _set_Object(::OVRSimpleJSON::JSONNode::Enumerator::Type value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRSimpleJSON.JSONNode/OVRSimpleJSON.Enumerator/OVRSimpleJSON.Type
     #pragma pack(pop)
     static check_size<sizeof(JSONNode::Enumerator::Type), 0 + sizeof(int)> __OVRSimpleJSON_JSONNode_Enumerator_TypeSizeCheck;
@@ -106,11 +106,11 @@ namespace OVRSimpleJSON {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private OVRSimpleJSON.JSONNode/OVRSimpleJSON.Enumerator/OVRSimpleJSON.Type type
-    [[deprecated]] ::OVRSimpleJSON::JSONNode::Enumerator::Type& dyn_type();
+    [[deprecated("Use field access instead!")]] ::OVRSimpleJSON::JSONNode::Enumerator::Type& dyn_type();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2/System.Collections.Generic.Enumerator<System.String,OVRSimpleJSON.JSONNode> m_Object
-    [[deprecated]] typename ::System::Collections::Generic::Dictionary_2<::StringW, ::OVRSimpleJSON::JSONNode*>::Enumerator& dyn_m_Object();
+    [[deprecated("Use field access instead!")]] typename ::System::Collections::Generic::Dictionary_2<::StringW, ::OVRSimpleJSON::JSONNode*>::Enumerator& dyn_m_Object();
     // Get instance field reference: private System.Collections.Generic.List`1/System.Collections.Generic.Enumerator<OVRSimpleJSON.JSONNode> m_Array
-    [[deprecated]] typename ::System::Collections::Generic::List_1<::OVRSimpleJSON::JSONNode*>::Enumerator& dyn_m_Array();
+    [[deprecated("Use field access instead!")]] typename ::System::Collections::Generic::List_1<::OVRSimpleJSON::JSONNode*>::Enumerator& dyn_m_Array();
     // public System.Boolean get_IsValid()
     // Offset: 0x84B36C
     bool get_IsValid();

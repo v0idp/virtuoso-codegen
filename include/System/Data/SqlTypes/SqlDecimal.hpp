@@ -352,21 +352,21 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlDecimal MaxValue
     static void _set_MaxValue(::System::Data::SqlTypes::SqlDecimal value);
     // Get instance field reference: System.Byte _bStatus
-    [[deprecated]] uint8_t& dyn__bStatus();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__bStatus();
     // Get instance field reference: System.Byte _bLen
-    [[deprecated]] uint8_t& dyn__bLen();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__bLen();
     // Get instance field reference: System.Byte _bPrec
-    [[deprecated]] uint8_t& dyn__bPrec();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__bPrec();
     // Get instance field reference: System.Byte _bScale
-    [[deprecated]] uint8_t& dyn__bScale();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__bScale();
     // Get instance field reference: System.UInt32 _data1
-    [[deprecated]] uint& dyn__data1();
+    [[deprecated("Use field access instead!")]] uint& dyn__data1();
     // Get instance field reference: System.UInt32 _data2
-    [[deprecated]] uint& dyn__data2();
+    [[deprecated("Use field access instead!")]] uint& dyn__data2();
     // Get instance field reference: System.UInt32 _data3
-    [[deprecated]] uint& dyn__data3();
+    [[deprecated("Use field access instead!")]] uint& dyn__data3();
     // Get instance field reference: System.UInt32 _data4
-    [[deprecated]] uint& dyn__data4();
+    [[deprecated("Use field access instead!")]] uint& dyn__data4();
     // public System.Boolean get_IsNull()
     // Offset: 0x12338D0
     bool get_IsNull();

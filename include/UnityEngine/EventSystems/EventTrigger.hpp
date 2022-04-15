@@ -166,7 +166,7 @@ namespace UnityEngine::EventSystems {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.EventSystems.EventTrigger/UnityEngine.EventSystems.Entry> m_Delegates
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::EventTrigger::Entry*>*& dyn_m_Delegates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::EventTrigger::Entry*>*& dyn_m_Delegates();
     // public System.Collections.Generic.List`1<UnityEngine.EventSystems.EventTrigger/UnityEngine.EventSystems.Entry> get_delegates()
     // Offset: 0xEB8140
     ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::EventTrigger::Entry*>* get_delegates();
@@ -179,6 +179,13 @@ namespace UnityEngine::EventSystems {
     // public System.Void set_triggers(System.Collections.Generic.List`1<UnityEngine.EventSystems.EventTrigger/UnityEngine.EventSystems.Entry> value)
     // Offset: 0xEB81D0
     void set_triggers(::System::Collections::Generic::List_1<::UnityEngine::EventSystems::EventTrigger::Entry*>* value);
+    // protected System.Void .ctor()
+    // Offset: 0xEB81C8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EventTrigger* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::EventTrigger::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EventTrigger*, creationType>()));
+    }
     // private System.Void Execute(UnityEngine.EventSystems.EventTriggerType id, UnityEngine.EventSystems.BaseEventData eventData)
     // Offset: 0xEB81D8
     void Execute(::UnityEngine::EventSystems::EventTriggerType id, ::UnityEngine::EventSystems::BaseEventData* eventData);
@@ -233,19 +240,6 @@ namespace UnityEngine::EventSystems {
     // public System.Void OnCancel(UnityEngine.EventSystems.BaseEventData eventData)
     // Offset: 0xEB83A0
     void OnCancel(::UnityEngine::EventSystems::BaseEventData* eventData);
-    // protected System.Void .ctor()
-    // Offset: 0xEB81C8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EventTrigger* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::EventTrigger::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EventTrigger*, creationType>()));
-    }
   }; // UnityEngine.EventSystems.EventTrigger
   #pragma pack(pop)
   static check_size<sizeof(EventTrigger), 24 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::EventSystems::EventTrigger::Entry*>*)> __UnityEngine_EventSystems_EventTriggerSizeCheck;
@@ -286,6 +280,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::EventTrigger*), "set_triggers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::EventSystems::EventTrigger::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::EventSystems::EventTrigger::Execute
 // Il2CppName: Execute
 template<>
@@ -449,7 +447,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::EventTrigger*), "OnCancel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{eventData});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::EventSystems::EventTrigger::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

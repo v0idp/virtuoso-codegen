@@ -446,101 +446,101 @@ namespace TMPro {
     // Set static field: static System.UInt32[] k_GlyphIndexArray
     static void _set_k_GlyphIndexArray(::ArrayW<uint> value);
     // Get instance field reference: private System.String m_Version
-    [[deprecated]] ::StringW& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Version();
     // Get instance field reference: System.String m_SourceFontFileGUID
-    [[deprecated]] ::StringW& dyn_m_SourceFontFileGUID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_SourceFontFileGUID();
     // Get instance field reference: private UnityEngine.Font m_SourceFontFile
-    [[deprecated]] ::UnityEngine::Font*& dyn_m_SourceFontFile();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Font*& dyn_m_SourceFontFile();
     // Get instance field reference: private TMPro.AtlasPopulationMode m_AtlasPopulationMode
-    [[deprecated]] ::TMPro::AtlasPopulationMode& dyn_m_AtlasPopulationMode();
+    [[deprecated("Use field access instead!")]] ::TMPro::AtlasPopulationMode& dyn_m_AtlasPopulationMode();
     // Get instance field reference: UnityEngine.TextCore.FaceInfo m_FaceInfo
-    [[deprecated]] ::UnityEngine::TextCore::FaceInfo& dyn_m_FaceInfo();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::FaceInfo& dyn_m_FaceInfo();
     // Get instance field reference: System.Collections.Generic.List`1<UnityEngine.TextCore.Glyph> m_GlyphTable
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphTable();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.UInt32,UnityEngine.TextCore.Glyph> m_GlyphLookupDictionary
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphLookupDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, ::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphLookupDictionary();
     // Get instance field reference: System.Collections.Generic.List`1<TMPro.TMP_Character> m_CharacterTable
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Character*>*& dyn_m_CharacterTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Character*>*& dyn_m_CharacterTable();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.UInt32,TMPro.TMP_Character> m_CharacterLookupDictionary
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_Character*>*& dyn_m_CharacterLookupDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_Character*>*& dyn_m_CharacterLookupDictionary();
     // Get instance field reference: UnityEngine.Texture2D m_AtlasTexture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_m_AtlasTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_m_AtlasTexture();
     // Get instance field reference: UnityEngine.Texture2D[] m_AtlasTextures
-    [[deprecated]] ::ArrayW<::UnityEngine::Texture2D*>& dyn_m_AtlasTextures();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Texture2D*>& dyn_m_AtlasTextures();
     // Get instance field reference: System.Int32 m_AtlasTextureIndex
-    [[deprecated]] int& dyn_m_AtlasTextureIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_AtlasTextureIndex();
     // Get instance field reference: private System.Boolean m_IsMultiAtlasTexturesEnabled
-    [[deprecated]] bool& dyn_m_IsMultiAtlasTexturesEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsMultiAtlasTexturesEnabled();
     // Get instance field reference: private System.Boolean m_ClearDynamicDataOnBuild
-    [[deprecated]] bool& dyn_m_ClearDynamicDataOnBuild();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ClearDynamicDataOnBuild();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.TextCore.GlyphRect> m_UsedGlyphRects
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::GlyphRect>*& dyn_m_UsedGlyphRects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::GlyphRect>*& dyn_m_UsedGlyphRects();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.TextCore.GlyphRect> m_FreeGlyphRects
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::GlyphRect>*& dyn_m_FreeGlyphRects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::GlyphRect>*& dyn_m_FreeGlyphRects();
     // Get instance field reference: private TMPro.FaceInfo_Legacy m_fontInfo
-    [[deprecated]] ::TMPro::FaceInfo_Legacy*& dyn_m_fontInfo();
+    [[deprecated("Use field access instead!")]] ::TMPro::FaceInfo_Legacy*& dyn_m_fontInfo();
     // Get instance field reference: public UnityEngine.Texture2D atlas
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_atlas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_atlas();
     // Get instance field reference: System.Int32 m_AtlasWidth
-    [[deprecated]] int& dyn_m_AtlasWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_m_AtlasWidth();
     // Get instance field reference: System.Int32 m_AtlasHeight
-    [[deprecated]] int& dyn_m_AtlasHeight();
+    [[deprecated("Use field access instead!")]] int& dyn_m_AtlasHeight();
     // Get instance field reference: System.Int32 m_AtlasPadding
-    [[deprecated]] int& dyn_m_AtlasPadding();
+    [[deprecated("Use field access instead!")]] int& dyn_m_AtlasPadding();
     // Get instance field reference: UnityEngine.TextCore.LowLevel.GlyphRenderMode m_AtlasRenderMode
-    [[deprecated]] ::UnityEngine::TextCore::LowLevel::GlyphRenderMode& dyn_m_AtlasRenderMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::LowLevel::GlyphRenderMode& dyn_m_AtlasRenderMode();
     // Get instance field reference: System.Collections.Generic.List`1<TMPro.TMP_Glyph> m_glyphInfoList
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Glyph*>*& dyn_m_glyphInfoList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Glyph*>*& dyn_m_glyphInfoList();
     // Get instance field reference: TMPro.KerningTable m_KerningTable
-    [[deprecated]] ::TMPro::KerningTable*& dyn_m_KerningTable();
+    [[deprecated("Use field access instead!")]] ::TMPro::KerningTable*& dyn_m_KerningTable();
     // Get instance field reference: TMPro.TMP_FontFeatureTable m_FontFeatureTable
-    [[deprecated]] ::TMPro::TMP_FontFeatureTable*& dyn_m_FontFeatureTable();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_FontFeatureTable*& dyn_m_FontFeatureTable();
     // Get instance field reference: private System.Collections.Generic.List`1<TMPro.TMP_FontAsset> fallbackFontAssets
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_FontAsset*>*& dyn_fallbackFontAssets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_FontAsset*>*& dyn_fallbackFontAssets();
     // Get instance field reference: System.Collections.Generic.List`1<TMPro.TMP_FontAsset> m_FallbackFontAssetTable
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_FontAsset*>*& dyn_m_FallbackFontAssetTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_FontAsset*>*& dyn_m_FallbackFontAssetTable();
     // Get instance field reference: TMPro.FontAssetCreationSettings m_CreationSettings
-    [[deprecated]] ::TMPro::FontAssetCreationSettings& dyn_m_CreationSettings();
+    [[deprecated("Use field access instead!")]] ::TMPro::FontAssetCreationSettings& dyn_m_CreationSettings();
     // Get instance field reference: private TMPro.TMP_FontWeightPair[] m_FontWeightTable
-    [[deprecated]] ::ArrayW<::TMPro::TMP_FontWeightPair>& dyn_m_FontWeightTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_FontWeightPair>& dyn_m_FontWeightTable();
     // Get instance field reference: private TMPro.TMP_FontWeightPair[] fontWeights
-    [[deprecated]] ::ArrayW<::TMPro::TMP_FontWeightPair>& dyn_fontWeights();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_FontWeightPair>& dyn_fontWeights();
     // Get instance field reference: public System.Single normalStyle
-    [[deprecated]] float& dyn_normalStyle();
+    [[deprecated("Use field access instead!")]] float& dyn_normalStyle();
     // Get instance field reference: public System.Single normalSpacingOffset
-    [[deprecated]] float& dyn_normalSpacingOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_normalSpacingOffset();
     // Get instance field reference: public System.Single boldStyle
-    [[deprecated]] float& dyn_boldStyle();
+    [[deprecated("Use field access instead!")]] float& dyn_boldStyle();
     // Get instance field reference: public System.Single boldSpacing
-    [[deprecated]] float& dyn_boldSpacing();
+    [[deprecated("Use field access instead!")]] float& dyn_boldSpacing();
     // Get instance field reference: public System.Byte italicStyle
-    [[deprecated]] uint8_t& dyn_italicStyle();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_italicStyle();
     // Get instance field reference: public System.Byte tabSize
-    [[deprecated]] uint8_t& dyn_tabSize();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_tabSize();
     // Get instance field reference: System.Boolean IsFontAssetLookupTablesDirty
-    [[deprecated]] bool& dyn_IsFontAssetLookupTablesDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsFontAssetLookupTablesDirty();
     // Get instance field reference: System.Collections.Generic.HashSet`1<System.Int32> FallbackSearchQueryLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_FallbackSearchQueryLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_FallbackSearchQueryLookup();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.TextCore.Glyph> m_GlyphsToRender
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphsToRender();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphsToRender();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.TextCore.Glyph> m_GlyphsRendered
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphsRendered();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::TextCore::Glyph*>*& dyn_m_GlyphsRendered();
     // Get instance field reference: private System.Collections.Generic.List`1<System.UInt32> m_GlyphIndexList
-    [[deprecated]] ::System::Collections::Generic::List_1<uint>*& dyn_m_GlyphIndexList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<uint>*& dyn_m_GlyphIndexList();
     // Get instance field reference: private System.Collections.Generic.List`1<System.UInt32> m_GlyphIndexListNewlyAdded
-    [[deprecated]] ::System::Collections::Generic::List_1<uint>*& dyn_m_GlyphIndexListNewlyAdded();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<uint>*& dyn_m_GlyphIndexListNewlyAdded();
     // Get instance field reference: System.Collections.Generic.List`1<System.UInt32> m_GlyphsToAdd
-    [[deprecated]] ::System::Collections::Generic::List_1<uint>*& dyn_m_GlyphsToAdd();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<uint>*& dyn_m_GlyphsToAdd();
     // Get instance field reference: System.Collections.Generic.HashSet`1<System.UInt32> m_GlyphsToAddLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint>*& dyn_m_GlyphsToAddLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<uint>*& dyn_m_GlyphsToAddLookup();
     // Get instance field reference: System.Collections.Generic.List`1<TMPro.TMP_Character> m_CharactersToAdd
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Character*>*& dyn_m_CharactersToAdd();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Character*>*& dyn_m_CharactersToAdd();
     // Get instance field reference: System.Collections.Generic.HashSet`1<System.UInt32> m_CharactersToAddLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint>*& dyn_m_CharactersToAddLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<uint>*& dyn_m_CharactersToAddLookup();
     // Get instance field reference: System.Collections.Generic.List`1<System.UInt32> s_MissingCharacterList
-    [[deprecated]] ::System::Collections::Generic::List_1<uint>*& dyn_s_MissingCharacterList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<uint>*& dyn_s_MissingCharacterList();
     // Get instance field reference: System.Collections.Generic.HashSet`1<System.UInt32> m_MissingUnicodesFromFontFile
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<uint>*& dyn_m_MissingUnicodesFromFontFile();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<uint>*& dyn_m_MissingUnicodesFromFontFile();
     // public System.String get_version()
     // Offset: 0xC33054
     ::StringW get_version();
@@ -670,6 +670,9 @@ namespace TMPro {
     // System.Void set_fontWeightTable(TMPro.TMP_FontWeightPair[] value)
     // Offset: 0xC33544
     void set_fontWeightTable(::ArrayW<::TMPro::TMP_FontWeightPair> value);
+    // static private System.Void .cctor()
+    // Offset: 0xC3A870
+    static void _cctor();
     // static public TMPro.TMP_FontAsset CreateFontAsset(UnityEngine.Font font)
     // Offset: 0xC3354C
     static ::TMPro::TMP_FontAsset* CreateFontAsset(::UnityEngine::Font* font);
@@ -830,19 +833,11 @@ namespace TMPro {
     // Offset: 0xC3A594
     // Implemented from: TMPro.TMP_Asset
     // Base method: System.Void TMP_Asset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_FontAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_FontAsset::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMP_FontAsset*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0xC3A870
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // TMPro.TMP_FontAsset
   #pragma pack(pop)
   static check_size<sizeof(TMP_FontAsset), 528 + sizeof(::System::Collections::Generic::HashSet_1<uint>*)> __TMPro_TMP_FontAssetSizeCheck;
@@ -1210,6 +1205,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
   static const MethodInfo* get() {
     static auto* value = &il2cpp_functions::array_class_get(::il2cpp_utils::GetClassFromName("TMPro", "TMP_FontWeightPair"), 1)->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_FontAsset*), "set_fontWeightTable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: TMPro::TMP_FontAsset::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TMP_FontAsset::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_FontAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: TMPro::TMP_FontAsset::CreateFontAsset
@@ -1664,11 +1667,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: TMPro::TMP_FontAsset::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TMP_FontAsset::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_FontAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};

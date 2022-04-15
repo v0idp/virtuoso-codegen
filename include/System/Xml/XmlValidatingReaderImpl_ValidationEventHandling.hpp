@@ -58,9 +58,9 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Xml::IValidationEventHandling*>(this);
     }
     // Get instance field reference: private System.Xml.XmlValidatingReaderImpl reader
-    [[deprecated]] ::System::Xml::XmlValidatingReaderImpl*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlValidatingReaderImpl*& dyn_reader();
     // Get instance field reference: private System.Xml.Schema.ValidationEventHandler eventHandler
-    [[deprecated]] ::System::Xml::Schema::ValidationEventHandler*& dyn_eventHandler();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ValidationEventHandler*& dyn_eventHandler();
     // private System.Object System.Xml.IValidationEventHandling.get_EventHandler()
     // Offset: 0xC24560
     ::Il2CppObject* System_Xml_IValidationEventHandling_get_EventHandler();

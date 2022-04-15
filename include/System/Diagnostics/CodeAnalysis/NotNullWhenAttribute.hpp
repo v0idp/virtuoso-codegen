@@ -42,7 +42,7 @@ namespace System::Diagnostics::CodeAnalysis {
       return ReturnValue;
     }
     // Get instance field reference: private readonly System.Boolean <ReturnValue>k__BackingField
-    [[deprecated]] bool& dyn_$ReturnValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ReturnValue$k__BackingField();
     // public System.Void .ctor(System.Boolean returnValue)
     // Offset: 0x13489C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

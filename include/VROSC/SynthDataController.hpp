@@ -96,11 +96,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformDataController*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PatchSettings> _patches
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PatchSettings*>*& dyn__patches();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::PatchSettings*>*& dyn__patches();
     // Get instance field reference: private System.Int32 _selectedPatchIndex
-    [[deprecated]] int& dyn__selectedPatchIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__selectedPatchIndex();
     // Get instance field reference: private VROSC.TransformDataController _transformData
-    [[deprecated]] ::VROSC::TransformDataController*& dyn__transformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataController*& dyn__transformData();
     // protected VROSC.SynthDataModel get_DataModel()
     // Offset: 0x19336E8
     ::VROSC::SynthDataModel* get_DataModel();
@@ -245,7 +245,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentDataController
     // Base method: System.Void InstrumentDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthDataController::.ctor");

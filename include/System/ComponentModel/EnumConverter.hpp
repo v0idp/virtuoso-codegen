@@ -60,9 +60,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.ComponentModel.TypeConverter/System.ComponentModel.StandardValuesCollection values
-    [[deprecated]] ::System::ComponentModel::TypeConverter::StandardValuesCollection*& dyn_values();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::TypeConverter::StandardValuesCollection*& dyn_values();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.Void .ctor(System.Type type)
     // Offset: 0xEFD62C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

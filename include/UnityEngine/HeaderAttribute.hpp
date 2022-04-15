@@ -43,7 +43,7 @@ namespace UnityEngine {
       return header;
     }
     // Get instance field reference: public readonly System.String header
-    [[deprecated]] ::StringW& dyn_header();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_header();
     // public System.Void .ctor(System.String header)
     // Offset: 0x1129608
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

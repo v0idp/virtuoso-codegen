@@ -44,9 +44,9 @@ namespace System::Xml::Linq {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: System.Xml.Linq.XName name
-    [[deprecated]] ::System::Xml::Linq::XName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XName*& dyn_name();
     // Get instance field reference: System.Object content
-    [[deprecated]] ::Il2CppObject*& dyn_content();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_content();
   }; // System.Xml.Linq.XStreamingElement
   #pragma pack(pop)
   static check_size<sizeof(XStreamingElement), 24 + sizeof(::Il2CppObject*)> __System_Xml_Linq_XStreamingElementSizeCheck;

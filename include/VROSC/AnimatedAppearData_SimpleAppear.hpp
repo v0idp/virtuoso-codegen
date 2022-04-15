@@ -47,7 +47,7 @@ namespace VROSC {
       return target;
     }
     // Get instance field reference: private VROSC.SimpleAppearObject _target
-    [[deprecated]] ::VROSC::SimpleAppearObject*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::VROSC::SimpleAppearObject*& dyn__target();
     // public System.Void .ctor(VROSC.SimpleAppearObject target, VROSC.MinMaxVector2 minMax)
     // Offset: 0x956508
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

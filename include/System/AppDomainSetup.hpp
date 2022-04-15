@@ -179,51 +179,51 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String application_base
-    [[deprecated]] ::StringW& dyn_application_base();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_application_base();
     // Get instance field reference: private System.String application_name
-    [[deprecated]] ::StringW& dyn_application_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_application_name();
     // Get instance field reference: private System.String cache_path
-    [[deprecated]] ::StringW& dyn_cache_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_cache_path();
     // Get instance field reference: private System.String configuration_file
-    [[deprecated]] ::StringW& dyn_configuration_file();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_configuration_file();
     // Get instance field reference: private System.String dynamic_base
-    [[deprecated]] ::StringW& dyn_dynamic_base();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dynamic_base();
     // Get instance field reference: private System.String license_file
-    [[deprecated]] ::StringW& dyn_license_file();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_license_file();
     // Get instance field reference: private System.String private_bin_path
-    [[deprecated]] ::StringW& dyn_private_bin_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_private_bin_path();
     // Get instance field reference: private System.String private_bin_path_probe
-    [[deprecated]] ::StringW& dyn_private_bin_path_probe();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_private_bin_path_probe();
     // Get instance field reference: private System.String shadow_copy_directories
-    [[deprecated]] ::StringW& dyn_shadow_copy_directories();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_shadow_copy_directories();
     // Get instance field reference: private System.String shadow_copy_files
-    [[deprecated]] ::StringW& dyn_shadow_copy_files();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_shadow_copy_files();
     // Get instance field reference: private System.Boolean publisher_policy
-    [[deprecated]] bool& dyn_publisher_policy();
+    [[deprecated("Use field access instead!")]] bool& dyn_publisher_policy();
     // Get instance field reference: private System.Boolean path_changed
-    [[deprecated]] bool& dyn_path_changed();
+    [[deprecated("Use field access instead!")]] bool& dyn_path_changed();
     // Get instance field reference: private System.Int32 loader_optimization
-    [[deprecated]] int& dyn_loader_optimization();
+    [[deprecated("Use field access instead!")]] int& dyn_loader_optimization();
     // Get instance field reference: private System.Boolean disallow_binding_redirects
-    [[deprecated]] bool& dyn_disallow_binding_redirects();
+    [[deprecated("Use field access instead!")]] bool& dyn_disallow_binding_redirects();
     // Get instance field reference: private System.Boolean disallow_code_downloads
-    [[deprecated]] bool& dyn_disallow_code_downloads();
+    [[deprecated("Use field access instead!")]] bool& dyn_disallow_code_downloads();
     // Get instance field reference: private System.Object _activationArguments
-    [[deprecated]] ::Il2CppObject*& dyn__activationArguments();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__activationArguments();
     // Get instance field reference: private System.Object domain_initializer
-    [[deprecated]] ::Il2CppObject*& dyn_domain_initializer();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_domain_initializer();
     // Get instance field reference: private System.Object application_trust
-    [[deprecated]] ::Il2CppObject*& dyn_application_trust();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_application_trust();
     // Get instance field reference: private System.String[] domain_initializer_args
-    [[deprecated]] ::ArrayW<::StringW>& dyn_domain_initializer_args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_domain_initializer_args();
     // Get instance field reference: private System.Boolean disallow_appbase_probe
-    [[deprecated]] bool& dyn_disallow_appbase_probe();
+    [[deprecated("Use field access instead!")]] bool& dyn_disallow_appbase_probe();
     // Get instance field reference: private System.Byte[] configuration_bytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_configuration_bytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_configuration_bytes();
     // Get instance field reference: private System.Byte[] serialized_non_primitives
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_serialized_non_primitives();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_serialized_non_primitives();
     // Get instance field reference: private System.String <TargetFrameworkName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$TargetFrameworkName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$TargetFrameworkName$k__BackingField();
     // public System.Void .ctor()
     // Offset: 0x113D524
     // Implemented from: System.Object

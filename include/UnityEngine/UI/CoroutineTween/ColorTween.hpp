@@ -89,7 +89,7 @@ namespace UnityEngine::UI::CoroutineTween {
       // Set static field: static public UnityEngine.UI.CoroutineTween.ColorTween/UnityEngine.UI.CoroutineTween.ColorTweenMode Alpha
       static void _set_Alpha(::UnityEngine::UI::CoroutineTween::ColorTween::ColorTweenMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.CoroutineTween.ColorTween/UnityEngine.UI.CoroutineTween.ColorTweenMode
     #pragma pack(pop)
     static check_size<sizeof(ColorTween::ColorTweenMode), 0 + sizeof(int)> __UnityEngine_UI_CoroutineTween_ColorTween_ColorTweenModeSizeCheck;
@@ -143,17 +143,17 @@ namespace UnityEngine::UI::CoroutineTween {
       return *reinterpret_cast<::UnityEngine::UI::CoroutineTween::ITweenValue*>(this);
     }
     // Get instance field reference: private UnityEngine.UI.CoroutineTween.ColorTween/UnityEngine.UI.CoroutineTween.ColorTweenCallback m_Target
-    [[deprecated]] ::UnityEngine::UI::CoroutineTween::ColorTween::ColorTweenCallback*& dyn_m_Target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CoroutineTween::ColorTween::ColorTweenCallback*& dyn_m_Target();
     // Get instance field reference: private UnityEngine.Color m_StartColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_StartColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_StartColor();
     // Get instance field reference: private UnityEngine.Color m_TargetColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_TargetColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_TargetColor();
     // Get instance field reference: private UnityEngine.UI.CoroutineTween.ColorTween/UnityEngine.UI.CoroutineTween.ColorTweenMode m_TweenMode
-    [[deprecated]] ::UnityEngine::UI::CoroutineTween::ColorTween::ColorTweenMode& dyn_m_TweenMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CoroutineTween::ColorTween::ColorTweenMode& dyn_m_TweenMode();
     // Get instance field reference: private System.Single m_Duration
-    [[deprecated]] float& dyn_m_Duration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Duration();
     // Get instance field reference: private System.Boolean m_IgnoreTimeScale
-    [[deprecated]] bool& dyn_m_IgnoreTimeScale();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IgnoreTimeScale();
     // public UnityEngine.Color get_startColor()
     // Offset: 0xEAF98C
     ::UnityEngine::Color get_startColor();

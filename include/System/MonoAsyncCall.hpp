@@ -68,17 +68,17 @@ namespace System {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Object msg
-    [[deprecated]] ::Il2CppObject*& dyn_msg();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_msg();
     // Get instance field reference: private System.IntPtr cb_method
-    [[deprecated]] ::System::IntPtr& dyn_cb_method();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_cb_method();
     // Get instance field reference: private System.Object cb_target
-    [[deprecated]] ::Il2CppObject*& dyn_cb_target();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_cb_target();
     // Get instance field reference: private System.Object state
-    [[deprecated]] ::Il2CppObject*& dyn_state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_state();
     // Get instance field reference: private System.Object res
-    [[deprecated]] ::Il2CppObject*& dyn_res();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_res();
     // Get instance field reference: private System.Object out_args
-    [[deprecated]] ::Il2CppObject*& dyn_out_args();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_out_args();
     // public System.Void .ctor()
     // Offset: 0x1007AB8
     // Implemented from: System.Object

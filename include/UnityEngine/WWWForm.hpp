@@ -79,17 +79,17 @@ namespace UnityEngine {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<System.Byte[]> formData
-    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_formData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_formData();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> fieldNames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fieldNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fieldNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> fileNames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fileNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fileNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> types
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_types();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_types();
     // Get instance field reference: private System.Byte[] boundary
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_boundary();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_boundary();
     // Get instance field reference: private System.Boolean containsFiles
-    [[deprecated]] bool& dyn_containsFiles();
+    [[deprecated("Use field access instead!")]] bool& dyn_containsFiles();
     // static System.Text.Encoding get_DefaultEncoding()
     // Offset: 0x18BFC18
     static ::System::Text::Encoding* get_DefaultEncoding();

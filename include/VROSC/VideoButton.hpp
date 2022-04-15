@@ -78,11 +78,11 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.MeshRenderer _thumbnailMesh
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__thumbnailMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__thumbnailMesh();
     // Get instance field reference: private TMPro.TextMeshPro _titleUI
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__titleUI();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__titleUI();
     // Get instance field reference: private UnityEngine.GameObject _playIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__playIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__playIcon();
     // private System.Void DownloadThumbnail(VROSC.VideoInfo videoInfo)
     // Offset: 0x1922504
     void DownloadThumbnail(::VROSC::VideoInfo* videoInfo);
@@ -96,11 +96,6 @@ namespace VROSC {
     // Offset: 0x1922630
     // Implemented from: VROSC.PaginatedListItemUI
     // Base method: System.Void PaginatedListItemUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VideoButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VideoButton::.ctor");

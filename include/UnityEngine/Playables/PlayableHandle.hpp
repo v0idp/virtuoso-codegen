@@ -89,9 +89,9 @@ namespace UnityEngine::Playables {
     // Set static field: static private readonly UnityEngine.Playables.PlayableHandle m_Null
     static void _set_m_Null(::UnityEngine::Playables::PlayableHandle value);
     // Get instance field reference: System.IntPtr m_Handle
-    [[deprecated]] ::System::IntPtr& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Handle();
     // Get instance field reference: System.UInt32 m_Version
-    [[deprecated]] uint& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_Version();
     // static public UnityEngine.Playables.PlayableHandle get_Null()
     // Offset: 0xBC25EC
     static ::UnityEngine::Playables::PlayableHandle get_Null();

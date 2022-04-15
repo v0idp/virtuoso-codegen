@@ -70,7 +70,7 @@ namespace System::Xml::Schema {
     // Set static field: static public readonly System.Xml.Schema.XmlValueConverter UntypedList
     static void _set_UntypedList(::System::Xml::Schema::XmlValueConverter* value);
     // Get instance field reference: private System.Boolean allowListToList
-    [[deprecated]] bool& dyn_allowListToList();
+    [[deprecated("Use field access instead!")]] bool& dyn_allowListToList();
     // protected System.Void .ctor(System.Xml.Schema.XmlUntypedConverter atomicConverter, System.Boolean allowListToList)
     // Offset: 0x1089F3C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -91,7 +91,6 @@ namespace System::Xml::Schema {
     // Offset: 0x1089E8C
     // Implemented from: System.Xml.Schema.XmlValueConverter
     // Base method: System.Void XmlValueConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlUntypedConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlUntypedConverter::.ctor");

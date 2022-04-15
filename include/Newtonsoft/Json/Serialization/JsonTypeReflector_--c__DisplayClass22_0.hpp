@@ -52,27 +52,29 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::System::Func_1<::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: public System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: public System.Func`1<System.Object> defaultConstructor
-    [[deprecated]] ::System::Func_1<::Il2CppObject*>*& dyn_defaultConstructor();
-    // System.Object <GetCreator>b__0(System.Object[] parameters)
-    // Offset: 0x159F944
-    ::Il2CppObject* $GetCreator$b__0(::ArrayW<::Il2CppObject*> parameters);
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::Il2CppObject*>*& dyn_defaultConstructor();
     // public System.Void .ctor()
     // Offset: 0x159F93C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JsonTypeReflector::$$c__DisplayClass22_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::JsonTypeReflector::$$c__DisplayClass22_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<JsonTypeReflector::$$c__DisplayClass22_0*, creationType>()));
     }
+    // System.Object <GetCreator>b__0(System.Object[] parameters)
+    // Offset: 0x159F944
+    ::Il2CppObject* $GetCreator$b__0(::ArrayW<::Il2CppObject*> parameters);
   }; // Newtonsoft.Json.Serialization.JsonTypeReflector/Newtonsoft.Json.Serialization.<>c__DisplayClass22_0
   #pragma pack(pop)
   static check_size<sizeof(JsonTypeReflector::$$c__DisplayClass22_0), 24 + sizeof(::System::Func_1<::Il2CppObject*>*)> __Newtonsoft_Json_Serialization_JsonTypeReflector_$$c__DisplayClass22_0SizeCheck;
   static_assert(sizeof(JsonTypeReflector::$$c__DisplayClass22_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::JsonTypeReflector::$$c__DisplayClass22_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Serialization::JsonTypeReflector::$$c__DisplayClass22_0::$GetCreator$b__0
 // Il2CppName: <GetCreator>b__0
 template<>
@@ -82,7 +84,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::JsonTypeReflector::$$c__DisplayClass22_0*), "<GetCreator>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{parameters});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::JsonTypeReflector::$$c__DisplayClass22_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

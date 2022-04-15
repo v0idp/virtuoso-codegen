@@ -39,6 +39,16 @@ namespace System::Buffers {
     static ::System::Buffers::ArrayPoolEventSource* _get_Log();
     // Set static field: static readonly System.Buffers.ArrayPoolEventSource Log
     static void _set_Log(::System::Buffers::ArrayPoolEventSource* value);
+    // public System.Void .ctor()
+    // Offset: 0x18F4D5C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ArrayPoolEventSource* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Buffers::ArrayPoolEventSource::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ArrayPoolEventSource*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x18F4DC0
+    static void _cctor();
     // System.Void BufferRented(System.Int32 bufferId, System.Int32 bufferSize, System.Int32 poolId, System.Int32 bucketId)
     // Offset: 0x18F4D50
     void BufferRented(int bufferId, int bufferSize, int poolId, int bucketId);
@@ -48,25 +58,22 @@ namespace System::Buffers {
     // System.Void BufferReturned(System.Int32 bufferId, System.Int32 bufferSize, System.Int32 poolId)
     // Offset: 0x18F4D58
     void BufferReturned(int bufferId, int bufferSize, int poolId);
-    // public System.Void .ctor()
-    // Offset: 0x18F4D5C
-    // Implemented from: System.Diagnostics.Tracing.EventSource
-    // Base method: System.Void EventSource::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ArrayPoolEventSource* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Buffers::ArrayPoolEventSource::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ArrayPoolEventSource*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x18F4DC0
-    // Implemented from: System.Diagnostics.Tracing.EventSource
-    // Base method: System.Void EventSource::.cctor()
-    static void _cctor();
   }; // System.Buffers.ArrayPoolEventSource
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Buffers::ArrayPoolEventSource::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Buffers::ArrayPoolEventSource::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Buffers::ArrayPoolEventSource::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(System::Buffers::ArrayPoolEventSource*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: System::Buffers::ArrayPoolEventSource::BufferRented
 // Il2CppName: BufferRented
 template<>
@@ -101,17 +108,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     static auto* bufferSize = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     static auto* poolId = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(System::Buffers::ArrayPoolEventSource*), "BufferReturned", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{bufferId, bufferSize, poolId});
-  }
-};
-// Writing MetadataGetter for method: System::Buffers::ArrayPoolEventSource::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Buffers::ArrayPoolEventSource::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&System::Buffers::ArrayPoolEventSource::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(System::Buffers::ArrayPoolEventSource*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

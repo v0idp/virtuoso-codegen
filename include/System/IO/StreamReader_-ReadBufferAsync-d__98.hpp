@@ -79,17 +79,17 @@ namespace System::IO {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Int32> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<int>& dyn_$$t__builder();
     // Get instance field reference: public System.IO.StreamReader <>4__this
-    [[deprecated]] ::System::IO::StreamReader*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::IO::StreamReader*& dyn_$$4__this();
     // Get instance field reference: private System.IO.Stream <tmpStream>5__1
-    [[deprecated]] ::System::IO::Stream*& dyn_$tmpStream$5__1();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_$tmpStream$5__1();
     // Get instance field reference: private System.Byte[] <tmpByteBuffer>5__2
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_$tmpByteBuffer$5__2();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_$tmpByteBuffer$5__2();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Int32> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xE5D2C4
     void MoveNext();

@@ -69,13 +69,20 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.KeyValuePair`2<VROSC.WidgetSettings/VROSC.Identifier,VROSC.InstrumentDataController> instrumentDataController
-    [[deprecated]] ::System::Collections::Generic::KeyValuePair_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>& dyn_instrumentDataController();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::KeyValuePair_2<::VROSC::WidgetSettings::Identifier, ::VROSC::InstrumentDataController*>& dyn_instrumentDataController();
     // Get instance field reference: public VROSC.UserDataControllers/VROSC.<>c__DisplayClass68_0 CS$<>8__locals1
-    [[deprecated]] ::VROSC::UserDataControllers::$$c__DisplayClass68_0*& dyn_CS$$$8__locals1();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserDataControllers::$$c__DisplayClass68_0*& dyn_CS$$$8__locals1();
     // Get instance field reference: public System.Action <>9__16
-    [[deprecated]] ::System::Action*& dyn_$$9__16();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_$$9__16();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__17
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__17();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__17();
+    // public System.Void .ctor()
+    // Offset: 0xE83C54
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UserDataControllers::$$c__DisplayClass68_1* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserDataControllers::$$c__DisplayClass68_1::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UserDataControllers::$$c__DisplayClass68_1*, creationType>()));
+    }
     // System.Void <SaveControllers>b__14()
     // Offset: 0xE83C5C
     void $SaveControllers$b__14();
@@ -85,19 +92,14 @@ namespace VROSC {
     // System.Void <SaveControllers>b__17(VROSC.Error error)
     // Offset: 0xE83E68
     void $SaveControllers$b__17(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0xE83C54
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UserDataControllers::$$c__DisplayClass68_1* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserDataControllers::$$c__DisplayClass68_1::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UserDataControllers::$$c__DisplayClass68_1*, creationType>()));
-    }
   }; // VROSC.UserDataControllers/VROSC.<>c__DisplayClass68_1
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UserDataControllers::$$c__DisplayClass68_1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UserDataControllers::$$c__DisplayClass68_1::$SaveControllers$b__14
 // Il2CppName: <SaveControllers>b__14
 template<>
@@ -123,7 +125,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserDataControllers::$$c__DisplayClass68_1*), "<SaveControllers>b__17", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::UserDataControllers::$$c__DisplayClass68_1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

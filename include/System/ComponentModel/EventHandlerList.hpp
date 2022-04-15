@@ -52,9 +52,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::ComponentModel::Component*) == 0x8);
     public:
     // Get instance field reference: private System.ComponentModel.EventHandlerList/System.ComponentModel.ListEntry head
-    [[deprecated]] ::System::ComponentModel::EventHandlerList::ListEntry*& dyn_head();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::EventHandlerList::ListEntry*& dyn_head();
     // Get instance field reference: private System.ComponentModel.Component parent
-    [[deprecated]] ::System::ComponentModel::Component*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::Component*& dyn_parent();
     // public System.Delegate get_Item(System.Object key)
     // Offset: 0xEFFC7C
     ::System::Delegate* get_Item(::Il2CppObject* key);

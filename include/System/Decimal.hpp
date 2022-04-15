@@ -198,13 +198,13 @@ namespace System {
     // Set static field: static private readonly System.Decimal NearPositiveZero
     static void _set_NearPositiveZero(::System::Decimal value);
     // Get instance field reference: private System.Int32 flags
-    [[deprecated]] int& dyn_flags();
+    [[deprecated("Use field access instead!")]] int& dyn_flags();
     // Get instance field reference: private System.Int32 hi
-    [[deprecated]] int& dyn_hi();
+    [[deprecated("Use field access instead!")]] int& dyn_hi();
     // Get instance field reference: private System.Int32 lo
-    [[deprecated]] int& dyn_lo();
+    [[deprecated("Use field access instead!")]] int& dyn_lo();
     // Get instance field reference: private System.Int32 mid
-    [[deprecated]] int& dyn_mid();
+    [[deprecated("Use field access instead!")]] int& dyn_mid();
     // public System.Void .ctor(System.Int32 value)
     // Offset: 0x128FD58
     Decimal(int value);

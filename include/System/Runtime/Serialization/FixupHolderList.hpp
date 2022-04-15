@@ -49,9 +49,9 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Runtime.Serialization.FixupHolder[] m_values
-    [[deprecated]] ::ArrayW<::System::Runtime::Serialization::FixupHolder*>& dyn_m_values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Serialization::FixupHolder*>& dyn_m_values();
     // Get instance field reference: System.Int32 m_count
-    [[deprecated]] int& dyn_m_count();
+    [[deprecated("Use field access instead!")]] int& dyn_m_count();
     // System.Void .ctor(System.Int32 startingSize)
     // Offset: 0x14518F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -55,11 +55,11 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 localPosition
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_localPosition();
     // Get instance field reference: public LIV.SDK.Unity.SDKQuaternion localRotation
-    [[deprecated]] ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKQuaternion& dyn_localRotation();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 localScale
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_localScale();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_localScale();
     // static public LIV.SDK.Unity.SDKTransform get_empty()
     // Offset: 0xDD4474
     static ::LIV::SDK::Unity::SDKTransform get_empty();

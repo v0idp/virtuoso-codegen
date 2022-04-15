@@ -201,41 +201,41 @@ namespace System {
     // Set static field: static private System.NumberFormatter userFormatProvider
     static void _set_userFormatProvider(::System::NumberFormatter* value);
     // Get instance field reference: private System.Globalization.NumberFormatInfo _nfi
-    [[deprecated]] ::System::Globalization::NumberFormatInfo*& dyn__nfi();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::NumberFormatInfo*& dyn__nfi();
     // Get instance field reference: private System.Char[] _cbuf
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__cbuf();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__cbuf();
     // Get instance field reference: private System.Boolean _NaN
-    [[deprecated]] bool& dyn__NaN();
+    [[deprecated("Use field access instead!")]] bool& dyn__NaN();
     // Get instance field reference: private System.Boolean _infinity
-    [[deprecated]] bool& dyn__infinity();
+    [[deprecated("Use field access instead!")]] bool& dyn__infinity();
     // Get instance field reference: private System.Boolean _isCustomFormat
-    [[deprecated]] bool& dyn__isCustomFormat();
+    [[deprecated("Use field access instead!")]] bool& dyn__isCustomFormat();
     // Get instance field reference: private System.Boolean _specifierIsUpper
-    [[deprecated]] bool& dyn__specifierIsUpper();
+    [[deprecated("Use field access instead!")]] bool& dyn__specifierIsUpper();
     // Get instance field reference: private System.Boolean _positive
-    [[deprecated]] bool& dyn__positive();
+    [[deprecated("Use field access instead!")]] bool& dyn__positive();
     // Get instance field reference: private System.Char _specifier
-    [[deprecated]] ::Il2CppChar& dyn__specifier();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__specifier();
     // Get instance field reference: private System.Int32 _precision
-    [[deprecated]] int& dyn__precision();
+    [[deprecated("Use field access instead!")]] int& dyn__precision();
     // Get instance field reference: private System.Int32 _defPrecision
-    [[deprecated]] int& dyn__defPrecision();
+    [[deprecated("Use field access instead!")]] int& dyn__defPrecision();
     // Get instance field reference: private System.Int32 _digitsLen
-    [[deprecated]] int& dyn__digitsLen();
+    [[deprecated("Use field access instead!")]] int& dyn__digitsLen();
     // Get instance field reference: private System.Int32 _offset
-    [[deprecated]] int& dyn__offset();
+    [[deprecated("Use field access instead!")]] int& dyn__offset();
     // Get instance field reference: private System.Int32 _decPointPos
-    [[deprecated]] int& dyn__decPointPos();
+    [[deprecated("Use field access instead!")]] int& dyn__decPointPos();
     // Get instance field reference: private System.UInt32 _val1
-    [[deprecated]] uint& dyn__val1();
+    [[deprecated("Use field access instead!")]] uint& dyn__val1();
     // Get instance field reference: private System.UInt32 _val2
-    [[deprecated]] uint& dyn__val2();
+    [[deprecated("Use field access instead!")]] uint& dyn__val2();
     // Get instance field reference: private System.UInt32 _val3
-    [[deprecated]] uint& dyn__val3();
+    [[deprecated("Use field access instead!")]] uint& dyn__val3();
     // Get instance field reference: private System.UInt32 _val4
-    [[deprecated]] uint& dyn__val4();
+    [[deprecated("Use field access instead!")]] uint& dyn__val4();
     // Get instance field reference: private System.Int32 _ind
-    [[deprecated]] int& dyn__ind();
+    [[deprecated("Use field access instead!")]] int& dyn__ind();
     // private System.Void set_CurrentCulture(System.Globalization.CultureInfo value)
     // Offset: 0x1467AF4
     void set_CurrentCulture(::System::Globalization::CultureInfo* value);

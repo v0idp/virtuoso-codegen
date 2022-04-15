@@ -58,14 +58,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.DisableColldiersBehaviour template
-    [[deprecated]] ::VROSC::DisableColldiersBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::DisableColldiersBehaviour*& dyn_template();
     // public System.Void .ctor()
     // Offset: 0x8E4B14
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DisableColldiersAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DisableColldiersAsset::.ctor");

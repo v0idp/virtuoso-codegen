@@ -212,41 +212,41 @@ namespace System::Net {
     static_assert(sizeof(::System::Net::MonoChunkStream*) == 0x8);
     public:
     // Get instance field reference: private System.Net.BufferOffsetSize readBuffer
-    [[deprecated]] ::System::Net::BufferOffsetSize*& dyn_readBuffer();
+    [[deprecated("Use field access instead!")]] ::System::Net::BufferOffsetSize*& dyn_readBuffer();
     // Get instance field reference: private System.Int64 contentLength
-    [[deprecated]] int64_t& dyn_contentLength();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_contentLength();
     // Get instance field reference: private System.Int64 totalRead
-    [[deprecated]] int64_t& dyn_totalRead();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_totalRead();
     // Get instance field reference: private System.Boolean nextReadCalled
-    [[deprecated]] bool& dyn_nextReadCalled();
+    [[deprecated("Use field access instead!")]] bool& dyn_nextReadCalled();
     // Get instance field reference: private System.Int32 stream_length
-    [[deprecated]] int& dyn_stream_length();
+    [[deprecated("Use field access instead!")]] int& dyn_stream_length();
     // Get instance field reference: private System.Net.WebCompletionSource pendingRead
-    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_pendingRead();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebCompletionSource*& dyn_pendingRead();
     // Get instance field reference: private System.Object locker
-    [[deprecated]] ::Il2CppObject*& dyn_locker();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_locker();
     // Get instance field reference: private System.Int32 nestedRead
-    [[deprecated]] int& dyn_nestedRead();
+    [[deprecated("Use field access instead!")]] int& dyn_nestedRead();
     // Get instance field reference: private System.Boolean read_eof
-    [[deprecated]] bool& dyn_read_eof();
+    [[deprecated("Use field access instead!")]] bool& dyn_read_eof();
     // Get instance field reference: private readonly System.Net.WebRequestStream <RequestStream>k__BackingField
-    [[deprecated]] ::System::Net::WebRequestStream*& dyn_$RequestStream$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebRequestStream*& dyn_$RequestStream$k__BackingField();
     // Get instance field reference: private System.Net.WebHeaderCollection <Headers>k__BackingField
-    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
     // Get instance field reference: private System.Net.HttpStatusCode <StatusCode>k__BackingField
-    [[deprecated]] ::System::Net::HttpStatusCode& dyn_$StatusCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpStatusCode& dyn_$StatusCode$k__BackingField();
     // Get instance field reference: private System.String <StatusDescription>k__BackingField
-    [[deprecated]] ::StringW& dyn_$StatusDescription$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$StatusDescription$k__BackingField();
     // Get instance field reference: private System.Version <Version>k__BackingField
-    [[deprecated]] ::System::Version*& dyn_$Version$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_$Version$k__BackingField();
     // Get instance field reference: private System.Boolean <KeepAlive>k__BackingField
-    [[deprecated]] bool& dyn_$KeepAlive$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$KeepAlive$k__BackingField();
     // Get instance field reference: readonly System.String ME
-    [[deprecated]] ::StringW& dyn_ME();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ME();
     // Get instance field reference: private System.Boolean <ChunkedRead>k__BackingField
-    [[deprecated]] bool& dyn_$ChunkedRead$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ChunkedRead$k__BackingField();
     // Get instance field reference: private System.Net.MonoChunkStream <ChunkStream>k__BackingField
-    [[deprecated]] ::System::Net::MonoChunkStream*& dyn_$ChunkStream$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::MonoChunkStream*& dyn_$ChunkStream$k__BackingField();
     // public System.Net.WebRequestStream get_RequestStream()
     // Offset: 0xC4BD28
     ::System::Net::WebRequestStream* get_RequestStream();

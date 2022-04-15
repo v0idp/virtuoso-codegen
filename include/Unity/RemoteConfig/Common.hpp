@@ -92,23 +92,23 @@ namespace Unity::RemoteConfig {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String appid
-    [[deprecated]] ::StringW& dyn_appid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_appid();
     // Get instance field reference: public System.String userid
-    [[deprecated]] ::StringW& dyn_userid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_userid();
     // Get instance field reference: public System.Int64 sessionid
-    [[deprecated]] int64_t& dyn_sessionid();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_sessionid();
     // Get instance field reference: public System.Int64 session_count
-    [[deprecated]] int64_t& dyn_session_count();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_session_count();
     // Get instance field reference: public System.String platform
-    [[deprecated]] ::StringW& dyn_platform();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_platform();
     // Get instance field reference: public System.Int32 platform_id
-    [[deprecated]] int& dyn_platform_id();
+    [[deprecated("Use field access instead!")]] int& dyn_platform_id();
     // Get instance field reference: public System.String sdk_ver
-    [[deprecated]] ::StringW& dyn_sdk_ver();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sdk_ver();
     // Get instance field reference: public System.Boolean debug_device
-    [[deprecated]] bool& dyn_debug_device();
+    [[deprecated("Use field access instead!")]] bool& dyn_debug_device();
     // Get instance field reference: public System.String device_id
-    [[deprecated]] ::StringW& dyn_device_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_device_id();
   }; // Unity.RemoteConfig.Common
   #pragma pack(pop)
   static check_size<sizeof(Common), 64 + sizeof(::StringW)> __Unity_RemoteConfig_CommonSizeCheck;

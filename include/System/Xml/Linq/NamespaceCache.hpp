@@ -52,9 +52,9 @@ namespace System::Xml::Linq {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Xml.Linq.XNamespace ns
-    [[deprecated]] ::System::Xml::Linq::XNamespace*& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XNamespace*& dyn_ns();
     // Get instance field reference: private System.String namespaceName
-    [[deprecated]] ::StringW& dyn_namespaceName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_namespaceName();
     // public System.Xml.Linq.XNamespace Get(System.String namespaceName)
     // Offset: 0x18541A4
     ::System::Xml::Linq::XNamespace* Get(::StringW namespaceName);

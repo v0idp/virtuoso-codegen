@@ -61,11 +61,11 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: private System.Action`1<System.String> PermissionGranted
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_PermissionGranted();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_PermissionGranted();
     // Get instance field reference: private System.Action`1<System.String> PermissionDenied
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_PermissionDenied();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_PermissionDenied();
     // Get instance field reference: private System.Action`1<System.String> PermissionDeniedAndDontAskAgain
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_PermissionDeniedAndDontAskAgain();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_PermissionDeniedAndDontAskAgain();
     // public System.Void add_PermissionGranted(System.Action`1<System.String> value)
     // Offset: 0x18744E0
     void add_PermissionGranted(::System::Action_1<::StringW>* value);
@@ -84,6 +84,13 @@ namespace UnityEngine::Android {
     // public System.Void remove_PermissionDeniedAndDontAskAgain(System.Action`1<System.String> value)
     // Offset: 0x1874800
     void remove_PermissionDeniedAndDontAskAgain(::System::Action_1<::StringW>* value);
+    // public System.Void .ctor()
+    // Offset: 0x18748A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PermissionCallbacks* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Android::PermissionCallbacks::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PermissionCallbacks*, creationType>()));
+    }
     // private System.Void onPermissionGranted(System.String permissionName)
     // Offset: 0x1874918
     void onPermissionGranted(::StringW permissionName);
@@ -93,15 +100,6 @@ namespace UnityEngine::Android {
     // private System.Void onPermissionDeniedAndDontAskAgain(System.String permissionName)
     // Offset: 0x18749F8
     void onPermissionDeniedAndDontAskAgain(::StringW permissionName);
-    // public System.Void .ctor()
-    // Offset: 0x18748A0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PermissionCallbacks* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Android::PermissionCallbacks::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PermissionCallbacks*, creationType>()));
-    }
   }; // UnityEngine.Android.PermissionCallbacks
   #pragma pack(pop)
   static check_size<sizeof(PermissionCallbacks), 48 + sizeof(::System::Action_1<::StringW>*)> __UnityEngine_Android_PermissionCallbacksSizeCheck;
@@ -162,6 +160,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Android::PermissionCallbacks*), "remove_PermissionDeniedAndDontAskAgain", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Android::PermissionCallbacks::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Android::PermissionCallbacks::onPermissionGranted
 // Il2CppName: onPermissionGranted
 template<>
@@ -189,7 +191,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Android::PermissionCallbacks*), "onPermissionDeniedAndDontAskAgain", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{permissionName});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Android::PermissionCallbacks::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

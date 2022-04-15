@@ -147,27 +147,27 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private System.String m_LastString
-    [[deprecated]] ::StringW& dyn_m_LastString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_LastString();
     // Get instance field reference: private UnityEngine.TextGenerationSettings m_LastSettings
-    [[deprecated]] ::UnityEngine::TextGenerationSettings& dyn_m_LastSettings();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextGenerationSettings& dyn_m_LastSettings();
     // Get instance field reference: private System.Boolean m_HasGenerated
-    [[deprecated]] bool& dyn_m_HasGenerated();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasGenerated();
     // Get instance field reference: private UnityEngine.TextGenerationError m_LastValid
-    [[deprecated]] ::UnityEngine::TextGenerationError& dyn_m_LastValid();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextGenerationError& dyn_m_LastValid();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.UIVertex> m_Verts
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UIVertex>*& dyn_m_Verts();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UIVertex>*& dyn_m_Verts();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.UICharInfo> m_Characters
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UICharInfo>*& dyn_m_Characters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UICharInfo>*& dyn_m_Characters();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.UILineInfo> m_Lines
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UILineInfo>*& dyn_m_Lines();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UILineInfo>*& dyn_m_Lines();
     // Get instance field reference: private System.Boolean m_CachedVerts
-    [[deprecated]] bool& dyn_m_CachedVerts();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CachedVerts();
     // Get instance field reference: private System.Boolean m_CachedCharacters
-    [[deprecated]] bool& dyn_m_CachedCharacters();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CachedCharacters();
     // Get instance field reference: private System.Boolean m_CachedLines
-    [[deprecated]] bool& dyn_m_CachedLines();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CachedLines();
     // public System.Int32 get_characterCountVisible()
     // Offset: 0x18FC4A0
     int get_characterCountVisible();
@@ -189,6 +189,13 @@ namespace UnityEngine {
     // public System.Int32 get_lineCount()
     // Offset: 0x18FD270
     int get_lineCount();
+    // public System.Void .ctor()
+    // Offset: 0x18FC170
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TextGenerator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TextGenerator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TextGenerator*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 initialCapacity)
     // Offset: 0x18FC178
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -259,15 +266,6 @@ namespace UnityEngine {
     // private System.Boolean Populate_Internal_Injected(System.String str, UnityEngine.Font font, ref UnityEngine.Color color, System.Int32 fontSize, System.Single scaleFactor, System.Single lineSpacing, UnityEngine.FontStyle style, System.Boolean richText, System.Boolean resizeTextForBestFit, System.Int32 resizeTextMinSize, System.Int32 resizeTextMaxSize, System.Int32 verticalOverFlow, System.Int32 horizontalOverflow, System.Boolean updateBounds, UnityEngine.TextAnchor anchor, System.Single extentsX, System.Single extentsY, System.Single pivotX, System.Single pivotY, System.Boolean generateOutOfBounds, System.Boolean alignByGeometry, out System.UInt32 error)
     // Offset: 0x18FD400
     bool Populate_Internal_Injected(::StringW str, ::UnityEngine::Font* font, ByRef<::UnityEngine::Color> color, int fontSize, float scaleFactor, float lineSpacing, ::UnityEngine::FontStyle style, bool richText, bool resizeTextForBestFit, int resizeTextMinSize, int resizeTextMaxSize, int verticalOverFlow, int horizontalOverflow, bool updateBounds, ::UnityEngine::TextAnchor anchor, float extentsX, float extentsY, float pivotX, float pivotY, bool generateOutOfBounds, bool alignByGeometry, ByRef<uint> error);
-    // public System.Void .ctor()
-    // Offset: 0x18FC170
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TextGenerator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TextGenerator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TextGenerator*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x18FC2EC
     // Implemented from: System.Object
@@ -335,6 +333,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::TextGenerator*), "get_lineCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::TextGenerator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::TextGenerator::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -593,10 +595,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::TextGenerator*), "Populate_Internal_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{str, font, color, fontSize, scaleFactor, lineSpacing, style, richText, resizeTextForBestFit, resizeTextMinSize, resizeTextMaxSize, verticalOverFlow, horizontalOverflow, updateBounds, anchor, extentsX, extentsY, pivotX, pivotY, generateOutOfBounds, alignByGeometry, error});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::TextGenerator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::TextGenerator::Finalize
 // Il2CppName: Finalize
 template<>

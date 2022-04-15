@@ -107,23 +107,23 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _edges
-    [[deprecated]] int& dyn__edges();
+    [[deprecated("Use field access instead!")]] int& dyn__edges();
     // Get instance field reference: private System.Single _bottomRadius
-    [[deprecated]] float& dyn__bottomRadius();
+    [[deprecated("Use field access instead!")]] float& dyn__bottomRadius();
     // Get instance field reference: private System.Single _mouthWidth
-    [[deprecated]] float& dyn__mouthWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__mouthWidth();
     // Get instance field reference: private System.Single _mouthHeight
-    [[deprecated]] float& dyn__mouthHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__mouthHeight();
     // Get instance field reference: private System.Single _mouthOpening
-    [[deprecated]] float& dyn__mouthOpening();
+    [[deprecated("Use field access instead!")]] float& dyn__mouthOpening();
     // Get instance field reference: private System.Single _mouthFlat
-    [[deprecated]] float& dyn__mouthFlat();
+    [[deprecated("Use field access instead!")]] float& dyn__mouthFlat();
     // Get instance field reference: private System.Int32 _mouthStart
-    [[deprecated]] int& dyn__mouthStart();
+    [[deprecated("Use field access instead!")]] int& dyn__mouthStart();
     // Get instance field reference: private System.Int32 _mouthEnd
-    [[deprecated]] int& dyn__mouthEnd();
+    [[deprecated("Use field access instead!")]] int& dyn__mouthEnd();
     // Get instance field reference: private System.Int32 _mouthVertCount
-    [[deprecated]] int& dyn__mouthVertCount();
+    [[deprecated("Use field access instead!")]] int& dyn__mouthVertCount();
     // private System.Void OnValidate()
     // Offset: 0xB249DC
     void OnValidate();
@@ -148,9 +148,6 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xB25A8C
     // Implemented from: VROSC.UI.Meshes.ProceduralMeshData
     // Base method: System.Void ProceduralMeshData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralPipe* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralPipe::.ctor");

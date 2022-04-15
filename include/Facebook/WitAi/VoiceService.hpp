@@ -64,7 +64,7 @@ namespace Facebook::WitAi {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Facebook.WitAi.Events.VoiceEvents events
-    [[deprecated]] ::Facebook::WitAi::Events::VoiceEvents*& dyn_events();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::VoiceEvents*& dyn_events();
     // public System.Boolean get_Active()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_Active();
@@ -89,6 +89,13 @@ namespace Facebook::WitAi {
     // public System.Boolean get_ShouldSendMicData()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool get_ShouldSendMicData();
+    // protected System.Void .ctor()
+    // Offset: 0x16709F4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VoiceService* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::VoiceService::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VoiceService*, creationType>()));
+    }
     // public System.Void Activate()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Activate();
@@ -110,19 +117,6 @@ namespace Facebook::WitAi {
     // public System.Void Activate(System.String text, Facebook.WitAi.Configuration.WitRequestOptions requestOptions)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Activate(::StringW text, ::Facebook::WitAi::Configuration::WitRequestOptions* requestOptions);
-    // protected System.Void .ctor()
-    // Offset: 0x16709F4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VoiceService* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::VoiceService::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VoiceService*, creationType>()));
-    }
   }; // Facebook.WitAi.VoiceService
   #pragma pack(pop)
   static check_size<sizeof(VoiceService), 24 + sizeof(::Facebook::WitAi::Events::VoiceEvents*)> __Facebook_WitAi_VoiceServiceSizeCheck;
@@ -195,6 +189,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::VoiceService*), "get_ShouldSendMicData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Facebook::WitAi::VoiceService::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::VoiceService::Activate
 // Il2CppName: Activate
 template<>
@@ -256,7 +254,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::VoiceService*), "Activate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{text, requestOptions});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::VoiceService::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

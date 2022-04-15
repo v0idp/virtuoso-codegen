@@ -100,15 +100,15 @@ namespace System::Xml::Schema {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Boolean boolVal
-      [[deprecated]] bool& dyn_boolVal();
+      [[deprecated("Use field access instead!")]] bool& dyn_boolVal();
       // Get instance field reference: public System.Double dblVal
-      [[deprecated]] double& dyn_dblVal();
+      [[deprecated("Use field access instead!")]] double& dyn_dblVal();
       // Get instance field reference: public System.Int64 i64Val
-      [[deprecated]] int64_t& dyn_i64Val();
+      [[deprecated("Use field access instead!")]] int64_t& dyn_i64Val();
       // Get instance field reference: public System.Int32 i32Val
-      [[deprecated]] int& dyn_i32Val();
+      [[deprecated("Use field access instead!")]] int& dyn_i32Val();
       // Get instance field reference: public System.DateTime dtVal
-      [[deprecated]] ::System::DateTime& dyn_dtVal();
+      [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_dtVal();
     }; // System.Xml.Schema.XmlAtomicValue/System.Xml.Schema.Union
     // WARNING Not writing size check since size may be invalid!
     public:
@@ -146,15 +146,15 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::ICloneable*>(this);
     }
     // Get instance field reference: private System.Xml.Schema.XmlSchemaType xmlType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaType*& dyn_xmlType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaType*& dyn_xmlType();
     // Get instance field reference: private System.Object objVal
-    [[deprecated]] ::Il2CppObject*& dyn_objVal();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_objVal();
     // Get instance field reference: private System.TypeCode clrType
-    [[deprecated]] ::System::TypeCode& dyn_clrType();
+    [[deprecated("Use field access instead!")]] ::System::TypeCode& dyn_clrType();
     // Get instance field reference: private System.Xml.Schema.XmlAtomicValue/System.Xml.Schema.Union unionVal
-    [[deprecated]] ::System::Xml::Schema::XmlAtomicValue::Union& dyn_unionVal();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlAtomicValue::Union& dyn_unionVal();
     // Get instance field reference: private System.Xml.Schema.XmlAtomicValue/System.Xml.Schema.NamespacePrefixForQName nsPrefix
-    [[deprecated]] ::System::Xml::Schema::XmlAtomicValue::NamespacePrefixForQName*& dyn_nsPrefix();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlAtomicValue::NamespacePrefixForQName*& dyn_nsPrefix();
     // System.Void .ctor(System.Xml.Schema.XmlSchemaType xmlType, System.Boolean value)
     // Offset: 0x11B0050
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

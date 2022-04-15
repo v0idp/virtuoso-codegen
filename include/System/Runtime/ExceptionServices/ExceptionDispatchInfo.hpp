@@ -48,9 +48,9 @@ namespace System::Runtime::ExceptionServices {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Exception m_Exception
-    [[deprecated]] ::System::Exception*& dyn_m_Exception();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_m_Exception();
     // Get instance field reference: private System.Object m_stackTrace
-    [[deprecated]] ::Il2CppObject*& dyn_m_stackTrace();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_stackTrace();
     // System.Object get_BinaryStackTraceArray()
     // Offset: 0x14FA2CC
     ::Il2CppObject* get_BinaryStackTraceArray();

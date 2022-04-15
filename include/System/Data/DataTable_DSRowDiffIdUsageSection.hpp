@@ -46,7 +46,7 @@ namespace System::Data {
       return targetDS;
     }
     // Get instance field reference: private System.Data.DataSet _targetDS
-    [[deprecated]] ::System::Data::DataSet*& dyn__targetDS();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__targetDS();
     // System.Void Prepare(System.Data.DataSet ds)
     // Offset: 0x18CE064
     void Prepare(::System::Data::DataSet* ds);

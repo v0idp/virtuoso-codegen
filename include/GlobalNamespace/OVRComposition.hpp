@@ -79,13 +79,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRPose) == 0x1C);
     public:
     // Get instance field reference: public System.Boolean cameraInTrackingSpace
-    [[deprecated]] bool& dyn_cameraInTrackingSpace();
+    [[deprecated("Use field access instead!")]] bool& dyn_cameraInTrackingSpace();
     // Get instance field reference: public OVRCameraRig cameraRig
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraRig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraRig();
     // Get instance field reference: protected System.Boolean usingLastAttachedNodePose
-    [[deprecated]] bool& dyn_usingLastAttachedNodePose();
+    [[deprecated("Use field access instead!")]] bool& dyn_usingLastAttachedNodePose();
     // Get instance field reference: protected OVRPose lastAttachedNodePose
-    [[deprecated]] ::GlobalNamespace::OVRPose& dyn_lastAttachedNodePose();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPose& dyn_lastAttachedNodePose();
     // protected System.Void .ctor(UnityEngine.GameObject parentObject, UnityEngine.Camera mainCamera, OVRMixedRealityCaptureConfiguration configuration)
     // Offset: 0x991D54
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

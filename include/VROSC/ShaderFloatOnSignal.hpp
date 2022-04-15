@@ -72,13 +72,13 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _outputRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__outputRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__outputRenderer();
     // Get instance field reference: private System.String _valueName
-    [[deprecated]] ::StringW& dyn__valueName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__valueName();
     // Get instance field reference: private VROSC.FloatField _startValue
-    [[deprecated]] ::VROSC::FloatField*& dyn__startValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::FloatField*& dyn__startValue();
     // Get instance field reference: private UnityEngine.Material _materialInstance
-    [[deprecated]] ::UnityEngine::Material*& dyn__materialInstance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__materialInstance();
     // protected System.Void Awake()
     // Offset: 0x1926F88
     void Awake();
@@ -96,11 +96,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ShaderFloatOnSignal* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ShaderFloatOnSignal::.ctor");

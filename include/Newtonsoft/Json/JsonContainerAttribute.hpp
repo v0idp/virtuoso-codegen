@@ -96,23 +96,23 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(::ArrayW<::Il2CppObject*>) == 0x8);
     public:
     // Get instance field reference: private System.Type <ItemConverterType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$ItemConverterType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$ItemConverterType$k__BackingField();
     // Get instance field reference: private System.Object[] <ItemConverterParameters>k__BackingField
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_$ItemConverterParameters$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_$ItemConverterParameters$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Serialization.NamingStrategy <NamingStrategyInstance>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::NamingStrategy*& dyn_$NamingStrategyInstance$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::NamingStrategy*& dyn_$NamingStrategyInstance$k__BackingField();
     // Get instance field reference: System.Nullable`1<System.Boolean> _isReference
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__isReference();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__isReference();
     // Get instance field reference: System.Nullable`1<System.Boolean> _itemIsReference
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__itemIsReference();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__itemIsReference();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.ReferenceLoopHandling> _itemReferenceLoopHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__itemReferenceLoopHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__itemReferenceLoopHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.TypeNameHandling> _itemTypeNameHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__itemTypeNameHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__itemTypeNameHandling();
     // Get instance field reference: private System.Type _namingStrategyType
-    [[deprecated]] ::System::Type*& dyn__namingStrategyType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__namingStrategyType();
     // Get instance field reference: private System.Object[] _namingStrategyParameters
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__namingStrategyParameters();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__namingStrategyParameters();
     // public System.Type get_ItemConverterType()
     // Offset: 0xEF28F8
     ::System::Type* get_ItemConverterType();

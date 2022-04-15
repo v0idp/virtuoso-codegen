@@ -63,7 +63,7 @@ namespace System::ComponentModel {
       return type;
     }
     // Get instance field reference: private System.Type _type
-    [[deprecated]] ::System::Type*& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__type();
     // System.ComponentModel.TypeDescriptionProvider get_Provider()
     // Offset: 0x10EE46C
     ::System::ComponentModel::TypeDescriptionProvider* get_Provider();

@@ -68,11 +68,11 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<int>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIScrollableContainer _scrollableContainer
-    [[deprecated]] ::VROSC::UIScrollableContainer*& dyn__scrollableContainer();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIScrollableContainer*& dyn__scrollableContainer();
     // Get instance field reference: public System.Action`1<System.Int32> OnItemClicked
-    [[deprecated]] ::System::Action_1<int>*& dyn_OnItemClicked();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<int>*& dyn_OnItemClicked();
     // Get instance field reference: public System.Action`1<System.Int32> OnItemHoverChanged
-    [[deprecated]] ::System::Action_1<int>*& dyn_OnItemHoverChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<int>*& dyn_OnItemHoverChanged();
     // private System.Void OnEnable()
     // Offset: 0x1914F4C
     void OnEnable();
@@ -96,11 +96,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIScrollableContainerInput* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIScrollableContainerInput::.ctor");

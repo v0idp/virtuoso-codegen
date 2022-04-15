@@ -69,11 +69,11 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt16 _tag
-    [[deprecated]] uint16_t& dyn__tag();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn__tag();
     // Get instance field reference: private System.UInt16 _size
-    [[deprecated]] uint16_t& dyn__size();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn__size();
     // Get instance field reference: private System.Byte[] _data
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__data();
     // public System.UInt16 get_Tag()
     // Offset: 0x16A1170
     uint16_t get_Tag();

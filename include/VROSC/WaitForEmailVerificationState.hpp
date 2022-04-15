@@ -64,11 +64,11 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authManager
-    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::AuthenticationManager*& dyn__authManager();
     // Get instance field reference: private System.Single _reloadTimer
-    [[deprecated]] float& dyn__reloadTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__reloadTimer();
     // Get instance field reference: private System.Boolean _attemptedSendingVerificationEmail
-    [[deprecated]] bool& dyn__attemptedSendingVerificationEmail();
+    [[deprecated("Use field access instead!")]] bool& dyn__attemptedSendingVerificationEmail();
     // public System.Void .ctor(VROSC.AuthenticationManager authManager)
     // Offset: 0x94FC78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

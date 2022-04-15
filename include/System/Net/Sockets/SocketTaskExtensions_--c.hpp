@@ -59,21 +59,19 @@ namespace System::Net::Sockets {
     // static private System.Void .cctor()
     // Offset: 0xA01CEC
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xA01D4C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SocketTaskExtensions::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SocketTaskExtensions::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SocketTaskExtensions::$$c*, creationType>()));
+    }
     // System.IAsyncResult <ConnectAsync>b__2_0(System.Net.EndPoint targetEndPoint, System.AsyncCallback callback, System.Object state)
     // Offset: 0xA01D54
     ::System::IAsyncResult* $ConnectAsync$b__2_0(::System::Net::EndPoint* targetEndPoint, ::System::AsyncCallback* callback, ::Il2CppObject* state);
     // System.Void <ConnectAsync>b__2_1(System.IAsyncResult asyncResult)
     // Offset: 0xA01DF8
     void $ConnectAsync$b__2_1(::System::IAsyncResult* asyncResult);
-    // public System.Void .ctor()
-    // Offset: 0xA01D4C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SocketTaskExtensions::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SocketTaskExtensions::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SocketTaskExtensions::$$c*, creationType>()));
-    }
   }; // System.Net.Sockets.SocketTaskExtensions/System.Net.Sockets.<>c
   #pragma pack(pop)
 }
@@ -86,6 +84,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::SocketTaskExtensions::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::Sockets::SocketTaskExtensions::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Sockets::SocketTaskExtensions::$$c::$ConnectAsync$b__2_0
 // Il2CppName: <ConnectAsync>b__2_0
 template<>
@@ -106,7 +108,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::SocketTaskExtensions::$$c*), "<ConnectAsync>b__2_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{asyncResult});
   }
 };
-// Writing MetadataGetter for method: System::Net::Sockets::SocketTaskExtensions::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

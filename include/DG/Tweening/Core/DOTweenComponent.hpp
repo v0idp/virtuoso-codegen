@@ -105,17 +105,24 @@ namespace DG::Tweening::Core {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Int32 inspectorUpdater
-    [[deprecated]] int& dyn_inspectorUpdater();
+    [[deprecated("Use field access instead!")]] int& dyn_inspectorUpdater();
     // Get instance field reference: private System.Single _unscaledTime
-    [[deprecated]] float& dyn__unscaledTime();
+    [[deprecated("Use field access instead!")]] float& dyn__unscaledTime();
     // Get instance field reference: private System.Single _unscaledDeltaTime
-    [[deprecated]] float& dyn__unscaledDeltaTime();
+    [[deprecated("Use field access instead!")]] float& dyn__unscaledDeltaTime();
     // Get instance field reference: private System.Boolean _paused
-    [[deprecated]] bool& dyn__paused();
+    [[deprecated("Use field access instead!")]] bool& dyn__paused();
     // Get instance field reference: private System.Single _pausedTime
-    [[deprecated]] float& dyn__pausedTime();
+    [[deprecated("Use field access instead!")]] float& dyn__pausedTime();
     // Get instance field reference: private System.Boolean _duplicateToDestroy
-    [[deprecated]] bool& dyn__duplicateToDestroy();
+    [[deprecated("Use field access instead!")]] bool& dyn__duplicateToDestroy();
+    // public System.Void .ctor()
+    // Offset: 0x15DCAF0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTweenComponent* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOTweenComponent::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTweenComponent*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x15DB1C0
     void Awake();
@@ -167,25 +174,16 @@ namespace DG::Tweening::Core {
     // static System.Void DestroyInstance()
     // Offset: 0x15D799C
     static void DestroyInstance();
-    // public System.Void .ctor()
-    // Offset: 0x15DCAF0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTweenComponent* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOTweenComponent::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTweenComponent*, creationType>()));
-    }
   }; // DG.Tweening.Core.DOTweenComponent
   #pragma pack(pop)
   static check_size<sizeof(DOTweenComponent), 44 + sizeof(bool)> __DG_Tweening_Core_DOTweenComponentSizeCheck;
   static_assert(sizeof(DOTweenComponent) == 0x2D);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::Core::DOTweenComponent::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::Core::DOTweenComponent::Awake
 // Il2CppName: Awake
 template<>
@@ -333,7 +331,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::Core::DOTweenComponent*), "DestroyInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::Core::DOTweenComponent::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -142,21 +142,21 @@ namespace System::Xml {
     // Set static field: static private readonly System.Byte[] rgCLenFromPrec
     static void _set_rgCLenFromPrec(::ArrayW<uint8_t> value);
     // Get instance field reference: System.Byte m_bLen
-    [[deprecated]] uint8_t& dyn_m_bLen();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_bLen();
     // Get instance field reference: System.Byte m_bPrec
-    [[deprecated]] uint8_t& dyn_m_bPrec();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_bPrec();
     // Get instance field reference: System.Byte m_bScale
-    [[deprecated]] uint8_t& dyn_m_bScale();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_bScale();
     // Get instance field reference: System.Byte m_bSign
-    [[deprecated]] uint8_t& dyn_m_bSign();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_bSign();
     // Get instance field reference: System.UInt32 m_data1
-    [[deprecated]] uint& dyn_m_data1();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_data1();
     // Get instance field reference: System.UInt32 m_data2
-    [[deprecated]] uint& dyn_m_data2();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_data2();
     // Get instance field reference: System.UInt32 m_data3
-    [[deprecated]] uint& dyn_m_data3();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_data3();
     // Get instance field reference: System.UInt32 m_data4
-    [[deprecated]] uint& dyn_m_data4();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_data4();
     // public System.Boolean get_IsPositive()
     // Offset: 0xB61B58
     bool get_IsPositive();

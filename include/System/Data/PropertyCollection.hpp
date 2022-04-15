@@ -37,9 +37,6 @@ namespace System::Data {
     public:
     // public System.Void .ctor()
     // Offset: 0x13C23EC
-    // Implemented from: System.Collections.Hashtable
-    // Base method: System.Void Hashtable::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PropertyCollection* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::PropertyCollection::.ctor");
@@ -47,8 +44,6 @@ namespace System::Data {
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x13C23F4
-    // Implemented from: System.Collections.Hashtable
-    // Base method: System.Void Hashtable::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PropertyCollection* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::PropertyCollection::.ctor");

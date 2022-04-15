@@ -96,17 +96,17 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 MaxPacketQueue
     static void _set_MaxPacketQueue(int value);
     // Get instance field reference: private System.Collections.Generic.Queue`1<OvrAvatarPacket> packetQueue
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarPacket*>*& dyn_packetQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarPacket*>*& dyn_packetQueue();
     // Get instance field reference: private System.IntPtr CurrentSDKPacket
-    [[deprecated]] ::System::IntPtr& dyn_CurrentSDKPacket();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_CurrentSDKPacket();
     // Get instance field reference: private System.Single CurrentPacketTime
-    [[deprecated]] float& dyn_CurrentPacketTime();
+    [[deprecated("Use field access instead!")]] float& dyn_CurrentPacketTime();
     // Get instance field reference: private System.Int32 CurrentSequence
-    [[deprecated]] int& dyn_CurrentSequence();
+    [[deprecated("Use field access instead!")]] int& dyn_CurrentSequence();
     // Get instance field reference: private System.Boolean isStreaming
-    [[deprecated]] bool& dyn_isStreaming();
+    [[deprecated("Use field access instead!")]] bool& dyn_isStreaming();
     // Get instance field reference: private OvrAvatarPacket currentPacket
-    [[deprecated]] ::GlobalNamespace::OvrAvatarPacket*& dyn_currentPacket();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarPacket*& dyn_currentPacket();
     // public System.Void QueuePacket(System.Int32 sequence, OvrAvatarPacket packet)
     // Offset: 0xF90358
     void QueuePacket(int sequence, ::GlobalNamespace::OvrAvatarPacket* packet);
@@ -120,11 +120,6 @@ namespace GlobalNamespace {
     // Offset: 0xF90750
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarRemoteDriver* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarRemoteDriver::.ctor");

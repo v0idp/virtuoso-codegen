@@ -108,29 +108,29 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String DisplayName
-    [[deprecated]] ::StringW& dyn_DisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DisplayName();
     // Get instance field reference: public readonly System.UInt64 ID
-    [[deprecated]] uint64_t& dyn_ID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly System.String ImageURL
-    [[deprecated]] ::StringW& dyn_ImageURL();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ImageURL();
     // Get instance field reference: public readonly System.String InviteToken
-    [[deprecated]] ::StringW& dyn_InviteToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_InviteToken();
     // Get instance field reference: public readonly System.String OculusID
-    [[deprecated]] ::StringW& dyn_OculusID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_OculusID();
     // Get instance field reference: public readonly System.String Presence
-    [[deprecated]] ::StringW& dyn_Presence();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Presence();
     // Get instance field reference: public readonly System.String PresenceDeeplinkMessage
-    [[deprecated]] ::StringW& dyn_PresenceDeeplinkMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PresenceDeeplinkMessage();
     // Get instance field reference: public readonly System.String PresenceDestinationApiName
-    [[deprecated]] ::StringW& dyn_PresenceDestinationApiName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PresenceDestinationApiName();
     // Get instance field reference: public readonly System.String PresenceLobbySessionId
-    [[deprecated]] ::StringW& dyn_PresenceLobbySessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PresenceLobbySessionId();
     // Get instance field reference: public readonly System.String PresenceMatchSessionId
-    [[deprecated]] ::StringW& dyn_PresenceMatchSessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PresenceMatchSessionId();
     // Get instance field reference: public readonly Oculus.Platform.UserPresenceStatus PresenceStatus
-    [[deprecated]] ::Oculus::Platform::UserPresenceStatus& dyn_PresenceStatus();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::UserPresenceStatus& dyn_PresenceStatus();
     // Get instance field reference: public readonly System.String SmallImageUrl
-    [[deprecated]] ::StringW& dyn_SmallImageUrl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SmallImageUrl();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x1716970
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

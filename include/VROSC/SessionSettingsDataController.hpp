@@ -74,9 +74,9 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::SessionSettingsDataController*>*) == 0x8);
     public:
     // Get instance field reference: public System.Action`1<VROSC.SessionSettingsDataController> OnDataLoaded
-    [[deprecated]] ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataLoaded();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataLoaded();
     // Get instance field reference: public System.Action`1<VROSC.SessionSettingsDataController> OnDataSaved
-    [[deprecated]] ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataSaved();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::SessionSettingsDataController*>*& dyn_OnDataSaved();
     // protected VROSC.SessionSettingsDataModel get_DataModel()
     // Offset: 0x198729C
     ::VROSC::SessionSettingsDataModel* get_DataModel();
@@ -150,7 +150,6 @@ namespace VROSC {
     // Offset: 0x1987318
     // Implemented from: VROSC.BaseDataController
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionSettingsDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionSettingsDataController::.ctor");

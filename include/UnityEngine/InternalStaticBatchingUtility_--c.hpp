@@ -54,21 +54,19 @@ namespace UnityEngine {
     // static private System.Void .cctor()
     // Offset: 0x1842C74
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1842CD4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InternalStaticBatchingUtility::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::InternalStaticBatchingUtility::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InternalStaticBatchingUtility::$$c*, creationType>()));
+    }
     // System.UInt32 <SortGameObjectsForStaticBatching>b__5_2(UnityEngine.GameObject g)
     // Offset: 0x1842CDC
     uint $SortGameObjectsForStaticBatching$b__5_2(::UnityEngine::GameObject* g);
     // System.Boolean <CombineGameObjects>b__6_0(UnityEngine.Material m)
     // Offset: 0x1842DE0
     bool $CombineGameObjects$b__6_0(::UnityEngine::Material* m);
-    // public System.Void .ctor()
-    // Offset: 0x1842CD4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InternalStaticBatchingUtility::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::InternalStaticBatchingUtility::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InternalStaticBatchingUtility::$$c*, creationType>()));
-    }
   }; // UnityEngine.InternalStaticBatchingUtility/UnityEngine.<>c
   #pragma pack(pop)
 }
@@ -81,6 +79,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::InternalStaticBatchingUtility::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::InternalStaticBatchingUtility::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::InternalStaticBatchingUtility::$$c::$SortGameObjectsForStaticBatching$b__5_2
 // Il2CppName: <SortGameObjectsForStaticBatching>b__5_2
 template<>
@@ -99,7 +101,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::InternalStaticBatchingUtility::$$c*), "<CombineGameObjects>b__6_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{m});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::InternalStaticBatchingUtility::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

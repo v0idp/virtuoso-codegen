@@ -136,32 +136,39 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SelectionBar _loopLengthSelectionBar
-    [[deprecated]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
+    [[deprecated("Use field access instead!")]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
     // Get instance field reference: private UnityEngine.GameObject _noLoopsMode
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__noLoopsMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__noLoopsMode();
     // Get instance field reference: private UnityEngine.GameObject _gotLoops
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__gotLoops();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__gotLoops();
     // Get instance field reference: private UnityEngine.GameObject _loopLengthAutoText
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__loopLengthAutoText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__loopLengthAutoText();
     // Get instance field reference: private VROSC.LoopStationRecordingButton _recordingButton
-    [[deprecated]] ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecordingButton*& dyn__recordingButton();
     // Get instance field reference: private VROSC.LoopPlayerRecordingState _firstLoopRecordingState
-    [[deprecated]] ::VROSC::LoopPlayerRecordingState*& dyn__firstLoopRecordingState();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerRecordingState*& dyn__firstLoopRecordingState();
     // Get instance field reference: private VROSC.UISlideToggle _overdubToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__overdubToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__overdubToggle();
     // Get instance field reference: private VROSC.UISlideToggle _matchLengthToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__matchLengthToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__matchLengthToggle();
     // Get instance field reference: private VROSC.UIButton _rerecordButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__rerecordButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__rerecordButton();
     // Get instance field reference: private VROSC.LoopStationLoopHandler/VROSC.LooperState _state
-    [[deprecated]] ::VROSC::LoopStationLoopHandler::LooperState& dyn__state();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationLoopHandler::LooperState& dyn__state();
     // Get instance field reference: private VROSC.LoopStationRecorder _recorder
-    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__recorder();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecorder*& dyn__recorder();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // public System.Single get_OverDubLength()
     // Offset: 0x1977D50
     float get_OverDubLength();
+    // public System.Void .ctor()
+    // Offset: 0x1978334
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationRecordingUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationRecordingUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationRecordingUI*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopStationRecorder recorder, VROSC.LoopStation loopStation)
     // Offset: 0x197464C
     void Setup(::VROSC::LoopStationRecorder* recorder, ::VROSC::LoopStation* loopStation);
@@ -195,19 +202,6 @@ namespace VROSC {
     // private System.Void UserDataLoaded(VROSC.UserDataControllers dataControllers)
     // Offset: 0x19782E8
     void UserDataLoaded(::VROSC::UserDataControllers* dataControllers);
-    // public System.Void .ctor()
-    // Offset: 0x1978334
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationRecordingUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationRecordingUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationRecordingUI*, creationType>()));
-    }
   }; // VROSC.LoopStationRecordingUI
   #pragma pack(pop)
   static check_size<sizeof(LoopStationRecordingUI), 112 + sizeof(::VROSC::LoopStation*)> __VROSC_LoopStationRecordingUISizeCheck;
@@ -222,6 +216,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationRecordingUI*), "get_OverDubLength", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStationRecordingUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationRecordingUI::Setup
 // Il2CppName: Setup
 template<>
@@ -319,7 +317,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationRecordingUI*), "UserDataLoaded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{dataControllers});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationRecordingUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

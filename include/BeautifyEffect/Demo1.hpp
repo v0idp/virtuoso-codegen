@@ -68,13 +68,20 @@ namespace BeautifyEffect {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single deltaTime
-    [[deprecated]] float& dyn_deltaTime();
+    [[deprecated("Use field access instead!")]] float& dyn_deltaTime();
     // Get instance field reference: private System.Boolean benchmarkEnabled
-    [[deprecated]] bool& dyn_benchmarkEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_benchmarkEnabled();
     // Get instance field reference: private UnityEngine.GUIStyle style
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_style();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_style();
     // Get instance field reference: private UnityEngine.Rect rect
-    [[deprecated]] ::UnityEngine::Rect& dyn_rect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_rect();
+    // public System.Void .ctor()
+    // Offset: 0x8E3FD8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Demo1* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::BeautifyEffect::Demo1::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Demo1*, creationType>()));
+    }
     // private System.Void Update()
     // Offset: 0x8E3BB4
     void Update();
@@ -84,25 +91,16 @@ namespace BeautifyEffect {
     // private System.Void OnGUI()
     // Offset: 0x8E3DBC
     void OnGUI();
-    // public System.Void .ctor()
-    // Offset: 0x8E3FD8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Demo1* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::BeautifyEffect::Demo1::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Demo1*, creationType>()));
-    }
   }; // BeautifyEffect.Demo1
   #pragma pack(pop)
   static check_size<sizeof(Demo1), 40 + sizeof(::UnityEngine::Rect)> __BeautifyEffect_Demo1SizeCheck;
   static_assert(sizeof(Demo1) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: BeautifyEffect::Demo1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: BeautifyEffect::Demo1::Update
 // Il2CppName: Update
 template<>
@@ -127,7 +125,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Beaut
     return ::il2cpp_utils::FindMethod(classof(BeautifyEffect::Demo1*), "OnGUI", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: BeautifyEffect::Demo1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

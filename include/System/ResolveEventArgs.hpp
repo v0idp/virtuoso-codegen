@@ -52,9 +52,9 @@ namespace System {
     static_assert(sizeof(::System::Reflection::Assembly*) == 0x8);
     public:
     // Get instance field reference: private System.String m_Name
-    [[deprecated]] ::StringW& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Name();
     // Get instance field reference: private System.Reflection.Assembly m_Requesting
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_m_Requesting();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_m_Requesting();
     // public System.Void .ctor(System.String name)
     // Offset: 0xCDAE98
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

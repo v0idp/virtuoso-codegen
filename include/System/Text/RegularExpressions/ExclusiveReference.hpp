@@ -54,32 +54,34 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Text.RegularExpressions.RegexRunner _ref
-    [[deprecated]] ::System::Text::RegularExpressions::RegexRunner*& dyn__ref();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexRunner*& dyn__ref();
     // Get instance field reference: private System.Object _obj
-    [[deprecated]] ::Il2CppObject*& dyn__obj();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__obj();
     // Get instance field reference: private System.Int32 _locked
-    [[deprecated]] int& dyn__locked();
+    [[deprecated("Use field access instead!")]] int& dyn__locked();
+    // public System.Void .ctor()
+    // Offset: 0xEFFF74
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ExclusiveReference* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::ExclusiveReference::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ExclusiveReference*, creationType>()));
+    }
     // System.Object Get()
     // Offset: 0xEFFE10
     ::Il2CppObject* Get();
     // System.Void Release(System.Object obj)
     // Offset: 0xEFFE60
     void Release(::Il2CppObject* obj);
-    // public System.Void .ctor()
-    // Offset: 0xEFFF74
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ExclusiveReference* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::ExclusiveReference::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ExclusiveReference*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.ExclusiveReference
   #pragma pack(pop)
   static check_size<sizeof(ExclusiveReference), 32 + sizeof(int)> __System_Text_RegularExpressions_ExclusiveReferenceSizeCheck;
   static_assert(sizeof(ExclusiveReference) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Text::RegularExpressions::ExclusiveReference::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::ExclusiveReference::Get
 // Il2CppName: Get
 template<>
@@ -97,7 +99,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::ExclusiveReference*), "Release", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::ExclusiveReference::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -62,13 +62,13 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.BitArray bitarray
-    [[deprecated]] ::System::Collections::BitArray*& dyn_bitarray();
+    [[deprecated("Use field access instead!")]] ::System::Collections::BitArray*& dyn_bitarray();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Boolean currentElement
-    [[deprecated]] bool& dyn_currentElement();
+    [[deprecated("Use field access instead!")]] bool& dyn_currentElement();
     // public System.Object get_Current()
     // Offset: 0x13A7660
     ::Il2CppObject* get_Current();

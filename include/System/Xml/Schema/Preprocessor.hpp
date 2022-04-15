@@ -216,41 +216,41 @@ namespace System::Xml::Schema {
     // Set static field: static private System.Xml.Schema.XmlSchema builtInSchemaForXmlNS
     static void _set_builtInSchemaForXmlNS(::System::Xml::Schema::XmlSchema* value);
     // Get instance field reference: private System.String Xmlns
-    [[deprecated]] ::StringW& dyn_Xmlns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Xmlns();
     // Get instance field reference: private System.String NsXsi
-    [[deprecated]] ::StringW& dyn_NsXsi();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXsi();
     // Get instance field reference: private System.String targetNamespace
-    [[deprecated]] ::StringW& dyn_targetNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_targetNamespace();
     // Get instance field reference: private System.Xml.Schema.XmlSchema rootSchema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_rootSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_rootSchema();
     // Get instance field reference: private System.Xml.Schema.XmlSchema currentSchema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_currentSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_currentSchema();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm elementFormDefault
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_elementFormDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_elementFormDefault();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm attributeFormDefault
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_attributeFormDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_attributeFormDefault();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod blockDefault
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_blockDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_blockDefault();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod finalDefault
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_finalDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_finalDefault();
     // Get instance field reference: private System.Collections.Hashtable schemaLocations
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_schemaLocations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_schemaLocations();
     // Get instance field reference: private System.Collections.Hashtable chameleonSchemas
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_chameleonSchemas();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_chameleonSchemas();
     // Get instance field reference: private System.Collections.Hashtable referenceNamespaces
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_referenceNamespaces();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_referenceNamespaces();
     // Get instance field reference: private System.Collections.Hashtable processedExternals
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_processedExternals();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_processedExternals();
     // Get instance field reference: private System.Collections.SortedList lockList
-    [[deprecated]] ::System::Collections::SortedList*& dyn_lockList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn_lockList();
     // Get instance field reference: private System.Xml.XmlReaderSettings readerSettings
-    [[deprecated]] ::System::Xml::XmlReaderSettings*& dyn_readerSettings();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReaderSettings*& dyn_readerSettings();
     // Get instance field reference: private System.Xml.Schema.XmlSchema rootSchemaForRedefine
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_rootSchemaForRedefine();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_rootSchemaForRedefine();
     // Get instance field reference: private System.Collections.ArrayList redefinedList
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_redefinedList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_redefinedList();
     // Get instance field reference: private System.Xml.XmlResolver xmlResolver
-    [[deprecated]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
     // System.Void set_XmlResolver(System.Xml.XmlResolver value)
     // Offset: 0xB00420
     void set_XmlResolver(::System::Xml::XmlResolver* value);

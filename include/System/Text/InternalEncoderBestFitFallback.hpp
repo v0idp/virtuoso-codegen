@@ -57,9 +57,9 @@ namespace System::Text {
     // Deleting conversion operator: operator bool
     constexpr operator bool() const noexcept = delete;
     // Get instance field reference: System.Text.Encoding encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
     // Get instance field reference: System.Char[] arrayBestFit
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_arrayBestFit();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_arrayBestFit();
     // System.Void .ctor(System.Text.Encoding encoding)
     // Offset: 0x106D43C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

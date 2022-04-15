@@ -135,29 +135,29 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::StringW>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.String <>2__current
-    [[deprecated]] ::StringW& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: private System.String text
-    [[deprecated]] ::StringW& dyn_text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_text();
     // Get instance field reference: public System.String <>3__text
-    [[deprecated]] ::StringW& dyn_$$3__text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$$3__text();
     // Get instance field reference: private System.Byte nGramSize
-    [[deprecated]] uint8_t& dyn_nGramSize();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_nGramSize();
     // Get instance field reference: public System.Byte <>3__nGramSize
-    [[deprecated]] uint8_t& dyn_$$3__nGramSize();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_$$3__nGramSize();
     // Get instance field reference: private System.Text.StringBuilder <nGram>5__2
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_$nGram$5__2();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_$nGram$5__2();
     // Get instance field reference: private System.Collections.Generic.Queue`1<System.Int32> <wordLengths>5__3
-    [[deprecated]] ::System::Collections::Generic::Queue_1<int>*& dyn_$wordLengths$5__3();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<int>*& dyn_$wordLengths$5__3();
     // Get instance field reference: private System.Int32 <wordCount>5__4
-    [[deprecated]] int& dyn_$wordCount$5__4();
+    [[deprecated("Use field access instead!")]] int& dyn_$wordCount$5__4();
     // Get instance field reference: private System.Int32 <lastWordLen>5__5
-    [[deprecated]] int& dyn_$lastWordLen$5__5();
+    [[deprecated("Use field access instead!")]] int& dyn_$lastWordLen$5__5();
     // Get instance field reference: private System.Int32 <i>5__6
-    [[deprecated]] int& dyn_$i$5__6();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__6();
     // private System.String System.Collections.Generic.IEnumerator<System.String>.get_Current()
     // Offset: 0x1965348
     ::StringW System_Collections_Generic_IEnumerator$System_String$_get_Current();

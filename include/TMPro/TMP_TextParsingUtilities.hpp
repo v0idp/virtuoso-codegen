@@ -56,6 +56,13 @@ namespace TMPro {
     // static private System.Void .cctor()
     // Offset: 0xD10C14
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xD10C74
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_TextParsingUtilities* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextParsingUtilities::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_TextParsingUtilities*, creationType>()));
+    }
     // static public System.Int32 GetHashCode(System.String s)
     // Offset: 0xD10CE0
     static int GetHashCode(::StringW s);
@@ -83,15 +90,6 @@ namespace TMPro {
     // static System.UInt32 ConvertToUTF32(System.UInt32 highSurrogate, System.UInt32 lowSurrogate)
     // Offset: 0xD11030
     static uint ConvertToUTF32(uint highSurrogate, uint lowSurrogate);
-    // public System.Void .ctor()
-    // Offset: 0xD10C74
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_TextParsingUtilities* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextParsingUtilities::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_TextParsingUtilities*, creationType>()));
-    }
   }; // TMPro.TMP_TextParsingUtilities
   #pragma pack(pop)
 }
@@ -112,6 +110,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_TextParsingUtilities*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_TextParsingUtilities::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_TextParsingUtilities::GetHashCode
 // Il2CppName: GetHashCode
 template<>
@@ -194,7 +196,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint (*)(ui
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_TextParsingUtilities*), "ConvertToUTF32", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{highSurrogate, lowSurrogate});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_TextParsingUtilities::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -116,27 +116,27 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Boolean useTriggers
-    [[deprecated]] bool& dyn_useTriggers();
+    [[deprecated("Use field access instead!")]] bool& dyn_useTriggers();
     // Get instance field reference: public System.Boolean useLayerMask
-    [[deprecated]] bool& dyn_useLayerMask();
+    [[deprecated("Use field access instead!")]] bool& dyn_useLayerMask();
     // Get instance field reference: public System.Boolean useDepth
-    [[deprecated]] bool& dyn_useDepth();
+    [[deprecated("Use field access instead!")]] bool& dyn_useDepth();
     // Get instance field reference: public System.Boolean useOutsideDepth
-    [[deprecated]] bool& dyn_useOutsideDepth();
+    [[deprecated("Use field access instead!")]] bool& dyn_useOutsideDepth();
     // Get instance field reference: public System.Boolean useNormalAngle
-    [[deprecated]] bool& dyn_useNormalAngle();
+    [[deprecated("Use field access instead!")]] bool& dyn_useNormalAngle();
     // Get instance field reference: public System.Boolean useOutsideNormalAngle
-    [[deprecated]] bool& dyn_useOutsideNormalAngle();
+    [[deprecated("Use field access instead!")]] bool& dyn_useOutsideNormalAngle();
     // Get instance field reference: public UnityEngine.LayerMask layerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_layerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_layerMask();
     // Get instance field reference: public System.Single minDepth
-    [[deprecated]] float& dyn_minDepth();
+    [[deprecated("Use field access instead!")]] float& dyn_minDepth();
     // Get instance field reference: public System.Single maxDepth
-    [[deprecated]] float& dyn_maxDepth();
+    [[deprecated("Use field access instead!")]] float& dyn_maxDepth();
     // Get instance field reference: public System.Single minNormalAngle
-    [[deprecated]] float& dyn_minNormalAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_minNormalAngle();
     // Get instance field reference: public System.Single maxNormalAngle
-    [[deprecated]] float& dyn_maxNormalAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_maxNormalAngle();
     // private System.Void CheckConsistency()
     // Offset: 0x18FD9AC
     void CheckConsistency();

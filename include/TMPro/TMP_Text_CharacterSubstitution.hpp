@@ -42,9 +42,9 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: public System.UInt32 unicode
-    [[deprecated]] uint& dyn_unicode();
+    [[deprecated("Use field access instead!")]] uint& dyn_unicode();
     // public System.Void .ctor(System.Int32 index, System.UInt32 unicode)
     // Offset: 0x1821C64
     // ABORTED: conflicts with another method.  CharacterSubstitution(int index, uint unicode);

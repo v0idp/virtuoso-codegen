@@ -54,9 +54,9 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE typeInformation
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_typeInformation();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE& dyn_typeInformation();
     // Get instance field reference: System.Object value
-    [[deprecated]] ::Il2CppObject*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_value();
     // System.Void Set(System.Runtime.Serialization.Formatters.Binary.InternalPrimitiveTypeE typeInformation, System.Object value)
     // Offset: 0xFFE49C
     void Set(::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE typeInformation, ::Il2CppObject* value);

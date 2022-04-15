@@ -109,13 +109,13 @@ namespace System::Collections {
     // Set static field: static private readonly System.Object[] emptyArray
     static void _set_emptyArray(::ArrayW<::Il2CppObject*> value);
     // Get instance field reference: private System.Object[] _items
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__items();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__items();
     // Get instance field reference: private System.Int32 _size
-    [[deprecated]] int& dyn__size();
+    [[deprecated("Use field access instead!")]] int& dyn__size();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // public System.Void set_Capacity(System.Int32 value)
     // Offset: 0x11428D0
     void set_Capacity(int value);

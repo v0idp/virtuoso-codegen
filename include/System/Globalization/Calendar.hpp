@@ -305,11 +305,11 @@ namespace System::Globalization {
     // Set static field: static public System.Int32 CurrentEra
     static void _set_CurrentEra(int value);
     // Get instance field reference: System.Int32 m_currentEraValue
-    [[deprecated]] int& dyn_m_currentEraValue();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currentEraValue();
     // Get instance field reference: private System.Boolean m_isReadOnly
-    [[deprecated]] bool& dyn_m_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isReadOnly();
     // Get instance field reference: System.Int32 twoDigitYearMax
-    [[deprecated]] int& dyn_twoDigitYearMax();
+    [[deprecated("Use field access instead!")]] int& dyn_twoDigitYearMax();
     // public System.DateTime get_MinSupportedDateTime()
     // Offset: 0xFF49F4
     ::System::DateTime get_MinSupportedDateTime();

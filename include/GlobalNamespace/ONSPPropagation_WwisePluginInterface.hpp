@@ -63,10 +63,17 @@ namespace GlobalNamespace {
     // Set static field: static public System.String strOSPS
     static void _set_strOSPS(::StringW value);
     // Get instance field reference: private System.IntPtr context_
-    [[deprecated]] ::System::IntPtr& dyn_context_();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_context_();
     // private System.IntPtr get_context()
     // Offset: 0x17704E8
     ::System::IntPtr get_context();
+    // public System.Void .ctor()
+    // Offset: 0x17605D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ONSPPropagation::WwisePluginInterface* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagation::WwisePluginInterface::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagation::WwisePluginInterface*, creationType>()));
+    }
     // static public System.Int32 ovrAudio_GetPluginContext(out System.IntPtr context, System.UInt32 clientType)
     // Offset: 0x1760540
     static int ovrAudio_GetPluginContext(ByRef<::System::IntPtr> context, uint clientType);
@@ -160,15 +167,6 @@ namespace GlobalNamespace {
     // public System.Int32 AudioMaterialReset(System.IntPtr material, Oculus.Spatializer.Propagation.MaterialProperty property)
     // Offset: 0x1771138
     int AudioMaterialReset(::System::IntPtr material, ::Oculus::Spatializer::Propagation::MaterialProperty property);
-    // public System.Void .ctor()
-    // Offset: 0x17605D0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ONSPPropagation::WwisePluginInterface* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagation::WwisePluginInterface::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagation::WwisePluginInterface*, creationType>()));
-    }
   }; // ONSPPropagation/WwisePluginInterface
   #pragma pack(pop)
   static check_size<sizeof(ONSPPropagation::WwisePluginInterface), 16 + sizeof(::System::IntPtr)> __GlobalNamespace_ONSPPropagation_WwisePluginInterfaceSizeCheck;
@@ -183,6 +181,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagation::WwisePluginInterface*), "get_context", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagation::WwisePluginInterface::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ONSPPropagation::WwisePluginInterface::ovrAudio_GetPluginContext
 // Il2CppName: ovrAudio_GetPluginContext
 template<>
@@ -508,7 +510,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Global
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagation::WwisePluginInterface*), "AudioMaterialReset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{material, property});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagation::WwisePluginInterface::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

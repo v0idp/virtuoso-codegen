@@ -39,13 +39,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Byte[] PacketData
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_PacketData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_PacketData();
     // Get instance field reference: public System.Single FakeLatency
-    [[deprecated]] float& dyn_FakeLatency();
+    [[deprecated("Use field access instead!")]] float& dyn_FakeLatency();
     // public System.Void .ctor()
     // Offset: 0x8D0090
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RemoteLoopbackManager::PacketLatencyPair* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RemoteLoopbackManager::PacketLatencyPair::.ctor");

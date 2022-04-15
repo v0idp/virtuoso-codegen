@@ -91,7 +91,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.AudioSpeakerMode Prologic
     static void _set_Prologic(::UnityEngine::AudioSpeakerMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.AudioSpeakerMode
   #pragma pack(pop)
   static check_size<sizeof(AudioSpeakerMode), 0 + sizeof(int)> __UnityEngine_AudioSpeakerModeSizeCheck;

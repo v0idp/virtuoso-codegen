@@ -114,23 +114,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color _offColor
-    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private UnityEngine.Color _beatColor
-    [[deprecated]] ::UnityEngine::Color& dyn__beatColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__beatColor();
     // Get instance field reference: private UnityEngine.Color _beatpassedColor
-    [[deprecated]] ::UnityEngine::Color& dyn__beatpassedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__beatpassedColor();
     // Get instance field reference: private UnityEngine.AnimationCurve _strikeCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__strikeCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__strikeCurve();
     // Get instance field reference: private System.Single _strikeduration
-    [[deprecated]] float& dyn__strikeduration();
+    [[deprecated("Use field access instead!")]] float& dyn__strikeduration();
     // Get instance field reference: private VROSC.AdjustableMesh _beat01
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat01();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__beat01();
     // Get instance field reference: private VROSC.AdjustableMesh _beat02
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat02();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__beat02();
     // Get instance field reference: private VROSC.AdjustableMesh _beat03
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat03();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__beat03();
     // Get instance field reference: private VROSC.AdjustableMesh _beat04
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__beat04();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__beat04();
+    // public System.Void .ctor()
+    // Offset: 0xAC2D78
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MetronomeDisplay* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MetronomeDisplay::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MetronomeDisplay*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0xAC26E0
     void OnEnable();
@@ -158,25 +165,16 @@ namespace VROSC {
     // private VROSC.AdjustableMesh GetAdjustableMeshByBeat(System.Int32 beat)
     // Offset: 0xAC2D2C
     ::VROSC::AdjustableMesh* GetAdjustableMeshByBeat(int beat);
-    // public System.Void .ctor()
-    // Offset: 0xAC2D78
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MetronomeDisplay* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MetronomeDisplay::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MetronomeDisplay*, creationType>()));
-    }
   }; // VROSC.MetronomeDisplay
   #pragma pack(pop)
   static check_size<sizeof(MetronomeDisplay), 112 + sizeof(::VROSC::AdjustableMesh*)> __VROSC_MetronomeDisplaySizeCheck;
   static_assert(sizeof(MetronomeDisplay) == 0x78);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::MetronomeDisplay::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MetronomeDisplay::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -255,7 +253,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Ad
     return ::il2cpp_utils::FindMethod(classof(VROSC::MetronomeDisplay*), "GetAdjustableMeshByBeat", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{beat});
   }
 };
-// Writing MetadataGetter for method: VROSC::MetronomeDisplay::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

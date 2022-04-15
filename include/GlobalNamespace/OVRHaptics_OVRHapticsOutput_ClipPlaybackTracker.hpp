@@ -47,9 +47,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRHapticsClip*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <ReadCount>k__BackingField
-    [[deprecated]] int& dyn_$ReadCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$ReadCount$k__BackingField();
     // Get instance field reference: private OVRHapticsClip <Clip>k__BackingField
-    [[deprecated]] ::GlobalNamespace::OVRHapticsClip*& dyn_$Clip$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRHapticsClip*& dyn_$Clip$k__BackingField();
     // public System.Int32 get_ReadCount()
     // Offset: 0x13F2050
     int get_ReadCount();

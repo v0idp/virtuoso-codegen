@@ -49,7 +49,7 @@ namespace System::Runtime::Serialization {
       return type;
     }
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.Void .ctor(System.Type type)
     // Offset: 0x190EBAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

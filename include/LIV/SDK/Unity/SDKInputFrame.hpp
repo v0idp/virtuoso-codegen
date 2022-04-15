@@ -96,21 +96,21 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.SDKPose pose
-    [[deprecated]] ::LIV::SDK::Unity::SDKPose& dyn_pose();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKPose& dyn_pose();
     // Get instance field reference: public LIV.SDK.Unity.SDKClipPlane clipPlane
-    [[deprecated]] ::LIV::SDK::Unity::SDKClipPlane& dyn_clipPlane();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKClipPlane& dyn_clipPlane();
     // Get instance field reference: public LIV.SDK.Unity.SDKTransform stageTransform
-    [[deprecated]] ::LIV::SDK::Unity::SDKTransform& dyn_stageTransform();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKTransform& dyn_stageTransform();
     // Get instance field reference: public LIV.SDK.Unity.FEATURES features
-    [[deprecated]] ::LIV::SDK::Unity::FEATURES& dyn_features();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::FEATURES& dyn_features();
     // Get instance field reference: public LIV.SDK.Unity.SDKClipPlane groundClipPlane
-    [[deprecated]] ::LIV::SDK::Unity::SDKClipPlane& dyn_groundClipPlane();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKClipPlane& dyn_groundClipPlane();
     // Get instance field reference: public System.UInt64 frameid
-    [[deprecated]] uint64_t& dyn_frameid();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_frameid();
     // Get instance field reference: public System.UInt64 referenceframe
-    [[deprecated]] uint64_t& dyn_referenceframe();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_referenceframe();
     // Get instance field reference: public LIV.SDK.Unity.SDKPriority priority
-    [[deprecated]] ::LIV::SDK::Unity::SDKPriority& dyn_priority();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKPriority& dyn_priority();
     // static public LIV.SDK.Unity.SDKInputFrame get_empty()
     // Offset: 0xDD34FC
     static ::LIV::SDK::Unity::SDKInputFrame get_empty();

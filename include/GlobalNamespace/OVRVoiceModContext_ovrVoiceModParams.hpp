@@ -153,7 +153,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRVoiceModContext/ovrVoiceModParams Count
     static void _set_Count(::GlobalNamespace::OVRVoiceModContext::ovrVoiceModParams value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OVRVoiceModContext/ovrVoiceModParams
   #pragma pack(pop)
   static check_size<sizeof(OVRVoiceModContext::ovrVoiceModParams), 0 + sizeof(int)> __GlobalNamespace_OVRVoiceModContext_ovrVoiceModParamsSizeCheck;

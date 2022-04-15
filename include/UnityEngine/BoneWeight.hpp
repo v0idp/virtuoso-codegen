@@ -98,21 +98,21 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::BoneWeight>*>(this);
     }
     // Get instance field reference: private System.Single m_Weight0
-    [[deprecated]] float& dyn_m_Weight0();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Weight0();
     // Get instance field reference: private System.Single m_Weight1
-    [[deprecated]] float& dyn_m_Weight1();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Weight1();
     // Get instance field reference: private System.Single m_Weight2
-    [[deprecated]] float& dyn_m_Weight2();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Weight2();
     // Get instance field reference: private System.Single m_Weight3
-    [[deprecated]] float& dyn_m_Weight3();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Weight3();
     // Get instance field reference: private System.Int32 m_BoneIndex0
-    [[deprecated]] int& dyn_m_BoneIndex0();
+    [[deprecated("Use field access instead!")]] int& dyn_m_BoneIndex0();
     // Get instance field reference: private System.Int32 m_BoneIndex1
-    [[deprecated]] int& dyn_m_BoneIndex1();
+    [[deprecated("Use field access instead!")]] int& dyn_m_BoneIndex1();
     // Get instance field reference: private System.Int32 m_BoneIndex2
-    [[deprecated]] int& dyn_m_BoneIndex2();
+    [[deprecated("Use field access instead!")]] int& dyn_m_BoneIndex2();
     // Get instance field reference: private System.Int32 m_BoneIndex3
-    [[deprecated]] int& dyn_m_BoneIndex3();
+    [[deprecated("Use field access instead!")]] int& dyn_m_BoneIndex3();
     // public System.Single get_weight0()
     // Offset: 0x111E428
     float get_weight0();

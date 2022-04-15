@@ -47,15 +47,13 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 SelectedOctave
-    [[deprecated]] int& dyn_SelectedOctave();
+    [[deprecated("Use field access instead!")]] int& dyn_SelectedOctave();
     // Get instance field reference: public System.Int32 MinOctave
-    [[deprecated]] int& dyn_MinOctave();
+    [[deprecated("Use field access instead!")]] int& dyn_MinOctave();
     // Get instance field reference: public System.Int32 MaxOctave
-    [[deprecated]] int& dyn_MaxOctave();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxOctave();
     // public System.Void .ctor()
     // Offset: 0xC6624C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OctaveData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OctaveData::.ctor");

@@ -87,19 +87,26 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32[] _intStack
-    [[deprecated]] ::ArrayW<int>& dyn__intStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__intStack();
     // Get instance field reference: private System.Int32 _intDepth
-    [[deprecated]] int& dyn__intDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__intDepth();
     // Get instance field reference: private System.Text.RegularExpressions.RegexFC[] _fcStack
-    [[deprecated]] ::ArrayW<::System::Text::RegularExpressions::RegexFC*>& dyn__fcStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Text::RegularExpressions::RegexFC*>& dyn__fcStack();
     // Get instance field reference: private System.Int32 _fcDepth
-    [[deprecated]] int& dyn__fcDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__fcDepth();
     // Get instance field reference: private System.Boolean _skipAllChildren
-    [[deprecated]] bool& dyn__skipAllChildren();
+    [[deprecated("Use field access instead!")]] bool& dyn__skipAllChildren();
     // Get instance field reference: private System.Boolean _skipchild
-    [[deprecated]] bool& dyn__skipchild();
+    [[deprecated("Use field access instead!")]] bool& dyn__skipchild();
     // Get instance field reference: private System.Boolean _failed
-    [[deprecated]] bool& dyn__failed();
+    [[deprecated("Use field access instead!")]] bool& dyn__failed();
+    // private System.Void .ctor()
+    // Offset: 0x1846388
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RegexFCD* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexFCD::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RegexFCD*, creationType>()));
+    }
     // static System.Text.RegularExpressions.RegexPrefix FirstChars(System.Text.RegularExpressions.RegexTree t)
     // Offset: 0x1846258
     static ::System::Text::RegularExpressions::RegexPrefix* FirstChars(::System::Text::RegularExpressions::RegexTree* t);
@@ -142,21 +149,16 @@ namespace System::Text::RegularExpressions {
     // private System.Void CalculateFC(System.Int32 NodeType, System.Text.RegularExpressions.RegexNode node, System.Int32 CurIndex)
     // Offset: 0x1846D70
     void CalculateFC(int NodeType, ::System::Text::RegularExpressions::RegexNode* node, int CurIndex);
-    // private System.Void .ctor()
-    // Offset: 0x1846388
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RegexFCD* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexFCD::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RegexFCD*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.RegexFCD
   #pragma pack(pop)
   static check_size<sizeof(RegexFCD), 46 + sizeof(bool)> __System_Text_RegularExpressions_RegexFCDSizeCheck;
   static_assert(sizeof(RegexFCD) == 0x2F);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexFCD::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::RegexFCD::FirstChars
 // Il2CppName: FirstChars
 template<>
@@ -279,7 +281,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::RegexFCD*), "CalculateFC", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{NodeType, node, CurIndex});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexFCD::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -57,7 +57,7 @@ namespace System::Net {
       return m_list;
     }
     // Get instance field reference: private System.Collections.SortedList m_list
-    [[deprecated]] ::System::Collections::SortedList*& dyn_m_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn_m_list();
     // public System.Int32 get_Count()
     // Offset: 0x140910C
     int get_Count();
@@ -73,21 +73,19 @@ namespace System::Net {
     // public System.Object get_SyncRoot()
     // Offset: 0x1409500
     ::Il2CppObject* get_SyncRoot();
+    // public System.Void .ctor()
+    // Offset: 0x1409040
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PathList* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::PathList::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PathList*, creationType>()));
+    }
     // public System.Int32 GetCookiesCount()
     // Offset: 0x1409130
     int GetCookiesCount();
     // public System.Collections.IEnumerator GetEnumerator()
     // Offset: 0x1409674
     ::System::Collections::IEnumerator* GetEnumerator();
-    // public System.Void .ctor()
-    // Offset: 0x1409040
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PathList* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::PathList::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PathList*, creationType>()));
-    }
   }; // System.Net.PathList
   #pragma pack(pop)
   static check_size<sizeof(PathList), 16 + sizeof(::System::Collections::SortedList*)> __System_Net_PathListSizeCheck;
@@ -137,6 +135,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::Net::PathList*), "get_SyncRoot", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::PathList::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::PathList::GetCookiesCount
 // Il2CppName: GetCookiesCount
 template<>
@@ -153,7 +155,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Net::PathList*), "GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::PathList::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

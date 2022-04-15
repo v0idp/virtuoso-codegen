@@ -68,13 +68,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchemaObjectTable*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection items
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_items();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_items();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable attributeGroups
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeGroups();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributeGroups();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable types
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_types();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_types();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable groups
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_groups();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_groups();
     // public System.Xml.Schema.XmlSchemaObjectCollection get_Items()
     // Offset: 0xF2EC60
     ::System::Xml::Schema::XmlSchemaObjectCollection* get_Items();
@@ -92,7 +92,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaExternal
     // Base method: System.Void XmlSchemaExternal::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaRedefine* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaRedefine::.ctor");

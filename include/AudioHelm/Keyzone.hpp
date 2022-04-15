@@ -91,42 +91,44 @@ namespace AudioHelm {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.AudioClip audioClip
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_audioClip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_audioClip();
     // Get instance field reference: public UnityEngine.Audio.AudioMixerGroup mixer
-    [[deprecated]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixerGroup*& dyn_mixer();
     // Get instance field reference: public System.Int32 rootKey
-    [[deprecated]] int& dyn_rootKey();
+    [[deprecated("Use field access instead!")]] int& dyn_rootKey();
     // Get instance field reference: public System.Int32 minKey
-    [[deprecated]] int& dyn_minKey();
+    [[deprecated("Use field access instead!")]] int& dyn_minKey();
     // Get instance field reference: public System.Int32 maxKey
-    [[deprecated]] int& dyn_maxKey();
+    [[deprecated("Use field access instead!")]] int& dyn_maxKey();
     // Get instance field reference: public System.Single minVelocity
-    [[deprecated]] float& dyn_minVelocity();
+    [[deprecated("Use field access instead!")]] float& dyn_minVelocity();
     // Get instance field reference: public System.Single maxVelocity
-    [[deprecated]] float& dyn_maxVelocity();
+    [[deprecated("Use field access instead!")]] float& dyn_maxVelocity();
     // Get instance field reference: public System.Double lastScheduled
-    [[deprecated]] double& dyn_lastScheduled();
+    [[deprecated("Use field access instead!")]] double& dyn_lastScheduled();
+    // public System.Void .ctor()
+    // Offset: 0x194CAC8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Keyzone* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Keyzone::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Keyzone*, creationType>()));
+    }
     // public System.Boolean ValidForNote(System.Int32 note)
     // Offset: 0x194C9D4
     bool ValidForNote(int note);
     // public System.Boolean ValidForNote(System.Int32 note, System.Single velocity)
     // Offset: 0x194CA78
     bool ValidForNote(int note, float velocity);
-    // public System.Void .ctor()
-    // Offset: 0x194CAC8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Keyzone* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Keyzone::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Keyzone*, creationType>()));
-    }
   }; // AudioHelm.Keyzone
   #pragma pack(pop)
   static check_size<sizeof(Keyzone), 56 + sizeof(double)> __AudioHelm_KeyzoneSizeCheck;
   static_assert(sizeof(Keyzone) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::Keyzone::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::Keyzone::ValidForNote
 // Il2CppName: ValidForNote
 template<>
@@ -146,7 +148,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Keyzone*), "ValidForNote", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{note, velocity});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::Keyzone::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

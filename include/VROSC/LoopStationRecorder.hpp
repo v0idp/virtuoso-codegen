@@ -115,7 +115,7 @@ namespace VROSC {
       // Set static field: static public VROSC.LoopStationRecorder/VROSC.RecordingState Playing
       static void _set_Playing(::VROSC::LoopStationRecorder::RecordingState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.LoopStationRecorder/VROSC.RecordingState
     #pragma pack(pop)
     static check_size<sizeof(LoopStationRecorder::RecordingState), 0 + sizeof(int)> __VROSC_LoopStationRecorder_RecordingStateSizeCheck;
@@ -209,29 +209,29 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.LoopStationRecorder/VROSC.RecordingState> OnStateChanged
     static void _set_OnStateChanged(::System::Action_1<::VROSC::LoopStationRecorder::RecordingState>* value);
     // Get instance field reference: private VROSC.LoopStation <LoopStation>k__BackingField
-    [[deprecated]] ::VROSC::LoopStation*& dyn_$LoopStation$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn_$LoopStation$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationRecorder/VROSC.RecordingState <State>k__BackingField
-    [[deprecated]] ::VROSC::LoopStationRecorder::RecordingState& dyn_$State$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecorder::RecordingState& dyn_$State$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationRecordingUI _ui
-    [[deprecated]] ::VROSC::LoopStationRecordingUI*& dyn__ui();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecordingUI*& dyn__ui();
     // Get instance field reference: private System.Int32 _recordingMaxLength
-    [[deprecated]] int& dyn__recordingMaxLength();
+    [[deprecated("Use field access instead!")]] int& dyn__recordingMaxLength();
     // Get instance field reference: private System.String _currentTrackId
-    [[deprecated]] ::StringW& dyn__currentTrackId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__currentTrackId();
     // Get instance field reference: private System.Boolean _buttonPressScheduled
-    [[deprecated]] bool& dyn__buttonPressScheduled();
+    [[deprecated("Use field access instead!")]] bool& dyn__buttonPressScheduled();
     // Get instance field reference: private VROSC.SoundSource _currentRecordingSoundSource
-    [[deprecated]] ::VROSC::SoundSource& dyn__currentRecordingSoundSource();
+    [[deprecated("Use field access instead!")]] ::VROSC::SoundSource& dyn__currentRecordingSoundSource();
     // Get instance field reference: private System.Int32 _recordingStartSample
-    [[deprecated]] int& dyn__recordingStartSample();
+    [[deprecated("Use field access instead!")]] int& dyn__recordingStartSample();
     // Get instance field reference: private System.Boolean _currentRecordingIsOverdub
-    [[deprecated]] bool& dyn__currentRecordingIsOverdub();
+    [[deprecated("Use field access instead!")]] bool& dyn__currentRecordingIsOverdub();
     // Get instance field reference: private System.Single _fadeOverlapSeconds
-    [[deprecated]] float& dyn__fadeOverlapSeconds();
+    [[deprecated("Use field access instead!")]] float& dyn__fadeOverlapSeconds();
     // Get instance field reference: private System.Int32 _fadeOverlapLength
-    [[deprecated]] int& dyn__fadeOverlapLength();
+    [[deprecated("Use field access instead!")]] int& dyn__fadeOverlapLength();
     // Get instance field reference: private System.Int32 _setBpmRecordingOffset
-    [[deprecated]] int& dyn__setBpmRecordingOffset();
+    [[deprecated("Use field access instead!")]] int& dyn__setBpmRecordingOffset();
     // public VROSC.LoopStation get_LoopStation()
     // Offset: 0x19743E4
     ::VROSC::LoopStation* get_LoopStation();
@@ -244,6 +244,13 @@ namespace VROSC {
     // private System.Void set_State(VROSC.LoopStationRecorder/VROSC.RecordingState value)
     // Offset: 0x19743FC
     void set_State(::VROSC::LoopStationRecorder::RecordingState value);
+    // public System.Void .ctor()
+    // Offset: 0x19760D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationRecorder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationRecorder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationRecorder*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopStation loopStation)
     // Offset: 0x1974404
     void Setup(::VROSC::LoopStation* loopStation);
@@ -301,19 +308,6 @@ namespace VROSC {
     // public System.Void SetState(VROSC.LoopStationRecorder/VROSC.RecordingState state)
     // Offset: 0x1975564
     void SetState(::VROSC::LoopStationRecorder::RecordingState state);
-    // public System.Void .ctor()
-    // Offset: 0x19760D0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationRecorder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationRecorder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationRecorder*, creationType>()));
-    }
   }; // VROSC.LoopStationRecorder
   #pragma pack(pop)
   static check_size<sizeof(LoopStationRecorder), 88 + sizeof(int)> __VROSC_LoopStationRecorderSizeCheck;
@@ -356,6 +350,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationRecorder*), "set_State", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStationRecorder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationRecorder::Setup
 // Il2CppName: Setup
 template<>
@@ -518,7 +516,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationRecorder*), "SetState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{state});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationRecorder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

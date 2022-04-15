@@ -55,7 +55,7 @@ namespace Microsoft::Win32 {
     // Set static field: static public Microsoft.Win32.RegistryValueOptions DoNotExpandEnvironmentNames
     static void _set_DoNotExpandEnvironmentNames(::Microsoft::Win32::RegistryValueOptions value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Microsoft.Win32.RegistryValueOptions
   #pragma pack(pop)
   static check_size<sizeof(RegistryValueOptions), 0 + sizeof(int)> __Microsoft_Win32_RegistryValueOptionsSizeCheck;

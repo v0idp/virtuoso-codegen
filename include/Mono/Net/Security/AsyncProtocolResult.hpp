@@ -50,9 +50,9 @@ namespace Mono::Net::Security {
     static_assert(sizeof(::System::Runtime::ExceptionServices::ExceptionDispatchInfo*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Int32 <UserResult>k__BackingField
-    [[deprecated]] int& dyn_$UserResult$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$UserResult$k__BackingField();
     // Get instance field reference: private readonly System.Runtime.ExceptionServices.ExceptionDispatchInfo <Error>k__BackingField
-    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
     // public System.Int32 get_UserResult()
     // Offset: 0x10D71C4
     int get_UserResult();

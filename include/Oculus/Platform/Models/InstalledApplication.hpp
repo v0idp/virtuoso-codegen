@@ -64,15 +64,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String ApplicationId
-    [[deprecated]] ::StringW& dyn_ApplicationId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ApplicationId();
     // Get instance field reference: public readonly System.String PackageName
-    [[deprecated]] ::StringW& dyn_PackageName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PackageName();
     // Get instance field reference: public readonly System.String Status
-    [[deprecated]] ::StringW& dyn_Status();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Status();
     // Get instance field reference: public readonly System.Int32 VersionCode
-    [[deprecated]] int& dyn_VersionCode();
+    [[deprecated("Use field access instead!")]] int& dyn_VersionCode();
     // Get instance field reference: public readonly System.String VersionName
-    [[deprecated]] ::StringW& dyn_VersionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_VersionName();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3A480
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

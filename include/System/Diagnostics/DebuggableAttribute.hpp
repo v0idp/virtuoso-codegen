@@ -91,7 +91,7 @@ namespace System::Diagnostics {
       // Set static field: static public System.Diagnostics.DebuggableAttribute/System.Diagnostics.DebuggingModes EnableEditAndContinue
       static void _set_EnableEditAndContinue(::System::Diagnostics::DebuggableAttribute::DebuggingModes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Diagnostics.DebuggableAttribute/System.Diagnostics.DebuggingModes
     #pragma pack(pop)
     static check_size<sizeof(DebuggableAttribute::DebuggingModes), 0 + sizeof(int)> __System_Diagnostics_DebuggableAttribute_DebuggingModesSizeCheck;
@@ -109,7 +109,7 @@ namespace System::Diagnostics {
       return m_debuggingModes;
     }
     // Get instance field reference: private System.Diagnostics.DebuggableAttribute/System.Diagnostics.DebuggingModes m_debuggingModes
-    [[deprecated]] ::System::Diagnostics::DebuggableAttribute::DebuggingModes& dyn_m_debuggingModes();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::DebuggableAttribute::DebuggingModes& dyn_m_debuggingModes();
     // public System.Void .ctor(System.Diagnostics.DebuggableAttribute/System.Diagnostics.DebuggingModes modes)
     // Offset: 0x128FA60
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

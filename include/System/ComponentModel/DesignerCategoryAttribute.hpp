@@ -61,12 +61,19 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.DesignerCategoryAttribute Generic
     static void _set_Generic(::System::ComponentModel::DesignerCategoryAttribute* value);
     // Get instance field reference: private System.String category
-    [[deprecated]] ::StringW& dyn_category();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_category();
     // Get instance field reference: private System.String typeId
-    [[deprecated]] ::StringW& dyn_typeId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeId();
     // public System.String get_Category()
     // Offset: 0xEF8970
     ::StringW get_Category();
+    // public System.Void .ctor()
+    // Offset: 0xEF88E4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DesignerCategoryAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::DesignerCategoryAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DesignerCategoryAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.String category)
     // Offset: 0xEF8944
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -82,16 +89,6 @@ namespace System::ComponentModel {
     // Implemented from: System.Attribute
     // Base method: System.Object Attribute::get_TypeId()
     ::Il2CppObject* get_TypeId();
-    // public System.Void .ctor()
-    // Offset: 0xEF88E4
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DesignerCategoryAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::DesignerCategoryAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DesignerCategoryAttribute*, creationType>()));
-    }
     // public override System.Boolean Equals(System.Object obj)
     // Offset: 0xEF89D0
     // Implemented from: System.Attribute
@@ -125,6 +122,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::ComponentModel::DesignerCategoryAttribute::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::DesignerCategoryAttribute::_cctor
 // Il2CppName: .cctor
 template<>
@@ -141,10 +142,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::DesignerCategoryAttribute*), "get_TypeId", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::DesignerCategoryAttribute::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::DesignerCategoryAttribute::Equals
 // Il2CppName: Equals
 template<>

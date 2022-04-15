@@ -73,13 +73,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::XmlNamespaceManager*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.ArrayList fAxisArray
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_fAxisArray();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_fAxisArray();
     // Get instance field reference: private System.String xpathexpr
-    [[deprecated]] ::StringW& dyn_xpathexpr();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xpathexpr();
     // Get instance field reference: private System.Boolean isField
-    [[deprecated]] bool& dyn_isField();
+    [[deprecated("Use field access instead!")]] bool& dyn_isField();
     // Get instance field reference: private System.Xml.XmlNamespaceManager nsmgr
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn_nsmgr();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn_nsmgr();
     // System.Collections.ArrayList get_SubtreeArray()
     // Offset: 0xB5B0E8
     ::System::Collections::ArrayList* get_SubtreeArray();

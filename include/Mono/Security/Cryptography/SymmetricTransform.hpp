@@ -123,29 +123,29 @@ namespace Mono::Security::Cryptography {
       return *reinterpret_cast<::System::Security::Cryptography::ICryptoTransform*>(this);
     }
     // Get instance field reference: protected System.Security.Cryptography.SymmetricAlgorithm algo
-    [[deprecated]] ::System::Security::Cryptography::SymmetricAlgorithm*& dyn_algo();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::SymmetricAlgorithm*& dyn_algo();
     // Get instance field reference: protected System.Boolean encrypt
-    [[deprecated]] bool& dyn_encrypt();
+    [[deprecated("Use field access instead!")]] bool& dyn_encrypt();
     // Get instance field reference: protected System.Int32 BlockSizeByte
-    [[deprecated]] int& dyn_BlockSizeByte();
+    [[deprecated("Use field access instead!")]] int& dyn_BlockSizeByte();
     // Get instance field reference: protected System.Byte[] temp
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_temp();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_temp();
     // Get instance field reference: protected System.Byte[] temp2
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_temp2();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_temp2();
     // Get instance field reference: private System.Byte[] workBuff
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_workBuff();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_workBuff();
     // Get instance field reference: private System.Byte[] workout
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_workout();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_workout();
     // Get instance field reference: protected System.Security.Cryptography.PaddingMode padmode
-    [[deprecated]] ::System::Security::Cryptography::PaddingMode& dyn_padmode();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::PaddingMode& dyn_padmode();
     // Get instance field reference: protected System.Int32 FeedBackByte
-    [[deprecated]] int& dyn_FeedBackByte();
+    [[deprecated("Use field access instead!")]] int& dyn_FeedBackByte();
     // Get instance field reference: private System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // Get instance field reference: protected System.Boolean lastBlock
-    [[deprecated]] bool& dyn_lastBlock();
+    [[deprecated("Use field access instead!")]] bool& dyn_lastBlock();
     // Get instance field reference: private System.Security.Cryptography.RandomNumberGenerator _rng
-    [[deprecated]] ::System::Security::Cryptography::RandomNumberGenerator*& dyn__rng();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::RandomNumberGenerator*& dyn__rng();
     // public System.Boolean get_CanTransformMultipleBlocks()
     // Offset: 0x1269DA8
     bool get_CanTransformMultipleBlocks();

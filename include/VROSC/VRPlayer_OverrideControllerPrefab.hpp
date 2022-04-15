@@ -60,17 +60,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InputDevice*) == 0x8);
     public:
     // Get instance field reference: public VROSC.VRPlayer/VROSC.ControllerType controllerType
-    [[deprecated]] ::VROSC::VRPlayer::ControllerType& dyn_controllerType();
+    [[deprecated("Use field access instead!")]] ::VROSC::VRPlayer::ControllerType& dyn_controllerType();
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public VROSC.InputDevice leftPrefab
-    [[deprecated]] ::VROSC::InputDevice*& dyn_leftPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_leftPrefab();
     // Get instance field reference: public VROSC.InputDevice rightPrefab
-    [[deprecated]] ::VROSC::InputDevice*& dyn_rightPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_rightPrefab();
     // public System.Void .ctor()
     // Offset: 0xE89038
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VRPlayer::OverrideControllerPrefab* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VRPlayer::OverrideControllerPrefab::.ctor");

@@ -206,51 +206,58 @@ namespace DG::Tweening {
     // Set static field: static public readonly DG.Tweening.TweenParams Params
     static void _set_Params(::DG::Tweening::TweenParams* value);
     // Get instance field reference: System.Object id
-    [[deprecated]] ::Il2CppObject*& dyn_id();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_id();
     // Get instance field reference: System.Object target
-    [[deprecated]] ::Il2CppObject*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_target();
     // Get instance field reference: DG.Tweening.UpdateType updateType
-    [[deprecated]] ::DG::Tweening::UpdateType& dyn_updateType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::UpdateType& dyn_updateType();
     // Get instance field reference: System.Boolean isIndependentUpdate
-    [[deprecated]] bool& dyn_isIndependentUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_isIndependentUpdate();
     // Get instance field reference: DG.Tweening.TweenCallback onStart
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStart();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onStart();
     // Get instance field reference: DG.Tweening.TweenCallback onPlay
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onPlay();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onPlay();
     // Get instance field reference: DG.Tweening.TweenCallback onRewind
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onRewind();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onRewind();
     // Get instance field reference: DG.Tweening.TweenCallback onUpdate
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onUpdate();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onUpdate();
     // Get instance field reference: DG.Tweening.TweenCallback onStepComplete
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
     // Get instance field reference: DG.Tweening.TweenCallback onComplete
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onComplete();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onComplete();
     // Get instance field reference: DG.Tweening.TweenCallback onKill
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onKill();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onKill();
     // Get instance field reference: DG.Tweening.TweenCallback`1<System.Int32> onWaypointChange
-    [[deprecated]] ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
     // Get instance field reference: System.Boolean isRecyclable
-    [[deprecated]] bool& dyn_isRecyclable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRecyclable();
     // Get instance field reference: System.Boolean isSpeedBased
-    [[deprecated]] bool& dyn_isSpeedBased();
+    [[deprecated("Use field access instead!")]] bool& dyn_isSpeedBased();
     // Get instance field reference: System.Boolean autoKill
-    [[deprecated]] bool& dyn_autoKill();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoKill();
     // Get instance field reference: System.Int32 loops
-    [[deprecated]] int& dyn_loops();
+    [[deprecated("Use field access instead!")]] int& dyn_loops();
     // Get instance field reference: DG.Tweening.LoopType loopType
-    [[deprecated]] ::DG::Tweening::LoopType& dyn_loopType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::LoopType& dyn_loopType();
     // Get instance field reference: System.Single delay
-    [[deprecated]] float& dyn_delay();
+    [[deprecated("Use field access instead!")]] float& dyn_delay();
     // Get instance field reference: System.Boolean isRelative
-    [[deprecated]] bool& dyn_isRelative();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRelative();
     // Get instance field reference: DG.Tweening.Ease easeType
-    [[deprecated]] ::DG::Tweening::Ease& dyn_easeType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Ease& dyn_easeType();
     // Get instance field reference: DG.Tweening.EaseFunction customEase
-    [[deprecated]] ::DG::Tweening::EaseFunction*& dyn_customEase();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::EaseFunction*& dyn_customEase();
     // Get instance field reference: System.Single easeOvershootOrAmplitude
-    [[deprecated]] float& dyn_easeOvershootOrAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_easeOvershootOrAmplitude();
     // Get instance field reference: System.Single easePeriod
-    [[deprecated]] float& dyn_easePeriod();
+    [[deprecated("Use field access instead!")]] float& dyn_easePeriod();
+    // public System.Void .ctor()
+    // Offset: 0x15B56A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TweenParams* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::TweenParams::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TweenParams*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x15B5B4C
     static void _cctor();
@@ -320,21 +327,16 @@ namespace DG::Tweening {
     // public DG.Tweening.TweenParams SetSpeedBased(System.Boolean isSpeedBased)
     // Offset: 0x15B5B40
     ::DG::Tweening::TweenParams* SetSpeedBased(bool isSpeedBased);
-    // public System.Void .ctor()
-    // Offset: 0x15B56A0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TweenParams* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::TweenParams::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TweenParams*, creationType>()));
-    }
   }; // DG.Tweening.TweenParams
   #pragma pack(pop)
   static check_size<sizeof(TweenParams), 140 + sizeof(float)> __DG_Tweening_TweenParamsSizeCheck;
   static_assert(sizeof(TweenParams) == 0x90);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::TweenParams::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::TweenParams::_cctor
 // Il2CppName: .cctor
 template<>
@@ -544,7 +546,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::DG::Tween
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::TweenParams*), "SetSpeedBased", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isSpeedBased});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::TweenParams::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

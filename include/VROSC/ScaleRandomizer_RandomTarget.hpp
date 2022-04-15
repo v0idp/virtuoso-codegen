@@ -65,19 +65,17 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public VROSC.ScaleNode Scale
-    [[deprecated]] ::VROSC::ScaleNode*& dyn_Scale();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScaleNode*& dyn_Scale();
     // Get instance field reference: public VROSC.NoteNode Base
-    [[deprecated]] ::VROSC::NoteNode*& dyn_Base();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteNode*& dyn_Base();
     // Get instance field reference: public System.Single ChanceToKeepBase
-    [[deprecated]] float& dyn_ChanceToKeepBase();
+    [[deprecated("Use field access instead!")]] float& dyn_ChanceToKeepBase();
     // Get instance field reference: public System.Int32 MinDropNotes
-    [[deprecated]] int& dyn_MinDropNotes();
+    [[deprecated("Use field access instead!")]] int& dyn_MinDropNotes();
     // Get instance field reference: public System.Int32 MaxDropNotes
-    [[deprecated]] int& dyn_MaxDropNotes();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxDropNotes();
     // public System.Void .ctor()
     // Offset: 0x8D4414
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleRandomizer::RandomTarget* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleRandomizer::RandomTarget::.ctor");

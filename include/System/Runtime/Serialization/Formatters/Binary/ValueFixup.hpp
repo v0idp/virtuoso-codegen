@@ -100,19 +100,19 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static System.Reflection.MemberInfo valueInfo
     static void _set_valueInfo(::System::Reflection::MemberInfo* value);
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.ValueFixupEnum valueFixupEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::ValueFixupEnum& dyn_valueFixupEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::ValueFixupEnum& dyn_valueFixupEnum();
     // Get instance field reference: System.Array arrayObj
-    [[deprecated]] ::System::Array*& dyn_arrayObj();
+    [[deprecated("Use field access instead!")]] ::System::Array*& dyn_arrayObj();
     // Get instance field reference: System.Int32[] indexMap
-    [[deprecated]] ::ArrayW<int>& dyn_indexMap();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_indexMap();
     // Get instance field reference: System.Object header
-    [[deprecated]] ::Il2CppObject*& dyn_header();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_header();
     // Get instance field reference: System.Object memberObject
-    [[deprecated]] ::Il2CppObject*& dyn_memberObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_memberObject();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.ReadObjectInfo objectInfo
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo*& dyn_objectInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo*& dyn_objectInfo();
     // Get instance field reference: System.String memberName
-    [[deprecated]] ::StringW& dyn_memberName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_memberName();
     // System.Void .ctor(System.Array arrayObj, System.Int32[] indexMap)
     // Offset: 0x120CE38
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -40,27 +40,29 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::AuthenticationManager*) == 0x8);
     public:
     // Get instance field reference: public System.String newPassword
-    [[deprecated]] ::StringW& dyn_newPassword();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_newPassword();
     // Get instance field reference: public VROSC.AuthenticationManager <>4__this
-    [[deprecated]] ::VROSC::AuthenticationManager*& dyn_$$4__this();
-    // System.Void <ChangeUserPassword>b__0(System.String email, System.Boolean isVerified)
-    // Offset: 0x957980
-    void $ChangeUserPassword$b__0(::StringW email, bool isVerified);
+    [[deprecated("Use field access instead!")]] ::VROSC::AuthenticationManager*& dyn_$$4__this();
     // public System.Void .ctor()
     // Offset: 0x957978
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AuthenticationManager::$$c__DisplayClass37_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AuthenticationManager::$$c__DisplayClass37_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AuthenticationManager::$$c__DisplayClass37_0*, creationType>()));
     }
+    // System.Void <ChangeUserPassword>b__0(System.String email, System.Boolean isVerified)
+    // Offset: 0x957980
+    void $ChangeUserPassword$b__0(::StringW email, bool isVerified);
   }; // VROSC.AuthenticationManager/VROSC.<>c__DisplayClass37_0
   #pragma pack(pop)
   static check_size<sizeof(AuthenticationManager::$$c__DisplayClass37_0), 24 + sizeof(::VROSC::AuthenticationManager*)> __VROSC_AuthenticationManager_$$c__DisplayClass37_0SizeCheck;
   static_assert(sizeof(AuthenticationManager::$$c__DisplayClass37_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c__DisplayClass37_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c__DisplayClass37_0::$ChangeUserPassword$b__0
 // Il2CppName: <ChangeUserPassword>b__0
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager::$$c__DisplayClass37_0*), "<ChangeUserPassword>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{email, isVerified});
   }
 };
-// Writing MetadataGetter for method: VROSC::AuthenticationManager::$$c__DisplayClass37_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

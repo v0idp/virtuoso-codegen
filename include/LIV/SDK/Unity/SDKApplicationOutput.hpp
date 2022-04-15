@@ -90,23 +90,23 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.FEATURES supportedFeatures
-    [[deprecated]] ::LIV::SDK::Unity::FEATURES& dyn_supportedFeatures();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::FEATURES& dyn_supportedFeatures();
     // Get instance field reference: public System.String engineName
-    [[deprecated]] ::StringW& dyn_engineName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_engineName();
     // Get instance field reference: public System.String engineVersion
-    [[deprecated]] ::StringW& dyn_engineVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_engineVersion();
     // Get instance field reference: public System.String applicationName
-    [[deprecated]] ::StringW& dyn_applicationName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_applicationName();
     // Get instance field reference: public System.String applicationVersion
-    [[deprecated]] ::StringW& dyn_applicationVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_applicationVersion();
     // Get instance field reference: public System.String xrDeviceName
-    [[deprecated]] ::StringW& dyn_xrDeviceName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xrDeviceName();
     // Get instance field reference: public System.String graphicsAPI
-    [[deprecated]] ::StringW& dyn_graphicsAPI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_graphicsAPI();
     // Get instance field reference: public System.String sdkID
-    [[deprecated]] ::StringW& dyn_sdkID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sdkID();
     // Get instance field reference: public System.String sdkVersion
-    [[deprecated]] ::StringW& dyn_sdkVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sdkVersion();
     // static public LIV.SDK.Unity.SDKApplicationOutput get_empty()
     // Offset: 0xDD2750
     static ::LIV::SDK::Unity::SDKApplicationOutput get_empty();

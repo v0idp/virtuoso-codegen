@@ -57,27 +57,29 @@ namespace NatSuite::Devices::Internal {
     static_assert(sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*) == 0x8);
     public:
     // Get instance field reference: public NatSuite.Devices.Internal.NativeCameraDevice <>4__this
-    [[deprecated]] ::NatSuite::Devices::Internal::NativeCameraDevice*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::Internal::NativeCameraDevice*& dyn_$$4__this();
     // Get instance field reference: public System.Threading.Tasks.TaskCompletionSource`1<UnityEngine.Texture2D> startTask
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*& dyn_startTask();
-    // System.Void <StartRunning>b__0(System.IntPtr pixelBuffer, System.Int32 width, System.Int32 height, System.Int64 timestamp)
-    // Offset: 0x1965560
-    void $StartRunning$b__0(::System::IntPtr pixelBuffer, int width, int height, int64_t timestamp);
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*& dyn_startTask();
     // public System.Void .ctor()
     // Offset: 0x1965558
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NativeCameraDevice::$$c__DisplayClass58_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::Internal::NativeCameraDevice::$$c__DisplayClass58_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NativeCameraDevice::$$c__DisplayClass58_0*, creationType>()));
     }
+    // System.Void <StartRunning>b__0(System.IntPtr pixelBuffer, System.Int32 width, System.Int32 height, System.Int64 timestamp)
+    // Offset: 0x1965560
+    void $StartRunning$b__0(::System::IntPtr pixelBuffer, int width, int height, int64_t timestamp);
   }; // NatSuite.Devices.Internal.NativeCameraDevice/NatSuite.Devices.Internal.<>c__DisplayClass58_0
   #pragma pack(pop)
   static check_size<sizeof(NativeCameraDevice::$$c__DisplayClass58_0), 24 + sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::UnityEngine::Texture2D*>*)> __NatSuite_Devices_Internal_NativeCameraDevice_$$c__DisplayClass58_0SizeCheck;
   static_assert(sizeof(NativeCameraDevice::$$c__DisplayClass58_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: NatSuite::Devices::Internal::NativeCameraDevice::$$c__DisplayClass58_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Devices::Internal::NativeCameraDevice::$$c__DisplayClass58_0::$StartRunning$b__0
 // Il2CppName: <StartRunning>b__0
 template<>
@@ -90,7 +92,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::Internal::NativeCameraDevice::$$c__DisplayClass58_0*), "<StartRunning>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{pixelBuffer, width, height, timestamp});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Devices::Internal::NativeCameraDevice::$$c__DisplayClass58_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

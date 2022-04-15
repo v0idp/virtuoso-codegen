@@ -100,6 +100,16 @@ namespace UnityEngine {
     // UnityEngine.Terrain[] get_users()
     // Offset: 0x18E4848
     ::ArrayW<::UnityEngine::Terrain*> get_users();
+    // public System.Void .ctor()
+    // Offset: 0x18E51C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TerrainData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TerrainData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TerrainData*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x18E5690
+    static void _cctor();
     // static private System.Int32 GetBoundaryValue(UnityEngine.TerrainData/UnityEngine.BoundaryValueType type)
     // Offset: 0x18E5184
     static int GetBoundaryValue(::UnityEngine::TerrainData::BoundaryValueType type);
@@ -121,21 +131,6 @@ namespace UnityEngine {
     // private System.Void get_size_Injected(out UnityEngine.Vector3 ret)
     // Offset: 0x18E539C
     void get_size_Injected(ByRef<::UnityEngine::Vector3> ret);
-    // public System.Void .ctor()
-    // Offset: 0x18E51C4
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TerrainData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TerrainData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TerrainData*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x18E5690
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // UnityEngine.TerrainData
   #pragma pack(pop)
 }
@@ -186,6 +181,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::UnityEngine::Terrain*> (UnityEngine::TerrainData::*)()>(&UnityEngine::TerrainData::get_users)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::TerrainData*), "get_users", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: UnityEngine::TerrainData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::TerrainData::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::TerrainData::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::TerrainData*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::TerrainData::GetBoundaryValue
@@ -253,17 +260,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
   static const MethodInfo* get() {
     static auto* ret = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->this_arg;
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::TerrainData*), "get_size_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ret});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::TerrainData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::TerrainData::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::TerrainData::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::TerrainData*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

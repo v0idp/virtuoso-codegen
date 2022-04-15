@@ -64,19 +64,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Session*) == 0x8);
     public:
     // Get instance field reference: public System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: public System.String SessionId
-    [[deprecated]] ::StringW& dyn_SessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SessionId();
     // Get instance field reference: public System.String SessionFavoriteId
-    [[deprecated]] ::StringW& dyn_SessionFavoriteId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SessionFavoriteId();
     // Get instance field reference: public System.String Date
-    [[deprecated]] ::StringW& dyn_Date();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Date();
     // Get instance field reference: public VROSC.Session Session
-    [[deprecated]] ::VROSC::Session*& dyn_Session();
+    [[deprecated("Use field access instead!")]] ::VROSC::Session*& dyn_Session();
     // public System.Void .ctor()
     // Offset: 0xE874B4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserFavoritesDataModel::Favorite* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserFavoritesDataModel::Favorite::.ctor");

@@ -72,15 +72,15 @@ namespace System::Collections::Specialized {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Collections.Specialized.NotifyCollectionChangedAction _action
-    [[deprecated]] ::System::Collections::Specialized::NotifyCollectionChangedAction& dyn__action();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::NotifyCollectionChangedAction& dyn__action();
     // Get instance field reference: private System.Collections.IList _newItems
-    [[deprecated]] ::System::Collections::IList*& dyn__newItems();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IList*& dyn__newItems();
     // Get instance field reference: private System.Collections.IList _oldItems
-    [[deprecated]] ::System::Collections::IList*& dyn__oldItems();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IList*& dyn__oldItems();
     // Get instance field reference: private System.Int32 _newStartingIndex
-    [[deprecated]] int& dyn__newStartingIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__newStartingIndex();
     // Get instance field reference: private System.Int32 _oldStartingIndex
-    [[deprecated]] int& dyn__oldStartingIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__oldStartingIndex();
     // public System.Void .ctor(System.Collections.Specialized.NotifyCollectionChangedAction action)
     // Offset: 0x1105930
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

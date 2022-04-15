@@ -139,7 +139,7 @@ namespace System::ComponentModel {
     // Set static field: static private System.Object _internalSyncObject
     static void _set__internalSyncObject(::Il2CppObject* value);
     // Get instance field reference: private System.Collections.Hashtable _typeData
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__typeData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__typeData();
     // static private System.Collections.Hashtable get_IntrinsicTypeConverters()
     // Offset: 0x141255C
     static ::System::Collections::Hashtable* get_IntrinsicTypeConverters();
@@ -207,7 +207,6 @@ namespace System::ComponentModel {
     // Offset: 0x1412554
     // Implemented from: System.ComponentModel.TypeDescriptionProvider
     // Base method: System.Void TypeDescriptionProvider::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ReflectTypeDescriptionProvider* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::ReflectTypeDescriptionProvider::.ctor");

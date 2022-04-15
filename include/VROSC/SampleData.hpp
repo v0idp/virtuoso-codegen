@@ -62,11 +62,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 _id
-    [[deprecated]] int& dyn__id();
+    [[deprecated("Use field access instead!")]] int& dyn__id();
     // Get instance field reference: private System.String _displayName
-    [[deprecated]] ::StringW& dyn__displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__displayName();
     // Get instance field reference: private UnityEngine.AudioClip _audioClip
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn__audioClip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn__audioClip();
     // public System.Int32 get_Id()
     // Offset: 0xDDB9C0
     int get_Id();
@@ -78,10 +78,6 @@ namespace VROSC {
     ::UnityEngine::AudioClip* get_Clip();
     // public System.Void .ctor()
     // Offset: 0xDDB9D8
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SampleData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SampleData::.ctor");

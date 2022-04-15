@@ -71,19 +71,26 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*) == 0x8);
     public:
     // Get instance field reference: public System.IntPtr ovrNativePacket
-    [[deprecated]] ::System::IntPtr& dyn_ovrNativePacket();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_ovrNativePacket();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single> frameTimes
-    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn_frameTimes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<float>*& dyn_frameTimes();
     // Get instance field reference: private System.Collections.Generic.List`1<OvrAvatarDriver/PoseFrame> frames
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OvrAvatarDriver::PoseFrame>*& dyn_frames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OvrAvatarDriver::PoseFrame>*& dyn_frames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Byte[]> encodedAudioPackets
-    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_encodedAudioPackets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_encodedAudioPackets();
     // public System.Single get_Duration()
     // Offset: 0xF84EA0
     float get_Duration();
     // public OvrAvatarDriver/PoseFrame get_FinalFrame()
     // Offset: 0xF84FEC
     ::GlobalNamespace::OvrAvatarDriver::PoseFrame get_FinalFrame();
+    // public System.Void .ctor()
+    // Offset: 0xF8507C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OvrAvatarPacket* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarPacket::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarPacket*, creationType>()));
+    }
     // public System.Void .ctor(OvrAvatarDriver/PoseFrame initialPose)
     // Offset: 0xF84D04
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -110,15 +117,6 @@ namespace GlobalNamespace {
     // public System.Void Write(System.IO.Stream stream)
     // Offset: 0xF8F7B4
     void Write(::System::IO::Stream* stream);
-    // public System.Void .ctor()
-    // Offset: 0xF8507C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OvrAvatarPacket* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarPacket::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarPacket*, creationType>()));
-    }
   }; // OvrAvatarPacket
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarPacket), 40 + sizeof(::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*)> __GlobalNamespace_OvrAvatarPacketSizeCheck;
@@ -141,6 +139,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarPacket*), "get_FinalFrame", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarPacket::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarPacket::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -186,7 +188,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarPacket*), "Write", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stream});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarPacket::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

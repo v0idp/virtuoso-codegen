@@ -82,31 +82,28 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // Get instance field reference: public System.Single Playing
-    [[deprecated]] float& dyn_Playing();
+    [[deprecated("Use field access instead!")]] float& dyn_Playing();
     // Get instance field reference: public UnityEngine.Color UnPlayedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_UnPlayedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_UnPlayedColor();
     // Get instance field reference: public UnityEngine.Color PlayedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_PlayedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_PlayedColor();
+    // public System.Void .ctor()
+    // Offset: 0xC56718
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteBoardNoteHintBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteHintBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteHintBehaviour*, creationType>()));
+    }
     // public System.Void Setup(UnityEngine.Renderer renderer)
     // Offset: 0xC565B0
     void Setup(::UnityEngine::Renderer* renderer);
     // private System.Void SetColor(UnityEngine.Color color)
     // Offset: 0xC56628
     void SetColor(::UnityEngine::Color color);
-    // public System.Void .ctor()
-    // Offset: 0xC56718
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteBoardNoteHintBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteHintBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardNoteHintBehaviour*, creationType>()));
-    }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0xC565E0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -118,6 +115,10 @@ namespace VROSC {
   static_assert(sizeof(NoteBoardNoteHintBehaviour) == 0x44);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::NoteBoardNoteHintBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteBoardNoteHintBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -136,10 +137,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardNoteHintBehaviour*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteBoardNoteHintBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteBoardNoteHintBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

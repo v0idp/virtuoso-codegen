@@ -101,7 +101,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRHand/Hand HandRight
       static void _set_HandRight(::GlobalNamespace::OVRHand::Hand value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRHand/Hand
     #pragma pack(pop)
     static check_size<sizeof(OVRHand::Hand), 0 + sizeof(int)> __GlobalNamespace_OVRHand_HandSizeCheck;
@@ -143,7 +143,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRHand/TrackingConfidence High
       static void _set_High(::GlobalNamespace::OVRHand::TrackingConfidence value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRHand/TrackingConfidence
     #pragma pack(pop)
     static check_size<sizeof(OVRHand::TrackingConfidence), 0 + sizeof(int)> __GlobalNamespace_OVRHand_TrackingConfidenceSizeCheck;
@@ -251,31 +251,31 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private OVRHand/Hand HandType
-    [[deprecated]] ::GlobalNamespace::OVRHand::Hand& dyn_HandType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRHand::Hand& dyn_HandType();
     // Get instance field reference: private UnityEngine.Transform _pointerPoseRoot
-    [[deprecated]] ::UnityEngine::Transform*& dyn__pointerPoseRoot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__pointerPoseRoot();
     // Get instance field reference: private UnityEngine.GameObject _pointerPoseGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__pointerPoseGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__pointerPoseGO();
     // Get instance field reference: private OVRPlugin/HandState _handState
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::HandState& dyn__handState();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::HandState& dyn__handState();
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // Get instance field reference: private System.Boolean <IsTracked>k__BackingField
-    [[deprecated]] bool& dyn_$IsTracked$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsTracked$k__BackingField();
     // Get instance field reference: private System.Boolean <IsSystemGestureInProgress>k__BackingField
-    [[deprecated]] bool& dyn_$IsSystemGestureInProgress$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsSystemGestureInProgress$k__BackingField();
     // Get instance field reference: private System.Boolean <IsPointerPoseValid>k__BackingField
-    [[deprecated]] bool& dyn_$IsPointerPoseValid$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPointerPoseValid$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <PointerPose>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$PointerPose$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$PointerPose$k__BackingField();
     // Get instance field reference: private System.Single <HandScale>k__BackingField
-    [[deprecated]] float& dyn_$HandScale$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$HandScale$k__BackingField();
     // Get instance field reference: private OVRHand/TrackingConfidence <HandConfidence>k__BackingField
-    [[deprecated]] ::GlobalNamespace::OVRHand::TrackingConfidence& dyn_$HandConfidence$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRHand::TrackingConfidence& dyn_$HandConfidence$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDominantHand>k__BackingField
-    [[deprecated]] bool& dyn_$IsDominantHand$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDominantHand$k__BackingField();
     // public System.Boolean get_IsDataValid()
     // Offset: 0xFBFFA8
     bool get_IsDataValid();
@@ -330,6 +330,13 @@ namespace GlobalNamespace {
     // private System.Void set_IsDominantHand(System.Boolean value)
     // Offset: 0xFC0044
     void set_IsDominantHand(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xFC0514
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRHand* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHand::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRHand*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xFC0050
     void Awake();
@@ -366,19 +373,6 @@ namespace GlobalNamespace {
     // private OVRMeshRenderer/MeshRendererData OVRMeshRenderer.IOVRMeshRendererDataProvider.GetMeshRendererData()
     // Offset: 0xFC04C4
     ::GlobalNamespace::OVRMeshRenderer::MeshRendererData OVRMeshRenderer_IOVRMeshRendererDataProvider_GetMeshRendererData();
-    // public System.Void .ctor()
-    // Offset: 0xFC0514
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRHand* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRHand::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRHand*, creationType>()));
-    }
   }; // OVRHand
   #pragma pack(pop)
   static check_size<sizeof(OVRHand), 192 + sizeof(bool)> __GlobalNamespace_OVRHandSizeCheck;
@@ -542,6 +536,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRHand*), "set_IsDominantHand", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRHand::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRHand::Awake
 // Il2CppName: Awake
 template<>
@@ -642,7 +640,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRHand*), "OVRMeshRenderer.IOVRMeshRendererDataProvider.GetMeshRendererData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRHand::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

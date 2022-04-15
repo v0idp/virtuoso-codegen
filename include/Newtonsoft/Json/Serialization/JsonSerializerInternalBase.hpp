@@ -105,15 +105,15 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::Newtonsoft::Json::Serialization::JsonSerializerProxy*) == 0x8);
     public:
     // Get instance field reference: private Newtonsoft.Json.Serialization.ErrorContext _currentErrorContext
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ErrorContext*& dyn__currentErrorContext();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ErrorContext*& dyn__currentErrorContext();
     // Get instance field reference: private Newtonsoft.Json.Utilities.BidirectionalDictionary`2<System.String,System.Object> _mappings
-    [[deprecated]] ::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<::StringW, ::Il2CppObject*>*& dyn__mappings();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<::StringW, ::Il2CppObject*>*& dyn__mappings();
     // Get instance field reference: readonly Newtonsoft.Json.JsonSerializer Serializer
-    [[deprecated]] ::Newtonsoft::Json::JsonSerializer*& dyn_Serializer();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonSerializer*& dyn_Serializer();
     // Get instance field reference: readonly Newtonsoft.Json.Serialization.ITraceWriter TraceWriter
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ITraceWriter*& dyn_TraceWriter();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ITraceWriter*& dyn_TraceWriter();
     // Get instance field reference: protected Newtonsoft.Json.Serialization.JsonSerializerProxy InternalSerializer
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonSerializerProxy*& dyn_InternalSerializer();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonSerializerProxy*& dyn_InternalSerializer();
     // Newtonsoft.Json.Utilities.BidirectionalDictionary`2<System.String,System.Object> get_DefaultReferenceMappings()
     // Offset: 0xF51270
     ::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<::StringW, ::Il2CppObject*>* get_DefaultReferenceMappings();

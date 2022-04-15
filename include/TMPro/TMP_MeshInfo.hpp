@@ -142,25 +142,25 @@ namespace TMPro {
     // Set static field: static private readonly UnityEngine.Bounds s_DefaultBounds
     static void _set_s_DefaultBounds(::UnityEngine::Bounds value);
     // Get instance field reference: public UnityEngine.Mesh mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_mesh();
     // Get instance field reference: public System.Int32 vertexCount
-    [[deprecated]] int& dyn_vertexCount();
+    [[deprecated("Use field access instead!")]] int& dyn_vertexCount();
     // Get instance field reference: public UnityEngine.Vector3[] vertices
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_vertices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_vertices();
     // Get instance field reference: public UnityEngine.Vector3[] normals
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_normals();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_normals();
     // Get instance field reference: public UnityEngine.Vector4[] tangents
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn_tangents();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn_tangents();
     // Get instance field reference: public UnityEngine.Vector2[] uvs0
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn_uvs0();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn_uvs0();
     // Get instance field reference: public UnityEngine.Vector2[] uvs2
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn_uvs2();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn_uvs2();
     // Get instance field reference: public UnityEngine.Color32[] colors32
-    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn_colors32();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color32>& dyn_colors32();
     // Get instance field reference: public System.Int32[] triangles
-    [[deprecated]] ::ArrayW<int>& dyn_triangles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_triangles();
     // Get instance field reference: public UnityEngine.Material material
-    [[deprecated]] ::UnityEngine::Material*& dyn_material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_material();
     // public System.Void .ctor(UnityEngine.Mesh mesh, System.Int32 size)
     // Offset: 0x9ADA58
     TMP_MeshInfo(::UnityEngine::Mesh* mesh, int size);

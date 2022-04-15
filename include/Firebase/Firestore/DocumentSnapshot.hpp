@@ -63,9 +63,9 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::Firebase::Firestore::FirebaseFirestore*) == 0x8);
     public:
     // Get instance field reference: private readonly Firebase.Firestore.DocumentSnapshotProxy _proxy
-    [[deprecated]] ::Firebase::Firestore::DocumentSnapshotProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::DocumentSnapshotProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // public Firebase.Firestore.DocumentReference get_Reference()
     // Offset: 0xD51750
     ::Firebase::Firestore::DocumentReference* get_Reference();

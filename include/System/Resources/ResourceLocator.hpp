@@ -54,9 +54,9 @@ namespace System::Resources {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Object _value
-    [[deprecated]] ::Il2CppObject*& dyn__value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__value();
     // Get instance field reference: System.Int32 _dataPos
-    [[deprecated]] int& dyn__dataPos();
+    [[deprecated("Use field access instead!")]] int& dyn__dataPos();
     // System.Int32 get_DataPosition()
     // Offset: 0xCDB37C
     int get_DataPosition();

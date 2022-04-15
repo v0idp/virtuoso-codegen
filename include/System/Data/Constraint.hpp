@@ -83,15 +83,15 @@ namespace System::Data {
     static_assert(sizeof(::System::Data::PropertyCollection*) == 0x8);
     public:
     // Get instance field reference: private System.String _schemaName
-    [[deprecated]] ::StringW& dyn__schemaName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__schemaName();
     // Get instance field reference: private System.Boolean _inCollection
-    [[deprecated]] bool& dyn__inCollection();
+    [[deprecated("Use field access instead!")]] bool& dyn__inCollection();
     // Get instance field reference: private System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: System.Data.PropertyCollection _extendedProperties
-    [[deprecated]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
+    [[deprecated("Use field access instead!")]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
     // public System.String get_ConstraintName()
     // Offset: 0x14B1E64
     ::StringW get_ConstraintName();
@@ -119,6 +119,13 @@ namespace System::Data {
     // protected System.Data.DataSet get__DataSet()
     // Offset: 0x14B25B0
     ::System::Data::DataSet* get__DataSet();
+    // protected System.Void .ctor()
+    // Offset: 0x14B25C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Constraint* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::Constraint::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Constraint*, creationType>()));
+    }
     // System.Boolean ContainsColumn(System.Data.DataColumn column)
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool ContainsColumn(::System::Data::DataColumn* column);
@@ -152,15 +159,6 @@ namespace System::Data {
     // System.Boolean IsConstraintViolated()
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool IsConstraintViolated();
-    // protected System.Void .ctor()
-    // Offset: 0x14B25C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Constraint* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::Constraint::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Constraint*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x14B25B8
     // Implemented from: System.Object
@@ -247,6 +245,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::D
     return ::il2cpp_utils::FindMethod(classof(System::Data::Constraint*), "get__DataSet", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::Constraint::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::Constraint::ContainsColumn
 // Il2CppName: ContainsColumn
 template<>
@@ -344,10 +346,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::Constraint*), "IsConstraintViolated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Data::Constraint::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::Constraint::ToString
 // Il2CppName: ToString
 template<>

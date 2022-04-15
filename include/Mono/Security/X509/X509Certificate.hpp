@@ -197,47 +197,47 @@ namespace Mono::Security::X509 {
     // Set static field: static private System.String encoding_error
     static void _set_encoding_error(::StringW value);
     // Get instance field reference: private Mono.Security.ASN1 decoder
-    [[deprecated]] ::Mono::Security::ASN1*& dyn_decoder();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::ASN1*& dyn_decoder();
     // Get instance field reference: private System.Byte[] m_encodedcert
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_encodedcert();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_encodedcert();
     // Get instance field reference: private System.DateTime m_from
-    [[deprecated]] ::System::DateTime& dyn_m_from();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_from();
     // Get instance field reference: private System.DateTime m_until
-    [[deprecated]] ::System::DateTime& dyn_m_until();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_until();
     // Get instance field reference: private Mono.Security.ASN1 issuer
-    [[deprecated]] ::Mono::Security::ASN1*& dyn_issuer();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::ASN1*& dyn_issuer();
     // Get instance field reference: private System.String m_issuername
-    [[deprecated]] ::StringW& dyn_m_issuername();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_issuername();
     // Get instance field reference: private System.String m_keyalgo
-    [[deprecated]] ::StringW& dyn_m_keyalgo();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_keyalgo();
     // Get instance field reference: private System.Byte[] m_keyalgoparams
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_keyalgoparams();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_keyalgoparams();
     // Get instance field reference: private Mono.Security.ASN1 subject
-    [[deprecated]] ::Mono::Security::ASN1*& dyn_subject();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::ASN1*& dyn_subject();
     // Get instance field reference: private System.String m_subject
-    [[deprecated]] ::StringW& dyn_m_subject();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_subject();
     // Get instance field reference: private System.Byte[] m_publickey
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_publickey();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_publickey();
     // Get instance field reference: private System.Byte[] signature
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_signature();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_signature();
     // Get instance field reference: private System.String m_signaturealgo
-    [[deprecated]] ::StringW& dyn_m_signaturealgo();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_signaturealgo();
     // Get instance field reference: private System.Byte[] m_signaturealgoparams
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_signaturealgoparams();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_signaturealgoparams();
     // Get instance field reference: private System.Security.Cryptography.RSA _rsa
-    [[deprecated]] ::System::Security::Cryptography::RSA*& dyn__rsa();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::RSA*& dyn__rsa();
     // Get instance field reference: private System.Security.Cryptography.DSA _dsa
-    [[deprecated]] ::System::Security::Cryptography::DSA*& dyn__dsa();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::DSA*& dyn__dsa();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Byte[] serialnumber
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_serialnumber();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_serialnumber();
     // Get instance field reference: private System.Byte[] issuerUniqueID
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_issuerUniqueID();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_issuerUniqueID();
     // Get instance field reference: private System.Byte[] subjectUniqueID
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_subjectUniqueID();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_subjectUniqueID();
     // Get instance field reference: private Mono.Security.X509.X509ExtensionCollection extensions
-    [[deprecated]] ::Mono::Security::X509::X509ExtensionCollection*& dyn_extensions();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::X509::X509ExtensionCollection*& dyn_extensions();
     // public System.Security.Cryptography.DSA get_DSA()
     // Offset: 0x1640188
     ::System::Security::Cryptography::DSA* get_DSA();

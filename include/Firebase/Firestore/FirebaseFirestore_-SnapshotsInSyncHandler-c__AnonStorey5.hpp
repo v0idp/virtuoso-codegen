@@ -44,25 +44,27 @@ namespace Firebase::Firestore {
       return callback;
     }
     // Get instance field reference: System.Action callback
-    [[deprecated]] ::System::Action*& dyn_callback();
-    // System.Object <>m__0()
-    // Offset: 0xD66DD0
-    ::Il2CppObject* $$m__0();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_callback();
     // public System.Void .ctor()
     // Offset: 0xD5A944
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5*, creationType>()));
     }
+    // System.Object <>m__0()
+    // Offset: 0xD66DD0
+    ::Il2CppObject* $$m__0();
   }; // Firebase.Firestore.FirebaseFirestore/Firebase.Firestore.<SnapshotsInSyncHandler>c__AnonStorey5
   #pragma pack(pop)
   static check_size<sizeof(FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5), 16 + sizeof(::System::Action*)> __Firebase_Firestore_FirebaseFirestore_$SnapshotsInSyncHandler$c__AnonStorey5SizeCheck;
   static_assert(sizeof(FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FirebaseFirestore::$SnapshotsInSyncHandler$c__AnonStorey5::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

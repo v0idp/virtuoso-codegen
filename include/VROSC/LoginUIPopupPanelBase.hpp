@@ -71,11 +71,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected TMPro.TextMeshPro _stateText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__stateText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__stateText();
     // Get instance field reference: protected VROSC.LoginUIPopup _loginUIPopup
-    [[deprecated]] ::VROSC::LoginUIPopup*& dyn__loginUIPopup();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopup*& dyn__loginUIPopup();
     // Get instance field reference: protected UIInputField _selectedInputField
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
+    // public System.Void .ctor()
+    // Offset: 0x19B0230
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoginUIPopupPanelBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopupPanelBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopupPanelBase*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoginUIPopup loginUIPopup)
     // Offset: 0x19B40A0
     void Setup(::VROSC::LoginUIPopup* loginUIPopup);
@@ -94,25 +101,16 @@ namespace VROSC {
     // protected System.Void InputFieldSelected(UIInputField inputField)
     // Offset: 0x19B4118
     void InputFieldSelected(::GlobalNamespace::UIInputField* inputField);
-    // public System.Void .ctor()
-    // Offset: 0x19B0230
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoginUIPopupPanelBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopupPanelBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoginUIPopupPanelBase*, creationType>()));
-    }
   }; // VROSC.LoginUIPopupPanelBase
   #pragma pack(pop)
   static check_size<sizeof(LoginUIPopupPanelBase), 40 + sizeof(::GlobalNamespace::UIInputField*)> __VROSC_LoginUIPopupPanelBaseSizeCheck;
   static_assert(sizeof(LoginUIPopupPanelBase) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LoginUIPopupPanelBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoginUIPopupPanelBase::Setup
 // Il2CppName: Setup
 template<>
@@ -166,7 +164,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoginUIPopupPanelBase*), "InputFieldSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{inputField});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoginUIPopupPanelBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

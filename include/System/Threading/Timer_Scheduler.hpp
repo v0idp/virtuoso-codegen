@@ -60,9 +60,9 @@ namespace System::Threading {
     // Set static field: static private System.Threading.Timer/System.Threading.Scheduler instance
     static void _set_instance(::System::Threading::Timer::Scheduler* value);
     // Get instance field reference: private System.Collections.SortedList list
-    [[deprecated]] ::System::Collections::SortedList*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn_list();
     // Get instance field reference: private System.Threading.ManualResetEvent changed
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_changed();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_changed();
     // static public System.Threading.Timer/System.Threading.Scheduler get_Instance()
     // Offset: 0x18991E4
     static ::System::Threading::Timer::Scheduler* get_Instance();

@@ -66,13 +66,13 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::ComponentModel::PropertyDescriptor*) == 0x8);
     public:
     // Get instance field reference: private System.ComponentModel.ListChangedType listChangedType
-    [[deprecated]] ::System::ComponentModel::ListChangedType& dyn_listChangedType();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ListChangedType& dyn_listChangedType();
     // Get instance field reference: private System.Int32 newIndex
-    [[deprecated]] int& dyn_newIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_newIndex();
     // Get instance field reference: private System.Int32 oldIndex
-    [[deprecated]] int& dyn_oldIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_oldIndex();
     // Get instance field reference: private System.ComponentModel.PropertyDescriptor propDesc
-    [[deprecated]] ::System::ComponentModel::PropertyDescriptor*& dyn_propDesc();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyDescriptor*& dyn_propDesc();
     // public System.ComponentModel.ListChangedType get_ListChangedType()
     // Offset: 0x10F8290
     ::System::ComponentModel::ListChangedType get_ListChangedType();

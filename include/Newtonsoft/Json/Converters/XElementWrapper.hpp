@@ -64,7 +64,7 @@ namespace Newtonsoft::Json::Converters {
       return *reinterpret_cast<::Newtonsoft::Json::Converters::IXmlElement*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Converters.IXmlNode> _attributes
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__attributes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__attributes();
     // private System.Xml.Linq.XElement get_Element()
     // Offset: 0x1591EE0
     ::System::Xml::Linq::XElement* get_Element();

@@ -74,15 +74,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.RectTransform _other
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__other();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__other();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private System.Boolean _valid
-    [[deprecated]] bool& dyn__valid();
+    [[deprecated("Use field access instead!")]] bool& dyn__valid();
     // Get instance field reference: private System.Single _lastHeight
-    [[deprecated]] float& dyn__lastHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__lastHeight();
     // Get instance field reference: private System.Single _lastWidth
-    [[deprecated]] float& dyn__lastWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__lastWidth();
+    // public System.Void .ctor()
+    // Offset: 0xAC0F38
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MatchOtherRectTransform* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MatchOtherRectTransform::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MatchOtherRectTransform*, creationType>()));
+    }
     // private System.Void LateUpdate()
     // Offset: 0xAC0D24
     void LateUpdate();
@@ -92,25 +99,16 @@ namespace VROSC {
     // private System.Void UpdateSize(System.Boolean force)
     // Offset: 0xAC0D6C
     void UpdateSize(bool force);
-    // public System.Void .ctor()
-    // Offset: 0xAC0F38
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MatchOtherRectTransform* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MatchOtherRectTransform::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MatchOtherRectTransform*, creationType>()));
-    }
   }; // VROSC.MatchOtherRectTransform
   #pragma pack(pop)
   static check_size<sizeof(MatchOtherRectTransform), 48 + sizeof(float)> __VROSC_MatchOtherRectTransformSizeCheck;
   static_assert(sizeof(MatchOtherRectTransform) == 0x34);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::MatchOtherRectTransform::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MatchOtherRectTransform::LateUpdate
 // Il2CppName: LateUpdate
 template<>
@@ -136,7 +134,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::MatchOtherRectTransform*), "UpdateSize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{force});
   }
 };
-// Writing MetadataGetter for method: VROSC::MatchOtherRectTransform::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

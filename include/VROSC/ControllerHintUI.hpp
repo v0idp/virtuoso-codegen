@@ -100,46 +100,44 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _hintLabelText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__hintLabelText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__hintLabelText();
     // Get instance field reference: private UnityEngine.RectTransform _hintBackground
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__hintBackground();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__hintBackground();
     // Get instance field reference: private TMPro.TextMeshPro _hintLabelIfIcon
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__hintLabelIfIcon();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__hintLabelIfIcon();
     // Get instance field reference: private VROSC.IconMesh _iconMesh
-    [[deprecated]] ::VROSC::IconMesh*& dyn__iconMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::IconMesh*& dyn__iconMesh();
     // Get instance field reference: private UnityEngine.RectTransform _iconHolder
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__iconHolder();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__iconHolder();
     // Get instance field reference: private System.Single _textpaddingX
-    [[deprecated]] float& dyn__textpaddingX();
+    [[deprecated("Use field access instead!")]] float& dyn__textpaddingX();
     // Get instance field reference: private System.Single _textpaddingY
-    [[deprecated]] float& dyn__textpaddingY();
+    [[deprecated("Use field access instead!")]] float& dyn__textpaddingY();
     // Get instance field reference: private VROSC.TooltipData _currentTooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__currentTooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__currentTooltip();
+    // public System.Void .ctor()
+    // Offset: 0x94E4E4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControllerHintUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerHintUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControllerHintUI*, creationType>()));
+    }
     // public System.Void SetTooltipActive(System.Boolean active, VROSC.TooltipData tooltip)
     // Offset: 0x94DEF4
     void SetTooltipActive(bool active, ::VROSC::TooltipData* tooltip);
     // private System.Boolean SetIcon(VROSC.TooltipData tooltip)
     // Offset: 0x94E3BC
     bool SetIcon(::VROSC::TooltipData* tooltip);
-    // public System.Void .ctor()
-    // Offset: 0x94E4E4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControllerHintUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerHintUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControllerHintUI*, creationType>()));
-    }
   }; // VROSC.ControllerHintUI
   #pragma pack(pop)
   static check_size<sizeof(ControllerHintUI), 72 + sizeof(::VROSC::TooltipData*)> __VROSC_ControllerHintUISizeCheck;
   static_assert(sizeof(ControllerHintUI) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ControllerHintUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ControllerHintUI::SetTooltipActive
 // Il2CppName: SetTooltipActive
 template<>
@@ -159,7 +157,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControllerHintUI*), "SetIcon", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tooltip});
   }
 };
-// Writing MetadataGetter for method: VROSC::ControllerHintUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

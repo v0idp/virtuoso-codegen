@@ -51,9 +51,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarHandInputState inputState
-    [[deprecated]] ::GlobalNamespace::ovrAvatarHandInputState& dyn_inputState();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarHandInputState& dyn_inputState();
     // Get instance field reference: public System.IntPtr renderComponent
-    [[deprecated]] ::System::IntPtr& dyn_renderComponent();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_renderComponent();
   }; // ovrAvatarControllerComponent
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarControllerComponent), 72 + sizeof(::System::IntPtr)> __GlobalNamespace_ovrAvatarControllerComponentSizeCheck;

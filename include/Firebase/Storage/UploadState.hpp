@@ -52,7 +52,7 @@ namespace Firebase::Storage {
       return State;
     }
     // Get instance field reference: private Firebase.Storage.Internal.TransferState <State>k__BackingField
-    [[deprecated]] ::Firebase::Storage::Internal::TransferState*& dyn_$State$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::Internal::TransferState*& dyn_$State$k__BackingField();
     // public System.Int64 get_BytesTransferred()
     // Offset: 0x18397B0
     int64_t get_BytesTransferred();

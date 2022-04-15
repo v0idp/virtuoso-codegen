@@ -130,19 +130,19 @@ namespace System::Runtime::Remoting::Messaging {
     // Set static field: static private System.String s_CorrelationMgrSlotName
     static void _set_s_CorrelationMgrSlotName(::StringW value);
     // Get instance field reference: private System.Collections.Hashtable m_Datastore
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_m_Datastore();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_m_Datastore();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.CallContextRemotingData m_RemotingData
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::CallContextRemotingData*& dyn_m_RemotingData();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::CallContextRemotingData*& dyn_m_RemotingData();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.CallContextSecurityData m_SecurityData
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::CallContextSecurityData*& dyn_m_SecurityData();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::CallContextSecurityData*& dyn_m_SecurityData();
     // Get instance field reference: private System.Object m_HostContext
-    [[deprecated]] ::Il2CppObject*& dyn_m_HostContext();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_HostContext();
     // Get instance field reference: private System.Boolean m_IsCorrelationMgr
-    [[deprecated]] bool& dyn_m_IsCorrelationMgr();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsCorrelationMgr();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.Header[] _sendHeaders
-    [[deprecated]] ::ArrayW<::System::Runtime::Remoting::Messaging::Header*>& dyn__sendHeaders();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Remoting::Messaging::Header*>& dyn__sendHeaders();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.Header[] _recvHeaders
-    [[deprecated]] ::ArrayW<::System::Runtime::Remoting::Messaging::Header*>& dyn__recvHeaders();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Remoting::Messaging::Header*>& dyn__recvHeaders();
     // public System.Boolean get_HasInfo()
     // Offset: 0x107B888
     bool get_HasInfo();

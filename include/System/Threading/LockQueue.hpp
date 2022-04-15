@@ -48,9 +48,9 @@ namespace System::Threading {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Threading.ReaderWriterLock rwlock
-    [[deprecated]] ::System::Threading::ReaderWriterLock*& dyn_rwlock();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ReaderWriterLock*& dyn_rwlock();
     // Get instance field reference: private System.Int32 lockCount
-    [[deprecated]] int& dyn_lockCount();
+    [[deprecated("Use field access instead!")]] int& dyn_lockCount();
     // public System.Boolean get_IsEmpty()
     // Offset: 0x107A630
     bool get_IsEmpty();

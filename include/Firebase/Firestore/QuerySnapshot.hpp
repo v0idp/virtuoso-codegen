@@ -77,11 +77,11 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*>(this);
     }
     // Get instance field reference: private readonly Firebase.Firestore.QuerySnapshotProxy _proxy
-    [[deprecated]] ::Firebase::Firestore::QuerySnapshotProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::QuerySnapshotProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestore _firestore
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestore*& dyn__firestore();
     // Get instance field reference: private Firebase.Firestore.DocumentSnapshot[] _documentsCached
-    [[deprecated]] ::ArrayW<::Firebase::Firestore::DocumentSnapshot*>& dyn__documentsCached();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Firebase::Firestore::DocumentSnapshot*>& dyn__documentsCached();
     // public System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot> get_Documents()
     // Offset: 0xD632A4
     ::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>* get_Documents();

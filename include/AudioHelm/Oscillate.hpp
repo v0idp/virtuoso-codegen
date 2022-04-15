@@ -58,38 +58,36 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Vector3 oscillationVector
-    [[deprecated]] ::UnityEngine::Vector3& dyn_oscillationVector();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_oscillationVector();
     // Get instance field reference: public System.Single freqeuncy
-    [[deprecated]] float& dyn_freqeuncy();
+    [[deprecated("Use field access instead!")]] float& dyn_freqeuncy();
     // Get instance field reference: private System.Single progress
-    [[deprecated]] float& dyn_progress();
+    [[deprecated("Use field access instead!")]] float& dyn_progress();
     // Get instance field reference: private UnityEngine.Vector3 startingPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_startingPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_startingPosition();
+    // public System.Void .ctor()
+    // Offset: 0xF7FD20
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Oscillate* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Oscillate::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Oscillate*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xF7FC48
     void Start();
     // private System.Void Update()
     // Offset: 0xF7FC84
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0xF7FD20
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Oscillate* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Oscillate::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Oscillate*, creationType>()));
-    }
   }; // AudioHelm.Oscillate
   #pragma pack(pop)
   static check_size<sizeof(Oscillate), 44 + sizeof(::UnityEngine::Vector3)> __AudioHelm_OscillateSizeCheck;
   static_assert(sizeof(Oscillate) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::Oscillate::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::Oscillate::Start
 // Il2CppName: Start
 template<>
@@ -106,7 +104,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Oscillate*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::Oscillate::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

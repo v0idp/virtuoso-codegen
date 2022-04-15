@@ -46,18 +46,16 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x8D4540
     static void _cctor();
-    // System.String <Awake>b__5_0(VROSC.Note x)
-    // Offset: 0x8D45A8
-    ::StringW $Awake$b__5_0(::VROSC::Note x);
     // public System.Void .ctor()
     // Offset: 0x8D45A0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleUI::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleUI::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ScaleUI::$$c*, creationType>()));
     }
+    // System.String <Awake>b__5_0(VROSC.Note x)
+    // Offset: 0x8D45A8
+    ::StringW $Awake$b__5_0(::VROSC::Note x);
   }; // VROSC.ScaleUI/VROSC.<>c
   #pragma pack(pop)
 }
@@ -70,6 +68,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScaleUI::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::ScaleUI::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ScaleUI::$$c::$Awake$b__5_0
 // Il2CppName: <Awake>b__5_0
 template<>
@@ -79,7 +81,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScaleUI::$$c*), "<Awake>b__5_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: VROSC::ScaleUI::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

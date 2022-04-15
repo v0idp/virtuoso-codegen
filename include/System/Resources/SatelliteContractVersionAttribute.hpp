@@ -44,7 +44,7 @@ namespace System::Resources {
       return version;
     }
     // Get instance field reference: private System.String _version
-    [[deprecated]] ::StringW& dyn__version();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__version();
     // public System.Void .ctor(System.String version)
     // Offset: 0x1172974
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

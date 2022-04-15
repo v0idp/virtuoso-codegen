@@ -129,33 +129,33 @@ namespace System {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Boolean UseGroup
-    [[deprecated]] bool& dyn_UseGroup();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseGroup();
     // Get instance field reference: public System.Int32 DecimalDigits
-    [[deprecated]] int& dyn_DecimalDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_DecimalDigits();
     // Get instance field reference: public System.Int32 DecimalPointPos
-    [[deprecated]] int& dyn_DecimalPointPos();
+    [[deprecated("Use field access instead!")]] int& dyn_DecimalPointPos();
     // Get instance field reference: public System.Int32 DecimalTailSharpDigits
-    [[deprecated]] int& dyn_DecimalTailSharpDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_DecimalTailSharpDigits();
     // Get instance field reference: public System.Int32 IntegerDigits
-    [[deprecated]] int& dyn_IntegerDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_IntegerDigits();
     // Get instance field reference: public System.Int32 IntegerHeadSharpDigits
-    [[deprecated]] int& dyn_IntegerHeadSharpDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_IntegerHeadSharpDigits();
     // Get instance field reference: public System.Int32 IntegerHeadPos
-    [[deprecated]] int& dyn_IntegerHeadPos();
+    [[deprecated("Use field access instead!")]] int& dyn_IntegerHeadPos();
     // Get instance field reference: public System.Boolean UseExponent
-    [[deprecated]] bool& dyn_UseExponent();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseExponent();
     // Get instance field reference: public System.Int32 ExponentDigits
-    [[deprecated]] int& dyn_ExponentDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_ExponentDigits();
     // Get instance field reference: public System.Int32 ExponentTailSharpDigits
-    [[deprecated]] int& dyn_ExponentTailSharpDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_ExponentTailSharpDigits();
     // Get instance field reference: public System.Boolean ExponentNegativeSignOnly
-    [[deprecated]] bool& dyn_ExponentNegativeSignOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_ExponentNegativeSignOnly();
     // Get instance field reference: public System.Int32 DividePlaces
-    [[deprecated]] int& dyn_DividePlaces();
+    [[deprecated("Use field access instead!")]] int& dyn_DividePlaces();
     // Get instance field reference: public System.Int32 Percents
-    [[deprecated]] int& dyn_Percents();
+    [[deprecated("Use field access instead!")]] int& dyn_Percents();
     // Get instance field reference: public System.Int32 Permilles
-    [[deprecated]] int& dyn_Permilles();
+    [[deprecated("Use field access instead!")]] int& dyn_Permilles();
     // static public System.Void GetActiveSection(System.String format, ref System.Boolean positive, System.Boolean zero, ref System.Int32 offset, ref System.Int32 length)
     // Offset: 0xE54634
     static void GetActiveSection(::StringW format, ByRef<bool> positive, bool zero, ByRef<int> offset, ByRef<int> length);

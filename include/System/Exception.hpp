@@ -195,35 +195,35 @@ namespace System {
     // Set static field: static private System.Int32 _COMPlusExceptionCode
     static void _set__COMPlusExceptionCode(int value);
     // Get instance field reference: private System.String _className
-    [[deprecated]] ::StringW& dyn__className();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__className();
     // Get instance field reference: System.String _message
-    [[deprecated]] ::StringW& dyn__message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__message();
     // Get instance field reference: private System.Collections.IDictionary _data
-    [[deprecated]] ::System::Collections::IDictionary*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IDictionary*& dyn__data();
     // Get instance field reference: private System.Exception _innerException
-    [[deprecated]] ::System::Exception*& dyn__innerException();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn__innerException();
     // Get instance field reference: private System.String _helpURL
-    [[deprecated]] ::StringW& dyn__helpURL();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__helpURL();
     // Get instance field reference: private System.Object _stackTrace
-    [[deprecated]] ::Il2CppObject*& dyn__stackTrace();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__stackTrace();
     // Get instance field reference: private System.String _stackTraceString
-    [[deprecated]] ::StringW& dyn__stackTraceString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__stackTraceString();
     // Get instance field reference: private System.String _remoteStackTraceString
-    [[deprecated]] ::StringW& dyn__remoteStackTraceString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__remoteStackTraceString();
     // Get instance field reference: private System.Int32 _remoteStackIndex
-    [[deprecated]] int& dyn__remoteStackIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__remoteStackIndex();
     // Get instance field reference: private System.Object _dynamicMethods
-    [[deprecated]] ::Il2CppObject*& dyn__dynamicMethods();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__dynamicMethods();
     // Get instance field reference: System.Int32 _HResult
-    [[deprecated]] int& dyn__HResult();
+    [[deprecated("Use field access instead!")]] int& dyn__HResult();
     // Get instance field reference: private System.String _source
-    [[deprecated]] ::StringW& dyn__source();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__source();
     // Get instance field reference: private System.Runtime.Serialization.SafeSerializationManager _safeSerializationManager
-    [[deprecated]] ::System::Runtime::Serialization::SafeSerializationManager*& dyn__safeSerializationManager();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SafeSerializationManager*& dyn__safeSerializationManager();
     // Get instance field reference: System.Diagnostics.StackTrace[] captured_traces
-    [[deprecated]] ::ArrayW<::System::Diagnostics::StackTrace*>& dyn_captured_traces();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Diagnostics::StackTrace*>& dyn_captured_traces();
     // Get instance field reference: private System.IntPtr[] native_trace_ips
-    [[deprecated]] ::ArrayW<::System::IntPtr>& dyn_native_trace_ips();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::IntPtr>& dyn_native_trace_ips();
     // public System.String get_Message()
     // Offset: 0x14F9344
     ::StringW get_Message();

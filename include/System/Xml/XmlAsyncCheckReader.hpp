@@ -80,9 +80,9 @@ namespace System::Xml {
     static_assert(sizeof(::System::Threading::Tasks::Task*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Xml.XmlReader coreReader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn_coreReader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn_coreReader();
     // Get instance field reference: private System.Threading.Tasks.Task lastTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_lastTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_lastTask();
     // System.Xml.XmlReader get_CoreReader()
     // Offset: 0x11B3F50
     ::System::Xml::XmlReader* get_CoreReader();

@@ -134,25 +134,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean IsJoinable
-    [[deprecated]] bool& dyn_IsJoinable();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsJoinable();
     // Get instance field reference: public System.String LobbySessionID
-    [[deprecated]] ::StringW& dyn_LobbySessionID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_LobbySessionID();
     // Get instance field reference: public System.String MatchSessionID
-    [[deprecated]] ::StringW& dyn_MatchSessionID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MatchSessionID();
     // Get instance field reference: public System.UInt64 SuggestedUserID
-    [[deprecated]] uint64_t& dyn_SuggestedUserID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SuggestedUserID();
     // Get instance field reference: public UnityEngine.UI.Text InVRConsole
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_InVRConsole();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_InVRConsole();
     // Get instance field reference: public UnityEngine.UI.Text DestinationsConsole
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> DestinationAPINames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
     // Get instance field reference: private System.UInt64 LoggedInUserID
-    [[deprecated]] uint64_t& dyn_LoggedInUserID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_LoggedInUserID();
     // Get instance field reference: private System.Int32 DestinationIndex
-    [[deprecated]] int& dyn_DestinationIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_DestinationIndex();
     // Get instance field reference: private System.Boolean OnlyPushUpOnce
-    [[deprecated]] bool& dyn_OnlyPushUpOnce();
+    [[deprecated("Use field access instead!")]] bool& dyn_OnlyPushUpOnce();
+    // public System.Void .ctor()
+    // Offset: 0x9344E4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GroupPresenceSample* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::GroupPresenceSample::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GroupPresenceSample*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x932DD0
     void Start();
@@ -234,25 +241,16 @@ namespace GlobalNamespace {
     // private System.Void <LaunchRosterPanel>b__12_0(Oculus.Platform.Message message)
     // Offset: 0x934DA4
     void $LaunchRosterPanel$b__12_0(::Oculus::Platform::Message* message);
-    // public System.Void .ctor()
-    // Offset: 0x9344E4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GroupPresenceSample* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::GroupPresenceSample::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GroupPresenceSample*, creationType>()));
-    }
   }; // GroupPresenceSample
   #pragma pack(pop)
   static check_size<sizeof(GroupPresenceSample), 92 + sizeof(bool)> __GlobalNamespace_GroupPresenceSampleSizeCheck;
   static_assert(sizeof(GroupPresenceSample) == 0x5D);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::GroupPresenceSample::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::GroupPresenceSample::Start
 // Il2CppName: Start
 template<>
@@ -482,7 +480,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::GroupPresenceSample*), "<LaunchRosterPanel>b__12_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::GroupPresenceSample::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

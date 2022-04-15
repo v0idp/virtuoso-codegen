@@ -70,15 +70,15 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String elementName
-    [[deprecated]] ::StringW& dyn_elementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_elementName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
     // Get instance field reference: private System.Boolean isNullable
-    [[deprecated]] bool& dyn_isNullable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNullable();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.Int32 order
-    [[deprecated]] int& dyn_order();
+    [[deprecated("Use field access instead!")]] int& dyn_order();
     // public System.String get_ElementName()
     // Offset: 0x11B3828
     ::StringW get_ElementName();

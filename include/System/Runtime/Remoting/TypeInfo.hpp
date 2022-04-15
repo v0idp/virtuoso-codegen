@@ -62,11 +62,11 @@ namespace System::Runtime::Remoting {
       return *reinterpret_cast<::System::Runtime::Remoting::IRemotingTypeInfo*>(this);
     }
     // Get instance field reference: private System.String serverType
-    [[deprecated]] ::StringW& dyn_serverType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_serverType();
     // Get instance field reference: private System.String[] serverHierarchy
-    [[deprecated]] ::ArrayW<::StringW>& dyn_serverHierarchy();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_serverHierarchy();
     // Get instance field reference: private System.String[] interfacesImplemented
-    [[deprecated]] ::ArrayW<::StringW>& dyn_interfacesImplemented();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_interfacesImplemented();
     // public System.String get_TypeName()
     // Offset: 0x12B21E4
     ::StringW get_TypeName();

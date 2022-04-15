@@ -42,9 +42,6 @@ namespace MS::Internal::Xml::Linq::ComponentModel {
     public:
     // public System.Void .ctor()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.ComponentModel.TypeDescriptionProvider
-    // Base method: System.Void TypeDescriptionProvider::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XTypeDescriptionProvider_1<T>* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::Linq::ComponentModel::XTypeDescriptionProvider_1::.ctor");

@@ -138,29 +138,29 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.IO.Stream _stream
-    [[deprecated]] ::System::IO::Stream*& dyn__stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__stream();
     // Get instance field reference: private System.Security.Cryptography.ICryptoTransform _Transform
-    [[deprecated]] ::System::Security::Cryptography::ICryptoTransform*& dyn__Transform();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::ICryptoTransform*& dyn__Transform();
     // Get instance field reference: private System.Byte[] _InputBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__InputBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__InputBuffer();
     // Get instance field reference: private System.Int32 _InputBufferIndex
-    [[deprecated]] int& dyn__InputBufferIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__InputBufferIndex();
     // Get instance field reference: private System.Int32 _InputBlockSize
-    [[deprecated]] int& dyn__InputBlockSize();
+    [[deprecated("Use field access instead!")]] int& dyn__InputBlockSize();
     // Get instance field reference: private System.Byte[] _OutputBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__OutputBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__OutputBuffer();
     // Get instance field reference: private System.Int32 _OutputBufferIndex
-    [[deprecated]] int& dyn__OutputBufferIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__OutputBufferIndex();
     // Get instance field reference: private System.Int32 _OutputBlockSize
-    [[deprecated]] int& dyn__OutputBlockSize();
+    [[deprecated("Use field access instead!")]] int& dyn__OutputBlockSize();
     // Get instance field reference: private System.Security.Cryptography.CryptoStreamMode _transformMode
-    [[deprecated]] ::System::Security::Cryptography::CryptoStreamMode& dyn__transformMode();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::CryptoStreamMode& dyn__transformMode();
     // Get instance field reference: private System.Boolean _canRead
-    [[deprecated]] bool& dyn__canRead();
+    [[deprecated("Use field access instead!")]] bool& dyn__canRead();
     // Get instance field reference: private System.Boolean _canWrite
-    [[deprecated]] bool& dyn__canWrite();
+    [[deprecated("Use field access instead!")]] bool& dyn__canWrite();
     // Get instance field reference: private System.Boolean _finalBlockTransformed
-    [[deprecated]] bool& dyn__finalBlockTransformed();
+    [[deprecated("Use field access instead!")]] bool& dyn__finalBlockTransformed();
     // public System.Boolean get_HasFlushedFinalBlock()
     // Offset: 0x13F90E0
     bool get_HasFlushedFinalBlock();

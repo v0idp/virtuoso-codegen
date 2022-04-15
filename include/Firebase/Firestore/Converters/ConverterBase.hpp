@@ -78,7 +78,7 @@ namespace Firebase::Firestore::Converters {
       return TargetType;
     }
     // Get instance field reference: protected readonly System.Type TargetType
-    [[deprecated]] ::System::Type*& dyn_TargetType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_TargetType();
     // protected System.Void .ctor(System.Type targetType)
     // Offset: 0xD4AD1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

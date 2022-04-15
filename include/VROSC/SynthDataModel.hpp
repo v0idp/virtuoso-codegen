@@ -87,17 +87,17 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.OctaveData OctaveData
-    [[deprecated]] ::VROSC::OctaveData*& dyn_OctaveData();
+    [[deprecated("Use field access instead!")]] ::VROSC::OctaveData*& dyn_OctaveData();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ScaleData> ScalesData
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ScaleData*>*& dyn_ScalesData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::ScaleData*>*& dyn_ScalesData();
     // Get instance field reference: public System.String SelectedPatchName
-    [[deprecated]] ::StringW& dyn_SelectedPatchName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SelectedPatchName();
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> PatchesFilenames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_PatchesFilenames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_PatchesFilenames();
     // Get instance field reference: public System.Boolean FrameIsActive
-    [[deprecated]] bool& dyn_FrameIsActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_FrameIsActive();
     // Get instance field reference: public System.Boolean ArpeggiatorLinkHands
-    [[deprecated]] bool& dyn_ArpeggiatorLinkHands();
+    [[deprecated("Use field access instead!")]] bool& dyn_ArpeggiatorLinkHands();
     // public System.Void CopyOldSynthData(VROSC.SynthData oldSynthData)
     // Offset: 0x19339AC
     void CopyOldSynthData(::VROSC::SynthData* oldSynthData);
@@ -116,7 +116,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentDataModel
     // Base method: System.Void InstrumentDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthDataModel::.ctor");

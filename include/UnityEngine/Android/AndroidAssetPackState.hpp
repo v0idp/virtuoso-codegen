@@ -55,11 +55,11 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::UnityEngine::Android::AndroidAssetPackError) == 0x4);
     public:
     // Get instance field reference: private readonly System.String <name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$name$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackStatus <status>k__BackingField
-    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackError <error>k__BackingField
-    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
     // System.Void .ctor(System.String name, UnityEngine.Android.AndroidAssetPackStatus status, UnityEngine.Android.AndroidAssetPackError error)
     // Offset: 0x1866260
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

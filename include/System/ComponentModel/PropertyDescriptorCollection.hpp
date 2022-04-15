@@ -130,23 +130,23 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.PropertyDescriptorCollection Empty
     static void _set_Empty(::System::ComponentModel::PropertyDescriptorCollection* value);
     // Get instance field reference: private System.Collections.IDictionary cachedFoundProperties
-    [[deprecated]] ::System::Collections::IDictionary*& dyn_cachedFoundProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IDictionary*& dyn_cachedFoundProperties();
     // Get instance field reference: private System.Boolean cachedIgnoreCase
-    [[deprecated]] bool& dyn_cachedIgnoreCase();
+    [[deprecated("Use field access instead!")]] bool& dyn_cachedIgnoreCase();
     // Get instance field reference: private System.ComponentModel.PropertyDescriptor[] properties
-    [[deprecated]] ::ArrayW<::System::ComponentModel::PropertyDescriptor*>& dyn_properties();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::ComponentModel::PropertyDescriptor*>& dyn_properties();
     // Get instance field reference: private System.Int32 propCount
-    [[deprecated]] int& dyn_propCount();
+    [[deprecated("Use field access instead!")]] int& dyn_propCount();
     // Get instance field reference: private System.String[] namedSort
-    [[deprecated]] ::ArrayW<::StringW>& dyn_namedSort();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_namedSort();
     // Get instance field reference: private System.Collections.IComparer comparer
-    [[deprecated]] ::System::Collections::IComparer*& dyn_comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IComparer*& dyn_comparer();
     // Get instance field reference: private System.Boolean propsOwned
-    [[deprecated]] bool& dyn_propsOwned();
+    [[deprecated("Use field access instead!")]] bool& dyn_propsOwned();
     // Get instance field reference: private System.Boolean needSort
-    [[deprecated]] bool& dyn_needSort();
+    [[deprecated("Use field access instead!")]] bool& dyn_needSort();
     // Get instance field reference: private System.Boolean readOnly
-    [[deprecated]] bool& dyn_readOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_readOnly();
     // public System.Int32 get_Count()
     // Offset: 0x140AED4
     int get_Count();

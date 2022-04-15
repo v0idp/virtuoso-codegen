@@ -66,9 +66,9 @@ namespace System::Runtime::Remoting::Messaging {
       return *reinterpret_cast<::System::Runtime::Remoting::Messaging::IMessageSink*>(this);
     }
     // Get instance field reference: private System.MarshalByRefObject _target
-    [[deprecated]] ::System::MarshalByRefObject*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::System::MarshalByRefObject*& dyn__target();
     // Get instance field reference: private System.Runtime.Remoting.Proxies.RealProxy _rp
-    [[deprecated]] ::System::Runtime::Remoting::Proxies::RealProxy*& dyn__rp();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Proxies::RealProxy*& dyn__rp();
     // public System.Void .ctor(System.MarshalByRefObject obj, System.Boolean forceInternalExecute)
     // Offset: 0x1253AB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

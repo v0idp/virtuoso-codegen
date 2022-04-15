@@ -31,9 +31,6 @@ namespace RSG {
     public:
     // public System.Void .ctor()
     // Offset: 0xB29AF8
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PromiseCancelledException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseCancelledException::.ctor");
@@ -41,8 +38,6 @@ namespace RSG {
     }
     // public System.Void .ctor(System.String message)
     // Offset: 0xB29B5C
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PromiseCancelledException* New_ctor(::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseCancelledException::.ctor");

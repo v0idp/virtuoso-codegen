@@ -75,13 +75,13 @@ namespace UnityEngine::Timeline {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::UnityEngine::Playables::PlayableBinding>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private UnityEngine.Playables.PlayableBinding <>2__current
-    [[deprecated]] ::UnityEngine::Playables::PlayableBinding& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableBinding& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public UnityEngine.Timeline.AnimationPlayableAsset <>4__this
-    [[deprecated]] ::UnityEngine::Timeline::AnimationPlayableAsset*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::AnimationPlayableAsset*& dyn_$$4__this();
     // private UnityEngine.Playables.PlayableBinding System.Collections.Generic.IEnumerator<UnityEngine.Playables.PlayableBinding>.get_Current()
     // Offset: 0x18D41C0
     ::UnityEngine::Playables::PlayableBinding System_Collections_Generic_IEnumerator$UnityEngine_Playables_PlayableBinding$_get_Current();

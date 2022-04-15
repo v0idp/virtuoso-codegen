@@ -47,7 +47,7 @@ namespace UnityEngine::Android {
       return m_Callback;
     }
     // Get instance field reference: private System.Action`1<UnityEngine.Android.AndroidAssetPackUseMobileDataRequestResult> m_Callback
-    [[deprecated]] ::System::Action_1<::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult*>*& dyn_m_Callback();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult*>*& dyn_m_Callback();
     // private System.Void onMobileDataConfirmationResult(System.Boolean allowed)
     // Offset: 0x1875760
     void onMobileDataConfirmationResult(bool allowed);

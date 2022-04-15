@@ -43,13 +43,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialPropertyBlock) == 0x20);
     public:
     // Get instance field reference: public OvrAvatarMaterialManager/AvatarComponentMaterialProperties[] ComponentMaterialProperties
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarComponentMaterialProperties>& dyn_ComponentMaterialProperties();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OvrAvatarMaterialManager::AvatarComponentMaterialProperties>& dyn_ComponentMaterialProperties();
     // Get instance field reference: public OvrAvatarMaterialManager/AvatarMaterialPropertyBlock MaterialPropertyBlock
-    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialPropertyBlock& dyn_MaterialPropertyBlock();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialPropertyBlock& dyn_MaterialPropertyBlock();
     // public System.Void .ctor()
     // Offset: 0x8CCA50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarMaterialManager::AvatarMaterialConfig* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarMaterialManager::AvatarMaterialConfig::.ctor");

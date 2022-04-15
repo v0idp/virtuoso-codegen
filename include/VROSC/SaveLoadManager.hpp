@@ -170,9 +170,16 @@ namespace VROSC {
     // Set static field: static public System.Action`2<System.String,VROSC.Error> OnLoadPreviewFailure
     static void _set_OnLoadPreviewFailure(::System::Action_2<::StringW, ::VROSC::Error>* value);
     // Get instance field reference: private VROSC.CloudStateManager _cloudStateManager
-    [[deprecated]] ::VROSC::CloudStateManager*& dyn__cloudStateManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::CloudStateManager*& dyn__cloudStateManager();
     // Get instance field reference: private VROSC.ZipFileWriter _zipFileWriter
-    [[deprecated]] ::VROSC::ZipFileWriter*& dyn__zipFileWriter();
+    [[deprecated("Use field access instead!")]] ::VROSC::ZipFileWriter*& dyn__zipFileWriter();
+    // public System.Void .ctor()
+    // Offset: 0xDE02EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SaveLoadManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveLoadManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SaveLoadManager*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xDDE6BC
     void Awake();
@@ -254,25 +261,16 @@ namespace VROSC {
     // private System.Void DownloadPreviewFromCloudFailure(System.String sessionName, VROSC.Error error)
     // Offset: 0xDE025C
     void DownloadPreviewFromCloudFailure(::StringW sessionName, ::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0xDE02EC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SaveLoadManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveLoadManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SaveLoadManager*, creationType>()));
-    }
   }; // VROSC.SaveLoadManager
   #pragma pack(pop)
   static check_size<sizeof(SaveLoadManager), 32 + sizeof(::VROSC::ZipFileWriter*)> __VROSC_SaveLoadManagerSizeCheck;
   static_assert(sizeof(SaveLoadManager) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SaveLoadManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SaveLoadManager::Awake
 // Il2CppName: Awake
 template<>
@@ -550,7 +548,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager*), "DownloadPreviewFromCloudFailure", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionName, error});
   }
 };
-// Writing MetadataGetter for method: VROSC::SaveLoadManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

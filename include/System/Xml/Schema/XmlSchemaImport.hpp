@@ -53,9 +53,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchemaAnnotation*) == 0x8);
     public:
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnnotation annotation
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnnotation*& dyn_annotation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnnotation*& dyn_annotation();
     // public System.String get_Namespace()
     // Offset: 0x110F270
     ::StringW get_Namespace();
@@ -67,7 +67,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaExternal
     // Base method: System.Void XmlSchemaExternal::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaImport* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaImport::.ctor");

@@ -85,9 +85,9 @@ namespace System::Threading::Tasks {
     // Set static field: static private System.Threading.ContextCallback s_invokeActionCallback
     static void _set_s_invokeActionCallback(::System::Threading::ContextCallback* value);
     // Get instance field reference: private readonly System.Threading.ExecutionContext m_capturedContext
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_capturedContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_m_capturedContext();
     // Get instance field reference: protected readonly System.Action m_action
-    [[deprecated]] ::System::Action*& dyn_m_action();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_m_action();
     // static System.Boolean get_IsValidLocationForInlining()
     // Offset: 0xFE2EE4
     static bool get_IsValidLocationForInlining();

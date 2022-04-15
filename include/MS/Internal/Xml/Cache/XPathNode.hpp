@@ -95,19 +95,19 @@ namespace MS::Internal::Xml::Cache {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private MS.Internal.Xml.Cache.XPathNodeInfoAtom info
-    [[deprecated]] ::MS::Internal::Xml::Cache::XPathNodeInfoAtom*& dyn_info();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::Cache::XPathNodeInfoAtom*& dyn_info();
     // Get instance field reference: private System.UInt16 idxSibling
-    [[deprecated]] uint16_t& dyn_idxSibling();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_idxSibling();
     // Get instance field reference: private System.UInt16 idxParent
-    [[deprecated]] uint16_t& dyn_idxParent();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_idxParent();
     // Get instance field reference: private System.UInt16 idxSimilar
-    [[deprecated]] uint16_t& dyn_idxSimilar();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_idxSimilar();
     // Get instance field reference: private System.UInt16 posOffset
-    [[deprecated]] uint16_t& dyn_posOffset();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_posOffset();
     // Get instance field reference: private System.UInt32 props
-    [[deprecated]] uint& dyn_props();
+    [[deprecated("Use field access instead!")]] uint& dyn_props();
     // Get instance field reference: private System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // public System.Xml.XPath.XPathNodeType get_NodeType()
     // Offset: 0xF7A268
     ::System::Xml::XPath::XPathNodeType get_NodeType();

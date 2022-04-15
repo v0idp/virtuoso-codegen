@@ -66,24 +66,21 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _target
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__target();
     // Get instance field reference: private UnityEngine.Color _visibleColor
-    [[deprecated]] ::UnityEngine::Color& dyn__visibleColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__visibleColor();
     // Get instance field reference: public System.Single Appear
-    [[deprecated]] float& dyn_Appear();
-    // public System.Void Setup(TMPro.TextMeshPro target)
-    // Offset: 0x193A268
-    void Setup(::TMPro::TextMeshPro* target);
+    [[deprecated("Use field access instead!")]] float& dyn_Appear();
     // public System.Void .ctor()
     // Offset: 0x193A334
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMPTextAppearBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TMPTextAppearBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TMPTextAppearBehaviour*, creationType>()));
     }
+    // public System.Void Setup(TMPro.TextMeshPro target)
+    // Offset: 0x193A268
+    void Setup(::TMPro::TextMeshPro* target);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x193A270
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -95,6 +92,10 @@ namespace VROSC {
   static_assert(sizeof(TMPTextAppearBehaviour) == 0x2C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TMPTextAppearBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TMPTextAppearBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -104,10 +105,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TMPTextAppearBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target});
   }
 };
-// Writing MetadataGetter for method: VROSC::TMPTextAppearBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TMPTextAppearBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

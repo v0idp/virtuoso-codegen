@@ -209,33 +209,33 @@ namespace UnityEngine::UI {
     // Set static field: static private UnityEngine.UI.Dropdown/UnityEngine.UI.OptionData s_NoOptionData
     static void _set_s_NoOptionData(::UnityEngine::UI::Dropdown::OptionData* value);
     // Get instance field reference: private UnityEngine.RectTransform m_Template
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_Template();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_Template();
     // Get instance field reference: private UnityEngine.UI.Text m_CaptionText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_CaptionText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_CaptionText();
     // Get instance field reference: private UnityEngine.UI.Image m_CaptionImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_CaptionImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_m_CaptionImage();
     // Get instance field reference: private UnityEngine.UI.Text m_ItemText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_ItemText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_ItemText();
     // Get instance field reference: private UnityEngine.UI.Image m_ItemImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_ItemImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_m_ItemImage();
     // Get instance field reference: private System.Int32 m_Value
-    [[deprecated]] int& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Value();
     // Get instance field reference: private UnityEngine.UI.Dropdown/UnityEngine.UI.OptionDataList m_Options
-    [[deprecated]] ::UnityEngine::UI::Dropdown::OptionDataList*& dyn_m_Options();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Dropdown::OptionDataList*& dyn_m_Options();
     // Get instance field reference: private UnityEngine.UI.Dropdown/UnityEngine.UI.DropdownEvent m_OnValueChanged
-    [[deprecated]] ::UnityEngine::UI::Dropdown::DropdownEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Dropdown::DropdownEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private System.Single m_AlphaFadeSpeed
-    [[deprecated]] float& dyn_m_AlphaFadeSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AlphaFadeSpeed();
     // Get instance field reference: private UnityEngine.GameObject m_Dropdown
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_Dropdown();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_Dropdown();
     // Get instance field reference: private UnityEngine.GameObject m_Blocker
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_Blocker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_Blocker();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/UnityEngine.UI.DropdownItem> m_Items
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UI::Dropdown::DropdownItem*>*& dyn_m_Items();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UI::Dropdown::DropdownItem*>*& dyn_m_Items();
     // Get instance field reference: private UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.FloatTween> m_AlphaTweenRunner
-    [[deprecated]] ::UnityEngine::UI::CoroutineTween::TweenRunner_1<::UnityEngine::UI::CoroutineTween::FloatTween>*& dyn_m_AlphaTweenRunner();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CoroutineTween::TweenRunner_1<::UnityEngine::UI::CoroutineTween::FloatTween>*& dyn_m_AlphaTweenRunner();
     // Get instance field reference: private System.Boolean validTemplate
-    [[deprecated]] bool& dyn_validTemplate();
+    [[deprecated("Use field access instead!")]] bool& dyn_validTemplate();
     // public UnityEngine.RectTransform get_template()
     // Offset: 0xEB4154
     ::UnityEngine::RectTransform* get_template();
@@ -383,11 +383,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Dropdown* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Dropdown::.ctor");
@@ -397,7 +392,6 @@ namespace UnityEngine::UI {
     // Offset: 0xEB6D80
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.cctor()
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
     // protected override System.Void Awake()
     // Offset: 0xEB43FC

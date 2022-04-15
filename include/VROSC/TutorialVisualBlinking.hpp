@@ -137,41 +137,48 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Boolean <Active>k__BackingField
-    [[deprecated]] bool& dyn_$Active$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Active$k__BackingField();
     // Get instance field reference: private UnityEngine.Color _onColor
-    [[deprecated]] ::UnityEngine::Color& dyn__onColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__onColor();
     // Get instance field reference: private UnityEngine.Color _offColor
-    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private System.Boolean _useNormalColorAsOffColor
-    [[deprecated]] bool& dyn__useNormalColorAsOffColor();
+    [[deprecated("Use field access instead!")]] bool& dyn__useNormalColorAsOffColor();
     // Get instance field reference: private System.Single _intensity
-    [[deprecated]] float& dyn__intensity();
+    [[deprecated("Use field access instead!")]] float& dyn__intensity();
     // Get instance field reference: private System.Func`1<UnityEngine.Color> _getNormalColor
-    [[deprecated]] ::System::Func_1<::UnityEngine::Color>*& dyn__getNormalColor();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::UnityEngine::Color>*& dyn__getNormalColor();
     // Get instance field reference: private System.Func`1<UnityEngine.Color> _getCurrentColor
-    [[deprecated]] ::System::Func_1<::UnityEngine::Color>*& dyn__getCurrentColor();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::UnityEngine::Color>*& dyn__getCurrentColor();
     // Get instance field reference: private UnityEngine.Color _startColor
-    [[deprecated]] ::UnityEngine::Color& dyn__startColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__startColor();
     // Get instance field reference: private System.Single _startTime
-    [[deprecated]] float& dyn__startTime();
+    [[deprecated("Use field access instead!")]] float& dyn__startTime();
     // Get instance field reference: private System.Single _peak
-    [[deprecated]] float& dyn__peak();
+    [[deprecated("Use field access instead!")]] float& dyn__peak();
     // Get instance field reference: private System.Boolean _hasPeaked
-    [[deprecated]] bool& dyn__hasPeaked();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasPeaked();
     // Get instance field reference: private System.Boolean _stopping
-    [[deprecated]] bool& dyn__stopping();
+    [[deprecated("Use field access instead!")]] bool& dyn__stopping();
     // Get instance field reference: private System.Single _stoppingBeginTime
-    [[deprecated]] float& dyn__stoppingBeginTime();
+    [[deprecated("Use field access instead!")]] float& dyn__stoppingBeginTime();
     // Get instance field reference: private UnityEngine.Color _stoppingBeginColor
-    [[deprecated]] ::UnityEngine::Color& dyn__stoppingBeginColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__stoppingBeginColor();
     // Get instance field reference: private System.Single _stoppingEndTime
-    [[deprecated]] float& dyn__stoppingEndTime();
+    [[deprecated("Use field access instead!")]] float& dyn__stoppingEndTime();
     // public System.Boolean get_Active()
     // Offset: 0xA32BBC
     bool get_Active();
     // private System.Void set_Active(System.Boolean value)
     // Offset: 0xA32BB0
     void set_Active(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xA2EAF0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TutorialVisualBlinking* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialVisualBlinking::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TutorialVisualBlinking*, creationType>()));
+    }
     // public System.Void Setup(System.Func`1<UnityEngine.Color> getNormalColor, System.Func`1<UnityEngine.Color> getCurrentColor)
     // Offset: 0xA2E8AC
     void Setup(::System::Func_1<::UnityEngine::Color>* getNormalColor, ::System::Func_1<::UnityEngine::Color>* getCurrentColor);
@@ -199,15 +206,6 @@ namespace VROSC {
     // private UnityEngine.Color SetToStoppingColor()
     // Offset: 0xA32C60
     ::UnityEngine::Color SetToStoppingColor();
-    // public System.Void .ctor()
-    // Offset: 0xA2EAF0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TutorialVisualBlinking* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialVisualBlinking::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TutorialVisualBlinking*, creationType>()));
-    }
   }; // VROSC.TutorialVisualBlinking
   #pragma pack(pop)
   static check_size<sizeof(TutorialVisualBlinking), 128 + sizeof(float)> __VROSC_TutorialVisualBlinkingSizeCheck;
@@ -231,6 +229,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialVisualBlinking*), "set_Active", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::TutorialVisualBlinking::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TutorialVisualBlinking::Setup
 // Il2CppName: Setup
 template<>
@@ -310,7 +312,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::TutorialVisualBlinking*), "SetToStoppingColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::TutorialVisualBlinking::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

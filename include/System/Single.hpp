@@ -127,7 +127,7 @@ namespace System {
     // Set static field: static public System.Single NaN
     static void _set_NaN(float value);
     // Get instance field reference: System.Single m_value
-    [[deprecated]] float& dyn_m_value();
+    [[deprecated("Use field access instead!")]] float& dyn_m_value();
     // static public System.Boolean IsInfinity(System.Single f)
     // Offset: 0x124A840
     static bool IsInfinity(float f);

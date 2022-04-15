@@ -38,21 +38,19 @@ namespace Firebase {
     // static private System.Void .cctor()
     // Offset: 0x188BA18
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1883AFC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AppUtilPINVOKE::SWIGStringHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::AppUtilPINVOKE::SWIGStringHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AppUtilPINVOKE::SWIGStringHelper*, creationType>()));
+    }
     // static public System.Void SWIGRegisterStringCallback_AppUtil(Firebase.AppUtilPINVOKE/Firebase.SWIGStringHelper/Firebase.SWIGStringDelegate stringDelegate)
     // Offset: 0x188BAC0
     static void SWIGRegisterStringCallback_AppUtil(::Firebase::AppUtilPINVOKE::SWIGStringHelper::SWIGStringDelegate* stringDelegate);
     // static private System.String CreateString(System.String cString)
     // Offset: 0x188BA14
     static ::StringW CreateString(::StringW cString);
-    // public System.Void .ctor()
-    // Offset: 0x1883AFC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AppUtilPINVOKE::SWIGStringHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::AppUtilPINVOKE::SWIGStringHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AppUtilPINVOKE::SWIGStringHelper*, creationType>()));
-    }
   }; // Firebase.AppUtilPINVOKE/Firebase.SWIGStringHelper
   #pragma pack(pop)
 }
@@ -65,6 +63,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE::SWIGStringHelper*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::SWIGStringHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::SWIGStringHelper::SWIGRegisterStringCallback_AppUtil
 // Il2CppName: SWIGRegisterStringCallback_AppUtil
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Firebase::AppUtilPINVOKE::SWIGStringHelper*), "CreateString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{cString});
   }
 };
-// Writing MetadataGetter for method: Firebase::AppUtilPINVOKE::SWIGStringHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

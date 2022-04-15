@@ -87,11 +87,11 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private readonly System.Dynamic.Utils.CacheDict`2<System.Type,System.Func`2<System.Linq.Expressions.Interpreter.LightLambda,System.Delegate>> _runCache
     static void _set__runCache(::System::Dynamic::Utils::CacheDict_2<::System::Type*, ::System::Func_2<::System::Linq::Expressions::Interpreter::LightLambda*, ::System::Delegate*>*>* value);
     // Get instance field reference: private readonly System.Runtime.CompilerServices.IStrongBox[] _closure
-    [[deprecated]] ::ArrayW<::System::Runtime::CompilerServices::IStrongBox*>& dyn__closure();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::CompilerServices::IStrongBox*>& dyn__closure();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.Interpreter _interpreter
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::Interpreter*& dyn__interpreter();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::Interpreter*& dyn__interpreter();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.LightDelegateCreator _delegateCreator
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LightDelegateCreator*& dyn__delegateCreator();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LightDelegateCreator*& dyn__delegateCreator();
     // System.Void .ctor(System.Linq.Expressions.Interpreter.LightDelegateCreator delegateCreator, System.Runtime.CompilerServices.IStrongBox[] closure)
     // Offset: 0xE8DB0C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

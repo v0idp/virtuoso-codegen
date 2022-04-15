@@ -83,17 +83,17 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: private System.Boolean <HasColor>k__BackingField
-    [[deprecated]] bool& dyn_$HasColor$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasColor$k__BackingField();
     // Get instance field reference: private VROSC.SignalNode[] _outputNodes
-    [[deprecated]] ::ArrayW<::VROSC::SignalNode*>& dyn__outputNodes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SignalNode*>& dyn__outputNodes();
     // Get instance field reference: private System.Boolean _cullWeakHits
-    [[deprecated]] bool& dyn__cullWeakHits();
+    [[deprecated("Use field access instead!")]] bool& dyn__cullWeakHits();
     // Get instance field reference: private System.Boolean _preferMallet
-    [[deprecated]] bool& dyn__preferMallet();
+    [[deprecated("Use field access instead!")]] bool& dyn__preferMallet();
     // Get instance field reference: private System.Boolean _hitDimsLaser
-    [[deprecated]] bool& dyn__hitDimsLaser();
+    [[deprecated("Use field access instead!")]] bool& dyn__hitDimsLaser();
     // public UnityEngine.Color get_Color()
     // Offset: 0xAE2D18
     ::UnityEngine::Color get_Color();
@@ -115,6 +115,13 @@ namespace VROSC {
     // public System.Boolean get_HitDimsLaser()
     // Offset: 0xAE2D48
     bool get_HitDimsLaser();
+    // public System.Void .ctor()
+    // Offset: 0xAE2E80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PredictiveHittable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PredictiveHittable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PredictiveHittable*, creationType>()));
+    }
     // protected System.Void Start()
     // Offset: 0xAE2D50
     void Start();
@@ -124,19 +131,6 @@ namespace VROSC {
     // public System.Void SetColor(UnityEngine.Color color)
     // Offset: 0xAE2E6C
     void SetColor(::UnityEngine::Color color);
-    // public System.Void .ctor()
-    // Offset: 0xAE2E80
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PredictiveHittable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PredictiveHittable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PredictiveHittable*, creationType>()));
-    }
   }; // VROSC.PredictiveHittable
   #pragma pack(pop)
   static check_size<sizeof(PredictiveHittable), 58 + sizeof(bool)> __VROSC_PredictiveHittableSizeCheck;
@@ -201,6 +195,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PredictiveHittable*), "get_HitDimsLaser", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::PredictiveHittable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PredictiveHittable::Start
 // Il2CppName: Start
 template<>
@@ -227,7 +225,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PredictiveHittable*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
   }
 };
-// Writing MetadataGetter for method: VROSC::PredictiveHittable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

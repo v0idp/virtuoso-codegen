@@ -114,19 +114,19 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformDataController*) == 0x8);
     public:
     // Get instance field reference: private System.Single <MaxRecordingLengthSeconds>k__BackingField
-    [[deprecated]] float& dyn_$MaxRecordingLengthSeconds$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$MaxRecordingLengthSeconds$k__BackingField();
     // Get instance field reference: private System.Int32 <RecordingLength>k__BackingField
-    [[deprecated]] int& dyn_$RecordingLength$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$RecordingLength$k__BackingField();
     // Get instance field reference: private System.Int32 <RecordingStartIndex>k__BackingField
-    [[deprecated]] int& dyn_$RecordingStartIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$RecordingStartIndex$k__BackingField();
     // Get instance field reference: private System.Int32 <RecordingEndIndex>k__BackingField
-    [[deprecated]] int& dyn_$RecordingEndIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$RecordingEndIndex$k__BackingField();
     // Get instance field reference: private System.Single[] <CurrentAudioData>k__BackingField
-    [[deprecated]] ::ArrayW<float>& dyn_$CurrentAudioData$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_$CurrentAudioData$k__BackingField();
     // Get instance field reference: private System.Boolean <HasAudioData>k__BackingField
-    [[deprecated]] bool& dyn_$HasAudioData$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasAudioData$k__BackingField();
     // Get instance field reference: private VROSC.TransformDataController _transformData
-    [[deprecated]] ::VROSC::TransformDataController*& dyn__transformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataController*& dyn__transformData();
     // private VROSC.TapeRecorderDataModel get_DataModel()
     // Offset: 0xA222AC
     ::VROSC::TapeRecorderDataModel* get_DataModel();
@@ -220,7 +220,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolDataController
     // Base method: System.Void ToolDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TapeRecorderDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TapeRecorderDataController::.ctor");

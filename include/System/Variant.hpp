@@ -160,45 +160,45 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int16 vt
-    [[deprecated]] int16_t& dyn_vt();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_vt();
     // Get instance field reference: public System.UInt16 wReserved1
-    [[deprecated]] uint16_t& dyn_wReserved1();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_wReserved1();
     // Get instance field reference: public System.UInt16 wReserved2
-    [[deprecated]] uint16_t& dyn_wReserved2();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_wReserved2();
     // Get instance field reference: public System.UInt16 wReserved3
-    [[deprecated]] uint16_t& dyn_wReserved3();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_wReserved3();
     // Get instance field reference: public System.Int64 llVal
-    [[deprecated]] int64_t& dyn_llVal();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_llVal();
     // Get instance field reference: public System.Int32 lVal
-    [[deprecated]] int& dyn_lVal();
+    [[deprecated("Use field access instead!")]] int& dyn_lVal();
     // Get instance field reference: public System.Byte bVal
-    [[deprecated]] uint8_t& dyn_bVal();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_bVal();
     // Get instance field reference: public System.Int16 iVal
-    [[deprecated]] int16_t& dyn_iVal();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_iVal();
     // Get instance field reference: public System.Single fltVal
-    [[deprecated]] float& dyn_fltVal();
+    [[deprecated("Use field access instead!")]] float& dyn_fltVal();
     // Get instance field reference: public System.Double dblVal
-    [[deprecated]] double& dyn_dblVal();
+    [[deprecated("Use field access instead!")]] double& dyn_dblVal();
     // Get instance field reference: public System.Int16 boolVal
-    [[deprecated]] int16_t& dyn_boolVal();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_boolVal();
     // Get instance field reference: public System.IntPtr bstrVal
-    [[deprecated]] ::System::IntPtr& dyn_bstrVal();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_bstrVal();
     // Get instance field reference: public System.SByte cVal
-    [[deprecated]] int8_t& dyn_cVal();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_cVal();
     // Get instance field reference: public System.UInt16 uiVal
-    [[deprecated]] uint16_t& dyn_uiVal();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_uiVal();
     // Get instance field reference: public System.UInt32 ulVal
-    [[deprecated]] uint& dyn_ulVal();
+    [[deprecated("Use field access instead!")]] uint& dyn_ulVal();
     // Get instance field reference: public System.UInt64 ullVal
-    [[deprecated]] uint64_t& dyn_ullVal();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ullVal();
     // Get instance field reference: public System.Int32 intVal
-    [[deprecated]] int& dyn_intVal();
+    [[deprecated("Use field access instead!")]] int& dyn_intVal();
     // Get instance field reference: public System.UInt32 uintVal
-    [[deprecated]] uint& dyn_uintVal();
+    [[deprecated("Use field access instead!")]] uint& dyn_uintVal();
     // Get instance field reference: public System.IntPtr pdispVal
-    [[deprecated]] ::System::IntPtr& dyn_pdispVal();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_pdispVal();
     // Get instance field reference: public System.BRECORD bRecord
-    [[deprecated]] ::System::BRECORD& dyn_bRecord();
+    [[deprecated("Use field access instead!")]] ::System::BRECORD& dyn_bRecord();
     // public System.Void Clear()
     // Offset: 0x120DB70
     void Clear();

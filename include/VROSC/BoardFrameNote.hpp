@@ -82,21 +82,28 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Rotator _rotator
-    [[deprecated]] ::VROSC::Rotator*& dyn__rotator();
+    [[deprecated("Use field access instead!")]] ::VROSC::Rotator*& dyn__rotator();
     // Get instance field reference: private UnityEngine.Color _restingColor
-    [[deprecated]] ::UnityEngine::Color& dyn__restingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__restingColor();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Int32 <Note>k__BackingField
-    [[deprecated]] int& dyn_$Note$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Note$k__BackingField();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // public System.Int32 get_Note()
     // Offset: 0x937BC4
     int get_Note();
     // private System.Void set_Note(System.Int32 value)
     // Offset: 0x937BBC
     void set_Note(int value);
+    // public System.Void .ctor()
+    // Offset: 0x937E44
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BoardFrameNote* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BoardFrameNote::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BoardFrameNote*, creationType>()));
+    }
     // private System.Void CreateBlock()
     // Offset: 0x937BCC
     void CreateBlock();
@@ -109,19 +116,6 @@ namespace VROSC {
     // public System.Void SetPlayingColor(UnityEngine.Vector3 power, System.Single velocity, System.Single highlight)
     // Offset: 0x937CF0
     void SetPlayingColor(::UnityEngine::Vector3 power, float velocity, float highlight);
-    // public System.Void .ctor()
-    // Offset: 0x937E44
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BoardFrameNote* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BoardFrameNote::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BoardFrameNote*, creationType>()));
-    }
   }; // VROSC.BoardFrameNote
   #pragma pack(pop)
   static check_size<sizeof(BoardFrameNote), 64 + sizeof(::UnityEngine::MaterialPropertyBlock*)> __VROSC_BoardFrameNoteSizeCheck;
@@ -145,6 +139,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BoardFrameNote*), "set_Note", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::BoardFrameNote::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BoardFrameNote::CreateBlock
 // Il2CppName: CreateBlock
 template<>
@@ -182,7 +180,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BoardFrameNote*), "SetPlayingColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{power, velocity, highlight});
   }
 };
-// Writing MetadataGetter for method: VROSC::BoardFrameNote::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -64,9 +64,9 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Linq::Expressions::Interpreter::Interpreter*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.LambdaExpression _lambda
-    [[deprecated]] ::System::Linq::Expressions::LambdaExpression*& dyn__lambda();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::LambdaExpression*& dyn__lambda();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.Interpreter <Interpreter>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::Interpreter*& dyn_$Interpreter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::Interpreter*& dyn_$Interpreter$k__BackingField();
     // System.Linq.Expressions.Interpreter.Interpreter get_Interpreter()
     // Offset: 0xE8DA70
     ::System::Linq::Expressions::Interpreter::Interpreter* get_Interpreter();

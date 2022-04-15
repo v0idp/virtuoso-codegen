@@ -67,13 +67,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Single _minValue
-    [[deprecated]] float& dyn__minValue();
+    [[deprecated("Use field access instead!")]] float& dyn__minValue();
     // Get instance field reference: protected System.Single _maxValue
-    [[deprecated]] float& dyn__maxValue();
+    [[deprecated("Use field access instead!")]] float& dyn__maxValue();
     // Get instance field reference: private System.Single _value
-    [[deprecated]] float& dyn__value();
+    [[deprecated("Use field access instead!")]] float& dyn__value();
     // Get instance field reference: public System.Action`1<System.Single> OnValueChanged
-    [[deprecated]] ::System::Action_1<float>*& dyn_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<float>*& dyn_OnValueChanged();
     // public System.Single get_MinValue()
     // Offset: 0x199F8E8
     float get_MinValue();
@@ -93,11 +93,6 @@ namespace VROSC {
     // Offset: 0x199F9A4
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FloatNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FloatNode::.ctor");

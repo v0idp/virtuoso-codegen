@@ -179,45 +179,52 @@ namespace UnityEngine {
     // Set static field: static private readonly UnityEngine.GUILayoutEntry none
     static void _set_none(::UnityEngine::GUILayoutEntry* value);
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GUILayoutEntry> entries
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GUILayoutEntry*>*& dyn_entries();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GUILayoutEntry*>*& dyn_entries();
     // Get instance field reference: public System.Boolean isVertical
-    [[deprecated]] bool& dyn_isVertical();
+    [[deprecated("Use field access instead!")]] bool& dyn_isVertical();
     // Get instance field reference: public System.Boolean resetCoords
-    [[deprecated]] bool& dyn_resetCoords();
+    [[deprecated("Use field access instead!")]] bool& dyn_resetCoords();
     // Get instance field reference: public System.Single spacing
-    [[deprecated]] float& dyn_spacing();
+    [[deprecated("Use field access instead!")]] float& dyn_spacing();
     // Get instance field reference: public System.Boolean sameSize
-    [[deprecated]] bool& dyn_sameSize();
+    [[deprecated("Use field access instead!")]] bool& dyn_sameSize();
     // Get instance field reference: public System.Boolean isWindow
-    [[deprecated]] bool& dyn_isWindow();
+    [[deprecated("Use field access instead!")]] bool& dyn_isWindow();
     // Get instance field reference: public System.Int32 windowID
-    [[deprecated]] int& dyn_windowID();
+    [[deprecated("Use field access instead!")]] int& dyn_windowID();
     // Get instance field reference: private System.Int32 m_Cursor
-    [[deprecated]] int& dyn_m_Cursor();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Cursor();
     // Get instance field reference: protected System.Int32 m_StretchableCountX
-    [[deprecated]] int& dyn_m_StretchableCountX();
+    [[deprecated("Use field access instead!")]] int& dyn_m_StretchableCountX();
     // Get instance field reference: protected System.Int32 m_StretchableCountY
-    [[deprecated]] int& dyn_m_StretchableCountY();
+    [[deprecated("Use field access instead!")]] int& dyn_m_StretchableCountY();
     // Get instance field reference: protected System.Boolean m_UserSpecifiedWidth
-    [[deprecated]] bool& dyn_m_UserSpecifiedWidth();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UserSpecifiedWidth();
     // Get instance field reference: protected System.Boolean m_UserSpecifiedHeight
-    [[deprecated]] bool& dyn_m_UserSpecifiedHeight();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UserSpecifiedHeight();
     // Get instance field reference: protected System.Single m_ChildMinWidth
-    [[deprecated]] float& dyn_m_ChildMinWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ChildMinWidth();
     // Get instance field reference: protected System.Single m_ChildMaxWidth
-    [[deprecated]] float& dyn_m_ChildMaxWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ChildMaxWidth();
     // Get instance field reference: protected System.Single m_ChildMinHeight
-    [[deprecated]] float& dyn_m_ChildMinHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ChildMinHeight();
     // Get instance field reference: protected System.Single m_ChildMaxHeight
-    [[deprecated]] float& dyn_m_ChildMaxHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ChildMaxHeight();
     // Get instance field reference: protected System.Int32 m_MarginLeft
-    [[deprecated]] int& dyn_m_MarginLeft();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MarginLeft();
     // Get instance field reference: protected System.Int32 m_MarginRight
-    [[deprecated]] int& dyn_m_MarginRight();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MarginRight();
     // Get instance field reference: protected System.Int32 m_MarginTop
-    [[deprecated]] int& dyn_m_MarginTop();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MarginTop();
     // Get instance field reference: protected System.Int32 m_MarginBottom
-    [[deprecated]] int& dyn_m_MarginBottom();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MarginBottom();
+    // public System.Void .ctor()
+    // Offset: 0x187AA60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GUILayoutGroup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUILayoutGroup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GUILayoutGroup*, creationType>()));
+    }
     // public System.Void ResetCursor()
     // Offset: 0x187AD1C
     void ResetCursor();
@@ -241,15 +248,6 @@ namespace UnityEngine {
     // Implemented from: UnityEngine.GUILayoutEntry
     // Base method: System.Int32 GUILayoutEntry::get_marginBottom()
     int get_marginBottom();
-    // public System.Void .ctor()
-    // Offset: 0x187AA60
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GUILayoutGroup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUILayoutGroup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GUILayoutGroup*, creationType>()));
-    }
     // static private System.Void .cctor()
     // Offset: 0x187CEEC
     // Implemented from: UnityEngine.GUILayoutEntry
@@ -296,6 +294,10 @@ namespace UnityEngine {
   static_assert(sizeof(GUILayoutGroup) == 0x90);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::GUILayoutGroup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUILayoutGroup::ResetCursor
 // Il2CppName: ResetCursor
 template<>
@@ -336,10 +338,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUILayoutGroup*), "get_marginBottom", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::GUILayoutGroup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUILayoutGroup::_cctor
 // Il2CppName: .cctor
 template<>

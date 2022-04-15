@@ -57,11 +57,11 @@ namespace System::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Xml.CharEntityEncoderFallback parent
-    [[deprecated]] ::System::Xml::CharEntityEncoderFallback*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::CharEntityEncoderFallback*& dyn_parent();
     // Get instance field reference: private System.String charEntity
-    [[deprecated]] ::StringW& dyn_charEntity();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_charEntity();
     // Get instance field reference: private System.Int32 charEntityIndex
-    [[deprecated]] int& dyn_charEntityIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_charEntityIndex();
     // System.Void .ctor(System.Xml.CharEntityEncoderFallback parent)
     // Offset: 0xB641F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

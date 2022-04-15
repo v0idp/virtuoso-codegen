@@ -101,19 +101,19 @@ namespace System::IO {
     // Set static field: static private System.Threading.ContextCallback s_invokeAsyncCallback
     static void _set_s_invokeAsyncCallback(::System::Threading::ContextCallback* value);
     // Get instance field reference: readonly System.Boolean _isRead
-    [[deprecated]] bool& dyn__isRead();
+    [[deprecated("Use field access instead!")]] bool& dyn__isRead();
     // Get instance field reference: System.IO.Stream _stream
-    [[deprecated]] ::System::IO::Stream*& dyn__stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__stream();
     // Get instance field reference: System.Byte[] _buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: System.Int32 _offset
-    [[deprecated]] int& dyn__offset();
+    [[deprecated("Use field access instead!")]] int& dyn__offset();
     // Get instance field reference: System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // Get instance field reference: private System.AsyncCallback _callback
-    [[deprecated]] ::System::AsyncCallback*& dyn__callback();
+    [[deprecated("Use field access instead!")]] ::System::AsyncCallback*& dyn__callback();
     // Get instance field reference: private System.Threading.ExecutionContext _context
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn__context();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn__context();
     // public System.Void .ctor(System.Boolean isRead, System.Func`2<System.Object,System.Int32> function, System.Object state, System.IO.Stream stream, System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback callback)
     // Offset: 0xE5C408
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

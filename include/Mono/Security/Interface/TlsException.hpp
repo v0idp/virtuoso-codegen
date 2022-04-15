@@ -51,7 +51,7 @@ namespace Mono::Security::Interface {
       return alert;
     }
     // Get instance field reference: private Mono.Security.Interface.Alert alert
-    [[deprecated]] ::Mono::Security::Interface::Alert*& dyn_alert();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::Alert*& dyn_alert();
     // public System.Void .ctor(Mono.Security.Interface.Alert alert, System.String message)
     // Offset: 0x1645660
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

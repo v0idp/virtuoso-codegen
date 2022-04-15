@@ -47,9 +47,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Color color
-    [[deprecated]] ::UnityEngine::Color& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color();
     // Get instance field reference: public System.Single time
-    [[deprecated]] float& dyn_time();
+    [[deprecated("Use field access instead!")]] float& dyn_time();
     // public System.Void .ctor(UnityEngine.Color col, System.Single time)
     // Offset: 0x11289F8
     // ABORTED: conflicts with another method.  GradientColorKey(::UnityEngine::Color col, float time);

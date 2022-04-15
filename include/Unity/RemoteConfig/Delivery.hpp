@@ -70,15 +70,15 @@ namespace Unity::RemoteConfig {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String customUserId
-    [[deprecated]] ::StringW& dyn_customUserId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_customUserId();
     // Get instance field reference: public System.String environmentId
-    [[deprecated]] ::StringW& dyn_environmentId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_environmentId();
     // Get instance field reference: public System.String packageVersion
-    [[deprecated]] ::StringW& dyn_packageVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_packageVersion();
     // Get instance field reference: public System.String originService
-    [[deprecated]] ::StringW& dyn_originService();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_originService();
     // Get instance field reference: public Newtonsoft.Json.Linq.JObject attributionMetadata
-    [[deprecated]] ::Newtonsoft::Json::Linq::JObject*& dyn_attributionMetadata();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JObject*& dyn_attributionMetadata();
   }; // Unity.RemoteConfig.Delivery
   #pragma pack(pop)
   static check_size<sizeof(Delivery), 32 + sizeof(::Newtonsoft::Json::Linq::JObject*)> __Unity_RemoteConfig_DeliverySizeCheck;

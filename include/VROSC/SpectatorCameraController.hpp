@@ -123,23 +123,23 @@ namespace VROSC {
     // Set static field: static private UnityEngine.LayerMask <PlayerMask>k__BackingField
     static void _set_$PlayerMask$k__BackingField(::UnityEngine::LayerMask value);
     // Get instance field reference: private UnityEngine.Camera _spectatorCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__spectatorCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__spectatorCamera();
     // Get instance field reference: private VROSC.SpectatorCameraAnchor[] _cameraAnchors
-    [[deprecated]] ::ArrayW<::VROSC::SpectatorCameraAnchor*>& dyn__cameraAnchors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::SpectatorCameraAnchor*>& dyn__cameraAnchors();
     // Get instance field reference: private System.Single _followSmoothDuration
-    [[deprecated]] float& dyn__followSmoothDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__followSmoothDuration();
     // Get instance field reference: private System.Single _moveSmoothDuration
-    [[deprecated]] float& dyn__moveSmoothDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__moveSmoothDuration();
     // Get instance field reference: private System.Single _fovSmoothDuration
-    [[deprecated]] float& dyn__fovSmoothDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__fovSmoothDuration();
     // Get instance field reference: private VROSC.RenderLIV _renderLIV
-    [[deprecated]] ::VROSC::RenderLIV*& dyn__renderLIV();
+    [[deprecated("Use field access instead!")]] ::VROSC::RenderLIV*& dyn__renderLIV();
     // Get instance field reference: private VROSC.CopyCameraOutputToRenderTexture _renderTextureOutput
-    [[deprecated]] ::VROSC::CopyCameraOutputToRenderTexture*& dyn__renderTextureOutput();
+    [[deprecated("Use field access instead!")]] ::VROSC::CopyCameraOutputToRenderTexture*& dyn__renderTextureOutput();
     // Get instance field reference: private System.Int32 _activeIndex
-    [[deprecated]] int& dyn__activeIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__activeIndex();
     // Get instance field reference: private System.Boolean _enabled
-    [[deprecated]] bool& dyn__enabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__enabled();
     // public UnityEngine.Camera get_Camera()
     // Offset: 0x192DDF4
     ::UnityEngine::Camera* get_Camera();
@@ -161,6 +161,13 @@ namespace VROSC {
     // public VROSC.SpectatorCameraAnchor get_ActiveAnchor()
     // Offset: 0x192DF3C
     ::VROSC::SpectatorCameraAnchor* get_ActiveAnchor();
+    // public System.Void .ctor()
+    // Offset: 0x192EB6C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SpectatorCameraController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SpectatorCameraController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SpectatorCameraController*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x192DFA4
     void Awake();
@@ -200,19 +207,6 @@ namespace VROSC {
     // public System.Void SetKeyboardVisible(System.Boolean visible)
     // Offset: 0x192E994
     void SetKeyboardVisible(bool visible);
-    // public System.Void .ctor()
-    // Offset: 0x192EB6C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SpectatorCameraController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SpectatorCameraController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SpectatorCameraController*, creationType>()));
-    }
   }; // VROSC.SpectatorCameraController
   #pragma pack(pop)
   static check_size<sizeof(SpectatorCameraController), 76 + sizeof(bool)> __VROSC_SpectatorCameraControllerSizeCheck;
@@ -277,6 +271,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Sp
     return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraController*), "get_ActiveAnchor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::SpectatorCameraController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SpectatorCameraController::Awake
 // Il2CppName: Awake
 template<>
@@ -388,7 +386,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraController*), "SetKeyboardVisible", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{visible});
   }
 };
-// Writing MetadataGetter for method: VROSC::SpectatorCameraController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

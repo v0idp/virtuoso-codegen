@@ -151,35 +151,35 @@ namespace Unity::IO::LowLevel::Unsafe {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly System.String <AssetName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$AssetName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$AssetName$k__BackingField();
     // Get instance field reference: private readonly System.String <FileName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$FileName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$FileName$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <OffsetBytes>k__BackingField
-    [[deprecated]] uint64_t& dyn_$OffsetBytes$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$OffsetBytes$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <SizeBytes>k__BackingField
-    [[deprecated]] uint64_t& dyn_$SizeBytes$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$SizeBytes$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <AssetTypeId>k__BackingField
-    [[deprecated]] uint64_t& dyn_$AssetTypeId$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$AssetTypeId$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <CurrentBytesRead>k__BackingField
-    [[deprecated]] uint64_t& dyn_$CurrentBytesRead$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$CurrentBytesRead$k__BackingField();
     // Get instance field reference: private readonly System.UInt32 <BatchReadCount>k__BackingField
-    [[deprecated]] uint& dyn_$BatchReadCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint& dyn_$BatchReadCount$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <IsBatchRead>k__BackingField
-    [[deprecated]] bool& dyn_$IsBatchRead$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsBatchRead$k__BackingField();
     // Get instance field reference: private readonly Unity.IO.LowLevel.Unsafe.ProcessingState <State>k__BackingField
-    [[deprecated]] ::Unity::IO::LowLevel::Unsafe::ProcessingState& dyn_$State$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::IO::LowLevel::Unsafe::ProcessingState& dyn_$State$k__BackingField();
     // Get instance field reference: private readonly Unity.IO.LowLevel.Unsafe.FileReadType <ReadType>k__BackingField
-    [[deprecated]] ::Unity::IO::LowLevel::Unsafe::FileReadType& dyn_$ReadType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::IO::LowLevel::Unsafe::FileReadType& dyn_$ReadType$k__BackingField();
     // Get instance field reference: private readonly Unity.IO.LowLevel.Unsafe.Priority <PriorityLevel>k__BackingField
-    [[deprecated]] ::Unity::IO::LowLevel::Unsafe::Priority& dyn_$PriorityLevel$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::IO::LowLevel::Unsafe::Priority& dyn_$PriorityLevel$k__BackingField();
     // Get instance field reference: private readonly Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem <Subsystem>k__BackingField
-    [[deprecated]] ::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem& dyn_$Subsystem$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem& dyn_$Subsystem$k__BackingField();
     // Get instance field reference: private readonly System.Double <RequestTimeMicroseconds>k__BackingField
-    [[deprecated]] double& dyn_$RequestTimeMicroseconds$k__BackingField();
+    [[deprecated("Use field access instead!")]] double& dyn_$RequestTimeMicroseconds$k__BackingField();
     // Get instance field reference: private readonly System.Double <TimeInQueueMicroseconds>k__BackingField
-    [[deprecated]] double& dyn_$TimeInQueueMicroseconds$k__BackingField();
+    [[deprecated("Use field access instead!")]] double& dyn_$TimeInQueueMicroseconds$k__BackingField();
     // Get instance field reference: private readonly System.Double <TotalTimeMicroseconds>k__BackingField
-    [[deprecated]] double& dyn_$TotalTimeMicroseconds$k__BackingField();
+    [[deprecated("Use field access instead!")]] double& dyn_$TotalTimeMicroseconds$k__BackingField();
   }; // Unity.IO.LowLevel.Unsafe.AsyncReadManagerRequestMetric
   #pragma pack(pop)
   static check_size<sizeof(AsyncReadManagerRequestMetric), 88 + sizeof(double)> __Unity_IO_LowLevel_Unsafe_AsyncReadManagerRequestMetricSizeCheck;

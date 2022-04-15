@@ -100,7 +100,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRSkeletonRenderer/ConfidenceBehavior ToggleRenderer
       static void _set_ToggleRenderer(::GlobalNamespace::OVRSkeletonRenderer::ConfidenceBehavior value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRSkeletonRenderer/ConfidenceBehavior
     #pragma pack(pop)
     static check_size<sizeof(OVRSkeletonRenderer::ConfidenceBehavior), 0 + sizeof(int)> __GlobalNamespace_OVRSkeletonRenderer_ConfidenceBehaviorSizeCheck;
@@ -142,7 +142,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRSkeletonRenderer/SystemGestureBehavior SwapMaterial
       static void _set_SwapMaterial(::GlobalNamespace::OVRSkeletonRenderer::SystemGestureBehavior value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRSkeletonRenderer/SystemGestureBehavior
     #pragma pack(pop)
     static check_size<sizeof(OVRSkeletonRenderer::SystemGestureBehavior), 0 + sizeof(int)> __GlobalNamespace_OVRSkeletonRenderer_SystemGestureBehaviorSizeCheck;
@@ -278,43 +278,43 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Quaternion _capsuleRotationOffset
     static void _set__capsuleRotationOffset(::UnityEngine::Quaternion value);
     // Get instance field reference: private OVRSkeletonRenderer/IOVRSkeletonRendererDataProvider _dataProvider
-    [[deprecated]] ::GlobalNamespace::OVRSkeletonRenderer::IOVRSkeletonRendererDataProvider*& dyn__dataProvider();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeletonRenderer::IOVRSkeletonRendererDataProvider*& dyn__dataProvider();
     // Get instance field reference: private OVRSkeletonRenderer/ConfidenceBehavior _confidenceBehavior
-    [[deprecated]] ::GlobalNamespace::OVRSkeletonRenderer::ConfidenceBehavior& dyn__confidenceBehavior();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeletonRenderer::ConfidenceBehavior& dyn__confidenceBehavior();
     // Get instance field reference: private OVRSkeletonRenderer/SystemGestureBehavior _systemGestureBehavior
-    [[deprecated]] ::GlobalNamespace::OVRSkeletonRenderer::SystemGestureBehavior& dyn__systemGestureBehavior();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeletonRenderer::SystemGestureBehavior& dyn__systemGestureBehavior();
     // Get instance field reference: private System.Boolean _renderPhysicsCapsules
-    [[deprecated]] bool& dyn__renderPhysicsCapsules();
+    [[deprecated("Use field access instead!")]] bool& dyn__renderPhysicsCapsules();
     // Get instance field reference: private UnityEngine.Material _skeletonMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__skeletonMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__skeletonMaterial();
     // Get instance field reference: private UnityEngine.Material _skeletonDefaultMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__skeletonDefaultMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__skeletonDefaultMaterial();
     // Get instance field reference: private UnityEngine.Material _capsuleMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__capsuleMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__capsuleMaterial();
     // Get instance field reference: private UnityEngine.Material _capsuleDefaultMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__capsuleDefaultMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__capsuleDefaultMaterial();
     // Get instance field reference: private UnityEngine.Material _systemGestureMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__systemGestureMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__systemGestureMaterial();
     // Get instance field reference: private UnityEngine.Material _systemGestureDefaultMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__systemGestureDefaultMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__systemGestureDefaultMaterial();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRSkeletonRenderer/BoneVisualization> _boneVisualizations
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRSkeletonRenderer::BoneVisualization*>*& dyn__boneVisualizations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRSkeletonRenderer::BoneVisualization*>*& dyn__boneVisualizations();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRSkeletonRenderer/CapsuleVisualization> _capsuleVisualizations
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRSkeletonRenderer::CapsuleVisualization*>*& dyn__capsuleVisualizations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRSkeletonRenderer::CapsuleVisualization*>*& dyn__capsuleVisualizations();
     // Get instance field reference: private OVRSkeleton _ovrSkeleton
-    [[deprecated]] ::GlobalNamespace::OVRSkeleton*& dyn__ovrSkeleton();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeleton*& dyn__ovrSkeleton();
     // Get instance field reference: private UnityEngine.GameObject _skeletonGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__skeletonGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__skeletonGO();
     // Get instance field reference: private System.Single _scale
-    [[deprecated]] float& dyn__scale();
+    [[deprecated("Use field access instead!")]] float& dyn__scale();
     // Get instance field reference: private System.Boolean <IsInitialized>k__BackingField
-    [[deprecated]] bool& dyn_$IsInitialized$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsInitialized$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // Get instance field reference: private System.Boolean <ShouldUseSystemGestureMaterial>k__BackingField
-    [[deprecated]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
     // public System.Boolean get_IsInitialized()
     // Offset: 0x7FEF24
     bool get_IsInitialized();
@@ -339,6 +339,16 @@ namespace GlobalNamespace {
     // private System.Void set_ShouldUseSystemGestureMaterial(System.Boolean value)
     // Offset: 0x7FEF68
     void set_ShouldUseSystemGestureMaterial(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x7FFB8C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRSkeletonRenderer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSkeletonRenderer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRSkeletonRenderer*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x7FFB9C
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x7FEF74
     void Awake();
@@ -357,24 +367,6 @@ namespace GlobalNamespace {
     // private System.Void OnDestroy()
     // Offset: 0x7FFA20
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x7FFB8C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRSkeletonRenderer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSkeletonRenderer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRSkeletonRenderer*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x7FFB9C
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVRSkeletonRenderer
   #pragma pack(pop)
   static check_size<sizeof(OVRSkeletonRenderer), 135 + sizeof(bool)> __GlobalNamespace_OVRSkeletonRendererSizeCheck;
@@ -453,6 +445,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSkeletonRenderer*), "set_ShouldUseSystemGestureMaterial", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRSkeletonRenderer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVRSkeletonRenderer::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRSkeletonRenderer::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSkeletonRenderer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::OVRSkeletonRenderer::Awake
 // Il2CppName: Awake
 template<>
@@ -499,17 +503,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OVRSkeletonRenderer::*)()>(&GlobalNamespace::OVRSkeletonRenderer::OnDestroy)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSkeletonRenderer*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVRSkeletonRenderer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVRSkeletonRenderer::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRSkeletonRenderer::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSkeletonRenderer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

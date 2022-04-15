@@ -99,13 +99,13 @@ namespace UnityEngine {
     // Set static field: static public System.Single kEpsilon
     static void _set_kEpsilon(float value);
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    [[deprecated]] float& dyn_z();
+    [[deprecated("Use field access instead!")]] float& dyn_z();
     // Get instance field reference: public System.Single w
-    [[deprecated]] float& dyn_w();
+    [[deprecated("Use field access instead!")]] float& dyn_w();
     // static public UnityEngine.Quaternion get_identity()
     // Offset: 0xBC88D4
     static ::UnityEngine::Quaternion get_identity();

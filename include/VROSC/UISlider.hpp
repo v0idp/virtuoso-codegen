@@ -113,21 +113,21 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::RectTransform*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UISliderData _data
-    [[deprecated]] ::VROSC::UISliderData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISliderData*& dyn__data();
     // Get instance field reference: private UnityEngine.RectTransform _sliderKnob
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sliderKnob();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__sliderKnob();
     // Get instance field reference: private System.Boolean _onlyShowKnobOnHover
-    [[deprecated]] bool& dyn__onlyShowKnobOnHover();
+    [[deprecated("Use field access instead!")]] bool& dyn__onlyShowKnobOnHover();
     // Get instance field reference: private System.Boolean _showVisualPopout
-    [[deprecated]] bool& dyn__showVisualPopout();
+    [[deprecated("Use field access instead!")]] bool& dyn__showVisualPopout();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.TriggerButton _grabbingButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn__grabbingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__grabbingButton();
     // Get instance field reference: private System.Boolean _remoteSliderActive
-    [[deprecated]] bool& dyn__remoteSliderActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__remoteSliderActive();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // public VROSC.UISliderData get_Data()
     // Offset: 0x1915F40
     ::VROSC::UISliderData* get_Data();
@@ -168,11 +168,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISlider* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISlider::.ctor");

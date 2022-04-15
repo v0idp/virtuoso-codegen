@@ -59,17 +59,15 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Action`3<System.String,System.String,System.String> Action
-    [[deprecated]] ::System::Action_3<::StringW, ::StringW, ::StringW>*& dyn_Action();
+    [[deprecated("Use field access instead!")]] ::System::Action_3<::StringW, ::StringW, ::StringW>*& dyn_Action();
     // Get instance field reference: public System.String UserId
-    [[deprecated]] ::StringW& dyn_UserId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserId();
     // Get instance field reference: public System.String AccessToken
-    [[deprecated]] ::StringW& dyn_AccessToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_AccessToken();
     // Get instance field reference: public System.String RefreshToken
-    [[deprecated]] ::StringW& dyn_RefreshToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_RefreshToken();
     // public System.Void .ctor()
     // Offset: 0x9593E0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CallbackHandler::UserLoginAnonymouslyCallback* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CallbackHandler::UserLoginAnonymouslyCallback::.ctor");

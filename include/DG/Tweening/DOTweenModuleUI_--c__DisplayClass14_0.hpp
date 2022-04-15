@@ -46,28 +46,30 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.RectTransform target
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_target();
+    // public System.Void .ctor()
+    // Offset: 0x17DE844
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTweenModuleUI::$$c__DisplayClass14_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleUI::$$c__DisplayClass14_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleUI::$$c__DisplayClass14_0*, creationType>()));
+    }
     // UnityEngine.Vector2 <DOAnchorPosX>b__0()
     // Offset: 0x17E330C
     ::UnityEngine::Vector2 $DOAnchorPosX$b__0();
     // System.Void <DOAnchorPosX>b__1(UnityEngine.Vector2 x)
     // Offset: 0x17E3328
     void $DOAnchorPosX$b__1(::UnityEngine::Vector2 x);
-    // public System.Void .ctor()
-    // Offset: 0x17DE844
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTweenModuleUI::$$c__DisplayClass14_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleUI::$$c__DisplayClass14_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleUI::$$c__DisplayClass14_0*, creationType>()));
-    }
   }; // DG.Tweening.DOTweenModuleUI/DG.Tweening.<>c__DisplayClass14_0
   #pragma pack(pop)
   static check_size<sizeof(DOTweenModuleUI::$$c__DisplayClass14_0), 16 + sizeof(::UnityEngine::RectTransform*)> __DG_Tweening_DOTweenModuleUI_$$c__DisplayClass14_0SizeCheck;
   static_assert(sizeof(DOTweenModuleUI::$$c__DisplayClass14_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleUI::$$c__DisplayClass14_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTweenModuleUI::$$c__DisplayClass14_0::$DOAnchorPosX$b__0
 // Il2CppName: <DOAnchorPosX>b__0
 template<>
@@ -85,7 +87,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTweenModuleUI::$$c__DisplayClass14_0*), "<DOAnchorPosX>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleUI::$$c__DisplayClass14_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

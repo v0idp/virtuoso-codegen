@@ -134,35 +134,35 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector4 baseColor
-    [[deprecated]] ::UnityEngine::Vector4& dyn_baseColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_baseColor();
     // Get instance field reference: public ovrAvatarMaterialMaskType baseMaskType
-    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_baseMaskType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarMaterialMaskType& dyn_baseMaskType();
     // Get instance field reference: public UnityEngine.Vector4 baseMaskParameters
-    [[deprecated]] ::UnityEngine::Vector4& dyn_baseMaskParameters();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_baseMaskParameters();
     // Get instance field reference: public UnityEngine.Vector4 baseMaskAxis
-    [[deprecated]] ::UnityEngine::Vector4& dyn_baseMaskAxis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_baseMaskAxis();
     // Get instance field reference: public ovrAvatarMaterialLayerSampleMode sampleMode
-    [[deprecated]] ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarMaterialLayerSampleMode& dyn_sampleMode();
     // Get instance field reference: public System.UInt64 alphaMaskTextureID
-    [[deprecated]] uint64_t& dyn_alphaMaskTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_alphaMaskTextureID();
     // Get instance field reference: public UnityEngine.Vector4 alphaMaskScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_alphaMaskScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_alphaMaskScaleOffset();
     // Get instance field reference: public System.UInt64 normalMapTextureID
-    [[deprecated]] uint64_t& dyn_normalMapTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_normalMapTextureID();
     // Get instance field reference: public UnityEngine.Vector4 normalMapScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_normalMapScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_normalMapScaleOffset();
     // Get instance field reference: public System.UInt64 parallaxMapTextureID
-    [[deprecated]] uint64_t& dyn_parallaxMapTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_parallaxMapTextureID();
     // Get instance field reference: public UnityEngine.Vector4 parallaxMapScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_parallaxMapScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_parallaxMapScaleOffset();
     // Get instance field reference: public System.UInt64 roughnessMapTextureID
-    [[deprecated]] uint64_t& dyn_roughnessMapTextureID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_roughnessMapTextureID();
     // Get instance field reference: public UnityEngine.Vector4 roughnessMapScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_roughnessMapScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_roughnessMapScaleOffset();
     // Get instance field reference: public System.UInt32 layerCount
-    [[deprecated]] uint& dyn_layerCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_layerCount();
     // Get instance field reference: public ovrAvatarMaterialLayerState[] layers
-    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarMaterialLayerState>& dyn_layers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ovrAvatarMaterialLayerState>& dyn_layers();
     // static private System.Boolean VectorEquals(UnityEngine.Vector4 a, UnityEngine.Vector4 b)
     // Offset: 0x9555F0
     static bool VectorEquals(::UnityEngine::Vector4 a, ::UnityEngine::Vector4 b);

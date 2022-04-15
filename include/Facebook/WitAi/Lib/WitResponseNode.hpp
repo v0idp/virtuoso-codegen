@@ -117,6 +117,13 @@ namespace Facebook::WitAi::Lib {
     // public Facebook.WitAi.Lib.WitResponseClass get_AsObject()
     // Offset: 0x167BD14
     ::Facebook::WitAi::Lib::WitResponseClass* get_AsObject();
+    // public System.Void .ctor()
+    // Offset: 0x1677920
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WitResponseNode* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseNode::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WitResponseNode*, creationType>()));
+    }
     // public System.Void Add(System.String aKey, Facebook.WitAi.Lib.WitResponseNode aItem)
     // Offset: 0x167B54C
     void Add(::StringW aKey, ::Facebook::WitAi::Lib::WitResponseNode* aItem);
@@ -183,15 +190,6 @@ namespace Facebook::WitAi::Lib {
     // static public Facebook.WitAi.Lib.WitResponseNode LoadFromBase64(System.String aBase64)
     // Offset: 0x167CAD4
     static ::Facebook::WitAi::Lib::WitResponseNode* LoadFromBase64(::StringW aBase64);
-    // public System.Void .ctor()
-    // Offset: 0x1677920
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WitResponseNode* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseNode::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WitResponseNode*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x167B78C
     // Implemented from: System.Object
@@ -388,6 +386,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Facebook:
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Lib::WitResponseNode*), "get_AsObject", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Facebook::WitAi::Lib::WitResponseNode::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Lib::WitResponseNode::Add
 // Il2CppName: Add
 template<>
@@ -585,10 +587,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Facebook:
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Lib::WitResponseNode*), "LoadFromBase64", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{aBase64});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::Lib::WitResponseNode::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Lib::WitResponseNode::ToString
 // Il2CppName: ToString
 template<>

@@ -151,33 +151,40 @@ namespace VROSC {
     // Set static field: static public System.Action OnStartMenuClosed
     static void _set_OnStartMenuClosed(::System::Action* value);
     // Get instance field reference: private UnityEngine.AnimationCurve _recenterCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__recenterCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__recenterCurve();
     // Get instance field reference: private UnityEngine.Transform _vrCameraTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__vrCameraTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__vrCameraTransform();
     // Get instance field reference: private System.Single _recenterTime
-    [[deprecated]] float& dyn__recenterTime();
+    [[deprecated("Use field access instead!")]] float& dyn__recenterTime();
     // Get instance field reference: private System.Single _distanceTolerance
-    [[deprecated]] float& dyn__distanceTolerance();
+    [[deprecated("Use field access instead!")]] float& dyn__distanceTolerance();
     // Get instance field reference: private System.Single _angleTolereance
-    [[deprecated]] float& dyn__angleTolereance();
+    [[deprecated("Use field access instead!")]] float& dyn__angleTolereance();
     // Get instance field reference: private UnityEngine.Vector3 _targetPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__targetPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__targetPosition();
     // Get instance field reference: private UnityEngine.Quaternion _targetRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__targetRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__targetRotation();
     // Get instance field reference: private UnityEngine.Coroutine _recenterCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__recenterCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__recenterCoroutine();
     // Get instance field reference: private VROSC.UIButton _startTutorialButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__startTutorialButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__startTutorialButton();
     // Get instance field reference: private VROSC.UIButton _startCreatingButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__startCreatingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__startCreatingButton();
     // Get instance field reference: private UnityEngine.Transform _menuTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__menuTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__menuTransform();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _tutorialBlink
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__tutorialBlink();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__tutorialBlink();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _creatingBlink
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__creatingBlink();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__creatingBlink();
     // Get instance field reference: private System.Boolean _alwaysUpright
-    [[deprecated]] bool& dyn__alwaysUpright();
+    [[deprecated("Use field access instead!")]] bool& dyn__alwaysUpright();
+    // public System.Void .ctor()
+    // Offset: 0x1930008
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StartMenu* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StartMenu::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StartMenu*, creationType>()));
+    }
     // public System.Void Setup()
     // Offset: 0x192F804
     void Setup();
@@ -199,25 +206,16 @@ namespace VROSC {
     // private System.Void StartCreatingPressed()
     // Offset: 0x192FEB4
     void StartCreatingPressed();
-    // public System.Void .ctor()
-    // Offset: 0x1930008
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StartMenu* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StartMenu::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StartMenu*, creationType>()));
-    }
   }; // VROSC.StartMenu
   #pragma pack(pop)
   static check_size<sizeof(StartMenu), 128 + sizeof(bool)> __VROSC_StartMenuSizeCheck;
   static_assert(sizeof(StartMenu) == 0x81);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::StartMenu::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::StartMenu::Setup
 // Il2CppName: Setup
 template<>
@@ -275,7 +273,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::StartMenu*), "StartCreatingPressed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::StartMenu::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

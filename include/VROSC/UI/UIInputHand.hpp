@@ -98,17 +98,17 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _rayPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__rayPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__rayPoint();
     // Get instance field reference: private VROSC.UI.UIInputHandHovering _hovering
-    [[deprecated]] ::VROSC::UI::UIInputHandHovering*& dyn__hovering();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIInputHandHovering*& dyn__hovering();
     // Get instance field reference: private VROSC.PointingLaser _pointingLaser
-    [[deprecated]] ::VROSC::PointingLaser*& dyn__pointingLaser();
+    [[deprecated("Use field access instead!")]] ::VROSC::PointingLaser*& dyn__pointingLaser();
     // Get instance field reference: private VROSC.InputDevice _device
-    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private VROSC.Grabable _currentlyGrabbing
-    [[deprecated]] ::VROSC::Grabable*& dyn__currentlyGrabbing();
+    [[deprecated("Use field access instead!")]] ::VROSC::Grabable*& dyn__currentlyGrabbing();
     // Get instance field reference: private VROSC.Clickable _currentlyPressing
-    [[deprecated]] ::VROSC::Clickable*& dyn__currentlyPressing();
+    [[deprecated("Use field access instead!")]] ::VROSC::Clickable*& dyn__currentlyPressing();
     // public VROSC.PointingLaser get_PointingLaser()
     // Offset: 0x19109A0
     ::VROSC::PointingLaser* get_PointingLaser();
@@ -127,6 +127,13 @@ namespace VROSC::UI {
     // public VROSC.Grabable get_CurrentlyGrabbing()
     // Offset: 0x1910AC0
     ::VROSC::Grabable* get_CurrentlyGrabbing();
+    // public System.Void .ctor()
+    // Offset: 0x19116DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIInputHand* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIInputHand::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIInputHand*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InputSettings inputSettings, VROSC.InputDevice inputDevice)
     // Offset: 0x1910AC8
     void Setup(::VROSC::InputSettings* inputSettings, ::VROSC::InputDevice* inputDevice);
@@ -148,19 +155,6 @@ namespace VROSC::UI {
     // private System.Void LateUpdate()
     // Offset: 0x1911614
     void LateUpdate();
-    // public System.Void .ctor()
-    // Offset: 0x19116DC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIInputHand* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIInputHand::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIInputHand*, creationType>()));
-    }
   }; // VROSC.UI.UIInputHand
   #pragma pack(pop)
   static check_size<sizeof(UIInputHand), 64 + sizeof(::VROSC::Clickable*)> __VROSC_UI_UIInputHandSizeCheck;
@@ -215,6 +209,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Gr
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInputHand*), "get_CurrentlyGrabbing", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::UIInputHand::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::UIInputHand::Setup
 // Il2CppName: Setup
 template<>
@@ -280,7 +278,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInputHand*), "LateUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::UIInputHand::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

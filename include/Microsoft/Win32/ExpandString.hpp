@@ -40,7 +40,7 @@ namespace Microsoft::Win32 {
       return value;
     }
     // Get instance field reference: private System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // public System.Void .ctor(System.String s)
     // Offset: 0x14FBDA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

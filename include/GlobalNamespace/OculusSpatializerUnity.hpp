@@ -192,41 +192,51 @@ namespace GlobalNamespace {
     // Set static field: static private System.String strOSP
     static void _set_strOSP(::StringW value);
     // Get instance field reference: public UnityEngine.LayerMask layerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_layerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_layerMask();
     // Get instance field reference: public System.Boolean visualizeRoom
-    [[deprecated]] bool& dyn_visualizeRoom();
+    [[deprecated("Use field access instead!")]] bool& dyn_visualizeRoom();
     // Get instance field reference: private System.Boolean roomVisualizationInitialized
-    [[deprecated]] bool& dyn_roomVisualizationInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_roomVisualizationInitialized();
     // Get instance field reference: public System.Int32 raysPerSecond
-    [[deprecated]] int& dyn_raysPerSecond();
+    [[deprecated("Use field access instead!")]] int& dyn_raysPerSecond();
     // Get instance field reference: public System.Single roomInterpSpeed
-    [[deprecated]] float& dyn_roomInterpSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_roomInterpSpeed();
     // Get instance field reference: public System.Single maxWallDistance
-    [[deprecated]] float& dyn_maxWallDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_maxWallDistance();
     // Get instance field reference: public System.Int32 rayCacheSize
-    [[deprecated]] int& dyn_rayCacheSize();
+    [[deprecated("Use field access instead!")]] int& dyn_rayCacheSize();
     // Get instance field reference: public System.Boolean dynamicReflectionsEnabled
-    [[deprecated]] bool& dyn_dynamicReflectionsEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_dynamicReflectionsEnabled();
     // Get instance field reference: private System.Single particleSize
-    [[deprecated]] float& dyn_particleSize();
+    [[deprecated("Use field access instead!")]] float& dyn_particleSize();
     // Get instance field reference: private System.Single particleOffset
-    [[deprecated]] float& dyn_particleOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_particleOffset();
     // Get instance field reference: private UnityEngine.GameObject room
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_room();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_room();
     // Get instance field reference: private UnityEngine.Renderer[] wallRenderer
-    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn_wallRenderer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Renderer*>& dyn_wallRenderer();
     // Get instance field reference: private System.Single[] dims
-    [[deprecated]] ::ArrayW<float>& dyn_dims();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_dims();
     // Get instance field reference: private System.Single[] coefs
-    [[deprecated]] ::ArrayW<float>& dyn_coefs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_coefs();
     // Get instance field reference: private UnityEngine.Vector3[] points
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_points();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_points();
     // Get instance field reference: private UnityEngine.Vector3[] normals
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_normals();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_normals();
     // Get instance field reference: private UnityEngine.ParticleSystem sys
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn_sys();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn_sys();
     // Get instance field reference: private UnityEngine.ParticleSystem/UnityEngine.Particle[] particles
-    [[deprecated]] ::ArrayW<::UnityEngine::ParticleSystem::Particle>& dyn_particles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::ParticleSystem::Particle>& dyn_particles();
+    // public System.Void .ctor()
+    // Offset: 0x176E9F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OculusSpatializerUnity* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OculusSpatializerUnity::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OculusSpatializerUnity*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x176EB48
+    static void _cctor();
     // static private UnityEngine.Vector3 swapHandedness(UnityEngine.Vector3 vec)
     // Offset: 0x176D064
     static ::UnityEngine::Vector3 swapHandedness(::UnityEngine::Vector3 vec);
@@ -272,30 +282,24 @@ namespace GlobalNamespace {
     // static private System.Int32 OSP_Unity_GetRaycastHits(UnityEngine.Vector3[] points, UnityEngine.Vector3[] normals, System.Int32 length)
     // Offset: 0x176E948
     static int OSP_Unity_GetRaycastHits(::ArrayW<::UnityEngine::Vector3> points, ::ArrayW<::UnityEngine::Vector3> normals, int length);
-    // public System.Void .ctor()
-    // Offset: 0x176E9F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OculusSpatializerUnity* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OculusSpatializerUnity::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OculusSpatializerUnity*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x176EB48
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OculusSpatializerUnity
   #pragma pack(pop)
   static check_size<sizeof(OculusSpatializerUnity), 120 + sizeof(::ArrayW<::UnityEngine::ParticleSystem::Particle>)> __GlobalNamespace_OculusSpatializerUnitySizeCheck;
   static_assert(sizeof(OculusSpatializerUnity) == 0x80);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OculusSpatializerUnity::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OculusSpatializerUnity::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OculusSpatializerUnity::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OculusSpatializerUnity*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::OculusSpatializerUnity::swapHandedness
 // Il2CppName: swapHandedness
 template<>
@@ -435,17 +439,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::A
     static auto* normals = &il2cpp_functions::array_class_get(::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3"), 1)->byval_arg;
     static auto* length = &::il2cpp_utils::GetClassFromName("System", "Int32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OculusSpatializerUnity*), "OSP_Unity_GetRaycastHits", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{points, normals, length});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OculusSpatializerUnity::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OculusSpatializerUnity::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OculusSpatializerUnity::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OculusSpatializerUnity*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

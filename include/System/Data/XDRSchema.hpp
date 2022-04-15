@@ -95,13 +95,13 @@ namespace System::Data {
     // Set static field: static private System.Data.XDRSchema/System.Data.NameType s_enumerationNameType
     static void _set_s_enumerationNameType(::System::Data::XDRSchema::NameType* value);
     // Get instance field reference: System.String _schemaName
-    [[deprecated]] ::StringW& dyn__schemaName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__schemaName();
     // Get instance field reference: System.String _schemaUri
-    [[deprecated]] ::StringW& dyn__schemaUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__schemaUri();
     // Get instance field reference: System.Xml.XmlElement _schemaRoot
-    [[deprecated]] ::System::Xml::XmlElement*& dyn__schemaRoot();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlElement*& dyn__schemaRoot();
     // Get instance field reference: System.Data.DataSet _ds
-    [[deprecated]] ::System::Data::DataSet*& dyn__ds();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__ds();
     // System.Void .ctor(System.Data.DataSet ds, System.Boolean fInline)
     // Offset: 0x11BEC14
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

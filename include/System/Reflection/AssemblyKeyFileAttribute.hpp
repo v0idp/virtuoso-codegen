@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_keyFile;
     }
     // Get instance field reference: private System.String m_keyFile
-    [[deprecated]] ::StringW& dyn_m_keyFile();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_keyFile();
     // public System.Void .ctor(System.String keyFile)
     // Offset: 0x1144740
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

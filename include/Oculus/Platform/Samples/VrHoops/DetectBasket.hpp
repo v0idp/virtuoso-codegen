@@ -93,7 +93,7 @@ namespace Oculus::Platform::Samples::VrHoops {
       // Set static field: static public Oculus.Platform.Samples.VrHoops.DetectBasket/Oculus.Platform.Samples.VrHoops.BasketPhase BOTTOM
       static void _set_BOTTOM(::Oculus::Platform::Samples::VrHoops::DetectBasket::BasketPhase value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrHoops.DetectBasket/Oculus.Platform.Samples.VrHoops.BasketPhase
     #pragma pack(pop)
     static check_size<sizeof(DetectBasket::BasketPhase), 0 + sizeof(int)> __Oculus_Platform_Samples_VrHoops_DetectBasket_BasketPhaseSizeCheck;
@@ -117,31 +117,25 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.DetectBasket/Oculus.Platform.Samples.VrHoops.BasketPhase m_phase
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::DetectBasket::BasketPhase& dyn_m_phase();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::DetectBasket::BasketPhase& dyn_m_phase();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.Player m_owningPlayer
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::Player*& dyn_m_owningPlayer();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::Player*& dyn_m_owningPlayer();
     // public System.Void set_Player(Oculus.Platform.Samples.VrHoops.Player value)
     // Offset: 0x92DC08
     void set_Player(::Oculus::Platform::Samples::VrHoops::Player* value);
+    // public System.Void .ctor()
+    // Offset: 0x92DE6C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DetectBasket* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::DetectBasket::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DetectBasket*, creationType>()));
+    }
     // private System.Void OnTriggerEnter(UnityEngine.Collider other)
     // Offset: 0x92DC10
     void OnTriggerEnter(::UnityEngine::Collider* other);
     // private System.Void OnTriggerExit(UnityEngine.Collider other)
     // Offset: 0x92DCF8
     void OnTriggerExit(::UnityEngine::Collider* other);
-    // public System.Void .ctor()
-    // Offset: 0x92DE6C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DetectBasket* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::DetectBasket::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DetectBasket*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.DetectBasket
   #pragma pack(pop)
   static check_size<sizeof(DetectBasket), 32 + sizeof(::Oculus::Platform::Samples::VrHoops::Player*)> __Oculus_Platform_Samples_VrHoops_DetectBasketSizeCheck;
@@ -159,6 +153,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::DetectBasket*), "set_Player", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::DetectBasket::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::DetectBasket::OnTriggerEnter
 // Il2CppName: OnTriggerEnter
 template<>
@@ -177,7 +175,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::DetectBasket*), "OnTriggerExit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::DetectBasket::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

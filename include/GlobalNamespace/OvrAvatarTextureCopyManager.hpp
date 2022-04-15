@@ -111,11 +111,11 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Boolean Initialized
-      [[deprecated]] bool& dyn_Initialized();
+      [[deprecated("Use field access instead!")]] bool& dyn_Initialized();
       // Get instance field reference: public UnityEngine.Texture2D DiffuseRoughness
-      [[deprecated]] ::UnityEngine::Texture2D*& dyn_DiffuseRoughness();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_DiffuseRoughness();
       // Get instance field reference: public UnityEngine.Texture2D Normal
-      [[deprecated]] ::UnityEngine::Texture2D*& dyn_Normal();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_Normal();
     }; // OvrAvatarTextureCopyManager/FallbackTextureSet
     #pragma pack(pop)
     static check_size<sizeof(OvrAvatarTextureCopyManager::FallbackTextureSet), 16 + sizeof(::UnityEngine::Texture2D*)> __GlobalNamespace_OvrAvatarTextureCopyManager_FallbackTextureSetSizeCheck;
@@ -166,15 +166,15 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Texture Src
-      [[deprecated]] ::UnityEngine::Texture*& dyn_Src();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_Src();
       // Get instance field reference: public UnityEngine.Texture Dst
-      [[deprecated]] ::UnityEngine::Texture*& dyn_Dst();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_Dst();
       // Get instance field reference: public System.Int32 Mip
-      [[deprecated]] int& dyn_Mip();
+      [[deprecated("Use field access instead!")]] int& dyn_Mip();
       // Get instance field reference: public System.Int32 SrcSize
-      [[deprecated]] int& dyn_SrcSize();
+      [[deprecated("Use field access instead!")]] int& dyn_SrcSize();
       // Get instance field reference: public System.Int32 DstElement
-      [[deprecated]] int& dyn_DstElement();
+      [[deprecated("Use field access instead!")]] int& dyn_DstElement();
       // public System.Void .ctor(UnityEngine.Texture src, UnityEngine.Texture dst, System.Int32 mip, System.Int32 srcSize, System.Int32 dstElement)
       // Offset: 0x8CD0EC
       // ABORTED: conflicts with another method.  CopyTextureParams(::UnityEngine::Texture* src, ::UnityEngine::Texture* dst, int mip, int srcSize, int dstElement);
@@ -210,9 +210,9 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.UInt64,System.Boolean> TextureIDSingleMeshPair
-      [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, bool>*& dyn_TextureIDSingleMeshPair();
+      [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, bool>*& dyn_TextureIDSingleMeshPair();
       // Get instance field reference: public System.Boolean IsProcessed
-      [[deprecated]] bool& dyn_IsProcessed();
+      [[deprecated("Use field access instead!")]] bool& dyn_IsProcessed();
       // public System.Void .ctor(System.Collections.Generic.Dictionary`2<System.UInt64,System.Boolean> textureIDSingleMeshPair, System.Boolean isProcessed)
       // Offset: 0x8CD0FC
       // ABORTED: conflicts with another method.  TextureSet(::System::Collections::Generic::Dictionary_2<uint64_t, bool>* textureIDSingleMeshPair, bool isProcessed);
@@ -309,15 +309,22 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 GPU_TEXTURE_COPY_WAIT_TIME
     static void _set_GPU_TEXTURE_COPY_WAIT_TIME(int value);
     // Get instance field reference: public OvrAvatarTextureCopyManager/FallbackTextureSet[] FallbackTextureSets
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OvrAvatarTextureCopyManager::FallbackTextureSet>& dyn_FallbackTextureSets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OvrAvatarTextureCopyManager::FallbackTextureSet>& dyn_FallbackTextureSets();
     // Get instance field reference: private System.Collections.Generic.Queue`1<OvrAvatarTextureCopyManager/CopyTextureParams> texturesToCopy
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarTextureCopyManager::CopyTextureParams>*& dyn_texturesToCopy();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::OvrAvatarTextureCopyManager::CopyTextureParams>*& dyn_texturesToCopy();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,OvrAvatarTextureCopyManager/TextureSet> textureSets
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::GlobalNamespace::OvrAvatarTextureCopyManager::TextureSet>*& dyn_textureSets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::GlobalNamespace::OvrAvatarTextureCopyManager::TextureSet>*& dyn_textureSets();
     // Get instance field reference: private readonly System.String[] FALLBACK_TEXTURE_PATHS_DIFFUSE_ROUGHNESS
-    [[deprecated]] ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_DIFFUSE_ROUGHNESS();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_DIFFUSE_ROUGHNESS();
     // Get instance field reference: private readonly System.String[] FALLBACK_TEXTURE_PATHS_NORMAL
-    [[deprecated]] ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_NORMAL();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_FALLBACK_TEXTURE_PATHS_NORMAL();
+    // public System.Void .ctor()
+    // Offset: 0xAD8FF4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OvrAvatarTextureCopyManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarTextureCopyManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarTextureCopyManager*, creationType>()));
+    }
     // public System.Void Update()
     // Offset: 0xAD93DC
     void Update();
@@ -345,19 +352,6 @@ namespace GlobalNamespace {
     // private System.Void InitFallbackTextureSet(ovrAvatarAssetLevelOfDetail lod)
     // Offset: 0xAD9B5C
     void InitFallbackTextureSet(::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod);
-    // public System.Void .ctor()
-    // Offset: 0xAD8FF4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OvrAvatarTextureCopyManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarTextureCopyManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OvrAvatarTextureCopyManager*, creationType>()));
-    }
   }; // OvrAvatarTextureCopyManager
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarTextureCopyManager), 56 + sizeof(::ArrayW<::StringW>)> __GlobalNamespace_OvrAvatarTextureCopyManagerSizeCheck;
@@ -370,6 +364,10 @@ DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OvrAvatarTextureCopyManager::CopyTextu
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OvrAvatarTextureCopyManager::FallbackTextureSet, "", "OvrAvatarTextureCopyManager/FallbackTextureSet");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarTextureCopyManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarTextureCopyManager::Update
 // Il2CppName: Update
 template<>
@@ -457,7 +455,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarTextureCopyManager*), "InitFallbackTextureSet", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{lod});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OvrAvatarTextureCopyManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -123,8 +123,6 @@ namespace GlobalNamespace {
     static void _set_OVRA_CLIENT_TYPE_WWISE_2021_1(uint value);
     // public System.Void .ctor()
     // Offset: 0x176EBA0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ONSPPropagation::ClientType* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagation::ClientType::.ctor");

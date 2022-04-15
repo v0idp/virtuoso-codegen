@@ -64,13 +64,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 jointCount
-    [[deprecated]] uint& dyn_jointCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_jointCount();
     // Get instance field reference: public ovrAvatarTransform[] jointTransform
-    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_jointTransform();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ovrAvatarTransform>& dyn_jointTransform();
     // Get instance field reference: public System.Int32[] jointParents
-    [[deprecated]] ::ArrayW<int>& dyn_jointParents();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_jointParents();
     // Get instance field reference: public System.IntPtr[] jointNames
-    [[deprecated]] ::ArrayW<::System::IntPtr>& dyn_jointNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::IntPtr>& dyn_jointNames();
   }; // ovrAvatarSkinnedMeshPose
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarSkinnedMeshPose), 24 + sizeof(::ArrayW<::System::IntPtr>)> __GlobalNamespace_ovrAvatarSkinnedMeshPoseSizeCheck;

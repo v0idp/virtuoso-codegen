@@ -85,9 +85,9 @@ namespace NatSuite::Devices {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public readonly NatSuite.Devices.IMediaDevice[] devices
-    [[deprecated]] ::ArrayW<::NatSuite::Devices::IMediaDevice*>& dyn_devices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::NatSuite::Devices::IMediaDevice*>& dyn_devices();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // public NatSuite.Devices.IMediaDevice get_currentDevice()
     // Offset: 0xAC13B0
     ::NatSuite::Devices::IMediaDevice* get_currentDevice();

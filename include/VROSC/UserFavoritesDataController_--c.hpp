@@ -44,18 +44,16 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0xE85EE4
     static void _cctor();
-    // System.String <LoadCloudData>b__9_2(System.Object x)
-    // Offset: 0xE85F4C
-    ::StringW $LoadCloudData$b__9_2(::Il2CppObject* x);
     // public System.Void .ctor()
     // Offset: 0xE85F44
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserFavoritesDataController::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserFavoritesDataController::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UserFavoritesDataController::$$c*, creationType>()));
     }
+    // System.String <LoadCloudData>b__9_2(System.Object x)
+    // Offset: 0xE85F4C
+    ::StringW $LoadCloudData$b__9_2(::Il2CppObject* x);
   }; // VROSC.UserFavoritesDataController/VROSC.<>c
   #pragma pack(pop)
 }
@@ -68,6 +66,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserFavoritesDataController::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UserFavoritesDataController::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UserFavoritesDataController::$$c::$LoadCloudData$b__9_2
 // Il2CppName: <LoadCloudData>b__9_2
 template<>
@@ -77,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserFavoritesDataController::$$c*), "<LoadCloudData>b__9_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: VROSC::UserFavoritesDataController::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -117,21 +117,21 @@ namespace System::Net::Sockets {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Net.Sockets.Socket m_StreamSocket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_m_StreamSocket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_m_StreamSocket();
     // Get instance field reference: private System.Boolean m_Readable
-    [[deprecated]] bool& dyn_m_Readable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Readable();
     // Get instance field reference: private System.Boolean m_Writeable
-    [[deprecated]] bool& dyn_m_Writeable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Writeable();
     // Get instance field reference: private System.Boolean m_OwnsSocket
-    [[deprecated]] bool& dyn_m_OwnsSocket();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_OwnsSocket();
     // Get instance field reference: private System.Int32 m_CloseTimeout
-    [[deprecated]] int& dyn_m_CloseTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CloseTimeout();
     // Get instance field reference: private System.Boolean m_CleanedUp
-    [[deprecated]] bool& dyn_m_CleanedUp();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CleanedUp();
     // Get instance field reference: private System.Int32 m_CurrentReadTimeout
-    [[deprecated]] int& dyn_m_CurrentReadTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CurrentReadTimeout();
     // Get instance field reference: private System.Int32 m_CurrentWriteTimeout
-    [[deprecated]] int& dyn_m_CurrentWriteTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CurrentWriteTimeout();
     // System.Net.Sockets.Socket get_InternalSocket()
     // Offset: 0x11039C0
     ::System::Net::Sockets::Socket* get_InternalSocket();

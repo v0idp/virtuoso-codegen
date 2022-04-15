@@ -44,9 +44,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.String header
-    [[deprecated]] ::StringW& dyn_header();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_header();
     // Get instance field reference: public readonly System.String message
-    [[deprecated]] ::StringW& dyn_message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_message();
     // public System.Void .ctor(System.String header, System.String message)
     // Offset: 0x18A459C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

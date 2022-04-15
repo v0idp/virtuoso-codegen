@@ -182,37 +182,37 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::LoopStationRecorder::RecordingState) == 0x4);
     public:
     // Get instance field reference: private System.Single <RecordingProgressValue>k__BackingField
-    [[deprecated]] float& dyn_$RecordingProgressValue$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$RecordingProgressValue$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationRecorder _recorder
-    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__recorder();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecorder*& dyn__recorder();
     // Get instance field reference: private VROSC.SelectionBar _loopLengthSelectionBar
-    [[deprecated]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
+    [[deprecated("Use field access instead!")]] ::VROSC::SelectionBar*& dyn__loopLengthSelectionBar();
     // Get instance field reference: private UnityEngine.GameObject _loopLengthSelectionBarHolder
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__loopLengthSelectionBarHolder();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__loopLengthSelectionBarHolder();
     // Get instance field reference: private VROSC.ResetableMover _resetableMover
-    [[deprecated]] ::VROSC::ResetableMover*& dyn__resetableMover();
+    [[deprecated("Use field access instead!")]] ::VROSC::ResetableMover*& dyn__resetableMover();
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal _drumPadEffect
-    [[deprecated]] ::VROSC::DrumPadEffectOnSignal*& dyn__drumPadEffect();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumPadEffectOnSignal*& dyn__drumPadEffect();
     // Get instance field reference: private VROSC.LooperButtonProgressUpdater _slider
-    [[deprecated]] ::VROSC::LooperButtonProgressUpdater*& dyn__slider();
+    [[deprecated("Use field access instead!")]] ::VROSC::LooperButtonProgressUpdater*& dyn__slider();
     // Get instance field reference: private TMPro.TextMeshPro _buttonText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__buttonText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__buttonText();
     // Get instance field reference: private VROSC.LoopStationRecordingButtonVisual _visual
-    [[deprecated]] ::VROSC::LoopStationRecordingButtonVisual*& dyn__visual();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecordingButtonVisual*& dyn__visual();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralArc _arc
-    [[deprecated]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
     // Get instance field reference: private VROSC.LoopStationRecordingButtonPlayback _playback
-    [[deprecated]] ::VROSC::LoopStationRecordingButtonPlayback*& dyn__playback();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecordingButtonPlayback*& dyn__playback();
     // Get instance field reference: private System.Single _offset
-    [[deprecated]] float& dyn__offset();
+    [[deprecated("Use field access instead!")]] float& dyn__offset();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationRecordingProgress _recordingProgress
-    [[deprecated]] ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
     // Get instance field reference: private VROSC.LoopStationLoopHandler/VROSC.LooperState _looperState
-    [[deprecated]] ::VROSC::LoopStationLoopHandler::LooperState& dyn__looperState();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationLoopHandler::LooperState& dyn__looperState();
     // Get instance field reference: private VROSC.LoopStationRecorder/VROSC.RecordingState _recordingState
-    [[deprecated]] ::VROSC::LoopStationRecorder::RecordingState& dyn__recordingState();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecorder::RecordingState& dyn__recordingState();
     // public System.Single get_RecordingProgressValue()
     // Offset: 0x1976174
     float get_RecordingProgressValue();
@@ -275,11 +275,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationRecordingButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationRecordingButton::.ctor");

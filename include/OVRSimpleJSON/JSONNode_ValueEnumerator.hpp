@@ -40,7 +40,7 @@ namespace OVRSimpleJSON {
       return m_Enumerator;
     }
     // Get instance field reference: private OVRSimpleJSON.JSONNode/OVRSimpleJSON.Enumerator m_Enumerator
-    [[deprecated]] ::OVRSimpleJSON::JSONNode::Enumerator& dyn_m_Enumerator();
+    [[deprecated("Use field access instead!")]] ::OVRSimpleJSON::JSONNode::Enumerator& dyn_m_Enumerator();
     // public OVRSimpleJSON.JSONNode get_Current()
     // Offset: 0x84B9C8
     ::OVRSimpleJSON::JSONNode* get_Current();

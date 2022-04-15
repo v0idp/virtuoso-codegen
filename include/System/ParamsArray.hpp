@@ -73,13 +73,13 @@ namespace System {
     // Set static field: static private readonly System.Object[] threeArgArray
     static void _set_threeArgArray(::ArrayW<::Il2CppObject*> value);
     // Get instance field reference: private readonly System.Object arg0
-    [[deprecated]] ::Il2CppObject*& dyn_arg0();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_arg0();
     // Get instance field reference: private readonly System.Object arg1
-    [[deprecated]] ::Il2CppObject*& dyn_arg1();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_arg1();
     // Get instance field reference: private readonly System.Object arg2
-    [[deprecated]] ::Il2CppObject*& dyn_arg2();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_arg2();
     // Get instance field reference: private readonly System.Object[] args
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_args();
     // public System.Int32 get_Length()
     // Offset: 0x14C8640
     int get_Length();

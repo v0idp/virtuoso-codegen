@@ -42,7 +42,7 @@ namespace GlobalNamespace {
       return message;
     }
     // Get instance field reference: public readonly System.String message
-    [[deprecated]] ::StringW& dyn_message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_message();
     // public System.Void .ctor(System.String message)
     // Offset: 0x18A4570
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -89,7 +89,6 @@ namespace DG::Tweening::CustomPlugins {
     // Offset: 0x15E2D74
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PureQuaternionPlugin* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::CustomPlugins::PureQuaternionPlugin::.ctor");

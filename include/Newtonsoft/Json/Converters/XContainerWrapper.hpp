@@ -61,7 +61,7 @@ namespace Newtonsoft::Json::Converters {
     // Deleting conversion operator: operator ::System::Xml::Linq::XObject*
     constexpr operator ::System::Xml::Linq::XObject*() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Converters.IXmlNode> _childNodes
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__childNodes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__childNodes();
     // private System.Xml.Linq.XContainer get_Container()
     // Offset: 0x1590C14
     ::System::Xml::Linq::XContainer* get_Container();

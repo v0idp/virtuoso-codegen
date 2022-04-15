@@ -55,29 +55,29 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Collections.Generic.List`1<OVRLipSync/Frame> entries
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRLipSync::Frame*>*& dyn_entries();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRLipSync::Frame*>*& dyn_entries();
     // Get instance field reference: public System.Single length
-    [[deprecated]] float& dyn_length();
-    // public OVRLipSync/Frame GetFrameAtTime(System.Single time)
-    // Offset: 0x18AADA0
-    ::GlobalNamespace::OVRLipSync::Frame* GetFrameAtTime(float time);
+    [[deprecated("Use field access instead!")]] float& dyn_length();
     // public System.Void .ctor()
     // Offset: 0x18ACE48
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRLipSyncSequence* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSyncSequence::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRLipSyncSequence*, creationType>()));
     }
+    // public OVRLipSync/Frame GetFrameAtTime(System.Single time)
+    // Offset: 0x18AADA0
+    ::GlobalNamespace::OVRLipSync::Frame* GetFrameAtTime(float time);
   }; // OVRLipSyncSequence
   #pragma pack(pop)
   static check_size<sizeof(OVRLipSyncSequence), 32 + sizeof(float)> __GlobalNamespace_OVRLipSyncSequenceSizeCheck;
   static_assert(sizeof(OVRLipSyncSequence) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncSequence::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncSequence::GetFrameAtTime
 // Il2CppName: GetFrameAtTime
 template<>
@@ -87,7 +87,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRLipSyncSequence*), "GetFrameAtTime", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{time});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncSequence::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

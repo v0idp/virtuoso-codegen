@@ -42,9 +42,9 @@ namespace System::Security::Util {
     static_assert(sizeof(::System::Security::Util::TokenizerShortBlock*) == 0x8);
     public:
     // Get instance field reference: System.Int16[] m_block
-    [[deprecated]] ::ArrayW<int16_t>& dyn_m_block();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int16_t>& dyn_m_block();
     // Get instance field reference: System.Security.Util.TokenizerShortBlock m_next
-    [[deprecated]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_next();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::TokenizerShortBlock*& dyn_m_next();
     // public System.Void .ctor()
     // Offset: 0x12AAD54
     // Implemented from: System.Object

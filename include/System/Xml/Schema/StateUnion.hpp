@@ -55,13 +55,13 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 State
-    [[deprecated]] int& dyn_State();
+    [[deprecated("Use field access instead!")]] int& dyn_State();
     // Get instance field reference: public System.Int32 AllElementsRequired
-    [[deprecated]] int& dyn_AllElementsRequired();
+    [[deprecated("Use field access instead!")]] int& dyn_AllElementsRequired();
     // Get instance field reference: public System.Int32 CurPosIndex
-    [[deprecated]] int& dyn_CurPosIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_CurPosIndex();
     // Get instance field reference: public System.Int32 NumberOfRunningPos
-    [[deprecated]] int& dyn_NumberOfRunningPos();
+    [[deprecated("Use field access instead!")]] int& dyn_NumberOfRunningPos();
   }; // System.Xml.Schema.StateUnion
   // WARNING Not writing size check since size may be invalid!
 }

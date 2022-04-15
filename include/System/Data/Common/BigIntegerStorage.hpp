@@ -68,7 +68,7 @@ namespace System::Data::Common {
       return values;
     }
     // Get instance field reference: private System.Numerics.BigInteger[] _values
-    [[deprecated]] ::ArrayW<::System::Numerics::BigInteger>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Numerics::BigInteger>& dyn__values();
     // System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x14A3BB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

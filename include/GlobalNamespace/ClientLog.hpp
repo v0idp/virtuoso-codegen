@@ -66,11 +66,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityOSC.OSCClient client
-    [[deprecated]] ::UnityOSC::OSCClient*& dyn_client();
+    [[deprecated("Use field access instead!")]] ::UnityOSC::OSCClient*& dyn_client();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityOSC.OSCMessage> messages
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityOSC::OSCMessage*>*& dyn_messages();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityOSC::OSCMessage*>*& dyn_messages();
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> log
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_log();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_log();
   }; // ClientLog
   #pragma pack(pop)
   static check_size<sizeof(ClientLog), 16 + sizeof(::System::Collections::Generic::List_1<::StringW>*)> __GlobalNamespace_ClientLogSizeCheck;

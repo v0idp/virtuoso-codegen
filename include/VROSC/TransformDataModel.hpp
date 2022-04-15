@@ -69,15 +69,22 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Single[] Position
-    [[deprecated]] ::ArrayW<float>& dyn_Position();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_Position();
     // Get instance field reference: public System.Single[] Rotation
-    [[deprecated]] ::ArrayW<float>& dyn_Rotation();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_Rotation();
     // Get instance field reference: public System.Single[] Scale
-    [[deprecated]] ::ArrayW<float>& dyn_Scale();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_Scale();
     // Get instance field reference: public System.Boolean IsOpen
-    [[deprecated]] bool& dyn_IsOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsOpen();
     // Get instance field reference: public System.Boolean IsPinned
-    [[deprecated]] bool& dyn_IsPinned();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsPinned();
+    // public System.Void .ctor()
+    // Offset: 0xA22D0C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TransformDataModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TransformDataModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TransformDataModel*, creationType>()));
+    }
     // public System.Void Reset()
     // Offset: 0xA226E4
     void Reset();
@@ -99,21 +106,16 @@ namespace VROSC {
     // public System.Void SetScale(UnityEngine.Vector3 scale)
     // Offset: 0xA2A6F4
     void SetScale(::UnityEngine::Vector3 scale);
-    // public System.Void .ctor()
-    // Offset: 0xA22D0C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TransformDataModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TransformDataModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TransformDataModel*, creationType>()));
-    }
   }; // VROSC.TransformDataModel
   #pragma pack(pop)
   static check_size<sizeof(TransformDataModel), 41 + sizeof(bool)> __VROSC_TransformDataModelSizeCheck;
   static_assert(sizeof(TransformDataModel) == 0x2A);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TransformDataModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TransformDataModel::Reset
 // Il2CppName: Reset
 template<>
@@ -173,7 +175,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TransformDataModel*), "SetScale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{scale});
   }
 };
-// Writing MetadataGetter for method: VROSC::TransformDataModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

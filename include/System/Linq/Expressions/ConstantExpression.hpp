@@ -56,7 +56,7 @@ namespace System::Linq::Expressions {
       return Value;
     }
     // Get instance field reference: private readonly System.Object <Value>k__BackingField
-    [[deprecated]] ::Il2CppObject*& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$Value$k__BackingField();
     // public System.Object get_Value()
     // Offset: 0x11F955C
     ::Il2CppObject* get_Value();

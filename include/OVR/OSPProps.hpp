@@ -80,21 +80,19 @@ namespace OVR {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: public System.Boolean enableSpatialization
-    [[deprecated]] bool& dyn_enableSpatialization();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableSpatialization();
     // Get instance field reference: public System.Boolean useFastOverride
-    [[deprecated]] bool& dyn_useFastOverride();
+    [[deprecated("Use field access instead!")]] bool& dyn_useFastOverride();
     // Get instance field reference: public System.Single gain
-    [[deprecated]] float& dyn_gain();
+    [[deprecated("Use field access instead!")]] float& dyn_gain();
     // Get instance field reference: public System.Boolean enableInvSquare
-    [[deprecated]] bool& dyn_enableInvSquare();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableInvSquare();
     // Get instance field reference: public System.Single volumetric
-    [[deprecated]] float& dyn_volumetric();
+    [[deprecated("Use field access instead!")]] float& dyn_volumetric();
     // Get instance field reference: public UnityEngine.Vector2 invSquareFalloff
-    [[deprecated]] ::UnityEngine::Vector2& dyn_invSquareFalloff();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_invSquareFalloff();
     // public System.Void .ctor()
     // Offset: 0x18A4640
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OSPProps* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::OSPProps::.ctor");

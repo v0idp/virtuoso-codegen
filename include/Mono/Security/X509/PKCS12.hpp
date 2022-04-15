@@ -139,25 +139,25 @@ namespace Mono::Security::X509 {
     // Set static field: static private System.Int32 password_max_length
     static void _set_password_max_length(int value);
     // Get instance field reference: private System.Byte[] _password
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__password();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__password();
     // Get instance field reference: private System.Collections.ArrayList _keyBags
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__keyBags();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__keyBags();
     // Get instance field reference: private System.Collections.ArrayList _secretBags
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__secretBags();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__secretBags();
     // Get instance field reference: private Mono.Security.X509.X509CertificateCollection _certs
-    [[deprecated]] ::Mono::Security::X509::X509CertificateCollection*& dyn__certs();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::X509::X509CertificateCollection*& dyn__certs();
     // Get instance field reference: private System.Boolean _keyBagsChanged
-    [[deprecated]] bool& dyn__keyBagsChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn__keyBagsChanged();
     // Get instance field reference: private System.Boolean _secretBagsChanged
-    [[deprecated]] bool& dyn__secretBagsChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn__secretBagsChanged();
     // Get instance field reference: private System.Boolean _certsChanged
-    [[deprecated]] bool& dyn__certsChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn__certsChanged();
     // Get instance field reference: private System.Int32 _iterations
-    [[deprecated]] int& dyn__iterations();
+    [[deprecated("Use field access instead!")]] int& dyn__iterations();
     // Get instance field reference: private System.Collections.ArrayList _safeBags
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__safeBags();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__safeBags();
     // Get instance field reference: private System.Security.Cryptography.RandomNumberGenerator _rng
-    [[deprecated]] ::System::Security::Cryptography::RandomNumberGenerator*& dyn__rng();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::RandomNumberGenerator*& dyn__rng();
     // public System.Void set_Password(System.String value)
     // Offset: 0x163D548
     void set_Password(::StringW value);
@@ -179,6 +179,13 @@ namespace Mono::Security::X509 {
     // static public System.Int32 get_MaximumPasswordLength()
     // Offset: 0x1643C98
     static int get_MaximumPasswordLength();
+    // public System.Void .ctor()
+    // Offset: 0x163D42C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PKCS12* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::PKCS12::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PKCS12*, creationType>()));
+    }
     // public System.Void .ctor(System.Byte[] data)
     // Offset: 0x163D510
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -250,15 +257,6 @@ namespace Mono::Security::X509 {
     // public System.Object Clone()
     // Offset: 0x1643BC4
     ::Il2CppObject* Clone();
-    // public System.Void .ctor()
-    // Offset: 0x163D42C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PKCS12* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::PKCS12::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PKCS12*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x163E77C
     // Implemented from: System.Object
@@ -328,6 +326,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)()>(
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::X509::PKCS12*), "get_MaximumPasswordLength", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Mono::Security::X509::PKCS12::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::X509::PKCS12::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -520,10 +522,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::X509::PKCS12*), "Clone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::X509::PKCS12::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::X509::PKCS12::Finalize
 // Il2CppName: Finalize
 template<>

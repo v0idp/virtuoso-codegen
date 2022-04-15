@@ -91,19 +91,19 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 years
-    [[deprecated]] int& dyn_years();
+    [[deprecated("Use field access instead!")]] int& dyn_years();
     // Get instance field reference: private System.Int32 months
-    [[deprecated]] int& dyn_months();
+    [[deprecated("Use field access instead!")]] int& dyn_months();
     // Get instance field reference: private System.Int32 days
-    [[deprecated]] int& dyn_days();
+    [[deprecated("Use field access instead!")]] int& dyn_days();
     // Get instance field reference: private System.Int32 hours
-    [[deprecated]] int& dyn_hours();
+    [[deprecated("Use field access instead!")]] int& dyn_hours();
     // Get instance field reference: private System.Int32 minutes
-    [[deprecated]] int& dyn_minutes();
+    [[deprecated("Use field access instead!")]] int& dyn_minutes();
     // Get instance field reference: private System.Int32 seconds
-    [[deprecated]] int& dyn_seconds();
+    [[deprecated("Use field access instead!")]] int& dyn_seconds();
     // Get instance field reference: private System.UInt32 nanoseconds
-    [[deprecated]] uint& dyn_nanoseconds();
+    [[deprecated("Use field access instead!")]] uint& dyn_nanoseconds();
     // public System.Boolean get_IsNegative()
     // Offset: 0xED3B70
     bool get_IsNegative();

@@ -318,7 +318,7 @@ namespace VROSC {
     // Set static field: static public VROSC.TutorialEvent RerecordPressed
     static void _set_RerecordPressed(::VROSC::TutorialEvent value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.TutorialEvent
   #pragma pack(pop)
   static check_size<sizeof(TutorialEvent), 0 + sizeof(int)> __VROSC_TutorialEventSizeCheck;

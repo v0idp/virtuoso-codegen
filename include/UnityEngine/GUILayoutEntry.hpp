@@ -106,23 +106,23 @@ namespace UnityEngine {
     // Set static field: static protected System.Int32 indent
     static void _set_indent(int value);
     // Get instance field reference: public System.Single minWidth
-    [[deprecated]] float& dyn_minWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_minWidth();
     // Get instance field reference: public System.Single maxWidth
-    [[deprecated]] float& dyn_maxWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_maxWidth();
     // Get instance field reference: public System.Single minHeight
-    [[deprecated]] float& dyn_minHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_minHeight();
     // Get instance field reference: public System.Single maxHeight
-    [[deprecated]] float& dyn_maxHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_maxHeight();
     // Get instance field reference: public UnityEngine.Rect rect
-    [[deprecated]] ::UnityEngine::Rect& dyn_rect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_rect();
     // Get instance field reference: public System.Int32 stretchWidth
-    [[deprecated]] int& dyn_stretchWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_stretchWidth();
     // Get instance field reference: public System.Int32 stretchHeight
-    [[deprecated]] int& dyn_stretchHeight();
+    [[deprecated("Use field access instead!")]] int& dyn_stretchHeight();
     // Get instance field reference: public System.Boolean consideredForMargin
-    [[deprecated]] bool& dyn_consideredForMargin();
+    [[deprecated("Use field access instead!")]] bool& dyn_consideredForMargin();
     // Get instance field reference: private UnityEngine.GUIStyle m_Style
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_Style();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_Style();
     // public UnityEngine.GUIStyle get_style()
     // Offset: 0x1879AEC
     ::UnityEngine::GUIStyle* get_style();

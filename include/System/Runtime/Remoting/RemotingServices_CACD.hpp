@@ -38,9 +38,9 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: public System.Object d
-    [[deprecated]] ::Il2CppObject*& dyn_d();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_d();
     // Get instance field reference: public System.Object c
-    [[deprecated]] ::Il2CppObject*& dyn_c();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_c();
     // public System.Void .ctor()
     // Offset: 0xE580EC
     // Implemented from: System.Object

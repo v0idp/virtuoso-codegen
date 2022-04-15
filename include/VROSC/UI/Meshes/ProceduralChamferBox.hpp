@@ -93,7 +93,7 @@ namespace VROSC::UI::Meshes {
       // Set static field: static public VROSC.UI.Meshes.ProceduralChamferBox/VROSC.UI.Meshes.Type BottomOnly
       static void _set_BottomOnly(::VROSC::UI::Meshes::ProceduralChamferBox::Type value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.UI.Meshes.ProceduralChamferBox/VROSC.UI.Meshes.Type
     #pragma pack(pop)
     static check_size<sizeof(ProceduralChamferBox::Type), 0 + sizeof(int)> __VROSC_UI_Meshes_ProceduralChamferBox_TypeSizeCheck;
@@ -119,11 +119,11 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32 _chamferEdges
-    [[deprecated]] int& dyn__chamferEdges();
+    [[deprecated("Use field access instead!")]] int& dyn__chamferEdges();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralChamferBox/VROSC.UI.Meshes.Type _type
-    [[deprecated]] ::VROSC::UI::Meshes::ProceduralChamferBox::Type& dyn__type();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ProceduralChamferBox::Type& dyn__type();
     // Get instance field reference: private System.Boolean _fillcenter
-    [[deprecated]] bool& dyn__fillcenter();
+    [[deprecated("Use field access instead!")]] bool& dyn__fillcenter();
     // private System.Int32 GetVertCount()
     // Offset: 0xAE83E4
     int GetVertCount();
@@ -145,9 +145,6 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xAE9148
     // Implemented from: VROSC.UI.Meshes.ProceduralMeshData
     // Base method: System.Void ProceduralMeshData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralChamferBox* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralChamferBox::.ctor");

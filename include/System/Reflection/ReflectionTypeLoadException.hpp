@@ -57,9 +57,9 @@ namespace System::Reflection {
     static_assert(sizeof(::ArrayW<::System::Exception*>) == 0x8);
     public:
     // Get instance field reference: private System.Type[] _classes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn__classes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn__classes();
     // Get instance field reference: private System.Exception[] _exceptions
-    [[deprecated]] ::ArrayW<::System::Exception*>& dyn__exceptions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Exception*>& dyn__exceptions();
     // public System.Void .ctor(System.Type[] classes, System.Exception[] exceptions)
     // Offset: 0x161568C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

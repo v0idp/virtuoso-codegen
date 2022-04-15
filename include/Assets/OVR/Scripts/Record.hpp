@@ -42,9 +42,9 @@ namespace Assets::OVR::Scripts {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String category
-    [[deprecated]] ::StringW& dyn_category();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_category();
     // Get instance field reference: public System.String message
-    [[deprecated]] ::StringW& dyn_message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_message();
     // public System.Void .ctor(System.String cat, System.String msg)
     // Offset: 0x8047B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

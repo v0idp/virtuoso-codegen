@@ -148,37 +148,44 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 <Pages>k__BackingField
-    [[deprecated]] int& dyn_$Pages$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Pages$k__BackingField();
     // Get instance field reference: private System.Int32 _itemCount
-    [[deprecated]] int& dyn__itemCount();
+    [[deprecated("Use field access instead!")]] int& dyn__itemCount();
     // Get instance field reference: private UnityEngine.Transform _listItemParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__listItemParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__listItemParent();
     // Get instance field reference: private VROSC.PaginatedListItemUI _listItemPrefab
-    [[deprecated]] ::VROSC::PaginatedListItemUI*& dyn__listItemPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::PaginatedListItemUI*& dyn__listItemPrefab();
     // Get instance field reference: private System.Int32 _pageButtonCount
-    [[deprecated]] int& dyn__pageButtonCount();
+    [[deprecated("Use field access instead!")]] int& dyn__pageButtonCount();
     // Get instance field reference: private UnityEngine.Transform _pageButtonsParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__pageButtonsParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__pageButtonsParent();
     // Get instance field reference: private VROSC.PaginatedListPageButton _pageButtonPrefab
-    [[deprecated]] ::VROSC::PaginatedListPageButton*& dyn__pageButtonPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::PaginatedListPageButton*& dyn__pageButtonPrefab();
     // Get instance field reference: private System.Boolean _isSetup
-    [[deprecated]] bool& dyn__isSetup();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSetup();
     // Get instance field reference: private VROSC.PaginatedListItemUI[] _uiItems
-    [[deprecated]] ::ArrayW<::VROSC::PaginatedListItemUI*>& dyn__uiItems();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::PaginatedListItemUI*>& dyn__uiItems();
     // Get instance field reference: private VROSC.PaginatedListPageButton[] _pageButtons
-    [[deprecated]] ::ArrayW<::VROSC::PaginatedListPageButton*>& dyn__pageButtons();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::PaginatedListPageButton*>& dyn__pageButtons();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PaginatedListDataHolder> _dataList
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
     // Get instance field reference: private System.Int32 _currentPage
-    [[deprecated]] int& dyn__currentPage();
+    [[deprecated("Use field access instead!")]] int& dyn__currentPage();
     // Get instance field reference: public System.Action`1<VROSC.PaginatedListDataHolder> OnItemSelected
-    [[deprecated]] ::System::Action_1<::VROSC::PaginatedListDataHolder*>*& dyn_OnItemSelected();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::PaginatedListDataHolder*>*& dyn_OnItemSelected();
     // public System.Int32 get_Pages()
     // Offset: 0xADB8EC
     int get_Pages();
     // private System.Void set_Pages(System.Int32 value)
     // Offset: 0xADB8E4
     void set_Pages(int value);
+    // public System.Void .ctor()
+    // Offset: 0xADC460
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PaginatedList* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PaginatedList::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PaginatedList*, creationType>()));
+    }
     // public System.Void Setup()
     // Offset: 0xADB8F4
     void Setup();
@@ -203,19 +210,6 @@ namespace VROSC {
     // public System.Void UnselectAll()
     // Offset: 0xADBFE8
     void UnselectAll();
-    // public System.Void .ctor()
-    // Offset: 0xADC460
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PaginatedList* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PaginatedList::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PaginatedList*, creationType>()));
-    }
   }; // VROSC.PaginatedList
   #pragma pack(pop)
   static check_size<sizeof(PaginatedList), 112 + sizeof(::System::Action_1<::VROSC::PaginatedListDataHolder*>*)> __VROSC_PaginatedListSizeCheck;
@@ -239,6 +233,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PaginatedList*), "set_Pages", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::PaginatedList::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PaginatedList::Setup
 // Il2CppName: Setup
 template<>
@@ -308,7 +306,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PaginatedList*), "UnselectAll", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::PaginatedList::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

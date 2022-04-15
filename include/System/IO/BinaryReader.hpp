@@ -117,25 +117,25 @@ namespace System::IO {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.IO.Stream m_stream
-    [[deprecated]] ::System::IO::Stream*& dyn_m_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_m_stream();
     // Get instance field reference: private System.Byte[] m_buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_buffer();
     // Get instance field reference: private System.Text.Decoder m_decoder
-    [[deprecated]] ::System::Text::Decoder*& dyn_m_decoder();
+    [[deprecated("Use field access instead!")]] ::System::Text::Decoder*& dyn_m_decoder();
     // Get instance field reference: private System.Byte[] m_charBytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_charBytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_charBytes();
     // Get instance field reference: private System.Char[] m_singleChar
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_m_singleChar();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_m_singleChar();
     // Get instance field reference: private System.Char[] m_charBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_m_charBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_m_charBuffer();
     // Get instance field reference: private System.Int32 m_maxCharsSize
-    [[deprecated]] int& dyn_m_maxCharsSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_maxCharsSize();
     // Get instance field reference: private System.Boolean m_2BytesPerChar
-    [[deprecated]] bool& dyn_m_2BytesPerChar();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_2BytesPerChar();
     // Get instance field reference: private System.Boolean m_isMemoryStream
-    [[deprecated]] bool& dyn_m_isMemoryStream();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isMemoryStream();
     // Get instance field reference: private System.Boolean m_leaveOpen
-    [[deprecated]] bool& dyn_m_leaveOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_leaveOpen();
     // public System.IO.Stream get_BaseStream()
     // Offset: 0xFE9084
     ::System::IO::Stream* get_BaseStream();

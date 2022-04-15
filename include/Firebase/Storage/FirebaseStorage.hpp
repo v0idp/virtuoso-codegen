@@ -93,13 +93,13 @@ namespace Firebase::Storage {
     // Set static field: static private readonly Firebase.Storage.Internal.ModuleLogger logger
     static void _set_logger(::Firebase::Storage::Internal::ModuleLogger* value);
     // Get instance field reference: private Firebase.Storage.FirebaseStorageInternal storageInternal
-    [[deprecated]] ::Firebase::Storage::FirebaseStorageInternal*& dyn_storageInternal();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::FirebaseStorageInternal*& dyn_storageInternal();
     // Get instance field reference: private readonly Firebase.FirebaseApp firebaseApp
-    [[deprecated]] ::Firebase::FirebaseApp*& dyn_firebaseApp();
+    [[deprecated("Use field access instead!")]] ::Firebase::FirebaseApp*& dyn_firebaseApp();
     // Get instance field reference: private System.String instanceKey
-    [[deprecated]] ::StringW& dyn_instanceKey();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_instanceKey();
     // Get instance field reference: private Firebase.Storage.Internal.ModuleLogger <Logger>k__BackingField
-    [[deprecated]] ::Firebase::Storage::Internal::ModuleLogger*& dyn_$Logger$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::Internal::ModuleLogger*& dyn_$Logger$k__BackingField();
     // Firebase.Storage.Internal.ModuleLogger get_Logger()
     // Offset: 0x18313A4
     ::Firebase::Storage::Internal::ModuleLogger* get_Logger();

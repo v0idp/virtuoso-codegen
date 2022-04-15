@@ -64,9 +64,9 @@ namespace UnityEngine {
     // Set static field: static private readonly System.IntPtr s_HashCodeMethodID
     static void _set_s_HashCodeMethodID(::System::IntPtr value);
     // Get instance field reference: public readonly UnityEngine.AndroidJavaClass javaInterface
-    [[deprecated]] ::UnityEngine::AndroidJavaClass*& dyn_javaInterface();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AndroidJavaClass*& dyn_javaInterface();
     // Get instance field reference: System.IntPtr proxyObject
-    [[deprecated]] ::System::IntPtr& dyn_proxyObject();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_proxyObject();
     // public System.Void .ctor(System.String javaInterface)
     // Offset: 0x1870DB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

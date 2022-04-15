@@ -100,21 +100,21 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.UIVertex simpleVert
     static void _set_simpleVert(::UnityEngine::UIVertex value);
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Vector3 normal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_normal();
     // Get instance field reference: public UnityEngine.Vector4 tangent
-    [[deprecated]] ::UnityEngine::Vector4& dyn_tangent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_tangent();
     // Get instance field reference: public UnityEngine.Color32 color
-    [[deprecated]] ::UnityEngine::Color32& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_color();
     // Get instance field reference: public UnityEngine.Vector4 uv0
-    [[deprecated]] ::UnityEngine::Vector4& dyn_uv0();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_uv0();
     // Get instance field reference: public UnityEngine.Vector4 uv1
-    [[deprecated]] ::UnityEngine::Vector4& dyn_uv1();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_uv1();
     // Get instance field reference: public UnityEngine.Vector4 uv2
-    [[deprecated]] ::UnityEngine::Vector4& dyn_uv2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_uv2();
     // Get instance field reference: public UnityEngine.Vector4 uv3
-    [[deprecated]] ::UnityEngine::Vector4& dyn_uv3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_uv3();
     // static private System.Void .cctor()
     // Offset: 0x18FD71C
     static void _cctor();

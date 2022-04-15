@@ -54,7 +54,7 @@ namespace VROSC {
       return inputManager;
     }
     // Get instance field reference: private VROSC.InputManager _inputManager
-    [[deprecated]] ::VROSC::InputManager*& dyn__inputManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputManager*& dyn__inputManager();
     // public System.Void .ctor(VROSC.InputManager inputManager)
     // Offset: 0x192683C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

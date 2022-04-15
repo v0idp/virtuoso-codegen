@@ -74,26 +74,23 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal _drumEffect
-    [[deprecated]] ::VROSC::DrumPadEffectOnSignal*& dyn__drumEffect();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumPadEffectOnSignal*& dyn__drumEffect();
     // Get instance field reference: public System.Single CurrentTime
-    [[deprecated]] float& dyn_CurrentTime();
+    [[deprecated("Use field access instead!")]] float& dyn_CurrentTime();
     // Get instance field reference: public System.Single HitPower
-    [[deprecated]] float& dyn_HitPower();
+    [[deprecated("Use field access instead!")]] float& dyn_HitPower();
     // Get instance field reference: public UnityEngine.Color Color
-    [[deprecated]] ::UnityEngine::Color& dyn_Color();
-    // public System.Void Setup(VROSC.DrumPadEffectOnSignal drumEffect)
-    // Offset: 0x8E8A18
-    void Setup(::VROSC::DrumPadEffectOnSignal* drumEffect);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_Color();
     // public System.Void .ctor()
     // Offset: 0x8E8A74
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DrumpadHitHintBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DrumpadHitHintBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DrumpadHitHintBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.DrumPadEffectOnSignal drumEffect)
+    // Offset: 0x8E8A18
+    void Setup(::VROSC::DrumPadEffectOnSignal* drumEffect);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x8E8A4C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -105,6 +102,10 @@ namespace VROSC {
   static_assert(sizeof(DrumpadHitHintBehaviour) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::DrumpadHitHintBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::DrumpadHitHintBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -114,10 +115,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::DrumpadHitHintBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{drumEffect});
   }
 };
-// Writing MetadataGetter for method: VROSC::DrumpadHitHintBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::DrumpadHitHintBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

@@ -43,9 +43,9 @@ namespace System::Net::Security {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.IO.Stream _InnerStream
-    [[deprecated]] ::System::IO::Stream*& dyn__InnerStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__InnerStream();
     // Get instance field reference: private System.Boolean _LeaveStreamOpen
-    [[deprecated]] bool& dyn__LeaveStreamOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__LeaveStreamOpen();
     // protected System.IO.Stream get_InnerStream()
     // Offset: 0x10D8504
     ::System::IO::Stream* get_InnerStream();

@@ -58,9 +58,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private AudioHelm.Sampler _sampler
-    [[deprecated]] ::AudioHelm::Sampler*& dyn__sampler();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sampler*& dyn__sampler();
     // Get instance field reference: private VROSC.InternalSynthesizer _internalSynthesizer
-    [[deprecated]] ::VROSC::InternalSynthesizer*& dyn__internalSynthesizer();
+    [[deprecated("Use field access instead!")]] ::VROSC::InternalSynthesizer*& dyn__internalSynthesizer();
     // public System.Void ResetInstrument()
     // Offset: 0xDDDE64
     void ResetInstrument();
@@ -68,11 +68,6 @@ namespace VROSC {
     // Offset: 0xDDDEF8
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SamplerWrapper* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SamplerWrapper::.ctor");

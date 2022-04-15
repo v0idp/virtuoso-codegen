@@ -226,89 +226,91 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawButton) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawButton None
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_None();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_None();
     // Get instance field reference: public OVRInput/RawButton One
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_One();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_One();
     // Get instance field reference: public OVRInput/RawButton Two
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Two();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Two();
     // Get instance field reference: public OVRInput/RawButton Three
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Three();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Three();
     // Get instance field reference: public OVRInput/RawButton Four
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Four();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Four();
     // Get instance field reference: public OVRInput/RawButton Start
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Start();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Start();
     // Get instance field reference: public OVRInput/RawButton Back
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Back();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Back();
     // Get instance field reference: public OVRInput/RawButton PrimaryShoulder
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryShoulder();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryShoulder();
     // Get instance field reference: public OVRInput/RawButton PrimaryIndexTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryIndexTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawButton PrimaryHandTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryHandTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryHandTrigger();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstick
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstick();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickUp
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickUp();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickUp();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickDown
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickDown();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickDown();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickLeft
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickLeft();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickLeft();
     // Get instance field reference: public OVRInput/RawButton PrimaryThumbstickRight
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickRight();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryThumbstickRight();
     // Get instance field reference: public OVRInput/RawButton PrimaryTouchpad
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryTouchpad();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_PrimaryTouchpad();
     // Get instance field reference: public OVRInput/RawButton SecondaryShoulder
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryShoulder();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryShoulder();
     // Get instance field reference: public OVRInput/RawButton SecondaryIndexTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryIndexTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawButton SecondaryHandTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryHandTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryHandTrigger();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstick
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstick();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickUp
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickUp();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickUp();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickDown
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickDown();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickDown();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickLeft
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickLeft();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickLeft();
     // Get instance field reference: public OVRInput/RawButton SecondaryThumbstickRight
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickRight();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryThumbstickRight();
     // Get instance field reference: public OVRInput/RawButton SecondaryTouchpad
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryTouchpad();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_SecondaryTouchpad();
     // Get instance field reference: public OVRInput/RawButton DpadUp
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadUp();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadUp();
     // Get instance field reference: public OVRInput/RawButton DpadDown
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadDown();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadDown();
     // Get instance field reference: public OVRInput/RawButton DpadLeft
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadLeft();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadLeft();
     // Get instance field reference: public OVRInput/RawButton DpadRight
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadRight();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_DpadRight();
     // Get instance field reference: public OVRInput/RawButton Up
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Up();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Up();
     // Get instance field reference: public OVRInput/RawButton Down
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Down();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Down();
     // Get instance field reference: public OVRInput/RawButton Left
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Left();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Left();
     // Get instance field reference: public OVRInput/RawButton Right
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_Right();
-    // public OVRInput/RawButton ToRawMask(OVRInput/Button virtualMask)
-    // Offset: 0x13F2154
-    ::GlobalNamespace::OVRInput::RawButton ToRawMask(::GlobalNamespace::OVRInput::Button virtualMask);
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_Right();
     // public System.Void .ctor()
     // Offset: 0x13F2368
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRInput::OVRControllerBase::VirtualButtonMap* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRInput::OVRControllerBase::VirtualButtonMap::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRInput::OVRControllerBase::VirtualButtonMap*, creationType>()));
     }
+    // public OVRInput/RawButton ToRawMask(OVRInput/Button virtualMask)
+    // Offset: 0x13F2154
+    ::GlobalNamespace::OVRInput::RawButton ToRawMask(::GlobalNamespace::OVRInput::Button virtualMask);
   }; // OVRInput/OVRControllerBase/VirtualButtonMap
   #pragma pack(pop)
   static check_size<sizeof(OVRInput::OVRControllerBase::VirtualButtonMap), 144 + sizeof(::GlobalNamespace::OVRInput::RawButton)> __GlobalNamespace_OVRInput_OVRControllerBase_VirtualButtonMapSizeCheck;
   static_assert(sizeof(OVRInput::OVRControllerBase::VirtualButtonMap) == 0x94);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualButtonMap::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualButtonMap::ToRawMask
 // Il2CppName: ToRawMask
 template<>
@@ -318,7 +320,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRInput::OVRControllerBase::VirtualButtonMap*), "ToRawMask", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{virtualMask});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualButtonMap::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

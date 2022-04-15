@@ -80,11 +80,11 @@ namespace System::Runtime::CompilerServices {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Threading.SynchronizationContext m_synchronizationContext
-    [[deprecated]] ::System::Threading::SynchronizationContext*& dyn_m_synchronizationContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SynchronizationContext*& dyn_m_synchronizationContext();
     // Get instance field reference: private System.Runtime.CompilerServices.AsyncMethodBuilderCore m_coreState
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncMethodBuilderCore& dyn_m_coreState();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncMethodBuilderCore& dyn_m_coreState();
     // Get instance field reference: private System.Threading.Tasks.Task m_task
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_task();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_task();
     // private System.Threading.Tasks.Task get_Task()
     // Offset: 0x11478D8
     ::System::Threading::Tasks::Task* get_Task();

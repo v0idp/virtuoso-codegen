@@ -69,6 +69,13 @@ namespace Mono::Unity {
   // [TokenAttribute] Offset: FFFFFFFF
   class UnityTlsProvider : public ::Mono::Security::Interface::MonoTlsProvider {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x1822E58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UnityTlsProvider* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Unity::UnityTlsProvider::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UnityTlsProvider*, creationType>()));
+    }
     // public override System.String get_Name()
     // Offset: 0x18224D8
     // Implemented from: Mono.Security.Interface.MonoTlsProvider
@@ -104,16 +111,6 @@ namespace Mono::Unity {
     // Implemented from: Mono.Security.Interface.MonoTlsProvider
     // Base method: System.Security.Authentication.SslProtocols MonoTlsProvider::get_SupportedProtocols()
     ::System::Security::Authentication::SslProtocols get_SupportedProtocols();
-    // public System.Void .ctor()
-    // Offset: 0x1822E58
-    // Implemented from: Mono.Security.Interface.MonoTlsProvider
-    // Base method: System.Void MonoTlsProvider::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UnityTlsProvider* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Unity::UnityTlsProvider::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UnityTlsProvider*, creationType>()));
-    }
     // public override Mono.Security.Interface.IMonoSslStream CreateSslStream(System.IO.Stream innerStream, System.Boolean leaveInnerStreamOpen, Mono.Security.Interface.MonoTlsSettings settings)
     // Offset: 0x18225A8
     // Implemented from: Mono.Security.Interface.MonoTlsProvider
@@ -133,6 +130,10 @@ namespace Mono::Unity {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Mono::Unity::UnityTlsProvider::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Unity::UnityTlsProvider::get_Name
 // Il2CppName: get_Name
 template<>
@@ -189,10 +190,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::S
     return ::il2cpp_utils::FindMethod(classof(Mono::Unity::UnityTlsProvider*), "get_SupportedProtocols", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Mono::Unity::UnityTlsProvider::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Unity::UnityTlsProvider::CreateSslStream
 // Il2CppName: CreateSslStream
 template<>

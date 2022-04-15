@@ -54,11 +54,11 @@ namespace UnityEngine {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: readonly System.String m_Url
-    [[deprecated]] ::StringW& dyn_m_Url();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Url();
     // Get instance field reference: readonly System.Boolean m_Dispatcher
-    [[deprecated]] bool& dyn_m_Dispatcher();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Dispatcher();
     // Get instance field reference: readonly System.String m_DispatchingFieldName
-    [[deprecated]] ::StringW& dyn_m_DispatchingFieldName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_DispatchingFieldName();
     // public System.Void .ctor(System.String url)
     // Offset: 0x1129634
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

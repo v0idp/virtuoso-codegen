@@ -92,15 +92,15 @@ namespace System::Collections::Specialized {
       return *reinterpret_cast<::System::Collections::IDictionary*>(this);
     }
     // Get instance field reference: private System.Collections.Specialized.ListDictionary/System.Collections.Specialized.DictionaryNode head
-    [[deprecated]] ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_head();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::ListDictionary::DictionaryNode*& dyn_head();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.Collections.IComparer comparer
-    [[deprecated]] ::System::Collections::IComparer*& dyn_comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IComparer*& dyn_comparer();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // public System.Object get_Item(System.Object key)
     // Offset: 0x10EF6E8
     ::Il2CppObject* get_Item(::Il2CppObject* key);
@@ -116,6 +116,13 @@ namespace System::Collections::Specialized {
     // public System.Object get_SyncRoot()
     // Offset: 0x10F8694
     ::Il2CppObject* get_SyncRoot();
+    // public System.Void .ctor()
+    // Offset: 0x10F8684
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ListDictionary* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::ListDictionary::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ListDictionary*, creationType>()));
+    }
     // public System.Void .ctor(System.Collections.IComparer comparer)
     // Offset: 0x10EFE64
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -141,15 +148,6 @@ namespace System::Collections::Specialized {
     // public System.Void Remove(System.Object key)
     // Offset: 0x10F0B5C
     void Remove(::Il2CppObject* key);
-    // public System.Void .ctor()
-    // Offset: 0x10F8684
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ListDictionary* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::ListDictionary::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ListDictionary*, creationType>()));
-    }
   }; // System.Collections.Specialized.ListDictionary
   #pragma pack(pop)
   static check_size<sizeof(ListDictionary), 40 + sizeof(::Il2CppObject*)> __System_Collections_Specialized_ListDictionarySizeCheck;
@@ -199,6 +197,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::ListDictionary*), "get_SyncRoot", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Collections::Specialized::ListDictionary::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Collections::Specialized::ListDictionary::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -257,7 +259,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::ListDictionary*), "Remove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{key});
   }
 };
-// Writing MetadataGetter for method: System::Collections::Specialized::ListDictionary::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -42,7 +42,7 @@ namespace UnityEngine {
       return mJavaStackTrace;
     }
     // Get instance field reference: private System.String mJavaStackTrace
-    [[deprecated]] ::StringW& dyn_mJavaStackTrace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_mJavaStackTrace();
     // System.Void .ctor(System.String message, System.String javaStackTrace)
     // Offset: 0x186C448
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -153,7 +153,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVROverlay/OverlayShape Fisheye
       static void _set_Fisheye(::GlobalNamespace::OVROverlay::OverlayShape value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVROverlay/OverlayShape
     #pragma pack(pop)
     static check_size<sizeof(OVROverlay::OverlayShape), 0 + sizeof(int)> __GlobalNamespace_OVROverlay_OverlayShapeSizeCheck;
@@ -201,7 +201,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVROverlay/OverlayType Overlay
       static void _set_Overlay(::GlobalNamespace::OVROverlay::OverlayType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVROverlay/OverlayType
     #pragma pack(pop)
     static check_size<sizeof(OVROverlay::OverlayType), 0 + sizeof(int)> __GlobalNamespace_OVROverlay_OverlayTypeSizeCheck;
@@ -246,13 +246,13 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Texture appTexture
-      [[deprecated]] ::UnityEngine::Texture*& dyn_appTexture();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_appTexture();
       // Get instance field reference: public System.IntPtr appTexturePtr
-      [[deprecated]] ::System::IntPtr& dyn_appTexturePtr();
+      [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_appTexturePtr();
       // Get instance field reference: public UnityEngine.Texture[] swapChain
-      [[deprecated]] ::ArrayW<::UnityEngine::Texture*>& dyn_swapChain();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Texture*>& dyn_swapChain();
       // Get instance field reference: public System.IntPtr[] swapChainPtr
-      [[deprecated]] ::ArrayW<::System::IntPtr>& dyn_swapChainPtr();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::System::IntPtr>& dyn_swapChainPtr();
     }; // OVROverlay/LayerTexture
     #pragma pack(pop)
     static check_size<sizeof(OVROverlay::LayerTexture), 24 + sizeof(::ArrayW<::System::IntPtr>)> __GlobalNamespace_OVROverlay_LayerTextureSizeCheck;
@@ -594,99 +594,99 @@ namespace GlobalNamespace {
     // Set static field: static private UnityEngine.Material cubeMaterial
     static void _set_cubeMaterial(::UnityEngine::Material* value);
     // Get instance field reference: public OVROverlay/OverlayType currentOverlayType
-    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayType& dyn_currentOverlayType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay::OverlayType& dyn_currentOverlayType();
     // Get instance field reference: public System.Boolean isDynamic
-    [[deprecated]] bool& dyn_isDynamic();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDynamic();
     // Get instance field reference: public System.Boolean isProtectedContent
-    [[deprecated]] bool& dyn_isProtectedContent();
+    [[deprecated("Use field access instead!")]] bool& dyn_isProtectedContent();
     // Get instance field reference: public UnityEngine.Rect srcRectLeft
-    [[deprecated]] ::UnityEngine::Rect& dyn_srcRectLeft();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_srcRectLeft();
     // Get instance field reference: public UnityEngine.Rect srcRectRight
-    [[deprecated]] ::UnityEngine::Rect& dyn_srcRectRight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_srcRectRight();
     // Get instance field reference: public UnityEngine.Rect destRectLeft
-    [[deprecated]] ::UnityEngine::Rect& dyn_destRectLeft();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_destRectLeft();
     // Get instance field reference: public UnityEngine.Rect destRectRight
-    [[deprecated]] ::UnityEngine::Rect& dyn_destRectRight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_destRectRight();
     // Get instance field reference: public System.Boolean invertTextureRects
-    [[deprecated]] bool& dyn_invertTextureRects();
+    [[deprecated("Use field access instead!")]] bool& dyn_invertTextureRects();
     // Get instance field reference: private OVRPlugin/TextureRectMatrixf textureRectMatrix
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::TextureRectMatrixf& dyn_textureRectMatrix();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::TextureRectMatrixf& dyn_textureRectMatrix();
     // Get instance field reference: public System.Boolean overrideTextureRectMatrix
-    [[deprecated]] bool& dyn_overrideTextureRectMatrix();
+    [[deprecated("Use field access instead!")]] bool& dyn_overrideTextureRectMatrix();
     // Get instance field reference: public System.Boolean overridePerLayerColorScaleAndOffset
-    [[deprecated]] bool& dyn_overridePerLayerColorScaleAndOffset();
+    [[deprecated("Use field access instead!")]] bool& dyn_overridePerLayerColorScaleAndOffset();
     // Get instance field reference: public UnityEngine.Vector4 colorScale
-    [[deprecated]] ::UnityEngine::Vector4& dyn_colorScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_colorScale();
     // Get instance field reference: public UnityEngine.Vector4 colorOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_colorOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_colorOffset();
     // Get instance field reference: public System.Boolean useExpensiveSuperSample
-    [[deprecated]] bool& dyn_useExpensiveSuperSample();
+    [[deprecated("Use field access instead!")]] bool& dyn_useExpensiveSuperSample();
     // Get instance field reference: public System.Boolean hidden
-    [[deprecated]] bool& dyn_hidden();
+    [[deprecated("Use field access instead!")]] bool& dyn_hidden();
     // Get instance field reference: public System.Boolean isExternalSurface
-    [[deprecated]] bool& dyn_isExternalSurface();
+    [[deprecated("Use field access instead!")]] bool& dyn_isExternalSurface();
     // Get instance field reference: public System.Int32 externalSurfaceWidth
-    [[deprecated]] int& dyn_externalSurfaceWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_externalSurfaceWidth();
     // Get instance field reference: public System.Int32 externalSurfaceHeight
-    [[deprecated]] int& dyn_externalSurfaceHeight();
+    [[deprecated("Use field access instead!")]] int& dyn_externalSurfaceHeight();
     // Get instance field reference: public System.Int32 compositionDepth
-    [[deprecated]] int& dyn_compositionDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_compositionDepth();
     // Get instance field reference: private System.Int32 layerCompositionDepth
-    [[deprecated]] int& dyn_layerCompositionDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_layerCompositionDepth();
     // Get instance field reference: public System.Boolean noDepthBufferTesting
-    [[deprecated]] bool& dyn_noDepthBufferTesting();
+    [[deprecated("Use field access instead!")]] bool& dyn_noDepthBufferTesting();
     // Get instance field reference: public OVRPlugin/EyeTextureFormat layerTextureFormat
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::EyeTextureFormat& dyn_layerTextureFormat();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::EyeTextureFormat& dyn_layerTextureFormat();
     // Get instance field reference: public OVROverlay/OverlayShape currentOverlayShape
-    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn_currentOverlayShape();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn_currentOverlayShape();
     // Get instance field reference: private OVROverlay/OverlayShape prevOverlayShape
-    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn_prevOverlayShape();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay::OverlayShape& dyn_prevOverlayShape();
     // Get instance field reference: public UnityEngine.Texture[] textures
-    [[deprecated]] ::ArrayW<::UnityEngine::Texture*>& dyn_textures();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Texture*>& dyn_textures();
     // Get instance field reference: public System.Boolean isAlphaPremultiplied
-    [[deprecated]] bool& dyn_isAlphaPremultiplied();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAlphaPremultiplied();
     // Get instance field reference: public System.Boolean useBicubicFiltering
-    [[deprecated]] bool& dyn_useBicubicFiltering();
+    [[deprecated("Use field access instead!")]] bool& dyn_useBicubicFiltering();
     // Get instance field reference: private System.Boolean _previewInEditor
-    [[deprecated]] bool& dyn__previewInEditor();
+    [[deprecated("Use field access instead!")]] bool& dyn__previewInEditor();
     // Get instance field reference: protected System.IntPtr[] texturePtrs
-    [[deprecated]] ::ArrayW<::System::IntPtr>& dyn_texturePtrs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::IntPtr>& dyn_texturePtrs();
     // Get instance field reference: public System.IntPtr externalSurfaceObject
-    [[deprecated]] ::System::IntPtr& dyn_externalSurfaceObject();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_externalSurfaceObject();
     // Get instance field reference: public OVROverlay/ExternalSurfaceObjectCreated externalSurfaceObjectCreated
-    [[deprecated]] ::GlobalNamespace::OVROverlay::ExternalSurfaceObjectCreated*& dyn_externalSurfaceObjectCreated();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay::ExternalSurfaceObjectCreated*& dyn_externalSurfaceObjectCreated();
     // Get instance field reference: protected System.Boolean isOverridePending
-    [[deprecated]] bool& dyn_isOverridePending();
+    [[deprecated("Use field access instead!")]] bool& dyn_isOverridePending();
     // Get instance field reference: private System.Int32 <layerId>k__BackingField
-    [[deprecated]] int& dyn_$layerId$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$layerId$k__BackingField();
     // Get instance field reference: private OVROverlay/LayerTexture[] layerTextures
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVROverlay::LayerTexture>& dyn_layerTextures();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVROverlay::LayerTexture>& dyn_layerTextures();
     // Get instance field reference: private OVRPlugin/LayerDesc layerDesc
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::LayerDesc& dyn_layerDesc();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::LayerDesc& dyn_layerDesc();
     // Get instance field reference: private System.Int32 stageCount
-    [[deprecated]] int& dyn_stageCount();
+    [[deprecated("Use field access instead!")]] int& dyn_stageCount();
     // Get instance field reference: private System.Int32 layerIndex
-    [[deprecated]] int& dyn_layerIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_layerIndex();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle layerIdHandle
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_layerIdHandle();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn_layerIdHandle();
     // Get instance field reference: private System.IntPtr layerIdPtr
-    [[deprecated]] ::System::IntPtr& dyn_layerIdPtr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_layerIdPtr();
     // Get instance field reference: private System.Int32 frameIndex
-    [[deprecated]] int& dyn_frameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_frameIndex();
     // Get instance field reference: private System.Int32 prevFrameIndex
-    [[deprecated]] int& dyn_prevFrameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_prevFrameIndex();
     // Get instance field reference: private UnityEngine.Renderer rend
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_rend();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_rend();
     // Get instance field reference: private System.UInt64 OpenVROverlayHandle
-    [[deprecated]] uint64_t& dyn_OpenVROverlayHandle();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_OpenVROverlayHandle();
     // Get instance field reference: private UnityEngine.Vector4 OpenVRUVOffsetAndScale
-    [[deprecated]] ::UnityEngine::Vector4& dyn_OpenVRUVOffsetAndScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_OpenVRUVOffsetAndScale();
     // Get instance field reference: private UnityEngine.Vector2 OpenVRMouseScale
-    [[deprecated]] ::UnityEngine::Vector2& dyn_OpenVRMouseScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_OpenVRMouseScale();
     // Get instance field reference: private OVRManager/XRDevice constructedOverlayXRDevice
-    [[deprecated]] ::GlobalNamespace::OVRManager_XRDevice& dyn_constructedOverlayXRDevice();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_XRDevice& dyn_constructedOverlayXRDevice();
     // Get instance field reference: private System.Boolean xrDeviceConstructed
-    [[deprecated]] bool& dyn_xrDeviceConstructed();
+    [[deprecated("Use field access instead!")]] bool& dyn_xrDeviceConstructed();
     // public System.Boolean get_previewInEditor()
     // Offset: 0xE25924
     bool get_previewInEditor();
@@ -708,6 +708,16 @@ namespace GlobalNamespace {
     // static public System.String get_OpenVROverlayKey()
     // Offset: 0xE28BA4
     static ::StringW get_OpenVROverlayKey();
+    // public System.Void .ctor()
+    // Offset: 0xE29D70
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVROverlay* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVROverlay::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVROverlay*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xE29EF8
+    static void _cctor();
     // public System.Void OverrideOverlayTextureInfo(UnityEngine.Texture srcTexture, System.IntPtr nativePtr, UnityEngine.XR.XRNode node)
     // Offset: 0xE25950
     void OverrideOverlayTextureInfo(::UnityEngine::Texture* srcTexture, ::System::IntPtr nativePtr, ::UnityEngine::XR::XRNode node);
@@ -783,24 +793,6 @@ namespace GlobalNamespace {
     // private System.Void LateUpdate()
     // Offset: 0xE29804
     void LateUpdate();
-    // public System.Void .ctor()
-    // Offset: 0xE29D70
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVROverlay* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVROverlay::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVROverlay*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xE29EF8
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVROverlay
   #pragma pack(pop)
   static check_size<sizeof(OVROverlay), 452 + sizeof(bool)> __GlobalNamespace_OVROverlaySizeCheck;
@@ -869,6 +861,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)()>(&GlobalNamespace::OVROverlay::get_OpenVROverlayKey)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVROverlay*), "get_OpenVROverlayKey", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::OVROverlay::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVROverlay::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVROverlay::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVROverlay*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::OVROverlay::OverrideOverlayTextureInfo
@@ -1111,17 +1115,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OVROverlay::*)()>(&GlobalNamespace::OVROverlay::LateUpdate)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVROverlay*), "LateUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVROverlay::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVROverlay::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVROverlay::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVROverlay*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

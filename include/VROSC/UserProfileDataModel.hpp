@@ -86,23 +86,23 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String Username
-    [[deprecated]] ::StringW& dyn_Username();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Username();
     // Get instance field reference: public System.String Email
-    [[deprecated]] ::StringW& dyn_Email();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Email();
     // Get instance field reference: public System.String OculusId
-    [[deprecated]] ::StringW& dyn_OculusId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_OculusId();
     // Get instance field reference: public System.String OculusUsername
-    [[deprecated]] ::StringW& dyn_OculusUsername();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_OculusUsername();
     // Get instance field reference: public System.String SteamId
-    [[deprecated]] ::StringW& dyn_SteamId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SteamId();
     // Get instance field reference: public System.String SteamUsername
-    [[deprecated]] ::StringW& dyn_SteamUsername();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SteamUsername();
     // Get instance field reference: public System.String LastLogin
-    [[deprecated]] ::StringW& dyn_LastLogin();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_LastLogin();
     // Get instance field reference: public System.String CreationDate
-    [[deprecated]] ::StringW& dyn_CreationDate();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_CreationDate();
     // Get instance field reference: public System.String AcceptedEULAVersion
-    [[deprecated]] ::StringW& dyn_AcceptedEULAVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_AcceptedEULAVersion();
     // public override System.String get_Key()
     // Offset: 0x191FAA4
     // Implemented from: VROSC.BaseDataModel
@@ -117,7 +117,6 @@ namespace VROSC {
     // Offset: 0x191F258
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserProfileDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserProfileDataModel::.ctor");

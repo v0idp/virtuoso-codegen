@@ -55,9 +55,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ElementInit*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.NewExpression <NewExpression>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::NewExpression*& dyn_$NewExpression$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::NewExpression*& dyn_$NewExpression$k__BackingField();
     // Get instance field reference: private readonly System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ElementInit> <Initializers>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ElementInit*>*& dyn_$Initializers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Linq::Expressions::ElementInit*>*& dyn_$Initializers$k__BackingField();
     // public System.Linq.Expressions.NewExpression get_NewExpression()
     // Offset: 0xE8F724
     ::System::Linq::Expressions::NewExpression* get_NewExpression();

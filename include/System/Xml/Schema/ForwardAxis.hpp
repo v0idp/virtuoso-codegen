@@ -66,15 +66,15 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.Schema.DoubleLinkAxis topNode
-    [[deprecated]] ::System::Xml::Schema::DoubleLinkAxis*& dyn_topNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::DoubleLinkAxis*& dyn_topNode();
     // Get instance field reference: private System.Xml.Schema.DoubleLinkAxis rootNode
-    [[deprecated]] ::System::Xml::Schema::DoubleLinkAxis*& dyn_rootNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::DoubleLinkAxis*& dyn_rootNode();
     // Get instance field reference: private System.Boolean isAttribute
-    [[deprecated]] bool& dyn_isAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAttribute();
     // Get instance field reference: private System.Boolean isDss
-    [[deprecated]] bool& dyn_isDss();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDss();
     // Get instance field reference: private System.Boolean isSelfAxis
-    [[deprecated]] bool& dyn_isSelfAxis();
+    [[deprecated("Use field access instead!")]] bool& dyn_isSelfAxis();
     // System.Xml.Schema.DoubleLinkAxis get_RootNode()
     // Offset: 0xAEE884
     ::System::Xml::Schema::DoubleLinkAxis* get_RootNode();

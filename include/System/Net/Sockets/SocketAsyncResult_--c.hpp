@@ -42,18 +42,16 @@ namespace System::Net::Sockets {
     // static private System.Void .cctor()
     // Offset: 0xA01C10
     static void _cctor();
-    // System.Void <Complete>b__27_0(System.Object state)
-    // Offset: 0xA01C78
-    void $Complete$b__27_0(::Il2CppObject* state);
     // public System.Void .ctor()
     // Offset: 0xA01C70
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SocketAsyncResult::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::SocketAsyncResult::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SocketAsyncResult::$$c*, creationType>()));
     }
+    // System.Void <Complete>b__27_0(System.Object state)
+    // Offset: 0xA01C78
+    void $Complete$b__27_0(::Il2CppObject* state);
   }; // System.Net.Sockets.SocketAsyncResult/System.Net.Sockets.<>c
   #pragma pack(pop)
 }
@@ -66,6 +64,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::SocketAsyncResult::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::Sockets::SocketAsyncResult::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Sockets::SocketAsyncResult::$$c::$Complete$b__27_0
 // Il2CppName: <Complete>b__27_0
 template<>
@@ -75,7 +77,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::SocketAsyncResult::$$c*), "<Complete>b__27_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{state});
   }
 };
-// Writing MetadataGetter for method: System::Net::Sockets::SocketAsyncResult::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

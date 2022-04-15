@@ -48,7 +48,7 @@ namespace DG::Tweening::Plugins::Options {
       return snapping;
     }
     // Get instance field reference: public System.Boolean snapping
-    [[deprecated]] bool& dyn_snapping();
+    [[deprecated("Use field access instead!")]] bool& dyn_snapping();
     // public System.Void Reset()
     // Offset: 0x15DFA74
     void Reset();

@@ -130,29 +130,29 @@ namespace System::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Xml.XmlRawWriter wrapped
-    [[deprecated]] ::System::Xml::XmlRawWriter*& dyn_wrapped();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlRawWriter*& dyn_wrapped();
     // Get instance field reference: private System.Boolean inCDataSection
-    [[deprecated]] bool& dyn_inCDataSection();
+    [[deprecated("Use field access instead!")]] bool& dyn_inCDataSection();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Int32> lookupCDataElems
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, int>*& dyn_lookupCDataElems();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, int>*& dyn_lookupCDataElems();
     // Get instance field reference: private System.Xml.BitStack bitsCData
-    [[deprecated]] ::System::Xml::BitStack*& dyn_bitsCData();
+    [[deprecated("Use field access instead!")]] ::System::Xml::BitStack*& dyn_bitsCData();
     // Get instance field reference: private System.Xml.XmlQualifiedName qnameCData
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_qnameCData();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_qnameCData();
     // Get instance field reference: private System.Boolean outputDocType
-    [[deprecated]] bool& dyn_outputDocType();
+    [[deprecated("Use field access instead!")]] bool& dyn_outputDocType();
     // Get instance field reference: private System.Boolean checkWellFormedDoc
-    [[deprecated]] bool& dyn_checkWellFormedDoc();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkWellFormedDoc();
     // Get instance field reference: private System.Boolean hasDocElem
-    [[deprecated]] bool& dyn_hasDocElem();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasDocElem();
     // Get instance field reference: private System.Boolean inAttr
-    [[deprecated]] bool& dyn_inAttr();
+    [[deprecated("Use field access instead!")]] bool& dyn_inAttr();
     // Get instance field reference: private System.String systemId
-    [[deprecated]] ::StringW& dyn_systemId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_systemId();
     // Get instance field reference: private System.String publicId
-    [[deprecated]] ::StringW& dyn_publicId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_publicId();
     // Get instance field reference: private System.Int32 depth
-    [[deprecated]] int& dyn_depth();
+    [[deprecated("Use field access instead!")]] int& dyn_depth();
     // public System.Void .ctor(System.Xml.XmlRawWriter writer, System.Xml.XmlWriterSettings settings)
     // Offset: 0xDE60CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -111,23 +111,23 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 byteOffset
-    [[deprecated]] int& dyn_byteOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_byteOffset();
     // Get instance field reference: private System.Int32 byteLength
-    [[deprecated]] int& dyn_byteLength();
+    [[deprecated("Use field access instead!")]] int& dyn_byteLength();
     // Get instance field reference: private System.Int32 byteStride
-    [[deprecated]] int& dyn_byteStride();
+    [[deprecated("Use field access instead!")]] int& dyn_byteStride();
     // Get instance field reference: private System.Int32 bufferId
-    [[deprecated]] int& dyn_bufferId();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferId();
     // Get instance field reference: private System.Int32 bufferLength
-    [[deprecated]] int& dyn_bufferLength();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferLength();
     // Get instance field reference: private System.Int32 additionalOffset
-    [[deprecated]] int& dyn_additionalOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_additionalOffset();
     // Get instance field reference: private OVRGLTFType dataType
-    [[deprecated]] ::GlobalNamespace::OVRGLTFType& dyn_dataType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRGLTFType& dyn_dataType();
     // Get instance field reference: private OVRGLTFComponentType componentType
-    [[deprecated]] ::GlobalNamespace::OVRGLTFComponentType& dyn_componentType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRGLTFComponentType& dyn_componentType();
     // Get instance field reference: private System.Int32 dataCount
-    [[deprecated]] int& dyn_dataCount();
+    [[deprecated("Use field access instead!")]] int& dyn_dataCount();
     // public System.Void .ctor(OVRSimpleJSON.JSONNode node, OVRSimpleJSON.JSONNode root, System.Boolean bufferViewOnly)
     // Offset: 0xFB6278
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

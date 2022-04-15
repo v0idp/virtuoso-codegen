@@ -67,9 +67,9 @@ namespace System::Data {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Data.DataColumn _column
-      [[deprecated]] ::System::Data::DataColumn*& dyn__column();
+      [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__column();
       // Get instance field reference: System.String _error
-      [[deprecated]] ::StringW& dyn__error();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn__error();
     }; // System.Data.DataError/System.Data.ColumnError
     #pragma pack(pop)
     static check_size<sizeof(DataError::ColumnError), 8 + sizeof(::StringW)> __System_Data_DataError_ColumnErrorSizeCheck;
@@ -97,11 +97,11 @@ namespace System::Data {
     static_assert(sizeof(::ArrayW<::System::Data::DataError::ColumnError>) == 0x8);
     public:
     // Get instance field reference: private System.String _rowError
-    [[deprecated]] ::StringW& dyn__rowError();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__rowError();
     // Get instance field reference: private System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // Get instance field reference: private System.Data.DataError/System.Data.ColumnError[] _errorList
-    [[deprecated]] ::ArrayW<::System::Data::DataError::ColumnError>& dyn__errorList();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataError::ColumnError>& dyn__errorList();
     // System.String get_Text()
     // Offset: 0xF979D4
     ::StringW get_Text();
@@ -111,6 +111,13 @@ namespace System::Data {
     // System.Boolean get_HasErrors()
     // Offset: 0xF97A40
     bool get_HasErrors();
+    // System.Void .ctor()
+    // Offset: 0xF97874
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataError* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataError::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataError*, creationType>()));
+    }
     // System.Void .ctor(System.String rowError)
     // Offset: 0xF978D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -139,15 +146,6 @@ namespace System::Data {
     // System.Int32 IndexOf(System.Data.DataColumn column)
     // Offset: 0xF97C4C
     int IndexOf(::System::Data::DataColumn* column);
-    // System.Void .ctor()
-    // Offset: 0xF97874
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataError* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataError::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataError*, creationType>()));
-    }
   }; // System.Data.DataError
   #pragma pack(pop)
   static check_size<sizeof(DataError), 32 + sizeof(::ArrayW<::System::Data::DataError::ColumnError>)> __System_Data_DataErrorSizeCheck;
@@ -181,6 +179,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataError*), "get_HasErrors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::DataError::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataError::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -247,7 +249,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataError*), "IndexOf", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{column});
   }
 };
-// Writing MetadataGetter for method: System::Data::DataError::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

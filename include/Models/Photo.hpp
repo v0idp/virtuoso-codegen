@@ -60,19 +60,17 @@ namespace Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Int32 albumId
-    [[deprecated]] int& dyn_albumId();
+    [[deprecated("Use field access instead!")]] int& dyn_albumId();
     // Get instance field reference: public System.Int32 id
-    [[deprecated]] int& dyn_id();
+    [[deprecated("Use field access instead!")]] int& dyn_id();
     // Get instance field reference: public System.String title
-    [[deprecated]] ::StringW& dyn_title();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_title();
     // Get instance field reference: public System.String url
-    [[deprecated]] ::StringW& dyn_url();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_url();
     // Get instance field reference: public System.String thumbnailUrl
-    [[deprecated]] ::StringW& dyn_thumbnailUrl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_thumbnailUrl();
     // public System.Void .ctor()
     // Offset: 0xADE890
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Photo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Models::Photo::.ctor");

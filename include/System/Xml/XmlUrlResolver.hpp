@@ -88,11 +88,11 @@ namespace System::Xml {
     // Set static field: static private System.Object s_DownloadManager
     static void _set_s_DownloadManager(::Il2CppObject* value);
     // Get instance field reference: private System.Net.ICredentials _credentials
-    [[deprecated]] ::System::Net::ICredentials*& dyn__credentials();
+    [[deprecated("Use field access instead!")]] ::System::Net::ICredentials*& dyn__credentials();
     // Get instance field reference: private System.Net.IWebProxy _proxy
-    [[deprecated]] ::System::Net::IWebProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::System::Net::IWebProxy*& dyn__proxy();
     // Get instance field reference: private System.Net.Cache.RequestCachePolicy _cachePolicy
-    [[deprecated]] ::System::Net::Cache::RequestCachePolicy*& dyn__cachePolicy();
+    [[deprecated("Use field access instead!")]] ::System::Net::Cache::RequestCachePolicy*& dyn__cachePolicy();
     // static private System.Xml.XmlDownloadManager get_DownloadManager()
     // Offset: 0x1090A1C
     static ::System::Xml::XmlDownloadManager* get_DownloadManager();
@@ -100,7 +100,6 @@ namespace System::Xml {
     // Offset: 0x1090AF4
     // Implemented from: System.Xml.XmlResolver
     // Base method: System.Void XmlResolver::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlUrlResolver* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlUrlResolver::.ctor");

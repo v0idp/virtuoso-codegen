@@ -45,11 +45,11 @@ namespace System {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Int32[] m_argsMap
-    [[deprecated]] ::ArrayW<int>& dyn_m_argsMap();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_argsMap();
     // Get instance field reference: System.Int32 m_originalSize
-    [[deprecated]] int& dyn_m_originalSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_originalSize();
     // Get instance field reference: System.Boolean m_isParamArray
-    [[deprecated]] bool& dyn_m_isParamArray();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isParamArray();
     // System.Void .ctor(System.Int32[] argsMap, System.Int32 originalSize, System.Boolean isParamArray)
     // Offset: 0x13AA5A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

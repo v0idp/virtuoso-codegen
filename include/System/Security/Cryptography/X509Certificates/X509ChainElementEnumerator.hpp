@@ -52,7 +52,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return enumerator;
     }
     // Get instance field reference: private System.Collections.IEnumerator enumerator
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_enumerator();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_enumerator();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0xC5303C
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

@@ -102,25 +102,25 @@ namespace UnityEngine::XR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.XR.XRNode m_Type
-    [[deprecated]] ::UnityEngine::XR::XRNode& dyn_m_Type();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::XRNode& dyn_m_Type();
     // Get instance field reference: private UnityEngine.XR.AvailableTrackingData m_AvailableFields
-    [[deprecated]] ::UnityEngine::XR::AvailableTrackingData& dyn_m_AvailableFields();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::AvailableTrackingData& dyn_m_AvailableFields();
     // Get instance field reference: private UnityEngine.Vector3 m_Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Quaternion m_Rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_Rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_Rotation();
     // Get instance field reference: private UnityEngine.Vector3 m_Velocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Velocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Velocity();
     // Get instance field reference: private UnityEngine.Vector3 m_AngularVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_AngularVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AngularVelocity();
     // Get instance field reference: private UnityEngine.Vector3 m_Acceleration
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Acceleration();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Acceleration();
     // Get instance field reference: private UnityEngine.Vector3 m_AngularAcceleration
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_AngularAcceleration();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AngularAcceleration();
     // Get instance field reference: private System.Int32 m_Tracked
-    [[deprecated]] int& dyn_m_Tracked();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Tracked();
     // Get instance field reference: private System.UInt64 m_UniqueID
-    [[deprecated]] uint64_t& dyn_m_UniqueID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_UniqueID();
     // public System.Void set_uniqueID(System.UInt64 value)
     // Offset: 0x18C632C
     void set_uniqueID(uint64_t value);

@@ -40,22 +40,24 @@ namespace System::Diagnostics {
     operator ::System::Configuration::IConfigurationSectionHandler() noexcept {
       return *reinterpret_cast<::System::Configuration::IConfigurationSectionHandler*>(this);
     }
-    // public System.Object Create(System.Object parent, System.Object configContext, System.Xml.XmlNode section)
-    // Offset: 0xEF8E64
-    ::Il2CppObject* Create(::Il2CppObject* parent, ::Il2CppObject* configContext, ::System::Xml::XmlNode* section);
     // public System.Void .ctor()
     // Offset: 0xEF8E28
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DiagnosticsConfigurationHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Diagnostics::DiagnosticsConfigurationHandler::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DiagnosticsConfigurationHandler*, creationType>()));
     }
+    // public System.Object Create(System.Object parent, System.Object configContext, System.Xml.XmlNode section)
+    // Offset: 0xEF8E64
+    ::Il2CppObject* Create(::Il2CppObject* parent, ::Il2CppObject* configContext, ::System::Xml::XmlNode* section);
   }; // System.Diagnostics.DiagnosticsConfigurationHandler
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Diagnostics::DiagnosticsConfigurationHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Diagnostics::DiagnosticsConfigurationHandler::Create
 // Il2CppName: Create
 template<>
@@ -67,7 +69,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::Diagnostics::DiagnosticsConfigurationHandler*), "Create", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{parent, configContext, section});
   }
 };
-// Writing MetadataGetter for method: System::Diagnostics::DiagnosticsConfigurationHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

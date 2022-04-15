@@ -65,11 +65,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::ArrayW<::System::Xml::XmlAttribute*>) == 0x8);
     public:
     // Get instance field reference: private System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnnotation annotation
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnnotation*& dyn_annotation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnnotation*& dyn_annotation();
     // Get instance field reference: private System.Xml.XmlAttribute[] moreAttributes
-    [[deprecated]] ::ArrayW<::System::Xml::XmlAttribute*>& dyn_moreAttributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlAttribute*>& dyn_moreAttributes();
     // public System.String get_Id()
     // Offset: 0x1108AE8
     ::StringW get_Id();
@@ -102,7 +102,6 @@ namespace System::Xml::Schema {
     // Offset: 0x1108B38
     // Implemented from: System.Xml.Schema.XmlSchemaObject
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaAnnotated* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaAnnotated::.ctor");

@@ -51,9 +51,9 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.Type inspectedType
-    [[deprecated]] ::System::Type*& dyn_inspectedType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_inspectedType();
     // Get instance field reference: public readonly System.Boolean allowAutoCreate
-    [[deprecated]] bool& dyn_allowAutoCreate();
+    [[deprecated("Use field access instead!")]] bool& dyn_allowAutoCreate();
     // public System.Void .ctor(System.Type clipClass)
     // Offset: 0x18D3E4C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

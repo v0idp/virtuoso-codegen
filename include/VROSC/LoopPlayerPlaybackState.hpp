@@ -84,7 +84,7 @@ namespace VROSC {
       // Set static field: static public VROSC.LoopPlayerPlaybackState/VROSC.Activity Ended
       static void _set_Ended(::VROSC::LoopPlayerPlaybackState::Activity value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.LoopPlayerPlaybackState/VROSC.Activity
     #pragma pack(pop)
     static check_size<sizeof(LoopPlayerPlaybackState::Activity), 0 + sizeof(int)> __VROSC_LoopPlayerPlaybackState_ActivitySizeCheck;
@@ -128,15 +128,15 @@ namespace VROSC {
     // Set static field: static public System.Int32 AntiClickFadeLength
     static void _set_AntiClickFadeLength(int value);
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState <NextState>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState/VROSC.Activity <CurrentActivity>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackState::Activity& dyn_$CurrentActivity$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackState::Activity& dyn_$CurrentActivity$k__BackingField();
     // Get instance field reference: private System.Int32 <StateBeginSample>k__BackingField
-    [[deprecated]] int& dyn_$StateBeginSample$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$StateBeginSample$k__BackingField();
     // Get instance field reference: private System.Int32 <StateEndSample>k__BackingField
-    [[deprecated]] int& dyn_$StateEndSample$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$StateEndSample$k__BackingField();
     // Get instance field reference: private System.Boolean <Fading>k__BackingField
-    [[deprecated]] bool& dyn_$Fading$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Fading$k__BackingField();
     // public VROSC.LoopPlayerPlaybackState get_NextState()
     // Offset: 0x19BDEAC
     ::VROSC::LoopPlayerPlaybackState* get_NextState();
@@ -176,6 +176,13 @@ namespace VROSC {
     // public System.Boolean get_WaitingToBegin()
     // Offset: 0x19BD554
     bool get_WaitingToBegin();
+    // protected System.Void .ctor()
+    // Offset: 0x19BD324
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayerPlaybackState* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackState::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackState*, creationType>()));
+    }
     // public System.Single GetCurrentFade(System.Int32 atSample)
     // Offset: 0xFFFFFFFFFFFFFFFF
     float GetCurrentFade(int atSample);
@@ -203,15 +210,6 @@ namespace VROSC {
     // System.Single GetBeginProgress(System.Int32 startSample, System.Int32 currentSyncSample)
     // Offset: 0x19BC75C
     float GetBeginProgress(int startSample, int currentSyncSample);
-    // protected System.Void .ctor()
-    // Offset: 0x19BD324
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayerPlaybackState* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackState::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackState*, creationType>()));
-    }
   }; // VROSC.LoopPlayerPlaybackState
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerPlaybackState), 36 + sizeof(bool)> __VROSC_LoopPlayerPlaybackStateSizeCheck;
@@ -329,6 +327,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerPlaybackState*), "get_WaitingToBegin", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopPlayerPlaybackState::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayerPlaybackState::GetCurrentFade
 // Il2CppName: GetCurrentFade
 template<>
@@ -412,7 +414,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerPlaybackState*), "GetBeginProgress", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{startSample, currentSyncSample});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayerPlaybackState::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

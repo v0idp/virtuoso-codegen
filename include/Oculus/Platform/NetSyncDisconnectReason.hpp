@@ -77,7 +77,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.NetSyncDisconnectReason Lost
     static void _set_Lost(::Oculus::Platform::NetSyncDisconnectReason value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Platform.NetSyncDisconnectReason
   #pragma pack(pop)
   static check_size<sizeof(NetSyncDisconnectReason), 0 + sizeof(int)> __Oculus_Platform_NetSyncDisconnectReasonSizeCheck;

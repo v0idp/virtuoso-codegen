@@ -41,7 +41,7 @@ namespace System::Xml::Serialization {
       return flatArrayIndex;
     }
     // Get instance field reference: private System.Int32 _flatArrayIndex
-    [[deprecated]] int& dyn__flatArrayIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__flatArrayIndex();
     // public System.Int32 get_FlatArrayIndex()
     // Offset: 0x1088BB8
     int get_FlatArrayIndex();
@@ -53,7 +53,6 @@ namespace System::Xml::Serialization {
     // Implemented from: System.Xml.Serialization.XmlTypeMapMemberElement
     // Base method: System.Void XmlTypeMapMemberElement::.ctor()
     // Base method: System.Void XmlTypeMapMember::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapMemberExpandable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMemberExpandable::.ctor");

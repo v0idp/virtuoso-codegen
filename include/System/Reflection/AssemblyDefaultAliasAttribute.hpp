@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_defaultAlias;
     }
     // Get instance field reference: private System.String m_defaultAlias
-    [[deprecated]] ::StringW& dyn_m_defaultAlias();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_defaultAlias();
     // public System.Void .ctor(System.String defaultAlias)
     // Offset: 0x1144618
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

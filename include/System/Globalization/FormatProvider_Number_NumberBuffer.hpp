@@ -56,13 +56,13 @@ namespace System::Globalization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 precision
-    [[deprecated]] int& dyn_precision();
+    [[deprecated("Use field access instead!")]] int& dyn_precision();
     // Get instance field reference: public System.Int32 scale
-    [[deprecated]] int& dyn_scale();
+    [[deprecated("Use field access instead!")]] int& dyn_scale();
     // Get instance field reference: public System.Boolean sign
-    [[deprecated]] bool& dyn_sign();
+    [[deprecated("Use field access instead!")]] bool& dyn_sign();
     // Get instance field reference: public System.Char* overrideDigits
-    [[deprecated]] ::Il2CppChar*& dyn_overrideDigits();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_overrideDigits();
     // public System.Char* get_digits()
     // Offset: 0x1897450
     ::Il2CppChar* get_digits();

@@ -109,7 +109,7 @@ namespace System::Data::SqlTypes {
     // Set static field: static public readonly System.Data.SqlTypes.SqlGuid Null
     static void _set_Null(::System::Data::SqlTypes::SqlGuid value);
     // Get instance field reference: private System.Byte[] m_value
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_value();
     // public System.Boolean get_IsNull()
     // Offset: 0x13C9530
     bool get_IsNull();

@@ -56,9 +56,9 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.ListBindableAttribute Default
     static void _set_Default(::System::ComponentModel::ListBindableAttribute* value);
     // Get instance field reference: private System.Boolean listBindable
-    [[deprecated]] bool& dyn_listBindable();
+    [[deprecated("Use field access instead!")]] bool& dyn_listBindable();
     // Get instance field reference: private System.Boolean isDefault
-    [[deprecated]] bool& dyn_isDefault();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDefault();
     // public System.Boolean get_ListBindable()
     // Offset: 0x10F7F64
     bool get_ListBindable();

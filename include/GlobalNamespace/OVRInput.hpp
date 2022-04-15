@@ -211,7 +211,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRInput/Controller All
       static void _set_All(::GlobalNamespace::OVRInput::Controller value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRInput/Controller
     #pragma pack(pop)
     static check_size<sizeof(OVRInput::Controller), 0 + sizeof(int)> __GlobalNamespace_OVRInput_ControllerSizeCheck;
@@ -266,7 +266,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRInput/OpenVRController WindowsMRController
       static void _set_WindowsMRController(::GlobalNamespace::OVRInput::OpenVRController value);
       // Get instance field reference: public System.UInt64 value__
-      [[deprecated]] uint64_t& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint64_t& dyn_value__();
     }; // OVRInput/OpenVRController
     #pragma pack(pop)
     static check_size<sizeof(OVRInput::OpenVRController), 0 + sizeof(uint64_t)> __GlobalNamespace_OVRInput_OpenVRControllerSizeCheck;
@@ -317,15 +317,15 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public OVR.OpenVR.VRControllerState_t state
-      [[deprecated]] ::OVR::OpenVR::VRControllerState_t& dyn_state();
+      [[deprecated("Use field access instead!")]] ::OVR::OpenVR::VRControllerState_t& dyn_state();
       // Get instance field reference: public OVRInput/OpenVRController controllerType
-      [[deprecated]] ::GlobalNamespace::OVRInput::OpenVRController& dyn_controllerType();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::OpenVRController& dyn_controllerType();
       // Get instance field reference: public System.UInt32 deviceID
-      [[deprecated]] uint& dyn_deviceID();
+      [[deprecated("Use field access instead!")]] uint& dyn_deviceID();
       // Get instance field reference: public UnityEngine.Vector3 localPosition
-      [[deprecated]] ::UnityEngine::Vector3& dyn_localPosition();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_localPosition();
       // Get instance field reference: public UnityEngine.Quaternion localOrientation
-      [[deprecated]] ::UnityEngine::Quaternion& dyn_localOrientation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_localOrientation();
     }; // OVRInput/OpenVRControllerDetails
     #pragma pack(pop)
     static check_size<sizeof(OVRInput::OpenVRControllerDetails), 88 + sizeof(::UnityEngine::Quaternion)> __GlobalNamespace_OVRInput_OpenVRControllerDetailsSizeCheck;

@@ -56,13 +56,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Color _color1
-    [[deprecated]] ::UnityEngine::Color& dyn__color1();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color1();
     // Get instance field reference: private UnityEngine.Color _color2
-    [[deprecated]] ::UnityEngine::Color& dyn__color2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color2();
     // Get instance field reference: private UnityEngine.Color _color3
-    [[deprecated]] ::UnityEngine::Color& dyn__color3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color3();
     // Get instance field reference: private UnityEngine.Color _color4
-    [[deprecated]] ::UnityEngine::Color& dyn__color4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color4();
     // public UnityEngine.Color get_Color1()
     // Offset: 0x1957130
     ::UnityEngine::Color get_Color1();
@@ -77,8 +77,6 @@ namespace VROSC::AudioReactive {
     ::UnityEngine::Color get_Color4();
     // public System.Void .ctor()
     // Offset: 0x1957160
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalColorEffectData::ColorGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::GlobalColorEffectData::ColorGroup::.ctor");

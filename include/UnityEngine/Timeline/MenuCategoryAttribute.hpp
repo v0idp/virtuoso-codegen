@@ -43,7 +43,7 @@ namespace UnityEngine::Timeline {
       return category;
     }
     // Get instance field reference: public readonly System.String category
-    [[deprecated]] ::StringW& dyn_category();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_category();
     // public System.Void .ctor(System.String category)
     // Offset: 0xC79080
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

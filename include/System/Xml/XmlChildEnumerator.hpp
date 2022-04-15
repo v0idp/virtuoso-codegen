@@ -60,11 +60,11 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: System.Xml.XmlNode container
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_container();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_container();
     // Get instance field reference: System.Xml.XmlNode child
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_child();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_child();
     // Get instance field reference: System.Boolean isFirst
-    [[deprecated]] bool& dyn_isFirst();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFirst();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0x11907F4
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

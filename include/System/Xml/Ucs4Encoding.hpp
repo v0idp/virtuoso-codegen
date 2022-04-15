@@ -57,7 +57,7 @@ namespace System::Xml {
       return ucs4Decoder;
     }
     // Get instance field reference: System.Xml.Ucs4Decoder ucs4Decoder
-    [[deprecated]] ::System::Xml::Ucs4Decoder*& dyn_ucs4Decoder();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Ucs4Decoder*& dyn_ucs4Decoder();
     // static System.Text.Encoding get_UCS4_Littleendian()
     // Offset: 0xF77CE8
     static ::System::Text::Encoding* get_UCS4_Littleendian();
@@ -70,6 +70,13 @@ namespace System::Xml {
     // static System.Text.Encoding get_UCS4_3412()
     // Offset: 0xF77F10
     static ::System::Text::Encoding* get_UCS4_3412();
+    // public System.Void .ctor()
+    // Offset: 0xF77FC8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Ucs4Encoding* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Ucs4Encoding::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Ucs4Encoding*, creationType>()));
+    }
     // public override System.String get_WebName()
     // Offset: 0xF77BF0
     // Implemented from: System.Text.Encoding
@@ -80,16 +87,6 @@ namespace System::Xml {
     // Implemented from: System.Text.Encoding
     // Base method: System.Int32 Encoding::get_CodePage()
     int get_CodePage();
-    // public System.Void .ctor()
-    // Offset: 0xF77FC8
-    // Implemented from: System.Text.Encoding
-    // Base method: System.Void Encoding::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Ucs4Encoding* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Ucs4Encoding::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Ucs4Encoding*, creationType>()));
-    }
     // public override System.Text.Decoder GetDecoder()
     // Offset: 0xF77BFC
     // Implemented from: System.Text.Encoding
@@ -173,6 +170,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Ucs4Encoding*), "get_UCS4_3412", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Ucs4Encoding::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Ucs4Encoding::get_WebName
 // Il2CppName: get_WebName
 template<>
@@ -189,10 +190,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Ucs4Encoding*), "get_CodePage", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Ucs4Encoding::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Ucs4Encoding::GetDecoder
 // Il2CppName: GetDecoder
 template<>

@@ -119,24 +119,31 @@ namespace TMPro {
     // Set static field: static private Unity.Profiling.ProfilerMarker k_UnregisterTextElementForGraphicRebuildMarker
     static void _set_k_UnregisterTextElementForGraphicRebuildMarker(::Unity::Profiling::ProfilerMarker value);
     // Get instance field reference: private readonly System.Collections.Generic.HashSet`1<System.Int32> m_LayoutQueueLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_LayoutQueueLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_LayoutQueueLookup();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<TMPro.TMP_Text> m_LayoutRebuildQueue
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_LayoutRebuildQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_LayoutRebuildQueue();
     // Get instance field reference: private readonly System.Collections.Generic.HashSet`1<System.Int32> m_GraphicQueueLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_GraphicQueueLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_GraphicQueueLookup();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<TMPro.TMP_Text> m_GraphicRebuildQueue
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_GraphicRebuildQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_GraphicRebuildQueue();
     // Get instance field reference: private readonly System.Collections.Generic.HashSet`1<System.Int32> m_InternalUpdateLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_InternalUpdateLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_InternalUpdateLookup();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<TMPro.TMP_Text> m_InternalUpdateQueue
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_InternalUpdateQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_InternalUpdateQueue();
     // Get instance field reference: private readonly System.Collections.Generic.HashSet`1<System.Int32> m_CullingUpdateLookup
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_CullingUpdateLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<int>*& dyn_m_CullingUpdateLookup();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<TMPro.TMP_Text> m_CullingUpdateQueue
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_CullingUpdateQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*& dyn_m_CullingUpdateQueue();
     // static private TMPro.TMP_UpdateManager get_instance()
     // Offset: 0xD14168
     static ::TMPro::TMP_UpdateManager* get_instance();
+    // private System.Void .ctor()
+    // Offset: 0xD14224
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_UpdateManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_UpdateManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_UpdateManager*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xD14E60
     static void _cctor();
@@ -185,15 +192,6 @@ namespace TMPro {
     // private System.Void InternalUnRegisterTextObjectForUpdate(TMPro.TMP_Text textObject)
     // Offset: 0xD14BE8
     void InternalUnRegisterTextObjectForUpdate(::TMPro::TMP_Text* textObject);
-    // private System.Void .ctor()
-    // Offset: 0xD14224
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_UpdateManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_UpdateManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_UpdateManager*, creationType>()));
-    }
   }; // TMPro.TMP_UpdateManager
   #pragma pack(pop)
   static check_size<sizeof(TMP_UpdateManager), 72 + sizeof(::System::Collections::Generic::List_1<::TMPro::TMP_Text*>*)> __TMPro_TMP_UpdateManagerSizeCheck;
@@ -208,6 +206,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::TM
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_UpdateManager*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_UpdateManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_UpdateManager::_cctor
 // Il2CppName: .cctor
 template<>
@@ -349,7 +351,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_UpdateManager*), "InternalUnRegisterTextObjectForUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{textObject});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_UpdateManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

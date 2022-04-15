@@ -33,7 +33,6 @@ namespace VROSC {
     // Offset: 0x19BD594
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlayerPlaybackStoppedState* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackStoppedState::.ctor");

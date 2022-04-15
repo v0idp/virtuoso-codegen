@@ -85,19 +85,19 @@ namespace System::IO::Compression {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int64 _position
-    [[deprecated]] int64_t& dyn__position();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__position();
     // Get instance field reference: private System.IO.Compression.CheckSumAndSizeWriteStream _crcSizeStream
-    [[deprecated]] ::System::IO::Compression::CheckSumAndSizeWriteStream*& dyn__crcSizeStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::CheckSumAndSizeWriteStream*& dyn__crcSizeStream();
     // Get instance field reference: private System.Boolean _everWritten
-    [[deprecated]] bool& dyn__everWritten();
+    [[deprecated("Use field access instead!")]] bool& dyn__everWritten();
     // Get instance field reference: private System.Boolean _isDisposed
-    [[deprecated]] bool& dyn__isDisposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDisposed();
     // Get instance field reference: private System.IO.Compression.ZipArchiveEntry _entry
-    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry*& dyn__entry();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchiveEntry*& dyn__entry();
     // Get instance field reference: private System.Boolean _usedZip64inLH
-    [[deprecated]] bool& dyn__usedZip64inLH();
+    [[deprecated("Use field access instead!")]] bool& dyn__usedZip64inLH();
     // Get instance field reference: private System.Boolean _canWrite
-    [[deprecated]] bool& dyn__canWrite();
+    [[deprecated("Use field access instead!")]] bool& dyn__canWrite();
     // public System.Void .ctor(System.IO.Compression.CheckSumAndSizeWriteStream crcSizeStream, System.IO.Compression.ZipArchiveEntry entry)
     // Offset: 0x16A0420
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

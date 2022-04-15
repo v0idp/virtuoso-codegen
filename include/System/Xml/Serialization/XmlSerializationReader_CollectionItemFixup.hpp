@@ -54,11 +54,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Array list
-    [[deprecated]] ::System::Array*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Array*& dyn_list();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: private System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // public System.Array get_Collection()
     // Offset: 0xC2210C
     ::System::Array* get_Collection();

@@ -82,19 +82,19 @@ namespace UnityEngine::Animations {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt32 m_AnimatorBindingsVersion
-    [[deprecated]] uint& dyn_m_AnimatorBindingsVersion();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_AnimatorBindingsVersion();
     // Get instance field reference: private System.IntPtr constant
-    [[deprecated]] ::System::IntPtr& dyn_constant();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_constant();
     // Get instance field reference: private System.IntPtr input
-    [[deprecated]] ::System::IntPtr& dyn_input();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_input();
     // Get instance field reference: private System.IntPtr output
-    [[deprecated]] ::System::IntPtr& dyn_output();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_output();
     // Get instance field reference: private System.IntPtr workspace
-    [[deprecated]] ::System::IntPtr& dyn_workspace();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_workspace();
     // Get instance field reference: private System.IntPtr inputStreamAccessor
-    [[deprecated]] ::System::IntPtr& dyn_inputStreamAccessor();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_inputStreamAccessor();
     // Get instance field reference: private System.IntPtr animationHandleBinder
-    [[deprecated]] ::System::IntPtr& dyn_animationHandleBinder();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_animationHandleBinder();
   }; // UnityEngine.Animations.AnimationStream
   #pragma pack(pop)
   static check_size<sizeof(AnimationStream), 48 + sizeof(::System::IntPtr)> __UnityEngine_Animations_AnimationStreamSizeCheck;

@@ -59,13 +59,13 @@ namespace System::Runtime::Serialization {
     // Set static field: static private readonly System.Int32[] sizes
     static void _set_sizes(::ArrayW<int> value);
     // Get instance field reference: System.Int32 m_currentCount
-    [[deprecated]] int& dyn_m_currentCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currentCount();
     // Get instance field reference: System.Int32 m_currentSize
-    [[deprecated]] int& dyn_m_currentSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currentSize();
     // Get instance field reference: System.Int64[] m_ids
-    [[deprecated]] ::ArrayW<int64_t>& dyn_m_ids();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int64_t>& dyn_m_ids();
     // Get instance field reference: System.Object[] m_objs
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_m_objs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_m_objs();
     // static private System.Void .cctor()
     // Offset: 0x146E550
     static void _cctor();

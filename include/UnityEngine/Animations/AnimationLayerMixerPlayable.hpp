@@ -79,7 +79,7 @@ namespace UnityEngine::Animations {
     // Set static field: static private readonly UnityEngine.Animations.AnimationLayerMixerPlayable m_NullPlayable
     static void _set_m_NullPlayable(::UnityEngine::Animations::AnimationLayerMixerPlayable value);
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // System.Void .ctor(UnityEngine.Playables.PlayableHandle handle)
     // Offset: 0x18CF75C
     // ABORTED: conflicts with another method.  AnimationLayerMixerPlayable(::UnityEngine::Playables::PlayableHandle handle);

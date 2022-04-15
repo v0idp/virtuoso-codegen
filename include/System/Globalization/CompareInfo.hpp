@@ -215,17 +215,17 @@ namespace System::Globalization {
     // Set static field: static private System.Boolean managedCollationChecked
     static void _set_managedCollationChecked(bool value);
     // Get instance field reference: private System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private System.String m_sortName
-    [[deprecated]] ::StringW& dyn_m_sortName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_sortName();
     // Get instance field reference: private System.Int32 win32LCID
-    [[deprecated]] int& dyn_win32LCID();
+    [[deprecated("Use field access instead!")]] int& dyn_win32LCID();
     // Get instance field reference: private System.Int32 culture
-    [[deprecated]] int& dyn_culture();
+    [[deprecated("Use field access instead!")]] int& dyn_culture();
     // Get instance field reference: private System.Globalization.SortVersion m_SortVersion
-    [[deprecated]] ::System::Globalization::SortVersion*& dyn_m_SortVersion();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::SortVersion*& dyn_m_SortVersion();
     // Get instance field reference: private Mono.Globalization.Unicode.SimpleCollator collator
-    [[deprecated]] ::Mono::Globalization::Unicode::SimpleCollator*& dyn_collator();
+    [[deprecated("Use field access instead!")]] ::Mono::Globalization::Unicode::SimpleCollator*& dyn_collator();
     // public System.String get_Name()
     // Offset: 0xE3A240
     ::StringW get_Name();

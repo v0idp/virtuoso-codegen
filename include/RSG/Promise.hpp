@@ -161,9 +161,9 @@ namespace RSG {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Action callback
-      [[deprecated]] ::System::Action*& dyn_callback();
+      [[deprecated("Use field access instead!")]] ::System::Action*& dyn_callback();
       // Get instance field reference: public RSG.IRejectable rejectable
-      [[deprecated]] ::RSG::IRejectable*& dyn_rejectable();
+      [[deprecated("Use field access instead!")]] ::RSG::IRejectable*& dyn_rejectable();
     }; // RSG.Promise/RSG.ResolveHandler
     #pragma pack(pop)
     static check_size<sizeof(Promise::ResolveHandler), 8 + sizeof(::RSG::IRejectable*)> __RSG_Promise_ResolveHandlerSizeCheck;
@@ -243,19 +243,19 @@ namespace RSG {
     // Set static field: static readonly System.Collections.Generic.HashSet`1<RSG.IPromiseInfo> PendingPromises
     static void _set_PendingPromises(::System::Collections::Generic::HashSet_1<::RSG::IPromiseInfo*>* value);
     // Get instance field reference: private System.Exception rejectionException
-    [[deprecated]] ::System::Exception*& dyn_rejectionException();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_rejectionException();
     // Get instance field reference: private System.Collections.Generic.List`1<RSG.RejectHandler> rejectHandlers
-    [[deprecated]] ::System::Collections::Generic::List_1<::RSG::RejectHandler>*& dyn_rejectHandlers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::RSG::RejectHandler>*& dyn_rejectHandlers();
     // Get instance field reference: private System.Collections.Generic.List`1<RSG.Promise/RSG.ResolveHandler> resolveHandlers
-    [[deprecated]] ::System::Collections::Generic::List_1<::RSG::Promise::ResolveHandler>*& dyn_resolveHandlers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::RSG::Promise::ResolveHandler>*& dyn_resolveHandlers();
     // Get instance field reference: private System.Collections.Generic.List`1<RSG.ProgressHandler> progressHandlers
-    [[deprecated]] ::System::Collections::Generic::List_1<::RSG::ProgressHandler>*& dyn_progressHandlers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::RSG::ProgressHandler>*& dyn_progressHandlers();
     // Get instance field reference: private readonly System.Int32 id
-    [[deprecated]] int& dyn_id();
+    [[deprecated("Use field access instead!")]] int& dyn_id();
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private RSG.PromiseState <CurState>k__BackingField
-    [[deprecated]] ::RSG::PromiseState& dyn_$CurState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::RSG::PromiseState& dyn_$CurState$k__BackingField();
     // public System.Int32 get_Id()
     // Offset: 0xB27068
     int get_Id();
@@ -277,6 +277,13 @@ namespace RSG {
     // static public System.Void remove_UnhandledException(System.EventHandler`1<RSG.ExceptionEventArgs> value)
     // Offset: 0xB26F58
     static void remove_UnhandledException(::System::EventHandler_1<::RSG::ExceptionEventArgs*>* value);
+    // public System.Void .ctor()
+    // Offset: 0xB27090
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Promise* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Promise*, creationType>()));
+    }
     // public System.Void .ctor(System.Action`2<System.Action,System.Action`1<System.Exception>> resolver)
     // Offset: 0xB271D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -482,15 +489,6 @@ namespace RSG {
     // private System.Void <Done>b__42_0(System.Exception ex)
     // Offset: 0xB29A88
     void $Done$b__42_0(::System::Exception* ex);
-    // public System.Void .ctor()
-    // Offset: 0xB27090
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Promise* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Promise::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Promise*, creationType>()));
-    }
   }; // RSG.Promise
   #pragma pack(pop)
   static check_size<sizeof(Promise), 64 + sizeof(::RSG::PromiseState)> __RSG_PromiseSizeCheck;
@@ -559,6 +557,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(RSG::Promise*), "remove_UnhandledException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: RSG::Promise::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: RSG::Promise::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -1024,7 +1026,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (RSG::
     return ::il2cpp_utils::FindMethod(classof(RSG::Promise*), "<Done>b__42_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ex});
   }
 };
-// Writing MetadataGetter for method: RSG::Promise::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

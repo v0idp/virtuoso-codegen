@@ -72,7 +72,7 @@ namespace UnityEngine::Animations {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableOutputHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
     // static public UnityEngine.Animations.AnimationPlayableOutput get_Null()
     // Offset: 0x18D1034
     static ::UnityEngine::Animations::AnimationPlayableOutput get_Null();

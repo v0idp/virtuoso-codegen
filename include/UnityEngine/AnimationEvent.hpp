@@ -115,31 +115,29 @@ namespace UnityEngine {
     static_assert(sizeof(::UnityEngine::AnimatorClipInfo) == 0x8);
     public:
     // Get instance field reference: System.Single m_Time
-    [[deprecated]] float& dyn_m_Time();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Time();
     // Get instance field reference: System.String m_FunctionName
-    [[deprecated]] ::StringW& dyn_m_FunctionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_FunctionName();
     // Get instance field reference: System.String m_StringParameter
-    [[deprecated]] ::StringW& dyn_m_StringParameter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_StringParameter();
     // Get instance field reference: UnityEngine.Object m_ObjectReferenceParameter
-    [[deprecated]] ::UnityEngine::Object*& dyn_m_ObjectReferenceParameter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Object*& dyn_m_ObjectReferenceParameter();
     // Get instance field reference: System.Single m_FloatParameter
-    [[deprecated]] float& dyn_m_FloatParameter();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FloatParameter();
     // Get instance field reference: System.Int32 m_IntParameter
-    [[deprecated]] int& dyn_m_IntParameter();
+    [[deprecated("Use field access instead!")]] int& dyn_m_IntParameter();
     // Get instance field reference: System.Int32 m_MessageOptions
-    [[deprecated]] int& dyn_m_MessageOptions();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MessageOptions();
     // Get instance field reference: UnityEngine.AnimationEventSource m_Source
-    [[deprecated]] ::UnityEngine::AnimationEventSource& dyn_m_Source();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationEventSource& dyn_m_Source();
     // Get instance field reference: UnityEngine.AnimationState m_StateSender
-    [[deprecated]] ::UnityEngine::AnimationState*& dyn_m_StateSender();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationState*& dyn_m_StateSender();
     // Get instance field reference: UnityEngine.AnimatorStateInfo m_AnimatorStateInfo
-    [[deprecated]] ::UnityEngine::AnimatorStateInfo& dyn_m_AnimatorStateInfo();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimatorStateInfo& dyn_m_AnimatorStateInfo();
     // Get instance field reference: UnityEngine.AnimatorClipInfo m_AnimatorClipInfo
-    [[deprecated]] ::UnityEngine::AnimatorClipInfo& dyn_m_AnimatorClipInfo();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimatorClipInfo& dyn_m_AnimatorClipInfo();
     // public System.Void .ctor()
     // Offset: 0x18CF554
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimationEvent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationEvent::.ctor");

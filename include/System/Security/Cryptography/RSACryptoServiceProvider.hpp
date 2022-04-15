@@ -20,7 +20,7 @@ namespace Mono::Security::Cryptography {
   // Forward declaring type: KeyPairPersistence
   class KeyPairPersistence;
   // Forward declaring type: RSAManaged
-  class RSAManaged;
+  class RSAManaged_;
 }
 // Forward declaring namespace: System::Security::Cryptography
 namespace System::Security::Cryptography {
@@ -97,17 +97,17 @@ namespace System::Security::Cryptography {
     // Set static field: static private System.Security.Cryptography.CspProviderFlags s_UseMachineKeyStore
     static void _set_s_UseMachineKeyStore(::System::Security::Cryptography::CspProviderFlags value);
     // Get instance field reference: private Mono.Security.Cryptography.KeyPairPersistence store
-    [[deprecated]] ::Mono::Security::Cryptography::KeyPairPersistence*& dyn_store();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Cryptography::KeyPairPersistence*& dyn_store();
     // Get instance field reference: private System.Boolean persistKey
-    [[deprecated]] bool& dyn_persistKey();
+    [[deprecated("Use field access instead!")]] bool& dyn_persistKey();
     // Get instance field reference: private System.Boolean persisted
-    [[deprecated]] bool& dyn_persisted();
+    [[deprecated("Use field access instead!")]] bool& dyn_persisted();
     // Get instance field reference: private System.Boolean privateKeyExportable
-    [[deprecated]] bool& dyn_privateKeyExportable();
+    [[deprecated("Use field access instead!")]] bool& dyn_privateKeyExportable();
     // Get instance field reference: private System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // Get instance field reference: private Mono.Security.Cryptography.RSAManaged rsa
-    [[deprecated]] ::Mono::Security::Cryptography::RSAManaged_*& dyn_rsa();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Cryptography::RSAManaged_*& dyn_rsa();
     // static public System.Boolean get_UseMachineKeyStore()
     // Offset: 0x160F248
     static bool get_UseMachineKeyStore();

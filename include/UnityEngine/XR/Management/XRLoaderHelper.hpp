@@ -71,7 +71,7 @@ namespace UnityEngine::XR::Management {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Collections.Generic.Dictionary`2<System.Type,UnityEngine.ISubsystem> m_SubsystemInstanceMap
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::UnityEngine::ISubsystem*>*& dyn_m_SubsystemInstanceMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::UnityEngine::ISubsystem*>*& dyn_m_SubsystemInstanceMap();
     // protected System.Void StartSubsystem()
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -139,9 +139,6 @@ namespace UnityEngine::XR::Management {
     // Offset: 0x18FADD0
     // Implemented from: UnityEngine.XR.Management.XRLoader
     // Base method: System.Void XRLoader::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRLoaderHelper* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRLoaderHelper::.ctor");

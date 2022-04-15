@@ -48,6 +48,13 @@ namespace System::Net {
     static ::ArrayW<uint8_t> _get_AsciiToLower();
     // Set static field: static readonly System.Byte[] AsciiToLower
     static void _set_AsciiToLower(::ArrayW<uint8_t> value);
+    // public System.Void .ctor()
+    // Offset: 0x10E1224
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CaseInsensitiveAscii* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::CaseInsensitiveAscii::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CaseInsensitiveAscii*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x10E122C
     static void _cctor();
@@ -63,19 +70,14 @@ namespace System::Net {
     // public System.Boolean Equals(System.Object firstObject, System.Object secondObject)
     // Offset: 0x10E1090
     bool Equals(::Il2CppObject* firstObject, ::Il2CppObject* secondObject);
-    // public System.Void .ctor()
-    // Offset: 0x10E1224
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CaseInsensitiveAscii* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::CaseInsensitiveAscii::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CaseInsensitiveAscii*, creationType>()));
-    }
   }; // System.Net.CaseInsensitiveAscii
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Net::CaseInsensitiveAscii::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::CaseInsensitiveAscii::_cctor
 // Il2CppName: .cctor
 template<>
@@ -122,7 +124,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::CaseInsensitiveAscii*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{firstObject, secondObject});
   }
 };
-// Writing MetadataGetter for method: System::Net::CaseInsensitiveAscii::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

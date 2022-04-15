@@ -92,19 +92,19 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Double dspTime
-    [[deprecated]] double& dyn_dspTime();
+    [[deprecated("Use field access instead!")]] double& dyn_dspTime();
     // Get instance field reference: public VROSC.HapticClipPlayer <>4__this
-    [[deprecated]] ::VROSC::HapticClipPlayer*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::HapticClipPlayer*& dyn_$$4__this();
     // Get instance field reference: public VROSC.SignalControllerInfo signalControllerInfo
-    [[deprecated]] ::VROSC::SignalControllerInfo*& dyn_signalControllerInfo();
+    [[deprecated("Use field access instead!")]] ::VROSC::SignalControllerInfo*& dyn_signalControllerInfo();
     // Get instance field reference: public System.Single signalAmplitude
-    [[deprecated]] float& dyn_signalAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_signalAmplitude();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x1957948
     void MoveNext();

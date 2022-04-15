@@ -41,9 +41,9 @@ namespace System {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: private System.Object m_value
-    [[deprecated]] ::Il2CppObject*& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_value();
     // Get instance field reference: private System.Int64 m_cookie
-    [[deprecated]] int64_t& dyn_m_cookie();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_cookie();
     // public System.Object get_Value()
     // Offset: 0x1079878
     ::Il2CppObject* get_Value();

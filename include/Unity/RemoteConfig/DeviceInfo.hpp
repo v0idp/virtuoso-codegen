@@ -179,72 +179,74 @@ namespace Unity::RemoteConfig {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.String os_ver
-    [[deprecated]] ::StringW& dyn_os_ver();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_os_ver();
     // Get instance field reference: public System.String app_ver
-    [[deprecated]] ::StringW& dyn_app_ver();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_app_ver();
     // Get instance field reference: public System.Boolean rooted_jailbroken
-    [[deprecated]] bool& dyn_rooted_jailbroken();
+    [[deprecated("Use field access instead!")]] bool& dyn_rooted_jailbroken();
     // Get instance field reference: public System.Boolean debug_build
-    [[deprecated]] bool& dyn_debug_build();
+    [[deprecated("Use field access instead!")]] bool& dyn_debug_build();
     // Get instance field reference: public System.String model
-    [[deprecated]] ::StringW& dyn_model();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_model();
     // Get instance field reference: public System.String cpu
-    [[deprecated]] ::StringW& dyn_cpu();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_cpu();
     // Get instance field reference: public System.Int32 cpu_count
-    [[deprecated]] int& dyn_cpu_count();
+    [[deprecated("Use field access instead!")]] int& dyn_cpu_count();
     // Get instance field reference: public System.Int32 cpu_freq
-    [[deprecated]] int& dyn_cpu_freq();
+    [[deprecated("Use field access instead!")]] int& dyn_cpu_freq();
     // Get instance field reference: public System.Int32 ram
-    [[deprecated]] int& dyn_ram();
+    [[deprecated("Use field access instead!")]] int& dyn_ram();
     // Get instance field reference: public System.Int32 vram
-    [[deprecated]] int& dyn_vram();
+    [[deprecated("Use field access instead!")]] int& dyn_vram();
     // Get instance field reference: public System.String screen
-    [[deprecated]] ::StringW& dyn_screen();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_screen();
     // Get instance field reference: public System.Int32 dpi
-    [[deprecated]] int& dyn_dpi();
+    [[deprecated("Use field access instead!")]] int& dyn_dpi();
     // Get instance field reference: public System.String lang
-    [[deprecated]] ::StringW& dyn_lang();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_lang();
     // Get instance field reference: public System.String app_name
-    [[deprecated]] ::StringW& dyn_app_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_app_name();
     // Get instance field reference: public System.String app_install_mode
-    [[deprecated]] ::StringW& dyn_app_install_mode();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_app_install_mode();
     // Get instance field reference: public System.String app_install_store
-    [[deprecated]] ::StringW& dyn_app_install_store();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_app_install_store();
     // Get instance field reference: public System.Int32 gfx_device_id
-    [[deprecated]] int& dyn_gfx_device_id();
+    [[deprecated("Use field access instead!")]] int& dyn_gfx_device_id();
     // Get instance field reference: public System.Int32 gfx_device_vendor_id
-    [[deprecated]] int& dyn_gfx_device_vendor_id();
+    [[deprecated("Use field access instead!")]] int& dyn_gfx_device_vendor_id();
     // Get instance field reference: public System.String gfx_name
-    [[deprecated]] ::StringW& dyn_gfx_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_gfx_name();
     // Get instance field reference: public System.String gfx_vendor
-    [[deprecated]] ::StringW& dyn_gfx_vendor();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_gfx_vendor();
     // Get instance field reference: public System.String gfx_ver
-    [[deprecated]] ::StringW& dyn_gfx_ver();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_gfx_ver();
     // Get instance field reference: public System.Int32 gfx_shader
-    [[deprecated]] int& dyn_gfx_shader();
+    [[deprecated("Use field access instead!")]] int& dyn_gfx_shader();
     // Get instance field reference: public System.Int32 max_texture_size
-    [[deprecated]] int& dyn_max_texture_size();
+    [[deprecated("Use field access instead!")]] int& dyn_max_texture_size();
+    // public System.Void .ctor()
+    // Offset: 0x18C2104
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DeviceInfo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::RemoteConfig::DeviceInfo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DeviceInfo*, creationType>()));
+    }
     // private System.String GetDeviceModel()
     // Offset: 0x18C3C8C
     ::StringW GetDeviceModel();
     // private System.String GetISOCodeFromLangStruct(UnityEngine.SystemLanguage systemLanguage)
     // Offset: 0x18C3DBC
     ::StringW GetISOCodeFromLangStruct(::UnityEngine::SystemLanguage systemLanguage);
-    // public System.Void .ctor()
-    // Offset: 0x18C2104
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DeviceInfo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::RemoteConfig::DeviceInfo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DeviceInfo*, creationType>()));
-    }
   }; // Unity.RemoteConfig.DeviceInfo
   #pragma pack(pop)
   static check_size<sizeof(DeviceInfo), 156 + sizeof(int)> __Unity_RemoteConfig_DeviceInfoSizeCheck;
   static_assert(sizeof(DeviceInfo) == 0xA0);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Unity::RemoteConfig::DeviceInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Unity::RemoteConfig::DeviceInfo::GetDeviceModel
 // Il2CppName: GetDeviceModel
 template<>
@@ -262,7 +264,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Unity::RemoteConfig::DeviceInfo*), "GetISOCodeFromLangStruct", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{systemLanguage});
   }
 };
-// Writing MetadataGetter for method: Unity::RemoteConfig::DeviceInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -57,13 +57,13 @@ namespace System::Runtime::InteropServices {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 _major
-    [[deprecated]] int& dyn__major();
+    [[deprecated("Use field access instead!")]] int& dyn__major();
     // Get instance field reference: System.Int32 _minor
-    [[deprecated]] int& dyn__minor();
+    [[deprecated("Use field access instead!")]] int& dyn__minor();
     // Get instance field reference: System.Int32 _build
-    [[deprecated]] int& dyn__build();
+    [[deprecated("Use field access instead!")]] int& dyn__build();
     // Get instance field reference: System.Int32 _revision
-    [[deprecated]] int& dyn__revision();
+    [[deprecated("Use field access instead!")]] int& dyn__revision();
     // public System.Void .ctor(System.Int32 major, System.Int32 minor, System.Int32 build, System.Int32 revision)
     // Offset: 0xE39F24
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

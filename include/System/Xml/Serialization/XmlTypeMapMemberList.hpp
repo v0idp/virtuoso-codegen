@@ -33,7 +33,6 @@ namespace System::Xml::Serialization {
     // Implemented from: System.Xml.Serialization.XmlTypeMapMemberElement
     // Base method: System.Void XmlTypeMapMemberElement::.ctor()
     // Base method: System.Void XmlTypeMapMember::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapMemberList* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMemberList::.ctor");

@@ -46,25 +46,27 @@ namespace Newtonsoft::Json::Serialization {
       return namingStrategy;
     }
     // Get instance field reference: public Newtonsoft.Json.Serialization.NamingStrategy namingStrategy
-    [[deprecated]] ::Newtonsoft::Json::Serialization::NamingStrategy*& dyn_namingStrategy();
-    // System.String <CreateDynamicContract>b__0(System.String s)
-    // Offset: 0x159D6D0
-    ::StringW $CreateDynamicContract$b__0(::StringW s);
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::NamingStrategy*& dyn_namingStrategy();
     // public System.Void .ctor()
     // Offset: 0x159D6C8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DefaultContractResolver::$$c__DisplayClass67_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::DefaultContractResolver::$$c__DisplayClass67_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DefaultContractResolver::$$c__DisplayClass67_0*, creationType>()));
     }
+    // System.String <CreateDynamicContract>b__0(System.String s)
+    // Offset: 0x159D6D0
+    ::StringW $CreateDynamicContract$b__0(::StringW s);
   }; // Newtonsoft.Json.Serialization.DefaultContractResolver/Newtonsoft.Json.Serialization.<>c__DisplayClass67_0
   #pragma pack(pop)
   static check_size<sizeof(DefaultContractResolver::$$c__DisplayClass67_0), 16 + sizeof(::Newtonsoft::Json::Serialization::NamingStrategy*)> __Newtonsoft_Json_Serialization_DefaultContractResolver_$$c__DisplayClass67_0SizeCheck;
   static_assert(sizeof(DefaultContractResolver::$$c__DisplayClass67_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::DefaultContractResolver::$$c__DisplayClass67_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Serialization::DefaultContractResolver::$$c__DisplayClass67_0::$CreateDynamicContract$b__0
 // Il2CppName: <CreateDynamicContract>b__0
 template<>
@@ -74,7 +76,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::DefaultContractResolver::$$c__DisplayClass67_0*), "<CreateDynamicContract>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{s});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::DefaultContractResolver::$$c__DisplayClass67_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

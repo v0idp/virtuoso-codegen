@@ -145,27 +145,27 @@ namespace Mono::Globalization::Unicode {
     // Set static field: static private System.Int32 UnsafeFlagLength
     static void _set_UnsafeFlagLength(int value);
     // Get instance field reference: private readonly System.Globalization.TextInfo textInfo
-    [[deprecated]] ::System::Globalization::TextInfo*& dyn_textInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::TextInfo*& dyn_textInfo();
     // Get instance field reference: private readonly Mono.Globalization.Unicode.CodePointIndexer cjkIndexer
-    [[deprecated]] ::Mono::Globalization::Unicode::CodePointIndexer*& dyn_cjkIndexer();
+    [[deprecated("Use field access instead!")]] ::Mono::Globalization::Unicode::CodePointIndexer*& dyn_cjkIndexer();
     // Get instance field reference: private readonly Mono.Globalization.Unicode.Contraction[] contractions
-    [[deprecated]] ::ArrayW<::Mono::Globalization::Unicode::Contraction*>& dyn_contractions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Mono::Globalization::Unicode::Contraction*>& dyn_contractions();
     // Get instance field reference: private readonly Mono.Globalization.Unicode.Level2Map[] level2Maps
-    [[deprecated]] ::ArrayW<::Mono::Globalization::Unicode::Level2Map*>& dyn_level2Maps();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Mono::Globalization::Unicode::Level2Map*>& dyn_level2Maps();
     // Get instance field reference: private readonly System.Byte[] unsafeFlags
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_unsafeFlags();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_unsafeFlags();
     // Get instance field reference: private readonly System.Byte* cjkCatTable
-    [[deprecated]] uint8_t*& dyn_cjkCatTable();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_cjkCatTable();
     // Get instance field reference: private readonly System.Byte* cjkLv1Table
-    [[deprecated]] uint8_t*& dyn_cjkLv1Table();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_cjkLv1Table();
     // Get instance field reference: private readonly System.Byte* cjkLv2Table
-    [[deprecated]] uint8_t*& dyn_cjkLv2Table();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_cjkLv2Table();
     // Get instance field reference: private readonly Mono.Globalization.Unicode.CodePointIndexer cjkLv2Indexer
-    [[deprecated]] ::Mono::Globalization::Unicode::CodePointIndexer*& dyn_cjkLv2Indexer();
+    [[deprecated("Use field access instead!")]] ::Mono::Globalization::Unicode::CodePointIndexer*& dyn_cjkLv2Indexer();
     // Get instance field reference: private readonly System.Int32 lcid
-    [[deprecated]] int& dyn_lcid();
+    [[deprecated("Use field access instead!")]] int& dyn_lcid();
     // Get instance field reference: private readonly System.Boolean frenchSort
-    [[deprecated]] bool& dyn_frenchSort();
+    [[deprecated("Use field access instead!")]] bool& dyn_frenchSort();
     // public System.Void .ctor(System.Globalization.CultureInfo culture)
     // Offset: 0x117C960
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

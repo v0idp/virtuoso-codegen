@@ -54,7 +54,7 @@ namespace System::Net {
       return m_tcs;
     }
     // Get instance field reference: private System.Threading.Tasks.TaskCompletionSource`1<System.Boolean> m_tcs
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_m_tcs();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<bool>*& dyn_m_tcs();
     // public System.Void .ctor(System.Boolean state)
     // Offset: 0x9FF118
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

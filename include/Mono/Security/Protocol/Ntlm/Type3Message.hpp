@@ -98,23 +98,23 @@ namespace Mono::Security::Protocol::Ntlm {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private Mono.Security.Protocol.Ntlm.NtlmAuthLevel _level
-    [[deprecated]] ::Mono::Security::Protocol::Ntlm::NtlmAuthLevel& dyn__level();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Protocol::Ntlm::NtlmAuthLevel& dyn__level();
     // Get instance field reference: private System.Byte[] _challenge
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__challenge();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__challenge();
     // Get instance field reference: private System.String _host
-    [[deprecated]] ::StringW& dyn__host();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__host();
     // Get instance field reference: private System.String _domain
-    [[deprecated]] ::StringW& dyn__domain();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__domain();
     // Get instance field reference: private System.String _username
-    [[deprecated]] ::StringW& dyn__username();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__username();
     // Get instance field reference: private System.String _password
-    [[deprecated]] ::StringW& dyn__password();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__password();
     // Get instance field reference: private Mono.Security.Protocol.Ntlm.Type2Message _type2
-    [[deprecated]] ::Mono::Security::Protocol::Ntlm::Type2Message*& dyn__type2();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Protocol::Ntlm::Type2Message*& dyn__type2();
     // Get instance field reference: private System.Byte[] _lm
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__lm();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__lm();
     // Get instance field reference: private System.Byte[] _nt
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__nt();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__nt();
     // public System.Void set_Domain(System.String value)
     // Offset: 0x1646290
     void set_Domain(::StringW value);

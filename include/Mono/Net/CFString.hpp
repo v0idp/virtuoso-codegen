@@ -47,7 +47,7 @@ namespace Mono::Net {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String str
-    [[deprecated]] ::StringW& dyn_str();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_str();
     // static private System.IntPtr CFStringCreateWithCharacters(System.IntPtr alloc, System.IntPtr chars, System.IntPtr length)
     // Offset: 0x10E0214
     static ::System::IntPtr CFStringCreateWithCharacters(::System::IntPtr alloc, ::System::IntPtr chars, ::System::IntPtr length);

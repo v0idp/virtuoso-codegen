@@ -48,11 +48,11 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.String _text
-    [[deprecated]] ::StringW& dyn__text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__text();
     // Get instance field reference: System.Int32 _index
-    [[deprecated]] int& dyn__index();
+    [[deprecated("Use field access instead!")]] int& dyn__index();
     // Get instance field reference: System.Int32 _length
-    [[deprecated]] int& dyn__length();
+    [[deprecated("Use field access instead!")]] int& dyn__length();
     // public System.Int32 get_Index()
     // Offset: 0x10E0784
     int get_Index();
@@ -69,6 +69,13 @@ namespace System::Text::RegularExpressions {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Capture::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Capture*, creationType>(text, i, l)));
     }
+    // System.Void .ctor()
+    // Offset: 0x10E081C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Capture* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Capture::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Capture*, creationType>()));
+    }
     // System.String GetOriginalString()
     // Offset: 0x10E07BC
     ::StringW GetOriginalString();
@@ -78,15 +85,6 @@ namespace System::Text::RegularExpressions {
     // System.String GetRightSubstring()
     // Offset: 0x10E07EC
     ::StringW GetRightSubstring();
-    // System.Void .ctor()
-    // Offset: 0x10E081C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Capture* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Capture::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Capture*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x10E07B8
     // Implemented from: System.Object
@@ -126,6 +124,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Text::RegularExpressions::Capture::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::Capture::GetOriginalString
 // Il2CppName: GetOriginalString
 template<>
@@ -150,10 +152,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::Capture*), "GetRightSubstring", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::Capture::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::Capture::ToString
 // Il2CppName: ToString
 template<>

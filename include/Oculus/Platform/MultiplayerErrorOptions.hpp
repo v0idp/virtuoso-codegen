@@ -48,22 +48,20 @@ namespace Oculus::Platform {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr Handle
-    [[deprecated]] ::System::IntPtr& dyn_Handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Handle();
+    // public System.Void .ctor()
+    // Offset: 0xB50C78
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MultiplayerErrorOptions* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::MultiplayerErrorOptions::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MultiplayerErrorOptions*, creationType>()));
+    }
     // public System.Void SetErrorKey(Oculus.Platform.MultiplayerErrorErrorKey value)
     // Offset: 0xB50CEC
     void SetErrorKey(::Oculus::Platform::MultiplayerErrorErrorKey value);
     // static public System.IntPtr op_Explicit(Oculus.Platform.MultiplayerErrorOptions options)
     // Offset: 0xB50D64
     // ABORTED: conflicts with another method.  explicit operator ::System::IntPtr();
-    // public System.Void .ctor()
-    // Offset: 0xB50C78
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MultiplayerErrorOptions* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::MultiplayerErrorOptions::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MultiplayerErrorOptions*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xB50DB0
     // Implemented from: System.Object
@@ -75,6 +73,10 @@ namespace Oculus::Platform {
   static_assert(sizeof(MultiplayerErrorOptions) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::MultiplayerErrorOptions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::MultiplayerErrorOptions::SetErrorKey
 // Il2CppName: SetErrorKey
 template<>
@@ -87,10 +89,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
 // Writing MetadataGetter for method: Oculus::Platform::MultiplayerErrorOptions::operator ::System::IntPtr
 // Il2CppName: op_Explicit
 // Cannot perform method pointer template specialization from operators!
-// Writing MetadataGetter for method: Oculus::Platform::MultiplayerErrorOptions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::MultiplayerErrorOptions::Finalize
 // Il2CppName: Finalize
 template<>

@@ -82,15 +82,15 @@ namespace VROSC::Credits {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Credits.CreditsObject _headerObject
-    [[deprecated]] ::VROSC::Credits::CreditsObject*& dyn__headerObject();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsObject*& dyn__headerObject();
     // Get instance field reference: private System.String _sectionHeader
-    [[deprecated]] ::StringW& dyn__sectionHeader();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sectionHeader();
     // Get instance field reference: private System.Single _paddingFromHeaderToSections
-    [[deprecated]] float& dyn__paddingFromHeaderToSections();
+    [[deprecated("Use field access instead!")]] float& dyn__paddingFromHeaderToSections();
     // Get instance field reference: private VROSC.Credits.CreditsObject _footerObject
-    [[deprecated]] ::VROSC::Credits::CreditsObject*& dyn__footerObject();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsObject*& dyn__footerObject();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsNameListData> _nameLists
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameListData*>*& dyn__nameLists();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameListData*>*& dyn__nameLists();
     // public VROSC.Credits.CreditsObject get_HeaderObject()
     // Offset: 0x8E057C
     ::VROSC::Credits::CreditsObject* get_HeaderObject();
@@ -108,10 +108,6 @@ namespace VROSC::Credits {
     ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameListData*>* get_NameLists();
     // public System.Void .ctor()
     // Offset: 0x8E05A4
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreditsSectionData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsSectionData::.ctor");

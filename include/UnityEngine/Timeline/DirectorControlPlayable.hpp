@@ -67,11 +67,18 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Playables.PlayableDirector director
-    [[deprecated]] ::UnityEngine::Playables::PlayableDirector*& dyn_director();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableDirector*& dyn_director();
     // Get instance field reference: private System.Boolean m_SyncTime
-    [[deprecated]] bool& dyn_m_SyncTime();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SyncTime();
     // Get instance field reference: private System.Double m_AssetDuration
-    [[deprecated]] double& dyn_m_AssetDuration();
+    [[deprecated("Use field access instead!")]] double& dyn_m_AssetDuration();
+    // public System.Void .ctor()
+    // Offset: 0xC76690
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DirectorControlPlayable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::DirectorControlPlayable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DirectorControlPlayable*, creationType>()));
+    }
     // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.DirectorControlPlayable> Create(UnityEngine.Playables.PlayableGraph graph, UnityEngine.Playables.PlayableDirector director)
     // Offset: 0xC73C08
     static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::DirectorControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::Playables::PlayableDirector* director);
@@ -90,16 +97,6 @@ namespace UnityEngine::Timeline {
     // private System.Void UpdateTime(UnityEngine.Playables.Playable playable)
     // Offset: 0xC764AC
     void UpdateTime(::UnityEngine::Playables::Playable playable);
-    // public System.Void .ctor()
-    // Offset: 0xC76690
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DirectorControlPlayable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::DirectorControlPlayable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DirectorControlPlayable*, creationType>()));
-    }
     // public override System.Void OnPlayableDestroy(UnityEngine.Playables.Playable playable)
     // Offset: 0xC75AD4
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -131,6 +128,10 @@ namespace UnityEngine::Timeline {
   static_assert(sizeof(DirectorControlPlayable) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Timeline::DirectorControlPlayable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::DirectorControlPlayable::Create
 // Il2CppName: Create
 template<>
@@ -188,10 +189,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::DirectorControlPlayable*), "UpdateTime", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{playable});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::DirectorControlPlayable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::DirectorControlPlayable::OnPlayableDestroy
 // Il2CppName: OnPlayableDestroy
 template<>

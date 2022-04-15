@@ -67,15 +67,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: UnityEngine.Vector3 m_Point
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Point();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Point();
     // Get instance field reference: UnityEngine.Vector3 m_Normal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Normal();
     // Get instance field reference: System.Int32 m_ThisColliderInstanceID
-    [[deprecated]] int& dyn_m_ThisColliderInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ThisColliderInstanceID();
     // Get instance field reference: System.Int32 m_OtherColliderInstanceID
-    [[deprecated]] int& dyn_m_OtherColliderInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_OtherColliderInstanceID();
     // Get instance field reference: System.Single m_Separation
-    [[deprecated]] float& dyn_m_Separation();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Separation();
     // public UnityEngine.Vector3 get_point()
     // Offset: 0x18F1910
     ::UnityEngine::Vector3 get_point();

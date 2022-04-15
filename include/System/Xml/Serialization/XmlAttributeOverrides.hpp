@@ -65,28 +65,26 @@ namespace System::Xml::Serialization {
       return overrides;
     }
     // Get instance field reference: private System.Collections.Hashtable overrides
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_overrides();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_overrides();
     // public System.Xml.Serialization.XmlAttributes get_Item(System.Type type)
     // Offset: 0x1184DA8
     ::System::Xml::Serialization::XmlAttributes* get_Item(::System::Type* type);
     // public System.Xml.Serialization.XmlAttributes get_Item(System.Type type, System.String member)
     // Offset: 0x1184E0C
     ::System::Xml::Serialization::XmlAttributes* get_Item(::System::Type* type, ::StringW member);
+    // public System.Void .ctor()
+    // Offset: 0x1184D40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlAttributeOverrides* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlAttributeOverrides::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlAttributeOverrides*, creationType>()));
+    }
     // private System.Xml.Serialization.TypeMember GetKey(System.Type type, System.String member)
     // Offset: 0x1184EC4
     ::System::Xml::Serialization::TypeMember* GetKey(::System::Type* type, ::StringW member);
     // System.Void AddKeyHash(System.Text.StringBuilder sb)
     // Offset: 0x1184F34
     void AddKeyHash(::System::Text::StringBuilder* sb);
-    // public System.Void .ctor()
-    // Offset: 0x1184D40
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlAttributeOverrides* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlAttributeOverrides::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlAttributeOverrides*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlAttributeOverrides
   #pragma pack(pop)
   static check_size<sizeof(XmlAttributeOverrides), 16 + sizeof(::System::Collections::Hashtable*)> __System_Xml_Serialization_XmlAttributeOverridesSizeCheck;
@@ -112,6 +110,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlAttributeOverrides*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{type, member});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlAttributeOverrides::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlAttributeOverrides::GetKey
 // Il2CppName: GetKey
 template<>
@@ -131,7 +133,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlAttributeOverrides*), "AddKeyHash", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sb});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlAttributeOverrides::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

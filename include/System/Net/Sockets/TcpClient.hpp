@@ -86,15 +86,15 @@ namespace System::Net::Sockets {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Net.Sockets.Socket m_ClientSocket
-    [[deprecated]] ::System::Net::Sockets::Socket*& dyn_m_ClientSocket();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::Socket*& dyn_m_ClientSocket();
     // Get instance field reference: private System.Boolean m_Active
-    [[deprecated]] bool& dyn_m_Active();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Active();
     // Get instance field reference: private System.Net.Sockets.NetworkStream m_DataStream
-    [[deprecated]] ::System::Net::Sockets::NetworkStream*& dyn_m_DataStream();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::NetworkStream*& dyn_m_DataStream();
     // Get instance field reference: private System.Net.Sockets.AddressFamily m_Family
-    [[deprecated]] ::System::Net::Sockets::AddressFamily& dyn_m_Family();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::AddressFamily& dyn_m_Family();
     // Get instance field reference: private System.Boolean m_CleanedUp
-    [[deprecated]] bool& dyn_m_CleanedUp();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CleanedUp();
     // public System.Net.Sockets.Socket get_Client()
     // Offset: 0xDA7E64
     ::System::Net::Sockets::Socket* get_Client();

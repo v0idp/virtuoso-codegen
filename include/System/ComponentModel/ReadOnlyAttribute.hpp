@@ -54,7 +54,7 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.ReadOnlyAttribute Default
     static void _set_Default(::System::ComponentModel::ReadOnlyAttribute* value);
     // Get instance field reference: private System.Boolean isReadOnly
-    [[deprecated]] bool& dyn_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_isReadOnly();
     // public System.Boolean get_IsReadOnly()
     // Offset: 0x140DB68
     bool get_IsReadOnly();

@@ -76,15 +76,15 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _targetIndex
-    [[deprecated]] int& dyn__targetIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__targetIndex();
     // Get instance field reference: private System.Int32 _stackDepth
-    [[deprecated]] int& dyn__stackDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__stackDepth();
     // Get instance field reference: private System.Int32 _continuationStackDepth
-    [[deprecated]] int& dyn__continuationStackDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__continuationStackDepth();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> _forwardBranchFixups
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn__forwardBranchFixups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn__forwardBranchFixups();
     // Get instance field reference: private System.Int32 <LabelIndex>k__BackingField
-    [[deprecated]] int& dyn_$LabelIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$LabelIndex$k__BackingField();
     // System.Int32 get_LabelIndex()
     // Offset: 0x11F5990
     int get_LabelIndex();
@@ -97,6 +97,13 @@ namespace System::Linq::Expressions::Interpreter {
     // System.Int32 get_TargetIndex()
     // Offset: 0x11F59B4
     int get_TargetIndex();
+    // public System.Void .ctor()
+    // Offset: 0x11F5C58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BranchLabel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::BranchLabel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BranchLabel*, creationType>()));
+    }
     // System.Linq.Expressions.Interpreter.RuntimeLabel ToRuntimeLabel()
     // Offset: 0x11F59BC
     ::System::Linq::Expressions::Interpreter::RuntimeLabel ToRuntimeLabel();
@@ -109,15 +116,6 @@ namespace System::Linq::Expressions::Interpreter {
     // System.Void FixupBranch(System.Linq.Expressions.Interpreter.InstructionList instructions, System.Int32 branchIndex)
     // Offset: 0x11F5B50
     void FixupBranch(::System::Linq::Expressions::Interpreter::InstructionList* instructions, int branchIndex);
-    // public System.Void .ctor()
-    // Offset: 0x11F5C58
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BranchLabel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::BranchLabel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BranchLabel*, creationType>()));
-    }
   }; // System.Linq.Expressions.Interpreter.BranchLabel
   #pragma pack(pop)
   static check_size<sizeof(BranchLabel), 40 + sizeof(int)> __System_Linq_Expressions_Interpreter_BranchLabelSizeCheck;
@@ -157,6 +155,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::BranchLabel*), "get_TargetIndex", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::BranchLabel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::BranchLabel::ToRuntimeLabel
 // Il2CppName: ToRuntimeLabel
 template<>
@@ -194,7 +196,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::BranchLabel*), "FixupBranch", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{instructions, branchIndex});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::BranchLabel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

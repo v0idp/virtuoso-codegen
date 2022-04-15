@@ -82,15 +82,15 @@ namespace System::Threading {
     // Set static field: static private System.Threading.ContextCallback s_executionContextCallback
     static void _set_s_executionContextCallback(::System::Threading::ContextCallback* value);
     // Get instance field reference: readonly System.Action`1<System.Object> Callback
-    [[deprecated]] ::System::Action_1<::Il2CppObject*>*& dyn_Callback();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Il2CppObject*>*& dyn_Callback();
     // Get instance field reference: readonly System.Object StateForCallback
-    [[deprecated]] ::Il2CppObject*& dyn_StateForCallback();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_StateForCallback();
     // Get instance field reference: readonly System.Threading.SynchronizationContext TargetSyncContext
-    [[deprecated]] ::System::Threading::SynchronizationContext*& dyn_TargetSyncContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SynchronizationContext*& dyn_TargetSyncContext();
     // Get instance field reference: readonly System.Threading.ExecutionContext TargetExecutionContext
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_TargetExecutionContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_TargetExecutionContext();
     // Get instance field reference: readonly System.Threading.CancellationTokenSource CancellationTokenSource
-    [[deprecated]] ::System::Threading::CancellationTokenSource*& dyn_CancellationTokenSource();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationTokenSource*& dyn_CancellationTokenSource();
     // System.Void .ctor(System.Action`1<System.Object> callback, System.Object stateForCallback, System.Threading.SynchronizationContext targetSyncContext, System.Threading.ExecutionContext targetExecutionContext, System.Threading.CancellationTokenSource cancellationTokenSource)
     // Offset: 0xFF6FB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

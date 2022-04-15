@@ -204,51 +204,51 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Boolean useAsync
-    [[deprecated]] bool& dyn_useAsync();
+    [[deprecated("Use field access instead!")]] bool& dyn_useAsync();
     // Get instance field reference: protected System.Byte[] bufBytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_bufBytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_bufBytes();
     // Get instance field reference: protected System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: protected System.Text.Encoding encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
     // Get instance field reference: protected System.Xml.XmlCharType xmlCharType
-    [[deprecated]] ::System::Xml::XmlCharType& dyn_xmlCharType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlCharType& dyn_xmlCharType();
     // Get instance field reference: protected System.Int32 bufPos
-    [[deprecated]] int& dyn_bufPos();
+    [[deprecated("Use field access instead!")]] int& dyn_bufPos();
     // Get instance field reference: protected System.Int32 textPos
-    [[deprecated]] int& dyn_textPos();
+    [[deprecated("Use field access instead!")]] int& dyn_textPos();
     // Get instance field reference: protected System.Int32 contentPos
-    [[deprecated]] int& dyn_contentPos();
+    [[deprecated("Use field access instead!")]] int& dyn_contentPos();
     // Get instance field reference: protected System.Int32 cdataPos
-    [[deprecated]] int& dyn_cdataPos();
+    [[deprecated("Use field access instead!")]] int& dyn_cdataPos();
     // Get instance field reference: protected System.Int32 attrEndPos
-    [[deprecated]] int& dyn_attrEndPos();
+    [[deprecated("Use field access instead!")]] int& dyn_attrEndPos();
     // Get instance field reference: protected System.Int32 bufLen
-    [[deprecated]] int& dyn_bufLen();
+    [[deprecated("Use field access instead!")]] int& dyn_bufLen();
     // Get instance field reference: protected System.Boolean writeToNull
-    [[deprecated]] bool& dyn_writeToNull();
+    [[deprecated("Use field access instead!")]] bool& dyn_writeToNull();
     // Get instance field reference: protected System.Boolean hadDoubleBracket
-    [[deprecated]] bool& dyn_hadDoubleBracket();
+    [[deprecated("Use field access instead!")]] bool& dyn_hadDoubleBracket();
     // Get instance field reference: protected System.Boolean inAttributeValue
-    [[deprecated]] bool& dyn_inAttributeValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_inAttributeValue();
     // Get instance field reference: protected System.Xml.NewLineHandling newLineHandling
-    [[deprecated]] ::System::Xml::NewLineHandling& dyn_newLineHandling();
+    [[deprecated("Use field access instead!")]] ::System::Xml::NewLineHandling& dyn_newLineHandling();
     // Get instance field reference: protected System.Boolean closeOutput
-    [[deprecated]] bool& dyn_closeOutput();
+    [[deprecated("Use field access instead!")]] bool& dyn_closeOutput();
     // Get instance field reference: protected System.Boolean omitXmlDeclaration
-    [[deprecated]] bool& dyn_omitXmlDeclaration();
+    [[deprecated("Use field access instead!")]] bool& dyn_omitXmlDeclaration();
     // Get instance field reference: protected System.String newLineChars
-    [[deprecated]] ::StringW& dyn_newLineChars();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_newLineChars();
     // Get instance field reference: protected System.Boolean checkCharacters
-    [[deprecated]] bool& dyn_checkCharacters();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkCharacters();
     // Get instance field reference: protected System.Xml.XmlStandalone standalone
-    [[deprecated]] ::System::Xml::XmlStandalone& dyn_standalone();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlStandalone& dyn_standalone();
     // Get instance field reference: protected System.Xml.XmlOutputMethod outputMethod
-    [[deprecated]] ::System::Xml::XmlOutputMethod& dyn_outputMethod();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlOutputMethod& dyn_outputMethod();
     // Get instance field reference: protected System.Boolean autoXmlDeclaration
-    [[deprecated]] bool& dyn_autoXmlDeclaration();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoXmlDeclaration();
     // Get instance field reference: protected System.Boolean mergeCDataSections
-    [[deprecated]] bool& dyn_mergeCDataSections();
+    [[deprecated("Use field access instead!")]] bool& dyn_mergeCDataSections();
     // protected System.Void .ctor(System.Xml.XmlWriterSettings settings)
     // Offset: 0x1090DF4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

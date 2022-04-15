@@ -174,39 +174,39 @@ namespace VROSC::UI {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Vector3 <GrabbableTouchPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$GrabbableTouchPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$GrabbableTouchPosition$k__BackingField();
     // Get instance field reference: private System.Boolean <GrabbablePointedAt>k__BackingField
-    [[deprecated]] bool& dyn_$GrabbablePointedAt$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$GrabbablePointedAt$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <ClickableTouchPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$ClickableTouchPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$ClickableTouchPosition$k__BackingField();
     // Get instance field reference: private System.Boolean <ClickablePointedAt>k__BackingField
-    [[deprecated]] bool& dyn_$ClickablePointedAt$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ClickablePointedAt$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform _interactionPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__interactionPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__interactionPoint();
     // Get instance field reference: private UnityEngine.Transform _rayPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__rayPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__rayPoint();
     // Get instance field reference: private VROSC.Clickable <CurrentClickable>k__BackingField
-    [[deprecated]] ::VROSC::Clickable*& dyn_$CurrentClickable$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::Clickable*& dyn_$CurrentClickable$k__BackingField();
     // Get instance field reference: private VROSC.Grabable <CurrentGrabbable>k__BackingField
-    [[deprecated]] ::VROSC::Grabable*& dyn_$CurrentGrabbable$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::Grabable*& dyn_$CurrentGrabbable$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <RayEnd>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$RayEnd$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$RayEnd$k__BackingField();
     // Get instance field reference: private System.Boolean <IsHoveringSomething>k__BackingField
-    [[deprecated]] bool& dyn_$IsHoveringSomething$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsHoveringSomething$k__BackingField();
     // Get instance field reference: private System.Boolean _interactionDisabledByMallets
-    [[deprecated]] bool& dyn__interactionDisabledByMallets();
+    [[deprecated("Use field access instead!")]] bool& dyn__interactionDisabledByMallets();
     // Get instance field reference: private VROSC.InputDevice _device
-    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private VROSC.InputSettings _inputSettings
-    [[deprecated]] ::VROSC::InputSettings*& dyn__inputSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputSettings*& dyn__inputSettings();
     // Get instance field reference: private UnityEngine.RaycastHit _hit
-    [[deprecated]] ::UnityEngine::RaycastHit& dyn__hit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RaycastHit& dyn__hit();
     // Get instance field reference: private UnityEngine.Collider[] _hoverColliderBuffer
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__hoverColliderBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__hoverColliderBuffer();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _currentRequestedTooltips
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__currentRequestedTooltips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__currentRequestedTooltips();
     // Get instance field reference: private System.Boolean _ignoreGrabTooltips
-    [[deprecated]] bool& dyn__ignoreGrabTooltips();
+    [[deprecated("Use field access instead!")]] bool& dyn__ignoreGrabTooltips();
     // public UnityEngine.Vector3 get_GrabbableTouchPosition()
     // Offset: 0x19116F0
     ::UnityEngine::Vector3 get_GrabbableTouchPosition();
@@ -255,6 +255,13 @@ namespace VROSC::UI {
     // private System.Void set_IsHoveringSomething(System.Boolean value)
     // Offset: 0x1911774
     void set_IsHoveringSomething(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x1912488
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIInputHandHovering* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIInputHandHovering::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIInputHandHovering*, creationType>()));
+    }
     // public System.Void Setup(VROSC.InputSettings inputSettings, VROSC.InputDevice device, UnityEngine.Transform rayPoint)
     // Offset: 0x1910CF0
     void Setup(::VROSC::InputSettings* inputSettings, ::VROSC::InputDevice* device, ::UnityEngine::Transform* rayPoint);
@@ -289,15 +296,6 @@ namespace VROSC::UI {
     // private System.Void UpdateTooltips()
     // Offset: 0x19120D0
     void UpdateTooltips();
-    // public System.Void .ctor()
-    // Offset: 0x1912488
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIInputHandHovering* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIInputHandHovering::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIInputHandHovering*, creationType>()));
-    }
   }; // VROSC.UI.UIInputHandHovering
   #pragma pack(pop)
   static check_size<sizeof(UIInputHandHovering), 176 + sizeof(bool)> __VROSC_UI_UIInputHandHoveringSizeCheck;
@@ -440,6 +438,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInputHandHovering*), "set_IsHoveringSomething", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::UIInputHandHovering::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::UIInputHandHovering::Setup
 // Il2CppName: Setup
 template<>
@@ -515,7 +517,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIInputHandHovering*), "UpdateTooltips", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::UIInputHandHovering::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -159,37 +159,37 @@ namespace UnityEngine::Experimental::GlobalIllumination {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 instanceID
-    [[deprecated]] int& dyn_instanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_instanceID();
     // Get instance field reference: public System.Int32 cookieID
-    [[deprecated]] int& dyn_cookieID();
+    [[deprecated("Use field access instead!")]] int& dyn_cookieID();
     // Get instance field reference: public System.Single cookieScale
-    [[deprecated]] float& dyn_cookieScale();
+    [[deprecated("Use field access instead!")]] float& dyn_cookieScale();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LinearColor color
-    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_color();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LinearColor indirectColor
-    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_indirectColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::GlobalIllumination::LinearColor& dyn_indirectColor();
     // Get instance field reference: public UnityEngine.Quaternion orientation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_orientation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_orientation();
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public System.Single range
-    [[deprecated]] float& dyn_range();
+    [[deprecated("Use field access instead!")]] float& dyn_range();
     // Get instance field reference: public System.Single coneAngle
-    [[deprecated]] float& dyn_coneAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_coneAngle();
     // Get instance field reference: public System.Single innerConeAngle
-    [[deprecated]] float& dyn_innerConeAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_innerConeAngle();
     // Get instance field reference: public System.Single shape0
-    [[deprecated]] float& dyn_shape0();
+    [[deprecated("Use field access instead!")]] float& dyn_shape0();
     // Get instance field reference: public System.Single shape1
-    [[deprecated]] float& dyn_shape1();
+    [[deprecated("Use field access instead!")]] float& dyn_shape1();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LightType type
-    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LightType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::GlobalIllumination::LightType& dyn_type();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.LightMode mode
-    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::LightMode& dyn_mode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::GlobalIllumination::LightMode& dyn_mode();
     // Get instance field reference: public System.Byte shadow
-    [[deprecated]] uint8_t& dyn_shadow();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_shadow();
     // Get instance field reference: public UnityEngine.Experimental.GlobalIllumination.FalloffType falloff
-    [[deprecated]] ::UnityEngine::Experimental::GlobalIllumination::FalloffType& dyn_falloff();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::GlobalIllumination::FalloffType& dyn_falloff();
     // public System.Void Init(ref UnityEngine.Experimental.GlobalIllumination.DirectionalLight light, ref UnityEngine.Experimental.GlobalIllumination.Cookie cookie)
     // Offset: 0x112C3F0
     void Init(ByRef<::UnityEngine::Experimental::GlobalIllumination::DirectionalLight> light, ByRef<::UnityEngine::Experimental::GlobalIllumination::Cookie> cookie);

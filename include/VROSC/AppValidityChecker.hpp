@@ -91,13 +91,13 @@ namespace VROSC {
     // Set static field: static private System.Action`1<VROSC.Error> _onFailureCallback
     static void _set__onFailureCallback(::System::Action_1<::VROSC::Error>* value);
     // Get instance field reference: private VROSC.AppValidityChecker/VROSC.ForceUpdates ForceUpdatesData
-    [[deprecated]] ::VROSC::AppValidityChecker::ForceUpdates*& dyn_ForceUpdatesData();
+    [[deprecated("Use field access instead!")]] ::VROSC::AppValidityChecker::ForceUpdates*& dyn_ForceUpdatesData();
     // Get instance field reference: private System.Boolean _isDataLoadAttempted
-    [[deprecated]] bool& dyn__isDataLoadAttempted();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDataLoadAttempted();
     // Get instance field reference: private System.Int32 _retries
-    [[deprecated]] int& dyn__retries();
+    [[deprecated("Use field access instead!")]] int& dyn__retries();
     // Get instance field reference: private System.Boolean <IsForceUpdateDataLoaded>k__BackingField
-    [[deprecated]] bool& dyn_$IsForceUpdateDataLoaded$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsForceUpdateDataLoaded$k__BackingField();
     // public System.String get_EULATermsVersion()
     // Offset: 0x96BF40
     ::StringW get_EULATermsVersion();
@@ -107,6 +107,13 @@ namespace VROSC {
     // private System.Void set_IsForceUpdateDataLoaded(System.Boolean value)
     // Offset: 0x96BF64
     void set_IsForceUpdateDataLoaded(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x96BF70
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AppValidityChecker* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppValidityChecker::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AppValidityChecker*, creationType>()));
+    }
     // public System.Void LoadData(System.Action onSuccess, System.Action`1<VROSC.Error> onFailure)
     // Offset: 0x96BFD8
     void LoadData(::System::Action* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
@@ -128,15 +135,6 @@ namespace VROSC {
     // private System.Boolean IsVersionCompatible(System.String requiredVersion, System.String versionToCheck)
     // Offset: 0x96C1C0
     bool IsVersionCompatible(::StringW requiredVersion, ::StringW versionToCheck);
-    // public System.Void .ctor()
-    // Offset: 0x96BF70
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AppValidityChecker* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppValidityChecker::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AppValidityChecker*, creationType>()));
-    }
   }; // VROSC.AppValidityChecker
   #pragma pack(pop)
   static check_size<sizeof(AppValidityChecker), 32 + sizeof(bool)> __VROSC_AppValidityCheckerSizeCheck;
@@ -168,6 +166,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppValidityChecker*), "set_IsForceUpdateDataLoaded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::AppValidityChecker::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AppValidityChecker::LoadData
 // Il2CppName: LoadData
 template<>
@@ -230,7 +232,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppValidityChecker*), "IsVersionCompatible", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{requiredVersion, versionToCheck});
   }
 };
-// Writing MetadataGetter for method: VROSC::AppValidityChecker::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

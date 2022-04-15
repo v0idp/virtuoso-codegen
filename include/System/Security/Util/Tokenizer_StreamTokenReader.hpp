@@ -51,9 +51,9 @@ namespace System::Security::Util {
       return *reinterpret_cast<::System::Security::Util::Tokenizer::ITokenReader*>(this);
     }
     // Get instance field reference: System.IO.StreamReader _in
-    [[deprecated]] ::System::IO::StreamReader*& dyn__in();
+    [[deprecated("Use field access instead!")]] ::System::IO::StreamReader*& dyn__in();
     // Get instance field reference: System.Int32 _numCharRead
-    [[deprecated]] int& dyn__numCharRead();
+    [[deprecated("Use field access instead!")]] int& dyn__numCharRead();
     // System.Int32 get_NumCharEncountered()
     // Offset: 0x189A010
     int get_NumCharEncountered();

@@ -144,33 +144,33 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String _displayName
-    [[deprecated]] ::StringW& dyn__displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__displayName();
     // Get instance field reference: private UnityEngine.Transform _targetTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__targetTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__targetTransform();
     // Get instance field reference: private System.Boolean _followPlayer
-    [[deprecated]] bool& dyn__followPlayer();
+    [[deprecated("Use field access instead!")]] bool& dyn__followPlayer();
     // Get instance field reference: private System.Boolean _followPosition
-    [[deprecated]] bool& dyn__followPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn__followPosition();
     // Get instance field reference: private System.Boolean _followRotation
-    [[deprecated]] bool& dyn__followRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn__followRotation();
     // Get instance field reference: private System.Boolean _lookAtTarget
-    [[deprecated]] bool& dyn__lookAtTarget();
+    [[deprecated("Use field access instead!")]] bool& dyn__lookAtTarget();
     // Get instance field reference: private UnityEngine.Vector3 _offsetToTarget
-    [[deprecated]] ::UnityEngine::Vector3& dyn__offsetToTarget();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__offsetToTarget();
     // Get instance field reference: private System.Boolean _xOffsetLocal
-    [[deprecated]] bool& dyn__xOffsetLocal();
+    [[deprecated("Use field access instead!")]] bool& dyn__xOffsetLocal();
     // Get instance field reference: private System.Boolean _yOffsetLocal
-    [[deprecated]] bool& dyn__yOffsetLocal();
+    [[deprecated("Use field access instead!")]] bool& dyn__yOffsetLocal();
     // Get instance field reference: private System.Boolean _zOffsetLocal
-    [[deprecated]] bool& dyn__zOffsetLocal();
+    [[deprecated("Use field access instead!")]] bool& dyn__zOffsetLocal();
     // Get instance field reference: private UnityEngine.LayerMask _cameraLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn__cameraLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn__cameraLayerMask();
     // Get instance field reference: private System.Single _fov
-    [[deprecated]] float& dyn__fov();
+    [[deprecated("Use field access instead!")]] float& dyn__fov();
     // Get instance field reference: private System.Boolean _active
-    [[deprecated]] bool& dyn__active();
+    [[deprecated("Use field access instead!")]] bool& dyn__active();
     // Get instance field reference: public System.Action`1<System.Boolean> OnAnchorActivated
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnAnchorActivated();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnAnchorActivated();
     // public System.String get_DisplayName()
     // Offset: 0x192D6D4
     ::StringW get_DisplayName();
@@ -189,6 +189,13 @@ namespace VROSC {
     // public System.Boolean get_Active()
     // Offset: 0x192D77C
     bool get_Active();
+    // public System.Void .ctor()
+    // Offset: 0x192DD88
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SpectatorCameraAnchor* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SpectatorCameraAnchor::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SpectatorCameraAnchor*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x192D784
     void Start();
@@ -207,19 +214,6 @@ namespace VROSC {
     // private System.Void PlayerInitialized(VROSC.VRPlayer vrPlayer)
     // Offset: 0x192D8EC
     void PlayerInitialized(::VROSC::VRPlayer* vrPlayer);
-    // public System.Void .ctor()
-    // Offset: 0x192DD88
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SpectatorCameraAnchor* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SpectatorCameraAnchor::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SpectatorCameraAnchor*, creationType>()));
-    }
   }; // VROSC.SpectatorCameraAnchor
   #pragma pack(pop)
   static check_size<sizeof(SpectatorCameraAnchor), 72 + sizeof(::System::Action_1<bool>*)> __VROSC_SpectatorCameraAnchorSizeCheck;
@@ -275,6 +269,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraAnchor*), "get_Active", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::SpectatorCameraAnchor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SpectatorCameraAnchor::Start
 // Il2CppName: Start
 template<>
@@ -328,7 +326,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SpectatorCameraAnchor*), "PlayerInitialized", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{vrPlayer});
   }
 };
-// Writing MetadataGetter for method: VROSC::SpectatorCameraAnchor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

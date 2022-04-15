@@ -57,11 +57,11 @@ namespace UnityEngine::Bindings {
     static_assert(sizeof(::UnityEngine::Bindings::CodegenOptions) == 0x4);
     public:
     // Get instance field reference: private System.String <Header>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Header$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Header$k__BackingField();
     // Get instance field reference: private System.String <IntermediateScriptingStructName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$IntermediateScriptingStructName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$IntermediateScriptingStructName$k__BackingField();
     // Get instance field reference: private UnityEngine.Bindings.CodegenOptions <CodegenOptions>k__BackingField
-    [[deprecated]] ::UnityEngine::Bindings::CodegenOptions& dyn_$CodegenOptions$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bindings::CodegenOptions& dyn_$CodegenOptions$k__BackingField();
     // public System.Void set_Header(System.String value)
     // Offset: 0x18FFBBC
     void set_Header(::StringW value);
@@ -71,6 +71,13 @@ namespace UnityEngine::Bindings {
     // public System.Void set_CodegenOptions(UnityEngine.Bindings.CodegenOptions value)
     // Offset: 0x18FFBCC
     void set_CodegenOptions(::UnityEngine::Bindings::CodegenOptions value);
+    // public System.Void .ctor()
+    // Offset: 0x18FFBD4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NativeTypeAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeTypeAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NativeTypeAttribute*, creationType>()));
+    }
     // public System.Void .ctor(UnityEngine.Bindings.CodegenOptions codegenOptions)
     // Offset: 0x18FFBFC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -91,16 +98,6 @@ namespace UnityEngine::Bindings {
     static NativeTypeAttribute* New_ctor(::UnityEngine::Bindings::CodegenOptions codegenOptions, ::StringW intermediateStructName) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeTypeAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NativeTypeAttribute*, creationType>(codegenOptions, intermediateStructName)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0x18FFBD4
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NativeTypeAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeTypeAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NativeTypeAttribute*, creationType>()));
     }
   }; // UnityEngine.Bindings.NativeTypeAttribute
   #pragma pack(pop)

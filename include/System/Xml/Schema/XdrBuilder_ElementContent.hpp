@@ -124,37 +124,35 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: System.Xml.Schema.SchemaElementDecl _ElementDecl
-    [[deprecated]] ::System::Xml::Schema::SchemaElementDecl*& dyn__ElementDecl();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaElementDecl*& dyn__ElementDecl();
     // Get instance field reference: System.Int32 _ContentAttr
-    [[deprecated]] int& dyn__ContentAttr();
+    [[deprecated("Use field access instead!")]] int& dyn__ContentAttr();
     // Get instance field reference: System.Int32 _OrderAttr
-    [[deprecated]] int& dyn__OrderAttr();
+    [[deprecated("Use field access instead!")]] int& dyn__OrderAttr();
     // Get instance field reference: System.Boolean _MasterGroupRequired
-    [[deprecated]] bool& dyn__MasterGroupRequired();
+    [[deprecated("Use field access instead!")]] bool& dyn__MasterGroupRequired();
     // Get instance field reference: System.Boolean _ExistTerminal
-    [[deprecated]] bool& dyn__ExistTerminal();
+    [[deprecated("Use field access instead!")]] bool& dyn__ExistTerminal();
     // Get instance field reference: System.Boolean _AllowDataType
-    [[deprecated]] bool& dyn__AllowDataType();
+    [[deprecated("Use field access instead!")]] bool& dyn__AllowDataType();
     // Get instance field reference: System.Boolean _HasDataType
-    [[deprecated]] bool& dyn__HasDataType();
+    [[deprecated("Use field access instead!")]] bool& dyn__HasDataType();
     // Get instance field reference: System.Boolean _HasType
-    [[deprecated]] bool& dyn__HasType();
+    [[deprecated("Use field access instead!")]] bool& dyn__HasType();
     // Get instance field reference: System.Boolean _EnumerationRequired
-    [[deprecated]] bool& dyn__EnumerationRequired();
+    [[deprecated("Use field access instead!")]] bool& dyn__EnumerationRequired();
     // Get instance field reference: System.UInt32 _MinVal
-    [[deprecated]] uint& dyn__MinVal();
+    [[deprecated("Use field access instead!")]] uint& dyn__MinVal();
     // Get instance field reference: System.UInt32 _MaxVal
-    [[deprecated]] uint& dyn__MaxVal();
+    [[deprecated("Use field access instead!")]] uint& dyn__MaxVal();
     // Get instance field reference: System.UInt32 _MaxLength
-    [[deprecated]] uint& dyn__MaxLength();
+    [[deprecated("Use field access instead!")]] uint& dyn__MaxLength();
     // Get instance field reference: System.UInt32 _MinLength
-    [[deprecated]] uint& dyn__MinLength();
+    [[deprecated("Use field access instead!")]] uint& dyn__MinLength();
     // Get instance field reference: System.Collections.Hashtable _AttDefList
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__AttDefList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__AttDefList();
     // public System.Void .ctor()
     // Offset: 0xC1EECC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XdrBuilder::ElementContent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XdrBuilder::ElementContent::.ctor");

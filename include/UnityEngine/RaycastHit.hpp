@@ -90,17 +90,17 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: UnityEngine.Vector3 m_Point
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Point();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Point();
     // Get instance field reference: UnityEngine.Vector3 m_Normal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Normal();
     // Get instance field reference: System.UInt32 m_FaceID
-    [[deprecated]] uint& dyn_m_FaceID();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_FaceID();
     // Get instance field reference: System.Single m_Distance
-    [[deprecated]] float& dyn_m_Distance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Distance();
     // Get instance field reference: UnityEngine.Vector2 m_UV
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_UV();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_UV();
     // Get instance field reference: System.Int32 m_Collider
-    [[deprecated]] int& dyn_m_Collider();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Collider();
     // public UnityEngine.Collider get_collider()
     // Offset: 0x18F40AC
     ::UnityEngine::Collider* get_collider();

@@ -154,33 +154,33 @@ namespace TMPro {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TMP_FontAsset m_fontAsset
-    [[deprecated]] ::TMPro::TMP_FontAsset*& dyn_m_fontAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_FontAsset*& dyn_m_fontAsset();
     // Get instance field reference: private TMPro.TMP_SpriteAsset m_spriteAsset
-    [[deprecated]] ::TMPro::TMP_SpriteAsset*& dyn_m_spriteAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_SpriteAsset*& dyn_m_spriteAsset();
     // Get instance field reference: private UnityEngine.Material m_material
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_material();
     // Get instance field reference: private UnityEngine.Material m_sharedMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_sharedMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_sharedMaterial();
     // Get instance field reference: private UnityEngine.Material m_fallbackMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_fallbackMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_fallbackMaterial();
     // Get instance field reference: private UnityEngine.Material m_fallbackSourceMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_fallbackSourceMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_fallbackSourceMaterial();
     // Get instance field reference: private System.Boolean m_isDefaultMaterial
-    [[deprecated]] bool& dyn_m_isDefaultMaterial();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isDefaultMaterial();
     // Get instance field reference: private System.Single m_padding
-    [[deprecated]] float& dyn_m_padding();
+    [[deprecated("Use field access instead!")]] float& dyn_m_padding();
     // Get instance field reference: private UnityEngine.Mesh m_mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_m_mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_m_mesh();
     // Get instance field reference: private TMPro.TextMeshProUGUI m_TextComponent
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_m_TextComponent();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_m_TextComponent();
     // Get instance field reference: private System.Boolean m_isRegisteredForEvents
-    [[deprecated]] bool& dyn_m_isRegisteredForEvents();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isRegisteredForEvents();
     // Get instance field reference: private System.Boolean m_materialDirty
-    [[deprecated]] bool& dyn_m_materialDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_materialDirty();
     // Get instance field reference: private System.Int32 m_materialReferenceIndex
-    [[deprecated]] int& dyn_m_materialReferenceIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_materialReferenceIndex();
     // Get instance field reference: private UnityEngine.Transform m_RootCanvasTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_RootCanvasTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_RootCanvasTransform();
     // public TMPro.TMP_FontAsset get_fontAsset()
     // Offset: 0x9B5A14
     ::TMPro::TMP_FontAsset* get_fontAsset();
@@ -232,6 +232,13 @@ namespace TMPro {
     // public TMPro.TMP_Text get_textComponent()
     // Offset: 0x9B6104
     ::TMPro::TMP_Text* get_textComponent();
+    // public System.Void .ctor()
+    // Offset: 0x9B7154
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_SubMeshUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SubMeshUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_SubMeshUI*, creationType>()));
+    }
     // static public TMPro.TMP_SubMeshUI AddSubTextObject(TMPro.TextMeshProUGUI textComponent, TMPro.MaterialReference materialReference)
     // Offset: 0x9B61A4
     static ::TMPro::TMP_SubMeshUI* AddSubTextObject(::TMPro::TextMeshProUGUI* textComponent, ::TMPro::MaterialReference materialReference);
@@ -288,22 +295,6 @@ namespace TMPro {
     // Implemented from: UnityEngine.UI.Graphic
     // Base method: UnityEngine.Material Graphic::get_materialForRendering()
     ::UnityEngine::Material* get_materialForRendering();
-    // public System.Void .ctor()
-    // Offset: 0x9B7154
-    // Implemented from: UnityEngine.UI.MaskableGraphic
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_SubMeshUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SubMeshUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_SubMeshUI*, creationType>()));
-    }
     // protected override System.Void OnEnable()
     // Offset: 0x9B6634
     // Implemented from: UnityEngine.UI.MaskableGraphic
@@ -524,6 +515,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::TM
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_SubMeshUI*), "get_textComponent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_SubMeshUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_SubMeshUI::AddSubTextObject
 // Il2CppName: AddSubTextObject
 template<>
@@ -661,10 +656,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_SubMeshUI*), "get_materialForRendering", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_SubMeshUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_SubMeshUI::OnEnable
 // Il2CppName: OnEnable
 template<>

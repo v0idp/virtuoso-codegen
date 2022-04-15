@@ -57,19 +57,17 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String kind
-    [[deprecated]] ::StringW& dyn_kind();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_kind();
     // Get instance field reference: public System.String idToken
-    [[deprecated]] ::StringW& dyn_idToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_idToken();
     // Get instance field reference: public System.String refreshToken
-    [[deprecated]] ::StringW& dyn_refreshToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_refreshToken();
     // Get instance field reference: public System.String expiresIn
-    [[deprecated]] ::StringW& dyn_expiresIn();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_expiresIn();
     // Get instance field reference: public System.String localId
-    [[deprecated]] ::StringW& dyn_localId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localId();
     // public System.Void .ctor()
     // Offset: 0x1952870
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseHelper::NewUser* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FirebaseHelper::NewUser::.ctor");

@@ -65,19 +65,17 @@ namespace TMPro {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int64 fallbackID
-    [[deprecated]] int64_t& dyn_fallbackID();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_fallbackID();
     // Get instance field reference: public UnityEngine.Material sourceMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_sourceMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_sourceMaterial();
     // Get instance field reference: System.Int32 sourceMaterialCRC
-    [[deprecated]] int& dyn_sourceMaterialCRC();
+    [[deprecated("Use field access instead!")]] int& dyn_sourceMaterialCRC();
     // Get instance field reference: public UnityEngine.Material fallbackMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_fallbackMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_fallbackMaterial();
     // Get instance field reference: public System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // public System.Void .ctor()
     // Offset: 0x18211F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_MaterialManager::FallbackMaterial* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_MaterialManager::FallbackMaterial::.ctor");

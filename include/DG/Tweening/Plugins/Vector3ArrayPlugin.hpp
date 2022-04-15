@@ -83,7 +83,6 @@ namespace DG::Tweening::Plugins {
     // Offset: 0x1860FF8
     // Implemented from: DG.Tweening.Plugins.Core.ABSTweenPlugin`3
     // Base method: System.Void ABSTweenPlugin_3::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Vector3ArrayPlugin* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Vector3ArrayPlugin::.ctor");

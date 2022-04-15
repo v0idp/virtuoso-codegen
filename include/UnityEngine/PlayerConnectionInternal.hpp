@@ -42,6 +42,13 @@ namespace UnityEngine {
     operator ::UnityEngine::IPlayerEditorConnectionNative() noexcept {
       return *reinterpret_cast<::UnityEngine::IPlayerEditorConnectionNative*>(this);
     }
+    // public System.Void .ctor()
+    // Offset: 0xBC5860
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlayerConnectionInternal* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::PlayerConnectionInternal::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlayerConnectionInternal*, creationType>()));
+    }
     // private System.Void UnityEngine.IPlayerEditorConnectionNative.SendMessage(System.Guid messageId, System.Byte[] data, System.Int32 playerId)
     // Offset: 0xBC70A4
     void UnityEngine_IPlayerEditorConnectionNative_SendMessage(::System::Guid messageId, ::ArrayW<uint8_t> data, int playerId);
@@ -90,19 +97,14 @@ namespace UnityEngine {
     // static private System.Void DisconnectAll()
     // Offset: 0xBC76DC
     static void DisconnectAll();
-    // public System.Void .ctor()
-    // Offset: 0xBC5860
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlayerConnectionInternal* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::PlayerConnectionInternal::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlayerConnectionInternal*, creationType>()));
-    }
   }; // UnityEngine.PlayerConnectionInternal
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::PlayerConnectionInternal::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::PlayerConnectionInternal::UnityEngine_IPlayerEditorConnectionNative_SendMessage
 // Il2CppName: UnityEngine.IPlayerEditorConnectionNative.SendMessage
 template<>
@@ -247,7 +249,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::PlayerConnectionInternal*), "DisconnectAll", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::PlayerConnectionInternal::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -67,19 +67,26 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPlaying$k__BackingField();
     // Get instance field reference: private System.Double _endTime
-    [[deprecated]] double& dyn__endTime();
+    [[deprecated("Use field access instead!")]] double& dyn__endTime();
     // Get instance field reference: private System.Double _startTime
-    [[deprecated]] double& dyn__startTime();
+    [[deprecated("Use field access instead!")]] double& dyn__startTime();
     // Get instance field reference: public System.Action OnEnd
-    [[deprecated]] ::System::Action*& dyn_OnEnd();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnEnd();
     // public System.Boolean get_IsPlaying()
     // Offset: 0xA275E4
     bool get_IsPlaying();
     // private System.Void set_IsPlaying(System.Boolean value)
     // Offset: 0xA275D8
     void set_IsPlaying(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xA276EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimelinePlaybackHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TimelinePlaybackHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimelinePlaybackHelper*, creationType>()));
+    }
     // public System.Void Update()
     // Offset: 0xA275EC
     void Update();
@@ -89,15 +96,6 @@ namespace VROSC {
     // public System.Void Stop()
     // Offset: 0xA27644
     void Stop();
-    // public System.Void .ctor()
-    // Offset: 0xA276EC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimelinePlaybackHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TimelinePlaybackHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimelinePlaybackHelper*, creationType>()));
-    }
   }; // VROSC.TimelinePlaybackHelper
   #pragma pack(pop)
   static check_size<sizeof(TimelinePlaybackHelper), 40 + sizeof(::System::Action*)> __VROSC_TimelinePlaybackHelperSizeCheck;
@@ -121,6 +119,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TimelinePlaybackHelper*), "set_IsPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::TimelinePlaybackHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TimelinePlaybackHelper::Update
 // Il2CppName: Update
 template<>
@@ -146,7 +148,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TimelinePlaybackHelper*), "Stop", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::TimelinePlaybackHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

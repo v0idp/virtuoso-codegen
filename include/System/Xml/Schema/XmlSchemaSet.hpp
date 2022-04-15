@@ -211,45 +211,45 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Xml.Schema.SchemaNames schemaNames
-    [[deprecated]] ::System::Xml::Schema::SchemaNames*& dyn_schemaNames();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames*& dyn_schemaNames();
     // Get instance field reference: private System.Collections.SortedList schemas
-    [[deprecated]] ::System::Collections::SortedList*& dyn_schemas();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn_schemas();
     // Get instance field reference: private System.Xml.Schema.ValidationEventHandler internalEventHandler
-    [[deprecated]] ::System::Xml::Schema::ValidationEventHandler*& dyn_internalEventHandler();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ValidationEventHandler*& dyn_internalEventHandler();
     // Get instance field reference: private System.Xml.Schema.ValidationEventHandler eventHandler
-    [[deprecated]] ::System::Xml::Schema::ValidationEventHandler*& dyn_eventHandler();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ValidationEventHandler*& dyn_eventHandler();
     // Get instance field reference: private System.Boolean isCompiled
-    [[deprecated]] bool& dyn_isCompiled();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCompiled();
     // Get instance field reference: private System.Collections.Hashtable schemaLocations
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_schemaLocations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_schemaLocations();
     // Get instance field reference: private System.Collections.Hashtable chameleonSchemas
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_chameleonSchemas();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_chameleonSchemas();
     // Get instance field reference: private System.Collections.Hashtable targetNamespaces
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_targetNamespaces();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_targetNamespaces();
     // Get instance field reference: private System.Boolean compileAll
-    [[deprecated]] bool& dyn_compileAll();
+    [[deprecated("Use field access instead!")]] bool& dyn_compileAll();
     // Get instance field reference: private System.Xml.Schema.SchemaInfo cachedCompiledInfo
-    [[deprecated]] ::System::Xml::Schema::SchemaInfo*& dyn_cachedCompiledInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaInfo*& dyn_cachedCompiledInfo();
     // Get instance field reference: private System.Xml.XmlReaderSettings readerSettings
-    [[deprecated]] ::System::Xml::XmlReaderSettings*& dyn_readerSettings();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReaderSettings*& dyn_readerSettings();
     // Get instance field reference: private System.Xml.Schema.XmlSchema schemaForSchema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn_schemaForSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn_schemaForSchema();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaCompilationSettings compilationSettings
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaCompilationSettings*& dyn_compilationSettings();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaCompilationSettings*& dyn_compilationSettings();
     // Get instance field reference: System.Xml.Schema.XmlSchemaObjectTable elements
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_elements();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_elements();
     // Get instance field reference: System.Xml.Schema.XmlSchemaObjectTable attributes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_attributes();
     // Get instance field reference: System.Xml.Schema.XmlSchemaObjectTable schemaTypes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_schemaTypes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_schemaTypes();
     // Get instance field reference: System.Xml.Schema.XmlSchemaObjectTable substitutionGroups
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_substitutionGroups();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_substitutionGroups();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable typeExtensions
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_typeExtensions();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable*& dyn_typeExtensions();
     // Get instance field reference: private System.Object internalSyncObject
-    [[deprecated]] ::Il2CppObject*& dyn_internalSyncObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_internalSyncObject();
     // System.Object get_InternalSyncObject()
     // Offset: 0xF2ED5C
     ::Il2CppObject* get_InternalSyncObject();
@@ -301,6 +301,13 @@ namespace System::Xml::Schema {
     // public System.Void remove_ValidationEventHandler(System.Xml.Schema.ValidationEventHandler value)
     // Offset: 0xF2F14C
     void remove_ValidationEventHandler(::System::Xml::Schema::ValidationEventHandler* value);
+    // public System.Void .ctor()
+    // Offset: 0xF2EDD0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSchemaSet* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSet::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaSet*, creationType>()));
+    }
     // public System.Void .ctor(System.Xml.XmlNameTable nameTable)
     // Offset: 0xF2EE30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -404,15 +411,6 @@ namespace System::Xml::Schema {
     // private System.Void SendValidationEvent(System.Xml.Schema.XmlSchemaException e, System.Xml.Schema.XmlSeverityType severity)
     // Offset: 0xF32654
     void SendValidationEvent(::System::Xml::Schema::XmlSchemaException* e, ::System::Xml::Schema::XmlSeverityType severity);
-    // public System.Void .ctor()
-    // Offset: 0xF2EDD0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSchemaSet* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSet::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSchemaSet*, creationType>()));
-    }
   }; // System.Xml.Schema.XmlSchemaSet
   #pragma pack(pop)
   static check_size<sizeof(XmlSchemaSet), 168 + sizeof(::Il2CppObject*)> __System_Xml_Schema_XmlSchemaSetSizeCheck;
@@ -559,6 +557,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaSet*), "remove_ValidationEventHandler", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaSet::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaSet::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -863,7 +865,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XmlSchemaSet*), "SendValidationEvent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e, severity});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::XmlSchemaSet::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

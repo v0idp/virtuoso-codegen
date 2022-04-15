@@ -47,7 +47,14 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject[] SwitchTargets
-    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn_SwitchTargets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::GameObject*>& dyn_SwitchTargets();
+    // public System.Void .ctor()
+    // Offset: 0x94F43C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VoiceModEnableSwitch* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VoiceModEnableSwitch::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VoiceModEnableSwitch*, creationType>()));
+    }
     // public System.Boolean SetActive(System.Int32 target)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -61,25 +68,16 @@ namespace GlobalNamespace {
     // public System.Boolean SetActive(System.Int32 target)
     // Offset: 0x94F378
     bool SetActive(int target);
-    // public System.Void .ctor()
-    // Offset: 0x94F43C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VoiceModEnableSwitch* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VoiceModEnableSwitch::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VoiceModEnableSwitch*, creationType>()));
-    }
   }; // VoiceModEnableSwitch
   #pragma pack(pop)
   static check_size<sizeof(VoiceModEnableSwitch), 24 + sizeof(::ArrayW<::UnityEngine::GameObject*>)> __GlobalNamespace_VoiceModEnableSwitchSizeCheck;
   static_assert(sizeof(VoiceModEnableSwitch) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::VoiceModEnableSwitch::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::VoiceModEnableSwitch::SetActive
 // Il2CppName: SetActive
 // Cannot write MetadataGetter for generic methods!
@@ -92,7 +90,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::VoiceModEnableSwitch*), "SetActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::VoiceModEnableSwitch::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

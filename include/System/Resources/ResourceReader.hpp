@@ -167,33 +167,33 @@ namespace System::Resources {
       return *reinterpret_cast<::System::Resources::IResourceReader*>(this);
     }
     // Get instance field reference: private System.IO.BinaryReader _store
-    [[deprecated]] ::System::IO::BinaryReader*& dyn__store();
+    [[deprecated("Use field access instead!")]] ::System::IO::BinaryReader*& dyn__store();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> _resCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__resCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__resCache();
     // Get instance field reference: private System.Int64 _nameSectionOffset
-    [[deprecated]] int64_t& dyn__nameSectionOffset();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__nameSectionOffset();
     // Get instance field reference: private System.Int64 _dataSectionOffset
-    [[deprecated]] int64_t& dyn__dataSectionOffset();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__dataSectionOffset();
     // Get instance field reference: private System.Int32[] _nameHashes
-    [[deprecated]] ::ArrayW<int>& dyn__nameHashes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__nameHashes();
     // Get instance field reference: private System.Int32* _nameHashesPtr
-    [[deprecated]] int*& dyn__nameHashesPtr();
+    [[deprecated("Use field access instead!")]] int*& dyn__nameHashesPtr();
     // Get instance field reference: private System.Int32[] _namePositions
-    [[deprecated]] ::ArrayW<int>& dyn__namePositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__namePositions();
     // Get instance field reference: private System.Int32* _namePositionsPtr
-    [[deprecated]] int*& dyn__namePositionsPtr();
+    [[deprecated("Use field access instead!")]] int*& dyn__namePositionsPtr();
     // Get instance field reference: private System.RuntimeType[] _typeTable
-    [[deprecated]] ::ArrayW<::System::RuntimeType*>& dyn__typeTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::RuntimeType*>& dyn__typeTable();
     // Get instance field reference: private System.Int32[] _typeNamePositions
-    [[deprecated]] ::ArrayW<int>& dyn__typeNamePositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__typeNamePositions();
     // Get instance field reference: private System.Runtime.Serialization.Formatters.Binary.BinaryFormatter _objFormatter
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter*& dyn__objFormatter();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter*& dyn__objFormatter();
     // Get instance field reference: private System.Int32 _numResources
-    [[deprecated]] int& dyn__numResources();
+    [[deprecated("Use field access instead!")]] int& dyn__numResources();
     // Get instance field reference: private System.IO.UnmanagedMemoryStream _ums
-    [[deprecated]] ::System::IO::UnmanagedMemoryStream*& dyn__ums();
+    [[deprecated("Use field access instead!")]] ::System::IO::UnmanagedMemoryStream*& dyn__ums();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // System.Void .ctor(System.IO.Stream stream, System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> resCache)
     // Offset: 0xCDBB30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

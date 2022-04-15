@@ -77,17 +77,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTransform localTransform
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_localTransform();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTransform& dyn_localTransform();
     // Get instance field reference: public ovrAvatarVisibilityFlags visibilityMask
-    [[deprecated]] ::GlobalNamespace::ovrAvatarVisibilityFlags& dyn_visibilityMask();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarVisibilityFlags& dyn_visibilityMask();
     // Get instance field reference: public System.UInt64 meshAssetID
-    [[deprecated]] uint64_t& dyn_meshAssetID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_meshAssetID();
     // Get instance field reference: public System.UInt64 albedoTextureAssetID
-    [[deprecated]] uint64_t& dyn_albedoTextureAssetID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_albedoTextureAssetID();
     // Get instance field reference: public System.UInt64 surfaceTextureAssetID
-    [[deprecated]] uint64_t& dyn_surfaceTextureAssetID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_surfaceTextureAssetID();
     // Get instance field reference: public ovrAvatarSkinnedMeshPose skinnedPose
-    [[deprecated]] ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedPose();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedPose();
   }; // ovrAvatarRenderPart_SkinnedMeshRenderPBS
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarRenderPart_SkinnedMeshRenderPBS), 72 + sizeof(::GlobalNamespace::ovrAvatarSkinnedMeshPose)> __GlobalNamespace_ovrAvatarRenderPart_SkinnedMeshRenderPBSSizeCheck;

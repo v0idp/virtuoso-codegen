@@ -138,23 +138,23 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: private System.Boolean _UseRegistry
-    [[deprecated]] bool& dyn__UseRegistry();
+    [[deprecated("Use field access instead!")]] bool& dyn__UseRegistry();
     // Get instance field reference: private System.Boolean _BypassOnLocal
-    [[deprecated]] bool& dyn__BypassOnLocal();
+    [[deprecated("Use field access instead!")]] bool& dyn__BypassOnLocal();
     // Get instance field reference: private System.Boolean m_EnableAutoproxy
-    [[deprecated]] bool& dyn_m_EnableAutoproxy();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableAutoproxy();
     // Get instance field reference: private System.Uri _ProxyAddress
-    [[deprecated]] ::System::Uri*& dyn__ProxyAddress();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn__ProxyAddress();
     // Get instance field reference: private System.Collections.ArrayList _BypassList
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__BypassList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__BypassList();
     // Get instance field reference: private System.Net.ICredentials _Credentials
-    [[deprecated]] ::System::Net::ICredentials*& dyn__Credentials();
+    [[deprecated("Use field access instead!")]] ::System::Net::ICredentials*& dyn__Credentials();
     // Get instance field reference: private System.Text.RegularExpressions.Regex[] _RegExBypassList
-    [[deprecated]] ::ArrayW<::System::Text::RegularExpressions::Regex*>& dyn__RegExBypassList();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Text::RegularExpressions::Regex*>& dyn__RegExBypassList();
     // Get instance field reference: private System.Collections.Hashtable _ProxyHostAddresses
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__ProxyHostAddresses();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__ProxyHostAddresses();
     // Get instance field reference: private System.Net.AutoWebProxyScriptEngine m_ScriptEngine
-    [[deprecated]] ::System::Net::AutoWebProxyScriptEngine*& dyn_m_ScriptEngine();
+    [[deprecated("Use field access instead!")]] ::System::Net::AutoWebProxyScriptEngine*& dyn_m_ScriptEngine();
     // public System.Net.ICredentials get_Credentials()
     // Offset: 0xC47EB0
     ::System::Net::ICredentials* get_Credentials();
@@ -167,6 +167,13 @@ namespace System::Net {
     // System.Net.AutoWebProxyScriptEngine get_ScriptEngine()
     // Offset: 0xC48E94
     ::System::Net::AutoWebProxyScriptEngine* get_ScriptEngine();
+    // public System.Void .ctor()
+    // Offset: 0xC47B94
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WebProxy* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebProxy::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WebProxy*, creationType>()));
+    }
     // public System.Void .ctor(System.Uri Address, System.Boolean BypassOnLocal, System.String[] BypassList, System.Net.ICredentials Credentials)
     // Offset: 0xC47BA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -233,15 +240,6 @@ namespace System::Net {
     // static private System.Uri ProxyUri(System.String proxyName)
     // Offset: 0xC49224
     static ::System::Uri* ProxyUri(::StringW proxyName);
-    // public System.Void .ctor()
-    // Offset: 0xC47B94
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WebProxy* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebProxy::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WebProxy*, creationType>()));
-    }
   }; // System.Net.WebProxy
   #pragma pack(pop)
   static check_size<sizeof(WebProxy), 64 + sizeof(::System::Net::AutoWebProxyScriptEngine*)> __System_Net_WebProxySizeCheck;
@@ -281,6 +279,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::N
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebProxy*), "get_ScriptEngine", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::WebProxy::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::WebProxy::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -431,7 +433,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::U
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebProxy*), "ProxyUri", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{proxyName});
   }
 };
-// Writing MetadataGetter for method: System::Net::WebProxy::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -39,27 +39,29 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Double nextQuantizeDspTime
-    [[deprecated]] double& dyn_nextQuantizeDspTime();
+    [[deprecated("Use field access instead!")]] double& dyn_nextQuantizeDspTime();
     // Get instance field reference: public System.Single quantizeLength
-    [[deprecated]] float& dyn_quantizeLength();
-    // System.Boolean <Play>b__0(System.Double x)
-    // Offset: 0x8CA2A0
-    bool $Play$b__0(double x);
+    [[deprecated("Use field access instead!")]] float& dyn_quantizeLength();
     // public System.Void .ctor()
     // Offset: 0x8CA298
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NotePlayer::$$c__DisplayClass18_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NotePlayer::$$c__DisplayClass18_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NotePlayer::$$c__DisplayClass18_0*, creationType>()));
     }
+    // System.Boolean <Play>b__0(System.Double x)
+    // Offset: 0x8CA2A0
+    bool $Play$b__0(double x);
   }; // VROSC.NotePlayer/VROSC.<>c__DisplayClass18_0
   #pragma pack(pop)
   static check_size<sizeof(NotePlayer::$$c__DisplayClass18_0), 24 + sizeof(float)> __VROSC_NotePlayer_$$c__DisplayClass18_0SizeCheck;
   static_assert(sizeof(NotePlayer::$$c__DisplayClass18_0) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::NotePlayer::$$c__DisplayClass18_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NotePlayer::$$c__DisplayClass18_0::$Play$b__0
 // Il2CppName: <Play>b__0
 template<>
@@ -69,7 +71,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NotePlayer::$$c__DisplayClass18_0*), "<Play>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: VROSC::NotePlayer::$$c__DisplayClass18_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

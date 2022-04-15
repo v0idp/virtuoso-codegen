@@ -51,9 +51,9 @@ namespace MS::Internal::Xml::XPath {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String localname
-    [[deprecated]] ::StringW& dyn_localname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localname();
     // Get instance field reference: private System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // public System.Void .ctor(System.String name, System.String prefix)
     // Offset: 0xF79BA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

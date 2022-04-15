@@ -61,11 +61,11 @@ namespace System {
       return *reinterpret_cast<::System::ICloneable*>(this);
     }
     // Get instance field reference: private System.String str
-    [[deprecated]] ::StringW& dyn_str();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_str();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: private System.Char currentElement
-    [[deprecated]] ::Il2CppChar& dyn_currentElement();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_currentElement();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0xE34508
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

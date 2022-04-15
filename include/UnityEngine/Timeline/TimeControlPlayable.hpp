@@ -62,25 +62,22 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Timeline.ITimeControl m_timeControl
-    [[deprecated]] ::UnityEngine::Timeline::ITimeControl*& dyn_m_timeControl();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::ITimeControl*& dyn_m_timeControl();
     // Get instance field reference: private System.Boolean m_started
-    [[deprecated]] bool& dyn_m_started();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_started();
+    // public System.Void .ctor()
+    // Offset: 0xC7C8B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimeControlPlayable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimeControlPlayable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimeControlPlayable*, creationType>()));
+    }
     // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.TimeControlPlayable> Create(UnityEngine.Playables.PlayableGraph graph, UnityEngine.Timeline.ITimeControl timeControl)
     // Offset: 0xC73D58
     static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::TimeControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::Timeline::ITimeControl* timeControl);
     // public System.Void Initialize(UnityEngine.Timeline.ITimeControl timeControl)
     // Offset: 0xC7C62C
     void Initialize(::UnityEngine::Timeline::ITimeControl* timeControl);
-    // public System.Void .ctor()
-    // Offset: 0xC7C8B0
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimeControlPlayable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimeControlPlayable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimeControlPlayable*, creationType>()));
-    }
     // public override System.Void PrepareFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     // Offset: 0xC7C634
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -102,6 +99,10 @@ namespace UnityEngine::Timeline {
   static_assert(sizeof(TimeControlPlayable) == 0x19);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Timeline::TimeControlPlayable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::TimeControlPlayable::Create
 // Il2CppName: Create
 template<>
@@ -121,10 +122,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TimeControlPlayable*), "Initialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{timeControl});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::TimeControlPlayable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::TimeControlPlayable::PrepareFrame
 // Il2CppName: PrepareFrame
 template<>

@@ -44,9 +44,9 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String m_AddComponentMenu
-    [[deprecated]] ::StringW& dyn_m_AddComponentMenu();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_AddComponentMenu();
     // Get instance field reference: private System.Int32 m_Ordering
-    [[deprecated]] int& dyn_m_Ordering();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Ordering();
     // public System.Void .ctor(System.String menuName)
     // Offset: 0x111B014
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

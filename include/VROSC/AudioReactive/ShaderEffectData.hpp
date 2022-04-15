@@ -56,9 +56,9 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: private VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect[] _effects
-    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::ShaderEffectData::Effect*>& dyn__effects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AudioReactive::ShaderEffectData::Effect*>& dyn__effects();
     // public System.Single get_Duration()
     // Offset: 0x1926F70
     float get_Duration();
@@ -69,9 +69,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x1926F80
     // Implemented from: VROSC.AudioReactive.AudioReactiveEffectData
     // Base method: System.Void AudioReactiveEffectData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ShaderEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ShaderEffectData::.ctor");

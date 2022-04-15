@@ -48,11 +48,11 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(::Newtonsoft::Json::DefaultJsonNameTable::Entry*) == 0x8);
     public:
     // Get instance field reference: readonly System.String Value
-    [[deprecated]] ::StringW& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Value();
     // Get instance field reference: readonly System.Int32 HashCode
-    [[deprecated]] int& dyn_HashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_HashCode();
     // Get instance field reference: Newtonsoft.Json.DefaultJsonNameTable/Newtonsoft.Json.Entry Next
-    [[deprecated]] ::Newtonsoft::Json::DefaultJsonNameTable::Entry*& dyn_Next();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::DefaultJsonNameTable::Entry*& dyn_Next();
     // System.Void .ctor(System.String value, System.Int32 hashCode, Newtonsoft.Json.DefaultJsonNameTable/Newtonsoft.Json.Entry next)
     // Offset: 0x159D8E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

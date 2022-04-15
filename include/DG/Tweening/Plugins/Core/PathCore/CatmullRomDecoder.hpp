@@ -57,7 +57,6 @@ namespace DG::Tweening::Plugins::Core::PathCore {
     // Offset: 0x15D3EA8
     // Implemented from: DG.Tweening.Plugins.Core.PathCore.ABSPathDecoder
     // Base method: System.Void ABSPathDecoder::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CatmullRomDecoder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::PathCore::CatmullRomDecoder::.ctor");

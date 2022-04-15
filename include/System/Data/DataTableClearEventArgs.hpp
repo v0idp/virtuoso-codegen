@@ -48,7 +48,7 @@ namespace System::Data {
       return Table;
     }
     // Get instance field reference: private readonly System.Data.DataTable <Table>k__BackingField
-    [[deprecated]] ::System::Data::DataTable*& dyn_$Table$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn_$Table$k__BackingField();
     // public System.Void .ctor(System.Data.DataTable dataTable)
     // Offset: 0x12DFFB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

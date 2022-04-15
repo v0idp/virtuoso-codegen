@@ -65,9 +65,9 @@ namespace UnityEngine {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.GameObject target
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_target();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_target();
       // Get instance field reference: public UnityEngine.Camera camera
-      [[deprecated]] ::UnityEngine::Camera*& dyn_camera();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_camera();
       // public System.Void SendMessage(System.String name)
       // Offset: 0x190734C
       void SendMessage(::StringW name);

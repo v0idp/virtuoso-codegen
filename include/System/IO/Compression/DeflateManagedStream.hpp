@@ -142,25 +142,25 @@ namespace System::IO::Compression {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.IO.Stream _stream
-    [[deprecated]] ::System::IO::Stream*& dyn__stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__stream();
     // Get instance field reference: private System.IO.Compression.CompressionMode _mode
-    [[deprecated]] ::System::IO::Compression::CompressionMode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::CompressionMode& dyn__mode();
     // Get instance field reference: private System.Boolean _leaveOpen
-    [[deprecated]] bool& dyn__leaveOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__leaveOpen();
     // Get instance field reference: private System.IO.Compression.InflaterManaged _inflater
-    [[deprecated]] ::System::IO::Compression::InflaterManaged*& dyn__inflater();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::InflaterManaged*& dyn__inflater();
     // Get instance field reference: private System.IO.Compression.DeflaterManaged _deflater
-    [[deprecated]] ::System::IO::Compression::DeflaterManaged*& dyn__deflater();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflaterManaged*& dyn__deflater();
     // Get instance field reference: private System.Byte[] _buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: private System.Int32 _asyncOperations
-    [[deprecated]] int& dyn__asyncOperations();
+    [[deprecated("Use field access instead!")]] int& dyn__asyncOperations();
     // Get instance field reference: private System.IO.Compression.IFileFormatWriter _formatWriter
-    [[deprecated]] ::System::IO::Compression::IFileFormatWriter*& dyn__formatWriter();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::IFileFormatWriter*& dyn__formatWriter();
     // Get instance field reference: private System.Boolean _wroteHeader
-    [[deprecated]] bool& dyn__wroteHeader();
+    [[deprecated("Use field access instead!")]] bool& dyn__wroteHeader();
     // Get instance field reference: private System.Boolean _wroteBytes
-    [[deprecated]] bool& dyn__wroteBytes();
+    [[deprecated("Use field access instead!")]] bool& dyn__wroteBytes();
     // System.Void .ctor(System.IO.Stream stream, System.IO.Compression.ZipArchiveEntry/System.IO.Compression.CompressionMethodValues method)
     // Offset: 0x1693124
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

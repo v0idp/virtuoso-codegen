@@ -57,7 +57,7 @@ namespace System::Data {
       return xmlreader;
     }
     // Get instance field reference: private System.Xml.XmlReader _xmlreader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn__xmlreader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn__xmlreader();
     // private System.Void .ctor(System.Xml.XmlReader input)
     // Offset: 0x12E3204
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

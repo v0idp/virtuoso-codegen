@@ -93,7 +93,7 @@ namespace MS::Internal::Xml::XPath {
     // Set static field: static public MS.Internal.Xml.XPath.AstNode/MS.Internal.Xml.XPath.AstType Error
     static void _set_Error(::MS::Internal::Xml::XPath::AstNode::AstType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // MS.Internal.Xml.XPath.AstNode/MS.Internal.Xml.XPath.AstType
   #pragma pack(pop)
   static check_size<sizeof(AstNode::AstType), 0 + sizeof(int)> __MS_Internal_Xml_XPath_AstNode_AstTypeSizeCheck;

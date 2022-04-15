@@ -78,13 +78,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static private System.Byte[] Empty
     static void _set_Empty(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.Security.Cryptography.AsymmetricAlgorithm _key
-    [[deprecated]] ::System::Security::Cryptography::AsymmetricAlgorithm*& dyn__key();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsymmetricAlgorithm*& dyn__key();
     // Get instance field reference: private System.Security.Cryptography.AsnEncodedData _keyValue
-    [[deprecated]] ::System::Security::Cryptography::AsnEncodedData*& dyn__keyValue();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsnEncodedData*& dyn__keyValue();
     // Get instance field reference: private System.Security.Cryptography.AsnEncodedData _params
-    [[deprecated]] ::System::Security::Cryptography::AsnEncodedData*& dyn__params();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsnEncodedData*& dyn__params();
     // Get instance field reference: private System.Security.Cryptography.Oid _oid
-    [[deprecated]] ::System::Security::Cryptography::Oid*& dyn__oid();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::Oid*& dyn__oid();
     // public System.Security.Cryptography.AsnEncodedData get_EncodedKeyValue()
     // Offset: 0x140CFE8
     ::System::Security::Cryptography::AsnEncodedData* get_EncodedKeyValue();

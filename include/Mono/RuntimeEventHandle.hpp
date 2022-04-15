@@ -47,7 +47,7 @@ namespace Mono {
       return value;
     }
     // Get instance field reference: private System.IntPtr value
-    [[deprecated]] ::System::IntPtr& dyn_value();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_value();
     // public System.IntPtr get_Value()
     // Offset: 0xCE4174
     ::System::IntPtr get_Value();

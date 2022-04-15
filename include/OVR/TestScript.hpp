@@ -53,34 +53,32 @@ namespace OVR {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVR.SoundFXRef testSound1
-    [[deprecated]] ::OVR::SoundFXRef*& dyn_testSound1();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundFXRef*& dyn_testSound1();
     // Get instance field reference: public OVR.SoundFXRef testSound2
-    [[deprecated]] ::OVR::SoundFXRef*& dyn_testSound2();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundFXRef*& dyn_testSound2();
+    // public System.Void .ctor()
+    // Offset: 0x18A5AE8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TestScript* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::TestScript::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TestScript*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x18A5A44
     void Start();
     // private System.Void Update()
     // Offset: 0x18A5A48
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x18A5AE8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TestScript* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::TestScript::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TestScript*, creationType>()));
-    }
   }; // OVR.TestScript
   #pragma pack(pop)
   static check_size<sizeof(TestScript), 32 + sizeof(::OVR::SoundFXRef*)> __OVR_TestScriptSizeCheck;
   static_assert(sizeof(TestScript) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: OVR::TestScript::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::TestScript::Start
 // Il2CppName: Start
 template<>
@@ -97,7 +95,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::TestScript*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OVR::TestScript::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

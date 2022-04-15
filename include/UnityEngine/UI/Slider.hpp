@@ -122,7 +122,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.Slider/UnityEngine.UI.Direction TopToBottom
       static void _set_TopToBottom(::UnityEngine::UI::Slider::Direction value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.Slider/UnityEngine.UI.Direction
     #pragma pack(pop)
     static check_size<sizeof(Slider::Direction), 0 + sizeof(int)> __UnityEngine_UI_Slider_DirectionSizeCheck;
@@ -244,37 +244,37 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::UnityEngine::EventSystems::IInitializePotentialDragHandler*>(this);
     }
     // Get instance field reference: private UnityEngine.RectTransform m_FillRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_FillRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_FillRect();
     // Get instance field reference: private UnityEngine.RectTransform m_HandleRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_HandleRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_HandleRect();
     // Get instance field reference: private UnityEngine.UI.Slider/UnityEngine.UI.Direction m_Direction
-    [[deprecated]] ::UnityEngine::UI::Slider::Direction& dyn_m_Direction();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider::Direction& dyn_m_Direction();
     // Get instance field reference: private System.Single m_MinValue
-    [[deprecated]] float& dyn_m_MinValue();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MinValue();
     // Get instance field reference: private System.Single m_MaxValue
-    [[deprecated]] float& dyn_m_MaxValue();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MaxValue();
     // Get instance field reference: private System.Boolean m_WholeNumbers
-    [[deprecated]] bool& dyn_m_WholeNumbers();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_WholeNumbers();
     // Get instance field reference: protected System.Single m_Value
-    [[deprecated]] float& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Value();
     // Get instance field reference: private UnityEngine.UI.Slider/UnityEngine.UI.SliderEvent m_OnValueChanged
-    [[deprecated]] ::UnityEngine::UI::Slider::SliderEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider::SliderEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private UnityEngine.UI.Image m_FillImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_FillImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_m_FillImage();
     // Get instance field reference: private UnityEngine.Transform m_FillTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_FillTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_FillTransform();
     // Get instance field reference: private UnityEngine.RectTransform m_FillContainerRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_FillContainerRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_FillContainerRect();
     // Get instance field reference: private UnityEngine.Transform m_HandleTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_HandleTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_HandleTransform();
     // Get instance field reference: private UnityEngine.RectTransform m_HandleContainerRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_HandleContainerRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_HandleContainerRect();
     // Get instance field reference: private UnityEngine.Vector2 m_Offset
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Offset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Offset();
     // Get instance field reference: private UnityEngine.DrivenRectTransformTracker m_Tracker
-    [[deprecated]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
     // Get instance field reference: private System.Boolean m_DelayedUpdateVisuals
-    [[deprecated]] bool& dyn_m_DelayedUpdateVisuals();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DelayedUpdateVisuals();
     // public UnityEngine.RectTransform get_fillRect()
     // Offset: 0x14348A0
     ::UnityEngine::RectTransform* get_fillRect();
@@ -388,11 +388,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Slider* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Slider::.ctor");

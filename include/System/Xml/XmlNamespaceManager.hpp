@@ -99,13 +99,13 @@ namespace System::Xml {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.String prefix
-      [[deprecated]] ::StringW& dyn_prefix();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
       // Get instance field reference: public System.String uri
-      [[deprecated]] ::StringW& dyn_uri();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_uri();
       // Get instance field reference: public System.Int32 scopeId
-      [[deprecated]] int& dyn_scopeId();
+      [[deprecated("Use field access instead!")]] int& dyn_scopeId();
       // Get instance field reference: public System.Int32 previousNsIndex
-      [[deprecated]] int& dyn_previousNsIndex();
+      [[deprecated("Use field access instead!")]] int& dyn_previousNsIndex();
       // public System.Void Set(System.String prefix, System.String uri, System.Int32 scopeId, System.Int32 previousNsIndex)
       // Offset: 0xC210AC
       void Set(::StringW prefix, ::StringW uri, int scopeId, int previousNsIndex);
@@ -178,27 +178,34 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Collections::IEnumerable*>(this);
     }
     // Get instance field reference: private System.Xml.XmlNamespaceManager/System.Xml.NamespaceDeclaration[] nsdecls
-    [[deprecated]] ::ArrayW<::System::Xml::XmlNamespaceManager::NamespaceDeclaration>& dyn_nsdecls();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlNamespaceManager::NamespaceDeclaration>& dyn_nsdecls();
     // Get instance field reference: private System.Int32 lastDecl
-    [[deprecated]] int& dyn_lastDecl();
+    [[deprecated("Use field access instead!")]] int& dyn_lastDecl();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Int32 scopeId
-    [[deprecated]] int& dyn_scopeId();
+    [[deprecated("Use field access instead!")]] int& dyn_scopeId();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Int32> hashTable
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_hashTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, int>*& dyn_hashTable();
     // Get instance field reference: private System.Boolean useHashtable
-    [[deprecated]] bool& dyn_useHashtable();
+    [[deprecated("Use field access instead!")]] bool& dyn_useHashtable();
     // Get instance field reference: private System.String xml
-    [[deprecated]] ::StringW& dyn_xml();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xml();
     // Get instance field reference: private System.String xmlNs
-    [[deprecated]] ::StringW& dyn_xmlNs();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xmlNs();
     // public System.Xml.XmlNameTable get_NameTable()
     // Offset: 0x1014FE0
     ::System::Xml::XmlNameTable* get_NameTable();
     // public System.String get_DefaultNamespace()
     // Offset: 0x1014FE8
     ::StringW get_DefaultNamespace();
+    // System.Void .ctor()
+    // Offset: 0x1014DD8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlNamespaceManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlNamespaceManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlNamespaceManager*, creationType>()));
+    }
     // public System.Void .ctor(System.Xml.XmlNameTable nameTable)
     // Offset: 0x1014DE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -233,15 +240,6 @@ namespace System::Xml {
     // public System.String LookupPrefix(System.String uri)
     // Offset: 0x1015BC8
     ::StringW LookupPrefix(::StringW uri);
-    // System.Void .ctor()
-    // Offset: 0x1014DD8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlNamespaceManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlNamespaceManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlNamespaceManager*, creationType>()));
-    }
   }; // System.Xml.XmlNamespaceManager
   #pragma pack(pop)
   static check_size<sizeof(XmlNamespaceManager), 72 + sizeof(::StringW)> __System_Xml_XmlNamespaceManagerSizeCheck;
@@ -266,6 +264,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlNamespaceManager*), "get_DefaultNamespace", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlNamespaceManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlNamespaceManager::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -350,7 +352,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlNamespaceManager*), "LookupPrefix", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{uri});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlNamespaceManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

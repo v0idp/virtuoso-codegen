@@ -59,7 +59,7 @@ namespace System::Data {
     // Deleting conversion operator: operator ::System::Data::DataTable*
     constexpr operator ::System::Data::DataTable*() const noexcept = delete;
     // Get instance field reference: readonly System.Int32 _op
-    [[deprecated]] int& dyn__op();
+    [[deprecated("Use field access instead!")]] int& dyn__op();
     // System.Void .ctor(System.Int32 op)
     // Offset: 0x18CCC48
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -81,11 +81,11 @@ namespace UnityEngine {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private readonly System.Threading.SendOrPostCallback m_DelagateCallback
-      [[deprecated]] ::System::Threading::SendOrPostCallback*& dyn_m_DelagateCallback();
+      [[deprecated("Use field access instead!")]] ::System::Threading::SendOrPostCallback*& dyn_m_DelagateCallback();
       // Get instance field reference: private readonly System.Object m_DelagateState
-      [[deprecated]] ::Il2CppObject*& dyn_m_DelagateState();
+      [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_DelagateState();
       // Get instance field reference: private readonly System.Threading.ManualResetEvent m_WaitHandle
-      [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_m_WaitHandle();
+      [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_m_WaitHandle();
       // public System.Void .ctor(System.Threading.SendOrPostCallback callback, System.Object state, System.Threading.ManualResetEvent waitHandle)
       // Offset: 0x183E0E4
       // ABORTED: conflicts with another method.  WorkRequest(::System::Threading::SendOrPostCallback* callback, ::Il2CppObject* state, ::System::Threading::ManualResetEvent* waitHandle);
@@ -125,13 +125,13 @@ namespace UnityEngine {
     // Deleting conversion operator: operator ::System::Threading::SynchronizationContextProperties
     constexpr operator ::System::Threading::SynchronizationContextProperties() const noexcept = delete;
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.UnitySynchronizationContext/UnityEngine.WorkRequest> m_AsyncWorkQueue
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UnitySynchronizationContext::WorkRequest>*& dyn_m_AsyncWorkQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UnitySynchronizationContext::WorkRequest>*& dyn_m_AsyncWorkQueue();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.UnitySynchronizationContext/UnityEngine.WorkRequest> m_CurrentFrameWork
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UnitySynchronizationContext::WorkRequest>*& dyn_m_CurrentFrameWork();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UnitySynchronizationContext::WorkRequest>*& dyn_m_CurrentFrameWork();
     // Get instance field reference: private readonly System.Int32 m_MainThreadID
-    [[deprecated]] int& dyn_m_MainThreadID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MainThreadID();
     // Get instance field reference: private System.Int32 m_TrackedCount
-    [[deprecated]] int& dyn_m_TrackedCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_TrackedCount();
     // private System.Void .ctor(System.Int32 mainThreadID)
     // Offset: 0x183DD08
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

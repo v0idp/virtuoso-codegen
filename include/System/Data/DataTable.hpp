@@ -661,149 +661,149 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: private System.Data.DataView _defaultView
-    [[deprecated]] ::System::Data::DataView*& dyn__defaultView();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataView*& dyn__defaultView();
     // Get instance field reference: System.Int64 _nextRowID
-    [[deprecated]] int64_t& dyn__nextRowID();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__nextRowID();
     // Get instance field reference: readonly System.Data.DataRowCollection _rowCollection
-    [[deprecated]] ::System::Data::DataRowCollection*& dyn__rowCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowCollection*& dyn__rowCollection();
     // Get instance field reference: readonly System.Data.DataColumnCollection _columnCollection
-    [[deprecated]] ::System::Data::DataColumnCollection*& dyn__columnCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumnCollection*& dyn__columnCollection();
     // Get instance field reference: private readonly System.Data.ConstraintCollection _constraintCollection
-    [[deprecated]] ::System::Data::ConstraintCollection*& dyn__constraintCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::ConstraintCollection*& dyn__constraintCollection();
     // Get instance field reference: private System.Int32 _elementColumnCount
-    [[deprecated]] int& dyn__elementColumnCount();
+    [[deprecated("Use field access instead!")]] int& dyn__elementColumnCount();
     // Get instance field reference: System.Data.DataRelationCollection _parentRelationsCollection
-    [[deprecated]] ::System::Data::DataRelationCollection*& dyn__parentRelationsCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRelationCollection*& dyn__parentRelationsCollection();
     // Get instance field reference: System.Data.DataRelationCollection _childRelationsCollection
-    [[deprecated]] ::System::Data::DataRelationCollection*& dyn__childRelationsCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRelationCollection*& dyn__childRelationsCollection();
     // Get instance field reference: readonly System.Data.RecordManager _recordManager
-    [[deprecated]] ::System::Data::RecordManager*& dyn__recordManager();
+    [[deprecated("Use field access instead!")]] ::System::Data::RecordManager*& dyn__recordManager();
     // Get instance field reference: readonly System.Collections.Generic.List`1<System.Data.Index> _indexes
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Data::Index*>*& dyn__indexes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Data::Index*>*& dyn__indexes();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Data.Index> _shadowIndexes
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Data::Index*>*& dyn__shadowIndexes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Data::Index*>*& dyn__shadowIndexes();
     // Get instance field reference: private System.Int32 _shadowCount
-    [[deprecated]] int& dyn__shadowCount();
+    [[deprecated("Use field access instead!")]] int& dyn__shadowCount();
     // Get instance field reference: System.Data.PropertyCollection _extendedProperties
-    [[deprecated]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
+    [[deprecated("Use field access instead!")]] ::System::Data::PropertyCollection*& dyn__extendedProperties();
     // Get instance field reference: private System.String _tableName
-    [[deprecated]] ::StringW& dyn__tableName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__tableName();
     // Get instance field reference: System.String _tableNamespace
-    [[deprecated]] ::StringW& dyn__tableNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__tableNamespace();
     // Get instance field reference: private System.String _tablePrefix
-    [[deprecated]] ::StringW& dyn__tablePrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__tablePrefix();
     // Get instance field reference: System.Data.DataExpression _displayExpression
-    [[deprecated]] ::System::Data::DataExpression*& dyn__displayExpression();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataExpression*& dyn__displayExpression();
     // Get instance field reference: System.Boolean _fNestedInDataset
-    [[deprecated]] bool& dyn__fNestedInDataset();
+    [[deprecated("Use field access instead!")]] bool& dyn__fNestedInDataset();
     // Get instance field reference: private System.Globalization.CultureInfo _culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__culture();
     // Get instance field reference: private System.Boolean _cultureUserSet
-    [[deprecated]] bool& dyn__cultureUserSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__cultureUserSet();
     // Get instance field reference: private System.Globalization.CompareInfo _compareInfo
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn__compareInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn__compareInfo();
     // Get instance field reference: private System.Globalization.CompareOptions _compareFlags
-    [[deprecated]] ::System::Globalization::CompareOptions& dyn__compareFlags();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareOptions& dyn__compareFlags();
     // Get instance field reference: private System.IFormatProvider _formatProvider
-    [[deprecated]] ::System::IFormatProvider*& dyn__formatProvider();
+    [[deprecated("Use field access instead!")]] ::System::IFormatProvider*& dyn__formatProvider();
     // Get instance field reference: private System.StringComparer _hashCodeProvider
-    [[deprecated]] ::System::StringComparer*& dyn__hashCodeProvider();
+    [[deprecated("Use field access instead!")]] ::System::StringComparer*& dyn__hashCodeProvider();
     // Get instance field reference: private System.Boolean _caseSensitive
-    [[deprecated]] bool& dyn__caseSensitive();
+    [[deprecated("Use field access instead!")]] bool& dyn__caseSensitive();
     // Get instance field reference: private System.Boolean _caseSensitiveUserSet
-    [[deprecated]] bool& dyn__caseSensitiveUserSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__caseSensitiveUserSet();
     // Get instance field reference: System.String _encodedTableName
-    [[deprecated]] ::StringW& dyn__encodedTableName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__encodedTableName();
     // Get instance field reference: System.Data.DataColumn _xmlText
-    [[deprecated]] ::System::Data::DataColumn*& dyn__xmlText();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__xmlText();
     // Get instance field reference: System.Data.DataColumn _colUnique
-    [[deprecated]] ::System::Data::DataColumn*& dyn__colUnique();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__colUnique();
     // Get instance field reference: System.Decimal _minOccurs
-    [[deprecated]] ::System::Decimal& dyn__minOccurs();
+    [[deprecated("Use field access instead!")]] ::System::Decimal& dyn__minOccurs();
     // Get instance field reference: System.Decimal _maxOccurs
-    [[deprecated]] ::System::Decimal& dyn__maxOccurs();
+    [[deprecated("Use field access instead!")]] ::System::Decimal& dyn__maxOccurs();
     // Get instance field reference: System.Boolean _repeatableElement
-    [[deprecated]] bool& dyn__repeatableElement();
+    [[deprecated("Use field access instead!")]] bool& dyn__repeatableElement();
     // Get instance field reference: private System.Object _typeName
-    [[deprecated]] ::Il2CppObject*& dyn__typeName();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__typeName();
     // Get instance field reference: System.Data.UniqueConstraint _primaryKey
-    [[deprecated]] ::System::Data::UniqueConstraint*& dyn__primaryKey();
+    [[deprecated("Use field access instead!")]] ::System::Data::UniqueConstraint*& dyn__primaryKey();
     // Get instance field reference: System.Data.IndexField[] _primaryIndex
-    [[deprecated]] ::ArrayW<::System::Data::IndexField>& dyn__primaryIndex();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::IndexField>& dyn__primaryIndex();
     // Get instance field reference: private System.Data.DataColumn[] _delayedSetPrimaryKey
-    [[deprecated]] ::ArrayW<::System::Data::DataColumn*>& dyn__delayedSetPrimaryKey();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataColumn*>& dyn__delayedSetPrimaryKey();
     // Get instance field reference: private System.Data.Index _loadIndex
-    [[deprecated]] ::System::Data::Index*& dyn__loadIndex();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__loadIndex();
     // Get instance field reference: private System.Data.Index _loadIndexwithOriginalAdded
-    [[deprecated]] ::System::Data::Index*& dyn__loadIndexwithOriginalAdded();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__loadIndexwithOriginalAdded();
     // Get instance field reference: private System.Data.Index _loadIndexwithCurrentDeleted
-    [[deprecated]] ::System::Data::Index*& dyn__loadIndexwithCurrentDeleted();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__loadIndexwithCurrentDeleted();
     // Get instance field reference: private System.Int32 _suspendIndexEvents
-    [[deprecated]] int& dyn__suspendIndexEvents();
+    [[deprecated("Use field access instead!")]] int& dyn__suspendIndexEvents();
     // Get instance field reference: private System.Boolean _inDataLoad
-    [[deprecated]] bool& dyn__inDataLoad();
+    [[deprecated("Use field access instead!")]] bool& dyn__inDataLoad();
     // Get instance field reference: private System.Boolean _schemaLoading
-    [[deprecated]] bool& dyn__schemaLoading();
+    [[deprecated("Use field access instead!")]] bool& dyn__schemaLoading();
     // Get instance field reference: private System.Boolean _enforceConstraints
-    [[deprecated]] bool& dyn__enforceConstraints();
+    [[deprecated("Use field access instead!")]] bool& dyn__enforceConstraints();
     // Get instance field reference: System.Boolean _suspendEnforceConstraints
-    [[deprecated]] bool& dyn__suspendEnforceConstraints();
+    [[deprecated("Use field access instead!")]] bool& dyn__suspendEnforceConstraints();
     // Get instance field reference: protected internal System.Boolean fInitInProgress
-    [[deprecated]] bool& dyn_fInitInProgress();
+    [[deprecated("Use field access instead!")]] bool& dyn_fInitInProgress();
     // Get instance field reference: private System.Boolean _inLoad
-    [[deprecated]] bool& dyn__inLoad();
+    [[deprecated("Use field access instead!")]] bool& dyn__inLoad();
     // Get instance field reference: System.Boolean _fInLoadDiffgram
-    [[deprecated]] bool& dyn__fInLoadDiffgram();
+    [[deprecated("Use field access instead!")]] bool& dyn__fInLoadDiffgram();
     // Get instance field reference: private System.Byte _isTypedDataTable
-    [[deprecated]] uint8_t& dyn__isTypedDataTable();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn__isTypedDataTable();
     // Get instance field reference: private System.Data.DataRow[] _emptyDataRowArray
-    [[deprecated]] ::ArrayW<::System::Data::DataRow*>& dyn__emptyDataRowArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataRow*>& dyn__emptyDataRowArray();
     // Get instance field reference: private System.ComponentModel.PropertyDescriptorCollection _propertyDescriptorCollectionCache
-    [[deprecated]] ::System::ComponentModel::PropertyDescriptorCollection*& dyn__propertyDescriptorCollectionCache();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyDescriptorCollection*& dyn__propertyDescriptorCollectionCache();
     // Get instance field reference: private System.Data.DataRelation[] _nestedParentRelations
-    [[deprecated]] ::ArrayW<::System::Data::DataRelation*>& dyn__nestedParentRelations();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataRelation*>& dyn__nestedParentRelations();
     // Get instance field reference: System.Collections.Generic.List`1<System.Data.DataColumn> _dependentColumns
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Data::DataColumn*>*& dyn__dependentColumns();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Data::DataColumn*>*& dyn__dependentColumns();
     // Get instance field reference: private System.Boolean _mergingData
-    [[deprecated]] bool& dyn__mergingData();
+    [[deprecated("Use field access instead!")]] bool& dyn__mergingData();
     // Get instance field reference: private System.Data.DataRowChangeEventHandler _onRowChangedDelegate
-    [[deprecated]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowChangedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowChangedDelegate();
     // Get instance field reference: private System.Data.DataRowChangeEventHandler _onRowChangingDelegate
-    [[deprecated]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowChangingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowChangingDelegate();
     // Get instance field reference: private System.Data.DataRowChangeEventHandler _onRowDeletingDelegate
-    [[deprecated]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowDeletingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowDeletingDelegate();
     // Get instance field reference: private System.Data.DataRowChangeEventHandler _onRowDeletedDelegate
-    [[deprecated]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowDeletedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowChangeEventHandler*& dyn__onRowDeletedDelegate();
     // Get instance field reference: private System.Data.DataColumnChangeEventHandler _onColumnChangedDelegate
-    [[deprecated]] ::System::Data::DataColumnChangeEventHandler*& dyn__onColumnChangedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumnChangeEventHandler*& dyn__onColumnChangedDelegate();
     // Get instance field reference: private System.Data.DataColumnChangeEventHandler _onColumnChangingDelegate
-    [[deprecated]] ::System::Data::DataColumnChangeEventHandler*& dyn__onColumnChangingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumnChangeEventHandler*& dyn__onColumnChangingDelegate();
     // Get instance field reference: private System.Data.DataTableClearEventHandler _onTableClearingDelegate
-    [[deprecated]] ::System::Data::DataTableClearEventHandler*& dyn__onTableClearingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTableClearEventHandler*& dyn__onTableClearingDelegate();
     // Get instance field reference: private System.Data.DataTableClearEventHandler _onTableClearedDelegate
-    [[deprecated]] ::System::Data::DataTableClearEventHandler*& dyn__onTableClearedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTableClearEventHandler*& dyn__onTableClearedDelegate();
     // Get instance field reference: private System.Data.DataTableNewRowEventHandler _onTableNewRowDelegate
-    [[deprecated]] ::System::Data::DataTableNewRowEventHandler*& dyn__onTableNewRowDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTableNewRowEventHandler*& dyn__onTableNewRowDelegate();
     // Get instance field reference: private System.ComponentModel.PropertyChangedEventHandler _onPropertyChangingDelegate
-    [[deprecated]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn__onPropertyChangingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn__onPropertyChangingDelegate();
     // Get instance field reference: private readonly System.Data.DataRowBuilder _rowBuilder
-    [[deprecated]] ::System::Data::DataRowBuilder*& dyn__rowBuilder();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowBuilder*& dyn__rowBuilder();
     // Get instance field reference: readonly System.Collections.Generic.List`1<System.Data.DataView> _delayedViews
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Data::DataView*>*& dyn__delayedViews();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Data::DataView*>*& dyn__delayedViews();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Data.DataViewListener> _dataViewListeners
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Data::DataViewListener*>*& dyn__dataViewListeners();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Data::DataViewListener*>*& dyn__dataViewListeners();
     // Get instance field reference: System.Collections.Hashtable _rowDiffId
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__rowDiffId();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__rowDiffId();
     // Get instance field reference: readonly System.Threading.ReaderWriterLockSlim _indexesLock
-    [[deprecated]] ::System::Threading::ReaderWriterLockSlim*& dyn__indexesLock();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ReaderWriterLockSlim*& dyn__indexesLock();
     // Get instance field reference: System.Int32 _ukColumnPositionForInference
-    [[deprecated]] int& dyn__ukColumnPositionForInference();
+    [[deprecated("Use field access instead!")]] int& dyn__ukColumnPositionForInference();
     // Get instance field reference: private System.Data.SerializationFormat _remotingFormat
-    [[deprecated]] ::System::Data::SerializationFormat& dyn__remotingFormat();
+    [[deprecated("Use field access instead!")]] ::System::Data::SerializationFormat& dyn__remotingFormat();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // public System.Boolean get_CaseSensitive()
     // Offset: 0x1048F40
     bool get_CaseSensitive();
@@ -972,6 +972,13 @@ namespace System::Data {
     // System.Int32 get_ObjectID()
     // Offset: 0x10594A8
     int get_ObjectID();
+    // public System.Void .ctor()
+    // Offset: 0x1041A90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataTable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataTable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataTable*, creationType>()));
+    }
     // public System.Void .ctor(System.String tableName)
     // Offset: 0x1041FD0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -1432,16 +1439,6 @@ namespace System::Data {
     // Implemented from: System.ComponentModel.MarshalByValueComponent
     // Base method: System.ComponentModel.ISite MarshalByValueComponent::get_Site()
     ::System::ComponentModel::ISite* get_Site();
-    // public System.Void .ctor()
-    // Offset: 0x1041A90
-    // Implemented from: System.ComponentModel.MarshalByValueComponent
-    // Base method: System.Void MarshalByValueComponent::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataTable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataTable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataTable*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x1054470
     // Implemented from: System.ComponentModel.MarshalByValueComponent
@@ -1918,6 +1915,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataTable*), "get_ObjectID", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::DataTable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataTable::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -3352,10 +3353,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataTable*), "get_Site", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Data::DataTable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataTable::ToString
 // Il2CppName: ToString
 template<>

@@ -73,11 +73,11 @@ namespace System::Data {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private readonly System.Data.DataRowCollection/System.Data.DataRowTree _list
-    [[deprecated]] ::System::Data::DataRowCollection::DataRowTree*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowCollection::DataRowTree*& dyn__list();
     // Get instance field reference: System.Int32 _nullInList
-    [[deprecated]] int& dyn__nullInList();
+    [[deprecated("Use field access instead!")]] int& dyn__nullInList();
     // public System.Data.DataRow get_Item(System.Int32 index)
     // Offset: 0xF96818
     ::System::Data::DataRow* get_Item(int index);

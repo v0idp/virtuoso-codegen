@@ -56,11 +56,11 @@ namespace System::IO::Compression {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: private readonly System.IO.Compression.FastEncoderWindow _inputWindow
-    [[deprecated]] ::System::IO::Compression::FastEncoderWindow*& dyn__inputWindow();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::FastEncoderWindow*& dyn__inputWindow();
     // Get instance field reference: private readonly System.IO.Compression.Match _currentMatch
-    [[deprecated]] ::System::IO::Compression::Match*& dyn__currentMatch();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::Match*& dyn__currentMatch();
     // Get instance field reference: private System.Double _lastCompressionRatio
-    [[deprecated]] double& dyn__lastCompressionRatio();
+    [[deprecated("Use field access instead!")]] double& dyn__lastCompressionRatio();
     // System.Int32 get_BytesInHistory()
     // Offset: 0x1695190
     int get_BytesInHistory();

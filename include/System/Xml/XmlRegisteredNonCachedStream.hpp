@@ -70,11 +70,11 @@ namespace System::Xml {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: protected System.IO.Stream stream
-    [[deprecated]] ::System::IO::Stream*& dyn_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
     // Get instance field reference: private System.Xml.XmlDownloadManager downloadManager
-    [[deprecated]] ::System::Xml::XmlDownloadManager*& dyn_downloadManager();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDownloadManager*& dyn_downloadManager();
     // Get instance field reference: private System.String host
-    [[deprecated]] ::StringW& dyn_host();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_host();
     // System.Void .ctor(System.IO.Stream stream, System.Xml.XmlDownloadManager downloadManager, System.String host)
     // Offset: 0x1106318
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

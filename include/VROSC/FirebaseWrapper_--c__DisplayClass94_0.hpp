@@ -72,34 +72,36 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Action`1<System.Single> onProgress
-    [[deprecated]] ::System::Action_1<float>*& dyn_onProgress();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<float>*& dyn_onProgress();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.Action`1<System.String> onSuccess
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_onSuccess();
     // Get instance field reference: public System.String destinationFilePath
-    [[deprecated]] ::StringW& dyn_destinationFilePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_destinationFilePath();
+    // public System.Void .ctor()
+    // Offset: 0x19560F8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FirebaseWrapper::$$c__DisplayClass94_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::$$c__DisplayClass94_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FirebaseWrapper::$$c__DisplayClass94_0*, creationType>()));
+    }
     // System.Void <LoadPreviewFile>b__0(Firebase.Storage.DownloadState state)
     // Offset: 0x1956100
     void $LoadPreviewFile$b__0(::Firebase::Storage::DownloadState* state);
     // System.Void <LoadPreviewFile>b__1(System.Threading.Tasks.Task task)
     // Offset: 0x19561A0
     void $LoadPreviewFile$b__1(::System::Threading::Tasks::Task* task);
-    // public System.Void .ctor()
-    // Offset: 0x19560F8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FirebaseWrapper::$$c__DisplayClass94_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::$$c__DisplayClass94_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FirebaseWrapper::$$c__DisplayClass94_0*, creationType>()));
-    }
   }; // VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass94_0
   #pragma pack(pop)
   static check_size<sizeof(FirebaseWrapper::$$c__DisplayClass94_0), 40 + sizeof(::StringW)> __VROSC_FirebaseWrapper_$$c__DisplayClass94_0SizeCheck;
   static_assert(sizeof(FirebaseWrapper::$$c__DisplayClass94_0) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass94_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass94_0::$LoadPreviewFile$b__0
 // Il2CppName: <LoadPreviewFile>b__0
 template<>
@@ -118,7 +120,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper::$$c__DisplayClass94_0*), "<LoadPreviewFile>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{task});
   }
 };
-// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass94_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

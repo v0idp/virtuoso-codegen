@@ -56,7 +56,7 @@ namespace System::IO {
     static_assert(sizeof(::System::TermInfoDriver*) == 0x8);
     public:
     // Get instance field reference: private System.TermInfoDriver driver
-    [[deprecated]] ::System::TermInfoDriver*& dyn_driver();
+    [[deprecated("Use field access instead!")]] ::System::TermInfoDriver*& dyn_driver();
     // public System.Void .ctor(System.IO.Stream stream, System.Text.Encoding encoding)
     // Offset: 0xFF3B58
     // Implemented from: System.IO.StreamReader

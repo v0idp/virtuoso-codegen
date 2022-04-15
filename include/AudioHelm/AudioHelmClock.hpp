@@ -94,11 +94,11 @@ namespace AudioHelm {
     // Set static field: static private System.Double SECONDS_PER_MIN
     static void _set_SECONDS_PER_MIN(double value);
     // Get instance field reference: private AudioHelm.AudioHelmClock/AudioHelm.ResetAction OnReset
-    [[deprecated]] ::AudioHelm::AudioHelmClock::ResetAction*& dyn_OnReset();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::AudioHelmClock::ResetAction*& dyn_OnReset();
     // Get instance field reference: private System.Single bpm_
-    [[deprecated]] float& dyn_bpm_();
+    [[deprecated("Use field access instead!")]] float& dyn_bpm_();
     // Get instance field reference: private System.Boolean pause_
-    [[deprecated]] bool& dyn_pause_();
+    [[deprecated("Use field access instead!")]] bool& dyn_pause_();
     // public System.Single get_bpm()
     // Offset: 0x96F578
     float get_bpm();
@@ -117,6 +117,16 @@ namespace AudioHelm {
     // public System.Void remove_OnReset(AudioHelm.AudioHelmClock/AudioHelm.ResetAction value)
     // Offset: 0x96F4D8
     void remove_OnReset(::AudioHelm::AudioHelmClock::ResetAction* value);
+    // public System.Void .ctor()
+    // Offset: 0x96FB68
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioHelmClock* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::AudioHelmClock::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioHelmClock*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x96FB78
+    static void _cctor();
     // static public AudioHelm.AudioHelmClock GetInstance()
     // Offset: 0x96F6B8
     static ::AudioHelm::AudioHelmClock* GetInstance();
@@ -153,24 +163,6 @@ namespace AudioHelm {
     // private System.Void FixedUpdate()
     // Offset: 0x96FA98
     void FixedUpdate();
-    // public System.Void .ctor()
-    // Offset: 0x96FB68
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioHelmClock* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::AudioHelmClock::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioHelmClock*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x96FB78
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // AudioHelm.AudioHelmClock
   #pragma pack(pop)
   static check_size<sizeof(AudioHelmClock), 36 + sizeof(bool)> __AudioHelm_AudioHelmClockSizeCheck;
@@ -227,6 +219,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("AudioHelm", "AudioHelmClock/ResetAction")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::AudioHelmClock*), "remove_OnReset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: AudioHelm::AudioHelmClock::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: AudioHelm::AudioHelmClock::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&AudioHelm::AudioHelmClock::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(AudioHelm::AudioHelmClock*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: AudioHelm::AudioHelmClock::GetInstance
@@ -324,17 +328,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (AudioHelm::AudioHelmClock::*)()>(&AudioHelm::AudioHelmClock::FixedUpdate)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::AudioHelmClock*), "FixedUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: AudioHelm::AudioHelmClock::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: AudioHelm::AudioHelmClock::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&AudioHelm::AudioHelmClock::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(AudioHelm::AudioHelmClock*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

@@ -45,9 +45,9 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Hashtable Attributes
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_Attributes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_Attributes();
     // Get instance field reference: public System.Collections.Hashtable Elements
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_Elements();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_Elements();
     // public System.Void .ctor()
     // Offset: 0xE595D8
     // Implemented from: System.Object

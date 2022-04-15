@@ -62,7 +62,7 @@ namespace System::Data {
       return columns;
     }
     // Get instance field reference: private readonly System.Data.DataColumn[] _columns
-    [[deprecated]] ::ArrayW<::System::Data::DataColumn*>& dyn__columns();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataColumn*>& dyn__columns();
     // System.Data.DataColumn[] get_ColumnsReference()
     // Offset: 0xF98DB4
     ::ArrayW<::System::Data::DataColumn*> get_ColumnsReference();

@@ -60,7 +60,7 @@ namespace Firebase {
     // Set static field: static public Firebase.FutureStatus Invalid
     static void _set_Invalid(::Firebase::FutureStatus value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Firebase.FutureStatus
   #pragma pack(pop)
   static check_size<sizeof(FutureStatus), 0 + sizeof(int)> __Firebase_FutureStatusSizeCheck;

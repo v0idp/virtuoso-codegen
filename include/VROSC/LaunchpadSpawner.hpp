@@ -150,33 +150,33 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Launchpad*) == 0x8);
     public:
     // Get instance field reference: private VROSC.Launchpad _launchpadPrefab
-    [[deprecated]] ::VROSC::Launchpad*& dyn__launchpadPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Launchpad*& dyn__launchpadPrefab();
     // Get instance field reference: private UnityEngine.Transform _spawnPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__spawnPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__spawnPoint();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Launchpad> _spawnedLaunchPads
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Launchpad*>*& dyn__spawnedLaunchPads();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Launchpad*>*& dyn__spawnedLaunchPads();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadCreated
-    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadCreated();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadCreated();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadMoved
-    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadMoved();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadMoved();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadDeleted
-    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadDeleted();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadDeleted();
     // Get instance field reference: public System.Action`1<VROSC.Launchpad> OnLaunchPadHit
-    [[deprecated]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadHit();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Launchpad*>*& dyn_OnLaunchPadHit();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnTargetColorChanged
-    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnTargetColorChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnTargetColorChanged();
     // Get instance field reference: public System.Action`1<System.String> OnTargetNameChanged
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_OnTargetNameChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_OnTargetNameChanged();
     // Get instance field reference: private System.String <CurrentName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$CurrentName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$CurrentName$k__BackingField();
     // Get instance field reference: private UnityEngine.Color <CurrentColor>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
     // Get instance field reference: private System.String _targetID
-    [[deprecated]] ::StringW& dyn__targetID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__targetID();
     // Get instance field reference: private UnityEngine.Transform _launchPadParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__launchPadParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__launchPadParent();
     // Get instance field reference: private VROSC.Launchpad _currentlyHeldLaunchpad
-    [[deprecated]] ::VROSC::Launchpad*& dyn__currentlyHeldLaunchpad();
+    [[deprecated("Use field access instead!")]] ::VROSC::Launchpad*& dyn__currentlyHeldLaunchpad();
     // public System.String get_CurrentName()
     // Offset: 0x194EBC4
     ::StringW get_CurrentName();
@@ -221,11 +221,6 @@ namespace VROSC {
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LaunchpadSpawner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LaunchpadSpawner::.ctor");

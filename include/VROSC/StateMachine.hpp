@@ -85,13 +85,20 @@ namespace VROSC {
     // Set static field: static private System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition> EmptyTransitions
     static void _set_EmptyTransitions(::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>* value);
     // Get instance field reference: private VROSC.IState _currentState
-    [[deprecated]] ::VROSC::IState*& dyn__currentState();
+    [[deprecated("Use field access instead!")]] ::VROSC::IState*& dyn__currentState();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Type,System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition>> _transitions
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*>*& dyn__transitions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*>*& dyn__transitions();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition> _currentTransitions
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__currentTransitions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__currentTransitions();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.StateMachine/VROSC.Transition> _anyTransitions
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__anyTransitions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*& dyn__anyTransitions();
+    // public System.Void .ctor()
+    // Offset: 0x193096C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StateMachine* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StateMachine::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StateMachine*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x1930A44
     static void _cctor();
@@ -113,21 +120,16 @@ namespace VROSC {
     // private System.Boolean GetTransition(out VROSC.StateMachine/VROSC.Transition transition)
     // Offset: 0x1930270
     bool GetTransition(ByRef<::VROSC::StateMachine::Transition*> transition);
-    // public System.Void .ctor()
-    // Offset: 0x193096C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StateMachine* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StateMachine::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StateMachine*, creationType>()));
-    }
   }; // VROSC.StateMachine
   #pragma pack(pop)
   static check_size<sizeof(StateMachine), 40 + sizeof(::System::Collections::Generic::List_1<::VROSC::StateMachine::Transition*>*)> __VROSC_StateMachineSizeCheck;
   static_assert(sizeof(StateMachine) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::StateMachine::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::StateMachine::_cctor
 // Il2CppName: .cctor
 template<>
@@ -193,7 +195,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::StateMachine*), "GetTransition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{transition});
   }
 };
-// Writing MetadataGetter for method: VROSC::StateMachine::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

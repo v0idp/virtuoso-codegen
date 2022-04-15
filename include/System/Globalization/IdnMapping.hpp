@@ -57,11 +57,11 @@ namespace System::Globalization {
     static_assert(sizeof(::System::Globalization::Punycode*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean allow_unassigned
-    [[deprecated]] bool& dyn_allow_unassigned();
+    [[deprecated("Use field access instead!")]] bool& dyn_allow_unassigned();
     // Get instance field reference: private System.Boolean use_std3
-    [[deprecated]] bool& dyn_use_std3();
+    [[deprecated("Use field access instead!")]] bool& dyn_use_std3();
     // Get instance field reference: private System.Globalization.Punycode puny
-    [[deprecated]] ::System::Globalization::Punycode*& dyn_puny();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::Punycode*& dyn_puny();
     // public System.String GetAscii(System.String unicode)
     // Offset: 0x146105C
     ::StringW GetAscii(::StringW unicode);

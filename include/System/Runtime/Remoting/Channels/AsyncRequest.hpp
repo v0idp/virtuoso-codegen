@@ -50,9 +50,9 @@ namespace System::Runtime::Remoting::Channels {
     static_assert(sizeof(::System::Runtime::Remoting::Messaging::IMessage*) == 0x8);
     public:
     // Get instance field reference: System.Runtime.Remoting.Messaging.IMessageSink ReplySink
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_ReplySink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_ReplySink();
     // Get instance field reference: System.Runtime.Remoting.Messaging.IMessage MsgRequest
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessage*& dyn_MsgRequest();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessage*& dyn_MsgRequest();
     // public System.Void .ctor(System.Runtime.Remoting.Messaging.IMessage msgRequest, System.Runtime.Remoting.Messaging.IMessageSink replySink)
     // Offset: 0x1146D48
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

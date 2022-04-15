@@ -75,7 +75,7 @@ namespace System::Xml::Schema {
       return atomicConverter;
     }
     // Get instance field reference: protected System.Xml.Schema.XmlValueConverter atomicConverter
-    [[deprecated]] ::System::Xml::Schema::XmlValueConverter*& dyn_atomicConverter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlValueConverter*& dyn_atomicConverter();
     // static public System.Xml.Schema.XmlValueConverter Create(System.Xml.Schema.XmlValueConverter atomicConverter)
     // Offset: 0x12860B4
     static ::System::Xml::Schema::XmlValueConverter* Create(::System::Xml::Schema::XmlValueConverter* atomicConverter);

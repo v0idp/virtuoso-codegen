@@ -52,25 +52,23 @@ namespace System::Xml::Schema {
       return positions;
     }
     // Get instance field reference: private System.Collections.ArrayList positions
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_positions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_positions();
     // public System.Xml.Schema.Position get_Item(System.Int32 pos)
     // Offset: 0xAF745C
     ::System::Xml::Schema::Position get_Item(int pos);
     // public System.Int32 get_Count()
     // Offset: 0xAFB950
     int get_Count();
-    // public System.Int32 Add(System.Int32 symbol, System.Object particle)
-    // Offset: 0xAF6FA4
-    int Add(int symbol, ::Il2CppObject* particle);
     // public System.Void .ctor()
     // Offset: 0xAFA9F8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Positions* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::Positions::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Positions*, creationType>()));
     }
+    // public System.Int32 Add(System.Int32 symbol, System.Object particle)
+    // Offset: 0xAF6FA4
+    int Add(int symbol, ::Il2CppObject* particle);
   }; // System.Xml.Schema.Positions
   #pragma pack(pop)
   static check_size<sizeof(Positions), 16 + sizeof(::System::Collections::ArrayList*)> __System_Xml_Schema_PositionsSizeCheck;
@@ -94,6 +92,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::Positions*), "get_Count", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::Positions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::Positions::Add
 // Il2CppName: Add
 template<>
@@ -104,7 +106,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::Positions*), "Add", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{symbol, particle});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::Positions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

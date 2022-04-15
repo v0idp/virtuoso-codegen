@@ -399,23 +399,23 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Int32 Ci
     static void _set_Ci(int value);
     // Get instance field reference: System.Int32[] _codes
-    [[deprecated]] ::ArrayW<int>& dyn__codes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__codes();
     // Get instance field reference: System.String[] _strings
-    [[deprecated]] ::ArrayW<::StringW>& dyn__strings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__strings();
     // Get instance field reference: System.Int32 _trackcount
-    [[deprecated]] int& dyn__trackcount();
+    [[deprecated("Use field access instead!")]] int& dyn__trackcount();
     // Get instance field reference: System.Collections.Hashtable _caps
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__caps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__caps();
     // Get instance field reference: System.Int32 _capsize
-    [[deprecated]] int& dyn__capsize();
+    [[deprecated("Use field access instead!")]] int& dyn__capsize();
     // Get instance field reference: System.Text.RegularExpressions.RegexPrefix _fcPrefix
-    [[deprecated]] ::System::Text::RegularExpressions::RegexPrefix*& dyn__fcPrefix();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexPrefix*& dyn__fcPrefix();
     // Get instance field reference: System.Text.RegularExpressions.RegexBoyerMoore _bmPrefix
-    [[deprecated]] ::System::Text::RegularExpressions::RegexBoyerMoore*& dyn__bmPrefix();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexBoyerMoore*& dyn__bmPrefix();
     // Get instance field reference: System.Int32 _anchors
-    [[deprecated]] int& dyn__anchors();
+    [[deprecated("Use field access instead!")]] int& dyn__anchors();
     // Get instance field reference: System.Boolean _rightToLeft
-    [[deprecated]] bool& dyn__rightToLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn__rightToLeft();
     // System.Void .ctor(System.Int32[] codes, System.Collections.Generic.List`1<System.String> stringlist, System.Int32 trackcount, System.Collections.Hashtable caps, System.Int32 capsize, System.Text.RegularExpressions.RegexBoyerMoore bmPrefix, System.Text.RegularExpressions.RegexPrefix fcPrefix, System.Int32 anchors, System.Boolean rightToLeft)
     // Offset: 0x1845E08
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -73,11 +73,11 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::System::IO::StringWriter*) == 0x8);
     public:
     // Get instance field reference: private readonly Newtonsoft.Json.JsonWriter _innerWriter
-    [[deprecated]] ::Newtonsoft::Json::JsonWriter*& dyn__innerWriter();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonWriter*& dyn__innerWriter();
     // Get instance field reference: private readonly Newtonsoft.Json.JsonTextWriter _textWriter
-    [[deprecated]] ::Newtonsoft::Json::JsonTextWriter*& dyn__textWriter();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonTextWriter*& dyn__textWriter();
     // Get instance field reference: private readonly System.IO.StringWriter _sw
-    [[deprecated]] ::System::IO::StringWriter*& dyn__sw();
+    [[deprecated("Use field access instead!")]] ::System::IO::StringWriter*& dyn__sw();
     // public System.Void .ctor(Newtonsoft.Json.JsonWriter innerWriter)
     // Offset: 0x158E108
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -62,9 +62,16 @@ namespace NatSuite::Examples {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private NatSuite.Devices.IAudioDevice device
-    [[deprecated]] ::NatSuite::Devices::IAudioDevice*& dyn_device();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::IAudioDevice*& dyn_device();
     // Get instance field reference: private NatSuite.Examples.Components.ClipRecorder recorder
-    [[deprecated]] ::NatSuite::Examples::Components::ClipRecorder*& dyn_recorder();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Examples::Components::ClipRecorder*& dyn_recorder();
+    // public System.Void .ctor()
+    // Offset: 0x1942298
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HotMic* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Examples::HotMic::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HotMic*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1941D5C
     void Start();
@@ -74,25 +81,16 @@ namespace NatSuite::Examples {
     // public System.Void StopRecording()
     // Offset: 0x19421C0
     void StopRecording();
-    // public System.Void .ctor()
-    // Offset: 0x1942298
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HotMic* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Examples::HotMic::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HotMic*, creationType>()));
-    }
   }; // NatSuite.Examples.HotMic
   #pragma pack(pop)
   static check_size<sizeof(HotMic), 32 + sizeof(::NatSuite::Examples::Components::ClipRecorder*)> __NatSuite_Examples_HotMicSizeCheck;
   static_assert(sizeof(HotMic) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: NatSuite::Examples::HotMic::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Examples::HotMic::Start
 // Il2CppName: Start
 template<>
@@ -117,7 +115,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Examples::HotMic*), "StopRecording", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Examples::HotMic::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

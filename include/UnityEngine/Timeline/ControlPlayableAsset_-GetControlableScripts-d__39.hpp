@@ -99,19 +99,19 @@ namespace UnityEngine::Timeline {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::UnityEngine::MonoBehaviour*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private UnityEngine.MonoBehaviour <>2__current
-    [[deprecated]] ::UnityEngine::MonoBehaviour*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MonoBehaviour*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: private UnityEngine.GameObject root
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_root();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_root();
     // Get instance field reference: public UnityEngine.GameObject <>3__root
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$$3__root();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$$3__root();
     // Get instance field reference: private UnityEngine.MonoBehaviour[] <>7__wrap1
-    [[deprecated]] ::ArrayW<::UnityEngine::MonoBehaviour*>& dyn_$$7__wrap1();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::MonoBehaviour*>& dyn_$$7__wrap1();
     // Get instance field reference: private System.Int32 <>7__wrap2
-    [[deprecated]] int& dyn_$$7__wrap2();
+    [[deprecated("Use field access instead!")]] int& dyn_$$7__wrap2();
     // private UnityEngine.MonoBehaviour System.Collections.Generic.IEnumerator<UnityEngine.MonoBehaviour>.get_Current()
     // Offset: 0x18D4C40
     ::UnityEngine::MonoBehaviour* System_Collections_Generic_IEnumerator$UnityEngine_MonoBehaviour$_get_Current();

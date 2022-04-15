@@ -893,287 +893,287 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::ArrayW<::System::Xml::XmlQualifiedName*>) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: public System.String NsDataType
-    [[deprecated]] ::StringW& dyn_NsDataType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsDataType();
     // Get instance field reference: public System.String NsDataTypeAlias
-    [[deprecated]] ::StringW& dyn_NsDataTypeAlias();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsDataTypeAlias();
     // Get instance field reference: public System.String NsDataTypeOld
-    [[deprecated]] ::StringW& dyn_NsDataTypeOld();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsDataTypeOld();
     // Get instance field reference: public System.String NsXml
-    [[deprecated]] ::StringW& dyn_NsXml();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXml();
     // Get instance field reference: public System.String NsXmlNs
-    [[deprecated]] ::StringW& dyn_NsXmlNs();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXmlNs();
     // Get instance field reference: public System.String NsXdr
-    [[deprecated]] ::StringW& dyn_NsXdr();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXdr();
     // Get instance field reference: public System.String NsXdrAlias
-    [[deprecated]] ::StringW& dyn_NsXdrAlias();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXdrAlias();
     // Get instance field reference: public System.String NsXs
-    [[deprecated]] ::StringW& dyn_NsXs();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXs();
     // Get instance field reference: public System.String NsXsi
-    [[deprecated]] ::StringW& dyn_NsXsi();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXsi();
     // Get instance field reference: public System.String XsiType
-    [[deprecated]] ::StringW& dyn_XsiType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiType();
     // Get instance field reference: public System.String XsiNil
-    [[deprecated]] ::StringW& dyn_XsiNil();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiNil();
     // Get instance field reference: public System.String XsiSchemaLocation
-    [[deprecated]] ::StringW& dyn_XsiSchemaLocation();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiSchemaLocation();
     // Get instance field reference: public System.String XsiNoNamespaceSchemaLocation
-    [[deprecated]] ::StringW& dyn_XsiNoNamespaceSchemaLocation();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiNoNamespaceSchemaLocation();
     // Get instance field reference: public System.String XsdSchema
-    [[deprecated]] ::StringW& dyn_XsdSchema();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsdSchema();
     // Get instance field reference: public System.String XdrSchema
-    [[deprecated]] ::StringW& dyn_XdrSchema();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XdrSchema();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnPCData
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnPCData();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnPCData();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXml
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXml();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXml();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXmlNs
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXmlNs();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXmlNs();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtDt
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtDt();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtDt();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXmlLang
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXmlLang();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXmlLang();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnName();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnMaxOccurs
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnMaxOccurs();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnMaxOccurs();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnMinOccurs
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnMinOccurs();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnMinOccurs();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnInfinite
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnInfinite();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnInfinite();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnModel
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnModel();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnModel();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnOpen
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnOpen();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnOpen();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnClosed
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnClosed();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnClosed();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnContent
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnContent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnContent();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnMixed
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnMixed();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnMixed();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnEmpty
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnEmpty();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnEmpty();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnEltOnly
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnEltOnly();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnEltOnly();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnTextOnly
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnTextOnly();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnTextOnly();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnOrder
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnOrder();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnOrder();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnSeq
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnSeq();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnSeq();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnOne
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnOne();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnOne();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnMany
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnMany();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnMany();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnRequired
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnRequired();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnRequired();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnYes
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnYes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnYes();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnNo
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnNo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnNo();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnString
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnString();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnString();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnID
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnID();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnID();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnIDRef
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnIDRef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnIDRef();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnIDRefs
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnIDRefs();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnIDRefs();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnEntity
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnEntity();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnEntity();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnEntities
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnEntities();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnEntities();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnNmToken
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnNmToken();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnNmToken();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnNmTokens
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnNmTokens();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnNmTokens();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnEnumeration
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnEnumeration();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnEnumeration();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDefault
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDefault();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrSchema
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrSchema();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrElementType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrElementType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrElementType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrElement
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrElement();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrElement();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrGroup
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrGroup();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrGroup();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrAttributeType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrAttributeType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrAttributeType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrAttribute
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrAttribute();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrDataType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrDataType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrDataType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrDescription
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrDescription();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrDescription();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrExtends
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrExtends();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrExtends();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXdrAliasSchema
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrAliasSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXdrAliasSchema();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtValues
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtValues();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtValues();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtMaxLength
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMaxLength();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMaxLength();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtMinLength
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMinLength();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMinLength();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtMax
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMax();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMax();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtMin
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMin();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMin();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtMinExclusive
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMinExclusive();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMinExclusive();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDtMaxExclusive
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMaxExclusive();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDtMaxExclusive();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnTargetNamespace
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnTargetNamespace();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnTargetNamespace();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnVersion
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnVersion();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnVersion();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnFinalDefault
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnFinalDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnFinalDefault();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnBlockDefault
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnBlockDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnBlockDefault();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnFixed
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnFixed();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnFixed();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnAbstract
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnAbstract();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnAbstract();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnBlock
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnBlock();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnBlock();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnSubstitutionGroup
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnSubstitutionGroup();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnSubstitutionGroup();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnFinal
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnFinal();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnFinal();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnNillable
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnNillable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnNillable();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnRef
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnRef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnRef();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnBase
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnBase();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnBase();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnDerivedBy
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnDerivedBy();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnDerivedBy();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnNamespace
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnNamespace();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnNamespace();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnProcessContents
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnProcessContents();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnProcessContents();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnRefer
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnRefer();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnRefer();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnPublic
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnPublic();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnPublic();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnSystem
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnSystem();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnSystem();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnSchemaLocation
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnSchemaLocation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnSchemaLocation();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnValue
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnValue();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnValue();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnUse
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnUse();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnUse();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnForm
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnForm();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnForm();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnElementFormDefault
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnElementFormDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnElementFormDefault();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnAttributeFormDefault
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnAttributeFormDefault();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnAttributeFormDefault();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnItemType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnItemType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnItemType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnMemberTypes
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnMemberTypes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnMemberTypes();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXPath
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXPath();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXPath();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdSchema
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSchema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSchema();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAnnotation
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAnnotation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAnnotation();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdInclude
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdInclude();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdInclude();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdImport
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdImport();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdImport();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdElement
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdElement();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdElement();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAttribute
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAttribute();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAttributeGroup
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAttributeGroup();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAttributeGroup();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAnyAttribute
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAnyAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAnyAttribute();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdGroup
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdGroup();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdGroup();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAll
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAll();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAll();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdChoice
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdChoice();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdChoice();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdSequence
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSequence();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSequence();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAny
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAny();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAny();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdNotation
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdNotation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdNotation();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdSimpleType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSimpleType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSimpleType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdComplexType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdComplexType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdComplexType();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdUnique
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdUnique();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdUnique();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdKey
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdKey();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdKey();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdKeyRef
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdKeyRef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdKeyRef();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdSelector
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSelector();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSelector();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdField
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdField();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdField();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdMinExclusive
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMinExclusive();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMinExclusive();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdMinInclusive
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMinInclusive();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMinInclusive();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdMaxInclusive
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMaxInclusive();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMaxInclusive();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdMaxExclusive
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMaxExclusive();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMaxExclusive();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdTotalDigits
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdTotalDigits();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdTotalDigits();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdFractionDigits
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdFractionDigits();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdFractionDigits();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdLength
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdLength();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdLength();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdMinLength
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMinLength();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMinLength();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdMaxLength
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMaxLength();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdMaxLength();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdEnumeration
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdEnumeration();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdEnumeration();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdPattern
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdPattern();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdPattern();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdDocumentation
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdDocumentation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdDocumentation();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAppinfo
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAppinfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAppinfo();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnSource
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnSource();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnSource();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdComplexContent
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdComplexContent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdComplexContent();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdSimpleContent
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSimpleContent();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdSimpleContent();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdRestriction
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdRestriction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdRestriction();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdExtension
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdExtension();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdExtension();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdUnion
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdUnion();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdUnion();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdList
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdList();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdList();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdWhiteSpace
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdWhiteSpace();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdWhiteSpace();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdRedefine
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdRedefine();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdRedefine();
     // Get instance field reference: public System.Xml.XmlQualifiedName QnXsdAnyType
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAnyType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_QnXsdAnyType();
     // Get instance field reference: System.Xml.XmlQualifiedName[] TokenToQName
-    [[deprecated]] ::ArrayW<::System::Xml::XmlQualifiedName*>& dyn_TokenToQName();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlQualifiedName*>& dyn_TokenToQName();
     // public System.Void .ctor(System.Xml.XmlNameTable nameTable)
     // Offset: 0xF682A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -92,21 +92,21 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.Models.MatchmakingAdminSnapshot AdminSnapshotOptional
-    [[deprecated]] ::Oculus::Platform::Models::MatchmakingAdminSnapshot*& dyn_AdminSnapshotOptional();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::MatchmakingAdminSnapshot*& dyn_AdminSnapshotOptional();
     // Get instance field reference: public readonly Oculus.Platform.Models.MatchmakingAdminSnapshot AdminSnapshot
-    [[deprecated]] ::Oculus::Platform::Models::MatchmakingAdminSnapshot*& dyn_AdminSnapshot();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::MatchmakingAdminSnapshot*& dyn_AdminSnapshot();
     // Get instance field reference: public readonly System.UInt32 AverageWait
-    [[deprecated]] uint& dyn_AverageWait();
+    [[deprecated("Use field access instead!")]] uint& dyn_AverageWait();
     // Get instance field reference: public readonly System.UInt32 MatchesInLastHourCount
-    [[deprecated]] uint& dyn_MatchesInLastHourCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_MatchesInLastHourCount();
     // Get instance field reference: public readonly System.UInt32 MaxExpectedWait
-    [[deprecated]] uint& dyn_MaxExpectedWait();
+    [[deprecated("Use field access instead!")]] uint& dyn_MaxExpectedWait();
     // Get instance field reference: public readonly System.String Pool
-    [[deprecated]] ::StringW& dyn_Pool();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Pool();
     // Get instance field reference: public readonly System.UInt32 RecentMatchPercentage
-    [[deprecated]] uint& dyn_RecentMatchPercentage();
+    [[deprecated("Use field access instead!")]] uint& dyn_RecentMatchPercentage();
     // Get instance field reference: public readonly System.String RequestHash
-    [[deprecated]] ::StringW& dyn_RequestHash();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_RequestHash();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB4282C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

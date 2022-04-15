@@ -100,7 +100,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState Revert
       static void _set_Revert(::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState
     #pragma pack(pop)
     static check_size<sizeof(ActivationControlPlayable::PostPlaybackState), 0 + sizeof(int)> __UnityEngine_Timeline_ActivationControlPlayable_PostPlaybackStateSizeCheck;
@@ -148,7 +148,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.InitialState Inactive
       static void _set_Inactive(::UnityEngine::Timeline::ActivationControlPlayable::InitialState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.InitialState
     #pragma pack(pop)
     static check_size<sizeof(ActivationControlPlayable::InitialState), 0 + sizeof(int)> __UnityEngine_Timeline_ActivationControlPlayable_InitialStateSizeCheck;
@@ -174,24 +174,21 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::UnityEngine::Timeline::ActivationControlPlayable::InitialState) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.GameObject gameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_gameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_gameObject();
     // Get instance field reference: public UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState postPlayback
-    [[deprecated]] ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState& dyn_postPlayback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState& dyn_postPlayback();
     // Get instance field reference: private UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.InitialState m_InitialState
-    [[deprecated]] ::UnityEngine::Timeline::ActivationControlPlayable::InitialState& dyn_m_InitialState();
-    // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.ActivationControlPlayable> Create(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject gameObject, UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState postPlaybackState)
-    // Offset: 0xC68F68
-    static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ActivationControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* gameObject, ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState postPlaybackState);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::ActivationControlPlayable::InitialState& dyn_m_InitialState();
     // public System.Void .ctor()
     // Offset: 0xC6941C
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ActivationControlPlayable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ActivationControlPlayable::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ActivationControlPlayable*, creationType>()));
     }
+    // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.ActivationControlPlayable> Create(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject gameObject, UnityEngine.Timeline.ActivationControlPlayable/UnityEngine.Timeline.PostPlaybackState postPlaybackState)
+    // Offset: 0xC68F68
+    static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::ActivationControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* gameObject, ::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState postPlaybackState);
     // public override System.Void OnBehaviourPlay(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
     // Offset: 0xC690C8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -227,6 +224,10 @@ DEFINE_IL2CPP_ARG_TYPE(::UnityEngine::Timeline::ActivationControlPlayable::Initi
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::UnityEngine::Timeline::ActivationControlPlayable::PostPlaybackState, "UnityEngine.Timeline", "ActivationControlPlayable/PostPlaybackState");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Timeline::ActivationControlPlayable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::ActivationControlPlayable::Create
 // Il2CppName: Create
 template<>
@@ -238,10 +239,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::ActivationControlPlayable*), "Create", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{graph, gameObject, postPlaybackState});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::ActivationControlPlayable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::ActivationControlPlayable::OnBehaviourPlay
 // Il2CppName: OnBehaviourPlay
 template<>

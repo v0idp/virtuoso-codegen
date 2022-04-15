@@ -178,33 +178,33 @@ namespace Unity::RemoteConfig {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private Unity.RemoteConfig.ConfigRequestStatus <requestStatus>k__BackingField
-    [[deprecated]] ::Unity::RemoteConfig::ConfigRequestStatus& dyn_$requestStatus$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::ConfigRequestStatus& dyn_$requestStatus$k__BackingField();
     // Get instance field reference: private System.Action`1<Unity.RemoteConfig.ConfigResponse> FetchCompleted
-    [[deprecated]] ::System::Action_1<::Unity::RemoteConfig::ConfigResponse>*& dyn_FetchCompleted();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Unity::RemoteConfig::ConfigResponse>*& dyn_FetchCompleted();
     // Get instance field reference: private Unity.RemoteConfig.RuntimeConfig <appConfig>k__BackingField
-    [[deprecated]] ::Unity::RemoteConfig::RuntimeConfig*& dyn_$appConfig$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::RuntimeConfig*& dyn_$appConfig$k__BackingField();
     // Get instance field reference: Unity.RemoteConfig.Delivery deliveryPayload
-    [[deprecated]] ::Unity::RemoteConfig::Delivery& dyn_deliveryPayload();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::Delivery& dyn_deliveryPayload();
     // Get instance field reference: Unity.RemoteConfig.Common commonPayload
-    [[deprecated]] ::Unity::RemoteConfig::Common& dyn_commonPayload();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::Common& dyn_commonPayload();
     // Get instance field reference: Unity.RemoteConfig.DeviceInfo deviceInfoPayload
-    [[deprecated]] ::Unity::RemoteConfig::DeviceInfo*& dyn_deviceInfoPayload();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::DeviceInfo*& dyn_deviceInfoPayload();
     // Get instance field reference: private System.Action`2<Unity.RemoteConfig.ConfigResponse,Newtonsoft.Json.Linq.JObject> ResponseParsed
-    [[deprecated]] ::System::Action_2<::Unity::RemoteConfig::ConfigResponse, ::Newtonsoft::Json::Linq::JObject*>*& dyn_ResponseParsed();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::Unity::RemoteConfig::ConfigResponse, ::Newtonsoft::Json::Linq::JObject*>*& dyn_ResponseParsed();
     // Get instance field reference: private System.Action`3<Unity.RemoteConfig.ConfigOrigin,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String> RawResponseReturned
-    [[deprecated]] ::System::Action_3<::Unity::RemoteConfig::ConfigOrigin, ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*, ::StringW>*& dyn_RawResponseReturned();
+    [[deprecated("Use field access instead!")]] ::System::Action_3<::Unity::RemoteConfig::ConfigOrigin, ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*, ::StringW>*& dyn_RawResponseReturned();
     // Get instance field reference: private System.Action`3<Unity.RemoteConfig.ConfigOrigin,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String> RawResponseValidated
-    [[deprecated]] ::System::Action_3<::Unity::RemoteConfig::ConfigOrigin, ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*, ::StringW>*& dyn_RawResponseValidated();
+    [[deprecated("Use field access instead!")]] ::System::Action_3<::Unity::RemoteConfig::ConfigOrigin, ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*, ::StringW>*& dyn_RawResponseValidated();
     // Get instance field reference: System.Collections.Generic.List`1<System.Func`1<Newtonsoft.Json.Linq.JObject>> requestPayloadProviders
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Func_1<::Newtonsoft::Json::Linq::JObject*>*>*& dyn_requestPayloadProviders();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Func_1<::Newtonsoft::Json::Linq::JObject*>*>*& dyn_requestPayloadProviders();
     // Get instance field reference: System.Collections.Generic.List`1<System.Func`1<Unity.RemoteConfig.RequestHeaderTuple>> requestHeaderProviders
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Func_1<::Unity::RemoteConfig::RequestHeaderTuple>*>*& dyn_requestHeaderProviders();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Func_1<::Unity::RemoteConfig::RequestHeaderTuple>*>*& dyn_requestHeaderProviders();
     // Get instance field reference: System.Collections.Generic.List`1<System.Func`3<System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String,System.Boolean>> rawResponseValidators
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Func_3<::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*, ::StringW, bool>*>*& dyn_rawResponseValidators();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Func_3<::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*, ::StringW, bool>*>*& dyn_rawResponseValidators();
     // Get instance field reference: System.String cacheFile
-    [[deprecated]] ::StringW& dyn_cacheFile();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_cacheFile();
     // Get instance field reference: System.String cacheHeadersFile
-    [[deprecated]] ::StringW& dyn_cacheHeadersFile();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_cacheHeadersFile();
     // public Unity.RemoteConfig.ConfigRequestStatus get_requestStatus()
     // Offset: 0x18C1BF8
     ::Unity::RemoteConfig::ConfigRequestStatus get_requestStatus();

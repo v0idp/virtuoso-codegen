@@ -53,27 +53,29 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::FirebaseWrapper::$$c__DisplayClass56_1*) == 0x8);
     public:
     // Get instance field reference: public Firebase.Firestore.DocumentSnapshot favoriteDocument
-    [[deprecated]] ::Firebase::Firestore::DocumentSnapshot*& dyn_favoriteDocument();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::DocumentSnapshot*& dyn_favoriteDocument();
     // Get instance field reference: public VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass56_1 CS$<>8__locals2
-    [[deprecated]] ::VROSC::FirebaseWrapper::$$c__DisplayClass56_1*& dyn_CS$$$8__locals2();
-    // System.Void <GetUserFavorites>b__1(System.Collections.Generic.Dictionary`2<System.String,System.Object> sessionDocDict)
-    // Offset: 0x1953E14
-    void $GetUserFavorites$b__1(::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* sessionDocDict);
+    [[deprecated("Use field access instead!")]] ::VROSC::FirebaseWrapper::$$c__DisplayClass56_1*& dyn_CS$$$8__locals2();
     // public System.Void .ctor()
     // Offset: 0x1953E04
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseWrapper::$$c__DisplayClass56_2* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::$$c__DisplayClass56_2::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseWrapper::$$c__DisplayClass56_2*, creationType>()));
     }
+    // System.Void <GetUserFavorites>b__1(System.Collections.Generic.Dictionary`2<System.String,System.Object> sessionDocDict)
+    // Offset: 0x1953E14
+    void $GetUserFavorites$b__1(::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>* sessionDocDict);
   }; // VROSC.FirebaseWrapper/VROSC.<>c__DisplayClass56_2
   #pragma pack(pop)
   static check_size<sizeof(FirebaseWrapper::$$c__DisplayClass56_2), 24 + sizeof(::VROSC::FirebaseWrapper::$$c__DisplayClass56_1*)> __VROSC_FirebaseWrapper_$$c__DisplayClass56_2SizeCheck;
   static_assert(sizeof(FirebaseWrapper::$$c__DisplayClass56_2) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass56_2::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass56_2::$GetUserFavorites$b__1
 // Il2CppName: <GetUserFavorites>b__1
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper::$$c__DisplayClass56_2*), "<GetUserFavorites>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionDocDict});
   }
 };
-// Writing MetadataGetter for method: VROSC::FirebaseWrapper::$$c__DisplayClass56_2::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

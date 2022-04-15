@@ -62,21 +62,19 @@ namespace System::Linq::Expressions {
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<StackGuard::$$c__3_2<T1, T2>*>::get(), ".cctor", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___internal__method);
     }
+    // public System.Void .ctor()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StackGuard::$$c__3_2<T1, T2>* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::StackGuard::$$c__3_2::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StackGuard::$$c__3_2<T1, T2>*, creationType>()));
+    }
     // System.Object <RunOnEmptyStack>b__3_0(System.Object s)
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::Il2CppObject* $RunOnEmptyStack$b__3_0(::Il2CppObject* s) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::StackGuard::$$c__3_2::<RunOnEmptyStack>b__3_0");
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "<RunOnEmptyStack>b__3_0", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(s)})));
       return ::il2cpp_utils::RunMethodRethrow<::Il2CppObject*, false>(this, ___internal__method, s);
-    }
-    // public System.Void .ctor()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StackGuard::$$c__3_2<T1, T2>* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::StackGuard::$$c__3_2::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StackGuard::$$c__3_2<T1, T2>*, creationType>()));
     }
   }; // System.Linq.Expressions.StackGuard/System.Linq.Expressions.<>c__3`2
   // Could not write size check! Type: System.Linq.Expressions.StackGuard/System.Linq.Expressions.<>c__3`2 is generic, or has no fields that are valid for size checks!

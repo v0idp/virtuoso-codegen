@@ -53,13 +53,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Single <RootScale>k__BackingField
-    [[deprecated]] float& dyn_$RootScale$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$RootScale$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // Get instance field reference: private System.Boolean <ShouldUseSystemGestureMaterial>k__BackingField
-    [[deprecated]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ShouldUseSystemGestureMaterial$k__BackingField();
     // public System.Single get_RootScale()
     // Offset: 0x13EF8EC
     float get_RootScale();

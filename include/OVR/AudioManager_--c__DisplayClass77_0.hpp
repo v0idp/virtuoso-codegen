@@ -46,25 +46,27 @@ namespace OVR {
       return priority;
     }
     // Get instance field reference: public OVR.SoundPriority priority
-    [[deprecated]] ::OVR::SoundPriority& dyn_priority();
-    // System.Boolean <FindFreeEmitter>b__0(OVR.SoundEmitter item)
-    // Offset: 0x18A5BE4
-    bool $FindFreeEmitter$b__0(::OVR::SoundEmitter* item);
+    [[deprecated("Use field access instead!")]] ::OVR::SoundPriority& dyn_priority();
     // public System.Void .ctor()
     // Offset: 0x18A1CD0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioManager::$$c__DisplayClass77_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::AudioManager::$$c__DisplayClass77_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AudioManager::$$c__DisplayClass77_0*, creationType>()));
     }
+    // System.Boolean <FindFreeEmitter>b__0(OVR.SoundEmitter item)
+    // Offset: 0x18A5BE4
+    bool $FindFreeEmitter$b__0(::OVR::SoundEmitter* item);
   }; // OVR.AudioManager/OVR.<>c__DisplayClass77_0
   #pragma pack(pop)
   static check_size<sizeof(AudioManager::$$c__DisplayClass77_0), 16 + sizeof(::OVR::SoundPriority)> __OVR_AudioManager_$$c__DisplayClass77_0SizeCheck;
   static_assert(sizeof(AudioManager::$$c__DisplayClass77_0) == 0x14);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: OVR::AudioManager::$$c__DisplayClass77_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::AudioManager::$$c__DisplayClass77_0::$FindFreeEmitter$b__0
 // Il2CppName: <FindFreeEmitter>b__0
 template<>
@@ -74,7 +76,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::AudioManager::$$c__DisplayClass77_0*), "<FindFreeEmitter>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{item});
   }
 };
-// Writing MetadataGetter for method: OVR::AudioManager::$$c__DisplayClass77_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

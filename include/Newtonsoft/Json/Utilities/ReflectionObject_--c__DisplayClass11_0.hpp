@@ -47,25 +47,27 @@ namespace Newtonsoft::Json::Utilities {
       return ctor;
     }
     // Get instance field reference: public System.Func`1<System.Object> ctor
-    [[deprecated]] ::System::Func_1<::Il2CppObject*>*& dyn_ctor();
-    // System.Object <Create>b__0(System.Object[] args)
-    // Offset: 0x159FE6C
-    ::Il2CppObject* $Create$b__0(::ArrayW<::Il2CppObject*> args);
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::Il2CppObject*>*& dyn_ctor();
     // public System.Void .ctor()
     // Offset: 0x159FE64
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ReflectionObject::$$c__DisplayClass11_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::ReflectionObject::$$c__DisplayClass11_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ReflectionObject::$$c__DisplayClass11_0*, creationType>()));
     }
+    // System.Object <Create>b__0(System.Object[] args)
+    // Offset: 0x159FE6C
+    ::Il2CppObject* $Create$b__0(::ArrayW<::Il2CppObject*> args);
   }; // Newtonsoft.Json.Utilities.ReflectionObject/Newtonsoft.Json.Utilities.<>c__DisplayClass11_0
   #pragma pack(pop)
   static check_size<sizeof(ReflectionObject::$$c__DisplayClass11_0), 16 + sizeof(::System::Func_1<::Il2CppObject*>*)> __Newtonsoft_Json_Utilities_ReflectionObject_$$c__DisplayClass11_0SizeCheck;
   static_assert(sizeof(ReflectionObject::$$c__DisplayClass11_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionObject::$$c__DisplayClass11_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionObject::$$c__DisplayClass11_0::$Create$b__0
 // Il2CppName: <Create>b__0
 template<>
@@ -75,7 +77,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Utilities::ReflectionObject::$$c__DisplayClass11_0*), "<Create>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{args});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionObject::$$c__DisplayClass11_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

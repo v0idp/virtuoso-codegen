@@ -56,13 +56,13 @@ namespace System::Net {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Net.CookieCollection m_cookies
-    [[deprecated]] ::System::Net::CookieCollection*& dyn_m_cookies();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieCollection*& dyn_m_cookies();
     // Get instance field reference: private System.Int32 m_count
-    [[deprecated]] int& dyn_m_count();
+    [[deprecated("Use field access instead!")]] int& dyn_m_count();
     // Get instance field reference: private System.Int32 m_index
-    [[deprecated]] int& dyn_m_index();
+    [[deprecated("Use field access instead!")]] int& dyn_m_index();
     // Get instance field reference: private System.Int32 m_version
-    [[deprecated]] int& dyn_m_version();
+    [[deprecated("Use field access instead!")]] int& dyn_m_version();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0x9F4D60
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

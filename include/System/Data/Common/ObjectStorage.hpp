@@ -113,9 +113,9 @@ namespace System::Data::Common {
     // Set static field: static private readonly System.Xml.Serialization.XmlSerializerFactory s_serializerFactory
     static void _set_s_serializerFactory(::System::Xml::Serialization::XmlSerializerFactory* value);
     // Get instance field reference: private System.Object[] _values
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__values();
     // Get instance field reference: private readonly System.Boolean _implementsIXmlSerializable
-    [[deprecated]] bool& dyn__implementsIXmlSerializable();
+    [[deprecated("Use field access instead!")]] bool& dyn__implementsIXmlSerializable();
     // System.Void .ctor(System.Data.DataColumn column, System.Type type)
     // Offset: 0x13BD79C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

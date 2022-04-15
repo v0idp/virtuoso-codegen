@@ -87,19 +87,19 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Text.RegularExpressions.RegexNode _root
-    [[deprecated]] ::System::Text::RegularExpressions::RegexNode*& dyn__root();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexNode*& dyn__root();
     // Get instance field reference: System.Collections.Hashtable _caps
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__caps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__caps();
     // Get instance field reference: System.Int32[] _capnumlist
-    [[deprecated]] ::ArrayW<int>& dyn__capnumlist();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__capnumlist();
     // Get instance field reference: System.Collections.Hashtable _capnames
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__capnames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__capnames();
     // Get instance field reference: System.String[] _capslist
-    [[deprecated]] ::ArrayW<::StringW>& dyn__capslist();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__capslist();
     // Get instance field reference: System.Text.RegularExpressions.RegexOptions _options
-    [[deprecated]] ::System::Text::RegularExpressions::RegexOptions& dyn__options();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexOptions& dyn__options();
     // Get instance field reference: System.Int32 _captop
-    [[deprecated]] int& dyn__captop();
+    [[deprecated("Use field access instead!")]] int& dyn__captop();
     // System.Void .ctor(System.Text.RegularExpressions.RegexNode root, System.Collections.Hashtable caps, System.Int32[] capnumlist, System.Int32 captop, System.Collections.Hashtable capnames, System.String[] capslist, System.Text.RegularExpressions.RegexOptions opts)
     // Offset: 0x184BB84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

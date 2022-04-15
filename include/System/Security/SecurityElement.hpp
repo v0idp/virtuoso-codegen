@@ -95,13 +95,13 @@ namespace System::Security {
     // Set static field: static private readonly System.Char[] invalid_chars
     static void _set_invalid_chars(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: private System.String text
-    [[deprecated]] ::StringW& dyn_text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_text();
     // Get instance field reference: private System.String tag
-    [[deprecated]] ::StringW& dyn_tag();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_tag();
     // Get instance field reference: private System.Collections.ArrayList attributes
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_attributes();
     // Get instance field reference: private System.Collections.ArrayList children
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_children();
     // public System.Collections.Hashtable get_Attributes()
     // Offset: 0x117404C
     ::System::Collections::Hashtable* get_Attributes();

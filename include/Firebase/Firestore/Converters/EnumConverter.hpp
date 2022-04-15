@@ -57,7 +57,7 @@ namespace Firebase::Firestore::Converters {
     // Deleting conversion operator: operator ::System::Type*
     constexpr operator ::System::Type*() const noexcept = delete;
     // Get instance field reference: private readonly System.TypeCode _typeCode
-    [[deprecated]] ::System::TypeCode& dyn__typeCode();
+    [[deprecated("Use field access instead!")]] ::System::TypeCode& dyn__typeCode();
     // private System.Int64 EnumToInt64(System.Object value)
     // Offset: 0xD54E24
     int64_t EnumToInt64(::Il2CppObject* value);

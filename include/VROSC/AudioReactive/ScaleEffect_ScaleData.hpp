@@ -64,13 +64,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private UnityEngine.Transform _transform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__transform();
     // Get instance field reference: private UnityEngine.Vector3 _startScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startScale();
     // Get instance field reference: private UnityEngine.Vector3 _initialScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__initialScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__initialScale();
     // Get instance field reference: private UnityEngine.Vector3 _endScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__endScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__endScale();
     // public System.Void .ctor(UnityEngine.Transform transform, VROSC.AudioReactive.ScaleEffectData data)
     // Offset: 0x8D4320
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

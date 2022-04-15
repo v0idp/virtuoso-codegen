@@ -54,7 +54,7 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformMover*) == 0x8);
     public:
     // Get instance field reference: private VROSC.TransformMover _target
-    [[deprecated]] ::VROSC::TransformMover*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn__target();
     // public VROSC.TransformMover get_Target()
     // Offset: 0xA2C5C4
     ::VROSC::TransformMover* get_Target();
@@ -72,11 +72,6 @@ namespace VROSC {
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransformMoverRelay* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TransformMoverRelay::.ctor");

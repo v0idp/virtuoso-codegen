@@ -89,17 +89,17 @@ namespace UnityEngine::Timeline {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip m_Clip
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip*& dyn_m_Clip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip*& dyn_m_Clip();
     // Get instance field reference: private UnityEngine.Playables.Playable m_Playable
-    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
     // Get instance field reference: private UnityEngine.Playables.Playable m_ParentMixer
-    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_ParentMixer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::Playable& dyn_m_ParentMixer();
     // Get instance field reference: private System.Double m_StartDelay
-    [[deprecated]] double& dyn_m_StartDelay();
+    [[deprecated("Use field access instead!")]] double& dyn_m_StartDelay();
     // Get instance field reference: private System.Double m_FinishTail
-    [[deprecated]] double& dyn_m_FinishTail();
+    [[deprecated("Use field access instead!")]] double& dyn_m_FinishTail();
     // Get instance field reference: private System.Boolean m_Started
-    [[deprecated]] bool& dyn_m_Started();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Started();
     // public UnityEngine.Timeline.TimelineClip get_clip()
     // Offset: 0xC7B3EC
     ::UnityEngine::Timeline::TimelineClip* get_clip();

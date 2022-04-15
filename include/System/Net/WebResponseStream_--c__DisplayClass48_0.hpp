@@ -67,34 +67,36 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Net.WebResponseStream <>4__this
-    [[deprecated]] ::System::Net::WebResponseStream*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebResponseStream*& dyn_$$4__this();
     // Get instance field reference: public System.Byte[] buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: public System.Int32 offset
-    [[deprecated]] int& dyn_offset();
+    [[deprecated("Use field access instead!")]] int& dyn_offset();
     // Get instance field reference: public System.Int32 size
-    [[deprecated]] int& dyn_size();
+    [[deprecated("Use field access instead!")]] int& dyn_size();
+    // public System.Void .ctor()
+    // Offset: 0x17CC394
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WebResponseStream::$$c__DisplayClass48_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebResponseStream::$$c__DisplayClass48_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WebResponseStream::$$c__DisplayClass48_0*, creationType>()));
+    }
     // System.Threading.Tasks.Task`1<System.ValueTuple`2<System.Int32,System.Int32>> <ReadAsync>b__0(System.Threading.CancellationToken ct)
     // Offset: 0x17CC39C
     ::System::Threading::Tasks::Task_1<::System::ValueTuple_2<int, int>>* $ReadAsync$b__0(::System::Threading::CancellationToken ct);
     // System.Void <ReadAsync>b__1()
     // Offset: 0x17CC3C8
     void $ReadAsync$b__1();
-    // public System.Void .ctor()
-    // Offset: 0x17CC394
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WebResponseStream::$$c__DisplayClass48_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::WebResponseStream::$$c__DisplayClass48_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WebResponseStream::$$c__DisplayClass48_0*, creationType>()));
-    }
   }; // System.Net.WebResponseStream/System.Net.<>c__DisplayClass48_0
   #pragma pack(pop)
   static check_size<sizeof(WebResponseStream::$$c__DisplayClass48_0), 36 + sizeof(int)> __System_Net_WebResponseStream_$$c__DisplayClass48_0SizeCheck;
   static_assert(sizeof(WebResponseStream::$$c__DisplayClass48_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Net::WebResponseStream::$$c__DisplayClass48_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::WebResponseStream::$$c__DisplayClass48_0::$ReadAsync$b__0
 // Il2CppName: <ReadAsync>b__0
 template<>
@@ -112,7 +114,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::WebResponseStream::$$c__DisplayClass48_0*), "<ReadAsync>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::WebResponseStream::$$c__DisplayClass48_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

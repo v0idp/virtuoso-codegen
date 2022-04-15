@@ -174,39 +174,39 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AdjustableMeshColors <Colors>k__BackingField
-    [[deprecated]] ::VROSC::AdjustableMeshColors*& dyn_$Colors$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshColors*& dyn_$Colors$k__BackingField();
     // Get instance field reference: private VROSC.AdjustableMeshUvs <UVs>k__BackingField
-    [[deprecated]] ::VROSC::AdjustableMeshUvs*& dyn_$UVs$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshUvs*& dyn_$UVs$k__BackingField();
     // Get instance field reference: private VROSC.AdjustableMeshVerts <Verts>k__BackingField
-    [[deprecated]] ::VROSC::AdjustableMeshVerts*& dyn_$Verts$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshVerts*& dyn_$Verts$k__BackingField();
     // Get instance field reference: protected UnityEngine.Mesh _original
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__original();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__original();
     // Get instance field reference: private VROSC.AdjustableMeshUvs/VROSC.Channel _uvChannel
-    [[deprecated]] ::VROSC::AdjustableMeshUvs::Channel& dyn__uvChannel();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshUvs::Channel& dyn__uvChannel();
     // Get instance field reference: private System.Boolean _floatColors
-    [[deprecated]] bool& dyn__floatColors();
+    [[deprecated("Use field access instead!")]] bool& dyn__floatColors();
     // Get instance field reference: private System.Single _multiplyOriginalVertexColor
-    [[deprecated]] float& dyn__multiplyOriginalVertexColor();
+    [[deprecated("Use field access instead!")]] float& dyn__multiplyOriginalVertexColor();
     // Get instance field reference: private System.Single _appearFlashAmount
-    [[deprecated]] float& dyn__appearFlashAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__appearFlashAmount();
     // Get instance field reference: protected System.Single _appearAmount
-    [[deprecated]] float& dyn__appearAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__appearAmount();
     // Get instance field reference: protected VROSC.AnimatedAppear/VROSC.Mode _appearMode
-    [[deprecated]] ::VROSC::AnimatedAppear::Mode& dyn__appearMode();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppear::Mode& dyn__appearMode();
     // Get instance field reference: protected System.Boolean _useFlash
-    [[deprecated]] bool& dyn__useFlash();
+    [[deprecated("Use field access instead!")]] bool& dyn__useFlash();
     // Get instance field reference: protected UnityEngine.Mesh _instantiatedMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__instantiatedMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__instantiatedMesh();
     // Get instance field reference: protected UnityEngine.MeshFilter _meshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
     // Get instance field reference: protected UnityEngine.MeshRenderer _meshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__meshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__meshRenderer();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: public System.Action OnMeshCreation
-    [[deprecated]] ::System::Action*& dyn_OnMeshCreation();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnMeshCreation();
     // Get instance field reference: public System.Action OnMeshVisible
-    [[deprecated]] ::System::Action*& dyn_OnMeshVisible();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnMeshVisible();
     // public UnityEngine.Mesh get_Mesh()
     // Offset: 0x965FA0
     ::UnityEngine::Mesh* get_Mesh();
@@ -240,6 +240,13 @@ namespace VROSC {
     // private System.Void set_Verts(VROSC.AdjustableMeshVerts value)
     // Offset: 0x966170
     void set_Verts(::VROSC::AdjustableMeshVerts* value);
+    // public System.Void .ctor()
+    // Offset: 0x966E18
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AdjustableMesh* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMesh::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AdjustableMesh*, creationType>()));
+    }
     // private UnityEngine.RectTransform GetRectTransform()
     // Offset: 0x9660A8
     ::UnityEngine::RectTransform* GetRectTransform();
@@ -279,19 +286,6 @@ namespace VROSC {
     // public System.Void AddUIColoring()
     // Offset: 0x966DB0
     void AddUIColoring();
-    // public System.Void .ctor()
-    // Offset: 0x966E18
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AdjustableMesh* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMesh::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AdjustableMesh*, creationType>()));
-    }
   }; // VROSC.AdjustableMesh
   #pragma pack(pop)
   static check_size<sizeof(AdjustableMesh), 128 + sizeof(::System::Action*)> __VROSC_AdjustableMeshSizeCheck;
@@ -389,6 +383,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AdjustableMesh*), "set_Verts", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::AdjustableMesh::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AdjustableMesh::GetRectTransform
 // Il2CppName: GetRectTransform
 template<>
@@ -499,7 +497,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AdjustableMesh*), "AddUIColoring", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AdjustableMesh::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

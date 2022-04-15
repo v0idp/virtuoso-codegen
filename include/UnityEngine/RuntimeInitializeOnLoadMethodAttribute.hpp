@@ -45,7 +45,7 @@ namespace UnityEngine {
       return m_LoadType;
     }
     // Get instance field reference: private UnityEngine.RuntimeInitializeLoadType m_LoadType
-    [[deprecated]] ::UnityEngine::RuntimeInitializeLoadType& dyn_m_LoadType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RuntimeInitializeLoadType& dyn_m_LoadType();
     // private System.Void set_loadType(UnityEngine.RuntimeInitializeLoadType value)
     // Offset: 0xBD0F10
     void set_loadType(::UnityEngine::RuntimeInitializeLoadType value);
@@ -60,8 +60,6 @@ namespace UnityEngine {
     // Offset: 0xBD0EE8
     // Implemented from: UnityEngine.Scripting.PreserveAttribute
     // Base method: System.Void PreserveAttribute::.ctor()
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RuntimeInitializeOnLoadMethodAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::RuntimeInitializeOnLoadMethodAttribute::.ctor");

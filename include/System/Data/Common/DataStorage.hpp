@@ -162,27 +162,27 @@ namespace System::Data::Common {
     // Set static field: static private readonly System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,System.Tuple`4<System.Boolean,System.Boolean,System.Boolean,System.Boolean>> s_typeImplementsInterface
     static void _set_s_typeImplementsInterface(::System::Collections::Concurrent::ConcurrentDictionary_2<::System::Type*, ::System::Tuple_4<bool, bool, bool, bool>*>* value);
     // Get instance field reference: readonly System.Data.DataColumn _column
-    [[deprecated]] ::System::Data::DataColumn*& dyn__column();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__column();
     // Get instance field reference: readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: readonly System.Type _dataType
-    [[deprecated]] ::System::Type*& dyn__dataType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__dataType();
     // Get instance field reference: readonly System.Data.Common.StorageType _storageTypeCode
-    [[deprecated]] ::System::Data::Common::StorageType& dyn__storageTypeCode();
+    [[deprecated("Use field access instead!")]] ::System::Data::Common::StorageType& dyn__storageTypeCode();
     // Get instance field reference: private System.Collections.BitArray _dbNullBits
-    [[deprecated]] ::System::Collections::BitArray*& dyn__dbNullBits();
+    [[deprecated("Use field access instead!")]] ::System::Collections::BitArray*& dyn__dbNullBits();
     // Get instance field reference: private readonly System.Object _defaultValue
-    [[deprecated]] ::Il2CppObject*& dyn__defaultValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__defaultValue();
     // Get instance field reference: readonly System.Object _nullValue
-    [[deprecated]] ::Il2CppObject*& dyn__nullValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__nullValue();
     // Get instance field reference: readonly System.Boolean _isCloneable
-    [[deprecated]] bool& dyn__isCloneable();
+    [[deprecated("Use field access instead!")]] bool& dyn__isCloneable();
     // Get instance field reference: readonly System.Boolean _isCustomDefinedType
-    [[deprecated]] bool& dyn__isCustomDefinedType();
+    [[deprecated("Use field access instead!")]] bool& dyn__isCustomDefinedType();
     // Get instance field reference: readonly System.Boolean _isStringType
-    [[deprecated]] bool& dyn__isStringType();
+    [[deprecated("Use field access instead!")]] bool& dyn__isStringType();
     // Get instance field reference: readonly System.Boolean _isValueType
-    [[deprecated]] bool& dyn__isValueType();
+    [[deprecated("Use field access instead!")]] bool& dyn__isValueType();
     // System.Data.DataSetDateTime get_DateTimeMode()
     // Offset: 0x103F5FC
     ::System::Data::DataSetDateTime get_DateTimeMode();

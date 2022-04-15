@@ -75,7 +75,7 @@ namespace Newtonsoft::Json::Linq {
       return values;
     }
     // Get instance field reference: private readonly System.Collections.Generic.List`1<Newtonsoft.Json.Linq.JToken> _values
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Linq::JToken*>*& dyn__values();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Linq::JToken*>*& dyn__values();
     // public Newtonsoft.Json.Linq.JToken get_Item(System.Int32 index)
     // Offset: 0xEDAB38
     ::Newtonsoft::Json::Linq::JToken* get_Item(int index);
@@ -144,7 +144,6 @@ namespace Newtonsoft::Json::Linq {
     // Implemented from: Newtonsoft.Json.Linq.JContainer
     // Base method: System.Void JContainer::.ctor()
     // Base method: System.Void JToken::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JArray* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JArray::.ctor");

@@ -77,11 +77,11 @@ namespace System::Resources {
       return *reinterpret_cast<::System::Collections::IEnumerable*>(this);
     }
     // Get instance field reference: protected System.Resources.IResourceReader Reader
-    [[deprecated]] ::System::Resources::IResourceReader*& dyn_Reader();
+    [[deprecated("Use field access instead!")]] ::System::Resources::IResourceReader*& dyn_Reader();
     // Get instance field reference: protected System.Collections.Hashtable Table
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_Table();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_Table();
     // Get instance field reference: private System.Collections.Hashtable _caseInsensitiveTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__caseInsensitiveTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__caseInsensitiveTable();
     // System.Void .ctor(System.Boolean junk)
     // Offset: 0xCDF5C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

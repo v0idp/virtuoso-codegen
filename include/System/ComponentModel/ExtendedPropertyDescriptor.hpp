@@ -63,9 +63,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::ComponentModel::IExtenderProvider*) == 0x8);
     public:
     // Get instance field reference: private readonly System.ComponentModel.ReflectPropertyDescriptor extenderInfo
-    [[deprecated]] ::System::ComponentModel::ReflectPropertyDescriptor*& dyn_extenderInfo();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ReflectPropertyDescriptor*& dyn_extenderInfo();
     // Get instance field reference: private readonly System.ComponentModel.IExtenderProvider provider
-    [[deprecated]] ::System::ComponentModel::IExtenderProvider*& dyn_provider();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::IExtenderProvider*& dyn_provider();
     // public System.Void .ctor(System.ComponentModel.ReflectPropertyDescriptor extenderInfo, System.Type receiverType, System.ComponentModel.IExtenderProvider provider, System.Attribute[] attributes)
     // Offset: 0xEFFF84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

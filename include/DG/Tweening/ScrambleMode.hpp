@@ -78,7 +78,7 @@ namespace DG::Tweening {
     // Set static field: static public DG.Tweening.ScrambleMode Custom
     static void _set_Custom(::DG::Tweening::ScrambleMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // DG.Tweening.ScrambleMode
   #pragma pack(pop)
   static check_size<sizeof(ScrambleMode), 0 + sizeof(int)> __DG_Tweening_ScrambleModeSizeCheck;

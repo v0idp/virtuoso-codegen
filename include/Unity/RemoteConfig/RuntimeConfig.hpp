@@ -83,15 +83,15 @@ namespace Unity::RemoteConfig {
     static_assert(sizeof(::Newtonsoft::Json::JsonSerializerSettings*) == 0x8);
     public:
     // Get instance field reference: private Unity.RemoteConfig.ConfigOrigin <origin>k__BackingField
-    [[deprecated]] ::Unity::RemoteConfig::ConfigOrigin& dyn_$origin$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::ConfigOrigin& dyn_$origin$k__BackingField();
     // Get instance field reference: Newtonsoft.Json.Linq.JObject _config
-    [[deprecated]] ::Newtonsoft::Json::Linq::JObject*& dyn__config();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JObject*& dyn__config();
     // Get instance field reference: Newtonsoft.Json.Linq.JObject metadata
-    [[deprecated]] ::Newtonsoft::Json::Linq::JObject*& dyn_metadata();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JObject*& dyn_metadata();
     // Get instance field reference: private System.String configKey
-    [[deprecated]] ::StringW& dyn_configKey();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_configKey();
     // Get instance field reference: private Newtonsoft.Json.JsonSerializerSettings rawDateSettings
-    [[deprecated]] ::Newtonsoft::Json::JsonSerializerSettings*& dyn_rawDateSettings();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonSerializerSettings*& dyn_rawDateSettings();
     // System.Void set_origin(Unity.RemoteConfig.ConfigOrigin value)
     // Offset: 0x18C4038
     void set_origin(::Unity::RemoteConfig::ConfigOrigin value);

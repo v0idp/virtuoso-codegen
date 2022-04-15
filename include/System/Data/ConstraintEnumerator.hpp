@@ -61,11 +61,11 @@ namespace System::Data {
     static_assert(sizeof(::System::Data::Constraint*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.IEnumerator _tables
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn__tables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn__tables();
     // Get instance field reference: private System.Collections.IEnumerator _constraints
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn__constraints();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn__constraints();
     // Get instance field reference: private System.Data.Constraint _currentObject
-    [[deprecated]] ::System::Data::Constraint*& dyn__currentObject();
+    [[deprecated("Use field access instead!")]] ::System::Data::Constraint*& dyn__currentObject();
     // protected System.Data.Constraint get_CurrentObject()
     // Offset: 0x14B5204
     ::System::Data::Constraint* get_CurrentObject();

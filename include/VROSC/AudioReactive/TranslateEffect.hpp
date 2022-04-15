@@ -65,9 +65,9 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::UnityEngine::Transform*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.TranslateEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::TranslateEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::TranslateEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform[] _transforms
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
     // public VROSC.AudioReactive.TranslateEffectData get_Data()
     // Offset: 0xA2CED0
     ::VROSC::AudioReactive::TranslateEffectData* get_Data();
@@ -82,7 +82,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TranslateEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::TranslateEffect::.ctor");

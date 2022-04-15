@@ -54,7 +54,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.ConstructorHandling AllowNonPublicDefaultConstructor
     static void _set_AllowNonPublicDefaultConstructor(::Newtonsoft::Json::ConstructorHandling value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.ConstructorHandling
   #pragma pack(pop)
   static check_size<sizeof(ConstructorHandling), 0 + sizeof(int)> __Newtonsoft_Json_ConstructorHandlingSizeCheck;

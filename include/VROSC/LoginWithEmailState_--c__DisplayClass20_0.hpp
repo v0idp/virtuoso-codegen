@@ -72,15 +72,22 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.LoginWithEmailState <>4__this
-    [[deprecated]] ::VROSC::LoginWithEmailState*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginWithEmailState*& dyn_$$4__this();
     // Get instance field reference: public System.String userId
-    [[deprecated]] ::StringW& dyn_userId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_userId();
     // Get instance field reference: public System.Boolean isEmailVerified
-    [[deprecated]] bool& dyn_isEmailVerified();
+    [[deprecated("Use field access instead!")]] bool& dyn_isEmailVerified();
     // Get instance field reference: public System.Action <>9__3
-    [[deprecated]] ::System::Action*& dyn_$$9__3();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_$$9__3();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__4
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__4();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__4();
+    // public System.Void .ctor()
+    // Offset: 0x195D058
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoginWithEmailState::$$c__DisplayClass20_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginWithEmailState::$$c__DisplayClass20_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoginWithEmailState::$$c__DisplayClass20_0*, creationType>()));
+    }
     // System.Void <FirebaseLoginUserWithEmailSuccess>b__0()
     // Offset: 0x195D060
     void $FirebaseLoginUserWithEmailSuccess$b__0();
@@ -93,21 +100,16 @@ namespace VROSC {
     // System.Void <FirebaseLoginUserWithEmailSuccess>b__4(VROSC.Error error2)
     // Offset: 0x195D60C
     void $FirebaseLoginUserWithEmailSuccess$b__4(::VROSC::Error error2);
-    // public System.Void .ctor()
-    // Offset: 0x195D058
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoginWithEmailState::$$c__DisplayClass20_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginWithEmailState::$$c__DisplayClass20_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoginWithEmailState::$$c__DisplayClass20_0*, creationType>()));
-    }
   }; // VROSC.LoginWithEmailState/VROSC.<>c__DisplayClass20_0
   #pragma pack(pop)
   static check_size<sizeof(LoginWithEmailState::$$c__DisplayClass20_0), 48 + sizeof(::System::Action_1<::VROSC::Error>*)> __VROSC_LoginWithEmailState_$$c__DisplayClass20_0SizeCheck;
   static_assert(sizeof(LoginWithEmailState::$$c__DisplayClass20_0) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LoginWithEmailState::$$c__DisplayClass20_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoginWithEmailState::$$c__DisplayClass20_0::$FirebaseLoginUserWithEmailSuccess$b__0
 // Il2CppName: <FirebaseLoginUserWithEmailSuccess>b__0
 template<>
@@ -142,7 +144,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoginWithEmailState::$$c__DisplayClass20_0*), "<FirebaseLoginUserWithEmailSuccess>b__4", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error2});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoginWithEmailState::$$c__DisplayClass20_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

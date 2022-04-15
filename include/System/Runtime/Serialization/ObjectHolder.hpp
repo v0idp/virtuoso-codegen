@@ -143,33 +143,33 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Object m_object
-    [[deprecated]] ::Il2CppObject*& dyn_m_object();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_object();
     // Get instance field reference: System.Int64 m_id
-    [[deprecated]] int64_t& dyn_m_id();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_id();
     // Get instance field reference: private System.Int32 m_missingElementsRemaining
-    [[deprecated]] int& dyn_m_missingElementsRemaining();
+    [[deprecated("Use field access instead!")]] int& dyn_m_missingElementsRemaining();
     // Get instance field reference: private System.Int32 m_missingDecendents
-    [[deprecated]] int& dyn_m_missingDecendents();
+    [[deprecated("Use field access instead!")]] int& dyn_m_missingDecendents();
     // Get instance field reference: System.Runtime.Serialization.SerializationInfo m_serInfo
-    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn_m_serInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationInfo*& dyn_m_serInfo();
     // Get instance field reference: System.Runtime.Serialization.ISerializationSurrogate m_surrogate
-    [[deprecated]] ::System::Runtime::Serialization::ISerializationSurrogate*& dyn_m_surrogate();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ISerializationSurrogate*& dyn_m_surrogate();
     // Get instance field reference: System.Runtime.Serialization.FixupHolderList m_missingElements
-    [[deprecated]] ::System::Runtime::Serialization::FixupHolderList*& dyn_m_missingElements();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::FixupHolderList*& dyn_m_missingElements();
     // Get instance field reference: System.Runtime.Serialization.LongList m_dependentObjects
-    [[deprecated]] ::System::Runtime::Serialization::LongList*& dyn_m_dependentObjects();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::LongList*& dyn_m_dependentObjects();
     // Get instance field reference: System.Runtime.Serialization.ObjectHolder m_next
-    [[deprecated]] ::System::Runtime::Serialization::ObjectHolder*& dyn_m_next();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ObjectHolder*& dyn_m_next();
     // Get instance field reference: System.Int32 m_flags
-    [[deprecated]] int& dyn_m_flags();
+    [[deprecated("Use field access instead!")]] int& dyn_m_flags();
     // Get instance field reference: private System.Boolean m_markForFixupWhenAvailable
-    [[deprecated]] bool& dyn_m_markForFixupWhenAvailable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_markForFixupWhenAvailable();
     // Get instance field reference: private System.Runtime.Serialization.ValueTypeFixupInfo m_valueFixup
-    [[deprecated]] ::System::Runtime::Serialization::ValueTypeFixupInfo*& dyn_m_valueFixup();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ValueTypeFixupInfo*& dyn_m_valueFixup();
     // Get instance field reference: private System.Runtime.Serialization.TypeLoadExceptionHolder m_typeLoad
-    [[deprecated]] ::System::Runtime::Serialization::TypeLoadExceptionHolder*& dyn_m_typeLoad();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::TypeLoadExceptionHolder*& dyn_m_typeLoad();
     // Get instance field reference: private System.Boolean m_reachable
-    [[deprecated]] bool& dyn_m_reachable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_reachable();
     // System.Boolean get_IsIncompleteObjectReference()
     // Offset: 0x146D238
     bool get_IsIncompleteObjectReference();

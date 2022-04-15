@@ -50,11 +50,11 @@ namespace Assets::OVR::Scripts {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single value
-    [[deprecated]] float& dyn_value();
+    [[deprecated("Use field access instead!")]] float& dyn_value();
     // Get instance field reference: public System.Single min
-    [[deprecated]] float& dyn_min();
+    [[deprecated("Use field access instead!")]] float& dyn_min();
     // Get instance field reference: public System.Single max
-    [[deprecated]] float& dyn_max();
+    [[deprecated("Use field access instead!")]] float& dyn_max();
     // public System.Void .ctor(System.String cat, System.String msg, System.Single val, System.Single minVal, System.Single maxVal)
     // Offset: 0x804754
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

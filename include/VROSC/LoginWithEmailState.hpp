@@ -113,25 +113,25 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.AuthenticationManager _authManager
-    [[deprecated]] ::VROSC::AuthenticationManager*& dyn__authManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::AuthenticationManager*& dyn__authManager();
     // Get instance field reference: private System.String _email
-    [[deprecated]] ::StringW& dyn__email();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__email();
     // Get instance field reference: private System.String _password
-    [[deprecated]] ::StringW& dyn__password();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__password();
     // Get instance field reference: private System.Boolean _rememberMe
-    [[deprecated]] bool& dyn__rememberMe();
+    [[deprecated("Use field access instead!")]] bool& dyn__rememberMe();
     // Get instance field reference: private System.Boolean _isNewUser
-    [[deprecated]] bool& dyn__isNewUser();
+    [[deprecated("Use field access instead!")]] bool& dyn__isNewUser();
     // Get instance field reference: private System.Single _lastAttemptTimer
-    [[deprecated]] float& dyn__lastAttemptTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__lastAttemptTimer();
     // Get instance field reference: private System.Int32 _attemptsCount
-    [[deprecated]] int& dyn__attemptsCount();
+    [[deprecated("Use field access instead!")]] int& dyn__attemptsCount();
     // Get instance field reference: private System.Boolean _waitingForResponse
-    [[deprecated]] bool& dyn__waitingForResponse();
+    [[deprecated("Use field access instead!")]] bool& dyn__waitingForResponse();
     // Get instance field reference: private System.Boolean _hasSubmittedData
-    [[deprecated]] bool& dyn__hasSubmittedData();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasSubmittedData();
     // Get instance field reference: private System.Boolean <HasLoggedIn>k__BackingField
-    [[deprecated]] bool& dyn_$HasLoggedIn$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$HasLoggedIn$k__BackingField();
     // public System.Boolean get_HasLoggedIn()
     // Offset: 0x19B4150
     bool get_HasLoggedIn();

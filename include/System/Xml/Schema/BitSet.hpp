@@ -45,9 +45,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::ArrayW<uint>) == 0x8);
     public:
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.UInt32[] bits
-    [[deprecated]] ::ArrayW<uint>& dyn_bits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_bits();
     // public System.Int32 get_Count()
     // Offset: 0xB62F1C
     int get_Count();
@@ -57,6 +57,13 @@ namespace System::Xml::Schema {
     // public System.Boolean get_IsEmpty()
     // Offset: 0xB63548
     bool get_IsEmpty();
+    // private System.Void .ctor()
+    // Offset: 0xB62F0C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BitSet* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::BitSet::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BitSet*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 count)
     // Offset: 0xB5A3D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -94,15 +101,6 @@ namespace System::Xml::Schema {
     // private System.Void EnsureLength(System.Int32 nRequiredLength)
     // Offset: 0xB62FF0
     void EnsureLength(int nRequiredLength);
-    // private System.Void .ctor()
-    // Offset: 0xB62F0C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BitSet* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::BitSet::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BitSet*, creationType>()));
-    }
     // public override System.Int32 GetHashCode()
     // Offset: 0xB632E8
     // Implemented from: System.Object
@@ -144,6 +142,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::BitSet*), "get_IsEmpty", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::BitSet::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::BitSet::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -236,10 +238,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::BitSet*), "EnsureLength", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{nRequiredLength});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::BitSet::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::BitSet::GetHashCode
 // Il2CppName: GetHashCode
 template<>

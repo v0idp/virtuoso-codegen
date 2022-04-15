@@ -28,8 +28,6 @@ namespace System::Xml::Serialization {
     public:
     // protected System.Void .ctor()
     // Offset: 0xF44558
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSerializationGeneratedCode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializationGeneratedCode::.ctor");

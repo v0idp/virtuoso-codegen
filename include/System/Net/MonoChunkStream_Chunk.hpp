@@ -39,9 +39,9 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Byte[] Bytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Bytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Bytes();
     // Get instance field reference: public System.Int32 Offset
-    [[deprecated]] int& dyn_Offset();
+    [[deprecated("Use field access instead!")]] int& dyn_Offset();
     // public System.Void .ctor(System.Byte[] chunk)
     // Offset: 0x9FAC28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

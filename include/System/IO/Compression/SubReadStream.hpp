@@ -75,17 +75,17 @@ namespace System::IO::Compression {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Int64 _startInSuperStream
-    [[deprecated]] int64_t& dyn__startInSuperStream();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__startInSuperStream();
     // Get instance field reference: private System.Int64 _positionInSuperStream
-    [[deprecated]] int64_t& dyn__positionInSuperStream();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__positionInSuperStream();
     // Get instance field reference: private readonly System.Int64 _endInSuperStream
-    [[deprecated]] int64_t& dyn__endInSuperStream();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__endInSuperStream();
     // Get instance field reference: private readonly System.IO.Stream _superStream
-    [[deprecated]] ::System::IO::Stream*& dyn__superStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__superStream();
     // Get instance field reference: private System.Boolean _canRead
-    [[deprecated]] bool& dyn__canRead();
+    [[deprecated("Use field access instead!")]] bool& dyn__canRead();
     // Get instance field reference: private System.Boolean _isDisposed
-    [[deprecated]] bool& dyn__isDisposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDisposed();
     // public System.Void .ctor(System.IO.Stream superStream, System.Int64 startPosition, System.Int64 maxLength)
     // Offset: 0x1698E94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

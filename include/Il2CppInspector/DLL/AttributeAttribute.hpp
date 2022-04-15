@@ -48,16 +48,13 @@ namespace Il2CppInspector::DLL {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: public System.String RVA
-    [[deprecated]] ::StringW& dyn_RVA();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_RVA();
     // Get instance field reference: public System.String Offset
-    [[deprecated]] ::StringW& dyn_Offset();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Offset();
     // public System.Void .ctor()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AttributeAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Il2CppInspector::DLL::AttributeAttribute::.ctor");

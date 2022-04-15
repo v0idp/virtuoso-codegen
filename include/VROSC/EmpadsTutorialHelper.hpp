@@ -156,33 +156,40 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _interactablesParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__interactablesParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__interactablesParent();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement[] _tempoSyncButtonBlinkers
-    [[deprecated]] ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__tempoSyncButtonBlinkers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::TutorialBlinkingUIElement*>& dyn__tempoSyncButtonBlinkers();
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal[] _drumpadEffects
-    [[deprecated]] ::ArrayW<::VROSC::DrumPadEffectOnSignal*>& dyn__drumpadEffects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::DrumPadEffectOnSignal*>& dyn__drumpadEffects();
     // Get instance field reference: private VROSC.Interactable[] _drumpadSpawners
-    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__drumpadSpawners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::Interactable*>& dyn__drumpadSpawners();
     // Get instance field reference: private VROSC.Interactable[] _tempoSyncButtonInteractables
-    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__tempoSyncButtonInteractables();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::Interactable*>& dyn__tempoSyncButtonInteractables();
     // Get instance field reference: private VROSC.Interactable _closeButtonInteractable
-    [[deprecated]] ::VROSC::Interactable*& dyn__closeButtonInteractable();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__closeButtonInteractable();
     // Get instance field reference: private VROSC.ModularDrumsController _empadsController
-    [[deprecated]] ::VROSC::ModularDrumsController*& dyn__empadsController();
+    [[deprecated("Use field access instead!")]] ::VROSC::ModularDrumsController*& dyn__empadsController();
     // Get instance field reference: private VROSC.ModularDrumpads _empads
-    [[deprecated]] ::VROSC::ModularDrumpads*& dyn__empads();
+    [[deprecated("Use field access instead!")]] ::VROSC::ModularDrumpads*& dyn__empads();
     // Get instance field reference: private UnityEngine.AudioClip _cowbellClip
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn__cowbellClip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn__cowbellClip();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
     // Get instance field reference: private System.Boolean _countSpawnedPads
-    [[deprecated]] bool& dyn__countSpawnedPads();
+    [[deprecated("Use field access instead!")]] bool& dyn__countSpawnedPads();
     // Get instance field reference: private System.Int32 _waitingForSyncDivider
-    [[deprecated]] int& dyn__waitingForSyncDivider();
+    [[deprecated("Use field access instead!")]] int& dyn__waitingForSyncDivider();
     // Get instance field reference: private System.Boolean _padsHighlighted
-    [[deprecated]] bool& dyn__padsHighlighted();
+    [[deprecated("Use field access instead!")]] bool& dyn__padsHighlighted();
     // Get instance field reference: private System.Boolean _recordingFirstRecording
-    [[deprecated]] bool& dyn__recordingFirstRecording();
+    [[deprecated("Use field access instead!")]] bool& dyn__recordingFirstRecording();
+    // public System.Void .ctor()
+    // Offset: 0x8ECEF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EmpadsTutorialHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EmpadsTutorialHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EmpadsTutorialHelper*, creationType>()));
+    }
     // protected System.Void Start()
     // Offset: 0x8EB8B0
     void Start();
@@ -243,25 +250,16 @@ namespace VROSC {
     // private System.Void DrumSamplePlayed(UnityEngine.AudioClip audioClip)
     // Offset: 0x8ECE30
     void DrumSamplePlayed(::UnityEngine::AudioClip* audioClip);
-    // public System.Void .ctor()
-    // Offset: 0x8ECEF8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EmpadsTutorialHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EmpadsTutorialHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EmpadsTutorialHelper*, creationType>()));
-    }
   }; // VROSC.EmpadsTutorialHelper
   #pragma pack(pop)
   static check_size<sizeof(EmpadsTutorialHelper), 113 + sizeof(bool)> __VROSC_EmpadsTutorialHelperSizeCheck;
   static_assert(sizeof(EmpadsTutorialHelper) == 0x72);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::EmpadsTutorialHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::EmpadsTutorialHelper::Start
 // Il2CppName: Start
 template<>
@@ -428,7 +426,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::EmpadsTutorialHelper*), "DrumSamplePlayed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{audioClip});
   }
 };
-// Writing MetadataGetter for method: VROSC::EmpadsTutorialHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

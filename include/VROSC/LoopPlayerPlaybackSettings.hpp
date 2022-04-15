@@ -213,51 +213,51 @@ namespace VROSC {
     // Set static field: static private System.Single AllowedLeadupToNoTailLoopInSeconds
     static void _set_AllowedLeadupToNoTailLoopInSeconds(float value);
     // Get instance field reference: private VROSC.LoopPlaybackConfig <LocalPlaybackConfig>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn_$LocalPlaybackConfig$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig*& dyn_$LocalPlaybackConfig$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlaybackConfig <PlayingConfig>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn_$PlayingConfig$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig*& dyn_$PlayingConfig$k__BackingField();
     // Get instance field reference: private VROSC.Loop <Loop>k__BackingField
-    [[deprecated]] ::VROSC::Loop*& dyn_$Loop$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::Loop*& dyn_$Loop$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackStoppedState <StoppedState>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackStoppedState*& dyn_$StoppedState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackStoppedState*& dyn_$StoppedState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackWillStartState <WillStartState>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackWillStartState*& dyn_$WillStartState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackWillStartState*& dyn_$WillStartState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackLoopingState <LoopingState>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackLoopingState*& dyn_$LoopingState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackLoopingState*& dyn_$LoopingState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackWillStopState <WillStopState>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackWillStopState*& dyn_$WillStopState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackWillStopState*& dyn_$WillStopState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState <CurrentState>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackState*& dyn_$CurrentState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackState*& dyn_$CurrentState$k__BackingField();
     // Get instance field reference: private VROSC.LoopPlayerPlaybackState <NextState>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayerPlaybackState*& dyn_$NextState$k__BackingField();
     // Get instance field reference: private System.Boolean <Active>k__BackingField
-    [[deprecated]] bool& dyn_$Active$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Active$k__BackingField();
     // Get instance field reference: private System.Boolean <Playing>k__BackingField
-    [[deprecated]] bool& dyn_$Playing$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Playing$k__BackingField();
     // Get instance field reference: private System.Single <FadeMultiplier>k__BackingField
-    [[deprecated]] float& dyn_$FadeMultiplier$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$FadeMultiplier$k__BackingField();
     // Get instance field reference: private System.Int32 <PlayFromStartOffset>k__BackingField
-    [[deprecated]] int& dyn_$PlayFromStartOffset$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$PlayFromStartOffset$k__BackingField();
     // Get instance field reference: private System.Int32 <StartOffsetBarRelative>k__BackingField
-    [[deprecated]] int& dyn_$StartOffsetBarRelative$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$StartOffsetBarRelative$k__BackingField();
     // Get instance field reference: private System.Boolean _wasPlaying
-    [[deprecated]] bool& dyn__wasPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn__wasPlaying();
     // Get instance field reference: private System.Boolean _startedWithPlayFromStart
-    [[deprecated]] bool& dyn__startedWithPlayFromStart();
+    [[deprecated("Use field access instead!")]] bool& dyn__startedWithPlayFromStart();
     // Get instance field reference: private System.Int32 _noTailLoops
-    [[deprecated]] int& dyn__noTailLoops();
+    [[deprecated("Use field access instead!")]] int& dyn__noTailLoops();
     // Get instance field reference: private System.Boolean _fadeWithNaturalTail
-    [[deprecated]] bool& dyn__fadeWithNaturalTail();
+    [[deprecated("Use field access instead!")]] bool& dyn__fadeWithNaturalTail();
     // Get instance field reference: private System.Int32 _playedLength
-    [[deprecated]] int& dyn__playedLength();
+    [[deprecated("Use field access instead!")]] int& dyn__playedLength();
     // Get instance field reference: private System.Int32 _allowedLeadupToNoTailLoop
-    [[deprecated]] int& dyn__allowedLeadupToNoTailLoop();
+    [[deprecated("Use field access instead!")]] int& dyn__allowedLeadupToNoTailLoop();
     // Get instance field reference: public System.Action OnPlayingStart
-    [[deprecated]] ::System::Action*& dyn_OnPlayingStart();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnPlayingStart();
     // Get instance field reference: public System.Action OnPlayingEnd
-    [[deprecated]] ::System::Action*& dyn_OnPlayingEnd();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnPlayingEnd();
     // Get instance field reference: public System.Action`1<VROSC.LoopPlayerPlaybackState> OnStateChanged
-    [[deprecated]] ::System::Action_1<::VROSC::LoopPlayerPlaybackState*>*& dyn_OnStateChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::LoopPlayerPlaybackState*>*& dyn_OnStateChanged();
     // public VROSC.LoopPlaybackConfig get_LocalPlaybackConfig()
     // Offset: 0x19BD4A4
     ::VROSC::LoopPlaybackConfig* get_LocalPlaybackConfig();
@@ -345,6 +345,13 @@ namespace VROSC {
     // private System.Void set_StartOffsetBarRelative(System.Int32 value)
     // Offset: 0x19BD584
     void set_StartOffsetBarRelative(int value);
+    // public System.Void .ctor()
+    // Offset: 0x19BBB00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayerPlaybackSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackSettings*, creationType>()));
+    }
     // public System.Void Setup(VROSC.Loop loop, VROSC.LoopPlaybackConfig config)
     // Offset: 0x19BBB18
     void Setup(::VROSC::Loop* loop, ::VROSC::LoopPlaybackConfig* config);
@@ -408,15 +415,6 @@ namespace VROSC {
     // private System.Int32 GetLocalLoopSampleIndex(System.Int32 channels, System.Int32 atSample)
     // Offset: 0x19BDDF4
     int GetLocalLoopSampleIndex(int channels, int atSample);
-    // public System.Void .ctor()
-    // Offset: 0x19BBB00
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayerPlaybackSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerPlaybackSettings*, creationType>()));
-    }
   }; // VROSC.LoopPlayerPlaybackSettings
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerPlaybackSettings), 144 + sizeof(::System::Action_1<::VROSC::LoopPlayerPlaybackState*>*)> __VROSC_LoopPlayerPlaybackSettingsSizeCheck;
@@ -669,6 +667,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerPlaybackSettings*), "set_StartOffsetBarRelative", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopPlayerPlaybackSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayerPlaybackSettings::Setup
 // Il2CppName: Setup
 template<>
@@ -860,7 +862,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC:
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerPlaybackSettings*), "GetLocalLoopSampleIndex", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{channels, atSample});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayerPlaybackSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

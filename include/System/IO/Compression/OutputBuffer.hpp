@@ -57,13 +57,13 @@ namespace System::IO::Compression {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Byte[] _byteBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__byteBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__byteBuffer();
     // Get instance field reference: private System.Int32 _pos
-    [[deprecated]] int& dyn__pos();
+    [[deprecated("Use field access instead!")]] int& dyn__pos();
     // Get instance field reference: private System.UInt32 _bitBuf
-    [[deprecated]] uint& dyn__bitBuf();
+    [[deprecated("Use field access instead!")]] uint& dyn__bitBuf();
     // Get instance field reference: private System.Int32 _bitCount
-    [[deprecated]] int& dyn__bitCount();
+    [[deprecated("Use field access instead!")]] int& dyn__bitCount();
     // System.Int32 get_BytesWritten()
     // Offset: 0x1698938
     int get_BytesWritten();

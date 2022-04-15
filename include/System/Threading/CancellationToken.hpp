@@ -68,7 +68,7 @@ namespace System::Threading {
     // Set static field: static private readonly System.Action`1<System.Object> s_ActionToActionObjShunt
     static void _set_s_ActionToActionObjShunt(::System::Action_1<::Il2CppObject*>* value);
     // Get instance field reference: private System.Threading.CancellationTokenSource m_source
-    [[deprecated]] ::System::Threading::CancellationTokenSource*& dyn_m_source();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationTokenSource*& dyn_m_source();
     // static public System.Threading.CancellationToken get_None()
     // Offset: 0xFF71B0
     static ::System::Threading::CancellationToken get_None();

@@ -78,15 +78,15 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private VROSC.DashboardPositioning _lookAtBehaviour
-    [[deprecated]] ::VROSC::DashboardPositioning*& dyn__lookAtBehaviour();
+    [[deprecated("Use field access instead!")]] ::VROSC::DashboardPositioning*& dyn__lookAtBehaviour();
     // Get instance field reference: private VROSC.TransformMover _mover
-    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private VROSC.UIButton _closeFloatingButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeFloatingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeFloatingButton();
     // Get instance field reference: private VROSC.WorldTransformData freeFloatData
-    [[deprecated]] ::VROSC::WorldTransformData*& dyn_freeFloatData();
+    [[deprecated("Use field access instead!")]] ::VROSC::WorldTransformData*& dyn_freeFloatData();
     // Get instance field reference: private UnityEngine.Vector3 _dashboardOriginalScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__dashboardOriginalScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__dashboardOriginalScale();
     // private System.Void Grab(VROSC.TransformMover mover)
     // Offset: 0x19AB210
     void Grab(::VROSC::TransformMover* mover);
@@ -100,11 +100,6 @@ namespace VROSC {
     // Offset: 0x19AB860
     // Implemented from: VROSC.Dashboard
     // Base method: System.Void Dashboard::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HandPlacedDashboard* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HandPlacedDashboard::.ctor");

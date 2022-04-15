@@ -81,13 +81,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private AudioHelm.HelmController _helmController
-    [[deprecated]] ::AudioHelm::HelmController*& dyn__helmController();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmController*& dyn__helmController();
     // Get instance field reference: private AudioHelm.HelmPatch _helmPatch
-    [[deprecated]] ::AudioHelm::HelmPatch*& dyn__helmPatch();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmPatch*& dyn__helmPatch();
     // Get instance field reference: private VROSC.PatchSettings _patchSettings
-    [[deprecated]] ::VROSC::PatchSettings*& dyn__patchSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::PatchSettings*& dyn__patchSettings();
     // Get instance field reference: private VROSC.HandType <AssignedHand>k__BackingField
-    [[deprecated]] ::VROSC::HandType& dyn_$AssignedHand$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn_$AssignedHand$k__BackingField();
     // public AudioHelm.HelmPatchFormat get_CurrentPatch()
     // Offset: 0x19407E8
     ::AudioHelm::HelmPatchFormat* get_CurrentPatch();
@@ -119,11 +119,6 @@ namespace VROSC {
     // Offset: 0x1940AB8
     // Implemented from: VROSC.AudioHelmInstrumentWrapper
     // Base method: System.Void AudioHelmInstrumentWrapper::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HelmWrapper* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HelmWrapper::.ctor");

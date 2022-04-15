@@ -46,27 +46,29 @@ namespace Firebase::Unity {
     static_assert(sizeof(::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3*) == 0x8);
     public:
     // Get instance field reference: System.Threading.ManualResetEvent newSignal
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_newSignal();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_newSignal();
     // Get instance field reference: Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.<Send>c__AnonStorey3 <>f__ref$3
-    [[deprecated]] ::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3*& dyn_$$f__ref$3();
-    // System.Void <>m__0(System.Object x)
-    // Offset: 0x18CB6C8
-    void $$m__0(::Il2CppObject* x);
+    [[deprecated("Use field access instead!")]] ::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3*& dyn_$$f__ref$3();
     // public System.Void .ctor()
     // Offset: 0x18CB38C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnitySynchronizationContext::$Send$c__AnonStorey4* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey4::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UnitySynchronizationContext::$Send$c__AnonStorey4*, creationType>()));
     }
+    // System.Void <>m__0(System.Object x)
+    // Offset: 0x18CB6C8
+    void $$m__0(::Il2CppObject* x);
   }; // Firebase.Unity.UnitySynchronizationContext/Firebase.Unity.<Send>c__AnonStorey4
   #pragma pack(pop)
   static check_size<sizeof(UnitySynchronizationContext::$Send$c__AnonStorey4), 24 + sizeof(::Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey3*)> __Firebase_Unity_UnitySynchronizationContext_$Send$c__AnonStorey4SizeCheck;
   static_assert(sizeof(UnitySynchronizationContext::$Send$c__AnonStorey4) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey4::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey4::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -76,7 +78,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey4*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: Firebase::Unity::UnitySynchronizationContext::$Send$c__AnonStorey4::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -161,37 +161,37 @@ namespace System::Xml::Serialization {
     ::System::Nullable_1<bool> isOrderDependentMap;
     public:
     // Get instance field reference: private System.Collections.Hashtable _elements
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__elements();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__elements();
     // Get instance field reference: private System.Collections.ArrayList _elementMembers
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__elementMembers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__elementMembers();
     // Get instance field reference: private System.Collections.Hashtable _attributeMembers
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__attributeMembers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__attributeMembers();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapMemberAttribute[] _attributeMembersArray
-    [[deprecated]] ::ArrayW<::System::Xml::Serialization::XmlTypeMapMemberAttribute*>& dyn__attributeMembersArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Serialization::XmlTypeMapMemberAttribute*>& dyn__attributeMembersArray();
     // Get instance field reference: private System.Collections.ArrayList _flatLists
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__flatLists();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__flatLists();
     // Get instance field reference: private System.Collections.ArrayList _allMembers
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__allMembers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__allMembers();
     // Get instance field reference: private System.Collections.ArrayList _membersWithDefault
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__membersWithDefault();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__membersWithDefault();
     // Get instance field reference: private System.Collections.ArrayList _listMembers
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__listMembers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__listMembers();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapMemberAnyElement _defaultAnyElement
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapMemberAnyElement*& dyn__defaultAnyElement();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapMemberAnyElement*& dyn__defaultAnyElement();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapMemberAnyAttribute _defaultAnyAttribute
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapMemberAnyAttribute*& dyn__defaultAnyAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapMemberAnyAttribute*& dyn__defaultAnyAttribute();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapMemberNamespaces _namespaceDeclarations
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapMemberNamespaces*& dyn__namespaceDeclarations();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapMemberNamespaces*& dyn__namespaceDeclarations();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapMember _xmlTextCollector
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapMember*& dyn__xmlTextCollector();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapMember*& dyn__xmlTextCollector();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeMapMember _returnMember
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeMapMember*& dyn__returnMember();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeMapMember*& dyn__returnMember();
     // Get instance field reference: private System.Boolean _ignoreMemberNamespace
-    [[deprecated]] bool& dyn__ignoreMemberNamespace();
+    [[deprecated("Use field access instead!")]] bool& dyn__ignoreMemberNamespace();
     // Get instance field reference: private System.Boolean _canBeSimpleType
-    [[deprecated]] bool& dyn__canBeSimpleType();
+    [[deprecated("Use field access instead!")]] bool& dyn__canBeSimpleType();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _isOrderDependentMap
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__isOrderDependentMap();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__isOrderDependentMap();
     // public System.Boolean get_IsOrderDependentMap()
     // Offset: 0xB66088
     bool get_IsOrderDependentMap();
@@ -256,7 +256,6 @@ namespace System::Xml::Serialization {
     // Offset: 0xB66AD0
     // Implemented from: System.Xml.Serialization.ObjectMap
     // Base method: System.Void ObjectMap::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ClassMap* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::ClassMap::.ctor");

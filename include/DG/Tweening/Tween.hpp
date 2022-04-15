@@ -384,105 +384,105 @@ namespace DG::Tweening {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Single timeScale
-    [[deprecated]] float& dyn_timeScale();
+    [[deprecated("Use field access instead!")]] float& dyn_timeScale();
     // Get instance field reference: public System.Boolean isBackwards
-    [[deprecated]] bool& dyn_isBackwards();
+    [[deprecated("Use field access instead!")]] bool& dyn_isBackwards();
     // Get instance field reference: public System.Object id
-    [[deprecated]] ::Il2CppObject*& dyn_id();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_id();
     // Get instance field reference: public System.String stringId
-    [[deprecated]] ::StringW& dyn_stringId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_stringId();
     // Get instance field reference: public System.Int32 intId
-    [[deprecated]] int& dyn_intId();
+    [[deprecated("Use field access instead!")]] int& dyn_intId();
     // Get instance field reference: public System.Object target
-    [[deprecated]] ::Il2CppObject*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_target();
     // Get instance field reference: DG.Tweening.UpdateType updateType
-    [[deprecated]] ::DG::Tweening::UpdateType& dyn_updateType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::UpdateType& dyn_updateType();
     // Get instance field reference: System.Boolean isIndependentUpdate
-    [[deprecated]] bool& dyn_isIndependentUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_isIndependentUpdate();
     // Get instance field reference: public DG.Tweening.TweenCallback onPlay
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onPlay();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onPlay();
     // Get instance field reference: public DG.Tweening.TweenCallback onPause
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onPause();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onPause();
     // Get instance field reference: public DG.Tweening.TweenCallback onRewind
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onRewind();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onRewind();
     // Get instance field reference: public DG.Tweening.TweenCallback onUpdate
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onUpdate();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onUpdate();
     // Get instance field reference: public DG.Tweening.TweenCallback onStepComplete
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onStepComplete();
     // Get instance field reference: public DG.Tweening.TweenCallback onComplete
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onComplete();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onComplete();
     // Get instance field reference: public DG.Tweening.TweenCallback onKill
-    [[deprecated]] ::DG::Tweening::TweenCallback*& dyn_onKill();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback*& dyn_onKill();
     // Get instance field reference: public DG.Tweening.TweenCallback`1<System.Int32> onWaypointChange
-    [[deprecated]] ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::TweenCallback_1<int>*& dyn_onWaypointChange();
     // Get instance field reference: System.Boolean isFrom
-    [[deprecated]] bool& dyn_isFrom();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFrom();
     // Get instance field reference: System.Boolean isBlendable
-    [[deprecated]] bool& dyn_isBlendable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isBlendable();
     // Get instance field reference: System.Boolean isRecyclable
-    [[deprecated]] bool& dyn_isRecyclable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRecyclable();
     // Get instance field reference: System.Boolean isSpeedBased
-    [[deprecated]] bool& dyn_isSpeedBased();
+    [[deprecated("Use field access instead!")]] bool& dyn_isSpeedBased();
     // Get instance field reference: System.Boolean autoKill
-    [[deprecated]] bool& dyn_autoKill();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoKill();
     // Get instance field reference: System.Single duration
-    [[deprecated]] float& dyn_duration();
+    [[deprecated("Use field access instead!")]] float& dyn_duration();
     // Get instance field reference: System.Int32 loops
-    [[deprecated]] int& dyn_loops();
+    [[deprecated("Use field access instead!")]] int& dyn_loops();
     // Get instance field reference: DG.Tweening.LoopType loopType
-    [[deprecated]] ::DG::Tweening::LoopType& dyn_loopType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::LoopType& dyn_loopType();
     // Get instance field reference: System.Single delay
-    [[deprecated]] float& dyn_delay();
+    [[deprecated("Use field access instead!")]] float& dyn_delay();
     // Get instance field reference: private System.Boolean <isRelative>k__BackingField
-    [[deprecated]] bool& dyn_$isRelative$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isRelative$k__BackingField();
     // Get instance field reference: DG.Tweening.Ease easeType
-    [[deprecated]] ::DG::Tweening::Ease& dyn_easeType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Ease& dyn_easeType();
     // Get instance field reference: DG.Tweening.EaseFunction customEase
-    [[deprecated]] ::DG::Tweening::EaseFunction*& dyn_customEase();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::EaseFunction*& dyn_customEase();
     // Get instance field reference: public System.Single easeOvershootOrAmplitude
-    [[deprecated]] float& dyn_easeOvershootOrAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_easeOvershootOrAmplitude();
     // Get instance field reference: public System.Single easePeriod
-    [[deprecated]] float& dyn_easePeriod();
+    [[deprecated("Use field access instead!")]] float& dyn_easePeriod();
     // Get instance field reference: public System.String debugTargetId
-    [[deprecated]] ::StringW& dyn_debugTargetId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_debugTargetId();
     // Get instance field reference: System.Type typeofT1
-    [[deprecated]] ::System::Type*& dyn_typeofT1();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_typeofT1();
     // Get instance field reference: System.Type typeofT2
-    [[deprecated]] ::System::Type*& dyn_typeofT2();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_typeofT2();
     // Get instance field reference: System.Type typeofTPlugOptions
-    [[deprecated]] ::System::Type*& dyn_typeofTPlugOptions();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_typeofTPlugOptions();
     // Get instance field reference: private System.Boolean <active>k__BackingField
-    [[deprecated]] bool& dyn_$active$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$active$k__BackingField();
     // Get instance field reference: System.Boolean isSequenced
-    [[deprecated]] bool& dyn_isSequenced();
+    [[deprecated("Use field access instead!")]] bool& dyn_isSequenced();
     // Get instance field reference: DG.Tweening.Sequence sequenceParent
-    [[deprecated]] ::DG::Tweening::Sequence*& dyn_sequenceParent();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Sequence*& dyn_sequenceParent();
     // Get instance field reference: System.Int32 activeId
-    [[deprecated]] int& dyn_activeId();
+    [[deprecated("Use field access instead!")]] int& dyn_activeId();
     // Get instance field reference: DG.Tweening.Core.Enums.SpecialStartupMode specialStartupMode
-    [[deprecated]] ::DG::Tweening::Core::Enums::SpecialStartupMode& dyn_specialStartupMode();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Core::Enums::SpecialStartupMode& dyn_specialStartupMode();
     // Get instance field reference: System.Boolean creationLocked
-    [[deprecated]] bool& dyn_creationLocked();
+    [[deprecated("Use field access instead!")]] bool& dyn_creationLocked();
     // Get instance field reference: System.Boolean startupDone
-    [[deprecated]] bool& dyn_startupDone();
+    [[deprecated("Use field access instead!")]] bool& dyn_startupDone();
     // Get instance field reference: private System.Boolean <playedOnce>k__BackingField
-    [[deprecated]] bool& dyn_$playedOnce$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$playedOnce$k__BackingField();
     // Get instance field reference: private System.Single <position>k__BackingField
-    [[deprecated]] float& dyn_$position$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$position$k__BackingField();
     // Get instance field reference: System.Single fullDuration
-    [[deprecated]] float& dyn_fullDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_fullDuration();
     // Get instance field reference: System.Int32 completedLoops
-    [[deprecated]] int& dyn_completedLoops();
+    [[deprecated("Use field access instead!")]] int& dyn_completedLoops();
     // Get instance field reference: System.Boolean isPlaying
-    [[deprecated]] bool& dyn_isPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn_isPlaying();
     // Get instance field reference: System.Boolean isComplete
-    [[deprecated]] bool& dyn_isComplete();
+    [[deprecated("Use field access instead!")]] bool& dyn_isComplete();
     // Get instance field reference: System.Single elapsedDelay
-    [[deprecated]] float& dyn_elapsedDelay();
+    [[deprecated("Use field access instead!")]] float& dyn_elapsedDelay();
     // Get instance field reference: System.Boolean delayComplete
-    [[deprecated]] bool& dyn_delayComplete();
+    [[deprecated("Use field access instead!")]] bool& dyn_delayComplete();
     // Get instance field reference: System.Int32 miscInt
-    [[deprecated]] int& dyn_miscInt();
+    [[deprecated("Use field access instead!")]] int& dyn_miscInt();
     // public System.Boolean get_isRelative()
     // Offset: 0x15AD944
     bool get_isRelative();
@@ -547,7 +547,6 @@ namespace DG::Tweening {
     // Offset: 0x15AE450
     // Implemented from: DG.Tweening.Core.ABSSequentiable
     // Base method: System.Void ABSSequentiable::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Tween* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Tween::.ctor");

@@ -46,6 +46,13 @@ namespace System::Buffers {
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<ArrayPool_1<T>*>::get(), "get_Shared", std::vector<Il2CppClass*>{}, ::std::vector<const Il2CppType*>{})));
       return ::il2cpp_utils::RunMethodRethrow<::System::Buffers::ArrayPool_1<T>*, false>(static_cast<Il2CppObject*>(nullptr), ___internal__method);
     }
+    // protected System.Void .ctor()
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ArrayPool_1<T>* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Buffers::ArrayPool_1::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ArrayPool_1<T>*, creationType>()));
+    }
     // static private System.Buffers.ArrayPool`1<T> EnsureSharedCreated()
     // Offset: 0xFFFFFFFFFFFFFFFF
     static ::System::Buffers::ArrayPool_1<T>* EnsureSharedCreated() {
@@ -73,15 +80,6 @@ namespace System::Buffers {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Buffers::ArrayPool_1::Return");
       auto* ___internal__method = THROW_UNLESS(::il2cpp_utils::ResolveVtableSlot(this, classof(::System::Buffers::ArrayPool_1<T>*), -1));
       ::il2cpp_utils::RunMethodRethrow<void, false>(this, ___internal__method, array, clearArray);
-    }
-    // protected System.Void .ctor()
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ArrayPool_1<T>* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Buffers::ArrayPool_1::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ArrayPool_1<T>*, creationType>()));
     }
   }; // System.Buffers.ArrayPool`1
   // Could not write size check! Type: System.Buffers.ArrayPool`1 is generic, or has no fields that are valid for size checks!

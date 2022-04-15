@@ -52,7 +52,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static private System.Collections.Concurrent.ConcurrentDictionary`2<System.String,System.Object> ht
     static void _set_ht(::System::Collections::Concurrent::ConcurrentDictionary_2<::StringW, ::Il2CppObject*>* value);
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // static private System.Void .cctor()
     // Offset: 0x1011178
     static void _cctor();

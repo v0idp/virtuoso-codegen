@@ -94,25 +94,23 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.SynthParameterController/VROSC.TargetParameter TargetParameter
-    [[deprecated]] ::VROSC::SynthParameterController::TargetParameter& dyn_TargetParameter();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthParameterController::TargetParameter& dyn_TargetParameter();
     // Get instance field reference: public VROSC.MidiCC MidiCC
-    [[deprecated]] ::VROSC::MidiCC& dyn_MidiCC();
+    [[deprecated("Use field access instead!")]] ::VROSC::MidiCC& dyn_MidiCC();
     // Get instance field reference: public VROSC.ValueSourceSelector/VROSC.ValueSource ValueSource
-    [[deprecated]] ::VROSC::ValueSourceSelector::ValueSource& dyn_ValueSource();
+    [[deprecated("Use field access instead!")]] ::VROSC::ValueSourceSelector::ValueSource& dyn_ValueSource();
     // Get instance field reference: public VROSC.HandType HandType
-    [[deprecated]] ::VROSC::HandType& dyn_HandType();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn_HandType();
     // Get instance field reference: public System.Boolean LinkHands
-    [[deprecated]] bool& dyn_LinkHands();
+    [[deprecated("Use field access instead!")]] bool& dyn_LinkHands();
     // Get instance field reference: public UnityEngine.AnimationCurve TransformationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_TransformationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_TransformationCurve();
     // Get instance field reference: public System.Single Factor
-    [[deprecated]] float& dyn_Factor();
+    [[deprecated("Use field access instead!")]] float& dyn_Factor();
     // Get instance field reference: public System.Boolean CenterOnHalf
-    [[deprecated]] bool& dyn_CenterOnHalf();
+    [[deprecated("Use field access instead!")]] bool& dyn_CenterOnHalf();
     // public System.Void .ctor()
     // Offset: 0xADCBD0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ParameterLink* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ParameterLink::.ctor");

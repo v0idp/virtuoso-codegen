@@ -129,21 +129,21 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: private System.Collections.Hashtable collection
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_collection();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_collection();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Xml.Schema.SchemaNames schemaNames
-    [[deprecated]] ::System::Xml::Schema::SchemaNames*& dyn_schemaNames();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames*& dyn_schemaNames();
     // Get instance field reference: private System.Threading.ReaderWriterLock wLock
-    [[deprecated]] ::System::Threading::ReaderWriterLock*& dyn_wLock();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ReaderWriterLock*& dyn_wLock();
     // Get instance field reference: private System.Int32 timeout
-    [[deprecated]] int& dyn_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_timeout();
     // Get instance field reference: private System.Boolean isThreadSafe
-    [[deprecated]] bool& dyn_isThreadSafe();
+    [[deprecated("Use field access instead!")]] bool& dyn_isThreadSafe();
     // Get instance field reference: private System.Xml.Schema.ValidationEventHandler validationEventHandler
-    [[deprecated]] ::System::Xml::Schema::ValidationEventHandler*& dyn_validationEventHandler();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ValidationEventHandler*& dyn_validationEventHandler();
     // Get instance field reference: private System.Xml.XmlResolver xmlResolver
-    [[deprecated]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
     // public System.Int32 get_Count()
     // Offset: 0x110A304
     int get_Count();

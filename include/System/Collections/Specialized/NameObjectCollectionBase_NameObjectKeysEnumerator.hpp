@@ -52,11 +52,11 @@ namespace System::Collections::Specialized {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Int32 _pos
-    [[deprecated]] int& dyn__pos();
+    [[deprecated("Use field access instead!")]] int& dyn__pos();
     // Get instance field reference: private System.Collections.Specialized.NameObjectCollectionBase _coll
-    [[deprecated]] ::System::Collections::Specialized::NameObjectCollectionBase*& dyn__coll();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::NameObjectCollectionBase*& dyn__coll();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // public System.Object get_Current()
     // Offset: 0x9FBD50
     ::Il2CppObject* get_Current();

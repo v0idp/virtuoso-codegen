@@ -237,11 +237,11 @@ namespace System {
     // Set static field: static private System.RuntimeType s_typedRef
     static void _set_s_typedRef(::System::RuntimeType* value);
     // Get instance field reference: private System.MonoTypeInfo type_info
-    [[deprecated]] ::System::MonoTypeInfo*& dyn_type_info();
+    [[deprecated("Use field access instead!")]] ::System::MonoTypeInfo*& dyn_type_info();
     // Get instance field reference: System.Object GenericCache
-    [[deprecated]] ::Il2CppObject*& dyn_GenericCache();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_GenericCache();
     // Get instance field reference: private System.Reflection.RuntimeConstructorInfo m_serializationCtor
-    [[deprecated]] ::System::Reflection::RuntimeConstructorInfo*& dyn_m_serializationCtor();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::RuntimeConstructorInfo*& dyn_m_serializationCtor();
     // static private System.Void ThrowIfTypeNeverValidGenericArgument(System.RuntimeType type)
     // Offset: 0xCE7210
     static void ThrowIfTypeNeverValidGenericArgument(::System::RuntimeType* type);

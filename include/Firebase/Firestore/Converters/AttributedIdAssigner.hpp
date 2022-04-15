@@ -71,9 +71,9 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private readonly System.Collections.Generic.Dictionary`2<System.Type,Firebase.Firestore.Converters.AttributedIdAssigner> s_assigners
     static void _set_s_assigners(::System::Collections::Generic::Dictionary_2<::System::Type*, ::Firebase::Firestore::Converters::AttributedIdAssigner*>* value);
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Reflection.PropertyInfo> _idProperties
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__idProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__idProperties();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Reflection.PropertyInfo> _referenceProperties
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__referenceProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Reflection::PropertyInfo*>*& dyn__referenceProperties();
     // private System.Void .ctor(System.Collections.Generic.List`1<System.Reflection.PropertyInfo> idProperties, System.Collections.Generic.List`1<System.Reflection.PropertyInfo> referenceProperties)
     // Offset: 0xD47DCC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

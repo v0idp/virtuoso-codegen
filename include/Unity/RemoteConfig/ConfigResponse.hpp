@@ -49,9 +49,9 @@ namespace Unity::RemoteConfig {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public Unity.RemoteConfig.ConfigOrigin requestOrigin
-    [[deprecated]] ::Unity::RemoteConfig::ConfigOrigin& dyn_requestOrigin();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::ConfigOrigin& dyn_requestOrigin();
     // Get instance field reference: public Unity.RemoteConfig.ConfigRequestStatus status
-    [[deprecated]] ::Unity::RemoteConfig::ConfigRequestStatus& dyn_status();
+    [[deprecated("Use field access instead!")]] ::Unity::RemoteConfig::ConfigRequestStatus& dyn_status();
   }; // Unity.RemoteConfig.ConfigResponse
   #pragma pack(pop)
   static check_size<sizeof(ConfigResponse), 4 + sizeof(::Unity::RemoteConfig::ConfigRequestStatus)> __Unity_RemoteConfig_ConfigResponseSizeCheck;

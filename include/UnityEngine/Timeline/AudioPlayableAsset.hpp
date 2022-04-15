@@ -96,13 +96,13 @@ namespace UnityEngine::Timeline {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.AudioClip m_Clip
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_m_Clip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_m_Clip();
     // Get instance field reference: private System.Boolean m_Loop
-    [[deprecated]] bool& dyn_m_Loop();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Loop();
     // Get instance field reference: private System.Single m_bufferingTime
-    [[deprecated]] float& dyn_m_bufferingTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_bufferingTime();
     // Get instance field reference: private UnityEngine.Timeline.AudioClipProperties m_ClipProperties
-    [[deprecated]] ::UnityEngine::Timeline::AudioClipProperties*& dyn_m_ClipProperties();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::AudioClipProperties*& dyn_m_ClipProperties();
     // System.Single get_bufferingTime()
     // Offset: 0xC700C0
     float get_bufferingTime();
@@ -124,6 +124,13 @@ namespace UnityEngine::Timeline {
     // public UnityEngine.Timeline.ClipCaps get_clipCaps()
     // Offset: 0xC70354
     ::UnityEngine::Timeline::ClipCaps get_clipCaps();
+    // public System.Void .ctor()
+    // Offset: 0xC70360
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioPlayableAsset* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AudioPlayableAsset::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioPlayableAsset*, creationType>()));
+    }
     // public override System.Double get_duration()
     // Offset: 0xC700F4
     // Implemented from: UnityEngine.Playables.PlayableAsset
@@ -134,18 +141,6 @@ namespace UnityEngine::Timeline {
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Collections.Generic.IEnumerable`1<UnityEngine.Playables.PlayableBinding> PlayableAsset::get_outputs()
     ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* get_outputs();
-    // public System.Void .ctor()
-    // Offset: 0xC70360
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioPlayableAsset* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AudioPlayableAsset::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioPlayableAsset*, creationType>()));
-    }
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject go)
     // Offset: 0xC70220
     // Implemented from: UnityEngine.Playables.PlayableAsset
@@ -216,6 +211,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::AudioPlayableAsset*), "get_clipCaps", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::AudioPlayableAsset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::AudioPlayableAsset::get_duration
 // Il2CppName: get_duration
 template<>
@@ -232,10 +231,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::AudioPlayableAsset*), "get_outputs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::AudioPlayableAsset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::AudioPlayableAsset::CreatePlayable
 // Il2CppName: CreatePlayable
 template<>

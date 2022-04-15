@@ -158,7 +158,7 @@ namespace VROSC {
       // Set static field: static public VROSC.SessionsLibraryUI/VROSC.State LoggingIn
       static void _set_LoggingIn(::VROSC::SessionsLibraryUI::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.SessionsLibraryUI/VROSC.State
     #pragma pack(pop)
     static check_size<sizeof(SessionsLibraryUI::State), 0 + sizeof(int)> __VROSC_SessionsLibraryUI_StateSizeCheck;
@@ -376,69 +376,76 @@ namespace VROSC {
     // Set static field: static public System.Action OnNewConfirmed
     static void _set_OnNewConfirmed(::System::Action* value);
     // Get instance field reference: private VROSC.LoginUIPopup _loginPopupUI
-    [[deprecated]] ::VROSC::LoginUIPopup*& dyn__loginPopupUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginUIPopup*& dyn__loginPopupUI();
     // Get instance field reference: private VROSC.MySessionsPanelUI _mySessionsPanelUI
-    [[deprecated]] ::VROSC::MySessionsPanelUI*& dyn__mySessionsPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::MySessionsPanelUI*& dyn__mySessionsPanelUI();
     // Get instance field reference: private VROSC.MySharedSessionsPanelUI _mySharedSessionsPanelUI
-    [[deprecated]] ::VROSC::MySharedSessionsPanelUI*& dyn__mySharedSessionsPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::MySharedSessionsPanelUI*& dyn__mySharedSessionsPanelUI();
     // Get instance field reference: private VROSC.CommunitySessionsPanelUI _communitySessionsPanelUI
-    [[deprecated]] ::VROSC::CommunitySessionsPanelUI*& dyn__communitySessionsPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::CommunitySessionsPanelUI*& dyn__communitySessionsPanelUI();
     // Get instance field reference: private VROSC.FavoritesSessionsPanelUI _favoritesSessionsPanelUI
-    [[deprecated]] ::VROSC::FavoritesSessionsPanelUI*& dyn__favoritesSessionsPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::FavoritesSessionsPanelUI*& dyn__favoritesSessionsPanelUI();
     // Get instance field reference: private VROSC.UI.TabController _tabController
-    [[deprecated]] ::VROSC::UI::TabController*& dyn__tabController();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::TabController*& dyn__tabController();
     // Get instance field reference: private VROSC.UIButton _profileButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__profileButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__profileButton();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.UIButton _newSessionButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__newSessionButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__newSessionButton();
     // Get instance field reference: private VROSC.UIButton _saveSessionButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__saveSessionButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__saveSessionButton();
     // Get instance field reference: private VROSC.UIButton _saveAsSessionButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__saveAsSessionButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__saveAsSessionButton();
     // Get instance field reference: private VROSC.UIButton _loadSessionButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__loadSessionButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__loadSessionButton();
     // Get instance field reference: private VROSC.UIButton _deleteSessionButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__deleteSessionButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__deleteSessionButton();
     // Get instance field reference: private VROSC.ConfirmationUIPopup _confirmationUIPopup
-    [[deprecated]] ::VROSC::ConfirmationUIPopup*& dyn__confirmationUIPopup();
+    [[deprecated("Use field access instead!")]] ::VROSC::ConfirmationUIPopup*& dyn__confirmationUIPopup();
     // Get instance field reference: private VROSC.SaveSessionUIPopup _saveSessionUIPopup
-    [[deprecated]] ::VROSC::SaveSessionUIPopup*& dyn__saveSessionUIPopup();
+    [[deprecated("Use field access instead!")]] ::VROSC::SaveSessionUIPopup*& dyn__saveSessionUIPopup();
     // Get instance field reference: private VROSC.LoadSessionUIPopup _loadSessionUIPopup
-    [[deprecated]] ::VROSC::LoadSessionUIPopup*& dyn__loadSessionUIPopup();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoadSessionUIPopup*& dyn__loadSessionUIPopup();
     // Get instance field reference: private UnityEngine.GameObject _waitingForDataValidationPopup
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__waitingForDataValidationPopup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__waitingForDataValidationPopup();
     // Get instance field reference: private VROSC.UserProfilePopup _userProfilePopup
-    [[deprecated]] ::VROSC::UserProfilePopup*& dyn__userProfilePopup();
+    [[deprecated("Use field access instead!")]] ::VROSC::UserProfilePopup*& dyn__userProfilePopup();
     // Get instance field reference: private VROSC.SessionInfoPopup _sessionInfoPopup
-    [[deprecated]] ::VROSC::SessionInfoPopup*& dyn__sessionInfoPopup();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionInfoPopup*& dyn__sessionInfoPopup();
     // Get instance field reference: private VROSC.SessionsSearchBar _searchBar
-    [[deprecated]] ::VROSC::SessionsSearchBar*& dyn__searchBar();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsSearchBar*& dyn__searchBar();
     // Get instance field reference: private VROSC.ConfirmationUIPopup/VROSC.Data _newSessionConfirmationData
-    [[deprecated]] ::VROSC::ConfirmationUIPopup::Data*& dyn__newSessionConfirmationData();
+    [[deprecated("Use field access instead!")]] ::VROSC::ConfirmationUIPopup::Data*& dyn__newSessionConfirmationData();
     // Get instance field reference: private VROSC.ConfirmationUIPopup/VROSC.Data _loadSessionConfirmationData
-    [[deprecated]] ::VROSC::ConfirmationUIPopup::Data*& dyn__loadSessionConfirmationData();
+    [[deprecated("Use field access instead!")]] ::VROSC::ConfirmationUIPopup::Data*& dyn__loadSessionConfirmationData();
     // Get instance field reference: private VROSC.ConfirmationUIPopup/VROSC.Data _deleteSessionConfirmationData
-    [[deprecated]] ::VROSC::ConfirmationUIPopup::Data*& dyn__deleteSessionConfirmationData();
+    [[deprecated("Use field access instead!")]] ::VROSC::ConfirmationUIPopup::Data*& dyn__deleteSessionConfirmationData();
     // Get instance field reference: private VROSC.PreviewOptionsUI _previewOptionsUI
-    [[deprecated]] ::VROSC::PreviewOptionsUI*& dyn__previewOptionsUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::PreviewOptionsUI*& dyn__previewOptionsUI();
     // Get instance field reference: private UnityEngine.GameObject _updateNoticeWindow
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__updateNoticeWindow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__updateNoticeWindow();
     // Get instance field reference: private UnityEngine.GameObject _mainWindow
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__mainWindow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__mainWindow();
     // Get instance field reference: private VROSC.UIButton _updateContinueButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__updateContinueButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__updateContinueButton();
     // Get instance field reference: private VROSC.SessionsLibraryUI/VROSC.State _currentState
-    [[deprecated]] ::VROSC::SessionsLibraryUI::State& dyn__currentState();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsLibraryUI::State& dyn__currentState();
     // Get instance field reference: private VROSC.SessionsLibraryUI/VROSC.SessionSaveData _cachedSaveData
-    [[deprecated]] ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn__cachedSaveData();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn__cachedSaveData();
     // Get instance field reference: private System.Boolean _allowOnline
-    [[deprecated]] bool& dyn__allowOnline();
+    [[deprecated("Use field access instead!")]] bool& dyn__allowOnline();
     // Get instance field reference: private VROSC.SessionsPanelUI _currentSessionsPanel
-    [[deprecated]] ::VROSC::SessionsPanelUI*& dyn__currentSessionsPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsPanelUI*& dyn__currentSessionsPanel();
     // Get instance field reference: private VROSC.SessionItemData _selectedItemData
-    [[deprecated]] ::VROSC::SessionItemData*& dyn__selectedItemData();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionItemData*& dyn__selectedItemData();
+    // public System.Void .ctor()
+    // Offset: 0x19922B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SessionsLibraryUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsLibraryUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SessionsLibraryUI*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x198CB1C
     void Awake();
@@ -622,19 +629,6 @@ namespace VROSC {
     // private System.Void <DeleteSessionButtonPressed>b__63_1()
     // Offset: 0x1993544
     void $DeleteSessionButtonPressed$b__63_1();
-    // public System.Void .ctor()
-    // Offset: 0x19922B8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SessionsLibraryUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsLibraryUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SessionsLibraryUI*, creationType>()));
-    }
   }; // VROSC.SessionsLibraryUI
   #pragma pack(pop)
   static check_size<sizeof(SessionsLibraryUI), 272 + sizeof(::VROSC::SessionItemData*)> __VROSC_SessionsLibraryUISizeCheck;
@@ -643,6 +637,10 @@ namespace VROSC {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::SessionsLibraryUI::State, "VROSC", "SessionsLibraryUI/State");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SessionsLibraryUI::Awake
 // Il2CppName: Awake
 template<>
@@ -1182,7 +1180,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI*), "<DeleteSessionButtonPressed>b__63_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

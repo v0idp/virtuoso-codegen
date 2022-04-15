@@ -61,7 +61,7 @@ namespace System::Configuration::Assemblies {
     // Set static field: static public System.Configuration.Assemblies.AssemblyVersionCompatibility SameDomain
     static void _set_SameDomain(::System::Configuration::Assemblies::AssemblyVersionCompatibility value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Configuration.Assemblies.AssemblyVersionCompatibility
   #pragma pack(pop)
   static check_size<sizeof(AssemblyVersionCompatibility), 0 + sizeof(int)> __System_Configuration_Assemblies_AssemblyVersionCompatibilitySizeCheck;

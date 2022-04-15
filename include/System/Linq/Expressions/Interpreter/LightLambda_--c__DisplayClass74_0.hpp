@@ -53,27 +53,29 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: public System.Reflection.MethodInfo targetMethod
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_targetMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_targetMethod();
     // Get instance field reference: public System.Type delegateType
-    [[deprecated]] ::System::Type*& dyn_delegateType();
-    // System.Delegate <MakeRunDelegateCtor>b__0(System.Linq.Expressions.Interpreter.LightLambda lambda)
-    // Offset: 0x16AA210
-    ::System::Delegate* $MakeRunDelegateCtor$b__0(::System::Linq::Expressions::Interpreter::LightLambda* lambda);
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_delegateType();
     // public System.Void .ctor()
     // Offset: 0x16AA208
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LightLambda::$$c__DisplayClass74_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LightLambda::$$c__DisplayClass74_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LightLambda::$$c__DisplayClass74_0*, creationType>()));
     }
+    // System.Delegate <MakeRunDelegateCtor>b__0(System.Linq.Expressions.Interpreter.LightLambda lambda)
+    // Offset: 0x16AA210
+    ::System::Delegate* $MakeRunDelegateCtor$b__0(::System::Linq::Expressions::Interpreter::LightLambda* lambda);
   }; // System.Linq.Expressions.Interpreter.LightLambda/System.Linq.Expressions.Interpreter.<>c__DisplayClass74_0
   #pragma pack(pop)
   static check_size<sizeof(LightLambda::$$c__DisplayClass74_0), 24 + sizeof(::System::Type*)> __System_Linq_Expressions_Interpreter_LightLambda_$$c__DisplayClass74_0SizeCheck;
   static_assert(sizeof(LightLambda::$$c__DisplayClass74_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightLambda::$$c__DisplayClass74_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightLambda::$$c__DisplayClass74_0::$MakeRunDelegateCtor$b__0
 // Il2CppName: <MakeRunDelegateCtor>b__0
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::D
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LightLambda::$$c__DisplayClass74_0*), "<MakeRunDelegateCtor>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{lambda});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightLambda::$$c__DisplayClass74_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

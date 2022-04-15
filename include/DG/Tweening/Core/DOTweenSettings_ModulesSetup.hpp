@@ -74,25 +74,23 @@ namespace DG::Tweening::Core {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean showPanel
-    [[deprecated]] bool& dyn_showPanel();
+    [[deprecated("Use field access instead!")]] bool& dyn_showPanel();
     // Get instance field reference: public System.Boolean audioEnabled
-    [[deprecated]] bool& dyn_audioEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_audioEnabled();
     // Get instance field reference: public System.Boolean physicsEnabled
-    [[deprecated]] bool& dyn_physicsEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_physicsEnabled();
     // Get instance field reference: public System.Boolean physics2DEnabled
-    [[deprecated]] bool& dyn_physics2DEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_physics2DEnabled();
     // Get instance field reference: public System.Boolean spriteEnabled
-    [[deprecated]] bool& dyn_spriteEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_spriteEnabled();
     // Get instance field reference: public System.Boolean uiEnabled
-    [[deprecated]] bool& dyn_uiEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_uiEnabled();
     // Get instance field reference: public System.Boolean textMeshProEnabled
-    [[deprecated]] bool& dyn_textMeshProEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_textMeshProEnabled();
     // Get instance field reference: public System.Boolean tk2DEnabled
-    [[deprecated]] bool& dyn_tk2DEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_tk2DEnabled();
     // public System.Void .ctor()
     // Offset: 0x1863418
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DOTweenSettings::ModulesSetup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOTweenSettings::ModulesSetup::.ctor");

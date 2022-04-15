@@ -171,35 +171,42 @@ namespace VROSC::Credits {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Credits.CreditsData _data
-    [[deprecated]] ::VROSC::Credits::CreditsData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsData*& dyn__data();
     // Get instance field reference: private VROSC.Credits.CreditsSection _sectionPrefab
-    [[deprecated]] ::VROSC::Credits::CreditsSection*& dyn__sectionPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsSection*& dyn__sectionPrefab();
     // Get instance field reference: private UnityEngine.RectTransform _background
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__background();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__background();
     // Get instance field reference: private UnityEngine.Transform _mover
-    [[deprecated]] ::UnityEngine::Transform*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__mover();
     // Get instance field reference: private VROSC.Clickable _dragObject
-    [[deprecated]] ::VROSC::Clickable*& dyn__dragObject();
+    [[deprecated("Use field access instead!")]] ::VROSC::Clickable*& dyn__dragObject();
     // Get instance field reference: private System.Single _startFade
-    [[deprecated]] float& dyn__startFade();
+    [[deprecated("Use field access instead!")]] float& dyn__startFade();
     // Get instance field reference: private VROSC.SmoothMovement _dragging
-    [[deprecated]] ::VROSC::SmoothMovement*& dyn__dragging();
+    [[deprecated("Use field access instead!")]] ::VROSC::SmoothMovement*& dyn__dragging();
     // Get instance field reference: private System.Single _maxHeight
-    [[deprecated]] float& dyn__maxHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__maxHeight();
     // Get instance field reference: private System.Single _scrollAmount
-    [[deprecated]] float& dyn__scrollAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__scrollAmount();
     // Get instance field reference: private System.Single _moveTimer
-    [[deprecated]] float& dyn__moveTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__moveTimer();
     // Get instance field reference: private System.Boolean _setupComplete
-    [[deprecated]] bool& dyn__setupComplete();
+    [[deprecated("Use field access instead!")]] bool& dyn__setupComplete();
     // Get instance field reference: private System.Boolean _grabbed
-    [[deprecated]] bool& dyn__grabbed();
+    [[deprecated("Use field access instead!")]] bool& dyn__grabbed();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.Credits.CreditsObject _postCreditsObject
-    [[deprecated]] ::VROSC::Credits::CreditsObject*& dyn__postCreditsObject();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsObject*& dyn__postCreditsObject();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsObject> _objects
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
+    // public System.Void .ctor()
+    // Offset: 0x1981920
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ScrollingCredits* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::ScrollingCredits::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ScrollingCredits*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1980988
     void Awake();
@@ -239,25 +246,16 @@ namespace VROSC::Credits {
     // private System.Void OnDrawGizmosSelected()
     // Offset: 0x19817D8
     void OnDrawGizmosSelected();
-    // public System.Void .ctor()
-    // Offset: 0x1981920
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ScrollingCredits* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::ScrollingCredits::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ScrollingCredits*, creationType>()));
-    }
   }; // VROSC.Credits.ScrollingCredits
   #pragma pack(pop)
   static check_size<sizeof(ScrollingCredits), 112 + sizeof(::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*)> __VROSC_Credits_ScrollingCreditsSizeCheck;
   static_assert(sizeof(ScrollingCredits) == 0x78);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::Credits::ScrollingCredits::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Credits::ScrollingCredits::Awake
 // Il2CppName: Awake
 template<>
@@ -367,7 +365,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Credits::ScrollingCredits*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::Credits::ScrollingCredits::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

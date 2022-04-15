@@ -39,7 +39,7 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean m_useLegacyBlockSize
-    [[deprecated]] bool& dyn_m_useLegacyBlockSize();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_useLegacyBlockSize();
     // private System.Int32 get_BlockSize()
     // Offset: 0x145BDA4
     int get_BlockSize();

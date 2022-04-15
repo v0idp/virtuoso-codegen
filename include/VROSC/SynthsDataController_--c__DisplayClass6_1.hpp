@@ -41,13 +41,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SynthsDataController::$$c__DisplayClass6_0*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 patchCountToLoad
-    [[deprecated]] int& dyn_patchCountToLoad();
+    [[deprecated("Use field access instead!")]] int& dyn_patchCountToLoad();
     // Get instance field reference: public VROSC.SynthsDataController/VROSC.<>c__DisplayClass6_0 CS$<>8__locals1
-    [[deprecated]] ::VROSC::SynthsDataController::$$c__DisplayClass6_0*& dyn_CS$$$8__locals1();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthsDataController::$$c__DisplayClass6_0*& dyn_CS$$$8__locals1();
     // public System.Void .ctor()
     // Offset: 0x8DB028
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthsDataController::$$c__DisplayClass6_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthsDataController::$$c__DisplayClass6_1::.ctor");

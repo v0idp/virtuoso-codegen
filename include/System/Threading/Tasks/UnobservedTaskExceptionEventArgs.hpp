@@ -50,9 +50,9 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.AggregateException m_exception
-    [[deprecated]] ::System::AggregateException*& dyn_m_exception();
+    [[deprecated("Use field access instead!")]] ::System::AggregateException*& dyn_m_exception();
     // Get instance field reference: System.Boolean m_observed
-    [[deprecated]] bool& dyn_m_observed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_observed();
     // public System.Void .ctor(System.AggregateException exception)
     // Offset: 0x120C374
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

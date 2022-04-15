@@ -92,21 +92,21 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::System::Text::RegularExpressions::RegexNode*) == 0x8);
     public:
     // Get instance field reference: System.Int32 _type
-    [[deprecated]] int& dyn__type();
+    [[deprecated("Use field access instead!")]] int& dyn__type();
     // Get instance field reference: System.Collections.Generic.List`1<System.Text.RegularExpressions.RegexNode> _children
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexNode*>*& dyn__children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexNode*>*& dyn__children();
     // Get instance field reference: System.String _str
-    [[deprecated]] ::StringW& dyn__str();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__str();
     // Get instance field reference: System.Char _ch
-    [[deprecated]] ::Il2CppChar& dyn__ch();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__ch();
     // Get instance field reference: System.Int32 _m
-    [[deprecated]] int& dyn__m();
+    [[deprecated("Use field access instead!")]] int& dyn__m();
     // Get instance field reference: System.Int32 _n
-    [[deprecated]] int& dyn__n();
+    [[deprecated("Use field access instead!")]] int& dyn__n();
     // Get instance field reference: System.Text.RegularExpressions.RegexOptions _options
-    [[deprecated]] ::System::Text::RegularExpressions::RegexOptions& dyn__options();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexOptions& dyn__options();
     // Get instance field reference: System.Text.RegularExpressions.RegexNode _next
-    [[deprecated]] ::System::Text::RegularExpressions::RegexNode*& dyn__next();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexNode*& dyn__next();
     // System.Void .ctor(System.Int32 type, System.Text.RegularExpressions.RegexOptions options)
     // Offset: 0x1849D54
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

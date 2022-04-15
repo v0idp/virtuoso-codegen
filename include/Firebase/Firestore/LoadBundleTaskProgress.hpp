@@ -83,7 +83,7 @@ namespace Firebase::Firestore {
       // Set static field: static public Firebase.Firestore.LoadBundleTaskProgress/Firebase.Firestore.LoadBundleTaskState Success
       static void _set_Success(::Firebase::Firestore::LoadBundleTaskProgress::LoadBundleTaskState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Firebase.Firestore.LoadBundleTaskProgress/Firebase.Firestore.LoadBundleTaskState
     #pragma pack(pop)
     static check_size<sizeof(LoadBundleTaskProgress::LoadBundleTaskState), 0 + sizeof(int)> __Firebase_Firestore_LoadBundleTaskProgress_LoadBundleTaskStateSizeCheck;
@@ -126,15 +126,15 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::Firebase::Firestore::LoadBundleTaskProgress::LoadBundleTaskState) == 0x4);
     public:
     // Get instance field reference: private System.Int32 <DocumentsLoaded>k__BackingField
-    [[deprecated]] int& dyn_$DocumentsLoaded$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$DocumentsLoaded$k__BackingField();
     // Get instance field reference: private System.Int32 <TotalDocuments>k__BackingField
-    [[deprecated]] int& dyn_$TotalDocuments$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$TotalDocuments$k__BackingField();
     // Get instance field reference: private System.Int64 <BytesLoaded>k__BackingField
-    [[deprecated]] int64_t& dyn_$BytesLoaded$k__BackingField();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_$BytesLoaded$k__BackingField();
     // Get instance field reference: private System.Int64 <TotalBytes>k__BackingField
-    [[deprecated]] int64_t& dyn_$TotalBytes$k__BackingField();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_$TotalBytes$k__BackingField();
     // Get instance field reference: private Firebase.Firestore.LoadBundleTaskProgress/Firebase.Firestore.LoadBundleTaskState <State>k__BackingField
-    [[deprecated]] ::Firebase::Firestore::LoadBundleTaskProgress::LoadBundleTaskState& dyn_$State$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::LoadBundleTaskProgress::LoadBundleTaskState& dyn_$State$k__BackingField();
     // public System.Int32 get_DocumentsLoaded()
     // Offset: 0xD62804
     int get_DocumentsLoaded();

@@ -52,7 +52,7 @@ namespace UnityEngine::Timeline {
       return intervalBit;
     }
     // Get instance field reference: private System.Int32 <intervalBit>k__BackingField
-    [[deprecated]] int& dyn_$intervalBit$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$intervalBit$k__BackingField();
     // public System.Int64 get_intervalStart()
     // Offset: 0xFFFFFFFFFFFFFFFF
     int64_t get_intervalStart();
@@ -68,21 +68,19 @@ namespace UnityEngine::Timeline {
     // public System.Void set_enable(System.Boolean value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void set_enable(bool value);
+    // protected System.Void .ctor()
+    // Offset: 0xC77948
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RuntimeElement* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::RuntimeElement::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RuntimeElement*, creationType>()));
+    }
     // public System.Void EvaluateAt(System.Double localTime, UnityEngine.Playables.FrameData frameData)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void EvaluateAt(double localTime, ::UnityEngine::Playables::FrameData frameData);
     // public System.Void Reset()
     // Offset: 0xC7B2B8
     void Reset();
-    // protected System.Void .ctor()
-    // Offset: 0xC77948
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RuntimeElement* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::RuntimeElement::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RuntimeElement*, creationType>()));
-    }
   }; // UnityEngine.Timeline.RuntimeElement
   #pragma pack(pop)
   static check_size<sizeof(RuntimeElement), 16 + sizeof(int)> __UnityEngine_Timeline_RuntimeElementSizeCheck;
@@ -131,6 +129,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::RuntimeElement*), "set_enable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::RuntimeElement::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::RuntimeElement::EvaluateAt
 // Il2CppName: EvaluateAt
 template<>
@@ -149,7 +151,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::RuntimeElement*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::RuntimeElement::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

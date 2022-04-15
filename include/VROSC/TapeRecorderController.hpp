@@ -70,13 +70,13 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InfoPanel*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: private VROSC.TapeRecorder _tapeRecorder
-    [[deprecated]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
+    [[deprecated("Use field access instead!")]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
     // Get instance field reference: protected VROSC.ControlPanelUI _controlPanelUI
-    [[deprecated]] ::VROSC::ControlPanelUI*& dyn__controlPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControlPanelUI*& dyn__controlPanelUI();
     // Get instance field reference: protected VROSC.InfoPanel _infoPanel
-    [[deprecated]] ::VROSC::InfoPanel*& dyn__infoPanel();
+    [[deprecated("Use field access instead!")]] ::VROSC::InfoPanel*& dyn__infoPanel();
     // private System.Void CloseButtonPressed()
     // Offset: 0xA22290
     void CloseButtonPressed();
@@ -85,11 +85,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolController
     // Base method: System.Void ToolController::.ctor()
     // Base method: System.Void WidgetController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TapeRecorderController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TapeRecorderController::.ctor");

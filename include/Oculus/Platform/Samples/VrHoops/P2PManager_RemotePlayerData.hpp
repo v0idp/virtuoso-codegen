@@ -75,19 +75,17 @@ namespace Oculus::Platform::Samples::VrHoops {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*) == 0x8);
     public:
     // Get instance field reference: public Oculus.Platform.PeerConnectionState state
-    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_state();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PeerConnectionState& dyn_state();
     // Get instance field reference: public Oculus.Platform.Samples.VrHoops.RemotePlayer player
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::RemotePlayer*& dyn_player();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::RemotePlayer*& dyn_player();
     // Get instance field reference: public System.Single remoteTimeOffset
-    [[deprecated]] float& dyn_remoteTimeOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_remoteTimeOffset();
     // Get instance field reference: public System.Single lastReceivedBallsTime
-    [[deprecated]] float& dyn_lastReceivedBallsTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastReceivedBallsTime();
     // Get instance field reference: public readonly System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall> activeBalls
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_activeBalls();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::Oculus::Platform::Samples::VrHoops::P2PNetworkBall*>*& dyn_activeBalls();
     // public System.Void .ctor()
     // Offset: 0x1722F3C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static P2PManager::RemotePlayerData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::P2PManager::RemotePlayerData::.ctor");

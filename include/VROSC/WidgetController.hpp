@@ -131,25 +131,25 @@ namespace VROSC {
     // Set static field: static public System.Action`2<VROSC.WidgetSettings,System.Boolean> OnWidgetActivationChange
     static void _set_OnWidgetActivationChange(::System::Action_2<::VROSC::WidgetSettings*, bool>* value);
     // Get instance field reference: protected VROSC.WidgetSettings _widgetSettings
-    [[deprecated]] ::VROSC::WidgetSettings*& dyn__widgetSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetSettings*& dyn__widgetSettings();
     // Get instance field reference: private UnityEngine.GameObject _toggleObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__toggleObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__toggleObject();
     // Get instance field reference: private VROSC.TimelineInstrumentActivation _timelineActivation
-    [[deprecated]] ::VROSC::TimelineInstrumentActivation*& dyn__timelineActivation();
+    [[deprecated("Use field access instead!")]] ::VROSC::TimelineInstrumentActivation*& dyn__timelineActivation();
     // Get instance field reference: private VROSC.WidgetController/VROSC.WidgetPositionalData _positionalData
-    [[deprecated]] ::VROSC::WidgetController::WidgetPositionalData*& dyn__positionalData();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetController::WidgetPositionalData*& dyn__positionalData();
     // Get instance field reference: protected VROSC.TransformMover _transformMover
-    [[deprecated]] ::VROSC::TransformMover*& dyn__transformMover();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn__transformMover();
     // Get instance field reference: private System.Boolean <IsActive>k__BackingField
-    [[deprecated]] bool& dyn_$IsActive$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsActive$k__BackingField();
     // Get instance field reference: private System.Boolean <UserHasOpened>k__BackingField
-    [[deprecated]] bool& dyn_$UserHasOpened$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$UserHasOpened$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <InitalLocalScale>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$InitalLocalScale$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$InitalLocalScale$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <UserMoverScale>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$UserMoverScale$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$UserMoverScale$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Boolean> OnToggled
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnToggled();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnToggled();
     // public VROSC.WidgetController/VROSC.WidgetPositionalData get_PositionalData()
     // Offset: 0x951094
     ::VROSC::WidgetController::WidgetPositionalData* get_PositionalData();
@@ -192,6 +192,13 @@ namespace VROSC {
     // private System.Void set_UserMoverScale(UnityEngine.Vector3 value)
     // Offset: 0x951140
     void set_UserMoverScale(::UnityEngine::Vector3 value);
+    // public System.Void .ctor()
+    // Offset: 0x9518F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WidgetController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WidgetController*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x951158
     void Awake();
@@ -222,19 +229,6 @@ namespace VROSC {
     // private System.Void SendToAnalytics(VROSC.WidgetSettings/VROSC.Identifier id, System.Boolean isActive)
     // Offset: 0x9514F4
     void SendToAnalytics(::VROSC::WidgetSettings::Identifier id, bool isActive);
-    // public System.Void .ctor()
-    // Offset: 0x9518F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WidgetController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WidgetController*, creationType>()));
-    }
   }; // VROSC.WidgetController
   #pragma pack(pop)
   static check_size<sizeof(WidgetController), 96 + sizeof(::System::Action_1<bool>*)> __VROSC_WidgetControllerSizeCheck;
@@ -357,6 +351,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "set_UserMoverScale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::WidgetController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::WidgetController::Awake
 // Il2CppName: Awake
 template<>
@@ -445,7 +443,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetController*), "SendToAnalytics", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{id, isActive});
   }
 };
-// Writing MetadataGetter for method: VROSC::WidgetController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

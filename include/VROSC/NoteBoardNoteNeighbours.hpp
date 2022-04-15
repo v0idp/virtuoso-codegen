@@ -63,13 +63,13 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::NoteBoardNote*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteBoardNoteNeighbours/VROSC.Axis _x
-    [[deprecated]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__x();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__x();
     // Get instance field reference: private VROSC.NoteBoardNoteNeighbours/VROSC.Axis _y
-    [[deprecated]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__y();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__y();
     // Get instance field reference: private VROSC.NoteBoardNoteNeighbours/VROSC.Axis _z
-    [[deprecated]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__z();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteNeighbours::Axis*& dyn__z();
     // Get instance field reference: public VROSC.NoteBoardNote[] AllNeighbours
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_AllNeighbours();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_AllNeighbours();
     // public System.Void .ctor(VROSC.NoteBoardNote xUp, VROSC.NoteBoardNote xDown, VROSC.NoteBoardNote yUp, VROSC.NoteBoardNote yDown, VROSC.NoteBoardNote zUp, VROSC.NoteBoardNote zDown)
     // Offset: 0xC5678C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

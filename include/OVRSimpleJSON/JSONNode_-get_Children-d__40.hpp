@@ -65,11 +65,11 @@ namespace OVRSimpleJSON {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::OVRSimpleJSON::JSONNode*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private OVRSimpleJSON.JSONNode <>2__current
-    [[deprecated]] ::OVRSimpleJSON::JSONNode*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::OVRSimpleJSON::JSONNode*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // private OVRSimpleJSON.JSONNode System.Collections.Generic.IEnumerator<OVRSimpleJSON.JSONNode>.get_Current()
     // Offset: 0x84AB10
     ::OVRSimpleJSON::JSONNode* System_Collections_Generic_IEnumerator$OVRSimpleJSON_JSONNode$_get_Current();

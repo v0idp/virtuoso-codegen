@@ -49,27 +49,29 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::Firebase::Firestore::FirebaseFirestore*) == 0x8);
     public:
     // Get instance field reference: System.String path
-    [[deprecated]] ::StringW& dyn_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_path();
     // Get instance field reference: Firebase.Firestore.FirebaseFirestore $this
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn_$this();
-    // Firebase.Firestore.CollectionReference <>m__0(Firebase.Firestore.FirestoreProxy proxy)
-    // Offset: 0xD66D3C
-    ::Firebase::Firestore::CollectionReference* $$m__0(::Firebase::Firestore::FirestoreProxy* proxy);
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestore*& dyn_$this();
     // public System.Void .ctor()
     // Offset: 0xD5A808
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseFirestore::$Collection$c__AnonStorey0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirebaseFirestore::$Collection$c__AnonStorey0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseFirestore::$Collection$c__AnonStorey0*, creationType>()));
     }
+    // Firebase.Firestore.CollectionReference <>m__0(Firebase.Firestore.FirestoreProxy proxy)
+    // Offset: 0xD66D3C
+    ::Firebase::Firestore::CollectionReference* $$m__0(::Firebase::Firestore::FirestoreProxy* proxy);
   }; // Firebase.Firestore.FirebaseFirestore/Firebase.Firestore.<Collection>c__AnonStorey0
   #pragma pack(pop)
   static check_size<sizeof(FirebaseFirestore::$Collection$c__AnonStorey0), 24 + sizeof(::Firebase::Firestore::FirebaseFirestore*)> __Firebase_Firestore_FirebaseFirestore_$Collection$c__AnonStorey0SizeCheck;
   static_assert(sizeof(FirebaseFirestore::$Collection$c__AnonStorey0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::FirebaseFirestore::$Collection$c__AnonStorey0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::FirebaseFirestore::$Collection$c__AnonStorey0::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -79,7 +81,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirebaseFirestore::$Collection$c__AnonStorey0*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{proxy});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FirebaseFirestore::$Collection$c__AnonStorey0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

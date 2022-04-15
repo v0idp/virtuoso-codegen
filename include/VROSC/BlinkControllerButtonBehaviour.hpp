@@ -98,7 +98,7 @@ namespace VROSC {
       // Set static field: static public VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction InstantStop
       static void _set_InstantStop(::VROSC::BlinkControllerButtonBehaviour::EventAction value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction
     #pragma pack(pop)
     static check_size<sizeof(BlinkControllerButtonBehaviour::EventAction), 0 + sizeof(int)> __VROSC_BlinkControllerButtonBehaviour_EventActionSizeCheck;
@@ -160,23 +160,30 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.HandType _hand
-    [[deprecated]] ::VROSC::HandType& dyn__hand();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private VROSC.TriggerButton _button
-    [[deprecated]] ::VROSC::TriggerButton& dyn__button();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__button();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _fadeTime
-    [[deprecated]] float& dyn__fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn__fadeTime();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStartAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStopAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStartAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStopAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
     // Get instance field reference: private System.Boolean _playing
-    [[deprecated]] bool& dyn__playing();
+    [[deprecated("Use field access instead!")]] bool& dyn__playing();
+    // public System.Void .ctor()
+    // Offset: 0x937BA8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BlinkControllerButtonBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BlinkControllerButtonBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BlinkControllerButtonBehaviour*, creationType>()));
+    }
     // public System.Void Setup(VROSC.HandType hand, VROSC.TriggerButton button, UnityEngine.Color color, System.Single fadeTime, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onAssetStartAction, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onAssetStopAction, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onTimelineStartAction, VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction onTimelineStopAction)
     // Offset: 0x937814
     void Setup(::VROSC::HandType hand, ::VROSC::TriggerButton button, ::UnityEngine::Color color, float fadeTime, ::VROSC::BlinkControllerButtonBehaviour::EventAction onAssetStartAction, ::VROSC::BlinkControllerButtonBehaviour::EventAction onAssetStopAction, ::VROSC::BlinkControllerButtonBehaviour::EventAction onTimelineStartAction, ::VROSC::BlinkControllerButtonBehaviour::EventAction onTimelineStopAction);
@@ -189,16 +196,6 @@ namespace VROSC {
     // private System.Void ProcessEventAction(VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction eventAction)
     // Offset: 0x93789C
     void ProcessEventAction(::VROSC::BlinkControllerButtonBehaviour::EventAction eventAction);
-    // public System.Void .ctor()
-    // Offset: 0x937BA8
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BlinkControllerButtonBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BlinkControllerButtonBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BlinkControllerButtonBehaviour*, creationType>()));
-    }
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x937850
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -232,6 +229,10 @@ namespace VROSC {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::BlinkControllerButtonBehaviour::EventAction, "VROSC", "BlinkControllerButtonBehaviour/EventAction");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::BlinkControllerButtonBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BlinkControllerButtonBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -274,10 +275,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BlinkControllerButtonBehaviour*), "ProcessEventAction", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{eventAction});
   }
 };
-// Writing MetadataGetter for method: VROSC::BlinkControllerButtonBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BlinkControllerButtonBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

@@ -68,9 +68,9 @@ namespace System::IO::Compression {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: private readonly System.IO.Stream _stream
-    [[deprecated]] ::System::IO::Stream*& dyn__stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__stream();
     // Get instance field reference: private System.Int64 _position
-    [[deprecated]] int64_t& dyn__position();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__position();
     // public System.Void .ctor(System.IO.Stream stream)
     // Offset: 0x16989FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

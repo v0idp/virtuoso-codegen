@@ -73,15 +73,15 @@ namespace TMPro {
     // Set static field: static private readonly TMPro.TMP_Vertex k_Zero
     static void _set_k_Zero(::TMPro::TMP_Vertex value);
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Vector2 uv
-    [[deprecated]] ::UnityEngine::Vector2& dyn_uv();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_uv();
     // Get instance field reference: public UnityEngine.Vector2 uv2
-    [[deprecated]] ::UnityEngine::Vector2& dyn_uv2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_uv2();
     // Get instance field reference: public UnityEngine.Vector2 uv4
-    [[deprecated]] ::UnityEngine::Vector2& dyn_uv4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_uv4();
     // Get instance field reference: public UnityEngine.Color32 color
-    [[deprecated]] ::UnityEngine::Color32& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_color();
     // static public TMPro.TMP_Vertex get_zero()
     // Offset: 0xD158FC
     static ::TMPro::TMP_Vertex get_zero();

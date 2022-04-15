@@ -44,9 +44,9 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: protected System.Single[] _mixerGroupData
-    [[deprecated]] ::ArrayW<float>& dyn__mixerGroupData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__mixerGroupData();
     // Get instance field reference: protected System.Int32 _routingChannel
-    [[deprecated]] int& dyn__routingChannel();
+    [[deprecated("Use field access instead!")]] int& dyn__routingChannel();
     // public System.Void Setup(System.Int32 channel)
     // Offset: 0xACA224
     void Setup(int channel);
@@ -57,11 +57,6 @@ namespace VROSC {
     // Offset: 0xAC0CC8
     // Implemented from: VROSC.SourceRecorder
     // Base method: System.Void SourceRecorder::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MixerGroupRecorder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MixerGroupRecorder::.ctor");

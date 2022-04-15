@@ -41,7 +41,7 @@ namespace Oculus::Platform::Models {
       return MicrophoneAvailable;
     }
     // Get instance field reference: public readonly System.Boolean MicrophoneAvailable
-    [[deprecated]] bool& dyn_MicrophoneAvailable();
+    [[deprecated("Use field access instead!")]] bool& dyn_MicrophoneAvailable();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB4DC0C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

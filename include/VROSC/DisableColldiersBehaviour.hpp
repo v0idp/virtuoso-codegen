@@ -74,26 +74,23 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<bool>) == 0x8);
     public:
     // Get instance field reference: public System.Boolean Disable
-    [[deprecated]] bool& dyn_Disable();
+    [[deprecated("Use field access instead!")]] bool& dyn_Disable();
     // Get instance field reference: private UnityEngine.GameObject _root
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__root();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__root();
     // Get instance field reference: private UnityEngine.Collider[] _colliders
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__colliders();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__colliders();
     // Get instance field reference: private System.Boolean[] _activeAtStart
-    [[deprecated]] ::ArrayW<bool>& dyn__activeAtStart();
-    // public System.Void Setup(UnityEngine.GameObject root)
-    // Offset: 0x8E4A0C
-    void Setup(::UnityEngine::GameObject* root);
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn__activeAtStart();
     // public System.Void .ctor()
     // Offset: 0x8E4C8C
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DisableColldiersBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DisableColldiersBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DisableColldiersBehaviour*, creationType>()));
     }
+    // public System.Void Setup(UnityEngine.GameObject root)
+    // Offset: 0x8E4A0C
+    void Setup(::UnityEngine::GameObject* root);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x8E4B1C
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -105,6 +102,10 @@ namespace VROSC {
   static_assert(sizeof(DisableColldiersBehaviour) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::DisableColldiersBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::DisableColldiersBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -114,10 +115,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::DisableColldiersBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{root});
   }
 };
-// Writing MetadataGetter for method: VROSC::DisableColldiersBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::DisableColldiersBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

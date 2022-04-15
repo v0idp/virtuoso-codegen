@@ -74,11 +74,11 @@ namespace Newtonsoft::Json::Converters {
       return *reinterpret_cast<::Newtonsoft::Json::Converters::IXmlNode*>(this);
     }
     // Get instance field reference: private readonly System.Xml.XmlNode _node
-    [[deprecated]] ::System::Xml::XmlNode*& dyn__node();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn__node();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Converters.IXmlNode> _childNodes
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__childNodes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__childNodes();
     // Get instance field reference: private System.Collections.Generic.List`1<Newtonsoft.Json.Converters.IXmlNode> _attributes
-    [[deprecated]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__attributes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Newtonsoft::Json::Converters::IXmlNode*>*& dyn__attributes();
     // public System.Object get_WrappedNode()
     // Offset: 0x159BFD4
     ::Il2CppObject* get_WrappedNode();

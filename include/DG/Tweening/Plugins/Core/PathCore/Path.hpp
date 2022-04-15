@@ -193,53 +193,60 @@ namespace DG::Tweening::Plugins::Core::PathCore {
     // Set static field: static private DG.Tweening.Plugins.Core.PathCore.CubicBezierDecoder _cubicBezierDecoder
     static void _set__cubicBezierDecoder(::DG::Tweening::Plugins::Core::PathCore::CubicBezierDecoder* value);
     // Get instance field reference: public System.Single[] wpLengths
-    [[deprecated]] ::ArrayW<float>& dyn_wpLengths();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_wpLengths();
     // Get instance field reference: DG.Tweening.PathType type
-    [[deprecated]] ::DG::Tweening::PathType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::PathType& dyn_type();
     // Get instance field reference: System.Int32 subdivisionsXSegment
-    [[deprecated]] int& dyn_subdivisionsXSegment();
+    [[deprecated("Use field access instead!")]] int& dyn_subdivisionsXSegment();
     // Get instance field reference: System.Int32 subdivisions
-    [[deprecated]] int& dyn_subdivisions();
+    [[deprecated("Use field access instead!")]] int& dyn_subdivisions();
     // Get instance field reference: UnityEngine.Vector3[] wps
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_wps();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_wps();
     // Get instance field reference: DG.Tweening.Plugins.Core.PathCore.ControlPoint[] controlPoints
-    [[deprecated]] ::ArrayW<::DG::Tweening::Plugins::Core::PathCore::ControlPoint>& dyn_controlPoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::DG::Tweening::Plugins::Core::PathCore::ControlPoint>& dyn_controlPoints();
     // Get instance field reference: System.Single length
-    [[deprecated]] float& dyn_length();
+    [[deprecated("Use field access instead!")]] float& dyn_length();
     // Get instance field reference: System.Boolean isFinalized
-    [[deprecated]] bool& dyn_isFinalized();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFinalized();
     // Get instance field reference: System.Single[] timesTable
-    [[deprecated]] ::ArrayW<float>& dyn_timesTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_timesTable();
     // Get instance field reference: System.Single[] lengthsTable
-    [[deprecated]] ::ArrayW<float>& dyn_lengthsTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_lengthsTable();
     // Get instance field reference: System.Int32 linearWPIndex
-    [[deprecated]] int& dyn_linearWPIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_linearWPIndex();
     // Get instance field reference: System.Boolean addedExtraStartWp
-    [[deprecated]] bool& dyn_addedExtraStartWp();
+    [[deprecated("Use field access instead!")]] bool& dyn_addedExtraStartWp();
     // Get instance field reference: System.Boolean addedExtraEndWp
-    [[deprecated]] bool& dyn_addedExtraEndWp();
+    [[deprecated("Use field access instead!")]] bool& dyn_addedExtraEndWp();
     // Get instance field reference: private DG.Tweening.Plugins.Core.PathCore.Path _incrementalClone
-    [[deprecated]] ::DG::Tweening::Plugins::Core::PathCore::Path*& dyn__incrementalClone();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Plugins::Core::PathCore::Path*& dyn__incrementalClone();
     // Get instance field reference: private System.Int32 _incrementalIndex
-    [[deprecated]] int& dyn__incrementalIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__incrementalIndex();
     // Get instance field reference: private DG.Tweening.Plugins.Core.PathCore.ABSPathDecoder _decoder
-    [[deprecated]] ::DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder*& dyn__decoder();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Plugins::Core::PathCore::ABSPathDecoder*& dyn__decoder();
     // Get instance field reference: private System.Boolean _changed
-    [[deprecated]] bool& dyn__changed();
+    [[deprecated("Use field access instead!")]] bool& dyn__changed();
     // Get instance field reference: UnityEngine.Vector3[] nonLinearDrawWps
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_nonLinearDrawWps();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_nonLinearDrawWps();
     // Get instance field reference: UnityEngine.Vector3 targetPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_targetPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_targetPosition();
     // Get instance field reference: System.Nullable`1<UnityEngine.Vector3> lookAtPosition
-    [[deprecated]] ::System::Nullable_1<::UnityEngine::Vector3>& dyn_lookAtPosition();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::UnityEngine::Vector3>& dyn_lookAtPosition();
     // Get instance field reference: UnityEngine.Color gizmoColor
-    [[deprecated]] ::UnityEngine::Color& dyn_gizmoColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_gizmoColor();
     // public System.Void .ctor(DG.Tweening.PathType type, UnityEngine.Vector3[] waypoints, System.Int32 subdivisionsXSegment, System.Nullable`1<UnityEngine.Color> gizmoColor)
     // Offset: 0x15E0A1C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Path* New_ctor(::DG::Tweening::PathType type, ::ArrayW<::UnityEngine::Vector3> waypoints, int subdivisionsXSegment, ::System::Nullable_1<::UnityEngine::Color> gizmoColor) {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::PathCore::Path::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Path*, creationType>(type, waypoints, subdivisionsXSegment, gizmoColor)));
+    }
+    // System.Void .ctor()
+    // Offset: 0x15E0E28
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Path* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::PathCore::Path::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Path*, creationType>()));
     }
     // System.Void FinalizePath(System.Boolean isClosedPath, DG.Tweening.AxisConstraint lockPositionAxes, UnityEngine.Vector3 currTargetVal)
     // Offset: 0x15E0E8C
@@ -277,19 +284,14 @@ namespace DG::Tweening::Plugins::Core::PathCore {
     // static private System.Void Draw(DG.Tweening.Plugins.Core.PathCore.Path p)
     // Offset: 0x15E1918
     static void Draw(::DG::Tweening::Plugins::Core::PathCore::Path* p);
-    // System.Void .ctor()
-    // Offset: 0x15E0E28
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Path* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Plugins::Core::PathCore::Path::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Path*, creationType>()));
-    }
   }; // DG.Tweening.Plugins.Core.PathCore.Path
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::Plugins::Core::PathCore::Path::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::Plugins::Core::PathCore::Path::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -406,7 +408,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::Plugins::Core::PathCore::Path*), "Draw", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::Plugins::Core::PathCore::Path::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -98,13 +98,13 @@ namespace UnityEngine::Timeline {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.ScriptableObject> m_Objects
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*& dyn_m_Objects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*& dyn_m_Objects();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Timeline.IMarker> m_Cache
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::IMarker*>*& dyn_m_Cache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::IMarker*>*& dyn_m_Cache();
     // Get instance field reference: private System.Boolean m_CacheDirty
-    [[deprecated]] bool& dyn_m_CacheDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CacheDirty();
     // Get instance field reference: private System.Boolean m_HasNotifications
-    [[deprecated]] bool& dyn_m_HasNotifications();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasNotifications();
     // public System.Collections.Generic.List`1<UnityEngine.Timeline.IMarker> get_markers()
     // Offset: 0xC77D78
     ::System::Collections::Generic::List_1<::UnityEngine::Timeline::IMarker*>* get_markers();

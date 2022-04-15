@@ -42,7 +42,7 @@ namespace Oculus::Platform::Models {
       return RecordingUuid;
     }
     // Get instance field reference: public readonly System.String RecordingUuid
-    [[deprecated]] ::StringW& dyn_RecordingUuid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_RecordingUuid();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x8F5384
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -233,7 +233,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.XmlEventCache/System.Xml.XmlEventType Dispose
       static void _set_Dispose(::System::Xml::XmlEventCache::XmlEventType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.XmlEventCache/System.Xml.XmlEventType
     #pragma pack(pop)
     static check_size<sizeof(XmlEventCache::XmlEventType), 0 + sizeof(int)> __System_Xml_XmlEventCache_XmlEventTypeSizeCheck;
@@ -286,15 +286,15 @@ namespace System::Xml {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private System.Xml.XmlEventCache/System.Xml.XmlEventType eventType
-      [[deprecated]] ::System::Xml::XmlEventCache::XmlEventType& dyn_eventType();
+      [[deprecated("Use field access instead!")]] ::System::Xml::XmlEventCache::XmlEventType& dyn_eventType();
       // Get instance field reference: private System.String s1
-      [[deprecated]] ::StringW& dyn_s1();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_s1();
       // Get instance field reference: private System.String s2
-      [[deprecated]] ::StringW& dyn_s2();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_s2();
       // Get instance field reference: private System.String s3
-      [[deprecated]] ::StringW& dyn_s3();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_s3();
       // Get instance field reference: private System.Object o
-      [[deprecated]] ::Il2CppObject*& dyn_o();
+      [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_o();
       // public System.Xml.XmlEventCache/System.Xml.XmlEventType get_EventType()
       // Offset: 0xC209F0
       ::System::Xml::XmlEventCache::XmlEventType get_EventType();
@@ -375,17 +375,17 @@ namespace System::Xml {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<System.Xml.XmlEventCache/System.Xml.XmlEvent[]> pages
-    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<::System::Xml::XmlEventCache::XmlEvent>>*& dyn_pages();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::ArrayW<::System::Xml::XmlEventCache::XmlEvent>>*& dyn_pages();
     // Get instance field reference: private System.Xml.XmlEventCache/System.Xml.XmlEvent[] pageCurr
-    [[deprecated]] ::ArrayW<::System::Xml::XmlEventCache::XmlEvent>& dyn_pageCurr();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlEventCache::XmlEvent>& dyn_pageCurr();
     // Get instance field reference: private System.Int32 pageSize
-    [[deprecated]] int& dyn_pageSize();
+    [[deprecated("Use field access instead!")]] int& dyn_pageSize();
     // Get instance field reference: private System.Boolean hasRootNode
-    [[deprecated]] bool& dyn_hasRootNode();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasRootNode();
     // Get instance field reference: private System.Xml.Xsl.Runtime.StringConcat singleText
-    [[deprecated]] ::System::Xml::Xsl::Runtime::StringConcat& dyn_singleText();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Xsl::Runtime::StringConcat& dyn_singleText();
     // Get instance field reference: private System.String baseUri
-    [[deprecated]] ::StringW& dyn_baseUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_baseUri();
     // public System.Void .ctor(System.String baseUri, System.Boolean hasRootNode)
     // Offset: 0x12836A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

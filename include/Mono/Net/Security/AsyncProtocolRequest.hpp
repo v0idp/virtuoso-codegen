@@ -108,19 +108,19 @@ namespace Mono::Net::Security {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private readonly Mono.Net.Security.MobileAuthenticatedStream <Parent>k__BackingField
-    [[deprecated]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$Parent$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::Security::MobileAuthenticatedStream*& dyn_$Parent$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <RunSynchronously>k__BackingField
-    [[deprecated]] bool& dyn_$RunSynchronously$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$RunSynchronously$k__BackingField();
     // Get instance field reference: private System.Int32 <UserResult>k__BackingField
-    [[deprecated]] int& dyn_$UserResult$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$UserResult$k__BackingField();
     // Get instance field reference: private System.Int32 Started
-    [[deprecated]] int& dyn_Started();
+    [[deprecated("Use field access instead!")]] int& dyn_Started();
     // Get instance field reference: private System.Int32 RequestedSize
-    [[deprecated]] int& dyn_RequestedSize();
+    [[deprecated("Use field access instead!")]] int& dyn_RequestedSize();
     // Get instance field reference: private System.Int32 WriteRequested
-    [[deprecated]] int& dyn_WriteRequested();
+    [[deprecated("Use field access instead!")]] int& dyn_WriteRequested();
     // Get instance field reference: private readonly System.Object locker
-    [[deprecated]] ::Il2CppObject*& dyn_locker();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_locker();
     // public Mono.Net.Security.MobileAuthenticatedStream get_Parent()
     // Offset: 0x10D6CCC
     ::Mono::Net::Security::MobileAuthenticatedStream* get_Parent();

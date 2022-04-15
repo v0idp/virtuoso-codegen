@@ -178,23 +178,30 @@ namespace VROSC {
     // Set static field: static public System.Action`1<VROSC.Error> OnSendVerificationEmailFailure
     static void _set_OnSendVerificationEmailFailure(::System::Action_1<::VROSC::Error>* value);
     // Get instance field reference: public VROSC.AuthenticationManager/VROSC.LocalUserData LocalUser
-    [[deprecated]] ::VROSC::AuthenticationManager::LocalUserData*& dyn_LocalUser();
+    [[deprecated("Use field access instead!")]] ::VROSC::AuthenticationManager::LocalUserData*& dyn_LocalUser();
     // Get instance field reference: public VROSC.AuthenticationManager/VROSC.FirebaseUserData FirebaseUser
-    [[deprecated]] ::VROSC::AuthenticationManager::FirebaseUserData*& dyn_FirebaseUser();
+    [[deprecated("Use field access instead!")]] ::VROSC::AuthenticationManager::FirebaseUserData*& dyn_FirebaseUser();
     // Get instance field reference: private VROSC.StateMachine _stateMachine
-    [[deprecated]] ::VROSC::StateMachine*& dyn__stateMachine();
+    [[deprecated("Use field access instead!")]] ::VROSC::StateMachine*& dyn__stateMachine();
     // Get instance field reference: private VROSC.IState _startState
-    [[deprecated]] ::VROSC::IState*& dyn__startState();
+    [[deprecated("Use field access instead!")]] ::VROSC::IState*& dyn__startState();
     // Get instance field reference: private VROSC.LoginWithEmailState _loginWithEmailState
-    [[deprecated]] ::VROSC::LoginWithEmailState*& dyn__loginWithEmailState();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoginWithEmailState*& dyn__loginWithEmailState();
     // Get instance field reference: private System.Boolean <IsWaitingForCredentials>k__BackingField
-    [[deprecated]] bool& dyn_$IsWaitingForCredentials$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsWaitingForCredentials$k__BackingField();
     // public System.Boolean get_IsWaitingForCredentials()
     // Offset: 0x971EBC
     bool get_IsWaitingForCredentials();
     // public System.Void set_IsWaitingForCredentials(System.Boolean value)
     // Offset: 0x971EC4
     void set_IsWaitingForCredentials(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x973728
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AuthenticationManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AuthenticationManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AuthenticationManager*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x971ED0
     void Awake();
@@ -288,19 +295,6 @@ namespace VROSC {
     // private System.Boolean <Awake>b__27_8()
     // Offset: 0x973854
     bool $Awake$b__27_8();
-    // public System.Void .ctor()
-    // Offset: 0x973728
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AuthenticationManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AuthenticationManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AuthenticationManager*, creationType>()));
-    }
   }; // VROSC.AuthenticationManager
   #pragma pack(pop)
   static check_size<sizeof(AuthenticationManager), 64 + sizeof(bool)> __VROSC_AuthenticationManagerSizeCheck;
@@ -324,6 +318,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "set_IsWaitingForCredentials", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::AuthenticationManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AuthenticationManager::Awake
 // Il2CppName: Awake
 template<>
@@ -591,7 +589,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AuthenticationManager*), "<Awake>b__27_8", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AuthenticationManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

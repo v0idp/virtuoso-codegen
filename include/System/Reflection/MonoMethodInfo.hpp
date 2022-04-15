@@ -86,15 +86,15 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Type parent
-    [[deprecated]] ::System::Type*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_parent();
     // Get instance field reference: private System.Type ret
-    [[deprecated]] ::System::Type*& dyn_ret();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_ret();
     // Get instance field reference: System.Reflection.MethodAttributes attrs
-    [[deprecated]] ::System::Reflection::MethodAttributes& dyn_attrs();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodAttributes& dyn_attrs();
     // Get instance field reference: System.Reflection.MethodImplAttributes iattrs
-    [[deprecated]] ::System::Reflection::MethodImplAttributes& dyn_iattrs();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodImplAttributes& dyn_iattrs();
     // Get instance field reference: private System.Reflection.CallingConventions callconv
-    [[deprecated]] ::System::Reflection::CallingConventions& dyn_callconv();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::CallingConventions& dyn_callconv();
     // static private System.Void get_method_info(System.IntPtr handle, out System.Reflection.MonoMethodInfo info)
     // Offset: 0x100DF78
     static void get_method_info(::System::IntPtr handle, ByRef<::System::Reflection::MonoMethodInfo> info);

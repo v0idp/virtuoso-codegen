@@ -132,7 +132,7 @@ namespace OVR {
       // Set static field: static public OVR.SoundEmitter/OVR.FadeState Ducking
       static void _set_Ducking(::OVR::SoundEmitter::FadeState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVR.SoundEmitter/OVR.FadeState
     #pragma pack(pop)
     static check_size<sizeof(SoundEmitter::FadeState), 0 + sizeof(int)> __OVR_SoundEmitter_FadeStateSizeCheck;
@@ -244,35 +244,35 @@ namespace OVR {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVR.EmitterChannel channel
-    [[deprecated]] ::OVR::EmitterChannel& dyn_channel();
+    [[deprecated("Use field access instead!")]] ::OVR::EmitterChannel& dyn_channel();
     // Get instance field reference: public System.Boolean disableSpatialization
-    [[deprecated]] bool& dyn_disableSpatialization();
+    [[deprecated("Use field access instead!")]] bool& dyn_disableSpatialization();
     // Get instance field reference: private OVR.SoundEmitter/OVR.FadeState state
-    [[deprecated]] ::OVR::SoundEmitter::FadeState& dyn_state();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundEmitter::FadeState& dyn_state();
     // Get instance field reference: public UnityEngine.AudioSource audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: public OVR.SoundPriority priority
-    [[deprecated]] ::OVR::SoundPriority& dyn_priority();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundPriority& dyn_priority();
     // Get instance field reference: public ONSPAudioSource osp
-    [[deprecated]] ::GlobalNamespace::ONSPAudioSource*& dyn_osp();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ONSPAudioSource*& dyn_osp();
     // Get instance field reference: public System.Single endPlayTime
-    [[deprecated]] float& dyn_endPlayTime();
+    [[deprecated("Use field access instead!")]] float& dyn_endPlayTime();
     // Get instance field reference: private UnityEngine.Transform lastParentTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_lastParentTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_lastParentTransform();
     // Get instance field reference: public System.Single defaultVolume
-    [[deprecated]] float& dyn_defaultVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_defaultVolume();
     // Get instance field reference: public UnityEngine.Transform defaultParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn_defaultParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_defaultParent();
     // Get instance field reference: public System.Int32 originalIdx
-    [[deprecated]] int& dyn_originalIdx();
+    [[deprecated("Use field access instead!")]] int& dyn_originalIdx();
     // Get instance field reference: public System.Action onFinished
-    [[deprecated]] ::System::Action*& dyn_onFinished();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onFinished();
     // Get instance field reference: public System.Action`1<System.Object> onFinishedObject
-    [[deprecated]] ::System::Action_1<::Il2CppObject*>*& dyn_onFinishedObject();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Il2CppObject*>*& dyn_onFinishedObject();
     // Get instance field reference: public System.Object onFinishedParam
-    [[deprecated]] ::Il2CppObject*& dyn_onFinishedParam();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_onFinishedParam();
     // Get instance field reference: public OVR.SoundGroup playingSoundGroup
-    [[deprecated]] ::OVR::SoundGroup*& dyn_playingSoundGroup();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundGroup*& dyn_playingSoundGroup();
     // public System.Single get_volume()
     // Offset: 0x18A2BE4
     float get_volume();
@@ -321,6 +321,13 @@ namespace OVR {
     // public System.Boolean get_isPlaying()
     // Offset: 0x18A4898
     bool get_isPlaying();
+    // public System.Void .ctor()
+    // Offset: 0x18A4EB0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SoundEmitter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundEmitter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SoundEmitter*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x18A48B4
     void Awake();
@@ -393,19 +400,6 @@ namespace OVR {
     // private System.Collections.IEnumerator FadeSoundChannel(System.Single delaySecs, System.Single fadeTime, OVR.Fade fadeType, System.Single defaultVolume)
     // Offset: 0x18A4DB4
     ::System::Collections::IEnumerator* FadeSoundChannel(float delaySecs, float fadeTime, ::OVR::Fade fadeType, float defaultVolume);
-    // public System.Void .ctor()
-    // Offset: 0x18A4EB0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SoundEmitter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::SoundEmitter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SoundEmitter*, creationType>()));
-    }
   }; // OVR.SoundEmitter
   #pragma pack(pop)
   static check_size<sizeof(SoundEmitter), 128 + sizeof(::OVR::SoundGroup*)> __OVR_SoundEmitterSizeCheck;
@@ -549,6 +543,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::SoundEmitter*), "get_isPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OVR::SoundEmitter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::SoundEmitter::Awake
 // Il2CppName: Awake
 template<>
@@ -770,7 +768,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(OVR::SoundEmitter*), "FadeSoundChannel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{delaySecs, fadeTime, fadeType, defaultVolume});
   }
 };
-// Writing MetadataGetter for method: OVR::SoundEmitter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

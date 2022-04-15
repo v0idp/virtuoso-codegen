@@ -155,7 +155,7 @@ namespace MS::Internal::Xml::XPath {
       // Set static field: static public MS.Internal.Xml.XPath.Operator/MS.Internal.Xml.XPath.Op UNION
       static void _set_UNION(::MS::Internal::Xml::XPath::Operator::Op value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MS.Internal.Xml.XPath.Operator/MS.Internal.Xml.XPath.Op
     #pragma pack(pop)
     static check_size<sizeof(Operator::Op), 0 + sizeof(int)> __MS_Internal_Xml_XPath_Operator_OpSizeCheck;
@@ -187,11 +187,11 @@ namespace MS::Internal::Xml::XPath {
     // Set static field: static private MS.Internal.Xml.XPath.Operator/MS.Internal.Xml.XPath.Op[] invertOp
     static void _set_invertOp(::ArrayW<::MS::Internal::Xml::XPath::Operator::Op> value);
     // Get instance field reference: private MS.Internal.Xml.XPath.Operator/MS.Internal.Xml.XPath.Op opType
-    [[deprecated]] ::MS::Internal::Xml::XPath::Operator::Op& dyn_opType();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::Operator::Op& dyn_opType();
     // Get instance field reference: private MS.Internal.Xml.XPath.AstNode opnd1
-    [[deprecated]] ::MS::Internal::Xml::XPath::AstNode*& dyn_opnd1();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::AstNode*& dyn_opnd1();
     // Get instance field reference: private MS.Internal.Xml.XPath.AstNode opnd2
-    [[deprecated]] ::MS::Internal::Xml::XPath::AstNode*& dyn_opnd2();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::AstNode*& dyn_opnd2();
     // public System.Void .ctor(MS.Internal.Xml.XPath.Operator/MS.Internal.Xml.XPath.Op op, MS.Internal.Xml.XPath.AstNode opnd1, MS.Internal.Xml.XPath.AstNode opnd2)
     // Offset: 0xAF8EFC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

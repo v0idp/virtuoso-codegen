@@ -52,13 +52,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ErrorMessages/VROSC.ErrorMessagePair> Errors
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ErrorMessages::ErrorMessagePair*>*& dyn_Errors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::ErrorMessages::ErrorMessagePair*>*& dyn_Errors();
     // public System.Void .ctor()
     // Offset: 0x8F02C0
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ErrorMessages* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ErrorMessages::.ctor");

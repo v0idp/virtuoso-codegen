@@ -81,17 +81,17 @@ namespace System::Xml::Schema {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Xml.Schema.CompiledIdentityConstraint constraint
-    [[deprecated]] ::System::Xml::Schema::CompiledIdentityConstraint*& dyn_constraint();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::CompiledIdentityConstraint*& dyn_constraint();
     // Get instance field reference: System.Xml.Schema.SelectorActiveAxis axisSelector
-    [[deprecated]] ::System::Xml::Schema::SelectorActiveAxis*& dyn_axisSelector();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SelectorActiveAxis*& dyn_axisSelector();
     // Get instance field reference: System.Collections.ArrayList axisFields
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_axisFields();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_axisFields();
     // Get instance field reference: System.Collections.Hashtable qualifiedTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_qualifiedTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_qualifiedTable();
     // Get instance field reference: System.Collections.Hashtable keyrefTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_keyrefTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_keyrefTable();
     // Get instance field reference: private System.Int32 tableDim
-    [[deprecated]] int& dyn_tableDim();
+    [[deprecated("Use field access instead!")]] int& dyn_tableDim();
     // System.Int32 get_TableDim()
     // Offset: 0x109E348
     int get_TableDim();

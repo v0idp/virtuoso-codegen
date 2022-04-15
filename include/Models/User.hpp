@@ -68,21 +68,19 @@ namespace Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Int32 id
-    [[deprecated]] int& dyn_id();
+    [[deprecated("Use field access instead!")]] int& dyn_id();
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public System.String username
-    [[deprecated]] ::StringW& dyn_username();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_username();
     // Get instance field reference: public System.String email
-    [[deprecated]] ::StringW& dyn_email();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_email();
     // Get instance field reference: public System.String phone
-    [[deprecated]] ::StringW& dyn_phone();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_phone();
     // Get instance field reference: public System.String website
-    [[deprecated]] ::StringW& dyn_website();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_website();
     // public System.Void .ctor()
     // Offset: 0x1919CE4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static User* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Models::User::.ctor");

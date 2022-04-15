@@ -74,11 +74,11 @@ namespace UnityEngine {
       return *reinterpret_cast<::UnityEngine::ILogger*>(this);
     }
     // Get instance field reference: private UnityEngine.ILogHandler <logHandler>k__BackingField
-    [[deprecated]] ::UnityEngine::ILogHandler*& dyn_$logHandler$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ILogHandler*& dyn_$logHandler$k__BackingField();
     // Get instance field reference: private System.Boolean <logEnabled>k__BackingField
-    [[deprecated]] bool& dyn_$logEnabled$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$logEnabled$k__BackingField();
     // Get instance field reference: private UnityEngine.LogType <filterLogType>k__BackingField
-    [[deprecated]] ::UnityEngine::LogType& dyn_$filterLogType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LogType& dyn_$filterLogType$k__BackingField();
     // public UnityEngine.ILogHandler get_logHandler()
     // Offset: 0x112E300
     ::UnityEngine::ILogHandler* get_logHandler();

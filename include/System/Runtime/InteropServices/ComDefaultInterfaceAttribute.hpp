@@ -50,7 +50,7 @@ namespace System::Runtime::InteropServices {
       return val;
     }
     // Get instance field reference: System.Type _val
-    [[deprecated]] ::System::Type*& dyn__val();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__val();
     // public System.Void .ctor(System.Type defaultInterface)
     // Offset: 0xE39F70
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

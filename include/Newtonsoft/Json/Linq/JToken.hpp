@@ -201,13 +201,13 @@ namespace Newtonsoft::Json::Linq {
     // Set static field: static private readonly Newtonsoft.Json.Linq.JTokenType[] BytesTypes
     static void _set_BytesTypes(::ArrayW<::Newtonsoft::Json::Linq::JTokenType> value);
     // Get instance field reference: private Newtonsoft.Json.Linq.JContainer _parent
-    [[deprecated]] ::Newtonsoft::Json::Linq::JContainer*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JContainer*& dyn__parent();
     // Get instance field reference: private Newtonsoft.Json.Linq.JToken _previous
-    [[deprecated]] ::Newtonsoft::Json::Linq::JToken*& dyn__previous();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JToken*& dyn__previous();
     // Get instance field reference: private Newtonsoft.Json.Linq.JToken _next
-    [[deprecated]] ::Newtonsoft::Json::Linq::JToken*& dyn__next();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JToken*& dyn__next();
     // Get instance field reference: private System.Object _annotations
-    [[deprecated]] ::Il2CppObject*& dyn__annotations();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__annotations();
     // public Newtonsoft.Json.Linq.JContainer get_Parent()
     // Offset: 0xEE2284
     ::Newtonsoft::Json::Linq::JContainer* get_Parent();
@@ -250,6 +250,13 @@ namespace Newtonsoft::Json::Linq {
     // private System.Int32 Newtonsoft.Json.IJsonLineInfo.get_LinePosition()
     // Offset: 0xEEAB8C
     int Newtonsoft_Json_IJsonLineInfo_get_LinePosition();
+    // System.Void .ctor()
+    // Offset: 0xEDB284
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JToken* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JToken::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JToken*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xEEACD0
     static void _cctor();
@@ -451,15 +458,6 @@ namespace Newtonsoft::Json::Linq {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(this, ___generic__method);
     }
-    // System.Void .ctor()
-    // Offset: 0xEDB284
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JToken* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JToken::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JToken*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0xEE2A9C
     // Implemented from: System.Object
@@ -586,6 +584,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Newton
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Linq::JToken*), "Newtonsoft.Json.IJsonLineInfo.get_LinePosition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::Linq::JToken::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Linq::JToken::_cctor
 // Il2CppName: .cctor
 template<>
@@ -948,10 +950,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Newto
 // Writing MetadataGetter for method: Newtonsoft::Json::Linq::JToken::Annotation
 // Il2CppName: Annotation
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: Newtonsoft::Json::Linq::JToken::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Linq::JToken::ToString
 // Il2CppName: ToString
 template<>

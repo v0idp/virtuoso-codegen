@@ -151,29 +151,29 @@ namespace VROSC {
     // Set static field: static public System.Boolean InverseSpinners
     static void _set_InverseSpinners(bool value);
     // Get instance field reference: private System.Boolean <IsGrabbingRemotely>k__BackingField
-    [[deprecated]] bool& dyn_$IsGrabbingRemotely$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsGrabbingRemotely$k__BackingField();
     // Get instance field reference: private System.Int32 <Selection>k__BackingField
-    [[deprecated]] int& dyn_$Selection$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Selection$k__BackingField();
     // Get instance field reference: private System.Single <Value>k__BackingField
-    [[deprecated]] float& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Value$k__BackingField();
     // Get instance field reference: protected VROSC.UIButton _nextButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__nextButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__nextButton();
     // Get instance field reference: protected VROSC.UIButton _previousButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__previousButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__previousButton();
     // Get instance field reference: public System.Action`1<System.Int32> OnSelectionChanged
-    [[deprecated]] ::System::Action_1<int>*& dyn_OnSelectionChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<int>*& dyn_OnSelectionChanged();
     // Get instance field reference: private TMPro.TextMeshPro _valueDisplay
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__valueDisplay();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__valueDisplay();
     // Get instance field reference: private VROSC.UISpinnerData _data
-    [[deprecated]] ::VROSC::UISpinnerData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinnerData*& dyn__data();
     // Get instance field reference: private UnityEngine.RectTransform _sizeTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__sizeTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__sizeTransform();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.MinMaxInt _remapValue
-    [[deprecated]] ::VROSC::MinMaxInt*& dyn__remapValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxInt*& dyn__remapValue();
     // Get instance field reference: private VROSC.TriggerButton _grabbingButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn__grabbingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__grabbingButton();
     // public System.Boolean get_IsGrabbingRemotely()
     // Offset: 0x1917E30
     bool get_IsGrabbingRemotely();
@@ -198,6 +198,9 @@ namespace VROSC {
     // public VROSC.UISpinnerData get_Data()
     // Offset: 0x1917F48
     ::VROSC::UISpinnerData* get_Data();
+    // static private System.Void .cctor()
+    // Offset: 0x1918C14
+    static void _cctor();
     // private System.Void Start()
     // Offset: 0x1917F50
     void Start();
@@ -254,21 +257,11 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISpinner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISpinner::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UISpinner*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0x1918C14
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void OnDisable()
     // Offset: 0x19183C0
     // Implemented from: VROSC.Interactable
@@ -350,6 +343,14 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::UISpinnerData* (VROSC::UISpinner::*)()>(&VROSC::UISpinner::get_Data)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISpinner*), "get_Data", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::UISpinner::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::UISpinner::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::UISpinner*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::UISpinner::Start
@@ -499,14 +500,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: VROSC::UISpinner::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::UISpinner::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::UISpinner*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: VROSC::UISpinner::OnDisable
 // Il2CppName: OnDisable
 template<>

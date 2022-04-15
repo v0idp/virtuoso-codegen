@@ -176,45 +176,45 @@ namespace UnityEngine::TextCore {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_FaceIndex
-    [[deprecated]] int& dyn_m_FaceIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_FaceIndex();
     // Get instance field reference: private System.String m_FamilyName
-    [[deprecated]] ::StringW& dyn_m_FamilyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_FamilyName();
     // Get instance field reference: private System.String m_StyleName
-    [[deprecated]] ::StringW& dyn_m_StyleName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_StyleName();
     // Get instance field reference: private System.Int32 m_PointSize
-    [[deprecated]] int& dyn_m_PointSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_PointSize();
     // Get instance field reference: private System.Single m_Scale
-    [[deprecated]] float& dyn_m_Scale();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Scale();
     // Get instance field reference: private System.Single m_LineHeight
-    [[deprecated]] float& dyn_m_LineHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LineHeight();
     // Get instance field reference: private System.Single m_AscentLine
-    [[deprecated]] float& dyn_m_AscentLine();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AscentLine();
     // Get instance field reference: private System.Single m_CapLine
-    [[deprecated]] float& dyn_m_CapLine();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CapLine();
     // Get instance field reference: private System.Single m_MeanLine
-    [[deprecated]] float& dyn_m_MeanLine();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MeanLine();
     // Get instance field reference: private System.Single m_Baseline
-    [[deprecated]] float& dyn_m_Baseline();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Baseline();
     // Get instance field reference: private System.Single m_DescentLine
-    [[deprecated]] float& dyn_m_DescentLine();
+    [[deprecated("Use field access instead!")]] float& dyn_m_DescentLine();
     // Get instance field reference: private System.Single m_SuperscriptOffset
-    [[deprecated]] float& dyn_m_SuperscriptOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SuperscriptOffset();
     // Get instance field reference: private System.Single m_SuperscriptSize
-    [[deprecated]] float& dyn_m_SuperscriptSize();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SuperscriptSize();
     // Get instance field reference: private System.Single m_SubscriptOffset
-    [[deprecated]] float& dyn_m_SubscriptOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SubscriptOffset();
     // Get instance field reference: private System.Single m_SubscriptSize
-    [[deprecated]] float& dyn_m_SubscriptSize();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SubscriptSize();
     // Get instance field reference: private System.Single m_UnderlineOffset
-    [[deprecated]] float& dyn_m_UnderlineOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_m_UnderlineOffset();
     // Get instance field reference: private System.Single m_UnderlineThickness
-    [[deprecated]] float& dyn_m_UnderlineThickness();
+    [[deprecated("Use field access instead!")]] float& dyn_m_UnderlineThickness();
     // Get instance field reference: private System.Single m_StrikethroughOffset
-    [[deprecated]] float& dyn_m_StrikethroughOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_m_StrikethroughOffset();
     // Get instance field reference: private System.Single m_StrikethroughThickness
-    [[deprecated]] float& dyn_m_StrikethroughThickness();
+    [[deprecated("Use field access instead!")]] float& dyn_m_StrikethroughThickness();
     // Get instance field reference: private System.Single m_TabWidth
-    [[deprecated]] float& dyn_m_TabWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TabWidth();
     // public System.Void set_familyName(System.String value)
     // Offset: 0x18EAA2C
     void set_familyName(::StringW value);

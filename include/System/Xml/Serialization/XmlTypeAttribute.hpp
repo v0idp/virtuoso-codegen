@@ -56,11 +56,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Boolean includeInSchema
-    [[deprecated]] bool& dyn_includeInSchema();
+    [[deprecated("Use field access instead!")]] bool& dyn_includeInSchema();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.String typeName
-    [[deprecated]] ::StringW& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeName();
     // public System.Boolean get_IncludeInSchema()
     // Offset: 0x10866CC
     bool get_IncludeInSchema();

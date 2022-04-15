@@ -55,13 +55,13 @@ namespace TMPro::SpriteAssetUtilities {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single w
-    [[deprecated]] float& dyn_w();
+    [[deprecated("Use field access instead!")]] float& dyn_w();
     // Get instance field reference: public System.Single h
-    [[deprecated]] float& dyn_h();
+    [[deprecated("Use field access instead!")]] float& dyn_h();
     // public override System.String ToString()
     // Offset: 0x18221A4
     // Implemented from: System.ValueType

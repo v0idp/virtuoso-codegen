@@ -115,47 +115,49 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XdrBuilder::DeclBaseInfo*) == 0x8);
     public:
     // Get instance field reference: System.Xml.XmlQualifiedName _Name
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn__Name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn__Name();
     // Get instance field reference: System.String _Prefix
-    [[deprecated]] ::StringW& dyn__Prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__Prefix();
     // Get instance field reference: System.Xml.XmlQualifiedName _TypeName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn__TypeName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn__TypeName();
     // Get instance field reference: System.String _TypePrefix
-    [[deprecated]] ::StringW& dyn__TypePrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__TypePrefix();
     // Get instance field reference: System.Object _Default
-    [[deprecated]] ::Il2CppObject*& dyn__Default();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__Default();
     // Get instance field reference: System.Object _Revises
-    [[deprecated]] ::Il2CppObject*& dyn__Revises();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__Revises();
     // Get instance field reference: System.UInt32 _MaxOccurs
-    [[deprecated]] uint& dyn__MaxOccurs();
+    [[deprecated("Use field access instead!")]] uint& dyn__MaxOccurs();
     // Get instance field reference: System.UInt32 _MinOccurs
-    [[deprecated]] uint& dyn__MinOccurs();
+    [[deprecated("Use field access instead!")]] uint& dyn__MinOccurs();
     // Get instance field reference: System.Boolean _Checking
-    [[deprecated]] bool& dyn__Checking();
+    [[deprecated("Use field access instead!")]] bool& dyn__Checking();
     // Get instance field reference: System.Xml.Schema.SchemaElementDecl _ElementDecl
-    [[deprecated]] ::System::Xml::Schema::SchemaElementDecl*& dyn__ElementDecl();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaElementDecl*& dyn__ElementDecl();
     // Get instance field reference: System.Xml.Schema.SchemaAttDef _Attdef
-    [[deprecated]] ::System::Xml::Schema::SchemaAttDef*& dyn__Attdef();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaAttDef*& dyn__Attdef();
     // Get instance field reference: System.Xml.Schema.XdrBuilder/System.Xml.Schema.DeclBaseInfo _Next
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::DeclBaseInfo*& dyn__Next();
-    // System.Void Reset()
-    // Offset: 0xC1EE3C
-    void Reset();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::DeclBaseInfo*& dyn__Next();
     // System.Void .ctor()
     // Offset: 0xC1EE14
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XdrBuilder::DeclBaseInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XdrBuilder::DeclBaseInfo::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XdrBuilder::DeclBaseInfo*, creationType>()));
     }
+    // System.Void Reset()
+    // Offset: 0xC1EE3C
+    void Reset();
   }; // System.Xml.Schema.XdrBuilder/System.Xml.Schema.DeclBaseInfo
   #pragma pack(pop)
   static check_size<sizeof(XdrBuilder::DeclBaseInfo), 96 + sizeof(::System::Xml::Schema::XdrBuilder::DeclBaseInfo*)> __System_Xml_Schema_XdrBuilder_DeclBaseInfoSizeCheck;
   static_assert(sizeof(XdrBuilder::DeclBaseInfo) == 0x68);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::Schema::XdrBuilder::DeclBaseInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::XdrBuilder::DeclBaseInfo::Reset
 // Il2CppName: Reset
 template<>
@@ -164,7 +166,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::XdrBuilder::DeclBaseInfo*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::XdrBuilder::DeclBaseInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

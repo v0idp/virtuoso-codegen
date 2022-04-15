@@ -63,7 +63,7 @@ namespace Newtonsoft::Json::Converters {
       return document;
     }
     // Get instance field reference: private readonly System.Xml.XmlDocument _document
-    [[deprecated]] ::System::Xml::XmlDocument*& dyn__document();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocument*& dyn__document();
     // public Newtonsoft.Json.Converters.IXmlElement get_DocumentElement()
     // Offset: 0x15936D4
     ::Newtonsoft::Json::Converters::IXmlElement* get_DocumentElement();

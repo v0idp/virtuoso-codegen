@@ -60,6 +60,13 @@ namespace UnityEngine {
     // public UnityEngine.Avatar get_avatar()
     // Offset: 0x18D1F78
     ::UnityEngine::Avatar* get_avatar();
+    // public System.Void .ctor()
+    // Offset: 0x18D1FB8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Animator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Animator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Animator*, creationType>()));
+    }
     // public System.Void SetFloat(System.String name, System.Single value)
     // Offset: 0x18D1CA8
     void SetFloat(::StringW name, float value);
@@ -78,18 +85,6 @@ namespace UnityEngine {
     // private System.Void ResetTriggerString(System.String name)
     // Offset: 0x18D1E58
     void ResetTriggerString(::StringW name);
-    // public System.Void .ctor()
-    // Offset: 0x18D1FB8
-    // Implemented from: UnityEngine.Behaviour
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Animator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Animator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Animator*, creationType>()));
-    }
   }; // UnityEngine.Animator
   #pragma pack(pop)
 }
@@ -143,6 +138,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Animator*), "get_avatar", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Animator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Animator::SetFloat
 // Il2CppName: SetFloat
 template<>
@@ -199,7 +198,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Animator*), "ResetTriggerString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{name});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Animator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

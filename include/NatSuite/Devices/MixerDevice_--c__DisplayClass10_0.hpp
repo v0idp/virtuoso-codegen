@@ -53,32 +53,34 @@ namespace NatSuite::Devices {
     static_assert(sizeof(::NatSuite::Devices::SampleBufferDelegate*) == 0x8);
     public:
     // Get instance field reference: public NatSuite.Devices.MixerDevice <>4__this
-    [[deprecated]] ::NatSuite::Devices::MixerDevice*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::MixerDevice*& dyn_$$4__this();
     // Get instance field reference: public System.Single[] copyBuffer
-    [[deprecated]] ::ArrayW<float>& dyn_copyBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_copyBuffer();
     // Get instance field reference: public NatSuite.Devices.SampleBufferDelegate delegate
-    [[deprecated]] ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
+    // public System.Void .ctor()
+    // Offset: 0x1964494
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MixerDevice::$$c__DisplayClass10_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::MixerDevice::$$c__DisplayClass10_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MixerDevice::$$c__DisplayClass10_0*, creationType>()));
+    }
     // System.Void <StartRunning>b__0(System.Single[] sampleBuffer, System.Int64 timestamp)
     // Offset: 0x196449C
     void $StartRunning$b__0(::ArrayW<float> sampleBuffer, int64_t timestamp);
     // System.Void <StartRunning>b__1(System.Single[] sampleBuffer, System.Int64 timestamp)
     // Offset: 0x196463C
     void $StartRunning$b__1(::ArrayW<float> sampleBuffer, int64_t timestamp);
-    // public System.Void .ctor()
-    // Offset: 0x1964494
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MixerDevice::$$c__DisplayClass10_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::MixerDevice::$$c__DisplayClass10_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MixerDevice::$$c__DisplayClass10_0*, creationType>()));
-    }
   }; // NatSuite.Devices.MixerDevice/NatSuite.Devices.<>c__DisplayClass10_0
   #pragma pack(pop)
   static check_size<sizeof(MixerDevice::$$c__DisplayClass10_0), 32 + sizeof(::NatSuite::Devices::SampleBufferDelegate*)> __NatSuite_Devices_MixerDevice_$$c__DisplayClass10_0SizeCheck;
   static_assert(sizeof(MixerDevice::$$c__DisplayClass10_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: NatSuite::Devices::MixerDevice::$$c__DisplayClass10_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Devices::MixerDevice::$$c__DisplayClass10_0::$StartRunning$b__0
 // Il2CppName: <StartRunning>b__0
 template<>
@@ -99,7 +101,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::MixerDevice::$$c__DisplayClass10_0*), "<StartRunning>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sampleBuffer, timestamp});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Devices::MixerDevice::$$c__DisplayClass10_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

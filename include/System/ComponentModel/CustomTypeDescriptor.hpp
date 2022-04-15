@@ -64,7 +64,14 @@ namespace System::ComponentModel {
       return parent;
     }
     // Get instance field reference: private System.ComponentModel.ICustomTypeDescriptor _parent
-    [[deprecated]] ::System::ComponentModel::ICustomTypeDescriptor*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ICustomTypeDescriptor*& dyn__parent();
+    // protected System.Void .ctor()
+    // Offset: 0x10EB430
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CustomTypeDescriptor* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::CustomTypeDescriptor::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CustomTypeDescriptor*, creationType>()));
+    }
     // protected System.Void .ctor(System.ComponentModel.ICustomTypeDescriptor parent)
     // Offset: 0x10EB438
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -87,21 +94,16 @@ namespace System::ComponentModel {
     // public System.Object GetPropertyOwner(System.ComponentModel.PropertyDescriptor pd)
     // Offset: 0x10EB828
     ::Il2CppObject* GetPropertyOwner(::System::ComponentModel::PropertyDescriptor* pd);
-    // protected System.Void .ctor()
-    // Offset: 0x10EB430
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CustomTypeDescriptor* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::CustomTypeDescriptor::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CustomTypeDescriptor*, creationType>()));
-    }
   }; // System.ComponentModel.CustomTypeDescriptor
   #pragma pack(pop)
   static check_size<sizeof(CustomTypeDescriptor), 16 + sizeof(::System::ComponentModel::ICustomTypeDescriptor*)> __System_ComponentModel_CustomTypeDescriptorSizeCheck;
   static_assert(sizeof(CustomTypeDescriptor) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::ComponentModel::CustomTypeDescriptor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::CustomTypeDescriptor::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -148,7 +150,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::CustomTypeDescriptor*), "GetPropertyOwner", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{pd});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::CustomTypeDescriptor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

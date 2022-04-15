@@ -63,9 +63,9 @@ namespace OVRSimpleJSON {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private OVRSimpleJSON.JSONNode m_Node
-    [[deprecated]] ::OVRSimpleJSON::JSONNode*& dyn_m_Node();
+    [[deprecated("Use field access instead!")]] ::OVRSimpleJSON::JSONNode*& dyn_m_Node();
     // Get instance field reference: private System.String m_Key
-    [[deprecated]] ::StringW& dyn_m_Key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Key();
     // public System.Void .ctor(OVRSimpleJSON.JSONNode aNode)
     // Offset: 0x988020
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

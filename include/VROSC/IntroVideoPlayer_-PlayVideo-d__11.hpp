@@ -90,19 +90,19 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public VROSC.IntroVideoPlayer <>4__this
-    [[deprecated]] ::VROSC::IntroVideoPlayer*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntroVideoPlayer*& dyn_$$4__this();
     // Get instance field reference: public VROSC.VRPlayer vrPlayer
-    [[deprecated]] ::VROSC::VRPlayer*& dyn_vrPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::VRPlayer*& dyn_vrPlayer();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer <videoPlayer>5__2
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer*& dyn_$videoPlayer$5__2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer*& dyn_$videoPlayer$5__2();
     // Get instance field reference: private System.Single <startTime>5__3
-    [[deprecated]] float& dyn_$startTime$5__3();
+    [[deprecated("Use field access instead!")]] float& dyn_$startTime$5__3();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x1958CF8
     void MoveNext();

@@ -115,9 +115,9 @@ namespace System::IO {
     // Set static field: static private System.Action`1<System.Object> _FlushDelegate
     static void _set__FlushDelegate(::System::Action_1<::Il2CppObject*>* value);
     // Get instance field reference: protected System.Char[] CoreNewLine
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_CoreNewLine();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_CoreNewLine();
     // Get instance field reference: private System.IFormatProvider InternalFormatProvider
-    [[deprecated]] ::System::IFormatProvider*& dyn_InternalFormatProvider();
+    [[deprecated("Use field access instead!")]] ::System::IFormatProvider*& dyn_InternalFormatProvider();
     // static private System.String get_InitialNewLine()
     // Offset: 0x11D93C0
     static ::StringW get_InitialNewLine();

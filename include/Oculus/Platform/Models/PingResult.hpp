@@ -40,9 +40,9 @@ namespace Oculus::Platform::Models {
     ::System::Nullable_1<uint64_t> pingTimeUsec;
     public:
     // Get instance field reference: private System.UInt64 <ID>k__BackingField
-    [[deprecated]] uint64_t& dyn_$ID$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$ID$k__BackingField();
     // Get instance field reference: private System.Nullable`1<System.UInt64> pingTimeUsec
-    [[deprecated]] ::System::Nullable_1<uint64_t>& dyn_pingTimeUsec();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<uint64_t>& dyn_pingTimeUsec();
     // public System.UInt64 get_ID()
     // Offset: 0xB5684C
     uint64_t get_ID();

@@ -44,7 +44,7 @@ namespace UnityEngine::Serialization {
       return m_oldName;
     }
     // Get instance field reference: private System.String m_oldName
-    [[deprecated]] ::StringW& dyn_m_oldName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_oldName();
     // public System.Void .ctor(System.String oldName)
     // Offset: 0x1127014
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

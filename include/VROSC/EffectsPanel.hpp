@@ -79,15 +79,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.ArpeggiatorWrapper _arpeggiatorWrapper
-    [[deprecated]] ::VROSC::ArpeggiatorWrapper*& dyn__arpeggiatorWrapper();
+    [[deprecated("Use field access instead!")]] ::VROSC::ArpeggiatorWrapper*& dyn__arpeggiatorWrapper();
     // Get instance field reference: private VROSC.AnimatedPanel _animation
-    [[deprecated]] ::VROSC::AnimatedPanel*& dyn__animation();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedPanel*& dyn__animation();
     // Get instance field reference: private VROSC.ParameterController[] _parameterControllers
-    [[deprecated]] ::ArrayW<::VROSC::ParameterController*>& dyn__parameterControllers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::ParameterController*>& dyn__parameterControllers();
     // Get instance field reference: private VROSC.ParametricPositionSignalGenerator[] _parametricPositionSignalGenerators
-    [[deprecated]] ::ArrayW<::VROSC::ParametricPositionSignalGenerator*>& dyn__parametricPositionSignalGenerators();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::ParametricPositionSignalGenerator*>& dyn__parametricPositionSignalGenerators();
     // Get instance field reference: private VROSC.SynthController _instrument
-    [[deprecated]] ::VROSC::SynthController*& dyn__instrument();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthController*& dyn__instrument();
+    // public System.Void .ctor()
+    // Offset: 0x8EB2C0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EffectsPanel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EffectsPanel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EffectsPanel*, creationType>()));
+    }
     // public System.Void Setup(VROSC.SynthController synthController)
     // Offset: 0x8EADA4
     void Setup(::VROSC::SynthController* synthController);
@@ -103,25 +110,16 @@ namespace VROSC {
     // protected System.Void OnDestroy()
     // Offset: 0x8EB114
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x8EB2C0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EffectsPanel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EffectsPanel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EffectsPanel*, creationType>()));
-    }
   }; // VROSC.EffectsPanel
   #pragma pack(pop)
   static check_size<sizeof(EffectsPanel), 56 + sizeof(::VROSC::SynthController*)> __VROSC_EffectsPanelSizeCheck;
   static_assert(sizeof(EffectsPanel) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::EffectsPanel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::EffectsPanel::Setup
 // Il2CppName: Setup
 template<>
@@ -166,7 +164,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::EffectsPanel*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::EffectsPanel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

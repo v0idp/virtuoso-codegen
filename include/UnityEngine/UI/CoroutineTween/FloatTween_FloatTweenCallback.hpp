@@ -26,10 +26,6 @@ namespace UnityEngine::UI::CoroutineTween {
     public:
     // public System.Void .ctor()
     // Offset: 0x16D83B0
-    // Implemented from: UnityEngine.Events.UnityEvent`1
-    // Base method: System.Void UnityEvent_1::.ctor()
-    // Base method: System.Void UnityEventBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FloatTween::FloatTweenCallback* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::CoroutineTween::FloatTween::FloatTweenCallback::.ctor");

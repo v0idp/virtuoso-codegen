@@ -82,9 +82,9 @@ namespace System::ComponentModel {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Type type
-      [[deprecated]] ::System::Type*& dyn_type();
+      [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
       // Get instance field reference: public System.Int32 index
-      [[deprecated]] int& dyn_index();
+      [[deprecated("Use field access instead!")]] int& dyn_index();
     }; // System.ComponentModel.AttributeCollection/System.ComponentModel.AttributeEntry
     #pragma pack(pop)
     static check_size<sizeof(AttributeCollection::AttributeEntry), 8 + sizeof(int)> __System_ComponentModel_AttributeCollection_AttributeEntrySizeCheck;
@@ -126,11 +126,11 @@ namespace System::ComponentModel {
     // Set static field: static private System.Object internalSyncObject
     static void _set_internalSyncObject(::Il2CppObject* value);
     // Get instance field reference: private System.Attribute[] _attributes
-    [[deprecated]] ::ArrayW<::System::Attribute*>& dyn__attributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Attribute*>& dyn__attributes();
     // Get instance field reference: private System.ComponentModel.AttributeCollection/System.ComponentModel.AttributeEntry[] _foundAttributeTypes
-    [[deprecated]] ::ArrayW<::System::ComponentModel::AttributeCollection::AttributeEntry>& dyn__foundAttributeTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::ComponentModel::AttributeCollection::AttributeEntry>& dyn__foundAttributeTypes();
     // Get instance field reference: private System.Int32 _index
-    [[deprecated]] int& dyn__index();
+    [[deprecated("Use field access instead!")]] int& dyn__index();
     // protected System.Attribute[] get_Attributes()
     // Offset: 0x10D768C
     ::ArrayW<::System::Attribute*> get_Attributes();

@@ -187,35 +187,35 @@ namespace System::IO {
     // Set static field: static private readonly System.Object buf_recycle_lock
     static void _set_buf_recycle_lock(::Il2CppObject* value);
     // Get instance field reference: private System.Byte[] buf
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_buf();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_buf();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private Microsoft.Win32.SafeHandles.SafeFileHandle safeHandle
-    [[deprecated]] ::Microsoft::Win32::SafeHandles::SafeFileHandle*& dyn_safeHandle();
+    [[deprecated("Use field access instead!")]] ::Microsoft::Win32::SafeHandles::SafeFileHandle*& dyn_safeHandle();
     // Get instance field reference: private System.Boolean isExposed
-    [[deprecated]] bool& dyn_isExposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_isExposed();
     // Get instance field reference: private System.Int64 append_startpos
-    [[deprecated]] int64_t& dyn_append_startpos();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_append_startpos();
     // Get instance field reference: private System.IO.FileAccess access
-    [[deprecated]] ::System::IO::FileAccess& dyn_access();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileAccess& dyn_access();
     // Get instance field reference: private System.Boolean owner
-    [[deprecated]] bool& dyn_owner();
+    [[deprecated("Use field access instead!")]] bool& dyn_owner();
     // Get instance field reference: private System.Boolean async
-    [[deprecated]] bool& dyn_async();
+    [[deprecated("Use field access instead!")]] bool& dyn_async();
     // Get instance field reference: private System.Boolean canseek
-    [[deprecated]] bool& dyn_canseek();
+    [[deprecated("Use field access instead!")]] bool& dyn_canseek();
     // Get instance field reference: private System.Boolean anonymous
-    [[deprecated]] bool& dyn_anonymous();
+    [[deprecated("Use field access instead!")]] bool& dyn_anonymous();
     // Get instance field reference: private System.Boolean buf_dirty
-    [[deprecated]] bool& dyn_buf_dirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_buf_dirty();
     // Get instance field reference: private System.Int32 buf_size
-    [[deprecated]] int& dyn_buf_size();
+    [[deprecated("Use field access instead!")]] int& dyn_buf_size();
     // Get instance field reference: private System.Int32 buf_length
-    [[deprecated]] int& dyn_buf_length();
+    [[deprecated("Use field access instead!")]] int& dyn_buf_length();
     // Get instance field reference: private System.Int32 buf_offset
-    [[deprecated]] int& dyn_buf_offset();
+    [[deprecated("Use field access instead!")]] int& dyn_buf_offset();
     // Get instance field reference: private System.Int64 buf_start
-    [[deprecated]] int64_t& dyn_buf_start();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_buf_start();
     // public System.String get_Name()
     // Offset: 0x144EDA8
     ::StringW get_Name();

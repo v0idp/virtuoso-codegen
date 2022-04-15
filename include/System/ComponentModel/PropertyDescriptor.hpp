@@ -87,15 +87,15 @@ namespace System::ComponentModel {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.ComponentModel.TypeConverter converter
-    [[deprecated]] ::System::ComponentModel::TypeConverter*& dyn_converter();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::TypeConverter*& dyn_converter();
     // Get instance field reference: private System.Collections.Hashtable valueChangedHandlers
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_valueChangedHandlers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_valueChangedHandlers();
     // Get instance field reference: private System.Object[] editors
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_editors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_editors();
     // Get instance field reference: private System.Type[] editorTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_editorTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_editorTypes();
     // Get instance field reference: private System.Int32 editorCount
-    [[deprecated]] int& dyn_editorCount();
+    [[deprecated("Use field access instead!")]] int& dyn_editorCount();
     // public System.Type get_ComponentType()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Type* get_ComponentType();

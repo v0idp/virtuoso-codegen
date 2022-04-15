@@ -99,7 +99,7 @@ namespace VROSC {
       // Set static field: static public VROSC.TimeSlider/VROSC.SourceType TapeRecorder
       static void _set_TapeRecorder(::VROSC::TimeSlider::SourceType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.TimeSlider/VROSC.SourceType
     #pragma pack(pop)
     static check_size<sizeof(TimeSlider::SourceType), 0 + sizeof(int)> __VROSC_TimeSlider_SourceTypeSizeCheck;
@@ -163,23 +163,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISlider _timeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__timeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__timeSlider();
     // Get instance field reference: private TMPro.TextMeshPro _timeText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__timeText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__timeText();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer _videoPlayer
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer*& dyn__videoPlayer();
     // Get instance field reference: private UnityEngine.AudioSource _audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__audioSource();
     // Get instance field reference: private VROSC.TapeRecorder _tapeRecorder
-    [[deprecated]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
+    [[deprecated("Use field access instead!")]] ::VROSC::TapeRecorder*& dyn__tapeRecorder();
     // Get instance field reference: private VROSC.TimeSlider/VROSC.SourceType _source
-    [[deprecated]] ::VROSC::TimeSlider::SourceType& dyn__source();
+    [[deprecated("Use field access instead!")]] ::VROSC::TimeSlider::SourceType& dyn__source();
     // Get instance field reference: private System.Boolean <Seeking>k__BackingField
-    [[deprecated]] bool& dyn_$Seeking$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Seeking$k__BackingField();
     // Get instance field reference: private System.Boolean _sliderFollowsTime
-    [[deprecated]] bool& dyn__sliderFollowsTime();
+    [[deprecated("Use field access instead!")]] bool& dyn__sliderFollowsTime();
     // Get instance field reference: private System.Boolean _sourceIsPlaying
-    [[deprecated]] bool& dyn__sourceIsPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn__sourceIsPlaying();
     // public VROSC.UISlider get_Slider()
     // Offset: 0xA269FC
     ::VROSC::UISlider* get_Slider();
@@ -195,6 +195,13 @@ namespace VROSC {
     // public System.Void set_SourceIsPlaying(System.Boolean value)
     // Offset: 0xA23BC4
     void set_SourceIsPlaying(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xA271B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimeSlider* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TimeSlider::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimeSlider*, creationType>()));
+    }
     // protected System.Void Start()
     // Offset: 0xA26B70
     void Start();
@@ -237,19 +244,6 @@ namespace VROSC {
     // private System.Void SeekCompleted(UnityEngine.Video.VideoPlayer videoPlayer)
     // Offset: 0xA271B0
     void SeekCompleted(::UnityEngine::Video::VideoPlayer* videoPlayer);
-    // public System.Void .ctor()
-    // Offset: 0xA271B8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimeSlider* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TimeSlider::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimeSlider*, creationType>()));
-    }
   }; // VROSC.TimeSlider
   #pragma pack(pop)
   static check_size<sizeof(TimeSlider), 70 + sizeof(bool)> __VROSC_TimeSliderSizeCheck;
@@ -300,6 +294,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TimeSlider*), "set_SourceIsPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::TimeSlider::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TimeSlider::Start
 // Il2CppName: Start
 template<>
@@ -418,7 +416,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TimeSlider*), "SeekCompleted", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{videoPlayer});
   }
 };
-// Writing MetadataGetter for method: VROSC::TimeSlider::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -54,7 +54,7 @@ namespace System::Collections {
       return hashtable;
     }
     // Get instance field reference: private System.Collections.Hashtable _hashtable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__hashtable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__hashtable();
     // public System.Object get_SyncRoot()
     // Offset: 0xE5303C
     ::Il2CppObject* get_SyncRoot();

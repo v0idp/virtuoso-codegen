@@ -68,7 +68,7 @@ namespace UnityEngine {
     // Set static field: static private UnityEngine.Event s_MasterEvent
     static void _set_s_MasterEvent(::UnityEngine::Event* value);
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public UnityEngine.EventType get_rawType()
     // Offset: 0x1875B64
     ::UnityEngine::EventType get_rawType();
@@ -120,6 +120,13 @@ namespace UnityEngine {
     // System.Boolean get_isDirectManipulationDevice()
     // Offset: 0x1876400
     bool get_isDirectManipulationDevice();
+    // public System.Void .ctor()
+    // Offset: 0x18760B4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Event* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Event::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Event*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 displayIndex)
     // Offset: 0x1876058
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -151,15 +158,6 @@ namespace UnityEngine {
     // private System.Void get_mousePosition_Injected(out UnityEngine.Vector2 ret)
     // Offset: 0x1875BFC
     void get_mousePosition_Injected(ByRef<::UnityEngine::Vector2> ret);
-    // public System.Void .ctor()
-    // Offset: 0x18760B4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Event* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Event::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Event*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x1876104
     // Implemented from: System.Object
@@ -327,6 +325,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::Event::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Event::Internal_Use
 // Il2CppName: Internal_Use
 template<>
@@ -397,10 +399,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Event*), "get_mousePosition_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ret});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Event::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Event::Finalize
 // Il2CppName: Finalize
 template<>

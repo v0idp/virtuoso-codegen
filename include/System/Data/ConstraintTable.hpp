@@ -53,9 +53,9 @@ namespace System::Data {
     static_assert(sizeof(::System::Xml::Schema::XmlSchemaIdentityConstraint*) == 0x8);
     public:
     // Get instance field reference: public System.Data.DataTable table
-    [[deprecated]] ::System::Data::DataTable*& dyn_table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn_table();
     // Get instance field reference: public System.Xml.Schema.XmlSchemaIdentityConstraint constraint
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaIdentityConstraint*& dyn_constraint();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaIdentityConstraint*& dyn_constraint();
     // public System.Void .ctor(System.Data.DataTable t, System.Xml.Schema.XmlSchemaIdentityConstraint c)
     // Offset: 0x14B52E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

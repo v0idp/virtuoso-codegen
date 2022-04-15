@@ -162,7 +162,7 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private System.Linq.Expressions.Interpreter.Instruction s_liftedToNullDouble
     static void _set_s_liftedToNullDouble(::System::Linq::Expressions::Interpreter::Instruction* value);
     // Get instance field reference: private readonly System.Object _nullValue
-    [[deprecated]] ::Il2CppObject*& dyn__nullValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__nullValue();
     // private System.Void .ctor(System.Object nullValue)
     // Offset: 0xF21550
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

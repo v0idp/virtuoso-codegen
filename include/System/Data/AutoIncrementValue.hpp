@@ -48,7 +48,7 @@ namespace System::Data {
       return Auto;
     }
     // Get instance field reference: private System.Boolean <Auto>k__BackingField
-    [[deprecated]] bool& dyn_$Auto$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Auto$k__BackingField();
     // System.Boolean get_Auto()
     // Offset: 0x14A3A84
     bool get_Auto();
@@ -76,6 +76,13 @@ namespace System::Data {
     // System.Type get_DataType()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Type* get_DataType();
+    // protected System.Void .ctor()
+    // Offset: 0x14A34C8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AutoIncrementValue* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::AutoIncrementValue::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AutoIncrementValue*, creationType>()));
+    }
     // System.Void SetCurrent(System.Object value, System.IFormatProvider formatProvider)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetCurrent(::Il2CppObject* value, ::System::IFormatProvider* formatProvider);
@@ -88,15 +95,6 @@ namespace System::Data {
     // System.Data.AutoIncrementValue Clone()
     // Offset: 0x14A3A98
     ::System::Data::AutoIncrementValue* Clone();
-    // protected System.Void .ctor()
-    // Offset: 0x14A34C8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AutoIncrementValue* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::AutoIncrementValue::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AutoIncrementValue*, creationType>()));
-    }
   }; // System.Data.AutoIncrementValue
   #pragma pack(pop)
   static check_size<sizeof(AutoIncrementValue), 16 + sizeof(bool)> __System_Data_AutoIncrementValueSizeCheck;
@@ -179,6 +177,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Data::AutoIncrementValue*), "get_DataType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::AutoIncrementValue::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::AutoIncrementValue::SetCurrent
 // Il2CppName: SetCurrent
 template<>
@@ -214,7 +216,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::D
     return ::il2cpp_utils::FindMethod(classof(System::Data::AutoIncrementValue*), "Clone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Data::AutoIncrementValue::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

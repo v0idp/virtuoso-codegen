@@ -77,15 +77,15 @@ namespace UnityEngine::TextCore {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::TextCore::GlyphMetrics>*>(this);
     }
     // Get instance field reference: private System.Single m_Width
-    [[deprecated]] float& dyn_m_Width();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Width();
     // Get instance field reference: private System.Single m_Height
-    [[deprecated]] float& dyn_m_Height();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Height();
     // Get instance field reference: private System.Single m_HorizontalBearingX
-    [[deprecated]] float& dyn_m_HorizontalBearingX();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HorizontalBearingX();
     // Get instance field reference: private System.Single m_HorizontalBearingY
-    [[deprecated]] float& dyn_m_HorizontalBearingY();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HorizontalBearingY();
     // Get instance field reference: private System.Single m_HorizontalAdvance
-    [[deprecated]] float& dyn_m_HorizontalAdvance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HorizontalAdvance();
     // public System.Single get_width()
     // Offset: 0x18EC744
     float get_width();

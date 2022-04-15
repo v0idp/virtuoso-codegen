@@ -92,6 +92,13 @@ namespace Firebase::Auth {
     // static private System.Void .cctor()
     // Offset: 0x18B3C58
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x18AEB64
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AuthUtilPINVOKE::SWIGExceptionHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AuthUtilPINVOKE::SWIGExceptionHelper*, creationType>()));
+    }
     // static public System.Void SWIGRegisterExceptionCallbacks_AuthUtil(Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate applicationDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate arithmeticDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate divideByZeroDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate indexOutOfRangeDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate invalidCastDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate invalidOperationDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate ioDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate nullReferenceDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate outOfMemoryDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate overflowDelegate, Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper/Firebase.Auth.ExceptionDelegate systemExceptionDelegate)
     // Offset: 0x18B4030
     static void SWIGRegisterExceptionCallbacks_AuthUtil(::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* applicationDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* arithmeticDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* divideByZeroDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* indexOutOfRangeDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidCastDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* invalidOperationDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* ioDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* nullReferenceDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* outOfMemoryDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* overflowDelegate, ::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::ExceptionDelegate* systemExceptionDelegate);
@@ -140,15 +147,6 @@ namespace Firebase::Auth {
     // static private System.Void SetPendingArgumentOutOfRangeException(System.String message, System.String paramName)
     // Offset: 0x18B3BA8
     static void SetPendingArgumentOutOfRangeException(::StringW message, ::StringW paramName);
-    // public System.Void .ctor()
-    // Offset: 0x18AEB64
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AuthUtilPINVOKE::SWIGExceptionHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AuthUtilPINVOKE::SWIGExceptionHelper*, creationType>()));
-    }
   }; // Firebase.Auth.AuthUtilPINVOKE/Firebase.Auth.SWIGExceptionHelper
   #pragma pack(pop)
 }
@@ -161,6 +159,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::SWIGRegisterExceptionCallbacks_AuthUtil
 // Il2CppName: SWIGRegisterExceptionCallbacks_AuthUtil
 template<>
@@ -320,7 +322,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper*), "SetPendingArgumentOutOfRangeException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message, paramName});
   }
 };
-// Writing MetadataGetter for method: Firebase::Auth::AuthUtilPINVOKE::SWIGExceptionHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

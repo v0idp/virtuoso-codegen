@@ -50,19 +50,16 @@ namespace System::Data {
     static ::ArrayW<::System::Type*> _get_s_types();
     // Set static field: static private readonly System.Type[] s_types
     static void _set_s_types(::ArrayW<::System::Type*> value);
-    // static private System.Void .cctor()
-    // Offset: 0x14B0790
-    static void _cctor();
     // public System.Void .ctor()
     // Offset: 0x14AFE6C
-    // Implemented from: System.ComponentModel.TypeConverter
-    // Base method: System.Void TypeConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColumnTypeConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::ColumnTypeConverter::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ColumnTypeConverter*, creationType>()));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x14B0790
+    static void _cctor();
     // public override System.Boolean CanConvertTo(System.ComponentModel.ITypeDescriptorContext context, System.Type destinationType)
     // Offset: 0x14AFE74
     // Implemented from: System.ComponentModel.TypeConverter
@@ -87,6 +84,10 @@ namespace System::Data {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::ColumnTypeConverter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::ColumnTypeConverter::_cctor
 // Il2CppName: .cctor
 template<>
@@ -95,10 +96,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Data::ColumnTypeConverter*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Data::ColumnTypeConverter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::ColumnTypeConverter::CanConvertTo
 // Il2CppName: CanConvertTo
 template<>

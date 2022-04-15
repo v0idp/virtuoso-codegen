@@ -82,7 +82,7 @@ namespace UnityEngine::Scripting {
       // Set static field: static public UnityEngine.Scripting.GarbageCollector/UnityEngine.Scripting.Mode Manual
       static void _set_Manual(::UnityEngine::Scripting::GarbageCollector::Mode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Scripting.GarbageCollector/UnityEngine.Scripting.Mode
     #pragma pack(pop)
     static check_size<sizeof(GarbageCollector::Mode), 0 + sizeof(int)> __UnityEngine_Scripting_GarbageCollector_ModeSizeCheck;

@@ -211,47 +211,47 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TooltipData*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _name
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private TMPro.TextMeshPro _value
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__value();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__value();
     // Get instance field reference: private TMPro.TextMeshPro _valueMin
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__valueMin();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__valueMin();
     // Get instance field reference: private TMPro.TextMeshPro _valueMax
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__valueMax();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__valueMax();
     // Get instance field reference: private System.Single _directionOffset
-    [[deprecated]] float& dyn__directionOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__directionOffset();
     // Get instance field reference: private System.Single _verticalOffset
-    [[deprecated]] float& dyn__verticalOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__verticalOffset();
     // Get instance field reference: private System.Boolean _offsetVisually
-    [[deprecated]] bool& dyn__offsetVisually();
+    [[deprecated("Use field access instead!")]] bool& dyn__offsetVisually();
     // Get instance field reference: private System.Boolean _moveTowardsFace
-    [[deprecated]] bool& dyn__moveTowardsFace();
+    [[deprecated("Use field access instead!")]] bool& dyn__moveTowardsFace();
     // Get instance field reference: private System.Single _lookAtCamera
-    [[deprecated]] float& dyn__lookAtCamera();
+    [[deprecated("Use field access instead!")]] float& dyn__lookAtCamera();
     // Get instance field reference: private System.Single _minDistance
-    [[deprecated]] float& dyn__minDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__minDistance();
     // Get instance field reference: private UnityEngine.GameObject _visual
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__visual();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__visual();
     // Get instance field reference: private UnityEngine.Transform _targetBone
-    [[deprecated]] ::UnityEngine::Transform*& dyn__targetBone();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__targetBone();
     // Get instance field reference: private System.Single _moveDuration
-    [[deprecated]] float& dyn__moveDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__moveDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
     // Get instance field reference: private VROSC.SimpleHaptic _hapticFeedBack
-    [[deprecated]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
+    [[deprecated("Use field access instead!")]] ::VROSC::SimpleHaptic*& dyn__hapticFeedBack();
     // Get instance field reference: private UnityEngine.Vector2 _size
-    [[deprecated]] ::UnityEngine::Vector2& dyn__size();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__size();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private System.Single _currentValue
-    [[deprecated]] float& dyn__currentValue();
+    [[deprecated("Use field access instead!")]] float& dyn__currentValue();
     // Get instance field reference: private System.Int32 _ticks
-    [[deprecated]] int& dyn__ticks();
+    [[deprecated("Use field access instead!")]] int& dyn__ticks();
     // Get instance field reference: private VROSC.UISlider _targetSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__targetSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__targetSlider();
     // Get instance field reference: private VROSC.TooltipData _toggleIntegerMode
-    [[deprecated]] ::VROSC::TooltipData*& dyn__toggleIntegerMode();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__toggleIntegerMode();
     // private System.Void ToggleIntegerMode(VROSC.InputDevice device, VROSC.TriggerButton button)
     // Offset: 0x191774C
     void ToggleIntegerMode(::VROSC::InputDevice* device, ::VROSC::TriggerButton button);
@@ -277,11 +277,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISliderHelper* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISliderHelper::.ctor");

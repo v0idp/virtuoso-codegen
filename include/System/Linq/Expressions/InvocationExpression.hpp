@@ -65,9 +65,9 @@ namespace System::Linq::Expressions {
       return *reinterpret_cast<::System::Linq::Expressions::IArgumentProvider*>(this);
     }
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Expression>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Expression$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Expression$k__BackingField();
     // public System.Linq.Expressions.Expression get_Expression()
     // Offset: 0xF1F1B8
     ::System::Linq::Expressions::Expression* get_Expression();

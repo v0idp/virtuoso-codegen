@@ -41,7 +41,7 @@ namespace System::Xml::Schema {
       return next;
     }
     // Get instance field reference: MS.Internal.Xml.XPath.Axis next
-    [[deprecated]] ::MS::Internal::Xml::XPath::Axis*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::Axis*& dyn_next();
     // MS.Internal.Xml.XPath.Axis get_Next()
     // Offset: 0x10B059C
     ::MS::Internal::Xml::XPath::Axis* get_Next();

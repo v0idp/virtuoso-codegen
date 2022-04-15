@@ -55,7 +55,7 @@ namespace UnityEngine::Events {
       return Delegate;
     }
     // Get instance field reference: private UnityEngine.Events.UnityAction Delegate
-    [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_Delegate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityAction*& dyn_Delegate();
     // private System.Void add_Delegate(UnityEngine.Events.UnityAction value)
     // Offset: 0x112B44C
     void add_Delegate(::UnityEngine::Events::UnityAction* value);

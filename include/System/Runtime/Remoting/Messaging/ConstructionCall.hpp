@@ -114,19 +114,19 @@ namespace System::Runtime::Remoting::Messaging {
       return *reinterpret_cast<::System::Runtime::Remoting::Activation::IConstructionCallMessage*>(this);
     }
     // Get instance field reference: private System.Runtime.Remoting.Activation.IActivator _activator
-    [[deprecated]] ::System::Runtime::Remoting::Activation::IActivator*& dyn__activator();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Activation::IActivator*& dyn__activator();
     // Get instance field reference: private System.Object[] _activationAttributes
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__activationAttributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__activationAttributes();
     // Get instance field reference: private System.Collections.IList _contextProperties
-    [[deprecated]] ::System::Collections::IList*& dyn__contextProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IList*& dyn__contextProperties();
     // Get instance field reference: private System.Type _activationType
-    [[deprecated]] ::System::Type*& dyn__activationType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__activationType();
     // Get instance field reference: private System.String _activationTypeName
-    [[deprecated]] ::StringW& dyn__activationTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__activationTypeName();
     // Get instance field reference: private System.Boolean _isContextOk
-    [[deprecated]] bool& dyn__isContextOk();
+    [[deprecated("Use field access instead!")]] bool& dyn__isContextOk();
     // Get instance field reference: private System.Runtime.Remoting.Proxies.RemotingProxy _sourceProxy
-    [[deprecated]] ::System::Runtime::Remoting::Proxies::RemotingProxy*& dyn__sourceProxy();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Proxies::RemotingProxy*& dyn__sourceProxy();
     // System.Boolean get_IsContextOk()
     // Offset: 0xE41780
     bool get_IsContextOk();

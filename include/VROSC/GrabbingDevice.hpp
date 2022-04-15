@@ -167,39 +167,39 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::TooltipData*>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.GrabData <GrabData>k__BackingField
-    [[deprecated]] ::VROSC::GrabData*& dyn_$GrabData$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::GrabData*& dyn_$GrabData$k__BackingField();
     // Get instance field reference: private VROSC.WorldTransformData <FullAnchorData>k__BackingField
-    [[deprecated]] ::VROSC::WorldTransformData*& dyn_$FullAnchorData$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::WorldTransformData*& dyn_$FullAnchorData$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <AnchorPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$AnchorPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$AnchorPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <AnchorGrabPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$AnchorGrabPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$AnchorGrabPosition$k__BackingField();
     // Get instance field reference: public VROSC.SmoothMovement SmoothAnchorOffset
-    [[deprecated]] ::VROSC::SmoothMovement*& dyn_SmoothAnchorOffset();
+    [[deprecated("Use field access instead!")]] ::VROSC::SmoothMovement*& dyn_SmoothAnchorOffset();
     // Get instance field reference: public VROSC.SmoothMovement SmoothPosition
-    [[deprecated]] ::VROSC::SmoothMovement*& dyn_SmoothPosition();
+    [[deprecated("Use field access instead!")]] ::VROSC::SmoothMovement*& dyn_SmoothPosition();
     // Get instance field reference: private VROSC.TransformMover _transformMover
-    [[deprecated]] ::VROSC::TransformMover*& dyn__transformMover();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn__transformMover();
     // Get instance field reference: private UnityEngine.GameObject <Rotator>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$Rotator$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$Rotator$k__BackingField();
     // Get instance field reference: private UnityEngine.GameObject <UpRightHelper>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$UpRightHelper$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$UpRightHelper$k__BackingField();
     // Get instance field reference: private UnityEngine.GameObject <TransformPoint>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$TransformPoint$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$TransformPoint$k__BackingField();
     // Get instance field reference: private System.Single _grabDistance
-    [[deprecated]] float& dyn__grabDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__grabDistance();
     // Get instance field reference: private System.Single _additiveRotation
-    [[deprecated]] float& dyn__additiveRotation();
+    [[deprecated("Use field access instead!")]] float& dyn__additiveRotation();
     // Get instance field reference: private System.Boolean _isOutsideIsPinnedWarningRange
-    [[deprecated]] bool& dyn__isOutsideIsPinnedWarningRange();
+    [[deprecated("Use field access instead!")]] bool& dyn__isOutsideIsPinnedWarningRange();
     // Get instance field reference: private UnityEngine.Transform _controller
-    [[deprecated]] ::UnityEngine::Transform*& dyn__controller();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__controller();
     // Get instance field reference: private UnityEngine.Vector3 _localGrabPositionFromObject
-    [[deprecated]] ::UnityEngine::Vector3& dyn__localGrabPositionFromObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__localGrabPositionFromObject();
     // Get instance field reference: private UnityEngine.Vector3 _localGrabPositionFromController
-    [[deprecated]] ::UnityEngine::Vector3& dyn__localGrabPositionFromController();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__localGrabPositionFromController();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _currentRequestedTooltips
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__currentRequestedTooltips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__currentRequestedTooltips();
     // public VROSC.GrabData get_GrabData()
     // Offset: 0x19A6588
     ::VROSC::GrabData* get_GrabData();

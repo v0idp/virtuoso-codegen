@@ -89,21 +89,21 @@ namespace VROSC::AudioReactive {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.AudioReactive.TransformLerpEffect <>4__this
-    [[deprecated]] ::VROSC::AudioReactive::TransformLerpEffect*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::TransformLerpEffect*& dyn_$$4__this();
     // Get instance field reference: private System.Single <time>5__2
-    [[deprecated]] float& dyn_$time$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$time$5__2();
     // Get instance field reference: private System.Boolean <fromIsTarget>5__3
-    [[deprecated]] bool& dyn_$fromIsTarget$5__3();
+    [[deprecated("Use field access instead!")]] bool& dyn_$fromIsTarget$5__3();
     // Get instance field reference: private UnityEngine.Vector3 <startPosition>5__4
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$startPosition$5__4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$startPosition$5__4();
     // Get instance field reference: private UnityEngine.Quaternion <startRotation>5__5
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_$startRotation$5__5();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_$startRotation$5__5();
     // Get instance field reference: private UnityEngine.Vector3 <startScale>5__6
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$startScale$5__6();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$startScale$5__6();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x8DD580
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

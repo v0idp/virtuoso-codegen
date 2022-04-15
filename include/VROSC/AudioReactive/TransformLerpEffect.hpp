@@ -74,13 +74,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.TransformEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::TransformEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::TransformEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform _target
-    [[deprecated]] ::UnityEngine::Transform*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__target();
     // Get instance field reference: private UnityEngine.Transform _from
-    [[deprecated]] ::UnityEngine::Transform*& dyn__from();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__from();
     // Get instance field reference: private UnityEngine.Transform _to
-    [[deprecated]] ::UnityEngine::Transform*& dyn__to();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__to();
     // public VROSC.AudioReactive.TransformEffectData get_Data()
     // Offset: 0xA2A844
     ::VROSC::AudioReactive::TransformEffectData* get_Data();
@@ -98,7 +98,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransformLerpEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::TransformLerpEffect::.ctor");

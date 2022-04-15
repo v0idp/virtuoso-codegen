@@ -73,17 +73,17 @@ namespace System::Net::NetworkInformation {
     // Set static field: static private readonly System.Char[] wsChars
     static void _set_wsChars(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: public readonly System.String StatisticsFile
-    [[deprecated]] ::StringW& dyn_StatisticsFile();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_StatisticsFile();
     // Get instance field reference: public readonly System.String StatisticsFileIPv6
-    [[deprecated]] ::StringW& dyn_StatisticsFileIPv6();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_StatisticsFileIPv6();
     // Get instance field reference: public readonly System.String TcpFile
-    [[deprecated]] ::StringW& dyn_TcpFile();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TcpFile();
     // Get instance field reference: public readonly System.String Tcp6File
-    [[deprecated]] ::StringW& dyn_Tcp6File();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Tcp6File();
     // Get instance field reference: public readonly System.String UdpFile
-    [[deprecated]] ::StringW& dyn_UdpFile();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UdpFile();
     // Get instance field reference: public readonly System.String Udp6File
-    [[deprecated]] ::StringW& dyn_Udp6File();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Udp6File();
     // public System.Void .ctor(System.String procDir)
     // Offset: 0x10F3A84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

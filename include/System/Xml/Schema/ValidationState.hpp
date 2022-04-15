@@ -161,45 +161,43 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean IsNill
-    [[deprecated]] bool& dyn_IsNill();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsNill();
     // Get instance field reference: public System.Boolean IsDefault
-    [[deprecated]] bool& dyn_IsDefault();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsDefault();
     // Get instance field reference: public System.Boolean NeedValidateChildren
-    [[deprecated]] bool& dyn_NeedValidateChildren();
+    [[deprecated("Use field access instead!")]] bool& dyn_NeedValidateChildren();
     // Get instance field reference: public System.Boolean CheckRequiredAttribute
-    [[deprecated]] bool& dyn_CheckRequiredAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_CheckRequiredAttribute();
     // Get instance field reference: public System.Boolean ValidationSkipped
-    [[deprecated]] bool& dyn_ValidationSkipped();
+    [[deprecated("Use field access instead!")]] bool& dyn_ValidationSkipped();
     // Get instance field reference: public System.Xml.Schema.XmlSchemaContentProcessing ProcessContents
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaContentProcessing& dyn_ProcessContents();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaContentProcessing& dyn_ProcessContents();
     // Get instance field reference: public System.Xml.Schema.XmlSchemaValidity Validity
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaValidity& dyn_Validity();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaValidity& dyn_Validity();
     // Get instance field reference: public System.Xml.Schema.SchemaElementDecl ElementDecl
-    [[deprecated]] ::System::Xml::Schema::SchemaElementDecl*& dyn_ElementDecl();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaElementDecl*& dyn_ElementDecl();
     // Get instance field reference: public System.Xml.Schema.SchemaElementDecl ElementDeclBeforeXsi
-    [[deprecated]] ::System::Xml::Schema::SchemaElementDecl*& dyn_ElementDeclBeforeXsi();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaElementDecl*& dyn_ElementDeclBeforeXsi();
     // Get instance field reference: public System.String LocalName
-    [[deprecated]] ::StringW& dyn_LocalName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_LocalName();
     // Get instance field reference: public System.String Namespace
-    [[deprecated]] ::StringW& dyn_Namespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Namespace();
     // Get instance field reference: public System.Xml.Schema.ConstraintStruct[] Constr
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::ConstraintStruct*>& dyn_Constr();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::ConstraintStruct*>& dyn_Constr();
     // Get instance field reference: public System.Xml.Schema.StateUnion CurrentState
-    [[deprecated]] ::System::Xml::Schema::StateUnion& dyn_CurrentState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::StateUnion& dyn_CurrentState();
     // Get instance field reference: public System.Boolean HasMatched
-    [[deprecated]] bool& dyn_HasMatched();
+    [[deprecated("Use field access instead!")]] bool& dyn_HasMatched();
     // Get instance field reference: public System.Xml.Schema.BitSet[] CurPos
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::BitSet*>& dyn_CurPos();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::BitSet*>& dyn_CurPos();
     // Get instance field reference: public System.Xml.Schema.BitSet AllElementsSet
-    [[deprecated]] ::System::Xml::Schema::BitSet*& dyn_AllElementsSet();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::BitSet*& dyn_AllElementsSet();
     // Get instance field reference: public System.Collections.Generic.List`1<System.Xml.Schema.RangePositionInfo> RunningPositions
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Xml::Schema::RangePositionInfo>*& dyn_RunningPositions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Xml::Schema::RangePositionInfo>*& dyn_RunningPositions();
     // Get instance field reference: public System.Boolean TooComplex
-    [[deprecated]] bool& dyn_TooComplex();
+    [[deprecated("Use field access instead!")]] bool& dyn_TooComplex();
     // public System.Void .ctor()
     // Offset: 0xF79B4C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ValidationState* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::ValidationState::.ctor");

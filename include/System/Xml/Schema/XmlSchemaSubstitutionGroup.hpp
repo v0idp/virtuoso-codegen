@@ -57,9 +57,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::XmlQualifiedName*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.ArrayList membersList
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_membersList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_membersList();
     // Get instance field reference: private System.Xml.XmlQualifiedName examplar
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_examplar();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_examplar();
     // System.Collections.ArrayList get_Members()
     // Offset: 0xF37264
     ::System::Collections::ArrayList* get_Members();
@@ -73,7 +73,6 @@ namespace System::Xml::Schema {
     // Offset: 0xF3727C
     // Implemented from: System.Xml.Schema.XmlSchemaObject
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaSubstitutionGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSubstitutionGroup::.ctor");

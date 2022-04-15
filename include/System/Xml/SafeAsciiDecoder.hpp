@@ -31,9 +31,6 @@ namespace System::Xml {
     public:
     // public System.Void .ctor()
     // Offset: 0xDE89E4
-    // Implemented from: System.Text.Decoder
-    // Base method: System.Void Decoder::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SafeAsciiDecoder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::SafeAsciiDecoder::.ctor");

@@ -65,13 +65,13 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::Serialization::XmlSerializerImplementation*) == 0x8);
     public:
     // Get instance field reference: public System.Reflection.MethodInfo ReaderMethod
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_ReaderMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_ReaderMethod();
     // Get instance field reference: public System.Type WriterType
-    [[deprecated]] ::System::Type*& dyn_WriterType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_WriterType();
     // Get instance field reference: public System.Reflection.MethodInfo WriterMethod
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_WriterMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_WriterMethod();
     // Get instance field reference: public System.Xml.Serialization.XmlSerializerImplementation Implementation
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializerImplementation*& dyn_Implementation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializerImplementation*& dyn_Implementation();
     // public System.Xml.Serialization.XmlSerializationWriter CreateWriter()
     // Offset: 0xC22388
     ::System::Xml::Serialization::XmlSerializationWriter* CreateWriter();

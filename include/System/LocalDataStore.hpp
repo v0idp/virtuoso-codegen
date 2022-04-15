@@ -53,9 +53,9 @@ namespace System {
     static_assert(sizeof(::System::LocalDataStoreMgr*) == 0x8);
     public:
     // Get instance field reference: private System.LocalDataStoreElement[] m_DataTable
-    [[deprecated]] ::ArrayW<::System::LocalDataStoreElement*>& dyn_m_DataTable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::LocalDataStoreElement*>& dyn_m_DataTable();
     // Get instance field reference: private System.LocalDataStoreMgr m_Manager
-    [[deprecated]] ::System::LocalDataStoreMgr*& dyn_m_Manager();
+    [[deprecated("Use field access instead!")]] ::System::LocalDataStoreMgr*& dyn_m_Manager();
     // public System.Void .ctor(System.LocalDataStoreMgr mgr, System.Int32 InitialCapacity)
     // Offset: 0x1079140
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

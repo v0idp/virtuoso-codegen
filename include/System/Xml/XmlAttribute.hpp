@@ -70,9 +70,9 @@ namespace System::Xml {
     // Deleting conversion operator: operator ::System::Xml::XmlNode*
     constexpr operator ::System::Xml::XmlNode*() const noexcept = delete;
     // Get instance field reference: private System.Xml.XmlName name
-    [[deprecated]] ::System::Xml::XmlName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlName*& dyn_name();
     // Get instance field reference: private System.Xml.XmlLinkedNode lastChild
-    [[deprecated]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
     // System.Int32 get_LocalNameHash()
     // Offset: 0x11B71C4
     int get_LocalNameHash();

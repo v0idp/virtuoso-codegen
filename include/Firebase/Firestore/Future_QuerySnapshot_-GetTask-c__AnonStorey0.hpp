@@ -52,27 +52,29 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Firestore::QuerySnapshotProxy*>*) == 0x8);
     public:
     // Get instance field reference: Firebase.Firestore.Future_QuerySnapshot fu
-    [[deprecated]] ::Firebase::Firestore::Future_QuerySnapshot*& dyn_fu();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::Future_QuerySnapshot*& dyn_fu();
     // Get instance field reference: System.Threading.Tasks.TaskCompletionSource`1<Firebase.Firestore.QuerySnapshotProxy> tcs
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Firestore::QuerySnapshotProxy*>*& dyn_tcs();
-    // System.Void <>m__0()
-    // Offset: 0xD68FA4
-    void $$m__0();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Firestore::QuerySnapshotProxy*>*& dyn_tcs();
     // public System.Void .ctor()
     // Offset: 0xD61098
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Future_QuerySnapshot::$GetTask$c__AnonStorey0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Future_QuerySnapshot::$GetTask$c__AnonStorey0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Future_QuerySnapshot::$GetTask$c__AnonStorey0*, creationType>()));
     }
+    // System.Void <>m__0()
+    // Offset: 0xD68FA4
+    void $$m__0();
   }; // Firebase.Firestore.Future_QuerySnapshot/Firebase.Firestore.<GetTask>c__AnonStorey0
   #pragma pack(pop)
   static check_size<sizeof(Future_QuerySnapshot::$GetTask$c__AnonStorey0), 24 + sizeof(::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Firestore::QuerySnapshotProxy*>*)> __Firebase_Firestore_Future_QuerySnapshot_$GetTask$c__AnonStorey0SizeCheck;
   static_assert(sizeof(Future_QuerySnapshot::$GetTask$c__AnonStorey0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::Future_QuerySnapshot::$GetTask$c__AnonStorey0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::Future_QuerySnapshot::$GetTask$c__AnonStorey0::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::Future_QuerySnapshot::$GetTask$c__AnonStorey0*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::Future_QuerySnapshot::$GetTask$c__AnonStorey0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -56,9 +56,9 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: private System.Object _data
-    [[deprecated]] ::Il2CppObject*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__data();
     // Get instance field reference: public System.Action`1<System.Object> OnButtonPress
-    [[deprecated]] ::System::Action_1<::Il2CppObject*>*& dyn_OnButtonPress();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::Il2CppObject*>*& dyn_OnButtonPress();
     // public System.Void SetData(System.Object data)
     // Offset: 0x190F1C8
     void SetData(::Il2CppObject* data);
@@ -69,11 +69,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIDataButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIDataButton::.ctor");

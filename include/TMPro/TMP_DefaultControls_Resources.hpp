@@ -79,19 +79,19 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Sprite standard
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_standard();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_standard();
     // Get instance field reference: public UnityEngine.Sprite background
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_background();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_background();
     // Get instance field reference: public UnityEngine.Sprite inputField
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_inputField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_inputField();
     // Get instance field reference: public UnityEngine.Sprite knob
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_knob();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_knob();
     // Get instance field reference: public UnityEngine.Sprite checkmark
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_checkmark();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_checkmark();
     // Get instance field reference: public UnityEngine.Sprite dropdown
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_dropdown();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_dropdown();
     // Get instance field reference: public UnityEngine.Sprite mask
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_mask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_mask();
   }; // TMPro.TMP_DefaultControls/TMPro.Resources
   #pragma pack(pop)
   static check_size<sizeof(TMP_DefaultControls::Resources), 48 + sizeof(::UnityEngine::Sprite*)> __TMPro_TMP_DefaultControls_ResourcesSizeCheck;

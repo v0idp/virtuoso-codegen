@@ -60,7 +60,7 @@ namespace System::ComponentModel {
     // Set static field: static public System.ComponentModel.CollectionChangeAction Refresh
     static void _set_Refresh(::System::ComponentModel::CollectionChangeAction value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.ComponentModel.CollectionChangeAction
   #pragma pack(pop)
   static check_size<sizeof(CollectionChangeAction), 0 + sizeof(int)> __System_ComponentModel_CollectionChangeActionSizeCheck;

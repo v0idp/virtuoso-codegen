@@ -107,23 +107,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _beatLength
-    [[deprecated]] float& dyn__beatLength();
+    [[deprecated("Use field access instead!")]] float& dyn__beatLength();
     // Get instance field reference: private System.Single _previewValue
-    [[deprecated]] float& dyn__previewValue();
+    [[deprecated("Use field access instead!")]] float& dyn__previewValue();
     // Get instance field reference: private System.Single _flashValue
-    [[deprecated]] float& dyn__flashValue();
+    [[deprecated("Use field access instead!")]] float& dyn__flashValue();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
     // Get instance field reference: private System.Boolean _playing
-    [[deprecated]] bool& dyn__playing();
+    [[deprecated("Use field access instead!")]] bool& dyn__playing();
     // Get instance field reference: private System.Single _progress
-    [[deprecated]] float& dyn__progress();
+    [[deprecated("Use field access instead!")]] float& dyn__progress();
     // Get instance field reference: private System.Int32 _loops
-    [[deprecated]] int& dyn__loops();
+    [[deprecated("Use field access instead!")]] int& dyn__loops();
+    // public System.Void .ctor()
+    // Offset: 0x197A2D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LooperButtonProgressUpdater* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LooperButtonProgressUpdater::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LooperButtonProgressUpdater*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x197A29C
     void Awake();
@@ -133,25 +140,16 @@ namespace VROSC {
     // public System.Void SetValue(System.Single value, System.Single flashValue)
     // Offset: 0x19772F0
     void SetValue(float value, float flashValue);
-    // public System.Void .ctor()
-    // Offset: 0x197A2D0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LooperButtonProgressUpdater* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LooperButtonProgressUpdater::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LooperButtonProgressUpdater*, creationType>()));
-    }
   }; // VROSC.LooperButtonProgressUpdater
   #pragma pack(pop)
   static check_size<sizeof(LooperButtonProgressUpdater), 80 + sizeof(int)> __VROSC_LooperButtonProgressUpdaterSizeCheck;
   static_assert(sizeof(LooperButtonProgressUpdater) == 0x54);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LooperButtonProgressUpdater::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LooperButtonProgressUpdater::Awake
 // Il2CppName: Awake
 template<>
@@ -179,7 +177,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LooperButtonProgressUpdater*), "SetValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value, flashValue});
   }
 };
-// Writing MetadataGetter for method: VROSC::LooperButtonProgressUpdater::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

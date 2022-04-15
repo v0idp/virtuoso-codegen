@@ -69,11 +69,11 @@ namespace System::Runtime::Remoting::Proxies {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Runtime.Remoting.Proxies.RealProxy _rp
-    [[deprecated]] ::System::Runtime::Remoting::Proxies::RealProxy*& dyn__rp();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Proxies::RealProxy*& dyn__rp();
     // Get instance field reference: private Mono.RuntimeRemoteClassHandle _class
-    [[deprecated]] ::Mono::RuntimeRemoteClassHandle& dyn__class();
+    [[deprecated("Use field access instead!")]] ::Mono::RuntimeRemoteClassHandle& dyn__class();
     // Get instance field reference: private System.Boolean _custom_type_info
-    [[deprecated]] bool& dyn__custom_type_info();
+    [[deprecated("Use field access instead!")]] bool& dyn__custom_type_info();
     // private System.Boolean get_IsContextBoundObject()
     // Offset: 0x12ABC50
     bool get_IsContextBoundObject();

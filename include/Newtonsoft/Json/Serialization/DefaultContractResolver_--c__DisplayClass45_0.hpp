@@ -54,13 +54,11 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::System::Reflection::MemberInfo*) == 0x8);
     public:
     // Get instance field reference: public System.Func`2<System.Object,System.Object> getExtensionDataDictionary
-    [[deprecated]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_getExtensionDataDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_getExtensionDataDictionary();
     // Get instance field reference: public System.Reflection.MemberInfo member
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn_member();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn_member();
     // public System.Void .ctor()
     // Offset: 0x159D2E8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DefaultContractResolver::$$c__DisplayClass45_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::DefaultContractResolver::$$c__DisplayClass45_0::.ctor");

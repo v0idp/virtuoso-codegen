@@ -66,7 +66,7 @@ namespace VROSC {
     // Set static field: static public VROSC.HandType Both
     static void _set_Both(::VROSC::HandType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // VROSC.HandType
   #pragma pack(pop)
   static check_size<sizeof(HandType), 0 + sizeof(int)> __VROSC_HandTypeSizeCheck;

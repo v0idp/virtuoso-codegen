@@ -50,13 +50,11 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::ValueEvent*) == 0x8);
     public:
     // Get instance field reference: public System.String format
-    [[deprecated]] ::StringW& dyn_format();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_format();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.ValueEvent onFormattedValueEvent
-    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::ValueEvent*& dyn_onFormattedValueEvent();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::CallbackHandlers::ValueEvent*& dyn_onFormattedValueEvent();
     // public System.Void .ctor()
     // Offset: 0x166EC64
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FormattedValueEvents* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::CallbackHandlers::FormattedValueEvents::.ctor");

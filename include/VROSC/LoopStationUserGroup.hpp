@@ -57,9 +57,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MoveOnPlane*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIHoldButton _removeButton
-    [[deprecated]] ::VROSC::UIHoldButton*& dyn__removeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHoldButton*& dyn__removeButton();
     // Get instance field reference: private VROSC.MoveOnPlane _mover
-    [[deprecated]] ::VROSC::MoveOnPlane*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::VROSC::MoveOnPlane*& dyn__mover();
     // private System.Void Awake()
     // Offset: 0x1979294
     void Awake();
@@ -73,11 +73,6 @@ namespace VROSC {
     // Offset: 0x1979754
     // Implemented from: VROSC.LoopStationGroup
     // Base method: System.Void LoopStationGroup::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationUserGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationUserGroup::.ctor");

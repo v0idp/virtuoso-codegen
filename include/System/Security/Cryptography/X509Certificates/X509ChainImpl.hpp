@@ -50,6 +50,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // public System.Void set_ChainPolicy(System.Security.Cryptography.X509Certificates.X509ChainPolicy value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void set_ChainPolicy(::System::Security::Cryptography::X509Certificates::X509ChainPolicy* value);
+    // protected System.Void .ctor()
+    // Offset: 0xC5338C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509ChainImpl* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509ChainImpl::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509ChainImpl*, creationType>()));
+    }
     // protected System.Void ThrowIfContextInvalid()
     // Offset: 0xC53248
     void ThrowIfContextInvalid();
@@ -62,15 +69,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // protected System.Void Dispose(System.Boolean disposing)
     // Offset: 0xC53314
     void Dispose(bool disposing);
-    // protected System.Void .ctor()
-    // Offset: 0xC5338C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509ChainImpl* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509ChainImpl::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509ChainImpl*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xC53318
     // Implemented from: System.Object
@@ -105,6 +103,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509ChainImpl*), "set_ChainPolicy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509ChainImpl::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509ChainImpl::ThrowIfContextInvalid
 // Il2CppName: ThrowIfContextInvalid
 template<>
@@ -138,10 +140,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509ChainImpl*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{disposing});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509ChainImpl::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509ChainImpl::Finalize
 // Il2CppName: Finalize
 template<>

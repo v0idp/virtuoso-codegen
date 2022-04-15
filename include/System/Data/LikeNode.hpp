@@ -58,9 +58,9 @@ namespace System::Data {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _kind
-    [[deprecated]] int& dyn__kind();
+    [[deprecated("Use field access instead!")]] int& dyn__kind();
     // Get instance field reference: private System.String _pattern
-    [[deprecated]] ::StringW& dyn__pattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__pattern();
     // System.String AnalyzePattern(System.String pat)
     // Offset: 0x13B734C
     ::StringW AnalyzePattern(::StringW pat);

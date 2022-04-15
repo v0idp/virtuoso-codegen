@@ -124,29 +124,29 @@ namespace System::IO::Compression {
     static_assert(sizeof(::System::Action_6<int64_t, int64_t, uint, ::System::IO::Stream*, ::System::IO::Compression::ZipArchiveEntry*, ::System::EventHandler*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.IO.Stream _baseStream
-    [[deprecated]] ::System::IO::Stream*& dyn__baseStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__baseStream();
     // Get instance field reference: private readonly System.IO.Stream _baseBaseStream
-    [[deprecated]] ::System::IO::Stream*& dyn__baseBaseStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__baseBaseStream();
     // Get instance field reference: private System.Int64 _position
-    [[deprecated]] int64_t& dyn__position();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__position();
     // Get instance field reference: private System.UInt32 _checksum
-    [[deprecated]] uint& dyn__checksum();
+    [[deprecated("Use field access instead!")]] uint& dyn__checksum();
     // Get instance field reference: private readonly System.Boolean _leaveOpenOnClose
-    [[deprecated]] bool& dyn__leaveOpenOnClose();
+    [[deprecated("Use field access instead!")]] bool& dyn__leaveOpenOnClose();
     // Get instance field reference: private System.Boolean _canWrite
-    [[deprecated]] bool& dyn__canWrite();
+    [[deprecated("Use field access instead!")]] bool& dyn__canWrite();
     // Get instance field reference: private System.Boolean _isDisposed
-    [[deprecated]] bool& dyn__isDisposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDisposed();
     // Get instance field reference: private System.Boolean _everWritten
-    [[deprecated]] bool& dyn__everWritten();
+    [[deprecated("Use field access instead!")]] bool& dyn__everWritten();
     // Get instance field reference: private System.Int64 _initialPosition
-    [[deprecated]] int64_t& dyn__initialPosition();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__initialPosition();
     // Get instance field reference: private readonly System.IO.Compression.ZipArchiveEntry _zipArchiveEntry
-    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry*& dyn__zipArchiveEntry();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchiveEntry*& dyn__zipArchiveEntry();
     // Get instance field reference: private readonly System.EventHandler _onClose
-    [[deprecated]] ::System::EventHandler*& dyn__onClose();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler*& dyn__onClose();
     // Get instance field reference: private readonly System.Action`6<System.Int64,System.Int64,System.UInt32,System.IO.Stream,System.IO.Compression.ZipArchiveEntry,System.EventHandler> _saveCrcAndSizes
-    [[deprecated]] ::System::Action_6<int64_t, int64_t, uint, ::System::IO::Stream*, ::System::IO::Compression::ZipArchiveEntry*, ::System::EventHandler*>*& dyn__saveCrcAndSizes();
+    [[deprecated("Use field access instead!")]] ::System::Action_6<int64_t, int64_t, uint, ::System::IO::Stream*, ::System::IO::Compression::ZipArchiveEntry*, ::System::EventHandler*>*& dyn__saveCrcAndSizes();
     // public System.Void .ctor(System.IO.Stream baseStream, System.IO.Stream baseBaseStream, System.Boolean leaveOpenOnClose, System.IO.Compression.ZipArchiveEntry entry, System.EventHandler onClose, System.Action`6<System.Int64,System.Int64,System.UInt32,System.IO.Stream,System.IO.Compression.ZipArchiveEntry,System.EventHandler> saveCrcAndSizes)
     // Offset: 0x1692050
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

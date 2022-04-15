@@ -179,33 +179,33 @@ namespace System::Xml::Schema {
     // Set static field: static readonly System.Xml.Schema.SchemaElementDecl Empty
     static void _set_Empty(::System::Xml::Schema::SchemaElementDecl* value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaAttDef> attdefs
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>*& dyn_attdefs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>*& dyn_attdefs();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Xml.IDtdDefaultAttributeInfo> defaultAttdefs
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Xml::IDtdDefaultAttributeInfo*>*& dyn_defaultAttdefs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Xml::IDtdDefaultAttributeInfo*>*& dyn_defaultAttdefs();
     // Get instance field reference: private System.Boolean isIdDeclared
-    [[deprecated]] bool& dyn_isIdDeclared();
+    [[deprecated("Use field access instead!")]] bool& dyn_isIdDeclared();
     // Get instance field reference: private System.Boolean hasNonCDataAttribute
-    [[deprecated]] bool& dyn_hasNonCDataAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasNonCDataAttribute();
     // Get instance field reference: private System.Boolean isAbstract
-    [[deprecated]] bool& dyn_isAbstract();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAbstract();
     // Get instance field reference: private System.Boolean isNillable
-    [[deprecated]] bool& dyn_isNillable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNillable();
     // Get instance field reference: private System.Boolean hasRequiredAttribute
-    [[deprecated]] bool& dyn_hasRequiredAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasRequiredAttribute();
     // Get instance field reference: private System.Boolean isNotationDeclared
-    [[deprecated]] bool& dyn_isNotationDeclared();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNotationDeclared();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName> prohibitedAttributes
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::XmlQualifiedName*>*& dyn_prohibitedAttributes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::XmlQualifiedName*>*& dyn_prohibitedAttributes();
     // Get instance field reference: private System.Xml.Schema.ContentValidator contentValidator
-    [[deprecated]] ::System::Xml::Schema::ContentValidator*& dyn_contentValidator();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ContentValidator*& dyn_contentValidator();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnyAttribute anyAttribute
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDerivationMethod block
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_block();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDerivationMethod& dyn_block();
     // Get instance field reference: private System.Xml.Schema.CompiledIdentityConstraint[] constraints
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::CompiledIdentityConstraint*>& dyn_constraints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::CompiledIdentityConstraint*>& dyn_constraints();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaElement schemaElement
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaElement*& dyn_schemaElement();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaElement*& dyn_schemaElement();
     // private System.Boolean System.Xml.IDtdAttributeListInfo.get_HasNonCDataAttributes()
     // Offset: 0xF65DB8
     bool System_Xml_IDtdAttributeListInfo_get_HasNonCDataAttributes();
@@ -319,7 +319,6 @@ namespace System::Xml::Schema {
     // Offset: 0xF65A54
     // Implemented from: System.Xml.Schema.SchemaDeclBase
     // Base method: System.Void SchemaDeclBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SchemaElementDecl* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SchemaElementDecl::.ctor");

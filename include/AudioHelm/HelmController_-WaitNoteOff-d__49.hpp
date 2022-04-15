@@ -67,15 +67,15 @@ namespace AudioHelm {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public System.Single length
-    [[deprecated]] float& dyn_length();
+    [[deprecated("Use field access instead!")]] float& dyn_length();
     // Get instance field reference: public AudioHelm.HelmController <>4__this
-    [[deprecated]] ::AudioHelm::HelmController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmController*& dyn_$$4__this();
     // Get instance field reference: public System.Int32 note
-    [[deprecated]] int& dyn_note();
+    [[deprecated("Use field access instead!")]] int& dyn_note();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1957E34
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

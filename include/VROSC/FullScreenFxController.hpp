@@ -72,11 +72,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.AnimationCurve _screenFadeCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__screenFadeCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__screenFadeCurve();
     // Get instance field reference: private System.Single _screenFadeTime
-    [[deprecated]] float& dyn__screenFadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn__screenFadeTime();
     // Get instance field reference: private System.Boolean _isRecentering
-    [[deprecated]] bool& dyn__isRecentering();
+    [[deprecated("Use field access instead!")]] bool& dyn__isRecentering();
+    // public System.Void .ctor()
+    // Offset: 0x19A1AA8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FullScreenFxController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FullScreenFxController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FullScreenFxController*, creationType>()));
+    }
     // public System.Threading.Tasks.Task Recenter(System.Boolean useFade)
     // Offset: 0x19A1664
     ::System::Threading::Tasks::Task* Recenter(bool useFade);
@@ -89,25 +96,16 @@ namespace VROSC {
     // public System.Threading.Tasks.Task FadeFromBlack(System.Boolean instant)
     // Offset: 0x19A1980
     ::System::Threading::Tasks::Task* FadeFromBlack(bool instant);
-    // public System.Void .ctor()
-    // Offset: 0x19A1AA8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FullScreenFxController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FullScreenFxController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FullScreenFxController*, creationType>()));
-    }
   }; // VROSC.FullScreenFxController
   #pragma pack(pop)
   static check_size<sizeof(FullScreenFxController), 36 + sizeof(bool)> __VROSC_FullScreenFxControllerSizeCheck;
   static_assert(sizeof(FullScreenFxController) == 0x25);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FullScreenFxController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FullScreenFxController::Recenter
 // Il2CppName: Recenter
 template<>
@@ -143,7 +141,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(VROSC::FullScreenFxController*), "FadeFromBlack", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{instant});
   }
 };
-// Writing MetadataGetter for method: VROSC::FullScreenFxController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

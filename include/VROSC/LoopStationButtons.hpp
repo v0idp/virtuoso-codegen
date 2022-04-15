@@ -100,21 +100,28 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIButton _stopAllButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__stopAllButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__stopAllButton();
     // Get instance field reference: private VROSC.UIButton _playAllButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__playAllButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__playAllButton();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: private VROSC.UIHoldButton _deleteAllButton
-    [[deprecated]] ::VROSC::UIHoldButton*& dyn__deleteAllButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHoldButton*& dyn__deleteAllButton();
     // Get instance field reference: public System.Action OnPlayAllPressed
-    [[deprecated]] ::System::Action*& dyn_OnPlayAllPressed();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnPlayAllPressed();
     // Get instance field reference: public System.Action OnStopAllPressed
-    [[deprecated]] ::System::Action*& dyn_OnStopAllPressed();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnStopAllPressed();
     // Get instance field reference: public System.Action OnDeleteAllPressed
-    [[deprecated]] ::System::Action*& dyn_OnDeleteAllPressed();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnDeleteAllPressed();
     // Get instance field reference: public System.Action`1<System.Single> OnGlobalVolumeChanged
-    [[deprecated]] ::System::Action_1<float>*& dyn_OnGlobalVolumeChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<float>*& dyn_OnGlobalVolumeChanged();
+    // public System.Void .ctor()
+    // Offset: 0x1969EFC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationButtons* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationButtons::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationButtons*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x196985C
     void Awake();
@@ -136,25 +143,16 @@ namespace VROSC {
     // private System.Void VolumeChanged(System.Single volume)
     // Offset: 0x1969E8C
     void VolumeChanged(float volume);
-    // public System.Void .ctor()
-    // Offset: 0x1969EFC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationButtons* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationButtons::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationButtons*, creationType>()));
-    }
   }; // VROSC.LoopStationButtons
   #pragma pack(pop)
   static check_size<sizeof(LoopStationButtons), 80 + sizeof(::System::Action_1<float>*)> __VROSC_LoopStationButtonsSizeCheck;
   static_assert(sizeof(LoopStationButtons) == 0x58);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LoopStationButtons::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationButtons::Awake
 // Il2CppName: Awake
 template<>
@@ -213,7 +211,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationButtons*), "VolumeChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{volume});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationButtons::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -44,7 +44,7 @@ namespace System::Linq::Expressions {
       return expression;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _expression
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__expression();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__expression();
     // public System.Linq.Expressions.Expression get_Expression()
     // Offset: 0xE90EF4
     ::System::Linq::Expressions::Expression* get_Expression();

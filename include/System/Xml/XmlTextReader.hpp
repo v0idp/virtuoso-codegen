@@ -95,7 +95,7 @@ namespace System::Xml {
       return impl;
     }
     // Get instance field reference: private System.Xml.XmlTextReaderImpl impl
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl*& dyn_impl();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl*& dyn_impl();
     // public System.Int32 get_LineNumber()
     // Offset: 0x15608A8
     int get_LineNumber();

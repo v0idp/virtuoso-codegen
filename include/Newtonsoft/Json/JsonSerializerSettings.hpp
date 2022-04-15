@@ -271,67 +271,67 @@ namespace Newtonsoft::Json {
     // Set static field: static readonly System.Globalization.CultureInfo DefaultCulture
     static void _set_DefaultCulture(::System::Globalization::CultureInfo* value);
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.Formatting> _formatting
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::Formatting>& dyn__formatting();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::Formatting>& dyn__formatting();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.DateFormatHandling> _dateFormatHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DateFormatHandling>& dyn__dateFormatHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DateFormatHandling>& dyn__dateFormatHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.DateTimeZoneHandling> _dateTimeZoneHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DateTimeZoneHandling>& dyn__dateTimeZoneHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DateTimeZoneHandling>& dyn__dateTimeZoneHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.DateParseHandling> _dateParseHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DateParseHandling>& dyn__dateParseHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DateParseHandling>& dyn__dateParseHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.FloatFormatHandling> _floatFormatHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::FloatFormatHandling>& dyn__floatFormatHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::FloatFormatHandling>& dyn__floatFormatHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.FloatParseHandling> _floatParseHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::FloatParseHandling>& dyn__floatParseHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::FloatParseHandling>& dyn__floatParseHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.StringEscapeHandling> _stringEscapeHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::StringEscapeHandling>& dyn__stringEscapeHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::StringEscapeHandling>& dyn__stringEscapeHandling();
     // Get instance field reference: System.Globalization.CultureInfo _culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn__culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn__culture();
     // Get instance field reference: System.Nullable`1<System.Boolean> _checkAdditionalContent
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__checkAdditionalContent();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__checkAdditionalContent();
     // Get instance field reference: System.Nullable`1<System.Int32> _maxDepth
-    [[deprecated]] ::System::Nullable_1<int>& dyn__maxDepth();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn__maxDepth();
     // Get instance field reference: System.Boolean _maxDepthSet
-    [[deprecated]] bool& dyn__maxDepthSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__maxDepthSet();
     // Get instance field reference: System.String _dateFormatString
-    [[deprecated]] ::StringW& dyn__dateFormatString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__dateFormatString();
     // Get instance field reference: System.Boolean _dateFormatStringSet
-    [[deprecated]] bool& dyn__dateFormatStringSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__dateFormatStringSet();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.TypeNameAssemblyFormatHandling> _typeNameAssemblyFormatHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameAssemblyFormatHandling>& dyn__typeNameAssemblyFormatHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameAssemblyFormatHandling>& dyn__typeNameAssemblyFormatHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.DefaultValueHandling> _defaultValueHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DefaultValueHandling>& dyn__defaultValueHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DefaultValueHandling>& dyn__defaultValueHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.PreserveReferencesHandling> _preserveReferencesHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::PreserveReferencesHandling>& dyn__preserveReferencesHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::PreserveReferencesHandling>& dyn__preserveReferencesHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.NullValueHandling> _nullValueHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::NullValueHandling>& dyn__nullValueHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::NullValueHandling>& dyn__nullValueHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.ObjectCreationHandling> _objectCreationHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ObjectCreationHandling>& dyn__objectCreationHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ObjectCreationHandling>& dyn__objectCreationHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.MissingMemberHandling> _missingMemberHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::MissingMemberHandling>& dyn__missingMemberHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::MissingMemberHandling>& dyn__missingMemberHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.ReferenceLoopHandling> _referenceLoopHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__referenceLoopHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__referenceLoopHandling();
     // Get instance field reference: System.Nullable`1<System.Runtime.Serialization.StreamingContext> _context
-    [[deprecated]] ::System::Nullable_1<::System::Runtime::Serialization::StreamingContext>& dyn__context();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::System::Runtime::Serialization::StreamingContext>& dyn__context();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.ConstructorHandling> _constructorHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ConstructorHandling>& dyn__constructorHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ConstructorHandling>& dyn__constructorHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.TypeNameHandling> _typeNameHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__typeNameHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__typeNameHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.MetadataPropertyHandling> _metadataPropertyHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::MetadataPropertyHandling>& dyn__metadataPropertyHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::MetadataPropertyHandling>& dyn__metadataPropertyHandling();
     // Get instance field reference: private System.Collections.Generic.IList`1<Newtonsoft.Json.JsonConverter> <Converters>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::IList_1<::Newtonsoft::Json::JsonConverter*>*& dyn_$Converters$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::Newtonsoft::Json::JsonConverter*>*& dyn_$Converters$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Serialization.IContractResolver <ContractResolver>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::IContractResolver*& dyn_$ContractResolver$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::IContractResolver*& dyn_$ContractResolver$k__BackingField();
     // Get instance field reference: private System.Collections.IEqualityComparer <EqualityComparer>k__BackingField
-    [[deprecated]] ::System::Collections::IEqualityComparer*& dyn_$EqualityComparer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEqualityComparer*& dyn_$EqualityComparer$k__BackingField();
     // Get instance field reference: private System.Func`1<Newtonsoft.Json.Serialization.IReferenceResolver> <ReferenceResolverProvider>k__BackingField
-    [[deprecated]] ::System::Func_1<::Newtonsoft::Json::Serialization::IReferenceResolver*>*& dyn_$ReferenceResolverProvider$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::Newtonsoft::Json::Serialization::IReferenceResolver*>*& dyn_$ReferenceResolverProvider$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Serialization.ITraceWriter <TraceWriter>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ITraceWriter*& dyn_$TraceWriter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ITraceWriter*& dyn_$TraceWriter$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Serialization.ISerializationBinder <SerializationBinder>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::ISerializationBinder*& dyn_$SerializationBinder$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::ISerializationBinder*& dyn_$SerializationBinder$k__BackingField();
     // Get instance field reference: private System.EventHandler`1<Newtonsoft.Json.Serialization.ErrorEventArgs> <Error>k__BackingField
-    [[deprecated]] ::System::EventHandler_1<::Newtonsoft::Json::Serialization::ErrorEventArgs*>*& dyn_$Error$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::Newtonsoft::Json::Serialization::ErrorEventArgs*>*& dyn_$Error$k__BackingField();
     // public Newtonsoft.Json.ReferenceLoopHandling get_ReferenceLoopHandling()
     // Offset: 0x1336534
     ::Newtonsoft::Json::ReferenceLoopHandling get_ReferenceLoopHandling();
@@ -397,8 +397,6 @@ namespace Newtonsoft::Json {
     static void _cctor();
     // public System.Void .ctor()
     // Offset: 0x1336988
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JsonSerializerSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonSerializerSettings::.ctor");

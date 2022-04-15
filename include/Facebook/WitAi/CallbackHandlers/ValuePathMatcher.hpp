@@ -105,28 +105,26 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::Facebook::WitAi::WitResponseReference*) == 0x8);
     public:
     // Get instance field reference: public System.String path
-    [[deprecated]] ::StringW& dyn_path();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_path();
     // Get instance field reference: public Facebook.WitAi.Data.WitValue witValueReference
-    [[deprecated]] ::Facebook::WitAi::Data::WitValue*& dyn_witValueReference();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::WitValue*& dyn_witValueReference();
     // Get instance field reference: public System.Boolean contentRequired
-    [[deprecated]] bool& dyn_contentRequired();
+    [[deprecated("Use field access instead!")]] bool& dyn_contentRequired();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.MatchMethod matchMethod
-    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::MatchMethod& dyn_matchMethod();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::CallbackHandlers::MatchMethod& dyn_matchMethod();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.ComparisonMethod comparisonMethod
-    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::ComparisonMethod& dyn_comparisonMethod();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::CallbackHandlers::ComparisonMethod& dyn_comparisonMethod();
     // Get instance field reference: public System.String matchValue
-    [[deprecated]] ::StringW& dyn_matchValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_matchValue();
     // Get instance field reference: public System.Double floatingPointComparisonTolerance
-    [[deprecated]] double& dyn_floatingPointComparisonTolerance();
+    [[deprecated("Use field access instead!")]] double& dyn_floatingPointComparisonTolerance();
     // Get instance field reference: private Facebook.WitAi.WitResponseReference pathReference
-    [[deprecated]] ::Facebook::WitAi::WitResponseReference*& dyn_pathReference();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::WitResponseReference*& dyn_pathReference();
     // public Facebook.WitAi.WitResponseReference get_Reference()
     // Offset: 0x16703DC
     ::Facebook::WitAi::WitResponseReference* get_Reference();
     // public System.Void .ctor()
     // Offset: 0x1670708
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ValuePathMatcher* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::CallbackHandlers::ValuePathMatcher::.ctor");

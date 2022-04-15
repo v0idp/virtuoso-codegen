@@ -53,32 +53,34 @@ namespace VROSC {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String sessionName
-    [[deprecated]] ::StringW& dyn_sessionName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionName();
     // Get instance field reference: public VROSC.SaveLoadManager <>4__this
-    [[deprecated]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
     // Get instance field reference: public System.String origin
-    [[deprecated]] ::StringW& dyn_origin();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_origin();
+    // public System.Void .ctor()
+    // Offset: 0x8D1310
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SaveLoadManager::$$c__DisplayClass32_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveLoadManager::$$c__DisplayClass32_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SaveLoadManager::$$c__DisplayClass32_0*, creationType>()));
+    }
     // System.Void <LoadSessionFromCloudSuccess>b__0()
     // Offset: 0x8D1318
     void $LoadSessionFromCloudSuccess$b__0();
     // System.Void <LoadSessionFromCloudSuccess>b__1(VROSC.Error error)
     // Offset: 0x8D13AC
     void $LoadSessionFromCloudSuccess$b__1(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x8D1310
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SaveLoadManager::$$c__DisplayClass32_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveLoadManager::$$c__DisplayClass32_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SaveLoadManager::$$c__DisplayClass32_0*, creationType>()));
-    }
   }; // VROSC.SaveLoadManager/VROSC.<>c__DisplayClass32_0
   #pragma pack(pop)
   static check_size<sizeof(SaveLoadManager::$$c__DisplayClass32_0), 32 + sizeof(::StringW)> __VROSC_SaveLoadManager_$$c__DisplayClass32_0SizeCheck;
   static_assert(sizeof(SaveLoadManager::$$c__DisplayClass32_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass32_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass32_0::$LoadSessionFromCloudSuccess$b__0
 // Il2CppName: <LoadSessionFromCloudSuccess>b__0
 template<>
@@ -96,7 +98,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c__DisplayClass32_0*), "<LoadSessionFromCloudSuccess>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass32_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

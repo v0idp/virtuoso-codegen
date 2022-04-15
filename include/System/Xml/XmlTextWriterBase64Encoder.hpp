@@ -49,7 +49,7 @@ namespace System::Xml {
       return xmlTextEncoder;
     }
     // Get instance field reference: private System.Xml.XmlTextEncoder xmlTextEncoder
-    [[deprecated]] ::System::Xml::XmlTextEncoder*& dyn_xmlTextEncoder();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextEncoder*& dyn_xmlTextEncoder();
     // System.Void .ctor(System.Xml.XmlTextEncoder xmlTextEncoder)
     // Offset: 0x108517C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

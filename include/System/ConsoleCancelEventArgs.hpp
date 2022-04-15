@@ -45,9 +45,9 @@ namespace System {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.ConsoleSpecialKey _type
-    [[deprecated]] ::System::ConsoleSpecialKey& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::ConsoleSpecialKey& dyn__type();
     // Get instance field reference: private System.Boolean _cancel
-    [[deprecated]] bool& dyn__cancel();
+    [[deprecated("Use field access instead!")]] bool& dyn__cancel();
     // public System.Boolean get_Cancel()
     // Offset: 0xE41200
     bool get_Cancel();

@@ -64,13 +64,13 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public TMPro.TMP_Text textComponent
-    [[deprecated]] ::TMPro::TMP_Text*& dyn_textComponent();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Text*& dyn_textComponent();
     // Get instance field reference: public System.Int32 firstCharacterIndex
-    [[deprecated]] int& dyn_firstCharacterIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_firstCharacterIndex();
     // Get instance field reference: public System.Int32 lastCharacterIndex
-    [[deprecated]] int& dyn_lastCharacterIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_lastCharacterIndex();
     // Get instance field reference: public System.Int32 characterCount
-    [[deprecated]] int& dyn_characterCount();
+    [[deprecated("Use field access instead!")]] int& dyn_characterCount();
     // public System.String GetWord()
     // Offset: 0xD15974
     ::StringW GetWord();

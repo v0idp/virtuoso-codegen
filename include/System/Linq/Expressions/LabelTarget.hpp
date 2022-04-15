@@ -49,9 +49,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private readonly System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // public System.String get_Name()
     // Offset: 0xF20E70
     ::StringW get_Name();

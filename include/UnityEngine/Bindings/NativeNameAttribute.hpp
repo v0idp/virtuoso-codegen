@@ -45,7 +45,7 @@ namespace UnityEngine::Bindings {
       return Name;
     }
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // public System.Void set_Name(System.String value)
     // Offset: 0x18FFA24
     void set_Name(::StringW value);

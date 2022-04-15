@@ -64,9 +64,9 @@ namespace Facebook::WitAi::Data::Entities {
       return *reinterpret_cast<::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*>(this);
     }
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> keywords
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_keywords();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_keywords();
     // Get instance field reference: public System.String entity
-    [[deprecated]] ::StringW& dyn_entity();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_entity();
     // public System.Void .ctor(System.String entityIdentifier, System.Collections.Generic.List`1<System.String> words)
     // Offset: 0x167D260
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

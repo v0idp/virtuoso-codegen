@@ -53,7 +53,7 @@ namespace Firebase::Firestore::Converters {
     // Deleting conversion operator: operator ::System::Type*
     constexpr operator ::System::Type*() const noexcept = delete;
     // Get instance field reference: private readonly System.Type _elementType
-    [[deprecated]] ::System::Type*& dyn__elementType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__elementType();
     // System.Void .ctor(System.Type elementType)
     // Offset: 0xD47434
     // Implemented from: Firebase.Firestore.Converters.EnumerableConverterBase

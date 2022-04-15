@@ -69,15 +69,15 @@ namespace System::Net {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: readonly System.Boolean IsRequestRestricted
-    [[deprecated]] bool& dyn_IsRequestRestricted();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsRequestRestricted();
     // Get instance field reference: readonly System.Boolean IsResponseRestricted
-    [[deprecated]] bool& dyn_IsResponseRestricted();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsResponseRestricted();
     // Get instance field reference: readonly System.Net.HeaderParser Parser
-    [[deprecated]] ::System::Net::HeaderParser*& dyn_Parser();
+    [[deprecated("Use field access instead!")]] ::System::Net::HeaderParser*& dyn_Parser();
     // Get instance field reference: readonly System.String HeaderName
-    [[deprecated]] ::StringW& dyn_HeaderName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_HeaderName();
     // Get instance field reference: readonly System.Boolean AllowMultiValues
-    [[deprecated]] bool& dyn_AllowMultiValues();
+    [[deprecated("Use field access instead!")]] bool& dyn_AllowMultiValues();
     // System.Void .ctor(System.String name, System.Boolean requestRestricted, System.Boolean responseRestricted, System.Boolean multi, System.Net.HeaderParser p)
     // Offset: 0xF0BDA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

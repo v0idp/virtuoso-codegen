@@ -81,13 +81,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ShaderEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::ShaderEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ShaderEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Renderer[] _renderers
-    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Renderer*>& dyn__renderers();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock[] _materialBlocks
-    [[deprecated]] ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::MaterialPropertyBlock*>& dyn__materialBlocks();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__currentColor();
     // public VROSC.AudioReactive.ShaderEffectData get_Data()
     // Offset: 0x1926CF8
     ::VROSC::AudioReactive::ShaderEffectData* get_Data();
@@ -102,7 +102,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ShaderEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ShaderEffect::.ctor");

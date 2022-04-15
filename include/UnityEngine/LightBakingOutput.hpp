@@ -70,15 +70,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 probeOcclusionLightIndex
-    [[deprecated]] int& dyn_probeOcclusionLightIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_probeOcclusionLightIndex();
     // Get instance field reference: public System.Int32 occlusionMaskChannel
-    [[deprecated]] int& dyn_occlusionMaskChannel();
+    [[deprecated("Use field access instead!")]] int& dyn_occlusionMaskChannel();
     // Get instance field reference: public UnityEngine.LightmapBakeType lightmapBakeType
-    [[deprecated]] ::UnityEngine::LightmapBakeType& dyn_lightmapBakeType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LightmapBakeType& dyn_lightmapBakeType();
     // Get instance field reference: public UnityEngine.MixedLightingMode mixedLightingMode
-    [[deprecated]] ::UnityEngine::MixedLightingMode& dyn_mixedLightingMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MixedLightingMode& dyn_mixedLightingMode();
     // Get instance field reference: public System.Boolean isBaked
-    [[deprecated]] bool& dyn_isBaked();
+    [[deprecated("Use field access instead!")]] bool& dyn_isBaked();
   }; // UnityEngine.LightBakingOutput
   #pragma pack(pop)
   static check_size<sizeof(LightBakingOutput), 16 + sizeof(bool)> __UnityEngine_LightBakingOutputSizeCheck;

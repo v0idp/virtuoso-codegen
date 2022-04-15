@@ -78,17 +78,17 @@ namespace System::Data {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Data.DataViewManager _dataViewManager
-    [[deprecated]] ::System::Data::DataViewManager*& dyn__dataViewManager();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewManager*& dyn__dataViewManager();
     // Get instance field reference: private System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private System.String _sort
-    [[deprecated]] ::StringW& dyn__sort();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sort();
     // Get instance field reference: private System.String _rowFilter
-    [[deprecated]] ::StringW& dyn__rowFilter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__rowFilter();
     // Get instance field reference: private System.Data.DataViewRowState _rowStateFilter
-    [[deprecated]] ::System::Data::DataViewRowState& dyn__rowStateFilter();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewRowState& dyn__rowStateFilter();
     // Get instance field reference: private System.Boolean _applyDefaultSort
-    [[deprecated]] bool& dyn__applyDefaultSort();
+    [[deprecated("Use field access instead!")]] bool& dyn__applyDefaultSort();
     // public System.Boolean get_ApplyDefaultSort()
     // Offset: 0x12E7B20
     bool get_ApplyDefaultSort();
@@ -101,21 +101,19 @@ namespace System::Data {
     // public System.String get_Sort()
     // Offset: 0x12E7B60
     ::StringW get_Sort();
+    // System.Void .ctor()
+    // Offset: 0x12E7AB0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataViewSetting* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataViewSetting::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataViewSetting*, creationType>()));
+    }
     // System.Void SetDataViewManager(System.Data.DataViewManager dataViewManager)
     // Offset: 0x12E7B28
     void SetDataViewManager(::System::Data::DataViewManager* dataViewManager);
     // System.Void SetDataTable(System.Data.DataTable table)
     // Offset: 0x12E7B3C
     void SetDataTable(::System::Data::DataTable* table);
-    // System.Void .ctor()
-    // Offset: 0x12E7AB0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataViewSetting* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataViewSetting::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataViewSetting*, creationType>()));
-    }
   }; // System.Data.DataViewSetting
   #pragma pack(pop)
   static check_size<sizeof(DataViewSetting), 52 + sizeof(bool)> __System_Data_DataViewSettingSizeCheck;
@@ -154,6 +152,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataViewSetting*), "get_Sort", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Data::DataViewSetting::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataViewSetting::SetDataViewManager
 // Il2CppName: SetDataViewManager
 template<>
@@ -172,7 +174,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataViewSetting*), "SetDataTable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{table});
   }
 };
-// Writing MetadataGetter for method: System::Data::DataViewSetting::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

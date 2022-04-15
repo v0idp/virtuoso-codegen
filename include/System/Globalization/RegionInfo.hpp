@@ -105,25 +105,25 @@ namespace System::Globalization {
     // Set static field: static private System.Globalization.RegionInfo currentRegion
     static void _set_currentRegion(::System::Globalization::RegionInfo* value);
     // Get instance field reference: private System.Int32 regionId
-    [[deprecated]] int& dyn_regionId();
+    [[deprecated("Use field access instead!")]] int& dyn_regionId();
     // Get instance field reference: private System.String iso2Name
-    [[deprecated]] ::StringW& dyn_iso2Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_iso2Name();
     // Get instance field reference: private System.String iso3Name
-    [[deprecated]] ::StringW& dyn_iso3Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_iso3Name();
     // Get instance field reference: private System.String win3Name
-    [[deprecated]] ::StringW& dyn_win3Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_win3Name();
     // Get instance field reference: private System.String englishName
-    [[deprecated]] ::StringW& dyn_englishName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_englishName();
     // Get instance field reference: private System.String nativeName
-    [[deprecated]] ::StringW& dyn_nativeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nativeName();
     // Get instance field reference: private System.String currencySymbol
-    [[deprecated]] ::StringW& dyn_currencySymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currencySymbol();
     // Get instance field reference: private System.String isoCurrencySymbol
-    [[deprecated]] ::StringW& dyn_isoCurrencySymbol();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_isoCurrencySymbol();
     // Get instance field reference: private System.String currencyEnglishName
-    [[deprecated]] ::StringW& dyn_currencyEnglishName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currencyEnglishName();
     // Get instance field reference: private System.String currencyNativeName
-    [[deprecated]] ::StringW& dyn_currencyNativeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_currencyNativeName();
     // static public System.Globalization.RegionInfo get_CurrentRegion()
     // Offset: 0x16159F8
     static ::System::Globalization::RegionInfo* get_CurrentRegion();

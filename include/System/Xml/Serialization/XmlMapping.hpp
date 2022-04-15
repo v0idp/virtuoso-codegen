@@ -90,19 +90,19 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Serialization.ObjectMap map
-    [[deprecated]] ::System::Xml::Serialization::ObjectMap*& dyn_map();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::ObjectMap*& dyn_map();
     // Get instance field reference: private System.Collections.ArrayList relatedMaps
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_relatedMaps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_relatedMaps();
     // Get instance field reference: private System.Xml.Serialization.SerializationFormat format
-    [[deprecated]] ::System::Xml::Serialization::SerializationFormat& dyn_format();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::SerializationFormat& dyn_format();
     // Get instance field reference: private System.Xml.Serialization.SerializationSource source
-    [[deprecated]] ::System::Xml::Serialization::SerializationSource*& dyn_source();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::SerializationSource*& dyn_source();
     // Get instance field reference: System.String _elementName
-    [[deprecated]] ::StringW& dyn__elementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__elementName();
     // Get instance field reference: System.String _namespace
-    [[deprecated]] ::StringW& dyn__namespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__namespace();
     // Get instance field reference: private System.String key
-    [[deprecated]] ::StringW& dyn_key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_key();
     // public System.String get_ElementName()
     // Offset: 0x128BFB0
     ::StringW get_ElementName();

@@ -147,25 +147,25 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::Runtime::InteropServices::_Assembly*>(this);
     }
     // Get instance field reference: System.IntPtr _mono_assembly
-    [[deprecated]] ::System::IntPtr& dyn__mono_assembly();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__mono_assembly();
     // Get instance field reference: private System.Reflection.Assembly/System.Reflection.ResolveEventHolder resolve_event_holder
-    [[deprecated]] ::System::Reflection::Assembly::ResolveEventHolder*& dyn_resolve_event_holder();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly::ResolveEventHolder*& dyn_resolve_event_holder();
     // Get instance field reference: private System.Object _evidence
-    [[deprecated]] ::Il2CppObject*& dyn__evidence();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__evidence();
     // Get instance field reference: private System.Object _minimum
-    [[deprecated]] ::Il2CppObject*& dyn__minimum();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__minimum();
     // Get instance field reference: private System.Object _optional
-    [[deprecated]] ::Il2CppObject*& dyn__optional();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__optional();
     // Get instance field reference: private System.Object _refuse
-    [[deprecated]] ::Il2CppObject*& dyn__refuse();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__refuse();
     // Get instance field reference: private System.Object _granted
-    [[deprecated]] ::Il2CppObject*& dyn__granted();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__granted();
     // Get instance field reference: private System.Object _denied
-    [[deprecated]] ::Il2CppObject*& dyn__denied();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__denied();
     // Get instance field reference: private System.Boolean fromByteArray
-    [[deprecated]] bool& dyn_fromByteArray();
+    [[deprecated("Use field access instead!")]] bool& dyn_fromByteArray();
     // Get instance field reference: private System.String assemblyName
-    [[deprecated]] ::StringW& dyn_assemblyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assemblyName();
     // public System.String get_CodeBase()
     // Offset: 0x1143F8C
     ::StringW get_CodeBase();

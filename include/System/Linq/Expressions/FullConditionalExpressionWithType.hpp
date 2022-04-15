@@ -50,7 +50,7 @@ namespace System::Linq::Expressions {
     // Deleting conversion operator: operator ::System::Linq::Expressions::Expression*
     constexpr operator ::System::Linq::Expressions::Expression*() const noexcept = delete;
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // System.Void .ctor(System.Linq.Expressions.Expression test, System.Linq.Expressions.Expression ifTrue, System.Linq.Expressions.Expression ifFalse, System.Type type)
     // Offset: 0xF148E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

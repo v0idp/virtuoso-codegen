@@ -60,9 +60,9 @@ namespace UnityEngine::XR {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::XR::Eyes>*>(this);
     }
     // Get instance field reference: private System.UInt64 m_DeviceId
-    [[deprecated]] uint64_t& dyn_m_DeviceId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_DeviceId();
     // Get instance field reference: private System.UInt32 m_FeatureIndex
-    [[deprecated]] uint& dyn_m_FeatureIndex();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_FeatureIndex();
     // System.UInt64 get_deviceId()
     // Offset: 0x18C5470
     uint64_t get_deviceId();

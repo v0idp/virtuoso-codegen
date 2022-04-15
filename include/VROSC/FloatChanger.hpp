@@ -52,9 +52,9 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: protected VROSC.FloatNode _outputNode
-    [[deprecated]] ::VROSC::FloatNode*& dyn__outputNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::FloatNode*& dyn__outputNode();
     // Get instance field reference: protected System.Boolean _continuous
-    [[deprecated]] bool& dyn__continuous();
+    [[deprecated("Use field access instead!")]] bool& dyn__continuous();
     // protected System.Void SetValueBySignal(VROSC.Signal signal)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SetValueBySignal(::VROSC::Signal* signal);
@@ -68,11 +68,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FloatChanger* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FloatChanger::.ctor");

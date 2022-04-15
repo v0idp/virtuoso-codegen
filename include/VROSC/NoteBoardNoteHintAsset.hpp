@@ -65,16 +65,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.NoteBoardNoteHintBehaviour template
-    [[deprecated]] ::VROSC::NoteBoardNoteHintBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteHintBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<UnityEngine.Renderer> _target
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::UnityEngine::Renderer*>& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::UnityEngine::Renderer*>& dyn__target();
     // public System.Void .ctor()
     // Offset: 0xC565D8
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteBoardNoteHintAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardNoteHintAsset::.ctor");

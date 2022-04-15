@@ -60,13 +60,13 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.IntPtr sig
-    [[deprecated]] ::System::IntPtr& dyn_sig();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_sig();
     // Get instance field reference: private System.IntPtr args
-    [[deprecated]] ::System::IntPtr& dyn_args();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_args();
     // Get instance field reference: private System.Int32 next_arg
-    [[deprecated]] int& dyn_next_arg();
+    [[deprecated("Use field access instead!")]] int& dyn_next_arg();
     // Get instance field reference: private System.Int32 num_args
-    [[deprecated]] int& dyn_num_args();
+    [[deprecated("Use field access instead!")]] int& dyn_num_args();
     // public override System.Boolean Equals(System.Object o)
     // Offset: 0x113DAB8
     // Implemented from: System.ValueType

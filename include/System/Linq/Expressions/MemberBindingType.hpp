@@ -60,7 +60,7 @@ namespace System::Linq::Expressions {
     // Set static field: static public System.Linq.Expressions.MemberBindingType ListBinding
     static void _set_ListBinding(::System::Linq::Expressions::MemberBindingType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Linq.Expressions.MemberBindingType
   #pragma pack(pop)
   static check_size<sizeof(MemberBindingType), 0 + sizeof(int)> __System_Linq_Expressions_MemberBindingTypeSizeCheck;

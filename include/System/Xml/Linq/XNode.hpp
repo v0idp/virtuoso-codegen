@@ -59,7 +59,7 @@ namespace System::Xml::Linq {
       return next;
     }
     // Get instance field reference: System.Xml.Linq.XNode next
-    [[deprecated]] ::System::Xml::Linq::XNode*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XNode*& dyn_next();
     // public System.Void Remove()
     // Offset: 0x185D31C
     void Remove();
@@ -82,7 +82,6 @@ namespace System::Xml::Linq {
     // Offset: 0x1856330
     // Implemented from: System.Xml.Linq.XObject
     // Base method: System.Void XObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XNode::.ctor");

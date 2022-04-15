@@ -71,11 +71,11 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly System.Int32 <LineNumber>k__BackingField
-    [[deprecated]] int& dyn_$LineNumber$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$LineNumber$k__BackingField();
     // Get instance field reference: private readonly System.Int32 <LinePosition>k__BackingField
-    [[deprecated]] int& dyn_$LinePosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$LinePosition$k__BackingField();
     // Get instance field reference: private readonly System.String <Path>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Path$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Path$k__BackingField();
     // public System.Void .ctor(System.String message, System.String path, System.Int32 lineNumber, System.Int32 linePosition, System.Exception innerException)
     // Offset: 0xF4E354
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -96,8 +96,6 @@ namespace Newtonsoft::Json {
     // Offset: 0xF4E344
     // Implemented from: Newtonsoft.Json.JsonException
     // Base method: System.Void JsonException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JsonReaderException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonReaderException::.ctor");
@@ -107,7 +105,6 @@ namespace Newtonsoft::Json {
     // Offset: 0xF4E34C
     // Implemented from: Newtonsoft.Json.JsonException
     // Base method: System.Void JsonException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JsonReaderException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonReaderException::.ctor");

@@ -48,18 +48,16 @@ namespace UnityEngine::UI {
     // static private System.Void .cctor()
     // Offset: 0x16D83FC
     static void _cctor();
-    // System.Int32 <Raycast>b__27_0(UnityEngine.UI.Graphic g1, UnityEngine.UI.Graphic g2)
-    // Offset: 0x16D8464
-    int $Raycast$b__27_0(::UnityEngine::UI::Graphic* g1, ::UnityEngine::UI::Graphic* g2);
     // public System.Void .ctor()
     // Offset: 0x16D845C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GraphicRaycaster::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::GraphicRaycaster::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GraphicRaycaster::$$c*, creationType>()));
     }
+    // System.Int32 <Raycast>b__27_0(UnityEngine.UI.Graphic g1, UnityEngine.UI.Graphic g2)
+    // Offset: 0x16D8464
+    int $Raycast$b__27_0(::UnityEngine::UI::Graphic* g1, ::UnityEngine::UI::Graphic* g2);
   }; // UnityEngine.UI.GraphicRaycaster/UnityEngine.UI.<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::GraphicRaycaster::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::GraphicRaycaster::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::GraphicRaycaster::$$c::$Raycast$b__27_0
 // Il2CppName: <Raycast>b__27_0
 template<>
@@ -82,7 +84,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::GraphicRaycaster::$$c*), "<Raycast>b__27_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{g1, g2});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::GraphicRaycaster::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

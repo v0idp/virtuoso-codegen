@@ -47,11 +47,11 @@ namespace System::IO {
     static_assert(sizeof(::System::IO::SearchOption) == 0x4);
     public:
     // Get instance field reference: public readonly System.String fullPath
-    [[deprecated]] ::StringW& dyn_fullPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fullPath();
     // Get instance field reference: public readonly System.String userPath
-    [[deprecated]] ::StringW& dyn_userPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_userPath();
     // Get instance field reference: public readonly System.IO.SearchOption searchOption
-    [[deprecated]] ::System::IO::SearchOption& dyn_searchOption();
+    [[deprecated("Use field access instead!")]] ::System::IO::SearchOption& dyn_searchOption();
     // public System.Void .ctor(System.String fullPath, System.String userPath, System.IO.SearchOption searchOption)
     // Offset: 0xE4E6B4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -68,15 +68,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector3 m_Min
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Min();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Min();
     // Get instance field reference: private UnityEngine.Vector3 m_Max
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Max();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Max();
     // Get instance field reference: private UnityEngine.Vector3 m_Center
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Center();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Center();
     // Get instance field reference: private System.Single m_AxisLength
-    [[deprecated]] float& dyn_m_AxisLength();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AxisLength();
     // Get instance field reference: private System.Int32 m_UseDefaultValues
-    [[deprecated]] int& dyn_m_UseDefaultValues();
+    [[deprecated("Use field access instead!")]] int& dyn_m_UseDefaultValues();
   }; // UnityEngine.HumanLimit
   #pragma pack(pop)
   static check_size<sizeof(HumanLimit), 40 + sizeof(int)> __UnityEngine_HumanLimitSizeCheck;

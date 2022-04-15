@@ -63,13 +63,13 @@ namespace DG::Tweening::Core {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 <totMissingTargetOrFieldErrors>k__BackingField
-    [[deprecated]] int& dyn_$totMissingTargetOrFieldErrors$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$totMissingTargetOrFieldErrors$k__BackingField();
     // Get instance field reference: private System.Int32 <totCallbackErrors>k__BackingField
-    [[deprecated]] int& dyn_$totCallbackErrors$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$totCallbackErrors$k__BackingField();
     // Get instance field reference: private System.Int32 <totStartupErrors>k__BackingField
-    [[deprecated]] int& dyn_$totStartupErrors$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$totStartupErrors$k__BackingField();
     // Get instance field reference: private System.Int32 <totUnsetErrors>k__BackingField
-    [[deprecated]] int& dyn_$totUnsetErrors$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$totUnsetErrors$k__BackingField();
     // public System.Int32 get_totMissingTargetOrFieldErrors()
     // Offset: 0x15E589C
     int get_totMissingTargetOrFieldErrors();

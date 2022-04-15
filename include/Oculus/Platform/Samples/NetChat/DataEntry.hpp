@@ -104,19 +104,26 @@ namespace Oculus::Platform::Samples::NetChat {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Text dataOutput
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_dataOutput();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_dataOutput();
     // Get instance field reference: private Oculus.Platform.Samples.NetChat.states currentState
-    [[deprecated]] ::Oculus::Platform::Samples::NetChat::states& dyn_currentState();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::NetChat::states& dyn_currentState();
     // Get instance field reference: private Oculus.Platform.Models.User localUser
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_localUser();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_localUser();
     // Get instance field reference: private Oculus.Platform.Models.User remoteUser
-    [[deprecated]] ::Oculus::Platform::Models::User*& dyn_remoteUser();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::User*& dyn_remoteUser();
     // Get instance field reference: private Oculus.Platform.Models.Room currentRoom
-    [[deprecated]] ::Oculus::Platform::Models::Room*& dyn_currentRoom();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Room*& dyn_currentRoom();
     // Get instance field reference: private System.Int32 lastPacketID
-    [[deprecated]] int& dyn_lastPacketID();
+    [[deprecated("Use field access instead!")]] int& dyn_lastPacketID();
     // Get instance field reference: private System.Boolean ratedMatchStarted
-    [[deprecated]] bool& dyn_ratedMatchStarted();
+    [[deprecated("Use field access instead!")]] bool& dyn_ratedMatchStarted();
+    // public System.Void .ctor()
+    // Offset: 0x928E08
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataEntry* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::NetChat::DataEntry::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataEntry*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x925FE0
     void Start();
@@ -192,25 +199,16 @@ namespace Oculus::Platform::Samples::NetChat {
     // private System.Void reportResultsResponse(Oculus.Platform.Message msg)
     // Offset: 0x928D3C
     void reportResultsResponse(::Oculus::Platform::Message* msg);
-    // public System.Void .ctor()
-    // Offset: 0x928E08
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataEntry* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::NetChat::DataEntry::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataEntry*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.NetChat.DataEntry
   #pragma pack(pop)
   static check_size<sizeof(DataEntry), 68 + sizeof(bool)> __Oculus_Platform_Samples_NetChat_DataEntrySizeCheck;
   static_assert(sizeof(DataEntry) == 0x45);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::NetChat::DataEntry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::NetChat::DataEntry::Start
 // Il2CppName: Start
 template<>
@@ -424,7 +422,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::NetChat::DataEntry*), "reportResultsResponse", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::NetChat::DataEntry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

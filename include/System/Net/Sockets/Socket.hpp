@@ -338,39 +338,39 @@ namespace System::Net::Sockets {
     // Set static field: static private System.AsyncCallback SendToAsyncCallback
     static void _set_SendToAsyncCallback(::System::AsyncCallback* value);
     // Get instance field reference: private System.Boolean is_closed
-    [[deprecated]] bool& dyn_is_closed();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_closed();
     // Get instance field reference: private System.Boolean is_listening
-    [[deprecated]] bool& dyn_is_listening();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_listening();
     // Get instance field reference: private System.Boolean useOverlappedIO
-    [[deprecated]] bool& dyn_useOverlappedIO();
+    [[deprecated("Use field access instead!")]] bool& dyn_useOverlappedIO();
     // Get instance field reference: private System.Int32 linger_timeout
-    [[deprecated]] int& dyn_linger_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_linger_timeout();
     // Get instance field reference: private System.Net.Sockets.AddressFamily addressFamily
-    [[deprecated]] ::System::Net::Sockets::AddressFamily& dyn_addressFamily();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::AddressFamily& dyn_addressFamily();
     // Get instance field reference: private System.Net.Sockets.SocketType socketType
-    [[deprecated]] ::System::Net::Sockets::SocketType& dyn_socketType();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::SocketType& dyn_socketType();
     // Get instance field reference: private System.Net.Sockets.ProtocolType protocolType
-    [[deprecated]] ::System::Net::Sockets::ProtocolType& dyn_protocolType();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::ProtocolType& dyn_protocolType();
     // Get instance field reference: System.Net.Sockets.SafeSocketHandle m_Handle
-    [[deprecated]] ::System::Net::Sockets::SafeSocketHandle*& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::SafeSocketHandle*& dyn_m_Handle();
     // Get instance field reference: System.Net.EndPoint seed_endpoint
-    [[deprecated]] ::System::Net::EndPoint*& dyn_seed_endpoint();
+    [[deprecated("Use field access instead!")]] ::System::Net::EndPoint*& dyn_seed_endpoint();
     // Get instance field reference: System.Threading.SemaphoreSlim ReadSem
-    [[deprecated]] ::System::Threading::SemaphoreSlim*& dyn_ReadSem();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim*& dyn_ReadSem();
     // Get instance field reference: System.Threading.SemaphoreSlim WriteSem
-    [[deprecated]] ::System::Threading::SemaphoreSlim*& dyn_WriteSem();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim*& dyn_WriteSem();
     // Get instance field reference: System.Boolean is_blocking
-    [[deprecated]] bool& dyn_is_blocking();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_blocking();
     // Get instance field reference: System.Boolean is_bound
-    [[deprecated]] bool& dyn_is_bound();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_bound();
     // Get instance field reference: System.Boolean is_connected
-    [[deprecated]] bool& dyn_is_connected();
+    [[deprecated("Use field access instead!")]] bool& dyn_is_connected();
     // Get instance field reference: private System.Int32 m_IntCleanedUp
-    [[deprecated]] int& dyn_m_IntCleanedUp();
+    [[deprecated("Use field access instead!")]] int& dyn_m_IntCleanedUp();
     // Get instance field reference: System.Boolean connect_in_progress
-    [[deprecated]] bool& dyn_connect_in_progress();
+    [[deprecated("Use field access instead!")]] bool& dyn_connect_in_progress();
     // Get instance field reference: readonly System.Int32 ID
-    [[deprecated]] int& dyn_ID();
+    [[deprecated("Use field access instead!")]] int& dyn_ID();
     // static public System.Boolean get_SupportsIPv4()
     // Offset: 0xD9D5B0
     static bool get_SupportsIPv4();

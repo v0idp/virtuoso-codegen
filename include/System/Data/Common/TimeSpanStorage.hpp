@@ -65,7 +65,7 @@ namespace System::Data::Common {
     // Set static field: static private readonly System.TimeSpan s_defaultValue
     static void _set_s_defaultValue(::System::TimeSpan value);
     // Get instance field reference: private System.TimeSpan[] _values
-    [[deprecated]] ::ArrayW<::System::TimeSpan>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::TimeSpan>& dyn__values();
     // public System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x13E0C34
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

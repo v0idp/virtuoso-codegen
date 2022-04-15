@@ -93,17 +93,17 @@ namespace System::Xml {
     static_assert(sizeof(::System::IO::Stream*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlRawWriter wrapped
-    [[deprecated]] ::System::Xml::XmlRawWriter*& dyn_wrapped();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlRawWriter*& dyn_wrapped();
     // Get instance field reference: private System.Xml.OnRemoveWriter onRemove
-    [[deprecated]] ::System::Xml::OnRemoveWriter*& dyn_onRemove();
+    [[deprecated("Use field access instead!")]] ::System::Xml::OnRemoveWriter*& dyn_onRemove();
     // Get instance field reference: private System.Xml.XmlWriterSettings writerSettings
-    [[deprecated]] ::System::Xml::XmlWriterSettings*& dyn_writerSettings();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlWriterSettings*& dyn_writerSettings();
     // Get instance field reference: private System.Xml.XmlEventCache eventCache
-    [[deprecated]] ::System::Xml::XmlEventCache*& dyn_eventCache();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlEventCache*& dyn_eventCache();
     // Get instance field reference: private System.IO.TextWriter textWriter
-    [[deprecated]] ::System::IO::TextWriter*& dyn_textWriter();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextWriter*& dyn_textWriter();
     // Get instance field reference: private System.IO.Stream strm
-    [[deprecated]] ::System::IO::Stream*& dyn_strm();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_strm();
     // private System.Void .ctor(System.Xml.XmlWriterSettings writerSettings)
     // Offset: 0x1186EEC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

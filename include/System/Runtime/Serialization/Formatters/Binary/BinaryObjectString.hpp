@@ -53,9 +53,9 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Int32 objectId
-    [[deprecated]] int& dyn_objectId();
+    [[deprecated("Use field access instead!")]] int& dyn_objectId();
     // Get instance field reference: System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // System.Void Set(System.Int32 objectId, System.String value)
     // Offset: 0xFE8584
     void Set(int objectId, ::StringW value);

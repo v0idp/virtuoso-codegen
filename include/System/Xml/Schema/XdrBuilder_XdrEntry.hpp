@@ -73,19 +73,19 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: System.Xml.Schema.SchemaNames/System.Xml.Schema.Token _Name
-    [[deprecated]] ::System::Xml::Schema::SchemaNames::Token& dyn__Name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames::Token& dyn__Name();
     // Get instance field reference: System.Int32[] _NextStates
-    [[deprecated]] ::ArrayW<int>& dyn__NextStates();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__NextStates();
     // Get instance field reference: System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrAttributeEntry[] _Attributes
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::XdrBuilder::XdrAttributeEntry*>& dyn__Attributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::XdrBuilder::XdrAttributeEntry*>& dyn__Attributes();
     // Get instance field reference: System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrInitFunction _InitFunc
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::XdrInitFunction*& dyn__InitFunc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::XdrInitFunction*& dyn__InitFunc();
     // Get instance field reference: System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrBeginChildFunction _BeginChildFunc
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::XdrBeginChildFunction*& dyn__BeginChildFunc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::XdrBeginChildFunction*& dyn__BeginChildFunc();
     // Get instance field reference: System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrEndChildFunction _EndChildFunc
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::XdrEndChildFunction*& dyn__EndChildFunc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::XdrEndChildFunction*& dyn__EndChildFunc();
     // Get instance field reference: System.Boolean _AllowText
-    [[deprecated]] bool& dyn__AllowText();
+    [[deprecated("Use field access instead!")]] bool& dyn__AllowText();
     // System.Void .ctor(System.Xml.Schema.SchemaNames/System.Xml.Schema.Token n, System.Int32[] states, System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrAttributeEntry[] attributes, System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrInitFunction init, System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrBeginChildFunction begin, System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrEndChildFunction end, System.Boolean fText)
     // Offset: 0xC1FB8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -57,9 +57,9 @@ namespace Oculus::Platform {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private readonly System.UInt64 size
-    [[deprecated]] uint64_t& dyn_size();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_size();
     // Get instance field reference: private readonly System.IntPtr packetHandle
-    [[deprecated]] ::System::IntPtr& dyn_packetHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_packetHandle();
     // public System.UInt64 get_SenderID()
     // Offset: 0xB52A38
     uint64_t get_SenderID();

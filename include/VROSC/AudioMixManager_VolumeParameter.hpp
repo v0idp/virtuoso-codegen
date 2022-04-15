@@ -76,13 +76,13 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::AudioMixManager::VolumeParameter::FadeSource*>*) == 0x8);
     public:
     // Get instance field reference: public System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: public System.Single UnfadedVolume
-    [[deprecated]] float& dyn_UnfadedVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_UnfadedVolume();
     // Get instance field reference: public UnityEngine.Coroutine FadingCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_FadingCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_FadingCoroutine();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.AudioMixManager/VROSC.VolumeParameter/VROSC.FadeSource> _fadeSources
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::AudioMixManager::VolumeParameter::FadeSource*>*& dyn__fadeSources();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::AudioMixManager::VolumeParameter::FadeSource*>*& dyn__fadeSources();
     // public System.Void .ctor(System.String name, UnityEngine.Audio.AudioMixer audioMixer)
     // Offset: 0x956FB4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

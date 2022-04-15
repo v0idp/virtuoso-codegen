@@ -77,13 +77,13 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.Dashboard _dashboardPrefab
-    [[deprecated]] ::VROSC::Dashboard*& dyn__dashboardPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Dashboard*& dyn__dashboardPrefab();
     // Get instance field reference: private PunchKeyboard _keyboardPrefab
-    [[deprecated]] ::GlobalNamespace::PunchKeyboard*& dyn__keyboardPrefab();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PunchKeyboard*& dyn__keyboardPrefab();
     // Get instance field reference: private VROSC.UISchemeController _uiSchemeController
-    [[deprecated]] ::VROSC::UISchemeController*& dyn__uiSchemeController();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISchemeController*& dyn__uiSchemeController();
     // Get instance field reference: private VROSC.SetupBeatCounterState _beatCounterState
-    [[deprecated]] ::VROSC::SetupBeatCounterState*& dyn__beatCounterState();
+    [[deprecated("Use field access instead!")]] ::VROSC::SetupBeatCounterState*& dyn__beatCounterState();
     // public System.Void .ctor(VROSC.Dashboard dashboardPrefab, PunchKeyboard keyboardPrefab, VROSC.UISchemeController uiSchemeController)
     // Offset: 0x1926A34
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

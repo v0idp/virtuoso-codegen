@@ -63,11 +63,11 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public DG.Tweening.RotateMode rotateMode
-    [[deprecated]] ::DG::Tweening::RotateMode& dyn_rotateMode();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::RotateMode& dyn_rotateMode();
     // Get instance field reference: public DG.Tweening.AxisConstraint axisConstraint
-    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
     // Get instance field reference: public UnityEngine.Vector3 up
-    [[deprecated]] ::UnityEngine::Vector3& dyn_up();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_up();
     // public System.Void Reset()
     // Offset: 0x15E3144
     void Reset();

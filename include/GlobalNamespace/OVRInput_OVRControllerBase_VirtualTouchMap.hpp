@@ -106,49 +106,51 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawTouch) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawTouch None
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_None();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_None();
     // Get instance field reference: public OVRInput/RawTouch One
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_One();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_One();
     // Get instance field reference: public OVRInput/RawTouch Two
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Two();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Two();
     // Get instance field reference: public OVRInput/RawTouch Three
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Three();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Three();
     // Get instance field reference: public OVRInput/RawTouch Four
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Four();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_Four();
     // Get instance field reference: public OVRInput/RawTouch PrimaryIndexTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryIndexTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawTouch PrimaryThumbstick
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbstick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbstick();
     // Get instance field reference: public OVRInput/RawTouch PrimaryThumbRest
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbRest();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryThumbRest();
     // Get instance field reference: public OVRInput/RawTouch PrimaryTouchpad
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryTouchpad();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_PrimaryTouchpad();
     // Get instance field reference: public OVRInput/RawTouch SecondaryIndexTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryIndexTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawTouch SecondaryThumbstick
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbstick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbstick();
     // Get instance field reference: public OVRInput/RawTouch SecondaryThumbRest
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbRest();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryThumbRest();
     // Get instance field reference: public OVRInput/RawTouch SecondaryTouchpad
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryTouchpad();
-    // public OVRInput/RawTouch ToRawMask(OVRInput/Touch virtualMask)
-    // Offset: 0x13F23CC
-    ::GlobalNamespace::OVRInput::RawTouch ToRawMask(::GlobalNamespace::OVRInput::Touch virtualMask);
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawTouch& dyn_SecondaryTouchpad();
     // public System.Void .ctor()
     // Offset: 0x13F24A0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRInput::OVRControllerBase::VirtualTouchMap* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRInput::OVRControllerBase::VirtualTouchMap::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRInput::OVRControllerBase::VirtualTouchMap*, creationType>()));
     }
+    // public OVRInput/RawTouch ToRawMask(OVRInput/Touch virtualMask)
+    // Offset: 0x13F23CC
+    ::GlobalNamespace::OVRInput::RawTouch ToRawMask(::GlobalNamespace::OVRInput::Touch virtualMask);
   }; // OVRInput/OVRControllerBase/VirtualTouchMap
   #pragma pack(pop)
   static check_size<sizeof(OVRInput::OVRControllerBase::VirtualTouchMap), 64 + sizeof(::GlobalNamespace::OVRInput::RawTouch)> __GlobalNamespace_OVRInput_OVRControllerBase_VirtualTouchMapSizeCheck;
   static_assert(sizeof(OVRInput::OVRControllerBase::VirtualTouchMap) == 0x44);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualTouchMap::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualTouchMap::ToRawMask
 // Il2CppName: ToRawMask
 template<>
@@ -158,7 +160,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRInput::OVRControllerBase::VirtualTouchMap*), "ToRawMask", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{virtualMask});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualTouchMap::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

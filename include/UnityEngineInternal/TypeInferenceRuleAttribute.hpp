@@ -45,7 +45,7 @@ namespace UnityEngineInternal {
       return rule;
     }
     // Get instance field reference: private readonly System.String _rule
-    [[deprecated]] ::StringW& dyn__rule();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__rule();
     // public System.Void .ctor(UnityEngineInternal.TypeInferenceRules rule)
     // Offset: 0x183C608
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

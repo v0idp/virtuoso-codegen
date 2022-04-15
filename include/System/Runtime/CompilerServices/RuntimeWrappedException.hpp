@@ -48,7 +48,7 @@ namespace System::Runtime::CompilerServices {
       return m_wrappedException;
     }
     // Get instance field reference: private System.Object m_wrappedException
-    [[deprecated]] ::Il2CppObject*& dyn_m_wrappedException();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_wrappedException();
     // public System.Object get_WrappedException()
     // Offset: 0x116AD14
     ::Il2CppObject* get_WrappedException();

@@ -98,7 +98,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.CanvasScaler/UnityEngine.UI.ScaleMode ConstantPhysicalSize
       static void _set_ConstantPhysicalSize(::UnityEngine::UI::CanvasScaler::ScaleMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.CanvasScaler/UnityEngine.UI.ScaleMode
     #pragma pack(pop)
     static check_size<sizeof(CanvasScaler::ScaleMode), 0 + sizeof(int)> __UnityEngine_UI_CanvasScaler_ScaleModeSizeCheck;
@@ -146,7 +146,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.CanvasScaler/UnityEngine.UI.ScreenMatchMode Shrink
       static void _set_Shrink(::UnityEngine::UI::CanvasScaler::ScreenMatchMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.CanvasScaler/UnityEngine.UI.ScreenMatchMode
     #pragma pack(pop)
     static check_size<sizeof(CanvasScaler::ScreenMatchMode), 0 + sizeof(int)> __UnityEngine_UI_CanvasScaler_ScreenMatchModeSizeCheck;
@@ -206,7 +206,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.CanvasScaler/UnityEngine.UI.Unit Picas
       static void _set_Picas(::UnityEngine::UI::CanvasScaler::Unit value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.CanvasScaler/UnityEngine.UI.Unit
     #pragma pack(pop)
     static check_size<sizeof(CanvasScaler::Unit), 0 + sizeof(int)> __UnityEngine_UI_CanvasScaler_UnitSizeCheck;
@@ -319,33 +319,33 @@ namespace UnityEngine::UI {
     // Set static field: static private System.Single kLogBase
     static void _set_kLogBase(float value);
     // Get instance field reference: private UnityEngine.UI.CanvasScaler/UnityEngine.UI.ScaleMode m_UiScaleMode
-    [[deprecated]] ::UnityEngine::UI::CanvasScaler::ScaleMode& dyn_m_UiScaleMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CanvasScaler::ScaleMode& dyn_m_UiScaleMode();
     // Get instance field reference: protected System.Single m_ReferencePixelsPerUnit
-    [[deprecated]] float& dyn_m_ReferencePixelsPerUnit();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ReferencePixelsPerUnit();
     // Get instance field reference: protected System.Single m_ScaleFactor
-    [[deprecated]] float& dyn_m_ScaleFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ScaleFactor();
     // Get instance field reference: protected UnityEngine.Vector2 m_ReferenceResolution
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_ReferenceResolution();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_ReferenceResolution();
     // Get instance field reference: protected UnityEngine.UI.CanvasScaler/UnityEngine.UI.ScreenMatchMode m_ScreenMatchMode
-    [[deprecated]] ::UnityEngine::UI::CanvasScaler::ScreenMatchMode& dyn_m_ScreenMatchMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CanvasScaler::ScreenMatchMode& dyn_m_ScreenMatchMode();
     // Get instance field reference: protected System.Single m_MatchWidthOrHeight
-    [[deprecated]] float& dyn_m_MatchWidthOrHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MatchWidthOrHeight();
     // Get instance field reference: protected UnityEngine.UI.CanvasScaler/UnityEngine.UI.Unit m_PhysicalUnit
-    [[deprecated]] ::UnityEngine::UI::CanvasScaler::Unit& dyn_m_PhysicalUnit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::CanvasScaler::Unit& dyn_m_PhysicalUnit();
     // Get instance field reference: protected System.Single m_FallbackScreenDPI
-    [[deprecated]] float& dyn_m_FallbackScreenDPI();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FallbackScreenDPI();
     // Get instance field reference: protected System.Single m_DefaultSpriteDPI
-    [[deprecated]] float& dyn_m_DefaultSpriteDPI();
+    [[deprecated("Use field access instead!")]] float& dyn_m_DefaultSpriteDPI();
     // Get instance field reference: protected System.Single m_DynamicPixelsPerUnit
-    [[deprecated]] float& dyn_m_DynamicPixelsPerUnit();
+    [[deprecated("Use field access instead!")]] float& dyn_m_DynamicPixelsPerUnit();
     // Get instance field reference: private UnityEngine.Canvas m_Canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_m_Canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_m_Canvas();
     // Get instance field reference: private System.Single m_PrevScaleFactor
-    [[deprecated]] float& dyn_m_PrevScaleFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PrevScaleFactor();
     // Get instance field reference: private System.Single m_PrevReferencePixelsPerUnit
-    [[deprecated]] float& dyn_m_PrevReferencePixelsPerUnit();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PrevReferencePixelsPerUnit();
     // Get instance field reference: protected System.Boolean m_PresetInfoIsWorld
-    [[deprecated]] bool& dyn_m_PresetInfoIsWorld();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PresetInfoIsWorld();
     // public UnityEngine.UI.CanvasScaler/UnityEngine.UI.ScaleMode get_uiScaleMode()
     // Offset: 0xEACE80
     ::UnityEngine::UI::CanvasScaler::ScaleMode get_uiScaleMode();
@@ -434,11 +434,6 @@ namespace UnityEngine::UI {
     // Offset: 0xEACFF4
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CanvasScaler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::CanvasScaler::.ctor");

@@ -54,7 +54,7 @@ namespace Unity::IO::LowLevel::Unsafe {
     // Set static field: static public Unity.IO.LowLevel.Unsafe.FileReadType Async
     static void _set_Async(::Unity::IO::LowLevel::Unsafe::FileReadType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Unity.IO.LowLevel.Unsafe.FileReadType
   #pragma pack(pop)
   static check_size<sizeof(FileReadType), 0 + sizeof(int)> __Unity_IO_LowLevel_Unsafe_FileReadTypeSizeCheck;

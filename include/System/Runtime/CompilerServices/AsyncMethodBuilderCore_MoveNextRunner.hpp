@@ -56,9 +56,9 @@ namespace System::Runtime::CompilerServices {
     // Set static field: static private System.Threading.ContextCallback s_invokeMoveNext
     static void _set_s_invokeMoveNext(::System::Threading::ContextCallback* value);
     // Get instance field reference: private readonly System.Threading.ExecutionContext m_context
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_context();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_m_context();
     // Get instance field reference: System.Runtime.CompilerServices.IAsyncStateMachine m_stateMachine
-    [[deprecated]] ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
     // System.Void .ctor(System.Threading.ExecutionContext context, System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
     // Offset: 0x13A4D28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

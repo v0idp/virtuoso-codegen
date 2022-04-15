@@ -79,9 +79,9 @@ namespace NatSuite::Devices::Internal {
     static_assert(sizeof(::UnityEngine::Texture2D*) == 0x8);
     public:
     // Get instance field reference: private readonly System.IntPtr device
-    [[deprecated]] ::System::IntPtr& dyn_device();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_device();
     // Get instance field reference: private UnityEngine.Texture2D previewTexture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_previewTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_previewTexture();
     // public System.Void .ctor(System.IntPtr device)
     // Offset: 0xAC1BAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

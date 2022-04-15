@@ -48,7 +48,7 @@ namespace Oculus::Platform::Models {
       return InvitedUsers;
     }
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList InvitedUsers
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_InvitedUsers();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3B068
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

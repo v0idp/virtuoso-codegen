@@ -69,15 +69,15 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Texture*) == 0x8);
     public:
     // Get instance field reference: public System.String VideoId
-    [[deprecated]] ::StringW& dyn_VideoId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_VideoId();
     // Get instance field reference: public System.String VideoPath
-    [[deprecated]] ::StringW& dyn_VideoPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_VideoPath();
     // Get instance field reference: public System.String Title
-    [[deprecated]] ::StringW& dyn_Title();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Title();
     // Get instance field reference: public System.String RequiredVersion
-    [[deprecated]] ::StringW& dyn_RequiredVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_RequiredVersion();
     // Get instance field reference: private UnityEngine.Texture <Thumbnail>k__BackingField
-    [[deprecated]] ::UnityEngine::Texture*& dyn_$Thumbnail$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_$Thumbnail$k__BackingField();
     // public UnityEngine.Texture get_Thumbnail()
     // Offset: 0x1922638
     ::UnityEngine::Texture* get_Thumbnail();
@@ -88,7 +88,6 @@ namespace VROSC {
     // Offset: 0x1922648
     // Implemented from: VROSC.PaginatedListItemData
     // Base method: System.Void PaginatedListItemData::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VideoInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VideoInfo::.ctor");

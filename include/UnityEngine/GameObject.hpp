@@ -283,7 +283,6 @@ namespace UnityEngine {
     // Offset: 0x1127C44
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GameObject* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GameObject::.ctor");

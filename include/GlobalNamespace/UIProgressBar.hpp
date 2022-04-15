@@ -88,25 +88,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AdjustableMesh _progressBar
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__progressBar();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__progressBar();
     // Get instance field reference: private VROSC.AdjustableMeshTransformUVEffect _progressBarValue
-    [[deprecated]] ::VROSC::AdjustableMeshTransformUVEffect*& dyn__progressBarValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshTransformUVEffect*& dyn__progressBarValue();
     // Get instance field reference: private VROSC.AdjustableMeshColorChangeEffect _progressBarColor
-    [[deprecated]] ::VROSC::AdjustableMeshColorChangeEffect*& dyn__progressBarColor();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshColorChangeEffect*& dyn__progressBarColor();
     // Get instance field reference: private UnityEngine.Color _successColor
-    [[deprecated]] ::UnityEngine::Color& dyn__successColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__successColor();
     // Get instance field reference: private UnityEngine.Color _failureColor
-    [[deprecated]] ::UnityEngine::Color& dyn__failureColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__failureColor();
     // Get instance field reference: private UnityEngine.Color _inProgressColor
-    [[deprecated]] ::UnityEngine::Color& dyn__inProgressColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__inProgressColor();
     // Get instance field reference: private System.Single <Progress>k__BackingField
-    [[deprecated]] float& dyn_$Progress$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Progress$k__BackingField();
     // public System.Single get_Progress()
     // Offset: 0x1912C9C
     float get_Progress();
     // private System.Void set_Progress(System.Single value)
     // Offset: 0x1912CA4
     void set_Progress(float value);
+    // public System.Void .ctor()
+    // Offset: 0x1912D90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIProgressBar* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UIProgressBar::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIProgressBar*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1912CAC
     void Awake();
@@ -119,19 +126,6 @@ namespace GlobalNamespace {
     // public System.Void UpdateValue(System.Single value)
     // Offset: 0x1912D6C
     void UpdateValue(float value);
-    // public System.Void .ctor()
-    // Offset: 0x1912D90
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIProgressBar* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UIProgressBar::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIProgressBar*, creationType>()));
-    }
   }; // UIProgressBar
   #pragma pack(pop)
   static check_size<sizeof(UIProgressBar), 96 + sizeof(float)> __GlobalNamespace_UIProgressBarSizeCheck;
@@ -155,6 +149,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::UIProgressBar*), "set_Progress", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::UIProgressBar::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::UIProgressBar::Awake
 // Il2CppName: Awake
 template<>
@@ -189,7 +187,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::UIProgressBar*), "UpdateValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::UIProgressBar::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

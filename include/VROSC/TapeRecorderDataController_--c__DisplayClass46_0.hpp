@@ -47,27 +47,29 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Action`2<System.Boolean,System.Single> onSuccess
-    [[deprecated]] ::System::Action_2<bool, float>*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, float>*& dyn_onSuccess();
     // Get instance field reference: public System.Single normalizeMultiplier
-    [[deprecated]] float& dyn_normalizeMultiplier();
-    // System.Void <SaveAudioPreview>b__0()
-    // Offset: 0x8DBA00
-    void $SaveAudioPreview$b__0();
+    [[deprecated("Use field access instead!")]] float& dyn_normalizeMultiplier();
     // public System.Void .ctor()
     // Offset: 0x8DB9F8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TapeRecorderDataController::$$c__DisplayClass46_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TapeRecorderDataController::$$c__DisplayClass46_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TapeRecorderDataController::$$c__DisplayClass46_0*, creationType>()));
     }
+    // System.Void <SaveAudioPreview>b__0()
+    // Offset: 0x8DBA00
+    void $SaveAudioPreview$b__0();
   }; // VROSC.TapeRecorderDataController/VROSC.<>c__DisplayClass46_0
   #pragma pack(pop)
   static check_size<sizeof(TapeRecorderDataController::$$c__DisplayClass46_0), 24 + sizeof(float)> __VROSC_TapeRecorderDataController_$$c__DisplayClass46_0SizeCheck;
   static_assert(sizeof(TapeRecorderDataController::$$c__DisplayClass46_0) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TapeRecorderDataController::$$c__DisplayClass46_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TapeRecorderDataController::$$c__DisplayClass46_0::$SaveAudioPreview$b__0
 // Il2CppName: <SaveAudioPreview>b__0
 template<>
@@ -76,7 +78,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TapeRecorderDataController::$$c__DisplayClass46_0*), "<SaveAudioPreview>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::TapeRecorderDataController::$$c__DisplayClass46_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

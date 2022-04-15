@@ -74,13 +74,13 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32 indentLevel
-    [[deprecated]] int& dyn_indentLevel();
+    [[deprecated("Use field access instead!")]] int& dyn_indentLevel();
     // Get instance field reference: private System.Int32 endBlockPos
-    [[deprecated]] int& dyn_endBlockPos();
+    [[deprecated("Use field access instead!")]] int& dyn_endBlockPos();
     // Get instance field reference: private System.String indentChars
-    [[deprecated]] ::StringW& dyn_indentChars();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_indentChars();
     // Get instance field reference: private System.Boolean newLineOnAttributes
-    [[deprecated]] bool& dyn_newLineOnAttributes();
+    [[deprecated("Use field access instead!")]] bool& dyn_newLineOnAttributes();
     // private System.Void WriteIndent()
     // Offset: 0xAF08B8
     void WriteIndent();

@@ -48,7 +48,7 @@ namespace System::Security::Cryptography {
     // Set static field: static private System.Object _lock
     static void _set__lock(::Il2CppObject* value);
     // Get instance field reference: private System.IntPtr _handle
-    [[deprecated]] ::System::IntPtr& dyn__handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__handle();
     // static private System.Void .cctor()
     // Offset: 0x160E360
     static void _cctor();

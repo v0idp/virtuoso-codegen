@@ -110,19 +110,19 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::RectTransform*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnColorPicked
-    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorPicked();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorPicked();
     // Get instance field reference: private VROSC.UIColorPicker/VROSC.UIColorPickerData _data
-    [[deprecated]] ::VROSC::UIColorPicker::UIColorPickerData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIColorPicker::UIColorPickerData*& dyn__data();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabbingDevice();
     // Get instance field reference: private VROSC.TriggerButton _grabbingButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn__grabbingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__grabbingButton();
     // Get instance field reference: private System.Boolean _uiHelperActive
-    [[deprecated]] bool& dyn__uiHelperActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__uiHelperActive();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // public UnityEngine.Vector2 get_Size()
     // Offset: 0xA34038
     ::UnityEngine::Vector2 get_Size();
@@ -174,11 +174,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIColorPicker* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPicker::.ctor");

@@ -146,37 +146,37 @@ namespace TMPro {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public TMPro.TMP_SpriteAnimator <>4__this
-    [[deprecated]] ::TMPro::TMP_SpriteAnimator*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_SpriteAnimator*& dyn_$$4__this();
     // Get instance field reference: public System.Int32 start
-    [[deprecated]] int& dyn_start();
+    [[deprecated("Use field access instead!")]] int& dyn_start();
     // Get instance field reference: public System.Int32 end
-    [[deprecated]] int& dyn_end();
+    [[deprecated("Use field access instead!")]] int& dyn_end();
     // Get instance field reference: public TMPro.TMP_SpriteAsset spriteAsset
-    [[deprecated]] ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
     // Get instance field reference: public System.Int32 currentCharacter
-    [[deprecated]] int& dyn_currentCharacter();
+    [[deprecated("Use field access instead!")]] int& dyn_currentCharacter();
     // Get instance field reference: public System.Int32 framerate
-    [[deprecated]] int& dyn_framerate();
+    [[deprecated("Use field access instead!")]] int& dyn_framerate();
     // Get instance field reference: private System.Int32 <currentFrame>5__2
-    [[deprecated]] int& dyn_$currentFrame$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$currentFrame$5__2();
     // Get instance field reference: private TMPro.TMP_CharacterInfo <charInfo>5__3
-    [[deprecated]] ::TMPro::TMP_CharacterInfo& dyn_$charInfo$5__3();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_CharacterInfo& dyn_$charInfo$5__3();
     // Get instance field reference: private System.Int32 <materialIndex>5__4
-    [[deprecated]] int& dyn_$materialIndex$5__4();
+    [[deprecated("Use field access instead!")]] int& dyn_$materialIndex$5__4();
     // Get instance field reference: private System.Int32 <vertexIndex>5__5
-    [[deprecated]] int& dyn_$vertexIndex$5__5();
+    [[deprecated("Use field access instead!")]] int& dyn_$vertexIndex$5__5();
     // Get instance field reference: private TMPro.TMP_MeshInfo <meshInfo>5__6
-    [[deprecated]] ::TMPro::TMP_MeshInfo& dyn_$meshInfo$5__6();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_MeshInfo& dyn_$meshInfo$5__6();
     // Get instance field reference: private System.Single <baseSpriteScale>5__7
-    [[deprecated]] float& dyn_$baseSpriteScale$5__7();
+    [[deprecated("Use field access instead!")]] float& dyn_$baseSpriteScale$5__7();
     // Get instance field reference: private System.Single <elapsedTime>5__8
-    [[deprecated]] float& dyn_$elapsedTime$5__8();
+    [[deprecated("Use field access instead!")]] float& dyn_$elapsedTime$5__8();
     // Get instance field reference: private System.Single <targetTime>5__9
-    [[deprecated]] float& dyn_$targetTime$5__9();
+    [[deprecated("Use field access instead!")]] float& dyn_$targetTime$5__9();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1821B0C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

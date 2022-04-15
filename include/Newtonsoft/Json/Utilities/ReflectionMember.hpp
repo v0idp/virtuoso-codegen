@@ -64,11 +64,11 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::System::Action_2<::Il2CppObject*, ::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: private System.Type <MemberType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$MemberType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$MemberType$k__BackingField();
     // Get instance field reference: private System.Func`2<System.Object,System.Object> <Getter>k__BackingField
-    [[deprecated]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$Getter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$Getter$k__BackingField();
     // Get instance field reference: private System.Action`2<System.Object,System.Object> <Setter>k__BackingField
-    [[deprecated]] ::System::Action_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$Setter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_$Setter$k__BackingField();
     // public System.Type get_MemberType()
     // Offset: 0x1348B44
     ::System::Type* get_MemberType();
@@ -89,8 +89,6 @@ namespace Newtonsoft::Json::Utilities {
     void set_Setter(::System::Action_2<::Il2CppObject*, ::Il2CppObject*>* value);
     // public System.Void .ctor()
     // Offset: 0x1348B74
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ReflectionMember* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::ReflectionMember::.ctor");

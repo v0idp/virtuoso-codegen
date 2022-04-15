@@ -59,16 +59,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _size
-    [[deprecated]] float& dyn__size();
+    [[deprecated("Use field access instead!")]] float& dyn__size();
     // Get instance field reference: private System.Boolean _scaleEffect
-    [[deprecated]] bool& dyn__scaleEffect();
+    [[deprecated("Use field access instead!")]] bool& dyn__scaleEffect();
     // Get instance field reference: private UnityEngine.Vector3 _originalScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__originalScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__originalScale();
     // Get instance field reference: private System.Boolean _setupDone
-    [[deprecated]] bool& dyn__setupDone();
+    [[deprecated("Use field access instead!")]] bool& dyn__setupDone();
     // public System.Single get_Size()
     // Offset: 0x19287EC
     float get_Size();
+    // public System.Void .ctor()
+    // Offset: 0x192897C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SimpleAppearObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SimpleAppearObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SimpleAppearObject*, creationType>()));
+    }
     // public System.Void Setup()
     // Offset: 0x19287F4
     void Setup();
@@ -78,19 +85,6 @@ namespace VROSC {
     // private System.Void OnDrawGizmosSelected()
     // Offset: 0x192892C
     void OnDrawGizmosSelected();
-    // public System.Void .ctor()
-    // Offset: 0x192897C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SimpleAppearObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SimpleAppearObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SimpleAppearObject*, creationType>()));
-    }
   }; // VROSC.SimpleAppearObject
   #pragma pack(pop)
   static check_size<sizeof(SimpleAppearObject), 44 + sizeof(bool)> __VROSC_SimpleAppearObjectSizeCheck;
@@ -105,6 +99,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::SimpleAppearObject*), "get_Size", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::SimpleAppearObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SimpleAppearObject::Setup
 // Il2CppName: Setup
 template<>
@@ -130,7 +128,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SimpleAppearObject*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SimpleAppearObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -41,7 +41,7 @@ namespace Oculus::Platform::Models {
       return RejoinSelected;
     }
     // Get instance field reference: public readonly System.Boolean RejoinSelected
-    [[deprecated]] bool& dyn_RejoinSelected();
+    [[deprecated("Use field access instead!")]] bool& dyn_RejoinSelected();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x17134CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

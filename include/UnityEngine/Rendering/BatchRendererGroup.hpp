@@ -54,9 +54,9 @@ namespace UnityEngine::Rendering {
     static_assert(sizeof(::UnityEngine::Rendering::BatchRendererGroup::OnPerformCulling*) == 0x8);
     public:
     // Get instance field reference: private System.IntPtr m_GroupHandle
-    [[deprecated]] ::System::IntPtr& dyn_m_GroupHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_GroupHandle();
     // Get instance field reference: private UnityEngine.Rendering.BatchRendererGroup/UnityEngine.Rendering.OnPerformCulling m_PerformCulling
-    [[deprecated]] ::UnityEngine::Rendering::BatchRendererGroup::OnPerformCulling*& dyn_m_PerformCulling();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::BatchRendererGroup::OnPerformCulling*& dyn_m_PerformCulling();
     // static private System.Void InvokeOnPerformCulling(UnityEngine.Rendering.BatchRendererGroup group, ref UnityEngine.Rendering.BatchRendererCullingOutput context, ref UnityEngine.Rendering.LODParameters lodParameters)
     // Offset: 0x111DEC4
     static void InvokeOnPerformCulling(::UnityEngine::Rendering::BatchRendererGroup* group, ByRef<::UnityEngine::Rendering::BatchRendererCullingOutput> context, ByRef<::UnityEngine::Rendering::LODParameters> lodParameters);

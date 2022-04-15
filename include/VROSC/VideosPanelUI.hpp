@@ -92,17 +92,24 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _loadingIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__loadingIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__loadingIcon();
     // Get instance field reference: private UnityEngine.GameObject _noVideosErrorLabel
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__noVideosErrorLabel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__noVideosErrorLabel();
     // Get instance field reference: private UnityEngine.GameObject _connectionErrorLabel
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__connectionErrorLabel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__connectionErrorLabel();
     // Get instance field reference: private VROSC.PaginatedList _paginatedList
-    [[deprecated]] ::VROSC::PaginatedList*& dyn__paginatedList();
+    [[deprecated("Use field access instead!")]] ::VROSC::PaginatedList*& dyn__paginatedList();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.PaginatedListDataHolder> _dataList
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::PaginatedListDataHolder*>*& dyn__dataList();
     // Get instance field reference: private VROSC.PaginatedListDataHolder _selectedDataHolder
-    [[deprecated]] ::VROSC::PaginatedListDataHolder*& dyn__selectedDataHolder();
+    [[deprecated("Use field access instead!")]] ::VROSC::PaginatedListDataHolder*& dyn__selectedDataHolder();
+    // public System.Void .ctor()
+    // Offset: 0x19236D4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VideosPanelUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VideosPanelUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VideosPanelUI*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x19230A8
     void Awake();
@@ -115,25 +122,16 @@ namespace VROSC {
     // private System.Boolean IsVersionCompatible(System.String requiredVersion, System.String versionToCheck)
     // Offset: 0x19232BC
     bool IsVersionCompatible(::StringW requiredVersion, ::StringW versionToCheck);
-    // public System.Void .ctor()
-    // Offset: 0x19236D4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VideosPanelUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VideosPanelUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VideosPanelUI*, creationType>()));
-    }
   }; // VROSC.VideosPanelUI
   #pragma pack(pop)
   static check_size<sizeof(VideosPanelUI), 64 + sizeof(::VROSC::PaginatedListDataHolder*)> __VROSC_VideosPanelUISizeCheck;
   static_assert(sizeof(VideosPanelUI) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::VideosPanelUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::VideosPanelUI::Awake
 // Il2CppName: Awake
 template<>
@@ -169,7 +167,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::VideosPanelUI*), "IsVersionCompatible", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{requiredVersion, versionToCheck});
   }
 };
-// Writing MetadataGetter for method: VROSC::VideosPanelUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

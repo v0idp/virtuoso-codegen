@@ -53,7 +53,7 @@ namespace System::Linq::Expressions::Interpreter {
       return boxes;
     }
     // Get instance field reference: private readonly System.Runtime.CompilerServices.IStrongBox[] _boxes
-    [[deprecated]] ::ArrayW<::System::Runtime::CompilerServices::IStrongBox*>& dyn__boxes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::CompilerServices::IStrongBox*>& dyn__boxes();
     // private System.Void .ctor(System.Runtime.CompilerServices.IStrongBox[] boxes)
     // Offset: 0xE9963C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

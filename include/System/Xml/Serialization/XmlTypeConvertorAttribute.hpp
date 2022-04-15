@@ -43,7 +43,7 @@ namespace System::Xml::Serialization {
       return Method;
     }
     // Get instance field reference: private System.String <Method>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Method$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Method$k__BackingField();
     // public System.String get_Method()
     // Offset: 0x10867E4
     ::StringW get_Method();

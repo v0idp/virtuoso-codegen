@@ -77,15 +77,15 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent*) == 0x8);
     public:
     // Get instance field reference: public System.String intent
-    [[deprecated]] ::StringW& dyn_intent();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_intent();
     // Get instance field reference: public System.String entity
-    [[deprecated]] ::StringW& dyn_entity();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_entity();
     // Get instance field reference: public System.Single confidence
-    [[deprecated]] float& dyn_confidence();
+    [[deprecated("Use field access instead!")]] float& dyn_confidence();
     // Get instance field reference: public System.String format
-    [[deprecated]] ::StringW& dyn_format();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_format();
     // Get instance field reference: private Facebook.WitAi.CallbackHandlers.StringEntityMatchEvent onIntentEntityTriggered
-    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent*& dyn_onIntentEntityTriggered();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent*& dyn_onIntentEntityTriggered();
     // public Facebook.WitAi.CallbackHandlers.StringEntityMatchEvent get_OnIntentEntityTriggered()
     // Offset: 0x16700C0
     ::Facebook::WitAi::CallbackHandlers::StringEntityMatchEvent* get_OnIntentEntityTriggered();
@@ -93,11 +93,6 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Offset: 0x1670324
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SimpleStringEntityHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::CallbackHandlers::SimpleStringEntityHandler::.ctor");

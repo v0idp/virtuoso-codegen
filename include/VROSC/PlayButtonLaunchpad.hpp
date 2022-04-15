@@ -108,21 +108,21 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::LoopPlaybackSettingsToggle*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopPlayButton _loopPlayButton
-    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__loopPlayButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayButton*& dyn__loopPlayButton();
     // Get instance field reference: private UnityEngine.Renderer _updaterMesh
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__updaterMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__updaterMesh();
     // Get instance field reference: private UnityEngine.Renderer _timingMesh
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__timingMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__timingMesh();
     // Get instance field reference: private UnityEngine.GameObject _startIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__startIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__startIcon();
     // Get instance field reference: private UnityEngine.GameObject _stopIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__stopIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__stopIcon();
     // Get instance field reference: private VROSC.OverridePlaybackSettingsUI _overridePlaybackSettingsUI
-    [[deprecated]] ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::OverridePlaybackSettingsUI*& dyn__overridePlaybackSettingsUI();
     // Get instance field reference: private VROSC.LoopPlaybackSettingsUI _loopPlaybackSettingsUI
-    [[deprecated]] ::VROSC::LoopPlaybackSettingsUI*& dyn__loopPlaybackSettingsUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackSettingsUI*& dyn__loopPlaybackSettingsUI();
     // Get instance field reference: private VROSC.LoopPlaybackSettingsToggle _toggleButton
-    [[deprecated]] ::VROSC::LoopPlaybackSettingsToggle*& dyn__toggleButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackSettingsToggle*& dyn__toggleButton();
     // public System.Void AssignConfig(VROSC.LoopPlaybackConfig config)
     // Offset: 0xAE0118
     void AssignConfig(::VROSC::LoopPlaybackConfig* config);
@@ -145,11 +145,6 @@ namespace VROSC {
     // Offset: 0xAE0910
     // Implemented from: VROSC.Launchpad
     // Base method: System.Void Launchpad::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayButtonLaunchpad* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PlayButtonLaunchpad::.ctor");

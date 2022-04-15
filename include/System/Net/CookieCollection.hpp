@@ -94,15 +94,15 @@ namespace System::Net {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: System.Int32 m_version
-    [[deprecated]] int& dyn_m_version();
+    [[deprecated("Use field access instead!")]] int& dyn_m_version();
     // Get instance field reference: private System.Collections.ArrayList m_list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_m_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_m_list();
     // Get instance field reference: private System.DateTime m_TimeStamp
-    [[deprecated]] ::System::DateTime& dyn_m_TimeStamp();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_m_TimeStamp();
     // Get instance field reference: private System.Boolean m_has_other_versions
-    [[deprecated]] bool& dyn_m_has_other_versions();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_has_other_versions();
     // Get instance field reference: private System.Boolean m_IsReadOnly
-    [[deprecated]] bool& dyn_m_IsReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsReadOnly();
     // public System.Net.Cookie get_Item(System.Int32 index)
     // Offset: 0x10E57D0
     ::System::Net::Cookie* get_Item(int index);
@@ -115,6 +115,13 @@ namespace System::Net {
     // System.Boolean get_IsOtherVersionSeen()
     // Offset: 0x10E6194
     bool get_IsOtherVersionSeen();
+    // public System.Void .ctor()
+    // Offset: 0x10E5724
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CookieCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::CookieCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CookieCollection*, creationType>()));
+    }
     // public System.Void Add(System.Net.Cookie cookie)
     // Offset: 0x10E58C4
     void Add(::System::Net::Cookie* cookie);
@@ -139,15 +146,6 @@ namespace System::Net {
     // public System.Collections.IEnumerator GetEnumerator()
     // Offset: 0x10E5FF4
     ::System::Collections::IEnumerator* GetEnumerator();
-    // public System.Void .ctor()
-    // Offset: 0x10E5724
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CookieCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::CookieCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CookieCollection*, creationType>()));
-    }
   }; // System.Net.CookieCollection
   #pragma pack(pop)
   static check_size<sizeof(CookieCollection), 41 + sizeof(bool)> __System_Net_CookieCollectionSizeCheck;
@@ -187,6 +185,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::CookieCollection*), "get_IsOtherVersionSeen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::CookieCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::CookieCollection::Add
 // Il2CppName: Add
 template<>
@@ -260,7 +262,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Net::CookieCollection*), "GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Net::CookieCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

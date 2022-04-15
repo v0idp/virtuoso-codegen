@@ -329,7 +329,7 @@ namespace System {
       // Set static field: static public System.DateTimeParse/System.DS DX_NNY
       static void _set_DX_NNY(::System::DateTimeParse::DS value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.DateTimeParse/System.DS
     #pragma pack(pop)
     static check_size<sizeof(DateTimeParse::DS), 0 + sizeof(int)> __System_DateTimeParse_DSSizeCheck;

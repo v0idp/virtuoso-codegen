@@ -38,21 +38,19 @@ namespace Firebase::Firestore {
     // static private System.Void .cctor()
     // Offset: 0xD67418
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xD5CC8C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FirestoreCppPINVOKE::FirestoreExceptionHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FirestoreCppPINVOKE::FirestoreExceptionHelper*, creationType>()));
+    }
     // static public System.Void FirestoreExceptionRegisterCallback(Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.FirestoreExceptionHelper/Firebase.Firestore.FirestoreExceptionDelegate firestoreCallback)
     // Offset: 0xD674C0
     static void FirestoreExceptionRegisterCallback(::Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper::FirestoreExceptionDelegate* firestoreCallback);
     // static private System.Void SetPendingFirestoreException(System.String message)
     // Offset: 0xD673B8
     static void SetPendingFirestoreException(::StringW message);
-    // public System.Void .ctor()
-    // Offset: 0xD5CC8C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FirestoreCppPINVOKE::FirestoreExceptionHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FirestoreCppPINVOKE::FirestoreExceptionHelper*, creationType>()));
-    }
   }; // Firebase.Firestore.FirestoreCppPINVOKE/Firebase.Firestore.FirestoreExceptionHelper
   #pragma pack(pop)
 }
@@ -65,6 +63,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper::FirestoreExceptionRegisterCallback
 // Il2CppName: FirestoreExceptionRegisterCallback
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper*), "SetPendingFirestoreException", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::FirestoreCppPINVOKE::FirestoreExceptionHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

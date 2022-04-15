@@ -45,26 +45,23 @@ namespace UnityEngine::Scripting {
       return Name;
     }
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // public System.Void set_Name(System.String value)
     // Offset: 0x18FFFBC
     void set_Name(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x18FFF88
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UsedByNativeCodeAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Scripting::UsedByNativeCodeAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UsedByNativeCodeAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.String name)
     // Offset: 0x18FFF90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UsedByNativeCodeAttribute* New_ctor(::StringW name) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Scripting::UsedByNativeCodeAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UsedByNativeCodeAttribute*, creationType>(name)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0x18FFF88
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UsedByNativeCodeAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Scripting::UsedByNativeCodeAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UsedByNativeCodeAttribute*, creationType>()));
     }
   }; // UnityEngine.Scripting.UsedByNativeCodeAttribute
   #pragma pack(pop)

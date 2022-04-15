@@ -46,28 +46,30 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.SpriteRenderer target
-    [[deprecated]] ::UnityEngine::SpriteRenderer*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SpriteRenderer*& dyn_target();
+    // public System.Void .ctor()
+    // Offset: 0x17DCA0C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTweenModuleSprite::$$c__DisplayClass1_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleSprite::$$c__DisplayClass1_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleSprite::$$c__DisplayClass1_0*, creationType>()));
+    }
     // UnityEngine.Color <DOFade>b__0()
     // Offset: 0x17E30FC
     ::UnityEngine::Color $DOFade$b__0();
     // System.Void <DOFade>b__1(UnityEngine.Color x)
     // Offset: 0x17E3118
     void $DOFade$b__1(::UnityEngine::Color x);
-    // public System.Void .ctor()
-    // Offset: 0x17DCA0C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTweenModuleSprite::$$c__DisplayClass1_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleSprite::$$c__DisplayClass1_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleSprite::$$c__DisplayClass1_0*, creationType>()));
-    }
   }; // DG.Tweening.DOTweenModuleSprite/DG.Tweening.<>c__DisplayClass1_0
   #pragma pack(pop)
   static check_size<sizeof(DOTweenModuleSprite::$$c__DisplayClass1_0), 16 + sizeof(::UnityEngine::SpriteRenderer*)> __DG_Tweening_DOTweenModuleSprite_$$c__DisplayClass1_0SizeCheck;
   static_assert(sizeof(DOTweenModuleSprite::$$c__DisplayClass1_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleSprite::$$c__DisplayClass1_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTweenModuleSprite::$$c__DisplayClass1_0::$DOFade$b__0
 // Il2CppName: <DOFade>b__0
 template<>
@@ -85,7 +87,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTweenModuleSprite::$$c__DisplayClass1_0*), "<DOFade>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleSprite::$$c__DisplayClass1_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

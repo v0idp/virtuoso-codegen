@@ -14,6 +14,11 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
+// Forward declaring namespace: UnityEngine
+namespace UnityEngine {
+  // Forward declaring type: AndroidJavaObject
+  class AndroidJavaObject;
+}
 // Forward declaring namespace: Facebook::WitAi::Configuration
 namespace Facebook::WitAi::Configuration {
   // Forward declaring type: WitRequestOptions
@@ -25,11 +30,6 @@ namespace Facebook::WitAi::Configuration {
 namespace Oculus::Voice::Bindings::Android {
   // Forward declaring type: VoiceSDKListenerBinding
   class VoiceSDKListenerBinding;
-}
-// Forward declaring namespace: UnityEngine
-namespace UnityEngine {
-  // Forward declaring type: AndroidJavaObject
-  class AndroidJavaObject;
 }
 // Completed forward declares
 // Type namespace: Oculus.Voice.Bindings.Android
@@ -60,6 +60,13 @@ namespace Oculus::Voice::Bindings::Android {
     // public System.Boolean get_PlatformSupportsWit()
     // Offset: 0x18E95FC
     bool get_PlatformSupportsWit();
+    // public System.Void .ctor(UnityEngine.AndroidJavaObject sdkInstance)
+    // Offset: 0x18E92C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VoiceSDKBinding* New_ctor(::UnityEngine::AndroidJavaObject* sdkInstance) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Bindings::Android::VoiceSDKBinding::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VoiceSDKBinding*, creationType>(sdkInstance)));
+    }
     // public System.Void Activate(System.String text)
     // Offset: 0x18E970C
     void Activate(::StringW text);
@@ -87,15 +94,6 @@ namespace Oculus::Voice::Bindings::Android {
     // public System.Void SetListener(Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding listener)
     // Offset: 0x18EA2F8
     void SetListener(::Oculus::Voice::Bindings::Android::VoiceSDKListenerBinding* listener);
-    // public System.Void .ctor(UnityEngine.AndroidJavaObject sdkInstance)
-    // Offset: 0x18E92C4
-    // Implemented from: Oculus.Voice.Core.Bindings.Android.BaseServiceBinding
-    // Base method: System.Void BaseServiceBinding::.ctor(UnityEngine.AndroidJavaObject sdkInstance)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VoiceSDKBinding* New_ctor(::UnityEngine::AndroidJavaObject* sdkInstance) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Bindings::Android::VoiceSDKBinding::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VoiceSDKBinding*, creationType>(sdkInstance)));
-    }
   }; // Oculus.Voice.Bindings.Android.VoiceSDKBinding
   #pragma pack(pop)
 }
@@ -132,6 +130,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Bindings::Android::VoiceSDKBinding*), "get_PlatformSupportsWit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Voice::Bindings::Android::VoiceSDKBinding::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Voice::Bindings::Android::VoiceSDKBinding::Activate
 // Il2CppName: Activate
 template<>
@@ -211,7 +213,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Bindings::Android::VoiceSDKBinding*), "SetListener", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{listener});
   }
 };
-// Writing MetadataGetter for method: Oculus::Voice::Bindings::Android::VoiceSDKBinding::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

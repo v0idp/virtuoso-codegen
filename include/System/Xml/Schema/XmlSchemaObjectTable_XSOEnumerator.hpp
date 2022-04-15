@@ -90,17 +90,17 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.Xml.Schema.XmlSchemaObjectTable/System.Xml.Schema.XmlSchemaObjectEntry> entries
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Xml::Schema::XmlSchemaObjectTable::XmlSchemaObjectEntry>*& dyn_entries();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Xml::Schema::XmlSchemaObjectTable::XmlSchemaObjectEntry>*& dyn_entries();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectTable/System.Xml.Schema.EnumeratorType enumType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectTable::EnumeratorType& dyn_enumType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectTable::EnumeratorType& dyn_enumType();
     // Get instance field reference: protected System.Int32 currentIndex
-    [[deprecated]] int& dyn_currentIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_currentIndex();
     // Get instance field reference: protected System.Int32 size
-    [[deprecated]] int& dyn_size();
+    [[deprecated("Use field access instead!")]] int& dyn_size();
     // Get instance field reference: protected System.Xml.XmlQualifiedName currentKey
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_currentKey();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_currentKey();
     // Get instance field reference: protected System.Xml.Schema.XmlSchemaObject currentValue
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObject*& dyn_currentValue();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObject*& dyn_currentValue();
     // public System.Object get_Current()
     // Offset: 0xC21D44
     ::Il2CppObject* get_Current();

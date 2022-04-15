@@ -58,15 +58,15 @@ namespace System::Xml {
     static_assert(sizeof(uint8_t) == 0x1);
     public:
     // Get instance field reference: private System.Byte[] buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: private System.Int32 curIndex
-    [[deprecated]] int& dyn_curIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_curIndex();
     // Get instance field reference: private System.Int32 endIndex
-    [[deprecated]] int& dyn_endIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_endIndex();
     // Get instance field reference: private System.Boolean hasHalfByteCached
-    [[deprecated]] bool& dyn_hasHalfByteCached();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasHalfByteCached();
     // Get instance field reference: private System.Byte cachedHalfByte
-    [[deprecated]] uint8_t& dyn_cachedHalfByte();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_cachedHalfByte();
     // static public System.Byte[] Decode(System.Char[] chars, System.Boolean allowOddChars)
     // Offset: 0xB5F2F0
     static ::ArrayW<uint8_t> Decode(::ArrayW<::Il2CppChar> chars, bool allowOddChars);

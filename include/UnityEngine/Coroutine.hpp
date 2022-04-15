@@ -46,7 +46,7 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // static private System.Void ReleaseCoroutine(System.IntPtr ptr)
     // Offset: 0x1123920
     static void ReleaseCoroutine(::System::IntPtr ptr);
@@ -54,7 +54,6 @@ namespace UnityEngine {
     // Offset: 0x112387C
     // Implemented from: UnityEngine.YieldInstruction
     // Base method: System.Void YieldInstruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Coroutine* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Coroutine::.ctor");

@@ -59,9 +59,9 @@ namespace RSG {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Action`1<System.Exception> callback
-    [[deprecated]] ::System::Action_1<::System::Exception*>*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::System::Exception*>*& dyn_callback();
     // Get instance field reference: public RSG.IRejectable rejectable
-    [[deprecated]] ::RSG::IRejectable*& dyn_rejectable();
+    [[deprecated("Use field access instead!")]] ::RSG::IRejectable*& dyn_rejectable();
   }; // RSG.RejectHandler
   #pragma pack(pop)
   static check_size<sizeof(RejectHandler), 8 + sizeof(::RSG::IRejectable*)> __RSG_RejectHandlerSizeCheck;

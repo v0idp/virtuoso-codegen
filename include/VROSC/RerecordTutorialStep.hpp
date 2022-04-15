@@ -57,9 +57,9 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Playables::PlayableAsset*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _defaultPlayable
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__defaultPlayable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__defaultPlayable();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset _alternativePlayable
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn__alternativePlayable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn__alternativePlayable();
     // private System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
     // Offset: 0xB331E0
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
@@ -67,11 +67,6 @@ namespace VROSC {
     // Offset: 0xB33338
     // Implemented from: VROSC.TutorialStep
     // Base method: System.Void TutorialStep::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RerecordTutorialStep* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::RerecordTutorialStep::.ctor");

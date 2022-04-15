@@ -50,9 +50,9 @@ namespace GlobalNamespace {
     // Set static field: static private OvrAvatarSettings instance
     static void _set_instance(::GlobalNamespace::OvrAvatarSettings* value);
     // Get instance field reference: private System.String ovrAppID
-    [[deprecated]] ::StringW& dyn_ovrAppID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ovrAppID();
     // Get instance field reference: private System.String ovrGearAppID
-    [[deprecated]] ::StringW& dyn_ovrGearAppID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ovrGearAppID();
     // static public System.String get_AppID()
     // Offset: 0xF91D08
     static ::StringW get_AppID();
@@ -73,10 +73,6 @@ namespace GlobalNamespace {
     static void set_Instance(::GlobalNamespace::OvrAvatarSettings* value);
     // public System.Void .ctor()
     // Offset: 0xF91F48
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarSettings::.ctor");

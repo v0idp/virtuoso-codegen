@@ -38,7 +38,6 @@ namespace System::Xml {
     // Offset: 0xAF24CC
     // Implemented from: System.Xml.IncrementalReadDecoder
     // Base method: System.Void IncrementalReadDecoder::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IncrementalReadDummyDecoder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::IncrementalReadDummyDecoder::.ctor");

@@ -80,17 +80,17 @@ namespace VROSC {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.UISliderHelper <>4__this
-    [[deprecated]] ::VROSC::UISliderHelper*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISliderHelper*& dyn_$$4__this();
     // Get instance field reference: public VROSC.UISlider target
-    [[deprecated]] ::VROSC::UISlider*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn_target();
     // Get instance field reference: public UnityEngine.Vector3 endPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_endPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_endPosition();
     // Get instance field reference: private System.Single <time>5__2
-    [[deprecated]] float& dyn_$time$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$time$5__2();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0xE81B6C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

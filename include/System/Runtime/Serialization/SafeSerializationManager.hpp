@@ -106,15 +106,15 @@ namespace System::Runtime::Serialization {
     // Set static field: static private System.String RealTypeSerializationName
     static void _set_RealTypeSerializationName(::StringW value);
     // Get instance field reference: private System.Collections.Generic.IList`1<System.Object> m_serializedStates
-    [[deprecated]] ::System::Collections::Generic::IList_1<::Il2CppObject*>*& dyn_m_serializedStates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::Il2CppObject*>*& dyn_m_serializedStates();
     // Get instance field reference: private System.Runtime.Serialization.SerializationInfo m_savedSerializationInfo
-    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn_m_savedSerializationInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationInfo*& dyn_m_savedSerializationInfo();
     // Get instance field reference: private System.Object m_realObject
-    [[deprecated]] ::Il2CppObject*& dyn_m_realObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_realObject();
     // Get instance field reference: private System.RuntimeType m_realType
-    [[deprecated]] ::System::RuntimeType*& dyn_m_realType();
+    [[deprecated("Use field access instead!")]] ::System::RuntimeType*& dyn_m_realType();
     // Get instance field reference: private System.EventHandler`1<System.Runtime.Serialization.SafeSerializationEventArgs> SerializeObjectState
-    [[deprecated]] ::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>*& dyn_SerializeObjectState();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Runtime::Serialization::SafeSerializationEventArgs*>*& dyn_SerializeObjectState();
     // System.Boolean get_IsActive()
     // Offset: 0x117181C
     bool get_IsActive();

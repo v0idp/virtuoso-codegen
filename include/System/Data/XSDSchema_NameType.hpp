@@ -52,9 +52,9 @@ namespace System::Data {
       return *reinterpret_cast<::System::IComparable*>(this);
     }
     // Get instance field reference: public readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public readonly System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.Void .ctor(System.String n, System.Type t)
     // Offset: 0x18CE5F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

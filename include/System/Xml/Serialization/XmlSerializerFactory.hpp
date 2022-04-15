@@ -53,6 +53,13 @@ namespace System::Xml::Serialization {
     static ::System::Collections::Hashtable* _get_serializersBySource();
     // Set static field: static private System.Collections.Hashtable serializersBySource
     static void _set_serializersBySource(::System::Collections::Hashtable* value);
+    // public System.Void .ctor()
+    // Offset: 0x132CE88
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSerializerFactory* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializerFactory::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSerializerFactory*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x132D148
     static void _cctor();
@@ -65,19 +72,14 @@ namespace System::Xml::Serialization {
     // public System.Xml.Serialization.XmlSerializer CreateSerializer(System.Type type, System.Xml.Serialization.XmlAttributeOverrides overrides, System.Type[] extraTypes, System.Xml.Serialization.XmlRootAttribute root, System.String defaultNamespace)
     // Offset: 0x132CEA4
     ::System::Xml::Serialization::XmlSerializer* CreateSerializer(::System::Type* type, ::System::Xml::Serialization::XmlAttributeOverrides* overrides, ::ArrayW<::System::Type*> extraTypes, ::System::Xml::Serialization::XmlRootAttribute* root, ::StringW defaultNamespace);
-    // public System.Void .ctor()
-    // Offset: 0x132CE88
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSerializerFactory* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializerFactory::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSerializerFactory*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlSerializerFactory
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlSerializerFactory::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlSerializerFactory::_cctor
 // Il2CppName: .cctor
 template<>
@@ -118,7 +120,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlSerializerFactory*), "CreateSerializer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{type, overrides, extraTypes, root, defaultNamespace});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlSerializerFactory::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

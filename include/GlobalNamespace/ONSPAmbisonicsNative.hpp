@@ -100,7 +100,7 @@ namespace GlobalNamespace {
       // Set static field: static public ONSPAmbisonicsNative/ovrAmbisonicsNativeStatus MaxStatValue
       static void _set_MaxStatValue(::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // ONSPAmbisonicsNative/ovrAmbisonicsNativeStatus
     #pragma pack(pop)
     static check_size<sizeof(ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus), 0 + sizeof(int)> __GlobalNamespace_ONSPAmbisonicsNative_ovrAmbisonicsNativeStatusSizeCheck;
@@ -130,23 +130,11 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 paramAmbiStat
     static void _set_paramAmbiStat(int value);
     // Get instance field reference: private UnityEngine.AudioSource source
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_source();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_source();
     // Get instance field reference: private ONSPAmbisonicsNative/ovrAmbisonicsNativeStatus currentStatus
-    [[deprecated]] ::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus& dyn_currentStatus();
-    // private System.Void OnEnable()
-    // Offset: 0x175F260
-    void OnEnable();
-    // private System.Void Update()
-    // Offset: 0x175F4E4
-    void Update();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus& dyn_currentStatus();
     // public System.Void .ctor()
     // Offset: 0x175F738
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ONSPAmbisonicsNative* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPAmbisonicsNative::.ctor");
@@ -154,9 +142,13 @@ namespace GlobalNamespace {
     }
     // static private System.Void .cctor()
     // Offset: 0x175F748
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
+    // private System.Void OnEnable()
+    // Offset: 0x175F260
+    void OnEnable();
+    // private System.Void Update()
+    // Offset: 0x175F4E4
+    void Update();
   }; // ONSPAmbisonicsNative
   #pragma pack(pop)
   static check_size<sizeof(ONSPAmbisonicsNative), 32 + sizeof(::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus)> __GlobalNamespace_ONSPAmbisonicsNativeSizeCheck;
@@ -165,6 +157,18 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::ONSPAmbisonicsNative::ovrAmbisonicsNativeStatus, "", "ONSPAmbisonicsNative/ovrAmbisonicsNativeStatus");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ONSPAmbisonicsNative::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::ONSPAmbisonicsNative::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPAmbisonicsNative::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPAmbisonicsNative*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::ONSPAmbisonicsNative::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -179,17 +183,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::ONSPAmbisonicsNative::*)()>(&GlobalNamespace::ONSPAmbisonicsNative::Update)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPAmbisonicsNative*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::ONSPAmbisonicsNative::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::ONSPAmbisonicsNative::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPAmbisonicsNative::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPAmbisonicsNative*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

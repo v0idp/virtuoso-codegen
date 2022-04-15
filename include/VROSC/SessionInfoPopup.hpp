@@ -171,39 +171,46 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _songNameText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songNameText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__songNameText();
     // Get instance field reference: private TMPro.TextMeshPro _songDescriptionText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songDescriptionText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__songDescriptionText();
     // Get instance field reference: private UnityEngine.Transform _contributorsList
-    [[deprecated]] ::UnityEngine::Transform*& dyn__contributorsList();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__contributorsList();
     // Get instance field reference: private VROSC.UIDataButton _contributorButtonPrefab
-    [[deprecated]] ::VROSC::UIDataButton*& dyn__contributorButtonPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIDataButton*& dyn__contributorButtonPrefab();
     // Get instance field reference: private UnityEngine.Transform _tagsList
-    [[deprecated]] ::UnityEngine::Transform*& dyn__tagsList();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__tagsList();
     // Get instance field reference: private VROSC.UIDataButton _tagButtonPrefab
-    [[deprecated]] ::VROSC::UIDataButton*& dyn__tagButtonPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIDataButton*& dyn__tagButtonPrefab();
     // Get instance field reference: private UnityEngine.GameObject _songRatingSection
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__songRatingSection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__songRatingSection();
     // Get instance field reference: private TMPro.TextMeshPro _songUpVotesText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songUpVotesText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__songUpVotesText();
     // Get instance field reference: private TMPro.TextMeshPro _songDownloadsText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__songDownloadsText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__songDownloadsText();
     // Get instance field reference: private VROSC.UIToggle _upVoteButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__upVoteButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__upVoteButton();
     // Get instance field reference: private VROSC.UIToggle _favoriteButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__favoriteButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__favoriteButton();
     // Get instance field reference: private System.Int32 _maxContributors
-    [[deprecated]] int& dyn__maxContributors();
+    [[deprecated("Use field access instead!")]] int& dyn__maxContributors();
     // Get instance field reference: private System.Int32 _maxTags
-    [[deprecated]] int& dyn__maxTags();
+    [[deprecated("Use field access instead!")]] int& dyn__maxTags();
     // Get instance field reference: private VROSC.SessionsLibraryUI _sessionsLibraryUI
-    [[deprecated]] ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsLibraryUI*& dyn__sessionsLibraryUI();
     // Get instance field reference: private VROSC.SessionUIData _sessionUIData
-    [[deprecated]] ::VROSC::SessionUIData*& dyn__sessionUIData();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionUIData*& dyn__sessionUIData();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UIDataButton> _contributorButtons
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__contributorButtons();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__contributorButtons();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UIDataButton> _tagsButtons
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__tagsButtons();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*& dyn__tagsButtons();
+    // public System.Void .ctor()
+    // Offset: 0x1986DC8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SessionInfoPopup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionInfoPopup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SessionInfoPopup*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1985570
     void Awake();
@@ -258,25 +265,16 @@ namespace VROSC {
     // private System.Void <FavoriteButtonToggled>b__26_3(VROSC.Error error)
     // Offset: 0x1986F90
     void $FavoriteButtonToggled$b__26_3(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x1986DC8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SessionInfoPopup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionInfoPopup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SessionInfoPopup*, creationType>()));
-    }
   }; // VROSC.SessionInfoPopup
   #pragma pack(pop)
   static check_size<sizeof(SessionInfoPopup), 144 + sizeof(::System::Collections::Generic::List_1<::VROSC::UIDataButton*>*)> __VROSC_SessionInfoPopupSizeCheck;
   static_assert(sizeof(SessionInfoPopup) == 0x98);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SessionInfoPopup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SessionInfoPopup::Awake
 // Il2CppName: Awake
 template<>
@@ -435,7 +433,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionInfoPopup*), "<FavoriteButtonToggled>b__26_3", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionInfoPopup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

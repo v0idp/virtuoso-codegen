@@ -83,7 +83,7 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Type listValueType
     static void _set_listValueType(::System::Type* value);
     // Get instance field reference: private System.Xml.Schema.XsdDateTimeFlags dateTimeFlags
-    [[deprecated]] ::System::Xml::Schema::XsdDateTimeFlags& dyn_dateTimeFlags();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XsdDateTimeFlags& dyn_dateTimeFlags();
     // System.Void .ctor(System.Xml.Schema.XsdDateTimeFlags dateTimeFlags)
     // Offset: 0x10A930C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

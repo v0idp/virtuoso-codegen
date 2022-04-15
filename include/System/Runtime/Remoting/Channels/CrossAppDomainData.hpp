@@ -50,11 +50,11 @@ namespace System::Runtime::Remoting::Channels {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Object _ContextID
-    [[deprecated]] ::Il2CppObject*& dyn__ContextID();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__ContextID();
     // Get instance field reference: private System.Int32 _DomainID
-    [[deprecated]] int& dyn__DomainID();
+    [[deprecated("Use field access instead!")]] int& dyn__DomainID();
     // Get instance field reference: private System.String _processGuid
-    [[deprecated]] ::StringW& dyn__processGuid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__processGuid();
     // System.Int32 get_DomainID()
     // Offset: 0x13F4F58
     int get_DomainID();

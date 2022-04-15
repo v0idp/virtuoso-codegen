@@ -236,59 +236,59 @@ namespace UnityEngine {
     // Set static field: static UnityEngine.GUISkin current
     static void _set_current(::UnityEngine::GUISkin* value);
     // Get instance field reference: private UnityEngine.Font m_Font
-    [[deprecated]] ::UnityEngine::Font*& dyn_m_Font();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Font*& dyn_m_Font();
     // Get instance field reference: private UnityEngine.GUIStyle m_box
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_box();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_box();
     // Get instance field reference: private UnityEngine.GUIStyle m_button
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_button();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_button();
     // Get instance field reference: private UnityEngine.GUIStyle m_toggle
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_toggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_toggle();
     // Get instance field reference: private UnityEngine.GUIStyle m_label
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_label();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_label();
     // Get instance field reference: private UnityEngine.GUIStyle m_textField
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_textField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_textField();
     // Get instance field reference: private UnityEngine.GUIStyle m_textArea
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_textArea();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_textArea();
     // Get instance field reference: private UnityEngine.GUIStyle m_window
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_window();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_window();
     // Get instance field reference: private UnityEngine.GUIStyle m_horizontalSlider
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_horizontalSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_horizontalSlider();
     // Get instance field reference: private UnityEngine.GUIStyle m_horizontalSliderThumb
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_horizontalSliderThumb();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_horizontalSliderThumb();
     // Get instance field reference: private UnityEngine.GUIStyle m_horizontalSliderThumbExtent
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_horizontalSliderThumbExtent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_horizontalSliderThumbExtent();
     // Get instance field reference: private UnityEngine.GUIStyle m_verticalSlider
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_verticalSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_verticalSlider();
     // Get instance field reference: private UnityEngine.GUIStyle m_verticalSliderThumb
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_verticalSliderThumb();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_verticalSliderThumb();
     // Get instance field reference: private UnityEngine.GUIStyle m_verticalSliderThumbExtent
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_verticalSliderThumbExtent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_verticalSliderThumbExtent();
     // Get instance field reference: private UnityEngine.GUIStyle m_SliderMixed
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_SliderMixed();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_SliderMixed();
     // Get instance field reference: private UnityEngine.GUIStyle m_horizontalScrollbar
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbar();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbar();
     // Get instance field reference: private UnityEngine.GUIStyle m_horizontalScrollbarThumb
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbarThumb();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbarThumb();
     // Get instance field reference: private UnityEngine.GUIStyle m_horizontalScrollbarLeftButton
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbarLeftButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbarLeftButton();
     // Get instance field reference: private UnityEngine.GUIStyle m_horizontalScrollbarRightButton
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbarRightButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_horizontalScrollbarRightButton();
     // Get instance field reference: private UnityEngine.GUIStyle m_verticalScrollbar
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbar();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbar();
     // Get instance field reference: private UnityEngine.GUIStyle m_verticalScrollbarThumb
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbarThumb();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbarThumb();
     // Get instance field reference: private UnityEngine.GUIStyle m_verticalScrollbarUpButton
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbarUpButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbarUpButton();
     // Get instance field reference: private UnityEngine.GUIStyle m_verticalScrollbarDownButton
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbarDownButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_verticalScrollbarDownButton();
     // Get instance field reference: private UnityEngine.GUIStyle m_ScrollView
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_ScrollView();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_ScrollView();
     // Get instance field reference: UnityEngine.GUIStyle[] m_CustomStyles
-    [[deprecated]] ::ArrayW<::UnityEngine::GUIStyle*>& dyn_m_CustomStyles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::GUIStyle*>& dyn_m_CustomStyles();
     // Get instance field reference: private UnityEngine.GUISettings m_Settings
-    [[deprecated]] ::UnityEngine::GUISettings*& dyn_m_Settings();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUISettings*& dyn_m_Settings();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GUIStyle> m_Styles
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GUIStyle*>*& dyn_m_Styles();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GUIStyle*>*& dyn_m_Styles();
     // public UnityEngine.Font get_font()
     // Offset: 0x187E26C
     ::UnityEngine::Font* get_font();
@@ -445,6 +445,13 @@ namespace UnityEngine {
     // static UnityEngine.GUIStyle get_error()
     // Offset: 0x187E530
     static ::UnityEngine::GUIStyle* get_error();
+    // public System.Void .ctor()
+    // Offset: 0x187E104
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GUISkin* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUISkin::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GUISkin*, creationType>()));
+    }
     // System.Void OnEnable()
     // Offset: 0x187E18C
     void OnEnable();
@@ -469,17 +476,6 @@ namespace UnityEngine {
     // public System.Collections.IEnumerator GetEnumerator()
     // Offset: 0x187FC94
     ::System::Collections::IEnumerator* GetEnumerator();
-    // public System.Void .ctor()
-    // Offset: 0x187E104
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GUISkin* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUISkin::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GUISkin*, creationType>()));
-    }
   }; // UnityEngine.GUISkin
   #pragma pack(pop)
   static check_size<sizeof(GUISkin), 232 + sizeof(::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GUIStyle*>*)> __UnityEngine_GUISkinSizeCheck;
@@ -927,6 +923,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUISkin*), "get_error", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::GUISkin::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUISkin::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -993,7 +993,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUISkin*), "GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::GUISkin::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

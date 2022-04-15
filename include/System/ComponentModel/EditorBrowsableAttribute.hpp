@@ -44,7 +44,7 @@ namespace System::ComponentModel {
       return browsableState;
     }
     // Get instance field reference: private System.ComponentModel.EditorBrowsableState browsableState
-    [[deprecated]] ::System::ComponentModel::EditorBrowsableState& dyn_browsableState();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::EditorBrowsableState& dyn_browsableState();
     // public System.Void .ctor(System.ComponentModel.EditorBrowsableState state)
     // Offset: 0xEFD3AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

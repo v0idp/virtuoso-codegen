@@ -54,9 +54,9 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Object _instance
-    [[deprecated]] ::Il2CppObject*& dyn__instance();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__instance();
     // Get instance field reference: private readonly Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> _invoker
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn__invoker();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn__invoker();
     // public System.Void .ctor(System.Object instance, Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> invoker)
     // Offset: 0xDD0B10
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

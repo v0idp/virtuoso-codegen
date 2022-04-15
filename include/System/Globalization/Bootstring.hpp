@@ -80,21 +80,21 @@ namespace System::Globalization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Char delimiter
-    [[deprecated]] ::Il2CppChar& dyn_delimiter();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_delimiter();
     // Get instance field reference: private readonly System.Int32 base_num
-    [[deprecated]] int& dyn_base_num();
+    [[deprecated("Use field access instead!")]] int& dyn_base_num();
     // Get instance field reference: private readonly System.Int32 tmin
-    [[deprecated]] int& dyn_tmin();
+    [[deprecated("Use field access instead!")]] int& dyn_tmin();
     // Get instance field reference: private readonly System.Int32 tmax
-    [[deprecated]] int& dyn_tmax();
+    [[deprecated("Use field access instead!")]] int& dyn_tmax();
     // Get instance field reference: private readonly System.Int32 skew
-    [[deprecated]] int& dyn_skew();
+    [[deprecated("Use field access instead!")]] int& dyn_skew();
     // Get instance field reference: private readonly System.Int32 damp
-    [[deprecated]] int& dyn_damp();
+    [[deprecated("Use field access instead!")]] int& dyn_damp();
     // Get instance field reference: private readonly System.Int32 initial_bias
-    [[deprecated]] int& dyn_initial_bias();
+    [[deprecated("Use field access instead!")]] int& dyn_initial_bias();
     // Get instance field reference: private readonly System.Int32 initial_n
-    [[deprecated]] int& dyn_initial_n();
+    [[deprecated("Use field access instead!")]] int& dyn_initial_n();
     // public System.Void .ctor(System.Char delimiter, System.Int32 baseNum, System.Int32 tmin, System.Int32 tmax, System.Int32 skew, System.Int32 damp, System.Int32 initialBias, System.Int32 initialN)
     // Offset: 0xFEE648
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

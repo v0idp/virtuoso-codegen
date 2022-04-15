@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_description;
     }
     // Get instance field reference: private System.String m_description
-    [[deprecated]] ::StringW& dyn_m_description();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_description();
     // public System.Void .ctor(System.String description)
     // Offset: 0x1144674
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

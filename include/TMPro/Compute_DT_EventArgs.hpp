@@ -52,11 +52,11 @@ namespace TMPro {
     static_assert(sizeof(::ArrayW<::UnityEngine::Color>) == 0x8);
     public:
     // Get instance field reference: public TMPro.Compute_DistanceTransform_EventTypes EventType
-    [[deprecated]] ::TMPro::Compute_DistanceTransform_EventTypes& dyn_EventType();
+    [[deprecated("Use field access instead!")]] ::TMPro::Compute_DistanceTransform_EventTypes& dyn_EventType();
     // Get instance field reference: public System.Single ProgressPercentage
-    [[deprecated]] float& dyn_ProgressPercentage();
+    [[deprecated("Use field access instead!")]] float& dyn_ProgressPercentage();
     // Get instance field reference: public UnityEngine.Color[] Colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn_Colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn_Colors();
     // public System.Void .ctor(TMPro.Compute_DistanceTransform_EventTypes type, System.Single progress)
     // Offset: 0xC28E8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

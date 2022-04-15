@@ -107,21 +107,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _stick
-    [[deprecated]] ::UnityEngine::Transform*& dyn__stick();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__stick();
     // Get instance field reference: private VROSC.MalletVisual _malletVisual
-    [[deprecated]] ::VROSC::MalletVisual*& dyn__malletVisual();
+    [[deprecated("Use field access instead!")]] ::VROSC::MalletVisual*& dyn__malletVisual();
     // Get instance field reference: private VROSC.PredictiveHitter _predictiveHitter
-    [[deprecated]] ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
+    [[deprecated("Use field access instead!")]] ::VROSC::PredictiveHitter*& dyn__predictiveHitter();
     // Get instance field reference: private VROSC.MalletGrabbing _grabbing
-    [[deprecated]] ::VROSC::MalletGrabbing*& dyn__grabbing();
+    [[deprecated("Use field access instead!")]] ::VROSC::MalletGrabbing*& dyn__grabbing();
     // Get instance field reference: private VROSC.MalletAnimator _animator
-    [[deprecated]] ::VROSC::MalletAnimator*& dyn__animator();
+    [[deprecated("Use field access instead!")]] ::VROSC::MalletAnimator*& dyn__animator();
     // Get instance field reference: private VROSC.TriggerButton _holdingButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn__holdingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__holdingButton();
     // Get instance field reference: private VROSC.InputDevice <InputDevice>k__BackingField
-    [[deprecated]] ::VROSC::InputDevice*& dyn_$InputDevice$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_$InputDevice$k__BackingField();
     // Get instance field reference: private System.Boolean <Active>k__BackingField
-    [[deprecated]] bool& dyn_$Active$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Active$k__BackingField();
     // public VROSC.InputDevice get_InputDevice()
     // Offset: 0x197D2B0
     ::VROSC::InputDevice* get_InputDevice();
@@ -140,6 +140,13 @@ namespace VROSC {
     // private System.Void set_Active(System.Boolean value)
     // Offset: 0x197D2EC
     void set_Active(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x197D88C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Mallet* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Mallet::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Mallet*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x197D2F8
     void Awake();
@@ -167,19 +174,6 @@ namespace VROSC {
     // private System.Void AnimationFinished(System.Boolean malletsActive)
     // Offset: 0x197D828
     void AnimationFinished(bool malletsActive);
-    // public System.Void .ctor()
-    // Offset: 0x197D88C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Mallet* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Mallet::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Mallet*, creationType>()));
-    }
   }; // VROSC.Mallet
   #pragma pack(pop)
   static check_size<sizeof(Mallet), 80 + sizeof(bool)> __VROSC_MalletSizeCheck;
@@ -236,6 +230,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Mallet*), "set_Active", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::Mallet::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Mallet::Awake
 // Il2CppName: Awake
 template<>
@@ -315,7 +313,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Mallet*), "AnimationFinished", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{malletsActive});
   }
 };
-// Writing MetadataGetter for method: VROSC::Mallet::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

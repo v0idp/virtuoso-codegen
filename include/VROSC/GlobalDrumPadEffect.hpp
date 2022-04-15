@@ -95,41 +95,39 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AdjustableMesh _padRenderer
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__padRenderer();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__padRenderer();
     // Get instance field reference: private System.Boolean _preview
-    [[deprecated]] bool& dyn__preview();
+    [[deprecated("Use field access instead!")]] bool& dyn__preview();
     // Get instance field reference: private UnityEngine.Color _previewColor
-    [[deprecated]] ::UnityEngine::Color& dyn__previewColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__previewColor();
     // Get instance field reference: private System.Single _previewTiming
-    [[deprecated]] float& dyn__previewTiming();
+    [[deprecated("Use field access instead!")]] float& dyn__previewTiming();
     // Get instance field reference: private UnityEngine.AnimationCurve _powerCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__powerCurve();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Boolean _meshesVerified
-    [[deprecated]] bool& dyn__meshesVerified();
-    // public System.Void SetColor(UnityEngine.Color color, System.Boolean affectVisual)
-    // Offset: 0x19A51C8
-    void SetColor(::UnityEngine::Color color, bool affectVisual);
+    [[deprecated("Use field access instead!")]] bool& dyn__meshesVerified();
     // public System.Void .ctor()
     // Offset: 0x19A51CC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalDrumPadEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GlobalDrumPadEffect::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GlobalDrumPadEffect*, creationType>()));
     }
+    // public System.Void SetColor(UnityEngine.Color color, System.Boolean affectVisual)
+    // Offset: 0x19A51C8
+    void SetColor(::UnityEngine::Color color, bool affectVisual);
   }; // VROSC.GlobalDrumPadEffect
   #pragma pack(pop)
   static check_size<sizeof(GlobalDrumPadEffect), 80 + sizeof(bool)> __VROSC_GlobalDrumPadEffectSizeCheck;
   static_assert(sizeof(GlobalDrumPadEffect) == 0x51);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::GlobalDrumPadEffect::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GlobalDrumPadEffect::SetColor
 // Il2CppName: SetColor
 template<>
@@ -140,7 +138,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::GlobalDrumPadEffect*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color, affectVisual});
   }
 };
-// Writing MetadataGetter for method: VROSC::GlobalDrumPadEffect::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

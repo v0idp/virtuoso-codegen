@@ -55,7 +55,7 @@ namespace UnityEngine::EventSystems {
     // Deleting conversion operator: operator bool
     constexpr operator bool() const noexcept = delete;
     // Get instance field reference: private readonly UnityEngine.EventSystems.EventSystem m_EventSystem
-    [[deprecated]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_EventSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::EventSystem*& dyn_m_EventSystem();
     // public UnityEngine.EventSystems.BaseInputModule get_currentInputModule()
     // Offset: 0xEAAF90
     ::UnityEngine::EventSystems::BaseInputModule* get_currentInputModule();

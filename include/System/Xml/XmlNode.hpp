@@ -92,7 +92,7 @@ namespace System::Xml {
       return parentNode;
     }
     // Get instance field reference: System.Xml.XmlNode parentNode
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_parentNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_parentNode();
     // public System.String get_Name()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::StringW get_Name();
@@ -183,6 +183,13 @@ namespace System::Xml {
     // System.Boolean get_IsText()
     // Offset: 0x1018964
     bool get_IsText();
+    // System.Void .ctor()
+    // Offset: 0x1015CA4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlNode* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlNode::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlNode*, creationType>()));
+    }
     // System.Void .ctor(System.Xml.XmlDocument doc)
     // Offset: 0x1015CAC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -283,15 +290,6 @@ namespace System::Xml {
     // static System.Void UnnestTextNodes(System.Xml.XmlNode prevNode, System.Xml.XmlNode nextNode)
     // Offset: 0x10166A8
     static void UnnestTextNodes(::System::Xml::XmlNode* prevNode, ::System::Xml::XmlNode* nextNode);
-    // System.Void .ctor()
-    // Offset: 0x1015CA4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlNode* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlNode::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlNode*, creationType>()));
-    }
   }; // System.Xml.XmlNode
   #pragma pack(pop)
   static check_size<sizeof(XmlNode), 16 + sizeof(::System::Xml::XmlNode*)> __System_Xml_XmlNodeSizeCheck;
@@ -543,6 +541,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlNode*), "get_IsText", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlNode::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlNode::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -838,7 +840,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlNode*), "UnnestTextNodes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{prevNode, nextNode});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlNode::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

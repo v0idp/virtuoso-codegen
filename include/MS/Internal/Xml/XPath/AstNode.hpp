@@ -46,8 +46,6 @@ namespace MS::Internal::Xml::XPath {
     ::System::Xml::XPath::XPathResultType get_ReturnType();
     // protected System.Void .ctor()
     // Offset: 0xB5B0E0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AstNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::XPath::AstNode::.ctor");

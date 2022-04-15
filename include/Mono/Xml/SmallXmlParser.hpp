@@ -136,29 +136,29 @@ namespace Mono::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private Mono.Xml.SmallXmlParser/Mono.Xml.IContentHandler handler
-    [[deprecated]] ::Mono::Xml::SmallXmlParser::IContentHandler*& dyn_handler();
+    [[deprecated("Use field access instead!")]] ::Mono::Xml::SmallXmlParser::IContentHandler*& dyn_handler();
     // Get instance field reference: private System.IO.TextReader reader
-    [[deprecated]] ::System::IO::TextReader*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextReader*& dyn_reader();
     // Get instance field reference: private System.Collections.Stack elementNames
-    [[deprecated]] ::System::Collections::Stack*& dyn_elementNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn_elementNames();
     // Get instance field reference: private System.Collections.Stack xmlSpaces
-    [[deprecated]] ::System::Collections::Stack*& dyn_xmlSpaces();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn_xmlSpaces();
     // Get instance field reference: private System.String xmlSpace
-    [[deprecated]] ::StringW& dyn_xmlSpace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_xmlSpace();
     // Get instance field reference: private System.Text.StringBuilder buffer
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_buffer();
     // Get instance field reference: private System.Char[] nameBuffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_nameBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_nameBuffer();
     // Get instance field reference: private System.Boolean isWhitespace
-    [[deprecated]] bool& dyn_isWhitespace();
+    [[deprecated("Use field access instead!")]] bool& dyn_isWhitespace();
     // Get instance field reference: private Mono.Xml.SmallXmlParser/Mono.Xml.AttrListImpl attributes
-    [[deprecated]] ::Mono::Xml::SmallXmlParser::AttrListImpl*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::Mono::Xml::SmallXmlParser::AttrListImpl*& dyn_attributes();
     // Get instance field reference: private System.Int32 line
-    [[deprecated]] int& dyn_line();
+    [[deprecated("Use field access instead!")]] int& dyn_line();
     // Get instance field reference: private System.Int32 column
-    [[deprecated]] int& dyn_column();
+    [[deprecated("Use field access instead!")]] int& dyn_column();
     // Get instance field reference: private System.Boolean resetColumn
-    [[deprecated]] bool& dyn_resetColumn();
+    [[deprecated("Use field access instead!")]] bool& dyn_resetColumn();
     // private System.Exception Error(System.String msg)
     // Offset: 0x124C5F8
     ::System::Exception* Error(::StringW msg);

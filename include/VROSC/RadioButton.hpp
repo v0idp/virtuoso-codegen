@@ -71,13 +71,13 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.RadioButtonParent _radioButtonParent
-    [[deprecated]] ::VROSC::RadioButtonParent*& dyn__radioButtonParent();
+    [[deprecated("Use field access instead!")]] ::VROSC::RadioButtonParent*& dyn__radioButtonParent();
     // Get instance field reference: private System.Boolean _active
-    [[deprecated]] bool& dyn__active();
+    [[deprecated("Use field access instead!")]] bool& dyn__active();
     // Get instance field reference: private VROSC.Signal _signal
-    [[deprecated]] ::VROSC::Signal*& dyn__signal();
+    [[deprecated("Use field access instead!")]] ::VROSC::Signal*& dyn__signal();
     // Get instance field reference: private System.Boolean _signalBeganThisFrame
-    [[deprecated]] bool& dyn__signalBeganThisFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn__signalBeganThisFrame();
     // protected System.Void Awake()
     // Offset: 0xB2D698
     void Awake();
@@ -95,11 +95,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RadioButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::RadioButton::.ctor");

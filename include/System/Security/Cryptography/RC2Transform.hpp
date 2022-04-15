@@ -79,17 +79,17 @@ namespace System::Security::Cryptography {
     // Set static field: static private readonly System.Byte[] pitable
     static void _set_pitable(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.UInt16 R0
-    [[deprecated]] uint16_t& dyn_R0();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_R0();
     // Get instance field reference: private System.UInt16 R1
-    [[deprecated]] uint16_t& dyn_R1();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_R1();
     // Get instance field reference: private System.UInt16 R2
-    [[deprecated]] uint16_t& dyn_R2();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_R2();
     // Get instance field reference: private System.UInt16 R3
-    [[deprecated]] uint16_t& dyn_R3();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_R3();
     // Get instance field reference: private System.UInt16[] K
-    [[deprecated]] ::ArrayW<uint16_t>& dyn_K();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint16_t>& dyn_K();
     // Get instance field reference: private System.Int32 j
-    [[deprecated]] int& dyn_j();
+    [[deprecated("Use field access instead!")]] int& dyn_j();
     // public System.Void .ctor(System.Security.Cryptography.RC2 rc2Algo, System.Boolean encryption, System.Byte[] key, System.Byte[] iv)
     // Offset: 0x160B120
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

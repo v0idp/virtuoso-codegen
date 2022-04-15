@@ -47,9 +47,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::ovrAvatarHandComponent) == 0x50);
     public:
     // Get instance field reference: public System.Boolean isLeftHand
-    [[deprecated]] bool& dyn_isLeftHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_isLeftHand();
     // Get instance field reference: private ovrAvatarHandComponent component
-    [[deprecated]] ::GlobalNamespace::ovrAvatarHandComponent& dyn_component();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarHandComponent& dyn_component();
     // private System.Void Update()
     // Offset: 0xF8B784
     void Update();
@@ -57,11 +57,6 @@ namespace GlobalNamespace {
     // Offset: 0xF8B8E8
     // Implemented from: OvrAvatarComponent
     // Base method: System.Void OvrAvatarComponent_::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarHand* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarHand::.ctor");

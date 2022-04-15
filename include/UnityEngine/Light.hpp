@@ -54,7 +54,7 @@ namespace UnityEngine {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 m_BakedIndex
-    [[deprecated]] int& dyn_m_BakedIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_BakedIndex();
     // public UnityEngine.LightType get_type()
     // Offset: 0x112BEF8
     ::UnityEngine::LightType get_type();

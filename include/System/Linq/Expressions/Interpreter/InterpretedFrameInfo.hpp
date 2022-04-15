@@ -52,9 +52,9 @@ namespace System::Linq::Expressions::Interpreter {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private readonly System.String _methodName
-    [[deprecated]] ::StringW& dyn__methodName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__methodName();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.DebugInfo _debugInfo
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::DebugInfo*& dyn__debugInfo();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::DebugInfo*& dyn__debugInfo();
     // public System.Void .ctor(System.String methodName, System.Linq.Expressions.Interpreter.DebugInfo info)
     // Offset: 0xF1EEC8
     // ABORTED: conflicts with another method.  InterpretedFrameInfo(::StringW methodName, ::System::Linq::Expressions::Interpreter::DebugInfo* info);

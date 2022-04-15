@@ -55,7 +55,7 @@ namespace VROSC {
       return FavoriteSessions;
     }
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,VROSC.Session> FavoriteSessions
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_FavoriteSessions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_FavoriteSessions();
     // public override System.String get_Key()
     // Offset: 0x94B930
     // Implemented from: VROSC.BaseDataModel
@@ -66,7 +66,6 @@ namespace VROSC {
     // Implemented from: VROSC.SessionsDataModel
     // Base method: System.Void SessionsDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CommunitySessionsDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CommunitySessionsDataModel::.ctor");

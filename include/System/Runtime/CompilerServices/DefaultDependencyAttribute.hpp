@@ -44,7 +44,7 @@ namespace System::Runtime::CompilerServices {
       return loadHint;
     }
     // Get instance field reference: private System.Runtime.CompilerServices.LoadHint loadHint
-    [[deprecated]] ::System::Runtime::CompilerServices::LoadHint& dyn_loadHint();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::LoadHint& dyn_loadHint();
     // public System.Void .ctor(System.Runtime.CompilerServices.LoadHint loadHintArgument)
     // Offset: 0x129A50C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -66,11 +66,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::PatchSettings*) == 0x8);
     public:
     // Get instance field reference: private VROSC.ModularDrumpads _modularDrumpads
-    [[deprecated]] ::VROSC::ModularDrumpads*& dyn__modularDrumpads();
+    [[deprecated("Use field access instead!")]] ::VROSC::ModularDrumpads*& dyn__modularDrumpads();
     // Get instance field reference: private VROSC.DrumEffectsUI _effectsUI
-    [[deprecated]] ::VROSC::DrumEffectsUI*& dyn__effectsUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumEffectsUI*& dyn__effectsUI();
     // Get instance field reference: private VROSC.PatchSettings _patchSettings
-    [[deprecated]] ::VROSC::PatchSettings*& dyn__patchSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::PatchSettings*& dyn__patchSettings();
     // public VROSC.ModularDrumsDataController get_DataController()
     // Offset: 0xACA430
     ::VROSC::ModularDrumsDataController* get_DataController();
@@ -95,11 +95,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentController
     // Base method: System.Void InstrumentController::.ctor()
     // Base method: System.Void WidgetController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ModularDrumsController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ModularDrumsController::.ctor");

@@ -58,13 +58,13 @@ namespace System::Globalization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.UInt16 codePage
-    [[deprecated]] uint16_t& dyn_codePage();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_codePage();
     // Get instance field reference: System.UInt16 uiFamilyCodePage
-    [[deprecated]] uint16_t& dyn_uiFamilyCodePage();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_uiFamilyCodePage();
     // Get instance field reference: System.UInt32 flags
-    [[deprecated]] uint& dyn_flags();
+    [[deprecated("Use field access instead!")]] uint& dyn_flags();
     // Get instance field reference: System.String Names
-    [[deprecated]] ::StringW& dyn_Names();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Names();
   }; // System.Globalization.InternalCodePageDataItem
   #pragma pack(pop)
   static check_size<sizeof(InternalCodePageDataItem), 8 + sizeof(::StringW)> __System_Globalization_InternalCodePageDataItemSizeCheck;

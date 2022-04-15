@@ -78,7 +78,7 @@ namespace Firebase::Platform {
     // Set static field: static public Firebase.Platform.PlatformLogLevel Assert
     static void _set_Assert(::Firebase::Platform::PlatformLogLevel value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Firebase.Platform.PlatformLogLevel
   #pragma pack(pop)
   static check_size<sizeof(PlatformLogLevel), 0 + sizeof(int)> __Firebase_Platform_PlatformLogLevelSizeCheck;

@@ -50,11 +50,11 @@ namespace System::Security::Policy {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.IEnumerator currentEnum
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_currentEnum();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_currentEnum();
     // Get instance field reference: private System.Collections.IEnumerator hostEnum
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_hostEnum();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_hostEnum();
     // Get instance field reference: private System.Collections.IEnumerator assemblyEnum
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_assemblyEnum();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_assemblyEnum();
     // public System.Object get_Current()
     // Offset: 0xE50BB4
     ::Il2CppObject* get_Current();

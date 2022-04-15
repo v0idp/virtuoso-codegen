@@ -66,15 +66,15 @@ namespace Proyecto26 {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _isHttpError
-    [[deprecated]] bool& dyn__isHttpError();
+    [[deprecated("Use field access instead!")]] bool& dyn__isHttpError();
     // Get instance field reference: private System.Boolean _isNetworkError
-    [[deprecated]] bool& dyn__isNetworkError();
+    [[deprecated("Use field access instead!")]] bool& dyn__isNetworkError();
     // Get instance field reference: private System.Int64 _statusCode
-    [[deprecated]] int64_t& dyn__statusCode();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__statusCode();
     // Get instance field reference: private System.String _serverMessage
-    [[deprecated]] ::StringW& dyn__serverMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__serverMessage();
     // Get instance field reference: private System.String _response
-    [[deprecated]] ::StringW& dyn__response();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__response();
     // public System.Boolean get_IsHttpError()
     // Offset: 0xB325AC
     bool get_IsHttpError();
@@ -105,6 +105,20 @@ namespace Proyecto26 {
     // public System.Void set_Response(System.String value)
     // Offset: 0xB325FC
     void set_Response(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0xB32604
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RequestException* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestException::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>()));
+    }
+    // public System.Void .ctor(System.String message)
+    // Offset: 0xB32668
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RequestException* New_ctor(::StringW message) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestException::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>(message)));
+    }
     // public System.Void .ctor(System.String format, params System.Object[] args)
     // Offset: 0xB326DC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -118,25 +132,6 @@ namespace Proyecto26 {
     static RequestException* New_ctor(::StringW message, bool isHttpError, bool isNetworkError, int64_t statusCode, ::StringW response) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>(message, isHttpError, isNetworkError, statusCode, response)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0xB32604
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RequestException* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestException::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>()));
-    }
-    // public System.Void .ctor(System.String message)
-    // Offset: 0xB32668
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String message)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RequestException* New_ctor(::StringW message) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestException::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RequestException*, creationType>(message)));
     }
   }; // Proyecto26.RequestException
   #pragma pack(pop)

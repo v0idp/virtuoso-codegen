@@ -61,7 +61,7 @@ namespace System::Xml::Schema {
       return enumerator;
     }
     // Get instance field reference: private System.Collections.IDictionaryEnumerator enumerator
-    [[deprecated]] ::System::Collections::IDictionaryEnumerator*& dyn_enumerator();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IDictionaryEnumerator*& dyn_enumerator();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0x110AD28
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

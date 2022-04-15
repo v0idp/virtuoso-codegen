@@ -74,17 +74,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVRPlugin/Bool IsValid
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Bool& dyn_IsValid();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Bool& dyn_IsValid();
     // Get instance field reference: public System.Double LastChangedTimeSeconds
-    [[deprecated]] double& dyn_LastChangedTimeSeconds();
+    [[deprecated("Use field access instead!")]] double& dyn_LastChangedTimeSeconds();
     // Get instance field reference: public OVRPlugin/Fovf FOVPort
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Fovf& dyn_FOVPort();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Fovf& dyn_FOVPort();
     // Get instance field reference: public System.Single VirtualNearPlaneDistanceMeters
-    [[deprecated]] float& dyn_VirtualNearPlaneDistanceMeters();
+    [[deprecated("Use field access instead!")]] float& dyn_VirtualNearPlaneDistanceMeters();
     // Get instance field reference: public System.Single VirtualFarPlaneDistanceMeters
-    [[deprecated]] float& dyn_VirtualFarPlaneDistanceMeters();
+    [[deprecated("Use field access instead!")]] float& dyn_VirtualFarPlaneDistanceMeters();
     // Get instance field reference: public OVRPlugin/Sizei ImageSensorPixelResolution
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Sizei& dyn_ImageSensorPixelResolution();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Sizei& dyn_ImageSensorPixelResolution();
   }; // OVRPlugin/CameraIntrinsics
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::CameraIntrinsics), 40 + sizeof(::GlobalNamespace::OVRPlugin::Sizei)> __GlobalNamespace_OVRPlugin_CameraIntrinsicsSizeCheck;

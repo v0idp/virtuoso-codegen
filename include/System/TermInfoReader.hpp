@@ -78,17 +78,17 @@ namespace System {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 boolSize
-    [[deprecated]] int& dyn_boolSize();
+    [[deprecated("Use field access instead!")]] int& dyn_boolSize();
     // Get instance field reference: private System.Int32 numSize
-    [[deprecated]] int& dyn_numSize();
+    [[deprecated("Use field access instead!")]] int& dyn_numSize();
     // Get instance field reference: private System.Int32 strOffsets
-    [[deprecated]] int& dyn_strOffsets();
+    [[deprecated("Use field access instead!")]] int& dyn_strOffsets();
     // Get instance field reference: private System.Byte[] buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: private System.Int32 booleansOffset
-    [[deprecated]] int& dyn_booleansOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_booleansOffset();
     // Get instance field reference: private System.Int32 intOffset
-    [[deprecated]] int& dyn_intOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_intOffset();
     // public System.Void .ctor(System.String term, System.String filename)
     // Offset: 0x11D62F4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -72,13 +72,13 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MinMaxVector3 _scaling
-    [[deprecated]] ::VROSC::MinMaxVector3*& dyn__scaling();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxVector3*& dyn__scaling();
     // Get instance field reference: private System.Boolean _uniformRandom
-    [[deprecated]] bool& dyn__uniformRandom();
+    [[deprecated("Use field access instead!")]] bool& dyn__uniformRandom();
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // public VROSC.MinMaxVector3 get_Scaling()
     // Offset: 0xDE2974
     ::VROSC::MinMaxVector3* get_Scaling();
@@ -95,9 +95,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0xDE2994
     // Implemented from: VROSC.AudioReactive.AudioReactiveEffectData
     // Base method: System.Void AudioReactiveEffectData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ScaleEffectData::.ctor");

@@ -50,7 +50,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
       return nullCount;
     }
     // Get instance field reference: System.Int32 nullCount
-    [[deprecated]] int& dyn_nullCount();
+    [[deprecated("Use field access instead!")]] int& dyn_nullCount();
     // System.Void SetNullCount(System.Int32 nullCount)
     // Offset: 0x14717EC
     void SetNullCount(int nullCount);

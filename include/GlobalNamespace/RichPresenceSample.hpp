@@ -168,37 +168,44 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.String DeeplinkMessageOverride
-    [[deprecated]] ::StringW& dyn_DeeplinkMessageOverride();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DeeplinkMessageOverride();
     // Get instance field reference: public System.Boolean IsJoinable
-    [[deprecated]] bool& dyn_IsJoinable();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsJoinable();
     // Get instance field reference: public System.Boolean IsIdle
-    [[deprecated]] bool& dyn_IsIdle();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsIdle();
     // Get instance field reference: public System.String InstanceID
-    [[deprecated]] ::StringW& dyn_InstanceID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_InstanceID();
     // Get instance field reference: public System.UInt32 CurrentCapacity
-    [[deprecated]] uint& dyn_CurrentCapacity();
+    [[deprecated("Use field access instead!")]] uint& dyn_CurrentCapacity();
     // Get instance field reference: public System.UInt32 MaxCapacity
-    [[deprecated]] uint& dyn_MaxCapacity();
+    [[deprecated("Use field access instead!")]] uint& dyn_MaxCapacity();
     // Get instance field reference: public System.DateTime StartTime
-    [[deprecated]] ::System::DateTime& dyn_StartTime();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_StartTime();
     // Get instance field reference: public System.DateTime EndTime
-    [[deprecated]] ::System::DateTime& dyn_EndTime();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_EndTime();
     // Get instance field reference: public Oculus.Platform.RichPresenceExtraContext ExtraContext
-    [[deprecated]] ::Oculus::Platform::RichPresenceExtraContext& dyn_ExtraContext();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::RichPresenceExtraContext& dyn_ExtraContext();
     // Get instance field reference: public UnityEngine.UI.Text InVRConsole
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_InVRConsole();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_InVRConsole();
     // Get instance field reference: public UnityEngine.UI.Text DestinationsConsole
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_DestinationsConsole();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> DestinationAPINames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_DestinationAPINames();
     // Get instance field reference: private System.UInt64 LoggedInUserID
-    [[deprecated]] uint64_t& dyn_LoggedInUserID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_LoggedInUserID();
     // Get instance field reference: private System.String TrackingID
-    [[deprecated]] ::StringW& dyn_TrackingID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TrackingID();
     // Get instance field reference: private System.Int32 DestinationIndex
-    [[deprecated]] int& dyn_DestinationIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_DestinationIndex();
     // Get instance field reference: private System.Boolean OnlyPushUpOnce
-    [[deprecated]] bool& dyn_OnlyPushUpOnce();
+    [[deprecated("Use field access instead!")]] bool& dyn_OnlyPushUpOnce();
+    // public System.Void .ctor()
+    // Offset: 0x171583C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RichPresenceSample* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RichPresenceSample::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RichPresenceSample*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1714774
     void Start();
@@ -259,25 +266,16 @@ namespace GlobalNamespace {
     // private System.Void <ClearPresence>b__16_1(Oculus.Platform.Message`1<Oculus.Platform.Models.User> message2)
     // Offset: 0x17162C4
     void $ClearPresence$b__16_1(::Oculus::Platform::Message_1<::Oculus::Platform::Models::User*>* message2);
-    // public System.Void .ctor()
-    // Offset: 0x171583C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RichPresenceSample* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RichPresenceSample::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RichPresenceSample*, creationType>()));
-    }
   }; // RichPresenceSample
   #pragma pack(pop)
   static check_size<sizeof(RichPresenceSample), 124 + sizeof(bool)> __GlobalNamespace_RichPresenceSampleSizeCheck;
   static_assert(sizeof(RichPresenceSample) == 0x7D);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RichPresenceSample::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RichPresenceSample::Start
 // Il2CppName: Start
 template<>
@@ -447,7 +445,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RichPresenceSample*), "<ClearPresence>b__16_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{message2});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RichPresenceSample::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

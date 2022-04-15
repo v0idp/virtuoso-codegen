@@ -52,7 +52,7 @@ namespace System::Runtime::Remoting {
       return envoySinks;
     }
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink envoySinks
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_envoySinks();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn_envoySinks();
     // public System.Runtime.Remoting.Messaging.IMessageSink get_EnvoySinks()
     // Offset: 0x14F7988
     ::System::Runtime::Remoting::Messaging::IMessageSink* get_EnvoySinks();

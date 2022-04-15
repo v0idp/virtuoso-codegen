@@ -71,19 +71,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color _restingColor
-    [[deprecated]] ::UnityEngine::Color& dyn__restingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__restingColor();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private System.Int32 <Note>k__BackingField
-    [[deprecated]] int& dyn_$Note$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Note$k__BackingField();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _propBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // public System.Int32 get_Note()
     // Offset: 0x947794
     int get_Note();
     // private System.Void set_Note(System.Int32 value)
     // Offset: 0x94778C
     void set_Note(int value);
+    // public System.Void .ctor()
+    // Offset: 0x9479C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ClustrFrameString* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ClustrFrameString::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ClustrFrameString*, creationType>()));
+    }
     // private System.Void CreateBlock()
     // Offset: 0x94779C
     void CreateBlock();
@@ -96,19 +103,6 @@ namespace VROSC {
     // public System.Void SetPlayingColor(UnityEngine.Vector3 power, System.Single velocity, System.Single highlight)
     // Offset: 0x947854
     void SetPlayingColor(::UnityEngine::Vector3 power, float velocity, float highlight);
-    // public System.Void .ctor()
-    // Offset: 0x9479C4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ClustrFrameString* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ClustrFrameString::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ClustrFrameString*, creationType>()));
-    }
   }; // VROSC.ClustrFrameString
   #pragma pack(pop)
   static check_size<sizeof(ClustrFrameString), 56 + sizeof(::UnityEngine::MaterialPropertyBlock*)> __VROSC_ClustrFrameStringSizeCheck;
@@ -132,6 +126,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ClustrFrameString*), "set_Note", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::ClustrFrameString::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ClustrFrameString::CreateBlock
 // Il2CppName: CreateBlock
 template<>
@@ -168,7 +166,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ClustrFrameString*), "SetPlayingColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{power, velocity, highlight});
   }
 };
-// Writing MetadataGetter for method: VROSC::ClustrFrameString::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

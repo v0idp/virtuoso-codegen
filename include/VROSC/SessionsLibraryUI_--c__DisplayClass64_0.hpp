@@ -46,30 +46,32 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SessionsLibraryUI::SessionSaveData*) == 0x8);
     public:
     // Get instance field reference: public VROSC.SessionsLibraryUI <>4__this
-    [[deprecated]] ::VROSC::SessionsLibraryUI*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsLibraryUI*& dyn_$$4__this();
     // Get instance field reference: public VROSC.SessionsLibraryUI/VROSC.SessionSaveData sessionSaveData
-    [[deprecated]] ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn_sessionSaveData();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsLibraryUI::SessionSaveData*& dyn_sessionSaveData();
+    // public System.Void .ctor()
+    // Offset: 0x8D51AC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SessionsLibraryUI::$$c__DisplayClass64_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SessionsLibraryUI::$$c__DisplayClass64_0*, creationType>()));
+    }
     // System.Void <SaveSession>b__0()
     // Offset: 0x8D51B4
     void $SaveSession$b__0();
     // System.Void <SaveSession>b__1(VROSC.Error error)
     // Offset: 0x8D51DC
     void $SaveSession$b__1(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x8D51AC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SessionsLibraryUI::$$c__DisplayClass64_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SessionsLibraryUI::$$c__DisplayClass64_0*, creationType>()));
-    }
   }; // VROSC.SessionsLibraryUI/VROSC.<>c__DisplayClass64_0
   #pragma pack(pop)
   static check_size<sizeof(SessionsLibraryUI::$$c__DisplayClass64_0), 24 + sizeof(::VROSC::SessionsLibraryUI::SessionSaveData*)> __VROSC_SessionsLibraryUI_$$c__DisplayClass64_0SizeCheck;
   static_assert(sizeof(SessionsLibraryUI::$$c__DisplayClass64_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::$SaveSession$b__0
 // Il2CppName: <SaveSession>b__0
 template<>
@@ -87,7 +89,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsLibraryUI::$$c__DisplayClass64_0*), "<SaveSession>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsLibraryUI::$$c__DisplayClass64_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

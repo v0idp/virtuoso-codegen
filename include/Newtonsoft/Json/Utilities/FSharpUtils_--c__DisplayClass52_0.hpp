@@ -50,27 +50,29 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: public Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> call
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_call();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_call();
     // Get instance field reference: public Newtonsoft.Json.Utilities.MethodCall`2<System.Object,System.Object> invoke
-    [[deprecated]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_invoke();
-    // System.Object <CreateFSharpFuncCall>b__0(System.Object target, System.Object[] args)
-    // Offset: 0x159E870
-    ::Il2CppObject* $CreateFSharpFuncCall$b__0(::Il2CppObject* target, ::ArrayW<::Il2CppObject*> args);
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*& dyn_invoke();
     // public System.Void .ctor()
     // Offset: 0x159E868
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FSharpUtils::$$c__DisplayClass52_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::FSharpUtils::$$c__DisplayClass52_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FSharpUtils::$$c__DisplayClass52_0*, creationType>()));
     }
+    // System.Object <CreateFSharpFuncCall>b__0(System.Object target, System.Object[] args)
+    // Offset: 0x159E870
+    ::Il2CppObject* $CreateFSharpFuncCall$b__0(::Il2CppObject* target, ::ArrayW<::Il2CppObject*> args);
   }; // Newtonsoft.Json.Utilities.FSharpUtils/Newtonsoft.Json.Utilities.<>c__DisplayClass52_0
   #pragma pack(pop)
   static check_size<sizeof(FSharpUtils::$$c__DisplayClass52_0), 24 + sizeof(::Newtonsoft::Json::Utilities::MethodCall_2<::Il2CppObject*, ::Il2CppObject*>*)> __Newtonsoft_Json_Utilities_FSharpUtils_$$c__DisplayClass52_0SizeCheck;
   static_assert(sizeof(FSharpUtils::$$c__DisplayClass52_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::FSharpUtils::$$c__DisplayClass52_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::FSharpUtils::$$c__DisplayClass52_0::$CreateFSharpFuncCall$b__0
 // Il2CppName: <CreateFSharpFuncCall>b__0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Il2CppObj
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Utilities::FSharpUtils::$$c__DisplayClass52_0*), "<CreateFSharpFuncCall>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, args});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::FSharpUtils::$$c__DisplayClass52_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

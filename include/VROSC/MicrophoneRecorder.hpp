@@ -44,9 +44,9 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<float>) == 0x8);
     public:
     // Get instance field reference: private System.Single[] _effectData
-    [[deprecated]] ::ArrayW<float>& dyn__effectData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__effectData();
     // Get instance field reference: private System.Single[] _microphoneData
-    [[deprecated]] ::ArrayW<float>& dyn__microphoneData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__microphoneData();
     // public System.Void SetMicrophoneData(System.Single[] buffer)
     // Offset: 0xAC7480
     void SetMicrophoneData(::ArrayW<float> buffer);
@@ -63,11 +63,6 @@ namespace VROSC {
     // Offset: 0xAC75D4
     // Implemented from: VROSC.SourceRecorder
     // Base method: System.Void SourceRecorder::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MicrophoneRecorder* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneRecorder::.ctor");

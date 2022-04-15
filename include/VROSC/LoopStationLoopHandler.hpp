@@ -133,23 +133,23 @@ namespace VROSC {
     // Set static field: static public System.Int32 MaxActiveLoops
     static void _set_MaxActiveLoops(int value);
     // Get instance field reference: private VROSC.LoopPlayer _loopPrefab
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__loopPrefab();
     // Get instance field reference: private UnityEngine.Transform _loopLocation
-    [[deprecated]] ::UnityEngine::Transform*& dyn__loopLocation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__loopLocation();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopPlayer> _activeLoops
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__activeLoops();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__activeLoops();
     // Get instance field reference: private VROSC.LoopPlayer _currentlyRecordingLoop
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__currentlyRecordingLoop();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__currentlyRecordingLoop();
     // Get instance field reference: private VROSC.LoopPlayer _lastRecordedLoop
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__lastRecordedLoop();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__lastRecordedLoop();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: public System.Action`2<VROSC.LoopPlayer,System.Boolean> OnLoopDeleted
-    [[deprecated]] ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnLoopDeleted();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::LoopPlayer*, bool>*& dyn_OnLoopDeleted();
     // Get instance field reference: public System.Action`1<VROSC.LoopPlayer> OnLoopRecorded
-    [[deprecated]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopRecorded();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopRecorded();
     // Get instance field reference: public System.Action OnRerecord
-    [[deprecated]] ::System::Action*& dyn_OnRerecord();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnRerecord();
     // public System.Collections.Generic.List`1<VROSC.LoopPlayer> get_ActiveLoops()
     // Offset: 0x1973140
     ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>* get_ActiveLoops();
@@ -159,6 +159,13 @@ namespace VROSC {
     // public System.Boolean get_IsMaxLoopsReached()
     // Offset: 0x1973194
     bool get_IsMaxLoopsReached();
+    // public System.Void .ctor()
+    // Offset: 0x197436C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationLoopHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationLoopHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationLoopHandler*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopStation loopStation)
     // Offset: 0x19731B0
     void Setup(::VROSC::LoopStation* loopStation);
@@ -210,19 +217,6 @@ namespace VROSC {
     // public VROSC.LoopPlayer GetLoopByID(System.String loopID)
     // Offset: 0x197420C
     ::VROSC::LoopPlayer* GetLoopByID(::StringW loopID);
-    // public System.Void .ctor()
-    // Offset: 0x197436C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationLoopHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationLoopHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationLoopHandler*, creationType>()));
-    }
   }; // VROSC.LoopStationLoopHandler
   #pragma pack(pop)
   static check_size<sizeof(LoopStationLoopHandler), 88 + sizeof(::System::Action*)> __VROSC_LoopStationLoopHandlerSizeCheck;
@@ -253,6 +247,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationLoopHandler*), "get_IsMaxLoopsReached", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStationLoopHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationLoopHandler::Setup
 // Il2CppName: Setup
 template<>
@@ -399,7 +397,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Lo
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationLoopHandler*), "GetLoopByID", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{loopID});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationLoopHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

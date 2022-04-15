@@ -72,7 +72,7 @@ namespace Mono::Net {
     // Set static field: static private System.IntPtr kCFNetworkProxiesProxyAutoConfigURLString
     static void _set_kCFNetworkProxiesProxyAutoConfigURLString(::System::IntPtr value);
     // Get instance field reference: private Mono.Net.CFDictionary settings
-    [[deprecated]] ::Mono::Net::CFDictionary*& dyn_settings();
+    [[deprecated("Use field access instead!")]] ::Mono::Net::CFDictionary*& dyn_settings();
     // public Mono.Net.CFDictionary get_Dictionary()
     // Offset: 0x10DFE60
     ::Mono::Net::CFDictionary* get_Dictionary();

@@ -46,13 +46,11 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public System.String Text
-    [[deprecated]] ::StringW& dyn_Text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Text();
     // Get instance field reference: public System.Action OnConditionCompleted
-    [[deprecated]] ::System::Action*& dyn_OnConditionCompleted();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnConditionCompleted();
     // public System.Void .ctor()
     // Offset: 0xE7FC3C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TutorialStep::Condition* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TutorialStep::Condition::.ctor");

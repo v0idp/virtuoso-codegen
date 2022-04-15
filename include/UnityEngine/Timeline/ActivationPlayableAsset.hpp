@@ -58,11 +58,6 @@ namespace UnityEngine::Timeline {
     ::UnityEngine::Timeline::ClipCaps get_clipCaps();
     // public System.Void .ctor()
     // Offset: 0xC697F8
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ActivationPlayableAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::ActivationPlayableAsset::.ctor");

@@ -61,13 +61,13 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XdrBuilder::XdrBuildFunction*) == 0x8);
     public:
     // Get instance field reference: System.Xml.Schema.SchemaNames/System.Xml.Schema.Token _Attribute
-    [[deprecated]] ::System::Xml::Schema::SchemaNames::Token& dyn__Attribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaNames::Token& dyn__Attribute();
     // Get instance field reference: System.Int32 _SchemaFlags
-    [[deprecated]] int& dyn__SchemaFlags();
+    [[deprecated("Use field access instead!")]] int& dyn__SchemaFlags();
     // Get instance field reference: System.Xml.Schema.XmlSchemaDatatype _Datatype
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn__Datatype();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn__Datatype();
     // Get instance field reference: System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrBuildFunction _BuildFunc
-    [[deprecated]] ::System::Xml::Schema::XdrBuilder::XdrBuildFunction*& dyn__BuildFunc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XdrBuilder::XdrBuildFunction*& dyn__BuildFunc();
     // System.Void .ctor(System.Xml.Schema.SchemaNames/System.Xml.Schema.Token a, System.Xml.XmlTokenizedType ttype, System.Xml.Schema.XdrBuilder/System.Xml.Schema.XdrBuildFunction build)
     // Offset: 0xC1EF78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

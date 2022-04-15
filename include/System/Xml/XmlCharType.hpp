@@ -53,7 +53,7 @@ namespace System::Xml {
     // Set static field: static private System.Byte[] s_CharProperties
     static void _set_s_CharProperties(::ArrayW<uint8_t> value);
     // Get instance field reference: System.Byte[] charProperties
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_charProperties();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_charProperties();
     // static private System.Object get_StaticLock()
     // Offset: 0x118FBB8
     static ::Il2CppObject* get_StaticLock();

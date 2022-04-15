@@ -53,13 +53,13 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: readonly System.Int32 TryStartIndex
-    [[deprecated]] int& dyn_TryStartIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_TryStartIndex();
     // Get instance field reference: readonly System.Int32 TryEndIndex
-    [[deprecated]] int& dyn_TryEndIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_TryEndIndex();
     // Get instance field reference: readonly System.Int32 FinallyStartIndex
-    [[deprecated]] int& dyn_FinallyStartIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_FinallyStartIndex();
     // Get instance field reference: readonly System.Int32 FinallyEndIndex
-    [[deprecated]] int& dyn_FinallyEndIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_FinallyEndIndex();
     // System.Void .ctor(System.Int32 tryStart, System.Int32 tryEnd, System.Int32 finallyStart, System.Int32 finallyEnd)
     // Offset: 0xE9EA24
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

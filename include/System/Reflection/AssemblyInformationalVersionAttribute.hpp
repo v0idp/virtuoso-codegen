@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_informationalVersion;
     }
     // Get instance field reference: private System.String m_informationalVersion
-    [[deprecated]] ::StringW& dyn_m_informationalVersion();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_informationalVersion();
     // public System.Void .ctor(System.String informationalVersion)
     // Offset: 0x1144714
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

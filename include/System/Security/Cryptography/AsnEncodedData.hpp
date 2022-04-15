@@ -50,9 +50,9 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: System.Security.Cryptography.Oid _oid
-    [[deprecated]] ::System::Security::Cryptography::Oid*& dyn__oid();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::Oid*& dyn__oid();
     // Get instance field reference: System.Byte[] _raw
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__raw();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__raw();
     // public System.Void set_Oid(System.Security.Cryptography.Oid value)
     // Offset: 0x10D5AD8
     void set_Oid(::System::Security::Cryptography::Oid* value);
@@ -62,6 +62,13 @@ namespace System::Security::Cryptography {
     // public System.Void set_RawData(System.Byte[] value)
     // Offset: 0x10D5B50
     void set_RawData(::ArrayW<uint8_t> value);
+    // protected System.Void .ctor()
+    // Offset: 0x10D5A88
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AsnEncodedData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::AsnEncodedData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AsnEncodedData*, creationType>()));
+    }
     // public System.Void .ctor(System.Security.Cryptography.Oid oid, System.Byte[] rawData)
     // Offset: 0x10D5A90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -96,15 +103,6 @@ namespace System::Security::Cryptography {
     // System.String NetscapeCertType(System.Boolean multiLine)
     // Offset: 0x10D6714
     ::StringW NetscapeCertType(bool multiLine);
-    // protected System.Void .ctor()
-    // Offset: 0x10D5A88
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AsnEncodedData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::AsnEncodedData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AsnEncodedData*, creationType>()));
-    }
   }; // System.Security.Cryptography.AsnEncodedData
   #pragma pack(pop)
   static check_size<sizeof(AsnEncodedData), 24 + sizeof(::ArrayW<uint8_t>)> __System_Security_Cryptography_AsnEncodedDataSizeCheck;
@@ -137,6 +135,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::AsnEncodedData*), "set_RawData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Security::Cryptography::AsnEncodedData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::AsnEncodedData::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -222,7 +224,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::AsnEncodedData*), "NetscapeCertType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{multiLine});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::AsnEncodedData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

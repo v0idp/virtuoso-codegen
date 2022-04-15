@@ -70,7 +70,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.PermissionGrantStatus Blocked
     static void _set_Blocked(::Oculus::Platform::PermissionGrantStatus value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Platform.PermissionGrantStatus
   #pragma pack(pop)
   static check_size<sizeof(PermissionGrantStatus), 0 + sizeof(int)> __Oculus_Platform_PermissionGrantStatusSizeCheck;

@@ -54,9 +54,9 @@ namespace System::Text {
     // Deleting conversion operator: operator ::StringW
     constexpr operator ::StringW() const noexcept = delete;
     // Get instance field reference: private System.Byte[] bytesUnknown
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_bytesUnknown();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_bytesUnknown();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // public System.Void .ctor(System.String message, System.Byte[] bytesUnknown, System.Int32 index)
     // Offset: 0x12939B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

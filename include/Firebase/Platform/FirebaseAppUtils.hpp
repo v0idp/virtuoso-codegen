@@ -51,6 +51,13 @@ namespace Firebase::Platform {
     // static public Firebase.Platform.FirebaseAppUtils get_Instance()
     // Offset: 0x1888470
     static ::Firebase::Platform::FirebaseAppUtils* get_Instance();
+    // public System.Void .ctor()
+    // Offset: 0x1888468
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FirebaseAppUtils* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::FirebaseAppUtils::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FirebaseAppUtils*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x1888650
     static void _cctor();
@@ -63,15 +70,6 @@ namespace Firebase::Platform {
     // public Firebase.Platform.PlatformLogLevel GetLogLevel()
     // Offset: 0x1888538
     ::Firebase::Platform::PlatformLogLevel GetLogLevel();
-    // public System.Void .ctor()
-    // Offset: 0x1888468
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FirebaseAppUtils* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::FirebaseAppUtils::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FirebaseAppUtils*, creationType>()));
-    }
   }; // Firebase.Platform.FirebaseAppUtils
   #pragma pack(pop)
 }
@@ -84,6 +82,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::FirebaseAppUtils*), "get_Instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Platform::FirebaseAppUtils::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Platform::FirebaseAppUtils::_cctor
 // Il2CppName: .cctor
 template<>
@@ -117,7 +119,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::FirebaseAppUtils*), "GetLogLevel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Platform::FirebaseAppUtils::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

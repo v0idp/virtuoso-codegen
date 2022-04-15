@@ -107,21 +107,21 @@ namespace UnityEngine::Video {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.EventHandler prepareCompleted
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_prepareCompleted();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_prepareCompleted();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.EventHandler loopPointReached
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_loopPointReached();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_loopPointReached();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.EventHandler started
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_started();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_started();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.EventHandler frameDropped
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_frameDropped();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_frameDropped();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.ErrorEventHandler errorReceived
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::ErrorEventHandler*& dyn_errorReceived();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::ErrorEventHandler*& dyn_errorReceived();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.EventHandler seekCompleted
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_seekCompleted();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::EventHandler*& dyn_seekCompleted();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.TimeEventHandler clockResyncOccurred
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::TimeEventHandler*& dyn_clockResyncOccurred();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::TimeEventHandler*& dyn_clockResyncOccurred();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer/UnityEngine.Video.FrameReadyEventHandler frameReady
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer::FrameReadyEventHandler*& dyn_frameReady();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer::FrameReadyEventHandler*& dyn_frameReady();
     // public System.Void set_url(System.String value)
     // Offset: 0x190A2D8
     void set_url(::StringW value);

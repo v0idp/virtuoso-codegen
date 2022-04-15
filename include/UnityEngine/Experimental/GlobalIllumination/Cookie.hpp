@@ -53,11 +53,11 @@ namespace UnityEngine::Experimental::GlobalIllumination {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 instanceID
-    [[deprecated]] int& dyn_instanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_instanceID();
     // Get instance field reference: public System.Single scale
-    [[deprecated]] float& dyn_scale();
+    [[deprecated("Use field access instead!")]] float& dyn_scale();
     // Get instance field reference: public UnityEngine.Vector2 sizes
-    [[deprecated]] ::UnityEngine::Vector2& dyn_sizes();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_sizes();
   }; // UnityEngine.Experimental.GlobalIllumination.Cookie
   #pragma pack(pop)
   static check_size<sizeof(Cookie), 8 + sizeof(::UnityEngine::Vector2)> __UnityEngine_Experimental_GlobalIllumination_CookieSizeCheck;

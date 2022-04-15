@@ -115,13 +115,13 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private System.Func`2<System.Reflection.ConstructorInfo,System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::System::Reflection::ConstructorInfo*, bool>* value);
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty> _writableProperties
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__writableProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__writableProperties();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<Firebase.Firestore.Converters.AttributedTypeConverter/Firebase.Firestore.Converters.AttributedProperty> _readableProperties
-    [[deprecated]] ::System::Collections::Generic::List_1<::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__readableProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Firebase::Firestore::Converters::AttributedTypeConverter::AttributedProperty*>*& dyn__readableProperties();
     // Get instance field reference: private readonly System.Func`1<System.Object> _createInstance
-    [[deprecated]] ::System::Func_1<::Il2CppObject*>*& dyn__createInstance();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<::Il2CppObject*>*& dyn__createInstance();
     // Get instance field reference: private readonly Firebase.Firestore.FirestoreDataAttribute _attribute
-    [[deprecated]] ::Firebase::Firestore::FirestoreDataAttribute*& dyn__attribute();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirestoreDataAttribute*& dyn__attribute();
     // private System.Void .ctor(System.Type targetType, Firebase.Firestore.FirestoreDataAttribute attribute)
     // Offset: 0xD4896C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

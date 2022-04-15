@@ -45,9 +45,9 @@ namespace Unity::RemoteConfig {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String key
-    [[deprecated]] ::StringW& dyn_key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_key();
     // Get instance field reference: public System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
   }; // Unity.RemoteConfig.RequestHeaderTuple
   #pragma pack(pop)
   static check_size<sizeof(RequestHeaderTuple), 8 + sizeof(::StringW)> __Unity_RemoteConfig_RequestHeaderTupleSizeCheck;

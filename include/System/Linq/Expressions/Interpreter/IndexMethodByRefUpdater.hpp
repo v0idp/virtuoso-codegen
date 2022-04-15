@@ -71,11 +71,11 @@ namespace System::Linq::Expressions::Interpreter {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private readonly System.Reflection.MethodInfo _indexer
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn__indexer();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn__indexer();
     // Get instance field reference: private readonly System.Nullable`1<System.Linq.Expressions.Interpreter.LocalDefinition> _obj
-    [[deprecated]] ::System::Nullable_1<::System::Linq::Expressions::Interpreter::LocalDefinition>& dyn__obj();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::System::Linq::Expressions::Interpreter::LocalDefinition>& dyn__obj();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.LocalDefinition[] _args
-    [[deprecated]] ::ArrayW<::System::Linq::Expressions::Interpreter::LocalDefinition>& dyn__args();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Linq::Expressions::Interpreter::LocalDefinition>& dyn__args();
     // public System.Void .ctor(System.Nullable`1<System.Linq.Expressions.Interpreter.LocalDefinition> obj, System.Linq.Expressions.Interpreter.LocalDefinition[] args, System.Reflection.MethodInfo indexer, System.Int32 argumentIndex)
     // Offset: 0xF16F78
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

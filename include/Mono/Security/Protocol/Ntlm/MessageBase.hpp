@@ -48,9 +48,9 @@ namespace Mono::Security::Protocol::Ntlm {
     // Set static field: static private System.Byte[] header
     static void _set_header(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.Int32 _type
-    [[deprecated]] int& dyn__type();
+    [[deprecated("Use field access instead!")]] int& dyn__type();
     // Get instance field reference: private Mono.Security.Protocol.Ntlm.NtlmFlags _flags
-    [[deprecated]] ::Mono::Security::Protocol::Ntlm::NtlmFlags& dyn__flags();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Protocol::Ntlm::NtlmFlags& dyn__flags();
     // public Mono.Security.Protocol.Ntlm.NtlmFlags get_Flags()
     // Offset: 0x163BC28
     ::Mono::Security::Protocol::Ntlm::NtlmFlags get_Flags();

@@ -76,9 +76,9 @@ namespace System::Runtime::CompilerServices {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Runtime.CompilerServices.IAsyncStateMachine m_stateMachine
-    [[deprecated]] ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::IAsyncStateMachine*& dyn_m_stateMachine();
     // Get instance field reference: System.Action m_defaultContextAction
-    [[deprecated]] ::System::Action*& dyn_m_defaultContextAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_m_defaultContextAction();
     // public System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
     // Offset: 0x1146468
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);

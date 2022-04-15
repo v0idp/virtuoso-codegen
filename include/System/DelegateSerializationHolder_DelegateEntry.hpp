@@ -81,19 +81,19 @@ namespace System {
     static_assert(sizeof(::System::DelegateSerializationHolder::DelegateEntry*) == 0x8);
     public:
     // Get instance field reference: private System.String type
-    [[deprecated]] ::StringW& dyn_type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_type();
     // Get instance field reference: private System.String assembly
-    [[deprecated]] ::StringW& dyn_assembly();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assembly();
     // Get instance field reference: private System.Object target
-    [[deprecated]] ::Il2CppObject*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_target();
     // Get instance field reference: private System.String targetTypeAssembly
-    [[deprecated]] ::StringW& dyn_targetTypeAssembly();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_targetTypeAssembly();
     // Get instance field reference: private System.String targetTypeName
-    [[deprecated]] ::StringW& dyn_targetTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_targetTypeName();
     // Get instance field reference: private System.String methodName
-    [[deprecated]] ::StringW& dyn_methodName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_methodName();
     // Get instance field reference: public System.DelegateSerializationHolder/System.DelegateEntry delegateEntry
-    [[deprecated]] ::System::DelegateSerializationHolder::DelegateEntry*& dyn_delegateEntry();
+    [[deprecated("Use field access instead!")]] ::System::DelegateSerializationHolder::DelegateEntry*& dyn_delegateEntry();
     // public System.Void .ctor(System.Delegate del, System.String targetLabel)
     // Offset: 0x13AA5F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

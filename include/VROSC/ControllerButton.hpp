@@ -82,19 +82,19 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Quaternion) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _pressedPostionOffset
-    [[deprecated]] ::UnityEngine::Vector3& dyn__pressedPostionOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__pressedPostionOffset();
     // Get instance field reference: private UnityEngine.Vector3 _pressedRotaionOffset
-    [[deprecated]] ::UnityEngine::Vector3& dyn__pressedRotaionOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__pressedRotaionOffset();
     // Get instance field reference: private VROSC.InputDevice _inputDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__inputDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__inputDevice();
     // Get instance field reference: private System.Boolean _trigger
-    [[deprecated]] bool& dyn__trigger();
+    [[deprecated("Use field access instead!")]] bool& dyn__trigger();
     // Get instance field reference: private System.Boolean _grip
-    [[deprecated]] bool& dyn__grip();
+    [[deprecated("Use field access instead!")]] bool& dyn__grip();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private UnityEngine.Quaternion _startRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__startRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__startRotation();
     // private System.Void Awake()
     // Offset: 0x94D808
     void Awake();
@@ -105,11 +105,6 @@ namespace VROSC {
     // Offset: 0x94DA1C
     // Implemented from: VROSC.ControllerComponent
     // Base method: System.Void ControllerComponent::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ControllerButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerButton::.ctor");

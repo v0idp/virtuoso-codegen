@@ -74,15 +74,15 @@ namespace UnityEngine::LowLevel {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: public UnityEngine.LowLevel.PlayerLoopSystem/UnityEngine.LowLevel.UpdateFunction updateDelegate
-    [[deprecated]] ::UnityEngine::LowLevel::PlayerLoopSystem::UpdateFunction*& dyn_updateDelegate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LowLevel::PlayerLoopSystem::UpdateFunction*& dyn_updateDelegate();
     // Get instance field reference: public System.IntPtr updateFunction
-    [[deprecated]] ::System::IntPtr& dyn_updateFunction();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_updateFunction();
     // Get instance field reference: public System.IntPtr loopConditionFunction
-    [[deprecated]] ::System::IntPtr& dyn_loopConditionFunction();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_loopConditionFunction();
     // Get instance field reference: public System.Int32 numSubSystems
-    [[deprecated]] int& dyn_numSubSystems();
+    [[deprecated("Use field access instead!")]] int& dyn_numSubSystems();
   }; // UnityEngine.LowLevel.PlayerLoopSystemInternal
   #pragma pack(pop)
   static check_size<sizeof(PlayerLoopSystemInternal), 32 + sizeof(int)> __UnityEngine_LowLevel_PlayerLoopSystemInternalSizeCheck;

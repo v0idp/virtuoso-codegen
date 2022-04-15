@@ -95,21 +95,21 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.String dataType
-    [[deprecated]] ::StringW& dyn_dataType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dataType();
     // Get instance field reference: private System.String elementName
-    [[deprecated]] ::StringW& dyn_elementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_elementName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.Boolean isNullable
-    [[deprecated]] bool& dyn_isNullable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNullable();
     // Get instance field reference: private System.Boolean isNullableSpecified
-    [[deprecated]] bool& dyn_isNullableSpecified();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNullableSpecified();
     // Get instance field reference: private System.Int32 nestingLevel
-    [[deprecated]] int& dyn_nestingLevel();
+    [[deprecated("Use field access instead!")]] int& dyn_nestingLevel();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.String get_DataType()
     // Offset: 0x11B3A04
     ::StringW get_DataType();

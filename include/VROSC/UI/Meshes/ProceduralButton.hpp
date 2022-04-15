@@ -79,15 +79,15 @@ namespace VROSC::UI::Meshes {
     static_assert(sizeof(::VROSC::UI::UITwoToneColor*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _edges
-    [[deprecated]] int& dyn__edges();
+    [[deprecated("Use field access instead!")]] int& dyn__edges();
     // Get instance field reference: private System.Boolean _cap
-    [[deprecated]] bool& dyn__cap();
+    [[deprecated("Use field access instead!")]] bool& dyn__cap();
     // Get instance field reference: private System.Boolean _edge
-    [[deprecated]] bool& dyn__edge();
+    [[deprecated("Use field access instead!")]] bool& dyn__edge();
     // Get instance field reference: private System.Boolean _separateCap
-    [[deprecated]] bool& dyn__separateCap();
+    [[deprecated("Use field access instead!")]] bool& dyn__separateCap();
     // Get instance field reference: private VROSC.UI.UITwoToneColor _sideColors
-    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn__sideColors();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UITwoToneColor*& dyn__sideColors();
     // private System.Int32 get_edgeVertexPairs()
     // Offset: 0xAE7A44
     int get_edgeVertexPairs();
@@ -109,9 +109,6 @@ namespace VROSC::UI::Meshes {
     // Offset: 0xAE83BC
     // Implemented from: VROSC.UI.Meshes.ProceduralMeshData
     // Base method: System.Void ProceduralMeshData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProceduralButton* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralButton::.ctor");

@@ -126,27 +126,27 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo*) == 0x8);
     public:
     // Get instance field reference: System.String objectName
-    [[deprecated]] ::StringW& dyn_objectName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_objectName();
     // Get instance field reference: System.Type objectType
-    [[deprecated]] ::System::Type*& dyn_objectType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_objectType();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryTypeEnum[] binaryTypeEnumA
-    [[deprecated]] ::ArrayW<::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum>& dyn_binaryTypeEnumA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum>& dyn_binaryTypeEnumA();
     // Get instance field reference: System.Object[] typeInformationA
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_typeInformationA();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_typeInformationA();
     // Get instance field reference: System.Type[] memberTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_memberTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_memberTypes();
     // Get instance field reference: System.String[] memberNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_memberNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_memberNames();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.ReadObjectInfo objectInfo
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo*& dyn_objectInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo*& dyn_objectInfo();
     // Get instance field reference: System.Boolean isInitObjectInfo
-    [[deprecated]] bool& dyn_isInitObjectInfo();
+    [[deprecated("Use field access instead!")]] bool& dyn_isInitObjectInfo();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.ObjectReader objectReader
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::ObjectReader*& dyn_objectReader();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::ObjectReader*& dyn_objectReader();
     // Get instance field reference: System.Int32 objectId
-    [[deprecated]] int& dyn_objectId();
+    [[deprecated("Use field access instead!")]] int& dyn_objectId();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryAssemblyInfo assemblyInfo
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo*& dyn_assemblyInfo();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo*& dyn_assemblyInfo();
     // System.Void .ctor(System.String objectName, System.Type objectType, System.String[] memberNames, System.Runtime.Serialization.Formatters.Binary.ObjectReader objectReader, System.Int32 objectId, System.Runtime.Serialization.Formatters.Binary.BinaryAssemblyInfo assemblyInfo)
     // Offset: 0x1470DD8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

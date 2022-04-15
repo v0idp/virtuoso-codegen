@@ -47,11 +47,11 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::Delegate*) == 0x8);
     public:
     // Get instance field reference: System.ComponentModel.EventHandlerList/System.ComponentModel.ListEntry next
-    [[deprecated]] ::System::ComponentModel::EventHandlerList::ListEntry*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::EventHandlerList::ListEntry*& dyn_next();
     // Get instance field reference: System.Object key
-    [[deprecated]] ::Il2CppObject*& dyn_key();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_key();
     // Get instance field reference: System.Delegate handler
-    [[deprecated]] ::System::Delegate*& dyn_handler();
+    [[deprecated("Use field access instead!")]] ::System::Delegate*& dyn_handler();
   }; // System.ComponentModel.EventHandlerList/System.ComponentModel.ListEntry
   #pragma pack(pop)
   static check_size<sizeof(EventHandlerList::ListEntry), 32 + sizeof(::System::Delegate*)> __System_ComponentModel_EventHandlerList_ListEntrySizeCheck;

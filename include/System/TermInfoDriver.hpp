@@ -330,85 +330,85 @@ namespace System {
     // Set static field: static private readonly System.Int32[] _consoleColorToAnsiCode
     static void _set__consoleColorToAnsiCode(::ArrayW<int> value);
     // Get instance field reference: private System.TermInfoReader reader
-    [[deprecated]] ::System::TermInfoReader*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::TermInfoReader*& dyn_reader();
     // Get instance field reference: private System.Int32 cursorLeft
-    [[deprecated]] int& dyn_cursorLeft();
+    [[deprecated("Use field access instead!")]] int& dyn_cursorLeft();
     // Get instance field reference: private System.Int32 cursorTop
-    [[deprecated]] int& dyn_cursorTop();
+    [[deprecated("Use field access instead!")]] int& dyn_cursorTop();
     // Get instance field reference: private System.String title
-    [[deprecated]] ::StringW& dyn_title();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_title();
     // Get instance field reference: private System.String titleFormat
-    [[deprecated]] ::StringW& dyn_titleFormat();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_titleFormat();
     // Get instance field reference: private System.Boolean cursorVisible
-    [[deprecated]] bool& dyn_cursorVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn_cursorVisible();
     // Get instance field reference: private System.String csrVisible
-    [[deprecated]] ::StringW& dyn_csrVisible();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_csrVisible();
     // Get instance field reference: private System.String csrInvisible
-    [[deprecated]] ::StringW& dyn_csrInvisible();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_csrInvisible();
     // Get instance field reference: private System.String clear
-    [[deprecated]] ::StringW& dyn_clear();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_clear();
     // Get instance field reference: private System.String bell
-    [[deprecated]] ::StringW& dyn_bell();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_bell();
     // Get instance field reference: private System.String term
-    [[deprecated]] ::StringW& dyn_term();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_term();
     // Get instance field reference: private System.IO.StreamReader stdin
-    [[deprecated]] ::System::IO::StreamReader*& dyn_stdin();
+    [[deprecated("Use field access instead!")]] ::System::IO::StreamReader*& dyn_stdin();
     // Get instance field reference: private System.IO.CStreamWriter stdout
-    [[deprecated]] ::System::IO::CStreamWriter*& dyn_stdout();
+    [[deprecated("Use field access instead!")]] ::System::IO::CStreamWriter*& dyn_stdout();
     // Get instance field reference: private System.Int32 windowWidth
-    [[deprecated]] int& dyn_windowWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_windowWidth();
     // Get instance field reference: private System.Int32 windowHeight
-    [[deprecated]] int& dyn_windowHeight();
+    [[deprecated("Use field access instead!")]] int& dyn_windowHeight();
     // Get instance field reference: private System.Int32 bufferHeight
-    [[deprecated]] int& dyn_bufferHeight();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferHeight();
     // Get instance field reference: private System.Int32 bufferWidth
-    [[deprecated]] int& dyn_bufferWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferWidth();
     // Get instance field reference: private System.Char[] buffer
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_buffer();
     // Get instance field reference: private System.Int32 readpos
-    [[deprecated]] int& dyn_readpos();
+    [[deprecated("Use field access instead!")]] int& dyn_readpos();
     // Get instance field reference: private System.Int32 writepos
-    [[deprecated]] int& dyn_writepos();
+    [[deprecated("Use field access instead!")]] int& dyn_writepos();
     // Get instance field reference: private System.String keypadXmit
-    [[deprecated]] ::StringW& dyn_keypadXmit();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_keypadXmit();
     // Get instance field reference: private System.String keypadLocal
-    [[deprecated]] ::StringW& dyn_keypadLocal();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_keypadLocal();
     // Get instance field reference: private System.Boolean inited
-    [[deprecated]] bool& dyn_inited();
+    [[deprecated("Use field access instead!")]] bool& dyn_inited();
     // Get instance field reference: private System.Object initLock
-    [[deprecated]] ::Il2CppObject*& dyn_initLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_initLock();
     // Get instance field reference: private System.Boolean initKeys
-    [[deprecated]] bool& dyn_initKeys();
+    [[deprecated("Use field access instead!")]] bool& dyn_initKeys();
     // Get instance field reference: private System.String origPair
-    [[deprecated]] ::StringW& dyn_origPair();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_origPair();
     // Get instance field reference: private System.String origColors
-    [[deprecated]] ::StringW& dyn_origColors();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_origColors();
     // Get instance field reference: private System.String cursorAddress
-    [[deprecated]] ::StringW& dyn_cursorAddress();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_cursorAddress();
     // Get instance field reference: private System.ConsoleColor fgcolor
-    [[deprecated]] ::System::ConsoleColor& dyn_fgcolor();
+    [[deprecated("Use field access instead!")]] ::System::ConsoleColor& dyn_fgcolor();
     // Get instance field reference: private System.String setfgcolor
-    [[deprecated]] ::StringW& dyn_setfgcolor();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_setfgcolor();
     // Get instance field reference: private System.String setbgcolor
-    [[deprecated]] ::StringW& dyn_setbgcolor();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_setbgcolor();
     // Get instance field reference: private System.Int32 maxColors
-    [[deprecated]] int& dyn_maxColors();
+    [[deprecated("Use field access instead!")]] int& dyn_maxColors();
     // Get instance field reference: private System.Boolean noGetPosition
-    [[deprecated]] bool& dyn_noGetPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_noGetPosition();
     // Get instance field reference: private System.Collections.Hashtable keymap
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_keymap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_keymap();
     // Get instance field reference: private System.ByteMatcher rootmap
-    [[deprecated]] ::System::ByteMatcher*& dyn_rootmap();
+    [[deprecated("Use field access instead!")]] ::System::ByteMatcher*& dyn_rootmap();
     // Get instance field reference: private System.Int32 rl_startx
-    [[deprecated]] int& dyn_rl_startx();
+    [[deprecated("Use field access instead!")]] int& dyn_rl_startx();
     // Get instance field reference: private System.Int32 rl_starty
-    [[deprecated]] int& dyn_rl_starty();
+    [[deprecated("Use field access instead!")]] int& dyn_rl_starty();
     // Get instance field reference: private System.Byte[] control_characters
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_control_characters();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_control_characters();
     // Get instance field reference: private System.Char[] echobuf
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_echobuf();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_echobuf();
     // Get instance field reference: private System.Int32 echon
-    [[deprecated]] int& dyn_echon();
+    [[deprecated("Use field access instead!")]] int& dyn_echon();
     // public System.Boolean get_Initialized()
     // Offset: 0x1276B84
     bool get_Initialized();

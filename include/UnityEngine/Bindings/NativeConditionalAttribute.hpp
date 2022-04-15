@@ -55,11 +55,11 @@ namespace UnityEngine::Bindings {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String <Condition>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Condition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Condition$k__BackingField();
     // Get instance field reference: private System.String <StubReturnStatement>k__BackingField
-    [[deprecated]] ::StringW& dyn_$StubReturnStatement$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$StubReturnStatement$k__BackingField();
     // Get instance field reference: private System.Boolean <Enabled>k__BackingField
-    [[deprecated]] bool& dyn_$Enabled$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Enabled$k__BackingField();
     // public System.Void set_Condition(System.String value)
     // Offset: 0x18FF744
     void set_Condition(::StringW value);

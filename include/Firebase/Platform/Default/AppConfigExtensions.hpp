@@ -69,18 +69,16 @@ namespace Firebase::Platform::Default {
     // static public Firebase.Platform.IAppConfigExtensions get_Instance()
     // Offset: 0x18C72C0
     static ::Firebase::Platform::IAppConfigExtensions* get_Instance();
-    // static private System.Void .cctor()
-    // Offset: 0x18C7324
-    static void _cctor();
     // protected System.Void .ctor()
     // Offset: 0x18C72B8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AppConfigExtensions* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::Default::AppConfigExtensions::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AppConfigExtensions*, creationType>()));
     }
+    // static private System.Void .cctor()
+    // Offset: 0x18C7324
+    static void _cctor();
   }; // Firebase.Platform.Default.AppConfigExtensions
   #pragma pack(pop)
 }
@@ -93,6 +91,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Firebase:
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::Default::AppConfigExtensions*), "get_Instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Platform::Default::AppConfigExtensions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Platform::Default::AppConfigExtensions::_cctor
 // Il2CppName: .cctor
 template<>
@@ -101,7 +103,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::Default::AppConfigExtensions*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Platform::Default::AppConfigExtensions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

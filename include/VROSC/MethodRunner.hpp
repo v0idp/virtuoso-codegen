@@ -46,17 +46,12 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MethodRunner::RunMethodEvent*) == 0x8);
     public:
     // Get instance field reference: private VROSC.MethodRunner/VROSC.RunMethodEvent _targetMethod
-    [[deprecated]] ::VROSC::MethodRunner::RunMethodEvent*& dyn__targetMethod();
+    [[deprecated("Use field access instead!")]] ::VROSC::MethodRunner::RunMethodEvent*& dyn__targetMethod();
     // public System.Void .ctor()
     // Offset: 0xAC1D90
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MethodRunner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MethodRunner::.ctor");

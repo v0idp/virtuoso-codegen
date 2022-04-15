@@ -50,9 +50,9 @@ namespace System::Dynamic {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _expression
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__expression();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__expression();
     // Get instance field reference: private readonly System.Type _type
-    [[deprecated]] ::System::Type*& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__type();
     // System.Void .ctor(System.Linq.Expressions.Expression parameter, System.Type type)
     // Offset: 0xEA64A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

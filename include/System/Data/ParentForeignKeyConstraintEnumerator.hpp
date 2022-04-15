@@ -52,7 +52,7 @@ namespace System::Data {
       return table;
     }
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // public System.Void .ctor(System.Data.DataSet dataSet, System.Data.DataTable inTable)
     // Offset: 0x13C1F8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

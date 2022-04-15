@@ -55,11 +55,11 @@ namespace UnityEngine::Scripting {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private System.Boolean <Optional>k__BackingField
-    [[deprecated]] bool& dyn_$Optional$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Optional$k__BackingField();
     // Get instance field reference: private System.Boolean <GenerateProxy>k__BackingField
-    [[deprecated]] bool& dyn_$GenerateProxy$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$GenerateProxy$k__BackingField();
     // public System.Void set_Name(System.String value)
     // Offset: 0x18FFE18
     void set_Name(::StringW value);
@@ -69,22 +69,19 @@ namespace UnityEngine::Scripting {
     // public System.Void set_GenerateProxy(System.Boolean value)
     // Offset: 0x18FFE2C
     void set_GenerateProxy(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x18FFDE4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RequiredByNativeCodeAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Scripting::RequiredByNativeCodeAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RequiredByNativeCodeAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.String name)
     // Offset: 0x18FFDEC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RequiredByNativeCodeAttribute* New_ctor(::StringW name) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Scripting::RequiredByNativeCodeAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RequiredByNativeCodeAttribute*, creationType>(name)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0x18FFDE4
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RequiredByNativeCodeAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Scripting::RequiredByNativeCodeAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RequiredByNativeCodeAttribute*, creationType>()));
     }
   }; // UnityEngine.Scripting.RequiredByNativeCodeAttribute
   #pragma pack(pop)

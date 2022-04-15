@@ -65,11 +65,11 @@ namespace Facebook::WitAi::CallbackHandlers {
     static_assert(sizeof(::UnityEngine::Events::UnityEvent*) == 0x8);
     public:
     // Get instance field reference: public System.String intent
-    [[deprecated]] ::StringW& dyn_intent();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_intent();
     // Get instance field reference: public System.Single confidence
-    [[deprecated]] float& dyn_confidence();
+    [[deprecated("Use field access instead!")]] float& dyn_confidence();
     // Get instance field reference: private UnityEngine.Events.UnityEvent onIntentTriggered
-    [[deprecated]] ::UnityEngine::Events::UnityEvent*& dyn_onIntentTriggered();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEvent*& dyn_onIntentTriggered();
     // public UnityEngine.Events.UnityEvent get_OnIntentTriggered()
     // Offset: 0x166FEC4
     ::UnityEngine::Events::UnityEvent* get_OnIntentTriggered();
@@ -77,11 +77,6 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Offset: 0x1670048
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SimpleIntentHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::CallbackHandlers::SimpleIntentHandler::.ctor");

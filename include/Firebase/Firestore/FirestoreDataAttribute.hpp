@@ -53,9 +53,9 @@ namespace Firebase::Firestore {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private Firebase.Firestore.UnknownPropertyHandling <UnknownPropertyHandling>k__BackingField
-    [[deprecated]] ::Firebase::Firestore::UnknownPropertyHandling& dyn_$UnknownPropertyHandling$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::UnknownPropertyHandling& dyn_$UnknownPropertyHandling$k__BackingField();
     // Get instance field reference: private System.Type <ConverterType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$ConverterType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$ConverterType$k__BackingField();
     // public Firebase.Firestore.UnknownPropertyHandling get_UnknownPropertyHandling()
     // Offset: 0xD5EB84
     ::Firebase::Firestore::UnknownPropertyHandling get_UnknownPropertyHandling();

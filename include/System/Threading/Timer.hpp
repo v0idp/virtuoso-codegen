@@ -101,17 +101,17 @@ namespace System::Threading {
     // Set static field: static private System.Int64 MaxValue
     static void _set_MaxValue(int64_t value);
     // Get instance field reference: private System.Threading.TimerCallback callback
-    [[deprecated]] ::System::Threading::TimerCallback*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::System::Threading::TimerCallback*& dyn_callback();
     // Get instance field reference: private System.Object state
-    [[deprecated]] ::Il2CppObject*& dyn_state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_state();
     // Get instance field reference: private System.Int64 due_time_ms
-    [[deprecated]] int64_t& dyn_due_time_ms();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_due_time_ms();
     // Get instance field reference: private System.Int64 period_ms
-    [[deprecated]] int64_t& dyn_period_ms();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_period_ms();
     // Get instance field reference: private System.Int64 next_run
-    [[deprecated]] int64_t& dyn_next_run();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_next_run();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // public System.Void .ctor(System.Threading.TimerCallback callback, System.Object state, System.Int32 dueTime, System.Int32 period)
     // Offset: 0x12A9604
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -66,11 +66,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::NamespaceList*) == 0x8);
     public:
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaContentProcessing processContents
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaContentProcessing& dyn_processContents();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaContentProcessing& dyn_processContents();
     // Get instance field reference: private System.Xml.Schema.NamespaceList namespaceList
-    [[deprecated]] ::System::Xml::Schema::NamespaceList*& dyn_namespaceList();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::NamespaceList*& dyn_namespaceList();
     // public System.Void set_Namespace(System.String value)
     // Offset: 0x1109354
     void set_Namespace(::StringW value);
@@ -109,7 +109,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.XmlSchemaAnnotated
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaAnyAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaAnyAttribute::.ctor");

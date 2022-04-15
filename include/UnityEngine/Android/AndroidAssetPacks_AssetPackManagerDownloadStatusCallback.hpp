@@ -51,9 +51,9 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: private System.Action`1<UnityEngine.Android.AndroidAssetPackInfo> m_Callback
-    [[deprecated]] ::System::Action_1<::UnityEngine::Android::AndroidAssetPackInfo*>*& dyn_m_Callback();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Android::AndroidAssetPackInfo*>*& dyn_m_Callback();
     // Get instance field reference: private System.String[] m_AssetPacks
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_AssetPacks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_AssetPacks();
     // private System.Void onStatusUpdate(System.String assetPackName, System.Int32 assetPackStatus, System.Int64 assetPackSize, System.Int64 assetPackBytesDownloaded, System.Int32 assetPackTransferProgress, System.Int32 assetPackErrorCode)
     // Offset: 0x1875644
     void onStatusUpdate(::StringW assetPackName, int assetPackStatus, int64_t assetPackSize, int64_t assetPackBytesDownloaded, int assetPackTransferProgress, int assetPackErrorCode);

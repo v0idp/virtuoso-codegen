@@ -95,42 +95,40 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _wisp
-    [[deprecated]] ::UnityEngine::Transform*& dyn__wisp();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__wisp();
     // Get instance field reference: private System.Int32 remainMs
-    [[deprecated]] int& dyn_remainMs();
+    [[deprecated("Use field access instead!")]] int& dyn_remainMs();
     // Get instance field reference: private VROSC.PredictiveHitWisp/VROSC.ParticleEffect[] _particleEffects
-    [[deprecated]] ::ArrayW<::VROSC::PredictiveHitWisp::ParticleEffect*>& dyn__particleEffects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::PredictiveHitWisp::ParticleEffect*>& dyn__particleEffects();
     // Get instance field reference: private UnityEngine.Transform _lookAtPoint
-    [[deprecated]] ::UnityEngine::Transform*& dyn__lookAtPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__lookAtPoint();
     // Get instance field reference: private UnityEngine.TrailRenderer _trailRenderer
-    [[deprecated]] ::UnityEngine::TrailRenderer*& dyn__trailRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TrailRenderer*& dyn__trailRenderer();
     // Get instance field reference: private VROSC.MalletVisual _malletVisual
-    [[deprecated]] ::VROSC::MalletVisual*& dyn__malletVisual();
+    [[deprecated("Use field access instead!")]] ::VROSC::MalletVisual*& dyn__malletVisual();
+    // public System.Void .ctor()
+    // Offset: 0xAE2CFC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PredictiveHitWisp* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PredictiveHitWisp::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PredictiveHitWisp*, creationType>()));
+    }
     // public System.Void SetAtHitpoint(System.Double dspTime, UnityEngine.Vector3 hitpoint, VROSC.PredictiveHittable predictiveHittable)
     // Offset: 0xAE2B84
     void SetAtHitpoint(double dspTime, ::UnityEngine::Vector3 hitpoint, ::VROSC::PredictiveHittable* predictiveHittable);
     // public System.Void SetTrailColor(UnityEngine.Color color)
     // Offset: 0xAE2C80
     void SetTrailColor(::UnityEngine::Color color);
-    // public System.Void .ctor()
-    // Offset: 0xAE2CFC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PredictiveHitWisp* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PredictiveHitWisp::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PredictiveHitWisp*, creationType>()));
-    }
   }; // VROSC.PredictiveHitWisp
   #pragma pack(pop)
   static check_size<sizeof(PredictiveHitWisp), 64 + sizeof(::VROSC::MalletVisual*)> __VROSC_PredictiveHitWispSizeCheck;
   static_assert(sizeof(PredictiveHitWisp) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::PredictiveHitWisp::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::PredictiveHitWisp::SetAtHitpoint
 // Il2CppName: SetAtHitpoint
 template<>
@@ -151,7 +149,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::PredictiveHitWisp*), "SetTrailColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
   }
 };
-// Writing MetadataGetter for method: VROSC::PredictiveHitWisp::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

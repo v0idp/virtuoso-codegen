@@ -91,7 +91,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.LaunchResult FailedOtherReason
     static void _set_FailedOtherReason(::Oculus::Platform::LaunchResult value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Platform.LaunchResult
   #pragma pack(pop)
   static check_size<sizeof(LaunchResult), 0 + sizeof(int)> __Oculus_Platform_LaunchResultSizeCheck;

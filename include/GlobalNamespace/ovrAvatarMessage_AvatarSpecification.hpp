@@ -47,9 +47,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IntPtr avatarSpec
-    [[deprecated]] ::System::IntPtr& dyn_avatarSpec();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_avatarSpec();
     // Get instance field reference: public System.UInt64 oculusUserID
-    [[deprecated]] uint64_t& dyn_oculusUserID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_oculusUserID();
   }; // ovrAvatarMessage_AvatarSpecification
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarMessage_AvatarSpecification), 8 + sizeof(uint64_t)> __GlobalNamespace_ovrAvatarMessage_AvatarSpecificationSizeCheck;

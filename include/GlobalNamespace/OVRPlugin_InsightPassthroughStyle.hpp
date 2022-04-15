@@ -74,17 +74,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVRPlugin/InsightPassthroughStyleFlags Flags
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::InsightPassthroughStyleFlags& dyn_Flags();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::InsightPassthroughStyleFlags& dyn_Flags();
     // Get instance field reference: public System.Single TextureOpacityFactor
-    [[deprecated]] float& dyn_TextureOpacityFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_TextureOpacityFactor();
     // Get instance field reference: public OVRPlugin/Colorf EdgeColor
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Colorf& dyn_EdgeColor();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Colorf& dyn_EdgeColor();
     // Get instance field reference: public OVRPlugin/InsightPassthroughColorMapType TextureColorMapType
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_TextureColorMapType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_TextureColorMapType();
     // Get instance field reference: public System.UInt32 TextureColorMapDataSize
-    [[deprecated]] uint& dyn_TextureColorMapDataSize();
+    [[deprecated("Use field access instead!")]] uint& dyn_TextureColorMapDataSize();
     // Get instance field reference: public System.IntPtr TextureColorMapData
-    [[deprecated]] ::System::IntPtr& dyn_TextureColorMapData();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_TextureColorMapData();
   }; // OVRPlugin/InsightPassthroughStyle
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::InsightPassthroughStyle), 32 + sizeof(::System::IntPtr)> __GlobalNamespace_OVRPlugin_InsightPassthroughStyleSizeCheck;

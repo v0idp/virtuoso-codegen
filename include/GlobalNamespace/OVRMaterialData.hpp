@@ -62,11 +62,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Shader shader
-    [[deprecated]] ::UnityEngine::Shader*& dyn_shader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_shader();
     // Get instance field reference: public System.Int32 textureId
-    [[deprecated]] int& dyn_textureId();
+    [[deprecated("Use field access instead!")]] int& dyn_textureId();
     // Get instance field reference: public OVRTextureData texture
-    [[deprecated]] ::GlobalNamespace::OVRTextureData& dyn_texture();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRTextureData& dyn_texture();
   }; // OVRMaterialData
   #pragma pack(pop)
   static check_size<sizeof(OVRMaterialData), 16 + sizeof(::GlobalNamespace::OVRTextureData)> __GlobalNamespace_OVRMaterialDataSizeCheck;

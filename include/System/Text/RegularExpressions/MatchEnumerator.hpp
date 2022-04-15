@@ -68,13 +68,13 @@ namespace System::Text::RegularExpressions {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: System.Text.RegularExpressions.MatchCollection _matchcoll
-    [[deprecated]] ::System::Text::RegularExpressions::MatchCollection*& dyn__matchcoll();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::MatchCollection*& dyn__matchcoll();
     // Get instance field reference: System.Text.RegularExpressions.Match _match
-    [[deprecated]] ::System::Text::RegularExpressions::Match*& dyn__match();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Match*& dyn__match();
     // Get instance field reference: System.Int32 _curindex
-    [[deprecated]] int& dyn__curindex();
+    [[deprecated("Use field access instead!")]] int& dyn__curindex();
     // Get instance field reference: System.Boolean _done
-    [[deprecated]] bool& dyn__done();
+    [[deprecated("Use field access instead!")]] bool& dyn__done();
     // public System.Object get_Current()
     // Offset: 0x10FA440
     ::Il2CppObject* get_Current();

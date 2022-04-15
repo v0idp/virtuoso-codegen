@@ -60,11 +60,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::KeySequence*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 column
-    [[deprecated]] int& dyn_column();
+    [[deprecated("Use field access instead!")]] int& dyn_column();
     // Get instance field reference: System.Boolean isMatched
-    [[deprecated]] bool& dyn_isMatched();
+    [[deprecated("Use field access instead!")]] bool& dyn_isMatched();
     // Get instance field reference: System.Xml.Schema.KeySequence Ks
-    [[deprecated]] ::System::Xml::Schema::KeySequence*& dyn_Ks();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::KeySequence*& dyn_Ks();
     // System.Int32 get_Column()
     // Offset: 0xAF4990
     int get_Column();

@@ -41,25 +41,27 @@ namespace UnityEngine::Networking::PlayerConnection {
       return messageId;
     }
     // Get instance field reference: public System.Guid messageId
-    [[deprecated]] ::System::Guid& dyn_messageId();
-    // System.Boolean <Unregister>b__0(UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/UnityEngine.Networking.PlayerConnection.MessageTypeSubscribers x)
-    // Offset: 0x1843E78
-    bool $Unregister$b__0(::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::MessageTypeSubscribers* x);
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_messageId();
     // public System.Void .ctor()
     // Offset: 0x1843E70
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayerConnection::$$c__DisplayClass13_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::PlayerConnection::PlayerConnection::$$c__DisplayClass13_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PlayerConnection::$$c__DisplayClass13_0*, creationType>()));
     }
+    // System.Boolean <Unregister>b__0(UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/UnityEngine.Networking.PlayerConnection.MessageTypeSubscribers x)
+    // Offset: 0x1843E78
+    bool $Unregister$b__0(::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents::MessageTypeSubscribers* x);
   }; // UnityEngine.Networking.PlayerConnection.PlayerConnection/UnityEngine.Networking.PlayerConnection.<>c__DisplayClass13_0
   #pragma pack(pop)
   static check_size<sizeof(PlayerConnection::$$c__DisplayClass13_0), 16 + sizeof(::System::Guid)> __UnityEngine_Networking_PlayerConnection_PlayerConnection_$$c__DisplayClass13_0SizeCheck;
   static_assert(sizeof(PlayerConnection::$$c__DisplayClass13_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Networking::PlayerConnection::PlayerConnection::$$c__DisplayClass13_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::PlayerConnection::PlayerConnection::$$c__DisplayClass13_0::$Unregister$b__0
 // Il2CppName: <Unregister>b__0
 template<>
@@ -69,7 +71,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Networking::PlayerConnection::PlayerConnection::$$c__DisplayClass13_0*), "<Unregister>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Networking::PlayerConnection::PlayerConnection::$$c__DisplayClass13_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

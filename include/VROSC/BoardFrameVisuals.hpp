@@ -94,19 +94,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MinMaxFloat _height
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__height();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__height();
     // Get instance field reference: private System.Int32 _maxOctave
-    [[deprecated]] int& dyn__maxOctave();
+    [[deprecated("Use field access instead!")]] int& dyn__maxOctave();
     // Get instance field reference: private System.Single _width
-    [[deprecated]] float& dyn__width();
+    [[deprecated("Use field access instead!")]] float& dyn__width();
     // Get instance field reference: private VROSC.BoardFrameNote _notePrefab
-    [[deprecated]] ::VROSC::BoardFrameNote*& dyn__notePrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::BoardFrameNote*& dyn__notePrefab();
     // Get instance field reference: private UnityEngine.GameObject _stringPrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__stringPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__stringPrefab();
     // Get instance field reference: private VROSC.NoteFieldMonitor _monitor
-    [[deprecated]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldMonitor*& dyn__monitor();
     // Get instance field reference: private VROSC.BoardFrameNote[] _notes
-    [[deprecated]] ::ArrayW<::VROSC::BoardFrameNote*>& dyn__notes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::BoardFrameNote*>& dyn__notes();
+    // public System.Void .ctor()
+    // Offset: 0x938610
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BoardFrameVisuals* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BoardFrameVisuals::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BoardFrameVisuals*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x937E4C
     void Start();
@@ -122,25 +129,16 @@ namespace VROSC {
     // private System.Void OnDrawGizmosSelected()
     // Offset: 0x93842C
     void OnDrawGizmosSelected();
-    // public System.Void .ctor()
-    // Offset: 0x938610
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BoardFrameVisuals* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BoardFrameVisuals::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BoardFrameVisuals*, creationType>()));
-    }
   }; // VROSC.BoardFrameVisuals
   #pragma pack(pop)
   static check_size<sizeof(BoardFrameVisuals), 64 + sizeof(::ArrayW<::VROSC::BoardFrameNote*>)> __VROSC_BoardFrameVisualsSizeCheck;
   static_assert(sizeof(BoardFrameVisuals) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::BoardFrameVisuals::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BoardFrameVisuals::Start
 // Il2CppName: Start
 template<>
@@ -182,7 +180,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BoardFrameVisuals*), "OnDrawGizmosSelected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::BoardFrameVisuals::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

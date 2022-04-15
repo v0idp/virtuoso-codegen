@@ -51,9 +51,9 @@ namespace System::Runtime::CompilerServices {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public System.Threading.Tasks.Task innerTask
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_innerTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_innerTask();
     // Get instance field reference: public System.Action continuation
-    [[deprecated]] ::System::Action*& dyn_continuation();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_continuation();
     // System.Void <OutputAsyncCausalityEvents>b__0()
     // Offset: 0x13A4C58
     void $OutputAsyncCausalityEvents$b__0();

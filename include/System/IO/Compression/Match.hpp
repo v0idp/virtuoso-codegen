@@ -51,13 +51,13 @@ namespace System::IO::Compression {
     static_assert(sizeof(uint8_t) == 0x1);
     public:
     // Get instance field reference: private System.IO.Compression.MatchState <State>k__BackingField
-    [[deprecated]] ::System::IO::Compression::MatchState& dyn_$State$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::MatchState& dyn_$State$k__BackingField();
     // Get instance field reference: private System.Int32 <Position>k__BackingField
-    [[deprecated]] int& dyn_$Position$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Position$k__BackingField();
     // Get instance field reference: private System.Int32 <Length>k__BackingField
-    [[deprecated]] int& dyn_$Length$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Length$k__BackingField();
     // Get instance field reference: private System.Byte <Symbol>k__BackingField
-    [[deprecated]] uint8_t& dyn_$Symbol$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_$Symbol$k__BackingField();
     // System.IO.Compression.MatchState get_State()
     // Offset: 0x16988F8
     ::System::IO::Compression::MatchState get_State();

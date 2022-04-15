@@ -61,9 +61,9 @@ namespace Firebase::Firestore {
       return *reinterpret_cast<::System::IEquatable_1<::Firebase::Firestore::GeoPoint>*>(this);
     }
     // Get instance field reference: private readonly System.Double _latitude
-    [[deprecated]] double& dyn__latitude();
+    [[deprecated("Use field access instead!")]] double& dyn__latitude();
     // Get instance field reference: private readonly System.Double _longitude
-    [[deprecated]] double& dyn__longitude();
+    [[deprecated("Use field access instead!")]] double& dyn__longitude();
     // public System.Double get_Latitude()
     // Offset: 0xD619F8
     double get_Latitude();

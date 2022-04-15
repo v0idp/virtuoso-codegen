@@ -81,15 +81,15 @@ namespace System::Linq::Expressions::Interpreter {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Linq::Expressions::Interpreter::InterpretedFrameInfo>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Linq.Expressions.Interpreter.InterpretedFrameInfo <>2__current
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::InterpretedFrameInfo& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::InterpretedFrameInfo& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public System.Linq.Expressions.Interpreter.InterpretedFrame <>4__this
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn_$$4__this();
     // Get instance field reference: private System.Linq.Expressions.Interpreter.InterpretedFrame <frame>5__1
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn_$frame$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn_$frame$5__1();
     // private System.Linq.Expressions.Interpreter.InterpretedFrameInfo System.Collections.Generic.IEnumerator<System.Linq.Expressions.Interpreter.InterpretedFrameInfo>.get_Current()
     // Offset: 0x16A75A4
     ::System::Linq::Expressions::Interpreter::InterpretedFrameInfo System_Collections_Generic_IEnumerator$System_Linq_Expressions_Interpreter_InterpretedFrameInfo$_get_Current();

@@ -64,7 +64,7 @@ namespace NatSuite::Devices {
     // Set static field: static public NatSuite.Devices.FlashMode Auto
     static void _set_Auto(::NatSuite::Devices::FlashMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // NatSuite.Devices.FlashMode
   #pragma pack(pop)
   static check_size<sizeof(FlashMode), 0 + sizeof(int)> __NatSuite_Devices_FlashModeSizeCheck;

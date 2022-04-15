@@ -50,14 +50,13 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.TransformDataModel TransformData
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn_TransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn_TransformData();
     // Get instance field reference: public System.Boolean HasBeenOpened
-    [[deprecated]] bool& dyn_HasBeenOpened();
+    [[deprecated("Use field access instead!")]] bool& dyn_HasBeenOpened();
     // public System.Void .ctor()
     // Offset: 0xA22CAC
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ToolDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ToolDataModel::.ctor");

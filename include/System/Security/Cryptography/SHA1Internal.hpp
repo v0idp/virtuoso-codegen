@@ -62,15 +62,15 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(::ArrayW<uint>) == 0x8);
     public:
     // Get instance field reference: private System.UInt32[] _H
-    [[deprecated]] ::ArrayW<uint>& dyn__H();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn__H();
     // Get instance field reference: private System.UInt64 count
-    [[deprecated]] uint64_t& dyn_count();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_count();
     // Get instance field reference: private System.Byte[] _ProcessingBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__ProcessingBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__ProcessingBuffer();
     // Get instance field reference: private System.Int32 _ProcessingBufferCount
-    [[deprecated]] int& dyn__ProcessingBufferCount();
+    [[deprecated("Use field access instead!")]] int& dyn__ProcessingBufferCount();
     // Get instance field reference: private System.UInt32[] buff
-    [[deprecated]] ::ArrayW<uint>& dyn_buff();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_buff();
     // public System.Void HashCore(System.Byte[] rgb, System.Int32 ibStart, System.Int32 cbSize)
     // Offset: 0x116BD68
     void HashCore(::ArrayW<uint8_t> rgb, int ibStart, int cbSize);

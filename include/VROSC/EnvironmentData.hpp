@@ -100,21 +100,21 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Environment _prefab
-    [[deprecated]] ::VROSC::Environment*& dyn__prefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Environment*& dyn__prefab();
     // Get instance field reference: private UnityEngine.Texture2D _previewImage
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn__previewImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn__previewImage();
     // Get instance field reference: private System.String _displayName
-    [[deprecated]] ::StringW& dyn__displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__displayName();
     // Get instance field reference: private System.String _id
-    [[deprecated]] ::StringW& dyn__id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__id();
     // Get instance field reference: private UnityEngine.Material _skyboxMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__skyboxMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__skyboxMaterial();
     // Get instance field reference: private System.Single _bass
-    [[deprecated]] float& dyn__bass();
+    [[deprecated("Use field access instead!")]] float& dyn__bass();
     // Get instance field reference: private System.Single _mid
-    [[deprecated]] float& dyn__mid();
+    [[deprecated("Use field access instead!")]] float& dyn__mid();
     // Get instance field reference: private System.Single _top
-    [[deprecated]] float& dyn__top();
+    [[deprecated("Use field access instead!")]] float& dyn__top();
     // public VROSC.Environment get_Prefab()
     // Offset: 0x8EEADC
     ::VROSC::Environment* get_Prefab();
@@ -141,10 +141,6 @@ namespace VROSC {
     float get_TopEffect();
     // public System.Void .ctor()
     // Offset: 0x8EEB1C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EnvironmentData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::EnvironmentData::.ctor");

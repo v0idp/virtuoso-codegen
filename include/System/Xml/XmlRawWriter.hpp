@@ -64,9 +64,9 @@ namespace System::Xml {
     // Deleting conversion operator: operator ::ArrayW<::Il2CppChar>
     constexpr operator ::ArrayW<::Il2CppChar>() const noexcept = delete;
     // Get instance field reference: protected System.Xml.XmlRawWriterBase64Encoder base64Encoder
-    [[deprecated]] ::System::Xml::XmlRawWriterBase64Encoder*& dyn_base64Encoder();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlRawWriterBase64Encoder*& dyn_base64Encoder();
     // Get instance field reference: protected System.Xml.IXmlNamespaceResolver resolver
-    [[deprecated]] ::System::Xml::IXmlNamespaceResolver*& dyn_resolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IXmlNamespaceResolver*& dyn_resolver();
     // System.Void set_NamespaceResolver(System.Xml.IXmlNamespaceResolver value)
     // Offset: 0x10254D0
     void set_NamespaceResolver(::System::Xml::IXmlNamespaceResolver* value);
@@ -115,7 +115,6 @@ namespace System::Xml {
     // Offset: 0x10255A8
     // Implemented from: System.Xml.XmlWriter
     // Base method: System.Void XmlWriter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlRawWriter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlRawWriter::.ctor");

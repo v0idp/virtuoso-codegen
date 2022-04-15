@@ -77,13 +77,13 @@ namespace Firebase::Storage::Internal {
     // Set static field: static private System.Collections.Generic.List`1<System.WeakReference> roots
     static void _set_roots(::System::Collections::Generic::List_1<::System::WeakReference*>* value);
     // Get instance field reference: private Firebase.Storage.Internal.ModuleLogger parent
-    [[deprecated]] ::Firebase::Storage::Internal::ModuleLogger*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::Internal::ModuleLogger*& dyn_parent();
     // Get instance field reference: private System.Collections.Generic.List`1<Firebase.Storage.Internal.ModuleLogger> children
-    [[deprecated]] ::System::Collections::Generic::List_1<::Firebase::Storage::Internal::ModuleLogger*>*& dyn_children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Firebase::Storage::Internal::ModuleLogger*>*& dyn_children();
     // Get instance field reference: private System.String tag
-    [[deprecated]] ::StringW& dyn_tag();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_tag();
     // Get instance field reference: private Firebase.LogLevel logLevel
-    [[deprecated]] ::Firebase::LogLevel& dyn_logLevel();
+    [[deprecated("Use field access instead!")]] ::Firebase::LogLevel& dyn_logLevel();
     // public Firebase.LogLevel get_Level()
     // Offset: 0x1835654
     ::Firebase::LogLevel get_Level();

@@ -113,30 +113,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.BlinkControllerButtonBehaviour settings
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour*& dyn_settings();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour*& dyn_settings();
     // Get instance field reference: private VROSC.HandType _hand
-    [[deprecated]] ::VROSC::HandType& dyn__hand();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn__hand();
     // Get instance field reference: private VROSC.TriggerButton _button
-    [[deprecated]] ::VROSC::TriggerButton& dyn__button();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn__button();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private System.Single _fadeTime
-    [[deprecated]] float& dyn__fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn__fadeTime();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStartAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onAssetStopAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onAssetStopAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStartAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStartAction();
     // Get instance field reference: private VROSC.BlinkControllerButtonBehaviour/VROSC.EventAction _onTimelineStopAction
-    [[deprecated]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
+    [[deprecated("Use field access instead!")]] ::VROSC::BlinkControllerButtonBehaviour::EventAction& dyn__onTimelineStopAction();
     // public System.Void .ctor()
     // Offset: 0x937830
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BlinkControllerButtonAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BlinkControllerButtonAsset::.ctor");

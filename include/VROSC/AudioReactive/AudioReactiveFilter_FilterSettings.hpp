@@ -76,7 +76,7 @@ namespace VROSC::AudioReactive {
       // Set static field: static public VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter Beat4
       static void _set_Beat4(::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter
     #pragma pack(pop)
     static check_size<sizeof(AudioReactiveFilter::FilterSettings::BeatFilter), 0 + sizeof(int)> __VROSC_AudioReactive_AudioReactiveFilter_FilterSettings_BeatFilterSizeCheck;
@@ -110,13 +110,13 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter _reactOn
-    [[deprecated]] ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter& dyn__reactOn();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::AudioReactiveFilter::FilterSettings::BeatFilter& dyn__reactOn();
     // Get instance field reference: private System.Int32 _chance
-    [[deprecated]] int& dyn__chance();
+    [[deprecated("Use field access instead!")]] int& dyn__chance();
     // Get instance field reference: private System.Int32 _cooldown
-    [[deprecated]] int& dyn__cooldown();
+    [[deprecated("Use field access instead!")]] int& dyn__cooldown();
     // Get instance field reference: private System.Int32 _onCoolDown
-    [[deprecated]] int& dyn__onCoolDown();
+    [[deprecated("Use field access instead!")]] int& dyn__onCoolDown();
     // private System.Void .ctor(VROSC.AudioReactive.AudioReactiveFilter/VROSC.AudioReactive.FilterSettings/VROSC.AudioReactive.BeatFilter reactOn, System.Int32 chance, System.Int32 cooldown)
     // Offset: 0x957838
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

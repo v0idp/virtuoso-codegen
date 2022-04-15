@@ -66,13 +66,13 @@ namespace UnityEngine {
     static_assert(sizeof(::UnityEngine::GUILayoutGroup*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <id>k__BackingField
-    [[deprecated]] int& dyn_$id$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$id$k__BackingField();
     // Get instance field reference: UnityEngine.GUILayoutGroup topLevel
-    [[deprecated]] ::UnityEngine::GUILayoutGroup*& dyn_topLevel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUILayoutGroup*& dyn_topLevel();
     // Get instance field reference: UnityEngineInternal.GenericStack layoutGroups
-    [[deprecated]] ::UnityEngineInternal::GenericStack*& dyn_layoutGroups();
+    [[deprecated("Use field access instead!")]] ::UnityEngineInternal::GenericStack*& dyn_layoutGroups();
     // Get instance field reference: UnityEngine.GUILayoutGroup windows
-    [[deprecated]] ::UnityEngine::GUILayoutGroup*& dyn_windows();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUILayoutGroup*& dyn_windows();
     // private System.Void set_id(System.Int32 value)
     // Offset: 0x1881498
     void set_id(int value);

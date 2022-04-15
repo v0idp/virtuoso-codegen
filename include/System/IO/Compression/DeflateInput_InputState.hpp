@@ -42,9 +42,9 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: readonly System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // Get instance field reference: readonly System.Int32 _startIndex
-    [[deprecated]] int& dyn__startIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__startIndex();
     // System.Void .ctor(System.Int32 count, System.Int32 startIndex)
     // Offset: 0x1693108
     // ABORTED: conflicts with another method.  InputState(int count, int startIndex);

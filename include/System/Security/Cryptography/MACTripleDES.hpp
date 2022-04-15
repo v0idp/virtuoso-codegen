@@ -79,15 +79,15 @@ namespace System::Security::Cryptography {
     // Deleting conversion operator: operator ::ArrayW<uint8_t>
     constexpr operator ::ArrayW<uint8_t>() const noexcept = delete;
     // Get instance field reference: private System.Security.Cryptography.ICryptoTransform m_encryptor
-    [[deprecated]] ::System::Security::Cryptography::ICryptoTransform*& dyn_m_encryptor();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::ICryptoTransform*& dyn_m_encryptor();
     // Get instance field reference: private System.Security.Cryptography.CryptoStream _cs
-    [[deprecated]] ::System::Security::Cryptography::CryptoStream*& dyn__cs();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::CryptoStream*& dyn__cs();
     // Get instance field reference: private System.Security.Cryptography.TailStream _ts
-    [[deprecated]] ::System::Security::Cryptography::TailStream*& dyn__ts();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::TailStream*& dyn__ts();
     // Get instance field reference: private System.Int32 m_bytesPerBlock
-    [[deprecated]] int& dyn_m_bytesPerBlock();
+    [[deprecated("Use field access instead!")]] int& dyn_m_bytesPerBlock();
     // Get instance field reference: private System.Security.Cryptography.TripleDES des
-    [[deprecated]] ::System::Security::Cryptography::TripleDES*& dyn_des();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::TripleDES*& dyn_des();
     // public System.Void .ctor()
     // Offset: 0x107BEAC
     // Implemented from: System.Security.Cryptography.KeyedHashAlgorithm

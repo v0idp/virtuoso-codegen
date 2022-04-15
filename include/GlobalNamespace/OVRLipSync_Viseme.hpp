@@ -129,7 +129,7 @@ namespace GlobalNamespace {
     // Set static field: static public OVRLipSync/Viseme ou
     static void _set_ou(::GlobalNamespace::OVRLipSync::Viseme value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OVRLipSync/Viseme
   #pragma pack(pop)
   static check_size<sizeof(OVRLipSync::Viseme), 0 + sizeof(int)> __GlobalNamespace_OVRLipSync_VisemeSizeCheck;

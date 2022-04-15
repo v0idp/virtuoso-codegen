@@ -97,19 +97,19 @@ namespace Firebase {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Uri <DatabaseUrl>k__BackingField
-    [[deprecated]] ::System::Uri*& dyn_$DatabaseUrl$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_$DatabaseUrl$k__BackingField();
     // Get instance field reference: private System.String <AppId>k__BackingField
-    [[deprecated]] ::StringW& dyn_$AppId$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$AppId$k__BackingField();
     // Get instance field reference: private System.String <ApiKey>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ApiKey$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ApiKey$k__BackingField();
     // Get instance field reference: private System.String <MessageSenderId>k__BackingField
-    [[deprecated]] ::StringW& dyn_$MessageSenderId$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$MessageSenderId$k__BackingField();
     // Get instance field reference: private System.String <StorageBucket>k__BackingField
-    [[deprecated]] ::StringW& dyn_$StorageBucket$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$StorageBucket$k__BackingField();
     // Get instance field reference: private System.String <ProjectId>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ProjectId$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ProjectId$k__BackingField();
     // Get instance field reference: private System.String <PackageName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$PackageName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$PackageName$k__BackingField();
     // public System.Void set_DatabaseUrl(System.Uri value)
     // Offset: 0x1882988
     void set_DatabaseUrl(::System::Uri* value);

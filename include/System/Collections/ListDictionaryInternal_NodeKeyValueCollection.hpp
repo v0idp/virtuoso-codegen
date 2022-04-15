@@ -58,9 +58,9 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: private System.Collections.ListDictionaryInternal list
-    [[deprecated]] ::System::Collections::ListDictionaryInternal*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ListDictionaryInternal*& dyn_list();
     // Get instance field reference: private System.Boolean isKeys
-    [[deprecated]] bool& dyn_isKeys();
+    [[deprecated("Use field access instead!")]] bool& dyn_isKeys();
     // private System.Int32 System.Collections.ICollection.get_Count()
     // Offset: 0xE53A1C
     int System_Collections_ICollection_get_Count();

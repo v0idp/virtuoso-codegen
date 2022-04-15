@@ -63,13 +63,13 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly Oculus.Platform.Models.UserList AssignedUsers
-    [[deprecated]] ::Oculus::Platform::Models::UserList*& dyn_AssignedUsers();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::UserList*& dyn_AssignedUsers();
     // Get instance field reference: public readonly System.Int32 MaxUsers
-    [[deprecated]] int& dyn_MaxUsers();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxUsers();
     // Get instance field reference: public readonly System.Int32 MinUsers
-    [[deprecated]] int& dyn_MinUsers();
+    [[deprecated("Use field access instead!")]] int& dyn_MinUsers();
     // Get instance field reference: public readonly System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x171BED4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -40,7 +40,7 @@ namespace UnityEngine::Networking {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // private System.Void Release()
     // Offset: 0x18BB27C
     void Release();

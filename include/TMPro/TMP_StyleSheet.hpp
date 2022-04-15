@@ -63,12 +63,19 @@ namespace TMPro {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<TMPro.TMP_Style> m_StyleList
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Style*>*& dyn_m_StyleList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Style*>*& dyn_m_StyleList();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_Style> m_StyleLookupDictionary
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_Style*>*& dyn_m_StyleLookupDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_Style*>*& dyn_m_StyleLookupDictionary();
     // System.Collections.Generic.List`1<TMPro.TMP_Style> get_styles()
     // Offset: 0x9B4158
     ::System::Collections::Generic::List_1<::TMPro::TMP_Style*>* get_styles();
+    // public System.Void .ctor()
+    // Offset: 0x9B45B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_StyleSheet* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_StyleSheet::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_StyleSheet*, creationType>()));
+    }
     // private System.Void Reset()
     // Offset: 0x9B4160
     void Reset();
@@ -84,17 +91,6 @@ namespace TMPro {
     // private System.Void LoadStyleDictionaryInternal()
     // Offset: 0x9B4164
     void LoadStyleDictionaryInternal();
-    // public System.Void .ctor()
-    // Offset: 0x9B45B8
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_StyleSheet* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_StyleSheet::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_StyleSheet*, creationType>()));
-    }
   }; // TMPro.TMP_StyleSheet
   #pragma pack(pop)
   static check_size<sizeof(TMP_StyleSheet), 32 + sizeof(::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_Style*>*)> __TMPro_TMP_StyleSheetSizeCheck;
@@ -109,6 +105,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_StyleSheet*), "get_styles", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_StyleSheet::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_StyleSheet::Reset
 // Il2CppName: Reset
 template<>
@@ -151,7 +151,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_StyleSheet*), "LoadStyleDictionaryInternal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_StyleSheet::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

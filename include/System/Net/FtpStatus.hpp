@@ -46,9 +46,9 @@ namespace System::Net {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly System.Net.FtpStatusCode statusCode
-    [[deprecated]] ::System::Net::FtpStatusCode& dyn_statusCode();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpStatusCode& dyn_statusCode();
     // Get instance field reference: private readonly System.String statusDescription
-    [[deprecated]] ::StringW& dyn_statusDescription();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_statusDescription();
     // public System.Net.FtpStatusCode get_StatusCode()
     // Offset: 0xF05688
     ::System::Net::FtpStatusCode get_StatusCode();

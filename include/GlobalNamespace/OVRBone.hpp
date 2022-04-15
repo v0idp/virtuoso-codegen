@@ -58,11 +58,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private OVRSkeleton/BoneId <Id>k__BackingField
-    [[deprecated]] ::GlobalNamespace::OVRSkeleton::BoneId& dyn_$Id$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeleton::BoneId& dyn_$Id$k__BackingField();
     // Get instance field reference: private System.Int16 <ParentBoneIndex>k__BackingField
-    [[deprecated]] int16_t& dyn_$ParentBoneIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_$ParentBoneIndex$k__BackingField();
     // Get instance field reference: private UnityEngine.Transform <Transform>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$Transform$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$Transform$k__BackingField();
     // public OVRSkeleton/BoneId get_Id()
     // Offset: 0x98EF90
     ::GlobalNamespace::OVRSkeleton::BoneId get_Id();
@@ -81,21 +81,19 @@ namespace GlobalNamespace {
     // public System.Void set_Transform(UnityEngine.Transform value)
     // Offset: 0x98EFB8
     void set_Transform(::UnityEngine::Transform* value);
+    // public System.Void .ctor()
+    // Offset: 0x98EFC0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRBone* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRBone::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRBone*, creationType>()));
+    }
     // public System.Void .ctor(OVRSkeleton/BoneId id, System.Int16 parentBoneIndex, UnityEngine.Transform trans)
     // Offset: 0x98EFC8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRBone* New_ctor(::GlobalNamespace::OVRSkeleton::BoneId id, int16_t parentBoneIndex, ::UnityEngine::Transform* trans) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRBone::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRBone*, creationType>(id, parentBoneIndex, trans)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0x98EFC0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRBone* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRBone::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRBone*, creationType>()));
     }
   }; // OVRBone
   #pragma pack(pop)

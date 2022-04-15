@@ -336,7 +336,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.XmlTextReaderImpl/System.Xml.ParsingFunction InReadElementContentAsBinary
       static void _set_InReadElementContentAsBinary(::System::Xml::XmlTextReaderImpl::ParsingFunction value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.XmlTextReaderImpl/System.Xml.ParsingFunction
     #pragma pack(pop)
     static check_size<sizeof(XmlTextReaderImpl::ParsingFunction), 0 + sizeof(int)> __System_Xml_XmlTextReaderImpl_ParsingFunctionSizeCheck;
@@ -384,7 +384,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.XmlTextReaderImpl/System.Xml.ParsingMode SkipContent
       static void _set_SkipContent(::System::Xml::XmlTextReaderImpl::ParsingMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.XmlTextReaderImpl/System.Xml.ParsingMode
     #pragma pack(pop)
     static check_size<sizeof(XmlTextReaderImpl::ParsingMode), 0 + sizeof(int)> __System_Xml_XmlTextReaderImpl_ParsingModeSizeCheck;
@@ -504,7 +504,7 @@ namespace System::Xml {
       // Set static field: static public System.Xml.XmlTextReaderImpl/System.Xml.IncrementalReadState ReadContentAsBinary_End
       static void _set_ReadContentAsBinary_End(::System::Xml::XmlTextReaderImpl::IncrementalReadState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.XmlTextReaderImpl/System.Xml.IncrementalReadState
     #pragma pack(pop)
     static check_size<sizeof(XmlTextReaderImpl::IncrementalReadState), 0 + sizeof(int)> __System_Xml_XmlTextReaderImpl_IncrementalReadStateSizeCheck;
@@ -655,47 +655,47 @@ namespace System::Xml {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Char[] chars
-      [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_chars();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_chars();
       // Get instance field reference: System.Int32 charPos
-      [[deprecated]] int& dyn_charPos();
+      [[deprecated("Use field access instead!")]] int& dyn_charPos();
       // Get instance field reference: System.Int32 charsUsed
-      [[deprecated]] int& dyn_charsUsed();
+      [[deprecated("Use field access instead!")]] int& dyn_charsUsed();
       // Get instance field reference: System.Text.Encoding encoding
-      [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+      [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
       // Get instance field reference: System.Boolean appendMode
-      [[deprecated]] bool& dyn_appendMode();
+      [[deprecated("Use field access instead!")]] bool& dyn_appendMode();
       // Get instance field reference: System.IO.Stream stream
-      [[deprecated]] ::System::IO::Stream*& dyn_stream();
+      [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_stream();
       // Get instance field reference: System.Text.Decoder decoder
-      [[deprecated]] ::System::Text::Decoder*& dyn_decoder();
+      [[deprecated("Use field access instead!")]] ::System::Text::Decoder*& dyn_decoder();
       // Get instance field reference: System.Byte[] bytes
-      [[deprecated]] ::ArrayW<uint8_t>& dyn_bytes();
+      [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_bytes();
       // Get instance field reference: System.Int32 bytePos
-      [[deprecated]] int& dyn_bytePos();
+      [[deprecated("Use field access instead!")]] int& dyn_bytePos();
       // Get instance field reference: System.Int32 bytesUsed
-      [[deprecated]] int& dyn_bytesUsed();
+      [[deprecated("Use field access instead!")]] int& dyn_bytesUsed();
       // Get instance field reference: System.IO.TextReader textReader
-      [[deprecated]] ::System::IO::TextReader*& dyn_textReader();
+      [[deprecated("Use field access instead!")]] ::System::IO::TextReader*& dyn_textReader();
       // Get instance field reference: System.Int32 lineNo
-      [[deprecated]] int& dyn_lineNo();
+      [[deprecated("Use field access instead!")]] int& dyn_lineNo();
       // Get instance field reference: System.Int32 lineStartPos
-      [[deprecated]] int& dyn_lineStartPos();
+      [[deprecated("Use field access instead!")]] int& dyn_lineStartPos();
       // Get instance field reference: System.String baseUriStr
-      [[deprecated]] ::StringW& dyn_baseUriStr();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_baseUriStr();
       // Get instance field reference: System.Uri baseUri
-      [[deprecated]] ::System::Uri*& dyn_baseUri();
+      [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_baseUri();
       // Get instance field reference: System.Boolean isEof
-      [[deprecated]] bool& dyn_isEof();
+      [[deprecated("Use field access instead!")]] bool& dyn_isEof();
       // Get instance field reference: System.Boolean isStreamEof
-      [[deprecated]] bool& dyn_isStreamEof();
+      [[deprecated("Use field access instead!")]] bool& dyn_isStreamEof();
       // Get instance field reference: System.Xml.IDtdEntityInfo entity
-      [[deprecated]] ::System::Xml::IDtdEntityInfo*& dyn_entity();
+      [[deprecated("Use field access instead!")]] ::System::Xml::IDtdEntityInfo*& dyn_entity();
       // Get instance field reference: System.Int32 entityId
-      [[deprecated]] int& dyn_entityId();
+      [[deprecated("Use field access instead!")]] int& dyn_entityId();
       // Get instance field reference: System.Boolean eolNormalized
-      [[deprecated]] bool& dyn_eolNormalized();
+      [[deprecated("Use field access instead!")]] bool& dyn_eolNormalized();
       // Get instance field reference: System.Boolean entityResolvedManually
-      [[deprecated]] bool& dyn_entityResolvedManually();
+      [[deprecated("Use field access instead!")]] bool& dyn_entityResolvedManually();
       // System.Int32 get_LineNo()
       // Offset: 0xC23FDC
       int get_LineNo();
@@ -1223,159 +1223,159 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Xml::IXmlNamespaceResolver*>(this);
     }
     // Get instance field reference: private readonly System.Boolean useAsync
-    [[deprecated]] bool& dyn_useAsync();
+    [[deprecated("Use field access instead!")]] bool& dyn_useAsync();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.LaterInitParam laterInitParam
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::LaterInitParam*& dyn_laterInitParam();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::LaterInitParam*& dyn_laterInitParam();
     // Get instance field reference: private System.Xml.XmlCharType xmlCharType
-    [[deprecated]] ::System::Xml::XmlCharType& dyn_xmlCharType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlCharType& dyn_xmlCharType();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.ParsingState ps
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::ParsingState& dyn_ps();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::ParsingState& dyn_ps();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.ParsingFunction parsingFunction
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::ParsingFunction& dyn_parsingFunction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::ParsingFunction& dyn_parsingFunction();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.ParsingFunction nextParsingFunction
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::ParsingFunction& dyn_nextParsingFunction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::ParsingFunction& dyn_nextParsingFunction();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.ParsingFunction nextNextParsingFunction
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::ParsingFunction& dyn_nextNextParsingFunction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::ParsingFunction& dyn_nextNextParsingFunction();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.NodeData[] nodes
-    [[deprecated]] ::ArrayW<::System::Xml::XmlTextReaderImpl::NodeData*>& dyn_nodes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlTextReaderImpl::NodeData*>& dyn_nodes();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.NodeData curNode
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::NodeData*& dyn_curNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::NodeData*& dyn_curNode();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: private System.Int32 curAttrIndex
-    [[deprecated]] int& dyn_curAttrIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_curAttrIndex();
     // Get instance field reference: private System.Int32 attrCount
-    [[deprecated]] int& dyn_attrCount();
+    [[deprecated("Use field access instead!")]] int& dyn_attrCount();
     // Get instance field reference: private System.Int32 attrHashtable
-    [[deprecated]] int& dyn_attrHashtable();
+    [[deprecated("Use field access instead!")]] int& dyn_attrHashtable();
     // Get instance field reference: private System.Int32 attrDuplWalkCount
-    [[deprecated]] int& dyn_attrDuplWalkCount();
+    [[deprecated("Use field access instead!")]] int& dyn_attrDuplWalkCount();
     // Get instance field reference: private System.Boolean attrNeedNamespaceLookup
-    [[deprecated]] bool& dyn_attrNeedNamespaceLookup();
+    [[deprecated("Use field access instead!")]] bool& dyn_attrNeedNamespaceLookup();
     // Get instance field reference: private System.Boolean fullAttrCleanup
-    [[deprecated]] bool& dyn_fullAttrCleanup();
+    [[deprecated("Use field access instead!")]] bool& dyn_fullAttrCleanup();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.NodeData[] attrDuplSortingArray
-    [[deprecated]] ::ArrayW<::System::Xml::XmlTextReaderImpl::NodeData*>& dyn_attrDuplSortingArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlTextReaderImpl::NodeData*>& dyn_attrDuplSortingArray();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Boolean nameTableFromSettings
-    [[deprecated]] bool& dyn_nameTableFromSettings();
+    [[deprecated("Use field access instead!")]] bool& dyn_nameTableFromSettings();
     // Get instance field reference: private System.Xml.XmlResolver xmlResolver
-    [[deprecated]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlResolver*& dyn_xmlResolver();
     // Get instance field reference: private System.String url
-    [[deprecated]] ::StringW& dyn_url();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_url();
     // Get instance field reference: private System.Boolean normalize
-    [[deprecated]] bool& dyn_normalize();
+    [[deprecated("Use field access instead!")]] bool& dyn_normalize();
     // Get instance field reference: private System.Boolean supportNamespaces
-    [[deprecated]] bool& dyn_supportNamespaces();
+    [[deprecated("Use field access instead!")]] bool& dyn_supportNamespaces();
     // Get instance field reference: private System.Xml.WhitespaceHandling whitespaceHandling
-    [[deprecated]] ::System::Xml::WhitespaceHandling& dyn_whitespaceHandling();
+    [[deprecated("Use field access instead!")]] ::System::Xml::WhitespaceHandling& dyn_whitespaceHandling();
     // Get instance field reference: private System.Xml.DtdProcessing dtdProcessing
-    [[deprecated]] ::System::Xml::DtdProcessing& dyn_dtdProcessing();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DtdProcessing& dyn_dtdProcessing();
     // Get instance field reference: private System.Xml.EntityHandling entityHandling
-    [[deprecated]] ::System::Xml::EntityHandling& dyn_entityHandling();
+    [[deprecated("Use field access instead!")]] ::System::Xml::EntityHandling& dyn_entityHandling();
     // Get instance field reference: private System.Boolean ignorePIs
-    [[deprecated]] bool& dyn_ignorePIs();
+    [[deprecated("Use field access instead!")]] bool& dyn_ignorePIs();
     // Get instance field reference: private System.Boolean ignoreComments
-    [[deprecated]] bool& dyn_ignoreComments();
+    [[deprecated("Use field access instead!")]] bool& dyn_ignoreComments();
     // Get instance field reference: private System.Boolean checkCharacters
-    [[deprecated]] bool& dyn_checkCharacters();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkCharacters();
     // Get instance field reference: private System.Int32 lineNumberOffset
-    [[deprecated]] int& dyn_lineNumberOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNumberOffset();
     // Get instance field reference: private System.Int32 linePositionOffset
-    [[deprecated]] int& dyn_linePositionOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_linePositionOffset();
     // Get instance field reference: private System.Boolean closeInput
-    [[deprecated]] bool& dyn_closeInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_closeInput();
     // Get instance field reference: private System.Int64 maxCharactersInDocument
-    [[deprecated]] int64_t& dyn_maxCharactersInDocument();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_maxCharactersInDocument();
     // Get instance field reference: private System.Int64 maxCharactersFromEntities
-    [[deprecated]] int64_t& dyn_maxCharactersFromEntities();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_maxCharactersFromEntities();
     // Get instance field reference: private System.Boolean v1Compat
-    [[deprecated]] bool& dyn_v1Compat();
+    [[deprecated("Use field access instead!")]] bool& dyn_v1Compat();
     // Get instance field reference: private System.Xml.XmlNamespaceManager namespaceManager
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn_namespaceManager();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn_namespaceManager();
     // Get instance field reference: private System.String lastPrefix
-    [[deprecated]] ::StringW& dyn_lastPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_lastPrefix();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.XmlContext xmlContext
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::XmlContext*& dyn_xmlContext();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::XmlContext*& dyn_xmlContext();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.ParsingState[] parsingStatesStack
-    [[deprecated]] ::ArrayW<::System::Xml::XmlTextReaderImpl::ParsingState>& dyn_parsingStatesStack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlTextReaderImpl::ParsingState>& dyn_parsingStatesStack();
     // Get instance field reference: private System.Int32 parsingStatesStackTop
-    [[deprecated]] int& dyn_parsingStatesStackTop();
+    [[deprecated("Use field access instead!")]] int& dyn_parsingStatesStackTop();
     // Get instance field reference: private System.String reportedBaseUri
-    [[deprecated]] ::StringW& dyn_reportedBaseUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_reportedBaseUri();
     // Get instance field reference: private System.Text.Encoding reportedEncoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_reportedEncoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_reportedEncoding();
     // Get instance field reference: private System.Xml.IDtdInfo dtdInfo
-    [[deprecated]] ::System::Xml::IDtdInfo*& dyn_dtdInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IDtdInfo*& dyn_dtdInfo();
     // Get instance field reference: private System.Xml.XmlNodeType fragmentType
-    [[deprecated]] ::System::Xml::XmlNodeType& dyn_fragmentType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeType& dyn_fragmentType();
     // Get instance field reference: private System.Xml.XmlParserContext fragmentParserContext
-    [[deprecated]] ::System::Xml::XmlParserContext*& dyn_fragmentParserContext();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlParserContext*& dyn_fragmentParserContext();
     // Get instance field reference: private System.Boolean fragment
-    [[deprecated]] bool& dyn_fragment();
+    [[deprecated("Use field access instead!")]] bool& dyn_fragment();
     // Get instance field reference: private System.Xml.IncrementalReadDecoder incReadDecoder
-    [[deprecated]] ::System::Xml::IncrementalReadDecoder*& dyn_incReadDecoder();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IncrementalReadDecoder*& dyn_incReadDecoder();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.IncrementalReadState incReadState
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::IncrementalReadState& dyn_incReadState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::IncrementalReadState& dyn_incReadState();
     // Get instance field reference: private System.Xml.LineInfo incReadLineInfo
-    [[deprecated]] ::System::Xml::LineInfo& dyn_incReadLineInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::LineInfo& dyn_incReadLineInfo();
     // Get instance field reference: private System.Int32 incReadDepth
-    [[deprecated]] int& dyn_incReadDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_incReadDepth();
     // Get instance field reference: private System.Int32 incReadLeftStartPos
-    [[deprecated]] int& dyn_incReadLeftStartPos();
+    [[deprecated("Use field access instead!")]] int& dyn_incReadLeftStartPos();
     // Get instance field reference: private System.Int32 incReadLeftEndPos
-    [[deprecated]] int& dyn_incReadLeftEndPos();
+    [[deprecated("Use field access instead!")]] int& dyn_incReadLeftEndPos();
     // Get instance field reference: private System.Int32 attributeValueBaseEntityId
-    [[deprecated]] int& dyn_attributeValueBaseEntityId();
+    [[deprecated("Use field access instead!")]] int& dyn_attributeValueBaseEntityId();
     // Get instance field reference: private System.Boolean emptyEntityInAttributeResolved
-    [[deprecated]] bool& dyn_emptyEntityInAttributeResolved();
+    [[deprecated("Use field access instead!")]] bool& dyn_emptyEntityInAttributeResolved();
     // Get instance field reference: private System.Xml.IValidationEventHandling validationEventHandling
-    [[deprecated]] ::System::Xml::IValidationEventHandling*& dyn_validationEventHandling();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IValidationEventHandling*& dyn_validationEventHandling();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.OnDefaultAttributeUseDelegate onDefaultAttributeUse
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::OnDefaultAttributeUseDelegate*& dyn_onDefaultAttributeUse();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::OnDefaultAttributeUseDelegate*& dyn_onDefaultAttributeUse();
     // Get instance field reference: private System.Boolean validatingReaderCompatFlag
-    [[deprecated]] bool& dyn_validatingReaderCompatFlag();
+    [[deprecated("Use field access instead!")]] bool& dyn_validatingReaderCompatFlag();
     // Get instance field reference: private System.Boolean addDefaultAttributesAndNormalize
-    [[deprecated]] bool& dyn_addDefaultAttributesAndNormalize();
+    [[deprecated("Use field access instead!")]] bool& dyn_addDefaultAttributesAndNormalize();
     // Get instance field reference: private System.Text.StringBuilder stringBuilder
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_stringBuilder();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_stringBuilder();
     // Get instance field reference: private System.Boolean rootElementParsed
-    [[deprecated]] bool& dyn_rootElementParsed();
+    [[deprecated("Use field access instead!")]] bool& dyn_rootElementParsed();
     // Get instance field reference: private System.Boolean standalone
-    [[deprecated]] bool& dyn_standalone();
+    [[deprecated("Use field access instead!")]] bool& dyn_standalone();
     // Get instance field reference: private System.Int32 nextEntityId
-    [[deprecated]] int& dyn_nextEntityId();
+    [[deprecated("Use field access instead!")]] int& dyn_nextEntityId();
     // Get instance field reference: private System.Xml.XmlTextReaderImpl/System.Xml.ParsingMode parsingMode
-    [[deprecated]] ::System::Xml::XmlTextReaderImpl::ParsingMode& dyn_parsingMode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlTextReaderImpl::ParsingMode& dyn_parsingMode();
     // Get instance field reference: private System.Xml.ReadState readState
-    [[deprecated]] ::System::Xml::ReadState& dyn_readState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ReadState& dyn_readState();
     // Get instance field reference: private System.Xml.IDtdEntityInfo lastEntity
-    [[deprecated]] ::System::Xml::IDtdEntityInfo*& dyn_lastEntity();
+    [[deprecated("Use field access instead!")]] ::System::Xml::IDtdEntityInfo*& dyn_lastEntity();
     // Get instance field reference: private System.Boolean afterResetState
-    [[deprecated]] bool& dyn_afterResetState();
+    [[deprecated("Use field access instead!")]] bool& dyn_afterResetState();
     // Get instance field reference: private System.Int32 documentStartBytePos
-    [[deprecated]] int& dyn_documentStartBytePos();
+    [[deprecated("Use field access instead!")]] int& dyn_documentStartBytePos();
     // Get instance field reference: private System.Int32 readValueOffset
-    [[deprecated]] int& dyn_readValueOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_readValueOffset();
     // Get instance field reference: private System.Int64 charactersInDocument
-    [[deprecated]] int64_t& dyn_charactersInDocument();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_charactersInDocument();
     // Get instance field reference: private System.Int64 charactersFromEntities
-    [[deprecated]] int64_t& dyn_charactersFromEntities();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_charactersFromEntities();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.IDtdEntityInfo,System.Xml.IDtdEntityInfo> currentEntities
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::IDtdEntityInfo*, ::System::Xml::IDtdEntityInfo*>*& dyn_currentEntities();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::IDtdEntityInfo*, ::System::Xml::IDtdEntityInfo*>*& dyn_currentEntities();
     // Get instance field reference: private System.Boolean disableUndeclaredEntityCheck
-    [[deprecated]] bool& dyn_disableUndeclaredEntityCheck();
+    [[deprecated("Use field access instead!")]] bool& dyn_disableUndeclaredEntityCheck();
     // Get instance field reference: private System.Xml.XmlReader outerReader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn_outerReader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn_outerReader();
     // Get instance field reference: private System.Boolean xmlResolverIsSet
-    [[deprecated]] bool& dyn_xmlResolverIsSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_xmlResolverIsSet();
     // Get instance field reference: private System.String Xml
-    [[deprecated]] ::StringW& dyn_Xml();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Xml();
     // Get instance field reference: private System.String XmlNs
-    [[deprecated]] ::StringW& dyn_XmlNs();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XmlNs();
     // Get instance field reference: private System.Threading.Tasks.Task`1<System.Tuple`4<System.Int32,System.Int32,System.Int32,System.Boolean>> parseText_dummyTask
-    [[deprecated]] ::System::Threading::Tasks::Task_1<::System::Tuple_4<int, int, int, bool>*>*& dyn_parseText_dummyTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task_1<::System::Tuple_4<int, int, int, bool>*>*& dyn_parseText_dummyTask();
     // System.Void set_OuterReader(System.Xml.XmlReader value)
     // Offset: 0x1566D04
     void set_OuterReader(::System::Xml::XmlReader* value);

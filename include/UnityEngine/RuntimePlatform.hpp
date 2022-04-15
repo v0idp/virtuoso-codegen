@@ -300,7 +300,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.RuntimePlatform PS5
     static void _set_PS5(::UnityEngine::RuntimePlatform value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.RuntimePlatform
   #pragma pack(pop)
   static check_size<sizeof(RuntimePlatform), 0 + sizeof(int)> __UnityEngine_RuntimePlatformSizeCheck;

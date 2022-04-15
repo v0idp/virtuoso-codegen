@@ -74,38 +74,36 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _exactResultText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__exactResultText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__exactResultText();
     // Get instance field reference: private VROSC.AdjustableMesh _starMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__starMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__starMesh();
     // Get instance field reference: private VROSC.MinMaxFloat _uvRange
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__uvRange();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__uvRange();
     // Get instance field reference: private System.Single _previewValue
-    [[deprecated]] float& dyn__previewValue();
+    [[deprecated("Use field access instead!")]] float& dyn__previewValue();
+    // public System.Void .ctor()
+    // Offset: 0x192F7FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StarRatingDisplayUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StarRatingDisplayUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StarRatingDisplayUI*, creationType>()));
+    }
     // public System.Void SetValue(System.Single value)
     // Offset: 0x192F644
     void SetValue(float value);
     // private System.Void UpdateSlider(System.Single value)
     // Offset: 0x192F71C
     void UpdateSlider(float value);
-    // public System.Void .ctor()
-    // Offset: 0x192F7FC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StarRatingDisplayUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StarRatingDisplayUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StarRatingDisplayUI*, creationType>()));
-    }
   }; // VROSC.StarRatingDisplayUI
   #pragma pack(pop)
   static check_size<sizeof(StarRatingDisplayUI), 48 + sizeof(float)> __VROSC_StarRatingDisplayUISizeCheck;
   static_assert(sizeof(StarRatingDisplayUI) == 0x34);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::StarRatingDisplayUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::StarRatingDisplayUI::SetValue
 // Il2CppName: SetValue
 template<>
@@ -124,7 +122,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::StarRatingDisplayUI*), "UpdateSlider", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: VROSC::StarRatingDisplayUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

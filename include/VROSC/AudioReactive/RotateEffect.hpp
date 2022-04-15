@@ -77,11 +77,11 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::ArrayW<::VROSC::AudioReactive::ConstantRotationData*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.RotateEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::RotateEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::RotateEffectData*& dyn__data();
     // Get instance field reference: private UnityEngine.Transform[] _transforms
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn__transforms();
     // Get instance field reference: private VROSC.AudioReactive.ConstantRotationData[] _constantRotationData
-    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::ConstantRotationData*>& dyn__constantRotationData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AudioReactive::ConstantRotationData*>& dyn__constantRotationData();
     // public VROSC.AudioReactive.RotateEffectData get_Data()
     // Offset: 0xB371A4
     ::VROSC::AudioReactive::RotateEffectData* get_Data();
@@ -96,7 +96,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RotateEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::RotateEffect::.ctor");

@@ -132,29 +132,29 @@ namespace System::Xml::Serialization {
     // Set static field: static private System.String[] keywords
     static void _set_keywords(::ArrayW<::StringW> value);
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: private System.String elementName
-    [[deprecated]] ::StringW& dyn_elementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_elementName();
     // Get instance field reference: private System.Xml.Serialization.SchemaTypes sType
-    [[deprecated]] ::System::Xml::Serialization::SchemaTypes& dyn_sType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::SchemaTypes& dyn_sType();
     // Get instance field reference: private System.Type listItemType
-    [[deprecated]] ::System::Type*& dyn_listItemType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_listItemType();
     // Get instance field reference: private System.String typeName
-    [[deprecated]] ::StringW& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeName();
     // Get instance field reference: private System.String fullTypeName
-    [[deprecated]] ::StringW& dyn_fullTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fullTypeName();
     // Get instance field reference: private System.Xml.Serialization.TypeData listItemTypeData
-    [[deprecated]] ::System::Xml::Serialization::TypeData*& dyn_listItemTypeData();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::TypeData*& dyn_listItemTypeData();
     // Get instance field reference: private System.Xml.Serialization.TypeData mappedType
-    [[deprecated]] ::System::Xml::Serialization::TypeData*& dyn_mappedType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::TypeData*& dyn_mappedType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaPatternFacet facet
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaPatternFacet*& dyn_facet();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaPatternFacet*& dyn_facet();
     // Get instance field reference: private System.Reflection.MethodInfo typeConvertor
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_typeConvertor();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_typeConvertor();
     // Get instance field reference: private System.Boolean hasPublicConstructor
-    [[deprecated]] bool& dyn_hasPublicConstructor();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasPublicConstructor();
     // Get instance field reference: private System.Boolean nullableOverride
-    [[deprecated]] bool& dyn_nullableOverride();
+    [[deprecated("Use field access instead!")]] bool& dyn_nullableOverride();
     // public System.String get_TypeName()
     // Offset: 0xF70678
     ::StringW get_TypeName();

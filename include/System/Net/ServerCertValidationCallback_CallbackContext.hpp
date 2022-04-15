@@ -67,15 +67,15 @@ namespace System::Net {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: readonly System.Object request
-    [[deprecated]] ::Il2CppObject*& dyn_request();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_request();
     // Get instance field reference: readonly System.Security.Cryptography.X509Certificates.X509Certificate certificate
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_certificate();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_certificate();
     // Get instance field reference: readonly System.Security.Cryptography.X509Certificates.X509Chain chain
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Chain*& dyn_chain();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Chain*& dyn_chain();
     // Get instance field reference: readonly System.Net.Security.SslPolicyErrors sslPolicyErrors
-    [[deprecated]] ::System::Net::Security::SslPolicyErrors& dyn_sslPolicyErrors();
+    [[deprecated("Use field access instead!")]] ::System::Net::Security::SslPolicyErrors& dyn_sslPolicyErrors();
     // Get instance field reference: System.Boolean result
-    [[deprecated]] bool& dyn_result();
+    [[deprecated("Use field access instead!")]] bool& dyn_result();
     // System.Void .ctor(System.Object request, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
     // Offset: 0x9FDE7C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

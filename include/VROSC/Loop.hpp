@@ -54,13 +54,13 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Single[] LoopAudio
-    [[deprecated]] ::ArrayW<float>& dyn_LoopAudio();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_LoopAudio();
     // Get instance field reference: public System.Single[] LoopTailAudio
-    [[deprecated]] ::ArrayW<float>& dyn_LoopTailAudio();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_LoopTailAudio();
     // Get instance field reference: public System.Int32 LoopLength
-    [[deprecated]] int& dyn_LoopLength();
+    [[deprecated("Use field access instead!")]] int& dyn_LoopLength();
     // Get instance field reference: private System.Int32 <GlobalSyncStartOffset>k__BackingField
-    [[deprecated]] int& dyn_$GlobalSyncStartOffset$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$GlobalSyncStartOffset$k__BackingField();
     // public System.Int32 get_TailLength()
     // Offset: 0x19B4A2C
     int get_TailLength();
@@ -76,21 +76,19 @@ namespace VROSC {
     // public System.Single get_BeatLengthMultiplier()
     // Offset: 0x19B4B10
     float get_BeatLengthMultiplier();
+    // public System.Void .ctor()
+    // Offset: 0x19B4C80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Loop* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Loop::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Loop*, creationType>()));
+    }
     // public System.Single GetAudio(System.Int32 index, System.Boolean addTail)
     // Offset: 0x19B4B7C
     float GetAudio(int index, bool addTail);
     // public System.Int32 GetNextLoopStartAfterSample(System.Int32 sample)
     // Offset: 0x19B4BE4
     int GetNextLoopStartAfterSample(int sample);
-    // public System.Void .ctor()
-    // Offset: 0x19B4C80
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Loop* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Loop::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Loop*, creationType>()));
-    }
   }; // VROSC.Loop
   #pragma pack(pop)
   static check_size<sizeof(Loop), 36 + sizeof(int)> __VROSC_LoopSizeCheck;
@@ -138,6 +136,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::Loop*), "get_BeatLengthMultiplier", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::Loop::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Loop::GetAudio
 // Il2CppName: GetAudio
 template<>
@@ -157,7 +159,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC:
     return ::il2cpp_utils::FindMethod(classof(VROSC::Loop*), "GetNextLoopStartAfterSample", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sample});
   }
 };
-// Writing MetadataGetter for method: VROSC::Loop::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

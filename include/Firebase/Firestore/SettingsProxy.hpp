@@ -54,15 +54,22 @@ namespace Firebase::Firestore {
     // Set static field: static public readonly System.Int64 kCacheSizeUnlimited
     static void _set_kCacheSizeUnlimited(int64_t value);
     // Get instance field reference: private System.Runtime.InteropServices.HandleRef swigCPtr
-    [[deprecated]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::HandleRef& dyn_swigCPtr();
     // Get instance field reference: protected System.Boolean swigCMemOwn
-    [[deprecated]] bool& dyn_swigCMemOwn();
+    [[deprecated("Use field access instead!")]] bool& dyn_swigCMemOwn();
     // System.Void .ctor(System.IntPtr cPtr, System.Boolean cMemoryOwn)
     // Offset: 0xD5F0A8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SettingsProxy* New_ctor(::System::IntPtr cPtr, bool cMemoryOwn) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SettingsProxy::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SettingsProxy*, creationType>(cPtr, cMemoryOwn)));
+    }
+    // public System.Void .ctor()
+    // Offset: 0xD5B3B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SettingsProxy* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SettingsProxy::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SettingsProxy*, creationType>()));
     }
     // static private System.Void .cctor()
     // Offset: 0xD645E4
@@ -97,15 +104,6 @@ namespace Firebase::Firestore {
     // public System.Void set_cache_size_bytes(System.Int64 value)
     // Offset: 0xD5B63C
     void set_cache_size_bytes(int64_t value);
-    // public System.Void .ctor()
-    // Offset: 0xD5B3B8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SettingsProxy* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::SettingsProxy::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SettingsProxy*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xD643E4
     // Implemented from: System.Object
@@ -117,6 +115,10 @@ namespace Firebase::Firestore {
   static_assert(sizeof(SettingsProxy) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -214,10 +216,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Firestore::SettingsProxy*), "set_cache_size_bytes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Firestore::SettingsProxy::Finalize
 // Il2CppName: Finalize
 template<>

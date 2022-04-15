@@ -44,29 +44,27 @@ namespace NatSuite::Devices {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public NatSuite.Devices.SampleBufferDelegate delegate
-    [[deprecated]] ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
-    // private System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
-    // Offset: 0x196490C
-    void OnAudioFilterRead(::ArrayW<float> data, int channels);
+    [[deprecated("Use field access instead!")]] ::NatSuite::Devices::SampleBufferDelegate*& dyn_delegate();
     // public System.Void .ctor()
     // Offset: 0x1964924
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MixerDevice::MixerDeviceAttachment* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::NatSuite::Devices::MixerDevice::MixerDeviceAttachment::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MixerDevice::MixerDeviceAttachment*, creationType>()));
     }
+    // private System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
+    // Offset: 0x196490C
+    void OnAudioFilterRead(::ArrayW<float> data, int channels);
   }; // NatSuite.Devices.MixerDevice/NatSuite.Devices.MixerDeviceAttachment
   #pragma pack(pop)
   static check_size<sizeof(MixerDevice::MixerDeviceAttachment), 24 + sizeof(::NatSuite::Devices::SampleBufferDelegate*)> __NatSuite_Devices_MixerDevice_MixerDeviceAttachmentSizeCheck;
   static_assert(sizeof(MixerDevice::MixerDeviceAttachment) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: NatSuite::Devices::MixerDevice::MixerDeviceAttachment::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: NatSuite::Devices::MixerDevice::MixerDeviceAttachment::OnAudioFilterRead
 // Il2CppName: OnAudioFilterRead
 template<>
@@ -77,7 +75,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (NatSu
     return ::il2cpp_utils::FindMethod(classof(NatSuite::Devices::MixerDevice::MixerDeviceAttachment*), "OnAudioFilterRead", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data, channels});
   }
 };
-// Writing MetadataGetter for method: NatSuite::Devices::MixerDevice::MixerDeviceAttachment::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

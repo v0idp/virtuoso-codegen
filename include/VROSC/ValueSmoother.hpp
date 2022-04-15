@@ -58,9 +58,9 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<float>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _smoothFrames
-    [[deprecated]] int& dyn__smoothFrames();
+    [[deprecated("Use field access instead!")]] int& dyn__smoothFrames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single> _buffer
-    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<float>*& dyn__buffer();
     // private VROSC.Signal TransformValue(VROSC.Signal signal)
     // Offset: 0x19218EC
     ::VROSC::Signal* TransformValue(::VROSC::Signal* signal);
@@ -69,11 +69,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ValueSmoother* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ValueSmoother::.ctor");

@@ -158,19 +158,19 @@ namespace Firebase::Firestore {
     // Set static field: static private System.Func`2<Firebase.Firestore.FirestoreProxy,Firebase.Firestore.WriteBatch> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::Firebase::Firestore::FirestoreProxy*, ::Firebase::Firestore::WriteBatch*>* value);
     // Get instance field reference: private readonly System.Object _isInCppInstanceCacheLock
-    [[deprecated]] ::Il2CppObject*& dyn__isInCppInstanceCacheLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__isInCppInstanceCacheLock();
     // Get instance field reference: private System.Boolean _isInCppInstanceCache
-    [[deprecated]] bool& dyn__isInCppInstanceCache();
+    [[deprecated("Use field access instead!")]] bool& dyn__isInCppInstanceCache();
     // Get instance field reference: private readonly System.Threading.ReaderWriterLock _disposeLock
-    [[deprecated]] ::System::Threading::ReaderWriterLock*& dyn__disposeLock();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ReaderWriterLock*& dyn__disposeLock();
     // Get instance field reference: private Firebase.Firestore.FirestoreProxy _proxy
-    [[deprecated]] ::Firebase::Firestore::FirestoreProxy*& dyn__proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirestoreProxy*& dyn__proxy();
     // Get instance field reference: private readonly Firebase.Firestore.FirebaseFirestoreSettings _settings
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestoreSettings*& dyn__settings();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestoreSettings*& dyn__settings();
     // Get instance field reference: private readonly Firebase.Firestore.TransactionManager _transactionManager
-    [[deprecated]] ::Firebase::Firestore::TransactionManager*& dyn__transactionManager();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::TransactionManager*& dyn__transactionManager();
     // Get instance field reference: private Firebase.FirebaseApp <App>k__BackingField
-    [[deprecated]] ::Firebase::FirebaseApp*& dyn_$App$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::FirebaseApp*& dyn_$App$k__BackingField();
     // public Firebase.FirebaseApp get_App()
     // Offset: 0xD5A124
     ::Firebase::FirebaseApp* get_App();

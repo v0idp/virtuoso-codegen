@@ -52,9 +52,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSeverityType) == 0x4);
     public:
     // Get instance field reference: private System.Xml.Schema.XmlSchemaException ex
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaException*& dyn_ex();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaException*& dyn_ex();
     // Get instance field reference: private System.Xml.Schema.XmlSeverityType severity
-    [[deprecated]] ::System::Xml::Schema::XmlSeverityType& dyn_severity();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSeverityType& dyn_severity();
     // public System.Xml.Schema.XmlSeverityType get_Severity()
     // Offset: 0xF79AF0
     ::System::Xml::Schema::XmlSeverityType get_Severity();

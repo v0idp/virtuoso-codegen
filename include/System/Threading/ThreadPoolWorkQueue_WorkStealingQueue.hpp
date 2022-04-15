@@ -66,15 +66,15 @@ namespace System::Threading {
     static_assert(sizeof(::System::Threading::SpinLock) == 0x4);
     public:
     // Get instance field reference: System.Threading.IThreadPoolWorkItem[] m_array
-    [[deprecated]] ::ArrayW<::System::Threading::IThreadPoolWorkItem*>& dyn_m_array();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Threading::IThreadPoolWorkItem*>& dyn_m_array();
     // Get instance field reference: private System.Int32 m_mask
-    [[deprecated]] int& dyn_m_mask();
+    [[deprecated("Use field access instead!")]] int& dyn_m_mask();
     // Get instance field reference: private System.Int32 m_headIndex
-    [[deprecated]] int& dyn_m_headIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_headIndex();
     // Get instance field reference: private System.Int32 m_tailIndex
-    [[deprecated]] int& dyn_m_tailIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_tailIndex();
     // Get instance field reference: private System.Threading.SpinLock m_foreignLock
-    [[deprecated]] ::System::Threading::SpinLock& dyn_m_foreignLock();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SpinLock& dyn_m_foreignLock();
     // public System.Void LocalPush(System.Threading.IThreadPoolWorkItem obj)
     // Offset: 0xE60B08
     void LocalPush(::System::Threading::IThreadPoolWorkItem* obj);

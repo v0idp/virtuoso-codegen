@@ -48,11 +48,11 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private readonly System.Int32 <Note>k__BackingField
-    [[deprecated]] int& dyn_$Note$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$Note$k__BackingField();
     // Get instance field reference: private readonly System.Boolean <Playing>k__BackingField
-    [[deprecated]] bool& dyn_$Playing$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Playing$k__BackingField();
     // Get instance field reference: private UnityEngine.Color <Color>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$Color$k__BackingField();
     // public System.Int32 get_Note()
     // Offset: 0x1966BC4
     int get_Note();

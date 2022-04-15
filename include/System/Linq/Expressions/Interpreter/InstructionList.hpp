@@ -210,23 +210,23 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private readonly System.Linq.Expressions.Interpreter.RuntimeLabel[] s_emptyRuntimeLabels
     static void _set_s_emptyRuntimeLabels(::ArrayW<::System::Linq::Expressions::Interpreter::RuntimeLabel> value);
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Linq.Expressions.Interpreter.Instruction> _instructions
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::Instruction*>*& dyn__instructions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::Instruction*>*& dyn__instructions();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> _objects
-    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__objects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__objects();
     // Get instance field reference: private System.Int32 _currentStackDepth
-    [[deprecated]] int& dyn__currentStackDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__currentStackDepth();
     // Get instance field reference: private System.Int32 _maxStackDepth
-    [[deprecated]] int& dyn__maxStackDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__maxStackDepth();
     // Get instance field reference: private System.Int32 _currentContinuationsDepth
-    [[deprecated]] int& dyn__currentContinuationsDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__currentContinuationsDepth();
     // Get instance field reference: private System.Int32 _maxContinuationDepth
-    [[deprecated]] int& dyn__maxContinuationDepth();
+    [[deprecated("Use field access instead!")]] int& dyn__maxContinuationDepth();
     // Get instance field reference: private System.Int32 _runtimeLabelCount
-    [[deprecated]] int& dyn__runtimeLabelCount();
+    [[deprecated("Use field access instead!")]] int& dyn__runtimeLabelCount();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Linq.Expressions.Interpreter.BranchLabel> _labels
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::BranchLabel*>*& dyn__labels();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::BranchLabel*>*& dyn__labels();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<System.Int32,System.Object>> _debugCookies
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<int, ::Il2CppObject*>>*& dyn__debugCookies();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<int, ::Il2CppObject*>>*& dyn__debugCookies();
     // public System.Int32 get_Count()
     // Offset: 0xF14670
     int get_Count();
@@ -236,6 +236,13 @@ namespace System::Linq::Expressions::Interpreter {
     // public System.Int32 get_CurrentContinuationsDepth()
     // Offset: 0xF18374
     int get_CurrentContinuationsDepth();
+    // public System.Void .ctor()
+    // Offset: 0xF1DEA8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InstructionList* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::InstructionList::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InstructionList*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xF1DF20
     static void _cctor();
@@ -572,15 +579,6 @@ namespace System::Linq::Expressions::Interpreter {
     // public System.Void EmitStringSwitch(System.Collections.Generic.Dictionary`2<System.String,System.Int32> cases, System.Runtime.CompilerServices.StrongBox`1<System.Int32> nullCase)
     // Offset: 0xF1DE30
     void EmitStringSwitch(::System::Collections::Generic::Dictionary_2<::StringW, int>* cases, ::System::Runtime::CompilerServices::StrongBox_1<int>* nullCase);
-    // public System.Void .ctor()
-    // Offset: 0xF1DEA8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InstructionList* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::InstructionList::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InstructionList*, creationType>()));
-    }
   }; // System.Linq.Expressions.Interpreter.InstructionList
   #pragma pack(pop)
   static check_size<sizeof(InstructionList), 64 + sizeof(::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<int, ::Il2CppObject*>>*)> __System_Linq_Expressions_Interpreter_InstructionListSizeCheck;
@@ -611,6 +609,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::InstructionList*), "get_CurrentContinuationsDepth", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::InstructionList::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::InstructionList::_cctor
 // Il2CppName: .cctor
 template<>
@@ -1607,7 +1609,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::InstructionList*), "EmitStringSwitch", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{cases, nullCase});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::InstructionList::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

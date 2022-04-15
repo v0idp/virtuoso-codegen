@@ -48,17 +48,12 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::SynthController*) == 0x8);
     public:
     // Get instance field reference: private VROSC.SynthController _synthController
-    [[deprecated]] ::VROSC::SynthController*& dyn__synthController();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthController*& dyn__synthController();
     // public System.Void .ctor()
     // Offset: 0x19353D4
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthParameterController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthParameterController::.ctor");

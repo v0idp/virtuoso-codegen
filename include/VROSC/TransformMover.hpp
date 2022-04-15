@@ -193,43 +193,43 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::TransformMover*>*) == 0x8);
     public:
     // Get instance field reference: private System.Single <Scale>k__BackingField
-    [[deprecated]] float& dyn_$Scale$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Scale$k__BackingField();
     // Get instance field reference: private System.Boolean _disableRotation
-    [[deprecated]] bool& dyn__disableRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn__disableRotation();
     // Get instance field reference: private System.Boolean _lockUpright
-    [[deprecated]] bool& dyn__lockUpright();
+    [[deprecated("Use field access instead!")]] bool& dyn__lockUpright();
     // Get instance field reference: private System.Boolean _dontLockInOneHanded
-    [[deprecated]] bool& dyn__dontLockInOneHanded();
+    [[deprecated("Use field access instead!")]] bool& dyn__dontLockInOneHanded();
     // Get instance field reference: private VROSC.MinMaxFloat _scalingLimits
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__scalingLimits();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__scalingLimits();
     // Get instance field reference: private VROSC.LocalTransformData _originaltransformData
-    [[deprecated]] ::VROSC::LocalTransformData*& dyn__originaltransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::LocalTransformData*& dyn__originaltransformData();
     // Get instance field reference: private VROSC.WorldTransformData _grabOriginData
-    [[deprecated]] ::VROSC::WorldTransformData*& dyn__grabOriginData();
+    [[deprecated("Use field access instead!")]] ::VROSC::WorldTransformData*& dyn__grabOriginData();
     // Get instance field reference: private System.Single _scaleAtGrab
-    [[deprecated]] float& dyn__scaleAtGrab();
+    [[deprecated("Use field access instead!")]] float& dyn__scaleAtGrab();
     // Get instance field reference: private System.Boolean _pinned
-    [[deprecated]] bool& dyn__pinned();
+    [[deprecated("Use field access instead!")]] bool& dyn__pinned();
     // Get instance field reference: private System.Boolean _animating
-    [[deprecated]] bool& dyn__animating();
+    [[deprecated("Use field access instead!")]] bool& dyn__animating();
     // Get instance field reference: private VROSC.TooltipData _gripTooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__gripTooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__gripTooltip();
     // Get instance field reference: private VROSC.TooltipData _pinTooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__pinTooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__pinTooltip();
     // Get instance field reference: private VROSC.TooltipData _unpinTooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__unpinTooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__unpinTooltip();
     // Get instance field reference: private VROSC.TooltipData _attractTooltip
-    [[deprecated]] ::VROSC::TooltipData*& dyn__attractTooltip();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__attractTooltip();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _pinnedTooltips
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__pinnedTooltips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__pinnedTooltips();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _unpinnedTooltips
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__unpinnedTooltips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__unpinnedTooltips();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.GrabbingDevice> <GrabbingDevices>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::GrabbingDevice*>*& dyn_$GrabbingDevices$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::GrabbingDevice*>*& dyn_$GrabbingDevices$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.TransformMover> OnGrabBegin
-    [[deprecated]] ::System::Action_1<::VROSC::TransformMover*>*& dyn_OnGrabBegin();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::TransformMover*>*& dyn_OnGrabBegin();
     // Get instance field reference: public System.Action`1<VROSC.TransformMover> OnGrabEnd
-    [[deprecated]] ::System::Action_1<::VROSC::TransformMover*>*& dyn_OnGrabEnd();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::TransformMover*>*& dyn_OnGrabEnd();
     // public System.Single get_Scale()
     // Offset: 0xA2A8E0
     float get_Scale();
@@ -313,11 +313,6 @@ namespace VROSC {
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransformMover* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TransformMover::.ctor");

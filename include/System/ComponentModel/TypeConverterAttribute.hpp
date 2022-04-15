@@ -54,10 +54,17 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.TypeConverterAttribute Default
     static void _set_Default(::System::ComponentModel::TypeConverterAttribute* value);
     // Get instance field reference: private System.String typeName
-    [[deprecated]] ::StringW& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeName();
     // public System.String get_ConverterTypeName()
     // Offset: 0xDAA47C
     ::StringW get_ConverterTypeName();
+    // public System.Void .ctor()
+    // Offset: 0xDAA3D4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TypeConverterAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::TypeConverterAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TypeConverterAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.Type type)
     // Offset: 0xDAA434
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -68,16 +75,6 @@ namespace System::ComponentModel {
     // static private System.Void .cctor()
     // Offset: 0xDAA534
     static void _cctor();
-    // public System.Void .ctor()
-    // Offset: 0xDAA3D4
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TypeConverterAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::TypeConverterAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TypeConverterAttribute*, creationType>()));
-    }
     // public override System.Boolean Equals(System.Object obj)
     // Offset: 0xDAA484
     // Implemented from: System.Attribute
@@ -106,6 +103,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::ComponentModel::TypeConverterAttribute::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::TypeConverterAttribute::_cctor
 // Il2CppName: .cctor
 template<>
@@ -114,10 +115,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::TypeConverterAttribute*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::TypeConverterAttribute::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::TypeConverterAttribute::Equals
 // Il2CppName: Equals
 template<>

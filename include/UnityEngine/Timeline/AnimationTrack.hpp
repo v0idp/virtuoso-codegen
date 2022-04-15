@@ -243,41 +243,41 @@ namespace UnityEngine::Timeline {
     // Set static field: static private readonly System.Collections.Generic.Queue`1<UnityEngine.Transform> s_CachedQueue
     static void _set_s_CachedQueue(::System::Collections::Generic::Queue_1<::UnityEngine::Transform*>* value);
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation m_InfiniteClipPreExtrapolation
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_InfiniteClipPreExtrapolation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_InfiniteClipPreExtrapolation();
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip/UnityEngine.Timeline.ClipExtrapolation m_InfiniteClipPostExtrapolation
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_InfiniteClipPostExtrapolation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip::ClipExtrapolation& dyn_m_InfiniteClipPostExtrapolation();
     // Get instance field reference: private UnityEngine.Vector3 m_InfiniteClipOffsetPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_InfiniteClipOffsetPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_InfiniteClipOffsetPosition();
     // Get instance field reference: private UnityEngine.Vector3 m_InfiniteClipOffsetEulerAngles
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_InfiniteClipOffsetEulerAngles();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_InfiniteClipOffsetEulerAngles();
     // Get instance field reference: private System.Double m_InfiniteClipTimeOffset
-    [[deprecated]] double& dyn_m_InfiniteClipTimeOffset();
+    [[deprecated("Use field access instead!")]] double& dyn_m_InfiniteClipTimeOffset();
     // Get instance field reference: private System.Boolean m_InfiniteClipRemoveOffset
-    [[deprecated]] bool& dyn_m_InfiniteClipRemoveOffset();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_InfiniteClipRemoveOffset();
     // Get instance field reference: private System.Boolean m_InfiniteClipApplyFootIK
-    [[deprecated]] bool& dyn_m_InfiniteClipApplyFootIK();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_InfiniteClipApplyFootIK();
     // Get instance field reference: private UnityEngine.Timeline.AnimationPlayableAsset/UnityEngine.Timeline.LoopMode mInfiniteClipLoop
-    [[deprecated]] ::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode& dyn_mInfiniteClipLoop();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::AnimationPlayableAsset::LoopMode& dyn_mInfiniteClipLoop();
     // Get instance field reference: private UnityEngine.Timeline.MatchTargetFields m_MatchTargetFields
-    [[deprecated]] ::UnityEngine::Timeline::MatchTargetFields& dyn_m_MatchTargetFields();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::MatchTargetFields& dyn_m_MatchTargetFields();
     // Get instance field reference: private UnityEngine.Vector3 m_Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Vector3 m_EulerAngles
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_EulerAngles();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_EulerAngles();
     // Get instance field reference: private UnityEngine.AvatarMask m_AvatarMask
-    [[deprecated]] ::UnityEngine::AvatarMask*& dyn_m_AvatarMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AvatarMask*& dyn_m_AvatarMask();
     // Get instance field reference: private System.Boolean m_ApplyAvatarMask
-    [[deprecated]] bool& dyn_m_ApplyAvatarMask();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ApplyAvatarMask();
     // Get instance field reference: private UnityEngine.Timeline.TrackOffset m_TrackOffset
-    [[deprecated]] ::UnityEngine::Timeline::TrackOffset& dyn_m_TrackOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TrackOffset& dyn_m_TrackOffset();
     // Get instance field reference: private UnityEngine.AnimationClip m_InfiniteClip
-    [[deprecated]] ::UnityEngine::AnimationClip*& dyn_m_InfiniteClip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationClip*& dyn_m_InfiniteClip();
     // Get instance field reference: private UnityEngine.Quaternion m_OpenClipOffsetRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_OpenClipOffsetRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_OpenClipOffsetRotation();
     // Get instance field reference: private UnityEngine.Quaternion m_Rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_Rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_Rotation();
     // Get instance field reference: private System.Boolean m_ApplyOffsets
-    [[deprecated]] bool& dyn_m_ApplyOffsets();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ApplyOffsets();
     // public UnityEngine.Vector3 get_position()
     // Offset: 0xC6B738
     ::UnityEngine::Vector3 get_position();
@@ -500,10 +500,6 @@ namespace UnityEngine::Timeline {
     // Offset: 0xC6FCC8
     // Implemented from: UnityEngine.Timeline.TrackAsset
     // Base method: System.Void TrackAsset::.ctor()
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimationTrack* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AnimationTrack::.ctor");
@@ -513,7 +509,6 @@ namespace UnityEngine::Timeline {
     // Offset: 0xC6FDE8
     // Implemented from: UnityEngine.Timeline.TrackAsset
     // Base method: System.Void TrackAsset::.cctor()
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
     // override System.Boolean CanCompileClips()
     // Offset: 0xC6B8A0

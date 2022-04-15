@@ -119,13 +119,13 @@ namespace Firebase::Platform {
     // Set static field: static private System.Func`1<System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_1<bool>* value);
     // Get instance field reference: private System.Boolean <IsPlayMode>k__BackingField
-    [[deprecated]] bool& dyn_$IsPlayMode$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPlayMode$k__BackingField();
     // Get instance field reference: private System.EventHandler`1<System.EventArgs> Updated
-    [[deprecated]] ::System::EventHandler_1<::System::EventArgs*>*& dyn_Updated();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::EventArgs*>*& dyn_Updated();
     // Get instance field reference: System.Action UpdatedEventWrapper
-    [[deprecated]] ::System::Action*& dyn_UpdatedEventWrapper();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_UpdatedEventWrapper();
     // Get instance field reference: private System.EventHandler`1<Firebase.Platform.FirebaseHandler/Firebase.Platform.ApplicationFocusChangedEventArgs> ApplicationFocusChanged
-    [[deprecated]] ::System::EventHandler_1<::Firebase::Platform::FirebaseHandler::ApplicationFocusChangedEventArgs*>*& dyn_ApplicationFocusChanged();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::Firebase::Platform::FirebaseHandler::ApplicationFocusChangedEventArgs*>*& dyn_ApplicationFocusChanged();
     // static public Firebase.Platform.IFirebaseAppUtils get_AppUtils()
     // Offset: 0x18C9380
     static ::Firebase::Platform::IFirebaseAppUtils* get_AppUtils();
@@ -153,6 +153,13 @@ namespace Firebase::Platform {
     // static private System.Void .cctor()
     // Offset: 0x18C9234
     static void _cctor();
+    // private System.Void .ctor()
+    // Offset: 0x18C931C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FirebaseHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::FirebaseHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FirebaseHandler*, creationType>()));
+    }
     // System.Void StartMonoBehaviour()
     // Offset: 0x18C8F10
     void StartMonoBehaviour();
@@ -198,15 +205,6 @@ namespace Firebase::Platform {
     // private System.Void <Update>m__1()
     // Offset: 0x18C9D8C
     void $Update$m__1();
-    // private System.Void .ctor()
-    // Offset: 0x18C931C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FirebaseHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Platform::FirebaseHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FirebaseHandler*, creationType>()));
-    }
   }; // Firebase.Platform.FirebaseHandler
   #pragma pack(pop)
   static check_size<sizeof(FirebaseHandler), 40 + sizeof(::System::EventHandler_1<::Firebase::Platform::FirebaseHandler::ApplicationFocusChangedEventArgs*>*)> __Firebase_Platform_FirebaseHandlerSizeCheck;
@@ -288,6 +286,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::FirebaseHandler*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Firebase::Platform::FirebaseHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Platform::FirebaseHandler::StartMonoBehaviour
 // Il2CppName: StartMonoBehaviour
 template<>
@@ -370,7 +372,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Platform::FirebaseHandler*), "<Update>m__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Platform::FirebaseHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

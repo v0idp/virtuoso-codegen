@@ -55,27 +55,29 @@ namespace Firebase::Auth {
     static_assert(sizeof(::Firebase::Auth::FirebaseAuth*) == 0x8);
     public:
     // Get instance field reference: System.Threading.Tasks.TaskCompletionSource`1<Firebase.Auth.FirebaseUser> taskCompletionSource
-    [[deprecated]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Auth::FirebaseUser*>*& dyn_taskCompletionSource();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCompletionSource_1<::Firebase::Auth::FirebaseUser*>*& dyn_taskCompletionSource();
     // Get instance field reference: Firebase.Auth.FirebaseAuth $this
-    [[deprecated]] ::Firebase::Auth::FirebaseAuth*& dyn_$this();
-    // System.Void <>m__0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> task)
-    // Offset: 0x18B450C
-    void $$m__0(::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* task);
+    [[deprecated("Use field access instead!")]] ::Firebase::Auth::FirebaseAuth*& dyn_$this();
     // public System.Void .ctor()
     // Offset: 0x18B135C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Auth::FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB*, creationType>()));
     }
+    // System.Void <>m__0(System.Threading.Tasks.Task`1<Firebase.Auth.FirebaseUser> task)
+    // Offset: 0x18B450C
+    void $$m__0(::System::Threading::Tasks::Task_1<::Firebase::Auth::FirebaseUser*>* task);
   }; // Firebase.Auth.FirebaseAuth/Firebase.Auth.<CreateUserWithEmailAndPasswordAsync>c__AnonStoreyB
   #pragma pack(pop)
   static check_size<sizeof(FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB), 24 + sizeof(::Firebase::Auth::FirebaseAuth*)> __Firebase_Auth_FirebaseAuth_$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyBSizeCheck;
   static_assert(sizeof(FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Auth::FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Auth::FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -85,7 +87,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Auth::FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB*), "<>m__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{task});
   }
 };
-// Writing MetadataGetter for method: Firebase::Auth::FirebaseAuth::$CreateUserWithEmailAndPasswordAsync$c__AnonStoreyB::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

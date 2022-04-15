@@ -83,40 +83,38 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public AudioHelm.AudioHelmClock clock
-    [[deprecated]] ::AudioHelm::AudioHelmClock*& dyn_clock();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::AudioHelmClock*& dyn_clock();
     // Get instance field reference: public UnityEngine.AudioSource loop
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_loop();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_loop();
     // Get instance field reference: public System.Single waitTime
-    [[deprecated]] float& dyn_waitTime();
+    [[deprecated("Use field access instead!")]] float& dyn_waitTime();
     // Get instance field reference: public UnityEngine.UI.Text text
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_text();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_text();
     // Get instance field reference: private System.Int32 lastSecond
-    [[deprecated]] int& dyn_lastSecond();
+    [[deprecated("Use field access instead!")]] int& dyn_lastSecond();
+    // public System.Void .ctor()
+    // Offset: 0x1931820
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SyncAudioAndSequencers* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::SyncAudioAndSequencers::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SyncAudioAndSequencers*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1931658
     void Start();
     // private System.Void Update()
     // Offset: 0x19316B8
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x1931820
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SyncAudioAndSequencers* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::SyncAudioAndSequencers::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SyncAudioAndSequencers*, creationType>()));
-    }
   }; // AudioHelm.SyncAudioAndSequencers
   #pragma pack(pop)
   static check_size<sizeof(SyncAudioAndSequencers), 56 + sizeof(int)> __AudioHelm_SyncAudioAndSequencersSizeCheck;
   static_assert(sizeof(SyncAudioAndSequencers) == 0x3C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::SyncAudioAndSequencers::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::SyncAudioAndSequencers::Start
 // Il2CppName: Start
 template<>
@@ -133,7 +131,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::SyncAudioAndSequencers*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::SyncAudioAndSequencers::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

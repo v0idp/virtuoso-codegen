@@ -63,7 +63,7 @@ namespace System::ComponentModel {
     // Set static field: static private readonly System.String none
     static void _set_none(::StringW value);
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.Void .ctor(System.Type type)
     // Offset: 0x140DD40
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -48,6 +48,13 @@ namespace UnityEngine::UI {
   // [TokenAttribute] Offset: FFFFFFFF
   class MaskUtilities : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x1425A38
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MaskUtilities* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::MaskUtilities::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MaskUtilities*, creationType>()));
+    }
     // static public System.Void Notify2DMaskStateChanged(UnityEngine.Component mask)
     // Offset: 0x1424E10
     static void Notify2DMaskStateChanged(::UnityEngine::Component* mask);
@@ -69,19 +76,14 @@ namespace UnityEngine::UI {
     // static public System.Void GetRectMasksForClip(UnityEngine.UI.RectMask2D clipper, System.Collections.Generic.List`1<UnityEngine.UI.RectMask2D> masks)
     // Offset: 0x14256AC
     static void GetRectMasksForClip(::UnityEngine::UI::RectMask2D* clipper, ::System::Collections::Generic::List_1<::UnityEngine::UI::RectMask2D*>* masks);
-    // public System.Void .ctor()
-    // Offset: 0x1425A38
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MaskUtilities* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::MaskUtilities::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MaskUtilities*, creationType>()));
-    }
   }; // UnityEngine.UI.MaskUtilities
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::UI::MaskUtilities::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::MaskUtilities::Notify2DMaskStateChanged
 // Il2CppName: Notify2DMaskStateChanged
 template<>
@@ -148,7 +150,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::MaskUtilities*), "GetRectMasksForClip", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{clipper, masks});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::MaskUtilities::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -54,9 +54,9 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single distance
-    [[deprecated]] float& dyn_distance();
+    [[deprecated("Use field access instead!")]] float& dyn_distance();
     // Get instance field reference: public LIV.SDK.Unity.SDKVector3 normal
-    [[deprecated]] ::LIV::SDK::Unity::SDKVector3& dyn_normal();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKVector3& dyn_normal();
     // static public LIV.SDK.Unity.SDKPlane get_empty()
     // Offset: 0xDD52CC
     static ::LIV::SDK::Unity::SDKPlane get_empty();

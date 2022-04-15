@@ -55,7 +55,7 @@ namespace System::Linq::Expressions::Interpreter {
       return defaultValueType;
     }
     // Get instance field reference: private readonly System.Type defaultValueType
-    [[deprecated]] ::System::Type*& dyn_defaultValueType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_defaultValueType();
     // public System.Void .ctor(System.Reflection.MethodInfo mi)
     // Offset: 0x16AEC84
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

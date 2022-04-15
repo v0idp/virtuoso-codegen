@@ -74,7 +74,7 @@ namespace UnityEngine::Animations {
     // Set static field: static private readonly UnityEngine.Animations.AnimationRemoveScalePlayable m_NullPlayable
     static void _set_m_NullPlayable(::UnityEngine::Animations::AnimationRemoveScalePlayable value);
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // System.Void .ctor(UnityEngine.Playables.PlayableHandle handle)
     // Offset: 0x18D16D0
     // ABORTED: conflicts with another method.  AnimationRemoveScalePlayable(::UnityEngine::Playables::PlayableHandle handle);

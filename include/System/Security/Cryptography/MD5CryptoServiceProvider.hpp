@@ -69,15 +69,15 @@ namespace System::Security::Cryptography {
     // Set static field: static private readonly System.UInt32[] K
     static void _set_K(::ArrayW<uint> value);
     // Get instance field reference: private System.UInt32[] _H
-    [[deprecated]] ::ArrayW<uint>& dyn__H();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn__H();
     // Get instance field reference: private System.UInt32[] buff
-    [[deprecated]] ::ArrayW<uint>& dyn_buff();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_buff();
     // Get instance field reference: private System.UInt64 count
-    [[deprecated]] uint64_t& dyn_count();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_count();
     // Get instance field reference: private System.Byte[] _ProcessingBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__ProcessingBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__ProcessingBuffer();
     // Get instance field reference: private System.Int32 _ProcessingBufferCount
-    [[deprecated]] int& dyn__ProcessingBufferCount();
+    [[deprecated("Use field access instead!")]] int& dyn__ProcessingBufferCount();
     // static private System.Void .cctor()
     // Offset: 0x107EF50
     static void _cctor();

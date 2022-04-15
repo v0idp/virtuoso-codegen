@@ -67,8 +67,6 @@ namespace UnityEngine {
     // Offset: 0x18CEC08
     // Implemented from: UnityEngine.Motion
     // Base method: System.Void Motion::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimationClip* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationClip::.ctor");

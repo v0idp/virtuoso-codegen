@@ -48,7 +48,7 @@ namespace System::Xml {
     static_assert(sizeof(::System::Uri*) == 0x8);
     public:
     // Get instance field reference: private System.Uri uri
-    [[deprecated]] ::System::Uri*& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_uri();
     // System.Void .ctor(System.Uri uri, System.IO.Stream stream)
     // Offset: 0x118FA48
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

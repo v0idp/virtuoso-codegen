@@ -53,21 +53,19 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x8CAD08
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x8CAD68
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OldSavesHandler::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OldSavesHandler::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OldSavesHandler::$$c*, creationType>()));
+    }
     // System.Void <PackageSession>b__6_0(System.String s)
     // Offset: 0x8CAD70
     void $PackageSession$b__6_0(::StringW s);
     // System.Void <PackageSession>b__6_1(System.String s, VROSC.Error error)
     // Offset: 0x8CAE00
     void $PackageSession$b__6_1(::StringW s, ::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x8CAD68
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OldSavesHandler::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OldSavesHandler::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OldSavesHandler::$$c*, creationType>()));
-    }
   }; // VROSC.OldSavesHandler/VROSC.<>c
   #pragma pack(pop)
 }
@@ -80,6 +78,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::OldSavesHandler::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::OldSavesHandler::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::OldSavesHandler::$$c::$PackageSession$b__6_0
 // Il2CppName: <PackageSession>b__6_0
 template<>
@@ -99,7 +101,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::OldSavesHandler::$$c*), "<PackageSession>b__6_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{s, error});
   }
 };
-// Writing MetadataGetter for method: VROSC::OldSavesHandler::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

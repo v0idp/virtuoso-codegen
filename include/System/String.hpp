@@ -164,9 +164,9 @@ namespace System {
     // Set static field: static private System.Int32 alignConst
     static void _set_alignConst(int value);
     // Get instance field reference: private System.Int32 m_stringLength
-    [[deprecated]] int& dyn_m_stringLength();
+    [[deprecated("Use field access instead!")]] int& dyn_m_stringLength();
     // Get instance field reference: private System.Char m_firstChar
-    [[deprecated]] ::Il2CppChar& dyn_m_firstChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_m_firstChar();
     // public System.Char get_Chars(System.Int32 index)
     // Offset: 0x125589C
     ::Il2CppChar get_Chars(int index);

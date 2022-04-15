@@ -109,7 +109,6 @@ namespace System::Linq::Expressions::Interpreter {
     // Offset: 0xF21474
     // Implemented from: System.Linq.Expressions.Interpreter.Instruction
     // Base method: System.Void Instruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LeftShiftInstruction* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LeftShiftInstruction::.ctor");

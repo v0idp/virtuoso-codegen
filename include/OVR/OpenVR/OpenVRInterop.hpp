@@ -41,6 +41,13 @@ namespace OVR::OpenVR {
   // [TokenAttribute] Offset: FFFFFFFF
   class OpenVRInterop : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x804528
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OpenVRInterop* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::OpenVR::OpenVRInterop::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OpenVRInterop*, creationType>()));
+    }
     // static System.UInt32 InitInternal(ref OVR.OpenVR.EVRInitError peError, OVR.OpenVR.EVRApplicationType eApplicationType)
     // Offset: 0x8035D8
     static uint InitInternal(ByRef<::OVR::OpenVR::EVRInitError> peError, ::OVR::OpenVR::EVRApplicationType eApplicationType);
@@ -68,19 +75,14 @@ namespace OVR::OpenVR {
     // static System.UInt32 GetInitToken()
     // Offset: 0x803AD8
     static uint GetInitToken();
-    // public System.Void .ctor()
-    // Offset: 0x804528
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OpenVRInterop* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVR::OpenVR::OpenVRInterop::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OpenVRInterop*, creationType>()));
-    }
   }; // OVR.OpenVR.OpenVRInterop
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: OVR::OpenVR::OpenVRInterop::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::OpenVR::OpenVRInterop::InitInternal
 // Il2CppName: InitInternal
 template<>
@@ -162,7 +164,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint (*)()>
     return ::il2cpp_utils::FindMethod(classof(OVR::OpenVR::OpenVRInterop*), "GetInitToken", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OVR::OpenVR::OpenVRInterop::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -124,25 +124,25 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private System.Linq.Expressions.Interpreter.InterpretedFrame s_currentFrame
     static void _set_s_currentFrame(::System::Linq::Expressions::Interpreter::InterpretedFrame* value);
     // Get instance field reference: readonly System.Linq.Expressions.Interpreter.Interpreter Interpreter
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::Interpreter*& dyn_Interpreter();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::Interpreter*& dyn_Interpreter();
     // Get instance field reference: System.Linq.Expressions.Interpreter.InterpretedFrame _parent
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::InterpretedFrame*& dyn__parent();
     // Get instance field reference: private readonly System.Int32[] _continuations
-    [[deprecated]] ::ArrayW<int>& dyn__continuations();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__continuations();
     // Get instance field reference: private System.Int32 _continuationIndex
-    [[deprecated]] int& dyn__continuationIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__continuationIndex();
     // Get instance field reference: private System.Int32 _pendingContinuation
-    [[deprecated]] int& dyn__pendingContinuation();
+    [[deprecated("Use field access instead!")]] int& dyn__pendingContinuation();
     // Get instance field reference: private System.Object _pendingValue
-    [[deprecated]] ::Il2CppObject*& dyn__pendingValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__pendingValue();
     // Get instance field reference: public readonly System.Object[] Data
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_Data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_Data();
     // Get instance field reference: public readonly System.Runtime.CompilerServices.IStrongBox[] Closure
-    [[deprecated]] ::ArrayW<::System::Runtime::CompilerServices::IStrongBox*>& dyn_Closure();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Runtime::CompilerServices::IStrongBox*>& dyn_Closure();
     // Get instance field reference: public System.Int32 StackIndex
-    [[deprecated]] int& dyn_StackIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_StackIndex();
     // Get instance field reference: public System.Int32 InstructionIndex
-    [[deprecated]] int& dyn_InstructionIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_InstructionIndex();
     // public System.String get_Name()
     // Offset: 0xF1E1AC
     ::StringW get_Name();

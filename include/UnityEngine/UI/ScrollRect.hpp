@@ -132,7 +132,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.ScrollRect/UnityEngine.UI.MovementType Clamped
       static void _set_Clamped(::UnityEngine::UI::ScrollRect::MovementType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.ScrollRect/UnityEngine.UI.MovementType
     #pragma pack(pop)
     static check_size<sizeof(ScrollRect::MovementType), 0 + sizeof(int)> __UnityEngine_UI_ScrollRect_MovementTypeSizeCheck;
@@ -180,7 +180,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.ScrollRect/UnityEngine.UI.ScrollbarVisibility AutoHideAndExpandViewport
       static void _set_AutoHideAndExpandViewport(::UnityEngine::UI::ScrollRect::ScrollbarVisibility value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.ScrollRect/UnityEngine.UI.ScrollbarVisibility
     #pragma pack(pop)
     static check_size<sizeof(ScrollRect::ScrollbarVisibility), 0 + sizeof(int)> __UnityEngine_UI_ScrollRect_ScrollbarVisibilitySizeCheck;
@@ -454,79 +454,79 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.RectTransform m_Content
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_Content();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_Content();
     // Get instance field reference: private System.Boolean m_Horizontal
-    [[deprecated]] bool& dyn_m_Horizontal();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Horizontal();
     // Get instance field reference: private System.Boolean m_Vertical
-    [[deprecated]] bool& dyn_m_Vertical();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Vertical();
     // Get instance field reference: private UnityEngine.UI.ScrollRect/UnityEngine.UI.MovementType m_MovementType
-    [[deprecated]] ::UnityEngine::UI::ScrollRect::MovementType& dyn_m_MovementType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ScrollRect::MovementType& dyn_m_MovementType();
     // Get instance field reference: private System.Single m_Elasticity
-    [[deprecated]] float& dyn_m_Elasticity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Elasticity();
     // Get instance field reference: private System.Boolean m_Inertia
-    [[deprecated]] bool& dyn_m_Inertia();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Inertia();
     // Get instance field reference: private System.Single m_DecelerationRate
-    [[deprecated]] float& dyn_m_DecelerationRate();
+    [[deprecated("Use field access instead!")]] float& dyn_m_DecelerationRate();
     // Get instance field reference: private System.Single m_ScrollSensitivity
-    [[deprecated]] float& dyn_m_ScrollSensitivity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ScrollSensitivity();
     // Get instance field reference: private UnityEngine.RectTransform m_Viewport
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_Viewport();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_Viewport();
     // Get instance field reference: private UnityEngine.UI.Scrollbar m_HorizontalScrollbar
-    [[deprecated]] ::UnityEngine::UI::Scrollbar*& dyn_m_HorizontalScrollbar();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Scrollbar*& dyn_m_HorizontalScrollbar();
     // Get instance field reference: private UnityEngine.UI.Scrollbar m_VerticalScrollbar
-    [[deprecated]] ::UnityEngine::UI::Scrollbar*& dyn_m_VerticalScrollbar();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Scrollbar*& dyn_m_VerticalScrollbar();
     // Get instance field reference: private UnityEngine.UI.ScrollRect/UnityEngine.UI.ScrollbarVisibility m_HorizontalScrollbarVisibility
-    [[deprecated]] ::UnityEngine::UI::ScrollRect::ScrollbarVisibility& dyn_m_HorizontalScrollbarVisibility();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ScrollRect::ScrollbarVisibility& dyn_m_HorizontalScrollbarVisibility();
     // Get instance field reference: private UnityEngine.UI.ScrollRect/UnityEngine.UI.ScrollbarVisibility m_VerticalScrollbarVisibility
-    [[deprecated]] ::UnityEngine::UI::ScrollRect::ScrollbarVisibility& dyn_m_VerticalScrollbarVisibility();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ScrollRect::ScrollbarVisibility& dyn_m_VerticalScrollbarVisibility();
     // Get instance field reference: private System.Single m_HorizontalScrollbarSpacing
-    [[deprecated]] float& dyn_m_HorizontalScrollbarSpacing();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HorizontalScrollbarSpacing();
     // Get instance field reference: private System.Single m_VerticalScrollbarSpacing
-    [[deprecated]] float& dyn_m_VerticalScrollbarSpacing();
+    [[deprecated("Use field access instead!")]] float& dyn_m_VerticalScrollbarSpacing();
     // Get instance field reference: private UnityEngine.UI.ScrollRect/UnityEngine.UI.ScrollRectEvent m_OnValueChanged
-    [[deprecated]] ::UnityEngine::UI::ScrollRect::ScrollRectEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ScrollRect::ScrollRectEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private UnityEngine.Vector2 m_PointerStartLocalCursor
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_PointerStartLocalCursor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_PointerStartLocalCursor();
     // Get instance field reference: protected UnityEngine.Vector2 m_ContentStartPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_ContentStartPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_ContentStartPosition();
     // Get instance field reference: private UnityEngine.RectTransform m_ViewRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_ViewRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_ViewRect();
     // Get instance field reference: protected UnityEngine.Bounds m_ContentBounds
-    [[deprecated]] ::UnityEngine::Bounds& dyn_m_ContentBounds();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bounds& dyn_m_ContentBounds();
     // Get instance field reference: private UnityEngine.Bounds m_ViewBounds
-    [[deprecated]] ::UnityEngine::Bounds& dyn_m_ViewBounds();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bounds& dyn_m_ViewBounds();
     // Get instance field reference: private UnityEngine.Vector2 m_Velocity
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Velocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Velocity();
     // Get instance field reference: private System.Boolean m_Dragging
-    [[deprecated]] bool& dyn_m_Dragging();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Dragging();
     // Get instance field reference: private System.Boolean m_Scrolling
-    [[deprecated]] bool& dyn_m_Scrolling();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Scrolling();
     // Get instance field reference: private UnityEngine.Vector2 m_PrevPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_PrevPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_PrevPosition();
     // Get instance field reference: private UnityEngine.Bounds m_PrevContentBounds
-    [[deprecated]] ::UnityEngine::Bounds& dyn_m_PrevContentBounds();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bounds& dyn_m_PrevContentBounds();
     // Get instance field reference: private UnityEngine.Bounds m_PrevViewBounds
-    [[deprecated]] ::UnityEngine::Bounds& dyn_m_PrevViewBounds();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bounds& dyn_m_PrevViewBounds();
     // Get instance field reference: private System.Boolean m_HasRebuiltLayout
-    [[deprecated]] bool& dyn_m_HasRebuiltLayout();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasRebuiltLayout();
     // Get instance field reference: private System.Boolean m_HSliderExpand
-    [[deprecated]] bool& dyn_m_HSliderExpand();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HSliderExpand();
     // Get instance field reference: private System.Boolean m_VSliderExpand
-    [[deprecated]] bool& dyn_m_VSliderExpand();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_VSliderExpand();
     // Get instance field reference: private System.Single m_HSliderHeight
-    [[deprecated]] float& dyn_m_HSliderHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HSliderHeight();
     // Get instance field reference: private System.Single m_VSliderWidth
-    [[deprecated]] float& dyn_m_VSliderWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_VSliderWidth();
     // Get instance field reference: private UnityEngine.RectTransform m_Rect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_Rect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_Rect();
     // Get instance field reference: private UnityEngine.RectTransform m_HorizontalScrollbarRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_HorizontalScrollbarRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_HorizontalScrollbarRect();
     // Get instance field reference: private UnityEngine.RectTransform m_VerticalScrollbarRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_VerticalScrollbarRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_VerticalScrollbarRect();
     // Get instance field reference: private UnityEngine.DrivenRectTransformTracker m_Tracker
-    [[deprecated]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
     // Get instance field reference: private readonly UnityEngine.Vector3[] m_Corners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
     // public UnityEngine.RectTransform get_content()
     // Offset: 0x142D2B4
     ::UnityEngine::RectTransform* get_content();
@@ -789,11 +789,6 @@ namespace UnityEngine::UI {
     // Offset: 0x142DA10
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScrollRect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::ScrollRect::.ctor");

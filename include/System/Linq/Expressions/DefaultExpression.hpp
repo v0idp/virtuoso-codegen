@@ -56,7 +56,7 @@ namespace System::Linq::Expressions {
       return Type;
     }
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // System.Void .ctor(System.Type type)
     // Offset: 0x11FA218
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

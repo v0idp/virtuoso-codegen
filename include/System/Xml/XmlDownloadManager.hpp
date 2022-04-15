@@ -82,7 +82,14 @@ namespace System::Xml {
       return connections;
     }
     // Get instance field reference: private System.Collections.Hashtable connections
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_connections();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_connections();
+    // public System.Void .ctor()
+    // Offset: 0x127BA28
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlDownloadManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlDownloadManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlDownloadManager*, creationType>()));
+    }
     // System.IO.Stream GetStream(System.Uri uri, System.Net.ICredentials credentials, System.Net.IWebProxy proxy, System.Net.Cache.RequestCachePolicy cachePolicy)
     // Offset: 0x127B064
     ::System::IO::Stream* GetStream(::System::Uri* uri, ::System::Net::ICredentials* credentials, ::System::Net::IWebProxy* proxy, ::System::Net::Cache::RequestCachePolicy* cachePolicy);
@@ -98,21 +105,16 @@ namespace System::Xml {
     // private System.Threading.Tasks.Task`1<System.IO.Stream> GetNonFileStreamAsync(System.Uri uri, System.Net.ICredentials credentials, System.Net.IWebProxy proxy, System.Net.Cache.RequestCachePolicy cachePolicy)
     // Offset: 0x127B8D0
     ::System::Threading::Tasks::Task_1<::System::IO::Stream*>* GetNonFileStreamAsync(::System::Uri* uri, ::System::Net::ICredentials* credentials, ::System::Net::IWebProxy* proxy, ::System::Net::Cache::RequestCachePolicy* cachePolicy);
-    // public System.Void .ctor()
-    // Offset: 0x127BA28
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlDownloadManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlDownloadManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlDownloadManager*, creationType>()));
-    }
   }; // System.Xml.XmlDownloadManager
   #pragma pack(pop)
   static check_size<sizeof(XmlDownloadManager), 16 + sizeof(::System::Collections::Hashtable*)> __System_Xml_XmlDownloadManagerSizeCheck;
   static_assert(sizeof(XmlDownloadManager) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::XmlDownloadManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlDownloadManager::GetStream
 // Il2CppName: GetStream
 template<>
@@ -170,7 +172,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlDownloadManager*), "GetNonFileStreamAsync", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{uri, credentials, proxy, cachePolicy});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlDownloadManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

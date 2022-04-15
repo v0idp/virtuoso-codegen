@@ -296,7 +296,7 @@ namespace UnityEngine {
     // Set static field: static public UnityEngine.EventType used
     static void _set_used(::UnityEngine::EventType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.EventType
   #pragma pack(pop)
   static check_size<sizeof(EventType), 0 + sizeof(int)> __UnityEngine_EventTypeSizeCheck;

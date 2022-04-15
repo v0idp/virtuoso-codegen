@@ -44,9 +44,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.UInt64 ID
-    [[deprecated]] uint64_t& dyn_ID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ID();
     // Get instance field reference: public readonly System.String SocialContext
-    [[deprecated]] ::StringW& dyn_SocialContext();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SocialContext();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x9207E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

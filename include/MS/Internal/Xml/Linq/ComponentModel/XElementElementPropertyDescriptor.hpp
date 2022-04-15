@@ -55,11 +55,9 @@ namespace MS::Internal::Xml::Linq::ComponentModel {
       return value;
     }
     // Get instance field reference: private MS.Internal.Xml.Linq.ComponentModel.XDeferredSingleton`1<System.Xml.Linq.XElement> value
-    [[deprecated]] ::MS::Internal::Xml::Linq::ComponentModel::XDeferredSingleton_1<::System::Xml::Linq::XElement*>*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::Linq::ComponentModel::XDeferredSingleton_1<::System::Xml::Linq::XElement*>*& dyn_value();
     // public System.Void .ctor()
     // Offset: 0x185C0D8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XElementElementPropertyDescriptor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::Linq::ComponentModel::XElementElementPropertyDescriptor::.ctor");

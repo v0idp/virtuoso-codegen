@@ -69,15 +69,15 @@ namespace System::Xml::Schema {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Xml.Schema.TypedObject[] ks
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::TypedObject*>& dyn_ks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::TypedObject*>& dyn_ks();
     // Get instance field reference: private System.Int32 dim
-    [[deprecated]] int& dyn_dim();
+    [[deprecated("Use field access instead!")]] int& dyn_dim();
     // Get instance field reference: private System.Int32 hashcode
-    [[deprecated]] int& dyn_hashcode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashcode();
     // Get instance field reference: private System.Int32 posline
-    [[deprecated]] int& dyn_posline();
+    [[deprecated("Use field access instead!")]] int& dyn_posline();
     // Get instance field reference: private System.Int32 poscol
-    [[deprecated]] int& dyn_poscol();
+    [[deprecated("Use field access instead!")]] int& dyn_poscol();
     // public System.Int32 get_PosLine()
     // Offset: 0xAF2B80
     int get_PosLine();

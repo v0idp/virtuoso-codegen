@@ -222,57 +222,57 @@ namespace Proyecto26 {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String _uri
-    [[deprecated]] ::StringW& dyn__uri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__uri();
     // Get instance field reference: private System.String _method
-    [[deprecated]] ::StringW& dyn__method();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__method();
     // Get instance field reference: private System.Object _body
-    [[deprecated]] ::Il2CppObject*& dyn__body();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__body();
     // Get instance field reference: private System.String _bodyString
-    [[deprecated]] ::StringW& dyn__bodyString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__bodyString();
     // Get instance field reference: private System.Byte[] _bodyRaw
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__bodyRaw();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__bodyRaw();
     // Get instance field reference: private System.Nullable`1<System.Int32> _timeout
-    [[deprecated]] ::System::Nullable_1<int>& dyn__timeout();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn__timeout();
     // Get instance field reference: private System.String _contentType
-    [[deprecated]] ::StringW& dyn__contentType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__contentType();
     // Get instance field reference: private System.Int32 _retries
-    [[deprecated]] int& dyn__retries();
+    [[deprecated("Use field access instead!")]] int& dyn__retries();
     // Get instance field reference: private System.Single _retrySecondsDelay
-    [[deprecated]] float& dyn__retrySecondsDelay();
+    [[deprecated("Use field access instead!")]] float& dyn__retrySecondsDelay();
     // Get instance field reference: private System.Action`2<Proyecto26.RequestException,System.Int32> _retryCallback
-    [[deprecated]] ::System::Action_2<::Proyecto26::RequestException*, int>*& dyn__retryCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::Proyecto26::RequestException*, int>*& dyn__retryCallback();
     // Get instance field reference: private System.Boolean _enableDebug
-    [[deprecated]] bool& dyn__enableDebug();
+    [[deprecated("Use field access instead!")]] bool& dyn__enableDebug();
     // Get instance field reference: private System.Nullable`1<System.Boolean> _useHttpContinue
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__useHttpContinue();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__useHttpContinue();
     // Get instance field reference: private System.Nullable`1<System.Int32> _redirectLimit
-    [[deprecated]] ::System::Nullable_1<int>& dyn__redirectLimit();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn__redirectLimit();
     // Get instance field reference: private System.Boolean _ignoreHttpException
-    [[deprecated]] bool& dyn__ignoreHttpException();
+    [[deprecated("Use field access instead!")]] bool& dyn__ignoreHttpException();
     // Get instance field reference: private UnityEngine.WWWForm _formData
-    [[deprecated]] ::UnityEngine::WWWForm*& dyn__formData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::WWWForm*& dyn__formData();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> _simpleForm
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__simpleForm();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__simpleForm();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection> _formSections
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Networking::IMultipartFormSection*>*& dyn__formSections();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Networking::IMultipartFormSection*>*& dyn__formSections();
     // Get instance field reference: private UnityEngine.Networking.CertificateHandler _certificateHandler
-    [[deprecated]] ::UnityEngine::Networking::CertificateHandler*& dyn__certificateHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::CertificateHandler*& dyn__certificateHandler();
     // Get instance field reference: private UnityEngine.Networking.UploadHandler _uploadHandler
-    [[deprecated]] ::UnityEngine::Networking::UploadHandler*& dyn__uploadHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UploadHandler*& dyn__uploadHandler();
     // Get instance field reference: private UnityEngine.Networking.DownloadHandler _downloadHandler
-    [[deprecated]] ::UnityEngine::Networking::DownloadHandler*& dyn__downloadHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::DownloadHandler*& dyn__downloadHandler();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> _headers
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__headers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__headers();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> _params
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__params();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__params();
     // Get instance field reference: private System.Boolean _parseResponseBody
-    [[deprecated]] bool& dyn__parseResponseBody();
+    [[deprecated("Use field access instead!")]] bool& dyn__parseResponseBody();
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <Request>k__BackingField
-    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
     // Get instance field reference: private System.Boolean _isAborted
-    [[deprecated]] bool& dyn__isAborted();
+    [[deprecated("Use field access instead!")]] bool& dyn__isAborted();
     // Get instance field reference: private System.Boolean _defaultContentType
-    [[deprecated]] bool& dyn__defaultContentType();
+    [[deprecated("Use field access instead!")]] bool& dyn__defaultContentType();
     // public System.String get_Uri()
     // Offset: 0xB3281C
     ::StringW get_Uri();
@@ -441,21 +441,19 @@ namespace Proyecto26 {
     // public System.Void set_DefaultContentType(System.Boolean value)
     // Offset: 0xB32B98
     void set_DefaultContentType(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xB32C10
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RequestHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RequestHelper*, creationType>()));
+    }
     // public System.String GetHeader(System.String name)
     // Offset: 0xB32AE8
     ::StringW GetHeader(::StringW name);
     // public System.Void Abort()
     // Offset: 0xB32BA4
     void Abort();
-    // public System.Void .ctor()
-    // Offset: 0xB32C10
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RequestHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::RequestHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RequestHelper*, creationType>()));
-    }
   }; // Proyecto26.RequestHelper
   // WARNING Not writing size check since size may be invalid!
 }
@@ -934,6 +932,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Proye
     return ::il2cpp_utils::FindMethod(classof(Proyecto26::RequestHelper*), "set_DefaultContentType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Proyecto26::RequestHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Proyecto26::RequestHelper::GetHeader
 // Il2CppName: GetHeader
 template<>
@@ -951,7 +953,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Proye
     return ::il2cpp_utils::FindMethod(classof(Proyecto26::RequestHelper*), "Abort", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Proyecto26::RequestHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

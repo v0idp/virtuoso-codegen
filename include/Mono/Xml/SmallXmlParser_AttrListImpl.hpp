@@ -54,9 +54,9 @@ namespace Mono::Xml {
       return *reinterpret_cast<::Mono::Xml::SmallXmlParser::IAttrList*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> attrNames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_attrNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_attrNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> attrValues
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_attrValues();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_attrValues();
     // public System.Int32 get_Length()
     // Offset: 0xE591A8
     int get_Length();

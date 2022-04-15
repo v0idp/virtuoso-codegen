@@ -50,13 +50,12 @@ namespace System::Xml::Schema {
       return annotation;
     }
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnnotation annotation
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnnotation*& dyn_annotation();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnnotation*& dyn_annotation();
     // public System.Void .ctor()
     // Offset: 0x110F288
     // Implemented from: System.Xml.Schema.XmlSchemaExternal
     // Base method: System.Void XmlSchemaExternal::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaInclude* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaInclude::.ctor");

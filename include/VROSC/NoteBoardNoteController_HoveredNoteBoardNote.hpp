@@ -47,9 +47,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::InputDevice*) == 0x8);
     public:
     // Get instance field reference: public VROSC.NoteFieldNoteData NoteBoardNote
-    [[deprecated]] ::VROSC::NoteFieldNoteData*& dyn_NoteBoardNote();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteFieldNoteData*& dyn_NoteBoardNote();
     // Get instance field reference: public VROSC.InputDevice Device
-    [[deprecated]] ::VROSC::InputDevice*& dyn_Device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_Device();
     // public System.Void .ctor(VROSC.NoteFieldNoteData noteBoardNote, VROSC.InputDevice device)
     // Offset: 0x1965FC8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

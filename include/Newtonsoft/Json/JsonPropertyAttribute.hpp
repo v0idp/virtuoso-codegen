@@ -128,37 +128,37 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.NullValueHandling> _nullValueHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::NullValueHandling>& dyn__nullValueHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::NullValueHandling>& dyn__nullValueHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.DefaultValueHandling> _defaultValueHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::DefaultValueHandling>& dyn__defaultValueHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::DefaultValueHandling>& dyn__defaultValueHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.ReferenceLoopHandling> _referenceLoopHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__referenceLoopHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__referenceLoopHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.ObjectCreationHandling> _objectCreationHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ObjectCreationHandling>& dyn__objectCreationHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ObjectCreationHandling>& dyn__objectCreationHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.TypeNameHandling> _typeNameHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__typeNameHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__typeNameHandling();
     // Get instance field reference: System.Nullable`1<System.Boolean> _isReference
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__isReference();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__isReference();
     // Get instance field reference: System.Nullable`1<System.Int32> _order
-    [[deprecated]] ::System::Nullable_1<int>& dyn__order();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn__order();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.Required> _required
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::Required>& dyn__required();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::Required>& dyn__required();
     // Get instance field reference: System.Nullable`1<System.Boolean> _itemIsReference
-    [[deprecated]] ::System::Nullable_1<bool>& dyn__itemIsReference();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn__itemIsReference();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.ReferenceLoopHandling> _itemReferenceLoopHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__itemReferenceLoopHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::ReferenceLoopHandling>& dyn__itemReferenceLoopHandling();
     // Get instance field reference: System.Nullable`1<Newtonsoft.Json.TypeNameHandling> _itemTypeNameHandling
-    [[deprecated]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__itemTypeNameHandling();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::Newtonsoft::Json::TypeNameHandling>& dyn__itemTypeNameHandling();
     // Get instance field reference: private System.Type <ItemConverterType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$ItemConverterType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$ItemConverterType$k__BackingField();
     // Get instance field reference: private System.Object[] <ItemConverterParameters>k__BackingField
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_$ItemConverterParameters$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_$ItemConverterParameters$k__BackingField();
     // Get instance field reference: private System.Type <NamingStrategyType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$NamingStrategyType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$NamingStrategyType$k__BackingField();
     // Get instance field reference: private System.Object[] <NamingStrategyParameters>k__BackingField
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_$NamingStrategyParameters$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_$NamingStrategyParameters$k__BackingField();
     // Get instance field reference: private System.String <PropertyName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$PropertyName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$PropertyName$k__BackingField();
     // public System.Type get_ItemConverterType()
     // Offset: 0xF49678
     ::System::Type* get_ItemConverterType();

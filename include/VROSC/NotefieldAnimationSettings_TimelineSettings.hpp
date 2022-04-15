@@ -63,15 +63,15 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.AnimationCurve _sizeCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__sizeCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__sizeCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _positionDeviationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__positionDeviationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__positionDeviationCurve();
     // Get instance field reference: private UnityEngine.AnimationCurve _rotationDeviationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__rotationDeviationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__rotationDeviationCurve();
     // Get instance field reference: private System.Single _positionDeviationAmount
-    [[deprecated]] float& dyn__positionDeviationAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__positionDeviationAmount();
     // Get instance field reference: private System.Single _rotationDeviationAmount
-    [[deprecated]] float& dyn__rotationDeviationAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__rotationDeviationAmount();
     // public UnityEngine.AnimationCurve get_SizeCurve()
     // Offset: 0x8CAB04
     ::UnityEngine::AnimationCurve* get_SizeCurve();
@@ -89,8 +89,6 @@ namespace VROSC {
     float get_RotationDeviationAmount();
     // public System.Void .ctor()
     // Offset: 0x8CAB2C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NotefieldAnimationSettings::TimelineSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NotefieldAnimationSettings::TimelineSettings::.ctor");

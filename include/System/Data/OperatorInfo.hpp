@@ -49,11 +49,11 @@ namespace System::Data {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Data.Nodes _type
-    [[deprecated]] ::System::Data::Nodes& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Data::Nodes& dyn__type();
     // Get instance field reference: System.Int32 _op
-    [[deprecated]] int& dyn__op();
+    [[deprecated("Use field access instead!")]] int& dyn__op();
     // Get instance field reference: System.Int32 _priority
-    [[deprecated]] int& dyn__priority();
+    [[deprecated("Use field access instead!")]] int& dyn__priority();
     // System.Void .ctor(System.Data.Nodes type, System.Int32 op, System.Int32 pri)
     // Offset: 0x13C1278
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

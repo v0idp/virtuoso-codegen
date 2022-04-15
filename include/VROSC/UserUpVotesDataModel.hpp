@@ -55,7 +55,7 @@ namespace VROSC {
       return UpVotes;
     }
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.UserUpVotesDataModel/VROSC.UpVote> UpVotes
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UserUpVotesDataModel::UpVote*>*& dyn_UpVotes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UserUpVotesDataModel::UpVote*>*& dyn_UpVotes();
     // public override System.String get_Key()
     // Offset: 0x1921008
     // Implemented from: VROSC.BaseDataModel
@@ -70,7 +70,6 @@ namespace VROSC {
     // Offset: 0x1920530
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserUpVotesDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserUpVotesDataModel::.ctor");

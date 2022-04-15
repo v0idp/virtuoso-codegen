@@ -58,11 +58,11 @@ namespace System::ComponentModel {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly System.String designerTypeName
-    [[deprecated]] ::StringW& dyn_designerTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_designerTypeName();
     // Get instance field reference: private readonly System.String designerBaseTypeName
-    [[deprecated]] ::StringW& dyn_designerBaseTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_designerBaseTypeName();
     // Get instance field reference: private System.String typeId
-    [[deprecated]] ::StringW& dyn_typeId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeId();
     // public System.Void .ctor(System.String designerTypeName, System.Type designerBaseType)
     // Offset: 0xEF8694
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

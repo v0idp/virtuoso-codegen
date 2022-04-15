@@ -29,7 +29,6 @@ namespace System::ComponentModel {
     // Offset: 0xA02660
     // Implemented from: System.ComponentModel.CustomTypeDescriptor
     // Base method: System.Void CustomTypeDescriptor::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TypeDescriptionProvider::EmptyCustomTypeDescriptor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::TypeDescriptionProvider::EmptyCustomTypeDescriptor::.ctor");

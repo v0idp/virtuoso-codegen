@@ -43,7 +43,7 @@ namespace GlobalNamespace {
       return names;
     }
     // Get instance field reference: public readonly System.String[] names
-    [[deprecated]] ::ArrayW<::StringW>& dyn_names();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_names();
     // public System.Void .ctor(System.String[] names)
     // Offset: 0x18ACEC0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

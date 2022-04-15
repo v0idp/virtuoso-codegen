@@ -45,11 +45,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: private readonly System.String _xmlName
-    [[deprecated]] ::StringW& dyn__xmlName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__xmlName();
     // Get instance field reference: private readonly System.String _enumName
-    [[deprecated]] ::StringW& dyn__enumName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__enumName();
     // Get instance field reference: private readonly System.Int64 _value
-    [[deprecated]] int64_t& dyn__value();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__value();
     // public System.String get_XmlName()
     // Offset: 0xC1B574
     ::StringW get_XmlName();

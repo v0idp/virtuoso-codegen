@@ -90,17 +90,17 @@ namespace Firebase::Firestore {
     // Set static field: static public readonly System.Int64 CacheSizeUnlimited
     static void _set_CacheSizeUnlimited(int64_t value);
     // Get instance field reference: private readonly System.Threading.ReaderWriterLock _lock
-    [[deprecated]] ::System::Threading::ReaderWriterLock*& dyn__lock();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ReaderWriterLock*& dyn__lock();
     // Get instance field reference: private Firebase.Firestore.FirestoreProxy _firestoreProxy
-    [[deprecated]] ::Firebase::Firestore::FirestoreProxy*& dyn__firestoreProxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirestoreProxy*& dyn__firestoreProxy();
     // Get instance field reference: private System.String _host
-    [[deprecated]] ::StringW& dyn__host();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__host();
     // Get instance field reference: private System.Boolean _sslEnabled
-    [[deprecated]] bool& dyn__sslEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__sslEnabled();
     // Get instance field reference: private System.Boolean _persistenceEnabled
-    [[deprecated]] bool& dyn__persistenceEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__persistenceEnabled();
     // Get instance field reference: private System.Int64 _cacheSizeBytes
-    [[deprecated]] int64_t& dyn__cacheSizeBytes();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__cacheSizeBytes();
     // public System.String get_Host()
     // Offset: 0xD5AFA4
     ::StringW get_Host();

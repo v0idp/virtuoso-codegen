@@ -166,39 +166,39 @@ namespace System::Threading {
     // Set static field: static private System.Threading.ReaderWriterCount t_rwc
     static void _set_t_rwc(::System::Threading::ReaderWriterCount* value);
     // Get instance field reference: private System.Boolean fIsReentrant
-    [[deprecated]] bool& dyn_fIsReentrant();
+    [[deprecated("Use field access instead!")]] bool& dyn_fIsReentrant();
     // Get instance field reference: private System.Int32 myLock
-    [[deprecated]] int& dyn_myLock();
+    [[deprecated("Use field access instead!")]] int& dyn_myLock();
     // Get instance field reference: private System.UInt32 numWriteWaiters
-    [[deprecated]] uint& dyn_numWriteWaiters();
+    [[deprecated("Use field access instead!")]] uint& dyn_numWriteWaiters();
     // Get instance field reference: private System.UInt32 numReadWaiters
-    [[deprecated]] uint& dyn_numReadWaiters();
+    [[deprecated("Use field access instead!")]] uint& dyn_numReadWaiters();
     // Get instance field reference: private System.UInt32 numWriteUpgradeWaiters
-    [[deprecated]] uint& dyn_numWriteUpgradeWaiters();
+    [[deprecated("Use field access instead!")]] uint& dyn_numWriteUpgradeWaiters();
     // Get instance field reference: private System.UInt32 numUpgradeWaiters
-    [[deprecated]] uint& dyn_numUpgradeWaiters();
+    [[deprecated("Use field access instead!")]] uint& dyn_numUpgradeWaiters();
     // Get instance field reference: private System.Boolean fNoWaiters
-    [[deprecated]] bool& dyn_fNoWaiters();
+    [[deprecated("Use field access instead!")]] bool& dyn_fNoWaiters();
     // Get instance field reference: private System.Int32 upgradeLockOwnerId
-    [[deprecated]] int& dyn_upgradeLockOwnerId();
+    [[deprecated("Use field access instead!")]] int& dyn_upgradeLockOwnerId();
     // Get instance field reference: private System.Int32 writeLockOwnerId
-    [[deprecated]] int& dyn_writeLockOwnerId();
+    [[deprecated("Use field access instead!")]] int& dyn_writeLockOwnerId();
     // Get instance field reference: private System.Threading.EventWaitHandle writeEvent
-    [[deprecated]] ::System::Threading::EventWaitHandle*& dyn_writeEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::EventWaitHandle*& dyn_writeEvent();
     // Get instance field reference: private System.Threading.EventWaitHandle readEvent
-    [[deprecated]] ::System::Threading::EventWaitHandle*& dyn_readEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::EventWaitHandle*& dyn_readEvent();
     // Get instance field reference: private System.Threading.EventWaitHandle upgradeEvent
-    [[deprecated]] ::System::Threading::EventWaitHandle*& dyn_upgradeEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::EventWaitHandle*& dyn_upgradeEvent();
     // Get instance field reference: private System.Threading.EventWaitHandle waitUpgradeEvent
-    [[deprecated]] ::System::Threading::EventWaitHandle*& dyn_waitUpgradeEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::EventWaitHandle*& dyn_waitUpgradeEvent();
     // Get instance field reference: private System.Int64 lockID
-    [[deprecated]] int64_t& dyn_lockID();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_lockID();
     // Get instance field reference: private System.Boolean fUpgradeThreadHoldingRead
-    [[deprecated]] bool& dyn_fUpgradeThreadHoldingRead();
+    [[deprecated("Use field access instead!")]] bool& dyn_fUpgradeThreadHoldingRead();
     // Get instance field reference: private System.UInt32 owners
-    [[deprecated]] uint& dyn_owners();
+    [[deprecated("Use field access instead!")]] uint& dyn_owners();
     // Get instance field reference: private System.Boolean fDisposed
-    [[deprecated]] bool& dyn_fDisposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_fDisposed();
     // public System.Boolean get_IsReadLockHeld()
     // Offset: 0xE98D84
     bool get_IsReadLockHeld();
@@ -226,6 +226,13 @@ namespace System::Threading {
     // public System.Int32 get_WaitingWriteCount()
     // Offset: 0xE98FD4
     int get_WaitingWriteCount();
+    // public System.Void .ctor()
+    // Offset: 0xE973BC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ReaderWriterLockSlim* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::ReaderWriterLockSlim::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ReaderWriterLockSlim*, creationType>()));
+    }
     // public System.Void .ctor(System.Threading.LockRecursionPolicy recursionPolicy)
     // Offset: 0xE973C4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -332,15 +339,6 @@ namespace System::Threading {
     // private System.Void Dispose(System.Boolean disposing)
     // Offset: 0xE98C48
     void Dispose(bool disposing);
-    // public System.Void .ctor()
-    // Offset: 0xE973BC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ReaderWriterLockSlim* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::ReaderWriterLockSlim::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ReaderWriterLockSlim*, creationType>()));
-    }
   }; // System.Threading.ReaderWriterLockSlim
   #pragma pack(pop)
   static check_size<sizeof(ReaderWriterLockSlim), 104 + sizeof(bool)> __System_Threading_ReaderWriterLockSlimSizeCheck;
@@ -419,6 +417,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Threading::ReaderWriterLockSlim*), "get_WaitingWriteCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Threading::ReaderWriterLockSlim::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Threading::ReaderWriterLockSlim::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -704,7 +706,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Threading::ReaderWriterLockSlim*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{disposing});
   }
 };
-// Writing MetadataGetter for method: System::Threading::ReaderWriterLockSlim::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

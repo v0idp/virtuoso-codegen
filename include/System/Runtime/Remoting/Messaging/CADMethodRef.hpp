@@ -80,15 +80,15 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: private System.Boolean ctor
-    [[deprecated]] bool& dyn_ctor();
+    [[deprecated("Use field access instead!")]] bool& dyn_ctor();
     // Get instance field reference: private System.String typeName
-    [[deprecated]] ::StringW& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeName();
     // Get instance field reference: private System.String methodName
-    [[deprecated]] ::StringW& dyn_methodName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_methodName();
     // Get instance field reference: private System.String[] param_names
-    [[deprecated]] ::ArrayW<::StringW>& dyn_param_names();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_param_names();
     // Get instance field reference: private System.String[] generic_arg_names
-    [[deprecated]] ::ArrayW<::StringW>& dyn_generic_arg_names();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_generic_arg_names();
     // public System.Void .ctor(System.Runtime.Remoting.Messaging.IMethodMessage msg)
     // Offset: 0xFF0810
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

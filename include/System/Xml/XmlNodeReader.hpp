@@ -126,23 +126,23 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Xml::IXmlNamespaceResolver*>(this);
     }
     // Get instance field reference: private System.Xml.XmlNodeReaderNavigator readerNav
-    [[deprecated]] ::System::Xml::XmlNodeReaderNavigator*& dyn_readerNav();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeReaderNavigator*& dyn_readerNav();
     // Get instance field reference: private System.Xml.XmlNodeType nodeType
-    [[deprecated]] ::System::Xml::XmlNodeType& dyn_nodeType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNodeType& dyn_nodeType();
     // Get instance field reference: private System.Int32 curDepth
-    [[deprecated]] int& dyn_curDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_curDepth();
     // Get instance field reference: private System.Xml.ReadState readState
-    [[deprecated]] ::System::Xml::ReadState& dyn_readState();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ReadState& dyn_readState();
     // Get instance field reference: private System.Boolean fEOF
-    [[deprecated]] bool& dyn_fEOF();
+    [[deprecated("Use field access instead!")]] bool& dyn_fEOF();
     // Get instance field reference: private System.Boolean bResolveEntity
-    [[deprecated]] bool& dyn_bResolveEntity();
+    [[deprecated("Use field access instead!")]] bool& dyn_bResolveEntity();
     // Get instance field reference: private System.Boolean bStartFromDocument
-    [[deprecated]] bool& dyn_bStartFromDocument();
+    [[deprecated("Use field access instead!")]] bool& dyn_bStartFromDocument();
     // Get instance field reference: private System.Boolean bInReadBinary
-    [[deprecated]] bool& dyn_bInReadBinary();
+    [[deprecated("Use field access instead!")]] bool& dyn_bInReadBinary();
     // Get instance field reference: private System.Xml.ReadContentAsBinaryHelper readBinaryHelper
-    [[deprecated]] ::System::Xml::ReadContentAsBinaryHelper*& dyn_readBinaryHelper();
+    [[deprecated("Use field access instead!")]] ::System::Xml::ReadContentAsBinaryHelper*& dyn_readBinaryHelper();
     // public System.Void .ctor(System.Xml.XmlNode node)
     // Offset: 0x1019288
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

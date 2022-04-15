@@ -99,19 +99,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Material _material
-    [[deprecated]] ::UnityEngine::Material*& dyn__material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__material();
     // Get instance field reference: private UnityEngine.RenderTexture _output
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn__output();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn__output();
     // Get instance field reference: private UnityEngine.Material _instancedMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__instancedMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__instancedMaterial();
     // Get instance field reference: private System.Boolean _active
-    [[deprecated]] bool& dyn__active();
+    [[deprecated("Use field access instead!")]] bool& dyn__active();
     // Get instance field reference: private System.Boolean _disabled
-    [[deprecated]] bool& dyn__disabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__disabled();
     // Get instance field reference: private System.Boolean _fading
-    [[deprecated]] bool& dyn__fading();
+    [[deprecated("Use field access instead!")]] bool& dyn__fading();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> _activationSources
-    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__activationSources();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__activationSources();
+    // public System.Void .ctor()
+    // Offset: 0x8DEC8C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CopyCameraOutputToRenderTexture* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CopyCameraOutputToRenderTexture::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CopyCameraOutputToRenderTexture*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x8DE46C
     void Awake();
@@ -142,25 +149,16 @@ namespace VROSC {
     // private System.Void OnRenderImage(UnityEngine.RenderTexture src, UnityEngine.RenderTexture dest)
     // Offset: 0x8DEB9C
     void OnRenderImage(::UnityEngine::RenderTexture* src, ::UnityEngine::RenderTexture* dest);
-    // public System.Void .ctor()
-    // Offset: 0x8DEC8C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CopyCameraOutputToRenderTexture* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CopyCameraOutputToRenderTexture::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CopyCameraOutputToRenderTexture*, creationType>()));
-    }
   }; // VROSC.CopyCameraOutputToRenderTexture
   #pragma pack(pop)
   static check_size<sizeof(CopyCameraOutputToRenderTexture), 56 + sizeof(::System::Collections::Generic::List_1<::Il2CppObject*>*)> __VROSC_CopyCameraOutputToRenderTextureSizeCheck;
   static_assert(sizeof(CopyCameraOutputToRenderTexture) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::CopyCameraOutputToRenderTexture::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CopyCameraOutputToRenderTexture::Awake
 // Il2CppName: Awake
 template<>
@@ -250,7 +248,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::CopyCameraOutputToRenderTexture*), "OnRenderImage", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{src, dest});
   }
 };
-// Writing MetadataGetter for method: VROSC::CopyCameraOutputToRenderTexture::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -45,9 +45,9 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.ControllerInputNode InputNode
-    [[deprecated]] ::VROSC::ControllerInputNode*& dyn_InputNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerInputNode*& dyn_InputNode();
     // Get instance field reference: public System.Boolean HoveredThisFrame
-    [[deprecated]] bool& dyn_HoveredThisFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn_HoveredThisFrame();
     // public System.Void .ctor(VROSC.ControllerInputNode inputNode, System.Boolean hoveredThisFrame)
     // Offset: 0x1958980
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

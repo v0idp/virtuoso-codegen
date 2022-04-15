@@ -108,7 +108,7 @@ namespace System {
     // Set static field: static public System.UInt64 MinValue
     static void _set_MinValue(uint64_t value);
     // Get instance field reference: private System.UInt64 m_value
-    [[deprecated]] uint64_t& dyn_m_value();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_value();
     // public System.Int32 CompareTo(System.Object value)
     // Offset: 0x12B68E8
     int CompareTo(::Il2CppObject* value);

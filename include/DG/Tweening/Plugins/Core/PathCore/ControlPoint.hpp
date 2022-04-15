@@ -48,9 +48,9 @@ namespace DG::Tweening::Plugins::Core::PathCore {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 a
-    [[deprecated]] ::UnityEngine::Vector3& dyn_a();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_a();
     // Get instance field reference: public UnityEngine.Vector3 b
-    [[deprecated]] ::UnityEngine::Vector3& dyn_b();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_b();
     // public System.Void .ctor(UnityEngine.Vector3 a, UnityEngine.Vector3 b)
     // Offset: 0x15D369C
     // ABORTED: conflicts with another method.  ControlPoint(::UnityEngine::Vector3 a, ::UnityEngine::Vector3 b);

@@ -72,7 +72,7 @@ namespace System::Collections::Specialized {
     // Set static field: static public System.Collections.Specialized.NotifyCollectionChangedAction Reset
     static void _set_Reset(::System::Collections::Specialized::NotifyCollectionChangedAction value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Collections.Specialized.NotifyCollectionChangedAction
   #pragma pack(pop)
   static check_size<sizeof(NotifyCollectionChangedAction), 0 + sizeof(int)> __System_Collections_Specialized_NotifyCollectionChangedActionSizeCheck;

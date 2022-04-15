@@ -101,7 +101,6 @@ namespace Newtonsoft::Json::Utilities {
     // Offset: 0x1347AB0
     // Implemented from: Newtonsoft.Json.Utilities.ReflectionDelegateFactory
     // Base method: System.Void ReflectionDelegateFactory::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LateBoundReflectionDelegateFactory* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory::.ctor");

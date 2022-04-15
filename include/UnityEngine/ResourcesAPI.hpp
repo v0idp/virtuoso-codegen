@@ -57,6 +57,13 @@ namespace UnityEngine {
     // static public UnityEngine.ResourcesAPI get_overrideAPI()
     // Offset: 0xBD0C7C
     static ::UnityEngine::ResourcesAPI* get_overrideAPI();
+    // protected internal System.Void .ctor()
+    // Offset: 0xBD0CE0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ResourcesAPI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ResourcesAPI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ResourcesAPI*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xBD0E88
     static void _cctor();
@@ -69,15 +76,6 @@ namespace UnityEngine {
     // protected internal UnityEngine.Object Load(System.String path, System.Type systemTypeInstance)
     // Offset: 0xBD0DE8
     ::UnityEngine::Object* Load(::StringW path, ::System::Type* systemTypeInstance);
-    // protected internal System.Void .ctor()
-    // Offset: 0xBD0CE0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ResourcesAPI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ResourcesAPI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ResourcesAPI*, creationType>()));
-    }
   }; // UnityEngine.ResourcesAPI
   #pragma pack(pop)
 }
@@ -98,6 +96,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::ResourcesAPI*), "get_overrideAPI", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::ResourcesAPI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::ResourcesAPI::_cctor
 // Il2CppName: .cctor
 template<>
@@ -134,7 +136,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::ResourcesAPI*), "Load", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{path, systemTypeInstance});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::ResourcesAPI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

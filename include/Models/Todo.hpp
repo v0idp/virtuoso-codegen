@@ -54,17 +54,15 @@ namespace Models {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Int32 id
-    [[deprecated]] int& dyn_id();
+    [[deprecated("Use field access instead!")]] int& dyn_id();
     // Get instance field reference: public System.Int32 userId
-    [[deprecated]] int& dyn_userId();
+    [[deprecated("Use field access instead!")]] int& dyn_userId();
     // Get instance field reference: public System.String title
-    [[deprecated]] ::StringW& dyn_title();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_title();
     // Get instance field reference: public System.Boolean completed
-    [[deprecated]] bool& dyn_completed();
+    [[deprecated("Use field access instead!")]] bool& dyn_completed();
     // public System.Void .ctor()
     // Offset: 0xA2808C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Todo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Models::Todo::.ctor");

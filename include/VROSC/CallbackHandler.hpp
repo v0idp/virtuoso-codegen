@@ -124,6 +124,13 @@ namespace VROSC {
     static ::System::Collections::Concurrent::ConcurrentQueue_1<::VROSC::CallbackHandler::ErrorCallback*>* _get__errorCallbacks();
     // Set static field: static private System.Collections.Concurrent.ConcurrentQueue`1<VROSC.CallbackHandler/VROSC.ErrorCallback> _errorCallbacks
     static void _set__errorCallbacks(::System::Collections::Concurrent::ConcurrentQueue_1<::VROSC::CallbackHandler::ErrorCallback*>* value);
+    // public System.Void .ctor()
+    // Offset: 0x944558
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CallbackHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CallbackHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CallbackHandler*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x944560
     static void _cctor();
@@ -157,19 +164,14 @@ namespace VROSC {
     // static private System.Void PollInProgressRequests()
     // Offset: 0x943E64
     static void PollInProgressRequests();
-    // public System.Void .ctor()
-    // Offset: 0x944558
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CallbackHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CallbackHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CallbackHandler*, creationType>()));
-    }
   }; // VROSC.CallbackHandler
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::CallbackHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CallbackHandler::_cctor
 // Il2CppName: .cctor
 template<>
@@ -276,7 +278,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::CallbackHandler*), "PollInProgressRequests", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::CallbackHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

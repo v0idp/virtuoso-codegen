@@ -140,6 +140,13 @@ namespace UnityEngine {
     // static public System.Void remove_willRenderCanvases(UnityEngine.Canvas/UnityEngine.WillRenderCanvases value)
     // Offset: 0x18F7394
     static void remove_willRenderCanvases(::UnityEngine::Canvas::WillRenderCanvases* value);
+    // public System.Void .ctor()
+    // Offset: 0x18F7E4C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Canvas* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Canvas::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Canvas*, creationType>()));
+    }
     // static public UnityEngine.Material GetDefaultCanvasMaterial()
     // Offset: 0x18F7B0C
     static ::UnityEngine::Material* GetDefaultCanvasMaterial();
@@ -158,18 +165,6 @@ namespace UnityEngine {
     // private System.Void get_renderingDisplaySize_Injected(out UnityEngine.Vector2 ret)
     // Offset: 0x18F7A2C
     void get_renderingDisplaySize_Injected(ByRef<::UnityEngine::Vector2> ret);
-    // public System.Void .ctor()
-    // Offset: 0x18F7E4C
-    // Implemented from: UnityEngine.Behaviour
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Canvas* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Canvas::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Canvas*, creationType>()));
-    }
   }; // UnityEngine.Canvas
   #pragma pack(pop)
 }
@@ -403,6 +398,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Canvas*), "remove_willRenderCanvases", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Canvas::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Canvas::GetDefaultCanvasMaterial
 // Il2CppName: GetDefaultCanvasMaterial
 template<>
@@ -452,7 +451,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Canvas*), "get_renderingDisplaySize_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ret});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Canvas::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

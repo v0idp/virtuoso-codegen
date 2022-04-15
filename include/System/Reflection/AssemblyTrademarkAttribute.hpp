@@ -44,7 +44,7 @@ namespace System::Reflection {
       return m_trademark;
     }
     // Get instance field reference: private System.String m_trademark
-    [[deprecated]] ::StringW& dyn_m_trademark();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_trademark();
     // public System.Void .ctor(System.String trademark)
     // Offset: 0x1145E64
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

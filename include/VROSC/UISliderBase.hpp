@@ -102,19 +102,19 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single <Value>k__BackingField
-    [[deprecated]] float& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Value$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Single> OnValueChanged
-    [[deprecated]] ::System::Action_1<float>*& dyn_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<float>*& dyn_OnValueChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnGrabbed
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnGrabbed();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnGrabbed();
     // Get instance field reference: protected VROSC.UI.UIColorGetter _sliderColor
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
     // Get instance field reference: protected VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: protected VROSC.MinMaxFloat _uvRange
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__uvRange();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__uvRange();
     // Get instance field reference: private System.Single _preview
-    [[deprecated]] float& dyn__preview();
+    [[deprecated("Use field access instead!")]] float& dyn__preview();
     // public System.Single get_Value()
     // Offset: 0x191706C
     float get_Value();
@@ -156,11 +156,6 @@ namespace VROSC {
     // Base method: System.Void UIInteractable::.ctor()
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISliderBase* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISliderBase::.ctor");

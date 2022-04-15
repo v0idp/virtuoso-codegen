@@ -65,9 +65,9 @@ namespace System::Text {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean emitUTF8Identifier
-    [[deprecated]] bool& dyn_emitUTF8Identifier();
+    [[deprecated("Use field access instead!")]] bool& dyn_emitUTF8Identifier();
     // Get instance field reference: private System.Boolean isThrowException
-    [[deprecated]] bool& dyn_isThrowException();
+    [[deprecated("Use field access instead!")]] bool& dyn_isThrowException();
     // public System.Void .ctor(System.Boolean encoderShouldEmitUTF8Identifier)
     // Offset: 0x12BBD80
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

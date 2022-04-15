@@ -56,11 +56,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Type[] includedTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_includedTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_includedTypes();
     // Get instance field reference: private System.String namspace
-    [[deprecated]] ::StringW& dyn_namspace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_namspace();
     // Get instance field reference: private System.Boolean canBeGenerated
-    [[deprecated]] bool& dyn_canBeGenerated();
+    [[deprecated("Use field access instead!")]] bool& dyn_canBeGenerated();
     // public System.Void .ctor(System.String namspace, System.Type[] includedTypes)
     // Offset: 0xF6D960
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

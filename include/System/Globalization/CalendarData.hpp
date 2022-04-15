@@ -158,43 +158,43 @@ namespace System::Globalization {
     // Set static field: static System.Globalization.CalendarData Invariant
     static void _set_Invariant(::System::Globalization::CalendarData* value);
     // Get instance field reference: System.String sNativeName
-    [[deprecated]] ::StringW& dyn_sNativeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sNativeName();
     // Get instance field reference: System.String[] saShortDates
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saShortDates();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saShortDates();
     // Get instance field reference: System.String[] saYearMonths
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saYearMonths();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saYearMonths();
     // Get instance field reference: System.String[] saLongDates
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saLongDates();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saLongDates();
     // Get instance field reference: System.String sMonthDay
-    [[deprecated]] ::StringW& dyn_sMonthDay();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sMonthDay();
     // Get instance field reference: System.String[] saEraNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saEraNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saEraNames();
     // Get instance field reference: System.String[] saAbbrevEraNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saAbbrevEraNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saAbbrevEraNames();
     // Get instance field reference: System.String[] saAbbrevEnglishEraNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saAbbrevEnglishEraNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saAbbrevEnglishEraNames();
     // Get instance field reference: System.String[] saDayNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saDayNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saDayNames();
     // Get instance field reference: System.String[] saAbbrevDayNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saAbbrevDayNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saAbbrevDayNames();
     // Get instance field reference: System.String[] saSuperShortDayNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saSuperShortDayNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saSuperShortDayNames();
     // Get instance field reference: System.String[] saMonthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saMonthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saMonthNames();
     // Get instance field reference: System.String[] saAbbrevMonthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saAbbrevMonthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saAbbrevMonthNames();
     // Get instance field reference: System.String[] saMonthGenitiveNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saMonthGenitiveNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saMonthGenitiveNames();
     // Get instance field reference: System.String[] saAbbrevMonthGenitiveNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saAbbrevMonthGenitiveNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saAbbrevMonthGenitiveNames();
     // Get instance field reference: System.String[] saLeapYearMonthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saLeapYearMonthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saLeapYearMonthNames();
     // Get instance field reference: System.Int32 iTwoDigitYearMax
-    [[deprecated]] int& dyn_iTwoDigitYearMax();
+    [[deprecated("Use field access instead!")]] int& dyn_iTwoDigitYearMax();
     // Get instance field reference: System.Int32 iCurrentEra
-    [[deprecated]] int& dyn_iCurrentEra();
+    [[deprecated("Use field access instead!")]] int& dyn_iCurrentEra();
     // Get instance field reference: System.Boolean bUseUserOverrides
-    [[deprecated]] bool& dyn_bUseUserOverrides();
+    [[deprecated("Use field access instead!")]] bool& dyn_bUseUserOverrides();
     // static private System.Void .cctor()
     // Offset: 0xFF516C
     static void _cctor();

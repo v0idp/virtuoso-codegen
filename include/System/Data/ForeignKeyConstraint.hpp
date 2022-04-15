@@ -115,23 +115,23 @@ namespace System::Data {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Data.Rule _deleteRule
-    [[deprecated]] ::System::Data::Rule& dyn__deleteRule();
+    [[deprecated("Use field access instead!")]] ::System::Data::Rule& dyn__deleteRule();
     // Get instance field reference: System.Data.Rule _updateRule
-    [[deprecated]] ::System::Data::Rule& dyn__updateRule();
+    [[deprecated("Use field access instead!")]] ::System::Data::Rule& dyn__updateRule();
     // Get instance field reference: System.Data.AcceptRejectRule _acceptRejectRule
-    [[deprecated]] ::System::Data::AcceptRejectRule& dyn__acceptRejectRule();
+    [[deprecated("Use field access instead!")]] ::System::Data::AcceptRejectRule& dyn__acceptRejectRule();
     // Get instance field reference: private System.Data.DataKey _childKey
-    [[deprecated]] ::System::Data::DataKey& dyn__childKey();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataKey& dyn__childKey();
     // Get instance field reference: private System.Data.DataKey _parentKey
-    [[deprecated]] ::System::Data::DataKey& dyn__parentKey();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataKey& dyn__parentKey();
     // Get instance field reference: System.String _constraintName
-    [[deprecated]] ::StringW& dyn__constraintName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__constraintName();
     // Get instance field reference: System.String[] _parentColumnNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__parentColumnNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__parentColumnNames();
     // Get instance field reference: System.String[] _childColumnNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__childColumnNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__childColumnNames();
     // Get instance field reference: System.String _parentTableName
-    [[deprecated]] ::StringW& dyn__parentTableName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__parentTableName();
     // System.Data.DataKey get_ChildKey()
     // Offset: 0x12F6824
     ::System::Data::DataKey get_ChildKey();

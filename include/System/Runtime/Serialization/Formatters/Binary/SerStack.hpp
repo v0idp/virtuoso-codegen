@@ -49,11 +49,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Object[] objects
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_objects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_objects();
     // Get instance field reference: System.String stackId
-    [[deprecated]] ::StringW& dyn_stackId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_stackId();
     // Get instance field reference: System.Int32 top
-    [[deprecated]] int& dyn_top();
+    [[deprecated("Use field access instead!")]] int& dyn_top();
     // System.Void .ctor(System.String stackId)
     // Offset: 0x117812C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

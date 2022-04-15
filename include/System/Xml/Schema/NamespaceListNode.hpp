@@ -64,9 +64,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: protected System.Xml.Schema.NamespaceList namespaceList
-    [[deprecated]] ::System::Xml::Schema::NamespaceList*& dyn_namespaceList();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::NamespaceList*& dyn_namespaceList();
     // Get instance field reference: protected System.Object particle
-    [[deprecated]] ::Il2CppObject*& dyn_particle();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_particle();
     // public System.Void .ctor(System.Xml.Schema.NamespaceList namespaceList, System.Object particle)
     // Offset: 0xAF6B38
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

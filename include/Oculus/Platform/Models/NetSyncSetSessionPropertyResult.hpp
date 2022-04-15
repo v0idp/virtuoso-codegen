@@ -48,7 +48,7 @@ namespace Oculus::Platform::Models {
       return Session;
     }
     // Get instance field reference: public readonly Oculus.Platform.Models.NetSyncSession Session
-    [[deprecated]] ::Oculus::Platform::Models::NetSyncSession*& dyn_Session();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::NetSyncSession*& dyn_Session();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB4E478
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

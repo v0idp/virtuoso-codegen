@@ -69,11 +69,11 @@ namespace UnityEngine::Timeline {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip m_Clip
-    [[deprecated]] ::UnityEngine::Timeline::TimelineClip*& dyn_m_Clip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimelineClip*& dyn_m_Clip();
     // Get instance field reference: private UnityEngine.Playables.Playable m_Playable
-    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::Playable& dyn_m_Playable();
     // Get instance field reference: private UnityEngine.Playables.Playable m_ParentMixer
-    [[deprecated]] ::UnityEngine::Playables::Playable& dyn_m_ParentMixer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::Playable& dyn_m_ParentMixer();
     // public UnityEngine.Timeline.TimelineClip get_clip()
     // Offset: 0xC7A9D4
     ::UnityEngine::Timeline::TimelineClip* get_clip();

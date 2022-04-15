@@ -123,25 +123,25 @@ namespace System::Net {
     static_assert(sizeof(::System::IO::Stream*) == 0x8);
     public:
     // Get instance field reference: protected System.Boolean closed
-    [[deprecated]] bool& dyn_closed();
+    [[deprecated("Use field access instead!")]] bool& dyn_closed();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.Object locker
-    [[deprecated]] ::Il2CppObject*& dyn_locker();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_locker();
     // Get instance field reference: private System.Int32 read_timeout
-    [[deprecated]] int& dyn_read_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_read_timeout();
     // Get instance field reference: private System.Int32 write_timeout
-    [[deprecated]] int& dyn_write_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_write_timeout();
     // Get instance field reference: System.Boolean IgnoreIOErrors
-    [[deprecated]] bool& dyn_IgnoreIOErrors();
+    [[deprecated("Use field access instead!")]] bool& dyn_IgnoreIOErrors();
     // Get instance field reference: private readonly System.Net.HttpWebRequest <Request>k__BackingField
-    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
     // Get instance field reference: private readonly System.Net.WebConnection <Connection>k__BackingField
-    [[deprecated]] ::System::Net::WebConnection*& dyn_$Connection$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebConnection*& dyn_$Connection$k__BackingField();
     // Get instance field reference: private readonly System.Net.WebOperation <Operation>k__BackingField
-    [[deprecated]] ::System::Net::WebOperation*& dyn_$Operation$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebOperation*& dyn_$Operation$k__BackingField();
     // Get instance field reference: private readonly System.IO.Stream <InnerStream>k__BackingField
-    [[deprecated]] ::System::IO::Stream*& dyn_$InnerStream$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_$InnerStream$k__BackingField();
     // System.Net.HttpWebRequest get_Request()
     // Offset: 0xC42DC8
     ::System::Net::HttpWebRequest* get_Request();

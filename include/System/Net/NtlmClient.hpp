@@ -57,25 +57,23 @@ namespace System::Net {
       return authObject;
     }
     // Get instance field reference: private System.Net.IAuthenticationModule authObject
-    [[deprecated]] ::System::Net::IAuthenticationModule*& dyn_authObject();
+    [[deprecated("Use field access instead!")]] ::System::Net::IAuthenticationModule*& dyn_authObject();
     // public System.String get_AuthenticationType()
     // Offset: 0x1407A08
     ::StringW get_AuthenticationType();
+    // public System.Void .ctor()
+    // Offset: 0x14078B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NtlmClient* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::NtlmClient::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NtlmClient*, creationType>()));
+    }
     // public System.Net.Authorization Authenticate(System.String challenge, System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
     // Offset: 0x1407918
     ::System::Net::Authorization* Authenticate(::StringW challenge, ::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
     // public System.Net.Authorization PreAuthenticate(System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
     // Offset: 0x1407A00
     ::System::Net::Authorization* PreAuthenticate(::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
-    // public System.Void .ctor()
-    // Offset: 0x14078B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NtlmClient* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::NtlmClient::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NtlmClient*, creationType>()));
-    }
   }; // System.Net.NtlmClient
   #pragma pack(pop)
   static check_size<sizeof(NtlmClient), 16 + sizeof(::System::Net::IAuthenticationModule*)> __System_Net_NtlmClientSizeCheck;
@@ -90,6 +88,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Net::NtlmClient*), "get_AuthenticationType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::NtlmClient::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::NtlmClient::Authenticate
 // Il2CppName: Authenticate
 template<>
@@ -111,7 +113,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::N
     return ::il2cpp_utils::FindMethod(classof(System::Net::NtlmClient*), "PreAuthenticate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{webRequest, credentials});
   }
 };
-// Writing MetadataGetter for method: System::Net::NtlmClient::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

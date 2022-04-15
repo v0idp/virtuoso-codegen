@@ -56,7 +56,7 @@ namespace Firebase::Firestore {
       return converters;
     }
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> _converters
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__converters();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>*& dyn__converters();
     // System.Collections.Generic.IDictionary`2<System.Type,Firebase.Firestore.Converters.IFirestoreInternalConverter> ToConverterDictionary()
     // Offset: 0xD50F94
     ::System::Collections::Generic::IDictionary_2<::System::Type*, ::Firebase::Firestore::Converters::IFirestoreInternalConverter*>* ToConverterDictionary();

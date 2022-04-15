@@ -93,7 +93,7 @@ namespace VROSC {
       // Set static field: static public VROSC.BeatCounter/VROSC.SyncSource BeatCounter
       static void _set_BeatCounter(::VROSC::BeatCounter::SyncSource value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.BeatCounter/VROSC.SyncSource
     #pragma pack(pop)
     static check_size<sizeof(BeatCounter::SyncSource), 0 + sizeof(int)> __VROSC_BeatCounter_SyncSourceSizeCheck;
@@ -253,41 +253,41 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Int32> OnVisualBeat
     static void _set_OnVisualBeat(::System::Action_1<int>* value);
     // Get instance field reference: private VROSC.Metronome _metronome
-    [[deprecated]] ::VROSC::Metronome*& dyn__metronome();
+    [[deprecated("Use field access instead!")]] ::VROSC::Metronome*& dyn__metronome();
     // Get instance field reference: private VROSC.BeatCounterUI _beatCounterUI
-    [[deprecated]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
     // Get instance field reference: private UnityEngine.AudioSource _beatCounterAudioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__beatCounterAudioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__beatCounterAudioSource();
     // Get instance field reference: private System.Single _lastFrameVisualBarProgress
-    [[deprecated]] float& dyn__lastFrameVisualBarProgress();
+    [[deprecated("Use field access instead!")]] float& dyn__lastFrameVisualBarProgress();
     // Get instance field reference: private System.Single <BPM>k__BackingField
-    [[deprecated]] float& dyn_$BPM$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$BPM$k__BackingField();
     // Get instance field reference: private System.Int32 <BeatsPerBar>k__BackingField
-    [[deprecated]] int& dyn_$BeatsPerBar$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$BeatsPerBar$k__BackingField();
     // Get instance field reference: private System.Int32 <BeatLengthInSamples>k__BackingField
-    [[deprecated]] int& dyn_$BeatLengthInSamples$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$BeatLengthInSamples$k__BackingField();
     // Get instance field reference: private VROSC.BeatCounter/VROSC.SyncSource <CurrentSyncSource>k__BackingField
-    [[deprecated]] ::VROSC::BeatCounter::SyncSource& dyn_$CurrentSyncSource$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::BeatCounter::SyncSource& dyn_$CurrentSyncSource$k__BackingField();
     // Get instance field reference: private System.Int32 <CurrentSyncSample>k__BackingField
-    [[deprecated]] int& dyn_$CurrentSyncSample$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$CurrentSyncSample$k__BackingField();
     // Get instance field reference: private System.Single <AudioBarProgress>k__BackingField
-    [[deprecated]] float& dyn_$AudioBarProgress$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$AudioBarProgress$k__BackingField();
     // Get instance field reference: private System.Int32 <AudioBarNumber>k__BackingField
-    [[deprecated]] int& dyn_$AudioBarNumber$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$AudioBarNumber$k__BackingField();
     // Get instance field reference: private System.Single <VisualBarProgress>k__BackingField
-    [[deprecated]] float& dyn_$VisualBarProgress$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$VisualBarProgress$k__BackingField();
     // Get instance field reference: private System.Int32 <VisualBarNumber>k__BackingField
-    [[deprecated]] int& dyn_$VisualBarNumber$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$VisualBarNumber$k__BackingField();
     // Get instance field reference: private System.Boolean <IsVisualBeatFrame>k__BackingField
-    [[deprecated]] bool& dyn_$IsVisualBeatFrame$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsVisualBeatFrame$k__BackingField();
     // Get instance field reference: private System.Int32 <VisualCurrentBeat>k__BackingField
-    [[deprecated]] int& dyn_$VisualCurrentBeat$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$VisualCurrentBeat$k__BackingField();
     // Get instance field reference: private System.Single <LooperMaxBPM>k__BackingField
-    [[deprecated]] float& dyn_$LooperMaxBPM$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$LooperMaxBPM$k__BackingField();
     // Get instance field reference: private System.Boolean <IsSetup>k__BackingField
-    [[deprecated]] bool& dyn_$IsSetup$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsSetup$k__BackingField();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPlaying$k__BackingField();
     // public VROSC.Metronome get_Metronome()
     // Offset: 0x974888
     ::VROSC::Metronome* get_Metronome();
@@ -378,6 +378,13 @@ namespace VROSC {
     // private System.Void set_IsPlaying(System.Boolean value)
     // Offset: 0x97497C
     void set_IsPlaying(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x9759B8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BeatCounter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BeatCounter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BeatCounter*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x974988
     void Awake();
@@ -432,19 +439,6 @@ namespace VROSC {
     // public System.Int32 GetNextQuantizePointAfterSample(System.Int32 sample, System.Int32 barDivision)
     // Offset: 0x975928
     int GetNextQuantizePointAfterSample(int sample, int barDivision);
-    // public System.Void .ctor()
-    // Offset: 0x9759B8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BeatCounter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BeatCounter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BeatCounter*, creationType>()));
-    }
   }; // VROSC.BeatCounter
   #pragma pack(pop)
   static check_size<sizeof(BeatCounter), 101 + sizeof(bool)> __VROSC_BeatCounterSizeCheck;
@@ -707,6 +701,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BeatCounter*), "set_IsPlaying", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::BeatCounter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BeatCounter::Awake
 // Il2CppName: Awake
 template<>
@@ -870,7 +868,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC:
     return ::il2cpp_utils::FindMethod(classof(VROSC::BeatCounter*), "GetNextQuantizePointAfterSample", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sample, barDivision});
   }
 };
-// Writing MetadataGetter for method: VROSC::BeatCounter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

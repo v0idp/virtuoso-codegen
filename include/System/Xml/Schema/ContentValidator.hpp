@@ -86,11 +86,11 @@ namespace System::Xml::Schema {
     // Set static field: static public readonly System.Xml.Schema.ContentValidator Any
     static void _set_Any(::System::Xml::Schema::ContentValidator* value);
     // Get instance field reference: private System.Xml.Schema.XmlSchemaContentType contentType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaContentType& dyn_contentType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaContentType& dyn_contentType();
     // Get instance field reference: private System.Boolean isOpen
-    [[deprecated]] bool& dyn_isOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn_isOpen();
     // Get instance field reference: private System.Boolean isEmptiable
-    [[deprecated]] bool& dyn_isEmptiable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isEmptiable();
     // public System.Xml.Schema.XmlSchemaContentType get_ContentType()
     // Offset: 0x109E4D8
     ::System::Xml::Schema::XmlSchemaContentType get_ContentType();

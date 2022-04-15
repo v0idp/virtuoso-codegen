@@ -80,13 +80,13 @@ namespace System::Data {
     // Deleting conversion operator: operator ::System::Data::DataTable*
     constexpr operator ::System::Data::DataTable*() const noexcept = delete;
     // Get instance field reference: private readonly System.String _relationName
-    [[deprecated]] ::StringW& dyn__relationName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__relationName();
     // Get instance field reference: private readonly System.String _columnName
-    [[deprecated]] ::StringW& dyn__columnName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__columnName();
     // Get instance field reference: private System.Data.DataColumn _column
-    [[deprecated]] ::System::Data::DataColumn*& dyn__column();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__column();
     // Get instance field reference: private System.Data.DataRelation _relation
-    [[deprecated]] ::System::Data::DataRelation*& dyn__relation();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRelation*& dyn__relation();
     // System.Void .ctor(System.Data.DataTable table, System.String columnName, System.String relationName)
     // Offset: 0x13B762C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

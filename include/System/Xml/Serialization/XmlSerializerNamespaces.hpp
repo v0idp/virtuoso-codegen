@@ -55,7 +55,7 @@ namespace System::Xml::Serialization {
       return namespaces;
     }
     // Get instance field reference: private System.Collections.Hashtable namespaces
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_namespaces();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_namespaces();
     // public System.Int32 get_Count()
     // Offset: 0x132CE60
     int get_Count();
@@ -68,6 +68,13 @@ namespace System::Xml::Serialization {
     // System.Void set_Namespaces(System.Collections.Hashtable value)
     // Offset: 0x132D640
     void set_Namespaces(::System::Collections::Hashtable* value);
+    // public System.Void .ctor()
+    // Offset: 0x1322890
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlSerializerNamespaces* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializerNamespaces::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlSerializerNamespaces*, creationType>()));
+    }
     // public System.Void Add(System.String prefix, System.String ns)
     // Offset: 0x1322898
     void Add(::StringW prefix, ::StringW ns);
@@ -77,15 +84,6 @@ namespace System::Xml::Serialization {
     // public System.Xml.XmlQualifiedName[] ToArray()
     // Offset: 0x1324818
     ::ArrayW<::System::Xml::XmlQualifiedName*> ToArray();
-    // public System.Void .ctor()
-    // Offset: 0x1322890
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlSerializerNamespaces* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializerNamespaces::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlSerializerNamespaces*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlSerializerNamespaces
   #pragma pack(pop)
   static check_size<sizeof(XmlSerializerNamespaces), 16 + sizeof(::System::Collections::Hashtable*)> __System_Xml_Serialization_XmlSerializerNamespacesSizeCheck;
@@ -125,6 +123,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlSerializerNamespaces*), "set_Namespaces", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlSerializerNamespaces::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlSerializerNamespaces::Add
 // Il2CppName: Add
 template<>
@@ -153,7 +155,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlSerializerNamespaces*), "ToArray", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlSerializerNamespaces::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

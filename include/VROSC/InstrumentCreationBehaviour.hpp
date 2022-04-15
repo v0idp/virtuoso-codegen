@@ -58,22 +58,19 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.WidgetController _instrumentController
-    [[deprecated]] ::VROSC::WidgetController*& dyn__instrumentController();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetController*& dyn__instrumentController();
     // Get instance field reference: public System.Single Scale
-    [[deprecated]] float& dyn_Scale();
-    // public System.Void Setup(VROSC.WidgetController instrumentController)
-    // Offset: 0x1947540
-    void Setup(::VROSC::WidgetController* instrumentController);
+    [[deprecated("Use field access instead!")]] float& dyn_Scale();
     // public System.Void .ctor()
     // Offset: 0x19475C8
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InstrumentCreationBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InstrumentCreationBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InstrumentCreationBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.WidgetController instrumentController)
+    // Offset: 0x1947540
+    void Setup(::VROSC::WidgetController* instrumentController);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x1947548
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -85,6 +82,10 @@ namespace VROSC {
   static_assert(sizeof(InstrumentCreationBehaviour) == 0x1C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::InstrumentCreationBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InstrumentCreationBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -94,10 +95,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::InstrumentCreationBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{instrumentController});
   }
 };
-// Writing MetadataGetter for method: VROSC::InstrumentCreationBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InstrumentCreationBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

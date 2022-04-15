@@ -177,24 +177,31 @@ namespace System::Linq::Expressions::Interpreter {
     // Set static field: static private readonly System.Linq.Expressions.Interpreter.LocalDefinition[] s_emptyLocals
     static void _set_s_emptyLocals(::ArrayW<::System::Linq::Expressions::Interpreter::LocalDefinition> value);
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.InstructionList _instructions
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::InstructionList*& dyn__instructions();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::InstructionList*& dyn__instructions();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.LocalVariables _locals
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LocalVariables*& dyn__locals();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LocalVariables*& dyn__locals();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Linq.Expressions.Interpreter.DebugInfo> _debugInfos
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::DebugInfo*>*& dyn__debugInfos();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::DebugInfo*>*& dyn__debugInfos();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.HybridReferenceDictionary`2<System.Linq.Expressions.LabelTarget,System.Linq.Expressions.Interpreter.LabelInfo> _treeLabels
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<::System::Linq::Expressions::LabelTarget*, ::System::Linq::Expressions::Interpreter::LabelInfo*>*& dyn__treeLabels();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<::System::Linq::Expressions::LabelTarget*, ::System::Linq::Expressions::Interpreter::LabelInfo*>*& dyn__treeLabels();
     // Get instance field reference: private System.Linq.Expressions.Interpreter.LabelScopeInfo _labelBlock
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LabelScopeInfo*& dyn__labelBlock();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LabelScopeInfo*& dyn__labelBlock();
     // Get instance field reference: private readonly System.Collections.Generic.Stack`1<System.Linq.Expressions.ParameterExpression> _exceptionForRethrowStack
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::System::Linq::Expressions::ParameterExpression*>*& dyn__exceptionForRethrowStack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::System::Linq::Expressions::ParameterExpression*>*& dyn__exceptionForRethrowStack();
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.LightCompiler _parent
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LightCompiler*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LightCompiler*& dyn__parent();
     // Get instance field reference: private readonly System.Linq.Expressions.StackGuard _guard
-    [[deprecated]] ::System::Linq::Expressions::StackGuard*& dyn__guard();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::StackGuard*& dyn__guard();
     // public System.Linq.Expressions.Interpreter.InstructionList get_Instructions()
     // Offset: 0xF21758
     ::System::Linq::Expressions::Interpreter::InstructionList* get_Instructions();
+    // public System.Void .ctor()
+    // Offset: 0xF2157C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LightCompiler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LightCompiler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LightCompiler*, creationType>()));
+    }
     // private System.Void .ctor(System.Linq.Expressions.Interpreter.LightCompiler parent)
     // Offset: 0xF21730
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -478,15 +485,6 @@ namespace System::Linq::Expressions::Interpreter {
     // private System.Void Compile(System.Linq.Expressions.Expression expr)
     // Offset: 0xF21964
     void Compile(::System::Linq::Expressions::Expression* expr);
-    // public System.Void .ctor()
-    // Offset: 0xF2157C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LightCompiler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LightCompiler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LightCompiler*, creationType>()));
-    }
   }; // System.Linq.Expressions.Interpreter.LightCompiler
   #pragma pack(pop)
   static check_size<sizeof(LightCompiler), 72 + sizeof(::System::Linq::Expressions::StackGuard*)> __System_Linq_Expressions_Interpreter_LightCompilerSizeCheck;
@@ -501,6 +499,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::L
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LightCompiler*), "get_Instructions", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightCompiler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightCompiler::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -1341,7 +1343,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LightCompiler*), "Compile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{expr});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightCompiler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

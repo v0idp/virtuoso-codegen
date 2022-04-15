@@ -117,19 +117,19 @@ namespace Mono::Net::Security {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly Mono.Security.Interface.MonoTlsProvider provider
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_provider();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsProvider*& dyn_provider();
     // Get instance field reference: private readonly System.Net.Sockets.NetworkStream networkStream
-    [[deprecated]] ::System::Net::Sockets::NetworkStream*& dyn_networkStream();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::NetworkStream*& dyn_networkStream();
     // Get instance field reference: private readonly System.Net.HttpWebRequest request
-    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_request();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_request();
     // Get instance field reference: private readonly Mono.Security.Interface.MonoTlsSettings settings
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_settings();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsSettings*& dyn_settings();
     // Get instance field reference: private Mono.Security.Interface.IMonoSslStream sslStream
-    [[deprecated]] ::Mono::Security::Interface::IMonoSslStream*& dyn_sslStream();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::IMonoSslStream*& dyn_sslStream();
     // Get instance field reference: private System.Net.WebExceptionStatus status
-    [[deprecated]] ::System::Net::WebExceptionStatus& dyn_status();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebExceptionStatus& dyn_status();
     // Get instance field reference: private System.Boolean <CertificateValidationFailed>k__BackingField
-    [[deprecated]] bool& dyn_$CertificateValidationFailed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$CertificateValidationFailed$k__BackingField();
     // System.Net.HttpWebRequest get_Request()
     // Offset: 0x1100598
     ::System::Net::HttpWebRequest* get_Request();

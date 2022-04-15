@@ -149,29 +149,29 @@ namespace Newtonsoft::Json {
       return *reinterpret_cast<::Newtonsoft::Json::IJsonLineInfo*>(this);
     }
     // Get instance field reference: private readonly System.Boolean _safeAsync
-    [[deprecated]] bool& dyn__safeAsync();
+    [[deprecated("Use field access instead!")]] bool& dyn__safeAsync();
     // Get instance field reference: private readonly System.IO.TextReader _reader
-    [[deprecated]] ::System::IO::TextReader*& dyn__reader();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextReader*& dyn__reader();
     // Get instance field reference: private System.Char[] _chars
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn__chars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn__chars();
     // Get instance field reference: private System.Int32 _charsUsed
-    [[deprecated]] int& dyn__charsUsed();
+    [[deprecated("Use field access instead!")]] int& dyn__charsUsed();
     // Get instance field reference: private System.Int32 _charPos
-    [[deprecated]] int& dyn__charPos();
+    [[deprecated("Use field access instead!")]] int& dyn__charPos();
     // Get instance field reference: private System.Int32 _lineStartPos
-    [[deprecated]] int& dyn__lineStartPos();
+    [[deprecated("Use field access instead!")]] int& dyn__lineStartPos();
     // Get instance field reference: private System.Int32 _lineNumber
-    [[deprecated]] int& dyn__lineNumber();
+    [[deprecated("Use field access instead!")]] int& dyn__lineNumber();
     // Get instance field reference: private System.Boolean _isEndOfFile
-    [[deprecated]] bool& dyn__isEndOfFile();
+    [[deprecated("Use field access instead!")]] bool& dyn__isEndOfFile();
     // Get instance field reference: private Newtonsoft.Json.Utilities.StringBuffer _stringBuffer
-    [[deprecated]] ::Newtonsoft::Json::Utilities::StringBuffer& dyn__stringBuffer();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::StringBuffer& dyn__stringBuffer();
     // Get instance field reference: private Newtonsoft.Json.Utilities.StringReference _stringReference
-    [[deprecated]] ::Newtonsoft::Json::Utilities::StringReference& dyn__stringReference();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::StringReference& dyn__stringReference();
     // Get instance field reference: private Newtonsoft.Json.IArrayPool`1<System.Char> _arrayPool
-    [[deprecated]] ::Newtonsoft::Json::IArrayPool_1<::Il2CppChar>*& dyn__arrayPool();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::IArrayPool_1<::Il2CppChar>*& dyn__arrayPool();
     // Get instance field reference: private Newtonsoft.Json.JsonNameTable <PropertyNameTable>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::JsonNameTable*& dyn_$PropertyNameTable$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonNameTable*& dyn_$PropertyNameTable$k__BackingField();
     // public Newtonsoft.Json.JsonNameTable get_PropertyNameTable()
     // Offset: 0x1336BA0
     ::Newtonsoft::Json::JsonNameTable* get_PropertyNameTable();

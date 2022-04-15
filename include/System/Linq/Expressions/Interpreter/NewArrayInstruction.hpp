@@ -54,7 +54,7 @@ namespace System::Linq::Expressions::Interpreter {
       return elementType;
     }
     // Get instance field reference: private readonly System.Type _elementType
-    [[deprecated]] ::System::Type*& dyn__elementType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__elementType();
     // System.Void .ctor(System.Type elementType)
     // Offset: 0xE941CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

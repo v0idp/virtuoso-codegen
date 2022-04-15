@@ -77,13 +77,13 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IFormattable*>(this);
     }
     // Get instance field reference: private System.Int32 m_XMin
-    [[deprecated]] int& dyn_m_XMin();
+    [[deprecated("Use field access instead!")]] int& dyn_m_XMin();
     // Get instance field reference: private System.Int32 m_YMin
-    [[deprecated]] int& dyn_m_YMin();
+    [[deprecated("Use field access instead!")]] int& dyn_m_YMin();
     // Get instance field reference: private System.Int32 m_Width
-    [[deprecated]] int& dyn_m_Width();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Width();
     // Get instance field reference: private System.Int32 m_Height
-    [[deprecated]] int& dyn_m_Height();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Height();
     // public System.Int32 get_x()
     // Offset: 0xBCA034
     int get_x();

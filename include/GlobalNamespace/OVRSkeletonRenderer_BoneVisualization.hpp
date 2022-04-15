@@ -75,17 +75,17 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.GameObject BoneGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_BoneGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_BoneGO();
     // Get instance field reference: private UnityEngine.Transform BoneBegin
-    [[deprecated]] ::UnityEngine::Transform*& dyn_BoneBegin();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_BoneBegin();
     // Get instance field reference: private UnityEngine.Transform BoneEnd
-    [[deprecated]] ::UnityEngine::Transform*& dyn_BoneEnd();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_BoneEnd();
     // Get instance field reference: private UnityEngine.LineRenderer Line
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn_Line();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn_Line();
     // Get instance field reference: private UnityEngine.Material RenderMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_RenderMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_RenderMaterial();
     // Get instance field reference: private UnityEngine.Material SystemGestureMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_SystemGestureMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_SystemGestureMaterial();
     // public System.Void .ctor(UnityEngine.GameObject rootGO, UnityEngine.Material renderMat, UnityEngine.Material systemGestureMat, System.Single scale, UnityEngine.Transform begin, UnityEngine.Transform end)
     // Offset: 0x13EF09C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

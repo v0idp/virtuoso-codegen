@@ -97,13 +97,13 @@ namespace Newtonsoft::Json {
     // Set static field: static private readonly System.Char[] SpecialCharacters
     static void _set_SpecialCharacters(::ArrayW<::Il2CppChar> value);
     // Get instance field reference: Newtonsoft.Json.JsonContainerType Type
-    [[deprecated]] ::Newtonsoft::Json::JsonContainerType& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonContainerType& dyn_Type();
     // Get instance field reference: System.Int32 Position
-    [[deprecated]] int& dyn_Position();
+    [[deprecated("Use field access instead!")]] int& dyn_Position();
     // Get instance field reference: System.String PropertyName
-    [[deprecated]] ::StringW& dyn_PropertyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PropertyName();
     // Get instance field reference: System.Boolean HasIndex
-    [[deprecated]] bool& dyn_HasIndex();
+    [[deprecated("Use field access instead!")]] bool& dyn_HasIndex();
     // public System.Void .ctor(Newtonsoft.Json.JsonContainerType type)
     // Offset: 0xEE2598
     JsonPosition(::Newtonsoft::Json::JsonContainerType type);

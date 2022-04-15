@@ -61,11 +61,11 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::System::Runtime::Serialization::Formatters::Binary::SerStack*) == 0x8);
     public:
     // Get instance field reference: System.Collections.Hashtable seenBeforeTable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_seenBeforeTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_seenBeforeTable();
     // Get instance field reference: System.Int32 objectInfoIdCount
-    [[deprecated]] int& dyn_objectInfoIdCount();
+    [[deprecated("Use field access instead!")]] int& dyn_objectInfoIdCount();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.SerStack oiPool
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::SerStack*& dyn_oiPool();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::SerStack*& dyn_oiPool();
     // public System.Void .ctor()
     // Offset: 0x1178080
     // Implemented from: System.Object

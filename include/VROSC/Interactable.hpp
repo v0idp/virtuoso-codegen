@@ -132,29 +132,29 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean <IsHovering>k__BackingField
-    [[deprecated]] bool& dyn_$IsHovering$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsHovering$k__BackingField();
     // Get instance field reference: private System.Boolean <IsInteracting>k__BackingField
-    [[deprecated]] bool& dyn_$IsInteracting$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsInteracting$k__BackingField();
     // Get instance field reference: public System.Action OnHoverStay
-    [[deprecated]] ::System::Action*& dyn_OnHoverStay();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnHoverStay();
     // Get instance field reference: public System.Action`1<System.Boolean> OnHover
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnHover();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnHover();
     // Get instance field reference: public System.Action`1<System.Boolean> OnInteraction
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnInteraction();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnInteraction();
     // Get instance field reference: public System.Action`1<System.Boolean> OnInteractableDisabled
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnInteractableDisabled();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnInteractableDisabled();
     // Get instance field reference: protected UnityEngine.Vector3 _lastHoverPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lastHoverPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lastHoverPosition();
     // Get instance field reference: protected System.Boolean _lastPointedAt
-    [[deprecated]] bool& dyn__lastPointedAt();
+    [[deprecated("Use field access instead!")]] bool& dyn__lastPointedAt();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.InputDevice> _hoveringControllers
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::InputDevice*>*& dyn__hoveringControllers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::InputDevice*>*& dyn__hoveringControllers();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _tooltipDatas
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> _disablingObjects
-    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__disablingObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__disablingObjects();
     // Get instance field reference: private System.Boolean _canBeinteractedWith
-    [[deprecated]] bool& dyn__canBeinteractedWith();
+    [[deprecated("Use field access instead!")]] bool& dyn__canBeinteractedWith();
     // public System.Boolean get_IsHovering()
     // Offset: 0x1948D28
     bool get_IsHovering();
@@ -173,6 +173,13 @@ namespace VROSC {
     // public System.Boolean get_CanBeInteractedWith()
     // Offset: 0x1948D98
     bool get_CanBeInteractedWith();
+    // protected System.Void .ctor()
+    // Offset: 0x1949398
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Interactable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Interactable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Interactable*, creationType>()));
+    }
     // public System.Void SetDisabled(System.Object disabler, System.Boolean shouldBeDisabled)
     // Offset: 0x1948DD0
     void SetDisabled(::Il2CppObject* disabler, bool shouldBeDisabled);
@@ -200,19 +207,6 @@ namespace VROSC {
     // public System.Collections.Generic.List`1<VROSC.TooltipData> GetTooltipDatas()
     // Offset: 0x1949314
     ::System::Collections::Generic::List_1<::VROSC::TooltipData*>* GetTooltipDatas();
-    // protected System.Void .ctor()
-    // Offset: 0x1949398
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Interactable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Interactable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Interactable*, creationType>()));
-    }
   }; // VROSC.Interactable
   #pragma pack(pop)
   static check_size<sizeof(Interactable), 104 + sizeof(bool)> __VROSC_InteractableSizeCheck;
@@ -269,6 +263,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::Interactable*), "get_CanBeInteractedWith", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::Interactable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::Interactable::SetDisabled
 // Il2CppName: SetDisabled
 template<>
@@ -355,7 +353,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(VROSC::Interactable*), "GetTooltipDatas", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::Interactable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

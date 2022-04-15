@@ -72,7 +72,7 @@ namespace UnityEngine::Animations {
     // Set static field: static private readonly UnityEngine.Animations.AnimationMotionXToDeltaPlayable m_NullPlayable
     static void _set_m_NullPlayable(::UnityEngine::Animations::AnimationMotionXToDeltaPlayable value);
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // private System.Void .ctor(UnityEngine.Playables.PlayableHandle handle)
     // Offset: 0x18D0344
     // ABORTED: conflicts with another method.  AnimationMotionXToDeltaPlayable(::UnityEngine::Playables::PlayableHandle handle);

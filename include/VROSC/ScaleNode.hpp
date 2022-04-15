@@ -58,9 +58,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Scale) == 0x4);
     public:
     // Get instance field reference: public System.Action OnScaleSet
-    [[deprecated]] ::System::Action*& dyn_OnScaleSet();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnScaleSet();
     // Get instance field reference: private VROSC.Scale _scale
-    [[deprecated]] ::VROSC::Scale& dyn__scale();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn__scale();
     // public VROSC.Scale get_Scale()
     // Offset: 0xDE2A58
     ::VROSC::Scale get_Scale();
@@ -78,11 +78,6 @@ namespace VROSC {
     // Implemented from: VROSC.IntNode
     // Base method: System.Void IntNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleNode::.ctor");

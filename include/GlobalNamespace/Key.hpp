@@ -192,39 +192,39 @@ namespace GlobalNamespace {
     // Set static field: static public System.Action`2<Key,System.Single> OnKeyHit
     static void _set_OnKeyHit(::System::Action_2<::GlobalNamespace::Key*, float>* value);
     // Get instance field reference: private PunchKeyData _data
-    [[deprecated]] ::GlobalNamespace::PunchKeyData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PunchKeyData*& dyn__data();
     // Get instance field reference: private VROSC.UI.UIInteractableColoring _coloring
-    [[deprecated]] ::VROSC::UI::UIInteractableColoring*& dyn__coloring();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIInteractableColoring*& dyn__coloring();
     // Get instance field reference: private UnityEngine.Collider _collider
-    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__collider();
     // Get instance field reference: private UnityEngine.Rigidbody _rigidBody
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn__rigidBody();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn__rigidBody();
     // Get instance field reference: public System.Boolean KeyPressed
-    [[deprecated]] bool& dyn_KeyPressed();
+    [[deprecated("Use field access instead!")]] bool& dyn_KeyPressed();
     // Get instance field reference: private System.Single _startRepeatedPressesDelay
-    [[deprecated]] float& dyn__startRepeatedPressesDelay();
+    [[deprecated("Use field access instead!")]] float& dyn__startRepeatedPressesDelay();
     // Get instance field reference: private System.Single _repeatedPressDelay
-    [[deprecated]] float& dyn__repeatedPressDelay();
+    [[deprecated("Use field access instead!")]] float& dyn__repeatedPressDelay();
     // Get instance field reference: protected UnityEngine.Transform initialPosition
-    [[deprecated]] ::UnityEngine::Transform*& dyn_initialPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_initialPosition();
     // Get instance field reference: private TMPro.TextMeshPro keyCapText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn_keyCapText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn_keyCapText();
     // Get instance field reference: private UnityEngine.Vector3 initialLocalPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_initialLocalPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_initialLocalPosition();
     // Get instance field reference: private UnityEngine.Quaternion initialLocalRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_initialLocalRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_initialLocalRotation();
     // Get instance field reference: private UnityEngine.Vector3 constrainedPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_constrainedPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_constrainedPosition();
     // Get instance field reference: private UnityEngine.Quaternion constrainedRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_constrainedRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_constrainedRotation();
     // Get instance field reference: private System.Boolean checkForButton
-    [[deprecated]] bool& dyn_checkForButton();
+    [[deprecated("Use field access instead!")]] bool& dyn_checkForButton();
     // Get instance field reference: private System.Single currentDistance
-    [[deprecated]] float& dyn_currentDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_currentDistance();
     // Get instance field reference: private System.Single _pressedTimer
-    [[deprecated]] float& dyn__pressedTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__pressedTimer();
     // Get instance field reference: private System.Boolean _isRepeating
-    [[deprecated]] bool& dyn__isRepeating();
+    [[deprecated("Use field access instead!")]] bool& dyn__isRepeating();
     // public Key/Type get_KeyType()
     // Offset: 0x194B3A8
     ::GlobalNamespace::Key::Type get_KeyType();
@@ -237,6 +237,13 @@ namespace GlobalNamespace {
     // public System.String get_OutputChar()
     // Offset: 0x194B3FC
     ::StringW get_OutputChar();
+    // public System.Void .ctor()
+    // Offset: 0x194BFF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Key* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Key::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Key*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x194B478
     void Start();
@@ -273,19 +280,6 @@ namespace GlobalNamespace {
     // private System.Void SettingsUpdated()
     // Offset: 0x194B86C
     void SettingsUpdated();
-    // public System.Void .ctor()
-    // Offset: 0x194BFF8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Key* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Key::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Key*, creationType>()));
-    }
   }; // Key
   #pragma pack(pop)
   static check_size<sizeof(Key), 156 + sizeof(bool)> __GlobalNamespace_KeySizeCheck;
@@ -324,6 +318,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Key*), "get_OutputChar", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::Key::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::Key::Start
 // Il2CppName: Start
 template<>
@@ -421,7 +419,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Key*), "SettingsUpdated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::Key::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -58,9 +58,9 @@ namespace System::Security::Util {
     static_assert(sizeof(::System::Security::Util::Tokenizer*) == 0x8);
     public:
     // Get instance field reference: private System.Security.SecurityDocument _doc
-    [[deprecated]] ::System::Security::SecurityDocument*& dyn__doc();
+    [[deprecated("Use field access instead!")]] ::System::Security::SecurityDocument*& dyn__doc();
     // Get instance field reference: private System.Security.Util.Tokenizer _t
-    [[deprecated]] ::System::Security::Util::Tokenizer*& dyn__t();
+    [[deprecated("Use field access instead!")]] ::System::Security::Util::Tokenizer*& dyn__t();
     // private System.Void .ctor(System.Security.Util.Tokenizer t)
     // Offset: 0x14CA3D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

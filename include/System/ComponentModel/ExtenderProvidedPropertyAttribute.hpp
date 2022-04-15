@@ -64,30 +64,27 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private System.ComponentModel.PropertyDescriptor extenderProperty
-    [[deprecated]] ::System::ComponentModel::PropertyDescriptor*& dyn_extenderProperty();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyDescriptor*& dyn_extenderProperty();
     // Get instance field reference: private System.ComponentModel.IExtenderProvider provider
-    [[deprecated]] ::System::ComponentModel::IExtenderProvider*& dyn_provider();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::IExtenderProvider*& dyn_provider();
     // Get instance field reference: private System.Type receiverType
-    [[deprecated]] ::System::Type*& dyn_receiverType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_receiverType();
     // public System.ComponentModel.IExtenderProvider get_Provider()
     // Offset: 0xF005F8
     ::System::ComponentModel::IExtenderProvider* get_Provider();
     // public System.Type get_ReceiverType()
     // Offset: 0xF00600
     ::System::Type* get_ReceiverType();
-    // static System.ComponentModel.ExtenderProvidedPropertyAttribute Create(System.ComponentModel.PropertyDescriptor extenderProperty, System.Type receiverType, System.ComponentModel.IExtenderProvider provider)
-    // Offset: 0xF00134
-    static ::System::ComponentModel::ExtenderProvidedPropertyAttribute* Create(::System::ComponentModel::PropertyDescriptor* extenderProperty, ::System::Type* receiverType, ::System::ComponentModel::IExtenderProvider* provider);
     // public System.Void .ctor()
     // Offset: 0xF005F0
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExtenderProvidedPropertyAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::ExtenderProvidedPropertyAttribute::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ExtenderProvidedPropertyAttribute*, creationType>()));
     }
+    // static System.ComponentModel.ExtenderProvidedPropertyAttribute Create(System.ComponentModel.PropertyDescriptor extenderProperty, System.Type receiverType, System.ComponentModel.IExtenderProvider provider)
+    // Offset: 0xF00134
+    static ::System::ComponentModel::ExtenderProvidedPropertyAttribute* Create(::System::ComponentModel::PropertyDescriptor* extenderProperty, ::System::Type* receiverType, ::System::ComponentModel::IExtenderProvider* provider);
     // public override System.Boolean Equals(System.Object obj)
     // Offset: 0xF00608
     // Implemented from: System.Attribute
@@ -125,6 +122,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::ExtenderProvidedPropertyAttribute*), "get_ReceiverType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::ComponentModel::ExtenderProvidedPropertyAttribute::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::ExtenderProvidedPropertyAttribute::Create
 // Il2CppName: Create
 template<>
@@ -136,10 +137,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::ExtenderProvidedPropertyAttribute*), "Create", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{extenderProperty, receiverType, provider});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::ExtenderProvidedPropertyAttribute::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::ExtenderProvidedPropertyAttribute::Equals
 // Il2CppName: Equals
 template<>

@@ -52,34 +52,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected UnityEngine.MaterialPropertyBlock _propBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__propBlock();
     // Get instance field reference: protected System.Single _createdAmount
-    [[deprecated]] float& dyn__createdAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__createdAmount();
+    // public System.Void .ctor()
+    // Offset: 0x19A0E50
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FrameVisuals* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FrameVisuals::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FrameVisuals*, creationType>()));
+    }
     // protected System.Void CreateBlock()
     // Offset: 0x19A0DE4
     void CreateBlock();
     // public System.Void UpdateCreationAmount(System.Single createdAmount)
     // Offset: 0x19A0E48
     void UpdateCreationAmount(float createdAmount);
-    // public System.Void .ctor()
-    // Offset: 0x19A0E50
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FrameVisuals* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FrameVisuals::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FrameVisuals*, creationType>()));
-    }
   }; // VROSC.FrameVisuals
   #pragma pack(pop)
   static check_size<sizeof(FrameVisuals), 32 + sizeof(float)> __VROSC_FrameVisualsSizeCheck;
   static_assert(sizeof(FrameVisuals) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FrameVisuals::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FrameVisuals::CreateBlock
 // Il2CppName: CreateBlock
 template<>
@@ -97,7 +95,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FrameVisuals*), "UpdateCreationAmount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{createdAmount});
   }
 };
-// Writing MetadataGetter for method: VROSC::FrameVisuals::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

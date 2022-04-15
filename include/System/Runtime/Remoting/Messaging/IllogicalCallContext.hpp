@@ -48,9 +48,9 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Hashtable m_Datastore
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_m_Datastore();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_m_Datastore();
     // Get instance field reference: private System.Object m_HostContext
-    [[deprecated]] ::Il2CppObject*& dyn_m_HostContext();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_HostContext();
     // private System.Collections.Hashtable get_Datastore()
     // Offset: 0x106A13C
     ::System::Collections::Hashtable* get_Datastore();

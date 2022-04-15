@@ -61,6 +61,13 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0xE82234
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xE82294
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UserDataControllers::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserDataControllers::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UserDataControllers::$$c*, creationType>()));
+    }
     // System.Void <LoadCloudData>b__65_5(VROSC.Error error)
     // Offset: 0xE8229C
     void $LoadCloudData$b__65_5(::VROSC::Error error);
@@ -76,15 +83,6 @@ namespace VROSC {
     // System.Void <SaveControllers>b__68_3(VROSC.Error error)
     // Offset: 0xE82390
     void $SaveControllers$b__68_3(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0xE82294
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UserDataControllers::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserDataControllers::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UserDataControllers::$$c*, creationType>()));
-    }
   }; // VROSC.UserDataControllers/VROSC.<>c
   #pragma pack(pop)
 }
@@ -97,6 +95,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserDataControllers::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UserDataControllers::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UserDataControllers::$$c::$LoadCloudData$b__65_5
 // Il2CppName: <LoadCloudData>b__65_5
 template<>
@@ -142,7 +144,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UserDataControllers::$$c*), "<SaveControllers>b__68_3", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::UserDataControllers::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

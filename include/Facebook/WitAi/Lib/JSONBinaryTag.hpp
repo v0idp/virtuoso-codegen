@@ -84,7 +84,7 @@ namespace Facebook::WitAi::Lib {
     // Set static field: static public Facebook.WitAi.Lib.JSONBinaryTag FloatValue
     static void _set_FloatValue(::Facebook::WitAi::Lib::JSONBinaryTag value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Facebook.WitAi.Lib.JSONBinaryTag
   #pragma pack(pop)
   static check_size<sizeof(JSONBinaryTag), 0 + sizeof(int)> __Facebook_WitAi_Lib_JSONBinaryTagSizeCheck;

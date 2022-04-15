@@ -53,9 +53,9 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.UInt32 m_GlyphIndex
-    [[deprecated]] uint& dyn_m_GlyphIndex();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_GlyphIndex();
     // Get instance field reference: TMPro.TMP_GlyphValueRecord m_GlyphValueRecord
-    [[deprecated]] ::TMPro::TMP_GlyphValueRecord& dyn_m_GlyphValueRecord();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_GlyphValueRecord& dyn_m_GlyphValueRecord();
     // public System.UInt32 get_glyphIndex()
     // Offset: 0x102FFD0
     uint get_glyphIndex();

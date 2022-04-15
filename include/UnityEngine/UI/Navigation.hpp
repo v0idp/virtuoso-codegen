@@ -94,7 +94,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.Navigation/UnityEngine.UI.Mode Explicit
       static void _set_Explicit(::UnityEngine::UI::Navigation::Mode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.Navigation/UnityEngine.UI.Mode
     #pragma pack(pop)
     static check_size<sizeof(Navigation::Mode), 0 + sizeof(int)> __UnityEngine_UI_Navigation_ModeSizeCheck;
@@ -151,17 +151,17 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::UI::Navigation>*>(this);
     }
     // Get instance field reference: private UnityEngine.UI.Navigation/UnityEngine.UI.Mode m_Mode
-    [[deprecated]] ::UnityEngine::UI::Navigation::Mode& dyn_m_Mode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Navigation::Mode& dyn_m_Mode();
     // Get instance field reference: private System.Boolean m_WrapAround
-    [[deprecated]] bool& dyn_m_WrapAround();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_WrapAround();
     // Get instance field reference: private UnityEngine.UI.Selectable m_SelectOnUp
-    [[deprecated]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnUp();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnUp();
     // Get instance field reference: private UnityEngine.UI.Selectable m_SelectOnDown
-    [[deprecated]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnDown();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnDown();
     // Get instance field reference: private UnityEngine.UI.Selectable m_SelectOnLeft
-    [[deprecated]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnLeft();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnLeft();
     // Get instance field reference: private UnityEngine.UI.Selectable m_SelectOnRight
-    [[deprecated]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnRight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Selectable*& dyn_m_SelectOnRight();
     // public UnityEngine.UI.Navigation/UnityEngine.UI.Mode get_mode()
     // Offset: 0x1426C1C
     ::UnityEngine::UI::Navigation::Mode get_mode();

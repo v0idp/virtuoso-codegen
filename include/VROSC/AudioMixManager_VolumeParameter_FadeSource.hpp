@@ -38,9 +38,9 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Object Source
-    [[deprecated]] ::Il2CppObject*& dyn_Source();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Source();
     // Get instance field reference: public System.Single Volume
-    [[deprecated]] float& dyn_Volume();
+    [[deprecated("Use field access instead!")]] float& dyn_Volume();
     // public System.Void .ctor(System.Object source, System.Single volume)
     // Offset: 0xE8AFD0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

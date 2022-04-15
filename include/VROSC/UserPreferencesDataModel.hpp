@@ -209,57 +209,57 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single GlobalVolume
-    [[deprecated]] float& dyn_GlobalVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_GlobalVolume();
     // Get instance field reference: public System.Boolean PlayAudioWhenUnfocused
-    [[deprecated]] bool& dyn_PlayAudioWhenUnfocused();
+    [[deprecated("Use field access instead!")]] bool& dyn_PlayAudioWhenUnfocused();
     // Get instance field reference: public System.Single VideoPlayerVolume
-    [[deprecated]] float& dyn_VideoPlayerVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_VideoPlayerVolume();
     // Get instance field reference: public System.Boolean UseClassicControls
-    [[deprecated]] bool& dyn_UseClassicControls();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseClassicControls();
     // Get instance field reference: public System.Boolean AutoPlayPreviews
-    [[deprecated]] bool& dyn_AutoPlayPreviews();
+    [[deprecated("Use field access instead!")]] bool& dyn_AutoPlayPreviews();
     // Get instance field reference: public System.Single PreviewsVolume
-    [[deprecated]] float& dyn_PreviewsVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_PreviewsVolume();
     // Get instance field reference: public System.Boolean PreviewDrums
-    [[deprecated]] bool& dyn_PreviewDrums();
+    [[deprecated("Use field access instead!")]] bool& dyn_PreviewDrums();
     // Get instance field reference: public System.Single PreviewDrumsVolume
-    [[deprecated]] float& dyn_PreviewDrumsVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_PreviewDrumsVolume();
     // Get instance field reference: public System.Single MalletAngle
-    [[deprecated]] float& dyn_MalletAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_MalletAngle();
     // Get instance field reference: public System.Single MalletLength
-    [[deprecated]] float& dyn_MalletLength();
+    [[deprecated("Use field access instead!")]] float& dyn_MalletLength();
     // Get instance field reference: public System.Boolean LaserAutoDimWhenHoldingMallets
-    [[deprecated]] bool& dyn_LaserAutoDimWhenHoldingMallets();
+    [[deprecated("Use field access instead!")]] bool& dyn_LaserAutoDimWhenHoldingMallets();
     // Get instance field reference: public System.Int32 SelectedSpectatorCamera
-    [[deprecated]] int& dyn_SelectedSpectatorCamera();
+    [[deprecated("Use field access instead!")]] int& dyn_SelectedSpectatorCamera();
     // Get instance field reference: public System.Boolean SpectatorHideBackground
-    [[deprecated]] bool& dyn_SpectatorHideBackground();
+    [[deprecated("Use field access instead!")]] bool& dyn_SpectatorHideBackground();
     // Get instance field reference: public VROSC.TransformDataModel MoveableCameraTransformData
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn_MoveableCameraTransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn_MoveableCameraTransformData();
     // Get instance field reference: public System.Boolean AllowExternalKeyboard
-    [[deprecated]] bool& dyn_AllowExternalKeyboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_AllowExternalKeyboard();
     // Get instance field reference: public System.Boolean UseTouchForKeyboard
-    [[deprecated]] bool& dyn_UseTouchForKeyboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseTouchForKeyboard();
     // Get instance field reference: public System.Boolean UsePointAndClickForKeyboard
-    [[deprecated]] bool& dyn_UsePointAndClickForKeyboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_UsePointAndClickForKeyboard();
     // Get instance field reference: public System.Boolean KeyboardPlaysClickSound
-    [[deprecated]] bool& dyn_KeyboardPlaysClickSound();
+    [[deprecated("Use field access instead!")]] bool& dyn_KeyboardPlaysClickSound();
     // Get instance field reference: public System.Boolean GrabToActivateMicrophone
-    [[deprecated]] bool& dyn_GrabToActivateMicrophone();
+    [[deprecated("Use field access instead!")]] bool& dyn_GrabToActivateMicrophone();
     // Get instance field reference: public System.Boolean PreviewMicrophoneReverb
-    [[deprecated]] bool& dyn_PreviewMicrophoneReverb();
+    [[deprecated("Use field access instead!")]] bool& dyn_PreviewMicrophoneReverb();
     // Get instance field reference: public System.Boolean Overdub
-    [[deprecated]] bool& dyn_Overdub();
+    [[deprecated("Use field access instead!")]] bool& dyn_Overdub();
     // Get instance field reference: public System.Boolean SetRecordingLengthToFirstLoopLength
-    [[deprecated]] bool& dyn_SetRecordingLengthToFirstLoopLength();
+    [[deprecated("Use field access instead!")]] bool& dyn_SetRecordingLengthToFirstLoopLength();
     // Get instance field reference: public VROSC.Metronome/VROSC.Mode MetronomeMode
-    [[deprecated]] ::VROSC::Metronome::Mode& dyn_MetronomeMode();
+    [[deprecated("Use field access instead!")]] ::VROSC::Metronome::Mode& dyn_MetronomeMode();
     // Get instance field reference: public VROSC.Metronome/VROSC.Medium MetronomeMedium
-    [[deprecated]] ::VROSC::Metronome::Medium& dyn_MetronomeMedium();
+    [[deprecated("Use field access instead!")]] ::VROSC::Metronome::Medium& dyn_MetronomeMedium();
     // Get instance field reference: public System.String SelectedEnvironment
-    [[deprecated]] ::StringW& dyn_SelectedEnvironment();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SelectedEnvironment();
     // Get instance field reference: public System.Single EnvironmentEffectsAmount
-    [[deprecated]] float& dyn_EnvironmentEffectsAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_EnvironmentEffectsAmount();
     // public override System.String get_Key()
     // Offset: 0x191F190
     // Implemented from: VROSC.BaseDataModel
@@ -274,7 +274,6 @@ namespace VROSC {
     // Offset: 0x191D664
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserPreferencesDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserPreferencesDataModel::.ctor");

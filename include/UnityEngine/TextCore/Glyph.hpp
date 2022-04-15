@@ -72,15 +72,15 @@ namespace UnityEngine::TextCore {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.UInt32 m_Index
-    [[deprecated]] uint& dyn_m_Index();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_Index();
     // Get instance field reference: private UnityEngine.TextCore.GlyphMetrics m_Metrics
-    [[deprecated]] ::UnityEngine::TextCore::GlyphMetrics& dyn_m_Metrics();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::GlyphMetrics& dyn_m_Metrics();
     // Get instance field reference: private UnityEngine.TextCore.GlyphRect m_GlyphRect
-    [[deprecated]] ::UnityEngine::TextCore::GlyphRect& dyn_m_GlyphRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::GlyphRect& dyn_m_GlyphRect();
     // Get instance field reference: private System.Single m_Scale
-    [[deprecated]] float& dyn_m_Scale();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Scale();
     // Get instance field reference: private System.Int32 m_AtlasIndex
-    [[deprecated]] int& dyn_m_AtlasIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_AtlasIndex();
     // public System.UInt32 get_index()
     // Offset: 0x18EC61C
     uint get_index();
@@ -111,6 +111,13 @@ namespace UnityEngine::TextCore {
     // public System.Void set_atlasIndex(System.Int32 value)
     // Offset: 0x18EC680
     void set_atlasIndex(int value);
+    // public System.Void .ctor()
+    // Offset: 0x18EC688
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Glyph* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TextCore::Glyph::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Glyph*, creationType>()));
+    }
     // System.Void .ctor(UnityEngine.TextCore.LowLevel.GlyphMarshallingStruct glyphStruct)
     // Offset: 0x18EAF7C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -124,15 +131,6 @@ namespace UnityEngine::TextCore {
     static Glyph* New_ctor(uint index, ::UnityEngine::TextCore::GlyphMetrics metrics, ::UnityEngine::TextCore::GlyphRect glyphRect, float scale, int atlasIndex) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TextCore::Glyph::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Glyph*, creationType>(index, metrics, glyphRect, scale, atlasIndex)));
-    }
-    // public System.Void .ctor()
-    // Offset: 0x18EC688
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Glyph* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TextCore::Glyph::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Glyph*, creationType>()));
     }
   }; // UnityEngine.TextCore.Glyph
   #pragma pack(pop)

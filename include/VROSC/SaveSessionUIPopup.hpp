@@ -165,43 +165,50 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _headerText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__headerText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__headerText();
     // Get instance field reference: private UIInputField _nameInputField
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__nameInputField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__nameInputField();
     // Get instance field reference: private UIInputField _descriptionInputField
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__descriptionInputField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__descriptionInputField();
     // Get instance field reference: private UIInputField _tagsInputField
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__tagsInputField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__tagsInputField();
     // Get instance field reference: private VROSC.UIButton _saveButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__saveButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__saveButton();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__cancelButton();
     // Get instance field reference: private VROSC.SessionItemUI _previewUI
-    [[deprecated]] ::VROSC::SessionItemUI*& dyn__previewUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionItemUI*& dyn__previewUI();
     // Get instance field reference: private TMPro.TextMeshPro _savingStateText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__savingStateText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__savingStateText();
     // Get instance field reference: private VROSC.UISlideToggle _cloudSaveToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__cloudSaveToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__cloudSaveToggle();
     // Get instance field reference: private VROSC.UISlideToggle _shareToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__shareToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__shareToggle();
     // Get instance field reference: public System.Action`2<VROSC.SessionsLibraryUI/VROSC.SessionSaveData,System.Boolean> OnSaveConfirmed
-    [[deprecated]] ::System::Action_2<::VROSC::SessionsLibraryUI::SessionSaveData*, bool>*& dyn_OnSaveConfirmed();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::SessionsLibraryUI::SessionSaveData*, bool>*& dyn_OnSaveConfirmed();
     // Get instance field reference: public System.Action OnSaveCanceled
-    [[deprecated]] ::System::Action*& dyn_OnSaveCanceled();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnSaveCanceled();
     // Get instance field reference: private UIInputField _selectedInputField
-    [[deprecated]] ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIInputField*& dyn__selectedInputField();
     // Get instance field reference: private System.String _sessionId
-    [[deprecated]] ::StringW& dyn__sessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sessionId();
     // Get instance field reference: private System.String _sessionDisplayName
-    [[deprecated]] ::StringW& dyn__sessionDisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sessionDisplayName();
     // Get instance field reference: private System.Boolean <IsNewSave>k__BackingField
-    [[deprecated]] bool& dyn_$IsNewSave$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsNewSave$k__BackingField();
     // public System.Boolean get_IsNewSave()
     // Offset: 0xDE0650
     bool get_IsNewSave();
     // private System.Void set_IsNewSave(System.Boolean value)
     // Offset: 0xDE0658
     void set_IsNewSave(bool value);
+    // public System.Void .ctor()
+    // Offset: 0xDE1E08
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SaveSessionUIPopup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveSessionUIPopup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SaveSessionUIPopup*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xDE0664
     void Awake();
@@ -253,19 +260,6 @@ namespace VROSC {
     // private System.Void UpdatePreview()
     // Offset: 0xDE1610
     void UpdatePreview();
-    // public System.Void .ctor()
-    // Offset: 0xDE1E08
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SaveSessionUIPopup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveSessionUIPopup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SaveSessionUIPopup*, creationType>()));
-    }
   }; // VROSC.SaveSessionUIPopup
   #pragma pack(pop)
   static check_size<sizeof(SaveSessionUIPopup), 144 + sizeof(bool)> __VROSC_SaveSessionUIPopupSizeCheck;
@@ -289,6 +283,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SaveSessionUIPopup*), "set_IsNewSave", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::SaveSessionUIPopup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SaveSessionUIPopup::Awake
 // Il2CppName: Awake
 template<>
@@ -444,7 +442,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SaveSessionUIPopup*), "UpdatePreview", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SaveSessionUIPopup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

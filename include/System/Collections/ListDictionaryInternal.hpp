@@ -81,13 +81,13 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IDictionary*>(this);
     }
     // Get instance field reference: private System.Collections.ListDictionaryInternal/System.Collections.DictionaryNode head
-    [[deprecated]] ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_head();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ListDictionaryInternal::DictionaryNode*& dyn_head();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // public System.Object get_Item(System.Object key)
     // Offset: 0x10788D0
     ::Il2CppObject* get_Item(::Il2CppObject* key);

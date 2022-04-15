@@ -49,7 +49,7 @@ namespace System::Diagnostics {
       return type;
     }
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // public System.Void set_SwitchLevelType(System.Type value)
     // Offset: 0xDA7938
     void set_SwitchLevelType(::System::Type* value);

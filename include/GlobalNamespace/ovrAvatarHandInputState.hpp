@@ -87,21 +87,21 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarTransform transform
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTransform& dyn_transform();
     // Get instance field reference: public ovrAvatarButton buttonMask
-    [[deprecated]] ::GlobalNamespace::ovrAvatarButton& dyn_buttonMask();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarButton& dyn_buttonMask();
     // Get instance field reference: public ovrAvatarTouch touchMask
-    [[deprecated]] ::GlobalNamespace::ovrAvatarTouch& dyn_touchMask();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarTouch& dyn_touchMask();
     // Get instance field reference: public System.Single joystickX
-    [[deprecated]] float& dyn_joystickX();
+    [[deprecated("Use field access instead!")]] float& dyn_joystickX();
     // Get instance field reference: public System.Single joystickY
-    [[deprecated]] float& dyn_joystickY();
+    [[deprecated("Use field access instead!")]] float& dyn_joystickY();
     // Get instance field reference: public System.Single indexTrigger
-    [[deprecated]] float& dyn_indexTrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_indexTrigger();
     // Get instance field reference: public System.Single handTrigger
-    [[deprecated]] float& dyn_handTrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_handTrigger();
     // Get instance field reference: public System.Boolean isActive
-    [[deprecated]] bool& dyn_isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_isActive();
   }; // ovrAvatarHandInputState
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarHandInputState), 64 + sizeof(bool)> __GlobalNamespace_ovrAvatarHandInputStateSizeCheck;

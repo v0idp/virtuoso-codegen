@@ -62,7 +62,7 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Xml::Schema::IXmlSchemaInfo*>(this);
     }
     // Get instance field reference: private readonly System.Xml.Schema.IXmlSchemaInfo readerAsIXmlSchemaInfo
-    [[deprecated]] ::System::Xml::Schema::IXmlSchemaInfo*& dyn_readerAsIXmlSchemaInfo();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::IXmlSchemaInfo*& dyn_readerAsIXmlSchemaInfo();
     // private System.Xml.Schema.XmlSchemaValidity System.Xml.Schema.IXmlSchemaInfo.get_Validity()
     // Offset: 0x11B53B4
     ::System::Xml::Schema::XmlSchemaValidity System_Xml_Schema_IXmlSchemaInfo_get_Validity();

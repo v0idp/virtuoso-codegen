@@ -57,13 +57,11 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*) == 0x8);
     public:
     // Get instance field reference: public System.Action`1<System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot>> Action
-    [[deprecated]] ::System::Action_1<::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*>*& dyn_Action();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*>*& dyn_Action();
     // Get instance field reference: public System.Collections.Generic.IEnumerable`1<Firebase.Firestore.DocumentSnapshot> Data
-    [[deprecated]] ::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*& dyn_Data();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IEnumerable_1<::Firebase::Firestore::DocumentSnapshot*>*& dyn_Data();
     // public System.Void .ctor()
     // Offset: 0x9593C0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CallbackHandler::FirestoreCollectionReadCallback* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CallbackHandler::FirestoreCollectionReadCallback::.ctor");

@@ -31,9 +31,6 @@ namespace UnityEngine {
     public:
     // public System.Void .ctor()
     // Offset: 0x1127004
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExecuteInEditMode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ExecuteInEditMode::.ctor");

@@ -39,9 +39,9 @@ namespace System::Data {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String LocalName
-    [[deprecated]] ::StringW& dyn_LocalName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_LocalName();
     // Get instance field reference: public System.String NamespaceURI
-    [[deprecated]] ::StringW& dyn_NamespaceURI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NamespaceURI();
     // public System.Void .ctor(System.String localName, System.String namespaceURI)
     // Offset: 0x18CE7D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

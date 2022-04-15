@@ -41,7 +41,7 @@ namespace System::Runtime::CompilerServices {
       return date;
     }
     // Get instance field reference: private System.DateTime date
-    [[deprecated]] ::System::DateTime& dyn_date();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_date();
     // public override System.Object get_Value()
     // Offset: 0xFCDE58
     // Implemented from: System.Runtime.CompilerServices.CustomConstantAttribute

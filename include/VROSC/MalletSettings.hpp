@@ -110,25 +110,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MinMaxFloat _minMaxMalletAngle
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__minMaxMalletAngle();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__minMaxMalletAngle();
     // Get instance field reference: private VROSC.MinMaxFloat _minMaxMalletLength
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__minMaxMalletLength();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__minMaxMalletLength();
     // Get instance field reference: private System.Boolean _autoDimLaser
-    [[deprecated]] bool& dyn__autoDimLaser();
+    [[deprecated("Use field access instead!")]] bool& dyn__autoDimLaser();
     // Get instance field reference: private System.Single _defualtMalletAngle
-    [[deprecated]] float& dyn__defualtMalletAngle();
+    [[deprecated("Use field access instead!")]] float& dyn__defualtMalletAngle();
     // Get instance field reference: private System.Single _defualtMalletLength
-    [[deprecated]] float& dyn__defualtMalletLength();
+    [[deprecated("Use field access instead!")]] float& dyn__defualtMalletLength();
     // Get instance field reference: private System.Single _laserEnableTime
-    [[deprecated]] float& dyn__laserEnableTime();
+    [[deprecated("Use field access instead!")]] float& dyn__laserEnableTime();
     // Get instance field reference: private System.Single _laserDisableTime
-    [[deprecated]] float& dyn__laserDisableTime();
+    [[deprecated("Use field access instead!")]] float& dyn__laserDisableTime();
     // Get instance field reference: private System.Single _hitExtendsDisableTime
-    [[deprecated]] float& dyn__hitExtendsDisableTime();
+    [[deprecated("Use field access instead!")]] float& dyn__hitExtendsDisableTime();
     // Get instance field reference: private VROSC.Mallet _malletPrefab
-    [[deprecated]] ::VROSC::Mallet*& dyn__malletPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Mallet*& dyn__malletPrefab();
     // Get instance field reference: private UnityEngine.Color _defaultColor
-    [[deprecated]] ::UnityEngine::Color& dyn__defaultColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__defaultColor();
     // public System.Single get_DefualtMalletAngle()
     // Offset: 0x197EB20
     float get_DefualtMalletAngle();
@@ -156,20 +156,16 @@ namespace VROSC {
     // public UnityEngine.Color get_DefaultColor()
     // Offset: 0x197EB60
     ::UnityEngine::Color get_DefaultColor();
-    // public VROSC.Mallet CreateMallet(VROSC.InputDevice inputDevice)
-    // Offset: 0x197E100
-    ::VROSC::Mallet* CreateMallet(::VROSC::InputDevice* inputDevice);
     // public System.Void .ctor()
     // Offset: 0x197EB6C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MalletSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MalletSettings::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<MalletSettings*, creationType>()));
     }
+    // public VROSC.Mallet CreateMallet(VROSC.InputDevice inputDevice)
+    // Offset: 0x197E100
+    ::VROSC::Mallet* CreateMallet(::VROSC::InputDevice* inputDevice);
   }; // VROSC.MalletSettings
   #pragma pack(pop)
   static check_size<sizeof(MalletSettings), 72 + sizeof(::UnityEngine::Color)> __VROSC_MalletSettingsSizeCheck;
@@ -248,6 +244,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::MalletSettings*), "get_DefaultColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::MalletSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MalletSettings::CreateMallet
 // Il2CppName: CreateMallet
 template<>
@@ -257,7 +257,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Ma
     return ::il2cpp_utils::FindMethod(classof(VROSC::MalletSettings*), "CreateMallet", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{inputDevice});
   }
 };
-// Writing MetadataGetter for method: VROSC::MalletSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

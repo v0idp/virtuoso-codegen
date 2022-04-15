@@ -73,7 +73,7 @@ namespace System::Globalization {
     // Set static field: static readonly System.DateTime calendarMinValue
     static void _set_calendarMinValue(::System::DateTime value);
     // Get instance field reference: System.Globalization.GregorianCalendarHelper helper
-    [[deprecated]] ::System::Globalization::GregorianCalendarHelper*& dyn_helper();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::GregorianCalendarHelper*& dyn_helper();
     // static private System.Void .cctor()
     // Offset: 0x126C688
     static void _cctor();

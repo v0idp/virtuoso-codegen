@@ -129,27 +129,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TransformMover _mover
-    [[deprecated]] ::VROSC::TransformMover*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMover*& dyn__mover();
     // Get instance field reference: private UnityEngine.Transform _freeMoveParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__freeMoveParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__freeMoveParent();
     // Get instance field reference: private UnityEngine.Transform _snapToObject
-    [[deprecated]] ::UnityEngine::Transform*& dyn__snapToObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__snapToObject();
     // Get instance field reference: private System.Single _snapBackDistance
-    [[deprecated]] float& dyn__snapBackDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__snapBackDistance();
     // Get instance field reference: private VROSC.UIButton _resetButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__resetButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__resetButton();
     // Get instance field reference: private UnityEngine.GameObject _resetButtonParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__resetButtonParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__resetButtonParent();
     // Get instance field reference: private UnityEngine.Transform _originalParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__originalParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__originalParent();
     // Get instance field reference: private System.Boolean _isAttached
-    [[deprecated]] bool& dyn__isAttached();
+    [[deprecated("Use field access instead!")]] bool& dyn__isAttached();
     // Get instance field reference: public System.Single InstrumentScaleMultiplier
-    [[deprecated]] float& dyn_InstrumentScaleMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_InstrumentScaleMultiplier();
     // Get instance field reference: public System.Action`1<VROSC.ResetableMover> OnMoved
-    [[deprecated]] ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnMoved();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnMoved();
     // Get instance field reference: public System.Action`1<VROSC.ResetableMover> OnReset
-    [[deprecated]] ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnReset();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::ResetableMover*>*& dyn_OnReset();
     // public UnityEngine.Vector3 get_Position()
     // Offset: 0xB33B48
     ::UnityEngine::Vector3 get_Position();
@@ -159,6 +159,13 @@ namespace VROSC {
     // public UnityEngine.Vector3 get_Scale()
     // Offset: 0xB33BA0
     ::UnityEngine::Vector3 get_Scale();
+    // public System.Void .ctor()
+    // Offset: 0xB34518
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ResetableMover* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ResetableMover::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ResetableMover*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xB33BCC
     void Awake();
@@ -180,19 +187,6 @@ namespace VROSC {
     // private System.Void OnDrawGizmos()
     // Offset: 0xB34394
     void OnDrawGizmos();
-    // public System.Void .ctor()
-    // Offset: 0xB34518
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ResetableMover* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ResetableMover::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ResetableMover*, creationType>()));
-    }
   }; // VROSC.ResetableMover
   #pragma pack(pop)
   static check_size<sizeof(ResetableMover), 96 + sizeof(::System::Action_1<::VROSC::ResetableMover*>*)> __VROSC_ResetableMoverSizeCheck;
@@ -223,6 +217,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::ResetableMover*), "get_Scale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::ResetableMover::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ResetableMover::Awake
 // Il2CppName: Awake
 template<>
@@ -283,7 +281,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ResetableMover*), "OnDrawGizmos", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ResetableMover::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

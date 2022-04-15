@@ -115,29 +115,29 @@ namespace System::Globalization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Globalization.TimeSpanParse/System.Globalization.TTT lastSeenTTT
-    [[deprecated]] ::System::Globalization::TimeSpanParse::TTT& dyn_lastSeenTTT();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::TimeSpanParse::TTT& dyn_lastSeenTTT();
     // Get instance field reference: System.Int32 tokenCount
-    [[deprecated]] int& dyn_tokenCount();
+    [[deprecated("Use field access instead!")]] int& dyn_tokenCount();
     // Get instance field reference: System.Int32 SepCount
-    [[deprecated]] int& dyn_SepCount();
+    [[deprecated("Use field access instead!")]] int& dyn_SepCount();
     // Get instance field reference: System.Int32 NumCount
-    [[deprecated]] int& dyn_NumCount();
+    [[deprecated("Use field access instead!")]] int& dyn_NumCount();
     // Get instance field reference: System.String[] literals
-    [[deprecated]] ::ArrayW<::StringW>& dyn_literals();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_literals();
     // Get instance field reference: System.Globalization.TimeSpanParse/System.Globalization.TimeSpanToken[] numbers
-    [[deprecated]] ::ArrayW<::System::Globalization::TimeSpanParse::TimeSpanToken>& dyn_numbers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Globalization::TimeSpanParse::TimeSpanToken>& dyn_numbers();
     // Get instance field reference: private System.Globalization.TimeSpanFormat/System.Globalization.FormatLiterals m_posLoc
-    [[deprecated]] ::System::Globalization::TimeSpanFormat::FormatLiterals& dyn_m_posLoc();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::TimeSpanFormat::FormatLiterals& dyn_m_posLoc();
     // Get instance field reference: private System.Globalization.TimeSpanFormat/System.Globalization.FormatLiterals m_negLoc
-    [[deprecated]] ::System::Globalization::TimeSpanFormat::FormatLiterals& dyn_m_negLoc();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::TimeSpanFormat::FormatLiterals& dyn_m_negLoc();
     // Get instance field reference: private System.Boolean m_posLocInit
-    [[deprecated]] bool& dyn_m_posLocInit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_posLocInit();
     // Get instance field reference: private System.Boolean m_negLocInit
-    [[deprecated]] bool& dyn_m_negLocInit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_negLocInit();
     // Get instance field reference: private System.String m_fullPosPattern
-    [[deprecated]] ::StringW& dyn_m_fullPosPattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_fullPosPattern();
     // Get instance field reference: private System.String m_fullNegPattern
-    [[deprecated]] ::StringW& dyn_m_fullNegPattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_fullNegPattern();
     // System.Globalization.TimeSpanFormat/System.Globalization.FormatLiterals get_PositiveInvariant()
     // Offset: 0xE61FFC
     ::System::Globalization::TimeSpanFormat::FormatLiterals get_PositiveInvariant();

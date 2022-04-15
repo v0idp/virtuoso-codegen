@@ -46,9 +46,9 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: public System.String assemblyName
-    [[deprecated]] ::StringW& dyn_assemblyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assemblyName();
     // public System.Void .ctor()
     // Offset: 0xE559BC
     // Implemented from: System.Object

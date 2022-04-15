@@ -30,10 +30,6 @@ namespace VROSC::AudioReactive {
     public:
     // protected System.Void .ctor()
     // Offset: 0x97184C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioReactiveEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::AudioReactiveEffectData::.ctor");

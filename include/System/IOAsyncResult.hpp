@@ -80,15 +80,15 @@ namespace System {
       return *reinterpret_cast<::System::IAsyncResult*>(this);
     }
     // Get instance field reference: private System.AsyncCallback async_callback
-    [[deprecated]] ::System::AsyncCallback*& dyn_async_callback();
+    [[deprecated("Use field access instead!")]] ::System::AsyncCallback*& dyn_async_callback();
     // Get instance field reference: private System.Object async_state
-    [[deprecated]] ::Il2CppObject*& dyn_async_state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_async_state();
     // Get instance field reference: private System.Threading.ManualResetEvent wait_handle
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_wait_handle();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_wait_handle();
     // Get instance field reference: private System.Boolean completed_synchronously
-    [[deprecated]] bool& dyn_completed_synchronously();
+    [[deprecated("Use field access instead!")]] bool& dyn_completed_synchronously();
     // Get instance field reference: private System.Boolean completed
-    [[deprecated]] bool& dyn_completed();
+    [[deprecated("Use field access instead!")]] bool& dyn_completed();
     // public System.AsyncCallback get_AsyncCallback()
     // Offset: 0x10F1104
     ::System::AsyncCallback* get_AsyncCallback();

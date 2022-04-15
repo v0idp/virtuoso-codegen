@@ -60,7 +60,7 @@ namespace Firebase::Firestore::Converters {
     // Set static field: static private System.Func`2<System.Type,System.Boolean> <>f__am$cache0
     static void _set_$$f__am$cache0(::System::Func_2<::System::Type*, bool>* value);
     // Get instance field reference: private readonly System.Type _elementType
-    [[deprecated]] ::System::Type*& dyn__elementType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__elementType();
     // static private System.Boolean <EnumerableConverter>m__0(System.Type iface)
     // Offset: 0xD555A8
     static bool $EnumerableConverter$m__0(::System::Type* iface);

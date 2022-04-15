@@ -84,15 +84,15 @@ namespace System::Net {
     // Set static field: static private System.Int32 nextId
     static void _set_nextId(int value);
     // Get instance field reference: private readonly System.Net.ServicePointScheduler <Scheduler>k__BackingField
-    [[deprecated]] ::System::Net::ServicePointScheduler*& dyn_$Scheduler$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePointScheduler*& dyn_$Scheduler$k__BackingField();
     // Get instance field reference: private readonly System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: public readonly System.Int32 ID
-    [[deprecated]] int& dyn_ID();
+    [[deprecated("Use field access instead!")]] int& dyn_ID();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.Net.WebConnection> connections
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::Net::WebConnection*>*& dyn_connections();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::System::Net::WebConnection*>*& dyn_connections();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<System.Net.WebOperation> queue
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::System::Net::WebOperation*>*& dyn_queue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::System::Net::WebOperation*>*& dyn_queue();
     // public System.Net.ServicePointScheduler get_Scheduler()
     // Offset: 0x9FF1BC
     ::System::Net::ServicePointScheduler* get_Scheduler();

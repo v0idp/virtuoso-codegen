@@ -54,32 +54,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.NoteBoardReciever/VROSC.Player> _players
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::NoteBoardReciever::Player*>*& dyn__players();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::NoteBoardReciever::Player*>*& dyn__players();
+    // public System.Void .ctor()
+    // Offset: 0xC583E0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NoteBoardReciever* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardReciever::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardReciever*, creationType>()));
+    }
     // public System.Void RegisterPlayer(VROSC.NotePlayer source)
     // Offset: 0xC581A4
     void RegisterPlayer(::VROSC::NotePlayer* source);
     // private System.Boolean PlayerRegistered(VROSC.NotePlayer source)
     // Offset: 0xC58258
     bool PlayerRegistered(::VROSC::NotePlayer* source);
-    // public System.Void .ctor()
-    // Offset: 0xC583E0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NoteBoardReciever* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteBoardReciever::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NoteBoardReciever*, creationType>()));
-    }
   }; // VROSC.NoteBoardReciever
   #pragma pack(pop)
   static check_size<sizeof(NoteBoardReciever), 24 + sizeof(::System::Collections::Generic::List_1<::VROSC::NoteBoardReciever::Player*>*)> __VROSC_NoteBoardRecieverSizeCheck;
   static_assert(sizeof(NoteBoardReciever) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::NoteBoardReciever::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::NoteBoardReciever::RegisterPlayer
 // Il2CppName: RegisterPlayer
 template<>
@@ -98,7 +96,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::NoteBoardReciever*), "PlayerRegistered", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{source});
   }
 };
-// Writing MetadataGetter for method: VROSC::NoteBoardReciever::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

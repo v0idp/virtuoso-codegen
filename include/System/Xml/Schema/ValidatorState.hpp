@@ -114,7 +114,7 @@ namespace System::Xml::Schema {
     // Set static field: static public System.Xml.Schema.ValidatorState Finish
     static void _set_Finish(::System::Xml::Schema::ValidatorState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Xml.Schema.ValidatorState
   #pragma pack(pop)
   static check_size<sizeof(ValidatorState), 0 + sizeof(int)> __System_Xml_Schema_ValidatorStateSizeCheck;

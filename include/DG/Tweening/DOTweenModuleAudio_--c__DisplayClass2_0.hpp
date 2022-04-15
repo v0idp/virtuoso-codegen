@@ -47,30 +47,32 @@ namespace DG::Tweening {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Audio.AudioMixer target
-    [[deprecated]] ::UnityEngine::Audio::AudioMixer*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Audio::AudioMixer*& dyn_target();
     // Get instance field reference: public System.String floatName
-    [[deprecated]] ::StringW& dyn_floatName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_floatName();
+    // public System.Void .ctor()
+    // Offset: 0x17D9D60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DOTweenModuleAudio::$$c__DisplayClass2_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleAudio::$$c__DisplayClass2_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleAudio::$$c__DisplayClass2_0*, creationType>()));
+    }
     // System.Single <DOSetFloat>b__0()
     // Offset: 0x17E2A34
     float $DOSetFloat$b__0();
     // System.Void <DOSetFloat>b__1(System.Single x)
     // Offset: 0x17E2A74
     void $DOSetFloat$b__1(float x);
-    // public System.Void .ctor()
-    // Offset: 0x17D9D60
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DOTweenModuleAudio::$$c__DisplayClass2_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModuleAudio::$$c__DisplayClass2_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DOTweenModuleAudio::$$c__DisplayClass2_0*, creationType>()));
-    }
   }; // DG.Tweening.DOTweenModuleAudio/DG.Tweening.<>c__DisplayClass2_0
   #pragma pack(pop)
   static check_size<sizeof(DOTweenModuleAudio::$$c__DisplayClass2_0), 24 + sizeof(::StringW)> __DG_Tweening_DOTweenModuleAudio_$$c__DisplayClass2_0SizeCheck;
   static_assert(sizeof(DOTweenModuleAudio::$$c__DisplayClass2_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleAudio::$$c__DisplayClass2_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTweenModuleAudio::$$c__DisplayClass2_0::$DOSetFloat$b__0
 // Il2CppName: <DOSetFloat>b__0
 template<>
@@ -88,7 +90,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTweenModuleAudio::$$c__DisplayClass2_0*), "<DOSetFloat>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTweenModuleAudio::$$c__DisplayClass2_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

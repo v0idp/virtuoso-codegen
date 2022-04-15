@@ -45,7 +45,7 @@ namespace System::Runtime::CompilerServices {
       return NullableFlags;
     }
     // Get instance field reference: public readonly System.Byte[] NullableFlags
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_NullableFlags();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_NullableFlags();
     // public System.Void .ctor(System.Byte param_00009fc1)
     // Offset: 0x13489F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

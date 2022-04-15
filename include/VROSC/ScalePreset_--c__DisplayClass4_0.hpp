@@ -39,7 +39,14 @@ namespace VROSC {
       return note;
     }
     // Get instance field reference: public VROSC.Note note
-    [[deprecated]] ::VROSC::Note& dyn_note();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn_note();
+    // public System.Void .ctor()
+    // Offset: 0x8D4368
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ScalePreset::$$c__DisplayClass4_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScalePreset::$$c__DisplayClass4_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ScalePreset::$$c__DisplayClass4_0*, creationType>()));
+    }
     // System.Boolean <UpdateNotePriorityList>b__1(VROSC.ScalePreset/VROSC.NotePriority n)
     // Offset: 0x8D4370
     bool $UpdateNotePriorityList$b__1(::VROSC::ScalePreset::NotePriority* n);
@@ -49,21 +56,16 @@ namespace VROSC {
     // System.Boolean <UpdateNotePriorityList>b__0(VROSC.ScalePreset/VROSC.NotePriority n)
     // Offset: 0x8D43B8
     bool $UpdateNotePriorityList$b__0(::VROSC::ScalePreset::NotePriority* n);
-    // public System.Void .ctor()
-    // Offset: 0x8D4368
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ScalePreset::$$c__DisplayClass4_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScalePreset::$$c__DisplayClass4_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ScalePreset::$$c__DisplayClass4_0*, creationType>()));
-    }
   }; // VROSC.ScalePreset/VROSC.<>c__DisplayClass4_0
   #pragma pack(pop)
   static check_size<sizeof(ScalePreset::$$c__DisplayClass4_0), 16 + sizeof(::VROSC::Note)> __VROSC_ScalePreset_$$c__DisplayClass4_0SizeCheck;
   static_assert(sizeof(ScalePreset::$$c__DisplayClass4_0) == 0x14);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ScalePreset::$$c__DisplayClass4_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ScalePreset::$$c__DisplayClass4_0::$UpdateNotePriorityList$b__1
 // Il2CppName: <UpdateNotePriorityList>b__1
 template<>
@@ -91,7 +93,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScalePreset::$$c__DisplayClass4_0*), "<UpdateNotePriorityList>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{n});
   }
 };
-// Writing MetadataGetter for method: VROSC::ScalePreset::$$c__DisplayClass4_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

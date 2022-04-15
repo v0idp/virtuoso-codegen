@@ -83,18 +83,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UISlideToggle _internalSoundsButton
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__internalSoundsButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__internalSoundsButton();
     // Get instance field reference: private VROSC.UISlideToggle _midiButton
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__midiButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__midiButton();
     // Get instance field reference: private TMPro.TextMeshPro _midiDownloadInfo
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__midiDownloadInfo();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__midiDownloadInfo();
     // Get instance field reference: private VROSC.BeatCounterUI _beatCounterUI
-    [[deprecated]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::BeatCounterUI*& dyn__beatCounterUI();
     // Get instance field reference: private VROSC.UIButton _allNotesOffButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__allNotesOffButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__allNotesOffButton();
     // public System.Boolean get_IsOpen()
     // Offset: 0x1925DF4
     bool get_IsOpen();
+    // public System.Void .ctor()
+    // Offset: 0x19266E0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SettingsPanelUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SettingsPanelUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SettingsPanelUI*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x1925E18
     void Awake();
@@ -119,19 +126,6 @@ namespace VROSC {
     // private System.Void AllNotesOffButtonPressed()
     // Offset: 0x1926688
     void AllNotesOffButtonPressed();
-    // public System.Void .ctor()
-    // Offset: 0x19266E0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SettingsPanelUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SettingsPanelUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SettingsPanelUI*, creationType>()));
-    }
   }; // VROSC.SettingsPanelUI
   #pragma pack(pop)
   static check_size<sizeof(SettingsPanelUI), 56 + sizeof(::VROSC::UIButton*)> __VROSC_SettingsPanelUISizeCheck;
@@ -146,6 +140,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SettingsPanelUI*), "get_IsOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::SettingsPanelUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SettingsPanelUI::Awake
 // Il2CppName: Awake
 template<>
@@ -216,7 +214,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SettingsPanelUI*), "AllNotesOffButtonPressed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SettingsPanelUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

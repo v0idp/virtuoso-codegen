@@ -58,13 +58,13 @@ namespace UnityEngine::XR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.IntPtr displaySubsystemInstance
-    [[deprecated]] ::System::IntPtr& dyn_displaySubsystemInstance();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_displaySubsystemInstance();
     // Get instance field reference: public System.Boolean nativeBlitAvailable
-    [[deprecated]] bool& dyn_nativeBlitAvailable();
+    [[deprecated("Use field access instead!")]] bool& dyn_nativeBlitAvailable();
     // Get instance field reference: public System.Boolean nativeBlitInvalidStates
-    [[deprecated]] bool& dyn_nativeBlitInvalidStates();
+    [[deprecated("Use field access instead!")]] bool& dyn_nativeBlitInvalidStates();
     // Get instance field reference: public System.Int32 blitParamsCount
-    [[deprecated]] int& dyn_blitParamsCount();
+    [[deprecated("Use field access instead!")]] int& dyn_blitParamsCount();
   }; // UnityEngine.XR.XRDisplaySubsystem/UnityEngine.XR.XRMirrorViewBlitDesc
   #pragma pack(pop)
   static check_size<sizeof(XRDisplaySubsystem::XRMirrorViewBlitDesc), 12 + sizeof(int)> __UnityEngine_XR_XRDisplaySubsystem_XRMirrorViewBlitDescSizeCheck;

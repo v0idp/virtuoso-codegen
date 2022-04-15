@@ -242,7 +242,7 @@ namespace TMPro {
       // Set static field: static public TMPro.TMP_InputField/TMPro.ContentType Custom
       static void _set_Custom(::TMPro::TMP_InputField::ContentType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // TMPro.TMP_InputField/TMPro.ContentType
     #pragma pack(pop)
     static check_size<sizeof(TMP_InputField::ContentType), 0 + sizeof(int)> __TMPro_TMP_InputField_ContentTypeSizeCheck;
@@ -290,7 +290,7 @@ namespace TMPro {
       // Set static field: static public TMPro.TMP_InputField/TMPro.InputType Password
       static void _set_Password(::TMPro::TMP_InputField::InputType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // TMPro.TMP_InputField/TMPro.InputType
     #pragma pack(pop)
     static check_size<sizeof(TMP_InputField::InputType), 0 + sizeof(int)> __TMPro_TMP_InputField_InputTypeSizeCheck;
@@ -374,7 +374,7 @@ namespace TMPro {
       // Set static field: static public TMPro.TMP_InputField/TMPro.CharacterValidation CustomValidator
       static void _set_CustomValidator(::TMPro::TMP_InputField::CharacterValidation value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // TMPro.TMP_InputField/TMPro.CharacterValidation
     #pragma pack(pop)
     static check_size<sizeof(TMP_InputField::CharacterValidation), 0 + sizeof(int)> __TMPro_TMP_InputField_CharacterValidationSizeCheck;
@@ -422,7 +422,7 @@ namespace TMPro {
       // Set static field: static public TMPro.TMP_InputField/TMPro.LineType MultiLineNewline
       static void _set_MultiLineNewline(::TMPro::TMP_InputField::LineType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // TMPro.TMP_InputField/TMPro.LineType
     #pragma pack(pop)
     static check_size<sizeof(TMP_InputField::LineType), 0 + sizeof(int)> __TMPro_TMP_InputField_LineTypeSizeCheck;
@@ -1067,187 +1067,187 @@ namespace TMPro {
     // Set static field: static private System.String kEmailSpecialCharacters
     static void _set_kEmailSpecialCharacters(::StringW value);
     // Get instance field reference: protected UnityEngine.TouchScreenKeyboard m_SoftKeyboard
-    [[deprecated]] ::UnityEngine::TouchScreenKeyboard*& dyn_m_SoftKeyboard();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TouchScreenKeyboard*& dyn_m_SoftKeyboard();
     // Get instance field reference: protected UnityEngine.RectTransform m_RectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
     // Get instance field reference: protected UnityEngine.RectTransform m_TextViewport
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_TextViewport();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_TextViewport();
     // Get instance field reference: protected UnityEngine.UI.RectMask2D m_TextComponentRectMask
-    [[deprecated]] ::UnityEngine::UI::RectMask2D*& dyn_m_TextComponentRectMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::RectMask2D*& dyn_m_TextComponentRectMask();
     // Get instance field reference: protected UnityEngine.UI.RectMask2D m_TextViewportRectMask
-    [[deprecated]] ::UnityEngine::UI::RectMask2D*& dyn_m_TextViewportRectMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::RectMask2D*& dyn_m_TextViewportRectMask();
     // Get instance field reference: private UnityEngine.Rect m_CachedViewportRect
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_CachedViewportRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_CachedViewportRect();
     // Get instance field reference: protected TMPro.TMP_Text m_TextComponent
-    [[deprecated]] ::TMPro::TMP_Text*& dyn_m_TextComponent();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Text*& dyn_m_TextComponent();
     // Get instance field reference: protected UnityEngine.RectTransform m_TextComponentRectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_TextComponentRectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_TextComponentRectTransform();
     // Get instance field reference: protected UnityEngine.UI.Graphic m_Placeholder
-    [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_m_Placeholder();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_m_Placeholder();
     // Get instance field reference: protected UnityEngine.UI.Scrollbar m_VerticalScrollbar
-    [[deprecated]] ::UnityEngine::UI::Scrollbar*& dyn_m_VerticalScrollbar();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Scrollbar*& dyn_m_VerticalScrollbar();
     // Get instance field reference: protected TMPro.TMP_ScrollbarEventHandler m_VerticalScrollbarEventHandler
-    [[deprecated]] ::TMPro::TMP_ScrollbarEventHandler*& dyn_m_VerticalScrollbarEventHandler();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_ScrollbarEventHandler*& dyn_m_VerticalScrollbarEventHandler();
     // Get instance field reference: private System.Boolean m_IsDrivenByLayoutComponents
-    [[deprecated]] bool& dyn_m_IsDrivenByLayoutComponents();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsDrivenByLayoutComponents();
     // Get instance field reference: private UnityEngine.UI.LayoutGroup m_LayoutGroup
-    [[deprecated]] ::UnityEngine::UI::LayoutGroup*& dyn_m_LayoutGroup();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::LayoutGroup*& dyn_m_LayoutGroup();
     // Get instance field reference: private UnityEngine.EventSystems.IScrollHandler m_IScrollHandlerParent
-    [[deprecated]] ::UnityEngine::EventSystems::IScrollHandler*& dyn_m_IScrollHandlerParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::IScrollHandler*& dyn_m_IScrollHandlerParent();
     // Get instance field reference: private System.Single m_ScrollPosition
-    [[deprecated]] float& dyn_m_ScrollPosition();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ScrollPosition();
     // Get instance field reference: protected System.Single m_ScrollSensitivity
-    [[deprecated]] float& dyn_m_ScrollSensitivity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ScrollSensitivity();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.ContentType m_ContentType
-    [[deprecated]] ::TMPro::TMP_InputField::ContentType& dyn_m_ContentType();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::ContentType& dyn_m_ContentType();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.InputType m_InputType
-    [[deprecated]] ::TMPro::TMP_InputField::InputType& dyn_m_InputType();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::InputType& dyn_m_InputType();
     // Get instance field reference: private System.Char m_AsteriskChar
-    [[deprecated]] ::Il2CppChar& dyn_m_AsteriskChar();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_m_AsteriskChar();
     // Get instance field reference: private UnityEngine.TouchScreenKeyboardType m_KeyboardType
-    [[deprecated]] ::UnityEngine::TouchScreenKeyboardType& dyn_m_KeyboardType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TouchScreenKeyboardType& dyn_m_KeyboardType();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.LineType m_LineType
-    [[deprecated]] ::TMPro::TMP_InputField::LineType& dyn_m_LineType();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::LineType& dyn_m_LineType();
     // Get instance field reference: private System.Boolean m_HideMobileInput
-    [[deprecated]] bool& dyn_m_HideMobileInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HideMobileInput();
     // Get instance field reference: private System.Boolean m_HideSoftKeyboard
-    [[deprecated]] bool& dyn_m_HideSoftKeyboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HideSoftKeyboard();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.CharacterValidation m_CharacterValidation
-    [[deprecated]] ::TMPro::TMP_InputField::CharacterValidation& dyn_m_CharacterValidation();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::CharacterValidation& dyn_m_CharacterValidation();
     // Get instance field reference: private System.String m_RegexValue
-    [[deprecated]] ::StringW& dyn_m_RegexValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_RegexValue();
     // Get instance field reference: private System.Single m_GlobalPointSize
-    [[deprecated]] float& dyn_m_GlobalPointSize();
+    [[deprecated("Use field access instead!")]] float& dyn_m_GlobalPointSize();
     // Get instance field reference: private System.Int32 m_CharacterLimit
-    [[deprecated]] int& dyn_m_CharacterLimit();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CharacterLimit();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.SubmitEvent m_OnEndEdit
-    [[deprecated]] ::TMPro::TMP_InputField::SubmitEvent*& dyn_m_OnEndEdit();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::SubmitEvent*& dyn_m_OnEndEdit();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.SubmitEvent m_OnSubmit
-    [[deprecated]] ::TMPro::TMP_InputField::SubmitEvent*& dyn_m_OnSubmit();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::SubmitEvent*& dyn_m_OnSubmit();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.SelectionEvent m_OnSelect
-    [[deprecated]] ::TMPro::TMP_InputField::SelectionEvent*& dyn_m_OnSelect();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::SelectionEvent*& dyn_m_OnSelect();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.SelectionEvent m_OnDeselect
-    [[deprecated]] ::TMPro::TMP_InputField::SelectionEvent*& dyn_m_OnDeselect();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::SelectionEvent*& dyn_m_OnDeselect();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.TextSelectionEvent m_OnTextSelection
-    [[deprecated]] ::TMPro::TMP_InputField::TextSelectionEvent*& dyn_m_OnTextSelection();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::TextSelectionEvent*& dyn_m_OnTextSelection();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.TextSelectionEvent m_OnEndTextSelection
-    [[deprecated]] ::TMPro::TMP_InputField::TextSelectionEvent*& dyn_m_OnEndTextSelection();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::TextSelectionEvent*& dyn_m_OnEndTextSelection();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.OnChangeEvent m_OnValueChanged
-    [[deprecated]] ::TMPro::TMP_InputField::OnChangeEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::OnChangeEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.TouchScreenKeyboardEvent m_OnTouchScreenKeyboardStatusChanged
-    [[deprecated]] ::TMPro::TMP_InputField::TouchScreenKeyboardEvent*& dyn_m_OnTouchScreenKeyboardStatusChanged();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::TouchScreenKeyboardEvent*& dyn_m_OnTouchScreenKeyboardStatusChanged();
     // Get instance field reference: private TMPro.TMP_InputField/TMPro.OnValidateInput m_OnValidateInput
-    [[deprecated]] ::TMPro::TMP_InputField::OnValidateInput*& dyn_m_OnValidateInput();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField::OnValidateInput*& dyn_m_OnValidateInput();
     // Get instance field reference: private UnityEngine.Color m_CaretColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_CaretColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_CaretColor();
     // Get instance field reference: private System.Boolean m_CustomCaretColor
-    [[deprecated]] bool& dyn_m_CustomCaretColor();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CustomCaretColor();
     // Get instance field reference: private UnityEngine.Color m_SelectionColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_SelectionColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_SelectionColor();
     // Get instance field reference: protected System.String m_Text
-    [[deprecated]] ::StringW& dyn_m_Text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Text();
     // Get instance field reference: private System.Single m_CaretBlinkRate
-    [[deprecated]] float& dyn_m_CaretBlinkRate();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CaretBlinkRate();
     // Get instance field reference: private System.Int32 m_CaretWidth
-    [[deprecated]] int& dyn_m_CaretWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CaretWidth();
     // Get instance field reference: private System.Boolean m_ReadOnly
-    [[deprecated]] bool& dyn_m_ReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ReadOnly();
     // Get instance field reference: private System.Boolean m_RichText
-    [[deprecated]] bool& dyn_m_RichText();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RichText();
     // Get instance field reference: protected System.Int32 m_StringPosition
-    [[deprecated]] int& dyn_m_StringPosition();
+    [[deprecated("Use field access instead!")]] int& dyn_m_StringPosition();
     // Get instance field reference: protected System.Int32 m_StringSelectPosition
-    [[deprecated]] int& dyn_m_StringSelectPosition();
+    [[deprecated("Use field access instead!")]] int& dyn_m_StringSelectPosition();
     // Get instance field reference: protected System.Int32 m_CaretPosition
-    [[deprecated]] int& dyn_m_CaretPosition();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CaretPosition();
     // Get instance field reference: protected System.Int32 m_CaretSelectPosition
-    [[deprecated]] int& dyn_m_CaretSelectPosition();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CaretSelectPosition();
     // Get instance field reference: private UnityEngine.RectTransform caretRectTrans
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_caretRectTrans();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_caretRectTrans();
     // Get instance field reference: protected UnityEngine.UIVertex[] m_CursorVerts
-    [[deprecated]] ::ArrayW<::UnityEngine::UIVertex>& dyn_m_CursorVerts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIVertex>& dyn_m_CursorVerts();
     // Get instance field reference: private UnityEngine.CanvasRenderer m_CachedInputRenderer
-    [[deprecated]] ::UnityEngine::CanvasRenderer*& dyn_m_CachedInputRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CanvasRenderer*& dyn_m_CachedInputRenderer();
     // Get instance field reference: private UnityEngine.Vector2 m_LastPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_LastPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_LastPosition();
     // Get instance field reference: protected UnityEngine.Mesh m_Mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_m_Mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_m_Mesh();
     // Get instance field reference: private System.Boolean m_AllowInput
-    [[deprecated]] bool& dyn_m_AllowInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AllowInput();
     // Get instance field reference: private System.Boolean m_ShouldActivateNextUpdate
-    [[deprecated]] bool& dyn_m_ShouldActivateNextUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShouldActivateNextUpdate();
     // Get instance field reference: private System.Boolean m_UpdateDrag
-    [[deprecated]] bool& dyn_m_UpdateDrag();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UpdateDrag();
     // Get instance field reference: private System.Boolean m_DragPositionOutOfBounds
-    [[deprecated]] bool& dyn_m_DragPositionOutOfBounds();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DragPositionOutOfBounds();
     // Get instance field reference: protected System.Boolean m_CaretVisible
-    [[deprecated]] bool& dyn_m_CaretVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CaretVisible();
     // Get instance field reference: private UnityEngine.Coroutine m_BlinkCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_BlinkCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_BlinkCoroutine();
     // Get instance field reference: private System.Single m_BlinkStartTime
-    [[deprecated]] float& dyn_m_BlinkStartTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_BlinkStartTime();
     // Get instance field reference: private UnityEngine.Coroutine m_DragCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_DragCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_DragCoroutine();
     // Get instance field reference: private System.String m_OriginalText
-    [[deprecated]] ::StringW& dyn_m_OriginalText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_OriginalText();
     // Get instance field reference: private System.Boolean m_WasCanceled
-    [[deprecated]] bool& dyn_m_WasCanceled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_WasCanceled();
     // Get instance field reference: private System.Boolean m_HasDoneFocusTransition
-    [[deprecated]] bool& dyn_m_HasDoneFocusTransition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasDoneFocusTransition();
     // Get instance field reference: private UnityEngine.WaitForSecondsRealtime m_WaitForSecondsRealtime
-    [[deprecated]] ::UnityEngine::WaitForSecondsRealtime*& dyn_m_WaitForSecondsRealtime();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::WaitForSecondsRealtime*& dyn_m_WaitForSecondsRealtime();
     // Get instance field reference: private System.Boolean m_PreventCallback
-    [[deprecated]] bool& dyn_m_PreventCallback();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PreventCallback();
     // Get instance field reference: private System.Boolean m_TouchKeyboardAllowsInPlaceEditing
-    [[deprecated]] bool& dyn_m_TouchKeyboardAllowsInPlaceEditing();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_TouchKeyboardAllowsInPlaceEditing();
     // Get instance field reference: private System.Boolean m_IsTextComponentUpdateRequired
-    [[deprecated]] bool& dyn_m_IsTextComponentUpdateRequired();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsTextComponentUpdateRequired();
     // Get instance field reference: private System.Boolean m_isLastKeyBackspace
-    [[deprecated]] bool& dyn_m_isLastKeyBackspace();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isLastKeyBackspace();
     // Get instance field reference: private System.Single m_PointerDownClickStartTime
-    [[deprecated]] float& dyn_m_PointerDownClickStartTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PointerDownClickStartTime();
     // Get instance field reference: private System.Single m_KeyDownStartTime
-    [[deprecated]] float& dyn_m_KeyDownStartTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_KeyDownStartTime();
     // Get instance field reference: private System.Single m_DoubleClickDelay
-    [[deprecated]] float& dyn_m_DoubleClickDelay();
+    [[deprecated("Use field access instead!")]] float& dyn_m_DoubleClickDelay();
     // Get instance field reference: private System.Boolean m_IsCompositionActive
-    [[deprecated]] bool& dyn_m_IsCompositionActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsCompositionActive();
     // Get instance field reference: private System.Boolean m_ShouldUpdateIMEWindowPosition
-    [[deprecated]] bool& dyn_m_ShouldUpdateIMEWindowPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShouldUpdateIMEWindowPosition();
     // Get instance field reference: private System.Int32 m_PreviousIMEInsertionLine
-    [[deprecated]] int& dyn_m_PreviousIMEInsertionLine();
+    [[deprecated("Use field access instead!")]] int& dyn_m_PreviousIMEInsertionLine();
     // Get instance field reference: protected TMPro.TMP_FontAsset m_GlobalFontAsset
-    [[deprecated]] ::TMPro::TMP_FontAsset*& dyn_m_GlobalFontAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_FontAsset*& dyn_m_GlobalFontAsset();
     // Get instance field reference: protected System.Boolean m_OnFocusSelectAll
-    [[deprecated]] bool& dyn_m_OnFocusSelectAll();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_OnFocusSelectAll();
     // Get instance field reference: protected System.Boolean m_isSelectAll
-    [[deprecated]] bool& dyn_m_isSelectAll();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isSelectAll();
     // Get instance field reference: protected System.Boolean m_ResetOnDeActivation
-    [[deprecated]] bool& dyn_m_ResetOnDeActivation();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ResetOnDeActivation();
     // Get instance field reference: private System.Boolean m_SelectionStillActive
-    [[deprecated]] bool& dyn_m_SelectionStillActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SelectionStillActive();
     // Get instance field reference: private System.Boolean m_ReleaseSelection
-    [[deprecated]] bool& dyn_m_ReleaseSelection();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ReleaseSelection();
     // Get instance field reference: private UnityEngine.GameObject m_PreviouslySelectedObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_PreviouslySelectedObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_PreviouslySelectedObject();
     // Get instance field reference: private System.Boolean m_RestoreOriginalTextOnEscape
-    [[deprecated]] bool& dyn_m_RestoreOriginalTextOnEscape();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RestoreOriginalTextOnEscape();
     // Get instance field reference: protected System.Boolean m_isRichTextEditingAllowed
-    [[deprecated]] bool& dyn_m_isRichTextEditingAllowed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isRichTextEditingAllowed();
     // Get instance field reference: protected System.Int32 m_LineLimit
-    [[deprecated]] int& dyn_m_LineLimit();
+    [[deprecated("Use field access instead!")]] int& dyn_m_LineLimit();
     // Get instance field reference: protected TMPro.TMP_InputValidator m_InputValidator
-    [[deprecated]] ::TMPro::TMP_InputValidator*& dyn_m_InputValidator();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputValidator*& dyn_m_InputValidator();
     // Get instance field reference: private System.Boolean m_isSelected
-    [[deprecated]] bool& dyn_m_isSelected();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isSelected();
     // Get instance field reference: private System.Boolean m_IsStringPositionDirty
-    [[deprecated]] bool& dyn_m_IsStringPositionDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsStringPositionDirty();
     // Get instance field reference: private System.Boolean m_IsCaretPositionDirty
-    [[deprecated]] bool& dyn_m_IsCaretPositionDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsCaretPositionDirty();
     // Get instance field reference: private System.Boolean m_forceRectTransformAdjustment
-    [[deprecated]] bool& dyn_m_forceRectTransformAdjustment();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_forceRectTransformAdjustment();
     // Get instance field reference: private UnityEngine.Event m_ProcessingEvent
-    [[deprecated]] ::UnityEngine::Event*& dyn_m_ProcessingEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Event*& dyn_m_ProcessingEvent();
     // private UnityEngine.EventSystems.BaseInput get_inputSystem()
     // Offset: 0x10302A4
     ::UnityEngine::EventSystems::BaseInput* get_inputSystem();
@@ -1527,6 +1527,9 @@ namespace TMPro {
     // protected System.Void set_stringSelectPositionInternal(System.Int32 value)
     // Offset: 0x1032994
     void set_stringSelectPositionInternal(int value);
+    // private System.Boolean get_hasSelection()
+    // Offset: 0x10329CC
+    bool get_hasSelection();
     // public System.Int32 get_caretPosition()
     // Offset: 0x1032A14
     int get_caretPosition();
@@ -1593,6 +1596,16 @@ namespace TMPro {
     // private UnityEngine.Transform UnityEngine.UI.ICanvasElement.get_transform()
     // Offset: 0x103BDD4
     ::UnityEngine::Transform* UnityEngine_UI_ICanvasElement_get_transform();
+    // protected System.Void .ctor()
+    // Offset: 0x10304BC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_InputField* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_InputField::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_InputField*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x103BD44
+    static void _cctor();
     // private System.Boolean isKeyboardUsingEvents()
     // Offset: 0x1030B98
     bool isKeyboardUsingEvents();
@@ -1896,32 +1909,6 @@ namespace TMPro {
     // public System.Void SetGlobalFontAsset(TMPro.TMP_FontAsset fontAsset)
     // Offset: 0x1032020
     void SetGlobalFontAsset(::TMPro::TMP_FontAsset* fontAsset);
-    // private System.Boolean get_hasSelection()
-    // Offset: 0x10329CC
-    // Implemented from: UnityEngine.UI.Selectable
-    // Base method: System.Boolean Selectable::get_hasSelection()
-    bool get_hasSelection();
-    // protected System.Void .ctor()
-    // Offset: 0x10304BC
-    // Implemented from: UnityEngine.UI.Selectable
-    // Base method: System.Void Selectable::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_InputField* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_InputField::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_InputField*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x103BD44
-    // Implemented from: UnityEngine.UI.Selectable
-    // Base method: System.Void Selectable::.cctor()
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void OnEnable()
     // Offset: 0x1032C94
     // Implemented from: UnityEngine.UI.Selectable
@@ -2753,6 +2740,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_InputField*), "set_stringSelectPositionInternal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_InputField::get_hasSelection
+// Il2CppName: get_hasSelection
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (TMPro::TMP_InputField::*)()>(&TMPro::TMP_InputField::get_hasSelection)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_InputField*), "get_hasSelection", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: TMPro::TMP_InputField::get_caretPosition
 // Il2CppName: get_caretPosition
 template<>
@@ -2934,6 +2929,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Transform* (TMPro::TMP_InputField::*)()>(&TMPro::TMP_InputField::UnityEngine_UI_ICanvasElement_get_transform)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_InputField*), "UnityEngine.UI.ICanvasElement.get_transform", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: TMPro::TMP_InputField::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: TMPro::TMP_InputField::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TMP_InputField::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_InputField*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: TMPro::TMP_InputField::isKeyboardUsingEvents
@@ -3816,26 +3823,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (TMPro
   static const MethodInfo* get() {
     static auto* fontAsset = &::il2cpp_utils::GetClassFromName("TMPro", "TMP_FontAsset")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_InputField*), "SetGlobalFontAsset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{fontAsset});
-  }
-};
-// Writing MetadataGetter for method: TMPro::TMP_InputField::get_hasSelection
-// Il2CppName: get_hasSelection
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (TMPro::TMP_InputField::*)()>(&TMPro::TMP_InputField::get_hasSelection)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_InputField*), "get_hasSelection", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: TMPro::TMP_InputField::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: TMPro::TMP_InputField::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TMP_InputField::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_InputField*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: TMPro::TMP_InputField::OnEnable

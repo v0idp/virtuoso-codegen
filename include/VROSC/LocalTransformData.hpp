@@ -64,13 +64,13 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: public UnityEngine.Transform Transform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_Transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_Transform();
     // Get instance field reference: public UnityEngine.Vector3 Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_Position();
     // Get instance field reference: public UnityEngine.Quaternion Rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_Rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_Rotation();
     // Get instance field reference: public UnityEngine.Vector3 LocalScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn_LocalScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_LocalScale();
     // public System.Void .ctor(UnityEngine.Transform transform)
     // Offset: 0x19AED58
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

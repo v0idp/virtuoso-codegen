@@ -46,7 +46,7 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::GlobalColorShiftEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorShiftEffect _globalColorEffect
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorShiftEffect*& dyn__globalColorEffect();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorShiftEffect*& dyn__globalColorEffect();
     // private System.Void Update()
     // Offset: 0x19A49FC
     void Update();
@@ -57,11 +57,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x19A4B98
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalColorShiftOnBeat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::GlobalColorShiftOnBeat::.ctor");

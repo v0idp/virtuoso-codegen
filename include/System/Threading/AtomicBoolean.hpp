@@ -39,7 +39,7 @@ namespace System::Threading {
       return flag;
     }
     // Get instance field reference: private System.Int32 flag
-    [[deprecated]] int& dyn_flag();
+    [[deprecated("Use field access instead!")]] int& dyn_flag();
     // public System.Boolean TryRelaxedSet()
     // Offset: 0x1147AC0
     bool TryRelaxedSet();

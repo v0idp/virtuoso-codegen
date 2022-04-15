@@ -80,17 +80,17 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.GameObject[] _targetGameObjects
-    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn__targetGameObjects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::GameObject*>& dyn__targetGameObjects();
     // Get instance field reference: private System.Boolean _overrideStartState
-    [[deprecated]] bool& dyn__overrideStartState();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideStartState();
     // Get instance field reference: private System.Boolean _startEnabled
-    [[deprecated]] bool& dyn__startEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__startEnabled();
     // Get instance field reference: private System.Boolean _onWithSignal
-    [[deprecated]] bool& dyn__onWithSignal();
+    [[deprecated("Use field access instead!")]] bool& dyn__onWithSignal();
     // Get instance field reference: private System.Boolean _setState
-    [[deprecated]] bool& dyn__setState();
+    [[deprecated("Use field access instead!")]] bool& dyn__setState();
     // Get instance field reference: private System.Boolean _setStateTo
-    [[deprecated]] bool& dyn__setStateTo();
+    [[deprecated("Use field access instead!")]] bool& dyn__setStateTo();
     // protected System.Void Start()
     // Offset: 0x19A1B8C
     void Start();
@@ -99,11 +99,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GameObjectToggler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GameObjectToggler::.ctor");

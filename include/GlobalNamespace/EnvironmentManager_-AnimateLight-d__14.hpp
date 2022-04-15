@@ -134,33 +134,33 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public EnvironmentManager <>4__this
-    [[deprecated]] ::GlobalNamespace::EnvironmentManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::EnvironmentManager*& dyn_$$4__this();
     // Get instance field reference: public TimeOfDayType timeOfDay
-    [[deprecated]] ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TimeOfDayType& dyn_timeOfDay();
     // Get instance field reference: public System.Single animationTime
-    [[deprecated]] float& dyn_animationTime();
+    [[deprecated("Use field access instead!")]] float& dyn_animationTime();
     // Get instance field reference: private UnityEngine.Material <currentSkybox>5__2
-    [[deprecated]] ::UnityEngine::Material*& dyn_$currentSkybox$5__2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_$currentSkybox$5__2();
     // Get instance field reference: private UnityEngine.Material <targetSkybox>5__3
-    [[deprecated]] ::UnityEngine::Material*& dyn_$targetSkybox$5__3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_$targetSkybox$5__3();
     // Get instance field reference: private UnityEngine.Light <currentDirLight>5__4
-    [[deprecated]] ::UnityEngine::Light*& dyn_$currentDirLight$5__4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Light*& dyn_$currentDirLight$5__4();
     // Get instance field reference: private UnityEngine.Light <targetDirLight>5__5
-    [[deprecated]] ::UnityEngine::Light*& dyn_$targetDirLight$5__5();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Light*& dyn_$targetDirLight$5__5();
     // Get instance field reference: private UnityEngine.Transform <currentSunTransform>5__6
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$currentSunTransform$5__6();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$currentSunTransform$5__6();
     // Get instance field reference: private UnityEngine.Transform <targetSunTransform>5__7
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$targetSunTransform$5__7();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$targetSunTransform$5__7();
     // Get instance field reference: private UnityEngine.Color <sourceColor>5__8
-    [[deprecated]] ::UnityEngine::Color& dyn_$sourceColor$5__8();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$sourceColor$5__8();
     // Get instance field reference: private UnityEngine.Color <targetColor>5__9
-    [[deprecated]] ::UnityEngine::Color& dyn_$targetColor$5__9();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$targetColor$5__9();
     // Get instance field reference: private System.Single <elapsedTime>5__10
-    [[deprecated]] float& dyn_$elapsedTime$5__10();
+    [[deprecated("Use field access instead!")]] float& dyn_$elapsedTime$5__10();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x95F72C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

@@ -49,7 +49,7 @@ namespace System::Xml::Schema {
       return node;
     }
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObject node
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObject*& dyn_node();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObject*& dyn_node();
     // public System.Void .ctor(System.Xml.Schema.XmlSchemaObject node)
     // Offset: 0xF6C658
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

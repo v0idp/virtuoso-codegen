@@ -83,19 +83,19 @@ namespace System::Reflection {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Type catch_type
-    [[deprecated]] ::System::Type*& dyn_catch_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_catch_type();
     // Get instance field reference: System.Int32 filter_offset
-    [[deprecated]] int& dyn_filter_offset();
+    [[deprecated("Use field access instead!")]] int& dyn_filter_offset();
     // Get instance field reference: System.Reflection.ExceptionHandlingClauseOptions flags
-    [[deprecated]] ::System::Reflection::ExceptionHandlingClauseOptions& dyn_flags();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::ExceptionHandlingClauseOptions& dyn_flags();
     // Get instance field reference: System.Int32 try_offset
-    [[deprecated]] int& dyn_try_offset();
+    [[deprecated("Use field access instead!")]] int& dyn_try_offset();
     // Get instance field reference: System.Int32 try_length
-    [[deprecated]] int& dyn_try_length();
+    [[deprecated("Use field access instead!")]] int& dyn_try_length();
     // Get instance field reference: System.Int32 handler_offset
-    [[deprecated]] int& dyn_handler_offset();
+    [[deprecated("Use field access instead!")]] int& dyn_handler_offset();
     // Get instance field reference: System.Int32 handler_length
-    [[deprecated]] int& dyn_handler_length();
+    [[deprecated("Use field access instead!")]] int& dyn_handler_length();
     // protected System.Void .ctor()
     // Offset: 0x14FA3FC
     // Implemented from: System.Object

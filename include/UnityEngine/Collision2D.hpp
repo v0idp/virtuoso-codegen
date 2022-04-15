@@ -86,23 +86,23 @@ namespace UnityEngine {
     static_assert(sizeof(::ArrayW<::UnityEngine::ContactPoint2D>) == 0x8);
     public:
     // Get instance field reference: System.Int32 m_Collider
-    [[deprecated]] int& dyn_m_Collider();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Collider();
     // Get instance field reference: System.Int32 m_OtherCollider
-    [[deprecated]] int& dyn_m_OtherCollider();
+    [[deprecated("Use field access instead!")]] int& dyn_m_OtherCollider();
     // Get instance field reference: System.Int32 m_Rigidbody
-    [[deprecated]] int& dyn_m_Rigidbody();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Rigidbody();
     // Get instance field reference: System.Int32 m_OtherRigidbody
-    [[deprecated]] int& dyn_m_OtherRigidbody();
+    [[deprecated("Use field access instead!")]] int& dyn_m_OtherRigidbody();
     // Get instance field reference: UnityEngine.Vector2 m_RelativeVelocity
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_RelativeVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_RelativeVelocity();
     // Get instance field reference: System.Int32 m_Enabled
-    [[deprecated]] int& dyn_m_Enabled();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Enabled();
     // Get instance field reference: System.Int32 m_ContactCount
-    [[deprecated]] int& dyn_m_ContactCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ContactCount();
     // Get instance field reference: UnityEngine.ContactPoint2D[] m_ReusedContacts
-    [[deprecated]] ::ArrayW<::UnityEngine::ContactPoint2D>& dyn_m_ReusedContacts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::ContactPoint2D>& dyn_m_ReusedContacts();
     // Get instance field reference: UnityEngine.ContactPoint2D[] m_LegacyContacts
-    [[deprecated]] ::ArrayW<::UnityEngine::ContactPoint2D>& dyn_m_LegacyContacts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::ContactPoint2D>& dyn_m_LegacyContacts();
     // public UnityEngine.Vector2 get_relativeVelocity()
     // Offset: 0x18FD92C
     ::UnityEngine::Vector2 get_relativeVelocity();

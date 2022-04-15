@@ -50,7 +50,7 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::ToolDataController*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.ToolDataController _dataController
-    [[deprecated]] ::VROSC::ToolDataController*& dyn__dataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::ToolDataController*& dyn__dataController();
     // public VROSC.ToolSettings get_ToolSettings()
     // Offset: 0xA287D8
     ::VROSC::ToolSettings* get_ToolSettings();
@@ -64,11 +64,6 @@ namespace VROSC {
     // Offset: 0xA222A4
     // Implemented from: VROSC.WidgetController
     // Base method: System.Void WidgetController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ToolController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ToolController::.ctor");

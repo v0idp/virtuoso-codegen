@@ -40,7 +40,7 @@ namespace System::Runtime::Serialization {
       return m_typeName;
     }
     // Get instance field reference: private System.String m_typeName
-    [[deprecated]] ::StringW& dyn_m_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_typeName();
     // System.String get_TypeName()
     // Offset: 0x12B2D90
     ::StringW get_TypeName();

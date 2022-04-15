@@ -135,29 +135,29 @@ namespace TMPro {
     // Set static field: static private UnityEngine.Vector2 k_defaultSize
     static void _set_k_defaultSize(::UnityEngine::Vector2 value);
     // Get instance field reference: private System.Boolean m_hasChanged
-    [[deprecated]] bool& dyn_m_hasChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_hasChanged();
     // Get instance field reference: private UnityEngine.Vector2 m_pivot
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_pivot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_pivot();
     // Get instance field reference: private TMPro.TextContainerAnchors m_anchorPosition
-    [[deprecated]] ::TMPro::TextContainerAnchors& dyn_m_anchorPosition();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextContainerAnchors& dyn_m_anchorPosition();
     // Get instance field reference: private UnityEngine.Rect m_rect
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_rect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_rect();
     // Get instance field reference: private System.Boolean m_isDefaultWidth
-    [[deprecated]] bool& dyn_m_isDefaultWidth();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isDefaultWidth();
     // Get instance field reference: private System.Boolean m_isDefaultHeight
-    [[deprecated]] bool& dyn_m_isDefaultHeight();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isDefaultHeight();
     // Get instance field reference: private System.Boolean m_isAutoFitting
-    [[deprecated]] bool& dyn_m_isAutoFitting();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isAutoFitting();
     // Get instance field reference: private UnityEngine.Vector3[] m_corners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_corners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_corners();
     // Get instance field reference: private UnityEngine.Vector3[] m_worldCorners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_worldCorners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_worldCorners();
     // Get instance field reference: private UnityEngine.Vector4 m_margins
-    [[deprecated]] ::UnityEngine::Vector4& dyn_m_margins();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_m_margins();
     // Get instance field reference: private UnityEngine.RectTransform m_rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_rectTransform();
     // Get instance field reference: private TMPro.TextMeshPro m_textMeshPro
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn_m_textMeshPro();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn_m_textMeshPro();
     // public System.Boolean get_hasChanged()
     // Offset: 0xD16DC8
     bool get_hasChanged();
@@ -230,6 +230,16 @@ namespace TMPro {
     // public TMPro.TextMeshPro get_textMeshPro()
     // Offset: 0xD17530
     ::TMPro::TextMeshPro* get_textMeshPro();
+    // public System.Void .ctor()
+    // Offset: 0xD17A20
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TextContainer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TextContainer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TextContainer*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xD17A94
+    static void _cctor();
     // private System.Void OnContainerChanged()
     // Offset: 0xD16F34
     void OnContainerChanged();
@@ -245,25 +255,6 @@ namespace TMPro {
     // private TMPro.TextContainerAnchors GetAnchorPosition(UnityEngine.Vector2 pivot)
     // Offset: 0xD16E44
     ::TMPro::TextContainerAnchors GetAnchorPosition(::UnityEngine::Vector2 pivot);
-    // public System.Void .ctor()
-    // Offset: 0xD17A20
-    // Implemented from: UnityEngine.EventSystems.UIBehaviour
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TextContainer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TextContainer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TextContainer*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xD17A94
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void Awake()
     // Offset: 0xD175D0
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
@@ -491,6 +482,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::Te
     return ::il2cpp_utils::FindMethod(classof(TMPro::TextContainer*), "get_textMeshPro", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TextContainer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: TMPro::TextContainer::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TextContainer::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(TMPro::TextContainer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: TMPro::TextContainer::OnContainerChanged
 // Il2CppName: OnContainerChanged
 template<>
@@ -532,18 +535,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::Te
   static const MethodInfo* get() {
     static auto* pivot = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector2")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(TMPro::TextContainer*), "GetAnchorPosition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{pivot});
-  }
-};
-// Writing MetadataGetter for method: TMPro::TextContainer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: TMPro::TextContainer::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&TMPro::TextContainer::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(TMPro::TextContainer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: TMPro::TextContainer::Awake

@@ -37,28 +37,30 @@ namespace Firebase::Storage {
       return proxy;
     }
     // Get instance field reference: Firebase.Storage.MonitorControllerInternal proxy
-    [[deprecated]] ::Firebase::Storage::MonitorControllerInternal*& dyn_proxy();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::MonitorControllerInternal*& dyn_proxy();
+    // public System.Void .ctor()
+    // Offset: 0x18364B4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MonitorControllerInternal::$Create$c__AnonStorey0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::MonitorControllerInternal::$Create$c__AnonStorey0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MonitorControllerInternal::$Create$c__AnonStorey0*, creationType>()));
+    }
     // System.Void <>m__0()
     // Offset: 0x183A2B0
     void $$m__0();
     // System.Void <>m__1()
     // Offset: 0x183A364
     void $$m__1();
-    // public System.Void .ctor()
-    // Offset: 0x18364B4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MonitorControllerInternal::$Create$c__AnonStorey0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Storage::MonitorControllerInternal::$Create$c__AnonStorey0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MonitorControllerInternal::$Create$c__AnonStorey0*, creationType>()));
-    }
   }; // Firebase.Storage.MonitorControllerInternal/Firebase.Storage.<Create>c__AnonStorey0
   #pragma pack(pop)
   static check_size<sizeof(MonitorControllerInternal::$Create$c__AnonStorey0), 16 + sizeof(::Firebase::Storage::MonitorControllerInternal*)> __Firebase_Storage_MonitorControllerInternal_$Create$c__AnonStorey0SizeCheck;
   static_assert(sizeof(MonitorControllerInternal::$Create$c__AnonStorey0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Firebase::Storage::MonitorControllerInternal::$Create$c__AnonStorey0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Firebase::Storage::MonitorControllerInternal::$Create$c__AnonStorey0::$$m__0
 // Il2CppName: <>m__0
 template<>
@@ -75,7 +77,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Fireb
     return ::il2cpp_utils::FindMethod(classof(Firebase::Storage::MonitorControllerInternal::$Create$c__AnonStorey0*), "<>m__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Firebase::Storage::MonitorControllerInternal::$Create$c__AnonStorey0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

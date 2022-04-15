@@ -67,7 +67,7 @@ namespace System::Security::Principal {
     // Set static field: static public System.Security.Principal.WindowsAccountType Anonymous
     static void _set_Anonymous(::System::Security::Principal::WindowsAccountType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Security.Principal.WindowsAccountType
   #pragma pack(pop)
   static check_size<sizeof(WindowsAccountType), 0 + sizeof(int)> __System_Security_Principal_WindowsAccountTypeSizeCheck;

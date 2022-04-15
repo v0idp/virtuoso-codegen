@@ -55,16 +55,14 @@ namespace System::Data {
     // Set static field: static private System.NotSupportedException s_notSupported
     static void _set_s_notSupported(::System::NotSupportedException* value);
     // Get instance field reference: private System.Data.DataViewSettingCollection _dataViewSettingsCollection
-    [[deprecated]] ::System::Data::DataViewSettingCollection*& dyn__dataViewSettingsCollection();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataViewSettingCollection*& dyn__dataViewSettingsCollection();
     // Get instance field reference: System.Int32 _nViews
-    [[deprecated]] int& dyn__nViews();
+    [[deprecated("Use field access instead!")]] int& dyn__nViews();
     // public System.Data.DataViewSettingCollection get_DataViewSettings()
     // Offset: 0x12E7A34
     ::System::Data::DataViewSettingCollection* get_DataViewSettings();
     // static private System.Void .cctor()
     // Offset: 0x12E7A3C
-    // Implemented from: System.ComponentModel.MarshalByValueComponent
-    // Base method: System.Void MarshalByValueComponent::.cctor()
     static void _cctor();
   }; // System.Data.DataViewManager
   #pragma pack(pop)

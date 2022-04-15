@@ -60,7 +60,7 @@ namespace System::Linq::Expressions {
       return variables;
     }
     // Get instance field reference: private System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.ParameterExpression> _variables
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>*& dyn__variables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>*& dyn__variables();
     // protected System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.ParameterExpression> get_VariablesList()
     // Offset: 0xE99DD4
     ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::ParameterExpression*>* get_VariablesList();

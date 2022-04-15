@@ -62,11 +62,11 @@ namespace DG::Tweening::Plugins::Options {
       return *reinterpret_cast<::DG::Tweening::Plugins::Options::IPlugOptions*>(this);
     }
     // Get instance field reference: public DG.Tweening.AxisConstraint axisConstraint
-    [[deprecated]] ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::AxisConstraint& dyn_axisConstraint();
     // Get instance field reference: public System.Boolean snapping
-    [[deprecated]] bool& dyn_snapping();
+    [[deprecated("Use field access instead!")]] bool& dyn_snapping();
     // Get instance field reference: System.Single[] durations
-    [[deprecated]] ::ArrayW<float>& dyn_durations();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_durations();
     // public System.Void Reset()
     // Offset: 0x18603C8
     void Reset();

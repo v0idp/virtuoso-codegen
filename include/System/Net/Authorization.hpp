@@ -50,11 +50,11 @@ namespace System::Net {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String m_Message
-    [[deprecated]] ::StringW& dyn_m_Message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Message();
     // Get instance field reference: private System.Boolean m_Complete
-    [[deprecated]] bool& dyn_m_Complete();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Complete();
     // Get instance field reference: System.String ModuleAuthenticationType
-    [[deprecated]] ::StringW& dyn_ModuleAuthenticationType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ModuleAuthenticationType();
     // public System.String get_Message()
     // Offset: 0x10D94C8
     ::StringW get_Message();

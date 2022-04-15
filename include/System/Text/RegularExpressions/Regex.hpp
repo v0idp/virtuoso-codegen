@@ -196,29 +196,29 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Int32 MaxOptionShift
     static void _set_MaxOptionShift(int value);
     // Get instance field reference: protected internal System.String pattern
-    [[deprecated]] ::StringW& dyn_pattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_pattern();
     // Get instance field reference: protected internal System.Text.RegularExpressions.RegexRunnerFactory factory
-    [[deprecated]] ::System::Text::RegularExpressions::RegexRunnerFactory*& dyn_factory();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexRunnerFactory*& dyn_factory();
     // Get instance field reference: protected internal System.Text.RegularExpressions.RegexOptions roptions
-    [[deprecated]] ::System::Text::RegularExpressions::RegexOptions& dyn_roptions();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexOptions& dyn_roptions();
     // Get instance field reference: protected internal System.TimeSpan internalMatchTimeout
-    [[deprecated]] ::System::TimeSpan& dyn_internalMatchTimeout();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn_internalMatchTimeout();
     // Get instance field reference: protected internal System.Collections.Hashtable caps
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_caps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_caps();
     // Get instance field reference: protected internal System.Collections.Hashtable capnames
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_capnames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_capnames();
     // Get instance field reference: protected internal System.String[] capslist
-    [[deprecated]] ::ArrayW<::StringW>& dyn_capslist();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_capslist();
     // Get instance field reference: protected internal System.Int32 capsize
-    [[deprecated]] int& dyn_capsize();
+    [[deprecated("Use field access instead!")]] int& dyn_capsize();
     // Get instance field reference: System.Text.RegularExpressions.ExclusiveReference runnerref
-    [[deprecated]] ::System::Text::RegularExpressions::ExclusiveReference*& dyn_runnerref();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::ExclusiveReference*& dyn_runnerref();
     // Get instance field reference: System.Text.RegularExpressions.SharedReference replref
-    [[deprecated]] ::System::Text::RegularExpressions::SharedReference*& dyn_replref();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::SharedReference*& dyn_replref();
     // Get instance field reference: System.Text.RegularExpressions.RegexCode code
-    [[deprecated]] ::System::Text::RegularExpressions::RegexCode*& dyn_code();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexCode*& dyn_code();
     // Get instance field reference: System.Boolean refsInitialized
-    [[deprecated]] bool& dyn_refsInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_refsInitialized();
     // public System.Text.RegularExpressions.RegexOptions get_Options()
     // Offset: 0x1419498
     ::System::Text::RegularExpressions::RegexOptions get_Options();
@@ -228,6 +228,13 @@ namespace System::Text::RegularExpressions {
     // public System.Boolean get_RightToLeft()
     // Offset: 0x14194A8
     bool get_RightToLeft();
+    // protected System.Void .ctor()
+    // Offset: 0x1418028
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Regex* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Regex::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Regex*, creationType>()));
+    }
     // public System.Void .ctor(System.String pattern)
     // Offset: 0x14180A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -337,15 +344,6 @@ namespace System::Text::RegularExpressions {
     // System.Boolean UseOptionInvariant()
     // Offset: 0x141A23C
     bool UseOptionInvariant();
-    // protected System.Void .ctor()
-    // Offset: 0x1418028
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Regex* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Regex::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Regex*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x14194C0
     // Implemented from: System.Object
@@ -381,6 +379,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::Regex*), "get_RightToLeft", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Text::RegularExpressions::Regex::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::Regex::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -664,10 +666,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::Regex*), "UseOptionInvariant", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::Regex::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::Regex::ToString
 // Il2CppName: ToString
 template<>

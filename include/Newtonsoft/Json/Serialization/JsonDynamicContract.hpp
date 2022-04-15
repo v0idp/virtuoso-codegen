@@ -99,13 +99,13 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::StringW, ::System::Runtime::CompilerServices::CallSite_1<::System::Func_4<::System::Runtime::CompilerServices::CallSite*, ::Il2CppObject*, ::Il2CppObject*, ::Il2CppObject*>*>*>*) == 0x8);
     public:
     // Get instance field reference: private readonly Newtonsoft.Json.Serialization.JsonPropertyCollection <Properties>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::JsonPropertyCollection*& dyn_$Properties$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::JsonPropertyCollection*& dyn_$Properties$k__BackingField();
     // Get instance field reference: private System.Func`2<System.String,System.String> <PropertyNameResolver>k__BackingField
-    [[deprecated]] ::System::Func_2<::StringW, ::StringW>*& dyn_$PropertyNameResolver$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Func_2<::StringW, ::StringW>*& dyn_$PropertyNameResolver$k__BackingField();
     // Get instance field reference: private readonly Newtonsoft.Json.Utilities.ThreadSafeStore`2<System.String,System.Runtime.CompilerServices.CallSite`1<System.Func`3<System.Runtime.CompilerServices.CallSite,System.Object,System.Object>>> _callSiteGetters
-    [[deprecated]] ::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::StringW, ::System::Runtime::CompilerServices::CallSite_1<::System::Func_3<::System::Runtime::CompilerServices::CallSite*, ::Il2CppObject*, ::Il2CppObject*>*>*>*& dyn__callSiteGetters();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::StringW, ::System::Runtime::CompilerServices::CallSite_1<::System::Func_3<::System::Runtime::CompilerServices::CallSite*, ::Il2CppObject*, ::Il2CppObject*>*>*>*& dyn__callSiteGetters();
     // Get instance field reference: private readonly Newtonsoft.Json.Utilities.ThreadSafeStore`2<System.String,System.Runtime.CompilerServices.CallSite`1<System.Func`4<System.Runtime.CompilerServices.CallSite,System.Object,System.Object,System.Object>>> _callSiteSetters
-    [[deprecated]] ::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::StringW, ::System::Runtime::CompilerServices::CallSite_1<::System::Func_4<::System::Runtime::CompilerServices::CallSite*, ::Il2CppObject*, ::Il2CppObject*, ::Il2CppObject*>*>*>*& dyn__callSiteSetters();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::StringW, ::System::Runtime::CompilerServices::CallSite_1<::System::Func_4<::System::Runtime::CompilerServices::CallSite*, ::Il2CppObject*, ::Il2CppObject*, ::Il2CppObject*>*>*>*& dyn__callSiteSetters();
     // public Newtonsoft.Json.Serialization.JsonPropertyCollection get_Properties()
     // Offset: 0xEF579C
     ::Newtonsoft::Json::Serialization::JsonPropertyCollection* get_Properties();

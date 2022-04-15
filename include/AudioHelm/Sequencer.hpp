@@ -111,9 +111,9 @@ namespace AudioHelm {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Single position_
-      [[deprecated]] float& dyn_position_();
+      [[deprecated("Use field access instead!")]] float& dyn_position_();
       // Get instance field reference: public System.Int32 note_
-      [[deprecated]] int& dyn_note_();
+      [[deprecated("Use field access instead!")]] int& dyn_note_();
       // public System.Void .ctor(System.Single position, System.Int32 note)
       // Offset: 0x8D4FCC
       // ABORTED: conflicts with another method.  NotePosition(float position, int note);
@@ -170,7 +170,7 @@ namespace AudioHelm {
       // Set static field: static public AudioHelm.Sequencer/AudioHelm.Division kThirtySecond
       static void _set_kThirtySecond(::AudioHelm::Sequencer::Division value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // AudioHelm.Sequencer/AudioHelm.Division
     #pragma pack(pop)
     static check_size<sizeof(Sequencer::Division), 0 + sizeof(int)> __AudioHelm_Sequencer_DivisionSizeCheck;
@@ -345,49 +345,49 @@ namespace AudioHelm {
     // Set static field: static private AudioHelm.Sequencer/AudioHelm.NotePositionComparer notePositionComparer
     static void _set_notePositionComparer(::AudioHelm::Sequencer::NotePositionComparer* value);
     // Get instance field reference: private AudioHelm.Sequencer/AudioHelm.NoteAction OnNoteOn
-    [[deprecated]] ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOn();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOn();
     // Get instance field reference: private AudioHelm.Sequencer/AudioHelm.NoteAction OnNoteOff
-    [[deprecated]] ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOff();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer::NoteAction*& dyn_OnNoteOff();
     // Get instance field reference: private AudioHelm.Sequencer/AudioHelm.BeatAction OnBeat
-    [[deprecated]] ::AudioHelm::Sequencer::BeatAction*& dyn_OnBeat();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer::BeatAction*& dyn_OnBeat();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.NoteEvent noteOnEvent
-    [[deprecated]] ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOnEvent();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOnEvent();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.NoteEvent noteOffEvent
-    [[deprecated]] ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOffEvent();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer::NoteEvent*& dyn_noteOffEvent();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.BeatEvent beatEvent
-    [[deprecated]] ::AudioHelm::Sequencer::BeatEvent*& dyn_beatEvent();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer::BeatEvent*& dyn_beatEvent();
     // Get instance field reference: private System.Collections.Generic.List`1<AudioHelm.Note> activeNotes
-    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_activeNotes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_activeNotes();
     // Get instance field reference: public System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // Get instance field reference: public System.Int32 currentIndex
-    [[deprecated]] int& dyn_currentIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_currentIndex();
     // Get instance field reference: public System.Boolean loop
-    [[deprecated]] bool& dyn_loop();
+    [[deprecated("Use field access instead!")]] bool& dyn_loop();
     // Get instance field reference: protected System.Double beatTime
-    [[deprecated]] double& dyn_beatTime();
+    [[deprecated("Use field access instead!")]] double& dyn_beatTime();
     // Get instance field reference: protected System.Boolean paused
-    [[deprecated]] bool& dyn_paused();
+    [[deprecated("Use field access instead!")]] bool& dyn_paused();
     // Get instance field reference: public AudioHelm.NoteRow[] allNotes
-    [[deprecated]] ::ArrayW<::AudioHelm::NoteRow*>& dyn_allNotes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::AudioHelm::NoteRow*>& dyn_allNotes();
     // Get instance field reference: public UnityEngine.Vector2 scrollPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_scrollPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_scrollPosition();
     // Get instance field reference: public System.Boolean autoScroll
-    [[deprecated]] bool& dyn_autoScroll();
+    [[deprecated("Use field access instead!")]] bool& dyn_autoScroll();
     // Get instance field reference: public AudioHelm.Sequencer/AudioHelm.Division division
-    [[deprecated]] ::AudioHelm::Sequencer::Division& dyn_division();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Sequencer::Division& dyn_division();
     // Get instance field reference: public System.Single zoom
-    [[deprecated]] float& dyn_zoom();
+    [[deprecated("Use field access instead!")]] float& dyn_zoom();
     // Get instance field reference: private System.Collections.Generic.SortedList`2<AudioHelm.Sequencer/AudioHelm.NotePosition,AudioHelm.Note> sortedNoteOns
-    [[deprecated]] ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOns();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOns();
     // Get instance field reference: private System.Collections.Generic.SortedList`2<AudioHelm.Sequencer/AudioHelm.NotePosition,AudioHelm.Note> sortedNoteOffs
-    [[deprecated]] ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOffs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::SortedList_2<::AudioHelm::Sequencer::NotePosition, ::AudioHelm::Note*>*& dyn_sortedNoteOffs();
     // Get instance field reference: private System.Single lastSequencerPosition
-    [[deprecated]] float& dyn_lastSequencerPosition();
+    [[deprecated("Use field access instead!")]] float& dyn_lastSequencerPosition();
     // Get instance field reference: private System.Boolean waitTillNextCycle
-    [[deprecated]] bool& dyn_waitTillNextCycle();
+    [[deprecated("Use field access instead!")]] bool& dyn_waitTillNextCycle();
     // Get instance field reference: private System.Int32 numCycles
-    [[deprecated]] int& dyn_numCycles();
+    [[deprecated("Use field access instead!")]] int& dyn_numCycles();
     // public System.Void add_OnNoteOn(AudioHelm.Sequencer/AudioHelm.NoteAction value)
     // Offset: 0x1982438
     void add_OnNoteOn(::AudioHelm::Sequencer::NoteAction* value);
@@ -406,6 +406,16 @@ namespace AudioHelm {
     // public System.Void remove_OnBeat(AudioHelm.Sequencer/AudioHelm.BeatAction value)
     // Offset: 0x1982758
     void remove_OnBeat(::AudioHelm::Sequencer::BeatAction* value);
+    // protected System.Void .ctor()
+    // Offset: 0x1984CBC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Sequencer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sequencer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Sequencer*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x1984E4C
+    static void _cctor();
     // public System.Void AllNotesOff()
     // Offset: 0x19827F8
     void AllNotesOff();
@@ -541,24 +551,6 @@ namespace AudioHelm {
     // protected System.Void UpdatePosition(System.Boolean sendEvents)
     // Offset: 0x1982D70
     void UpdatePosition(bool sendEvents);
-    // protected System.Void .ctor()
-    // Offset: 0x1984CBC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Sequencer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sequencer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Sequencer*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x1984E4C
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // AudioHelm.Sequencer
   #pragma pack(pop)
   static check_size<sizeof(Sequencer), 168 + sizeof(int)> __AudioHelm_SequencerSizeCheck;
@@ -621,6 +613,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("AudioHelm", "Sequencer/BeatAction")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Sequencer*), "remove_OnBeat", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: AudioHelm::Sequencer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: AudioHelm::Sequencer::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&AudioHelm::Sequencer::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(AudioHelm::Sequencer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: AudioHelm::Sequencer::AllNotesOff
@@ -1032,17 +1036,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
   static const MethodInfo* get() {
     static auto* sendEvents = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Sequencer*), "UpdatePosition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sendEvents});
-  }
-};
-// Writing MetadataGetter for method: AudioHelm::Sequencer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: AudioHelm::Sequencer::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&AudioHelm::Sequencer::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(AudioHelm::Sequencer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

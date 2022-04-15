@@ -43,7 +43,7 @@ namespace System::Security::Cryptography {
       return oid;
     }
     // Get instance field reference: private System.String _oid
-    [[deprecated]] ::StringW& dyn__oid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__oid();
     // public System.Void .ctor()
     // Offset: 0xFC92EC
     // Implemented from: System.Security.Cryptography.AsymmetricSignatureDeformatter

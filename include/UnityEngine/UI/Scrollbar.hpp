@@ -131,7 +131,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.Scrollbar/UnityEngine.UI.Direction TopToBottom
       static void _set_TopToBottom(::UnityEngine::UI::Scrollbar::Direction value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.Scrollbar/UnityEngine.UI.Direction
     #pragma pack(pop)
     static check_size<sizeof(Scrollbar::Direction), 0 + sizeof(int)> __UnityEngine_UI_Scrollbar_DirectionSizeCheck;
@@ -233,29 +233,29 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::UnityEngine::EventSystems::IInitializePotentialDragHandler*>(this);
     }
     // Get instance field reference: private UnityEngine.RectTransform m_HandleRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_HandleRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_HandleRect();
     // Get instance field reference: private UnityEngine.UI.Scrollbar/UnityEngine.UI.Direction m_Direction
-    [[deprecated]] ::UnityEngine::UI::Scrollbar::Direction& dyn_m_Direction();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Scrollbar::Direction& dyn_m_Direction();
     // Get instance field reference: private System.Single m_Value
-    [[deprecated]] float& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Value();
     // Get instance field reference: private System.Single m_Size
-    [[deprecated]] float& dyn_m_Size();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Size();
     // Get instance field reference: private System.Int32 m_NumberOfSteps
-    [[deprecated]] int& dyn_m_NumberOfSteps();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NumberOfSteps();
     // Get instance field reference: private UnityEngine.UI.Scrollbar/UnityEngine.UI.ScrollEvent m_OnValueChanged
-    [[deprecated]] ::UnityEngine::UI::Scrollbar::ScrollEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Scrollbar::ScrollEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private UnityEngine.RectTransform m_ContainerRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_ContainerRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_ContainerRect();
     // Get instance field reference: private UnityEngine.Vector2 m_Offset
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Offset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Offset();
     // Get instance field reference: private UnityEngine.DrivenRectTransformTracker m_Tracker
-    [[deprecated]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
     // Get instance field reference: private UnityEngine.Coroutine m_PointerDownRepeat
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_PointerDownRepeat();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_PointerDownRepeat();
     // Get instance field reference: private System.Boolean isPointerDownAndNotDragging
-    [[deprecated]] bool& dyn_isPointerDownAndNotDragging();
+    [[deprecated("Use field access instead!")]] bool& dyn_isPointerDownAndNotDragging();
     // Get instance field reference: private System.Boolean m_DelayedUpdateVisuals
-    [[deprecated]] bool& dyn_m_DelayedUpdateVisuals();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DelayedUpdateVisuals();
     // public UnityEngine.RectTransform get_handleRect()
     // Offset: 0x1430C24
     ::UnityEngine::RectTransform* get_handleRect();
@@ -360,11 +360,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Scrollbar* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Scrollbar::.ctor");

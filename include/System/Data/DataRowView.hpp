@@ -101,13 +101,13 @@ namespace System::Data {
     // Set static field: static private readonly System.ComponentModel.PropertyDescriptorCollection s_zeroPropertyDescriptorCollection
     static void _set_s_zeroPropertyDescriptorCollection(::System::ComponentModel::PropertyDescriptorCollection* value);
     // Get instance field reference: private readonly System.Data.DataView _dataView
-    [[deprecated]] ::System::Data::DataView*& dyn__dataView();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataView*& dyn__dataView();
     // Get instance field reference: private readonly System.Data.DataRow _row
-    [[deprecated]] ::System::Data::DataRow*& dyn__row();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRow*& dyn__row();
     // Get instance field reference: private System.Boolean _delayBeginEdit
-    [[deprecated]] bool& dyn__delayBeginEdit();
+    [[deprecated("Use field access instead!")]] bool& dyn__delayBeginEdit();
     // Get instance field reference: private System.ComponentModel.PropertyChangedEventHandler PropertyChanged
-    [[deprecated]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanged();
     // public System.Data.DataView get_DataView()
     // Offset: 0xFA28F8
     ::System::Data::DataView* get_DataView();

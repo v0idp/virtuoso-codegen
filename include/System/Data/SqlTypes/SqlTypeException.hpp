@@ -14,14 +14,14 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
+// Forward declaring namespace: System
+namespace System {
+  // Skipping declaration: Exception because it is already included!
+}
 // Forward declaring namespace: System::Runtime::Serialization
 namespace System::Runtime::Serialization {
   // Forward declaring type: SerializationInfo
   class SerializationInfo;
-}
-// Forward declaring namespace: System
-namespace System {
-  // Skipping declaration: Exception because it is already included!
 }
 // Completed forward declares
 // Type namespace: System.Data.SqlTypes
@@ -40,15 +40,8 @@ namespace System::Data::SqlTypes {
   // [TokenAttribute] Offset: FFFFFFFF
   class SqlTypeException : public ::System::SystemException {
     public:
-    // static private System.Runtime.Serialization.SerializationInfo SqlTypeExceptionSerialization(System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext sc)
-    // Offset: 0x13DCF0C
-    static ::System::Runtime::Serialization::SerializationInfo* SqlTypeExceptionSerialization(::System::Runtime::Serialization::SerializationInfo* si, ::System::Runtime::Serialization::StreamingContext sc);
     // public System.Void .ctor()
     // Offset: 0x13DCE2C
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SqlTypeException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlTypeException::.ctor");
@@ -56,9 +49,6 @@ namespace System::Data::SqlTypes {
     }
     // public System.Void .ctor(System.String message)
     // Offset: 0x13DA7E4
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.String message)
-    // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SqlTypeException* New_ctor(::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlTypeException::.ctor");
@@ -66,9 +56,6 @@ namespace System::Data::SqlTypes {
     }
     // public System.Void .ctor(System.String message, System.Exception e)
     // Offset: 0x13D73C4
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.String message, System.Exception e)
-    // Base method: System.Void Exception::.ctor(System.String message, System.Exception e)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SqlTypeException* New_ctor(::StringW message, ::System::Exception* e) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlTypeException::.ctor");
@@ -76,18 +63,34 @@ namespace System::Data::SqlTypes {
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext sc)
     // Offset: 0x13DCE90
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext sc)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext sc)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SqlTypeException* New_ctor(::System::Runtime::Serialization::SerializationInfo* si, ::System::Runtime::Serialization::StreamingContext sc) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlTypeException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SqlTypeException*, creationType>(si, sc)));
     }
+    // static private System.Runtime.Serialization.SerializationInfo SqlTypeExceptionSerialization(System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext sc)
+    // Offset: 0x13DCF0C
+    static ::System::Runtime::Serialization::SerializationInfo* SqlTypeExceptionSerialization(::System::Runtime::Serialization::SerializationInfo* si, ::System::Runtime::Serialization::StreamingContext sc);
   }; // System.Data.SqlTypes.SqlTypeException
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::SqlTypeExceptionSerialization
 // Il2CppName: SqlTypeExceptionSerialization
 template<>
@@ -98,19 +101,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::R
     return ::il2cpp_utils::FindMethod(classof(System::Data::SqlTypes::SqlTypeException*), "SqlTypeExceptionSerialization", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{si, sc});
   }
 };
-// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: System::Data::SqlTypes::SqlTypeException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

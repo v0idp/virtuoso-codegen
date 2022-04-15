@@ -57,9 +57,9 @@ namespace System::Linq::Expressions::Interpreter {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private readonly System.Boolean _hasFinally
-    [[deprecated]] bool& dyn__hasFinally();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasFinally();
     // Get instance field reference: private System.Linq.Expressions.Interpreter.TryCatchFinallyHandler _tryHandler
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler*& dyn__tryHandler();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler*& dyn__tryHandler();
     // private System.Void .ctor(System.Int32 targetIndex, System.Boolean hasFinally)
     // Offset: 0x11FC8FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

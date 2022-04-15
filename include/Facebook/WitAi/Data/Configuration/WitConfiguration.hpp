@@ -93,34 +93,30 @@ namespace Facebook::WitAi::Data::Configuration {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Facebook.WitAi.Data.Configuration.WitApplication application
-    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitApplication*& dyn_application();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::Configuration::WitApplication*& dyn_application();
     // Get instance field reference: public System.String configId
-    [[deprecated]] ::StringW& dyn_configId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_configId();
     // Get instance field reference: public System.String clientAccessToken
-    [[deprecated]] ::StringW& dyn_clientAccessToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_clientAccessToken();
     // Get instance field reference: public Facebook.WitAi.Data.Entities.WitEntity[] entities
-    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Entities::WitEntity*>& dyn_entities();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Facebook::WitAi::Data::Entities::WitEntity*>& dyn_entities();
     // Get instance field reference: public Facebook.WitAi.Data.Intents.WitIntent[] intents
-    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Intents::WitIntent*>& dyn_intents();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Facebook::WitAi::Data::Intents::WitIntent*>& dyn_intents();
     // Get instance field reference: public Facebook.WitAi.Data.Traits.WitTrait[] traits
-    [[deprecated]] ::ArrayW<::Facebook::WitAi::Data::Traits::WitTrait*>& dyn_traits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Facebook::WitAi::Data::Traits::WitTrait*>& dyn_traits();
     // public Facebook.WitAi.Data.Configuration.WitApplication get_Application()
     // Offset: 0x16745A8
     ::Facebook::WitAi::Data::Configuration::WitApplication* get_Application();
-    // private System.Void OnEnable()
-    // Offset: 0x16745B0
-    void OnEnable();
     // public System.Void .ctor()
     // Offset: 0x16745B4
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitConfiguration* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::Configuration::WitConfiguration::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitConfiguration*, creationType>()));
     }
+    // private System.Void OnEnable()
+    // Offset: 0x16745B0
+    void OnEnable();
   }; // Facebook.WitAi.Data.Configuration.WitConfiguration
   #pragma pack(pop)
   static check_size<sizeof(WitConfiguration), 64 + sizeof(::ArrayW<::Facebook::WitAi::Data::Traits::WitTrait*>)> __Facebook_WitAi_Data_Configuration_WitConfigurationSizeCheck;
@@ -135,6 +131,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Facebook:
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Data::Configuration::WitConfiguration*), "get_Application", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Facebook::WitAi::Data::Configuration::WitConfiguration::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::Data::Configuration::WitConfiguration::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -143,7 +143,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Faceb
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::Data::Configuration::WitConfiguration*), "OnEnable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::Data::Configuration::WitConfiguration::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

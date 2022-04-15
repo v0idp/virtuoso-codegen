@@ -50,7 +50,7 @@ namespace System::Runtime::CompilerServices {
       return StateMachineType;
     }
     // Get instance field reference: private System.Type <StateMachineType>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$StateMachineType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$StateMachineType$k__BackingField();
     // private System.Void set_StateMachineType(System.Type value)
     // Offset: 0x1255D60
     void set_StateMachineType(::System::Type* value);

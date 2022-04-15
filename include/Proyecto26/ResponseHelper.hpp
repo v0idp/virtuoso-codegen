@@ -54,7 +54,7 @@ namespace Proyecto26 {
       return Request;
     }
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <Request>k__BackingField
-    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$Request$k__BackingField();
     // public UnityEngine.Networking.UnityWebRequest get_Request()
     // Offset: 0xB34A98
     ::UnityEngine::Networking::UnityWebRequest* get_Request();

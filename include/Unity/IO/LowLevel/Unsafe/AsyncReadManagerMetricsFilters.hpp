@@ -73,15 +73,15 @@ namespace Unity::IO::LowLevel::Unsafe {
     static_assert(sizeof(::ArrayW<::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem>) == 0x8);
     public:
     // Get instance field reference: System.UInt64[] TypeIDs
-    [[deprecated]] ::ArrayW<uint64_t>& dyn_TypeIDs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint64_t>& dyn_TypeIDs();
     // Get instance field reference: Unity.IO.LowLevel.Unsafe.ProcessingState[] States
-    [[deprecated]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::ProcessingState>& dyn_States();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::ProcessingState>& dyn_States();
     // Get instance field reference: Unity.IO.LowLevel.Unsafe.FileReadType[] ReadTypes
-    [[deprecated]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::FileReadType>& dyn_ReadTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::FileReadType>& dyn_ReadTypes();
     // Get instance field reference: Unity.IO.LowLevel.Unsafe.Priority[] PriorityLevels
-    [[deprecated]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::Priority>& dyn_PriorityLevels();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::Priority>& dyn_PriorityLevels();
     // Get instance field reference: Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem[] Subsystems
-    [[deprecated]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem>& dyn_Subsystems();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem>& dyn_Subsystems();
   }; // Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetricsFilters
   #pragma pack(pop)
   static check_size<sizeof(AsyncReadManagerMetricsFilters), 48 + sizeof(::ArrayW<::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem>)> __Unity_IO_LowLevel_Unsafe_AsyncReadManagerMetricsFiltersSizeCheck;

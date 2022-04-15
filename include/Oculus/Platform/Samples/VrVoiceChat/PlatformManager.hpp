@@ -129,7 +129,7 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
       // Set static field: static public Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State HANGUP
       static void _set_HANGUP(::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State
     #pragma pack(pop)
     static check_size<sizeof(PlatformManager::State), 0 + sizeof(int)> __Oculus_Platform_Samples_VrVoiceChat_PlatformManager_StateSizeCheck;
@@ -205,25 +205,25 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // Set static field: static private Oculus.Platform.Samples.VrVoiceChat.PlatformManager s_instance
     static void _set_s_instance(::Oculus::Platform::Samples::VrVoiceChat::PlatformManager* value);
     // Get instance field reference: private UnityEngine.GameObject m_invitesList
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_invitesList();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_invitesList();
     // Get instance field reference: private UnityEngine.GameObject m_invitePrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_invitePrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_invitePrefab();
     // Get instance field reference: private UnityEngine.Camera m_camera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_m_camera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_m_camera();
     // Get instance field reference: private UnityEngine.GameObject m_remoteHead
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_remoteHead();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_remoteHead();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State m_currentState
-    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State& dyn_m_currentState();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State& dyn_m_currentState();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.RoomManager m_roomManager
-    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::RoomManager*& dyn_m_roomManager();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrVoiceChat::RoomManager*& dyn_m_roomManager();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.P2PManager m_p2pManager
-    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::P2PManager*& dyn_m_p2pManager();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrVoiceChat::P2PManager*& dyn_m_p2pManager();
     // Get instance field reference: private Oculus.Platform.Samples.VrVoiceChat.VoipManager m_voipManager
-    [[deprecated]] ::Oculus::Platform::Samples::VrVoiceChat::VoipManager*& dyn_m_voipManager();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrVoiceChat::VoipManager*& dyn_m_voipManager();
     // Get instance field reference: private System.UInt64 m_myID
-    [[deprecated]] uint64_t& dyn_m_myID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_myID();
     // Get instance field reference: private System.String m_myOculusID
-    [[deprecated]] ::StringW& dyn_m_myOculusID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_myOculusID();
     // static public Oculus.Platform.Samples.VrVoiceChat.PlatformManager/Oculus.Platform.Samples.VrVoiceChat.State get_CurrentState()
     // Offset: 0xB57D6C
     static ::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::State get_CurrentState();
@@ -233,6 +233,16 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // static public System.String get_MyOculusID()
     // Offset: 0xB57DDC
     static ::StringW get_MyOculusID();
+    // public System.Void .ctor()
+    // Offset: 0xB58838
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlatformManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlatformManager*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xB58840
+    static void _cctor();
     // private System.Void Update()
     // Offset: 0xB5734C
     void Update();
@@ -275,24 +285,6 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     // static public System.Void SetActiveInvites(System.Collections.Generic.List`1<Oculus.Platform.Samples.VrVoiceChat.RoomManager/Oculus.Platform.Samples.VrVoiceChat.Invite> invites)
     // Offset: 0xB580A8
     static void SetActiveInvites(::System::Collections::Generic::List_1<::Oculus::Platform::Samples::VrVoiceChat::RoomManager::Invite>* invites);
-    // public System.Void .ctor()
-    // Offset: 0xB58838
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlatformManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrVoiceChat::PlatformManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlatformManager*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xB58840
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // Oculus.Platform.Samples.VrVoiceChat.PlatformManager
   #pragma pack(pop)
   static check_size<sizeof(PlatformManager), 96 + sizeof(::StringW)> __Oculus_Platform_Samples_VrVoiceChat_PlatformManagerSizeCheck;
@@ -323,6 +315,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)()>(&Oculus::Platform::Samples::VrVoiceChat::PlatformManager::get_MyOculusID)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrVoiceChat::PlatformManager*), "get_MyOculusID", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Oculus::Platform::Samples::VrVoiceChat::PlatformManager::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrVoiceChat::PlatformManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::Update
@@ -441,17 +445,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
   static const MethodInfo* get() {
     static auto* invites = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System.Collections.Generic", "List`1"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("Oculus.Platform.Samples.VrVoiceChat", "RoomManager/Invite")})->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrVoiceChat::PlatformManager*), "SetActiveInvites", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{invites});
-  }
-};
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrVoiceChat::PlatformManager::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Oculus::Platform::Samples::VrVoiceChat::PlatformManager::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrVoiceChat::PlatformManager*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

@@ -102,23 +102,23 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector3>) == 0x8);
     public:
     // Get instance field reference: private VROSC.UI.Meshes.AdjustableMeshData _data
-    [[deprecated]] ::VROSC::UI::Meshes::AdjustableMeshData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::AdjustableMeshData*& dyn__data();
     // Get instance field reference: private System.Single _height
-    [[deprecated]] float& dyn__height();
+    [[deprecated("Use field access instead!")]] float& dyn__height();
     // Get instance field reference: private System.Single _width
-    [[deprecated]] float& dyn__width();
+    [[deprecated("Use field access instead!")]] float& dyn__width();
     // Get instance field reference: private System.Boolean _alwaysUpdate
-    [[deprecated]] bool& dyn__alwaysUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn__alwaysUpdate();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private System.Single _lastHeight
-    [[deprecated]] float& dyn__lastHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__lastHeight();
     // Get instance field reference: private System.Single _lastWidth
-    [[deprecated]] float& dyn__lastWidth();
+    [[deprecated("Use field access instead!")]] float& dyn__lastWidth();
     // Get instance field reference: private UnityEngine.Vector3[] _originalPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__originalPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__originalPositions();
     // Get instance field reference: private UnityEngine.Vector3[] _modifiedPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__modifiedPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__modifiedPositions();
     // private System.Single get_Height()
     // Offset: 0x968348
     float get_Height();
@@ -138,11 +138,6 @@ namespace VROSC {
     // Offset: 0x96883C
     // Implemented from: VROSC.AdjustableMeshEffect
     // Base method: System.Void AdjustableMeshEffect::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AdjustableMeshResizeEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMeshResizeEffect::.ctor");

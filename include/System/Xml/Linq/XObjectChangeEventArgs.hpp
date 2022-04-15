@@ -59,7 +59,7 @@ namespace System::Xml::Linq {
     // Set static field: static public readonly System.Xml.Linq.XObjectChangeEventArgs Value
     static void _set_Value(::System::Xml::Linq::XObjectChangeEventArgs* value);
     // Get instance field reference: private System.Xml.Linq.XObjectChange objectChange
-    [[deprecated]] ::System::Xml::Linq::XObjectChange& dyn_objectChange();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XObjectChange& dyn_objectChange();
     // public System.Void .ctor(System.Xml.Linq.XObjectChange objectChange)
     // Offset: 0x185DB98
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -69,8 +69,6 @@ namespace System::Xml::Linq {
     }
     // static private System.Void .cctor()
     // Offset: 0x185DC10
-    // Implemented from: System.EventArgs
-    // Base method: System.Void EventArgs::.cctor()
     static void _cctor();
   }; // System.Xml.Linq.XObjectChangeEventArgs
   #pragma pack(pop)

@@ -137,33 +137,40 @@ namespace VROSC::UI {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.UI.UIColorSettings/VROSC.UI.ColorMapping> _mappedColors
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UI::UIColorSettings::ColorMapping*>*& dyn__mappedColors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UI::UIColorSettings::ColorMapping*>*& dyn__mappedColors();
     // Get instance field reference: private VROSC.UI.UITwoToneColor xAxisNaturals
-    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_xAxisNaturals();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UITwoToneColor*& dyn_xAxisNaturals();
     // Get instance field reference: private VROSC.UI.UITwoToneColor xAxisHalfs
-    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_xAxisHalfs();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UITwoToneColor*& dyn_xAxisHalfs();
     // Get instance field reference: private VROSC.UI.UITwoToneColor yAxisNaturals
-    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_yAxisNaturals();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UITwoToneColor*& dyn_yAxisNaturals();
     // Get instance field reference: private VROSC.UI.UITwoToneColor yAxisHalfs
-    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_yAxisHalfs();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UITwoToneColor*& dyn_yAxisHalfs();
     // Get instance field reference: private VROSC.UI.UITwoToneColor zAxisNaturals
-    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_zAxisNaturals();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UITwoToneColor*& dyn_zAxisNaturals();
     // Get instance field reference: private VROSC.UI.UITwoToneColor zAxisHalfs
-    [[deprecated]] ::VROSC::UI::UITwoToneColor*& dyn_zAxisHalfs();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UITwoToneColor*& dyn_zAxisHalfs();
     // Get instance field reference: private System.Single _hoverMultiplier
-    [[deprecated]] float& dyn__hoverMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn__hoverMultiplier();
     // Get instance field reference: private System.Single _pressedMultiplier
-    [[deprecated]] float& dyn__pressedMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn__pressedMultiplier();
     // Get instance field reference: private System.Single _disabledDesaturation
-    [[deprecated]] float& dyn__disabledDesaturation();
+    [[deprecated("Use field access instead!")]] float& dyn__disabledDesaturation();
     // Get instance field reference: private System.Single _disabledDarken
-    [[deprecated]] float& dyn__disabledDarken();
+    [[deprecated("Use field access instead!")]] float& dyn__disabledDarken();
     // Get instance field reference: private UnityEngine.Color _controllerButtonHighlight
-    [[deprecated]] ::UnityEngine::Color& dyn__controllerButtonHighlight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__controllerButtonHighlight();
     // Get instance field reference: private UnityEngine.Color _controllerButtonPressed
-    [[deprecated]] ::UnityEngine::Color& dyn__controllerButtonPressed();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__controllerButtonPressed();
     // Get instance field reference: private UnityEngine.Color _controllerButtonNormal
-    [[deprecated]] ::UnityEngine::Color& dyn__controllerButtonNormal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__controllerButtonNormal();
+    // public System.Void .ctor()
+    // Offset: 0x190F144
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIColorSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIColorSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIColorSettings*, creationType>()));
+    }
     // public System.Void UpdateColors()
     // Offset: 0x190ED04
     void UpdateColors();
@@ -179,21 +186,16 @@ namespace VROSC::UI {
     // private VROSC.UI.UITwoToneColor GetColorByAxis(System.Int32 axis, System.Boolean natural)
     // Offset: 0x190EE7C
     ::VROSC::UI::UITwoToneColor* GetColorByAxis(int axis, bool natural);
-    // public System.Void .ctor()
-    // Offset: 0x190F144
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIColorSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIColorSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIColorSettings*, creationType>()));
-    }
   }; // VROSC.UI.UIColorSettings
   #pragma pack(pop)
   static check_size<sizeof(UIColorSettings), 120 + sizeof(::UnityEngine::Color)> __VROSC_UI_UIColorSettingsSizeCheck;
   static_assert(sizeof(UIColorSettings) == 0x88);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UI::UIColorSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::UIColorSettings::UpdateColors
 // Il2CppName: UpdateColors
 template<>
@@ -247,7 +249,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::UI
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIColorSettings*), "GetColorByAxis", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{axis, natural});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::UIColorSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

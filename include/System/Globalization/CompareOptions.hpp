@@ -98,7 +98,7 @@ namespace System::Globalization {
     // Set static field: static public System.Globalization.CompareOptions Ordinal
     static void _set_Ordinal(::System::Globalization::CompareOptions value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Globalization.CompareOptions
   #pragma pack(pop)
   static check_size<sizeof(CompareOptions), 0 + sizeof(int)> __System_Globalization_CompareOptionsSizeCheck;

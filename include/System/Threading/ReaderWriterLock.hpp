@@ -80,17 +80,17 @@ namespace System::Threading {
     static_assert(sizeof(::System::Collections::Hashtable*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 seq_num
-    [[deprecated]] int& dyn_seq_num();
+    [[deprecated("Use field access instead!")]] int& dyn_seq_num();
     // Get instance field reference: private System.Int32 state
-    [[deprecated]] int& dyn_state();
+    [[deprecated("Use field access instead!")]] int& dyn_state();
     // Get instance field reference: private System.Int32 readers
-    [[deprecated]] int& dyn_readers();
+    [[deprecated("Use field access instead!")]] int& dyn_readers();
     // Get instance field reference: private System.Int32 writer_lock_owner
-    [[deprecated]] int& dyn_writer_lock_owner();
+    [[deprecated("Use field access instead!")]] int& dyn_writer_lock_owner();
     // Get instance field reference: private System.Threading.LockQueue writer_queue
-    [[deprecated]] ::System::Threading::LockQueue*& dyn_writer_queue();
+    [[deprecated("Use field access instead!")]] ::System::Threading::LockQueue*& dyn_writer_queue();
     // Get instance field reference: private System.Collections.Hashtable reader_locks
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_reader_locks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_reader_locks();
     // public System.Void AcquireReaderLock(System.Int32 millisecondsTimeout)
     // Offset: 0x161344C
     void AcquireReaderLock(int millisecondsTimeout);

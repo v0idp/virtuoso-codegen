@@ -115,29 +115,29 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public OvrAvatarMaterialManager <>4__this
-    [[deprecated]] ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OvrAvatarMaterialManager*& dyn_$$4__this();
     // Get instance field reference: public System.Action callBack
-    [[deprecated]] ::System::Action*& dyn_callBack();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_callBack();
     // Get instance field reference: private System.Int32 <srcBlend>5__2
-    [[deprecated]] int& dyn_$srcBlend$5__2();
+    [[deprecated("Use field access instead!")]] int& dyn_$srcBlend$5__2();
     // Get instance field reference: private System.Int32 <dstBlend>5__3
-    [[deprecated]] int& dyn_$dstBlend$5__3();
+    [[deprecated("Use field access instead!")]] int& dyn_$dstBlend$5__3();
     // Get instance field reference: private System.String <lightModeTag>5__4
-    [[deprecated]] ::StringW& dyn_$lightModeTag$5__4();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$lightModeTag$5__4();
     // Get instance field reference: private System.String <renderTypeTag>5__5
-    [[deprecated]] ::StringW& dyn_$renderTypeTag$5__5();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$renderTypeTag$5__5();
     // Get instance field reference: private System.String <renderQueueTag>5__6
-    [[deprecated]] ::StringW& dyn_$renderQueueTag$5__6();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$renderQueueTag$5__6();
     // Get instance field reference: private System.String <ignoreProjectorTag>5__7
-    [[deprecated]] ::StringW& dyn_$ignoreProjectorTag$5__7();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ignoreProjectorTag$5__7();
     // Get instance field reference: private System.Int32 <renderQueue>5__8
-    [[deprecated]] int& dyn_$renderQueue$5__8();
+    [[deprecated("Use field access instead!")]] int& dyn_$renderQueue$5__8();
     // Get instance field reference: private System.Boolean <transparentQueue>5__9
-    [[deprecated]] bool& dyn_$transparentQueue$5__9();
+    [[deprecated("Use field access instead!")]] bool& dyn_$transparentQueue$5__9();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x8CCA00
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

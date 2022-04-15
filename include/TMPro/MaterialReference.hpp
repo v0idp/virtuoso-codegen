@@ -111,23 +111,23 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: public TMPro.TMP_FontAsset fontAsset
-    [[deprecated]] ::TMPro::TMP_FontAsset*& dyn_fontAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_FontAsset*& dyn_fontAsset();
     // Get instance field reference: public TMPro.TMP_SpriteAsset spriteAsset
-    [[deprecated]] ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_SpriteAsset*& dyn_spriteAsset();
     // Get instance field reference: public UnityEngine.Material material
-    [[deprecated]] ::UnityEngine::Material*& dyn_material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public System.Boolean isDefaultMaterial
-    [[deprecated]] bool& dyn_isDefaultMaterial();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDefaultMaterial();
     // Get instance field reference: public System.Boolean isFallbackMaterial
-    [[deprecated]] bool& dyn_isFallbackMaterial();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFallbackMaterial();
     // Get instance field reference: public UnityEngine.Material fallbackMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_fallbackMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_fallbackMaterial();
     // Get instance field reference: public System.Single padding
-    [[deprecated]] float& dyn_padding();
+    [[deprecated("Use field access instead!")]] float& dyn_padding();
     // Get instance field reference: public System.Int32 referenceCount
-    [[deprecated]] int& dyn_referenceCount();
+    [[deprecated("Use field access instead!")]] int& dyn_referenceCount();
     // public System.Void .ctor(System.Int32 index, TMPro.TMP_FontAsset fontAsset, TMPro.TMP_SpriteAsset spriteAsset, UnityEngine.Material material, System.Single padding)
     // Offset: 0xC2A5F4
     MaterialReference(int index, ::TMPro::TMP_FontAsset* fontAsset, ::TMPro::TMP_SpriteAsset* spriteAsset, ::UnityEngine::Material* material, float padding);

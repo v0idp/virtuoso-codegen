@@ -48,18 +48,16 @@ namespace OVR {
     // static private System.Void .cctor()
     // Offset: 0x18A5AF0
     static void _cctor();
-    // System.Boolean <FindFreeEmitter>b__77_1(OVR.SoundEmitter item)
-    // Offset: 0x18A5B58
-    bool $FindFreeEmitter$b__77_1(::OVR::SoundEmitter* item);
     // public System.Void .ctor()
     // Offset: 0x18A5B50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioManager::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVR::AudioManager::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AudioManager::$$c*, creationType>()));
     }
+    // System.Boolean <FindFreeEmitter>b__77_1(OVR.SoundEmitter item)
+    // Offset: 0x18A5B58
+    bool $FindFreeEmitter$b__77_1(::OVR::SoundEmitter* item);
   }; // OVR.AudioManager/OVR.<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(OVR::AudioManager::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OVR::AudioManager::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVR::AudioManager::$$c::$FindFreeEmitter$b__77_1
 // Il2CppName: <FindFreeEmitter>b__77_1
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (OVR::
     return ::il2cpp_utils::FindMethod(classof(OVR::AudioManager::$$c*), "<FindFreeEmitter>b__77_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{item});
   }
 };
-// Writing MetadataGetter for method: OVR::AudioManager::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

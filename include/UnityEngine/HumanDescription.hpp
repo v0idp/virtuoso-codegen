@@ -127,33 +127,33 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.HumanBone[] human
-    [[deprecated]] ::ArrayW<::UnityEngine::HumanBone>& dyn_human();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::HumanBone>& dyn_human();
     // Get instance field reference: public UnityEngine.SkeletonBone[] skeleton
-    [[deprecated]] ::ArrayW<::UnityEngine::SkeletonBone>& dyn_skeleton();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::SkeletonBone>& dyn_skeleton();
     // Get instance field reference: System.Single m_ArmTwist
-    [[deprecated]] float& dyn_m_ArmTwist();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ArmTwist();
     // Get instance field reference: System.Single m_ForeArmTwist
-    [[deprecated]] float& dyn_m_ForeArmTwist();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ForeArmTwist();
     // Get instance field reference: System.Single m_UpperLegTwist
-    [[deprecated]] float& dyn_m_UpperLegTwist();
+    [[deprecated("Use field access instead!")]] float& dyn_m_UpperLegTwist();
     // Get instance field reference: System.Single m_LegTwist
-    [[deprecated]] float& dyn_m_LegTwist();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LegTwist();
     // Get instance field reference: System.Single m_ArmStretch
-    [[deprecated]] float& dyn_m_ArmStretch();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ArmStretch();
     // Get instance field reference: System.Single m_LegStretch
-    [[deprecated]] float& dyn_m_LegStretch();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LegStretch();
     // Get instance field reference: System.Single m_FeetSpacing
-    [[deprecated]] float& dyn_m_FeetSpacing();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FeetSpacing();
     // Get instance field reference: System.Single m_GlobalScale
-    [[deprecated]] float& dyn_m_GlobalScale();
+    [[deprecated("Use field access instead!")]] float& dyn_m_GlobalScale();
     // Get instance field reference: System.String m_RootMotionBoneName
-    [[deprecated]] ::StringW& dyn_m_RootMotionBoneName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_RootMotionBoneName();
     // Get instance field reference: System.Boolean m_HasTranslationDoF
-    [[deprecated]] bool& dyn_m_HasTranslationDoF();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasTranslationDoF();
     // Get instance field reference: System.Boolean m_HasExtraRoot
-    [[deprecated]] bool& dyn_m_HasExtraRoot();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasExtraRoot();
     // Get instance field reference: System.Boolean m_SkeletonHasParents
-    [[deprecated]] bool& dyn_m_SkeletonHasParents();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SkeletonHasParents();
   }; // UnityEngine.HumanDescription
   #pragma pack(pop)
   static check_size<sizeof(HumanDescription), 58 + sizeof(bool)> __UnityEngine_HumanDescriptionSizeCheck;

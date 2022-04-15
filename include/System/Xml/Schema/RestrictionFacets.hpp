@@ -128,37 +128,35 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::RestrictionFlags) == 0x4);
     public:
     // Get instance field reference: System.Int32 Length
-    [[deprecated]] int& dyn_Length();
+    [[deprecated("Use field access instead!")]] int& dyn_Length();
     // Get instance field reference: System.Int32 MinLength
-    [[deprecated]] int& dyn_MinLength();
+    [[deprecated("Use field access instead!")]] int& dyn_MinLength();
     // Get instance field reference: System.Int32 MaxLength
-    [[deprecated]] int& dyn_MaxLength();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxLength();
     // Get instance field reference: System.Collections.ArrayList Patterns
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_Patterns();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_Patterns();
     // Get instance field reference: System.Collections.ArrayList Enumeration
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_Enumeration();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_Enumeration();
     // Get instance field reference: System.Xml.Schema.XmlSchemaWhiteSpace WhiteSpace
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaWhiteSpace& dyn_WhiteSpace();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaWhiteSpace& dyn_WhiteSpace();
     // Get instance field reference: System.Object MaxInclusive
-    [[deprecated]] ::Il2CppObject*& dyn_MaxInclusive();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_MaxInclusive();
     // Get instance field reference: System.Object MaxExclusive
-    [[deprecated]] ::Il2CppObject*& dyn_MaxExclusive();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_MaxExclusive();
     // Get instance field reference: System.Object MinInclusive
-    [[deprecated]] ::Il2CppObject*& dyn_MinInclusive();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_MinInclusive();
     // Get instance field reference: System.Object MinExclusive
-    [[deprecated]] ::Il2CppObject*& dyn_MinExclusive();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_MinExclusive();
     // Get instance field reference: System.Int32 TotalDigits
-    [[deprecated]] int& dyn_TotalDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_TotalDigits();
     // Get instance field reference: System.Int32 FractionDigits
-    [[deprecated]] int& dyn_FractionDigits();
+    [[deprecated("Use field access instead!")]] int& dyn_FractionDigits();
     // Get instance field reference: System.Xml.Schema.RestrictionFlags Flags
-    [[deprecated]] ::System::Xml::Schema::RestrictionFlags& dyn_Flags();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::RestrictionFlags& dyn_Flags();
     // Get instance field reference: System.Xml.Schema.RestrictionFlags FixedFlags
-    [[deprecated]] ::System::Xml::Schema::RestrictionFlags& dyn_FixedFlags();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::RestrictionFlags& dyn_FixedFlags();
     // public System.Void .ctor()
     // Offset: 0xDE89BC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RestrictionFacets* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::RestrictionFacets::.ctor");

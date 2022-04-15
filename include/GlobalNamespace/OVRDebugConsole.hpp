@@ -89,18 +89,28 @@ namespace GlobalNamespace {
     // Set static field: static private OVRDebugConsole s_Instance
     static void _set_s_Instance(::GlobalNamespace::OVRDebugConsole* value);
     // Get instance field reference: public System.Collections.ArrayList messages
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_messages();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_messages();
     // Get instance field reference: public System.Int32 maxMessages
-    [[deprecated]] int& dyn_maxMessages();
+    [[deprecated("Use field access instead!")]] int& dyn_maxMessages();
     // Get instance field reference: public UnityEngine.UI.Text textMsg
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_textMsg();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_textMsg();
     // Get instance field reference: private System.Boolean clearTimeoutOn
-    [[deprecated]] bool& dyn_clearTimeoutOn();
+    [[deprecated("Use field access instead!")]] bool& dyn_clearTimeoutOn();
     // Get instance field reference: private System.Single clearTimeout
-    [[deprecated]] float& dyn_clearTimeout();
+    [[deprecated("Use field access instead!")]] float& dyn_clearTimeout();
     // static public OVRDebugConsole get_instance()
     // Offset: 0xC5E74C
     static ::GlobalNamespace::OVRDebugConsole* get_instance();
+    // public System.Void .ctor()
+    // Offset: 0xC5F218
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRDebugConsole* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRDebugConsole::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRDebugConsole*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xC5F284
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0xC5EA48
     void Awake();
@@ -137,24 +147,6 @@ namespace GlobalNamespace {
     // private System.Void Display()
     // Offset: 0xC5EF64
     void Display();
-    // public System.Void .ctor()
-    // Offset: 0xC5F218
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRDebugConsole* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRDebugConsole::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRDebugConsole*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xC5F284
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVRDebugConsole
   #pragma pack(pop)
   static check_size<sizeof(OVRDebugConsole), 52 + sizeof(float)> __GlobalNamespace_OVRDebugConsoleSizeCheck;
@@ -167,6 +159,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNamespace::OVRDebugConsole* (*)()>(&GlobalNamespace::OVRDebugConsole::get_instance)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRDebugConsole*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::OVRDebugConsole::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVRDebugConsole::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRDebugConsole::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRDebugConsole*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::OVRDebugConsole::Awake
@@ -270,17 +274,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OVRDebugConsole::*)()>(&GlobalNamespace::OVRDebugConsole::Display)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRDebugConsole*), "Display", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVRDebugConsole::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVRDebugConsole::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRDebugConsole::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRDebugConsole*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

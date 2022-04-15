@@ -104,23 +104,23 @@ namespace System::Diagnostics {
     // Set static field: static public System.Int32 OFFSET_UNKNOWN
     static void _set_OFFSET_UNKNOWN(int value);
     // Get instance field reference: private System.Int32 ilOffset
-    [[deprecated]] int& dyn_ilOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_ilOffset();
     // Get instance field reference: private System.Int32 nativeOffset
-    [[deprecated]] int& dyn_nativeOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_nativeOffset();
     // Get instance field reference: private System.Int64 methodAddress
-    [[deprecated]] int64_t& dyn_methodAddress();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_methodAddress();
     // Get instance field reference: private System.UInt32 methodIndex
-    [[deprecated]] uint& dyn_methodIndex();
+    [[deprecated("Use field access instead!")]] uint& dyn_methodIndex();
     // Get instance field reference: private System.Reflection.MethodBase methodBase
-    [[deprecated]] ::System::Reflection::MethodBase*& dyn_methodBase();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodBase*& dyn_methodBase();
     // Get instance field reference: private System.String fileName
-    [[deprecated]] ::StringW& dyn_fileName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fileName();
     // Get instance field reference: private System.Int32 lineNumber
-    [[deprecated]] int& dyn_lineNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNumber();
     // Get instance field reference: private System.Int32 columnNumber
-    [[deprecated]] int& dyn_columnNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_columnNumber();
     // Get instance field reference: private System.String internalMethodName
-    [[deprecated]] ::StringW& dyn_internalMethodName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_internalMethodName();
     // public System.Void .ctor(System.Int32 skipFrames, System.Boolean fNeedFileInfo)
     // Offset: 0x1254504
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

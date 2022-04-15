@@ -62,7 +62,14 @@ namespace UnityEngine::XR {
       return displayFocusChanged;
     }
     // Get instance field reference: private System.Action`1<System.Boolean> displayFocusChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_displayFocusChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_displayFocusChanged();
+    // public System.Void .ctor()
+    // Offset: 0x18C6BA4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRDisplaySubsystem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::XRDisplaySubsystem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRDisplaySubsystem*, creationType>()));
+    }
     // private System.Void InvokeDisplayFocusChanged(System.Boolean focus)
     // Offset: 0x18C69F4
     void InvokeDisplayFocusChanged(bool focus);
@@ -78,21 +85,14 @@ namespace UnityEngine::XR {
     // public System.Boolean TryGetMotionToPhoton(out System.Single motionToPhoton)
     // Offset: 0x18C6B54
     bool TryGetMotionToPhoton(ByRef<float> motionToPhoton);
-    // public System.Void .ctor()
-    // Offset: 0x18C6BA4
-    // Implemented from: UnityEngine.IntegratedSubsystem`1
-    // Base method: System.Void IntegratedSubsystem_1::.ctor()
-    // Base method: System.Void IntegratedSubsystem::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRDisplaySubsystem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::XRDisplaySubsystem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRDisplaySubsystem*, creationType>()));
-    }
   }; // UnityEngine.XR.XRDisplaySubsystem
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::XR::XRDisplaySubsystem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::XRDisplaySubsystem::InvokeDisplayFocusChanged
 // Il2CppName: InvokeDisplayFocusChanged
 template<>
@@ -138,7 +138,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::XRDisplaySubsystem*), "TryGetMotionToPhoton", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{motionToPhoton});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::XRDisplaySubsystem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

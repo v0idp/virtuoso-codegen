@@ -43,7 +43,7 @@ namespace UnityEngine::Timeline {
       return ussStyle;
     }
     // Get instance field reference: public readonly System.String ussStyle
-    [[deprecated]] ::StringW& dyn_ussStyle();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ussStyle();
     // public System.Void .ctor(System.String ussStyle)
     // Offset: 0xC75AA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

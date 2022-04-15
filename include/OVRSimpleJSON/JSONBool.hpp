@@ -56,7 +56,7 @@ namespace OVRSimpleJSON {
       return m_Data;
     }
     // Get instance field reference: private System.Boolean m_Data
-    [[deprecated]] bool& dyn_m_Data();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Data();
     // public System.Void .ctor(System.Boolean aData)
     // Offset: 0x988AE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

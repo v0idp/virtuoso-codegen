@@ -125,19 +125,19 @@ namespace System::Xml::Serialization {
     // Set static field: static private readonly System.String errSimple2
     static void _set_errSimple2(::StringW value);
     // Get instance field reference: private System.String initialDefaultNamespace
-    [[deprecated]] ::StringW& dyn_initialDefaultNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_initialDefaultNamespace();
     // Get instance field reference: private System.Xml.Serialization.XmlAttributeOverrides attributeOverrides
-    [[deprecated]] ::System::Xml::Serialization::XmlAttributeOverrides*& dyn_attributeOverrides();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlAttributeOverrides*& dyn_attributeOverrides();
     // Get instance field reference: private System.Collections.ArrayList includedTypes
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_includedTypes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_includedTypes();
     // Get instance field reference: private System.Xml.Serialization.ReflectionHelper helper
-    [[deprecated]] ::System::Xml::Serialization::ReflectionHelper*& dyn_helper();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::ReflectionHelper*& dyn_helper();
     // Get instance field reference: private System.Int32 arrayChoiceCount
-    [[deprecated]] int& dyn_arrayChoiceCount();
+    [[deprecated("Use field access instead!")]] int& dyn_arrayChoiceCount();
     // Get instance field reference: private System.Collections.ArrayList relatedMaps
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_relatedMaps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_relatedMaps();
     // Get instance field reference: private System.Boolean allowPrivateTypes
-    [[deprecated]] bool& dyn_allowPrivateTypes();
+    [[deprecated("Use field access instead!")]] bool& dyn_allowPrivateTypes();
     // public System.Void .ctor(System.Xml.Serialization.XmlAttributeOverrides attributeOverrides, System.String defaultNamespace)
     // Offset: 0x1028340
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

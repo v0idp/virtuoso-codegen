@@ -48,7 +48,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
       return idRef;
     }
     // Get instance field reference: System.Int32 idRef
-    [[deprecated]] int& dyn_idRef();
+    [[deprecated("Use field access instead!")]] int& dyn_idRef();
     // System.Void Set(System.Int32 idRef)
     // Offset: 0xFFE520
     void Set(int idRef);

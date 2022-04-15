@@ -54,7 +54,7 @@ namespace System::IO {
       return maybeFullPath;
     }
     // Get instance field reference: private System.String _maybeFullPath
-    [[deprecated]] ::StringW& dyn__maybeFullPath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__maybeFullPath();
     // public System.Void .ctor(System.String message, System.Int32 hresult)
     // Offset: 0x1460AD8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

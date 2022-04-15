@@ -127,11 +127,11 @@ namespace System::Threading {
     // Set static field: static System.Int32 MaxWaitHandles
     static void _set_MaxWaitHandles(int value);
     // Get instance field reference: private System.IntPtr waitHandle
-    [[deprecated]] ::System::IntPtr& dyn_waitHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_waitHandle();
     // Get instance field reference: Microsoft.Win32.SafeHandles.SafeWaitHandle safeWaitHandle
-    [[deprecated]] ::Microsoft::Win32::SafeHandles::SafeWaitHandle*& dyn_safeWaitHandle();
+    [[deprecated("Use field access instead!")]] ::Microsoft::Win32::SafeHandles::SafeWaitHandle*& dyn_safeWaitHandle();
     // Get instance field reference: System.Boolean hasThreadAffinity
-    [[deprecated]] bool& dyn_hasThreadAffinity();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasThreadAffinity();
     // public System.Void set_Handle(System.IntPtr value)
     // Offset: 0x120F700
     void set_Handle(::System::IntPtr value);

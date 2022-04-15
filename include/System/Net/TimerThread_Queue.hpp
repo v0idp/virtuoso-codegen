@@ -36,7 +36,7 @@ namespace System::Net {
       return m_DurationMilliseconds;
     }
     // Get instance field reference: private readonly System.Int32 m_DurationMilliseconds
-    [[deprecated]] int& dyn_m_DurationMilliseconds();
+    [[deprecated("Use field access instead!")]] int& dyn_m_DurationMilliseconds();
     // System.Void .ctor(System.Int32 durationMilliseconds)
     // Offset: 0xA02390
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

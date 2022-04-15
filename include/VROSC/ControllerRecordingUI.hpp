@@ -141,31 +141,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _recText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__recText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__recText();
     // Get instance field reference: private VROSC.AdjustableMesh _recIndicator
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__recIndicator();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__recIndicator();
     // Get instance field reference: private UnityEngine.Color _recordingColor
-    [[deprecated]] ::UnityEngine::Color& dyn__recordingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__recordingColor();
     // Get instance field reference: private UnityEngine.Color _waitingColor
-    [[deprecated]] ::UnityEngine::Color& dyn__waitingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__waitingColor();
     // Get instance field reference: private UnityEngine.Color _offColor
-    [[deprecated]] ::UnityEngine::Color& dyn__offColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__offColor();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralArc _arc
-    [[deprecated]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arc();
     // Get instance field reference: private VROSC.UI.Meshes.ProceduralArc _arcBackground
-    [[deprecated]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arcBackground();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ProceduralArc*& dyn__arcBackground();
     // Get instance field reference: private UnityEngine.Transform _arcRotator
-    [[deprecated]] ::UnityEngine::Transform*& dyn__arcRotator();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__arcRotator();
     // Get instance field reference: private VROSC.LoopStationRecordingProgress _recordingProgress
-    [[deprecated]] ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecordingProgress*& dyn__recordingProgress();
     // Get instance field reference: private System.Boolean _recording
-    [[deprecated]] bool& dyn__recording();
+    [[deprecated("Use field access instead!")]] bool& dyn__recording();
     // Get instance field reference: private System.Boolean _waiting
-    [[deprecated]] bool& dyn__waiting();
+    [[deprecated("Use field access instead!")]] bool& dyn__waiting();
     // Get instance field reference: private System.Single _offset
-    [[deprecated]] float& dyn__offset();
+    [[deprecated("Use field access instead!")]] float& dyn__offset();
     // Get instance field reference: private VROSC.LoopStationRecorder _loopStationRecorder
-    [[deprecated]] ::VROSC::LoopStationRecorder*& dyn__loopStationRecorder();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationRecorder*& dyn__loopStationRecorder();
+    // public System.Void .ctor()
+    // Offset: 0x8DDD90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControllerRecordingUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerRecordingUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControllerRecordingUI*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x8DD968
     void Awake();
@@ -181,25 +188,16 @@ namespace VROSC {
     // private System.Void SetRecording(System.Boolean recording)
     // Offset: 0x8DDABC
     void SetRecording(bool recording);
-    // public System.Void .ctor()
-    // Offset: 0x8DDD90
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControllerRecordingUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControllerRecordingUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControllerRecordingUI*, creationType>()));
-    }
   }; // VROSC.ControllerRecordingUI
   #pragma pack(pop)
   static check_size<sizeof(ControllerRecordingUI), 128 + sizeof(::VROSC::LoopStationRecorder*)> __VROSC_ControllerRecordingUISizeCheck;
   static_assert(sizeof(ControllerRecordingUI) == 0x88);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ControllerRecordingUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ControllerRecordingUI::Awake
 // Il2CppName: Awake
 template<>
@@ -243,7 +241,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControllerRecordingUI*), "SetRecording", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{recording});
   }
 };
-// Writing MetadataGetter for method: VROSC::ControllerRecordingUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

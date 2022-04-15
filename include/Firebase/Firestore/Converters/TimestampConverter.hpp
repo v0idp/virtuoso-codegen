@@ -43,8 +43,6 @@ namespace Firebase::Firestore::Converters {
     public:
     // System.Void .ctor()
     // Offset: 0xD50C10
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TimestampConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Firebase::Firestore::Converters::TimestampConverter::.ctor");

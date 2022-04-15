@@ -61,11 +61,11 @@ namespace Newtonsoft::Json::Linq {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Newtonsoft::Json::Linq::JToken*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private Newtonsoft.Json.Linq.JToken <>2__current
-    [[deprecated]] ::Newtonsoft::Json::Linq::JToken*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JToken*& dyn_$$2__current();
     // Get instance field reference: public Newtonsoft.Json.Linq.JProperty/Newtonsoft.Json.Linq.JPropertyList <>4__this
-    [[deprecated]] ::Newtonsoft::Json::Linq::JProperty::JPropertyList*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JProperty::JPropertyList*& dyn_$$4__this();
     // private Newtonsoft.Json.Linq.JToken System.Collections.Generic.IEnumerator<Newtonsoft.Json.Linq.JToken>.get_Current()
     // Offset: 0x15A0758
     ::Newtonsoft::Json::Linq::JToken* System_Collections_Generic_IEnumerator$Newtonsoft_Json_Linq_JToken$_get_Current();

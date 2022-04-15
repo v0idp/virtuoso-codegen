@@ -49,7 +49,7 @@ namespace System::Security::Cryptography::X509Certificates {
       return enumerator;
     }
     // Get instance field reference: private System.Collections.IEnumerator enumerator
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_enumerator();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_enumerator();
     // public System.Security.Cryptography.X509Certificates.X509Certificate get_Current()
     // Offset: 0x17CFB34
     ::System::Security::Cryptography::X509Certificates::X509Certificate* get_Current();

@@ -52,6 +52,13 @@ namespace Facebook::WitAi {
     // static public System.String get_ServerToken()
     // Offset: 0x16742E4
     static ::StringW get_ServerToken();
+    // public System.Void .ctor()
+    // Offset: 0x1674524
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WitAuthUtility* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitAuthUtility::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WitAuthUtility*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x167452C
     static void _cctor();
@@ -76,15 +83,6 @@ namespace Facebook::WitAi {
     // static private System.Void SavePrefs()
     // Offset: 0x1674520
     static void SavePrefs();
-    // public System.Void .ctor()
-    // Offset: 0x1674524
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WitAuthUtility* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitAuthUtility::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WitAuthUtility*, creationType>()));
-    }
   }; // Facebook.WitAi.WitAuthUtility
   #pragma pack(pop)
 }
@@ -97,6 +95,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::WitAuthUtility*), "get_ServerToken", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Facebook::WitAi::WitAuthUtility::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::WitAuthUtility::_cctor
 // Il2CppName: .cctor
 template<>
@@ -170,7 +172,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::WitAuthUtility*), "SavePrefs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::WitAuthUtility::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

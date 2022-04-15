@@ -74,17 +74,17 @@ namespace UnityEngine {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public readonly System.Boolean showAlpha
-    [[deprecated]] bool& dyn_showAlpha();
+    [[deprecated("Use field access instead!")]] bool& dyn_showAlpha();
     // Get instance field reference: public readonly System.Boolean hdr
-    [[deprecated]] bool& dyn_hdr();
+    [[deprecated("Use field access instead!")]] bool& dyn_hdr();
     // Get instance field reference: public readonly System.Single minBrightness
-    [[deprecated]] float& dyn_minBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn_minBrightness();
     // Get instance field reference: public readonly System.Single maxBrightness
-    [[deprecated]] float& dyn_maxBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn_maxBrightness();
     // Get instance field reference: public readonly System.Single minExposureValue
-    [[deprecated]] float& dyn_minExposureValue();
+    [[deprecated("Use field access instead!")]] float& dyn_minExposureValue();
     // Get instance field reference: public readonly System.Single maxExposureValue
-    [[deprecated]] float& dyn_maxExposureValue();
+    [[deprecated("Use field access instead!")]] float& dyn_maxExposureValue();
     // public System.Void .ctor(System.Boolean showAlpha)
     // Offset: 0x1121F94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

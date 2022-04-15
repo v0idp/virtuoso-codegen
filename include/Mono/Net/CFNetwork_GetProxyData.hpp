@@ -71,33 +71,35 @@ namespace Mono::Net {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: public System.IntPtr script
-    [[deprecated]] ::System::IntPtr& dyn_script();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_script();
     // Get instance field reference: public System.IntPtr targetUri
-    [[deprecated]] ::System::IntPtr& dyn_targetUri();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_targetUri();
     // Get instance field reference: public System.IntPtr error
-    [[deprecated]] ::System::IntPtr& dyn_error();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_error();
     // Get instance field reference: public System.IntPtr result
-    [[deprecated]] ::System::IntPtr& dyn_result();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_result();
     // Get instance field reference: public System.Threading.ManualResetEvent evt
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_evt();
-    // public System.Void Dispose()
-    // Offset: 0x9F4C34
-    void Dispose();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_evt();
     // public System.Void .ctor()
     // Offset: 0x9F4C58
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CFNetwork::GetProxyData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Net::CFNetwork::GetProxyData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CFNetwork::GetProxyData*, creationType>()));
     }
+    // public System.Void Dispose()
+    // Offset: 0x9F4C34
+    void Dispose();
   }; // Mono.Net.CFNetwork/Mono.Net.GetProxyData
   #pragma pack(pop)
   static check_size<sizeof(CFNetwork::GetProxyData), 48 + sizeof(::System::Threading::ManualResetEvent*)> __Mono_Net_CFNetwork_GetProxyDataSizeCheck;
   static_assert(sizeof(CFNetwork::GetProxyData) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Mono::Net::CFNetwork::GetProxyData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Net::CFNetwork::GetProxyData::Dispose
 // Il2CppName: Dispose
 template<>
@@ -106,7 +108,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Mono:
     return ::il2cpp_utils::FindMethod(classof(Mono::Net::CFNetwork::GetProxyData*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Mono::Net::CFNetwork::GetProxyData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

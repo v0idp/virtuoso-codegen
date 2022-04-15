@@ -47,7 +47,7 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.DefaultEventAttribute Default
     static void _set_Default(::System::ComponentModel::DefaultEventAttribute* value);
     // Get instance field reference: private readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // public System.String get_Name()
     // Offset: 0x10EC16C
     ::StringW get_Name();

@@ -65,15 +65,15 @@ namespace AudioHelm {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Int32 channel
-    [[deprecated]] int& dyn_channel();
+    [[deprecated("Use field access instead!")]] int& dyn_channel();
     // Get instance field reference: private System.IntPtr reference
-    [[deprecated]] ::System::IntPtr& dyn_reference();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_reference();
     // Get instance field reference: private System.Int32 currentChannel
-    [[deprecated]] int& dyn_currentChannel();
+    [[deprecated("Use field access instead!")]] int& dyn_currentChannel();
     // Get instance field reference: private System.Int32 currentLength
-    [[deprecated]] int& dyn_currentLength();
+    [[deprecated("Use field access instead!")]] int& dyn_currentLength();
     // Get instance field reference: private System.Boolean currentLoop
-    [[deprecated]] bool& dyn_currentLoop();
+    [[deprecated("Use field access instead!")]] bool& dyn_currentLoop();
     // private System.Void CreateNativeSequencer()
     // Offset: 0x19400F4
     void CreateNativeSequencer();
@@ -102,11 +102,6 @@ namespace AudioHelm {
     // Offset: 0x1940764
     // Implemented from: AudioHelm.Sequencer
     // Base method: System.Void Sequencer::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HelmSequencer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmSequencer::.ctor");

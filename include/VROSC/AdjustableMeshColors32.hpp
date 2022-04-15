@@ -63,11 +63,11 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::UnityEngine::Color32>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Color32[] _colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn__colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color32>& dyn__colors();
     // Get instance field reference: private UnityEngine.Color32[] _originalColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn__originalColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color32>& dyn__originalColors();
     // Get instance field reference: private UnityEngine.Color32[] _shownColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn__shownColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color32>& dyn__shownColors();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh)
     // Offset: 0x9667C0
     // Implemented from: VROSC.AdjustableMeshColors

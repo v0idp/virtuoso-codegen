@@ -235,55 +235,55 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::XmlQualifiedName*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlDocument document
-    [[deprecated]] ::System::Xml::XmlDocument*& dyn_document();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocument*& dyn_document();
     // Get instance field reference: private System.Xml.XmlReader reader
-    [[deprecated]] ::System::Xml::XmlReader*& dyn_reader();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlReader*& dyn_reader();
     // Get instance field reference: private System.Collections.ArrayList fixups
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_fixups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_fixups();
     // Get instance field reference: private System.Collections.Hashtable collFixups
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_collFixups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_collFixups();
     // Get instance field reference: private System.Collections.ArrayList collItemFixups
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_collItemFixups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_collItemFixups();
     // Get instance field reference: private System.Collections.Hashtable typesCallbacks
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_typesCallbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_typesCallbacks();
     // Get instance field reference: private System.Collections.ArrayList noIDTargets
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_noIDTargets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_noIDTargets();
     // Get instance field reference: private System.Collections.Hashtable targets
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_targets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_targets();
     // Get instance field reference: private System.Collections.Hashtable delayedListFixups
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_delayedListFixups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_delayedListFixups();
     // Get instance field reference: private System.Xml.Serialization.XmlSerializer eventSource
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializer*& dyn_eventSource();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializer*& dyn_eventSource();
     // Get instance field reference: private System.Int32 delayedFixupId
-    [[deprecated]] int& dyn_delayedFixupId();
+    [[deprecated("Use field access instead!")]] int& dyn_delayedFixupId();
     // Get instance field reference: private System.Collections.Hashtable referencedObjects
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_referencedObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_referencedObjects();
     // Get instance field reference: private System.Int32 readCount
-    [[deprecated]] int& dyn_readCount();
+    [[deprecated("Use field access instead!")]] int& dyn_readCount();
     // Get instance field reference: private System.Int32 whileIterationCount
-    [[deprecated]] int& dyn_whileIterationCount();
+    [[deprecated("Use field access instead!")]] int& dyn_whileIterationCount();
     // Get instance field reference: private System.String w3SchemaNS
-    [[deprecated]] ::StringW& dyn_w3SchemaNS();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_w3SchemaNS();
     // Get instance field reference: private System.String w3InstanceNS
-    [[deprecated]] ::StringW& dyn_w3InstanceNS();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_w3InstanceNS();
     // Get instance field reference: private System.String w3InstanceNS2000
-    [[deprecated]] ::StringW& dyn_w3InstanceNS2000();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_w3InstanceNS2000();
     // Get instance field reference: private System.String w3InstanceNS1999
-    [[deprecated]] ::StringW& dyn_w3InstanceNS1999();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_w3InstanceNS1999();
     // Get instance field reference: private System.String soapNS
-    [[deprecated]] ::StringW& dyn_soapNS();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_soapNS();
     // Get instance field reference: private System.String wsdlNS
-    [[deprecated]] ::StringW& dyn_wsdlNS();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_wsdlNS();
     // Get instance field reference: private System.String nullX
-    [[deprecated]] ::StringW& dyn_nullX();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nullX();
     // Get instance field reference: private System.String nil
-    [[deprecated]] ::StringW& dyn_nil();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nil();
     // Get instance field reference: private System.String typeX
-    [[deprecated]] ::StringW& dyn_typeX();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeX();
     // Get instance field reference: private System.String arrayType
-    [[deprecated]] ::StringW& dyn_arrayType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_arrayType();
     // Get instance field reference: private System.Xml.XmlQualifiedName arrayQName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_arrayQName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_arrayQName();
     // protected System.Xml.XmlDocument get_Document()
     // Offset: 0xF44BAC
     ::System::Xml::XmlDocument* get_Document();
@@ -438,7 +438,6 @@ namespace System::Xml::Serialization {
     // Offset: 0xF44BA4
     // Implemented from: System.Xml.Serialization.XmlSerializationGeneratedCode
     // Base method: System.Void XmlSerializationGeneratedCode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSerializationReader* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializationReader::.ctor");

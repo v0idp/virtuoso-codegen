@@ -54,9 +54,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.BearVisualizer/VROSC.BeatGradient[] _beatGradients
-    [[deprecated]] ::ArrayW<::VROSC::BearVisualizer::BeatGradient*>& dyn__beatGradients();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::BearVisualizer::BeatGradient*>& dyn__beatGradients();
     // Get instance field reference: private System.Single _darkenOnMirror
-    [[deprecated]] float& dyn__darkenOnMirror();
+    [[deprecated("Use field access instead!")]] float& dyn__darkenOnMirror();
+    // public System.Void .ctor()
+    // Offset: 0x974878
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BearVisualizer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BearVisualizer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BearVisualizer*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x974570
     void OnEnable();
@@ -66,25 +73,16 @@ namespace VROSC {
     // private System.Void OnDisable()
     // Offset: 0x97478C
     void OnDisable();
-    // public System.Void .ctor()
-    // Offset: 0x974878
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BearVisualizer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BearVisualizer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BearVisualizer*, creationType>()));
-    }
   }; // VROSC.BearVisualizer
   #pragma pack(pop)
   static check_size<sizeof(BearVisualizer), 32 + sizeof(float)> __VROSC_BearVisualizerSizeCheck;
   static_assert(sizeof(BearVisualizer) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::BearVisualizer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BearVisualizer::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -110,7 +108,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BearVisualizer*), "OnDisable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::BearVisualizer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

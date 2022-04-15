@@ -47,13 +47,20 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.DescriptionAttribute Default
     static void _set_Default(::System::ComponentModel::DescriptionAttribute* value);
     // Get instance field reference: private System.String description
-    [[deprecated]] ::StringW& dyn_description();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_description();
     // public System.String get_Description()
     // Offset: 0x10EE6C8
     ::StringW get_Description();
     // protected System.String get_DescriptionValue()
     // Offset: 0x10EE6D0
     ::StringW get_DescriptionValue();
+    // public System.Void .ctor()
+    // Offset: 0x10EE63C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DescriptionAttribute* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::DescriptionAttribute::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DescriptionAttribute*, creationType>()));
+    }
     // public System.Void .ctor(System.String description)
     // Offset: 0x10EE69C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -64,16 +71,6 @@ namespace System::ComponentModel {
     // static private System.Void .cctor()
     // Offset: 0x10EE854
     static void _cctor();
-    // public System.Void .ctor()
-    // Offset: 0x10EE63C
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DescriptionAttribute* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::DescriptionAttribute::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DescriptionAttribute*, creationType>()));
-    }
     // public override System.Boolean Equals(System.Object obj)
     // Offset: 0x10EE6D8
     // Implemented from: System.Attribute
@@ -115,6 +112,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::ComponentModel::DescriptionAttribute::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::DescriptionAttribute::_cctor
 // Il2CppName: .cctor
 template<>
@@ -123,10 +124,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::ComponentModel::DescriptionAttribute*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::ComponentModel::DescriptionAttribute::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::ComponentModel::DescriptionAttribute::Equals
 // Il2CppName: Equals
 template<>

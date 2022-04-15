@@ -45,7 +45,7 @@ namespace Firebase {
       return InitResult;
     }
     // Get instance field reference: private Firebase.InitResult <InitResult>k__BackingField
-    [[deprecated]] ::Firebase::InitResult& dyn_$InitResult$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::InitResult& dyn_$InitResult$k__BackingField();
     // private System.Void set_InitResult(Firebase.InitResult value)
     // Offset: 0x1889940
     void set_InitResult(::Firebase::InitResult value);

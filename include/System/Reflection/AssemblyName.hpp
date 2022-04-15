@@ -200,37 +200,37 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::Runtime::InteropServices::_AssemblyName*>(this);
     }
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String codebase
-    [[deprecated]] ::StringW& dyn_codebase();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_codebase();
     // Get instance field reference: private System.Int32 major
-    [[deprecated]] int& dyn_major();
+    [[deprecated("Use field access instead!")]] int& dyn_major();
     // Get instance field reference: private System.Int32 minor
-    [[deprecated]] int& dyn_minor();
+    [[deprecated("Use field access instead!")]] int& dyn_minor();
     // Get instance field reference: private System.Int32 build
-    [[deprecated]] int& dyn_build();
+    [[deprecated("Use field access instead!")]] int& dyn_build();
     // Get instance field reference: private System.Int32 revision
-    [[deprecated]] int& dyn_revision();
+    [[deprecated("Use field access instead!")]] int& dyn_revision();
     // Get instance field reference: private System.Globalization.CultureInfo cultureinfo
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_cultureinfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_cultureinfo();
     // Get instance field reference: private System.Reflection.AssemblyNameFlags flags
-    [[deprecated]] ::System::Reflection::AssemblyNameFlags& dyn_flags();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::AssemblyNameFlags& dyn_flags();
     // Get instance field reference: private System.Configuration.Assemblies.AssemblyHashAlgorithm hashalg
-    [[deprecated]] ::System::Configuration::Assemblies::AssemblyHashAlgorithm& dyn_hashalg();
+    [[deprecated("Use field access instead!")]] ::System::Configuration::Assemblies::AssemblyHashAlgorithm& dyn_hashalg();
     // Get instance field reference: private System.Reflection.StrongNameKeyPair keypair
-    [[deprecated]] ::System::Reflection::StrongNameKeyPair*& dyn_keypair();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::StrongNameKeyPair*& dyn_keypair();
     // Get instance field reference: private System.Byte[] publicKey
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_publicKey();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_publicKey();
     // Get instance field reference: private System.Byte[] keyToken
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_keyToken();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_keyToken();
     // Get instance field reference: private System.Configuration.Assemblies.AssemblyVersionCompatibility versioncompat
-    [[deprecated]] ::System::Configuration::Assemblies::AssemblyVersionCompatibility& dyn_versioncompat();
+    [[deprecated("Use field access instead!")]] ::System::Configuration::Assemblies::AssemblyVersionCompatibility& dyn_versioncompat();
     // Get instance field reference: private System.Version version
-    [[deprecated]] ::System::Version*& dyn_version();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_version();
     // Get instance field reference: private System.Reflection.ProcessorArchitecture processor_architecture
-    [[deprecated]] ::System::Reflection::ProcessorArchitecture& dyn_processor_architecture();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::ProcessorArchitecture& dyn_processor_architecture();
     // Get instance field reference: private System.Reflection.AssemblyContentType contentType
-    [[deprecated]] ::System::Reflection::AssemblyContentType& dyn_contentType();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::AssemblyContentType& dyn_contentType();
     // public System.String get_Name()
     // Offset: 0x1145178
     ::StringW get_Name();

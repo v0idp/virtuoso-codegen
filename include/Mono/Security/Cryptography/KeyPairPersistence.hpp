@@ -81,13 +81,13 @@ namespace Mono::Security::Cryptography {
     // Set static field: static private System.Object lockobj
     static void _set_lockobj(::Il2CppObject* value);
     // Get instance field reference: private System.Security.Cryptography.CspParameters _params
-    [[deprecated]] ::System::Security::Cryptography::CspParameters*& dyn__params();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::CspParameters*& dyn__params();
     // Get instance field reference: private System.String _keyvalue
-    [[deprecated]] ::StringW& dyn__keyvalue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__keyvalue();
     // Get instance field reference: private System.String _filename
-    [[deprecated]] ::StringW& dyn__filename();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__filename();
     // Get instance field reference: private System.String _container
-    [[deprecated]] ::StringW& dyn__container();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__container();
     // public System.String get_Filename()
     // Offset: 0x1074598
     ::StringW get_Filename();

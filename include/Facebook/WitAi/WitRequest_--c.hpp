@@ -44,18 +44,16 @@ namespace Facebook::WitAi {
     // static private System.Void .cctor()
     // Offset: 0x167DBFC
     static void _cctor();
-    // System.String <Request>b__50_0(Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam par)
-    // Offset: 0x167DC64
-    ::StringW $Request$b__50_0(::Facebook::WitAi::WitRequest::QueryParam* par);
     // public System.Void .ctor()
     // Offset: 0x167DC5C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitRequest::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::WitRequest::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitRequest::$$c*, creationType>()));
     }
+    // System.String <Request>b__50_0(Facebook.WitAi.WitRequest/Facebook.WitAi.QueryParam par)
+    // Offset: 0x167DC64
+    ::StringW $Request$b__50_0(::Facebook::WitAi::WitRequest::QueryParam* par);
   }; // Facebook.WitAi.WitRequest/Facebook.WitAi.<>c
   #pragma pack(pop)
 }
@@ -68,6 +66,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::WitRequest::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Facebook::WitAi::WitRequest::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Facebook::WitAi::WitRequest::$$c::$Request$b__50_0
 // Il2CppName: <Request>b__50_0
 template<>
@@ -77,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::WitRequest::$$c*), "<Request>b__50_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{par});
   }
 };
-// Writing MetadataGetter for method: Facebook::WitAi::WitRequest::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -58,20 +58,15 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.ParticleSystem _system
-    [[deprecated]] ::UnityEngine::ParticleSystem*& dyn__system();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystem*& dyn__system();
     // Get instance field reference: private System.Int32 _minAmount
-    [[deprecated]] int& dyn__minAmount();
+    [[deprecated("Use field access instead!")]] int& dyn__minAmount();
     // Get instance field reference: private System.Int32 _maxAmount
-    [[deprecated]] int& dyn__maxAmount();
+    [[deprecated("Use field access instead!")]] int& dyn__maxAmount();
     // public System.Void .ctor()
     // Offset: 0x8EB704
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EmitParticlesOnBeat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::EmitParticlesOnBeat::.ctor");

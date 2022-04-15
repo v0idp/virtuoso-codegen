@@ -102,23 +102,30 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.SessionsManager <>4__this
-    [[deprecated]] ::VROSC::SessionsManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::SessionsManager*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    [[deprecated]] ::StringW& dyn_sessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.Action <>9__6
-    [[deprecated]] ::System::Action*& dyn_$$9__6();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_$$9__6();
     // Get instance field reference: public System.Action`1<System.String> <>9__4
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_$$9__4();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_$$9__4();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__5
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__5();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__5();
     // Get instance field reference: public System.Action`2<System.String,VROSC.Session> <>9__2
-    [[deprecated]] ::System::Action_2<::StringW, ::VROSC::Session*>*& dyn_$$9__2();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::StringW, ::VROSC::Session*>*& dyn_$$9__2();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__3
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__3();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__3();
+    // public System.Void .ctor()
+    // Offset: 0x8D76CC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SessionsManager::$$c__DisplayClass67_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsManager::$$c__DisplayClass67_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SessionsManager::$$c__DisplayClass67_0*, creationType>()));
+    }
     // System.Void <AddSessionFavorite>b__0()
     // Offset: 0x8D76D4
     void $AddSessionFavorite$b__0();
@@ -140,21 +147,16 @@ namespace VROSC {
     // System.Void <AddSessionFavorite>b__1(VROSC.Error error)
     // Offset: 0x8D7E38
     void $AddSessionFavorite$b__1(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x8D76CC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SessionsManager::$$c__DisplayClass67_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsManager::$$c__DisplayClass67_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SessionsManager::$$c__DisplayClass67_0*, creationType>()));
-    }
   }; // VROSC.SessionsManager/VROSC.<>c__DisplayClass67_0
   #pragma pack(pop)
   static check_size<sizeof(SessionsManager::$$c__DisplayClass67_0), 80 + sizeof(::System::Action_1<::VROSC::Error>*)> __VROSC_SessionsManager_$$c__DisplayClass67_0SizeCheck;
   static_assert(sizeof(SessionsManager::$$c__DisplayClass67_0) == 0x58);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass67_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass67_0::$AddSessionFavorite$b__0
 // Il2CppName: <AddSessionFavorite>b__0
 template<>
@@ -217,7 +219,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SessionsManager::$$c__DisplayClass67_0*), "<AddSessionFavorite>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::SessionsManager::$$c__DisplayClass67_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -89,20 +89,27 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Action`2<System.Int32,System.Boolean> OnNewDataSet
-    [[deprecated]] ::System::Action_2<int, bool>*& dyn_OnNewDataSet();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<int, bool>*& dyn_OnNewDataSet();
     // Get instance field reference: private VROSC.UISpinner _spinner
-    [[deprecated]] ::VROSC::UISpinner*& dyn__spinner();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISpinner*& dyn__spinner();
     // Get instance field reference: private TMPro.TextMeshPro _currentName
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__currentName();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__currentName();
     // Get instance field reference: private VROSC.ModularDrumsDataController _dataController
-    [[deprecated]] ::VROSC::ModularDrumsDataController*& dyn__dataController();
+    [[deprecated("Use field access instead!")]] ::VROSC::ModularDrumsDataController*& dyn__dataController();
     // Get instance field reference: private System.Int32 _empadId
-    [[deprecated]] int& dyn__empadId();
+    [[deprecated("Use field access instead!")]] int& dyn__empadId();
     // Get instance field reference: private System.Int32 _groupId
-    [[deprecated]] int& dyn__groupId();
+    [[deprecated("Use field access instead!")]] int& dyn__groupId();
     // public VROSC.UISpinner get_Spinner()
     // Offset: 0x8E68C8
     ::VROSC::UISpinner* get_Spinner();
+    // public System.Void .ctor()
+    // Offset: 0x8E6F80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DrumSampleSwitcherUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::DrumSampleSwitcherUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DrumSampleSwitcherUI*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x8E68D0
     void Awake();
@@ -121,19 +128,6 @@ namespace VROSC::UI {
     // public System.Void IncrementSample()
     // Offset: 0x8E6F64
     void IncrementSample();
-    // public System.Void .ctor()
-    // Offset: 0x8E6F80
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DrumSampleSwitcherUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::DrumSampleSwitcherUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DrumSampleSwitcherUI*, creationType>()));
-    }
   }; // VROSC.UI.DrumSampleSwitcherUI
   #pragma pack(pop)
   static check_size<sizeof(DrumSampleSwitcherUI), 60 + sizeof(int)> __VROSC_UI_DrumSampleSwitcherUISizeCheck;
@@ -148,6 +142,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::UI
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::DrumSampleSwitcherUI*), "get_Spinner", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::DrumSampleSwitcherUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::DrumSampleSwitcherUI::Awake
 // Il2CppName: Awake
 template<>
@@ -202,7 +200,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::DrumSampleSwitcherUI*), "IncrementSample", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::DrumSampleSwitcherUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

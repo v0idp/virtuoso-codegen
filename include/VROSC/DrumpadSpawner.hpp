@@ -224,47 +224,47 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::Drumpad*) == 0x8);
     public:
     // Get instance field reference: private VROSC.DrumpadPlayer _player
-    [[deprecated]] ::VROSC::DrumpadPlayer*& dyn__player();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumpadPlayer*& dyn__player();
     // Get instance field reference: private TMPro.TextMeshPro _headerText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__headerText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__headerText();
     // Get instance field reference: private VROSC.UI.DrumSampleSwitcherUI _switcher
-    [[deprecated]] ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
     // Get instance field reference: private VROSC.Drumpad _prefab
-    [[deprecated]] ::VROSC::Drumpad*& dyn__prefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Drumpad*& dyn__prefab();
     // Get instance field reference: private VROSC.DrumPadEffectOnSignal _preview
-    [[deprecated]] ::VROSC::DrumPadEffectOnSignal*& dyn__preview();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumPadEffectOnSignal*& dyn__preview();
     // Get instance field reference: private UnityEngine.Transform _parent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__parent();
     // Get instance field reference: private VROSC.TransformMoverRelay _moveRelay
-    [[deprecated]] ::VROSC::TransformMoverRelay*& dyn__moveRelay();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMoverRelay*& dyn__moveRelay();
     // Get instance field reference: private System.Single _spawnScaleMultiplier
-    [[deprecated]] float& dyn__spawnScaleMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn__spawnScaleMultiplier();
     // Get instance field reference: private System.Single _hoverLengthToGrab
-    [[deprecated]] float& dyn__hoverLengthToGrab();
+    [[deprecated("Use field access instead!")]] float& dyn__hoverLengthToGrab();
     // Get instance field reference: private UnityEngine.AnimationCurve _highlightAnimationCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__highlightAnimationCurve();
     // Get instance field reference: private System.Single _highlightAnimationDuration
-    [[deprecated]] float& dyn__highlightAnimationDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__highlightAnimationDuration();
     // Get instance field reference: private UnityEngine.GameObject _hintText
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__hintText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__hintText();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialBlock();
     // Get instance field reference: private VROSC.ModularDrumsController _instrumentController
-    [[deprecated]] ::VROSC::ModularDrumsController*& dyn__instrumentController();
+    [[deprecated("Use field access instead!")]] ::VROSC::ModularDrumsController*& dyn__instrumentController();
     // Get instance field reference: private System.Int32 _empadId
-    [[deprecated]] int& dyn__empadId();
+    [[deprecated("Use field access instead!")]] int& dyn__empadId();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Drumpad> _drumpads
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Drumpad*>*& dyn__drumpads();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Drumpad*>*& dyn__drumpads();
     // Get instance field reference: private System.Single _hoveringTimer
-    [[deprecated]] float& dyn__hoveringTimer();
+    [[deprecated("Use field access instead!")]] float& dyn__hoveringTimer();
     // Get instance field reference: private UnityEngine.Coroutine _highlightRoutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__highlightRoutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__highlightRoutine();
     // Get instance field reference: private System.Boolean _isHighlighted
-    [[deprecated]] bool& dyn__isHighlighted();
+    [[deprecated("Use field access instead!")]] bool& dyn__isHighlighted();
     // Get instance field reference: private System.Boolean _forceHighlight
-    [[deprecated]] bool& dyn__forceHighlight();
+    [[deprecated("Use field access instead!")]] bool& dyn__forceHighlight();
     // Get instance field reference: private VROSC.Drumpad lastSpawnedDrumpad
-    [[deprecated]] ::VROSC::Drumpad*& dyn_lastSpawnedDrumpad();
+    [[deprecated("Use field access instead!")]] ::VROSC::Drumpad*& dyn_lastSpawnedDrumpad();
     // public System.Int32 get_DrumpadsCount()
     // Offset: 0x8E8BE4
     int get_DrumpadsCount();
@@ -318,11 +318,6 @@ namespace VROSC {
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DrumpadSpawner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DrumpadSpawner::.ctor");

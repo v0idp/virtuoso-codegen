@@ -67,15 +67,15 @@ namespace System::Runtime::InteropServices {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Runtime.InteropServices.CallingConvention m_callingConvention
-    [[deprecated]] ::System::Runtime::InteropServices::CallingConvention& dyn_m_callingConvention();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::CallingConvention& dyn_m_callingConvention();
     // Get instance field reference: public System.Runtime.InteropServices.CharSet CharSet
-    [[deprecated]] ::System::Runtime::InteropServices::CharSet& dyn_CharSet();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::CharSet& dyn_CharSet();
     // Get instance field reference: public System.Boolean BestFitMapping
-    [[deprecated]] bool& dyn_BestFitMapping();
+    [[deprecated("Use field access instead!")]] bool& dyn_BestFitMapping();
     // Get instance field reference: public System.Boolean ThrowOnUnmappableChar
-    [[deprecated]] bool& dyn_ThrowOnUnmappableChar();
+    [[deprecated("Use field access instead!")]] bool& dyn_ThrowOnUnmappableChar();
     // Get instance field reference: public System.Boolean SetLastError
-    [[deprecated]] bool& dyn_SetLastError();
+    [[deprecated("Use field access instead!")]] bool& dyn_SetLastError();
     // public System.Void .ctor(System.Runtime.InteropServices.CallingConvention callingConvention)
     // Offset: 0x120A7BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

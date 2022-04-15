@@ -32,7 +32,6 @@ namespace System::Xml::Serialization {
     // Offset: 0x1087E0C
     // Implemented from: System.Xml.Serialization.XmlTypeMapMember
     // Base method: System.Void XmlTypeMapMember::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapMemberAnyAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMemberAnyAttribute::.ctor");

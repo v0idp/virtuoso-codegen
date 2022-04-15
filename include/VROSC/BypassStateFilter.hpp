@@ -51,20 +51,15 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private VROSC.SignalNode _signalNodeToCheck
-    [[deprecated]] ::VROSC::SignalNode*& dyn__signalNodeToCheck();
+    [[deprecated("Use field access instead!")]] ::VROSC::SignalNode*& dyn__signalNodeToCheck();
     // Get instance field reference: private System.Boolean _passOnFalse
-    [[deprecated]] bool& dyn__passOnFalse();
+    [[deprecated("Use field access instead!")]] bool& dyn__passOnFalse();
     // public System.Void .ctor()
     // Offset: 0x93BF94
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BypassStateFilter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BypassStateFilter::.ctor");

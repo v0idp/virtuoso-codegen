@@ -52,11 +52,11 @@ namespace System::Diagnostics {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // Get instance field reference: private System.String type
-    [[deprecated]] ::StringW& dyn_type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_type();
     // public System.Void .ctor(System.String value)
     // Offset: 0x128FBCC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

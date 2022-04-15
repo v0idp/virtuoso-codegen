@@ -133,23 +133,23 @@ namespace UnityEngine::EventSystems {
     // Set static field: static private readonly System.Comparison`1<UnityEngine.EventSystems.RaycastResult> s_RaycastComparer
     static void _set_s_RaycastComparer(::System::Comparison_1<::UnityEngine::EventSystems::RaycastResult>* value);
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.EventSystems.BaseInputModule> m_SystemInputModules
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::BaseInputModule*>*& dyn_m_SystemInputModules();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::BaseInputModule*>*& dyn_m_SystemInputModules();
     // Get instance field reference: private UnityEngine.EventSystems.BaseInputModule m_CurrentInputModule
-    [[deprecated]] ::UnityEngine::EventSystems::BaseInputModule*& dyn_m_CurrentInputModule();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::BaseInputModule*& dyn_m_CurrentInputModule();
     // Get instance field reference: private UnityEngine.GameObject m_FirstSelected
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_FirstSelected();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_FirstSelected();
     // Get instance field reference: private System.Boolean m_sendNavigationEvents
-    [[deprecated]] bool& dyn_m_sendNavigationEvents();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_sendNavigationEvents();
     // Get instance field reference: private System.Int32 m_DragThreshold
-    [[deprecated]] int& dyn_m_DragThreshold();
+    [[deprecated("Use field access instead!")]] int& dyn_m_DragThreshold();
     // Get instance field reference: private UnityEngine.GameObject m_CurrentSelected
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_CurrentSelected();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_CurrentSelected();
     // Get instance field reference: private System.Boolean m_HasFocus
-    [[deprecated]] bool& dyn_m_HasFocus();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasFocus();
     // Get instance field reference: private System.Boolean m_SelectionGuard
-    [[deprecated]] bool& dyn_m_SelectionGuard();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SelectionGuard();
     // Get instance field reference: private UnityEngine.EventSystems.BaseEventData m_DummyData
-    [[deprecated]] ::UnityEngine::EventSystems::BaseEventData*& dyn_m_DummyData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::BaseEventData*& dyn_m_DummyData();
     // static public UnityEngine.EventSystems.EventSystem get_current()
     // Offset: 0xEB6DF4
     static ::UnityEngine::EventSystems::EventSystem* get_current();
@@ -192,6 +192,9 @@ namespace UnityEngine::EventSystems {
     // private UnityEngine.EventSystems.BaseEventData get_baseEventDataCache()
     // Offset: 0xEB7170
     ::UnityEngine::EventSystems::BaseEventData* get_baseEventDataCache();
+    // static private System.Void .cctor()
+    // Offset: 0xEB8054
+    static void _cctor();
     // public System.Void UpdateModules()
     // Offset: 0xEAB5DC
     void UpdateModules();
@@ -229,21 +232,11 @@ namespace UnityEngine::EventSystems {
     // Offset: 0xEB70DC
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EventSystem* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::EventSystem::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EventSystem*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0xEB8054
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void OnEnable()
     // Offset: 0xEB7868
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
@@ -381,6 +374,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::EventSystem*), "get_baseEventDataCache", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::EventSystems::EventSystem::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::EventSystems::EventSystem::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::EventSystem*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: UnityEngine::EventSystems::EventSystem::UpdateModules
 // Il2CppName: UpdateModules
 template<>
@@ -483,14 +484,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::EventSystems::EventSystem::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::EventSystems::EventSystem::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::EventSystem*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: UnityEngine::EventSystems::EventSystem::OnEnable
 // Il2CppName: OnEnable
 template<>

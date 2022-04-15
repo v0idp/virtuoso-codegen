@@ -93,17 +93,24 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.Interactable[] _interactablesToDisable
-    [[deprecated]] ::ArrayW<::VROSC::Interactable*>& dyn__interactablesToDisable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::Interactable*>& dyn__interactablesToDisable();
     // Get instance field reference: private VROSC.LoopStationLoopHandler _loopHandler
-    [[deprecated]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _rerecordBlinker
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__rerecordBlinker();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__rerecordBlinker();
     // Get instance field reference: private VROSC.InstrumentSettings _boardSettings
-    [[deprecated]] ::VROSC::InstrumentSettings*& dyn__boardSettings();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentSettings*& dyn__boardSettings();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
     // Get instance field reference: private System.Boolean _waitingForFirstRecording
-    [[deprecated]] bool& dyn__waitingForFirstRecording();
+    [[deprecated("Use field access instead!")]] bool& dyn__waitingForFirstRecording();
+    // public System.Void .ctor()
+    // Offset: 0x197B7D8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LooperTutorialHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LooperTutorialHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LooperTutorialHelper*, creationType>()));
+    }
     // protected System.Void Start()
     // Offset: 0x197ADA4
     void Start();
@@ -128,25 +135,16 @@ namespace VROSC {
     // private System.Void ResetAll()
     // Offset: 0x197B118
     void ResetAll();
-    // public System.Void .ctor()
-    // Offset: 0x197B7D8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LooperTutorialHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LooperTutorialHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LooperTutorialHelper*, creationType>()));
-    }
   }; // VROSC.LooperTutorialHelper
   #pragma pack(pop)
   static check_size<sizeof(LooperTutorialHelper), 64 + sizeof(bool)> __VROSC_LooperTutorialHelperSizeCheck;
   static_assert(sizeof(LooperTutorialHelper) == 0x41);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LooperTutorialHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LooperTutorialHelper::Start
 // Il2CppName: Start
 template<>
@@ -214,7 +212,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LooperTutorialHelper*), "ResetAll", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::LooperTutorialHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

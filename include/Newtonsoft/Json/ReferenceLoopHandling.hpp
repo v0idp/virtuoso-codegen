@@ -60,7 +60,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.ReferenceLoopHandling Serialize
     static void _set_Serialize(::Newtonsoft::Json::ReferenceLoopHandling value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.ReferenceLoopHandling
   #pragma pack(pop)
   static check_size<sizeof(ReferenceLoopHandling), 0 + sizeof(int)> __Newtonsoft_Json_ReferenceLoopHandlingSizeCheck;

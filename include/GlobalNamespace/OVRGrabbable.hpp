@@ -103,21 +103,21 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected System.Boolean m_allowOffhandGrab
-    [[deprecated]] bool& dyn_m_allowOffhandGrab();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_allowOffhandGrab();
     // Get instance field reference: protected System.Boolean m_snapPosition
-    [[deprecated]] bool& dyn_m_snapPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_snapPosition();
     // Get instance field reference: protected System.Boolean m_snapOrientation
-    [[deprecated]] bool& dyn_m_snapOrientation();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_snapOrientation();
     // Get instance field reference: protected UnityEngine.Transform m_snapOffset
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_snapOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_snapOffset();
     // Get instance field reference: protected UnityEngine.Collider[] m_grabPoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn_m_grabPoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn_m_grabPoints();
     // Get instance field reference: protected System.Boolean m_grabbedKinematic
-    [[deprecated]] bool& dyn_m_grabbedKinematic();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_grabbedKinematic();
     // Get instance field reference: protected UnityEngine.Collider m_grabbedCollider
-    [[deprecated]] ::UnityEngine::Collider*& dyn_m_grabbedCollider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn_m_grabbedCollider();
     // Get instance field reference: protected OVRGrabber m_grabbedBy
-    [[deprecated]] ::GlobalNamespace::OVRGrabber*& dyn_m_grabbedBy();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRGrabber*& dyn_m_grabbedBy();
     // public System.Boolean get_allowOffhandGrab()
     // Offset: 0xFBCE90
     bool get_allowOffhandGrab();
@@ -145,6 +145,13 @@ namespace GlobalNamespace {
     // public UnityEngine.Collider[] get_grabPoints()
     // Offset: 0xFBCF5C
     ::ArrayW<::UnityEngine::Collider*> get_grabPoints();
+    // public System.Void .ctor()
+    // Offset: 0xFBD3DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRGrabbable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGrabbable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRGrabbable*, creationType>()));
+    }
     // public System.Void GrabBegin(OVRGrabber hand, UnityEngine.Collider grabPoint)
     // Offset: 0xFBCF64
     void GrabBegin(::GlobalNamespace::OVRGrabber* hand, ::UnityEngine::Collider* grabPoint);
@@ -160,19 +167,6 @@ namespace GlobalNamespace {
     // private System.Void OnDestroy()
     // Offset: 0xFBD288
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0xFBD3DC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRGrabbable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGrabbable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRGrabbable*, creationType>()));
-    }
   }; // OVRGrabbable
   #pragma pack(pop)
   static check_size<sizeof(OVRGrabbable), 64 + sizeof(::GlobalNamespace::OVRGrabber*)> __GlobalNamespace_OVRGrabbableSizeCheck;
@@ -251,6 +245,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRGrabbable*), "get_grabPoints", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRGrabbable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRGrabbable::GrabBegin
 // Il2CppName: GrabBegin
 template<>
@@ -295,7 +293,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRGrabbable*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRGrabbable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

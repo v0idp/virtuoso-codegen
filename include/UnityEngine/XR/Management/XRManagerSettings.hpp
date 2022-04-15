@@ -109,19 +109,19 @@ namespace UnityEngine::XR::Management {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_InitializationComplete
-    [[deprecated]] bool& dyn_m_InitializationComplete();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_InitializationComplete();
     // Get instance field reference: private System.Boolean m_RequiresSettingsUpdate
-    [[deprecated]] bool& dyn_m_RequiresSettingsUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RequiresSettingsUpdate();
     // Get instance field reference: private System.Boolean m_AutomaticLoading
-    [[deprecated]] bool& dyn_m_AutomaticLoading();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AutomaticLoading();
     // Get instance field reference: private System.Boolean m_AutomaticRunning
-    [[deprecated]] bool& dyn_m_AutomaticRunning();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AutomaticRunning();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> m_Loaders
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_Loaders();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_Loaders();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<UnityEngine.XR.Management.XRLoader> m_RegisteredLoaders
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_RegisteredLoaders();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::UnityEngine::XR::Management::XRLoader*>*& dyn_m_RegisteredLoaders();
     // Get instance field reference: private UnityEngine.XR.Management.XRLoader <activeLoader>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::Management::XRLoader*& dyn_$activeLoader$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Management::XRLoader*& dyn_$activeLoader$k__BackingField();
     // public System.Boolean get_automaticLoading()
     // Offset: 0x18FAEB0
     bool get_automaticLoading();
@@ -158,6 +158,13 @@ namespace UnityEngine::XR::Management {
     // System.Collections.Generic.HashSet`1<UnityEngine.XR.Management.XRLoader> get_registeredLoaders()
     // Offset: 0x18FB4FC
     ::System::Collections::Generic::HashSet_1<::UnityEngine::XR::Management::XRLoader*>* get_registeredLoaders();
+    // public System.Void .ctor()
+    // Offset: 0x18FB504
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRManagerSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRManagerSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRManagerSettings*, creationType>()));
+    }
     // public T ActiveLoaderAs()
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -204,17 +211,6 @@ namespace UnityEngine::XR::Management {
     // private System.Void OnDestroy()
     // Offset: 0x18FB4DC
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x18FB504
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRManagerSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Management::XRManagerSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRManagerSettings*, creationType>()));
-    }
   }; // UnityEngine.XR.Management.XRManagerSettings
   #pragma pack(pop)
   static check_size<sizeof(XRManagerSettings), 48 + sizeof(::UnityEngine::XR::Management::XRLoader*)> __UnityEngine_XR_Management_XRManagerSettingsSizeCheck;
@@ -321,6 +317,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Management::XRManagerSettings*), "get_registeredLoaders", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Management::XRManagerSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Management::XRManagerSettings::ActiveLoaderAs
 // Il2CppName: ActiveLoaderAs
 // Cannot write MetadataGetter for generic methods!
@@ -425,7 +425,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Management::XRManagerSettings*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Management::XRManagerSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -116,27 +116,27 @@ namespace UnityEngine::EventSystems {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.GameObject m_GameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_GameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_GameObject();
     // Get instance field reference: public UnityEngine.EventSystems.BaseRaycaster module
-    [[deprecated]] ::UnityEngine::EventSystems::BaseRaycaster*& dyn_module();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::BaseRaycaster*& dyn_module();
     // Get instance field reference: public System.Single distance
-    [[deprecated]] float& dyn_distance();
+    [[deprecated("Use field access instead!")]] float& dyn_distance();
     // Get instance field reference: public System.Single index
-    [[deprecated]] float& dyn_index();
+    [[deprecated("Use field access instead!")]] float& dyn_index();
     // Get instance field reference: public System.Int32 depth
-    [[deprecated]] int& dyn_depth();
+    [[deprecated("Use field access instead!")]] int& dyn_depth();
     // Get instance field reference: public System.Int32 sortingLayer
-    [[deprecated]] int& dyn_sortingLayer();
+    [[deprecated("Use field access instead!")]] int& dyn_sortingLayer();
     // Get instance field reference: public System.Int32 sortingOrder
-    [[deprecated]] int& dyn_sortingOrder();
+    [[deprecated("Use field access instead!")]] int& dyn_sortingOrder();
     // Get instance field reference: public UnityEngine.Vector3 worldPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_worldPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_worldPosition();
     // Get instance field reference: public UnityEngine.Vector3 worldNormal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_worldNormal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_worldNormal();
     // Get instance field reference: public UnityEngine.Vector2 screenPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_screenPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_screenPosition();
     // Get instance field reference: public System.Int32 displayIndex
-    [[deprecated]] int& dyn_displayIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_displayIndex();
     // public UnityEngine.GameObject get_gameObject()
     // Offset: 0x142AE4C
     ::UnityEngine::GameObject* get_gameObject();

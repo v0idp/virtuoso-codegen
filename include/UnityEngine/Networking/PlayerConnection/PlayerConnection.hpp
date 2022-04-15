@@ -99,11 +99,11 @@ namespace UnityEngine::Networking::PlayerConnection {
     // Set static field: static private UnityEngine.Networking.PlayerConnection.PlayerConnection s_Instance
     static void _set_s_Instance(::UnityEngine::Networking::PlayerConnection::PlayerConnection* value);
     // Get instance field reference: private UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents m_PlayerEditorConnectionEvents
-    [[deprecated]] ::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents*& dyn_m_PlayerEditorConnectionEvents();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents*& dyn_m_PlayerEditorConnectionEvents();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> m_connectedPlayers
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_m_connectedPlayers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn_m_connectedPlayers();
     // Get instance field reference: private System.Boolean m_IsInitilized
-    [[deprecated]] bool& dyn_m_IsInitilized();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsInitilized();
     // static public UnityEngine.Networking.PlayerConnection.PlayerConnection get_instance()
     // Offset: 0xBC5510
     static ::UnityEngine::Networking::PlayerConnection::PlayerConnection* get_instance();
@@ -162,7 +162,6 @@ namespace UnityEngine::Networking::PlayerConnection {
     // Offset: 0xBC6F44
     // Implemented from: UnityEngine.ScriptableObject
     // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayerConnection* New_ctor() {

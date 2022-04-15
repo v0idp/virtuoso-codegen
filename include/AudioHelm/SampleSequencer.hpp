@@ -48,7 +48,7 @@ namespace AudioHelm {
     // Set static field: static private System.Single lookaheadTime
     static void _set_lookaheadTime(float value);
     // Get instance field reference: private System.Double lastWindowTime
-    [[deprecated]] double& dyn_lastWindowTime();
+    [[deprecated("Use field access instead!")]] double& dyn_lastWindowTime();
     // private System.Void Awake()
     // Offset: 0xDDBF50
     void Awake();
@@ -74,11 +74,6 @@ namespace AudioHelm {
     // Offset: 0xDDCB38
     // Implemented from: AudioHelm.Sequencer
     // Base method: System.Void Sequencer::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SampleSequencer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::SampleSequencer::.ctor");

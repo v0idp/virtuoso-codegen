@@ -115,25 +115,32 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _interactablesParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__interactablesParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__interactablesParent();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _boardButtonBlink
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__boardButtonBlink();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__boardButtonBlink();
     // Get instance field reference: private VROSC.Interactable _boardButtonInteractable
-    [[deprecated]] ::VROSC::Interactable*& dyn__boardButtonInteractable();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__boardButtonInteractable();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _empadsButtonBlink
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__empadsButtonBlink();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__empadsButtonBlink();
     // Get instance field reference: private VROSC.Interactable _empadsButtonInteractable
-    [[deprecated]] ::VROSC::Interactable*& dyn__empadsButtonInteractable();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__empadsButtonInteractable();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _looperButtonBlink
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__looperButtonBlink();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__looperButtonBlink();
     // Get instance field reference: private VROSC.Interactable _looperButtonInteractable
-    [[deprecated]] ::VROSC::Interactable*& dyn__looperButtonInteractable();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__looperButtonInteractable();
     // Get instance field reference: private VROSC.TutorialBlinkingUIElement _libraryButtonBlink
-    [[deprecated]] ::VROSC::TutorialBlinkingUIElement*& dyn__libraryButtonBlink();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialBlinkingUIElement*& dyn__libraryButtonBlink();
     // Get instance field reference: private VROSC.Interactable _libraryButtonInteractable
-    [[deprecated]] ::VROSC::Interactable*& dyn__libraryButtonInteractable();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__libraryButtonInteractable();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Interactable> _disabledInteractables
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Interactable*>*& dyn__disabledInteractables();
+    // public System.Void .ctor()
+    // Offset: 0x8E2944
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DashboardTutorialHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DashboardTutorialHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DashboardTutorialHelper*, creationType>()));
+    }
     // protected System.Void Start()
     // Offset: 0x8E1728
     void Start();
@@ -188,25 +195,16 @@ namespace VROSC {
     // private System.Void ResetAll()
     // Offset: 0x8E1D94
     void ResetAll();
-    // public System.Void .ctor()
-    // Offset: 0x8E2944
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DashboardTutorialHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DashboardTutorialHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DashboardTutorialHelper*, creationType>()));
-    }
   }; // VROSC.DashboardTutorialHelper
   #pragma pack(pop)
   static check_size<sizeof(DashboardTutorialHelper), 96 + sizeof(::System::Collections::Generic::List_1<::VROSC::Interactable*>*)> __VROSC_DashboardTutorialHelperSizeCheck;
   static_assert(sizeof(DashboardTutorialHelper) == 0x68);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::DashboardTutorialHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::DashboardTutorialHelper::Start
 // Il2CppName: Start
 template<>
@@ -357,7 +355,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::DashboardTutorialHelper*), "ResetAll", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::DashboardTutorialHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

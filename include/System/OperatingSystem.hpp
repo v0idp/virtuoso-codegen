@@ -79,11 +79,11 @@ namespace System {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: private System.PlatformID _platform
-    [[deprecated]] ::System::PlatformID& dyn__platform();
+    [[deprecated("Use field access instead!")]] ::System::PlatformID& dyn__platform();
     // Get instance field reference: private System.Version _version
-    [[deprecated]] ::System::Version*& dyn__version();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn__version();
     // Get instance field reference: private System.String _servicePack
-    [[deprecated]] ::StringW& dyn__servicePack();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__servicePack();
     // public System.PlatformID get_Platform()
     // Offset: 0x14BF324
     ::System::PlatformID get_Platform();

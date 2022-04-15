@@ -60,7 +60,7 @@ namespace System::Collections {
       return table;
     }
     // Get instance field reference: protected System.Collections.Hashtable _table
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__table();
     // System.Void .ctor(System.Collections.Hashtable table)
     // Offset: 0xE520BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

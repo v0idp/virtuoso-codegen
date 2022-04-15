@@ -60,7 +60,7 @@ namespace GlobalNamespace {
     // Set static field: static public ovrAvatarMaterialLayerBlendMode Count
     static void _set_Count(::GlobalNamespace::ovrAvatarMaterialLayerBlendMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // ovrAvatarMaterialLayerBlendMode
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarMaterialLayerBlendMode), 0 + sizeof(int)> __GlobalNamespace_ovrAvatarMaterialLayerBlendModeSizeCheck;

@@ -63,17 +63,15 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::Serialization::XmlSerializationReadCallback*) == 0x8);
     public:
     // Get instance field reference: public System.Type Type
-    [[deprecated]] ::System::Type*& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_Type();
     // Get instance field reference: public System.String TypeName
-    [[deprecated]] ::StringW& dyn_TypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TypeName();
     // Get instance field reference: public System.String TypeNs
-    [[deprecated]] ::StringW& dyn_TypeNs();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TypeNs();
     // Get instance field reference: public System.Xml.Serialization.XmlSerializationReadCallback Callback
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializationReadCallback*& dyn_Callback();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializationReadCallback*& dyn_Callback();
     // public System.Void .ctor()
     // Offset: 0xC221C0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSerializationReader::WriteCallbackInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlSerializationReader::WriteCallbackInfo::.ctor");

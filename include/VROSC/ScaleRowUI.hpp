@@ -176,39 +176,46 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.NoteNode _startNoteNode
-    [[deprecated]] ::VROSC::NoteNode*& dyn__startNoteNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteNode*& dyn__startNoteNode();
     // Get instance field reference: private VROSC.ScaleNode _scaleNode
-    [[deprecated]] ::VROSC::ScaleNode*& dyn__scaleNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScaleNode*& dyn__scaleNode();
     // Get instance field reference: private VROSC.UIButton _resetButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__resetButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__resetButton();
     // Get instance field reference: private VROSC.ScaleNoteButtonUI[] _notebuttons
-    [[deprecated]] ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__notebuttons();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::ScaleNoteButtonUI*>& dyn__notebuttons();
     // Get instance field reference: private VROSC.SynthController _instrumentController
-    [[deprecated]] ::VROSC::SynthController*& dyn__instrumentController();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthController*& dyn__instrumentController();
     // Get instance field reference: private System.Int32 _scaleRowIndex
-    [[deprecated]] int& dyn__scaleRowIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__scaleRowIndex();
     // Get instance field reference: private VROSC.Scale _initScale
-    [[deprecated]] ::VROSC::Scale& dyn__initScale();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn__initScale();
     // Get instance field reference: private VROSC.ScalePreset _initGlobalScalePreset
-    [[deprecated]] ::VROSC::ScalePreset*& dyn__initGlobalScalePreset();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScalePreset*& dyn__initGlobalScalePreset();
     // Get instance field reference: private VROSC.Note _initStartNote
-    [[deprecated]] ::VROSC::Note& dyn__initStartNote();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn__initStartNote();
     // Get instance field reference: private VROSC.Note _initGlobalKey
-    [[deprecated]] ::VROSC::Note& dyn__initGlobalKey();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn__initGlobalKey();
     // Get instance field reference: private System.Int32 _initNoteCount
-    [[deprecated]] int& dyn__initNoteCount();
+    [[deprecated("Use field access instead!")]] int& dyn__initNoteCount();
     // Get instance field reference: private VROSC.ScalePreset _lastGlobalScalePreset
-    [[deprecated]] ::VROSC::ScalePreset*& dyn__lastGlobalScalePreset();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScalePreset*& dyn__lastGlobalScalePreset();
     // Get instance field reference: private VROSC.Note _lastGlobalKey
-    [[deprecated]] ::VROSC::Note& dyn__lastGlobalKey();
+    [[deprecated("Use field access instead!")]] ::VROSC::Note& dyn__lastGlobalKey();
     // Get instance field reference: private System.Boolean _overrideScaleDefaults
-    [[deprecated]] bool& dyn__overrideScaleDefaults();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideScaleDefaults();
     // Get instance field reference: private System.Boolean _locked
-    [[deprecated]] bool& dyn__locked();
+    [[deprecated("Use field access instead!")]] bool& dyn__locked();
     // Get instance field reference: public System.Boolean _customized
-    [[deprecated]] bool& dyn__customized();
+    [[deprecated("Use field access instead!")]] bool& dyn__customized();
     // Get instance field reference: public System.Action`2<System.Int32,VROSC.Scale> OnNotesUpdated
-    [[deprecated]] ::System::Action_2<int, ::VROSC::Scale>*& dyn_OnNotesUpdated();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<int, ::VROSC::Scale>*& dyn_OnNotesUpdated();
+    // public System.Void .ctor()
+    // Offset: 0xDE4EE4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ScaleRowUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleRowUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ScaleRowUI*, creationType>()));
+    }
     // public System.Void Setup(VROSC.ScalePreset globalScale, VROSC.Note globalKey, VROSC.Scale scale, System.Int32 startNoteOffset, System.Boolean overrideScaleDefaults, VROSC.SynthController instrumentController, System.Int32 scaleRowIndex)
     // Offset: 0xDE366C
     void Setup(::VROSC::ScalePreset* globalScale, ::VROSC::Note globalKey, ::VROSC::Scale scale, int startNoteOffset, bool overrideScaleDefaults, ::VROSC::SynthController* instrumentController, int scaleRowIndex);
@@ -248,25 +255,16 @@ namespace VROSC {
     // private System.Void CustomizedChanged(System.Boolean saveData)
     // Offset: 0xDE4620
     void CustomizedChanged(bool saveData);
-    // public System.Void .ctor()
-    // Offset: 0xDE4EE4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ScaleRowUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleRowUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ScaleRowUI*, creationType>()));
-    }
   }; // VROSC.ScaleRowUI
   #pragma pack(pop)
   static check_size<sizeof(ScaleRowUI), 112 + sizeof(::System::Action_2<int, ::VROSC::Scale>*)> __VROSC_ScaleRowUISizeCheck;
   static_assert(sizeof(ScaleRowUI) == 0x78);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ScaleRowUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ScaleRowUI::Setup
 // Il2CppName: Setup
 template<>
@@ -386,7 +384,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScaleRowUI*), "CustomizedChanged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{saveData});
   }
 };
-// Writing MetadataGetter for method: VROSC::ScaleRowUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

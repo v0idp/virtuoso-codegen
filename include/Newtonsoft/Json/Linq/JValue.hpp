@@ -113,9 +113,9 @@ namespace Newtonsoft::Json::Linq {
       return *reinterpret_cast<::System::IComparable*>(this);
     }
     // Get instance field reference: private Newtonsoft.Json.Linq.JTokenType _valueType
-    [[deprecated]] ::Newtonsoft::Json::Linq::JTokenType& dyn__valueType();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JTokenType& dyn__valueType();
     // Get instance field reference: private System.Object _value
-    [[deprecated]] ::Il2CppObject*& dyn__value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__value();
     // public System.Object get_Value()
     // Offset: 0xEEE228
     ::Il2CppObject* get_Value();

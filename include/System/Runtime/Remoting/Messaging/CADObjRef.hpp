@@ -57,11 +57,11 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: System.Runtime.Remoting.ObjRef objref
-    [[deprecated]] ::System::Runtime::Remoting::ObjRef*& dyn_objref();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::ObjRef*& dyn_objref();
     // Get instance field reference: System.Int32 SourceDomain
-    [[deprecated]] int& dyn_SourceDomain();
+    [[deprecated("Use field access instead!")]] int& dyn_SourceDomain();
     // Get instance field reference: System.Byte[] TypeInfo
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_TypeInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_TypeInfo();
     // public System.Void .ctor(System.Runtime.Remoting.ObjRef o, System.Int32 sourceDomain)
     // Offset: 0xFF1EEC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

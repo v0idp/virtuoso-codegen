@@ -29,7 +29,6 @@ namespace Newtonsoft::Json::Linq {
     // Offset: 0x159F4C8
     // Implemented from: Newtonsoft.Json.Utilities.DynamicProxy`1
     // Base method: System.Void DynamicProxy_1::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JValue::JValueDynamicProxy* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JValue::JValueDynamicProxy::.ctor");

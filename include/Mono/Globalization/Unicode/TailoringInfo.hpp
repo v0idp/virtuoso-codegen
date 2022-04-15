@@ -53,13 +53,13 @@ namespace Mono::Globalization::Unicode {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.Int32 LCID
-    [[deprecated]] int& dyn_LCID();
+    [[deprecated("Use field access instead!")]] int& dyn_LCID();
     // Get instance field reference: public readonly System.Int32 TailoringIndex
-    [[deprecated]] int& dyn_TailoringIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_TailoringIndex();
     // Get instance field reference: public readonly System.Int32 TailoringCount
-    [[deprecated]] int& dyn_TailoringCount();
+    [[deprecated("Use field access instead!")]] int& dyn_TailoringCount();
     // Get instance field reference: public readonly System.Boolean FrenchSort
-    [[deprecated]] bool& dyn_FrenchSort();
+    [[deprecated("Use field access instead!")]] bool& dyn_FrenchSort();
     // public System.Void .ctor(System.Int32 lcid, System.Int32 tailoringIndex, System.Int32 tailoringCount, System.Boolean frenchSort)
     // Offset: 0x126BFF4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

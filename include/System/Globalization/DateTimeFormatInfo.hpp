@@ -610,105 +610,105 @@ namespace System::Globalization {
     // Set static field: static private System.Globalization.DateTimeFormatInfo s_zhtwDTFI
     static void _set_s_zhtwDTFI(::System::Globalization::DateTimeFormatInfo* value);
     // Get instance field reference: private System.Globalization.CultureData m_cultureData
-    [[deprecated]] ::System::Globalization::CultureData*& dyn_m_cultureData();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureData*& dyn_m_cultureData();
     // Get instance field reference: System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private System.String m_langName
-    [[deprecated]] ::StringW& dyn_m_langName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_langName();
     // Get instance field reference: private System.Globalization.CompareInfo m_compareInfo
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn_m_compareInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn_m_compareInfo();
     // Get instance field reference: private System.Globalization.CultureInfo m_cultureInfo
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_m_cultureInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_m_cultureInfo();
     // Get instance field reference: System.String amDesignator
-    [[deprecated]] ::StringW& dyn_amDesignator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_amDesignator();
     // Get instance field reference: System.String pmDesignator
-    [[deprecated]] ::StringW& dyn_pmDesignator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_pmDesignator();
     // Get instance field reference: System.String dateSeparator
-    [[deprecated]] ::StringW& dyn_dateSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dateSeparator();
     // Get instance field reference: System.String generalShortTimePattern
-    [[deprecated]] ::StringW& dyn_generalShortTimePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_generalShortTimePattern();
     // Get instance field reference: System.String generalLongTimePattern
-    [[deprecated]] ::StringW& dyn_generalLongTimePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_generalLongTimePattern();
     // Get instance field reference: System.String timeSeparator
-    [[deprecated]] ::StringW& dyn_timeSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_timeSeparator();
     // Get instance field reference: System.String monthDayPattern
-    [[deprecated]] ::StringW& dyn_monthDayPattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_monthDayPattern();
     // Get instance field reference: System.String dateTimeOffsetPattern
-    [[deprecated]] ::StringW& dyn_dateTimeOffsetPattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dateTimeOffsetPattern();
     // Get instance field reference: System.Globalization.Calendar calendar
-    [[deprecated]] ::System::Globalization::Calendar*& dyn_calendar();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::Calendar*& dyn_calendar();
     // Get instance field reference: System.Int32 firstDayOfWeek
-    [[deprecated]] int& dyn_firstDayOfWeek();
+    [[deprecated("Use field access instead!")]] int& dyn_firstDayOfWeek();
     // Get instance field reference: System.Int32 calendarWeekRule
-    [[deprecated]] int& dyn_calendarWeekRule();
+    [[deprecated("Use field access instead!")]] int& dyn_calendarWeekRule();
     // Get instance field reference: System.String fullDateTimePattern
-    [[deprecated]] ::StringW& dyn_fullDateTimePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fullDateTimePattern();
     // Get instance field reference: System.String[] abbreviatedDayNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_abbreviatedDayNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_abbreviatedDayNames();
     // Get instance field reference: System.String[] m_superShortDayNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_superShortDayNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_superShortDayNames();
     // Get instance field reference: System.String[] dayNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_dayNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_dayNames();
     // Get instance field reference: System.String[] abbreviatedMonthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_abbreviatedMonthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_abbreviatedMonthNames();
     // Get instance field reference: System.String[] monthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_monthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_monthNames();
     // Get instance field reference: System.String[] genitiveMonthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_genitiveMonthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_genitiveMonthNames();
     // Get instance field reference: System.String[] m_genitiveAbbreviatedMonthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_genitiveAbbreviatedMonthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_genitiveAbbreviatedMonthNames();
     // Get instance field reference: System.String[] leapYearMonthNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_leapYearMonthNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_leapYearMonthNames();
     // Get instance field reference: System.String longDatePattern
-    [[deprecated]] ::StringW& dyn_longDatePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_longDatePattern();
     // Get instance field reference: System.String shortDatePattern
-    [[deprecated]] ::StringW& dyn_shortDatePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_shortDatePattern();
     // Get instance field reference: System.String yearMonthPattern
-    [[deprecated]] ::StringW& dyn_yearMonthPattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_yearMonthPattern();
     // Get instance field reference: System.String longTimePattern
-    [[deprecated]] ::StringW& dyn_longTimePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_longTimePattern();
     // Get instance field reference: System.String shortTimePattern
-    [[deprecated]] ::StringW& dyn_shortTimePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_shortTimePattern();
     // Get instance field reference: private System.String[] allYearMonthPatterns
-    [[deprecated]] ::ArrayW<::StringW>& dyn_allYearMonthPatterns();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_allYearMonthPatterns();
     // Get instance field reference: System.String[] allShortDatePatterns
-    [[deprecated]] ::ArrayW<::StringW>& dyn_allShortDatePatterns();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_allShortDatePatterns();
     // Get instance field reference: System.String[] allLongDatePatterns
-    [[deprecated]] ::ArrayW<::StringW>& dyn_allLongDatePatterns();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_allLongDatePatterns();
     // Get instance field reference: System.String[] allShortTimePatterns
-    [[deprecated]] ::ArrayW<::StringW>& dyn_allShortTimePatterns();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_allShortTimePatterns();
     // Get instance field reference: System.String[] allLongTimePatterns
-    [[deprecated]] ::ArrayW<::StringW>& dyn_allLongTimePatterns();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_allLongTimePatterns();
     // Get instance field reference: System.String[] m_eraNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_eraNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_eraNames();
     // Get instance field reference: System.String[] m_abbrevEraNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_abbrevEraNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_abbrevEraNames();
     // Get instance field reference: System.String[] m_abbrevEnglishEraNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_abbrevEnglishEraNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_abbrevEnglishEraNames();
     // Get instance field reference: System.Int32[] optionalCalendars
-    [[deprecated]] ::ArrayW<int>& dyn_optionalCalendars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_optionalCalendars();
     // Get instance field reference: System.Boolean m_isReadOnly
-    [[deprecated]] bool& dyn_m_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isReadOnly();
     // Get instance field reference: System.Globalization.DateTimeFormatFlags formatFlags
-    [[deprecated]] ::System::Globalization::DateTimeFormatFlags& dyn_formatFlags();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::DateTimeFormatFlags& dyn_formatFlags();
     // Get instance field reference: private System.Int32 CultureID
-    [[deprecated]] int& dyn_CultureID();
+    [[deprecated("Use field access instead!")]] int& dyn_CultureID();
     // Get instance field reference: private System.Boolean m_useUserOverride
-    [[deprecated]] bool& dyn_m_useUserOverride();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_useUserOverride();
     // Get instance field reference: private System.Boolean bUseCalendarInfo
-    [[deprecated]] bool& dyn_bUseCalendarInfo();
+    [[deprecated("Use field access instead!")]] bool& dyn_bUseCalendarInfo();
     // Get instance field reference: private System.Int32 nDataItem
-    [[deprecated]] int& dyn_nDataItem();
+    [[deprecated("Use field access instead!")]] int& dyn_nDataItem();
     // Get instance field reference: System.Boolean m_isDefaultCalendar
-    [[deprecated]] bool& dyn_m_isDefaultCalendar();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isDefaultCalendar();
     // Get instance field reference: System.String[] m_dateWords
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_dateWords();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_dateWords();
     // Get instance field reference: private System.String m_fullTimeSpanPositivePattern
-    [[deprecated]] ::StringW& dyn_m_fullTimeSpanPositivePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_fullTimeSpanPositivePattern();
     // Get instance field reference: private System.String m_fullTimeSpanNegativePattern
-    [[deprecated]] ::StringW& dyn_m_fullTimeSpanNegativePattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_fullTimeSpanNegativePattern();
     // Get instance field reference: private System.Globalization.TokenHashValue[] m_dtfiTokenHash
-    [[deprecated]] ::ArrayW<::System::Globalization::TokenHashValue*>& dyn_m_dtfiTokenHash();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Globalization::TokenHashValue*>& dyn_m_dtfiTokenHash();
     // private System.String get_CultureName()
     // Offset: 0xFD18B4
     ::StringW get_CultureName();

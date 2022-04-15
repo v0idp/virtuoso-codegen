@@ -78,17 +78,17 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.Schema.TypedObject/System.Xml.Schema.DecimalStruct dstruct
-    [[deprecated]] ::System::Xml::Schema::TypedObject::DecimalStruct*& dyn_dstruct();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::TypedObject::DecimalStruct*& dyn_dstruct();
     // Get instance field reference: private System.Object ovalue
-    [[deprecated]] ::Il2CppObject*& dyn_ovalue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_ovalue();
     // Get instance field reference: private System.String svalue
-    [[deprecated]] ::StringW& dyn_svalue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_svalue();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDatatype xsdtype
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn_xsdtype();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDatatype*& dyn_xsdtype();
     // Get instance field reference: private System.Int32 dim
-    [[deprecated]] int& dyn_dim();
+    [[deprecated("Use field access instead!")]] int& dyn_dim();
     // Get instance field reference: private System.Boolean isList
-    [[deprecated]] bool& dyn_isList();
+    [[deprecated("Use field access instead!")]] bool& dyn_isList();
     // public System.Int32 get_Dim()
     // Offset: 0xF75FD0
     int get_Dim();

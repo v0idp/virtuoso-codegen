@@ -169,45 +169,45 @@ namespace System::Globalization {
     // Set static field: static private System.Globalization.CultureData s_Invariant
     static void _set_s_Invariant(::System::Globalization::CultureData* value);
     // Get instance field reference: private System.String sAM1159
-    [[deprecated]] ::StringW& dyn_sAM1159();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sAM1159();
     // Get instance field reference: private System.String sPM2359
-    [[deprecated]] ::StringW& dyn_sPM2359();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sPM2359();
     // Get instance field reference: private System.String sTimeSeparator
-    [[deprecated]] ::StringW& dyn_sTimeSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sTimeSeparator();
     // Get instance field reference: private System.String[] saLongTimes
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saLongTimes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saLongTimes();
     // Get instance field reference: private System.String[] saShortTimes
-    [[deprecated]] ::ArrayW<::StringW>& dyn_saShortTimes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_saShortTimes();
     // Get instance field reference: private System.Int32 iFirstDayOfWeek
-    [[deprecated]] int& dyn_iFirstDayOfWeek();
+    [[deprecated("Use field access instead!")]] int& dyn_iFirstDayOfWeek();
     // Get instance field reference: private System.Int32 iFirstWeekOfYear
-    [[deprecated]] int& dyn_iFirstWeekOfYear();
+    [[deprecated("Use field access instead!")]] int& dyn_iFirstWeekOfYear();
     // Get instance field reference: private System.Int32[] waCalendars
-    [[deprecated]] ::ArrayW<int>& dyn_waCalendars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_waCalendars();
     // Get instance field reference: private System.Globalization.CalendarData[] calendars
-    [[deprecated]] ::ArrayW<::System::Globalization::CalendarData*>& dyn_calendars();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Globalization::CalendarData*>& dyn_calendars();
     // Get instance field reference: private System.String sISO639Language
-    [[deprecated]] ::StringW& dyn_sISO639Language();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sISO639Language();
     // Get instance field reference: private readonly System.String sRealName
-    [[deprecated]] ::StringW& dyn_sRealName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sRealName();
     // Get instance field reference: private System.Boolean bUseOverrides
-    [[deprecated]] bool& dyn_bUseOverrides();
+    [[deprecated("Use field access instead!")]] bool& dyn_bUseOverrides();
     // Get instance field reference: private System.Int32 calendarId
-    [[deprecated]] int& dyn_calendarId();
+    [[deprecated("Use field access instead!")]] int& dyn_calendarId();
     // Get instance field reference: private System.Int32 numberIndex
-    [[deprecated]] int& dyn_numberIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_numberIndex();
     // Get instance field reference: private System.Int32 iDefaultAnsiCodePage
-    [[deprecated]] int& dyn_iDefaultAnsiCodePage();
+    [[deprecated("Use field access instead!")]] int& dyn_iDefaultAnsiCodePage();
     // Get instance field reference: private System.Int32 iDefaultOemCodePage
-    [[deprecated]] int& dyn_iDefaultOemCodePage();
+    [[deprecated("Use field access instead!")]] int& dyn_iDefaultOemCodePage();
     // Get instance field reference: private System.Int32 iDefaultMacCodePage
-    [[deprecated]] int& dyn_iDefaultMacCodePage();
+    [[deprecated("Use field access instead!")]] int& dyn_iDefaultMacCodePage();
     // Get instance field reference: private System.Int32 iDefaultEbcdicCodePage
-    [[deprecated]] int& dyn_iDefaultEbcdicCodePage();
+    [[deprecated("Use field access instead!")]] int& dyn_iDefaultEbcdicCodePage();
     // Get instance field reference: private System.Boolean isRightToLeft
-    [[deprecated]] bool& dyn_isRightToLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRightToLeft();
     // Get instance field reference: private System.String sListSeparator
-    [[deprecated]] ::StringW& dyn_sListSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sListSeparator();
     // static public System.Globalization.CultureData get_Invariant()
     // Offset: 0x13FB1C8
     static ::System::Globalization::CultureData* get_Invariant();

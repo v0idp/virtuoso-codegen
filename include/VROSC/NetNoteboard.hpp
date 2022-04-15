@@ -65,13 +65,13 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.NoteBoardNote[,] <XYNotes>k__BackingField
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$XYNotes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$XYNotes$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoardNote[,] <XZNotes>k__BackingField
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$XZNotes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$XZNotes$k__BackingField();
     // Get instance field reference: private VROSC.NoteBoardNote[,] <YZNotes>k__BackingField
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$YZNotes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$YZNotes$k__BackingField();
     // Get instance field reference: private System.Single _stringsize
-    [[deprecated]] float& dyn__stringsize();
+    [[deprecated("Use field access instead!")]] float& dyn__stringsize();
     // public VROSC.NoteBoardNote[,] get_XYNotes()
     // Offset: 0xAD293C
     ::ArrayW<::VROSC::NoteBoardNote*> get_XYNotes();
@@ -100,11 +100,6 @@ namespace VROSC {
     // Offset: 0xAD3A58
     // Implemented from: VROSC.NoteBoardNoteController
     // Base method: System.Void NoteBoardNoteController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NetNoteboard* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NetNoteboard::.ctor");

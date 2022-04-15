@@ -96,21 +96,21 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverrideFlags <OverrideFlags>k__BackingField
-    [[deprecated]] ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_$OverrideFlags$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigOverrideFlags*& dyn_$OverrideFlags$k__BackingField();
     // Get instance field reference: public System.Action`1<System.Boolean> OnOneShotOverriddenChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnOneShotOverriddenChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnOneShotOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnRetriggerOverriddenChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnRetriggerOverriddenChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnRetriggerOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnStartOverriddenChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnStartOverriddenChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnStartOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnStopOverriddenChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnStopOverriddenChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnStopOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnFadeInOverriddenChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnFadeInOverriddenChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnFadeInOverriddenChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnFadeOutOverriddenChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnFadeOutOverriddenChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnFadeOutOverriddenChanged();
     // Get instance field reference: public System.Action OnOverrideConfigChanged
-    [[deprecated]] ::System::Action*& dyn_OnOverrideConfigChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnOverrideConfigChanged();
     // public VROSC.LoopPlaybackConfigOverrideFlags get_OverrideFlags()
     // Offset: 0x19B6FF4
     ::VROSC::LoopPlaybackConfigOverrideFlags* get_OverrideFlags();
@@ -153,7 +153,6 @@ namespace VROSC {
     // Offset: 0x19B6FFC
     // Implemented from: VROSC.LoopPlaybackConfig
     // Base method: System.Void LoopPlaybackConfig::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlaybackConfigOverride* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlaybackConfigOverride::.ctor");

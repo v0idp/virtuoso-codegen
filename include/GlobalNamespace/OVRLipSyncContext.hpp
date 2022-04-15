@@ -127,29 +127,29 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Boolean enableKeyboardInput
-    [[deprecated]] bool& dyn_enableKeyboardInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableKeyboardInput();
     // Get instance field reference: public System.Boolean enableTouchInput
-    [[deprecated]] bool& dyn_enableTouchInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableTouchInput();
     // Get instance field reference: public System.Boolean audioLoopback
-    [[deprecated]] bool& dyn_audioLoopback();
+    [[deprecated("Use field access instead!")]] bool& dyn_audioLoopback();
     // Get instance field reference: public UnityEngine.KeyCode loopbackKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_loopbackKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_loopbackKey();
     // Get instance field reference: public System.Boolean showVisemes
-    [[deprecated]] bool& dyn_showVisemes();
+    [[deprecated("Use field access instead!")]] bool& dyn_showVisemes();
     // Get instance field reference: public UnityEngine.KeyCode debugVisemesKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_debugVisemesKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_debugVisemesKey();
     // Get instance field reference: public System.Boolean skipAudioSource
-    [[deprecated]] bool& dyn_skipAudioSource();
+    [[deprecated("Use field access instead!")]] bool& dyn_skipAudioSource();
     // Get instance field reference: public System.Single gain
-    [[deprecated]] float& dyn_gain();
+    [[deprecated("Use field access instead!")]] float& dyn_gain();
     // Get instance field reference: private System.Boolean hasDebugConsole
-    [[deprecated]] bool& dyn_hasDebugConsole();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasDebugConsole();
     // Get instance field reference: public UnityEngine.KeyCode debugLaughterKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_debugLaughterKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_debugLaughterKey();
     // Get instance field reference: public System.Boolean showLaughter
-    [[deprecated]] bool& dyn_showLaughter();
+    [[deprecated("Use field access instead!")]] bool& dyn_showLaughter();
     // Get instance field reference: public System.Single laughterScore
-    [[deprecated]] float& dyn_laughterScore();
+    [[deprecated("Use field access instead!")]] float& dyn_laughterScore();
     // private System.Void Start()
     // Offset: 0x18A9444
     void Start();
@@ -190,11 +190,6 @@ namespace GlobalNamespace {
     // Offset: 0x18AA450
     // Implemented from: OVRLipSyncContextBase
     // Base method: System.Void OVRLipSyncContextBase::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRLipSyncContext* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSyncContext::.ctor");

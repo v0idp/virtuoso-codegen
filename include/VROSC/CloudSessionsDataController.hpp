@@ -69,7 +69,7 @@ namespace VROSC {
     // Deleting conversion operator: operator ::VROSC::Session*
     constexpr operator ::VROSC::Session*() const noexcept = delete;
     // Get instance field reference: private System.Boolean _isWaitingForData
-    [[deprecated]] bool& dyn__isWaitingForData();
+    [[deprecated("Use field access instead!")]] bool& dyn__isWaitingForData();
     // public System.Void SaveSessionToCloud(System.String sessionId, System.Action`1<System.String> onSuccess, System.Action`1<VROSC.Error> onFailure)
     // Offset: 0x946624
     void SaveSessionToCloud(::StringW sessionId, ::System::Action_1<::StringW>* onSuccess, ::System::Action_1<::VROSC::Error>* onFailure);
@@ -78,7 +78,6 @@ namespace VROSC {
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CloudSessionsDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CloudSessionsDataController::.ctor");

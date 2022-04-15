@@ -53,29 +53,29 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected UnityEngine.Material _opaqueMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__opaqueMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__opaqueMaterial();
     // Get instance field reference: protected UnityEngine.Material _transparentMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__transparentMaterial();
-    // public UnityEngine.Material GetMaterial(System.Boolean needsTransparency)
-    // Offset: 0x1912C7C
-    ::UnityEngine::Material* GetMaterial(bool needsTransparency);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__transparentMaterial();
     // public System.Void .ctor()
     // Offset: 0x1912C94
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIMaterialSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIMaterialSettings::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UIMaterialSettings*, creationType>()));
     }
+    // public UnityEngine.Material GetMaterial(System.Boolean needsTransparency)
+    // Offset: 0x1912C7C
+    ::UnityEngine::Material* GetMaterial(bool needsTransparency);
   }; // VROSC.UI.UIMaterialSettings
   #pragma pack(pop)
   static check_size<sizeof(UIMaterialSettings), 32 + sizeof(::UnityEngine::Material*)> __VROSC_UI_UIMaterialSettingsSizeCheck;
   static_assert(sizeof(UIMaterialSettings) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UI::UIMaterialSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::UIMaterialSettings::GetMaterial
 // Il2CppName: GetMaterial
 template<>
@@ -85,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIMaterialSettings*), "GetMaterial", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{needsTransparency});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::UIMaterialSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

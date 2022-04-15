@@ -45,9 +45,9 @@ namespace System {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.AttributeUsageAttribute _usage
-    [[deprecated]] ::System::AttributeUsageAttribute*& dyn__usage();
+    [[deprecated("Use field access instead!")]] ::System::AttributeUsageAttribute*& dyn__usage();
     // Get instance field reference: private System.Int32 _inheritanceLevel
-    [[deprecated]] int& dyn__inheritanceLevel();
+    [[deprecated("Use field access instead!")]] int& dyn__inheritanceLevel();
     // public System.AttributeUsageAttribute get_Usage()
     // Offset: 0xE541D8
     ::System::AttributeUsageAttribute* get_Usage();

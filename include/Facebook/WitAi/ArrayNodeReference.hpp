@@ -49,12 +49,11 @@ namespace Facebook::WitAi {
       return index;
     }
     // Get instance field reference: public System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // public System.Void .ctor()
     // Offset: 0x166E6E8
     // Implemented from: Facebook.WitAi.WitResponseReference
     // Base method: System.Void WitResponseReference::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ArrayNodeReference* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::ArrayNodeReference::.ctor");

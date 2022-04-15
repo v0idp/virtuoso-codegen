@@ -39,9 +39,9 @@ namespace System::Collections::Specialized {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: System.String Key
-    [[deprecated]] ::StringW& dyn_Key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Key();
     // Get instance field reference: System.Object Value
-    [[deprecated]] ::Il2CppObject*& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Value();
     // System.Void .ctor(System.String name, System.Object value)
     // Offset: 0x9FBBB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

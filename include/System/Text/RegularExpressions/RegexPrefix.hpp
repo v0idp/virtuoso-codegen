@@ -46,9 +46,9 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Text.RegularExpressions.RegexPrefix _empty
     static void _set__empty(::System::Text::RegularExpressions::RegexPrefix* value);
     // Get instance field reference: System.String _prefix
-    [[deprecated]] ::StringW& dyn__prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__prefix();
     // Get instance field reference: System.Boolean _caseInsensitive
-    [[deprecated]] bool& dyn__caseInsensitive();
+    [[deprecated("Use field access instead!")]] bool& dyn__caseInsensitive();
     // System.String get_Prefix()
     // Offset: 0x1850F70
     ::StringW get_Prefix();

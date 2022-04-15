@@ -80,7 +80,7 @@ namespace Facebook::WitAi::Lib {
       return m_Dict;
     }
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,Facebook.WitAi.Lib.WitResponseNode> m_Dict
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Facebook::WitAi::Lib::WitResponseNode*>*& dyn_m_Dict();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::Facebook::WitAi::Lib::WitResponseNode*>*& dyn_m_Dict();
     // public System.String[] get_ChildNodeNames()
     // Offset: 0x1677928
     ::ArrayW<::StringW> get_ChildNodeNames();
@@ -121,7 +121,6 @@ namespace Facebook::WitAi::Lib {
     // Offset: 0x1674620
     // Implemented from: Facebook.WitAi.Lib.WitResponseNode
     // Base method: System.Void WitResponseNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseClass* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Lib::WitResponseClass::.ctor");

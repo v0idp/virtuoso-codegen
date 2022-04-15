@@ -63,13 +63,13 @@ namespace System::Security::Cryptography {
       return *reinterpret_cast<::System::Security::Cryptography::ICryptoTransform*>(this);
     }
     // Get instance field reference: protected System.Int32 HashSizeValue
-    [[deprecated]] int& dyn_HashSizeValue();
+    [[deprecated("Use field access instead!")]] int& dyn_HashSizeValue();
     // Get instance field reference: protected internal System.Byte[] HashValue
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_HashValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_HashValue();
     // Get instance field reference: protected System.Int32 State
-    [[deprecated]] int& dyn_State();
+    [[deprecated("Use field access instead!")]] int& dyn_State();
     // Get instance field reference: private System.Boolean m_bDisposed
-    [[deprecated]] bool& dyn_m_bDisposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_bDisposed();
     // public System.Int32 get_HashSize()
     // Offset: 0x145BDDC
     int get_HashSize();

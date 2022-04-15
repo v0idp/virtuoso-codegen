@@ -80,19 +80,26 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.HybridReferenceDictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariables/System.Linq.Expressions.Interpreter.VariableScope> _variables
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariables::VariableScope*>*& dyn__variables();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariables::VariableScope*>*& dyn__variables();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariable> _closureVariables
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn__closureVariables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn__closureVariables();
     // Get instance field reference: private System.Int32 _localCount
-    [[deprecated]] int& dyn__localCount();
+    [[deprecated("Use field access instead!")]] int& dyn__localCount();
     // Get instance field reference: private System.Int32 _maxLocalCount
-    [[deprecated]] int& dyn__maxLocalCount();
+    [[deprecated("Use field access instead!")]] int& dyn__maxLocalCount();
     // public System.Int32 get_LocalCount()
     // Offset: 0xE90998
     int get_LocalCount();
     // System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariable> get_ClosureVariables()
     // Offset: 0xE90A74
     ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>* get_ClosureVariables();
+    // public System.Void .ctor()
+    // Offset: 0xE90B98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LocalVariables* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LocalVariables::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LocalVariables*, creationType>()));
+    }
     // public System.Linq.Expressions.Interpreter.LocalDefinition DefineLocal(System.Linq.Expressions.ParameterExpression variable, System.Int32 start)
     // Offset: 0xE9051C
     ::System::Linq::Expressions::Interpreter::LocalDefinition DefineLocal(::System::Linq::Expressions::ParameterExpression* variable, int start);
@@ -108,15 +115,6 @@ namespace System::Linq::Expressions::Interpreter {
     // System.Linq.Expressions.Interpreter.LocalVariable AddClosureVariable(System.Linq.Expressions.ParameterExpression variable)
     // Offset: 0xE90A7C
     ::System::Linq::Expressions::Interpreter::LocalVariable* AddClosureVariable(::System::Linq::Expressions::ParameterExpression* variable);
-    // public System.Void .ctor()
-    // Offset: 0xE90B98
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LocalVariables* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LocalVariables::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LocalVariables*, creationType>()));
-    }
   }; // System.Linq.Expressions.Interpreter.LocalVariables
   #pragma pack(pop)
   static check_size<sizeof(LocalVariables), 36 + sizeof(int)> __System_Linq_Expressions_Interpreter_LocalVariablesSizeCheck;
@@ -139,6 +137,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LocalVariables*), "get_ClosureVariables", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LocalVariables::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LocalVariables::DefineLocal
 // Il2CppName: DefineLocal
 template<>
@@ -188,7 +190,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::L
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LocalVariables*), "AddClosureVariable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{variable});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LocalVariables::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

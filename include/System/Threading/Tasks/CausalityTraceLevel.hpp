@@ -61,7 +61,7 @@ namespace System::Threading::Tasks {
     // Set static field: static public System.Threading.Tasks.CausalityTraceLevel Verbose
     static void _set_Verbose(::System::Threading::Tasks::CausalityTraceLevel value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Threading.Tasks.CausalityTraceLevel
   #pragma pack(pop)
   static check_size<sizeof(CausalityTraceLevel), 0 + sizeof(int)> __System_Threading_Tasks_CausalityTraceLevelSizeCheck;

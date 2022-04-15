@@ -270,7 +270,6 @@ namespace UnityEngine {
     // Implemented from: UnityEngine.Texture
     // Base method: System.Void Texture::.ctor()
     // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RenderTexture* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::RenderTexture::.ctor");

@@ -104,19 +104,19 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIHoldButton _deleteAllButton
-    [[deprecated]] ::VROSC::UIHoldButton*& dyn__deleteAllButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHoldButton*& dyn__deleteAllButton();
     // Get instance field reference: private VROSC.UISlideToggle _previewSampleSoundsToggle
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__previewSampleSoundsToggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__previewSampleSoundsToggle();
     // Get instance field reference: private VROSC.UISlider _previewVolumeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__previewVolumeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__previewVolumeSlider();
     // Get instance field reference: private VROSC.UIToggle _effectsPanelButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__effectsPanelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__effectsPanelButton();
     // Get instance field reference: private VROSC.DrumEffectsUI _drumEffectsUI
-    [[deprecated]] ::VROSC::DrumEffectsUI*& dyn__drumEffectsUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumEffectsUI*& dyn__drumEffectsUI();
     // Get instance field reference: private MalletSettingsPanel _malletSettingsPanel
-    [[deprecated]] ::GlobalNamespace::MalletSettingsPanel*& dyn__malletSettingsPanel();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MalletSettingsPanel*& dyn__malletSettingsPanel();
     // Get instance field reference: public System.Action OnDeleteAll
-    [[deprecated]] ::System::Action*& dyn_OnDeleteAll();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnDeleteAll();
     // private System.Void SetPreviewVolume(System.Single volume)
     // Offset: 0x8EA880
     void SetPreviewVolume(float volume);
@@ -140,11 +140,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentControlPanelUI
     // Base method: System.Void InstrumentControlPanelUI::.ctor()
     // Base method: System.Void ControlPanelUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DrumsControlPanelUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DrumsControlPanelUI::.ctor");

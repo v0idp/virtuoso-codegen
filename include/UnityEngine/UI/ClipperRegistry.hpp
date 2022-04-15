@@ -56,10 +56,17 @@ namespace UnityEngine::UI {
     // Set static field: static private UnityEngine.UI.ClipperRegistry s_Instance
     static void _set_s_Instance(::UnityEngine::UI::ClipperRegistry* value);
     // Get instance field reference: private readonly UnityEngine.UI.Collections.IndexedSet`1<UnityEngine.UI.IClipper> m_Clippers
-    [[deprecated]] ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::IClipper*>*& dyn_m_Clippers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::IClipper*>*& dyn_m_Clippers();
     // static public UnityEngine.UI.ClipperRegistry get_instance()
     // Offset: 0xEAE49C
     static ::UnityEngine::UI::ClipperRegistry* get_instance();
+    // protected System.Void .ctor()
+    // Offset: 0xEAF0CC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ClipperRegistry* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::ClipperRegistry::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ClipperRegistry*, creationType>()));
+    }
     // public System.Void Cull()
     // Offset: 0xEAE514
     void Cull();
@@ -69,15 +76,6 @@ namespace UnityEngine::UI {
     // static public System.Void Unregister(UnityEngine.UI.IClipper c)
     // Offset: 0xEAF1B4
     static void Unregister(::UnityEngine::UI::IClipper* c);
-    // protected System.Void .ctor()
-    // Offset: 0xEAF0CC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ClipperRegistry* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::ClipperRegistry::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ClipperRegistry*, creationType>()));
-    }
   }; // UnityEngine.UI.ClipperRegistry
   #pragma pack(pop)
   static check_size<sizeof(ClipperRegistry), 16 + sizeof(::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::IClipper*>*)> __UnityEngine_UI_ClipperRegistrySizeCheck;
@@ -92,6 +90,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::ClipperRegistry*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::ClipperRegistry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::ClipperRegistry::Cull
 // Il2CppName: Cull
 template<>
@@ -118,7 +120,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::ClipperRegistry*), "Unregister", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{c});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::ClipperRegistry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

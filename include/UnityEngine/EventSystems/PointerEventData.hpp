@@ -101,7 +101,7 @@ namespace UnityEngine::EventSystems {
       // Set static field: static public UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton Middle
       static void _set_Middle(::UnityEngine::EventSystems::PointerEventData::InputButton value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton
     #pragma pack(pop)
     static check_size<sizeof(PointerEventData::InputButton), 0 + sizeof(int)> __UnityEngine_EventSystems_PointerEventData_InputButtonSizeCheck;
@@ -245,49 +245,49 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::EventSystems::PointerEventData::InputButton) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.GameObject <pointerEnter>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$pointerEnter$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$pointerEnter$k__BackingField();
     // Get instance field reference: private UnityEngine.GameObject m_PointerPress
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_PointerPress();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_PointerPress();
     // Get instance field reference: private UnityEngine.GameObject <lastPress>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$lastPress$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$lastPress$k__BackingField();
     // Get instance field reference: private UnityEngine.GameObject <rawPointerPress>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$rawPointerPress$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$rawPointerPress$k__BackingField();
     // Get instance field reference: private UnityEngine.GameObject <pointerDrag>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$pointerDrag$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$pointerDrag$k__BackingField();
     // Get instance field reference: private UnityEngine.GameObject <pointerClick>k__BackingField
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_$pointerClick$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$pointerClick$k__BackingField();
     // Get instance field reference: private UnityEngine.EventSystems.RaycastResult <pointerCurrentRaycast>k__BackingField
-    [[deprecated]] ::UnityEngine::EventSystems::RaycastResult& dyn_$pointerCurrentRaycast$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::RaycastResult& dyn_$pointerCurrentRaycast$k__BackingField();
     // Get instance field reference: private UnityEngine.EventSystems.RaycastResult <pointerPressRaycast>k__BackingField
-    [[deprecated]] ::UnityEngine::EventSystems::RaycastResult& dyn_$pointerPressRaycast$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::RaycastResult& dyn_$pointerPressRaycast$k__BackingField();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> hovered
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_hovered();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_hovered();
     // Get instance field reference: private System.Boolean <eligibleForClick>k__BackingField
-    [[deprecated]] bool& dyn_$eligibleForClick$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$eligibleForClick$k__BackingField();
     // Get instance field reference: private System.Int32 <pointerId>k__BackingField
-    [[deprecated]] int& dyn_$pointerId$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$pointerId$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <position>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$position$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$position$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <delta>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$delta$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$delta$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <pressPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$pressPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$pressPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <worldPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$worldPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$worldPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <worldNormal>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$worldNormal$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$worldNormal$k__BackingField();
     // Get instance field reference: private System.Single <clickTime>k__BackingField
-    [[deprecated]] float& dyn_$clickTime$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$clickTime$k__BackingField();
     // Get instance field reference: private System.Int32 <clickCount>k__BackingField
-    [[deprecated]] int& dyn_$clickCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$clickCount$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <scrollDelta>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$scrollDelta$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$scrollDelta$k__BackingField();
     // Get instance field reference: private System.Boolean <useDragThreshold>k__BackingField
-    [[deprecated]] bool& dyn_$useDragThreshold$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$useDragThreshold$k__BackingField();
     // Get instance field reference: private System.Boolean <dragging>k__BackingField
-    [[deprecated]] bool& dyn_$dragging$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$dragging$k__BackingField();
     // Get instance field reference: private UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton <button>k__BackingField
-    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData::InputButton& dyn_$button$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::PointerEventData::InputButton& dyn_$button$k__BackingField();
     // public UnityEngine.GameObject get_pointerEnter()
     // Offset: 0x1428350
     ::UnityEngine::GameObject* get_pointerEnter();

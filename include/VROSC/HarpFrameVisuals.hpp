@@ -167,37 +167,37 @@ namespace VROSC {
     // Set static field: static private System.Int32 _FlowY
     static void _set__FlowY(int value);
     // Get instance field reference: private UnityEngine.Color _xColor
-    [[deprecated]] ::UnityEngine::Color& dyn__xColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__xColor();
     // Get instance field reference: private UnityEngine.Color _zColor
-    [[deprecated]] ::UnityEngine::Color& dyn__zColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__zColor();
     // Get instance field reference: private System.Boolean _scaleWithVelocity
-    [[deprecated]] bool& dyn__scaleWithVelocity();
+    [[deprecated("Use field access instead!")]] bool& dyn__scaleWithVelocity();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.Renderer[] _fractures
-    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn__fractures();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Renderer*>& dyn__fractures();
     // Get instance field reference: private System.Single _speed
-    [[deprecated]] float& dyn__speed();
+    [[deprecated("Use field access instead!")]] float& dyn__speed();
     // Get instance field reference: private VROSC.NoteBoardNoteController _noteBoardNoteController
-    [[deprecated]] ::VROSC::NoteBoardNoteController*& dyn__noteBoardNoteController();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNoteController*& dyn__noteBoardNoteController();
     // Get instance field reference: private UnityEngine.Color[,] _flowColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__flowColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__flowColors();
     // Get instance field reference: private System.Single _lastFlowMove
-    [[deprecated]] float& dyn__lastFlowMove();
+    [[deprecated("Use field access instead!")]] float& dyn__lastFlowMove();
     // Get instance field reference: private System.Int32 _noteCount
-    [[deprecated]] int& dyn__noteCount();
+    [[deprecated("Use field access instead!")]] int& dyn__noteCount();
     // Get instance field reference: private UnityEngine.Vector4[] _playingCached
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn__playingCached();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn__playingCached();
     // Get instance field reference: private UnityEngine.Vector4[] _flowAsVectorsCached
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn__flowAsVectorsCached();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn__flowAsVectorsCached();
     // Get instance field reference: private UnityEngine.Color[] _stringColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__stringColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__stringColors();
     // Get instance field reference: private UnityEngine.Color[] _currentFlowColors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__currentFlowColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__currentFlowColors();
     // Get instance field reference: private System.Single[] _x
-    [[deprecated]] ::ArrayW<float>& dyn__x();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__x();
     // Get instance field reference: private System.Single[] _z
-    [[deprecated]] ::ArrayW<float>& dyn__z();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__z();
     // private System.Void Awake()
     // Offset: 0x19AC050
     void Awake();
@@ -223,11 +223,6 @@ namespace VROSC {
     // Offset: 0x19AC9C8
     // Implemented from: VROSC.FrameVisuals
     // Base method: System.Void FrameVisuals::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HarpFrameVisuals* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HarpFrameVisuals::.ctor");

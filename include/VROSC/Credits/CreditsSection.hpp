@@ -77,13 +77,13 @@ namespace VROSC::Credits {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.Credits.CreditsLine _linePrefab
-    [[deprecated]] ::VROSC::Credits::CreditsLine*& dyn__linePrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsLine*& dyn__linePrefab();
     // Get instance field reference: private VROSC.Credits.CreditsHeader _headerPrefab
-    [[deprecated]] ::VROSC::Credits::CreditsHeader*& dyn__headerPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsHeader*& dyn__headerPrefab();
     // Get instance field reference: private VROSC.Credits.CreditsData _creditsData
-    [[deprecated]] ::VROSC::Credits::CreditsData*& dyn__creditsData();
+    [[deprecated("Use field access instead!")]] ::VROSC::Credits::CreditsData*& dyn__creditsData();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsObject> _objects
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>*& dyn__objects();
     // public System.Collections.Generic.List`1<VROSC.Credits.CreditsObject> get_Objects()
     // Offset: 0x8DFEB8
     ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsObject*>* get_Objects();
@@ -106,11 +106,6 @@ namespace VROSC::Credits {
     // Offset: 0x8E0504
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreditsSection* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsSection::.ctor");

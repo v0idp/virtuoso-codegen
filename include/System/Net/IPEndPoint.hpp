@@ -86,9 +86,9 @@ namespace System::Net {
     // Set static field: static System.Net.IPEndPoint IPv6Any
     static void _set_IPv6Any(::System::Net::IPEndPoint* value);
     // Get instance field reference: private System.Net.IPAddress m_Address
-    [[deprecated]] ::System::Net::IPAddress*& dyn_m_Address();
+    [[deprecated("Use field access instead!")]] ::System::Net::IPAddress*& dyn_m_Address();
     // Get instance field reference: private System.Int32 m_Port
-    [[deprecated]] int& dyn_m_Port();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Port();
     // public System.Net.IPAddress get_Address()
     // Offset: 0x10F3318
     ::System::Net::IPAddress* get_Address();

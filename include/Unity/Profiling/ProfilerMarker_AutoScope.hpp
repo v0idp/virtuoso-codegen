@@ -49,7 +49,7 @@ namespace Unity::Profiling {
       return m_Ptr;
     }
     // Get instance field reference: readonly System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // System.Void .ctor(System.IntPtr markerPtr)
     // Offset: 0x18444EC
     // ABORTED: conflicts with another method.  AutoScope(::System::IntPtr markerPtr);

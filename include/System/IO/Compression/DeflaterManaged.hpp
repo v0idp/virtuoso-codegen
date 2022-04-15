@@ -107,7 +107,7 @@ namespace System::IO::Compression {
       // Set static field: static public System.IO.Compression.DeflaterManaged/System.IO.Compression.DeflaterState HandlingSmallData
       static void _set_HandlingSmallData(::System::IO::Compression::DeflaterManaged::DeflaterState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.IO.Compression.DeflaterManaged/System.IO.Compression.DeflaterState
     #pragma pack(pop)
     static check_size<sizeof(DeflaterManaged::DeflaterState), 0 + sizeof(int)> __System_IO_Compression_DeflaterManaged_DeflaterStateSizeCheck;
@@ -153,17 +153,17 @@ namespace System::IO::Compression {
     static_assert(sizeof(::System::IO::Compression::DeflateInput*) == 0x8);
     public:
     // Get instance field reference: private readonly System.IO.Compression.FastEncoder _deflateEncoder
-    [[deprecated]] ::System::IO::Compression::FastEncoder*& dyn__deflateEncoder();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::FastEncoder*& dyn__deflateEncoder();
     // Get instance field reference: private readonly System.IO.Compression.CopyEncoder _copyEncoder
-    [[deprecated]] ::System::IO::Compression::CopyEncoder*& dyn__copyEncoder();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::CopyEncoder*& dyn__copyEncoder();
     // Get instance field reference: private readonly System.IO.Compression.DeflateInput _input
-    [[deprecated]] ::System::IO::Compression::DeflateInput*& dyn__input();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflateInput*& dyn__input();
     // Get instance field reference: private readonly System.IO.Compression.OutputBuffer _output
-    [[deprecated]] ::System::IO::Compression::OutputBuffer*& dyn__output();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::OutputBuffer*& dyn__output();
     // Get instance field reference: private System.IO.Compression.DeflaterManaged/System.IO.Compression.DeflaterState _processingState
-    [[deprecated]] ::System::IO::Compression::DeflaterManaged::DeflaterState& dyn__processingState();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflaterManaged::DeflaterState& dyn__processingState();
     // Get instance field reference: private System.IO.Compression.DeflateInput _inputFromHistory
-    [[deprecated]] ::System::IO::Compression::DeflateInput*& dyn__inputFromHistory();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflateInput*& dyn__inputFromHistory();
     // System.Boolean NeedsInput()
     // Offset: 0x1694984
     bool NeedsInput();

@@ -42,11 +42,6 @@ namespace System::ComponentModel::Design {
     static void _set_Canceled(::System::ComponentModel::Design::CheckoutException* value);
     // public System.Void .ctor()
     // Offset: 0x10E2130
-    // Implemented from: System.Runtime.InteropServices.ExternalException
-    // Base method: System.Void ExternalException::.ctor()
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CheckoutException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Design::CheckoutException::.ctor");
@@ -54,8 +49,6 @@ namespace System::ComponentModel::Design {
     }
     // public System.Void .ctor(System.String message, System.Int32 errorCode)
     // Offset: 0x10E2138
-    // Implemented from: System.Runtime.InteropServices.ExternalException
-    // Base method: System.Void ExternalException::.ctor(System.String message, System.Int32 errorCode)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CheckoutException* New_ctor(::StringW message, int errorCode) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Design::CheckoutException::.ctor");
@@ -63,10 +56,6 @@ namespace System::ComponentModel::Design {
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x10E2140
-    // Implemented from: System.Runtime.InteropServices.ExternalException
-    // Base method: System.Void ExternalException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CheckoutException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::Design::CheckoutException::.ctor");
@@ -74,8 +63,6 @@ namespace System::ComponentModel::Design {
     }
     // static private System.Void .cctor()
     // Offset: 0x10E2148
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.cctor()
     static void _cctor();
   }; // System.ComponentModel.Design.CheckoutException
   #pragma pack(pop)

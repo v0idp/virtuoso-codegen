@@ -75,7 +75,7 @@ namespace System::Runtime::CompilerServices {
     // Set static field: static private readonly System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult> s_cachedCompleted
     static void _set_s_cachedCompleted(::System::Threading::Tasks::Task_1<::System::Threading::Tasks::VoidTaskResult>* value);
     // Get instance field reference: private System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult> m_builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Threading::Tasks::VoidTaskResult>& dyn_m_builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::Threading::Tasks::VoidTaskResult>& dyn_m_builder();
     // public System.Threading.Tasks.Task get_Task()
     // Offset: 0x11476CC
     ::System::Threading::Tasks::Task* get_Task();

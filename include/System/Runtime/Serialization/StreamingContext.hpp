@@ -48,9 +48,9 @@ namespace System::Runtime::Serialization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Object m_additionalContext
-    [[deprecated]] ::Il2CppObject*& dyn_m_additionalContext();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_additionalContext();
     // Get instance field reference: System.Runtime.Serialization.StreamingContextStates m_state
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContextStates& dyn_m_state();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContextStates& dyn_m_state();
     // public System.Object get_Context()
     // Offset: 0x125B434
     ::Il2CppObject* get_Context();

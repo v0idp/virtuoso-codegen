@@ -66,13 +66,13 @@ namespace Mono::Security::X509 {
     // Set static field: static private System.Byte[] macDiversifier
     static void _set_macDiversifier(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.String _hashName
-    [[deprecated]] ::StringW& dyn__hashName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__hashName();
     // Get instance field reference: private System.Int32 _iterations
-    [[deprecated]] int& dyn__iterations();
+    [[deprecated("Use field access instead!")]] int& dyn__iterations();
     // Get instance field reference: private System.Byte[] _password
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__password();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__password();
     // Get instance field reference: private System.Byte[] _salt
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__salt();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__salt();
     // public System.Void set_HashName(System.String value)
     // Offset: 0x18E0C2C
     void set_HashName(::StringW value);
@@ -85,6 +85,13 @@ namespace Mono::Security::X509 {
     // public System.Void set_Salt(System.Byte[] value)
     // Offset: 0x18E0CD8
     void set_Salt(::ArrayW<uint8_t> value);
+    // public System.Void .ctor()
+    // Offset: 0x18E0C24
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PKCS12::DeriveBytes* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::PKCS12::DeriveBytes::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PKCS12::DeriveBytes*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x18E1418
     static void _cctor();
@@ -103,15 +110,6 @@ namespace Mono::Security::X509 {
     // public System.Byte[] DeriveMAC(System.Int32 size)
     // Offset: 0x18E139C
     ::ArrayW<uint8_t> DeriveMAC(int size);
-    // public System.Void .ctor()
-    // Offset: 0x18E0C24
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PKCS12::DeriveBytes* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::PKCS12::DeriveBytes::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PKCS12::DeriveBytes*, creationType>()));
-    }
   }; // Mono.Security.X509.PKCS12/Mono.Security.X509.DeriveBytes
   #pragma pack(pop)
   static check_size<sizeof(PKCS12::DeriveBytes), 40 + sizeof(::ArrayW<uint8_t>)> __Mono_Security_X509_PKCS12_DeriveBytesSizeCheck;
@@ -154,6 +152,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Mono:
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::X509::PKCS12::DeriveBytes*), "set_Salt", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Mono::Security::X509::PKCS12::DeriveBytes::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::X509::PKCS12::DeriveBytes::_cctor
 // Il2CppName: .cctor
 template<>
@@ -210,7 +212,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::X509::PKCS12::DeriveBytes*), "DeriveMAC", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{size});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::X509::PKCS12::DeriveBytes::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

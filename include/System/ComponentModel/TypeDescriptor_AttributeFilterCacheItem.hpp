@@ -51,9 +51,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::System::Collections::ICollection*) == 0x8);
     public:
     // Get instance field reference: private System.Attribute[] _filter
-    [[deprecated]] ::ArrayW<::System::Attribute*>& dyn__filter();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Attribute*>& dyn__filter();
     // Get instance field reference: System.Collections.ICollection FilteredMembers
-    [[deprecated]] ::System::Collections::ICollection*& dyn_FilteredMembers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ICollection*& dyn_FilteredMembers();
     // System.Void .ctor(System.Attribute[] filter, System.Collections.ICollection filteredMembers)
     // Offset: 0xA02668
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -77,19 +77,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.TriggerSync StartMode
-    [[deprecated]] ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StartMode();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StartMode();
     // Get instance field reference: public System.Boolean IsStartModeLocked
-    [[deprecated]] bool& dyn_IsStartModeLocked();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsStartModeLocked();
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.TriggerSync StopMode
-    [[deprecated]] ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StopMode();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig::TriggerSync& dyn_StopMode();
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.FadeDuration FadeIn
-    [[deprecated]] ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeIn();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeIn();
     // Get instance field reference: public VROSC.LoopPlaybackConfig/VROSC.FadeDuration FadeOut
-    [[deprecated]] ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeOut();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig::FadeDuration& dyn_FadeOut();
     // Get instance field reference: public System.Boolean OneShot
-    [[deprecated]] bool& dyn_OneShot();
+    [[deprecated("Use field access instead!")]] bool& dyn_OneShot();
     // Get instance field reference: public System.Boolean Retrigger
-    [[deprecated]] bool& dyn_Retrigger();
+    [[deprecated("Use field access instead!")]] bool& dyn_Retrigger();
     // public VROSC.LoopPlaybackConfig/VROSC.Sync get_SyncMode()
     // Offset: 0x19B6FA4
     ::VROSC::LoopPlaybackConfig::Sync get_SyncMode();
@@ -101,8 +101,6 @@ namespace VROSC {
     bool get_RetriggeringOneshot();
     // public System.Void .ctor()
     // Offset: 0x19B5D80
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlaybackConfigData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlaybackConfigData::.ctor");

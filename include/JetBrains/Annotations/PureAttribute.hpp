@@ -31,9 +31,6 @@ namespace JetBrains::Annotations {
     public:
     // public System.Void .ctor()
     // Offset: 0xBC80B4
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PureAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::JetBrains::Annotations::PureAttribute::.ctor");

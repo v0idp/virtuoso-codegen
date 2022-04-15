@@ -39,9 +39,6 @@ namespace System::Data::SqlTypes {
     // Offset: 0x13DCDB8
     // Implemented from: System.Data.SqlTypes.SqlTypeException
     // Base method: System.Void SqlTypeException::.ctor()
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SqlTruncateException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlTruncateException::.ctor");
@@ -51,8 +48,6 @@ namespace System::Data::SqlTypes {
     // Offset: 0x13DCDFC
     // Implemented from: System.Data.SqlTypes.SqlTypeException
     // Base method: System.Void SqlTypeException::.ctor(System.String message, System.Exception e)
-    // Base method: System.Void SystemException::.ctor(System.String message, System.Exception e)
-    // Base method: System.Void Exception::.ctor(System.String message, System.Exception e)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SqlTruncateException* New_ctor(::StringW message, ::System::Exception* e) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::SqlTypes::SqlTruncateException::.ctor");

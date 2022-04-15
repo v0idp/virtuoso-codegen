@@ -105,7 +105,7 @@ namespace GlobalNamespace {
     // Set static field: static public ONSPPropagation/ovrAudioScalarType Float64
     static void _set_Float64(::GlobalNamespace::ONSPPropagation::ovrAudioScalarType value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // ONSPPropagation/ovrAudioScalarType
   #pragma pack(pop)
   static check_size<sizeof(ONSPPropagation::ovrAudioScalarType), 0 + sizeof(uint)> __GlobalNamespace_ONSPPropagation_ovrAudioScalarTypeSizeCheck;

@@ -105,17 +105,17 @@ namespace System::Net {
       return *reinterpret_cast<::System::Net::ICloseEx*>(this);
     }
     // Get instance field reference: private System.Boolean m_closed
-    [[deprecated]] bool& dyn_m_closed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_closed();
     // Get instance field reference: private System.Int64 m_contentLength
-    [[deprecated]] int64_t& dyn_m_contentLength();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_contentLength();
     // Get instance field reference: private System.IO.FileAccess m_fileAccess
-    [[deprecated]] ::System::IO::FileAccess& dyn_m_fileAccess();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileAccess& dyn_m_fileAccess();
     // Get instance field reference: private System.Net.WebHeaderCollection m_headers
-    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_m_headers();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollection*& dyn_m_headers();
     // Get instance field reference: private System.IO.Stream m_stream
-    [[deprecated]] ::System::IO::Stream*& dyn_m_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_m_stream();
     // Get instance field reference: private System.Uri m_uri
-    [[deprecated]] ::System::Uri*& dyn_m_uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_m_uri();
     // System.Void .ctor(System.Net.FileWebRequest request, System.Uri uri, System.IO.FileAccess access, System.Boolean asyncHint)
     // Offset: 0xF0280C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

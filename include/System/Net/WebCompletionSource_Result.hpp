@@ -49,9 +49,9 @@ namespace System::Net {
     static_assert(sizeof(::System::Runtime::ExceptionServices::ExceptionDispatchInfo*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Net.WebCompletionSource/System.Net.State <State>k__BackingField
-    [[deprecated]] ::System::Net::WebCompletionSource::State& dyn_$State$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebCompletionSource::State& dyn_$State$k__BackingField();
     // Get instance field reference: private readonly System.Runtime.ExceptionServices.ExceptionDispatchInfo <Error>k__BackingField
-    [[deprecated]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::ExceptionServices::ExceptionDispatchInfo*& dyn_$Error$k__BackingField();
     // public System.Net.WebCompletionSource/System.Net.State get_State()
     // Offset: 0xA058E8
     ::System::Net::WebCompletionSource::State get_State();

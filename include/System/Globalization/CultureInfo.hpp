@@ -301,59 +301,59 @@ namespace System::Globalization {
     // Set static field: static readonly System.Boolean IsTaiwanSku
     static void _set_IsTaiwanSku(bool value);
     // Get instance field reference: private System.Boolean m_isReadOnly
-    [[deprecated]] bool& dyn_m_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isReadOnly();
     // Get instance field reference: private System.Int32 cultureID
-    [[deprecated]] int& dyn_cultureID();
+    [[deprecated("Use field access instead!")]] int& dyn_cultureID();
     // Get instance field reference: private System.Int32 parent_lcid
-    [[deprecated]] int& dyn_parent_lcid();
+    [[deprecated("Use field access instead!")]] int& dyn_parent_lcid();
     // Get instance field reference: private System.Int32 datetime_index
-    [[deprecated]] int& dyn_datetime_index();
+    [[deprecated("Use field access instead!")]] int& dyn_datetime_index();
     // Get instance field reference: private System.Int32 number_index
-    [[deprecated]] int& dyn_number_index();
+    [[deprecated("Use field access instead!")]] int& dyn_number_index();
     // Get instance field reference: private System.Int32 default_calendar_type
-    [[deprecated]] int& dyn_default_calendar_type();
+    [[deprecated("Use field access instead!")]] int& dyn_default_calendar_type();
     // Get instance field reference: private System.Boolean m_useUserOverride
-    [[deprecated]] bool& dyn_m_useUserOverride();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_useUserOverride();
     // Get instance field reference: System.Globalization.NumberFormatInfo numInfo
-    [[deprecated]] ::System::Globalization::NumberFormatInfo*& dyn_numInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::NumberFormatInfo*& dyn_numInfo();
     // Get instance field reference: System.Globalization.DateTimeFormatInfo dateTimeInfo
-    [[deprecated]] ::System::Globalization::DateTimeFormatInfo*& dyn_dateTimeInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::DateTimeFormatInfo*& dyn_dateTimeInfo();
     // Get instance field reference: private System.Globalization.TextInfo textInfo
-    [[deprecated]] ::System::Globalization::TextInfo*& dyn_textInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::TextInfo*& dyn_textInfo();
     // Get instance field reference: System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private System.String englishname
-    [[deprecated]] ::StringW& dyn_englishname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_englishname();
     // Get instance field reference: private System.String nativename
-    [[deprecated]] ::StringW& dyn_nativename();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nativename();
     // Get instance field reference: private System.String iso3lang
-    [[deprecated]] ::StringW& dyn_iso3lang();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_iso3lang();
     // Get instance field reference: private System.String iso2lang
-    [[deprecated]] ::StringW& dyn_iso2lang();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_iso2lang();
     // Get instance field reference: private System.String win3lang
-    [[deprecated]] ::StringW& dyn_win3lang();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_win3lang();
     // Get instance field reference: private System.String territory
-    [[deprecated]] ::StringW& dyn_territory();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_territory();
     // Get instance field reference: private System.String[] native_calendar_names
-    [[deprecated]] ::ArrayW<::StringW>& dyn_native_calendar_names();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_native_calendar_names();
     // Get instance field reference: private System.Globalization.CompareInfo compareInfo
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn_compareInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn_compareInfo();
     // Get instance field reference: private readonly System.Void* textinfo_data
-    [[deprecated]] void*& dyn_textinfo_data();
+    [[deprecated("Use field access instead!")]] void*& dyn_textinfo_data();
     // Get instance field reference: private System.Int32 m_dataItem
-    [[deprecated]] int& dyn_m_dataItem();
+    [[deprecated("Use field access instead!")]] int& dyn_m_dataItem();
     // Get instance field reference: private System.Globalization.Calendar calendar
-    [[deprecated]] ::System::Globalization::Calendar*& dyn_calendar();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::Calendar*& dyn_calendar();
     // Get instance field reference: private System.Globalization.CultureInfo parent_culture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_parent_culture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_parent_culture();
     // Get instance field reference: private System.Boolean constructed
-    [[deprecated]] bool& dyn_constructed();
+    [[deprecated("Use field access instead!")]] bool& dyn_constructed();
     // Get instance field reference: System.Byte[] cached_serialized_form
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_cached_serialized_form();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_cached_serialized_form();
     // Get instance field reference: System.Globalization.CultureData m_cultureData
-    [[deprecated]] ::System::Globalization::CultureData*& dyn_m_cultureData();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureData*& dyn_m_cultureData();
     // Get instance field reference: System.Boolean m_isInherited
-    [[deprecated]] bool& dyn_m_isInherited();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isInherited();
     // static public System.Globalization.CultureInfo get_InvariantCulture()
     // Offset: 0x13F3FE0
     static ::System::Globalization::CultureInfo* get_InvariantCulture();

@@ -48,18 +48,16 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x19578C4
     static void _cctor();
-    // System.Int32 <ArrangeGroups>b__9_0(VROSC.LoopStationGroup i)
-    // Offset: 0x195792C
-    int $ArrangeGroups$b__9_0(::VROSC::LoopStationGroup* i);
     // public System.Void .ctor()
     // Offset: 0x1957924
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GroupArranger::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GroupArranger::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GroupArranger::$$c*, creationType>()));
     }
+    // System.Int32 <ArrangeGroups>b__9_0(VROSC.LoopStationGroup i)
+    // Offset: 0x195792C
+    int $ArrangeGroups$b__9_0(::VROSC::LoopStationGroup* i);
   }; // VROSC.GroupArranger/VROSC.<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::GroupArranger::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::GroupArranger::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::GroupArranger::$$c::$ArrangeGroups$b__9_0
 // Il2CppName: <ArrangeGroups>b__9_0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC:
     return ::il2cpp_utils::FindMethod(classof(VROSC::GroupArranger::$$c*), "<ArrangeGroups>b__9_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{i});
   }
 };
-// Writing MetadataGetter for method: VROSC::GroupArranger::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

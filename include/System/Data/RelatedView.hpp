@@ -80,13 +80,13 @@ namespace System::Data {
       return *reinterpret_cast<::System::Data::IFilter*>(this);
     }
     // Get instance field reference: private readonly System.Nullable`1<System.Data.DataKey> _parentKey
-    [[deprecated]] ::System::Nullable_1<::System::Data::DataKey>& dyn__parentKey();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::System::Data::DataKey>& dyn__parentKey();
     // Get instance field reference: private readonly System.Data.DataKey _childKey
-    [[deprecated]] ::System::Data::DataKey& dyn__childKey();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataKey& dyn__childKey();
     // Get instance field reference: private readonly System.Data.DataRowView _parentRowView
-    [[deprecated]] ::System::Data::DataRowView*& dyn__parentRowView();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowView*& dyn__parentRowView();
     // Get instance field reference: private readonly System.Object[] _filterValues
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__filterValues();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__filterValues();
     // public System.Void .ctor(System.Data.DataColumn[] columns, System.Object[] values)
     // Offset: 0x1219844
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

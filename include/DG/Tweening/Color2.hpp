@@ -46,9 +46,9 @@ namespace DG::Tweening {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Color ca
-    [[deprecated]] ::UnityEngine::Color& dyn_ca();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_ca();
     // Get instance field reference: public UnityEngine.Color cb
-    [[deprecated]] ::UnityEngine::Color& dyn_cb();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_cb();
     // public System.Void .ctor(UnityEngine.Color ca, UnityEngine.Color cb)
     // Offset: 0x15D3F48
     // ABORTED: conflicts with another method.  Color2(::UnityEngine::Color ca, ::UnityEngine::Color cb);

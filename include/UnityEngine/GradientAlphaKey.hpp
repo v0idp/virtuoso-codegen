@@ -45,9 +45,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single alpha
-    [[deprecated]] float& dyn_alpha();
+    [[deprecated("Use field access instead!")]] float& dyn_alpha();
     // Get instance field reference: public System.Single time
-    [[deprecated]] float& dyn_time();
+    [[deprecated("Use field access instead!")]] float& dyn_time();
     // public System.Void .ctor(System.Single alpha, System.Single time)
     // Offset: 0x11289F0
     // ABORTED: conflicts with another method.  GradientAlphaKey(float alpha, float time);

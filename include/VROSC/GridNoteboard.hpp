@@ -47,7 +47,7 @@ namespace VROSC {
     static_assert(sizeof(::ArrayW<::VROSC::NoteBoardNote*>) == 0x8);
     public:
     // Get instance field reference: private VROSC.NoteBoardNote[,,] <NoteBoardNotes>k__BackingField
-    [[deprecated]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$NoteBoardNotes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::NoteBoardNote*>& dyn_$NoteBoardNotes$k__BackingField();
     // public VROSC.NoteBoardNote[,,] get_NoteBoardNotes()
     // Offset: 0x19A7A10
     ::ArrayW<::VROSC::NoteBoardNote*> get_NoteBoardNotes();
@@ -61,11 +61,6 @@ namespace VROSC {
     // Offset: 0x19A7FBC
     // Implemented from: VROSC.NoteBoardNoteController
     // Base method: System.Void NoteBoardNoteController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GridNoteboard* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::GridNoteboard::.ctor");

@@ -51,32 +51,30 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private BeautifyEffect.Beautify _beautify
-    [[deprecated]] ::BeautifyEffect::Beautify*& dyn__beautify();
+    [[deprecated("Use field access instead!")]] ::BeautifyEffect::Beautify*& dyn__beautify();
+    // public System.Void .ctor()
+    // Offset: 0x19248C8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SetCameraSettingsOnEnvironmentSwitch* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetCameraSettingsOnEnvironmentSwitch::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SetCameraSettingsOnEnvironmentSwitch*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x19247D8
     void Awake();
     // private System.Void NewEnvironmentSet(VROSC.Environment settings)
     // Offset: 0x19248C4
     void NewEnvironmentSet(::VROSC::Environment* settings);
-    // public System.Void .ctor()
-    // Offset: 0x19248C8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SetCameraSettingsOnEnvironmentSwitch* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetCameraSettingsOnEnvironmentSwitch::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SetCameraSettingsOnEnvironmentSwitch*, creationType>()));
-    }
   }; // VROSC.SetCameraSettingsOnEnvironmentSwitch
   #pragma pack(pop)
   static check_size<sizeof(SetCameraSettingsOnEnvironmentSwitch), 24 + sizeof(::BeautifyEffect::Beautify*)> __VROSC_SetCameraSettingsOnEnvironmentSwitchSizeCheck;
   static_assert(sizeof(SetCameraSettingsOnEnvironmentSwitch) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SetCameraSettingsOnEnvironmentSwitch::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SetCameraSettingsOnEnvironmentSwitch::Awake
 // Il2CppName: Awake
 template<>
@@ -94,7 +92,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SetCameraSettingsOnEnvironmentSwitch*), "NewEnvironmentSet", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{settings});
   }
 };
-// Writing MetadataGetter for method: VROSC::SetCameraSettingsOnEnvironmentSwitch::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

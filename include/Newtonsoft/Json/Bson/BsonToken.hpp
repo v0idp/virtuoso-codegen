@@ -46,7 +46,7 @@ namespace Newtonsoft::Json::Bson {
       return Parent;
     }
     // Get instance field reference: private Newtonsoft.Json.Bson.BsonToken <Parent>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Bson::BsonToken*& dyn_$Parent$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Bson::BsonToken*& dyn_$Parent$k__BackingField();
     // public Newtonsoft.Json.Bson.BsonType get_Type()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::Newtonsoft::Json::Bson::BsonType get_Type();
@@ -55,8 +55,6 @@ namespace Newtonsoft::Json::Bson {
     void set_Parent(::Newtonsoft::Json::Bson::BsonToken* value);
     // protected System.Void .ctor()
     // Offset: 0xDB834C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BsonToken* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Bson::BsonToken::.ctor");

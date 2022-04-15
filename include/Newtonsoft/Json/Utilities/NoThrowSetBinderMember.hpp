@@ -48,7 +48,7 @@ namespace Newtonsoft::Json::Utilities {
     static_assert(sizeof(::System::Dynamic::SetMemberBinder*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Dynamic.SetMemberBinder _innerBinder
-    [[deprecated]] ::System::Dynamic::SetMemberBinder*& dyn__innerBinder();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::SetMemberBinder*& dyn__innerBinder();
     // public System.Void .ctor(System.Dynamic.SetMemberBinder innerBinder)
     // Offset: 0x1348828
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

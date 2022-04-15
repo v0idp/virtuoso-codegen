@@ -61,15 +61,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.UInt64 AssetFileId
-    [[deprecated]] uint64_t& dyn_AssetFileId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_AssetFileId();
     // Get instance field reference: public readonly System.UInt64 AssetId
-    [[deprecated]] uint64_t& dyn_AssetId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_AssetId();
     // Get instance field reference: public readonly System.UInt64 BytesTotal
-    [[deprecated]] uint64_t& dyn_BytesTotal();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_BytesTotal();
     // Get instance field reference: public readonly System.Int64 BytesTransferred
-    [[deprecated]] int64_t& dyn_BytesTransferred();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_BytesTransferred();
     // Get instance field reference: public readonly System.Boolean Completed
-    [[deprecated]] bool& dyn_Completed();
+    [[deprecated("Use field access instead!")]] bool& dyn_Completed();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x8FC45C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

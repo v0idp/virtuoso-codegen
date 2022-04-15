@@ -48,9 +48,9 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector2 min
-    [[deprecated]] ::UnityEngine::Vector2& dyn_min();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_min();
     // Get instance field reference: public UnityEngine.Vector2 max
-    [[deprecated]] ::UnityEngine::Vector2& dyn_max();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_max();
     // public System.Void .ctor(UnityEngine.Vector2 min, UnityEngine.Vector2 max)
     // Offset: 0xC2B564
     // ABORTED: conflicts with another method.  Mesh_Extents(::UnityEngine::Vector2 min, ::UnityEngine::Vector2 max);

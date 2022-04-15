@@ -125,31 +125,38 @@ namespace UnityEngine::UI {
     // Set static field: static private readonly UnityEngine.Vector3 s_DefaultNormal
     static void _set_s_DefaultNormal(::UnityEngine::Vector3 value);
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> m_Positions
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Positions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Positions();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Color32> m_Colors
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Color32>*& dyn_m_Colors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Color32>*& dyn_m_Colors();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv0S
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv0S();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv0S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv1S
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv1S();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv1S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv2S
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv2S();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv2S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Uv3S
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv3S();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Uv3S();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> m_Normals
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Normals();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_Normals();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector4> m_Tangents
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Tangents();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector4>*& dyn_m_Tangents();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> m_Indices
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_m_Indices();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn_m_Indices();
     // Get instance field reference: private System.Boolean m_ListsInitalized
-    [[deprecated]] bool& dyn_m_ListsInitalized();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ListsInitalized();
     // public System.Int32 get_currentVertCount()
     // Offset: 0x16D6E5C
     int get_currentVertCount();
     // public System.Int32 get_currentIndexCount()
     // Offset: 0x16D6EAC
     int get_currentIndexCount();
+    // public System.Void .ctor()
+    // Offset: 0x16D6888
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VertexHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::VertexHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VertexHelper*, creationType>()));
+    }
     // public System.Void .ctor(UnityEngine.Mesh m)
     // Offset: 0x16D6890
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -205,15 +212,6 @@ namespace UnityEngine::UI {
     // public System.Void GetUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex> stream)
     // Offset: 0x16D7A10
     void GetUIVertexStream(::System::Collections::Generic::List_1<::UnityEngine::UIVertex>* stream);
-    // public System.Void .ctor()
-    // Offset: 0x16D6888
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VertexHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::VertexHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VertexHelper*, creationType>()));
-    }
   }; // UnityEngine.UI.VertexHelper
   #pragma pack(pop)
   static check_size<sizeof(VertexHelper), 88 + sizeof(bool)> __UnityEngine_UI_VertexHelperSizeCheck;
@@ -236,6 +234,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::VertexHelper*), "get_currentIndexCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::VertexHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::VertexHelper::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -399,7 +401,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::VertexHelper*), "GetUIVertexStream", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stream});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::VertexHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

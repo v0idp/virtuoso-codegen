@@ -46,9 +46,9 @@ namespace Mono::Security::Interface {
     static_assert(sizeof(::Mono::Security::Interface::AlertDescription) == 0x1);
     public:
     // Get instance field reference: private Mono.Security.Interface.AlertLevel level
-    [[deprecated]] ::Mono::Security::Interface::AlertLevel& dyn_level();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::AlertLevel& dyn_level();
     // Get instance field reference: private Mono.Security.Interface.AlertDescription description
-    [[deprecated]] ::Mono::Security::Interface::AlertDescription& dyn_description();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::AlertDescription& dyn_description();
     // public Mono.Security.Interface.AlertLevel get_Level()
     // Offset: 0x1634B3C
     ::Mono::Security::Interface::AlertLevel get_Level();

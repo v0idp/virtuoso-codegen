@@ -46,9 +46,9 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 _minChannel
-    [[deprecated]] int& dyn__minChannel();
+    [[deprecated("Use field access instead!")]] int& dyn__minChannel();
     // Get instance field reference: private System.Int32 _maxChannel
-    [[deprecated]] int& dyn__maxChannel();
+    [[deprecated("Use field access instead!")]] int& dyn__maxChannel();
     // public System.Int32 get_MinChannel()
     // Offset: 0xAC89DC
     int get_MinChannel();
@@ -57,10 +57,6 @@ namespace VROSC {
     int get_MaxChannel();
     // public System.Void .ctor()
     // Offset: 0xAC89EC
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MidiSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MidiSettings::.ctor");

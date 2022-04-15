@@ -51,7 +51,7 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.ToolboxItemAttribute None
     static void _set_None(::System::ComponentModel::ToolboxItemAttribute* value);
     // Get instance field reference: private System.String toolboxItemTypeName
-    [[deprecated]] ::StringW& dyn_toolboxItemTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_toolboxItemTypeName();
     // public System.String get_ToolboxItemTypeName()
     // Offset: 0xDA9B3C
     ::StringW get_ToolboxItemTypeName();

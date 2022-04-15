@@ -67,15 +67,15 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebOperation <>4__this
-    [[deprecated]] ::System::Net::WebOperation*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebOperation*& dyn_$$4__this();
     // Get instance field reference: public System.Boolean ignoreErrors
-    [[deprecated]] bool& dyn_ignoreErrors();
+    [[deprecated("Use field access instead!")]] bool& dyn_ignoreErrors();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.ValueTuple`2<System.Boolean,System.Net.WebOperation>> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::ValueTuple_2<bool, ::System::Net::WebOperation*>>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xA08FF4
     void MoveNext();

@@ -71,15 +71,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TransformDataController*) == 0x8);
     public:
     // Get instance field reference: public System.Boolean IsGroup
-    [[deprecated]] bool& dyn_IsGroup();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsGroup();
     // Get instance field reference: public System.String ID
-    [[deprecated]] ::StringW& dyn_ID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ID();
     // Get instance field reference: public System.String TargetID
-    [[deprecated]] ::StringW& dyn_TargetID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TargetID();
     // Get instance field reference: private VROSC.TransformDataModel TransformData
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn_TransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn_TransformData();
     // Get instance field reference: private VROSC.TransformDataController _transformController
-    [[deprecated]] ::VROSC::TransformDataController*& dyn__transformController();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataController*& dyn__transformController();
     // public VROSC.TransformDataController get_TransformController()
     // Offset: 0x196E2B4
     ::VROSC::TransformDataController* get_TransformController();

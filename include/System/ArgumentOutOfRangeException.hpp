@@ -52,7 +52,7 @@ namespace System {
     // Set static field: static private System.String _rangeMessage
     static void _set__rangeMessage(::StringW value);
     // Get instance field reference: private System.Object m_actualValue
-    [[deprecated]] ::Il2CppObject*& dyn_m_actualValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_actualValue();
     // static private System.String get_RangeMessage()
     // Offset: 0x113DF60
     static ::StringW get_RangeMessage();

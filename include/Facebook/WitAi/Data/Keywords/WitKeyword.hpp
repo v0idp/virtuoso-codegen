@@ -43,13 +43,11 @@ namespace Facebook::WitAi::Data::Keywords {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: public System.String keyword
-    [[deprecated]] ::StringW& dyn_keyword();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_keyword();
     // Get instance field reference: public System.String[] synonyms
-    [[deprecated]] ::ArrayW<::StringW>& dyn_synonyms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_synonyms();
     // public System.Void .ctor()
     // Offset: 0x1675420
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitKeyword* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::Keywords::WitKeyword::.ctor");

@@ -67,36 +67,38 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Boolean isCloud
-    [[deprecated]] bool& dyn_isCloud();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCloud();
     // Get instance field reference: public System.Boolean isCommunity
-    [[deprecated]] bool& dyn_isCommunity();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCommunity();
     // Get instance field reference: public VROSC.SaveLoadManager <>4__this
-    [[deprecated]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::SaveLoadManager*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    [[deprecated]] ::StringW& dyn_sessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Boolean hasPreview
-    [[deprecated]] bool& dyn_hasPreview();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasPreview();
+    // public System.Void .ctor()
+    // Offset: 0x8D097C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SaveLoadManager::$$c__DisplayClass26_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveLoadManager::$$c__DisplayClass26_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SaveLoadManager::$$c__DisplayClass26_0*, creationType>()));
+    }
     // System.Void <SaveSession>b__0()
     // Offset: 0x8D0984
     void $SaveSession$b__0();
     // System.Void <SaveSession>b__1(VROSC.Error error)
     // Offset: 0x8D0CBC
     void $SaveSession$b__1(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x8D097C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SaveLoadManager::$$c__DisplayClass26_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SaveLoadManager::$$c__DisplayClass26_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SaveLoadManager::$$c__DisplayClass26_0*, creationType>()));
-    }
   }; // VROSC.SaveLoadManager/VROSC.<>c__DisplayClass26_0
   #pragma pack(pop)
   static check_size<sizeof(SaveLoadManager::$$c__DisplayClass26_0), 40 + sizeof(bool)> __VROSC_SaveLoadManager_$$c__DisplayClass26_0SizeCheck;
   static_assert(sizeof(SaveLoadManager::$$c__DisplayClass26_0) == 0x29);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass26_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass26_0::$SaveSession$b__0
 // Il2CppName: <SaveSession>b__0
 template<>
@@ -114,7 +116,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SaveLoadManager::$$c__DisplayClass26_0*), "<SaveSession>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::SaveLoadManager::$$c__DisplayClass26_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

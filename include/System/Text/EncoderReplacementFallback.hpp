@@ -49,7 +49,7 @@ namespace System::Text {
     // Deleting conversion operator: operator bool
     constexpr operator bool() const noexcept = delete;
     // Get instance field reference: private System.String strDefault
-    [[deprecated]] ::StringW& dyn_strDefault();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_strDefault();
     // public System.String get_DefaultString()
     // Offset: 0x12A407C
     ::StringW get_DefaultString();

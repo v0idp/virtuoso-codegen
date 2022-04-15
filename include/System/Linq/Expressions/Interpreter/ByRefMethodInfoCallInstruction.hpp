@@ -58,7 +58,7 @@ namespace System::Linq::Expressions::Interpreter {
       return byrefArgs;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.ByRefUpdater[] _byrefArgs
-    [[deprecated]] ::ArrayW<::System::Linq::Expressions::Interpreter::ByRefUpdater*>& dyn__byrefArgs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Linq::Expressions::Interpreter::ByRefUpdater*>& dyn__byrefArgs();
     // System.Void .ctor(System.Reflection.MethodInfo target, System.Int32 argumentCount, System.Linq.Expressions.Interpreter.ByRefUpdater[] byrefArgs)
     // Offset: 0x11F5DEC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

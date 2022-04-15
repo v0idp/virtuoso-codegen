@@ -50,9 +50,9 @@ namespace System::Xml::Linq {
     static_assert(sizeof(::System::EventHandler_1<::System::Xml::Linq::XObjectChangeEventArgs*>*) == 0x8);
     public:
     // Get instance field reference: System.EventHandler`1<System.Xml.Linq.XObjectChangeEventArgs> changing
-    [[deprecated]] ::System::EventHandler_1<::System::Xml::Linq::XObjectChangeEventArgs*>*& dyn_changing();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Xml::Linq::XObjectChangeEventArgs*>*& dyn_changing();
     // Get instance field reference: System.EventHandler`1<System.Xml.Linq.XObjectChangeEventArgs> changed
-    [[deprecated]] ::System::EventHandler_1<::System::Xml::Linq::XObjectChangeEventArgs*>*& dyn_changed();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Xml::Linq::XObjectChangeEventArgs*>*& dyn_changed();
   }; // System.Xml.Linq.XObjectChangeAnnotation
   #pragma pack(pop)
   static check_size<sizeof(XObjectChangeAnnotation), 24 + sizeof(::System::EventHandler_1<::System::Xml::Linq::XObjectChangeEventArgs*>*)> __System_Xml_Linq_XObjectChangeAnnotationSizeCheck;

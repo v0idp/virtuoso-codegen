@@ -80,19 +80,19 @@ namespace System::Text {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Char* charStart
-    [[deprecated]] ::Il2CppChar*& dyn_charStart();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_charStart();
     // Get instance field reference: System.Char* charEnd
-    [[deprecated]] ::Il2CppChar*& dyn_charEnd();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_charEnd();
     // Get instance field reference: System.Text.EncoderNLS encoder
-    [[deprecated]] ::System::Text::EncoderNLS*& dyn_encoder();
+    [[deprecated("Use field access instead!")]] ::System::Text::EncoderNLS*& dyn_encoder();
     // Get instance field reference: System.Boolean setEncoder
-    [[deprecated]] bool& dyn_setEncoder();
+    [[deprecated("Use field access instead!")]] bool& dyn_setEncoder();
     // Get instance field reference: System.Boolean bUsedEncoder
-    [[deprecated]] bool& dyn_bUsedEncoder();
+    [[deprecated("Use field access instead!")]] bool& dyn_bUsedEncoder();
     // Get instance field reference: System.Boolean bFallingBack
-    [[deprecated]] bool& dyn_bFallingBack();
+    [[deprecated("Use field access instead!")]] bool& dyn_bFallingBack();
     // Get instance field reference: System.Int32 iRecursionCount
-    [[deprecated]] int& dyn_iRecursionCount();
+    [[deprecated("Use field access instead!")]] int& dyn_iRecursionCount();
     // public System.Int32 get_Remaining()
     // Offset: 0xFFFFFFFFFFFFFFFF
     int get_Remaining();

@@ -139,13 +139,13 @@ namespace System::Dynamic {
     // Set static field: static readonly System.Object Uninitialized
     static void _set_Uninitialized(::Il2CppObject* value);
     // Get instance field reference: readonly System.Object LockObject
-    [[deprecated]] ::Il2CppObject*& dyn_LockObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_LockObject();
     // Get instance field reference: private System.Dynamic.ExpandoObject/System.Dynamic.ExpandoData _data
-    [[deprecated]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::ExpandoObject::ExpandoData*& dyn__data();
     // Get instance field reference: private System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // Get instance field reference: private System.ComponentModel.PropertyChangedEventHandler _propertyChanged
-    [[deprecated]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn__propertyChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn__propertyChanged();
     // System.Dynamic.ExpandoClass get_Class()
     // Offset: 0x15B6DE0
     ::System::Dynamic::ExpandoClass* get_Class();
@@ -164,6 +164,13 @@ namespace System::Dynamic {
     // private System.Boolean System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_IsReadOnly()
     // Offset: 0x15B7288
     bool System_Collections_Generic_ICollection$System_Collections_Generic_KeyValuePair$System_String_System_Object$$_get_IsReadOnly();
+    // public System.Void .ctor()
+    // Offset: 0x15B6468
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ExpandoObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::ExpandoObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ExpandoObject*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x15B7AC8
     static void _cctor();
@@ -227,15 +234,6 @@ namespace System::Dynamic {
     // private System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>> GetExpandoEnumerator(System.Dynamic.ExpandoObject/System.Dynamic.ExpandoData data, System.Int32 version)
     // Offset: 0x15B7A28
     ::System::Collections::Generic::IEnumerator_1<::System::Collections::Generic::KeyValuePair_2<::StringW, ::Il2CppObject*>>* GetExpandoEnumerator(::System::Dynamic::ExpandoObject::ExpandoData* data, int version);
-    // public System.Void .ctor()
-    // Offset: 0x15B6468
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ExpandoObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::ExpandoObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ExpandoObject*, creationType>()));
-    }
   }; // System.Dynamic.ExpandoObject
   #pragma pack(pop)
   static check_size<sizeof(ExpandoObject), 40 + sizeof(::System::ComponentModel::PropertyChangedEventHandler*)> __System_Dynamic_ExpandoObjectSizeCheck;
@@ -293,6 +291,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Dynamic::ExpandoObject*), "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_IsReadOnly", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Dynamic::ExpandoObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Dynamic::ExpandoObject::_cctor
 // Il2CppName: .cctor
 template<>
@@ -499,7 +501,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Dynamic::ExpandoObject*), "GetExpandoEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data, version});
   }
 };
-// Writing MetadataGetter for method: System::Dynamic::ExpandoObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

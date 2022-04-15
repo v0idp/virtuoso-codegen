@@ -77,17 +77,17 @@ namespace System::Security::Cryptography {
     static_assert(sizeof(::System::Security::Cryptography::DESTransform*) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.DESTransform E1
-    [[deprecated]] ::System::Security::Cryptography::DESTransform*& dyn_E1();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::DESTransform*& dyn_E1();
     // Get instance field reference: private System.Security.Cryptography.DESTransform D2
-    [[deprecated]] ::System::Security::Cryptography::DESTransform*& dyn_D2();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::DESTransform*& dyn_D2();
     // Get instance field reference: private System.Security.Cryptography.DESTransform E3
-    [[deprecated]] ::System::Security::Cryptography::DESTransform*& dyn_E3();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::DESTransform*& dyn_E3();
     // Get instance field reference: private System.Security.Cryptography.DESTransform D1
-    [[deprecated]] ::System::Security::Cryptography::DESTransform*& dyn_D1();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::DESTransform*& dyn_D1();
     // Get instance field reference: private System.Security.Cryptography.DESTransform E2
-    [[deprecated]] ::System::Security::Cryptography::DESTransform*& dyn_E2();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::DESTransform*& dyn_E2();
     // Get instance field reference: private System.Security.Cryptography.DESTransform D3
-    [[deprecated]] ::System::Security::Cryptography::DESTransform*& dyn_D3();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::DESTransform*& dyn_D3();
     // public System.Void .ctor(System.Security.Cryptography.TripleDES algo, System.Boolean encryption, System.Byte[] key, System.Byte[] iv)
     // Offset: 0x12ACD24
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

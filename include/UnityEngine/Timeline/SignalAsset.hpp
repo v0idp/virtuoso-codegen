@@ -47,20 +47,16 @@ namespace UnityEngine::Timeline {
     // static System.Void remove_OnEnableCallback(System.Action`1<UnityEngine.Timeline.SignalAsset> value)
     // Offset: 0xC7B90C
     static void remove_OnEnableCallback(::System::Action_1<::UnityEngine::Timeline::SignalAsset*>* value);
-    // private System.Void OnEnable()
-    // Offset: 0xC7B9C8
-    void OnEnable();
     // public System.Void .ctor()
     // Offset: 0xC7BA44
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::SignalAsset::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SignalAsset*, creationType>()));
     }
+    // private System.Void OnEnable()
+    // Offset: 0xC7B9C8
+    void OnEnable();
   }; // UnityEngine.Timeline.SignalAsset
   #pragma pack(pop)
 }
@@ -83,6 +79,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::SignalAsset*), "remove_OnEnableCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::SignalAsset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::SignalAsset::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -91,7 +91,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::SignalAsset*), "OnEnable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::SignalAsset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

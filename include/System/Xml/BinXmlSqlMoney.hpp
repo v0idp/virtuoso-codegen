@@ -51,7 +51,7 @@ namespace System::Xml {
       return data;
     }
     // Get instance field reference: private System.Int64 data
-    [[deprecated]] int64_t& dyn_data();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_data();
     // public System.Void .ctor(System.Int32 v)
     // Offset: 0xB62700
     BinXmlSqlMoney(int v);

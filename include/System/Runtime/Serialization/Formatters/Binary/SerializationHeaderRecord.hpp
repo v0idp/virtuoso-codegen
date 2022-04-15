@@ -83,19 +83,19 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 binaryFormatterMajorVersion
-    [[deprecated]] int& dyn_binaryFormatterMajorVersion();
+    [[deprecated("Use field access instead!")]] int& dyn_binaryFormatterMajorVersion();
     // Get instance field reference: System.Int32 binaryFormatterMinorVersion
-    [[deprecated]] int& dyn_binaryFormatterMinorVersion();
+    [[deprecated("Use field access instead!")]] int& dyn_binaryFormatterMinorVersion();
     // Get instance field reference: System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum& dyn_binaryHeaderEnum();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum& dyn_binaryHeaderEnum();
     // Get instance field reference: System.Int32 topId
-    [[deprecated]] int& dyn_topId();
+    [[deprecated("Use field access instead!")]] int& dyn_topId();
     // Get instance field reference: System.Int32 headerId
-    [[deprecated]] int& dyn_headerId();
+    [[deprecated("Use field access instead!")]] int& dyn_headerId();
     // Get instance field reference: System.Int32 majorVersion
-    [[deprecated]] int& dyn_majorVersion();
+    [[deprecated("Use field access instead!")]] int& dyn_majorVersion();
     // Get instance field reference: System.Int32 minorVersion
-    [[deprecated]] int& dyn_minorVersion();
+    [[deprecated("Use field access instead!")]] int& dyn_minorVersion();
     // System.Void .ctor(System.Runtime.Serialization.Formatters.Binary.BinaryHeaderEnum binaryHeaderEnum, System.Int32 topId, System.Int32 headerId, System.Int32 majorVersion, System.Int32 minorVersion)
     // Offset: 0x1179A8C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

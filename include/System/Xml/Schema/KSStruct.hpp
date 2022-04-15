@@ -59,11 +59,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::ArrayW<::System::Xml::Schema::LocatedActiveAxis*>) == 0x8);
     public:
     // Get instance field reference: public System.Int32 depth
-    [[deprecated]] int& dyn_depth();
+    [[deprecated("Use field access instead!")]] int& dyn_depth();
     // Get instance field reference: public System.Xml.Schema.KeySequence ks
-    [[deprecated]] ::System::Xml::Schema::KeySequence*& dyn_ks();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::KeySequence*& dyn_ks();
     // Get instance field reference: public System.Xml.Schema.LocatedActiveAxis[] fields
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::LocatedActiveAxis*>& dyn_fields();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::LocatedActiveAxis*>& dyn_fields();
     // public System.Void .ctor(System.Xml.Schema.KeySequence ks, System.Int32 dim)
     // Offset: 0xAF275C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

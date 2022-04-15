@@ -62,13 +62,13 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: public VROSC.InputDevice Origin
-    [[deprecated]] ::VROSC::InputDevice*& dyn_Origin();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn_Origin();
     // Get instance field reference: public UnityEngine.Vector3 NormalizedPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn_NormalizedPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_NormalizedPoint();
     // Get instance field reference: public UnityEngine.Vector3 NormalizedRotation
-    [[deprecated]] ::UnityEngine::Vector3& dyn_NormalizedRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_NormalizedRotation();
     // Get instance field reference: public UnityEngine.Vector3 RelativeVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_RelativeVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_RelativeVelocity();
     // public System.Void .ctor(VROSC.InputDevice device, UnityEngine.Vector3 normalizedPoint, UnityEngine.Vector3 normalizedRotation, UnityEngine.Vector3 relativeVelocity)
     // Offset: 0x192827C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

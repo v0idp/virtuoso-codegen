@@ -160,33 +160,33 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::Xml::IDtdInfo*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> elementDecls
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaElementDecl*>*& dyn_elementDecls();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaElementDecl*>*& dyn_elementDecls();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> undeclaredElementDecls
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaElementDecl*>*& dyn_undeclaredElementDecls();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaElementDecl*>*& dyn_undeclaredElementDecls();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaEntity> generalEntities
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaEntity*>*& dyn_generalEntities();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaEntity*>*& dyn_generalEntities();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaEntity> parameterEntities
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaEntity*>*& dyn_parameterEntities();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaEntity*>*& dyn_parameterEntities();
     // Get instance field reference: private System.Xml.XmlQualifiedName docTypeName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_docTypeName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_docTypeName();
     // Get instance field reference: private System.String internalDtdSubset
-    [[deprecated]] ::StringW& dyn_internalDtdSubset();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_internalDtdSubset();
     // Get instance field reference: private System.Boolean hasNonCDataAttributes
-    [[deprecated]] bool& dyn_hasNonCDataAttributes();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasNonCDataAttributes();
     // Get instance field reference: private System.Boolean hasDefaultAttributes
-    [[deprecated]] bool& dyn_hasDefaultAttributes();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasDefaultAttributes();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Boolean> targetNamespaces
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, bool>*& dyn_targetNamespaces();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, bool>*& dyn_targetNamespaces();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaAttDef> attributeDecls
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>*& dyn_attributeDecls();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaAttDef*>*& dyn_attributeDecls();
     // Get instance field reference: private System.Int32 errorCount
-    [[deprecated]] int& dyn_errorCount();
+    [[deprecated("Use field access instead!")]] int& dyn_errorCount();
     // Get instance field reference: private System.Xml.Schema.SchemaType schemaType
-    [[deprecated]] ::System::Xml::Schema::SchemaType& dyn_schemaType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaType& dyn_schemaType();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> elementDeclsByType
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaElementDecl*>*& dyn_elementDeclsByType();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Xml::XmlQualifiedName*, ::System::Xml::Schema::SchemaElementDecl*>*& dyn_elementDeclsByType();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Xml.Schema.SchemaNotation> notations
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Xml::Schema::SchemaNotation*>*& dyn_notations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Xml::Schema::SchemaNotation*>*& dyn_notations();
     // public System.Xml.XmlQualifiedName get_DocTypeName()
     // Offset: 0xF66A04
     ::System::Xml::XmlQualifiedName* get_DocTypeName();
@@ -244,6 +244,13 @@ namespace System::Xml::Schema {
     // private System.String System.Xml.IDtdInfo.get_InternalDtdSubset()
     // Offset: 0xF68298
     ::StringW System_Xml_IDtdInfo_get_InternalDtdSubset();
+    // System.Void .ctor()
+    // Offset: 0xF6686C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SchemaInfo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SchemaInfo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SchemaInfo*, creationType>()));
+    }
     // System.Xml.Schema.SchemaElementDecl GetElementDecl(System.Xml.XmlQualifiedName qname)
     // Offset: 0xF66BD8
     ::System::Xml::Schema::SchemaElementDecl* GetElementDecl(::System::Xml::XmlQualifiedName* qname);
@@ -280,15 +287,6 @@ namespace System::Xml::Schema {
     // private System.Xml.IDtdEntityInfo System.Xml.IDtdInfo.LookupEntity(System.String name)
     // Offset: 0xF681D8
     ::System::Xml::IDtdEntityInfo* System_Xml_IDtdInfo_LookupEntity(::StringW name);
-    // System.Void .ctor()
-    // Offset: 0xF6686C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SchemaInfo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SchemaInfo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SchemaInfo*, creationType>()));
-    }
   }; // System.Xml.Schema.SchemaInfo
   #pragma pack(pop)
   static check_size<sizeof(SchemaInfo), 104 + sizeof(::System::Collections::Generic::Dictionary_2<::StringW, ::System::Xml::Schema::SchemaNotation*>*)> __System_Xml_Schema_SchemaInfoSizeCheck;
@@ -451,6 +449,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::SchemaInfo*), "System.Xml.IDtdInfo.get_InternalDtdSubset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Schema::SchemaInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::SchemaInfo::GetElementDecl
 // Il2CppName: GetElementDecl
 template<>
@@ -566,7 +568,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::SchemaInfo*), "System.Xml.IDtdInfo.LookupEntity", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{name});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::SchemaInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

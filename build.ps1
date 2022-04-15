@@ -8,16 +8,16 @@ if ($clean.IsPresent)
 {
     if (Test-Path -Path "build")
     {
-        remove-item build -R
+        Remove-Item "build" -R
     }
 }
 
 if (($clean.IsPresent) -or (-not (Test-Path -Path "build")))
 {
-    $out = new-item -Path build -ItemType Directory
+    New-Item -Path "build" -ItemType Directory
 } 
 
-cd build
+Set-Location build
 & cmake -G "Ninja" -DCMAKE_BUILD_TYPE="Release" ../
 & cmake --build .
-cd ..
+Set-Location ..

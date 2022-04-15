@@ -63,11 +63,11 @@ namespace System::Xml {
     // Deleting conversion operator: operator ::System::Xml::XmlNode*
     constexpr operator ::System::Xml::XmlNode*() const noexcept = delete;
     // Get instance field reference: private System.String publicId
-    [[deprecated]] ::StringW& dyn_publicId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_publicId();
     // Get instance field reference: private System.String systemId
-    [[deprecated]] ::StringW& dyn_systemId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_systemId();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // System.Void .ctor(System.String name, System.String publicId, System.String systemId, System.Xml.XmlDocument doc)
     // Offset: 0x101D924
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

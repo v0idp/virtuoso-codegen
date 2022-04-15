@@ -62,13 +62,13 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Object o
-    [[deprecated]] ::Il2CppObject*& dyn_o();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_o();
     // Get instance field reference: private System.Xml.XmlNode xmlNode
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_xmlNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_xmlNode();
     // Get instance field reference: private System.Int32 lineNumber
-    [[deprecated]] int& dyn_lineNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNumber();
     // Get instance field reference: private System.Int32 linePosition
-    [[deprecated]] int& dyn_linePosition();
+    [[deprecated("Use field access instead!")]] int& dyn_linePosition();
     // System.Void .ctor(System.Xml.XmlNode xmlNode, System.Int32 lineNumber, System.Int32 linePosition, System.Object o)
     // Offset: 0x1018DF8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

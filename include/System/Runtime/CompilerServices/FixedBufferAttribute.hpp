@@ -51,9 +51,9 @@ namespace System::Runtime::CompilerServices {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Type elementType
-    [[deprecated]] ::System::Type*& dyn_elementType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_elementType();
     // Get instance field reference: private System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // public System.Type get_ElementType()
     // Offset: 0x14518A0
     ::System::Type* get_ElementType();

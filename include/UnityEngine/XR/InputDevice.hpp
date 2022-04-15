@@ -82,9 +82,9 @@ namespace UnityEngine::XR {
     // Set static field: static private System.Collections.Generic.List`1<UnityEngine.XR.XRInputSubsystem> s_InputSubsystemCache
     static void _set_s_InputSubsystemCache(::System::Collections::Generic::List_1<::UnityEngine::XR::XRInputSubsystem*>* value);
     // Get instance field reference: private System.UInt64 m_DeviceId
-    [[deprecated]] uint64_t& dyn_m_DeviceId();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_DeviceId();
     // Get instance field reference: private System.Boolean m_Initialized
-    [[deprecated]] bool& dyn_m_Initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Initialized();
     // private System.UInt64 get_deviceId()
     // Offset: 0x18C56C8
     uint64_t get_deviceId();

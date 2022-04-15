@@ -47,10 +47,6 @@ namespace System::Data {
     public:
     // public System.Void .ctor()
     // Offset: 0x14B440C
-    // Implemented from: System.ComponentModel.ExpandableObjectConverter
-    // Base method: System.Void ExpandableObjectConverter::.ctor()
-    // Base method: System.Void TypeConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ConstraintConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::ConstraintConverter::.ctor");

@@ -45,9 +45,9 @@ namespace System::Runtime::Versioning {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _frameworkName
-    [[deprecated]] ::StringW& dyn__frameworkName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__frameworkName();
     // Get instance field reference: private System.String _frameworkDisplayName
-    [[deprecated]] ::StringW& dyn__frameworkDisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__frameworkDisplayName();
     // public System.Void set_FrameworkDisplayName(System.String value)
     // Offset: 0x126C8A0
     void set_FrameworkDisplayName(::StringW value);

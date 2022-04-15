@@ -61,6 +61,13 @@ namespace System::Linq::Expressions::Interpreter {
     // static private System.Void .cctor()
     // Offset: 0x16A9624
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x16A9684
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LightCompiler::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LightCompiler::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LightCompiler::$$c*, creationType>()));
+    }
     // System.Boolean <CompileSwitchExpression>b__56_0(System.Linq.Expressions.SwitchCase c)
     // Offset: 0x16A968C
     bool $CompileSwitchExpression$b__56_0(::System::Linq::Expressions::SwitchCase* c);
@@ -70,15 +77,6 @@ namespace System::Linq::Expressions::Interpreter {
     // System.Void <CompileNoLabelPush>b__101_0(System.Linq.Expressions.Interpreter.LightCompiler this, System.Linq.Expressions.Expression e)
     // Offset: 0x16A982C
     void $CompileNoLabelPush$b__101_0(::System::Linq::Expressions::Interpreter::LightCompiler* _this, ::System::Linq::Expressions::Expression* e);
-    // public System.Void .ctor()
-    // Offset: 0x16A9684
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LightCompiler::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::Interpreter::LightCompiler::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LightCompiler::$$c*, creationType>()));
-    }
   }; // System.Linq.Expressions.Interpreter.LightCompiler/System.Linq.Expressions.Interpreter.<>c
   #pragma pack(pop)
 }
@@ -91,6 +89,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LightCompiler::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightCompiler::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightCompiler::$$c::$CompileSwitchExpression$b__56_0
 // Il2CppName: <CompileSwitchExpression>b__56_0
 template<>
@@ -119,7 +121,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Linq::Expressions::Interpreter::LightCompiler::$$c*), "<CompileNoLabelPush>b__101_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{_this, e});
   }
 };
-// Writing MetadataGetter for method: System::Linq::Expressions::Interpreter::LightCompiler::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

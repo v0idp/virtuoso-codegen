@@ -78,17 +78,17 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<bool>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<bool>& dyn_$$t__builder();
     // Get instance field reference: public System.Int32 millisecondTimeout
-    [[deprecated]] int& dyn_millisecondTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn_millisecondTimeout();
     // Get instance field reference: public System.Net.ServicePointScheduler/System.Net.AsyncManualResetEvent <>4__this
-    [[deprecated]] ::System::Net::ServicePointScheduler::AsyncManualResetEvent*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Net::ServicePointScheduler::AsyncManualResetEvent*& dyn_$$4__this();
     // Get instance field reference: private System.Threading.Tasks.Task <timeoutTask>5__1
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_$timeoutTask$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_$timeoutTask$5__1();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Threading.Tasks.Task> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Threading::Tasks::Task*>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Threading::Tasks::Task*>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x17D0214
     void MoveNext();

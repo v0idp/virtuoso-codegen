@@ -37,11 +37,6 @@ namespace VROSC {
     // Offset: 0x199910C
     // Implemented from: VROSC.TutorialStep
     // Base method: System.Void TutorialStep::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FinalWordsTutorialStep* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FinalWordsTutorialStep::.ctor");

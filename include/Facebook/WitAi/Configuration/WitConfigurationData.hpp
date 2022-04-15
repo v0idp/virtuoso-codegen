@@ -46,11 +46,9 @@ namespace Facebook::WitAi::Configuration {
       return witConfiguration;
     }
     // Get instance field reference: public Facebook.WitAi.Data.Configuration.WitConfiguration witConfiguration
-    [[deprecated]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Data::Configuration::WitConfiguration*& dyn_witConfiguration();
     // protected System.Void .ctor()
     // Offset: 0x16741CC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitConfigurationData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Configuration::WitConfigurationData::.ctor");

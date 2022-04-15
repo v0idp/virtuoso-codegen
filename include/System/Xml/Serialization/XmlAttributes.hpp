@@ -158,33 +158,33 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::Serialization::XmlTypeAttribute*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Serialization.XmlAnyAttributeAttribute xmlAnyAttribute
-    [[deprecated]] ::System::Xml::Serialization::XmlAnyAttributeAttribute*& dyn_xmlAnyAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlAnyAttributeAttribute*& dyn_xmlAnyAttribute();
     // Get instance field reference: private System.Xml.Serialization.XmlAnyElementAttributes xmlAnyElements
-    [[deprecated]] ::System::Xml::Serialization::XmlAnyElementAttributes*& dyn_xmlAnyElements();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlAnyElementAttributes*& dyn_xmlAnyElements();
     // Get instance field reference: private System.Xml.Serialization.XmlArrayAttribute xmlArray
-    [[deprecated]] ::System::Xml::Serialization::XmlArrayAttribute*& dyn_xmlArray();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlArrayAttribute*& dyn_xmlArray();
     // Get instance field reference: private System.Xml.Serialization.XmlArrayItemAttributes xmlArrayItems
-    [[deprecated]] ::System::Xml::Serialization::XmlArrayItemAttributes*& dyn_xmlArrayItems();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlArrayItemAttributes*& dyn_xmlArrayItems();
     // Get instance field reference: private System.Xml.Serialization.XmlAttributeAttribute xmlAttribute
-    [[deprecated]] ::System::Xml::Serialization::XmlAttributeAttribute*& dyn_xmlAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlAttributeAttribute*& dyn_xmlAttribute();
     // Get instance field reference: private System.Xml.Serialization.XmlChoiceIdentifierAttribute xmlChoiceIdentifier
-    [[deprecated]] ::System::Xml::Serialization::XmlChoiceIdentifierAttribute*& dyn_xmlChoiceIdentifier();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlChoiceIdentifierAttribute*& dyn_xmlChoiceIdentifier();
     // Get instance field reference: private System.Object xmlDefaultValue
-    [[deprecated]] ::Il2CppObject*& dyn_xmlDefaultValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_xmlDefaultValue();
     // Get instance field reference: private System.Xml.Serialization.XmlElementAttributes xmlElements
-    [[deprecated]] ::System::Xml::Serialization::XmlElementAttributes*& dyn_xmlElements();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlElementAttributes*& dyn_xmlElements();
     // Get instance field reference: private System.Xml.Serialization.XmlEnumAttribute xmlEnum
-    [[deprecated]] ::System::Xml::Serialization::XmlEnumAttribute*& dyn_xmlEnum();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlEnumAttribute*& dyn_xmlEnum();
     // Get instance field reference: private System.Boolean xmlIgnore
-    [[deprecated]] bool& dyn_xmlIgnore();
+    [[deprecated("Use field access instead!")]] bool& dyn_xmlIgnore();
     // Get instance field reference: private System.Boolean xmlns
-    [[deprecated]] bool& dyn_xmlns();
+    [[deprecated("Use field access instead!")]] bool& dyn_xmlns();
     // Get instance field reference: private System.Xml.Serialization.XmlRootAttribute xmlRoot
-    [[deprecated]] ::System::Xml::Serialization::XmlRootAttribute*& dyn_xmlRoot();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlRootAttribute*& dyn_xmlRoot();
     // Get instance field reference: private System.Xml.Serialization.XmlTextAttribute xmlText
-    [[deprecated]] ::System::Xml::Serialization::XmlTextAttribute*& dyn_xmlText();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTextAttribute*& dyn_xmlText();
     // Get instance field reference: private System.Xml.Serialization.XmlTypeAttribute xmlType
-    [[deprecated]] ::System::Xml::Serialization::XmlTypeAttribute*& dyn_xmlType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlTypeAttribute*& dyn_xmlType();
     // public System.Xml.Serialization.XmlAnyAttributeAttribute get_XmlAnyAttribute()
     // Offset: 0x1185DA0
     ::System::Xml::Serialization::XmlAnyAttributeAttribute* get_XmlAnyAttribute();
@@ -230,6 +230,13 @@ namespace System::Xml::Serialization {
     // System.Int32 get_SortableOrder()
     // Offset: 0x1186E60
     int get_SortableOrder();
+    // public System.Void .ctor()
+    // Offset: 0x1185684
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlAttributes* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlAttributes::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlAttributes*, creationType>()));
+    }
     // public System.Void .ctor(System.Reflection.ICustomAttributeProvider provider)
     // Offset: 0x118577C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -240,15 +247,6 @@ namespace System::Xml::Serialization {
     // System.Void AddKeyHash(System.Text.StringBuilder sb)
     // Offset: 0x11853EC
     void AddKeyHash(::System::Text::StringBuilder* sb);
-    // public System.Void .ctor()
-    // Offset: 0x1185684
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlAttributes* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlAttributes::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlAttributes*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlAttributes
   #pragma pack(pop)
   static check_size<sizeof(XmlAttributes), 112 + sizeof(::System::Xml::Serialization::XmlTypeAttribute*)> __System_Xml_Serialization_XmlAttributesSizeCheck;
@@ -379,6 +377,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlAttributes::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlAttributes::AddKeyHash
 // Il2CppName: AddKeyHash
 template<>
@@ -388,7 +390,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlAttributes*), "AddKeyHash", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sb});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlAttributes::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

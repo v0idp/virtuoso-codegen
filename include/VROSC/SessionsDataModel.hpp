@@ -60,14 +60,13 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Session*>*) == 0x8);
     public:
     // Get instance field reference: public System.Collections.Generic.Dictionary`2<System.String,VROSC.Session> NewSessions
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_NewSessions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::VROSC::Session*>*& dyn_NewSessions();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.Session> Sessions
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Session*>*& dyn_Sessions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Session*>*& dyn_Sessions();
     // public System.Void .ctor()
     // Offset: 0x1989D5C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionsDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsDataModel::.ctor");

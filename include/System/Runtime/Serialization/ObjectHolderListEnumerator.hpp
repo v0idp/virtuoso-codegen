@@ -64,13 +64,13 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Boolean m_isFixupEnumerator
-    [[deprecated]] bool& dyn_m_isFixupEnumerator();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isFixupEnumerator();
     // Get instance field reference: private System.Runtime.Serialization.ObjectHolderList m_list
-    [[deprecated]] ::System::Runtime::Serialization::ObjectHolderList*& dyn_m_list();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ObjectHolderList*& dyn_m_list();
     // Get instance field reference: private System.Int32 m_startingVersion
-    [[deprecated]] int& dyn_m_startingVersion();
+    [[deprecated("Use field access instead!")]] int& dyn_m_startingVersion();
     // Get instance field reference: private System.Int32 m_currPos
-    [[deprecated]] int& dyn_m_currPos();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currPos();
     // System.Runtime.Serialization.ObjectHolder get_Current()
     // Offset: 0x146DDEC
     ::System::Runtime::Serialization::ObjectHolder* get_Current();

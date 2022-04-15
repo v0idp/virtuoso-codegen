@@ -50,9 +50,9 @@ namespace System::Security::Principal {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.IntPtr _token
-    [[deprecated]] ::System::IntPtr& dyn__token();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__token();
     // Get instance field reference: private System.Boolean undo
-    [[deprecated]] bool& dyn_undo();
+    [[deprecated("Use field access instead!")]] bool& dyn_undo();
     // System.Void .ctor(System.IntPtr token)
     // Offset: 0x1212F4C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

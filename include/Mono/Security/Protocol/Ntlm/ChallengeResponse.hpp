@@ -72,13 +72,13 @@ namespace Mono::Security::Protocol::Ntlm {
     // Set static field: static private System.Byte[] nullEncMagic
     static void _set_nullEncMagic(::ArrayW<uint8_t> value);
     // Get instance field reference: private System.Boolean _disposed
-    [[deprecated]] bool& dyn__disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__disposed();
     // Get instance field reference: private System.Byte[] _challenge
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__challenge();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__challenge();
     // Get instance field reference: private System.Byte[] _lmpwd
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__lmpwd();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__lmpwd();
     // Get instance field reference: private System.Byte[] _ntpwd
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__ntpwd();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__ntpwd();
     // public System.Void set_Password(System.String value)
     // Offset: 0x16380B4
     void set_Password(::StringW value);
@@ -91,6 +91,13 @@ namespace Mono::Security::Protocol::Ntlm {
     // public System.Byte[] get_NT()
     // Offset: 0x1638C1C
     ::ArrayW<uint8_t> get_NT();
+    // public System.Void .ctor()
+    // Offset: 0x1637FFC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ChallengeResponse* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Protocol::Ntlm::ChallengeResponse::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ChallengeResponse*, creationType>()));
+    }
     // public System.Void .ctor(System.String password, System.Byte[] challenge)
     // Offset: 0x1638070
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -116,15 +123,6 @@ namespace Mono::Security::Protocol::Ntlm {
     // private System.Byte[] PasswordToKey(System.String password, System.Int32 position)
     // Offset: 0x16386FC
     ::ArrayW<uint8_t> PasswordToKey(::StringW password, int position);
-    // public System.Void .ctor()
-    // Offset: 0x1637FFC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ChallengeResponse* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Protocol::Ntlm::ChallengeResponse::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ChallengeResponse*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x1638618
     // Implemented from: System.Object
@@ -170,6 +168,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::Protocol::Ntlm::ChallengeResponse*), "get_NT", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Mono::Security::Protocol::Ntlm::ChallengeResponse::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::Protocol::Ntlm::ChallengeResponse::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -228,10 +230,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::Protocol::Ntlm::ChallengeResponse*), "PasswordToKey", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{password, position});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::Protocol::Ntlm::ChallengeResponse::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::Protocol::Ntlm::ChallengeResponse::Finalize
 // Il2CppName: Finalize
 template<>

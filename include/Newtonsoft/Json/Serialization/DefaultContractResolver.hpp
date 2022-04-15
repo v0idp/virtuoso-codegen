@@ -217,23 +217,23 @@ namespace Newtonsoft::Json::Serialization {
     // Set static field: static private readonly Newtonsoft.Json.JsonConverter[] BuiltInConverters
     static void _set_BuiltInConverters(::ArrayW<::Newtonsoft::Json::JsonConverter*> value);
     // Get instance field reference: private readonly Newtonsoft.Json.DefaultJsonNameTable _nameTable
-    [[deprecated]] ::Newtonsoft::Json::DefaultJsonNameTable*& dyn__nameTable();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::DefaultJsonNameTable*& dyn__nameTable();
     // Get instance field reference: private readonly Newtonsoft.Json.Utilities.ThreadSafeStore`2<System.Type,Newtonsoft.Json.Serialization.JsonContract> _contractCache
-    [[deprecated]] ::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::System::Type*, ::Newtonsoft::Json::Serialization::JsonContract*>*& dyn__contractCache();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::ThreadSafeStore_2<::System::Type*, ::Newtonsoft::Json::Serialization::JsonContract*>*& dyn__contractCache();
     // Get instance field reference: private System.Reflection.BindingFlags <DefaultMembersSearchFlags>k__BackingField
-    [[deprecated]] ::System::Reflection::BindingFlags& dyn_$DefaultMembersSearchFlags$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::BindingFlags& dyn_$DefaultMembersSearchFlags$k__BackingField();
     // Get instance field reference: private System.Boolean <SerializeCompilerGeneratedMembers>k__BackingField
-    [[deprecated]] bool& dyn_$SerializeCompilerGeneratedMembers$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$SerializeCompilerGeneratedMembers$k__BackingField();
     // Get instance field reference: private System.Boolean <IgnoreSerializableInterface>k__BackingField
-    [[deprecated]] bool& dyn_$IgnoreSerializableInterface$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IgnoreSerializableInterface$k__BackingField();
     // Get instance field reference: private System.Boolean <IgnoreSerializableAttribute>k__BackingField
-    [[deprecated]] bool& dyn_$IgnoreSerializableAttribute$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IgnoreSerializableAttribute$k__BackingField();
     // Get instance field reference: private System.Boolean <IgnoreIsSpecifiedMembers>k__BackingField
-    [[deprecated]] bool& dyn_$IgnoreIsSpecifiedMembers$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IgnoreIsSpecifiedMembers$k__BackingField();
     // Get instance field reference: private System.Boolean <IgnoreShouldSerializeMembers>k__BackingField
-    [[deprecated]] bool& dyn_$IgnoreShouldSerializeMembers$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IgnoreShouldSerializeMembers$k__BackingField();
     // Get instance field reference: private Newtonsoft.Json.Serialization.NamingStrategy <NamingStrategy>k__BackingField
-    [[deprecated]] ::Newtonsoft::Json::Serialization::NamingStrategy*& dyn_$NamingStrategy$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Serialization::NamingStrategy*& dyn_$NamingStrategy$k__BackingField();
     // static Newtonsoft.Json.Serialization.IContractResolver get_Instance()
     // Offset: 0xDC2D80
     static ::Newtonsoft::Json::Serialization::IContractResolver* get_Instance();
@@ -264,6 +264,13 @@ namespace Newtonsoft::Json::Serialization {
     // public Newtonsoft.Json.Serialization.NamingStrategy get_NamingStrategy()
     // Offset: 0xDC2E28
     ::Newtonsoft::Json::Serialization::NamingStrategy* get_NamingStrategy();
+    // public System.Void .ctor()
+    // Offset: 0xDC2E30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DefaultContractResolver* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::DefaultContractResolver::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DefaultContractResolver*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xDCA640
     static void _cctor();
@@ -408,15 +415,6 @@ namespace Newtonsoft::Json::Serialization {
     // public System.String GetResolvedPropertyName(System.String propertyName)
     // Offset: 0xDBDE8C
     ::StringW GetResolvedPropertyName(::StringW propertyName);
-    // public System.Void .ctor()
-    // Offset: 0xDC2E30
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DefaultContractResolver* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Serialization::DefaultContractResolver::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DefaultContractResolver*, creationType>()));
-    }
   }; // Newtonsoft.Json.Serialization.DefaultContractResolver
   #pragma pack(pop)
   static check_size<sizeof(DefaultContractResolver), 48 + sizeof(::Newtonsoft::Json::Serialization::NamingStrategy*)> __Newtonsoft_Json_Serialization_DefaultContractResolverSizeCheck;
@@ -505,6 +503,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Newtonsof
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::DefaultContractResolver*), "get_NamingStrategy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::DefaultContractResolver::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Serialization::DefaultContractResolver::_cctor
 // Il2CppName: .cctor
 template<>
@@ -961,7 +963,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Serialization::DefaultContractResolver*), "GetResolvedPropertyName", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{propertyName});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Serialization::DefaultContractResolver::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

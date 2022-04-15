@@ -53,11 +53,11 @@ namespace TMPro {
     static_assert(sizeof(::TMPro::FontFeatureLookupFlags) == 0x4);
     public:
     // Get instance field reference: TMPro.TMP_GlyphAdjustmentRecord m_FirstAdjustmentRecord
-    [[deprecated]] ::TMPro::TMP_GlyphAdjustmentRecord& dyn_m_FirstAdjustmentRecord();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_GlyphAdjustmentRecord& dyn_m_FirstAdjustmentRecord();
     // Get instance field reference: TMPro.TMP_GlyphAdjustmentRecord m_SecondAdjustmentRecord
-    [[deprecated]] ::TMPro::TMP_GlyphAdjustmentRecord& dyn_m_SecondAdjustmentRecord();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_GlyphAdjustmentRecord& dyn_m_SecondAdjustmentRecord();
     // Get instance field reference: TMPro.FontFeatureLookupFlags m_FeatureLookupFlags
-    [[deprecated]] ::TMPro::FontFeatureLookupFlags& dyn_m_FeatureLookupFlags();
+    [[deprecated("Use field access instead!")]] ::TMPro::FontFeatureLookupFlags& dyn_m_FeatureLookupFlags();
     // public TMPro.TMP_GlyphAdjustmentRecord get_firstAdjustmentRecord()
     // Offset: 0x10300CC
     ::TMPro::TMP_GlyphAdjustmentRecord get_firstAdjustmentRecord();

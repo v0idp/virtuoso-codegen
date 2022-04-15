@@ -69,11 +69,11 @@ namespace Oculus::Platform::Samples::VrVoiceChat {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private System.UInt64 m_remoteID
-    [[deprecated]] uint64_t& dyn_m_remoteID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_m_remoteID();
     // Get instance field reference: private Oculus.Platform.PeerConnectionState m_state
-    [[deprecated]] ::Oculus::Platform::PeerConnectionState& dyn_m_state();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PeerConnectionState& dyn_m_state();
     // Get instance field reference: private readonly UnityEngine.GameObject m_remoteHead
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_remoteHead();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_remoteHead();
     // public System.Boolean get_Connected()
     // Offset: 0x1720520
     bool get_Connected();

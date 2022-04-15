@@ -79,16 +79,23 @@ namespace TMPro {
     // Set static field: static private TMPro.MaterialReferenceManager s_Instance
     static void _set_s_Instance(::TMPro::MaterialReferenceManager* value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Material> m_FontMaterialReferenceLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::UnityEngine::Material*>*& dyn_m_FontMaterialReferenceLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::UnityEngine::Material*>*& dyn_m_FontMaterialReferenceLookup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_FontAsset> m_FontAssetReferenceLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_FontAsset*>*& dyn_m_FontAssetReferenceLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_FontAsset*>*& dyn_m_FontAssetReferenceLookup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_SpriteAsset> m_SpriteAssetReferenceLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_SpriteAsset*>*& dyn_m_SpriteAssetReferenceLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_SpriteAsset*>*& dyn_m_SpriteAssetReferenceLookup();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,TMPro.TMP_ColorGradient> m_ColorGradientReferenceLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_ColorGradient*>*& dyn_m_ColorGradientReferenceLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_ColorGradient*>*& dyn_m_ColorGradientReferenceLookup();
     // static public TMPro.MaterialReferenceManager get_instance()
     // Offset: 0xC2ABCC
     static ::TMPro::MaterialReferenceManager* get_instance();
+    // public System.Void .ctor()
+    // Offset: 0xC2AC44
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MaterialReferenceManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::MaterialReferenceManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MaterialReferenceManager*, creationType>()));
+    }
     // static public System.Void AddFontAsset(TMPro.TMP_FontAsset fontAsset)
     // Offset: 0xC2AD7C
     static void AddFontAsset(::TMPro::TMP_FontAsset* fontAsset);
@@ -149,15 +156,6 @@ namespace TMPro {
     // private System.Boolean TryGetMaterialInternal(System.Int32 hashCode, out UnityEngine.Material material)
     // Offset: 0xC2B4F4
     bool TryGetMaterialInternal(int hashCode, ByRef<::UnityEngine::Material*> material);
-    // public System.Void .ctor()
-    // Offset: 0xC2AC44
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MaterialReferenceManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::MaterialReferenceManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MaterialReferenceManager*, creationType>()));
-    }
   }; // TMPro.MaterialReferenceManager
   #pragma pack(pop)
   static check_size<sizeof(MaterialReferenceManager), 40 + sizeof(::System::Collections::Generic::Dictionary_2<int, ::TMPro::TMP_ColorGradient*>*)> __TMPro_MaterialReferenceManagerSizeCheck;
@@ -172,6 +170,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::Ma
     return ::il2cpp_utils::FindMethod(classof(TMPro::MaterialReferenceManager*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::MaterialReferenceManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::MaterialReferenceManager::AddFontAsset
 // Il2CppName: AddFontAsset
 template<>
@@ -366,7 +368,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (TMPro
     return ::il2cpp_utils::FindMethod(classof(TMPro::MaterialReferenceManager*), "TryGetMaterialInternal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hashCode, material});
   }
 };
-// Writing MetadataGetter for method: TMPro::MaterialReferenceManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

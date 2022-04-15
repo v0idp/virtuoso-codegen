@@ -777,7 +777,7 @@ namespace System::Xml::Schema {
     // Set static field: static public System.Xml.Schema.SchemaNames/System.Xml.Schema.Token XmlLang
     static void _set_XmlLang(::System::Xml::Schema::SchemaNames::Token value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Xml.Schema.SchemaNames/System.Xml.Schema.Token
   #pragma pack(pop)
   static check_size<sizeof(SchemaNames::Token), 0 + sizeof(int)> __System_Xml_Schema_SchemaNames_TokenSizeCheck;

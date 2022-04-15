@@ -49,7 +49,6 @@ namespace System::ComponentModel {
     // Offset: 0x10D59A4
     // Implemented from: System.ComponentModel.TypeConverter
     // Base method: System.Void TypeConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CollectionConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::CollectionConverter::.ctor");

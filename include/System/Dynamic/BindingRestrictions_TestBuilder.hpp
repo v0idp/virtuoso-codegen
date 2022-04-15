@@ -73,9 +73,9 @@ namespace System::Dynamic {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Int32 Depth
-      [[deprecated]] int& dyn_Depth();
+      [[deprecated("Use field access instead!")]] int& dyn_Depth();
       // Get instance field reference: System.Linq.Expressions.Expression Node
-      [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_Node();
+      [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_Node();
     }; // System.Dynamic.BindingRestrictions/System.Dynamic.TestBuilder/System.Dynamic.AndNode
     #pragma pack(pop)
     static check_size<sizeof(BindingRestrictions::TestBuilder::AndNode), 8 + sizeof(::System::Linq::Expressions::Expression*)> __System_Dynamic_BindingRestrictions_TestBuilder_AndNodeSizeCheck;
@@ -95,9 +95,16 @@ namespace System::Dynamic {
     static_assert(sizeof(::System::Collections::Generic::Stack_1<::System::Dynamic::BindingRestrictions::TestBuilder::AndNode>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.HashSet`1<System.Dynamic.BindingRestrictions> _unique
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::System::Dynamic::BindingRestrictions*>*& dyn__unique();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::System::Dynamic::BindingRestrictions*>*& dyn__unique();
     // Get instance field reference: private readonly System.Collections.Generic.Stack`1<System.Dynamic.BindingRestrictions/System.Dynamic.TestBuilder/System.Dynamic.AndNode> _tests
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::System::Dynamic::BindingRestrictions::TestBuilder::AndNode>*& dyn__tests();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::System::Dynamic::BindingRestrictions::TestBuilder::AndNode>*& dyn__tests();
+    // public System.Void .ctor()
+    // Offset: 0xEA6124
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BindingRestrictions::TestBuilder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::BindingRestrictions::TestBuilder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BindingRestrictions::TestBuilder*, creationType>()));
+    }
     // System.Void Append(System.Dynamic.BindingRestrictions restrictions)
     // Offset: 0xEA61DC
     void Append(::System::Dynamic::BindingRestrictions* restrictions);
@@ -107,15 +114,6 @@ namespace System::Dynamic {
     // private System.Void Push(System.Linq.Expressions.Expression node, System.Int32 depth)
     // Offset: 0xEA6360
     void Push(::System::Linq::Expressions::Expression* node, int depth);
-    // public System.Void .ctor()
-    // Offset: 0xEA6124
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BindingRestrictions::TestBuilder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::BindingRestrictions::TestBuilder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BindingRestrictions::TestBuilder*, creationType>()));
-    }
   }; // System.Dynamic.BindingRestrictions/System.Dynamic.TestBuilder
   #pragma pack(pop)
   static check_size<sizeof(BindingRestrictions::TestBuilder), 24 + sizeof(::System::Collections::Generic::Stack_1<::System::Dynamic::BindingRestrictions::TestBuilder::AndNode>*)> __System_Dynamic_BindingRestrictions_TestBuilderSizeCheck;
@@ -124,6 +122,10 @@ namespace System::Dynamic {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::System::Dynamic::BindingRestrictions::TestBuilder::AndNode, "System.Dynamic", "BindingRestrictions/TestBuilder/AndNode");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Dynamic::BindingRestrictions::TestBuilder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Dynamic::BindingRestrictions::TestBuilder::Append
 // Il2CppName: Append
 template<>
@@ -151,7 +153,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Dynamic::BindingRestrictions::TestBuilder*), "Push", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{node, depth});
   }
 };
-// Writing MetadataGetter for method: System::Dynamic::BindingRestrictions::TestBuilder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

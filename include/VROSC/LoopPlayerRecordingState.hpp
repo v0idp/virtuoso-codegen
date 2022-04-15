@@ -99,19 +99,26 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.UI.UIColorGetter _sliderColor
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__sliderColor();
     // Get instance field reference: protected VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: protected VROSC.MinMaxFloat _uvRange
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__uvRange();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__uvRange();
     // Get instance field reference: private TMPro.TextMeshPro _recordingLabel
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__recordingLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__recordingLabel();
     // Get instance field reference: private VROSC.UIButton _cancelButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__cancelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__cancelButton();
     // Get instance field reference: private VROSC.UIButton _restartButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__restartButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__restartButton();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
+    // public System.Void .ctor()
+    // Offset: 0x19BEA20
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayerRecordingState* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerRecordingState::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerRecordingState*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x19BE5B0
     void Awake();
@@ -139,25 +146,16 @@ namespace VROSC {
     // public System.Void SetRecordingText(System.String recordingtext)
     // Offset: 0x19BE9FC
     void SetRecordingText(::StringW recordingtext);
-    // public System.Void .ctor()
-    // Offset: 0x19BEA20
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayerRecordingState* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerRecordingState::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerRecordingState*, creationType>()));
-    }
   }; // VROSC.LoopPlayerRecordingState
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerRecordingState), 72 + sizeof(::VROSC::LoopStation*)> __VROSC_LoopPlayerRecordingStateSizeCheck;
   static_assert(sizeof(LoopPlayerRecordingState) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LoopPlayerRecordingState::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayerRecordingState::Awake
 // Il2CppName: Awake
 template<>
@@ -235,7 +233,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerRecordingState*), "SetRecordingText", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{recordingtext});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayerRecordingState::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

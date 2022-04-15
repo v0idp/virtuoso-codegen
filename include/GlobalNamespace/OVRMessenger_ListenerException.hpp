@@ -28,8 +28,6 @@ namespace GlobalNamespace {
     public:
     // public System.Void .ctor(System.String msg)
     // Offset: 0x8CAC14
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String msg)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRMessenger::ListenerException* New_ctor(::StringW msg) {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMessenger::ListenerException::.ctor");

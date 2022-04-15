@@ -81,15 +81,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IFormattable*>(this);
     }
     // Get instance field reference: private System.Int32 rgba
-    [[deprecated]] int& dyn_rgba();
+    [[deprecated("Use field access instead!")]] int& dyn_rgba();
     // Get instance field reference: public System.Byte r
-    [[deprecated]] uint8_t& dyn_r();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_r();
     // Get instance field reference: public System.Byte g
-    [[deprecated]] uint8_t& dyn_g();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_g();
     // Get instance field reference: public System.Byte b
-    [[deprecated]] uint8_t& dyn_b();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_b();
     // Get instance field reference: public System.Byte a
-    [[deprecated]] uint8_t& dyn_a();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_a();
     // public System.Void .ctor(System.Byte r, System.Byte g, System.Byte b, System.Byte a)
     // Offset: 0x1121964
     // ABORTED: conflicts with another method.  Color32(uint8_t r, uint8_t g, uint8_t b, uint8_t a);

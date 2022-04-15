@@ -59,7 +59,7 @@ namespace VROSC {
     // Set static field: static private System.Int32 MaxLoopStations
     static void _set_MaxLoopStations(int value);
     // Get instance field reference: private UnityEngine.Collider _collider
-    [[deprecated]] ::UnityEngine::Collider*& dyn__collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__collider();
     // private System.Void MoveBackRecursive()
     // Offset: 0x19728EC
     void MoveBackRecursive();
@@ -71,11 +71,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationInitializer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationInitializer::.ctor");

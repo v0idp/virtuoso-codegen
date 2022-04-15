@@ -42,9 +42,6 @@ namespace System::Data {
     public:
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0xF98004
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DataException* New_ctor(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataException::.ctor");
@@ -52,10 +49,6 @@ namespace System::Data {
     }
     // public System.Void .ctor()
     // Offset: 0xF9804C
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DataException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataException::.ctor");
@@ -63,9 +56,6 @@ namespace System::Data {
     }
     // public System.Void .ctor(System.String s)
     // Offset: 0xF980AC
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.String s)
-    // Base method: System.Void Exception::.ctor(System.String s)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DataException* New_ctor(::StringW s) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataException::.ctor");
@@ -73,9 +63,6 @@ namespace System::Data {
     }
     // public System.Void .ctor(System.String s, System.Exception innerException)
     // Offset: 0xF980DC
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.String s, System.Exception innerException)
-    // Base method: System.Void Exception::.ctor(System.String s, System.Exception innerException)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DataException* New_ctor(::StringW s, ::System::Exception* innerException) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataException::.ctor");

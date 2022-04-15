@@ -155,37 +155,44 @@ namespace TMPro {
     // Set static field: static UnityEngine.Vector2 k_InfinityVectorNegative
     static void _set_k_InfinityVectorNegative(::UnityEngine::Vector2 value);
     // Get instance field reference: public TMPro.TMP_Text textComponent
-    [[deprecated]] ::TMPro::TMP_Text*& dyn_textComponent();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_Text*& dyn_textComponent();
     // Get instance field reference: public System.Int32 characterCount
-    [[deprecated]] int& dyn_characterCount();
+    [[deprecated("Use field access instead!")]] int& dyn_characterCount();
     // Get instance field reference: public System.Int32 spriteCount
-    [[deprecated]] int& dyn_spriteCount();
+    [[deprecated("Use field access instead!")]] int& dyn_spriteCount();
     // Get instance field reference: public System.Int32 spaceCount
-    [[deprecated]] int& dyn_spaceCount();
+    [[deprecated("Use field access instead!")]] int& dyn_spaceCount();
     // Get instance field reference: public System.Int32 wordCount
-    [[deprecated]] int& dyn_wordCount();
+    [[deprecated("Use field access instead!")]] int& dyn_wordCount();
     // Get instance field reference: public System.Int32 linkCount
-    [[deprecated]] int& dyn_linkCount();
+    [[deprecated("Use field access instead!")]] int& dyn_linkCount();
     // Get instance field reference: public System.Int32 lineCount
-    [[deprecated]] int& dyn_lineCount();
+    [[deprecated("Use field access instead!")]] int& dyn_lineCount();
     // Get instance field reference: public System.Int32 pageCount
-    [[deprecated]] int& dyn_pageCount();
+    [[deprecated("Use field access instead!")]] int& dyn_pageCount();
     // Get instance field reference: public System.Int32 materialCount
-    [[deprecated]] int& dyn_materialCount();
+    [[deprecated("Use field access instead!")]] int& dyn_materialCount();
     // Get instance field reference: public TMPro.TMP_CharacterInfo[] characterInfo
-    [[deprecated]] ::ArrayW<::TMPro::TMP_CharacterInfo>& dyn_characterInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_CharacterInfo>& dyn_characterInfo();
     // Get instance field reference: public TMPro.TMP_WordInfo[] wordInfo
-    [[deprecated]] ::ArrayW<::TMPro::TMP_WordInfo>& dyn_wordInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_WordInfo>& dyn_wordInfo();
     // Get instance field reference: public TMPro.TMP_LinkInfo[] linkInfo
-    [[deprecated]] ::ArrayW<::TMPro::TMP_LinkInfo>& dyn_linkInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_LinkInfo>& dyn_linkInfo();
     // Get instance field reference: public TMPro.TMP_LineInfo[] lineInfo
-    [[deprecated]] ::ArrayW<::TMPro::TMP_LineInfo>& dyn_lineInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_LineInfo>& dyn_lineInfo();
     // Get instance field reference: public TMPro.TMP_PageInfo[] pageInfo
-    [[deprecated]] ::ArrayW<::TMPro::TMP_PageInfo>& dyn_pageInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_PageInfo>& dyn_pageInfo();
     // Get instance field reference: public TMPro.TMP_MeshInfo[] meshInfo
-    [[deprecated]] ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_meshInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_meshInfo();
     // Get instance field reference: private TMPro.TMP_MeshInfo[] m_CachedMeshInfo
-    [[deprecated]] ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_m_CachedMeshInfo();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_MeshInfo>& dyn_m_CachedMeshInfo();
+    // public System.Void .ctor()
+    // Offset: 0xD0FD18
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_TextInfo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextInfo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_TextInfo*, creationType>()));
+    }
     // System.Void .ctor(System.Int32 characterCount)
     // Offset: 0xD0FE2C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -248,21 +255,16 @@ namespace TMPro {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       ::il2cpp_utils::RunMethodRethrow<void, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, byref(array), size, isBlockAllocated);
     }
-    // public System.Void .ctor()
-    // Offset: 0xD0FD18
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_TextInfo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextInfo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_TextInfo*, creationType>()));
-    }
   }; // TMPro.TMP_TextInfo
   #pragma pack(pop)
   static check_size<sizeof(TMP_TextInfo), 104 + sizeof(::ArrayW<::TMPro::TMP_MeshInfo>)> __TMPro_TMP_TextInfoSizeCheck;
   static_assert(sizeof(TMP_TextInfo) == 0x70);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: TMPro::TMP_TextInfo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_TextInfo::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -360,7 +362,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
 // Writing MetadataGetter for method: TMPro::TMP_TextInfo::Resize
 // Il2CppName: Resize
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: TMPro::TMP_TextInfo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

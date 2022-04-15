@@ -169,43 +169,43 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Byte VersionMadeByCompatibility
-    [[deprecated]] uint8_t& dyn_VersionMadeByCompatibility();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_VersionMadeByCompatibility();
     // Get instance field reference: public System.Byte VersionMadeBySpecification
-    [[deprecated]] uint8_t& dyn_VersionMadeBySpecification();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_VersionMadeBySpecification();
     // Get instance field reference: public System.UInt16 VersionNeededToExtract
-    [[deprecated]] uint16_t& dyn_VersionNeededToExtract();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_VersionNeededToExtract();
     // Get instance field reference: public System.UInt16 GeneralPurposeBitFlag
-    [[deprecated]] uint16_t& dyn_GeneralPurposeBitFlag();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_GeneralPurposeBitFlag();
     // Get instance field reference: public System.UInt16 CompressionMethod
-    [[deprecated]] uint16_t& dyn_CompressionMethod();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_CompressionMethod();
     // Get instance field reference: public System.UInt32 LastModified
-    [[deprecated]] uint& dyn_LastModified();
+    [[deprecated("Use field access instead!")]] uint& dyn_LastModified();
     // Get instance field reference: public System.UInt32 Crc32
-    [[deprecated]] uint& dyn_Crc32();
+    [[deprecated("Use field access instead!")]] uint& dyn_Crc32();
     // Get instance field reference: public System.Int64 CompressedSize
-    [[deprecated]] int64_t& dyn_CompressedSize();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_CompressedSize();
     // Get instance field reference: public System.Int64 UncompressedSize
-    [[deprecated]] int64_t& dyn_UncompressedSize();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_UncompressedSize();
     // Get instance field reference: public System.UInt16 FilenameLength
-    [[deprecated]] uint16_t& dyn_FilenameLength();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_FilenameLength();
     // Get instance field reference: public System.UInt16 ExtraFieldLength
-    [[deprecated]] uint16_t& dyn_ExtraFieldLength();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_ExtraFieldLength();
     // Get instance field reference: public System.UInt16 FileCommentLength
-    [[deprecated]] uint16_t& dyn_FileCommentLength();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_FileCommentLength();
     // Get instance field reference: public System.Int32 DiskNumberStart
-    [[deprecated]] int& dyn_DiskNumberStart();
+    [[deprecated("Use field access instead!")]] int& dyn_DiskNumberStart();
     // Get instance field reference: public System.UInt16 InternalFileAttributes
-    [[deprecated]] uint16_t& dyn_InternalFileAttributes();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_InternalFileAttributes();
     // Get instance field reference: public System.UInt32 ExternalFileAttributes
-    [[deprecated]] uint& dyn_ExternalFileAttributes();
+    [[deprecated("Use field access instead!")]] uint& dyn_ExternalFileAttributes();
     // Get instance field reference: public System.Int64 RelativeOffsetOfLocalHeader
-    [[deprecated]] int64_t& dyn_RelativeOffsetOfLocalHeader();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_RelativeOffsetOfLocalHeader();
     // Get instance field reference: public System.Byte[] Filename
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Filename();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Filename();
     // Get instance field reference: public System.Byte[] FileComment
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_FileComment();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_FileComment();
     // Get instance field reference: public System.Collections.Generic.List`1<System.IO.Compression.ZipGenericExtraField> ExtraFields
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn_ExtraFields();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::IO::Compression::ZipGenericExtraField>*& dyn_ExtraFields();
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, System.Boolean saveExtraFieldsAndComments, out System.IO.Compression.ZipCentralDirectoryFileHeader header)
     // Offset: 0x169D02C
     static bool TryReadBlock(::System::IO::BinaryReader* reader, bool saveExtraFieldsAndComments, ByRef<::System::IO::Compression::ZipCentralDirectoryFileHeader> header);

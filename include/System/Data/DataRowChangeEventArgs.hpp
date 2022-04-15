@@ -52,9 +52,9 @@ namespace System::Data {
     static_assert(sizeof(::System::Data::DataRowAction) == 0x4);
     public:
     // Get instance field reference: private readonly System.Data.DataRow <Row>k__BackingField
-    [[deprecated]] ::System::Data::DataRow*& dyn_$Row$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRow*& dyn_$Row$k__BackingField();
     // Get instance field reference: private readonly System.Data.DataRowAction <Action>k__BackingField
-    [[deprecated]] ::System::Data::DataRowAction& dyn_$Action$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowAction& dyn_$Action$k__BackingField();
     // public System.Void .ctor(System.Data.DataRow row, System.Data.DataRowAction action)
     // Offset: 0xFA1900
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

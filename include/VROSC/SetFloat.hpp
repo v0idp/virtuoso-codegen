@@ -68,24 +68,19 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::FloatField*) == 0x8);
     public:
     // Get instance field reference: private VROSC.FloatField _setTo
-    [[deprecated]] ::VROSC::FloatField*& dyn__setTo();
+    [[deprecated("Use field access instead!")]] ::VROSC::FloatField*& dyn__setTo();
     // Get instance field reference: private System.Boolean _useSignalValue
-    [[deprecated]] bool& dyn__useSignalValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__useSignalValue();
     // Get instance field reference: private VROSC.FloatField _minValue
-    [[deprecated]] ::VROSC::FloatField*& dyn__minValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::FloatField*& dyn__minValue();
     // Get instance field reference: private VROSC.FloatField _maxValue
-    [[deprecated]] ::VROSC::FloatField*& dyn__maxValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::FloatField*& dyn__maxValue();
     // public System.Void .ctor()
     // Offset: 0x19249F4
     // Implemented from: VROSC.FloatChanger
     // Base method: System.Void FloatChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetFloat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetFloat::.ctor");

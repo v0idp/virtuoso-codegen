@@ -54,12 +54,19 @@ namespace UnityEngine {
     static_assert(sizeof(::UnityEngine::GUIStyle*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private readonly UnityEngine.GUIStyle m_SourceStyle
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_m_SourceStyle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_m_SourceStyle();
     // public System.Void set_textColor(UnityEngine.Color value)
     // Offset: 0x187F6A4
     void set_textColor(::UnityEngine::Color value);
+    // public System.Void .ctor()
+    // Offset: 0x188068C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GUIStyleState* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUIStyleState::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GUIStyleState*, creationType>()));
+    }
     // private System.Void .ctor(UnityEngine.GUIStyle sourceStyle, System.IntPtr source)
     // Offset: 0x18806D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -79,15 +86,6 @@ namespace UnityEngine {
     // private System.Void set_textColor_Injected(ref UnityEngine.Color value)
     // Offset: 0x18805C8
     void set_textColor_Injected(ByRef<::UnityEngine::Color> value);
-    // public System.Void .ctor()
-    // Offset: 0x188068C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GUIStyleState* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUIStyleState::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GUIStyleState*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x1880710
     // Implemented from: System.Object
@@ -108,6 +106,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUIStyleState*), "set_textColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::GUIStyleState::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUIStyleState::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -147,10 +149,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUIStyleState*), "set_textColor_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::GUIStyleState::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUIStyleState::Finalize
 // Il2CppName: Finalize
 template<>

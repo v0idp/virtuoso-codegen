@@ -105,17 +105,17 @@ namespace UnityEngine::Events {
       return *reinterpret_cast<::UnityEngine::ISerializationCallbackReceiver*>(this);
     }
     // Get instance field reference: private UnityEngine.Object m_Target
-    [[deprecated]] ::UnityEngine::Object*& dyn_m_Target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Object*& dyn_m_Target();
     // Get instance field reference: private System.String m_TargetAssemblyTypeName
-    [[deprecated]] ::StringW& dyn_m_TargetAssemblyTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_TargetAssemblyTypeName();
     // Get instance field reference: private System.String m_MethodName
-    [[deprecated]] ::StringW& dyn_m_MethodName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_MethodName();
     // Get instance field reference: private UnityEngine.Events.PersistentListenerMode m_Mode
-    [[deprecated]] ::UnityEngine::Events::PersistentListenerMode& dyn_m_Mode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::PersistentListenerMode& dyn_m_Mode();
     // Get instance field reference: private UnityEngine.Events.ArgumentCache m_Arguments
-    [[deprecated]] ::UnityEngine::Events::ArgumentCache*& dyn_m_Arguments();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::ArgumentCache*& dyn_m_Arguments();
     // Get instance field reference: private UnityEngine.Events.UnityEventCallState m_CallState
-    [[deprecated]] ::UnityEngine::Events::UnityEventCallState& dyn_m_CallState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityEventCallState& dyn_m_CallState();
     // public UnityEngine.Object get_target()
     // Offset: 0xBC1364
     ::UnityEngine::Object* get_target();
@@ -131,6 +131,13 @@ namespace UnityEngine::Events {
     // public UnityEngine.Events.ArgumentCache get_arguments()
     // Offset: 0xBC1434
     ::UnityEngine::Events::ArgumentCache* get_arguments();
+    // public System.Void .ctor()
+    // Offset: 0xBC1C78
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PersistentCall* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::PersistentCall::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PersistentCall*, creationType>()));
+    }
     // public System.Boolean IsValid()
     // Offset: 0xBC143C
     bool IsValid();
@@ -146,15 +153,6 @@ namespace UnityEngine::Events {
     // public System.Void OnAfterDeserialize()
     // Offset: 0xBC1C4C
     void OnAfterDeserialize();
-    // public System.Void .ctor()
-    // Offset: 0xBC1C78
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PersistentCall* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Events::PersistentCall::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PersistentCall*, creationType>()));
-    }
   }; // UnityEngine.Events.PersistentCall
   #pragma pack(pop)
   static check_size<sizeof(PersistentCall), 56 + sizeof(::UnityEngine::Events::UnityEventCallState)> __UnityEngine_Events_PersistentCallSizeCheck;
@@ -201,6 +199,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Events::PersistentCall*), "get_arguments", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Events::PersistentCall::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Events::PersistentCall::IsValid
 // Il2CppName: IsValid
 template<>
@@ -245,7 +247,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Events::PersistentCall*), "OnAfterDeserialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Events::PersistentCall::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

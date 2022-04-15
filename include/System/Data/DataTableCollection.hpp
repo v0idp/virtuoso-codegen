@@ -111,19 +111,19 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private readonly System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: private readonly System.Collections.ArrayList _list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__list();
     // Get instance field reference: private System.Int32 _defaultNameIndex
-    [[deprecated]] int& dyn__defaultNameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__defaultNameIndex();
     // Get instance field reference: private System.Data.DataTable[] _delayedAddRangeTables
-    [[deprecated]] ::ArrayW<::System::Data::DataTable*>& dyn__delayedAddRangeTables();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataTable*>& dyn__delayedAddRangeTables();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler _onCollectionChangedDelegate
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangedDelegate();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangedDelegate();
     // Get instance field reference: private System.ComponentModel.CollectionChangeEventHandler _onCollectionChangingDelegate
-    [[deprecated]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangingDelegate();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeEventHandler*& dyn__onCollectionChangingDelegate();
     // Get instance field reference: private readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // System.Int32 get_ObjectID()
     // Offset: 0x12E056C
     int get_ObjectID();

@@ -50,11 +50,11 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 ascii_Left
-    [[deprecated]] uint& dyn_ascii_Left();
+    [[deprecated("Use field access instead!")]] uint& dyn_ascii_Left();
     // Get instance field reference: public System.UInt32 ascii_Right
-    [[deprecated]] uint& dyn_ascii_Right();
+    [[deprecated("Use field access instead!")]] uint& dyn_ascii_Right();
     // Get instance field reference: public System.UInt32 key
-    [[deprecated]] uint& dyn_key();
+    [[deprecated("Use field access instead!")]] uint& dyn_key();
     // public System.Void .ctor(System.UInt32 ascii_left, System.UInt32 ascii_right)
     // Offset: 0xC29D24
     KerningPairKey(uint ascii_left, uint ascii_right);

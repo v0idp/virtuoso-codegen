@@ -119,7 +119,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.GraphicRaycaster/UnityEngine.UI.BlockingObjects All
       static void _set_All(::UnityEngine::UI::GraphicRaycaster::BlockingObjects value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.GraphicRaycaster/UnityEngine.UI.BlockingObjects
     #pragma pack(pop)
     static check_size<sizeof(GraphicRaycaster::BlockingObjects), 0 + sizeof(int)> __UnityEngine_UI_GraphicRaycaster_BlockingObjectsSizeCheck;
@@ -173,15 +173,15 @@ namespace UnityEngine::UI {
     // Set static field: static private readonly System.Collections.Generic.List`1<UnityEngine.UI.Graphic> s_SortedGraphics
     static void _set_s_SortedGraphics(::System::Collections::Generic::List_1<::UnityEngine::UI::Graphic*>* value);
     // Get instance field reference: private System.Boolean m_IgnoreReversedGraphics
-    [[deprecated]] bool& dyn_m_IgnoreReversedGraphics();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IgnoreReversedGraphics();
     // Get instance field reference: private UnityEngine.UI.GraphicRaycaster/UnityEngine.UI.BlockingObjects m_BlockingObjects
-    [[deprecated]] ::UnityEngine::UI::GraphicRaycaster::BlockingObjects& dyn_m_BlockingObjects();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::GraphicRaycaster::BlockingObjects& dyn_m_BlockingObjects();
     // Get instance field reference: protected UnityEngine.LayerMask m_BlockingMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_BlockingMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_BlockingMask();
     // Get instance field reference: private UnityEngine.Canvas m_Canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_m_Canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_m_Canvas();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.UI.Graphic> m_RaycastResults
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UI::Graphic*>*& dyn_m_RaycastResults();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UI::Graphic*>*& dyn_m_RaycastResults();
     // public System.Boolean get_ignoreReversedGraphics()
     // Offset: 0xEBE7A4
     bool get_ignoreReversedGraphics();
@@ -203,6 +203,9 @@ namespace UnityEngine::UI {
     // private UnityEngine.Canvas get_canvas()
     // Offset: 0xEBE6A4
     ::UnityEngine::Canvas* get_canvas();
+    // static private System.Void .cctor()
+    // Offset: 0xEBFB78
+    static void _cctor();
     // static private System.Void Raycast(UnityEngine.Canvas canvas, UnityEngine.Camera eventCamera, UnityEngine.Vector2 pointerPosition, System.Collections.Generic.IList`1<UnityEngine.UI.Graphic> foundGraphics, System.Collections.Generic.List`1<UnityEngine.UI.Graphic> results)
     // Offset: 0xEBF544
     static void Raycast(::UnityEngine::Canvas* canvas, ::UnityEngine::Camera* eventCamera, ::UnityEngine::Vector2 pointerPosition, ::System::Collections::Generic::IList_1<::UnityEngine::UI::Graphic*>* foundGraphics, ::System::Collections::Generic::List_1<::UnityEngine::UI::Graphic*>* results);
@@ -226,21 +229,11 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.EventSystems.BaseRaycaster
     // Base method: System.Void BaseRaycaster::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GraphicRaycaster* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::GraphicRaycaster::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GraphicRaycaster*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0xEBFB78
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override System.Void Raycast(UnityEngine.EventSystems.PointerEventData eventData, System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult> resultAppendList)
     // Offset: 0xEBE868
     // Implemented from: UnityEngine.EventSystems.BaseRaycaster
@@ -313,6 +306,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::GraphicRaycaster*), "get_canvas", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::GraphicRaycaster::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::UI::GraphicRaycaster::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::GraphicRaycaster*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: UnityEngine::UI::GraphicRaycaster::Raycast
 // Il2CppName: Raycast
 template<>
@@ -354,14 +355,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::UI::GraphicRaycaster::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::UI::GraphicRaycaster::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::GraphicRaycaster*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: UnityEngine::UI::GraphicRaycaster::Raycast
 // Il2CppName: Raycast
 template<>

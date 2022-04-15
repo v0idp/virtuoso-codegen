@@ -53,7 +53,7 @@ namespace System::Xml {
     // Deleting conversion operator: operator ::System::Xml::XmlNode*
     constexpr operator ::System::Xml::XmlNode*() const noexcept = delete;
     // Get instance field reference: private System.Xml.XmlLinkedNode lastChild
-    [[deprecated]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
     // public override System.String get_Name()
     // Offset: 0x11A0124
     // Implemented from: System.Xml.XmlNode

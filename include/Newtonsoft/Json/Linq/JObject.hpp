@@ -139,11 +139,11 @@ namespace Newtonsoft::Json::Linq {
       return *reinterpret_cast<::System::ComponentModel::ICustomTypeDescriptor*>(this);
     }
     // Get instance field reference: private readonly Newtonsoft.Json.Linq.JPropertyKeyedCollection _properties
-    [[deprecated]] ::Newtonsoft::Json::Linq::JPropertyKeyedCollection*& dyn__properties();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JPropertyKeyedCollection*& dyn__properties();
     // Get instance field reference: private System.ComponentModel.PropertyChangedEventHandler PropertyChanged
-    [[deprecated]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangedEventHandler*& dyn_PropertyChanged();
     // Get instance field reference: private System.ComponentModel.PropertyChangingEventHandler PropertyChanging
-    [[deprecated]] ::System::ComponentModel::PropertyChangingEventHandler*& dyn_PropertyChanging();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyChangingEventHandler*& dyn_PropertyChanging();
     // public Newtonsoft.Json.Linq.JToken get_Item(System.String propertyName)
     // Offset: 0xEDEF54
     ::Newtonsoft::Json::Linq::JToken* get_Item(::StringW propertyName);
@@ -253,7 +253,6 @@ namespace Newtonsoft::Json::Linq {
     // Implemented from: Newtonsoft.Json.Linq.JContainer
     // Base method: System.Void JContainer::.ctor()
     // Base method: System.Void JToken::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JObject* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JObject::.ctor");

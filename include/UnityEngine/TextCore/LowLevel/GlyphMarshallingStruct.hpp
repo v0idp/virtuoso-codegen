@@ -67,15 +67,15 @@ namespace UnityEngine::TextCore::LowLevel {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 index
-    [[deprecated]] uint& dyn_index();
+    [[deprecated("Use field access instead!")]] uint& dyn_index();
     // Get instance field reference: public UnityEngine.TextCore.GlyphMetrics metrics
-    [[deprecated]] ::UnityEngine::TextCore::GlyphMetrics& dyn_metrics();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::GlyphMetrics& dyn_metrics();
     // Get instance field reference: public UnityEngine.TextCore.GlyphRect glyphRect
-    [[deprecated]] ::UnityEngine::TextCore::GlyphRect& dyn_glyphRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::GlyphRect& dyn_glyphRect();
     // Get instance field reference: public System.Single scale
-    [[deprecated]] float& dyn_scale();
+    [[deprecated("Use field access instead!")]] float& dyn_scale();
     // Get instance field reference: public System.Int32 atlasIndex
-    [[deprecated]] int& dyn_atlasIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_atlasIndex();
   }; // UnityEngine.TextCore.LowLevel.GlyphMarshallingStruct
   #pragma pack(pop)
   static check_size<sizeof(GlyphMarshallingStruct), 44 + sizeof(int)> __UnityEngine_TextCore_LowLevel_GlyphMarshallingStructSizeCheck;

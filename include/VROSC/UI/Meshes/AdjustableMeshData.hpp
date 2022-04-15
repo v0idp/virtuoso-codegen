@@ -132,29 +132,29 @@ namespace VROSC::UI::Meshes {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Mesh _mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__mesh();
     // Get instance field reference: private VROSC.UI.Meshes.AdjustableMeshData _childOf
-    [[deprecated]] ::VROSC::UI::Meshes::AdjustableMeshData*& dyn__childOf();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::AdjustableMeshData*& dyn__childOf();
     // Get instance field reference: private System.Single _height
-    [[deprecated]] float& dyn__height();
+    [[deprecated("Use field access instead!")]] float& dyn__height();
     // Get instance field reference: private System.Single _width
-    [[deprecated]] float& dyn__width();
+    [[deprecated("Use field access instead!")]] float& dyn__width();
     // Get instance field reference: private UnityEngine.Vector2 _center
-    [[deprecated]] ::UnityEngine::Vector2& dyn__center();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__center();
     // Get instance field reference: private System.Boolean _flipX
-    [[deprecated]] bool& dyn__flipX();
+    [[deprecated("Use field access instead!")]] bool& dyn__flipX();
     // Get instance field reference: private System.Boolean _flipY
-    [[deprecated]] bool& dyn__flipY();
+    [[deprecated("Use field access instead!")]] bool& dyn__flipY();
     // Get instance field reference: private System.Boolean _simple
-    [[deprecated]] bool& dyn__simple();
+    [[deprecated("Use field access instead!")]] bool& dyn__simple();
     // Get instance field reference: private VROSC.UI.Meshes.AdjustableMeshData/VROSC.UI.Meshes.VertexData[] _data
-    [[deprecated]] ::ArrayW<::VROSC::UI::Meshes::AdjustableMeshData::VertexData*>& dyn__data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::UI::Meshes::AdjustableMeshData::VertexData*>& dyn__data();
     // Get instance field reference: private VROSC.MinMaxFloat _x
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__x();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__x();
     // Get instance field reference: private VROSC.MinMaxFloat _y
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__y();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__y();
     // Get instance field reference: private System.Boolean _analyzed
-    [[deprecated]] bool& dyn__analyzed();
+    [[deprecated("Use field access instead!")]] bool& dyn__analyzed();
     // public System.Boolean get_Analyzed()
     // Offset: 0x967628
     bool get_Analyzed();
@@ -167,6 +167,13 @@ namespace VROSC::UI::Meshes {
     // public System.Single get_Height()
     // Offset: 0x967640
     float get_Height();
+    // public System.Void .ctor()
+    // Offset: 0x9680AC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AdjustableMeshData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::AdjustableMeshData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshData*, creationType>()));
+    }
     // public System.Void GetScaledMesh(UnityEngine.Vector3[] positions, System.Single targetWidth, System.Single targetHeight)
     // Offset: 0x967648
     void GetScaledMesh(::ArrayW<::UnityEngine::Vector3> positions, float targetWidth, float targetHeight);
@@ -182,17 +189,6 @@ namespace VROSC::UI::Meshes {
     // private UnityEngine.Vector2 GetScaling(System.Int32 i, VROSC.MinMaxFloat x, VROSC.MinMaxFloat y)
     // Offset: 0x967F50
     ::UnityEngine::Vector2 GetScaling(int i, ::VROSC::MinMaxFloat* x, ::VROSC::MinMaxFloat* y);
-    // public System.Void .ctor()
-    // Offset: 0x9680AC
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AdjustableMeshData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::AdjustableMeshData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshData*, creationType>()));
-    }
   }; // VROSC.UI.Meshes.AdjustableMeshData
   #pragma pack(pop)
   static check_size<sizeof(AdjustableMeshData), 88 + sizeof(bool)> __VROSC_UI_Meshes_AdjustableMeshDataSizeCheck;
@@ -231,6 +227,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::AdjustableMeshData*), "get_Height", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::Meshes::AdjustableMeshData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::Meshes::AdjustableMeshData::GetScaledMesh
 // Il2CppName: GetScaledMesh
 template<>
@@ -279,7 +279,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::AdjustableMeshData*), "GetScaling", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{i, x, y});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::Meshes::AdjustableMeshData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -97,11 +97,11 @@ namespace System::Security::Cryptography {
     // Set static field: static readonly System.UInt32[] fpTab
     static void _set_fpTab(::ArrayW<uint> value);
     // Get instance field reference: private System.Byte[] keySchedule
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_keySchedule();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_keySchedule();
     // Get instance field reference: private System.Byte[] byteBuff
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_byteBuff();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_byteBuff();
     // Get instance field reference: private System.UInt32[] dwordBuff
-    [[deprecated]] ::ArrayW<uint>& dyn_dwordBuff();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_dwordBuff();
     // System.Void .ctor(System.Security.Cryptography.SymmetricAlgorithm symmAlgo, System.Boolean encryption, System.Byte[] key, System.Byte[] iv)
     // Offset: 0x14044E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

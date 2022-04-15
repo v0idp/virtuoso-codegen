@@ -53,13 +53,13 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Int32 order
-    [[deprecated]] int& dyn_order();
+    [[deprecated("Use field access instead!")]] int& dyn_order();
     // Get instance field reference: private System.Boolean isRequired
-    [[deprecated]] bool& dyn_isRequired();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRequired();
     // Get instance field reference: private System.Boolean emitDefaultValue
-    [[deprecated]] bool& dyn_emitDefaultValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_emitDefaultValue();
     // public System.String get_Name()
     // Offset: 0x190EB84
     ::StringW get_Name();

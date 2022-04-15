@@ -82,15 +82,15 @@ namespace System::IO::Compression {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.IO.Stream _baseStream
-    [[deprecated]] ::System::IO::Stream*& dyn__baseStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn__baseStream();
     // Get instance field reference: private readonly System.Boolean _closeBaseStream
-    [[deprecated]] bool& dyn__closeBaseStream();
+    [[deprecated("Use field access instead!")]] bool& dyn__closeBaseStream();
     // Get instance field reference: private readonly System.Action`1<System.IO.Compression.ZipArchiveEntry> _onClosed
-    [[deprecated]] ::System::Action_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__onClosed();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::System::IO::Compression::ZipArchiveEntry*>*& dyn__onClosed();
     // Get instance field reference: private readonly System.IO.Compression.ZipArchiveEntry _zipArchiveEntry
-    [[deprecated]] ::System::IO::Compression::ZipArchiveEntry*& dyn__zipArchiveEntry();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::ZipArchiveEntry*& dyn__zipArchiveEntry();
     // Get instance field reference: private System.Boolean _isDisposed
-    [[deprecated]] bool& dyn__isDisposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDisposed();
     // System.Void .ctor(System.IO.Stream baseStream, System.Boolean closeBaseStream)
     // Offset: 0x16994AC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

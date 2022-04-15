@@ -51,13 +51,13 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::DtdParser::UndeclaredNotation*) == 0x8);
     public:
     // Get instance field reference: System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: System.Int32 lineNo
-    [[deprecated]] int& dyn_lineNo();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNo();
     // Get instance field reference: System.Int32 linePos
-    [[deprecated]] int& dyn_linePos();
+    [[deprecated("Use field access instead!")]] int& dyn_linePos();
     // Get instance field reference: System.Xml.DtdParser/System.Xml.UndeclaredNotation next
-    [[deprecated]] ::System::Xml::DtdParser::UndeclaredNotation*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Xml::DtdParser::UndeclaredNotation*& dyn_next();
     // System.Void .ctor(System.String name, System.Int32 lineNo, System.Int32 linePos)
     // Offset: 0xC1B4E0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

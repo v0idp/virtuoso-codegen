@@ -50,11 +50,18 @@ namespace System::Xml {
     static_assert(sizeof(::ArrayW<::Il2CppChar>) == 0x8);
     public:
     // Get instance field reference: private System.Byte[] leftOverBytes
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_leftOverBytes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_leftOverBytes();
     // Get instance field reference: private System.Int32 leftOverBytesCount
-    [[deprecated]] int& dyn_leftOverBytesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_leftOverBytesCount();
     // Get instance field reference: private System.Char[] charsLine
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_charsLine();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_charsLine();
+    // System.Void .ctor()
+    // Offset: 0xB5C928
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Base64Encoder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Base64Encoder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Base64Encoder*, creationType>()));
+    }
     // System.Void WriteChars(System.Char[] chars, System.Int32 index, System.Int32 count)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void WriteChars(::ArrayW<::Il2CppChar> chars, int index, int count);
@@ -64,21 +71,16 @@ namespace System::Xml {
     // System.Void Flush()
     // Offset: 0xB5CCDC
     void Flush();
-    // System.Void .ctor()
-    // Offset: 0xB5C928
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Base64Encoder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Base64Encoder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Base64Encoder*, creationType>()));
-    }
   }; // System.Xml.Base64Encoder
   #pragma pack(pop)
   static check_size<sizeof(Base64Encoder), 32 + sizeof(::ArrayW<::Il2CppChar>)> __System_Xml_Base64EncoderSizeCheck;
   static_assert(sizeof(Base64Encoder) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Xml::Base64Encoder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Base64Encoder::WriteChars
 // Il2CppName: WriteChars
 template<>
@@ -109,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Base64Encoder*), "Flush", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Base64Encoder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

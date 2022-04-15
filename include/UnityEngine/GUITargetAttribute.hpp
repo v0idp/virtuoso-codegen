@@ -46,7 +46,7 @@ namespace UnityEngine {
       return displayMask;
     }
     // Get instance field reference: System.Int32 displayMask
-    [[deprecated]] int& dyn_displayMask();
+    [[deprecated("Use field access instead!")]] int& dyn_displayMask();
     // static private System.Int32 GetGUITargetAttrValue(System.Type klass, System.String methodName)
     // Offset: 0x18807C8
     static int GetGUITargetAttrValue(::System::Type* klass, ::StringW methodName);

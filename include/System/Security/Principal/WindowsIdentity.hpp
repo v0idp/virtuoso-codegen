@@ -109,17 +109,17 @@ namespace System::Security::Principal {
     // Set static field: static private System.IntPtr invalidWindows
     static void _set_invalidWindows(::System::IntPtr value);
     // Get instance field reference: private System.IntPtr _token
-    [[deprecated]] ::System::IntPtr& dyn__token();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__token();
     // Get instance field reference: private System.String _type
-    [[deprecated]] ::StringW& dyn__type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__type();
     // Get instance field reference: private System.Security.Principal.WindowsAccountType _account
-    [[deprecated]] ::System::Security::Principal::WindowsAccountType& dyn__account();
+    [[deprecated("Use field access instead!")]] ::System::Security::Principal::WindowsAccountType& dyn__account();
     // Get instance field reference: private System.Boolean _authenticated
-    [[deprecated]] bool& dyn__authenticated();
+    [[deprecated("Use field access instead!")]] bool& dyn__authenticated();
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: private System.Runtime.Serialization.SerializationInfo _info
-    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn__info();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationInfo*& dyn__info();
     // public System.Void .ctor(System.IntPtr userToken, System.String type, System.Security.Principal.WindowsAccountType acctType, System.Boolean isAuthenticated)
     // Offset: 0x1212C20
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

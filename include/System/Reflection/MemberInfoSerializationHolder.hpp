@@ -99,17 +99,17 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::Runtime::Serialization::IObjectReference*>(this);
     }
     // Get instance field reference: private System.String m_memberName
-    [[deprecated]] ::StringW& dyn_m_memberName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_memberName();
     // Get instance field reference: private System.RuntimeType m_reflectedType
-    [[deprecated]] ::System::RuntimeType*& dyn_m_reflectedType();
+    [[deprecated("Use field access instead!")]] ::System::RuntimeType*& dyn_m_reflectedType();
     // Get instance field reference: private System.String m_signature
-    [[deprecated]] ::StringW& dyn_m_signature();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_signature();
     // Get instance field reference: private System.String m_signature2
-    [[deprecated]] ::StringW& dyn_m_signature2();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_signature2();
     // Get instance field reference: private System.Reflection.MemberTypes m_memberType
-    [[deprecated]] ::System::Reflection::MemberTypes& dyn_m_memberType();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberTypes& dyn_m_memberType();
     // Get instance field reference: private System.Runtime.Serialization.SerializationInfo m_info
-    [[deprecated]] ::System::Runtime::Serialization::SerializationInfo*& dyn_m_info();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationInfo*& dyn_m_info();
     // System.Void .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0xFFD758
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

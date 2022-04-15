@@ -43,9 +43,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public readonly System.Single Decibels
-    [[deprecated]] float& dyn_Decibels();
+    [[deprecated("Use field access instead!")]] float& dyn_Decibels();
     // Get instance field reference: public readonly System.Single Distance
-    [[deprecated]] float& dyn_Distance();
+    [[deprecated("Use field access instead!")]] float& dyn_Distance();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB52088
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

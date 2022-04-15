@@ -38,6 +38,13 @@ namespace System::Security::Cryptography {
   // [TokenAttribute] Offset: FFFFFFFF
   class AesCryptoServiceProvider : public ::System::Security::Cryptography::Aes {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x11EC7CC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AesCryptoServiceProvider* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::AesCryptoServiceProvider::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AesCryptoServiceProvider*, creationType>()));
+    }
     // public override System.Byte[] get_IV()
     // Offset: 0x11ED190
     // Implemented from: System.Security.Cryptography.SymmetricAlgorithm
@@ -93,17 +100,6 @@ namespace System::Security::Cryptography {
     // Implemented from: System.Security.Cryptography.SymmetricAlgorithm
     // Base method: System.Void SymmetricAlgorithm::set_Padding(System.Security.Cryptography.PaddingMode value)
     void set_Padding(::System::Security::Cryptography::PaddingMode value);
-    // public System.Void .ctor()
-    // Offset: 0x11EC7CC
-    // Implemented from: System.Security.Cryptography.Aes
-    // Base method: System.Void Aes::.ctor()
-    // Base method: System.Void SymmetricAlgorithm::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AesCryptoServiceProvider* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::AesCryptoServiceProvider::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AesCryptoServiceProvider*, creationType>()));
-    }
     // public override System.Void GenerateIV()
     // Offset: 0x11EC83C
     // Implemented from: System.Security.Cryptography.SymmetricAlgorithm
@@ -143,6 +139,10 @@ namespace System::Security::Cryptography {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Security::Cryptography::AesCryptoServiceProvider::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::AesCryptoServiceProvider::get_IV
 // Il2CppName: get_IV
 template<>
@@ -236,10 +236,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::AesCryptoServiceProvider*), "set_Padding", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::AesCryptoServiceProvider::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::AesCryptoServiceProvider::GenerateIV
 // Il2CppName: GenerateIV
 template<>

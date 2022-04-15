@@ -46,18 +46,12 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.SampleDatabase _drumsSamplesDatabase
-    [[deprecated]] ::VROSC::SampleDatabase*& dyn__drumsSamplesDatabase();
+    [[deprecated("Use field access instead!")]] ::VROSC::SampleDatabase*& dyn__drumsSamplesDatabase();
     // public VROSC.SampleDatabase get_DrumSamples()
     // Offset: 0x1930E2C
     ::VROSC::SampleDatabase* get_DrumSamples();
     // public System.Void .ctor()
     // Offset: 0x1930E34
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StaticData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::StaticData::.ctor");

@@ -45,9 +45,9 @@ namespace UnityEngine {
     static_assert(sizeof(::System::IntPtr) == 0x8);
     public:
     // Get instance field reference: private System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // Get instance field reference: protected System.IntPtr m_jobject
-    [[deprecated]] ::System::IntPtr& dyn_m_jobject();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_jobject();
     // public System.Void .ctor(System.IntPtr jobject)
     // Offset: 0x186FB9C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

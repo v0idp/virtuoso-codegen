@@ -49,9 +49,9 @@ namespace System::Security::Cryptography::X509Certificates {
     static_assert(sizeof(::Mono::Security::X509::X509Store*) == 0x8);
     public:
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate2Collection list
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate2Collection*& dyn_list();
     // Get instance field reference: private Mono.Security.X509.X509Store store
-    [[deprecated]] ::Mono::Security::X509::X509Store*& dyn_store();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::X509::X509Store*& dyn_store();
     // public System.Void Close()
     // Offset: 0x9F2124
     void Close();

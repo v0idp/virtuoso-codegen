@@ -87,17 +87,17 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::GameObject*) == 0x8);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _nameLabel
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__nameLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__nameLabel();
     // Get instance field reference: private TMPro.TextMeshPro _authorLabel
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__authorLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__authorLabel();
     // Get instance field reference: private TMPro.TextMeshPro _dateLabel
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__dateLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__dateLabel();
     // Get instance field reference: private UnityEngine.GameObject _cloudIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__cloudIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__cloudIcon();
     // Get instance field reference: private UnityEngine.GameObject _mySharedIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__mySharedIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__mySharedIcon();
     // Get instance field reference: private UnityEngine.GameObject _communityIcon
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__communityIcon();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__communityIcon();
     // public System.Void SetUIData(System.String displayName, System.String authorName, System.String dateText, VROSC.SessionUIData/VROSC.Type sessionType)
     // Offset: 0x19871CC
     void SetUIData(::StringW displayName, ::StringW authorName, ::StringW dateText, ::VROSC::SessionUIData::Type sessionType);
@@ -105,11 +105,6 @@ namespace VROSC {
     // Offset: 0x1987294
     // Implemented from: VROSC.PaginatedListItemUI
     // Base method: System.Void PaginatedListItemUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionItemUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionItemUI::.ctor");

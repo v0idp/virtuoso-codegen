@@ -92,7 +92,7 @@ namespace VROSC::AudioReactive {
       // Set static field: static public VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.OnBeatBehaviour Cycle
       static void _set_Cycle(::VROSC::AudioReactive::GlobalColorEffectData::OnBeatBehaviour value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.OnBeatBehaviour
     #pragma pack(pop)
     static check_size<sizeof(GlobalColorEffectData::OnBeatBehaviour), 0 + sizeof(int)> __VROSC_AudioReactive_GlobalColorEffectData_OnBeatBehaviourSizeCheck;
@@ -165,25 +165,25 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.ColorGroup[] _startColors
-    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::GlobalColorEffectData::ColorGroup*>& dyn__startColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AudioReactive::GlobalColorEffectData::ColorGroup*>& dyn__startColors();
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.HueChangeGroup _channel1
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel1();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel1();
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.HueChangeGroup _channel2
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel2();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel2();
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.HueChangeGroup _channel3
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel3();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel3();
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.HueChangeGroup _channel4
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel4();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup*& dyn__channel4();
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.OnBeatBehaviour _behaviour
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData::OnBeatBehaviour& dyn__behaviour();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorEffectData::OnBeatBehaviour& dyn__behaviour();
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: private UnityEngine.AnimationCurve _hueChange
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__hueChange();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__hueChange();
     // Get instance field reference: private UnityEngine.AnimationCurve _saturationChange
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__saturationChange();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__saturationChange();
     // Get instance field reference: private UnityEngine.AnimationCurve _valueChange
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__valueChange();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__valueChange();
     // public VROSC.AudioReactive.GlobalColorEffectData/VROSC.AudioReactive.HueChangeGroup get_Channel1()
     // Offset: 0x19A3DDC
     ::VROSC::AudioReactive::GlobalColorEffectData::HueChangeGroup* get_Channel1();
@@ -221,9 +221,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x19A3E68
     // Implemented from: VROSC.AudioReactive.AudioReactiveEffectData
     // Base method: System.Void AudioReactiveEffectData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalColorEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::GlobalColorEffectData::.ctor");

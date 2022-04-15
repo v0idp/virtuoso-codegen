@@ -120,19 +120,19 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Set static field: static private System.Single RESPAWN_SECONDS
     static void _set_RESPAWN_SECONDS(float value);
     // Get instance field reference: private System.UInt32 m_score
-    [[deprecated]] uint& dyn_m_score();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_score();
     // Get instance field reference: private UnityEngine.UI.Text m_scoreUI
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_scoreUI();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_scoreUI();
     // Get instance field reference: private UnityEngine.GameObject m_ballPrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_ballPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_ballPrefab();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.BallEjector m_ballEjector
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::BallEjector*& dyn_m_ballEjector();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::BallEjector*& dyn_m_ballEjector();
     // Get instance field reference: private System.Collections.Generic.Queue`1<UnityEngine.GameObject> m_balls
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::UnityEngine::GameObject*>*& dyn_m_balls();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::UnityEngine::GameObject*>*& dyn_m_balls();
     // Get instance field reference: private UnityEngine.GameObject m_heldBall
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_heldBall();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_heldBall();
     // Get instance field reference: private System.Single m_nextSpawnTime
-    [[deprecated]] float& dyn_m_nextSpawnTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_nextSpawnTime();
     // public System.UInt32 get_Score()
     // Offset: 0x17125BC
     uint get_Score();
@@ -145,6 +145,13 @@ namespace Oculus::Platform::Samples::VrHoops {
     // protected System.Boolean get_HasBall()
     // Offset: 0x171268C
     bool get_HasBall();
+    // protected System.Void .ctor()
+    // Offset: 0x1712D00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Player* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::Player::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Player*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x17126F8
     void Start();
@@ -160,19 +167,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // private System.Void OnDestroy()
     // Offset: 0x1712BA8
     void OnDestroy();
-    // protected System.Void .ctor()
-    // Offset: 0x1712D00
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Player* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::Player::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Player*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.Player
   #pragma pack(pop)
   static check_size<sizeof(Player), 72 + sizeof(float)> __Oculus_Platform_Samples_VrHoops_PlayerSizeCheck;
@@ -213,6 +207,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::Player*), "get_HasBall", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::Player::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::Player::Start
 // Il2CppName: Start
 template<>
@@ -253,7 +251,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::Player*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::Player::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

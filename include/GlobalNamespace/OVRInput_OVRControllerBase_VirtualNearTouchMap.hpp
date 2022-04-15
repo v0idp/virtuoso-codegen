@@ -58,33 +58,35 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OVRInput::RawNearTouch) == 0x4);
     public:
     // Get instance field reference: public OVRInput/RawNearTouch None
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_None();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_None();
     // Get instance field reference: public OVRInput/RawNearTouch PrimaryIndexTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryIndexTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawNearTouch PrimaryThumbButtons
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryThumbButtons();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_PrimaryThumbButtons();
     // Get instance field reference: public OVRInput/RawNearTouch SecondaryIndexTrigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryIndexTrigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryIndexTrigger();
     // Get instance field reference: public OVRInput/RawNearTouch SecondaryThumbButtons
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryThumbButtons();
-    // public OVRInput/RawNearTouch ToRawMask(OVRInput/NearTouch virtualMask)
-    // Offset: 0x13F2370
-    ::GlobalNamespace::OVRInput::RawNearTouch ToRawMask(::GlobalNamespace::OVRInput::NearTouch virtualMask);
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawNearTouch& dyn_SecondaryThumbButtons();
     // public System.Void .ctor()
     // Offset: 0x13F23C4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRInput::OVRControllerBase::VirtualNearTouchMap* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRInput::OVRControllerBase::VirtualNearTouchMap::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<OVRInput::OVRControllerBase::VirtualNearTouchMap*, creationType>()));
     }
+    // public OVRInput/RawNearTouch ToRawMask(OVRInput/NearTouch virtualMask)
+    // Offset: 0x13F2370
+    ::GlobalNamespace::OVRInput::RawNearTouch ToRawMask(::GlobalNamespace::OVRInput::NearTouch virtualMask);
   }; // OVRInput/OVRControllerBase/VirtualNearTouchMap
   #pragma pack(pop)
   static check_size<sizeof(OVRInput::OVRControllerBase::VirtualNearTouchMap), 32 + sizeof(::GlobalNamespace::OVRInput::RawNearTouch)> __GlobalNamespace_OVRInput_OVRControllerBase_VirtualNearTouchMapSizeCheck;
   static_assert(sizeof(OVRInput::OVRControllerBase::VirtualNearTouchMap) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualNearTouchMap::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualNearTouchMap::ToRawMask
 // Il2CppName: ToRawMask
 template<>
@@ -94,7 +96,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRInput::OVRControllerBase::VirtualNearTouchMap*), "ToRawMask", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{virtualMask});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRInput::OVRControllerBase::VirtualNearTouchMap::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

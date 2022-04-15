@@ -109,7 +109,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRSkeleton/SkeletonType HandRight
       static void _set_HandRight(::GlobalNamespace::OVRSkeleton::SkeletonType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRSkeleton/SkeletonType
     #pragma pack(pop)
     static check_size<sizeof(OVRSkeleton::SkeletonType), 0 + sizeof(int)> __GlobalNamespace_OVRSkeleton_SkeletonTypeSizeCheck;
@@ -245,45 +245,45 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected OVRSkeleton/SkeletonType _skeletonType
-    [[deprecated]] ::GlobalNamespace::OVRSkeleton::SkeletonType& dyn__skeletonType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeleton::SkeletonType& dyn__skeletonType();
     // Get instance field reference: private OVRSkeleton/IOVRSkeletonDataProvider _dataProvider
-    [[deprecated]] ::GlobalNamespace::OVRSkeleton::IOVRSkeletonDataProvider*& dyn__dataProvider();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeleton::IOVRSkeletonDataProvider*& dyn__dataProvider();
     // Get instance field reference: private System.Boolean _updateRootPose
-    [[deprecated]] bool& dyn__updateRootPose();
+    [[deprecated("Use field access instead!")]] bool& dyn__updateRootPose();
     // Get instance field reference: private System.Boolean _updateRootScale
-    [[deprecated]] bool& dyn__updateRootScale();
+    [[deprecated("Use field access instead!")]] bool& dyn__updateRootScale();
     // Get instance field reference: private System.Boolean _enablePhysicsCapsules
-    [[deprecated]] bool& dyn__enablePhysicsCapsules();
+    [[deprecated("Use field access instead!")]] bool& dyn__enablePhysicsCapsules();
     // Get instance field reference: private UnityEngine.GameObject _bonesGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__bonesGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__bonesGO();
     // Get instance field reference: private UnityEngine.GameObject _bindPosesGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__bindPosesGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__bindPosesGO();
     // Get instance field reference: private UnityEngine.GameObject _capsulesGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__capsulesGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__capsulesGO();
     // Get instance field reference: protected System.Collections.Generic.List`1<OVRBone> _bones
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRBone*>*& dyn__bones();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRBone*>*& dyn__bones();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRBone> _bindPoses
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRBone*>*& dyn__bindPoses();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRBone*>*& dyn__bindPoses();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRBoneCapsule> _capsules
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRBoneCapsule*>*& dyn__capsules();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRBoneCapsule*>*& dyn__capsules();
     // Get instance field reference: protected OVRPlugin/Skeleton2 _skeleton
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Skeleton2& dyn__skeleton();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Skeleton2& dyn__skeleton();
     // Get instance field reference: private readonly UnityEngine.Quaternion wristFixupRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_wristFixupRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_wristFixupRotation();
     // Get instance field reference: private System.Boolean <IsInitialized>k__BackingField
-    [[deprecated]] bool& dyn_$IsInitialized$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsInitialized$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.IList`1<OVRBone> <Bones>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*& dyn_$Bones$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*& dyn_$Bones$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.IList`1<OVRBone> <BindPoses>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*& dyn_$BindPoses$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBone*>*& dyn_$BindPoses$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.IList`1<OVRBoneCapsule> <Capsules>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBoneCapsule*>*& dyn_$Capsules$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::GlobalNamespace::OVRBoneCapsule*>*& dyn_$Capsules$k__BackingField();
     // Get instance field reference: private System.Int32 <SkeletonChangedCount>k__BackingField
-    [[deprecated]] int& dyn_$SkeletonChangedCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$SkeletonChangedCount$k__BackingField();
     // public System.Boolean get_IsInitialized()
     // Offset: 0xE7C87C
     bool get_IsInitialized();
@@ -326,6 +326,13 @@ namespace GlobalNamespace {
     // private System.Void set_SkeletonChangedCount(System.Int32 value)
     // Offset: 0xE7C8F8
     void set_SkeletonChangedCount(int value);
+    // public System.Void .ctor()
+    // Offset: 0xE7E62C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRSkeleton* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSkeleton::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRSkeleton*, creationType>()));
+    }
     // public OVRSkeleton/SkeletonType GetSkeletonType()
     // Offset: 0xE7C8E8
     ::GlobalNamespace::OVRSkeleton::SkeletonType GetSkeletonType();
@@ -374,19 +381,6 @@ namespace GlobalNamespace {
     // static public System.String BoneLabelFromBoneId(OVRSkeleton/SkeletonType skeletonType, OVRSkeleton/BoneId boneId)
     // Offset: 0xE7DD68
     static ::StringW BoneLabelFromBoneId(::GlobalNamespace::OVRSkeleton::SkeletonType skeletonType, ::GlobalNamespace::OVRSkeleton::BoneId boneId);
-    // public System.Void .ctor()
-    // Offset: 0xE7E62C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRSkeleton* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRSkeleton::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRSkeleton*, creationType>()));
-    }
   }; // OVRSkeleton
   #pragma pack(pop)
   static check_size<sizeof(OVRSkeleton), 176 + sizeof(int)> __GlobalNamespace_OVRSkeletonSizeCheck;
@@ -514,6 +508,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSkeleton*), "set_SkeletonChangedCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRSkeleton::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRSkeleton::GetSkeletonType
 // Il2CppName: GetSkeletonType
 template<>
@@ -644,7 +642,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRSkeleton*), "BoneLabelFromBoneId", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{skeletonType, boneId});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRSkeleton::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -43,9 +43,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.Boolean DidBlock
-    [[deprecated]] bool& dyn_DidBlock();
+    [[deprecated("Use field access instead!")]] bool& dyn_DidBlock();
     // Get instance field reference: public readonly System.Boolean DidCancel
-    [[deprecated]] bool& dyn_DidCancel();
+    [[deprecated("Use field access instead!")]] bool& dyn_DidCancel();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB3ADE8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

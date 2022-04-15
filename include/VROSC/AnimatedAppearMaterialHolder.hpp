@@ -65,11 +65,18 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _textMesh
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__textMesh();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__textMesh();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.Material _material
-    [[deprecated]] ::UnityEngine::Material*& dyn__material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__material();
+    // public System.Void .ctor()
+    // Offset: 0x96AA14
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AnimatedAppearMaterialHolder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearMaterialHolder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearMaterialHolder*, creationType>()));
+    }
     // public System.Void Setup(TMPro.TextMeshPro textMesh, UnityEngine.Material material)
     // Offset: 0x96A8F0
     void Setup(::TMPro::TextMeshPro* textMesh, ::UnityEngine::Material* material);
@@ -79,25 +86,16 @@ namespace VROSC {
     // public System.Void Reset()
     // Offset: 0x96A904
     void Reset();
-    // public System.Void .ctor()
-    // Offset: 0x96AA14
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AnimatedAppearMaterialHolder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AnimatedAppearMaterialHolder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AnimatedAppearMaterialHolder*, creationType>()));
-    }
   }; // VROSC.AnimatedAppearMaterialHolder
   #pragma pack(pop)
   static check_size<sizeof(AnimatedAppearMaterialHolder), 40 + sizeof(::UnityEngine::Material*)> __VROSC_AnimatedAppearMaterialHolderSizeCheck;
   static_assert(sizeof(AnimatedAppearMaterialHolder) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AnimatedAppearMaterialHolder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AnimatedAppearMaterialHolder::Setup
 // Il2CppName: Setup
 template<>
@@ -126,7 +124,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AnimatedAppearMaterialHolder*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AnimatedAppearMaterialHolder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

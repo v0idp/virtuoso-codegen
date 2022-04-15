@@ -74,13 +74,13 @@ namespace Firebase::Firestore::Converters {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private readonly System.Reflection.PropertyInfo _propertyInfo
-    [[deprecated]] ::System::Reflection::PropertyInfo*& dyn__propertyInfo();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::PropertyInfo*& dyn__propertyInfo();
     // Get instance field reference: private Firebase.Firestore.FieldValueProxy _sentinelValue
-    [[deprecated]] ::Firebase::Firestore::FieldValueProxy*& dyn__sentinelValue();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FieldValueProxy*& dyn__sentinelValue();
     // Get instance field reference: private readonly Firebase.Firestore.Converters.IFirestoreInternalConverter _converter
-    [[deprecated]] ::Firebase::Firestore::Converters::IFirestoreInternalConverter*& dyn__converter();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::Converters::IFirestoreInternalConverter*& dyn__converter();
     // Get instance field reference: readonly System.String FirestoreName
-    [[deprecated]] ::StringW& dyn_FirestoreName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_FirestoreName();
     // System.Boolean get_CanRead()
     // Offset: 0xD495E4
     bool get_CanRead();

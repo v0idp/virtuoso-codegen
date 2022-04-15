@@ -67,11 +67,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.Schema.XmlValueConverter[] converters
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::XmlValueConverter*>& dyn_converters();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::XmlValueConverter*>& dyn_converters();
     // Get instance field reference: private System.Boolean hasAtomicMember
-    [[deprecated]] bool& dyn_hasAtomicMember();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasAtomicMember();
     // Get instance field reference: private System.Boolean hasListMember
-    [[deprecated]] bool& dyn_hasListMember();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasListMember();
     // static public System.Xml.Schema.XmlValueConverter Create(System.Xml.Schema.XmlSchemaType schemaType)
     // Offset: 0x1089788
     static ::System::Xml::Schema::XmlValueConverter* Create(::System::Xml::Schema::XmlSchemaType* schemaType);

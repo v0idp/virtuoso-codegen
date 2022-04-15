@@ -90,7 +90,7 @@ namespace System::Xml::Serialization {
     // Set static field: static public System.Xml.Serialization.SchemaTypes Void
     static void _set_Void(::System::Xml::Serialization::SchemaTypes value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Xml.Serialization.SchemaTypes
   #pragma pack(pop)
   static check_size<sizeof(SchemaTypes), 0 + sizeof(int)> __System_Xml_Serialization_SchemaTypesSizeCheck;

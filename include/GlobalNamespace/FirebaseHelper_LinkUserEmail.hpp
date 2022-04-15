@@ -51,17 +51,15 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String idToken
-    [[deprecated]] ::StringW& dyn_idToken();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_idToken();
     // Get instance field reference: public System.String email
-    [[deprecated]] ::StringW& dyn_email();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_email();
     // Get instance field reference: public System.String password
-    [[deprecated]] ::StringW& dyn_password();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_password();
     // Get instance field reference: public System.Boolean returnSecureToken
-    [[deprecated]] bool& dyn_returnSecureToken();
+    [[deprecated("Use field access instead!")]] bool& dyn_returnSecureToken();
     // public System.Void .ctor()
     // Offset: 0x1952860
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseHelper::LinkUserEmail* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FirebaseHelper::LinkUserEmail::.ctor");

@@ -60,11 +60,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIButton*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIButton _sendVerificationEmailButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__sendVerificationEmailButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__sendVerificationEmailButton();
     // Get instance field reference: private VROSC.UIButton _changeEmailButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__changeEmailButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__changeEmailButton();
     // Get instance field reference: private VROSC.UIButton _logoutButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__logoutButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__logoutButton();
     // private System.Void Awake()
     // Offset: 0x19B1B6C
     void Awake();
@@ -99,11 +99,6 @@ namespace VROSC {
     // Offset: 0x19B29CC
     // Implemented from: VROSC.LoginUIPopupPanelBase
     // Base method: System.Void LoginUIPopupPanelBase::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoginUIPopupEmailVerificationPanel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoginUIPopupEmailVerificationPanel::.ctor");

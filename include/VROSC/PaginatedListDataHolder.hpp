@@ -49,9 +49,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::PaginatedListItemData*) == 0x8);
     public:
     // Get instance field reference: private System.String <ID>k__BackingField
-    [[deprecated]] ::StringW& dyn_$ID$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$ID$k__BackingField();
     // Get instance field reference: private VROSC.PaginatedListItemData <Data>k__BackingField
-    [[deprecated]] ::VROSC::PaginatedListItemData*& dyn_$Data$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::PaginatedListItemData*& dyn_$Data$k__BackingField();
     // public System.String get_ID()
     // Offset: 0xADC530
     ::StringW get_ID();

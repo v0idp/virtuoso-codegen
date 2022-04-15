@@ -57,7 +57,7 @@ namespace System::Numerics {
     // Set static field: static public System.Numerics.BigInteger/System.Numerics.GetBytesMode Span
     static void _set_Span(::System::Numerics::BigInteger::GetBytesMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Numerics.BigInteger/System.Numerics.GetBytesMode
   #pragma pack(pop)
   static check_size<sizeof(BigInteger::GetBytesMode), 0 + sizeof(int)> __System_Numerics_BigInteger_GetBytesModeSizeCheck;

@@ -57,13 +57,13 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt64 ulAppContainer
-    [[deprecated]] uint64_t& dyn_ulAppContainer();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ulAppContainer();
     // Get instance field reference: public System.UInt64 pathMessage
-    [[deprecated]] uint64_t& dyn_pathMessage();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_pathMessage();
     // Get instance field reference: public System.UInt64 pathUrl
-    [[deprecated]] uint64_t& dyn_pathUrl();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_pathUrl();
     // Get instance field reference: public System.UInt64 pathControllerType
-    [[deprecated]] uint64_t& dyn_pathControllerType();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_pathControllerType();
   }; // OVR.OpenVR.VREvent_InputBindingLoad_t
   #pragma pack(pop)
   static check_size<sizeof(VREvent_InputBindingLoad_t), 24 + sizeof(uint64_t)> __OVR_OpenVR_VREvent_InputBindingLoad_tSizeCheck;

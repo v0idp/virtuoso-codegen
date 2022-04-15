@@ -48,9 +48,9 @@ namespace System::Net {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private System.Net.CookieVariant m_variant
-    [[deprecated]] ::System::Net::CookieVariant& dyn_m_variant();
+    [[deprecated("Use field access instead!")]] ::System::Net::CookieVariant& dyn_m_variant();
     // System.String get_Name()
     // Offset: 0xF0DE68
     ::StringW get_Name();

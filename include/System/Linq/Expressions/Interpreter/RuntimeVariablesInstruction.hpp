@@ -49,7 +49,7 @@ namespace System::Linq::Expressions::Interpreter {
       return count;
     }
     // Get instance field reference: private readonly System.Int32 _count
-    [[deprecated]] int& dyn__count();
+    [[deprecated("Use field access instead!")]] int& dyn__count();
     // public System.Void .ctor(System.Int32 count)
     // Offset: 0xE996D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

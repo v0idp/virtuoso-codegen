@@ -79,11 +79,11 @@ namespace UnityEngine::Timeline {
       return *reinterpret_cast<::UnityEngine::Timeline::INotificationOptionProvider*>(this);
     }
     // Get instance field reference: private System.Boolean m_Retroactive
-    [[deprecated]] bool& dyn_m_Retroactive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Retroactive();
     // Get instance field reference: private System.Boolean m_EmitOnce
-    [[deprecated]] bool& dyn_m_EmitOnce();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EmitOnce();
     // Get instance field reference: private UnityEngine.Timeline.SignalAsset m_Asset
-    [[deprecated]] ::UnityEngine::Timeline::SignalAsset*& dyn_m_Asset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::SignalAsset*& dyn_m_Asset();
     // public System.Boolean get_retroactive()
     // Offset: 0xC7BA4C
     bool get_retroactive();
@@ -112,9 +112,6 @@ namespace UnityEngine::Timeline {
     // Offset: 0xC7BB78
     // Implemented from: UnityEngine.Timeline.Marker
     // Base method: System.Void Marker::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalEmitter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::SignalEmitter::.ctor");

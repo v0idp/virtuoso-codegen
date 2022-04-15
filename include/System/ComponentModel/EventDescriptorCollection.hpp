@@ -106,19 +106,19 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.EventDescriptorCollection Empty
     static void _set_Empty(::System::ComponentModel::EventDescriptorCollection* value);
     // Get instance field reference: private System.ComponentModel.EventDescriptor[] events
-    [[deprecated]] ::ArrayW<::System::ComponentModel::EventDescriptor*>& dyn_events();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::ComponentModel::EventDescriptor*>& dyn_events();
     // Get instance field reference: private System.String[] namedSort
-    [[deprecated]] ::ArrayW<::StringW>& dyn_namedSort();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_namedSort();
     // Get instance field reference: private System.Collections.IComparer comparer
-    [[deprecated]] ::System::Collections::IComparer*& dyn_comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IComparer*& dyn_comparer();
     // Get instance field reference: private System.Boolean eventsOwned
-    [[deprecated]] bool& dyn_eventsOwned();
+    [[deprecated("Use field access instead!")]] bool& dyn_eventsOwned();
     // Get instance field reference: private System.Boolean needSort
-    [[deprecated]] bool& dyn_needSort();
+    [[deprecated("Use field access instead!")]] bool& dyn_needSort();
     // Get instance field reference: private System.Int32 eventCount
-    [[deprecated]] int& dyn_eventCount();
+    [[deprecated("Use field access instead!")]] int& dyn_eventCount();
     // Get instance field reference: private System.Boolean readOnly
-    [[deprecated]] bool& dyn_readOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_readOnly();
     // public System.Int32 get_Count()
     // Offset: 0xEFECD4
     int get_Count();

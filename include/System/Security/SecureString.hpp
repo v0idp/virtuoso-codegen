@@ -77,13 +77,13 @@ namespace System::Security {
     // Set static field: static private System.Int32 MaxSize
     static void _set_MaxSize(int value);
     // Get instance field reference: private System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.Boolean read_only
-    [[deprecated]] bool& dyn_read_only();
+    [[deprecated("Use field access instead!")]] bool& dyn_read_only();
     // Get instance field reference: private System.Byte[] data
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_data();
     // public System.Int32 get_Length()
     // Offset: 0x1172D54
     int get_Length();

@@ -59,13 +59,13 @@ namespace System::Globalization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.String source
-    [[deprecated]] ::StringW& dyn_source();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_source();
     // Get instance field reference: private readonly System.Byte[] key
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_key();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_key();
     // Get instance field reference: private readonly System.Globalization.CompareOptions options
-    [[deprecated]] ::System::Globalization::CompareOptions& dyn_options();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareOptions& dyn_options();
     // Get instance field reference: private readonly System.Int32 lcid
-    [[deprecated]] int& dyn_lcid();
+    [[deprecated("Use field access instead!")]] int& dyn_lcid();
     // public System.String get_OriginalString()
     // Offset: 0x124FF18
     ::StringW get_OriginalString();

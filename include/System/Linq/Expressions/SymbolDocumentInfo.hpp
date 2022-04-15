@@ -42,7 +42,7 @@ namespace System::Linq::Expressions {
     // Set static field: static readonly System.Guid DocumentType_Text
     static void _set_DocumentType_Text(::System::Guid value);
     // Get instance field reference: private readonly System.String <FileName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$FileName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$FileName$k__BackingField();
     // public System.String get_FileName()
     // Offset: 0xE9DD54
     ::StringW get_FileName();

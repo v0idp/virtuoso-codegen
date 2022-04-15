@@ -87,17 +87,17 @@ namespace VROSC::UI::Meshes {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Mesh _mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__mesh();
     // Get instance field reference: private System.Single _height
-    [[deprecated]] float& dyn__height();
+    [[deprecated("Use field access instead!")]] float& dyn__height();
     // Get instance field reference: private System.Single _width
-    [[deprecated]] float& dyn__width();
+    [[deprecated("Use field access instead!")]] float& dyn__width();
     // Get instance field reference: private System.Boolean _flipX
-    [[deprecated]] bool& dyn__flipX();
+    [[deprecated("Use field access instead!")]] bool& dyn__flipX();
     // Get instance field reference: private System.Boolean _flipY
-    [[deprecated]] bool& dyn__flipY();
+    [[deprecated("Use field access instead!")]] bool& dyn__flipY();
     // Get instance field reference: private VROSC.UI.Meshes.RescalableMeshData/VROSC.UI.Meshes.VertexData[] _data
-    [[deprecated]] ::ArrayW<::VROSC::UI::Meshes::RescalableMeshData::VertexData*>& dyn__data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::UI::Meshes::RescalableMeshData::VertexData*>& dyn__data();
     // public UnityEngine.Mesh get_Mesh()
     // Offset: 0xB335FC
     ::UnityEngine::Mesh* get_Mesh();
@@ -107,23 +107,19 @@ namespace VROSC::UI::Meshes {
     // public System.Single get_Height()
     // Offset: 0xB3360C
     float get_Height();
+    // public System.Void .ctor()
+    // Offset: 0xB33B38
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RescalableMeshData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::RescalableMeshData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RescalableMeshData*, creationType>()));
+    }
     // public System.Void GetScaledMesh(UnityEngine.Vector3[] positions, System.Single targetWidth, System.Single targetHeight)
     // Offset: 0xB334BC
     void GetScaledMesh(::ArrayW<::UnityEngine::Vector3> positions, float targetWidth, float targetHeight);
     // public System.Void Analyze()
     // Offset: 0xB33614
     void Analyze();
-    // public System.Void .ctor()
-    // Offset: 0xB33B38
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RescalableMeshData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::RescalableMeshData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RescalableMeshData*, creationType>()));
-    }
   }; // VROSC.UI.Meshes.RescalableMeshData
   #pragma pack(pop)
   static check_size<sizeof(RescalableMeshData), 48 + sizeof(::ArrayW<::VROSC::UI::Meshes::RescalableMeshData::VertexData*>)> __VROSC_UI_Meshes_RescalableMeshDataSizeCheck;
@@ -154,6 +150,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::RescalableMeshData*), "get_Height", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::Meshes::RescalableMeshData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::Meshes::RescalableMeshData::GetScaledMesh
 // Il2CppName: GetScaledMesh
 template<>
@@ -173,7 +173,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::RescalableMeshData*), "Analyze", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::Meshes::RescalableMeshData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

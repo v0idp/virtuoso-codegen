@@ -125,7 +125,7 @@ namespace System::Threading {
       // Set static field: static public System.Threading.ExecutionContext/System.Threading.Flags IsPreAllocatedDefault
       static void _set_IsPreAllocatedDefault(::System::Threading::ExecutionContext::Flags value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Threading.ExecutionContext/System.Threading.Flags
     #pragma pack(pop)
     static check_size<sizeof(ExecutionContext::Flags), 0 + sizeof(int)> __System_Threading_ExecutionContext_FlagsSizeCheck;
@@ -189,19 +189,19 @@ namespace System::Threading {
     // Set static field: static private readonly System.Threading.ExecutionContext s_dummyDefaultEC
     static void _set_s_dummyDefaultEC(::System::Threading::ExecutionContext* value);
     // Get instance field reference: private System.Threading.SynchronizationContext _syncContext
-    [[deprecated]] ::System::Threading::SynchronizationContext*& dyn__syncContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SynchronizationContext*& dyn__syncContext();
     // Get instance field reference: private System.Threading.SynchronizationContext _syncContextNoFlow
-    [[deprecated]] ::System::Threading::SynchronizationContext*& dyn__syncContextNoFlow();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SynchronizationContext*& dyn__syncContextNoFlow();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.LogicalCallContext _logicalCallContext
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::LogicalCallContext*& dyn__logicalCallContext();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::LogicalCallContext*& dyn__logicalCallContext();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IllogicalCallContext _illogicalCallContext
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IllogicalCallContext*& dyn__illogicalCallContext();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IllogicalCallContext*& dyn__illogicalCallContext();
     // Get instance field reference: private System.Threading.ExecutionContext/System.Threading.Flags _flags
-    [[deprecated]] ::System::Threading::ExecutionContext::Flags& dyn__flags();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext::Flags& dyn__flags();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Threading.IAsyncLocal,System.Object> _localValues
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Threading::IAsyncLocal*, ::Il2CppObject*>*& dyn__localValues();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Threading::IAsyncLocal*, ::Il2CppObject*>*& dyn__localValues();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Threading.IAsyncLocal> _localChangeNotifications
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Threading::IAsyncLocal*>*& dyn__localChangeNotifications();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Threading::IAsyncLocal*>*& dyn__localChangeNotifications();
     // System.Boolean get_isNewCapture()
     // Offset: 0x14FA6DC
     bool get_isNewCapture();

@@ -59,11 +59,11 @@ namespace Mono::Security {
     static_assert(sizeof(::System::Collections::ArrayList*) == 0x8);
     public:
     // Get instance field reference: private System.Byte m_nTag
-    [[deprecated]] uint8_t& dyn_m_nTag();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_nTag();
     // Get instance field reference: private System.Byte[] m_aValue
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_aValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_aValue();
     // Get instance field reference: private System.Collections.ArrayList elist
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_elist();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_elist();
     // public System.Int32 get_Count()
     // Offset: 0x1632EA8
     int get_Count();

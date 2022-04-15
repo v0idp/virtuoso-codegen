@@ -288,81 +288,81 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single Acceleration
-    [[deprecated]] float& dyn_Acceleration();
+    [[deprecated("Use field access instead!")]] float& dyn_Acceleration();
     // Get instance field reference: public System.Single Damping
-    [[deprecated]] float& dyn_Damping();
+    [[deprecated("Use field access instead!")]] float& dyn_Damping();
     // Get instance field reference: public System.Single BackAndSideDampen
-    [[deprecated]] float& dyn_BackAndSideDampen();
+    [[deprecated("Use field access instead!")]] float& dyn_BackAndSideDampen();
     // Get instance field reference: public System.Single JumpForce
-    [[deprecated]] float& dyn_JumpForce();
+    [[deprecated("Use field access instead!")]] float& dyn_JumpForce();
     // Get instance field reference: public System.Single RotationAmount
-    [[deprecated]] float& dyn_RotationAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_RotationAmount();
     // Get instance field reference: public System.Single RotationRatchet
-    [[deprecated]] float& dyn_RotationRatchet();
+    [[deprecated("Use field access instead!")]] float& dyn_RotationRatchet();
     // Get instance field reference: public System.Boolean SnapRotation
-    [[deprecated]] bool& dyn_SnapRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn_SnapRotation();
     // Get instance field reference: public System.Boolean RotateAroundGuardianCenter
-    [[deprecated]] bool& dyn_RotateAroundGuardianCenter();
+    [[deprecated("Use field access instead!")]] bool& dyn_RotateAroundGuardianCenter();
     // Get instance field reference: public System.Int32 FixedSpeedSteps
-    [[deprecated]] int& dyn_FixedSpeedSteps();
+    [[deprecated("Use field access instead!")]] int& dyn_FixedSpeedSteps();
     // Get instance field reference: public System.Boolean HmdResetsY
-    [[deprecated]] bool& dyn_HmdResetsY();
+    [[deprecated("Use field access instead!")]] bool& dyn_HmdResetsY();
     // Get instance field reference: public System.Boolean HmdRotatesY
-    [[deprecated]] bool& dyn_HmdRotatesY();
+    [[deprecated("Use field access instead!")]] bool& dyn_HmdRotatesY();
     // Get instance field reference: public System.Single GravityModifier
-    [[deprecated]] float& dyn_GravityModifier();
+    [[deprecated("Use field access instead!")]] float& dyn_GravityModifier();
     // Get instance field reference: public System.Boolean useProfileData
-    [[deprecated]] bool& dyn_useProfileData();
+    [[deprecated("Use field access instead!")]] bool& dyn_useProfileData();
     // Get instance field reference: public System.Single CameraHeight
-    [[deprecated]] float& dyn_CameraHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_CameraHeight();
     // Get instance field reference: private System.Action`1<UnityEngine.Transform> TransformUpdated
-    [[deprecated]] ::System::Action_1<::UnityEngine::Transform*>*& dyn_TransformUpdated();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Transform*>*& dyn_TransformUpdated();
     // Get instance field reference: public System.Boolean Teleported
-    [[deprecated]] bool& dyn_Teleported();
+    [[deprecated("Use field access instead!")]] bool& dyn_Teleported();
     // Get instance field reference: private System.Action CameraUpdated
-    [[deprecated]] ::System::Action*& dyn_CameraUpdated();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_CameraUpdated();
     // Get instance field reference: private System.Action PreCharacterMove
-    [[deprecated]] ::System::Action*& dyn_PreCharacterMove();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_PreCharacterMove();
     // Get instance field reference: public System.Boolean EnableLinearMovement
-    [[deprecated]] bool& dyn_EnableLinearMovement();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableLinearMovement();
     // Get instance field reference: public System.Boolean EnableRotation
-    [[deprecated]] bool& dyn_EnableRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableRotation();
     // Get instance field reference: public System.Boolean RotationEitherThumbstick
-    [[deprecated]] bool& dyn_RotationEitherThumbstick();
+    [[deprecated("Use field access instead!")]] bool& dyn_RotationEitherThumbstick();
     // Get instance field reference: protected UnityEngine.CharacterController Controller
-    [[deprecated]] ::UnityEngine::CharacterController*& dyn_Controller();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CharacterController*& dyn_Controller();
     // Get instance field reference: protected OVRCameraRig CameraRig
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
     // Get instance field reference: private System.Single MoveScale
-    [[deprecated]] float& dyn_MoveScale();
+    [[deprecated("Use field access instead!")]] float& dyn_MoveScale();
     // Get instance field reference: private UnityEngine.Vector3 MoveThrottle
-    [[deprecated]] ::UnityEngine::Vector3& dyn_MoveThrottle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_MoveThrottle();
     // Get instance field reference: private System.Single FallSpeed
-    [[deprecated]] float& dyn_FallSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_FallSpeed();
     // Get instance field reference: private System.Nullable`1<OVRPose> InitialPose
-    [[deprecated]] ::System::Nullable_1<::GlobalNamespace::OVRPose>& dyn_InitialPose();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::GlobalNamespace::OVRPose>& dyn_InitialPose();
     // Get instance field reference: private System.Single <InitialYRotation>k__BackingField
-    [[deprecated]] float& dyn_$InitialYRotation$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$InitialYRotation$k__BackingField();
     // Get instance field reference: private System.Single MoveScaleMultiplier
-    [[deprecated]] float& dyn_MoveScaleMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_MoveScaleMultiplier();
     // Get instance field reference: private System.Single RotationScaleMultiplier
-    [[deprecated]] float& dyn_RotationScaleMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_RotationScaleMultiplier();
     // Get instance field reference: private System.Boolean SkipMouseRotation
-    [[deprecated]] bool& dyn_SkipMouseRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn_SkipMouseRotation();
     // Get instance field reference: private System.Boolean HaltUpdateMovement
-    [[deprecated]] bool& dyn_HaltUpdateMovement();
+    [[deprecated("Use field access instead!")]] bool& dyn_HaltUpdateMovement();
     // Get instance field reference: private System.Boolean prevHatLeft
-    [[deprecated]] bool& dyn_prevHatLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn_prevHatLeft();
     // Get instance field reference: private System.Boolean prevHatRight
-    [[deprecated]] bool& dyn_prevHatRight();
+    [[deprecated("Use field access instead!")]] bool& dyn_prevHatRight();
     // Get instance field reference: private System.Single SimulationRate
-    [[deprecated]] float& dyn_SimulationRate();
+    [[deprecated("Use field access instead!")]] float& dyn_SimulationRate();
     // Get instance field reference: private System.Single buttonRotation
-    [[deprecated]] float& dyn_buttonRotation();
+    [[deprecated("Use field access instead!")]] float& dyn_buttonRotation();
     // Get instance field reference: private System.Boolean ReadyToSnapTurn
-    [[deprecated]] bool& dyn_ReadyToSnapTurn();
+    [[deprecated("Use field access instead!")]] bool& dyn_ReadyToSnapTurn();
     // Get instance field reference: private System.Boolean playerControllerEnabled
-    [[deprecated]] bool& dyn_playerControllerEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_playerControllerEnabled();
     // public System.Single get_InitialYRotation()
     // Offset: 0xE670D4
     float get_InitialYRotation();
@@ -387,6 +387,13 @@ namespace GlobalNamespace {
     // public System.Void remove_PreCharacterMove(System.Action value)
     // Offset: 0xE67034
     void remove_PreCharacterMove(::System::Action* value);
+    // public System.Void .ctor()
+    // Offset: 0xE68E10
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRPlayerController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPlayerController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRPlayerController*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xE670E4
     void Start();
@@ -444,19 +451,6 @@ namespace GlobalNamespace {
     // public System.Void ResetOrientation()
     // Offset: 0xE68D58
     void ResetOrientation();
-    // public System.Void .ctor()
-    // Offset: 0xE68E10
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRPlayerController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPlayerController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRPlayerController*, creationType>()));
-    }
   }; // OVRPlayerController
   // WARNING Not writing size check since size may be invalid!
 }
@@ -532,6 +526,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPlayerController*), "remove_PreCharacterMove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRPlayerController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRPlayerController::Start
 // Il2CppName: Start
 template<>
@@ -693,7 +691,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPlayerController*), "ResetOrientation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRPlayerController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

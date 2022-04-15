@@ -91,7 +91,7 @@ namespace System {
       // Set static field: static public System.UriParser/System.UriQuirksVersion V3
       static void _set_V3(::System::UriParser::UriQuirksVersion value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.UriParser/System.UriQuirksVersion
     #pragma pack(pop)
     static check_size<sizeof(UriParser::UriQuirksVersion), 0 + sizeof(int)> __System_UriParser_UriQuirksVersionSizeCheck;
@@ -311,15 +311,15 @@ namespace System {
     // Set static field: static private System.UriSyntaxFlags NetTcpSyntaxFlags
     static void _set_NetTcpSyntaxFlags(::System::UriSyntaxFlags value);
     // Get instance field reference: private System.UriSyntaxFlags m_Flags
-    [[deprecated]] ::System::UriSyntaxFlags& dyn_m_Flags();
+    [[deprecated("Use field access instead!")]] ::System::UriSyntaxFlags& dyn_m_Flags();
     // Get instance field reference: private System.UriSyntaxFlags m_UpdatableFlags
-    [[deprecated]] ::System::UriSyntaxFlags& dyn_m_UpdatableFlags();
+    [[deprecated("Use field access instead!")]] ::System::UriSyntaxFlags& dyn_m_UpdatableFlags();
     // Get instance field reference: private System.Boolean m_UpdatableFlagsUsed
-    [[deprecated]] bool& dyn_m_UpdatableFlagsUsed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UpdatableFlagsUsed();
     // Get instance field reference: private System.Int32 m_Port
-    [[deprecated]] int& dyn_m_Port();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Port();
     // Get instance field reference: private System.String m_Scheme
-    [[deprecated]] ::StringW& dyn_m_Scheme();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Scheme();
     // System.String get_SchemeName()
     // Offset: 0xC3F42C
     ::StringW get_SchemeName();

@@ -58,9 +58,9 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::Xml::IXmlNamespaceResolver*>(this);
     }
     // Get instance field reference: public System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: public System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // public System.Void .ctor(System.String prefix, System.String ns)
     // Offset: 0xC1FFD8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

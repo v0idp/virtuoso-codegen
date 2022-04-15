@@ -51,20 +51,18 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String UserId
-    [[deprecated]] ::StringW& dyn_UserId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_UserId();
     // Get instance field reference: public System.String Email
-    [[deprecated]] ::StringW& dyn_Email();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Email();
     // Get instance field reference: public System.Boolean IsLoggedIn
-    [[deprecated]] bool& dyn_IsLoggedIn();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsLoggedIn();
     // Get instance field reference: public System.Boolean IsVerified
-    [[deprecated]] bool& dyn_IsVerified();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsVerified();
     // public System.Boolean get_HasData()
     // Offset: 0x957AB4
     bool get_HasData();
     // public System.Void .ctor()
     // Offset: 0x957AD8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AuthenticationManager::FirebaseUserData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AuthenticationManager::FirebaseUserData::.ctor");

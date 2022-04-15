@@ -56,7 +56,14 @@ namespace System::Linq::Expressions {
       return executionStackCount;
     }
     // Get instance field reference: private System.Int32 _executionStackCount
-    [[deprecated]] int& dyn__executionStackCount();
+    [[deprecated("Use field access instead!")]] int& dyn__executionStackCount();
+    // public System.Void .ctor()
+    // Offset: 0xE9AB40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StackGuard* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::StackGuard::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StackGuard*, creationType>()));
+    }
     // public System.Boolean TryEnterOnCurrentStack()
     // Offset: 0xE9AACC
     bool TryEnterOnCurrentStack();
@@ -78,21 +85,16 @@ namespace System::Linq::Expressions {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<R>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<R, false>(this, ___generic__method, action, state);
     }
-    // public System.Void .ctor()
-    // Offset: 0xE9AB40
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StackGuard* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Linq::Expressions::StackGuard::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StackGuard*, creationType>()));
-    }
   }; // System.Linq.Expressions.StackGuard
   #pragma pack(pop)
   static check_size<sizeof(StackGuard), 16 + sizeof(int)> __System_Linq_Expressions_StackGuardSizeCheck;
   static_assert(sizeof(StackGuard) == 0x14);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Linq::Expressions::StackGuard::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Linq::Expressions::StackGuard::TryEnterOnCurrentStack
 // Il2CppName: TryEnterOnCurrentStack
 template<>
@@ -107,7 +109,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Syste
 // Writing MetadataGetter for method: System::Linq::Expressions::StackGuard::RunOnEmptyStackCore
 // Il2CppName: RunOnEmptyStackCore
 // Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: System::Linq::Expressions::StackGuard::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -57,7 +57,7 @@ namespace System::Linq::Expressions {
       return Name;
     }
     // Get instance field reference: private readonly System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // public System.String get_Name()
     // Offset: 0xE96EEC
     ::StringW get_Name();

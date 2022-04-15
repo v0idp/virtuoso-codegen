@@ -52,9 +52,9 @@ namespace System {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _fileName
-    [[deprecated]] ::StringW& dyn__fileName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__fileName();
     // Get instance field reference: private System.String _fusionLog
-    [[deprecated]] ::StringW& dyn__fusionLog();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__fusionLog();
     // public System.String get_FusionLog()
     // Offset: 0xFE3E7C
     ::StringW get_FusionLog();

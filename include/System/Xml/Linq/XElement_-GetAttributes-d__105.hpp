@@ -98,19 +98,19 @@ namespace System::Xml::Linq {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Xml::Linq::XAttribute*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Xml.Linq.XAttribute <>2__current
-    [[deprecated]] ::System::Xml::Linq::XAttribute*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XAttribute*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public System.Xml.Linq.XElement <>4__this
-    [[deprecated]] ::System::Xml::Linq::XElement*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XElement*& dyn_$$4__this();
     // Get instance field reference: private System.Xml.Linq.XAttribute <a>5__1
-    [[deprecated]] ::System::Xml::Linq::XAttribute*& dyn_$a$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XAttribute*& dyn_$a$5__1();
     // Get instance field reference: private System.Xml.Linq.XName name
-    [[deprecated]] ::System::Xml::Linq::XName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XName*& dyn_name();
     // Get instance field reference: public System.Xml.Linq.XName <>3__name
-    [[deprecated]] ::System::Xml::Linq::XName*& dyn_$$3__name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XName*& dyn_$$3__name();
     // private System.Xml.Linq.XAttribute System.Collections.Generic.IEnumerator<System.Xml.Linq.XAttribute>.get_Current()
     // Offset: 0x185E8C4
     ::System::Xml::Linq::XAttribute* System_Collections_Generic_IEnumerator$System_Xml_Linq_XAttribute$_get_Current();

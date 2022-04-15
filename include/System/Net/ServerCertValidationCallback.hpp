@@ -67,9 +67,9 @@ namespace System::Net {
     static_assert(sizeof(::System::Threading::ExecutionContext*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Net.Security.RemoteCertificateValidationCallback m_ValidationCallback
-    [[deprecated]] ::System::Net::Security::RemoteCertificateValidationCallback*& dyn_m_ValidationCallback();
+    [[deprecated("Use field access instead!")]] ::System::Net::Security::RemoteCertificateValidationCallback*& dyn_m_ValidationCallback();
     // Get instance field reference: private readonly System.Threading.ExecutionContext m_Context
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_Context();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_m_Context();
     // System.Void .ctor(System.Net.Security.RemoteCertificateValidationCallback validationCallback)
     // Offset: 0xD99964
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

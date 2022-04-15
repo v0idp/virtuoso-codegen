@@ -80,17 +80,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public ovrAvatarBodyPartType TypeIndex
-    [[deprecated]] ::GlobalNamespace::ovrAvatarBodyPartType& dyn_TypeIndex();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarBodyPartType& dyn_TypeIndex();
     // Get instance field reference: public UnityEngine.Color Color
-    [[deprecated]] ::UnityEngine::Color& dyn_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_Color();
     // Get instance field reference: public UnityEngine.Texture2D[] Textures
-    [[deprecated]] ::ArrayW<::UnityEngine::Texture2D*>& dyn_Textures();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Texture2D*>& dyn_Textures();
     // Get instance field reference: public System.Single DiffuseIntensity
-    [[deprecated]] float& dyn_DiffuseIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_DiffuseIntensity();
     // Get instance field reference: public System.Single RimIntensity
-    [[deprecated]] float& dyn_RimIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_RimIntensity();
     // Get instance field reference: public System.Single ReflectionIntensity
-    [[deprecated]] float& dyn_ReflectionIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_ReflectionIntensity();
   }; // OvrAvatarMaterialManager/AvatarComponentMaterialProperties
   #pragma pack(pop)
   static check_size<sizeof(OvrAvatarMaterialManager::AvatarComponentMaterialProperties), 40 + sizeof(float)> __GlobalNamespace_OvrAvatarMaterialManager_AvatarComponentMaterialPropertiesSizeCheck;

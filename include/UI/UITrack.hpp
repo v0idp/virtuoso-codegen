@@ -34,12 +34,6 @@ namespace UI {
     public:
     // public System.Void .ctor()
     // Offset: 0x19199BC
-    // Implemented from: UnityEngine.Timeline.TrackAsset
-    // Base method: System.Void TrackAsset::.ctor()
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UITrack* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UI::UITrack::.ctor");

@@ -54,11 +54,11 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String <menuName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$menuName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$menuName$k__BackingField();
     // Get instance field reference: private System.String <fileName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$fileName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$fileName$k__BackingField();
     // Get instance field reference: private System.Int32 <order>k__BackingField
-    [[deprecated]] int& dyn_$order$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$order$k__BackingField();
     // public System.Void set_menuName(System.String value)
     // Offset: 0x1123960
     void set_menuName(::StringW value);
@@ -70,9 +70,6 @@ namespace UnityEngine {
     void set_order(int value);
     // public System.Void .ctor()
     // Offset: 0x1123978
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreateAssetMenuAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::CreateAssetMenuAttribute::.ctor");

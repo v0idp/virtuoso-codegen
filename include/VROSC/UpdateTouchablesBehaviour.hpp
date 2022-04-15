@@ -55,20 +55,17 @@ namespace VROSC {
       return touchables;
     }
     // Get instance field reference: private VROSC.TouchableObjectsController _touchables
-    [[deprecated]] ::VROSC::TouchableObjectsController*& dyn__touchables();
-    // public System.Void Setup(VROSC.TouchableObjectsController touchables)
-    // Offset: 0x1919C9C
-    void Setup(::VROSC::TouchableObjectsController* touchables);
+    [[deprecated("Use field access instead!")]] ::VROSC::TouchableObjectsController*& dyn__touchables();
     // public System.Void .ctor()
     // Offset: 0x1919CD0
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UpdateTouchablesBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UpdateTouchablesBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UpdateTouchablesBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.TouchableObjectsController touchables)
+    // Offset: 0x1919C9C
+    void Setup(::VROSC::TouchableObjectsController* touchables);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x1919CBC
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -80,6 +77,10 @@ namespace VROSC {
   static_assert(sizeof(UpdateTouchablesBehaviour) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UpdateTouchablesBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UpdateTouchablesBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -89,10 +90,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UpdateTouchablesBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{touchables});
   }
 };
-// Writing MetadataGetter for method: VROSC::UpdateTouchablesBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UpdateTouchablesBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

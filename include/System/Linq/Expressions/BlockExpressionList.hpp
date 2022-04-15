@@ -71,9 +71,9 @@ namespace System::Linq::Expressions {
       return *reinterpret_cast<::System::Collections::Generic::IList_1<::System::Linq::Expressions::Expression*>*>(this);
     }
     // Get instance field reference: private readonly System.Linq.Expressions.BlockExpression _block
-    [[deprecated]] ::System::Linq::Expressions::BlockExpression*& dyn__block();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::BlockExpression*& dyn__block();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _arg0
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__arg0();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__arg0();
     // public System.Linq.Expressions.Expression get_Item(System.Int32 index)
     // Offset: 0x11F4F94
     ::System::Linq::Expressions::Expression* get_Item(int index);

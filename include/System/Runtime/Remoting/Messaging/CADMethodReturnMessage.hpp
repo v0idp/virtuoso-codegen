@@ -73,11 +73,11 @@ namespace System::Runtime::Remoting::Messaging {
     static_assert(sizeof(::ArrayW<::System::Type*>) == 0x8);
     public:
     // Get instance field reference: private System.Object _returnValue
-    [[deprecated]] ::Il2CppObject*& dyn__returnValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__returnValue();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.CADArgHolder _exception
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::CADArgHolder*& dyn__exception();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::CADArgHolder*& dyn__exception();
     // Get instance field reference: private System.Type[] _sig
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn__sig();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn__sig();
     // System.Int32 get_PropertiesCount()
     // Offset: 0xFF36CC
     int get_PropertiesCount();

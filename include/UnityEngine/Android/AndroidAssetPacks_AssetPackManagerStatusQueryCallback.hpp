@@ -69,13 +69,13 @@ namespace UnityEngine::Android {
     static_assert(sizeof(int64_t) == 0x8);
     public:
     // Get instance field reference: private System.Action`2<System.UInt64,UnityEngine.Android.AndroidAssetPackState[]> m_Callback
-    [[deprecated]] ::System::Action_2<uint64_t, ::ArrayW<::UnityEngine::Android::AndroidAssetPackState*>>*& dyn_m_Callback();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<uint64_t, ::ArrayW<::UnityEngine::Android::AndroidAssetPackState*>>*& dyn_m_Callback();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> m_AssetPackNames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_AssetPackNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_AssetPackNames();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Android.AndroidAssetPackState> m_States
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Android::AndroidAssetPackState*>*& dyn_m_States();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Android::AndroidAssetPackState*>*& dyn_m_States();
     // Get instance field reference: private System.Int64 m_Size
-    [[deprecated]] int64_t& dyn_m_Size();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_Size();
     // private System.Void onStatusResult(System.Int64 totalBytes, System.String[] assetPackNames, System.Int32[] assetPackStatuses, System.Int32[] assetPackErrorCodes)
     // Offset: 0x1875804
     void onStatusResult(int64_t totalBytes, ::ArrayW<::StringW> assetPackNames, ::ArrayW<int> assetPackStatuses, ::ArrayW<int> assetPackErrorCodes);

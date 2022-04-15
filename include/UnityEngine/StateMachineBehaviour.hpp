@@ -43,6 +43,13 @@ namespace UnityEngine {
   // [RequiredByNativeCodeAttribute] Offset: 6BBD54
   class StateMachineBehaviour : public ::UnityEngine::ScriptableObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x18D2844
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StateMachineBehaviour* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::StateMachineBehaviour::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StateMachineBehaviour*, creationType>()));
+    }
     // public System.Void OnStateEnter(UnityEngine.Animator animator, UnityEngine.AnimatorStateInfo stateInfo, System.Int32 layerIndex)
     // Offset: 0x18D280C
     void OnStateEnter(::UnityEngine::Animator* animator, ::UnityEngine::AnimatorStateInfo stateInfo, int layerIndex);
@@ -85,21 +92,14 @@ namespace UnityEngine {
     // public System.Void OnStateMachineExit(UnityEngine.Animator animator, System.Int32 stateMachinePathHash, UnityEngine.Animations.AnimatorControllerPlayable controller)
     // Offset: 0x18D2840
     void OnStateMachineExit(::UnityEngine::Animator* animator, int stateMachinePathHash, ::UnityEngine::Animations::AnimatorControllerPlayable controller);
-    // protected System.Void .ctor()
-    // Offset: 0x18D2844
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StateMachineBehaviour* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::StateMachineBehaviour::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StateMachineBehaviour*, creationType>()));
-    }
   }; // UnityEngine.StateMachineBehaviour
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::StateMachineBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::StateMachineBehaviour::OnStateEnter
 // Il2CppName: OnStateEnter
 template<>
@@ -257,7 +257,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::StateMachineBehaviour*), "OnStateMachineExit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{animator, stateMachinePathHash, controller});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::StateMachineBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

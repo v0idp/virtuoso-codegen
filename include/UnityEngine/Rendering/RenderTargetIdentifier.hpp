@@ -97,19 +97,19 @@ namespace UnityEngine::Rendering {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::Rendering::RenderTargetIdentifier>*>(this);
     }
     // Get instance field reference: private UnityEngine.Rendering.BuiltinRenderTextureType m_Type
-    [[deprecated]] ::UnityEngine::Rendering::BuiltinRenderTextureType& dyn_m_Type();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::BuiltinRenderTextureType& dyn_m_Type();
     // Get instance field reference: private System.Int32 m_NameID
-    [[deprecated]] int& dyn_m_NameID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NameID();
     // Get instance field reference: private System.Int32 m_InstanceID
-    [[deprecated]] int& dyn_m_InstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_InstanceID();
     // Get instance field reference: private System.IntPtr m_BufferPointer
-    [[deprecated]] ::System::IntPtr& dyn_m_BufferPointer();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_BufferPointer();
     // Get instance field reference: private System.Int32 m_MipLevel
-    [[deprecated]] int& dyn_m_MipLevel();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MipLevel();
     // Get instance field reference: private UnityEngine.CubemapFace m_CubeFace
-    [[deprecated]] ::UnityEngine::CubemapFace& dyn_m_CubeFace();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CubemapFace& dyn_m_CubeFace();
     // Get instance field reference: private System.Int32 m_DepthSlice
-    [[deprecated]] int& dyn_m_DepthSlice();
+    [[deprecated("Use field access instead!")]] int& dyn_m_DepthSlice();
     // public System.Void .ctor(UnityEngine.Rendering.BuiltinRenderTextureType type)
     // Offset: 0xBCD388
     RenderTargetIdentifier(::UnityEngine::Rendering::BuiltinRenderTextureType type);

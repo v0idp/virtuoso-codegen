@@ -90,7 +90,7 @@ namespace VROSC::AudioReactive {
       // Set static field: static public VROSC.AudioReactive.ChangeColorEffectData/VROSC.AudioReactive.CycleStyle PingPoing
       static void _set_PingPoing(::VROSC::AudioReactive::ChangeColorEffectData::CycleStyle value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.AudioReactive.ChangeColorEffectData/VROSC.AudioReactive.CycleStyle
     #pragma pack(pop)
     static check_size<sizeof(ChangeColorEffectData::CycleStyle), 0 + sizeof(int)> __VROSC_AudioReactive_ChangeColorEffectData_CycleStyleSizeCheck;
@@ -133,15 +133,15 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color[] _colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__curve();
     // Get instance field reference: private VROSC.AudioReactive.ChangeColorEffectData/VROSC.AudioReactive.CycleStyle _style
-    [[deprecated]] ::VROSC::AudioReactive::ChangeColorEffectData::CycleStyle& dyn__style();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ChangeColorEffectData::CycleStyle& dyn__style();
     // Get instance field reference: private System.Boolean _startBlack
-    [[deprecated]] bool& dyn__startBlack();
+    [[deprecated("Use field access instead!")]] bool& dyn__startBlack();
     // public UnityEngine.Color[] get_Colors()
     // Offset: 0x944AAC
     ::ArrayW<::UnityEngine::Color> get_Colors();
@@ -161,9 +161,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x944AD4
     // Implemented from: VROSC.AudioReactive.AudioReactiveEffectData
     // Base method: System.Void AudioReactiveEffectData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ChangeColorEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ChangeColorEffectData::.ctor");

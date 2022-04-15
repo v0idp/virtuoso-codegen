@@ -60,7 +60,7 @@ namespace System::ComponentModel {
     // Set static field: static public readonly System.ComponentModel.DesignerSerializationVisibilityAttribute Default
     static void _set_Default(::System::ComponentModel::DesignerSerializationVisibilityAttribute* value);
     // Get instance field reference: private System.ComponentModel.DesignerSerializationVisibility visibility
-    [[deprecated]] ::System::ComponentModel::DesignerSerializationVisibility& dyn_visibility();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::DesignerSerializationVisibility& dyn_visibility();
     // public System.ComponentModel.DesignerSerializationVisibility get_Visibility()
     // Offset: 0xEF8C50
     ::System::ComponentModel::DesignerSerializationVisibility get_Visibility();

@@ -48,9 +48,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector2 cursorPos
-    [[deprecated]] ::UnityEngine::Vector2& dyn_cursorPos();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_cursorPos();
     // Get instance field reference: public System.Single charWidth
-    [[deprecated]] float& dyn_charWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_charWidth();
   }; // UnityEngine.UICharInfo
   #pragma pack(pop)
   static check_size<sizeof(UICharInfo), 8 + sizeof(float)> __UnityEngine_UICharInfoSizeCheck;

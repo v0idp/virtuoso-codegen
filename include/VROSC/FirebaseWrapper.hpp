@@ -376,18 +376,25 @@ namespace VROSC {
     // Set static field: static public System.Action OnUserLogout
     static void _set_OnUserLogout(::System::Action* value);
     // Get instance field reference: private Firebase.Auth.FirebaseAuth _fbAuth
-    [[deprecated]] ::Firebase::Auth::FirebaseAuth*& dyn__fbAuth();
+    [[deprecated("Use field access instead!")]] ::Firebase::Auth::FirebaseAuth*& dyn__fbAuth();
     // Get instance field reference: private Firebase.Auth.FirebaseUser _fbUser
-    [[deprecated]] ::Firebase::Auth::FirebaseUser*& dyn__fbUser();
+    [[deprecated("Use field access instead!")]] ::Firebase::Auth::FirebaseUser*& dyn__fbUser();
     // Get instance field reference: private Firebase.Firestore.FirebaseFirestore _fbFirestore
-    [[deprecated]] ::Firebase::Firestore::FirebaseFirestore*& dyn__fbFirestore();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::FirebaseFirestore*& dyn__fbFirestore();
     // Get instance field reference: private Firebase.Storage.StorageReference _fbStorage
-    [[deprecated]] ::Firebase::Storage::StorageReference*& dyn__fbStorage();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReference*& dyn__fbStorage();
     // Get instance field reference: private Firebase.Firestore.WriteBatch _firestoreWriteBatch
-    [[deprecated]] ::Firebase::Firestore::WriteBatch*& dyn__firestoreWriteBatch();
+    [[deprecated("Use field access instead!")]] ::Firebase::Firestore::WriteBatch*& dyn__firestoreWriteBatch();
     // public System.Boolean get_IsUserVerified()
     // Offset: 0x199911C
     bool get_IsUserVerified();
+    // public System.Void .ctor()
+    // Offset: 0x1999130
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FirebaseWrapper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FirebaseWrapper*, creationType>()));
+    }
     // public System.Void ReloadUser()
     // Offset: 0x19993A0
     void ReloadUser();
@@ -571,15 +578,6 @@ namespace VROSC {
     // private System.String GetLocalPreviewFilePath(System.String sessionName, System.Boolean useOgg)
     // Offset: 0x199EFA8
     ::StringW GetLocalPreviewFilePath(::StringW sessionName, bool useOgg);
-    // public System.Void .ctor()
-    // Offset: 0x1999130
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FirebaseWrapper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FirebaseWrapper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FirebaseWrapper*, creationType>()));
-    }
   }; // VROSC.FirebaseWrapper
   #pragma pack(pop)
   static check_size<sizeof(FirebaseWrapper), 48 + sizeof(::Firebase::Firestore::WriteBatch*)> __VROSC_FirebaseWrapperSizeCheck;
@@ -594,6 +592,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper*), "get_IsUserVerified", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::FirebaseWrapper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FirebaseWrapper::ReloadUser
 // Il2CppName: ReloadUser
 template<>
@@ -1293,7 +1295,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(VROSC::FirebaseWrapper*), "GetLocalPreviewFilePath", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sessionName, useOgg});
   }
 };
-// Writing MetadataGetter for method: VROSC::FirebaseWrapper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

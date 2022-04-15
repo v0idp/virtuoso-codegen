@@ -107,7 +107,7 @@ namespace Oculus::Platform::Samples::VrBoardGame {
       // Set static field: static public Oculus.Platform.Samples.VrBoardGame.GameController/Oculus.Platform.Samples.VrBoardGame.GameState OnlineMatchRemoteTurn
       static void _set_OnlineMatchRemoteTurn(::Oculus::Platform::Samples::VrBoardGame::GameController::GameState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrBoardGame.GameController/Oculus.Platform.Samples.VrBoardGame.GameState
     #pragma pack(pop)
     static check_size<sizeof(GameController::GameState), 0 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_GameController_GameStateSizeCheck;
@@ -229,41 +229,48 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.MatchmakingManager m_matchmaking
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager*& dyn_m_matchmaking();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::MatchmakingManager*& dyn_m_matchmaking();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameBoard m_board
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameBoard*& dyn_m_board();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GameBoard*& dyn_m_board();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_pieceA
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceA();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceA();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_pieceB
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceB();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_pieceB();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_powerPiece
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_powerPiece();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_powerPiece();
     // Get instance field reference: private UnityEngine.Color m_unusableColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_unusableColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_unusableColor();
     // Get instance field reference: private UnityEngine.Color m_unselectedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_unselectedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_unselectedColor();
     // Get instance field reference: private UnityEngine.Color m_selectedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_selectedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_selectedColor();
     // Get instance field reference: private UnityEngine.Color m_highlightedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_highlightedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_highlightedColor();
     // Get instance field reference: private UnityEngine.UI.Text m_ballCountText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_ballCountText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_ballCountText();
     // Get instance field reference: private UnityEngine.UI.Text m_player0Text
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_player0Text();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_player0Text();
     // Get instance field reference: private UnityEngine.UI.Text m_player1Text
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_player1Text();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_player1Text();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GameController/Oculus.Platform.Samples.VrBoardGame.GameState m_state
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GameController::GameState& dyn_m_state();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GameController::GameState& dyn_m_state();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_interestedPiece
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_interestedPiece();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_interestedPiece();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_selectedPiece
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_selectedPiece();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_selectedPiece();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece m_proposedPiece
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_proposedPiece();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece*& dyn_m_proposedPiece();
     // Get instance field reference: private System.UInt32 m_powerBallcount
-    [[deprecated]] uint& dyn_m_powerBallcount();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_powerBallcount();
     // Get instance field reference: private System.String m_opponentName
-    [[deprecated]] ::StringW& dyn_m_opponentName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_opponentName();
+    // public System.Void .ctor()
+    // Offset: 0x930D98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GameController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::GameController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GameController*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x92FF38
     void Start();
@@ -327,19 +334,6 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // private System.Void UpdateGamePieceColors()
     // Offset: 0x930158
     void UpdateGamePieceColors();
-    // public System.Void .ctor()
-    // Offset: 0x930D98
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GameController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::GameController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GameController*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrBoardGame.GameController
   #pragma pack(pop)
   static check_size<sizeof(GameController), 192 + sizeof(::StringW)> __Oculus_Platform_Samples_VrBoardGame_GameControllerSizeCheck;
@@ -348,6 +342,10 @@ namespace Oculus::Platform::Samples::VrBoardGame {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::Oculus::Platform::Samples::VrBoardGame::GameController::GameState, "Oculus.Platform.Samples.VrBoardGame", "GameController/GameState");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GameController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GameController::Start
 // Il2CppName: Start
 template<>
@@ -526,7 +524,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::GameController*), "UpdateGamePieceColors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GameController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

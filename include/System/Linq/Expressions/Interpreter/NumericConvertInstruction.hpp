@@ -65,11 +65,11 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: readonly System.TypeCode _from
-    [[deprecated]] ::System::TypeCode& dyn__from();
+    [[deprecated("Use field access instead!")]] ::System::TypeCode& dyn__from();
     // Get instance field reference: readonly System.TypeCode _to
-    [[deprecated]] ::System::TypeCode& dyn__to();
+    [[deprecated("Use field access instead!")]] ::System::TypeCode& dyn__to();
     // Get instance field reference: private readonly System.Boolean _isLiftedToNull
-    [[deprecated]] bool& dyn__isLiftedToNull();
+    [[deprecated("Use field access instead!")]] bool& dyn__isLiftedToNull();
     // protected System.Void .ctor(System.TypeCode from, System.TypeCode to, System.Boolean isLiftedToNull)
     // Offset: 0xE95B64
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

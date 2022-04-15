@@ -70,6 +70,13 @@ namespace TMPro {
     // static private System.Void .cctor()
     // Offset: 0xC3AB38
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xC3AB98
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TMP_FontAssetUtilities* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_FontAssetUtilities::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TMP_FontAssetUtilities*, creationType>()));
+    }
     // static public TMPro.TMP_Character GetCharacterFromFontAsset(System.UInt32 unicode, TMPro.TMP_FontAsset sourceFontAsset, System.Boolean includeFallbacks, TMPro.FontStyles fontStyle, TMPro.FontWeight fontWeight, out System.Boolean isAlternativeTypeface)
     // Offset: 0xC3AC04
     static ::TMPro::TMP_Character* GetCharacterFromFontAsset(uint unicode, ::TMPro::TMP_FontAsset* sourceFontAsset, bool includeFallbacks, ::TMPro::FontStyles fontStyle, ::TMPro::FontWeight fontWeight, ByRef<bool> isAlternativeTypeface);
@@ -85,15 +92,6 @@ namespace TMPro {
     // static private TMPro.TMP_SpriteCharacter GetSpriteCharacterFromSpriteAsset_Internal(System.UInt32 unicode, TMPro.TMP_SpriteAsset spriteAsset, System.Boolean includeFallbacks)
     // Offset: 0xC3B778
     static ::TMPro::TMP_SpriteCharacter* GetSpriteCharacterFromSpriteAsset_Internal(uint unicode, ::TMPro::TMP_SpriteAsset* spriteAsset, bool includeFallbacks);
-    // public System.Void .ctor()
-    // Offset: 0xC3AB98
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TMP_FontAssetUtilities* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_FontAssetUtilities::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TMP_FontAssetUtilities*, creationType>()));
-    }
   }; // TMPro.TMP_FontAssetUtilities
   #pragma pack(pop)
 }
@@ -114,6 +112,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_FontAssetUtilities*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: TMPro::TMP_FontAssetUtilities::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: TMPro::TMP_FontAssetUtilities::GetCharacterFromFontAsset
 // Il2CppName: GetCharacterFromFontAsset
 template<>
@@ -179,7 +181,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::TMPro::TM
     return ::il2cpp_utils::FindMethod(classof(TMPro::TMP_FontAssetUtilities*), "GetSpriteCharacterFromSpriteAsset_Internal", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{unicode, spriteAsset, includeFallbacks});
   }
 };
-// Writing MetadataGetter for method: TMPro::TMP_FontAssetUtilities::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

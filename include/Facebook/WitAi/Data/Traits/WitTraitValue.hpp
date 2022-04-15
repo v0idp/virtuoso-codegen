@@ -42,13 +42,11 @@ namespace Facebook::WitAi::Data::Traits {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String id
-    [[deprecated]] ::StringW& dyn_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id();
     // Get instance field reference: public System.String value
-    [[deprecated]] ::StringW& dyn_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
     // public System.Void .ctor()
     // Offset: 0x167D470
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitTraitValue* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::Traits::WitTraitValue::.ctor");

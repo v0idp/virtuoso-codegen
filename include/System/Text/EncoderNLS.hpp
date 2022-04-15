@@ -86,15 +86,15 @@ namespace System::Text {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: System.Char charLeftOver
-    [[deprecated]] ::Il2CppChar& dyn_charLeftOver();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_charLeftOver();
     // Get instance field reference: protected System.Text.Encoding m_encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_m_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_m_encoding();
     // Get instance field reference: protected System.Boolean m_mustFlush
-    [[deprecated]] bool& dyn_m_mustFlush();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_mustFlush();
     // Get instance field reference: System.Boolean m_throwOnOverflow
-    [[deprecated]] bool& dyn_m_throwOnOverflow();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_throwOnOverflow();
     // Get instance field reference: System.Int32 m_charsUsed
-    [[deprecated]] int& dyn_m_charsUsed();
+    [[deprecated("Use field access instead!")]] int& dyn_m_charsUsed();
     // public System.Text.Encoding get_Encoding()
     // Offset: 0x12A3E60
     ::System::Text::Encoding* get_Encoding();

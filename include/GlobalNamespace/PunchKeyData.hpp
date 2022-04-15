@@ -57,11 +57,11 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Key/Type _keyType
-    [[deprecated]] ::GlobalNamespace::Key::Type& dyn__keyType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::Key::Type& dyn__keyType();
     // Get instance field reference: private System.String _keyCapChar
-    [[deprecated]] ::StringW& dyn__keyCapChar();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__keyCapChar();
     // Get instance field reference: private System.String _alterateKeyCapChar
-    [[deprecated]] ::StringW& dyn__alterateKeyCapChar();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__alterateKeyCapChar();
     // public Key/Type get_KeyType()
     // Offset: 0xB2A888
     ::GlobalNamespace::Key::Type get_KeyType();
@@ -71,20 +71,16 @@ namespace GlobalNamespace {
     // public System.String get_AlterateKeyCapChar()
     // Offset: 0xB2A898
     ::StringW get_AlterateKeyCapChar();
-    // System.Void Set(Key/Type keyType, System.String keyCapChar, System.String alterateKeyCapChar)
-    // Offset: 0xB2A8A0
-    void Set(::GlobalNamespace::Key::Type keyType, ::StringW keyCapChar, ::StringW alterateKeyCapChar);
     // public System.Void .ctor()
     // Offset: 0xB2A8AC
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PunchKeyData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PunchKeyData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PunchKeyData*, creationType>()));
     }
+    // System.Void Set(Key/Type keyType, System.String keyCapChar, System.String alterateKeyCapChar)
+    // Offset: 0xB2A8A0
+    void Set(::GlobalNamespace::Key::Type keyType, ::StringW keyCapChar, ::StringW alterateKeyCapChar);
   }; // PunchKeyData
   #pragma pack(pop)
   static check_size<sizeof(PunchKeyData), 40 + sizeof(::StringW)> __GlobalNamespace_PunchKeyDataSizeCheck;
@@ -115,6 +111,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PunchKeyData*), "get_AlterateKeyCapChar", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::PunchKeyData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::PunchKeyData::Set
 // Il2CppName: Set
 template<>
@@ -126,7 +126,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PunchKeyData*), "Set", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{keyType, keyCapChar, alterateKeyCapChar});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::PunchKeyData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

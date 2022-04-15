@@ -106,23 +106,30 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::Il2CppObject*>*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.ParticleSystemForceField _forceField
-    [[deprecated]] ::UnityEngine::ParticleSystemForceField*& dyn__forceField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ParticleSystemForceField*& dyn__forceField();
     // Get instance field reference: private System.Boolean _isLeft
-    [[deprecated]] bool& dyn__isLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn__isLeft();
     // Get instance field reference: private VROSC.InputDevice _inputDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__inputDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__inputDevice();
     // Get instance field reference: private System.Boolean _isHandInside
-    [[deprecated]] bool& dyn__isHandInside();
+    [[deprecated("Use field access instead!")]] bool& dyn__isHandInside();
     // Get instance field reference: private System.Boolean _isPlaying
-    [[deprecated]] bool& dyn__isPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn__isPlaying();
     // Get instance field reference: private System.Single _initialEndRange
-    [[deprecated]] float& dyn__initialEndRange();
+    [[deprecated("Use field access instead!")]] float& dyn__initialEndRange();
     // Get instance field reference: private VROSC.ControllerInputNode _input
-    [[deprecated]] ::VROSC::ControllerInputNode*& dyn__input();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerInputNode*& dyn__input();
     // Get instance field reference: private System.Single _scaling
-    [[deprecated]] float& dyn__scaling();
+    [[deprecated("Use field access instead!")]] float& dyn__scaling();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> _players
-    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__players();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn__players();
+    // public System.Void .ctor()
+    // Offset: 0x8DD148
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ThereminParticles::Hand* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ThereminParticles::Hand::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ThereminParticles::Hand*, creationType>()));
+    }
     // public System.Void Setup(System.Boolean isLeft, VROSC.InputDevice inputDevice, VROSC.ControllerInputNode input)
     // Offset: 0x8DCAD0
     void Setup(bool isLeft, ::VROSC::InputDevice* inputDevice, ::VROSC::ControllerInputNode* input);
@@ -144,21 +151,16 @@ namespace VROSC {
     // public System.Void Update()
     // Offset: 0x8DCEC8
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x8DD148
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ThereminParticles::Hand* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ThereminParticles::Hand::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ThereminParticles::Hand*, creationType>()));
-    }
   }; // VROSC.ThereminParticles/VROSC.Hand
   #pragma pack(pop)
   static check_size<sizeof(ThereminParticles::Hand), 64 + sizeof(::System::Collections::Generic::List_1<::Il2CppObject*>*)> __VROSC_ThereminParticles_HandSizeCheck;
   static_assert(sizeof(ThereminParticles::Hand) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ThereminParticles::Hand::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ThereminParticles::Hand::Setup
 // Il2CppName: Setup
 template<>
@@ -224,7 +226,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ThereminParticles::Hand*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ThereminParticles::Hand::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

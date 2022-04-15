@@ -88,15 +88,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _moveDuration
-    [[deprecated]] float& dyn__moveDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__moveDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
     // Get instance field reference: private System.Single _moveOutDistance
-    [[deprecated]] float& dyn__moveOutDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__moveOutDistance();
     // Get instance field reference: private UnityEngine.AnimationCurve _zCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__zCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__zCurve();
     // Get instance field reference: private VROSC.LoopPlayer _loopPlayer
-    [[deprecated]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayer*& dyn__loopPlayer();
+    // public System.Void .ctor()
+    // Offset: 0x19BAF58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayerAutoMover* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerAutoMover::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerAutoMover*, creationType>()));
+    }
     // public System.Void Setup(VROSC.LoopPlayer loopPlayer)
     // Offset: 0x19BACB0
     void Setup(::VROSC::LoopPlayer* loopPlayer);
@@ -109,25 +116,16 @@ namespace VROSC {
     // private System.Void SetObjectsInteractable(VROSC.LoopStationGroup from, VROSC.LoopStationGroup to, System.Boolean interactable)
     // Offset: 0x19BAE04
     void SetObjectsInteractable(::VROSC::LoopStationGroup* from, ::VROSC::LoopStationGroup* to, bool interactable);
-    // public System.Void .ctor()
-    // Offset: 0x19BAF58
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayerAutoMover* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerAutoMover::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerAutoMover*, creationType>()));
-    }
   }; // VROSC.LoopPlayerAutoMover
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerAutoMover), 56 + sizeof(::VROSC::LoopPlayer*)> __VROSC_LoopPlayerAutoMoverSizeCheck;
   static_assert(sizeof(LoopPlayerAutoMover) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LoopPlayerAutoMover::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayerAutoMover::Setup
 // Il2CppName: Setup
 template<>
@@ -170,7 +168,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerAutoMover*), "SetObjectsInteractable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{from, to, interactable});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayerAutoMover::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

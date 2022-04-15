@@ -31,24 +31,26 @@ namespace System::Data {
   // [TokenAttribute] Offset: FFFFFFFF
   class DataRowCollection::DataRowTree : public ::System::Data::RBTree_1<::System::Data::DataRow*> {
     public:
+    // System.Void .ctor()
+    // Offset: 0x18CDFAC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataRowCollection::DataRowTree* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataRowCollection::DataRowTree::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataRowCollection::DataRowTree*, creationType>()));
+    }
     // protected System.Int32 CompareNode(System.Data.DataRow record1, System.Data.DataRow record2)
     // Offset: 0x18CDFFC
     int CompareNode(::System::Data::DataRow* record1, ::System::Data::DataRow* record2);
     // protected System.Int32 CompareSateliteTreeNode(System.Data.DataRow record1, System.Data.DataRow record2)
     // Offset: 0x18CE030
     int CompareSateliteTreeNode(::System::Data::DataRow* record1, ::System::Data::DataRow* record2);
-    // System.Void .ctor()
-    // Offset: 0x18CDFAC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataRowCollection::DataRowTree* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::DataRowCollection::DataRowTree::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataRowCollection::DataRowTree*, creationType>()));
-    }
   }; // System.Data.DataRowCollection/System.Data.DataRowTree
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::DataRowCollection::DataRowTree::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::DataRowCollection::DataRowTree::CompareNode
 // Il2CppName: CompareNode
 template<>
@@ -69,7 +71,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Data::DataRowCollection::DataRowTree*), "CompareSateliteTreeNode", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{record1, record2});
   }
 };
-// Writing MetadataGetter for method: System::Data::DataRowCollection::DataRowTree::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

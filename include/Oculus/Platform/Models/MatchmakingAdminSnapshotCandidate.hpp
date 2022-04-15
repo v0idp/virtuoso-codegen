@@ -64,15 +64,15 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public readonly System.Boolean CanMatch
-    [[deprecated]] bool& dyn_CanMatch();
+    [[deprecated("Use field access instead!")]] bool& dyn_CanMatch();
     // Get instance field reference: public readonly System.Double MyTotalScore
-    [[deprecated]] double& dyn_MyTotalScore();
+    [[deprecated("Use field access instead!")]] double& dyn_MyTotalScore();
     // Get instance field reference: public readonly System.Double TheirCurrentThreshold
-    [[deprecated]] double& dyn_TheirCurrentThreshold();
+    [[deprecated("Use field access instead!")]] double& dyn_TheirCurrentThreshold();
     // Get instance field reference: public readonly System.Double TheirTotalScore
-    [[deprecated]] double& dyn_TheirTotalScore();
+    [[deprecated("Use field access instead!")]] double& dyn_TheirTotalScore();
     // Get instance field reference: public readonly System.String TraceId
-    [[deprecated]] ::StringW& dyn_TraceId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_TraceId();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0xB4266C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

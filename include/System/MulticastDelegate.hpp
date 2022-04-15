@@ -56,7 +56,7 @@ namespace System {
       return delegates;
     }
     // Get instance field reference: private System.Delegate[] delegates
-    [[deprecated]] ::ArrayW<::System::Delegate*>& dyn_delegates();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Delegate*>& dyn_delegates();
     // private System.Int32 LastIndexOf(System.Delegate[] haystack, System.Delegate[] needle)
     // Offset: 0x1010B40
     int LastIndexOf(::ArrayW<::System::Delegate*> haystack, ::ArrayW<::System::Delegate*> needle);

@@ -53,21 +53,16 @@ namespace UnityEngine {
     // static public UnityEngine.Terrain[] get_activeTerrains()
     // Offset: 0x18E46F8
     static ::ArrayW<::UnityEngine::Terrain*> get_activeTerrains();
-    // public System.Void SetNeighbors(UnityEngine.Terrain left, UnityEngine.Terrain top, UnityEngine.Terrain right, UnityEngine.Terrain bottom)
-    // Offset: 0x18E4688
-    void SetNeighbors(::UnityEngine::Terrain* left, ::UnityEngine::Terrain* top, ::UnityEngine::Terrain* right, ::UnityEngine::Terrain* bottom);
     // public System.Void .ctor()
     // Offset: 0x18E472C
-    // Implemented from: UnityEngine.Behaviour
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Terrain* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Terrain::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Terrain*, creationType>()));
     }
+    // public System.Void SetNeighbors(UnityEngine.Terrain left, UnityEngine.Terrain top, UnityEngine.Terrain right, UnityEngine.Terrain bottom)
+    // Offset: 0x18E4688
+    void SetNeighbors(::UnityEngine::Terrain* left, ::UnityEngine::Terrain* top, ::UnityEngine::Terrain* right, ::UnityEngine::Terrain* bottom);
   }; // UnityEngine.Terrain
   #pragma pack(pop)
 }
@@ -104,6 +99,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Terrain*), "get_activeTerrains", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Terrain::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Terrain::SetNeighbors
 // Il2CppName: SetNeighbors
 template<>
@@ -116,7 +115,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Terrain*), "SetNeighbors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{left, top, right, bottom});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Terrain::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

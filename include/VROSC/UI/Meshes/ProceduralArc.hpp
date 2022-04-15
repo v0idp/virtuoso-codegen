@@ -126,35 +126,42 @@ namespace VROSC::UI::Meshes {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 _edges
-    [[deprecated]] int& dyn__edges();
+    [[deprecated("Use field access instead!")]] int& dyn__edges();
     // Get instance field reference: private System.Single _depth
-    [[deprecated]] float& dyn__depth();
+    [[deprecated("Use field access instead!")]] float& dyn__depth();
     // Get instance field reference: private System.Single _width
-    [[deprecated]] float& dyn__width();
+    [[deprecated("Use field access instead!")]] float& dyn__width();
     // Get instance field reference: private UnityEngine.Color _startColor
-    [[deprecated]] ::UnityEngine::Color& dyn__startColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__startColor();
     // Get instance field reference: private UnityEngine.RectTransform _rectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__rectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__rectTransform();
     // Get instance field reference: private UnityEngine.MeshFilter _meshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn__meshFilter();
     // Get instance field reference: private UnityEngine.Vector3[] _vertices
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__vertices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__vertices();
     // Get instance field reference: private UnityEngine.Vector3[] _normals
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__normals();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__normals();
     // Get instance field reference: private UnityEngine.Color[] _colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color>& dyn__colors();
     // Get instance field reference: private System.Int32[] _tris
-    [[deprecated]] ::ArrayW<int>& dyn__tris();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__tris();
     // Get instance field reference: private UnityEngine.Vector2[] _uv
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn__uv();
     // Get instance field reference: private UnityEngine.Mesh _mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__mesh();
     // private System.Int32 get__vertexPairs()
     // Offset: 0xAE70E0
     int get__vertexPairs();
     // private System.Int32 get__vertCount()
     // Offset: 0xAE70EC
     int get__vertCount();
+    // public System.Void .ctor()
+    // Offset: 0xAE79C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ProceduralArc* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralArc::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ProceduralArc*, creationType>()));
+    }
     // private System.Void GetRequiredCompontents()
     // Offset: 0xAE70FC
     void GetRequiredCompontents();
@@ -173,19 +180,6 @@ namespace VROSC::UI::Meshes {
     // private UnityEngine.Vector2 GetCirclePosition(System.Single progress)
     // Offset: 0xAE78EC
     ::UnityEngine::Vector2 GetCirclePosition(float progress);
-    // public System.Void .ctor()
-    // Offset: 0xAE79C4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ProceduralArc* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::Meshes::ProceduralArc::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ProceduralArc*, creationType>()));
-    }
   }; // VROSC.UI.Meshes.ProceduralArc
   #pragma pack(pop)
   static check_size<sizeof(ProceduralArc), 112 + sizeof(::UnityEngine::Mesh*)> __VROSC_UI_Meshes_ProceduralArcSizeCheck;
@@ -208,6 +202,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (VROSC:
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::ProceduralArc*), "get__vertCount", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::Meshes::ProceduralArc::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::Meshes::ProceduralArc::GetRequiredCompontents
 // Il2CppName: GetRequiredCompontents
 template<>
@@ -260,7 +258,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::Meshes::ProceduralArc*), "GetCirclePosition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{progress});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::Meshes::ProceduralArc::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -56,11 +56,11 @@ namespace System {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Array _array
-    [[deprecated]] ::System::Array*& dyn__array();
+    [[deprecated("Use field access instead!")]] ::System::Array*& dyn__array();
     // Get instance field reference: private System.Int32 _index
-    [[deprecated]] int& dyn__index();
+    [[deprecated("Use field access instead!")]] int& dyn__index();
     // Get instance field reference: private System.Int32 _endIndex
-    [[deprecated]] int& dyn__endIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__endIndex();
     // public System.Object get_Current()
     // Offset: 0x139FBC4
     ::Il2CppObject* get_Current();

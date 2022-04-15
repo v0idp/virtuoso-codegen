@@ -47,9 +47,9 @@ namespace System::ComponentModel {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.ComponentModel.CollectionChangeAction action
-    [[deprecated]] ::System::ComponentModel::CollectionChangeAction& dyn_action();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::CollectionChangeAction& dyn_action();
     // Get instance field reference: private System.Object element
-    [[deprecated]] ::Il2CppObject*& dyn_element();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_element();
     // public System.ComponentModel.CollectionChangeAction get_Action()
     // Offset: 0x10E2264
     ::System::ComponentModel::CollectionChangeAction get_Action();

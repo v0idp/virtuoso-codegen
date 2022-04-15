@@ -125,19 +125,19 @@ namespace System::Threading {
     // Set static field: static private System.Action`1<System.Object> s_cancellationTokenCanceledEventHandler
     static void _set_s_cancellationTokenCanceledEventHandler(::System::Action_1<::Il2CppObject*>* value);
     // Get instance field reference: private System.Int32 m_currentCount
-    [[deprecated]] int& dyn_m_currentCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_currentCount();
     // Get instance field reference: private readonly System.Int32 m_maxCount
-    [[deprecated]] int& dyn_m_maxCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_maxCount();
     // Get instance field reference: private System.Int32 m_waitCount
-    [[deprecated]] int& dyn_m_waitCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_waitCount();
     // Get instance field reference: private System.Object m_lockObj
-    [[deprecated]] ::Il2CppObject*& dyn_m_lockObj();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_lockObj();
     // Get instance field reference: private System.Threading.ManualResetEvent m_waitHandle
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_m_waitHandle();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_m_waitHandle();
     // Get instance field reference: private System.Threading.SemaphoreSlim/System.Threading.TaskNode m_asyncHead
-    [[deprecated]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_m_asyncHead();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_m_asyncHead();
     // Get instance field reference: private System.Threading.SemaphoreSlim/System.Threading.TaskNode m_asyncTail
-    [[deprecated]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_m_asyncTail();
+    [[deprecated("Use field access instead!")]] ::System::Threading::SemaphoreSlim::TaskNode*& dyn_m_asyncTail();
     // public System.Void .ctor(System.Int32 initialCount, System.Int32 maxCount)
     // Offset: 0x1176424
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

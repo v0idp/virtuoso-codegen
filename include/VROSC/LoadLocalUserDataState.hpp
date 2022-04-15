@@ -60,9 +60,9 @@ namespace VROSC {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
     // Get instance field reference: private VROSC.SettingsDataDefaults _settingsDataDefaults
-    [[deprecated]] ::VROSC::SettingsDataDefaults*& dyn__settingsDataDefaults();
+    [[deprecated("Use field access instead!")]] ::VROSC::SettingsDataDefaults*& dyn__settingsDataDefaults();
     // Get instance field reference: private VROSC.InstrumentHub _instrumentHub
-    [[deprecated]] ::VROSC::InstrumentHub*& dyn__instrumentHub();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentHub*& dyn__instrumentHub();
     // public System.Void .ctor(VROSC.SettingsDataDefaults settingsDataDefaults, VROSC.InstrumentHub instrumentHub)
     // Offset: 0x1950FE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

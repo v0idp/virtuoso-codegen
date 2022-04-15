@@ -55,34 +55,32 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.String parameter
-    [[deprecated]] ::StringW& dyn_parameter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_parameter();
     // Get instance field reference: public UnityEngine.Animator animator
-    [[deprecated]] ::UnityEngine::Animator*& dyn_animator();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Animator*& dyn_animator();
+    // public System.Void .ctor()
+    // Offset: 0x19247D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SetAnimationParameter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::SetAnimationParameter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SetAnimationParameter*, creationType>()));
+    }
     // public System.Void SetValue()
     // Offset: 0x1924748
     void SetValue();
     // private System.Void Start()
     // Offset: 0x19247CC
     void Start();
-    // public System.Void .ctor()
-    // Offset: 0x19247D0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SetAnimationParameter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::SetAnimationParameter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SetAnimationParameter*, creationType>()));
-    }
   }; // AudioHelm.SetAnimationParameter
   #pragma pack(pop)
   static check_size<sizeof(SetAnimationParameter), 32 + sizeof(::UnityEngine::Animator*)> __AudioHelm_SetAnimationParameterSizeCheck;
   static_assert(sizeof(SetAnimationParameter) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::SetAnimationParameter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::SetAnimationParameter::SetValue
 // Il2CppName: SetValue
 template<>
@@ -99,7 +97,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::SetAnimationParameter*), "Start", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::SetAnimationParameter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

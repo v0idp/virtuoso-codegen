@@ -50,7 +50,7 @@ namespace System::Linq::Expressions::Interpreter {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private readonly System.Linq.Expressions.Interpreter.LocalVariable _parameter
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::LocalVariable*& dyn__parameter();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::LocalVariable*& dyn__parameter();
     // public System.Void .ctor(System.Linq.Expressions.Interpreter.LocalVariable parameter, System.Int32 argumentIndex)
     // Offset: 0xE964E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

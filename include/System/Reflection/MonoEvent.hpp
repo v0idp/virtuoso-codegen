@@ -70,9 +70,9 @@ namespace System::Reflection {
     // Deleting conversion operator: operator ::System::Reflection::EventInfo::AddEventAdapter*
     constexpr operator ::System::Reflection::EventInfo::AddEventAdapter*() const noexcept = delete;
     // Get instance field reference: private System.IntPtr klass
-    [[deprecated]] ::System::IntPtr& dyn_klass();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_klass();
     // Get instance field reference: private System.IntPtr handle
-    [[deprecated]] ::System::IntPtr& dyn_handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_handle();
     // public override System.Type get_DeclaringType()
     // Offset: 0x100AE38
     // Implemented from: System.Reflection.MemberInfo

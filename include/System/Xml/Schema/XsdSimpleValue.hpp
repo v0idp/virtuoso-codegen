@@ -48,9 +48,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType xmlType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_xmlType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_xmlType();
     // Get instance field reference: private System.Object typedValue
-    [[deprecated]] ::Il2CppObject*& dyn_typedValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_typedValue();
     // public System.Xml.Schema.XmlSchemaSimpleType get_XmlType()
     // Offset: 0xED47C4
     ::System::Xml::Schema::XmlSchemaSimpleType* get_XmlType();

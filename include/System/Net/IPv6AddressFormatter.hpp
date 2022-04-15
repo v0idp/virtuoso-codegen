@@ -47,9 +47,9 @@ namespace System::Net {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt16[] address
-    [[deprecated]] ::ArrayW<uint16_t>& dyn_address();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint16_t>& dyn_address();
     // Get instance field reference: private System.Int64 scopeId
-    [[deprecated]] int64_t& dyn_scopeId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_scopeId();
     // public System.Void .ctor(System.UInt16[] addr, System.Int64 scopeId)
     // Offset: 0x10F2744
     // ABORTED: conflicts with another method.  IPv6AddressFormatter(::ArrayW<uint16_t> addr, int64_t scopeId);

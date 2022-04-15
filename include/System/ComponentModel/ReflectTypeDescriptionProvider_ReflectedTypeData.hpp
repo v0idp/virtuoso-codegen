@@ -94,21 +94,21 @@ namespace System::ComponentModel {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Type _type
-    [[deprecated]] ::System::Type*& dyn__type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__type();
     // Get instance field reference: private System.ComponentModel.AttributeCollection _attributes
-    [[deprecated]] ::System::ComponentModel::AttributeCollection*& dyn__attributes();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::AttributeCollection*& dyn__attributes();
     // Get instance field reference: private System.ComponentModel.EventDescriptorCollection _events
-    [[deprecated]] ::System::ComponentModel::EventDescriptorCollection*& dyn__events();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::EventDescriptorCollection*& dyn__events();
     // Get instance field reference: private System.ComponentModel.PropertyDescriptorCollection _properties
-    [[deprecated]] ::System::ComponentModel::PropertyDescriptorCollection*& dyn__properties();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyDescriptorCollection*& dyn__properties();
     // Get instance field reference: private System.ComponentModel.TypeConverter _converter
-    [[deprecated]] ::System::ComponentModel::TypeConverter*& dyn__converter();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::TypeConverter*& dyn__converter();
     // Get instance field reference: private System.Object[] _editors
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__editors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__editors();
     // Get instance field reference: private System.Type[] _editorTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn__editorTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn__editorTypes();
     // Get instance field reference: private System.Int32 _editorCount
-    [[deprecated]] int& dyn__editorCount();
+    [[deprecated("Use field access instead!")]] int& dyn__editorCount();
     // System.Boolean get_IsPopulated()
     // Offset: 0x9FCE30
     bool get_IsPopulated();

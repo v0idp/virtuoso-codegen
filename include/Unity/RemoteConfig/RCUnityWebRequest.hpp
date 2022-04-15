@@ -59,7 +59,7 @@ namespace Unity::RemoteConfig {
       return unityWebRequest;
     }
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <_unityWebRequest>k__BackingField
-    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$_unityWebRequest$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$_unityWebRequest$k__BackingField();
     // private UnityEngine.Networking.UnityWebRequest get__unityWebRequest()
     // Offset: 0x18C3FF0
     ::UnityEngine::Networking::UnityWebRequest* get__unityWebRequest();
@@ -87,6 +87,13 @@ namespace Unity::RemoteConfig {
     // public System.Void set_uploadHandler(UnityEngine.Networking.UploadHandler value)
     // Offset: 0x18C3820
     void set_uploadHandler(::UnityEngine::Networking::UploadHandler* value);
+    // public System.Void .ctor()
+    // Offset: 0x18C37A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RCUnityWebRequest* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::RemoteConfig::RCUnityWebRequest::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RCUnityWebRequest*, creationType>()));
+    }
     // public UnityEngine.Networking.UnityWebRequestAsyncOperation SendWebRequest()
     // Offset: 0x18C3858
     ::UnityEngine::Networking::UnityWebRequestAsyncOperation* SendWebRequest();
@@ -96,15 +103,6 @@ namespace Unity::RemoteConfig {
     // public System.Collections.Generic.Dictionary`2<System.String,System.String> GetResponseHeaders()
     // Offset: 0x18C401C
     ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>* GetResponseHeaders();
-    // public System.Void .ctor()
-    // Offset: 0x18C37A0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RCUnityWebRequest* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Unity::RemoteConfig::RCUnityWebRequest::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RCUnityWebRequest*, creationType>()));
-    }
   }; // Unity.RemoteConfig.RCUnityWebRequest
   #pragma pack(pop)
   static check_size<sizeof(RCUnityWebRequest), 16 + sizeof(::UnityEngine::Networking::UnityWebRequest*)> __Unity_RemoteConfig_RCUnityWebRequestSizeCheck;
@@ -190,6 +188,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(Unity::RemoteConfig::RCUnityWebRequest*), "set_uploadHandler", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Unity::RemoteConfig::RCUnityWebRequest::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Unity::RemoteConfig::RCUnityWebRequest::SendWebRequest
 // Il2CppName: SendWebRequest
 template<>
@@ -216,7 +218,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(Unity::RemoteConfig::RCUnityWebRequest*), "GetResponseHeaders", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Unity::RemoteConfig::RCUnityWebRequest::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

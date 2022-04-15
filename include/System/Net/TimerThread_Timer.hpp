@@ -44,9 +44,9 @@ namespace System::Net {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private readonly System.Int32 m_StartTimeMilliseconds
-    [[deprecated]] int& dyn_m_StartTimeMilliseconds();
+    [[deprecated("Use field access instead!")]] int& dyn_m_StartTimeMilliseconds();
     // Get instance field reference: private readonly System.Int32 m_DurationMilliseconds
-    [[deprecated]] int& dyn_m_DurationMilliseconds();
+    [[deprecated("Use field access instead!")]] int& dyn_m_DurationMilliseconds();
     // System.Void .ctor(System.Int32 durationMilliseconds)
     // Offset: 0xA023BC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -42,7 +42,7 @@ namespace UnityEngine {
       return height;
     }
     // Get instance field reference: public readonly System.Single height
-    [[deprecated]] float& dyn_height();
+    [[deprecated("Use field access instead!")]] float& dyn_height();
     // public System.Void .ctor(System.Single height)
     // Offset: 0xBD3D34
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -54,8 +54,6 @@ namespace UnityEngine {
     // Offset: 0xBD3D08
     // Implemented from: UnityEngine.PropertyAttribute
     // Base method: System.Void PropertyAttribute::.ctor()
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SpaceAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::SpaceAttribute::.ctor");

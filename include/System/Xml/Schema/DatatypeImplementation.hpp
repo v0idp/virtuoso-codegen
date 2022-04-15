@@ -463,15 +463,15 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Xml.Schema.DatatypeImplementation/System.Xml.Schema.SchemaDatatypeMap[] c_XsdTypes
     static void _set_c_XsdTypes(::ArrayW<::System::Xml::Schema::DatatypeImplementation::SchemaDatatypeMap*> value);
     // Get instance field reference: private System.Xml.Schema.XmlSchemaDatatypeVariety variety
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaDatatypeVariety& dyn_variety();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaDatatypeVariety& dyn_variety();
     // Get instance field reference: private System.Xml.Schema.RestrictionFacets restriction
-    [[deprecated]] ::System::Xml::Schema::RestrictionFacets*& dyn_restriction();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::RestrictionFacets*& dyn_restriction();
     // Get instance field reference: private System.Xml.Schema.DatatypeImplementation baseType
-    [[deprecated]] ::System::Xml::Schema::DatatypeImplementation*& dyn_baseType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::DatatypeImplementation*& dyn_baseType();
     // Get instance field reference: private System.Xml.Schema.XmlValueConverter valueConverter
-    [[deprecated]] ::System::Xml::Schema::XmlValueConverter*& dyn_valueConverter();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlValueConverter*& dyn_valueConverter();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaType parentSchemaType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaType*& dyn_parentSchemaType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaType*& dyn_parentSchemaType();
     // static System.Xml.Schema.XmlSchemaSimpleType get_AnySimpleType()
     // Offset: 0x10A3968
     static ::System::Xml::Schema::XmlSchemaSimpleType* get_AnySimpleType();
@@ -598,7 +598,6 @@ namespace System::Xml::Schema {
     // Offset: 0x10A57A0
     // Implemented from: System.Xml.Schema.XmlSchemaDatatype
     // Base method: System.Void XmlSchemaDatatype::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DatatypeImplementation* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::DatatypeImplementation::.ctor");

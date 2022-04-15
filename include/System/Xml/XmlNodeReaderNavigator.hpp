@@ -94,9 +94,9 @@ namespace System::Xml {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.String name
-      [[deprecated]] ::StringW& dyn_name();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
       // Get instance field reference: System.String value
-      [[deprecated]] ::StringW& dyn_value();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_value();
       // System.Void .ctor(System.String name, System.String value)
       // Offset: 0xC210B8
       // ABORTED: conflicts with another method.  VirtualAttribute(::StringW name, ::StringW value);
@@ -211,39 +211,39 @@ namespace System::Xml {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.XmlNode curNode
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_curNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_curNode();
     // Get instance field reference: private System.Xml.XmlNode elemNode
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_elemNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_elemNode();
     // Get instance field reference: private System.Xml.XmlNode logNode
-    [[deprecated]] ::System::Xml::XmlNode*& dyn_logNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNode*& dyn_logNode();
     // Get instance field reference: private System.Int32 attrIndex
-    [[deprecated]] int& dyn_attrIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_attrIndex();
     // Get instance field reference: private System.Int32 logAttrIndex
-    [[deprecated]] int& dyn_logAttrIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_logAttrIndex();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // Get instance field reference: private System.Xml.XmlDocument doc
-    [[deprecated]] ::System::Xml::XmlDocument*& dyn_doc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocument*& dyn_doc();
     // Get instance field reference: private System.Int32 nAttrInd
-    [[deprecated]] int& dyn_nAttrInd();
+    [[deprecated("Use field access instead!")]] int& dyn_nAttrInd();
     // Get instance field reference: private System.Int32 nDeclarationAttrCount
-    [[deprecated]] int& dyn_nDeclarationAttrCount();
+    [[deprecated("Use field access instead!")]] int& dyn_nDeclarationAttrCount();
     // Get instance field reference: private System.Int32 nDocTypeAttrCount
-    [[deprecated]] int& dyn_nDocTypeAttrCount();
+    [[deprecated("Use field access instead!")]] int& dyn_nDocTypeAttrCount();
     // Get instance field reference: private System.Int32 nLogLevel
-    [[deprecated]] int& dyn_nLogLevel();
+    [[deprecated("Use field access instead!")]] int& dyn_nLogLevel();
     // Get instance field reference: private System.Int32 nLogAttrInd
-    [[deprecated]] int& dyn_nLogAttrInd();
+    [[deprecated("Use field access instead!")]] int& dyn_nLogAttrInd();
     // Get instance field reference: private System.Boolean bLogOnAttrVal
-    [[deprecated]] bool& dyn_bLogOnAttrVal();
+    [[deprecated("Use field access instead!")]] bool& dyn_bLogOnAttrVal();
     // Get instance field reference: private System.Boolean bCreatedOnAttribute
-    [[deprecated]] bool& dyn_bCreatedOnAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_bCreatedOnAttribute();
     // Get instance field reference: System.Xml.XmlNodeReaderNavigator/System.Xml.VirtualAttribute[] decNodeAttributes
-    [[deprecated]] ::ArrayW<::System::Xml::XmlNodeReaderNavigator::VirtualAttribute>& dyn_decNodeAttributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlNodeReaderNavigator::VirtualAttribute>& dyn_decNodeAttributes();
     // Get instance field reference: System.Xml.XmlNodeReaderNavigator/System.Xml.VirtualAttribute[] docTypeNodeAttributes
-    [[deprecated]] ::ArrayW<::System::Xml::XmlNodeReaderNavigator::VirtualAttribute>& dyn_docTypeNodeAttributes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlNodeReaderNavigator::VirtualAttribute>& dyn_docTypeNodeAttributes();
     // Get instance field reference: private System.Boolean bOnAttrVal
-    [[deprecated]] bool& dyn_bOnAttrVal();
+    [[deprecated("Use field access instead!")]] bool& dyn_bOnAttrVal();
     // public System.Xml.XmlNodeType get_NodeType()
     // Offset: 0x101AC18
     ::System::Xml::XmlNodeType get_NodeType();

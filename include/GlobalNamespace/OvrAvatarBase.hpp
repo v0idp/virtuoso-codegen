@@ -39,7 +39,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::ovrAvatarBaseComponent) == 0x18);
     public:
     // Get instance field reference: private ovrAvatarBaseComponent component
-    [[deprecated]] ::GlobalNamespace::ovrAvatarBaseComponent& dyn_component();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarBaseComponent& dyn_component();
     // private System.Void Update()
     // Offset: 0xF89138
     void Update();
@@ -47,11 +47,6 @@ namespace GlobalNamespace {
     // Offset: 0xF89584
     // Implemented from: OvrAvatarComponent
     // Base method: System.Void OvrAvatarComponent_::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarBase* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarBase::.ctor");

@@ -46,7 +46,7 @@ namespace Oculus::Voice::Core::Bindings::Android {
       return binding;
     }
     // Get instance field reference: protected UnityEngine.AndroidJavaObject binding
-    [[deprecated]] ::UnityEngine::AndroidJavaObject*& dyn_binding();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AndroidJavaObject*& dyn_binding();
     // protected System.Void .ctor(UnityEngine.AndroidJavaObject sdkInstance)
     // Offset: 0x190EA54
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -53,29 +53,31 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: public VROSC.CommunitySessionsDataController <>4__this
-    [[deprecated]] ::VROSC::CommunitySessionsDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::CommunitySessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.String sessionId
-    [[deprecated]] ::StringW& dyn_sessionId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sessionId();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
-    // System.Void <RemoveSessionFavorite>b__0()
-    // Offset: 0x95D948
-    void $RemoveSessionFavorite$b__0();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // public System.Void .ctor()
     // Offset: 0x95D940
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CommunitySessionsDataController::$$c__DisplayClass9_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CommunitySessionsDataController::$$c__DisplayClass9_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<CommunitySessionsDataController::$$c__DisplayClass9_0*, creationType>()));
     }
+    // System.Void <RemoveSessionFavorite>b__0()
+    // Offset: 0x95D948
+    void $RemoveSessionFavorite$b__0();
   }; // VROSC.CommunitySessionsDataController/VROSC.<>c__DisplayClass9_0
   #pragma pack(pop)
   static check_size<sizeof(CommunitySessionsDataController::$$c__DisplayClass9_0), 32 + sizeof(::System::Action*)> __VROSC_CommunitySessionsDataController_$$c__DisplayClass9_0SizeCheck;
   static_assert(sizeof(CommunitySessionsDataController::$$c__DisplayClass9_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::CommunitySessionsDataController::$$c__DisplayClass9_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CommunitySessionsDataController::$$c__DisplayClass9_0::$RemoveSessionFavorite$b__0
 // Il2CppName: <RemoveSessionFavorite>b__0
 template<>
@@ -84,7 +86,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::CommunitySessionsDataController::$$c__DisplayClass9_0*), "<RemoveSessionFavorite>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::CommunitySessionsDataController::$$c__DisplayClass9_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

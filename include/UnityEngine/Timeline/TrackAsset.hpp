@@ -152,11 +152,11 @@ namespace UnityEngine::Timeline {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Timeline.TrackAsset> trackList
-      [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_trackList();
+      [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_trackList();
       // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Timeline.TimelineClip> clipList
-      [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TimelineClip*>*& dyn_clipList();
+      [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TimelineClip*>*& dyn_clipList();
       // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Timeline.IMarker> markerList
-      [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::IMarker*>*& dyn_markerList();
+      [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::IMarker*>*& dyn_markerList();
       // static public UnityEngine.Timeline.TrackAsset/UnityEngine.Timeline.TransientBuildData Create()
       // Offset: 0x18D61D8
       static ::UnityEngine::Timeline::TrackAsset::TransientBuildData Create();
@@ -318,39 +318,39 @@ namespace UnityEngine::Timeline {
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.Type,UnityEngine.Timeline.TrackBindingTypeAttribute> s_TrackBindingTypeAttributeCache
     static void _set_s_TrackBindingTypeAttributeCache(::System::Collections::Generic::Dictionary_2<::System::Type*, ::UnityEngine::Timeline::TrackBindingTypeAttribute*>* value);
     // Get instance field reference: private System.Int32 m_Version
-    [[deprecated]] int& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Version();
     // Get instance field reference: UnityEngine.AnimationClip m_AnimClip
-    [[deprecated]] ::UnityEngine::AnimationClip*& dyn_m_AnimClip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationClip*& dyn_m_AnimClip();
     // Get instance field reference: private System.Boolean m_Locked
-    [[deprecated]] bool& dyn_m_Locked();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Locked();
     // Get instance field reference: private System.Boolean m_Muted
-    [[deprecated]] bool& dyn_m_Muted();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Muted();
     // Get instance field reference: private System.String m_CustomPlayableFullTypename
-    [[deprecated]] ::StringW& dyn_m_CustomPlayableFullTypename();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_CustomPlayableFullTypename();
     // Get instance field reference: private UnityEngine.AnimationClip m_Curves
-    [[deprecated]] ::UnityEngine::AnimationClip*& dyn_m_Curves();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationClip*& dyn_m_Curves();
     // Get instance field reference: private UnityEngine.Playables.PlayableAsset m_Parent
-    [[deprecated]] ::UnityEngine::Playables::PlayableAsset*& dyn_m_Parent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableAsset*& dyn_m_Parent();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.ScriptableObject> m_Children
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*& dyn_m_Children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::ScriptableObject*>*& dyn_m_Children();
     // Get instance field reference: private System.Int32 m_ItemsHash
-    [[deprecated]] int& dyn_m_ItemsHash();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ItemsHash();
     // Get instance field reference: private UnityEngine.Timeline.TimelineClip[] m_ClipsCache
-    [[deprecated]] ::ArrayW<::UnityEngine::Timeline::TimelineClip*>& dyn_m_ClipsCache();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Timeline::TimelineClip*>& dyn_m_ClipsCache();
     // Get instance field reference: private UnityEngine.Timeline.DiscreteTime m_Start
-    [[deprecated]] ::UnityEngine::Timeline::DiscreteTime& dyn_m_Start();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::DiscreteTime& dyn_m_Start();
     // Get instance field reference: private UnityEngine.Timeline.DiscreteTime m_End
-    [[deprecated]] ::UnityEngine::Timeline::DiscreteTime& dyn_m_End();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::DiscreteTime& dyn_m_End();
     // Get instance field reference: private System.Boolean m_CacheSorted
-    [[deprecated]] bool& dyn_m_CacheSorted();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CacheSorted();
     // Get instance field reference: private System.Nullable`1<System.Boolean> m_SupportsNotifications
-    [[deprecated]] ::System::Nullable_1<bool>& dyn_m_SupportsNotifications();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_m_SupportsNotifications();
     // Get instance field reference: private System.Collections.Generic.IEnumerable`1<UnityEngine.Timeline.TrackAsset> m_ChildTrackCache
-    [[deprecated]] ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_m_ChildTrackCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Timeline::TrackAsset*>*& dyn_m_ChildTrackCache();
     // Get instance field reference: protected internal System.Collections.Generic.List`1<UnityEngine.Timeline.TimelineClip> m_Clips
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TimelineClip*>*& dyn_m_Clips();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Timeline::TimelineClip*>*& dyn_m_Clips();
     // Get instance field reference: private UnityEngine.Timeline.MarkerList m_Markers
-    [[deprecated]] ::UnityEngine::Timeline::MarkerList& dyn_m_Markers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::MarkerList& dyn_m_Markers();
     // public System.Double get_start()
     // Offset: 0xC86FBC
     double get_start();
@@ -441,6 +441,16 @@ namespace UnityEngine::Timeline {
     // static System.Void remove_OnTrackAnimationPlayableCreate(System.Action`3<UnityEngine.Timeline.TrackAsset,UnityEngine.GameObject,UnityEngine.Playables.Playable> value)
     // Offset: 0xC86EC4
     static void remove_OnTrackAnimationPlayableCreate(::System::Action_3<::UnityEngine::Timeline::TrackAsset*, ::UnityEngine::GameObject*, ::UnityEngine::Playables::Playable>* value);
+    // protected System.Void .ctor()
+    // Offset: 0xC69DCC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TrackAsset* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TrackAsset::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TrackAsset*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xC8B320
+    static void _cctor();
     // protected System.Void OnBeforeTrackSerialize()
     // Offset: 0xC86610
     void OnBeforeTrackSerialize();
@@ -666,23 +676,6 @@ namespace UnityEngine::Timeline {
     // Implemented from: UnityEngine.Playables.PlayableAsset
     // Base method: System.Collections.Generic.IEnumerable`1<UnityEngine.Playables.PlayableBinding> PlayableAsset::get_outputs()
     ::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* get_outputs();
-    // protected System.Void .ctor()
-    // Offset: 0xC69DCC
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TrackAsset* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TrackAsset::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TrackAsset*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xC8B320
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject go)
     // Offset: 0xC87864
     // Implemented from: UnityEngine.Playables.PlayableAsset
@@ -941,6 +934,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::MakeGeneric(::il2cpp_utils::GetClassFromName("System", "Action`3"), ::std::vector<const Il2CppClass*>{::il2cpp_utils::GetClassFromName("UnityEngine.Timeline", "TrackAsset"), ::il2cpp_utils::GetClassFromName("UnityEngine", "GameObject"), ::il2cpp_utils::GetClassFromName("UnityEngine.Playables", "Playable")})->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TrackAsset*), "remove_OnTrackAnimationPlayableCreate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: UnityEngine::Timeline::TrackAsset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::Timeline::TrackAsset::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::Timeline::TrackAsset::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TrackAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::Timeline::TrackAsset::OnBeforeTrackSerialize
@@ -1538,18 +1543,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Collections::Generic::IEnumerable_1<::UnityEngine::Playables::PlayableBinding>* (UnityEngine::Timeline::TrackAsset::*)()>(&UnityEngine::Timeline::TrackAsset::get_outputs)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TrackAsset*), "get_outputs", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::Timeline::TrackAsset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::Timeline::TrackAsset::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::Timeline::TrackAsset::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TrackAsset*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::Timeline::TrackAsset::CreatePlayable

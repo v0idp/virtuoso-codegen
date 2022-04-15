@@ -50,13 +50,11 @@ namespace TMPro::SpriteAssetUtilities {
     static_assert(sizeof(::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Meta) == 0x38);
     public:
     // Get instance field reference: public System.Collections.Generic.List`1<TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.Frame> frames
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Frame>*& dyn_frames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Frame>*& dyn_frames();
     // Get instance field reference: public TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/TMPro.SpriteAssetUtilities.Meta meta
-    [[deprecated]] ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Meta& dyn_meta();
+    [[deprecated("Use field access instead!")]] ::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::Meta& dyn_meta();
     // public System.Void .ctor()
     // Offset: 0x182219C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TexturePacker_JsonArray::SpriteDataObject* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray::SpriteDataObject::.ctor");

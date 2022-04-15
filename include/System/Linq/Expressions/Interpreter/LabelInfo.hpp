@@ -89,15 +89,15 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.LabelTarget _node
-    [[deprecated]] ::System::Linq::Expressions::LabelTarget*& dyn__node();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::LabelTarget*& dyn__node();
     // Get instance field reference: private System.Linq.Expressions.Interpreter.BranchLabel _label
-    [[deprecated]] ::System::Linq::Expressions::Interpreter::BranchLabel*& dyn__label();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Interpreter::BranchLabel*& dyn__label();
     // Get instance field reference: private System.Object _definitions
-    [[deprecated]] ::Il2CppObject*& dyn__definitions();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__definitions();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Linq.Expressions.Interpreter.LabelScopeInfo> _references
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::LabelScopeInfo*>*& dyn__references();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Linq::Expressions::Interpreter::LabelScopeInfo*>*& dyn__references();
     // Get instance field reference: private System.Boolean _acrossBlockJump
-    [[deprecated]] bool& dyn__acrossBlockJump();
+    [[deprecated("Use field access instead!")]] bool& dyn__acrossBlockJump();
     // private System.Boolean get_HasDefinitions()
     // Offset: 0xF202B8
     bool get_HasDefinitions();

@@ -55,11 +55,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Quaternion orientation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_orientation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_orientation();
     // Get instance field reference: public UnityEngine.Vector3 scale
-    [[deprecated]] ::UnityEngine::Vector3& dyn_scale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_scale();
   }; // ovrAvatarTransform
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarTransform), 28 + sizeof(::UnityEngine::Vector3)> __GlobalNamespace_ovrAvatarTransformSizeCheck;

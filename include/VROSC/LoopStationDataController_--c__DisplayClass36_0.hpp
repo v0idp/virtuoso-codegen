@@ -63,34 +63,36 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.LoopStationDataController <>4__this
-    [[deprecated]] ::VROSC::LoopStationDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: public System.Action <>9__0
-    [[deprecated]] ::System::Action*& dyn_$$9__0();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_$$9__0();
     // Get instance field reference: public System.Action`1<VROSC.Error> <>9__1
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__1();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_$$9__1();
+    // public System.Void .ctor()
+    // Offset: 0x195DB54
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationDataController::$$c__DisplayClass36_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationDataController::$$c__DisplayClass36_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationDataController::$$c__DisplayClass36_0*, creationType>()));
+    }
     // System.Void <SaveData>b__0()
     // Offset: 0x195DB5C
     void $SaveData$b__0();
     // System.Void <SaveData>b__1(VROSC.Error error)
     // Offset: 0x195DB84
     void $SaveData$b__1(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x195DB54
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationDataController::$$c__DisplayClass36_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationDataController::$$c__DisplayClass36_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationDataController::$$c__DisplayClass36_0*, creationType>()));
-    }
   }; // VROSC.LoopStationDataController/VROSC.<>c__DisplayClass36_0
   #pragma pack(pop)
   static check_size<sizeof(LoopStationDataController::$$c__DisplayClass36_0), 40 + sizeof(::System::Action_1<::VROSC::Error>*)> __VROSC_LoopStationDataController_$$c__DisplayClass36_0SizeCheck;
   static_assert(sizeof(LoopStationDataController::$$c__DisplayClass36_0) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c__DisplayClass36_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c__DisplayClass36_0::$SaveData$b__0
 // Il2CppName: <SaveData>b__0
 template<>
@@ -108,7 +110,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationDataController::$$c__DisplayClass36_0*), "<SaveData>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationDataController::$$c__DisplayClass36_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

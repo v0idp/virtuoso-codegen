@@ -142,41 +142,41 @@ namespace Mono {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt16 error_code
-    [[deprecated]] uint16_t& dyn_error_code();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_error_code();
     // Get instance field reference: private System.UInt16 hidden_0
-    [[deprecated]] uint16_t& dyn_hidden_0();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_hidden_0();
     // Get instance field reference: private System.IntPtr hidden_1
-    [[deprecated]] ::System::IntPtr& dyn_hidden_1();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_1();
     // Get instance field reference: private System.IntPtr hidden_2
-    [[deprecated]] ::System::IntPtr& dyn_hidden_2();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_2();
     // Get instance field reference: private System.IntPtr hidden_3
-    [[deprecated]] ::System::IntPtr& dyn_hidden_3();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_3();
     // Get instance field reference: private System.IntPtr hidden_4
-    [[deprecated]] ::System::IntPtr& dyn_hidden_4();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_4();
     // Get instance field reference: private System.IntPtr hidden_5
-    [[deprecated]] ::System::IntPtr& dyn_hidden_5();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_5();
     // Get instance field reference: private System.IntPtr hidden_6
-    [[deprecated]] ::System::IntPtr& dyn_hidden_6();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_6();
     // Get instance field reference: private System.IntPtr hidden_7
-    [[deprecated]] ::System::IntPtr& dyn_hidden_7();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_7();
     // Get instance field reference: private System.IntPtr hidden_8
-    [[deprecated]] ::System::IntPtr& dyn_hidden_8();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_8();
     // Get instance field reference: private System.IntPtr hidden_11
-    [[deprecated]] ::System::IntPtr& dyn_hidden_11();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_11();
     // Get instance field reference: private System.IntPtr hidden_12
-    [[deprecated]] ::System::IntPtr& dyn_hidden_12();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_12();
     // Get instance field reference: private System.IntPtr hidden_13
-    [[deprecated]] ::System::IntPtr& dyn_hidden_13();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_13();
     // Get instance field reference: private System.IntPtr hidden_14
-    [[deprecated]] ::System::IntPtr& dyn_hidden_14();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_14();
     // Get instance field reference: private System.IntPtr hidden_15
-    [[deprecated]] ::System::IntPtr& dyn_hidden_15();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_15();
     // Get instance field reference: private System.IntPtr hidden_16
-    [[deprecated]] ::System::IntPtr& dyn_hidden_16();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_16();
     // Get instance field reference: private System.IntPtr hidden_17
-    [[deprecated]] ::System::IntPtr& dyn_hidden_17();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_17();
     // Get instance field reference: private System.IntPtr hidden_18
-    [[deprecated]] ::System::IntPtr& dyn_hidden_18();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_hidden_18();
   }; // Mono.RuntimeStructs/Mono.MonoError
   #pragma pack(pop)
   static check_size<sizeof(RuntimeStructs::MonoError), 128 + sizeof(::System::IntPtr)> __Mono_RuntimeStructs_MonoErrorSizeCheck;

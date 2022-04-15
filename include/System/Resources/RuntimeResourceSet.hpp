@@ -91,13 +91,13 @@ namespace System::Resources {
     // Set static field: static System.Int32 Version
     static void _set_Version(int value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> _resCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__resCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__resCache();
     // Get instance field reference: private System.Resources.ResourceReader _defaultReader
-    [[deprecated]] ::System::Resources::ResourceReader*& dyn__defaultReader();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceReader*& dyn__defaultReader();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Resources.ResourceLocator> _caseInsensitiveTable
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__caseInsensitiveTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Resources::ResourceLocator>*& dyn__caseInsensitiveTable();
     // Get instance field reference: private System.Boolean _haveReadFromReader
-    [[deprecated]] bool& dyn__haveReadFromReader();
+    [[deprecated("Use field access instead!")]] bool& dyn__haveReadFromReader();
     // System.Void .ctor(System.String fileName)
     // Offset: 0xCE617C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

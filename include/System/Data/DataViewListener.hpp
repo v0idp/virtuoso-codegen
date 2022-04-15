@@ -80,13 +80,13 @@ namespace System::Data {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly System.WeakReference _dvWeak
-    [[deprecated]] ::System::WeakReference*& dyn__dvWeak();
+    [[deprecated("Use field access instead!")]] ::System::WeakReference*& dyn__dvWeak();
     // Get instance field reference: private System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private System.Data.Index _index
-    [[deprecated]] ::System::Data::Index*& dyn__index();
+    [[deprecated("Use field access instead!")]] ::System::Data::Index*& dyn__index();
     // Get instance field reference: readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // System.Void .ctor(System.Data.DataView dv)
     // Offset: 0x12E3EBC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

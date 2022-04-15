@@ -48,7 +48,7 @@ namespace VROSC::UI {
     static_assert(sizeof(::VROSC::WidgetController*) == 0x8);
     public:
     // Get instance field reference: private VROSC.WidgetController _widgetController
-    [[deprecated]] ::VROSC::WidgetController*& dyn__widgetController();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetController*& dyn__widgetController();
     // public System.Void Setup(VROSC.WidgetController widgetController)
     // Offset: 0x9533F4
     void Setup(::VROSC::WidgetController* widgetController);
@@ -57,11 +57,6 @@ namespace VROSC::UI {
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WidgetToggleMoverRelay* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::WidgetToggleMoverRelay::.ctor");

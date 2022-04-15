@@ -90,15 +90,15 @@ namespace System::Net {
     // Set static field: static private System.Security.Cryptography.RandomNumberGenerator rng
     static void _set_rng(::System::Security::Cryptography::RandomNumberGenerator* value);
     // Get instance field reference: private System.DateTime lastUse
-    [[deprecated]] ::System::DateTime& dyn_lastUse();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_lastUse();
     // Get instance field reference: private System.Int32 _nc
-    [[deprecated]] int& dyn__nc();
+    [[deprecated("Use field access instead!")]] int& dyn__nc();
     // Get instance field reference: private System.Security.Cryptography.HashAlgorithm hash
-    [[deprecated]] ::System::Security::Cryptography::HashAlgorithm*& dyn_hash();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::HashAlgorithm*& dyn_hash();
     // Get instance field reference: private System.Net.DigestHeaderParser parser
-    [[deprecated]] ::System::Net::DigestHeaderParser*& dyn_parser();
+    [[deprecated("Use field access instead!")]] ::System::Net::DigestHeaderParser*& dyn_parser();
     // Get instance field reference: private System.String _cnonce
-    [[deprecated]] ::StringW& dyn__cnonce();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__cnonce();
     // public System.String get_Algorithm()
     // Offset: 0xEFAD54
     ::StringW get_Algorithm();
@@ -123,6 +123,13 @@ namespace System::Net {
     // static private System.Void .cctor()
     // Offset: 0xEFAD00
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xEF9AF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DigestSession* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::DigestSession::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DigestSession*, creationType>()));
+    }
     // public System.Boolean Parse(System.String challenge)
     // Offset: 0xEF9B74
     bool Parse(::StringW challenge);
@@ -141,15 +148,6 @@ namespace System::Net {
     // public System.Net.Authorization Authenticate(System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
     // Offset: 0xEF9C70
     ::System::Net::Authorization* Authenticate(::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
-    // public System.Void .ctor()
-    // Offset: 0xEF9AF8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DigestSession* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::DigestSession::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DigestSession*, creationType>()));
-    }
   }; // System.Net.DigestSession
   #pragma pack(pop)
   static check_size<sizeof(DigestSession), 48 + sizeof(::StringW)> __System_Net_DigestSessionSizeCheck;
@@ -220,6 +218,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Net::DigestSession*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::DigestSession::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::DigestSession::Parse
 // Il2CppName: Parse
 template<>
@@ -278,7 +280,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::N
     return ::il2cpp_utils::FindMethod(classof(System::Net::DigestSession*), "Authenticate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{webRequest, credentials});
   }
 };
-// Writing MetadataGetter for method: System::Net::DigestSession::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -68,11 +68,11 @@ namespace System::Xml::Schema {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private System.Decimal min
-    [[deprecated]] ::System::Decimal& dyn_min();
+    [[deprecated("Use field access instead!")]] ::System::Decimal& dyn_min();
     // Get instance field reference: private System.Decimal max
-    [[deprecated]] ::System::Decimal& dyn_max();
+    [[deprecated("Use field access instead!")]] ::System::Decimal& dyn_max();
     // Get instance field reference: private System.Xml.Schema.BitSet nextIteration
-    [[deprecated]] ::System::Xml::Schema::BitSet*& dyn_nextIteration();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::BitSet*& dyn_nextIteration();
     // public System.Decimal get_Max()
     // Offset: 0xAF344C
     ::System::Decimal get_Max();

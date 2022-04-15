@@ -61,7 +61,7 @@ namespace System::Data::Common {
       return values;
     }
     // Get instance field reference: private System.Data.SqlTypes.SqlBinary[] _values
-    [[deprecated]] ::ArrayW<::System::Data::SqlTypes::SqlBinary>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::SqlTypes::SqlBinary>& dyn__values();
     // public System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x121FBA0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

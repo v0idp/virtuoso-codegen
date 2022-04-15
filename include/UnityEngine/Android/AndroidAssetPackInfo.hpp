@@ -78,17 +78,17 @@ namespace UnityEngine::Android {
     static_assert(sizeof(::UnityEngine::Android::AndroidAssetPackError) == 0x4);
     public:
     // Get instance field reference: private readonly System.String <name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$name$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackStatus <status>k__BackingField
-    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Android::AndroidAssetPackStatus& dyn_$status$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <size>k__BackingField
-    [[deprecated]] uint64_t& dyn_$size$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$size$k__BackingField();
     // Get instance field reference: private readonly System.UInt64 <bytesDownloaded>k__BackingField
-    [[deprecated]] uint64_t& dyn_$bytesDownloaded$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_$bytesDownloaded$k__BackingField();
     // Get instance field reference: private readonly System.Single <transferProgress>k__BackingField
-    [[deprecated]] float& dyn_$transferProgress$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$transferProgress$k__BackingField();
     // Get instance field reference: private readonly UnityEngine.Android.AndroidAssetPackError <error>k__BackingField
-    [[deprecated]] ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Android::AndroidAssetPackError& dyn_$error$k__BackingField();
     // System.Void .ctor(System.String name, UnityEngine.Android.AndroidAssetPackStatus status, System.UInt64 size, System.UInt64 bytesDownloaded, System.Single transferProgress, UnityEngine.Android.AndroidAssetPackError error)
     // Offset: 0x18661F8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

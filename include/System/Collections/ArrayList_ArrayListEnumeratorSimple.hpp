@@ -72,15 +72,15 @@ namespace System::Collections {
     // Set static field: static private System.Object dummyObject
     static void _set_dummyObject(::Il2CppObject* value);
     // Get instance field reference: private System.Collections.ArrayList list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_list();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Object currentElement
-    [[deprecated]] ::Il2CppObject*& dyn_currentElement();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_currentElement();
     // Get instance field reference: private System.Boolean isArrayList
-    [[deprecated]] bool& dyn_isArrayList();
+    [[deprecated("Use field access instead!")]] bool& dyn_isArrayList();
     // public System.Object get_Current()
     // Offset: 0x13A1DC8
     ::Il2CppObject* get_Current();

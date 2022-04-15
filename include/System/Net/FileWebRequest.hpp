@@ -205,43 +205,43 @@ namespace System::Net {
     // Set static field: static private System.Threading.WaitCallback s_GetResponseCallback
     static void _set_s_GetResponseCallback(::System::Threading::WaitCallback* value);
     // Get instance field reference: private System.String m_connectionGroupName
-    [[deprecated]] ::StringW& dyn_m_connectionGroupName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_connectionGroupName();
     // Get instance field reference: private System.Int64 m_contentLength
-    [[deprecated]] int64_t& dyn_m_contentLength();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_contentLength();
     // Get instance field reference: private System.Net.ICredentials m_credentials
-    [[deprecated]] ::System::Net::ICredentials*& dyn_m_credentials();
+    [[deprecated("Use field access instead!")]] ::System::Net::ICredentials*& dyn_m_credentials();
     // Get instance field reference: private System.IO.FileAccess m_fileAccess
-    [[deprecated]] ::System::IO::FileAccess& dyn_m_fileAccess();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileAccess& dyn_m_fileAccess();
     // Get instance field reference: private System.Net.WebHeaderCollection m_headers
-    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_m_headers();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollection*& dyn_m_headers();
     // Get instance field reference: private System.String m_method
-    [[deprecated]] ::StringW& dyn_m_method();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_method();
     // Get instance field reference: private System.Net.IWebProxy m_proxy
-    [[deprecated]] ::System::Net::IWebProxy*& dyn_m_proxy();
+    [[deprecated("Use field access instead!")]] ::System::Net::IWebProxy*& dyn_m_proxy();
     // Get instance field reference: private System.Threading.ManualResetEvent m_readerEvent
-    [[deprecated]] ::System::Threading::ManualResetEvent*& dyn_m_readerEvent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ManualResetEvent*& dyn_m_readerEvent();
     // Get instance field reference: private System.Boolean m_readPending
-    [[deprecated]] bool& dyn_m_readPending();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_readPending();
     // Get instance field reference: private System.Net.WebResponse m_response
-    [[deprecated]] ::System::Net::WebResponse*& dyn_m_response();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebResponse*& dyn_m_response();
     // Get instance field reference: private System.IO.Stream m_stream
-    [[deprecated]] ::System::IO::Stream*& dyn_m_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_m_stream();
     // Get instance field reference: private System.Boolean m_syncHint
-    [[deprecated]] bool& dyn_m_syncHint();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_syncHint();
     // Get instance field reference: private System.Int32 m_timeout
-    [[deprecated]] int& dyn_m_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_m_timeout();
     // Get instance field reference: private System.Uri m_uri
-    [[deprecated]] ::System::Uri*& dyn_m_uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_m_uri();
     // Get instance field reference: private System.Boolean m_writePending
-    [[deprecated]] bool& dyn_m_writePending();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_writePending();
     // Get instance field reference: private System.Boolean m_writing
-    [[deprecated]] bool& dyn_m_writing();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_writing();
     // Get instance field reference: private System.Net.LazyAsyncResult m_WriteAResult
-    [[deprecated]] ::System::Net::LazyAsyncResult*& dyn_m_WriteAResult();
+    [[deprecated("Use field access instead!")]] ::System::Net::LazyAsyncResult*& dyn_m_WriteAResult();
     // Get instance field reference: private System.Net.LazyAsyncResult m_ReadAResult
-    [[deprecated]] ::System::Net::LazyAsyncResult*& dyn_m_ReadAResult();
+    [[deprecated("Use field access instead!")]] ::System::Net::LazyAsyncResult*& dyn_m_ReadAResult();
     // Get instance field reference: private System.Int32 m_Aborted
-    [[deprecated]] int& dyn_m_Aborted();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Aborted();
     // System.Boolean get_Aborted()
     // Offset: 0xF00EF4
     bool get_Aborted();

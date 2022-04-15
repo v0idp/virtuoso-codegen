@@ -72,7 +72,7 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::UnityEngine::EventSystems::ISubmitHandler*>(this);
     }
     // Get instance field reference: private UnityEngine.UI.Button/UnityEngine.UI.ButtonClickedEvent m_OnClick
-    [[deprecated]] ::UnityEngine::UI::Button::ButtonClickedEvent*& dyn_m_OnClick();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button::ButtonClickedEvent*& dyn_m_OnClick();
     // public UnityEngine.UI.Button/UnityEngine.UI.ButtonClickedEvent get_onClick()
     // Offset: 0xEACCC0
     ::UnityEngine::UI::Button::ButtonClickedEvent* get_onClick();
@@ -96,11 +96,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.Selectable
     // Base method: System.Void Selectable::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Button* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Button::.ctor");

@@ -92,19 +92,19 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private VROSC.LoopStationLoopHandler _loopHandler
-    [[deprecated]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationLoopHandler*& dyn__loopHandler();
     // Get instance field reference: private VROSC.LoopStationGroupCore _loopGroupCore
-    [[deprecated]] ::VROSC::LoopStationGroupCore*& dyn__loopGroupCore();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroupCore*& dyn__loopGroupCore();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopPlayer> _soloTracks
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__soloTracks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__soloTracks();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopPlayer> _loops
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__loops();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn__loops();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopStationGroup> _groups
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__groups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__groups();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopStationGroup> _soloGroups
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__soloGroups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn__soloGroups();
     // public System.Void .ctor(VROSC.LoopStation loopStation)
     // Offset: 0x197833C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

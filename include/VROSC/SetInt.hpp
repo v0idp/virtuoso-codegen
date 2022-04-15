@@ -68,24 +68,19 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::IntField*) == 0x8);
     public:
     // Get instance field reference: private VROSC.IntField _setTo
-    [[deprecated]] ::VROSC::IntField*& dyn__setTo();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__setTo();
     // Get instance field reference: private System.Boolean _useSignalValue
-    [[deprecated]] bool& dyn__useSignalValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__useSignalValue();
     // Get instance field reference: private VROSC.IntField _minValue
-    [[deprecated]] ::VROSC::IntField*& dyn__minValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__minValue();
     // Get instance field reference: private VROSC.IntField _maxValue
-    [[deprecated]] ::VROSC::IntField*& dyn__maxValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__maxValue();
     // public System.Void .ctor()
     // Offset: 0x1924B60
     // Implemented from: VROSC.IntChanger
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetInt* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetInt::.ctor");

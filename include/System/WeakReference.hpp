@@ -61,9 +61,9 @@ namespace System {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: private System.Boolean isLongReference
-    [[deprecated]] bool& dyn_isLongReference();
+    [[deprecated("Use field access instead!")]] bool& dyn_isLongReference();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle gcHandle
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_gcHandle();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn_gcHandle();
     // public System.Boolean get_IsAlive()
     // Offset: 0x1210DA4
     bool get_IsAlive();

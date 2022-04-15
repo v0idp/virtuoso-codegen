@@ -61,6 +61,13 @@ namespace System::Dynamic {
     static ::System::Dynamic::BindingRestrictions* _get_Empty();
     // Set static field: static public readonly System.Dynamic.BindingRestrictions Empty
     static void _set_Empty(::System::Dynamic::BindingRestrictions* value);
+    // private System.Void .ctor()
+    // Offset: 0x11F3FA0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BindingRestrictions* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::BindingRestrictions::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BindingRestrictions*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x11F4354
     static void _cctor();
@@ -82,19 +89,14 @@ namespace System::Dynamic {
     // public System.Linq.Expressions.Expression ToExpression()
     // Offset: 0x11F4348
     ::System::Linq::Expressions::Expression* ToExpression();
-    // private System.Void .ctor()
-    // Offset: 0x11F3FA0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BindingRestrictions* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Dynamic::BindingRestrictions::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BindingRestrictions*, creationType>()));
-    }
   }; // System.Dynamic.BindingRestrictions
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Dynamic::BindingRestrictions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Dynamic::BindingRestrictions::_cctor
 // Il2CppName: .cctor
 template<>
@@ -157,7 +159,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::L
     return ::il2cpp_utils::FindMethod(classof(System::Dynamic::BindingRestrictions*), "ToExpression", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Dynamic::BindingRestrictions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

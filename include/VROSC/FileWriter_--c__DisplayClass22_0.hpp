@@ -73,37 +73,39 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Int32 endIndex
-    [[deprecated]] int& dyn_endIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_endIndex();
     // Get instance field reference: public System.Int32 startIndex
-    [[deprecated]] int& dyn_startIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_startIndex();
     // Get instance field reference: public System.Single[] samples
-    [[deprecated]] ::ArrayW<float>& dyn_samples();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_samples();
     // Get instance field reference: public System.Single normalizeMultiplier
-    [[deprecated]] float& dyn_normalizeMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_normalizeMultiplier();
     // Get instance field reference: public System.String filePath
-    [[deprecated]] ::StringW& dyn_filePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_filePath();
     // Get instance field reference: public System.Int32 channels
-    [[deprecated]] int& dyn_channels();
+    [[deprecated("Use field access instead!")]] int& dyn_channels();
     // Get instance field reference: public System.Int32 sampleRate
-    [[deprecated]] int& dyn_sampleRate();
-    // System.Void <SavePreviewToFile>b__0()
-    // Offset: 0x95FCE0
-    void $SavePreviewToFile$b__0();
+    [[deprecated("Use field access instead!")]] int& dyn_sampleRate();
     // public System.Void .ctor()
     // Offset: 0x95FCD8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FileWriter::$$c__DisplayClass22_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FileWriter::$$c__DisplayClass22_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FileWriter::$$c__DisplayClass22_0*, creationType>()));
     }
+    // System.Void <SavePreviewToFile>b__0()
+    // Offset: 0x95FCE0
+    void $SavePreviewToFile$b__0();
   }; // VROSC.FileWriter/VROSC.<>c__DisplayClass22_0
   #pragma pack(pop)
   static check_size<sizeof(FileWriter::$$c__DisplayClass22_0), 52 + sizeof(int)> __VROSC_FileWriter_$$c__DisplayClass22_0SizeCheck;
   static_assert(sizeof(FileWriter::$$c__DisplayClass22_0) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass22_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass22_0::$SavePreviewToFile$b__0
 // Il2CppName: <SavePreviewToFile>b__0
 template<>
@@ -112,7 +114,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::FileWriter::$$c__DisplayClass22_0*), "<SavePreviewToFile>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::FileWriter::$$c__DisplayClass22_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

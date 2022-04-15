@@ -51,7 +51,7 @@ namespace System::Linq::Expressions::Interpreter {
       return labelIndex;
     }
     // Get instance field reference: readonly System.Int32 _labelIndex
-    [[deprecated]] int& dyn__labelIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__labelIndex();
     // public System.Void .ctor(System.Int32 labelIndex)
     // Offset: 0xF14F90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

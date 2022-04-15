@@ -118,11 +118,11 @@ namespace System::Collections {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Object key
-      [[deprecated]] ::Il2CppObject*& dyn_key();
+      [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_key();
       // Get instance field reference: public System.Object val
-      [[deprecated]] ::Il2CppObject*& dyn_val();
+      [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_val();
       // Get instance field reference: public System.Int32 hash_coll
-      [[deprecated]] int& dyn_hash_coll();
+      [[deprecated("Use field access instead!")]] int& dyn_hash_coll();
     }; // System.Collections.Hashtable/System.Collections.bucket
     #pragma pack(pop)
     static check_size<sizeof(Hashtable::bucket), 16 + sizeof(int)> __System_Collections_Hashtable_bucketSizeCheck;
@@ -274,27 +274,27 @@ namespace System::Collections {
     // Set static field: static private System.String KeyComparerName
     static void _set_KeyComparerName(::StringW value);
     // Get instance field reference: private System.Collections.Hashtable/System.Collections.bucket[] buckets
-    [[deprecated]] ::ArrayW<::System::Collections::Hashtable::bucket>& dyn_buckets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Collections::Hashtable::bucket>& dyn_buckets();
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.Int32 occupancy
-    [[deprecated]] int& dyn_occupancy();
+    [[deprecated("Use field access instead!")]] int& dyn_occupancy();
     // Get instance field reference: private System.Int32 loadsize
-    [[deprecated]] int& dyn_loadsize();
+    [[deprecated("Use field access instead!")]] int& dyn_loadsize();
     // Get instance field reference: private System.Single loadFactor
-    [[deprecated]] float& dyn_loadFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_loadFactor();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Boolean isWriterInProgress
-    [[deprecated]] bool& dyn_isWriterInProgress();
+    [[deprecated("Use field access instead!")]] bool& dyn_isWriterInProgress();
     // Get instance field reference: private System.Collections.ICollection keys
-    [[deprecated]] ::System::Collections::ICollection*& dyn_keys();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ICollection*& dyn_keys();
     // Get instance field reference: private System.Collections.ICollection values
-    [[deprecated]] ::System::Collections::ICollection*& dyn_values();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ICollection*& dyn_values();
     // Get instance field reference: private System.Collections.IEqualityComparer _keycomparer
-    [[deprecated]] ::System::Collections::IEqualityComparer*& dyn__keycomparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEqualityComparer*& dyn__keycomparer();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // public System.Object get_Item(System.Object key)
     // Offset: 0x145D9BC
     ::Il2CppObject* get_Item(::Il2CppObject* key);

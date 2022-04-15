@@ -63,13 +63,13 @@ namespace Oculus::Spatializer::Propagation {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UIntPtr indexOffset
-    [[deprecated]] ::System::UIntPtr& dyn_indexOffset();
+    [[deprecated("Use field access instead!")]] ::System::UIntPtr& dyn_indexOffset();
     // Get instance field reference: public System.UIntPtr faceCount
-    [[deprecated]] ::System::UIntPtr& dyn_faceCount();
+    [[deprecated("Use field access instead!")]] ::System::UIntPtr& dyn_faceCount();
     // Get instance field reference: public Oculus.Spatializer.Propagation.FaceType faceType
-    [[deprecated]] ::Oculus::Spatializer::Propagation::FaceType& dyn_faceType();
+    [[deprecated("Use field access instead!")]] ::Oculus::Spatializer::Propagation::FaceType& dyn_faceType();
     // Get instance field reference: public System.IntPtr material
-    [[deprecated]] ::System::IntPtr& dyn_material();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_material();
   }; // Oculus.Spatializer.Propagation.MeshGroup
   #pragma pack(pop)
   static check_size<sizeof(MeshGroup), 20 + sizeof(::System::IntPtr)> __Oculus_Spatializer_Propagation_MeshGroupSizeCheck;

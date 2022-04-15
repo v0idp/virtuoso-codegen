@@ -91,7 +91,7 @@ namespace System::Xml::Schema {
       // Set static field: static public System.Xml.Schema.CompiledIdentityConstraint/System.Xml.Schema.ConstraintRole Keyref
       static void _set_Keyref(::System::Xml::Schema::CompiledIdentityConstraint::ConstraintRole value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.Schema.CompiledIdentityConstraint/System.Xml.Schema.ConstraintRole
     #pragma pack(pop)
     static check_size<sizeof(CompiledIdentityConstraint::ConstraintRole), 0 + sizeof(int)> __System_Xml_Schema_CompiledIdentityConstraint_ConstraintRoleSizeCheck;
@@ -135,15 +135,15 @@ namespace System::Xml::Schema {
     // Set static field: static public readonly System.Xml.Schema.CompiledIdentityConstraint Empty
     static void _set_Empty(::System::Xml::Schema::CompiledIdentityConstraint* value);
     // Get instance field reference: System.Xml.XmlQualifiedName name
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_name();
     // Get instance field reference: private System.Xml.Schema.CompiledIdentityConstraint/System.Xml.Schema.ConstraintRole role
-    [[deprecated]] ::System::Xml::Schema::CompiledIdentityConstraint::ConstraintRole& dyn_role();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::CompiledIdentityConstraint::ConstraintRole& dyn_role();
     // Get instance field reference: private System.Xml.Schema.Asttree selector
-    [[deprecated]] ::System::Xml::Schema::Asttree*& dyn_selector();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::Asttree*& dyn_selector();
     // Get instance field reference: private System.Xml.Schema.Asttree[] fields
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::Asttree*>& dyn_fields();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::Asttree*>& dyn_fields();
     // Get instance field reference: System.Xml.XmlQualifiedName refer
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_refer();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_refer();
     // public System.Xml.Schema.CompiledIdentityConstraint/System.Xml.Schema.ConstraintRole get_Role()
     // Offset: 0xB67050
     ::System::Xml::Schema::CompiledIdentityConstraint::ConstraintRole get_Role();
@@ -153,6 +153,13 @@ namespace System::Xml::Schema {
     // public System.Xml.Schema.Asttree[] get_Fields()
     // Offset: 0xB67060
     ::ArrayW<::System::Xml::Schema::Asttree*> get_Fields();
+    // private System.Void .ctor()
+    // Offset: 0xB67068
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CompiledIdentityConstraint* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::CompiledIdentityConstraint::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CompiledIdentityConstraint*, creationType>()));
+    }
     // public System.Void .ctor(System.Xml.Schema.XmlSchemaIdentityConstraint constraint, System.Xml.XmlNamespaceManager nsmgr)
     // Offset: 0xB670E8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -163,15 +170,6 @@ namespace System::Xml::Schema {
     // static private System.Void .cctor()
     // Offset: 0xB675B0
     static void _cctor();
-    // private System.Void .ctor()
-    // Offset: 0xB67068
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CompiledIdentityConstraint* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::CompiledIdentityConstraint::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CompiledIdentityConstraint*, creationType>()));
-    }
   }; // System.Xml.Schema.CompiledIdentityConstraint
   #pragma pack(pop)
   static check_size<sizeof(CompiledIdentityConstraint), 48 + sizeof(::System::Xml::XmlQualifiedName*)> __System_Xml_Schema_CompiledIdentityConstraintSizeCheck;
@@ -208,6 +206,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<::
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::Schema::CompiledIdentityConstraint::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Schema::CompiledIdentityConstraint::_cctor
 // Il2CppName: .cctor
 template<>
@@ -216,7 +218,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Schema::CompiledIdentityConstraint*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Schema::CompiledIdentityConstraint::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

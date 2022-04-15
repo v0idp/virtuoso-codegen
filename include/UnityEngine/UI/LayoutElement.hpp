@@ -98,21 +98,21 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_IgnoreLayout
-    [[deprecated]] bool& dyn_m_IgnoreLayout();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IgnoreLayout();
     // Get instance field reference: private System.Single m_MinWidth
-    [[deprecated]] float& dyn_m_MinWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MinWidth();
     // Get instance field reference: private System.Single m_MinHeight
-    [[deprecated]] float& dyn_m_MinHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MinHeight();
     // Get instance field reference: private System.Single m_PreferredWidth
-    [[deprecated]] float& dyn_m_PreferredWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PreferredWidth();
     // Get instance field reference: private System.Single m_PreferredHeight
-    [[deprecated]] float& dyn_m_PreferredHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PreferredHeight();
     // Get instance field reference: private System.Single m_FlexibleWidth
-    [[deprecated]] float& dyn_m_FlexibleWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FlexibleWidth();
     // Get instance field reference: private System.Single m_FlexibleHeight
-    [[deprecated]] float& dyn_m_FlexibleHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FlexibleHeight();
     // Get instance field reference: private System.Int32 m_LayoutPriority
-    [[deprecated]] int& dyn_m_LayoutPriority();
+    [[deprecated("Use field access instead!")]] int& dyn_m_LayoutPriority();
     // public System.Boolean get_ignoreLayout()
     // Offset: 0x168F170
     bool get_ignoreLayout();
@@ -174,11 +174,6 @@ namespace UnityEngine::UI {
     // Offset: 0x168F63C
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LayoutElement* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::LayoutElement::.ctor");

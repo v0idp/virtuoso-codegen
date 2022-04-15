@@ -86,17 +86,17 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::UIToggle*) == 0x8);
     public:
     // Get instance field reference: private VROSC.ChannelControlUI _chanelControllUI
-    [[deprecated]] ::VROSC::ChannelControlUI*& dyn__chanelControllUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::ChannelControlUI*& dyn__chanelControllUI();
     // Get instance field reference: private VROSC.OctaveControlUI _octaveControlUI
-    [[deprecated]] ::VROSC::OctaveControlUI*& dyn__octaveControlUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::OctaveControlUI*& dyn__octaveControlUI();
     // Get instance field reference: private VROSC.EffectsPanel _effectsPanelUI
-    [[deprecated]] ::VROSC::EffectsPanel*& dyn__effectsPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::EffectsPanel*& dyn__effectsPanelUI();
     // Get instance field reference: private VROSC.ScalePanelUI _scalePanelUI
-    [[deprecated]] ::VROSC::ScalePanelUI*& dyn__scalePanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScalePanelUI*& dyn__scalePanelUI();
     // Get instance field reference: private VROSC.UIToggle _scalePanelButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__scalePanelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__scalePanelButton();
     // Get instance field reference: private VROSC.UIToggle _effectsPanelButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__effectsPanelButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__effectsPanelButton();
     // private System.Void SynthesizerChanged(System.Boolean useExternal)
     // Offset: 0x1931F08
     void SynthesizerChanged(bool useExternal);
@@ -111,11 +111,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentControlPanelUI
     // Base method: System.Void InstrumentControlPanelUI::.ctor()
     // Base method: System.Void ControlPanelUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthControlPanelUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthControlPanelUI::.ctor");

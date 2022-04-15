@@ -55,7 +55,7 @@ namespace System {
     // Set static field: static public System.Base64FormattingOptions InsertLineBreaks
     static void _set_InsertLineBreaks(::System::Base64FormattingOptions value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Base64FormattingOptions
   #pragma pack(pop)
   static check_size<sizeof(Base64FormattingOptions), 0 + sizeof(int)> __System_Base64FormattingOptionsSizeCheck;

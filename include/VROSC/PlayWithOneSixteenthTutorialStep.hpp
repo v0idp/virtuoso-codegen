@@ -50,7 +50,7 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Int32 _notesPlayed
-    [[deprecated]] int& dyn__notesPlayed();
+    [[deprecated("Use field access instead!")]] int& dyn__notesPlayed();
     // public System.Void TutorialEventTriggered(VROSC.TutorialEvent tutorialEvent)
     // Offset: 0xAE1A00
     void TutorialEventTriggered(::VROSC::TutorialEvent tutorialEvent);
@@ -61,11 +61,6 @@ namespace VROSC {
     // Offset: 0xAE1D44
     // Implemented from: VROSC.TutorialStep
     // Base method: System.Void TutorialStep::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayWithOneSixteenthTutorialStep* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PlayWithOneSixteenthTutorialStep::.ctor");

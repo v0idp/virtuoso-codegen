@@ -50,9 +50,9 @@ namespace System::Runtime::InteropServices {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Object m_wrapper
-    [[deprecated]] ::Il2CppObject*& dyn_m_wrapper();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_wrapper();
     // Get instance field reference: System.IntPtr m_handle
-    [[deprecated]] ::System::IntPtr& dyn_m_handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_handle();
     // public System.IntPtr get_Handle()
     // Offset: 0x145BDCC
     ::System::IntPtr get_Handle();

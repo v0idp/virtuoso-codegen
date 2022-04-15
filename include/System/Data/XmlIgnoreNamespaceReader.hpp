@@ -56,7 +56,7 @@ namespace System::Data {
       return namespacesToIgnore;
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _namespacesToIgnore
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__namespacesToIgnore();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__namespacesToIgnore();
     // System.Void .ctor(System.Xml.XmlDocument xdoc, System.String[] namespacesToIgnore)
     // Offset: 0x1622214
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

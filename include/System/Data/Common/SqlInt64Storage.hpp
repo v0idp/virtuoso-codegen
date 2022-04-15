@@ -61,7 +61,7 @@ namespace System::Data::Common {
       return values;
     }
     // Get instance field reference: private System.Data.SqlTypes.SqlInt64[] _values
-    [[deprecated]] ::ArrayW<::System::Data::SqlTypes::SqlInt64>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::SqlTypes::SqlInt64>& dyn__values();
     // public System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x13D2194
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

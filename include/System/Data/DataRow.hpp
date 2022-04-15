@@ -164,35 +164,35 @@ namespace System::Data {
     // Set static field: static private System.Int32 s_objectTypeCount
     static void _set_s_objectTypeCount(int value);
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private readonly System.Data.DataColumnCollection _columns
-    [[deprecated]] ::System::Data::DataColumnCollection*& dyn__columns();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumnCollection*& dyn__columns();
     // Get instance field reference: System.Int32 _oldRecord
-    [[deprecated]] int& dyn__oldRecord();
+    [[deprecated("Use field access instead!")]] int& dyn__oldRecord();
     // Get instance field reference: System.Int32 _newRecord
-    [[deprecated]] int& dyn__newRecord();
+    [[deprecated("Use field access instead!")]] int& dyn__newRecord();
     // Get instance field reference: System.Int32 _tempRecord
-    [[deprecated]] int& dyn__tempRecord();
+    [[deprecated("Use field access instead!")]] int& dyn__tempRecord();
     // Get instance field reference: System.Int64 _rowID
-    [[deprecated]] int64_t& dyn__rowID();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__rowID();
     // Get instance field reference: System.Data.DataRowAction _action
-    [[deprecated]] ::System::Data::DataRowAction& dyn__action();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataRowAction& dyn__action();
     // Get instance field reference: System.Boolean _inChangingEvent
-    [[deprecated]] bool& dyn__inChangingEvent();
+    [[deprecated("Use field access instead!")]] bool& dyn__inChangingEvent();
     // Get instance field reference: System.Boolean _inDeletingEvent
-    [[deprecated]] bool& dyn__inDeletingEvent();
+    [[deprecated("Use field access instead!")]] bool& dyn__inDeletingEvent();
     // Get instance field reference: System.Boolean _inCascade
-    [[deprecated]] bool& dyn__inCascade();
+    [[deprecated("Use field access instead!")]] bool& dyn__inCascade();
     // Get instance field reference: private System.Data.DataColumn _lastChangedColumn
-    [[deprecated]] ::System::Data::DataColumn*& dyn__lastChangedColumn();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__lastChangedColumn();
     // Get instance field reference: private System.Int32 _countColumnChange
-    [[deprecated]] int& dyn__countColumnChange();
+    [[deprecated("Use field access instead!")]] int& dyn__countColumnChange();
     // Get instance field reference: private System.Data.DataError _error
-    [[deprecated]] ::System::Data::DataError*& dyn__error();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataError*& dyn__error();
     // Get instance field reference: private System.Int32 _rbTreeNodeId
-    [[deprecated]] int& dyn__rbTreeNodeId();
+    [[deprecated("Use field access instead!")]] int& dyn__rbTreeNodeId();
     // Get instance field reference: readonly System.Int32 _objectID
-    [[deprecated]] int& dyn__objectID();
+    [[deprecated("Use field access instead!")]] int& dyn__objectID();
     // System.Data.DataColumn get_LastChangedColumn()
     // Offset: 0xF9E4E8
     ::System::Data::DataColumn* get_LastChangedColumn();

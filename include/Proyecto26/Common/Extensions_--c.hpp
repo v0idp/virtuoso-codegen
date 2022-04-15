@@ -46,18 +46,16 @@ namespace Proyecto26::Common {
     // static private System.Void .cctor()
     // Offset: 0x95F784
     static void _cctor();
-    // System.String <BuildUrl>b__3_1(System.Collections.Generic.KeyValuePair`2<System.String,System.String> p)
-    // Offset: 0x95F7EC
-    ::StringW $BuildUrl$b__3_1(::System::Collections::Generic::KeyValuePair_2<::StringW, ::StringW> p);
     // public System.Void .ctor()
     // Offset: 0x95F7E4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Extensions::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::Common::Extensions::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Extensions::$$c*, creationType>()));
     }
+    // System.String <BuildUrl>b__3_1(System.Collections.Generic.KeyValuePair`2<System.String,System.String> p)
+    // Offset: 0x95F7EC
+    ::StringW $BuildUrl$b__3_1(::System::Collections::Generic::KeyValuePair_2<::StringW, ::StringW> p);
   }; // Proyecto26.Common.Extensions/Proyecto26.Common.<>c
   #pragma pack(pop)
 }
@@ -70,6 +68,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Proyecto26::Common::Extensions::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Proyecto26::Common::Extensions::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Proyecto26::Common::Extensions::$$c::$BuildUrl$b__3_1
 // Il2CppName: <BuildUrl>b__3_1
 template<>
@@ -79,7 +81,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Proyecto26::Common::Extensions::$$c*), "<BuildUrl>b__3_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: Proyecto26::Common::Extensions::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

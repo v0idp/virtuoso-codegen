@@ -53,9 +53,9 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::UnityEngine::Timeline::TrackBindingFlags) == 0x4);
     public:
     // Get instance field reference: public readonly System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: public readonly UnityEngine.Timeline.TrackBindingFlags flags
-    [[deprecated]] ::UnityEngine::Timeline::TrackBindingFlags& dyn_flags();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TrackBindingFlags& dyn_flags();
     // public System.Void .ctor(System.Type type)
     // Offset: 0x18D3DDC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

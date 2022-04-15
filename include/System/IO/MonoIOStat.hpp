@@ -67,15 +67,15 @@ namespace System::IO {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.IO.FileAttributes fileAttributes
-    [[deprecated]] ::System::IO::FileAttributes& dyn_fileAttributes();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileAttributes& dyn_fileAttributes();
     // Get instance field reference: public System.Int64 Length
-    [[deprecated]] int64_t& dyn_Length();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_Length();
     // Get instance field reference: public System.Int64 CreationTime
-    [[deprecated]] int64_t& dyn_CreationTime();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_CreationTime();
     // Get instance field reference: public System.Int64 LastAccessTime
-    [[deprecated]] int64_t& dyn_LastAccessTime();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_LastAccessTime();
     // Get instance field reference: public System.Int64 LastWriteTime
-    [[deprecated]] int64_t& dyn_LastWriteTime();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_LastWriteTime();
   }; // System.IO.MonoIOStat
   #pragma pack(pop)
   static check_size<sizeof(MonoIOStat), 32 + sizeof(int64_t)> __System_IO_MonoIOStatSizeCheck;

@@ -103,17 +103,17 @@ namespace Microsoft::Win32 {
     // Set static field: static private readonly Microsoft.Win32.IRegistryApi RegistryApi
     static void _set_RegistryApi(::Microsoft::Win32::IRegistryApi* value);
     // Get instance field reference: private System.Object handle
-    [[deprecated]] ::Il2CppObject*& dyn_handle();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_handle();
     // Get instance field reference: private Microsoft.Win32.SafeHandles.SafeRegistryHandle safe_handle
-    [[deprecated]] ::Microsoft::Win32::SafeHandles::SafeRegistryHandle*& dyn_safe_handle();
+    [[deprecated("Use field access instead!")]] ::Microsoft::Win32::SafeHandles::SafeRegistryHandle*& dyn_safe_handle();
     // Get instance field reference: private System.Object hive
-    [[deprecated]] ::Il2CppObject*& dyn_hive();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_hive();
     // Get instance field reference: private readonly System.String qname
-    [[deprecated]] ::StringW& dyn_qname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_qname();
     // Get instance field reference: private readonly System.Boolean isRemoteRoot
-    [[deprecated]] bool& dyn_isRemoteRoot();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRemoteRoot();
     // Get instance field reference: private readonly System.Boolean isWritable
-    [[deprecated]] bool& dyn_isWritable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isWritable();
     // public System.String get_Name()
     // Offset: 0x161724C
     ::StringW get_Name();

@@ -63,6 +63,13 @@ namespace System::IO::Compression {
     // static private System.Void .cctor()
     // Offset: 0x16A1C98
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x16A1CF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ZipArchiveEntry::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::ZipArchiveEntry::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ZipArchiveEntry::$$c*, creationType>()));
+    }
     // System.Void <GetDataCompressor>b__67_0(System.Int64 initialPosition, System.Int64 currentPosition, System.UInt32 checkSum, System.IO.Stream backing, System.IO.Compression.ZipArchiveEntry thisRef, System.EventHandler closeHandler)
     // Offset: 0x16A1D00
     void $GetDataCompressor$b__67_0(int64_t initialPosition, int64_t currentPosition, uint checkSum, ::System::IO::Stream* backing, ::System::IO::Compression::ZipArchiveEntry* thisRef, ::System::EventHandler* closeHandler);
@@ -72,15 +79,6 @@ namespace System::IO::Compression {
     // System.Void <OpenInUpdateMode>b__71_0(System.IO.Compression.ZipArchiveEntry thisRef)
     // Offset: 0x16A1E78
     void $OpenInUpdateMode$b__71_0(::System::IO::Compression::ZipArchiveEntry* thisRef);
-    // public System.Void .ctor()
-    // Offset: 0x16A1CF8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ZipArchiveEntry::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::ZipArchiveEntry::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ZipArchiveEntry::$$c*, creationType>()));
-    }
   }; // System.IO.Compression.ZipArchiveEntry/System.IO.Compression.<>c
   #pragma pack(pop)
 }
@@ -93,6 +91,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::IO::Compression::ZipArchiveEntry::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::IO::Compression::ZipArchiveEntry::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::IO::Compression::ZipArchiveEntry::$$c::$GetDataCompressor$b__67_0
 // Il2CppName: <GetDataCompressor>b__67_0
 template<>
@@ -126,7 +128,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::IO::Compression::ZipArchiveEntry::$$c*), "<OpenInUpdateMode>b__71_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{thisRef});
   }
 };
-// Writing MetadataGetter for method: System::IO::Compression::ZipArchiveEntry::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

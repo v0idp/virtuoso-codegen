@@ -68,11 +68,11 @@ namespace System {
       return *reinterpret_cast<::System::IConsoleDriver*>(this);
     }
     // Get instance field reference: private System.IntPtr inputHandle
-    [[deprecated]] ::System::IntPtr& dyn_inputHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_inputHandle();
     // Get instance field reference: private System.IntPtr outputHandle
-    [[deprecated]] ::System::IntPtr& dyn_outputHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_outputHandle();
     // Get instance field reference: private System.Int16 defaultAttribute
-    [[deprecated]] int16_t& dyn_defaultAttribute();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_defaultAttribute();
     // public System.ConsoleKeyInfo ReadKey(System.Boolean intercept)
     // Offset: 0x121298C
     ::System::ConsoleKeyInfo ReadKey(bool intercept);

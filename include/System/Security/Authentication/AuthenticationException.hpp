@@ -42,10 +42,6 @@ namespace System::Security::Authentication {
     public:
     // public System.Void .ctor()
     // Offset: 0x10D85C4
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor()
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AuthenticationException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Authentication::AuthenticationException::.ctor");
@@ -53,9 +49,6 @@ namespace System::Security::Authentication {
     }
     // public System.Void .ctor(System.String message, System.Exception innerException)
     // Offset: 0x10D8620
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.String message, System.Exception innerException)
-    // Base method: System.Void Exception::.ctor(System.String message, System.Exception innerException)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AuthenticationException* New_ctor(::StringW message, ::System::Exception* innerException) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Authentication::AuthenticationException::.ctor");
@@ -63,9 +56,6 @@ namespace System::Security::Authentication {
     }
     // protected System.Void .ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     // Offset: 0x10D8628
-    // Implemented from: System.SystemException
-    // Base method: System.Void SystemException::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
-    // Base method: System.Void Exception::.ctor(System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AuthenticationException* New_ctor(::System::Runtime::Serialization::SerializationInfo* serializationInfo, ::System::Runtime::Serialization::StreamingContext streamingContext) {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Authentication::AuthenticationException::.ctor");

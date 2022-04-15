@@ -73,15 +73,15 @@ namespace Newtonsoft::Json::Converters {
     static_assert(sizeof(::Newtonsoft::Json::Utilities::FSharpFunction*) == 0x8);
     public:
     // Get instance field reference: public readonly System.Int32 Tag
-    [[deprecated]] int& dyn_Tag();
+    [[deprecated("Use field access instead!")]] int& dyn_Tag();
     // Get instance field reference: public readonly System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: public readonly System.Reflection.PropertyInfo[] Fields
-    [[deprecated]] ::ArrayW<::System::Reflection::PropertyInfo*>& dyn_Fields();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Reflection::PropertyInfo*>& dyn_Fields();
     // Get instance field reference: public readonly Newtonsoft.Json.Utilities.FSharpFunction FieldReader
-    [[deprecated]] ::Newtonsoft::Json::Utilities::FSharpFunction*& dyn_FieldReader();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::FSharpFunction*& dyn_FieldReader();
     // Get instance field reference: public readonly Newtonsoft.Json.Utilities.FSharpFunction Constructor
-    [[deprecated]] ::Newtonsoft::Json::Utilities::FSharpFunction*& dyn_Constructor();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Utilities::FSharpFunction*& dyn_Constructor();
     // public System.Void .ctor(System.Int32 tag, System.String name, System.Reflection.PropertyInfo[] fields, Newtonsoft.Json.Utilities.FSharpFunction fieldReader, Newtonsoft.Json.Utilities.FSharpFunction constructor)
     // Offset: 0x159D9B8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -175,33 +175,33 @@ namespace VROSC {
     // Set static field: static public System.Action`1<System.Boolean> OnAppPaused
     static void _set_OnAppPaused(::System::Action_1<bool>* value);
     // Get instance field reference: private VROSC.UISchemeController _uiSchemeController
-    [[deprecated]] ::VROSC::UISchemeController*& dyn__uiSchemeController();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISchemeController*& dyn__uiSchemeController();
     // Get instance field reference: private VROSC.SettingsDataDefaults _settingsDataDefaults
-    [[deprecated]] ::VROSC::SettingsDataDefaults*& dyn__settingsDataDefaults();
+    [[deprecated("Use field access instead!")]] ::VROSC::SettingsDataDefaults*& dyn__settingsDataDefaults();
     // Get instance field reference: private VROSC.Dashboard _dashboardPrefab
-    [[deprecated]] ::VROSC::Dashboard*& dyn__dashboardPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::Dashboard*& dyn__dashboardPrefab();
     // Get instance field reference: private UnityEngine.GameObject _sessionsLibraryWindow
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__sessionsLibraryWindow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__sessionsLibraryWindow();
     // Get instance field reference: private PunchKeyboard _keyboardPrefab
-    [[deprecated]] ::GlobalNamespace::PunchKeyboard*& dyn__keyboardPrefab();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PunchKeyboard*& dyn__keyboardPrefab();
     // Get instance field reference: private VROSC.StartMenu _startMenuPrefab
-    [[deprecated]] ::VROSC::StartMenu*& dyn__startMenuPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::StartMenu*& dyn__startMenuPrefab();
     // Get instance field reference: private UnityEngine.AudioSource _startMenuMusic
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__startMenuMusic();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__startMenuMusic();
     // Get instance field reference: private VROSC.FullScreenFxController _fullScreenFxController
-    [[deprecated]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
+    [[deprecated("Use field access instead!")]] ::VROSC::FullScreenFxController*& dyn__fullScreenFxController();
     // Get instance field reference: private VROSC.MicrophoneDeviceManager _microphoneDeviceManager
-    [[deprecated]] ::VROSC::MicrophoneDeviceManager*& dyn__microphoneDeviceManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::MicrophoneDeviceManager*& dyn__microphoneDeviceManager();
     // Get instance field reference: private VROSC.IntroVideoPlayer _introVideoPlayer
-    [[deprecated]] ::VROSC::IntroVideoPlayer*& dyn__introVideoPlayer();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntroVideoPlayer*& dyn__introVideoPlayer();
     // Get instance field reference: private VROSC.StateMachine _stateMachine
-    [[deprecated]] ::VROSC::StateMachine*& dyn__stateMachine();
+    [[deprecated("Use field access instead!")]] ::VROSC::StateMachine*& dyn__stateMachine();
     // Get instance field reference: private VROSC.StartState _startState
-    [[deprecated]] ::VROSC::StartState*& dyn__startState();
+    [[deprecated("Use field access instead!")]] ::VROSC::StartState*& dyn__startState();
     // Get instance field reference: private VROSC.MainState _mainState
-    [[deprecated]] ::VROSC::MainState*& dyn__mainState();
+    [[deprecated("Use field access instead!")]] ::VROSC::MainState*& dyn__mainState();
     // Get instance field reference: private System.Boolean <IsPaused>k__BackingField
-    [[deprecated]] bool& dyn_$IsPaused$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPaused$k__BackingField();
     // public UnityEngine.GameObject get_SessionsLibraryWindow()
     // Offset: 0x96AC68
     ::UnityEngine::GameObject* get_SessionsLibraryWindow();
@@ -217,6 +217,13 @@ namespace VROSC {
     // public System.Boolean get_IsReady()
     // Offset: 0x96AC8C
     bool get_IsReady();
+    // public System.Void .ctor()
+    // Offset: 0x96BEA0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AppController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AppController*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x96ACB0
     void Awake();
@@ -259,19 +266,6 @@ namespace VROSC {
     // private System.Boolean <Awake>b__25_13()
     // Offset: 0x96BEC4
     bool $Awake$b__25_13();
-    // public System.Void .ctor()
-    // Offset: 0x96BEA0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AppController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AppController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AppController*, creationType>()));
-    }
   }; // VROSC.AppController
   #pragma pack(pop)
   static check_size<sizeof(AppController), 128 + sizeof(bool)> __VROSC_AppControllerSizeCheck;
@@ -319,6 +313,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppController*), "get_IsReady", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::AppController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AppController::Awake
 // Il2CppName: Awake
 template<>
@@ -431,7 +429,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AppController*), "<Awake>b__25_13", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::AppController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

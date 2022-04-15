@@ -54,9 +54,9 @@ namespace System::Security::Cryptography {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Security.Cryptography.OidCollection m_oids
-    [[deprecated]] ::System::Security::Cryptography::OidCollection*& dyn_m_oids();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::OidCollection*& dyn_m_oids();
     // Get instance field reference: private System.Int32 m_current
-    [[deprecated]] int& dyn_m_current();
+    [[deprecated("Use field access instead!")]] int& dyn_m_current();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0x1407FD4
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

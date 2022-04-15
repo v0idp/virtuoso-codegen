@@ -50,7 +50,7 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::Signal*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Signal> _signals
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Signal*>*& dyn__signals();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Signal*>*& dyn__signals();
     // private System.Void AddSignal(VROSC.Signal signal)
     // Offset: 0x19281A0
     void AddSignal(::VROSC::Signal* signal);
@@ -67,11 +67,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SignalCombiner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SignalCombiner::.ctor");

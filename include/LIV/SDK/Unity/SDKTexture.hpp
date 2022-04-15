@@ -108,25 +108,25 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.TEXTURE_ID id
-    [[deprecated]] ::LIV::SDK::Unity::TEXTURE_ID& dyn_id();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::TEXTURE_ID& dyn_id();
     // Get instance field reference: public System.IntPtr texturePtr
-    [[deprecated]] ::System::IntPtr& dyn_texturePtr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_texturePtr();
     // Get instance field reference: public System.IntPtr SharedHandle
-    [[deprecated]] ::System::IntPtr& dyn_SharedHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_SharedHandle();
     // Get instance field reference: public LIV.SDK.Unity.TEXTURE_DEVICE device
-    [[deprecated]] ::LIV::SDK::Unity::TEXTURE_DEVICE& dyn_device();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::TEXTURE_DEVICE& dyn_device();
     // Get instance field reference: public System.Int32 dummy
-    [[deprecated]] int& dyn_dummy();
+    [[deprecated("Use field access instead!")]] int& dyn_dummy();
     // Get instance field reference: public LIV.SDK.Unity.TEXTURE_TYPE type
-    [[deprecated]] ::LIV::SDK::Unity::TEXTURE_TYPE& dyn_type();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::TEXTURE_TYPE& dyn_type();
     // Get instance field reference: public LIV.SDK.Unity.TEXTURE_FORMAT format
-    [[deprecated]] ::LIV::SDK::Unity::TEXTURE_FORMAT& dyn_format();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::TEXTURE_FORMAT& dyn_format();
     // Get instance field reference: public LIV.SDK.Unity.TEXTURE_COLOR_SPACE colorSpace
-    [[deprecated]] ::LIV::SDK::Unity::TEXTURE_COLOR_SPACE& dyn_colorSpace();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::TEXTURE_COLOR_SPACE& dyn_colorSpace();
     // Get instance field reference: public System.Int32 width
-    [[deprecated]] int& dyn_width();
+    [[deprecated("Use field access instead!")]] int& dyn_width();
     // Get instance field reference: public System.Int32 height
-    [[deprecated]] int& dyn_height();
+    [[deprecated("Use field access instead!")]] int& dyn_height();
     // static public LIV.SDK.Unity.SDKTexture get_empty()
     // Offset: 0xDD3804
     static ::LIV::SDK::Unity::SDKTexture get_empty();

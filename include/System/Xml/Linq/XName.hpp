@@ -75,11 +75,11 @@ namespace System::Xml::Linq {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: private System.Xml.Linq.XNamespace ns
-    [[deprecated]] ::System::Xml::Linq::XNamespace*& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XNamespace*& dyn_ns();
     // Get instance field reference: private System.String localName
-    [[deprecated]] ::StringW& dyn_localName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
     // Get instance field reference: private System.Int32 hashCode
-    [[deprecated]] int& dyn_hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCode();
     // public System.String get_LocalName()
     // Offset: 0x185C8D4
     ::StringW get_LocalName();
@@ -96,6 +96,13 @@ namespace System::Xml::Linq {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XName::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XName*, creationType>(ns, localName)));
     }
+    // System.Void .ctor()
+    // Offset: 0x185CF58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XName* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XName::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XName*, creationType>()));
+    }
     // static public System.Xml.Linq.XName Get(System.String expandedName)
     // Offset: 0x1853FE0
     static ::System::Xml::Linq::XName* Get(::StringW expandedName);
@@ -108,15 +115,6 @@ namespace System::Xml::Linq {
     // private System.Void System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
     // Offset: 0x185CE3C
     void System_Runtime_Serialization_ISerializable_GetObjectData(::System::Runtime::Serialization::SerializationInfo* info, ::System::Runtime::Serialization::StreamingContext context);
-    // System.Void .ctor()
-    // Offset: 0x185CF58
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XName* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::XName::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XName*, creationType>()));
-    }
     // public override System.String ToString()
     // Offset: 0x185C8E4
     // Implemented from: System.Object
@@ -172,6 +170,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Xml::Linq::XName::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Linq::XName::Get
 // Il2CppName: Get
 template<>
@@ -210,10 +212,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Linq::XName*), "System.Runtime.Serialization.ISerializable.GetObjectData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{info, context});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Linq::XName::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Linq::XName::ToString
 // Il2CppName: ToString
 template<>

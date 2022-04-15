@@ -1345,7 +1345,7 @@ namespace Oculus::Platform {
       // Set static field: static public Oculus.Platform.Message/Oculus.Platform.MessageType Platform_InitializeWindowsAsynchronous
       static void _set_Platform_InitializeWindowsAsynchronous(::Oculus::Platform::Message::MessageType value);
       // Get instance field reference: public System.UInt32 value__
-      [[deprecated]] uint& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint& dyn_value__();
     }; // Oculus.Platform.Message/Oculus.Platform.MessageType
     #pragma pack(pop)
     static check_size<sizeof(Message::MessageType), 0 + sizeof(uint)> __Oculus_Platform_Message_MessageTypeSizeCheck;
@@ -1377,11 +1377,11 @@ namespace Oculus::Platform {
     // Set static field: static private Oculus.Platform.Message/Oculus.Platform.ExtraMessageTypesHandler <HandleExtraMessageTypes>k__BackingField
     static void _set_$HandleExtraMessageTypes$k__BackingField(::Oculus::Platform::Message::ExtraMessageTypesHandler* value);
     // Get instance field reference: private Oculus.Platform.Message/Oculus.Platform.MessageType type
-    [[deprecated]] ::Oculus::Platform::Message::MessageType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Message::MessageType& dyn_type();
     // Get instance field reference: private System.UInt64 requestID
-    [[deprecated]] uint64_t& dyn_requestID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_requestID();
     // Get instance field reference: private Oculus.Platform.Models.Error error
-    [[deprecated]] ::Oculus::Platform::Models::Error*& dyn_error();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Models::Error*& dyn_error();
     // public Oculus.Platform.Message/Oculus.Platform.MessageType get_Type()
     // Offset: 0xB465FC
     ::Oculus::Platform::Message::MessageType get_Type();

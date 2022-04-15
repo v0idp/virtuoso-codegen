@@ -73,7 +73,7 @@ namespace System::Security::Cryptography {
     // Set static field: static public System.Security.Cryptography.PaddingMode ISO10126
     static void _set_ISO10126(::System::Security::Cryptography::PaddingMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Security.Cryptography.PaddingMode
   #pragma pack(pop)
   static check_size<sizeof(PaddingMode), 0 + sizeof(int)> __System_Security_Cryptography_PaddingModeSizeCheck;

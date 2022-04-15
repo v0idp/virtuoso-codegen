@@ -106,23 +106,23 @@ namespace System::Security::Claims {
     static_assert(sizeof(::System::Security::Claims::ClaimsIdentity*) == 0x8);
     public:
     // Get instance field reference: private System.String m_issuer
-    [[deprecated]] ::StringW& dyn_m_issuer();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_issuer();
     // Get instance field reference: private System.String m_originalIssuer
-    [[deprecated]] ::StringW& dyn_m_originalIssuer();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_originalIssuer();
     // Get instance field reference: private System.String m_type
-    [[deprecated]] ::StringW& dyn_m_type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_type();
     // Get instance field reference: private System.String m_value
-    [[deprecated]] ::StringW& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_value();
     // Get instance field reference: private System.String m_valueType
-    [[deprecated]] ::StringW& dyn_m_valueType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_valueType();
     // Get instance field reference: private System.Byte[] m_userSerializationData
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_userSerializationData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_userSerializationData();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> m_properties
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn_m_properties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn_m_properties();
     // Get instance field reference: private System.Object m_propertyLock
-    [[deprecated]] ::Il2CppObject*& dyn_m_propertyLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_propertyLock();
     // Get instance field reference: private System.Security.Claims.ClaimsIdentity m_subject
-    [[deprecated]] ::System::Security::Claims::ClaimsIdentity*& dyn_m_subject();
+    [[deprecated("Use field access instead!")]] ::System::Security::Claims::ClaimsIdentity*& dyn_m_subject();
     // public System.Collections.Generic.IDictionary`2<System.String,System.String> get_Properties()
     // Offset: 0xE34D38
     ::System::Collections::Generic::IDictionary_2<::StringW, ::StringW>* get_Properties();

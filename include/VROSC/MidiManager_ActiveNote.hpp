@@ -54,13 +54,13 @@ namespace VROSC {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 Note
-    [[deprecated]] int& dyn_Note();
+    [[deprecated("Use field access instead!")]] int& dyn_Note();
     // Get instance field reference: public System.Object Patch
-    [[deprecated]] ::Il2CppObject*& dyn_Patch();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Patch();
     // Get instance field reference: public System.Int32 Channel
-    [[deprecated]] int& dyn_Channel();
+    [[deprecated("Use field access instead!")]] int& dyn_Channel();
     // Get instance field reference: public System.Object Source
-    [[deprecated]] ::Il2CppObject*& dyn_Source();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_Source();
     // public System.Void .ctor(System.Int32 note, System.Object patch, System.Int32 channel, System.Object source)
     // Offset: 0x19633D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

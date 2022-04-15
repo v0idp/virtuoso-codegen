@@ -243,7 +243,7 @@ namespace System::Data {
     // Set static field: static public System.Data.BinaryNode/System.Data.DataTypePrecedence SqlBinary
     static void _set_SqlBinary(::System::Data::BinaryNode::DataTypePrecedence value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Data.BinaryNode/System.Data.DataTypePrecedence
   #pragma pack(pop)
   static check_size<sizeof(BinaryNode::DataTypePrecedence), 0 + sizeof(int)> __System_Data_BinaryNode_DataTypePrecedenceSizeCheck;

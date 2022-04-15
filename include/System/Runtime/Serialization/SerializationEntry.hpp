@@ -62,11 +62,11 @@ namespace System::Runtime::Serialization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Type m_type
-    [[deprecated]] ::System::Type*& dyn_m_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_m_type();
     // Get instance field reference: private System.Object m_value
-    [[deprecated]] ::Il2CppObject*& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_value();
     // Get instance field reference: private System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // public System.Object get_Value()
     // Offset: 0x1178418
     ::Il2CppObject* get_Value();

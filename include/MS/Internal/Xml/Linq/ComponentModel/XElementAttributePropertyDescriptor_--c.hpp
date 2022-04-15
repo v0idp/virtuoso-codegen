@@ -52,18 +52,16 @@ namespace MS::Internal::Xml::Linq::ComponentModel {
     // static private System.Void .cctor()
     // Offset: 0x185E9C8
     static void _cctor();
-    // System.Xml.Linq.XAttribute <GetValue>b__3_0(System.Xml.Linq.XElement e, System.Xml.Linq.XName n)
-    // Offset: 0x185EA30
-    ::System::Xml::Linq::XAttribute* $GetValue$b__3_0(::System::Xml::Linq::XElement* e, ::System::Xml::Linq::XName* n);
     // public System.Void .ctor()
     // Offset: 0x185EA28
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XElementAttributePropertyDescriptor::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::Linq::ComponentModel::XElementAttributePropertyDescriptor::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<XElementAttributePropertyDescriptor::$$c*, creationType>()));
     }
+    // System.Xml.Linq.XAttribute <GetValue>b__3_0(System.Xml.Linq.XElement e, System.Xml.Linq.XName n)
+    // Offset: 0x185EA30
+    ::System::Xml::Linq::XAttribute* $GetValue$b__3_0(::System::Xml::Linq::XElement* e, ::System::Xml::Linq::XName* n);
   }; // MS.Internal.Xml.Linq.ComponentModel.XElementAttributePropertyDescriptor/MS.Internal.Xml.Linq.ComponentModel.<>c
   #pragma pack(pop)
 }
@@ -76,6 +74,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(MS::Internal::Xml::Linq::ComponentModel::XElementAttributePropertyDescriptor::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: MS::Internal::Xml::Linq::ComponentModel::XElementAttributePropertyDescriptor::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: MS::Internal::Xml::Linq::ComponentModel::XElementAttributePropertyDescriptor::$$c::$GetValue$b__3_0
 // Il2CppName: <GetValue>b__3_0
 template<>
@@ -86,7 +88,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(MS::Internal::Xml::Linq::ComponentModel::XElementAttributePropertyDescriptor::$$c*), "<GetValue>b__3_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e, n});
   }
 };
-// Writing MetadataGetter for method: MS::Internal::Xml::Linq::ComponentModel::XElementAttributePropertyDescriptor::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -79,17 +79,17 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Transform _targetTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__targetTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__targetTransform();
     // Get instance field reference: private UnityEngine.Transform _sourceTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__sourceTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__sourceTransform();
     // Get instance field reference: private UnityEngine.Quaternion _relativeStartRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__relativeStartRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__relativeStartRotation();
     // Get instance field reference: private System.Boolean _lockX
-    [[deprecated]] bool& dyn__lockX();
+    [[deprecated("Use field access instead!")]] bool& dyn__lockX();
     // Get instance field reference: private System.Boolean _lockY
-    [[deprecated]] bool& dyn__lockY();
+    [[deprecated("Use field access instead!")]] bool& dyn__lockY();
     // Get instance field reference: private System.Boolean _lockZ
-    [[deprecated]] bool& dyn__lockZ();
+    [[deprecated("Use field access instead!")]] bool& dyn__lockZ();
     // protected override System.Boolean get_RequireOrigin()
     // Offset: 0xA2CBF8
     // Implemented from: VROSC.SignalNode
@@ -100,11 +100,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransformRotator* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TransformRotator::.ctor");

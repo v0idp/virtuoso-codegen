@@ -50,9 +50,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::MinMaxFloat*) == 0x8);
     public:
     // Get instance field reference: private VROSC.MinMaxFloat _x
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__x();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__x();
     // Get instance field reference: private VROSC.MinMaxFloat _y
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__y();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__y();
     // public VROSC.MinMaxFloat get_X()
     // Offset: 0xAC8AC8
     ::VROSC::MinMaxFloat* get_X();

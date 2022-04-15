@@ -67,11 +67,11 @@ namespace Firebase::Storage {
     static_assert(sizeof(::System::Exception*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean <IsSuccessful>k__BackingField
-    [[deprecated]] bool& dyn_$IsSuccessful$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsSuccessful$k__BackingField();
     // Get instance field reference: private System.Boolean <IsCanceled>k__BackingField
-    [[deprecated]] bool& dyn_$IsCanceled$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsCanceled$k__BackingField();
     // Get instance field reference: private System.Exception <Exception>k__BackingField
-    [[deprecated]] ::System::Exception*& dyn_$Exception$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_$Exception$k__BackingField();
     // public System.Boolean get_IsSuccessful()
     // Offset: 0x183B9E0
     bool get_IsSuccessful();

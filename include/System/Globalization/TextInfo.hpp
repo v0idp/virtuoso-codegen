@@ -133,25 +133,25 @@ namespace System::Globalization {
     // Set static field: static private System.Int32 wordSeparatorMask
     static void _set_wordSeparatorMask(int value);
     // Get instance field reference: private System.String m_listSeparator
-    [[deprecated]] ::StringW& dyn_m_listSeparator();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_listSeparator();
     // Get instance field reference: private System.Boolean m_isReadOnly
-    [[deprecated]] bool& dyn_m_isReadOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isReadOnly();
     // Get instance field reference: private System.String m_cultureName
-    [[deprecated]] ::StringW& dyn_m_cultureName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_cultureName();
     // Get instance field reference: private System.Globalization.CultureData m_cultureData
-    [[deprecated]] ::System::Globalization::CultureData*& dyn_m_cultureData();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureData*& dyn_m_cultureData();
     // Get instance field reference: private System.String m_textInfoName
-    [[deprecated]] ::StringW& dyn_m_textInfoName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_textInfoName();
     // Get instance field reference: private System.Nullable`1<System.Boolean> m_IsAsciiCasingSameAsInvariant
-    [[deprecated]] ::System::Nullable_1<bool>& dyn_m_IsAsciiCasingSameAsInvariant();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_m_IsAsciiCasingSameAsInvariant();
     // Get instance field reference: private System.String customCultureName
-    [[deprecated]] ::StringW& dyn_customCultureName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_customCultureName();
     // Get instance field reference: System.Int32 m_nDataItem
-    [[deprecated]] int& dyn_m_nDataItem();
+    [[deprecated("Use field access instead!")]] int& dyn_m_nDataItem();
     // Get instance field reference: System.Boolean m_useUserOverride
-    [[deprecated]] bool& dyn_m_useUserOverride();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_useUserOverride();
     // Get instance field reference: System.Int32 m_win32LangID
-    [[deprecated]] int& dyn_m_win32LangID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_win32LangID();
     // static System.Globalization.TextInfo get_Invariant()
     // Offset: 0x11D6BD4
     static ::System::Globalization::TextInfo* get_Invariant();

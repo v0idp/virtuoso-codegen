@@ -150,7 +150,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.JsonToken Bytes
     static void _set_Bytes(::Newtonsoft::Json::JsonToken value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.JsonToken
   #pragma pack(pop)
   static check_size<sizeof(JsonToken), 0 + sizeof(int)> __Newtonsoft_Json_JsonTokenSizeCheck;

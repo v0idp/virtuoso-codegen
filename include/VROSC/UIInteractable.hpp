@@ -38,11 +38,6 @@ namespace VROSC {
     // Implemented from: VROSC.Clickable
     // Base method: System.Void Clickable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UIInteractable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIInteractable::.ctor");

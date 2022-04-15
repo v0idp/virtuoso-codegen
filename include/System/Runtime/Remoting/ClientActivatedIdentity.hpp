@@ -60,7 +60,7 @@ namespace System::Runtime::Remoting {
       return targetThis;
     }
     // Get instance field reference: private System.MarshalByRefObject _targetThis
-    [[deprecated]] ::System::MarshalByRefObject*& dyn__targetThis();
+    [[deprecated("Use field access instead!")]] ::System::MarshalByRefObject*& dyn__targetThis();
     // public System.Void .ctor(System.String objectUri, System.Type objectType)
     // Offset: 0xE37A68
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

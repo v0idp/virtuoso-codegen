@@ -46,9 +46,9 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Single NormalizeMultiplier
-    [[deprecated]] float& dyn_NormalizeMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_NormalizeMultiplier();
     // Get instance field reference: public System.Boolean UseAsPreview
-    [[deprecated]] bool& dyn_UseAsPreview();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseAsPreview();
     // public override System.String get_Key()
     // Offset: 0xA22C60
     // Implemented from: VROSC.BaseDataModel
@@ -64,7 +64,6 @@ namespace VROSC {
     // Implemented from: VROSC.ToolDataModel
     // Base method: System.Void ToolDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TapeRecorderDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TapeRecorderDataModel::.ctor");

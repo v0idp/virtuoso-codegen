@@ -114,29 +114,36 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single <Progress>k__BackingField
-    [[deprecated]] float& dyn_$Progress$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$Progress$k__BackingField();
     // Get instance field reference: private VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: private UnityEngine.Color _targetColor
-    [[deprecated]] ::UnityEngine::Color& dyn__targetColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__targetColor();
     // Get instance field reference: private UnityEngine.Color _startColor
-    [[deprecated]] ::UnityEngine::Color& dyn__startColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__startColor();
     // Get instance field reference: private UnityEngine.Color _currentColor
-    [[deprecated]] ::UnityEngine::Color& dyn__currentColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__currentColor();
     // Get instance field reference: private UnityEngine.AnimationCurve _fadeCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__fadeCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__fadeCurve();
     // Get instance field reference: private System.Single _duration
-    [[deprecated]] float& dyn__duration();
+    [[deprecated("Use field access instead!")]] float& dyn__duration();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnColor
-    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColor();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColor();
     // Get instance field reference: public System.Action`2<System.Boolean,UnityEngine.Color> IsFading
-    [[deprecated]] ::System::Action_2<bool, ::UnityEngine::Color>*& dyn_IsFading();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, ::UnityEngine::Color>*& dyn_IsFading();
     // public System.Single get_Progress()
     // Offset: 0x198065C
     float get_Progress();
     // private System.Void set_Progress(System.Single value)
     // Offset: 0x1980654
     void set_Progress(float value);
+    // public System.Void .ctor()
+    // Offset: 0x1980978
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ScreenFade* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScreenFade::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ScreenFade*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1980664
     void Awake();
@@ -152,19 +159,6 @@ namespace VROSC {
     // private System.Void SetActive(System.Boolean active)
     // Offset: 0x198066C
     void SetActive(bool active);
-    // public System.Void .ctor()
-    // Offset: 0x1980978
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ScreenFade* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScreenFade::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ScreenFade*, creationType>()));
-    }
   }; // VROSC.ScreenFade
   #pragma pack(pop)
   static check_size<sizeof(ScreenFade), 112 + sizeof(::System::Action_2<bool, ::UnityEngine::Color>*)> __VROSC_ScreenFadeSizeCheck;
@@ -188,6 +182,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScreenFade*), "set_Progress", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::ScreenFade::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ScreenFade::Awake
 // Il2CppName: Awake
 template<>
@@ -234,7 +232,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScreenFade*), "SetActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{active});
   }
 };
-// Writing MetadataGetter for method: VROSC::ScreenFade::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

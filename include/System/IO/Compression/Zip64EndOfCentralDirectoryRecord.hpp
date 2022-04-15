@@ -98,23 +98,23 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt64 SizeOfThisRecord
-    [[deprecated]] uint64_t& dyn_SizeOfThisRecord();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SizeOfThisRecord();
     // Get instance field reference: public System.UInt16 VersionMadeBy
-    [[deprecated]] uint16_t& dyn_VersionMadeBy();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_VersionMadeBy();
     // Get instance field reference: public System.UInt16 VersionNeededToExtract
-    [[deprecated]] uint16_t& dyn_VersionNeededToExtract();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_VersionNeededToExtract();
     // Get instance field reference: public System.UInt32 NumberOfThisDisk
-    [[deprecated]] uint& dyn_NumberOfThisDisk();
+    [[deprecated("Use field access instead!")]] uint& dyn_NumberOfThisDisk();
     // Get instance field reference: public System.UInt32 NumberOfDiskWithStartOfCD
-    [[deprecated]] uint& dyn_NumberOfDiskWithStartOfCD();
+    [[deprecated("Use field access instead!")]] uint& dyn_NumberOfDiskWithStartOfCD();
     // Get instance field reference: public System.UInt64 NumberOfEntriesOnThisDisk
-    [[deprecated]] uint64_t& dyn_NumberOfEntriesOnThisDisk();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_NumberOfEntriesOnThisDisk();
     // Get instance field reference: public System.UInt64 NumberOfEntriesTotal
-    [[deprecated]] uint64_t& dyn_NumberOfEntriesTotal();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_NumberOfEntriesTotal();
     // Get instance field reference: public System.UInt64 SizeOfCentralDirectory
-    [[deprecated]] uint64_t& dyn_SizeOfCentralDirectory();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SizeOfCentralDirectory();
     // Get instance field reference: public System.UInt64 OffsetOfCentralDirectory
-    [[deprecated]] uint64_t& dyn_OffsetOfCentralDirectory();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_OffsetOfCentralDirectory();
     // static public System.Boolean TryReadBlock(System.IO.BinaryReader reader, out System.IO.Compression.Zip64EndOfCentralDirectoryRecord zip64EOCDRecord)
     // Offset: 0x1699C38
     static bool TryReadBlock(::System::IO::BinaryReader* reader, ByRef<::System::IO::Compression::Zip64EndOfCentralDirectoryRecord> zip64EOCDRecord);

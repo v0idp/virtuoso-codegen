@@ -97,7 +97,7 @@ namespace VROSC {
       // Set static field: static public VROSC.HapticClipPlayer/VROSC.HapticHand Both
       static void _set_Both(::VROSC::HapticClipPlayer::HapticHand value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.HapticClipPlayer/VROSC.HapticHand
     #pragma pack(pop)
     static check_size<sizeof(HapticClipPlayer::HapticHand), 0 + sizeof(int)> __VROSC_HapticClipPlayer_HapticHandSizeCheck;
@@ -157,21 +157,21 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::HandType) == 0x4);
     public:
     // Get instance field reference: private System.Single _amplitude
-    [[deprecated]] float& dyn__amplitude();
+    [[deprecated("Use field access instead!")]] float& dyn__amplitude();
     // Get instance field reference: private System.Single _frequency
-    [[deprecated]] float& dyn__frequency();
+    [[deprecated("Use field access instead!")]] float& dyn__frequency();
     // Get instance field reference: private System.Single _decayTime
-    [[deprecated]] float& dyn__decayTime();
+    [[deprecated("Use field access instead!")]] float& dyn__decayTime();
     // Get instance field reference: private UnityEngine.AnimationCurve _decayCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__decayCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__decayCurve();
     // Get instance field reference: private VROSC.HapticClipPlayer/VROSC.HapticHand _playOnHand
-    [[deprecated]] ::VROSC::HapticClipPlayer::HapticHand& dyn__playOnHand();
+    [[deprecated("Use field access instead!")]] ::VROSC::HapticClipPlayer::HapticHand& dyn__playOnHand();
     // Get instance field reference: private System.Single _decayCounter
-    [[deprecated]] float& dyn__decayCounter();
+    [[deprecated("Use field access instead!")]] float& dyn__decayCounter();
     // Get instance field reference: private System.Single _lastSignalAmplitude
-    [[deprecated]] float& dyn__lastSignalAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn__lastSignalAmplitude();
     // Get instance field reference: private VROSC.HandType _lastHand
-    [[deprecated]] ::VROSC::HandType& dyn__lastHand();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandType& dyn__lastHand();
     // private System.Void StartHaptics(System.Single signalAmplitude, VROSC.SignalControllerInfo signalControllerInfo, System.Double dspTime)
     // Offset: 0x19ABA08
     void StartHaptics(float signalAmplitude, ::VROSC::SignalControllerInfo* signalControllerInfo, double dspTime);
@@ -186,11 +186,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HapticClipPlayer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HapticClipPlayer::.ctor");

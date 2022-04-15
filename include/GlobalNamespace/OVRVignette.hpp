@@ -119,7 +119,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRVignette/MeshComplexityLevel VeryDetailed
       static void _set_VeryDetailed(::GlobalNamespace::OVRVignette::MeshComplexityLevel value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRVignette/MeshComplexityLevel
     #pragma pack(pop)
     static check_size<sizeof(OVRVignette::MeshComplexityLevel), 0 + sizeof(int)> __GlobalNamespace_OVRVignette_MeshComplexityLevelSizeCheck;
@@ -161,7 +161,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRVignette/FalloffType Quadratic
       static void _set_Quadratic(::GlobalNamespace::OVRVignette::FalloffType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRVignette/FalloffType
     #pragma pack(pop)
     static check_size<sizeof(OVRVignette::FalloffType), 0 + sizeof(int)> __GlobalNamespace_OVRVignette_FalloffTypeSizeCheck;
@@ -328,53 +328,63 @@ namespace GlobalNamespace {
     // Set static field: static private readonly System.String QUADRATIC_FALLOFF
     static void _set_QUADRATIC_FALLOFF(::StringW value);
     // Get instance field reference: private UnityEngine.Shader VignetteShader
-    [[deprecated]] ::UnityEngine::Shader*& dyn_VignetteShader();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Shader*& dyn_VignetteShader();
     // Get instance field reference: private OVRVignette/MeshComplexityLevel MeshComplexity
-    [[deprecated]] ::GlobalNamespace::OVRVignette::MeshComplexityLevel& dyn_MeshComplexity();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRVignette::MeshComplexityLevel& dyn_MeshComplexity();
     // Get instance field reference: private OVRVignette/FalloffType Falloff
-    [[deprecated]] ::GlobalNamespace::OVRVignette::FalloffType& dyn_Falloff();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRVignette::FalloffType& dyn_Falloff();
     // Get instance field reference: public System.Single VignetteFieldOfView
-    [[deprecated]] float& dyn_VignetteFieldOfView();
+    [[deprecated("Use field access instead!")]] float& dyn_VignetteFieldOfView();
     // Get instance field reference: public System.Single VignetteAspectRatio
-    [[deprecated]] float& dyn_VignetteAspectRatio();
+    [[deprecated("Use field access instead!")]] float& dyn_VignetteAspectRatio();
     // Get instance field reference: public System.Single VignetteFalloffDegrees
-    [[deprecated]] float& dyn_VignetteFalloffDegrees();
+    [[deprecated("Use field access instead!")]] float& dyn_VignetteFalloffDegrees();
     // Get instance field reference: public UnityEngine.Color VignetteColor
-    [[deprecated]] ::UnityEngine::Color& dyn_VignetteColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_VignetteColor();
     // Get instance field reference: private UnityEngine.Camera _Camera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__Camera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__Camera();
     // Get instance field reference: private UnityEngine.MeshFilter _OpaqueMeshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__OpaqueMeshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn__OpaqueMeshFilter();
     // Get instance field reference: private UnityEngine.MeshFilter _TransparentMeshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn__TransparentMeshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn__TransparentMeshFilter();
     // Get instance field reference: private UnityEngine.MeshRenderer _OpaqueMeshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__OpaqueMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__OpaqueMeshRenderer();
     // Get instance field reference: private UnityEngine.MeshRenderer _TransparentMeshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__TransparentMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__TransparentMeshRenderer();
     // Get instance field reference: private UnityEngine.Mesh _OpaqueMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__OpaqueMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__OpaqueMesh();
     // Get instance field reference: private UnityEngine.Mesh _TransparentMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__TransparentMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__TransparentMesh();
     // Get instance field reference: private UnityEngine.Material _OpaqueMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__OpaqueMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__OpaqueMaterial();
     // Get instance field reference: private UnityEngine.Material _TransparentMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__TransparentMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__TransparentMaterial();
     // Get instance field reference: private System.Int32 _ShaderScaleAndOffset0Property
-    [[deprecated]] int& dyn__ShaderScaleAndOffset0Property();
+    [[deprecated("Use field access instead!")]] int& dyn__ShaderScaleAndOffset0Property();
     // Get instance field reference: private System.Int32 _ShaderScaleAndOffset1Property
-    [[deprecated]] int& dyn__ShaderScaleAndOffset1Property();
+    [[deprecated("Use field access instead!")]] int& dyn__ShaderScaleAndOffset1Property();
     // Get instance field reference: private UnityEngine.Vector4[] _TransparentScaleAndOffset0
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn__TransparentScaleAndOffset0();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn__TransparentScaleAndOffset0();
     // Get instance field reference: private UnityEngine.Vector4[] _TransparentScaleAndOffset1
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn__TransparentScaleAndOffset1();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn__TransparentScaleAndOffset1();
     // Get instance field reference: private UnityEngine.Vector4[] _OpaqueScaleAndOffset0
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn__OpaqueScaleAndOffset0();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn__OpaqueScaleAndOffset0();
     // Get instance field reference: private UnityEngine.Vector4[] _OpaqueScaleAndOffset1
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn__OpaqueScaleAndOffset1();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn__OpaqueScaleAndOffset1();
     // Get instance field reference: private System.Boolean _OpaqueVignetteVisible
-    [[deprecated]] bool& dyn__OpaqueVignetteVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn__OpaqueVignetteVisible();
     // Get instance field reference: private System.Boolean _TransparentVignetteVisible
-    [[deprecated]] bool& dyn__TransparentVignetteVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn__TransparentVignetteVisible();
+    // public System.Void .ctor()
+    // Offset: 0x803148
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRVignette* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRVignette::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRVignette*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x8031F0
+    static void _cctor();
     // private System.Int32 GetTriangleCount()
     // Offset: 0x8019BC
     int GetTriangleCount();
@@ -420,24 +430,6 @@ namespace GlobalNamespace {
     // private System.Void OnBeginCameraRendering(UnityEngine.Rendering.ScriptableRenderContext context, UnityEngine.Camera camera)
     // Offset: 0x8030B0
     void OnBeginCameraRendering(::UnityEngine::Rendering::ScriptableRenderContext context, ::UnityEngine::Camera* camera);
-    // public System.Void .ctor()
-    // Offset: 0x803148
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRVignette* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRVignette::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRVignette*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x8031F0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVRVignette
   #pragma pack(pop)
   static check_size<sizeof(OVRVignette), 185 + sizeof(bool)> __GlobalNamespace_OVRVignetteSizeCheck;
@@ -448,6 +440,18 @@ DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OVRVignette::FalloffType, "", "OVRVign
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OVRVignette::MeshComplexityLevel, "", "OVRVignette/MeshComplexityLevel");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRVignette::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVRVignette::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRVignette::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRVignette*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::OVRVignette::GetTriangleCount
 // Il2CppName: GetTriangleCount
 template<>
@@ -581,17 +585,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     static auto* context = &::il2cpp_utils::GetClassFromName("UnityEngine.Rendering", "ScriptableRenderContext")->byval_arg;
     static auto* camera = &::il2cpp_utils::GetClassFromName("UnityEngine", "Camera")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRVignette*), "OnBeginCameraRendering", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{context, camera});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVRVignette::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVRVignette::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRVignette::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRVignette*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

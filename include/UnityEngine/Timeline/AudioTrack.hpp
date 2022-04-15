@@ -77,7 +77,7 @@ namespace UnityEngine::Timeline {
     static_assert(sizeof(::UnityEngine::Timeline::AudioMixerProperties*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Timeline.AudioMixerProperties m_TrackProperties
-    [[deprecated]] ::UnityEngine::Timeline::AudioMixerProperties*& dyn_m_TrackProperties();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::AudioMixerProperties*& dyn_m_TrackProperties();
     // public UnityEngine.Timeline.TimelineClip CreateClip(UnityEngine.AudioClip clip)
     // Offset: 0xC703D8
     ::UnityEngine::Timeline::TimelineClip* CreateClip(::UnityEngine::AudioClip* clip);
@@ -93,10 +93,6 @@ namespace UnityEngine::Timeline {
     // Offset: 0xC713CC
     // Implemented from: UnityEngine.Timeline.TrackAsset
     // Base method: System.Void TrackAsset::.ctor()
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioTrack* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::AudioTrack::.ctor");

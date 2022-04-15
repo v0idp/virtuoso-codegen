@@ -52,9 +52,9 @@ namespace UnityEngine {
     static_assert(sizeof(::System::Action_1<bool>*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private System.Action`1<System.Boolean> Updated
-    [[deprecated]] ::System::Action_1<bool>*& dyn_Updated();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_Updated();
     // static System.Void RemoteConfigSettingsUpdated(UnityEngine.RemoteConfigSettings rcs, System.Boolean wasLastUpdatedFromServer)
     // Offset: 0x1903000
     static void RemoteConfigSettingsUpdated(::UnityEngine::RemoteConfigSettings* rcs, bool wasLastUpdatedFromServer);

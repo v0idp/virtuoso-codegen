@@ -84,17 +84,17 @@ namespace System::Data {
     static_assert(sizeof(::ArrayW<::System::Data::DataRow*>) == 0x8);
     public:
     // Get instance field reference: private readonly System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private System.Int32 _lastFreeRecord
-    [[deprecated]] int& dyn__lastFreeRecord();
+    [[deprecated("Use field access instead!")]] int& dyn__lastFreeRecord();
     // Get instance field reference: private System.Int32 _minimumCapacity
-    [[deprecated]] int& dyn__minimumCapacity();
+    [[deprecated("Use field access instead!")]] int& dyn__minimumCapacity();
     // Get instance field reference: private System.Int32 _recordCapacity
-    [[deprecated]] int& dyn__recordCapacity();
+    [[deprecated("Use field access instead!")]] int& dyn__recordCapacity();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<System.Int32> _freeRecordList
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn__freeRecordList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn__freeRecordList();
     // Get instance field reference: private System.Data.DataRow[] _rows
-    [[deprecated]] ::ArrayW<::System::Data::DataRow*>& dyn__rows();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataRow*>& dyn__rows();
     // System.Int32 get_LastFreeRecord()
     // Offset: 0x13C2AE0
     int get_LastFreeRecord();

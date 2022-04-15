@@ -50,9 +50,9 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <FieldCount>k__BackingField
-    [[deprecated]] int& dyn_$FieldCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$FieldCount$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> <ValidNotes>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_$ValidNotes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn_$ValidNotes$k__BackingField();
     // public System.Int32 get_FieldCount()
     // Offset: 0x1966D3C
     int get_FieldCount();

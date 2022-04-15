@@ -44,25 +44,27 @@ namespace DG::Tweening {
       return target;
     }
     // Get instance field reference: public UnityEngine.Rigidbody2D target
-    [[deprecated]] ::UnityEngine::Rigidbody2D*& dyn_target();
-    // System.Single <DORotate>b__0()
-    // Offset: 0x17E2F4C
-    float $DORotate$b__0();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody2D*& dyn_target();
     // public System.Void .ctor()
     // Offset: 0x17DC274
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DOTweenModulePhysics2D::$$c__DisplayClass3_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::DOTweenModulePhysics2D::$$c__DisplayClass3_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DOTweenModulePhysics2D::$$c__DisplayClass3_0*, creationType>()));
     }
+    // System.Single <DORotate>b__0()
+    // Offset: 0x17E2F4C
+    float $DORotate$b__0();
   }; // DG.Tweening.DOTweenModulePhysics2D/DG.Tweening.<>c__DisplayClass3_0
   #pragma pack(pop)
   static check_size<sizeof(DOTweenModulePhysics2D::$$c__DisplayClass3_0), 16 + sizeof(::UnityEngine::Rigidbody2D*)> __DG_Tweening_DOTweenModulePhysics2D_$$c__DisplayClass3_0SizeCheck;
   static_assert(sizeof(DOTweenModulePhysics2D::$$c__DisplayClass3_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics2D::$$c__DisplayClass3_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics2D::$$c__DisplayClass3_0::$DORotate$b__0
 // Il2CppName: <DORotate>b__0
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (DG::
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::DOTweenModulePhysics2D::$$c__DisplayClass3_0*), "<DORotate>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::DOTweenModulePhysics2D::$$c__DisplayClass3_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

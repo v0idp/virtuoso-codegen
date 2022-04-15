@@ -142,31 +142,31 @@ namespace VROSC {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.RectTransform _constrain
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__constrain();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__constrain();
     // Get instance field reference: private System.Single _liftAmount
-    [[deprecated]] float& dyn__liftAmount();
+    [[deprecated("Use field access instead!")]] float& dyn__liftAmount();
     // Get instance field reference: private System.Single _smoothing
-    [[deprecated]] float& dyn__smoothing();
+    [[deprecated("Use field access instead!")]] float& dyn__smoothing();
     // Get instance field reference: private VROSC.MovementPlane _plane
-    [[deprecated]] ::VROSC::MovementPlane*& dyn__plane();
+    [[deprecated("Use field access instead!")]] ::VROSC::MovementPlane*& dyn__plane();
     // Get instance field reference: private UnityEngine.Transform _target
-    [[deprecated]] ::UnityEngine::Transform*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__target();
     // Get instance field reference: private UnityEngine.Vector3 _lastPlaneHit
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lastPlaneHit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lastPlaneHit();
     // Get instance field reference: private VROSC.SmoothMovement _smoothMovement
-    [[deprecated]] ::VROSC::SmoothMovement*& dyn__smoothMovement();
+    [[deprecated("Use field access instead!")]] ::VROSC::SmoothMovement*& dyn__smoothMovement();
     // Get instance field reference: private VROSC.InputDevice _grabber
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabber();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabber();
     // Get instance field reference: private UnityEngine.Vector3 _grabOffset
-    [[deprecated]] ::UnityEngine::Vector3& dyn__grabOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__grabOffset();
     // Get instance field reference: private UnityEngine.Quaternion _grabRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__grabRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__grabRotation();
     // Get instance field reference: public System.Action OnGrabBegin
-    [[deprecated]] ::System::Action*& dyn_OnGrabBegin();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnGrabBegin();
     // Get instance field reference: public System.Action OnGrabEnd
-    [[deprecated]] ::System::Action*& dyn_OnGrabEnd();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnGrabEnd();
     // Get instance field reference: public System.Action OnPositioningComplete
-    [[deprecated]] ::System::Action*& dyn_OnPositioningComplete();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnPositioningComplete();
     // public System.Void Setup(UnityEngine.Transform target, VROSC.MovementPlane movementPlane)
     // Offset: 0xACCCDC
     void Setup(::UnityEngine::Transform* target, ::VROSC::MovementPlane* movementPlane);
@@ -199,11 +199,6 @@ namespace VROSC {
     // Implemented from: VROSC.Grabable
     // Base method: System.Void Grabable::.ctor()
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MoveOnPlane* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MoveOnPlane::.ctor");

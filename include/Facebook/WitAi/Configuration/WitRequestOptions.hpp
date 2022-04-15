@@ -48,13 +48,11 @@ namespace Facebook::WitAi::Configuration {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public Facebook.WitAi.Interfaces.IDynamicEntitiesProvider dynamicEntities
-    [[deprecated]] ::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*& dyn_dynamicEntities();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Interfaces::IDynamicEntitiesProvider*& dyn_dynamicEntities();
     // Get instance field reference: public System.Int32 nBestIntents
-    [[deprecated]] int& dyn_nBestIntents();
+    [[deprecated("Use field access instead!")]] int& dyn_nBestIntents();
     // public System.Void .ctor()
     // Offset: 0x16724B8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitRequestOptions* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Configuration::WitRequestOptions::.ctor");

@@ -72,7 +72,14 @@ namespace Oculus::Platform::Samples::SimplePlatformSample {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Text dataOutput
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_dataOutput();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_dataOutput();
+    // public System.Void .ctor()
+    // Offset: 0x92D9C8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DataEntry* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::SimplePlatformSample::DataEntry::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DataEntry*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x928E10
     void Start();
@@ -208,25 +215,16 @@ namespace Oculus::Platform::Samples::SimplePlatformSample {
     // private System.Void inviteUserCallback(Oculus.Platform.Message msg)
     // Offset: 0x92D8F8
     void inviteUserCallback(::Oculus::Platform::Message* msg);
-    // public System.Void .ctor()
-    // Offset: 0x92D9C8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DataEntry* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::SimplePlatformSample::DataEntry::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DataEntry*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.SimplePlatformSample.DataEntry
   #pragma pack(pop)
   static check_size<sizeof(DataEntry), 24 + sizeof(::UnityEngine::UI::Text*)> __Oculus_Platform_Samples_SimplePlatformSample_DataEntrySizeCheck;
   static_assert(sizeof(DataEntry) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::Samples::SimplePlatformSample::DataEntry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::SimplePlatformSample::DataEntry::Start
 // Il2CppName: Start
 template<>
@@ -633,7 +631,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::SimplePlatformSample::DataEntry*), "inviteUserCallback", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{msg});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::SimplePlatformSample::DataEntry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

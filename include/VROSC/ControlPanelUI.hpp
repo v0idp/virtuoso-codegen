@@ -96,20 +96,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.TransformMoverRelay _transformMoverRelay
-    [[deprecated]] ::VROSC::TransformMoverRelay*& dyn__transformMoverRelay();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformMoverRelay*& dyn__transformMoverRelay();
     // Get instance field reference: private VROSC.InfoPanel _infoPanelUI
-    [[deprecated]] ::VROSC::InfoPanel*& dyn__infoPanelUI();
+    [[deprecated("Use field access instead!")]] ::VROSC::InfoPanel*& dyn__infoPanelUI();
     // Get instance field reference: private VROSC.UIToggle _infoButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__infoButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__infoButton();
     // Get instance field reference: private VROSC.UIButton _closeButton
-    [[deprecated]] ::VROSC::UIButton*& dyn__closeButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIButton*& dyn__closeButton();
     // Get instance field reference: protected TMPro.TextMeshPro _header
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__header();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__header();
     // Get instance field reference: public System.Action OnClosePressed
-    [[deprecated]] ::System::Action*& dyn_OnClosePressed();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnClosePressed();
     // public VROSC.TransformMoverRelay get_TransformMoverRelay()
     // Offset: 0x94D110
     ::VROSC::TransformMoverRelay* get_TransformMoverRelay();
+    // public System.Void .ctor()
+    // Offset: 0x94D500
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ControlPanelUI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControlPanelUI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ControlPanelUI*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x94D118
     void Awake();
@@ -125,19 +132,6 @@ namespace VROSC {
     // private System.Void CloseButtonPressed()
     // Offset: 0x94D4EC
     void CloseButtonPressed();
-    // public System.Void .ctor()
-    // Offset: 0x94D500
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ControlPanelUI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ControlPanelUI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ControlPanelUI*, creationType>()));
-    }
   }; // VROSC.ControlPanelUI
   #pragma pack(pop)
   static check_size<sizeof(ControlPanelUI), 64 + sizeof(::System::Action*)> __VROSC_ControlPanelUISizeCheck;
@@ -152,6 +146,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Tr
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControlPanelUI*), "get_TransformMoverRelay", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::ControlPanelUI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ControlPanelUI::Awake
 // Il2CppName: Awake
 template<>
@@ -195,7 +193,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ControlPanelUI*), "CloseButtonPressed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ControlPanelUI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

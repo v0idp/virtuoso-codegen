@@ -65,11 +65,11 @@ namespace System::Threading {
     // Set static field: static System.Threading.ContextCallback _ccb
     static void _set__ccb(::System::Threading::ContextCallback* value);
     // Get instance field reference: private System.Delegate _start
-    [[deprecated]] ::System::Delegate*& dyn__start();
+    [[deprecated("Use field access instead!")]] ::System::Delegate*& dyn__start();
     // Get instance field reference: private System.Object _startArg
-    [[deprecated]] ::Il2CppObject*& dyn__startArg();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__startArg();
     // Get instance field reference: private System.Threading.ExecutionContext _executionContext
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn__executionContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn__executionContext();
     // static private System.Void .cctor()
     // Offset: 0x11DAE28
     static void _cctor();

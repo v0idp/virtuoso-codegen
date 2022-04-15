@@ -74,11 +74,11 @@ namespace System::Data {
     // Deleting conversion operator: operator ::System::Data::DataTable*
     constexpr operator ::System::Data::DataTable*() const noexcept = delete;
     // Get instance field reference: System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: System.Boolean _found
-    [[deprecated]] bool& dyn__found();
+    [[deprecated("Use field access instead!")]] bool& dyn__found();
     // Get instance field reference: System.Data.DataColumn _column
-    [[deprecated]] ::System::Data::DataColumn*& dyn__column();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn__column();
     // System.Void .ctor(System.Data.DataTable table, System.Char[] text, System.Int32 start, System.Int32 pos)
     // Offset: 0x13BABC4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

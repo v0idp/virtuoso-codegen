@@ -39,7 +39,7 @@ namespace System::Runtime::Remoting::Messaging {
       return index;
     }
     // Get instance field reference: public System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // public System.Void .ctor(System.Int32 i)
     // Offset: 0xFF0750
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

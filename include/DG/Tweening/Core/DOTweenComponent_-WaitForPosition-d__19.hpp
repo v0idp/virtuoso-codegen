@@ -66,13 +66,13 @@ namespace DG::Tweening::Core {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public DG.Tweening.Tween t
-    [[deprecated]] ::DG::Tweening::Tween*& dyn_t();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Tween*& dyn_t();
     // Get instance field reference: public System.Single position
-    [[deprecated]] float& dyn_position();
+    [[deprecated("Use field access instead!")]] float& dyn_position();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1863204
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

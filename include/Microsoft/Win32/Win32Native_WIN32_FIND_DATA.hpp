@@ -41,9 +41,9 @@ namespace Microsoft::Win32 {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: System.Int32 dwFileAttributes
-    [[deprecated]] int& dyn_dwFileAttributes();
+    [[deprecated("Use field access instead!")]] int& dyn_dwFileAttributes();
     // Get instance field reference: System.String cFileName
-    [[deprecated]] ::StringW& dyn_cFileName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_cFileName();
     // public System.Void .ctor()
     // Offset: 0x189C3BC
     // Implemented from: System.Object

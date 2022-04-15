@@ -89,23 +89,23 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Boolean z
-    [[deprecated]] bool& dyn_z();
+    [[deprecated("Use field access instead!")]] bool& dyn_z();
     // Get instance field reference: public System.SByte b
-    [[deprecated]] int8_t& dyn_b();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_b();
     // Get instance field reference: public System.Char c
-    [[deprecated]] ::Il2CppChar& dyn_c();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_c();
     // Get instance field reference: public System.Int16 s
-    [[deprecated]] int16_t& dyn_s();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_s();
     // Get instance field reference: public System.Int32 i
-    [[deprecated]] int& dyn_i();
+    [[deprecated("Use field access instead!")]] int& dyn_i();
     // Get instance field reference: public System.Int64 j
-    [[deprecated]] int64_t& dyn_j();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_j();
     // Get instance field reference: public System.Single f
-    [[deprecated]] float& dyn_f();
+    [[deprecated("Use field access instead!")]] float& dyn_f();
     // Get instance field reference: public System.Double d
-    [[deprecated]] double& dyn_d();
+    [[deprecated("Use field access instead!")]] double& dyn_d();
     // Get instance field reference: public System.IntPtr l
-    [[deprecated]] ::System::IntPtr& dyn_l();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_l();
   }; // UnityEngine.jvalue
   // WARNING Not writing size check since size may be invalid!
 }

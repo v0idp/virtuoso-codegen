@@ -43,7 +43,7 @@ namespace Oculus::Platform::Models {
       return Status;
     }
     // Get instance field reference: public readonly Oculus.Platform.ShareMediaStatus Status
-    [[deprecated]] ::Oculus::Platform::ShareMediaStatus& dyn_Status();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::ShareMediaStatus& dyn_Status();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x171BA18
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

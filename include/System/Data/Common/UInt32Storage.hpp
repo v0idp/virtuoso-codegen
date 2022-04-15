@@ -63,7 +63,7 @@ namespace System::Data::Common {
     // Set static field: static private readonly System.UInt32 s_defaultValue
     static void _set_s_defaultValue(uint value);
     // Get instance field reference: private System.UInt32[] _values
-    [[deprecated]] ::ArrayW<uint>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn__values();
     // public System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x11BA2FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

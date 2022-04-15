@@ -123,31 +123,31 @@ namespace System::Xml::Schema {
       return *reinterpret_cast<::System::Xml::IDtdEntityInfo*>(this);
     }
     // Get instance field reference: private System.Xml.XmlQualifiedName qname
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_qname();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_qname();
     // Get instance field reference: private System.String url
-    [[deprecated]] ::StringW& dyn_url();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_url();
     // Get instance field reference: private System.String pubid
-    [[deprecated]] ::StringW& dyn_pubid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_pubid();
     // Get instance field reference: private System.String text
-    [[deprecated]] ::StringW& dyn_text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_text();
     // Get instance field reference: private System.Xml.XmlQualifiedName ndata
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_ndata();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_ndata();
     // Get instance field reference: private System.Int32 lineNumber
-    [[deprecated]] int& dyn_lineNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNumber();
     // Get instance field reference: private System.Int32 linePosition
-    [[deprecated]] int& dyn_linePosition();
+    [[deprecated("Use field access instead!")]] int& dyn_linePosition();
     // Get instance field reference: private System.Boolean isParameter
-    [[deprecated]] bool& dyn_isParameter();
+    [[deprecated("Use field access instead!")]] bool& dyn_isParameter();
     // Get instance field reference: private System.Boolean isExternal
-    [[deprecated]] bool& dyn_isExternal();
+    [[deprecated("Use field access instead!")]] bool& dyn_isExternal();
     // Get instance field reference: private System.Boolean parsingInProgress
-    [[deprecated]] bool& dyn_parsingInProgress();
+    [[deprecated("Use field access instead!")]] bool& dyn_parsingInProgress();
     // Get instance field reference: private System.Boolean isDeclaredInExternal
-    [[deprecated]] bool& dyn_isDeclaredInExternal();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDeclaredInExternal();
     // Get instance field reference: private System.String baseURI
-    [[deprecated]] ::StringW& dyn_baseURI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_baseURI();
     // Get instance field reference: private System.String declaredURI
-    [[deprecated]] ::StringW& dyn_declaredURI();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_declaredURI();
     // private System.String System.Xml.IDtdEntityInfo.get_Name()
     // Offset: 0xF664C4
     ::StringW System_Xml_IDtdEntityInfo_get_Name();

@@ -54,7 +54,7 @@ namespace Newtonsoft::Json::Serialization {
       return memberInfo;
     }
     // Get instance field reference: private readonly System.Reflection.MemberInfo _memberInfo
-    [[deprecated]] ::System::Reflection::MemberInfo*& dyn__memberInfo();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MemberInfo*& dyn__memberInfo();
     // public System.Void .ctor(System.Reflection.MemberInfo memberInfo)
     // Offset: 0x158B074
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -65,7 +65,6 @@ namespace VROSC {
     // Implemented from: VROSC.SessionsDataController
     // Base method: System.Void SessionsDataController::.ctor()
     // Base method: System.Void BaseDataController::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LocalSessionsDataController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LocalSessionsDataController::.ctor");

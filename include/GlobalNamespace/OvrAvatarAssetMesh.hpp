@@ -68,11 +68,11 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator uint64_t
     constexpr operator uint64_t() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Mesh mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_mesh();
     // Get instance field reference: private ovrAvatarSkinnedMeshPose skinnedBindPose
-    [[deprecated]] ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedBindPose();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarSkinnedMeshPose& dyn_skinnedBindPose();
     // Get instance field reference: public System.String[] jointNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_jointNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_jointNames();
     // public System.Void .ctor(System.UInt64 _assetId, System.IntPtr asset, ovrAvatarAssetType meshType)
     // Offset: 0xF87430
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

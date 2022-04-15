@@ -45,7 +45,7 @@ namespace UnityEngine::Bindings {
       return Exception;
     }
     // Get instance field reference: private System.String <Exception>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Exception$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Exception$k__BackingField();
     // public System.Void set_Exception(System.String value)
     // Offset: 0x18FFDA8
     void set_Exception(::StringW value);

@@ -31,9 +31,6 @@ namespace RSG::Exceptions {
     public:
     // public System.Void .ctor()
     // Offset: 0xB29BD0
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PromiseException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Exceptions::PromiseException::.ctor");
@@ -41,8 +38,6 @@ namespace RSG::Exceptions {
     }
     // public System.Void .ctor(System.String message)
     // Offset: 0xB29C34
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PromiseException* New_ctor(::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Exceptions::PromiseException::.ctor");
@@ -50,8 +45,6 @@ namespace RSG::Exceptions {
     }
     // public System.Void .ctor(System.String message, System.Exception inner)
     // Offset: 0xB29CA8
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String message, System.Exception inner)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PromiseException* New_ctor(::StringW message, ::System::Exception* inner) {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::Exceptions::PromiseException::.ctor");

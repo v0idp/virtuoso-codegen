@@ -1062,318 +1062,318 @@ namespace BeautifyEffect {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single dither
-    [[deprecated]] float& dyn_dither();
+    [[deprecated("Use field access instead!")]] float& dyn_dither();
     // Get instance field reference: public System.Single ditherDepth
-    [[deprecated]] float& dyn_ditherDepth();
+    [[deprecated("Use field access instead!")]] float& dyn_ditherDepth();
     // Get instance field reference: public System.Single sharpenMinDepth
-    [[deprecated]] float& dyn_sharpenMinDepth();
+    [[deprecated("Use field access instead!")]] float& dyn_sharpenMinDepth();
     // Get instance field reference: public System.Single sharpenMaxDepth
-    [[deprecated]] float& dyn_sharpenMaxDepth();
+    [[deprecated("Use field access instead!")]] float& dyn_sharpenMaxDepth();
     // Get instance field reference: public System.Single sharpen
-    [[deprecated]] float& dyn_sharpen();
+    [[deprecated("Use field access instead!")]] float& dyn_sharpen();
     // Get instance field reference: public System.Single sharpenDepthThreshold
-    [[deprecated]] float& dyn_sharpenDepthThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_sharpenDepthThreshold();
     // Get instance field reference: public UnityEngine.Color tintColor
-    [[deprecated]] ::UnityEngine::Color& dyn_tintColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_tintColor();
     // Get instance field reference: public System.Single sharpenRelaxation
-    [[deprecated]] float& dyn_sharpenRelaxation();
+    [[deprecated("Use field access instead!")]] float& dyn_sharpenRelaxation();
     // Get instance field reference: public System.Single sharpenClamp
-    [[deprecated]] float& dyn_sharpenClamp();
+    [[deprecated("Use field access instead!")]] float& dyn_sharpenClamp();
     // Get instance field reference: public System.Single sharpenMotionSensibility
-    [[deprecated]] float& dyn_sharpenMotionSensibility();
+    [[deprecated("Use field access instead!")]] float& dyn_sharpenMotionSensibility();
     // Get instance field reference: public System.Single antialiasStrength
-    [[deprecated]] float& dyn_antialiasStrength();
+    [[deprecated("Use field access instead!")]] float& dyn_antialiasStrength();
     // Get instance field reference: public System.Single antialiasDepthThreshold
-    [[deprecated]] float& dyn_antialiasDepthThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_antialiasDepthThreshold();
     // Get instance field reference: public System.Single saturate
-    [[deprecated]] float& dyn_saturate();
+    [[deprecated("Use field access instead!")]] float& dyn_saturate();
     // Get instance field reference: public System.Single contrast
-    [[deprecated]] float& dyn_contrast();
+    [[deprecated("Use field access instead!")]] float& dyn_contrast();
     // Get instance field reference: public System.Single brightness
-    [[deprecated]] float& dyn_brightness();
+    [[deprecated("Use field access instead!")]] float& dyn_brightness();
     // Get instance field reference: public System.Single daltonize
-    [[deprecated]] float& dyn_daltonize();
+    [[deprecated("Use field access instead!")]] float& dyn_daltonize();
     // Get instance field reference: public System.Boolean vignetting
-    [[deprecated]] bool& dyn_vignetting();
+    [[deprecated("Use field access instead!")]] bool& dyn_vignetting();
     // Get instance field reference: public UnityEngine.Color vignettingColor
-    [[deprecated]] ::UnityEngine::Color& dyn_vignettingColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_vignettingColor();
     // Get instance field reference: public System.Single vignettingFade
-    [[deprecated]] float& dyn_vignettingFade();
+    [[deprecated("Use field access instead!")]] float& dyn_vignettingFade();
     // Get instance field reference: public System.Boolean vignettingCircularShape
-    [[deprecated]] bool& dyn_vignettingCircularShape();
+    [[deprecated("Use field access instead!")]] bool& dyn_vignettingCircularShape();
     // Get instance field reference: public System.Single vignettingAspectRatio
-    [[deprecated]] float& dyn_vignettingAspectRatio();
+    [[deprecated("Use field access instead!")]] float& dyn_vignettingAspectRatio();
     // Get instance field reference: public System.Single vignettingBlink
-    [[deprecated]] float& dyn_vignettingBlink();
+    [[deprecated("Use field access instead!")]] float& dyn_vignettingBlink();
     // Get instance field reference: public UnityEngine.Texture2D vignettingMask
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_vignettingMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_vignettingMask();
     // Get instance field reference: public System.Boolean frame
-    [[deprecated]] bool& dyn_frame();
+    [[deprecated("Use field access instead!")]] bool& dyn_frame();
     // Get instance field reference: public UnityEngine.Color frameColor
-    [[deprecated]] ::UnityEngine::Color& dyn_frameColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_frameColor();
     // Get instance field reference: public UnityEngine.Texture2D frameMask
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_frameMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_frameMask();
     // Get instance field reference: public System.Boolean lut
-    [[deprecated]] bool& dyn_lut();
+    [[deprecated("Use field access instead!")]] bool& dyn_lut();
     // Get instance field reference: public System.Single lutIntensity
-    [[deprecated]] float& dyn_lutIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_lutIntensity();
     // Get instance field reference: public UnityEngine.Texture2D lutTexture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_lutTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_lutTexture();
     // Get instance field reference: public System.Boolean nightVision
-    [[deprecated]] bool& dyn_nightVision();
+    [[deprecated("Use field access instead!")]] bool& dyn_nightVision();
     // Get instance field reference: public UnityEngine.Color nightVisionColor
-    [[deprecated]] ::UnityEngine::Color& dyn_nightVisionColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_nightVisionColor();
     // Get instance field reference: public System.Boolean outline
-    [[deprecated]] bool& dyn_outline();
+    [[deprecated("Use field access instead!")]] bool& dyn_outline();
     // Get instance field reference: public UnityEngine.Color outlineColor
-    [[deprecated]] ::UnityEngine::Color& dyn_outlineColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_outlineColor();
     // Get instance field reference: public System.Boolean thermalVision
-    [[deprecated]] bool& dyn_thermalVision();
+    [[deprecated("Use field access instead!")]] bool& dyn_thermalVision();
     // Get instance field reference: public System.Boolean lensDirt
-    [[deprecated]] bool& dyn_lensDirt();
+    [[deprecated("Use field access instead!")]] bool& dyn_lensDirt();
     // Get instance field reference: public System.Single lensDirtThreshold
-    [[deprecated]] float& dyn_lensDirtThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_lensDirtThreshold();
     // Get instance field reference: public System.Single lensDirtIntensity
-    [[deprecated]] float& dyn_lensDirtIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_lensDirtIntensity();
     // Get instance field reference: public UnityEngine.Texture2D lensDirtTexture
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_lensDirtTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_lensDirtTexture();
     // Get instance field reference: public System.Boolean bloom
-    [[deprecated]] bool& dyn_bloom();
+    [[deprecated("Use field access instead!")]] bool& dyn_bloom();
     // Get instance field reference: public UnityEngine.LayerMask bloomCullingMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_bloomCullingMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_bloomCullingMask();
     // Get instance field reference: public System.Single bloomLayerMaskDownsampling
-    [[deprecated]] float& dyn_bloomLayerMaskDownsampling();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomLayerMaskDownsampling();
     // Get instance field reference: public System.Single bloomIntensity
-    [[deprecated]] float& dyn_bloomIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomIntensity();
     // Get instance field reference: public System.Single bloomMaxBrightness
-    [[deprecated]] float& dyn_bloomMaxBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomMaxBrightness();
     // Get instance field reference: public System.Single bloomBoost0
-    [[deprecated]] float& dyn_bloomBoost0();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomBoost0();
     // Get instance field reference: public System.Single bloomBoost1
-    [[deprecated]] float& dyn_bloomBoost1();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomBoost1();
     // Get instance field reference: public System.Single bloomBoost2
-    [[deprecated]] float& dyn_bloomBoost2();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomBoost2();
     // Get instance field reference: public System.Single bloomBoost3
-    [[deprecated]] float& dyn_bloomBoost3();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomBoost3();
     // Get instance field reference: public System.Single bloomBoost4
-    [[deprecated]] float& dyn_bloomBoost4();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomBoost4();
     // Get instance field reference: public System.Single bloomBoost5
-    [[deprecated]] float& dyn_bloomBoost5();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomBoost5();
     // Get instance field reference: public System.Boolean bloomAntiflicker
-    [[deprecated]] bool& dyn_bloomAntiflicker();
+    [[deprecated("Use field access instead!")]] bool& dyn_bloomAntiflicker();
     // Get instance field reference: public System.Boolean bloomUltra
-    [[deprecated]] bool& dyn_bloomUltra();
+    [[deprecated("Use field access instead!")]] bool& dyn_bloomUltra();
     // Get instance field reference: public System.Single bloomThreshold
-    [[deprecated]] float& dyn_bloomThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomThreshold();
     // Get instance field reference: public System.Boolean bloomCustomize
-    [[deprecated]] bool& dyn_bloomCustomize();
+    [[deprecated("Use field access instead!")]] bool& dyn_bloomCustomize();
     // Get instance field reference: public System.Single bloomWeight0
-    [[deprecated]] float& dyn_bloomWeight0();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomWeight0();
     // Get instance field reference: public System.Single bloomWeight1
-    [[deprecated]] float& dyn_bloomWeight1();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomWeight1();
     // Get instance field reference: public System.Single bloomWeight2
-    [[deprecated]] float& dyn_bloomWeight2();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomWeight2();
     // Get instance field reference: public System.Single bloomWeight3
-    [[deprecated]] float& dyn_bloomWeight3();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomWeight3();
     // Get instance field reference: public System.Single bloomWeight4
-    [[deprecated]] float& dyn_bloomWeight4();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomWeight4();
     // Get instance field reference: public System.Single bloomWeight5
-    [[deprecated]] float& dyn_bloomWeight5();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomWeight5();
     // Get instance field reference: public System.Boolean bloomBlur
-    [[deprecated]] bool& dyn_bloomBlur();
+    [[deprecated("Use field access instead!")]] bool& dyn_bloomBlur();
     // Get instance field reference: public System.Single bloomDepthAtten
-    [[deprecated]] float& dyn_bloomDepthAtten();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomDepthAtten();
     // Get instance field reference: public System.Single bloomLayerZBias
-    [[deprecated]] float& dyn_bloomLayerZBias();
+    [[deprecated("Use field access instead!")]] float& dyn_bloomLayerZBias();
     // Get instance field reference: public System.Boolean anamorphicFlares
-    [[deprecated]] bool& dyn_anamorphicFlares();
+    [[deprecated("Use field access instead!")]] bool& dyn_anamorphicFlares();
     // Get instance field reference: public System.Single anamorphicFlaresIntensity
-    [[deprecated]] float& dyn_anamorphicFlaresIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_anamorphicFlaresIntensity();
     // Get instance field reference: public System.Boolean anamorphicFlaresAntiflicker
-    [[deprecated]] bool& dyn_anamorphicFlaresAntiflicker();
+    [[deprecated("Use field access instead!")]] bool& dyn_anamorphicFlaresAntiflicker();
     // Get instance field reference: public System.Boolean anamorphicFlaresUltra
-    [[deprecated]] bool& dyn_anamorphicFlaresUltra();
+    [[deprecated("Use field access instead!")]] bool& dyn_anamorphicFlaresUltra();
     // Get instance field reference: public System.Single anamorphicFlaresThreshold
-    [[deprecated]] float& dyn_anamorphicFlaresThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_anamorphicFlaresThreshold();
     // Get instance field reference: public System.Single anamorphicFlaresSpread
-    [[deprecated]] float& dyn_anamorphicFlaresSpread();
+    [[deprecated("Use field access instead!")]] float& dyn_anamorphicFlaresSpread();
     // Get instance field reference: public System.Boolean anamorphicFlaresVertical
-    [[deprecated]] bool& dyn_anamorphicFlaresVertical();
+    [[deprecated("Use field access instead!")]] bool& dyn_anamorphicFlaresVertical();
     // Get instance field reference: public UnityEngine.Color anamorphicFlaresTint
-    [[deprecated]] ::UnityEngine::Color& dyn_anamorphicFlaresTint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_anamorphicFlaresTint();
     // Get instance field reference: public System.Boolean anamorphicFlaresBlur
-    [[deprecated]] bool& dyn_anamorphicFlaresBlur();
+    [[deprecated("Use field access instead!")]] bool& dyn_anamorphicFlaresBlur();
     // Get instance field reference: public System.Boolean depthOfField
-    [[deprecated]] bool& dyn_depthOfField();
+    [[deprecated("Use field access instead!")]] bool& dyn_depthOfField();
     // Get instance field reference: public System.Boolean depthOfFieldTransparencySupport
-    [[deprecated]] bool& dyn_depthOfFieldTransparencySupport();
+    [[deprecated("Use field access instead!")]] bool& dyn_depthOfFieldTransparencySupport();
     // Get instance field reference: public UnityEngine.Transform depthOfFieldTargetFocus
-    [[deprecated]] ::UnityEngine::Transform*& dyn_depthOfFieldTargetFocus();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_depthOfFieldTargetFocus();
     // Get instance field reference: public System.Boolean depthOfFieldAutofocus
-    [[deprecated]] bool& dyn_depthOfFieldAutofocus();
+    [[deprecated("Use field access instead!")]] bool& dyn_depthOfFieldAutofocus();
     // Get instance field reference: public UnityEngine.Vector2 depthofFieldAutofocusViewportPoint
-    [[deprecated]] ::UnityEngine::Vector2& dyn_depthofFieldAutofocusViewportPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_depthofFieldAutofocusViewportPoint();
     // Get instance field reference: public UnityEngine.LayerMask depthOfFieldAutofocusLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_depthOfFieldAutofocusLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_depthOfFieldAutofocusLayerMask();
     // Get instance field reference: public System.Single depthOfFieldAutofocusMinDistance
-    [[deprecated]] float& dyn_depthOfFieldAutofocusMinDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldAutofocusMinDistance();
     // Get instance field reference: public System.Single depthOfFieldAutofocusMaxDistance
-    [[deprecated]] float& dyn_depthOfFieldAutofocusMaxDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldAutofocusMaxDistance();
     // Get instance field reference: public UnityEngine.LayerMask depthOfFieldExclusionLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_depthOfFieldExclusionLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_depthOfFieldExclusionLayerMask();
     // Get instance field reference: public System.Single depthOfFieldExclusionLayerMaskDownsampling
-    [[deprecated]] float& dyn_depthOfFieldExclusionLayerMaskDownsampling();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldExclusionLayerMaskDownsampling();
     // Get instance field reference: public System.Single depthOfFieldTransparencySupportDownsampling
-    [[deprecated]] float& dyn_depthOfFieldTransparencySupportDownsampling();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldTransparencySupportDownsampling();
     // Get instance field reference: public System.Single depthOfFieldExclusionBias
-    [[deprecated]] float& dyn_depthOfFieldExclusionBias();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldExclusionBias();
     // Get instance field reference: public System.Single depthOfFieldDistance
-    [[deprecated]] float& dyn_depthOfFieldDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldDistance();
     // Get instance field reference: public System.Single depthOfFieldFocusSpeed
-    [[deprecated]] float& dyn_depthOfFieldFocusSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldFocusSpeed();
     // Get instance field reference: public System.Int32 depthOfFieldDownsampling
-    [[deprecated]] int& dyn_depthOfFieldDownsampling();
+    [[deprecated("Use field access instead!")]] int& dyn_depthOfFieldDownsampling();
     // Get instance field reference: public System.Int32 depthOfFieldMaxSamples
-    [[deprecated]] int& dyn_depthOfFieldMaxSamples();
+    [[deprecated("Use field access instead!")]] int& dyn_depthOfFieldMaxSamples();
     // Get instance field reference: public System.Single depthOfFieldFocalLength
-    [[deprecated]] float& dyn_depthOfFieldFocalLength();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldFocalLength();
     // Get instance field reference: public System.Single depthOfFieldAperture
-    [[deprecated]] float& dyn_depthOfFieldAperture();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldAperture();
     // Get instance field reference: public System.Boolean depthOfFieldForegroundBlur
-    [[deprecated]] bool& dyn_depthOfFieldForegroundBlur();
+    [[deprecated("Use field access instead!")]] bool& dyn_depthOfFieldForegroundBlur();
     // Get instance field reference: public System.Boolean depthOfFieldForegroundBlurHQ
-    [[deprecated]] bool& dyn_depthOfFieldForegroundBlurHQ();
+    [[deprecated("Use field access instead!")]] bool& dyn_depthOfFieldForegroundBlurHQ();
     // Get instance field reference: public System.Single depthOfFieldForegroundDistance
-    [[deprecated]] float& dyn_depthOfFieldForegroundDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldForegroundDistance();
     // Get instance field reference: public System.Boolean depthOfFieldBokeh
-    [[deprecated]] bool& dyn_depthOfFieldBokeh();
+    [[deprecated("Use field access instead!")]] bool& dyn_depthOfFieldBokeh();
     // Get instance field reference: public System.Single depthOfFieldBokehThreshold
-    [[deprecated]] float& dyn_depthOfFieldBokehThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldBokehThreshold();
     // Get instance field reference: public System.Single depthOfFieldBokehIntensity
-    [[deprecated]] float& dyn_depthOfFieldBokehIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldBokehIntensity();
     // Get instance field reference: public System.Single depthOfFieldMaxBrightness
-    [[deprecated]] float& dyn_depthOfFieldMaxBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldMaxBrightness();
     // Get instance field reference: public System.Single depthOfFieldMaxDistance
-    [[deprecated]] float& dyn_depthOfFieldMaxDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_depthOfFieldMaxDistance();
     // Get instance field reference: public UnityEngine.FilterMode depthOfFieldFilterMode
-    [[deprecated]] ::UnityEngine::FilterMode& dyn_depthOfFieldFilterMode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::FilterMode& dyn_depthOfFieldFilterMode();
     // Get instance field reference: public UnityEngine.LayerMask depthOfFieldTransparencyLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_depthOfFieldTransparencyLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_depthOfFieldTransparencyLayerMask();
     // Get instance field reference: public System.Boolean eyeAdaptation
-    [[deprecated]] bool& dyn_eyeAdaptation();
+    [[deprecated("Use field access instead!")]] bool& dyn_eyeAdaptation();
     // Get instance field reference: public System.Single eyeAdaptationMinExposure
-    [[deprecated]] float& dyn_eyeAdaptationMinExposure();
+    [[deprecated("Use field access instead!")]] float& dyn_eyeAdaptationMinExposure();
     // Get instance field reference: public System.Single eyeAdaptationMaxExposure
-    [[deprecated]] float& dyn_eyeAdaptationMaxExposure();
+    [[deprecated("Use field access instead!")]] float& dyn_eyeAdaptationMaxExposure();
     // Get instance field reference: public System.Single eyeAdaptationSpeedToLight
-    [[deprecated]] float& dyn_eyeAdaptationSpeedToLight();
+    [[deprecated("Use field access instead!")]] float& dyn_eyeAdaptationSpeedToLight();
     // Get instance field reference: public System.Single eyeAdaptationSpeedToDark
-    [[deprecated]] float& dyn_eyeAdaptationSpeedToDark();
+    [[deprecated("Use field access instead!")]] float& dyn_eyeAdaptationSpeedToDark();
     // Get instance field reference: public System.Boolean purkinje
-    [[deprecated]] bool& dyn_purkinje();
+    [[deprecated("Use field access instead!")]] bool& dyn_purkinje();
     // Get instance field reference: public System.Single purkinjeAmount
-    [[deprecated]] float& dyn_purkinjeAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_purkinjeAmount();
     // Get instance field reference: public System.Single purkinjeLuminanceThreshold
-    [[deprecated]] float& dyn_purkinjeLuminanceThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_purkinjeLuminanceThreshold();
     // Get instance field reference: public BeautifyEffect.BEAUTIFY_TMO tonemap
-    [[deprecated]] ::BeautifyEffect::BEAUTIFY_TMO& dyn_tonemap();
+    [[deprecated("Use field access instead!")]] ::BeautifyEffect::BEAUTIFY_TMO& dyn_tonemap();
     // Get instance field reference: public System.Boolean sunFlares
-    [[deprecated]] bool& dyn_sunFlares();
+    [[deprecated("Use field access instead!")]] bool& dyn_sunFlares();
     // Get instance field reference: public System.Single sunFlaresIntensity
-    [[deprecated]] float& dyn_sunFlaresIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresIntensity();
     // Get instance field reference: public System.Single sunFlaresSolarWindSpeed
-    [[deprecated]] float& dyn_sunFlaresSolarWindSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresSolarWindSpeed();
     // Get instance field reference: public UnityEngine.Color sunFlaresTint
-    [[deprecated]] ::UnityEngine::Color& dyn_sunFlaresTint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_sunFlaresTint();
     // Get instance field reference: public System.Int32 sunFlaresDownsampling
-    [[deprecated]] int& dyn_sunFlaresDownsampling();
+    [[deprecated("Use field access instead!")]] int& dyn_sunFlaresDownsampling();
     // Get instance field reference: public System.Single sunFlaresSunIntensity
-    [[deprecated]] float& dyn_sunFlaresSunIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresSunIntensity();
     // Get instance field reference: public System.Single sunFlaresSunDiskSize
-    [[deprecated]] float& dyn_sunFlaresSunDiskSize();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresSunDiskSize();
     // Get instance field reference: public System.Single sunFlaresSunRayDiffractionIntensity
-    [[deprecated]] float& dyn_sunFlaresSunRayDiffractionIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresSunRayDiffractionIntensity();
     // Get instance field reference: public System.Single sunFlaresSunRayDiffractionThreshold
-    [[deprecated]] float& dyn_sunFlaresSunRayDiffractionThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresSunRayDiffractionThreshold();
     // Get instance field reference: public System.Single sunFlaresCoronaRays1Length
-    [[deprecated]] float& dyn_sunFlaresCoronaRays1Length();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresCoronaRays1Length();
     // Get instance field reference: public System.Int32 sunFlaresCoronaRays1Streaks
-    [[deprecated]] int& dyn_sunFlaresCoronaRays1Streaks();
+    [[deprecated("Use field access instead!")]] int& dyn_sunFlaresCoronaRays1Streaks();
     // Get instance field reference: public System.Single sunFlaresCoronaRays1Spread
-    [[deprecated]] float& dyn_sunFlaresCoronaRays1Spread();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresCoronaRays1Spread();
     // Get instance field reference: public System.Single sunFlaresCoronaRays1AngleOffset
-    [[deprecated]] float& dyn_sunFlaresCoronaRays1AngleOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresCoronaRays1AngleOffset();
     // Get instance field reference: public System.Single sunFlaresCoronaRays2Length
-    [[deprecated]] float& dyn_sunFlaresCoronaRays2Length();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresCoronaRays2Length();
     // Get instance field reference: public System.Int32 sunFlaresCoronaRays2Streaks
-    [[deprecated]] int& dyn_sunFlaresCoronaRays2Streaks();
+    [[deprecated("Use field access instead!")]] int& dyn_sunFlaresCoronaRays2Streaks();
     // Get instance field reference: public System.Single sunFlaresCoronaRays2Spread
-    [[deprecated]] float& dyn_sunFlaresCoronaRays2Spread();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresCoronaRays2Spread();
     // Get instance field reference: public System.Single sunFlaresCoronaRays2AngleOffset
-    [[deprecated]] float& dyn_sunFlaresCoronaRays2AngleOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresCoronaRays2AngleOffset();
     // Get instance field reference: public System.Single sunFlaresGhosts1Size
-    [[deprecated]] float& dyn_sunFlaresGhosts1Size();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts1Size();
     // Get instance field reference: public System.Single sunFlaresGhosts1Offset
-    [[deprecated]] float& dyn_sunFlaresGhosts1Offset();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts1Offset();
     // Get instance field reference: public System.Single sunFlaresGhosts1Brightness
-    [[deprecated]] float& dyn_sunFlaresGhosts1Brightness();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts1Brightness();
     // Get instance field reference: public System.Single sunFlaresGhosts2Size
-    [[deprecated]] float& dyn_sunFlaresGhosts2Size();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts2Size();
     // Get instance field reference: public System.Single sunFlaresGhosts2Offset
-    [[deprecated]] float& dyn_sunFlaresGhosts2Offset();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts2Offset();
     // Get instance field reference: public System.Single sunFlaresGhosts2Brightness
-    [[deprecated]] float& dyn_sunFlaresGhosts2Brightness();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts2Brightness();
     // Get instance field reference: public System.Single sunFlaresGhosts3Size
-    [[deprecated]] float& dyn_sunFlaresGhosts3Size();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts3Size();
     // Get instance field reference: public System.Single sunFlaresGhosts3Brightness
-    [[deprecated]] float& dyn_sunFlaresGhosts3Brightness();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts3Brightness();
     // Get instance field reference: public System.Single sunFlaresGhosts3Offset
-    [[deprecated]] float& dyn_sunFlaresGhosts3Offset();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts3Offset();
     // Get instance field reference: public System.Single sunFlaresGhosts4Size
-    [[deprecated]] float& dyn_sunFlaresGhosts4Size();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts4Size();
     // Get instance field reference: public System.Single sunFlaresGhosts4Offset
-    [[deprecated]] float& dyn_sunFlaresGhosts4Offset();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts4Offset();
     // Get instance field reference: public System.Single sunFlaresGhosts4Brightness
-    [[deprecated]] float& dyn_sunFlaresGhosts4Brightness();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresGhosts4Brightness();
     // Get instance field reference: public System.Single sunFlaresHaloOffset
-    [[deprecated]] float& dyn_sunFlaresHaloOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresHaloOffset();
     // Get instance field reference: public System.Single sunFlaresHaloAmplitude
-    [[deprecated]] float& dyn_sunFlaresHaloAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresHaloAmplitude();
     // Get instance field reference: public System.Single sunFlaresHaloIntensity
-    [[deprecated]] float& dyn_sunFlaresHaloIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_sunFlaresHaloIntensity();
     // Get instance field reference: public System.Boolean sunFlaresRotationDeadZone
-    [[deprecated]] bool& dyn_sunFlaresRotationDeadZone();
+    [[deprecated("Use field access instead!")]] bool& dyn_sunFlaresRotationDeadZone();
     // Get instance field reference: public System.Boolean blur
-    [[deprecated]] bool& dyn_blur();
+    [[deprecated("Use field access instead!")]] bool& dyn_blur();
     // Get instance field reference: public System.Single blurIntensity
-    [[deprecated]] float& dyn_blurIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_blurIntensity();
     // Get instance field reference: public System.Int32 pixelateAmount
-    [[deprecated]] int& dyn_pixelateAmount();
+    [[deprecated("Use field access instead!")]] int& dyn_pixelateAmount();
     // Get instance field reference: public System.Boolean pixelateDownscale
-    [[deprecated]] bool& dyn_pixelateDownscale();
+    [[deprecated("Use field access instead!")]] bool& dyn_pixelateDownscale();
+    // public System.Void .ctor()
+    // Offset: 0x936C24
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BeautifyProfile* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::BeautifyEffect::BeautifyProfile::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BeautifyProfile*, creationType>()));
+    }
     // public System.Void Load(BeautifyEffect.Beautify b)
     // Offset: 0x935E04
     void Load(::BeautifyEffect::Beautify* b);
     // public System.Void Save(BeautifyEffect.Beautify b)
     // Offset: 0x936768
     void Save(::BeautifyEffect::Beautify* b);
-    // public System.Void .ctor()
-    // Offset: 0x936C24
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BeautifyProfile* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::BeautifyEffect::BeautifyProfile::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BeautifyProfile*, creationType>()));
-    }
   }; // BeautifyEffect.BeautifyProfile
   #pragma pack(pop)
   static check_size<sizeof(BeautifyProfile), 688 + sizeof(bool)> __BeautifyEffect_BeautifyProfileSizeCheck;
   static_assert(sizeof(BeautifyProfile) == 0x2B1);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: BeautifyEffect::BeautifyProfile::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: BeautifyEffect::BeautifyProfile::Load
 // Il2CppName: Load
 template<>
@@ -1392,7 +1392,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Beaut
     return ::il2cpp_utils::FindMethod(classof(BeautifyEffect::BeautifyProfile*), "Save", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{b});
   }
 };
-// Writing MetadataGetter for method: BeautifyEffect::BeautifyProfile::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

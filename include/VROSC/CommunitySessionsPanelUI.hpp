@@ -52,7 +52,7 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean _isFirstTimeOpen
-    [[deprecated]] bool& dyn__isFirstTimeOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__isFirstTimeOpen();
     // private System.Void UserLoggedIn()
     // Offset: 0x94BF44
     void UserLoggedIn();
@@ -75,11 +75,6 @@ namespace VROSC {
     // Offset: 0x94C320
     // Implemented from: VROSC.SessionsPanelUI
     // Base method: System.Void SessionsPanelUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CommunitySessionsPanelUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CommunitySessionsPanelUI::.ctor");

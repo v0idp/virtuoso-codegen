@@ -59,7 +59,7 @@ namespace Mono {
       return handle;
     }
     // Get instance field reference: private Mono.RuntimeGPtrArrayHandle handle
-    [[deprecated]] ::Mono::RuntimeGPtrArrayHandle& dyn_handle();
+    [[deprecated("Use field access instead!")]] ::Mono::RuntimeGPtrArrayHandle& dyn_handle();
     // System.Int32 get_Length()
     // Offset: 0x1170F78
     int get_Length();

@@ -65,11 +65,11 @@ namespace System::Data {
     static_assert(sizeof(::ArrayW<::System::Data::DataRelation*>) == 0x8);
     public:
     // Get instance field reference: private readonly System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: private readonly System.Collections.ArrayList _relations
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__relations();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__relations();
     // Get instance field reference: private System.Data.DataRelation[] _delayLoadingRelations
-    [[deprecated]] ::ArrayW<::System::Data::DataRelation*>& dyn__delayLoadingRelations();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataRelation*>& dyn__delayLoadingRelations();
     // System.Void .ctor(System.Data.DataSet dataSet)
     // Offset: 0x18CCD88
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

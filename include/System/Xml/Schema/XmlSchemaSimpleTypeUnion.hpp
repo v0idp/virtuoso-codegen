@@ -64,11 +64,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::ArrayW<::System::Xml::Schema::XmlSchemaSimpleType*>) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection baseTypes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_baseTypes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_baseTypes();
     // Get instance field reference: private System.Xml.XmlQualifiedName[] memberTypes
-    [[deprecated]] ::ArrayW<::System::Xml::XmlQualifiedName*>& dyn_memberTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlQualifiedName*>& dyn_memberTypes();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType[] baseMemberTypes
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::XmlSchemaSimpleType*>& dyn_baseMemberTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::XmlSchemaSimpleType*>& dyn_baseMemberTypes();
     // public System.Xml.Schema.XmlSchemaObjectCollection get_BaseTypes()
     // Offset: 0xF37064
     ::System::Xml::Schema::XmlSchemaObjectCollection* get_BaseTypes();
@@ -90,7 +90,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaSimpleTypeContent::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaSimpleTypeUnion* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSimpleTypeUnion::.ctor");

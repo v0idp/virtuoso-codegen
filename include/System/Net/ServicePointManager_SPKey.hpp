@@ -51,11 +51,11 @@ namespace System::Net {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Uri uri
-    [[deprecated]] ::System::Uri*& dyn_uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_uri();
     // Get instance field reference: private System.Uri proxy
-    [[deprecated]] ::System::Uri*& dyn_proxy();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_proxy();
     // Get instance field reference: private System.Boolean use_connect
-    [[deprecated]] bool& dyn_use_connect();
+    [[deprecated("Use field access instead!")]] bool& dyn_use_connect();
     // public System.Boolean get_UsesProxy()
     // Offset: 0x9FDF10
     bool get_UsesProxy();

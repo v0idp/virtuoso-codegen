@@ -50,9 +50,9 @@ namespace LIV::SDK::Unity {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public LIV.SDK.Unity.RENDERING_PIPELINE renderingPipeline
-    [[deprecated]] ::LIV::SDK::Unity::RENDERING_PIPELINE& dyn_renderingPipeline();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::RENDERING_PIPELINE& dyn_renderingPipeline();
     // Get instance field reference: public LIV.SDK.Unity.SDKTrackedSpace trackedSpace
-    [[deprecated]] ::LIV::SDK::Unity::SDKTrackedSpace& dyn_trackedSpace();
+    [[deprecated("Use field access instead!")]] ::LIV::SDK::Unity::SDKTrackedSpace& dyn_trackedSpace();
     // static public LIV.SDK.Unity.SDKOutputFrame get_empty()
     // Offset: 0xDD50EC
     static ::LIV::SDK::Unity::SDKOutputFrame get_empty();

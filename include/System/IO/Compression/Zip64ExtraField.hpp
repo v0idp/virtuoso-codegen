@@ -71,15 +71,15 @@ namespace System::IO::Compression {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.UInt16 _size
-    [[deprecated]] uint16_t& dyn__size();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn__size();
     // Get instance field reference: private System.Nullable`1<System.Int64> _uncompressedSize
-    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__uncompressedSize();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int64_t>& dyn__uncompressedSize();
     // Get instance field reference: private System.Nullable`1<System.Int64> _compressedSize
-    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__compressedSize();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int64_t>& dyn__compressedSize();
     // Get instance field reference: private System.Nullable`1<System.Int64> _localHeaderOffset
-    [[deprecated]] ::System::Nullable_1<int64_t>& dyn__localHeaderOffset();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int64_t>& dyn__localHeaderOffset();
     // Get instance field reference: private System.Nullable`1<System.Int32> _startDiskNumber
-    [[deprecated]] ::System::Nullable_1<int>& dyn__startDiskNumber();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<int>& dyn__startDiskNumber();
     // public System.UInt16 get_TotalSize()
     // Offset: 0x1699EE4
     uint16_t get_TotalSize();

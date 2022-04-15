@@ -54,9 +54,16 @@ namespace AudioHelm {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Renderer keyLight
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_keyLight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_keyLight();
     // Get instance field reference: private System.Boolean noteOn
-    [[deprecated]] bool& dyn_noteOn();
+    [[deprecated("Use field access instead!")]] bool& dyn_noteOn();
+    // public System.Void .ctor()
+    // Offset: 0x19A9C1C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GroundKey* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::GroundKey::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GroundKey*, creationType>()));
+    }
     // public System.Boolean IsInside(UnityEngine.Vector3 position)
     // Offset: 0x19A9ADC
     bool IsInside(::UnityEngine::Vector3 position);
@@ -69,25 +76,16 @@ namespace AudioHelm {
     // private System.Void Update()
     // Offset: 0x19A9B60
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x19A9C1C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GroundKey* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::GroundKey::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GroundKey*, creationType>()));
-    }
   }; // AudioHelm.GroundKey
   #pragma pack(pop)
   static check_size<sizeof(GroundKey), 32 + sizeof(bool)> __AudioHelm_GroundKeySizeCheck;
   static_assert(sizeof(GroundKey) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::GroundKey::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::GroundKey::IsInside
 // Il2CppName: IsInside
 template<>
@@ -122,7 +120,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::GroundKey*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::GroundKey::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

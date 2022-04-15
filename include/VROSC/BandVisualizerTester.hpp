@@ -61,36 +61,34 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 _numberOfBands
-    [[deprecated]] int& dyn__numberOfBands();
+    [[deprecated("Use field access instead!")]] int& dyn__numberOfBands();
     // Get instance field reference: private System.Boolean _currentPlayingOnly
-    [[deprecated]] bool& dyn__currentPlayingOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn__currentPlayingOnly();
     // Get instance field reference: private UnityEngine.Transform[] _bandTransforms
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn__bandTransforms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn__bandTransforms();
+    // public System.Void .ctor()
+    // Offset: 0x973EF0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BandVisualizerTester* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BandVisualizerTester::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BandVisualizerTester*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x973BD4
     void Awake();
     // protected System.Void Update()
     // Offset: 0x973DAC
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x973EF0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BandVisualizerTester* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::BandVisualizerTester::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BandVisualizerTester*, creationType>()));
-    }
   }; // VROSC.BandVisualizerTester
   #pragma pack(pop)
   static check_size<sizeof(BandVisualizerTester), 32 + sizeof(::ArrayW<::UnityEngine::Transform*>)> __VROSC_BandVisualizerTesterSizeCheck;
   static_assert(sizeof(BandVisualizerTester) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::BandVisualizerTester::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::BandVisualizerTester::Awake
 // Il2CppName: Awake
 template<>
@@ -107,7 +105,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::BandVisualizerTester*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::BandVisualizerTester::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

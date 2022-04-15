@@ -65,15 +65,15 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<bool>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<bool>& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebCompletionSource <>4__this
-    [[deprecated]] ::System::Net::WebCompletionSource*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebCompletionSource*& dyn_$$4__this();
     // Get instance field reference: public System.Boolean throwOnError
-    [[deprecated]] bool& dyn_throwOnError();
+    [[deprecated("Use field access instead!")]] bool& dyn_throwOnError();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Net.WebCompletionSource/System.Net.Result> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Net::WebCompletionSource::Result*>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Net::WebCompletionSource::Result*>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xA05638
     void MoveNext();

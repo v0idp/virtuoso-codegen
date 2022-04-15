@@ -50,7 +50,7 @@ namespace System::Linq::Expressions::Interpreter {
       return ArgumentIndex;
     }
     // Get instance field reference: public readonly System.Int32 ArgumentIndex
-    [[deprecated]] int& dyn_ArgumentIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_ArgumentIndex();
     // public System.Void .ctor(System.Int32 argumentIndex)
     // Offset: 0x11F1EE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

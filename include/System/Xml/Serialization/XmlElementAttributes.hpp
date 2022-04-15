@@ -47,22 +47,19 @@ namespace System::Xml::Serialization {
     // System.Int32 get_Order()
     // Offset: 0x127DA54
     int get_Order();
+    // public System.Void .ctor()
+    // Offset: 0x127DD0C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlElementAttributes* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlElementAttributes::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlElementAttributes*, creationType>()));
+    }
     // public System.Int32 Add(System.Xml.Serialization.XmlElementAttribute attribute)
     // Offset: 0x127D8AC
     int Add(::System::Xml::Serialization::XmlElementAttribute* attribute);
     // System.Void AddKeyHash(System.Text.StringBuilder sb)
     // Offset: 0x127D978
     void AddKeyHash(::System::Text::StringBuilder* sb);
-    // public System.Void .ctor()
-    // Offset: 0x127DD0C
-    // Implemented from: System.Collections.CollectionBase
-    // Base method: System.Void CollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlElementAttributes* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlElementAttributes::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlElementAttributes*, creationType>()));
-    }
   }; // System.Xml.Serialization.XmlElementAttributes
   #pragma pack(pop)
 }
@@ -84,6 +81,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlElementAttributes*), "get_Order", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::Serialization::XmlElementAttributes::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::Serialization::XmlElementAttributes::Add
 // Il2CppName: Add
 template<>
@@ -102,7 +103,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Xml::Serialization::XmlElementAttributes*), "AddKeyHash", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sb});
   }
 };
-// Writing MetadataGetter for method: System::Xml::Serialization::XmlElementAttributes::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

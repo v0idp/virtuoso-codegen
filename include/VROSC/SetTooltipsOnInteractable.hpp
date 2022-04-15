@@ -53,29 +53,27 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _tooltipDatas
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
-    // private System.Void Start()
-    // Offset: 0x1925C94
-    void Start();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
     // public System.Void .ctor()
     // Offset: 0x1925CF4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetTooltipsOnInteractable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetTooltipsOnInteractable::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SetTooltipsOnInteractable*, creationType>()));
     }
+    // private System.Void Start()
+    // Offset: 0x1925C94
+    void Start();
   }; // VROSC.SetTooltipsOnInteractable
   #pragma pack(pop)
   static check_size<sizeof(SetTooltipsOnInteractable), 24 + sizeof(::System::Collections::Generic::List_1<::VROSC::TooltipData*>*)> __VROSC_SetTooltipsOnInteractableSizeCheck;
   static_assert(sizeof(SetTooltipsOnInteractable) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SetTooltipsOnInteractable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SetTooltipsOnInteractable::Start
 // Il2CppName: Start
 template<>
@@ -84,7 +82,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SetTooltipsOnInteractable*), "Start", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::SetTooltipsOnInteractable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

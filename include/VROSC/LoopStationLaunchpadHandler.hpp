@@ -90,18 +90,25 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LaunchpadSpawner _launchpadSpawner
-    [[deprecated]] ::VROSC::LaunchpadSpawner*& dyn__launchpadSpawner();
+    [[deprecated("Use field access instead!")]] ::VROSC::LaunchpadSpawner*& dyn__launchpadSpawner();
     // Get instance field reference: private VROSC.LoopPlayButton _playButton
-    [[deprecated]] ::VROSC::LoopPlayButton*& dyn__playButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlayButton*& dyn__playButton();
     // Get instance field reference: private VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // Get instance field reference: private System.Boolean _isGroup
-    [[deprecated]] bool& dyn__isGroup();
+    [[deprecated("Use field access instead!")]] bool& dyn__isGroup();
     // Get instance field reference: private VROSC.LoopPlaybackConfig _config
-    [[deprecated]] ::VROSC::LoopPlaybackConfig*& dyn__config();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfig*& dyn__config();
     // public VROSC.LaunchpadSpawner get_LaunchpadSpawner()
     // Offset: 0x1972B6C
     ::VROSC::LaunchpadSpawner* get_LaunchpadSpawner();
+    // public System.Void .ctor()
+    // Offset: 0x1973138
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationLaunchpadHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationLaunchpadHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationLaunchpadHandler*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x1972B74
     void Awake();
@@ -135,19 +142,6 @@ namespace VROSC {
     // private System.Void LaunchPadHit(VROSC.Launchpad launchpad)
     // Offset: 0x197311C
     void LaunchPadHit(::VROSC::Launchpad* launchpad);
-    // public System.Void .ctor()
-    // Offset: 0x1973138
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationLaunchpadHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationLaunchpadHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationLaunchpadHandler*, creationType>()));
-    }
   }; // VROSC.LoopStationLaunchpadHandler
   #pragma pack(pop)
   static check_size<sizeof(LoopStationLaunchpadHandler), 56 + sizeof(::VROSC::LoopPlaybackConfig*)> __VROSC_LoopStationLaunchpadHandlerSizeCheck;
@@ -162,6 +156,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::La
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationLaunchpadHandler*), "get_LaunchpadSpawner", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStationLaunchpadHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationLaunchpadHandler::Awake
 // Il2CppName: Awake
 template<>
@@ -264,7 +262,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationLaunchpadHandler*), "LaunchPadHit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{launchpad});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationLaunchpadHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -59,11 +59,11 @@ namespace AudioHelm {
     static_assert(sizeof(double) == 0x8);
     public:
     // Get instance field reference: public System.Int32 note
-    [[deprecated]] int& dyn_note();
+    [[deprecated("Use field access instead!")]] int& dyn_note();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.AudioSource> audioSources
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::AudioSource*>*& dyn_audioSources();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::AudioSource*>*& dyn_audioSources();
     // Get instance field reference: public System.Double startTime
-    [[deprecated]] double& dyn_startTime();
+    [[deprecated("Use field access instead!")]] double& dyn_startTime();
     // public System.Void .ctor(System.Int32 n, System.Collections.Generic.List`1<UnityEngine.AudioSource> sources, System.Double start)
     // Offset: 0x8D0684
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

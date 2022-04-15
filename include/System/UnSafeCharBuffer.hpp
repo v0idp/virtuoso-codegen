@@ -52,11 +52,11 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Char* m_buffer
-    [[deprecated]] ::Il2CppChar*& dyn_m_buffer();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_m_buffer();
     // Get instance field reference: private System.Int32 m_totalSize
-    [[deprecated]] int& dyn_m_totalSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_totalSize();
     // Get instance field reference: private System.Int32 m_length
-    [[deprecated]] int& dyn_m_length();
+    [[deprecated("Use field access instead!")]] int& dyn_m_length();
     // public System.Void .ctor(System.Char* buffer, System.Int32 bufferSize)
     // Offset: 0x1204468
     UnSafeCharBuffer(::Il2CppChar* buffer, int bufferSize);

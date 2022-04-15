@@ -40,12 +40,9 @@ namespace Il2CppInspector::DLL {
       return Token;
     }
     // Get instance field reference: public System.String Token
-    [[deprecated]] ::StringW& dyn_Token();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Token();
     // public System.Void .ctor()
     // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TokenAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Il2CppInspector::DLL::TokenAttribute::.ctor");

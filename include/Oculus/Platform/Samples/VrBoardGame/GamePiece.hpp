@@ -88,7 +88,7 @@ namespace Oculus::Platform::Samples::VrBoardGame {
       // Set static field: static public Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece PowerBall
       static void _set_PowerBall(::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece
     #pragma pack(pop)
     static check_size<sizeof(GamePiece::Piece), 0 + sizeof(int)> __Oculus_Platform_Samples_VrBoardGame_GamePiece_PieceSizeCheck;
@@ -130,15 +130,15 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece m_type
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece& dyn_m_type();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece& dyn_m_type();
     // Get instance field reference: private UnityEngine.GameObject m_prefabA
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_prefabA();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_prefabA();
     // Get instance field reference: private UnityEngine.GameObject m_prefabB
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_prefabB();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_prefabB();
     // Get instance field reference: private UnityEngine.GameObject m_prefabPower
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_prefabPower();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_prefabPower();
     // Get instance field reference: private Oculus.Platform.Samples.VrBoardGame.BoardPosition m_position
-    [[deprecated]] ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_position();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrBoardGame::BoardPosition*& dyn_m_position();
     // public Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece get_Type()
     // Offset: 0x930DFC
     ::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece get_Type();
@@ -151,22 +151,16 @@ namespace Oculus::Platform::Samples::VrBoardGame {
     // public UnityEngine.GameObject get_Prefab()
     // Offset: 0x930B50
     ::UnityEngine::GameObject* get_Prefab();
-    // public UnityEngine.GameObject PrefabFor(Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece p)
-    // Offset: 0x930C58
-    ::UnityEngine::GameObject* PrefabFor(::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece p);
     // public System.Void .ctor()
     // Offset: 0x930E14
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GamePiece* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrBoardGame::GamePiece::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GamePiece*, creationType>()));
     }
+    // public UnityEngine.GameObject PrefabFor(Oculus.Platform.Samples.VrBoardGame.GamePiece/Oculus.Platform.Samples.VrBoardGame.Piece p)
+    // Offset: 0x930C58
+    ::UnityEngine::GameObject* PrefabFor(::Oculus::Platform::Samples::VrBoardGame::GamePiece::Piece p);
   }; // Oculus.Platform.Samples.VrBoardGame.GamePiece
   #pragma pack(pop)
   static check_size<sizeof(GamePiece), 56 + sizeof(::Oculus::Platform::Samples::VrBoardGame::BoardPosition*)> __Oculus_Platform_Samples_VrBoardGame_GamePieceSizeCheck;
@@ -208,6 +202,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::GamePiece*), "get_Prefab", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GamePiece::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GamePiece::PrefabFor
 // Il2CppName: PrefabFor
 template<>
@@ -217,7 +215,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrBoardGame::GamePiece*), "PrefabFor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrBoardGame::GamePiece::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

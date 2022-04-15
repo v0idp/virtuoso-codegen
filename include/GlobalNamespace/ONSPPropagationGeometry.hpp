@@ -97,9 +97,9 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.MeshFilter meshFilter
-      [[deprecated]] ::UnityEngine::MeshFilter*& dyn_meshFilter();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn_meshFilter();
       // Get instance field reference: public ONSPPropagationMaterial[] materials
-      [[deprecated]] ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
     }; // ONSPPropagationGeometry/MeshMaterial
     #pragma pack(pop)
     static check_size<sizeof(ONSPPropagationGeometry::MeshMaterial), 8 + sizeof(::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>)> __GlobalNamespace_ONSPPropagationGeometry_MeshMaterialSizeCheck;
@@ -138,11 +138,11 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Terrain terrain
-      [[deprecated]] ::UnityEngine::Terrain*& dyn_terrain();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Terrain*& dyn_terrain();
       // Get instance field reference: public ONSPPropagationMaterial[] materials
-      [[deprecated]] ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ONSPPropagationMaterial*>& dyn_materials();
       // Get instance field reference: public UnityEngine.Mesh[] treePrototypeMeshes
-      [[deprecated]] ::ArrayW<::UnityEngine::Mesh*>& dyn_treePrototypeMeshes();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Mesh*>& dyn_treePrototypeMeshes();
     }; // ONSPPropagationGeometry/TerrainMaterial
     #pragma pack(pop)
     static check_size<sizeof(ONSPPropagationGeometry::TerrainMaterial), 16 + sizeof(::ArrayW<::UnityEngine::Mesh*>)> __GlobalNamespace_ONSPPropagationGeometry_TerrainMaterialSizeCheck;
@@ -196,19 +196,29 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 terrainDecimation
     static void _set_terrainDecimation(int value);
     // Get instance field reference: public System.String filePathRelative
-    [[deprecated]] ::StringW& dyn_filePathRelative();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_filePathRelative();
     // Get instance field reference: public System.Boolean fileEnabled
-    [[deprecated]] bool& dyn_fileEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_fileEnabled();
     // Get instance field reference: public System.Boolean includeChildMeshes
-    [[deprecated]] bool& dyn_includeChildMeshes();
+    [[deprecated("Use field access instead!")]] bool& dyn_includeChildMeshes();
     // Get instance field reference: private System.IntPtr geometryHandle
-    [[deprecated]] ::System::IntPtr& dyn_geometryHandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_geometryHandle();
     // static public System.String get_GeometryAssetPath()
     // Offset: 0x1760740
     static ::StringW get_GeometryAssetPath();
     // public System.String get_filePath()
     // Offset: 0x17607D4
     ::StringW get_filePath();
+    // public System.Void .ctor()
+    // Offset: 0x176402C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ONSPPropagationGeometry* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationGeometry::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagationGeometry*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x1764098
+    static void _cctor();
     // static private System.String GetPath(UnityEngine.Transform current)
     // Offset: 0x1760854
     static ::StringW GetPath(::UnityEngine::Transform* current);
@@ -248,24 +258,6 @@ namespace GlobalNamespace {
     // public System.Boolean WriteToObj()
     // Offset: 0x1763B94
     bool WriteToObj();
-    // public System.Void .ctor()
-    // Offset: 0x176402C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ONSPPropagationGeometry* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationGeometry::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagationGeometry*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x1764098
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // ONSPPropagationGeometry
   #pragma pack(pop)
   static check_size<sizeof(ONSPPropagationGeometry), 40 + sizeof(::System::IntPtr)> __GlobalNamespace_ONSPPropagationGeometrySizeCheck;
@@ -290,6 +282,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (GlobalNamespace::ONSPPropagationGeometry::*)()>(&GlobalNamespace::ONSPPropagationGeometry::get_filePath)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationGeometry*), "get_filePath", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationGeometry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationGeometry::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPPropagationGeometry::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationGeometry*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationGeometry::GetPath
@@ -426,17 +430,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (GlobalNamespace::ONSPPropagationGeometry::*)()>(&GlobalNamespace::ONSPPropagationGeometry::WriteToObj)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationGeometry*), "WriteToObj", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationGeometry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationGeometry::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::ONSPPropagationGeometry::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationGeometry*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

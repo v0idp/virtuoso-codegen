@@ -53,13 +53,11 @@ namespace AudioHelm {
     static_assert(sizeof(::System::Collections::Generic::List_1<::AudioHelm::Note*>*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // Get instance field reference: public System.Collections.Generic.List`1<AudioHelm.Note> notes
-    [[deprecated]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AudioHelm::Note*>*& dyn_notes();
     // public System.Void .ctor()
     // Offset: 0x1963078
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MidiFile::MidiData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::MidiFile::MidiData::.ctor");

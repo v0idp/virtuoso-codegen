@@ -380,21 +380,21 @@ namespace System::Threading::Tasks {
     // Set static field: static private readonly System.Predicate`1<System.Object> s_IsTaskContinuationNullPredicate
     static void _set_s_IsTaskContinuationNullPredicate(::System::Predicate_1<::Il2CppObject*>* value);
     // Get instance field reference: private System.Int32 m_taskId
-    [[deprecated]] int& dyn_m_taskId();
+    [[deprecated("Use field access instead!")]] int& dyn_m_taskId();
     // Get instance field reference: System.Object m_action
-    [[deprecated]] ::Il2CppObject*& dyn_m_action();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_action();
     // Get instance field reference: System.Object m_stateObject
-    [[deprecated]] ::Il2CppObject*& dyn_m_stateObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_stateObject();
     // Get instance field reference: System.Threading.Tasks.TaskScheduler m_taskScheduler
-    [[deprecated]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_taskScheduler();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_taskScheduler();
     // Get instance field reference: readonly System.Threading.Tasks.Task m_parent
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_parent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_parent();
     // Get instance field reference: System.Int32 m_stateFlags
-    [[deprecated]] int& dyn_m_stateFlags();
+    [[deprecated("Use field access instead!")]] int& dyn_m_stateFlags();
     // Get instance field reference: private System.Object m_continuationObject
-    [[deprecated]] ::Il2CppObject*& dyn_m_continuationObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_continuationObject();
     // Get instance field reference: System.Threading.Tasks.Task/System.Threading.Tasks.ContingentProperties m_contingentProperties
-    [[deprecated]] ::System::Threading::Tasks::Task::ContingentProperties*& dyn_m_contingentProperties();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task::ContingentProperties*& dyn_m_contingentProperties();
     // System.Threading.Tasks.TaskCreationOptions get_Options()
     // Offset: 0x126D640
     ::System::Threading::Tasks::TaskCreationOptions get_Options();

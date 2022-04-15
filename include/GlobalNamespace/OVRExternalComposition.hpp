@@ -186,45 +186,45 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.GameObject previousMainCameraObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_previousMainCameraObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_previousMainCameraObject();
     // Get instance field reference: public UnityEngine.GameObject foregroundCameraGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_foregroundCameraGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_foregroundCameraGameObject();
     // Get instance field reference: public UnityEngine.Camera foregroundCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_foregroundCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_foregroundCamera();
     // Get instance field reference: public UnityEngine.GameObject backgroundCameraGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_backgroundCameraGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_backgroundCameraGameObject();
     // Get instance field reference: public UnityEngine.Camera backgroundCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_backgroundCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_backgroundCamera();
     // Get instance field reference: private System.Boolean skipFrame
-    [[deprecated]] bool& dyn_skipFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn_skipFrame();
     // Get instance field reference: private System.Single fpsThreshold
-    [[deprecated]] float& dyn_fpsThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_fpsThreshold();
     // Get instance field reference: private System.Boolean isFrameSkipped
-    [[deprecated]] bool& dyn_isFrameSkipped();
+    [[deprecated("Use field access instead!")]] bool& dyn_isFrameSkipped();
     // Get instance field reference: public System.Boolean renderCombinedFrame
-    [[deprecated]] bool& dyn_renderCombinedFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn_renderCombinedFrame();
     // Get instance field reference: public UnityEngine.AudioListener audioListener
-    [[deprecated]] ::UnityEngine::AudioListener*& dyn_audioListener();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioListener*& dyn_audioListener();
     // Get instance field reference: public OVRMRAudioFilter audioFilter
-    [[deprecated]] ::GlobalNamespace::OVRMRAudioFilter*& dyn_audioFilter();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRMRAudioFilter*& dyn_audioFilter();
     // Get instance field reference: public UnityEngine.RenderTexture[] mrcRenderTextureArray
-    [[deprecated]] ::ArrayW<::UnityEngine::RenderTexture*>& dyn_mrcRenderTextureArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RenderTexture*>& dyn_mrcRenderTextureArray();
     // Get instance field reference: public System.Int32 frameIndex
-    [[deprecated]] int& dyn_frameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_frameIndex();
     // Get instance field reference: public System.Int32 lastMrcEncodeFrameSyncId
-    [[deprecated]] int& dyn_lastMrcEncodeFrameSyncId();
+    [[deprecated("Use field access instead!")]] int& dyn_lastMrcEncodeFrameSyncId();
     // Get instance field reference: public UnityEngine.RenderTexture[] mrcForegroundRenderTextureArray
-    [[deprecated]] ::ArrayW<::UnityEngine::RenderTexture*>& dyn_mrcForegroundRenderTextureArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RenderTexture*>& dyn_mrcForegroundRenderTextureArray();
     // Get instance field reference: public System.Double[] cameraPoseTimeArray
-    [[deprecated]] ::ArrayW<double>& dyn_cameraPoseTimeArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<double>& dyn_cameraPoseTimeArray();
     // Get instance field reference: private System.Single[] cachedAudioDataArray
-    [[deprecated]] ::ArrayW<float>& dyn_cachedAudioDataArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_cachedAudioDataArray();
     // Get instance field reference: private readonly System.Object audioDataLock
-    [[deprecated]] ::Il2CppObject*& dyn_audioDataLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_audioDataLock();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Single> cachedAudioData
-    [[deprecated]] ::System::Collections::Generic::List_1<float>*& dyn_cachedAudioData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<float>*& dyn_cachedAudioData();
     // Get instance field reference: private System.Int32 cachedChannels
-    [[deprecated]] int& dyn_cachedChannels();
+    [[deprecated("Use field access instead!")]] int& dyn_cachedChannels();
     // private System.Void RefreshCameraObjects(UnityEngine.GameObject parentObject, UnityEngine.Camera mainCamera, OVRMixedRealityCaptureConfiguration configuration)
     // Offset: 0xFB3478
     void RefreshCameraObjects(::UnityEngine::GameObject* parentObject, ::UnityEngine::Camera* mainCamera, ::GlobalNamespace::OVRMixedRealityCaptureConfiguration* configuration);

@@ -39,7 +39,7 @@ namespace System::Data {
       return targetTable;
     }
     // Get instance field reference: private System.Data.DataTable _targetTable
-    [[deprecated]] ::System::Data::DataTable*& dyn__targetTable();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__targetTable();
     // System.Void Prepare(System.Data.DataTable table)
     // Offset: 0x18CE0D4
     void Prepare(::System::Data::DataTable* table);

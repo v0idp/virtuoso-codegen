@@ -91,7 +91,7 @@ namespace VROSC::AudioReactive {
       // Set static field: static public VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect/VROSC.AudioReactive.EffectType Vector
       static void _set_Vector(::VROSC::AudioReactive::ShaderEffectData::Effect::EffectType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect/VROSC.AudioReactive.EffectType
     #pragma pack(pop)
     static check_size<sizeof(ShaderEffectData::Effect::EffectType), 0 + sizeof(int)> __VROSC_AudioReactive_ShaderEffectData_Effect_EffectTypeSizeCheck;
@@ -137,17 +137,24 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect/VROSC.AudioReactive.EffectType _type
-    [[deprecated]] ::VROSC::AudioReactive::ShaderEffectData::Effect::EffectType& dyn__type();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::ShaderEffectData::Effect::EffectType& dyn__type();
     // Get instance field reference: private System.String _propertyName
-    [[deprecated]] ::StringW& dyn__propertyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__propertyName();
     // Get instance field reference: private VROSC.MinMaxFloat _floatValue
-    [[deprecated]] ::VROSC::MinMaxFloat*& dyn__floatValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxFloat*& dyn__floatValue();
     // Get instance field reference: private UnityEngine.Gradient _colorValue
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__colorValue();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__colorValue();
     // Get instance field reference: private VROSC.MinMaxVector4 _vectorValue
-    [[deprecated]] ::VROSC::MinMaxVector4*& dyn__vectorValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxVector4*& dyn__vectorValue();
     // Get instance field reference: private UnityEngine.AnimationCurve _curve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__curve();
+    // public System.Void .ctor()
+    // Offset: 0x8D9ECC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ShaderEffectData::Effect* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ShaderEffectData::Effect::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ShaderEffectData::Effect*, creationType>()));
+    }
     // public System.Void SetShaderEffects(UnityEngine.MaterialPropertyBlock block, UnityEngine.Renderer renderer, System.Single value)
     // Offset: 0x8D9D2C
     void SetShaderEffects(::UnityEngine::MaterialPropertyBlock* block, ::UnityEngine::Renderer* renderer, float value);
@@ -160,15 +167,6 @@ namespace VROSC::AudioReactive {
     // private System.Void SetVectorValue(UnityEngine.MaterialPropertyBlock block, UnityEngine.Renderer renderer, System.Single value)
     // Offset: 0x8D9E4C
     void SetVectorValue(::UnityEngine::MaterialPropertyBlock* block, ::UnityEngine::Renderer* renderer, float value);
-    // public System.Void .ctor()
-    // Offset: 0x8D9ECC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ShaderEffectData::Effect* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ShaderEffectData::Effect::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ShaderEffectData::Effect*, creationType>()));
-    }
   }; // VROSC.AudioReactive.ShaderEffectData/VROSC.AudioReactive.Effect
   #pragma pack(pop)
   static check_size<sizeof(ShaderEffectData::Effect), 56 + sizeof(::UnityEngine::AnimationCurve*)> __VROSC_AudioReactive_ShaderEffectData_EffectSizeCheck;
@@ -177,6 +175,10 @@ namespace VROSC::AudioReactive {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::VROSC::AudioReactive::ShaderEffectData::Effect::EffectType, "VROSC.AudioReactive", "ShaderEffectData/Effect/EffectType");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AudioReactive::ShaderEffectData::Effect::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AudioReactive::ShaderEffectData::Effect::SetShaderEffects
 // Il2CppName: SetShaderEffects
 template<>
@@ -221,7 +223,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioReactive::ShaderEffectData::Effect*), "SetVectorValue", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{block, renderer, value});
   }
 };
-// Writing MetadataGetter for method: VROSC::AudioReactive::ShaderEffectData::Effect::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

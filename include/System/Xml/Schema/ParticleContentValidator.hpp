@@ -112,19 +112,19 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.Schema.SymbolsDictionary symbols
-    [[deprecated]] ::System::Xml::Schema::SymbolsDictionary*& dyn_symbols();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SymbolsDictionary*& dyn_symbols();
     // Get instance field reference: private System.Xml.Schema.Positions positions
-    [[deprecated]] ::System::Xml::Schema::Positions*& dyn_positions();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::Positions*& dyn_positions();
     // Get instance field reference: private System.Collections.Stack stack
-    [[deprecated]] ::System::Collections::Stack*& dyn_stack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Stack*& dyn_stack();
     // Get instance field reference: private System.Xml.Schema.SyntaxTreeNode contentNode
-    [[deprecated]] ::System::Xml::Schema::SyntaxTreeNode*& dyn_contentNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SyntaxTreeNode*& dyn_contentNode();
     // Get instance field reference: private System.Boolean isPartial
-    [[deprecated]] bool& dyn_isPartial();
+    [[deprecated("Use field access instead!")]] bool& dyn_isPartial();
     // Get instance field reference: private System.Int32 minMaxNodesCount
-    [[deprecated]] int& dyn_minMaxNodesCount();
+    [[deprecated("Use field access instead!")]] int& dyn_minMaxNodesCount();
     // Get instance field reference: private System.Boolean enableUpaCheck
-    [[deprecated]] bool& dyn_enableUpaCheck();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableUpaCheck();
     // public System.Void .ctor(System.Xml.Schema.XmlSchemaContentType contentType, System.Boolean enableUpaCheck)
     // Offset: 0xAFA804
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

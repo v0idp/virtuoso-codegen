@@ -101,23 +101,23 @@ namespace System::Collections {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Collections.SortedList sortedList
-    [[deprecated]] ::System::Collections::SortedList*& dyn_sortedList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn_sortedList();
     // Get instance field reference: private System.Object key
-    [[deprecated]] ::Il2CppObject*& dyn_key();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_key();
     // Get instance field reference: private System.Object value
-    [[deprecated]] ::Il2CppObject*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_value();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // Get instance field reference: private System.Int32 startIndex
-    [[deprecated]] int& dyn_startIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_startIndex();
     // Get instance field reference: private System.Int32 endIndex
-    [[deprecated]] int& dyn_endIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_endIndex();
     // Get instance field reference: private System.Int32 version
-    [[deprecated]] int& dyn_version();
+    [[deprecated("Use field access instead!")]] int& dyn_version();
     // Get instance field reference: private System.Boolean current
-    [[deprecated]] bool& dyn_current();
+    [[deprecated("Use field access instead!")]] bool& dyn_current();
     // Get instance field reference: private System.Int32 getObjectRetType
-    [[deprecated]] int& dyn_getObjectRetType();
+    [[deprecated("Use field access instead!")]] int& dyn_getObjectRetType();
     // public System.Object get_Key()
     // Offset: 0xE59B80
     ::Il2CppObject* get_Key();

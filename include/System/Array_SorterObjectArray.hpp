@@ -56,11 +56,11 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Object[] keys
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_keys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_keys();
     // Get instance field reference: private System.Object[] items
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_items();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_items();
     // Get instance field reference: private System.Collections.IComparer comparer
-    [[deprecated]] ::System::Collections::IComparer*& dyn_comparer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IComparer*& dyn_comparer();
     // System.Void .ctor(System.Object[] keys, System.Object[] items, System.Collections.IComparer comparer)
     // Offset: 0x13A0A9C
     // ABORTED: conflicts with another method.  SorterObjectArray(::ArrayW<::Il2CppObject*> keys, ::ArrayW<::Il2CppObject*> items, ::System::Collections::IComparer* comparer);

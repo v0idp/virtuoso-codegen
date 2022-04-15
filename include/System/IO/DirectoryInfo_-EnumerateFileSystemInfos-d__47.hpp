@@ -144,31 +144,31 @@ namespace System::IO {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::IO::FileSystemInfo*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.IO.FileSystemInfo <>2__current
-    [[deprecated]] ::System::IO::FileSystemInfo*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileSystemInfo*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: private System.String basePath
-    [[deprecated]] ::StringW& dyn_basePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_basePath();
     // Get instance field reference: public System.String <>3__basePath
-    [[deprecated]] ::StringW& dyn_$$3__basePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$$3__basePath();
     // Get instance field reference: private System.String searchPattern
-    [[deprecated]] ::StringW& dyn_searchPattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_searchPattern();
     // Get instance field reference: public System.String <>3__searchPattern
-    [[deprecated]] ::StringW& dyn_$$3__searchPattern();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$$3__searchPattern();
     // Get instance field reference: private System.String <fullPath>5__1
-    [[deprecated]] ::StringW& dyn_$fullPath$5__1();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$fullPath$5__1();
     // Get instance field reference: private System.IO.FileAttributes <attrs>5__2
-    [[deprecated]] ::System::IO::FileAttributes& dyn_$attrs$5__2();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileAttributes& dyn_$attrs$5__2();
     // Get instance field reference: private System.IO.SearchOption searchOption
-    [[deprecated]] ::System::IO::SearchOption& dyn_searchOption();
+    [[deprecated("Use field access instead!")]] ::System::IO::SearchOption& dyn_searchOption();
     // Get instance field reference: public System.IO.SearchOption <>3__searchOption
-    [[deprecated]] ::System::IO::SearchOption& dyn_$$3__searchOption();
+    [[deprecated("Use field access instead!")]] ::System::IO::SearchOption& dyn_$$3__searchOption();
     // Get instance field reference: private Microsoft.Win32.SafeHandles.SafeFindHandle <findHandle>5__3
-    [[deprecated]] ::Microsoft::Win32::SafeHandles::SafeFindHandle*& dyn_$findHandle$5__3();
+    [[deprecated("Use field access instead!")]] ::Microsoft::Win32::SafeHandles::SafeFindHandle*& dyn_$findHandle$5__3();
     // Get instance field reference: private System.Collections.Generic.IEnumerator`1<System.IO.FileSystemInfo> <>7__wrap1
-    [[deprecated]] ::System::Collections::Generic::IEnumerator_1<::System::IO::FileSystemInfo*>*& dyn_$$7__wrap1();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IEnumerator_1<::System::IO::FileSystemInfo*>*& dyn_$$7__wrap1();
     // private System.IO.FileSystemInfo System.Collections.Generic.IEnumerator<System.IO.FileSystemInfo>.get_Current()
     // Offset: 0xE4EEF8
     ::System::IO::FileSystemInfo* System_Collections_Generic_IEnumerator$System_IO_FileSystemInfo$_get_Current();

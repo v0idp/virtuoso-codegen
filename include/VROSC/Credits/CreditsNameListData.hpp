@@ -61,11 +61,11 @@ namespace VROSC::Credits {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _header
-    [[deprecated]] ::StringW& dyn__header();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__header();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.Credits.CreditsNameData> _names
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameData*>*& dyn__names();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameData*>*& dyn__names();
     // Get instance field reference: private System.String _footer
-    [[deprecated]] ::StringW& dyn__footer();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__footer();
     // public System.String get_Header()
     // Offset: 0x8DFB90
     ::StringW get_Header();
@@ -77,8 +77,6 @@ namespace VROSC::Credits {
     ::System::Collections::Generic::List_1<::VROSC::Credits::CreditsNameData*>* get_Names();
     // public System.Void .ctor()
     // Offset: 0x8DFBA8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreditsNameListData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsNameListData::.ctor");

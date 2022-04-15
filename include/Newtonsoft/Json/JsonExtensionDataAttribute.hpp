@@ -40,9 +40,9 @@ namespace Newtonsoft::Json {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean <WriteData>k__BackingField
-    [[deprecated]] bool& dyn_$WriteData$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$WriteData$k__BackingField();
     // Get instance field reference: private System.Boolean <ReadData>k__BackingField
-    [[deprecated]] bool& dyn_$ReadData$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ReadData$k__BackingField();
     // public System.Boolean get_WriteData()
     // Offset: 0xEF5F70
     bool get_WriteData();

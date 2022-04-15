@@ -75,7 +75,7 @@ namespace UnityEngine::Timeline {
       // Set static field: static public UnityEngine.Timeline.TimeFieldAttribute/UnityEngine.Timeline.UseEditMode ApplyEditMode
       static void _set_ApplyEditMode(::UnityEngine::Timeline::TimeFieldAttribute::UseEditMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Timeline.TimeFieldAttribute/UnityEngine.Timeline.UseEditMode
     #pragma pack(pop)
     static check_size<sizeof(TimeFieldAttribute::UseEditMode), 0 + sizeof(int)> __UnityEngine_Timeline_TimeFieldAttribute_UseEditModeSizeCheck;
@@ -93,7 +93,7 @@ namespace UnityEngine::Timeline {
       return useEditMode;
     }
     // Get instance field reference: private readonly UnityEngine.Timeline.TimeFieldAttribute/UnityEngine.Timeline.UseEditMode <useEditMode>k__BackingField
-    [[deprecated]] ::UnityEngine::Timeline::TimeFieldAttribute::UseEditMode& dyn_$useEditMode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Timeline::TimeFieldAttribute::UseEditMode& dyn_$useEditMode$k__BackingField();
     // public UnityEngine.Timeline.TimeFieldAttribute/UnityEngine.Timeline.UseEditMode get_useEditMode()
     // Offset: 0xC7C8B8
     ::UnityEngine::Timeline::TimeFieldAttribute::UseEditMode get_useEditMode();

@@ -79,13 +79,13 @@ namespace VROSC {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private VROSC.NoteBoardNote _noteBoardNote
-    [[deprecated]] ::VROSC::NoteBoardNote*& dyn__noteBoardNote();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardNote*& dyn__noteBoardNote();
     // Get instance field reference: private UnityEngine.Vector3 _invertedInfluence
-    [[deprecated]] ::UnityEngine::Vector3& dyn__invertedInfluence();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__invertedInfluence();
     // Get instance field reference: private System.Single _fullInfluence
-    [[deprecated]] float& dyn__fullInfluence();
+    [[deprecated("Use field access instead!")]] float& dyn__fullInfluence();
     // Get instance field reference: private System.Single _hoverInfluence
-    [[deprecated]] float& dyn__hoverInfluence();
+    [[deprecated("Use field access instead!")]] float& dyn__hoverInfluence();
     // public System.Void .ctor(VROSC.NoteBoardNote noteBoardNote, UnityEngine.Vector3 invertedInfluence)
     // Offset: 0xA291E4
     TransmissionData(::VROSC::NoteBoardNote* noteBoardNote, ::UnityEngine::Vector3 invertedInfluence);

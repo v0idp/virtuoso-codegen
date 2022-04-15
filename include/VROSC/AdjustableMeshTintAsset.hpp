@@ -73,18 +73,13 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.AdjustableMeshTintBehaviour template
-    [[deprecated]] ::VROSC::AdjustableMeshTintBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMeshTintBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.AdjustableMesh> _mesh
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::AdjustableMesh*>& dyn__mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::AdjustableMesh*>& dyn__mesh();
     // Get instance field reference: public VROSC.AnimatedAppear/VROSC.Mode mode
-    [[deprecated]] ::VROSC::AnimatedAppear::Mode& dyn_mode();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppear::Mode& dyn_mode();
     // public System.Void .ctor()
     // Offset: 0x9689C0
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AdjustableMeshTintAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMeshTintAsset::.ctor");

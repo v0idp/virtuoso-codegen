@@ -127,31 +127,31 @@ namespace System::Xml::Schema {
     // Set static field: static private System.Int32[] Power10
     static void _set_Power10(::ArrayW<int> value);
     // Get instance field reference: public System.Xml.Schema.XsdDateTime/System.Xml.Schema.DateTimeTypeCode typeCode
-    [[deprecated]] ::System::Xml::Schema::XsdDateTime::DateTimeTypeCode& dyn_typeCode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XsdDateTime::DateTimeTypeCode& dyn_typeCode();
     // Get instance field reference: public System.Int32 year
-    [[deprecated]] int& dyn_year();
+    [[deprecated("Use field access instead!")]] int& dyn_year();
     // Get instance field reference: public System.Int32 month
-    [[deprecated]] int& dyn_month();
+    [[deprecated("Use field access instead!")]] int& dyn_month();
     // Get instance field reference: public System.Int32 day
-    [[deprecated]] int& dyn_day();
+    [[deprecated("Use field access instead!")]] int& dyn_day();
     // Get instance field reference: public System.Int32 hour
-    [[deprecated]] int& dyn_hour();
+    [[deprecated("Use field access instead!")]] int& dyn_hour();
     // Get instance field reference: public System.Int32 minute
-    [[deprecated]] int& dyn_minute();
+    [[deprecated("Use field access instead!")]] int& dyn_minute();
     // Get instance field reference: public System.Int32 second
-    [[deprecated]] int& dyn_second();
+    [[deprecated("Use field access instead!")]] int& dyn_second();
     // Get instance field reference: public System.Int32 fraction
-    [[deprecated]] int& dyn_fraction();
+    [[deprecated("Use field access instead!")]] int& dyn_fraction();
     // Get instance field reference: public System.Xml.Schema.XsdDateTime/System.Xml.Schema.XsdDateTimeKind kind
-    [[deprecated]] ::System::Xml::Schema::XsdDateTime::XsdDateTimeKind& dyn_kind();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XsdDateTime::XsdDateTimeKind& dyn_kind();
     // Get instance field reference: public System.Int32 zoneHour
-    [[deprecated]] int& dyn_zoneHour();
+    [[deprecated("Use field access instead!")]] int& dyn_zoneHour();
     // Get instance field reference: public System.Int32 zoneMinute
-    [[deprecated]] int& dyn_zoneMinute();
+    [[deprecated("Use field access instead!")]] int& dyn_zoneMinute();
     // Get instance field reference: private System.String text
-    [[deprecated]] ::StringW& dyn_text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_text();
     // Get instance field reference: private System.Int32 length
-    [[deprecated]] int& dyn_length();
+    [[deprecated("Use field access instead!")]] int& dyn_length();
     // static private System.Void .cctor()
     // Offset: 0xC27B9C
     static void _cctor();

@@ -79,17 +79,17 @@ namespace Newtonsoft::Json::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean <Traced>k__BackingField
-    [[deprecated]] bool& dyn_$Traced$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Traced$k__BackingField();
     // Get instance field reference: private readonly System.Exception <Error>k__BackingField
-    [[deprecated]] ::System::Exception*& dyn_$Error$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_$Error$k__BackingField();
     // Get instance field reference: private readonly System.Object <OriginalObject>k__BackingField
-    [[deprecated]] ::Il2CppObject*& dyn_$OriginalObject$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$OriginalObject$k__BackingField();
     // Get instance field reference: private readonly System.Object <Member>k__BackingField
-    [[deprecated]] ::Il2CppObject*& dyn_$Member$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$Member$k__BackingField();
     // Get instance field reference: private readonly System.String <Path>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Path$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Path$k__BackingField();
     // Get instance field reference: private System.Boolean <Handled>k__BackingField
-    [[deprecated]] bool& dyn_$Handled$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Handled$k__BackingField();
     // System.Boolean get_Traced()
     // Offset: 0xDCFD4C
     bool get_Traced();

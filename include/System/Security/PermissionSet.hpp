@@ -110,13 +110,13 @@ namespace System::Security {
     // Set static field: static private System.Object[] action
     static void _set_action(::ArrayW<::Il2CppObject*> value);
     // Get instance field reference: private System.Security.Permissions.PermissionState state
-    [[deprecated]] ::System::Security::Permissions::PermissionState& dyn_state();
+    [[deprecated("Use field access instead!")]] ::System::Security::Permissions::PermissionState& dyn_state();
     // Get instance field reference: private System.Collections.ArrayList list
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_list();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_list();
     // Get instance field reference: private System.Boolean _declsec
-    [[deprecated]] bool& dyn__declsec();
+    [[deprecated("Use field access instead!")]] bool& dyn__declsec();
     // Get instance field reference: private System.Boolean[] _ignored
-    [[deprecated]] ::ArrayW<bool>& dyn__ignored();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn__ignored();
     // public System.Int32 get_Count()
     // Offset: 0x14CF70C
     int get_Count();

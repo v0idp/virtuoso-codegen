@@ -100,21 +100,28 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRVoiceModContext[] contexts
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRVoiceModContext*>& dyn_contexts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRVoiceModContext*>& dyn_contexts();
     // Get instance field reference: public UnityEngine.Material material
-    [[deprecated]] ::UnityEngine::Material*& dyn_material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_material();
     // Get instance field reference: public UnityEngine.Transform[] xfrms
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_xfrms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn_xfrms();
     // Get instance field reference: public VoiceModEnableSwitch SwitchTarget
-    [[deprecated]] ::GlobalNamespace::VoiceModEnableSwitch*& dyn_SwitchTarget();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::VoiceModEnableSwitch*& dyn_SwitchTarget();
     // Get instance field reference: private System.Int32 targetSet
-    [[deprecated]] int& dyn_targetSet();
+    [[deprecated("Use field access instead!")]] int& dyn_targetSet();
     // Get instance field reference: private UnityEngine.Vector3 scale
-    [[deprecated]] ::UnityEngine::Vector3& dyn_scale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_scale();
     // Get instance field reference: private System.Single scaleMax
-    [[deprecated]] float& dyn_scaleMax();
+    [[deprecated("Use field access instead!")]] float& dyn_scaleMax();
     // Get instance field reference: private System.Int32 currentPreset
-    [[deprecated]] int& dyn_currentPreset();
+    [[deprecated("Use field access instead!")]] int& dyn_currentPreset();
+    // public System.Void .ctor()
+    // Offset: 0x1924734
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VoiceModDemo_Logic* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VoiceModDemo_Logic::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VoiceModDemo_Logic*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1923D40
     void Start();
@@ -130,25 +137,16 @@ namespace GlobalNamespace {
     // private System.Void UpdateModelScale()
     // Offset: 0x192418C
     void UpdateModelScale();
-    // public System.Void .ctor()
-    // Offset: 0x1924734
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VoiceModDemo_Logic* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VoiceModDemo_Logic::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VoiceModDemo_Logic*, creationType>()));
-    }
   }; // VoiceModDemo_Logic
   #pragma pack(pop)
   static check_size<sizeof(VoiceModDemo_Logic), 76 + sizeof(int)> __GlobalNamespace_VoiceModDemo_LogicSizeCheck;
   static_assert(sizeof(VoiceModDemo_Logic) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::VoiceModDemo_Logic::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::VoiceModDemo_Logic::Start
 // Il2CppName: Start
 template<>
@@ -190,7 +188,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::VoiceModDemo_Logic*), "UpdateModelScale", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::VoiceModDemo_Logic::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

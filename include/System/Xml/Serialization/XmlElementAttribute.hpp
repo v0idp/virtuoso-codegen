@@ -93,19 +93,19 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.String dataType
-    [[deprecated]] ::StringW& dyn_dataType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_dataType();
     // Get instance field reference: private System.String elementName
-    [[deprecated]] ::StringW& dyn_elementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_elementName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaForm form
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaForm& dyn_form();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.Boolean isNullable
-    [[deprecated]] bool& dyn_isNullable();
+    [[deprecated("Use field access instead!")]] bool& dyn_isNullable();
     // Get instance field reference: private System.Type type
-    [[deprecated]] ::System::Type*& dyn_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_type();
     // Get instance field reference: private System.Int32 order
-    [[deprecated]] int& dyn_order();
+    [[deprecated("Use field access instead!")]] int& dyn_order();
     // public System.String get_DataType()
     // Offset: 0x127D534
     ::StringW get_DataType();

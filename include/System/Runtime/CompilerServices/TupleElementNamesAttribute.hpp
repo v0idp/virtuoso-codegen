@@ -45,7 +45,7 @@ namespace System::Runtime::CompilerServices {
       return transformNames;
     }
     // Get instance field reference: private readonly System.String[] _transformNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn__transformNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__transformNames();
     // public System.Void .ctor(System.String[] transformNames)
     // Offset: 0x12AD520
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

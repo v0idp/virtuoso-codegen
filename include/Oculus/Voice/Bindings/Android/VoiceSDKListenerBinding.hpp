@@ -49,7 +49,7 @@ namespace Oculus::Voice::Bindings::Android {
       return voiceEvents;
     }
     // Get instance field reference: private Facebook.WitAi.Events.VoiceEvents voiceEvents
-    [[deprecated]] ::Facebook::WitAi::Events::VoiceEvents*& dyn_voiceEvents();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Events::VoiceEvents*& dyn_voiceEvents();
     // public Facebook.WitAi.Events.VoiceEvents get_VoiceEvents()
     // Offset: 0x18EA61C
     ::Facebook::WitAi::Events::VoiceEvents* get_VoiceEvents();

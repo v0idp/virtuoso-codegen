@@ -71,17 +71,17 @@ namespace OVR {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public OVR.SoundEmitter <>4__this
-    [[deprecated]] ::OVR::SoundEmitter*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundEmitter*& dyn_$$4__this();
     // Get instance field reference: public OVR.SoundEmitter other
-    [[deprecated]] ::OVR::SoundEmitter*& dyn_other();
+    [[deprecated("Use field access instead!")]] ::OVR::SoundEmitter*& dyn_other();
     // Get instance field reference: public System.Single fadeTime
-    [[deprecated]] float& dyn_fadeTime();
+    [[deprecated("Use field access instead!")]] float& dyn_fadeTime();
     // Get instance field reference: public System.Single toVolume
-    [[deprecated]] float& dyn_toVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_toVolume();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x18A5D6C
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

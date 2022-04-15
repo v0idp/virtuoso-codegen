@@ -54,7 +54,7 @@ namespace System::Runtime::Remoting::Lifetime {
       return nextSink;
     }
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageSink _nextSink
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__nextSink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__nextSink();
     // public System.Void .ctor(System.Runtime.Remoting.Messaging.IMessageSink nextSink)
     // Offset: 0x1077F44
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

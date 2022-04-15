@@ -54,11 +54,11 @@ namespace Mono::Security::Interface {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private Mono.Security.Interface.CipherSuiteCode <CipherSuiteCode>k__BackingField
-    [[deprecated]] ::Mono::Security::Interface::CipherSuiteCode& dyn_$CipherSuiteCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::CipherSuiteCode& dyn_$CipherSuiteCode$k__BackingField();
     // Get instance field reference: private Mono.Security.Interface.TlsProtocols <ProtocolVersion>k__BackingField
-    [[deprecated]] ::Mono::Security::Interface::TlsProtocols& dyn_$ProtocolVersion$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::TlsProtocols& dyn_$ProtocolVersion$k__BackingField();
     // Get instance field reference: private System.String <PeerDomainName>k__BackingField
-    [[deprecated]] ::StringW& dyn_$PeerDomainName$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$PeerDomainName$k__BackingField();
     // public Mono.Security.Interface.CipherSuiteCode get_CipherSuiteCode()
     // Offset: 0x163C9AC
     ::Mono::Security::Interface::CipherSuiteCode get_CipherSuiteCode();
@@ -76,8 +76,6 @@ namespace Mono::Security::Interface {
     void set_PeerDomainName(::StringW value);
     // public System.Void .ctor()
     // Offset: 0x163CA8C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MonoTlsConnectionInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::Interface::MonoTlsConnectionInfo::.ctor");

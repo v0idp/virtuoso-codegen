@@ -52,7 +52,14 @@ namespace Mono::Security::X509 {
     // Deleting conversion operator: operator ::System::Collections::ArrayList*
     constexpr operator ::System::Collections::ArrayList*() const noexcept = delete;
     // Get instance field reference: private System.Boolean readOnly
-    [[deprecated]] bool& dyn_readOnly();
+    [[deprecated("Use field access instead!")]] bool& dyn_readOnly();
+    // public System.Void .ctor()
+    // Offset: 0x164952C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509ExtensionCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::X509ExtensionCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509ExtensionCollection*, creationType>()));
+    }
     // public System.Void .ctor(Mono.Security.ASN1 asn1)
     // Offset: 0x16484D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -63,22 +70,16 @@ namespace Mono::Security::X509 {
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
     // Offset: 0x1649534
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
-    // public System.Void .ctor()
-    // Offset: 0x164952C
-    // Implemented from: System.Collections.CollectionBase
-    // Base method: System.Void CollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509ExtensionCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::X509ExtensionCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509ExtensionCollection*, creationType>()));
-    }
   }; // Mono.Security.X509.X509ExtensionCollection
   #pragma pack(pop)
   static check_size<sizeof(X509ExtensionCollection), 24 + sizeof(bool)> __Mono_Security_X509_X509ExtensionCollectionSizeCheck;
   static_assert(sizeof(X509ExtensionCollection) == 0x19);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Mono::Security::X509::X509ExtensionCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::X509::X509ExtensionCollection::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -91,7 +92,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::X509::X509ExtensionCollection*), "System.Collections.IEnumerable.GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::X509::X509ExtensionCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

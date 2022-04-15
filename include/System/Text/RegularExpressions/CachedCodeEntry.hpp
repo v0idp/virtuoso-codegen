@@ -105,23 +105,23 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::System::Text::RegularExpressions::SharedReference*) == 0x8);
     public:
     // Get instance field reference: System.String _key
-    [[deprecated]] ::StringW& dyn__key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__key();
     // Get instance field reference: System.Text.RegularExpressions.RegexCode _code
-    [[deprecated]] ::System::Text::RegularExpressions::RegexCode*& dyn__code();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexCode*& dyn__code();
     // Get instance field reference: System.Collections.Hashtable _caps
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__caps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__caps();
     // Get instance field reference: System.Collections.Hashtable _capnames
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__capnames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__capnames();
     // Get instance field reference: System.String[] _capslist
-    [[deprecated]] ::ArrayW<::StringW>& dyn__capslist();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__capslist();
     // Get instance field reference: System.Int32 _capsize
-    [[deprecated]] int& dyn__capsize();
+    [[deprecated("Use field access instead!")]] int& dyn__capsize();
     // Get instance field reference: System.Text.RegularExpressions.RegexRunnerFactory _factory
-    [[deprecated]] ::System::Text::RegularExpressions::RegexRunnerFactory*& dyn__factory();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexRunnerFactory*& dyn__factory();
     // Get instance field reference: System.Text.RegularExpressions.ExclusiveReference _runnerref
-    [[deprecated]] ::System::Text::RegularExpressions::ExclusiveReference*& dyn__runnerref();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::ExclusiveReference*& dyn__runnerref();
     // Get instance field reference: System.Text.RegularExpressions.SharedReference _replref
-    [[deprecated]] ::System::Text::RegularExpressions::SharedReference*& dyn__replref();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::SharedReference*& dyn__replref();
     // System.Void .ctor(System.String key, System.Collections.Hashtable capnames, System.String[] capslist, System.Text.RegularExpressions.RegexCode code, System.Collections.Hashtable caps, System.Int32 capsize, System.Text.RegularExpressions.ExclusiveReference runner, System.Text.RegularExpressions.SharedReference repl)
     // Offset: 0x10E056C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

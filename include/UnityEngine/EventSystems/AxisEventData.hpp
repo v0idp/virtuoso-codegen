@@ -54,9 +54,9 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::EventSystems::MoveDirection) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Vector2 <moveVector>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$moveVector$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$moveVector$k__BackingField();
     // Get instance field reference: private UnityEngine.EventSystems.MoveDirection <moveDir>k__BackingField
-    [[deprecated]] ::UnityEngine::EventSystems::MoveDirection& dyn_$moveDir$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::MoveDirection& dyn_$moveDir$k__BackingField();
     // public UnityEngine.Vector2 get_moveVector()
     // Offset: 0xEAAF04
     ::UnityEngine::Vector2 get_moveVector();

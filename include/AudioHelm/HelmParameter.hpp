@@ -74,7 +74,7 @@ namespace AudioHelm {
       // Set static field: static public AudioHelm.HelmParameter/AudioHelm.ScaleType kByPercent
       static void _set_kByPercent(::AudioHelm::HelmParameter::ScaleType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // AudioHelm.HelmParameter/AudioHelm.ScaleType
     #pragma pack(pop)
     static check_size<sizeof(HelmParameter::ScaleType), 0 + sizeof(int)> __AudioHelm_HelmParameter_ScaleTypeSizeCheck;
@@ -124,19 +124,19 @@ namespace AudioHelm {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private AudioHelm.Param parameter_
-    [[deprecated]] ::AudioHelm::Param& dyn_parameter_();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Param& dyn_parameter_();
     // Get instance field reference: public AudioHelm.HelmParameter/AudioHelm.ScaleType scaleType
-    [[deprecated]] ::AudioHelm::HelmParameter::ScaleType& dyn_scaleType();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmParameter::ScaleType& dyn_scaleType();
     // Get instance field reference: public AudioHelm.HelmController parent
-    [[deprecated]] ::AudioHelm::HelmController*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::HelmController*& dyn_parent();
     // Get instance field reference: private System.Single lastValue
-    [[deprecated]] float& dyn_lastValue();
+    [[deprecated("Use field access instead!")]] float& dyn_lastValue();
     // Get instance field reference: private System.Single minimumRange
-    [[deprecated]] float& dyn_minimumRange();
+    [[deprecated("Use field access instead!")]] float& dyn_minimumRange();
     // Get instance field reference: private System.Single maximumRange
-    [[deprecated]] float& dyn_maximumRange();
+    [[deprecated("Use field access instead!")]] float& dyn_maximumRange();
     // Get instance field reference: private System.Single paramValue_
-    [[deprecated]] float& dyn_paramValue_();
+    [[deprecated("Use field access instead!")]] float& dyn_paramValue_();
     // public AudioHelm.Param get_parameter()
     // Offset: 0x193D130
     ::AudioHelm::Param get_parameter();
@@ -149,6 +149,13 @@ namespace AudioHelm {
     // public System.Void set_paramValue(System.Single value)
     // Offset: 0x193C560
     void set_paramValue(float value);
+    // public System.Void .ctor()
+    // Offset: 0x193D2DC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HelmParameter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmParameter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HelmParameter*, creationType>()));
+    }
     // public System.Void .ctor(AudioHelm.HelmController par)
     // Offset: 0x193C734
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -175,15 +182,6 @@ namespace AudioHelm {
     // private System.Void UpdateNative()
     // Offset: 0x193D1EC
     void UpdateNative();
-    // public System.Void .ctor()
-    // Offset: 0x193D2DC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HelmParameter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmParameter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HelmParameter*, creationType>()));
-    }
   }; // AudioHelm.HelmParameter
   #pragma pack(pop)
   static check_size<sizeof(HelmParameter), 44 + sizeof(float)> __AudioHelm_HelmParameterSizeCheck;
@@ -234,6 +232,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: AudioHelm::HelmParameter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::HelmParameter::GetMinimumRange
 // Il2CppName: GetMinimumRange
 template<>
@@ -266,7 +268,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Audio
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::HelmParameter*), "UpdateNative", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::HelmParameter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

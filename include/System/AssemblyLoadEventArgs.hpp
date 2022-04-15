@@ -49,7 +49,7 @@ namespace System {
       return m_loadedAssembly;
     }
     // Get instance field reference: private System.Reflection.Assembly m_loadedAssembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_m_loadedAssembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_m_loadedAssembly();
     // public System.Void .ctor(System.Reflection.Assembly loadedAssembly)
     // Offset: 0x113C110
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

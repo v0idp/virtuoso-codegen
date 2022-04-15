@@ -102,15 +102,15 @@ namespace UnityEngine::UI {
     // Set static field: static private System.String kDefaultDisabledAnimName
     static void _set_kDefaultDisabledAnimName(::StringW value);
     // Get instance field reference: private System.String m_NormalTrigger
-    [[deprecated]] ::StringW& dyn_m_NormalTrigger();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_NormalTrigger();
     // Get instance field reference: private System.String m_HighlightedTrigger
-    [[deprecated]] ::StringW& dyn_m_HighlightedTrigger();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_HighlightedTrigger();
     // Get instance field reference: private System.String m_PressedTrigger
-    [[deprecated]] ::StringW& dyn_m_PressedTrigger();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_PressedTrigger();
     // Get instance field reference: private System.String m_SelectedTrigger
-    [[deprecated]] ::StringW& dyn_m_SelectedTrigger();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_SelectedTrigger();
     // Get instance field reference: private System.String m_DisabledTrigger
-    [[deprecated]] ::StringW& dyn_m_DisabledTrigger();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_DisabledTrigger();
     // public System.String get_normalTrigger()
     // Offset: 0xEAA4C4
     ::StringW get_normalTrigger();
@@ -143,8 +143,6 @@ namespace UnityEngine::UI {
     void set_disabledTrigger(::StringW value);
     // public System.Void .ctor()
     // Offset: 0xEAA514
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimationTriggers* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::AnimationTriggers::.ctor");

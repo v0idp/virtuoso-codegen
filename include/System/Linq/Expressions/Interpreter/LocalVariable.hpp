@@ -42,9 +42,9 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public readonly System.Int32 Index
-    [[deprecated]] int& dyn_Index();
+    [[deprecated("Use field access instead!")]] int& dyn_Index();
     // Get instance field reference: private System.Int32 _flags
-    [[deprecated]] int& dyn__flags();
+    [[deprecated("Use field access instead!")]] int& dyn__flags();
     // public System.Boolean get_IsBoxed()
     // Offset: 0xE90394
     bool get_IsBoxed();

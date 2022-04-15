@@ -55,7 +55,7 @@ namespace System::Threading {
     // Set static field: static public System.Threading.EventResetMode ManualReset
     static void _set_ManualReset(::System::Threading::EventResetMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Threading.EventResetMode
   #pragma pack(pop)
   static check_size<sizeof(EventResetMode), 0 + sizeof(int)> __System_Threading_EventResetModeSizeCheck;

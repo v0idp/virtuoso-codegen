@@ -68,29 +68,31 @@ namespace VROSC {
     static_assert(sizeof(::System::Collections::Generic::List_1<::VROSC::ScalePreset::NotePriority*>*) == 0x8);
     public:
     // Get instance field reference: public System.String Name
-    [[deprecated]] ::StringW& dyn_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
     // Get instance field reference: public VROSC.Scale Scale
-    [[deprecated]] ::VROSC::Scale& dyn_Scale();
+    [[deprecated("Use field access instead!")]] ::VROSC::Scale& dyn_Scale();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ScalePreset/VROSC.NotePriority> NotePriorities
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ScalePreset::NotePriority*>*& dyn_NotePriorities();
-    // public System.Void UpdateNotePriorityList()
-    // Offset: 0xDE4040
-    void UpdateNotePriorityList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::ScalePreset::NotePriority*>*& dyn_NotePriorities();
     // public System.Void .ctor()
     // Offset: 0xDE430C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScalePreset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScalePreset::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ScalePreset*, creationType>()));
     }
+    // public System.Void UpdateNotePriorityList()
+    // Offset: 0xDE4040
+    void UpdateNotePriorityList();
   }; // VROSC.ScalePreset
   #pragma pack(pop)
   static check_size<sizeof(ScalePreset), 32 + sizeof(::System::Collections::Generic::List_1<::VROSC::ScalePreset::NotePriority*>*)> __VROSC_ScalePresetSizeCheck;
   static_assert(sizeof(ScalePreset) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::ScalePreset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::ScalePreset::UpdateNotePriorityList
 // Il2CppName: UpdateNotePriorityList
 template<>
@@ -99,7 +101,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::ScalePreset*), "UpdateNotePriorityList", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::ScalePreset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

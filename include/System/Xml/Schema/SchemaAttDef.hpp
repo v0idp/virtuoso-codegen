@@ -93,7 +93,7 @@ namespace System::Xml::Schema {
       // Set static field: static public System.Xml.Schema.SchemaAttDef/System.Xml.Schema.Reserve XmlLang
       static void _set_XmlLang(::System::Xml::Schema::SchemaAttDef::Reserve value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Xml.Schema.SchemaAttDef/System.Xml.Schema.Reserve
     #pragma pack(pop)
     static check_size<sizeof(SchemaAttDef::Reserve), 0 + sizeof(int)> __System_Xml_Schema_SchemaAttDef_ReserveSizeCheck;
@@ -159,21 +159,21 @@ namespace System::Xml::Schema {
     // Set static field: static public readonly System.Xml.Schema.SchemaAttDef Empty
     static void _set_Empty(::System::Xml::Schema::SchemaAttDef* value);
     // Get instance field reference: private System.String defExpanded
-    [[deprecated]] ::StringW& dyn_defExpanded();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_defExpanded();
     // Get instance field reference: private System.Int32 lineNum
-    [[deprecated]] int& dyn_lineNum();
+    [[deprecated("Use field access instead!")]] int& dyn_lineNum();
     // Get instance field reference: private System.Int32 linePos
-    [[deprecated]] int& dyn_linePos();
+    [[deprecated("Use field access instead!")]] int& dyn_linePos();
     // Get instance field reference: private System.Int32 valueLineNum
-    [[deprecated]] int& dyn_valueLineNum();
+    [[deprecated("Use field access instead!")]] int& dyn_valueLineNum();
     // Get instance field reference: private System.Int32 valueLinePos
-    [[deprecated]] int& dyn_valueLinePos();
+    [[deprecated("Use field access instead!")]] int& dyn_valueLinePos();
     // Get instance field reference: private System.Xml.Schema.SchemaAttDef/System.Xml.Schema.Reserve reserved
-    [[deprecated]] ::System::Xml::Schema::SchemaAttDef::Reserve& dyn_reserved();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::SchemaAttDef::Reserve& dyn_reserved();
     // Get instance field reference: private System.Boolean defaultValueChecked
-    [[deprecated]] bool& dyn_defaultValueChecked();
+    [[deprecated("Use field access instead!")]] bool& dyn_defaultValueChecked();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAttribute schemaAttribute
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAttribute*& dyn_schemaAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAttribute*& dyn_schemaAttribute();
     // private System.String System.Xml.IDtdAttributeInfo.get_Prefix()
     // Offset: 0xDE8B2C
     ::StringW System_Xml_IDtdAttributeInfo_get_Prefix();
@@ -287,7 +287,6 @@ namespace System::Xml::Schema {
     // Offset: 0xDE8B24
     // Implemented from: System.Xml.Schema.SchemaDeclBase
     // Base method: System.Void SchemaDeclBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SchemaAttDef* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::SchemaAttDef::.ctor");

@@ -66,11 +66,11 @@ namespace UnityOSC {
     static_assert(sizeof(::System::Net::Sockets::UdpClient*) == 0x8);
     public:
     // Get instance field reference: private System.Net.IPAddress _ipAddress
-    [[deprecated]] ::System::Net::IPAddress*& dyn__ipAddress();
+    [[deprecated("Use field access instead!")]] ::System::Net::IPAddress*& dyn__ipAddress();
     // Get instance field reference: private System.Int32 _port
-    [[deprecated]] int& dyn__port();
+    [[deprecated("Use field access instead!")]] int& dyn__port();
     // Get instance field reference: private System.Net.Sockets.UdpClient _udpClient
-    [[deprecated]] ::System::Net::Sockets::UdpClient*& dyn__udpClient();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::UdpClient*& dyn__udpClient();
     // public System.Net.IPAddress get_ClientIPAddress()
     // Offset: 0xC5BB08
     ::System::Net::IPAddress* get_ClientIPAddress();

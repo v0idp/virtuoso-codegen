@@ -49,7 +49,6 @@ namespace MS::Internal::Xml::XPath {
     // Offset: 0xDE89C4
     // Implemented from: MS.Internal.Xml.XPath.AstNode
     // Base method: System.Void AstNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Root* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::MS::Internal::Xml::XPath::Root::.ctor");

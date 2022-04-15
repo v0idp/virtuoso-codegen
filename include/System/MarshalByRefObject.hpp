@@ -55,7 +55,7 @@ namespace System {
       return identity;
     }
     // Get instance field reference: private System.Object _identity
-    [[deprecated]] ::Il2CppObject*& dyn__identity();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__identity();
     // System.Runtime.Remoting.ServerIdentity get_ObjectIdentity()
     // Offset: 0xFFBA8C
     ::System::Runtime::Remoting::ServerIdentity* get_ObjectIdentity();

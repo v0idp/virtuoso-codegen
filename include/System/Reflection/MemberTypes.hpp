@@ -98,7 +98,7 @@ namespace System::Reflection {
     // Set static field: static public System.Reflection.MemberTypes All
     static void _set_All(::System::Reflection::MemberTypes value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Reflection.MemberTypes
   #pragma pack(pop)
   static check_size<sizeof(MemberTypes), 0 + sizeof(int)> __System_Reflection_MemberTypesSizeCheck;

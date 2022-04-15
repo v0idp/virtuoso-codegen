@@ -60,7 +60,7 @@ namespace System::Data {
       return Column;
     }
     // Get instance field reference: private readonly System.Data.DataColumn <Column>k__BackingField
-    [[deprecated]] ::System::Data::DataColumn*& dyn_$Column$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataColumn*& dyn_$Column$k__BackingField();
     // System.Data.DataColumn get_Column()
     // Offset: 0xF973A0
     ::System::Data::DataColumn* get_Column();

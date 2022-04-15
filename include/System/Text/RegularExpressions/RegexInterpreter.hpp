@@ -121,27 +121,27 @@ namespace System::Text::RegularExpressions {
     static_assert(sizeof(::System::Globalization::CultureInfo*) == 0x8);
     public:
     // Get instance field reference: System.Int32 runoperator
-    [[deprecated]] int& dyn_runoperator();
+    [[deprecated("Use field access instead!")]] int& dyn_runoperator();
     // Get instance field reference: System.Int32[] runcodes
-    [[deprecated]] ::ArrayW<int>& dyn_runcodes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_runcodes();
     // Get instance field reference: System.Int32 runcodepos
-    [[deprecated]] int& dyn_runcodepos();
+    [[deprecated("Use field access instead!")]] int& dyn_runcodepos();
     // Get instance field reference: System.String[] runstrings
-    [[deprecated]] ::ArrayW<::StringW>& dyn_runstrings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_runstrings();
     // Get instance field reference: System.Text.RegularExpressions.RegexCode runcode
-    [[deprecated]] ::System::Text::RegularExpressions::RegexCode*& dyn_runcode();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexCode*& dyn_runcode();
     // Get instance field reference: System.Text.RegularExpressions.RegexPrefix runfcPrefix
-    [[deprecated]] ::System::Text::RegularExpressions::RegexPrefix*& dyn_runfcPrefix();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexPrefix*& dyn_runfcPrefix();
     // Get instance field reference: System.Text.RegularExpressions.RegexBoyerMoore runbmPrefix
-    [[deprecated]] ::System::Text::RegularExpressions::RegexBoyerMoore*& dyn_runbmPrefix();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexBoyerMoore*& dyn_runbmPrefix();
     // Get instance field reference: System.Int32 runanchors
-    [[deprecated]] int& dyn_runanchors();
+    [[deprecated("Use field access instead!")]] int& dyn_runanchors();
     // Get instance field reference: System.Boolean runrtl
-    [[deprecated]] bool& dyn_runrtl();
+    [[deprecated("Use field access instead!")]] bool& dyn_runrtl();
     // Get instance field reference: System.Boolean runci
-    [[deprecated]] bool& dyn_runci();
+    [[deprecated("Use field access instead!")]] bool& dyn_runci();
     // Get instance field reference: System.Globalization.CultureInfo runculture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_runculture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_runculture();
     // System.Void .ctor(System.Text.RegularExpressions.RegexCode code, System.Globalization.CultureInfo culture)
     // Offset: 0x1847204
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

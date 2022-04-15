@@ -48,7 +48,7 @@ namespace VROSC {
       return propType;
     }
     // Get instance field reference: public System.Type propType
-    [[deprecated]] ::System::Type*& dyn_propType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_propType();
     // public System.Void .ctor(System.Type aType)
     // Offset: 0x9376D8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

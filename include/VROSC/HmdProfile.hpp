@@ -77,17 +77,17 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.HmdModel _hmdModel
-    [[deprecated]] ::VROSC::HmdModel& dyn__hmdModel();
+    [[deprecated("Use field access instead!")]] ::VROSC::HmdModel& dyn__hmdModel();
     // Get instance field reference: private System.String _microphoneName
-    [[deprecated]] ::StringW& dyn__microphoneName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__microphoneName();
     // Get instance field reference: private System.Int32 _sameNameIndex
-    [[deprecated]] int& dyn__sameNameIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__sameNameIndex();
     // Get instance field reference: private System.Single _microphoneLatency
-    [[deprecated]] float& dyn__microphoneLatency();
+    [[deprecated("Use field access instead!")]] float& dyn__microphoneLatency();
     // Get instance field reference: private System.Single _microphonePeakValue
-    [[deprecated]] float& dyn__microphonePeakValue();
+    [[deprecated("Use field access instead!")]] float& dyn__microphonePeakValue();
     // Get instance field reference: private System.String _steamModelName
-    [[deprecated]] ::StringW& dyn__steamModelName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__steamModelName();
     // public VROSC.HmdModel get_HmdModel()
     // Offset: 0x1941D1C
     ::VROSC::HmdModel get_HmdModel();
@@ -108,10 +108,6 @@ namespace VROSC {
     ::StringW get_SteamModelName();
     // public System.Void .ctor()
     // Offset: 0x1941D4C
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HmdProfile* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::HmdProfile::.ctor");

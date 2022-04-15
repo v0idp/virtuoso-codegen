@@ -87,7 +87,7 @@ namespace System::Security::Authentication {
     // Set static field: static public System.Security.Authentication.SslProtocols Default
     static void _set_Default(::System::Security::Authentication::SslProtocols value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Security.Authentication.SslProtocols
   #pragma pack(pop)
   static check_size<sizeof(SslProtocols), 0 + sizeof(int)> __System_Security_Authentication_SslProtocolsSizeCheck;

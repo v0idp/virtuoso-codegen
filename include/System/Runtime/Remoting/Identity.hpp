@@ -96,19 +96,19 @@ namespace System::Runtime::Remoting {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: protected System.String _objectUri
-    [[deprecated]] ::StringW& dyn__objectUri();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__objectUri();
     // Get instance field reference: protected System.Runtime.Remoting.Messaging.IMessageSink _channelSink
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__channelSink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__channelSink();
     // Get instance field reference: protected System.Runtime.Remoting.Messaging.IMessageSink _envoySink
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__envoySink();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageSink*& dyn__envoySink();
     // Get instance field reference: private System.Runtime.Remoting.Contexts.DynamicPropertyCollection _clientDynamicProperties
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection*& dyn__clientDynamicProperties();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection*& dyn__clientDynamicProperties();
     // Get instance field reference: private System.Runtime.Remoting.Contexts.DynamicPropertyCollection _serverDynamicProperties
-    [[deprecated]] ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection*& dyn__serverDynamicProperties();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Contexts::DynamicPropertyCollection*& dyn__serverDynamicProperties();
     // Get instance field reference: protected System.Runtime.Remoting.ObjRef _objRef
-    [[deprecated]] ::System::Runtime::Remoting::ObjRef*& dyn__objRef();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::ObjRef*& dyn__objRef();
     // Get instance field reference: private System.Boolean _disposed
-    [[deprecated]] bool& dyn__disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn__disposed();
     // public System.Runtime.Remoting.Messaging.IMessageSink get_ChannelSink()
     // Offset: 0x1460D58
     ::System::Runtime::Remoting::Messaging::IMessageSink* get_ChannelSink();

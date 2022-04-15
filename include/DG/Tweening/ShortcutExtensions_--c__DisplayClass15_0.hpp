@@ -48,30 +48,32 @@ namespace DG::Tweening {
     static_assert(sizeof(::UnityEngine::LineRenderer*) == 0x8);
     public:
     // Get instance field reference: public DG.Tweening.Color2 startValue
-    [[deprecated]] ::DG::Tweening::Color2& dyn_startValue();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Color2& dyn_startValue();
     // Get instance field reference: public UnityEngine.LineRenderer target
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn_target();
+    // public System.Void .ctor()
+    // Offset: 0x18645A8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ShortcutExtensions::$$c__DisplayClass15_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::ShortcutExtensions::$$c__DisplayClass15_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ShortcutExtensions::$$c__DisplayClass15_0*, creationType>()));
+    }
     // DG.Tweening.Color2 <DOColor>b__0()
     // Offset: 0x18645B0
     ::DG::Tweening::Color2 $DOColor$b__0();
     // System.Void <DOColor>b__1(DG.Tweening.Color2 x)
     // Offset: 0x18645BC
     void $DOColor$b__1(::DG::Tweening::Color2 x);
-    // public System.Void .ctor()
-    // Offset: 0x18645A8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ShortcutExtensions::$$c__DisplayClass15_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::ShortcutExtensions::$$c__DisplayClass15_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ShortcutExtensions::$$c__DisplayClass15_0*, creationType>()));
-    }
   }; // DG.Tweening.ShortcutExtensions/DG.Tweening.<>c__DisplayClass15_0
   #pragma pack(pop)
   static check_size<sizeof(ShortcutExtensions::$$c__DisplayClass15_0), 48 + sizeof(::UnityEngine::LineRenderer*)> __DG_Tweening_ShortcutExtensions_$$c__DisplayClass15_0SizeCheck;
   static_assert(sizeof(ShortcutExtensions::$$c__DisplayClass15_0) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: DG::Tweening::ShortcutExtensions::$$c__DisplayClass15_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::ShortcutExtensions::$$c__DisplayClass15_0::$DOColor$b__0
 // Il2CppName: <DOColor>b__0
 template<>
@@ -89,7 +91,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (DG::T
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::ShortcutExtensions::$$c__DisplayClass15_0*), "<DOColor>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::ShortcutExtensions::$$c__DisplayClass15_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

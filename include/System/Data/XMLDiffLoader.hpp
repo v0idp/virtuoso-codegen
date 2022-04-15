@@ -67,11 +67,18 @@ namespace System::Data {
     static_assert(sizeof(::System::Data::DataTable*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.ArrayList _tables
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__tables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__tables();
     // Get instance field reference: private System.Data.DataSet _dataSet
-    [[deprecated]] ::System::Data::DataSet*& dyn__dataSet();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataSet*& dyn__dataSet();
     // Get instance field reference: private System.Data.DataTable _dataTable
-    [[deprecated]] ::System::Data::DataTable*& dyn__dataTable();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__dataTable();
+    // public System.Void .ctor()
+    // Offset: 0x11C5040
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XMLDiffLoader* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::XMLDiffLoader::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XMLDiffLoader*, creationType>()));
+    }
     // System.Void LoadDiffGram(System.Data.DataSet ds, System.Xml.XmlReader dataTextReader)
     // Offset: 0x11C29F0
     void LoadDiffGram(::System::Data::DataSet* ds, ::System::Xml::XmlReader* dataTextReader);
@@ -102,21 +109,16 @@ namespace System::Data {
     // System.Void SkipWhitespaces(System.Xml.XmlReader reader)
     // Offset: 0x11C3F40
     void SkipWhitespaces(::System::Xml::XmlReader* reader);
-    // public System.Void .ctor()
-    // Offset: 0x11C5040
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XMLDiffLoader* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Data::XMLDiffLoader::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XMLDiffLoader*, creationType>()));
-    }
   }; // System.Data.XMLDiffLoader
   #pragma pack(pop)
   static check_size<sizeof(XMLDiffLoader), 32 + sizeof(::System::Data::DataTable*)> __System_Data_XMLDiffLoaderSizeCheck;
   static_assert(sizeof(XMLDiffLoader) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Data::XMLDiffLoader::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Data::XMLDiffLoader::LoadDiffGram
 // Il2CppName: LoadDiffGram
 template<>
@@ -217,7 +219,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Data::XMLDiffLoader*), "SkipWhitespaces", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{reader});
   }
 };
-// Writing MetadataGetter for method: System::Data::XMLDiffLoader::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

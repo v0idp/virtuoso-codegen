@@ -41,6 +41,13 @@ namespace System::Security::Cryptography::X509Certificates {
     // public System.Security.Cryptography.X509Certificates.X509Certificate get_Item(System.Int32 index)
     // Offset: 0xC522C4
     ::System::Security::Cryptography::X509Certificates::X509Certificate* get_Item(int index);
+    // public System.Void .ctor()
+    // Offset: 0xC5219C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509CertificateCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509CertificateCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509CertificateCollection*, creationType>()));
+    }
     // public System.Void .ctor(System.Security.Cryptography.X509Certificates.X509CertificateCollection value)
     // Offset: 0xC521A4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -54,16 +61,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // public System.Security.Cryptography.X509Certificates.X509CertificateCollection/System.Security.Cryptography.X509Certificates.X509CertificateEnumerator GetEnumerator()
     // Offset: 0xC52370
     ::System::Security::Cryptography::X509Certificates::X509CertificateCollection::X509CertificateEnumerator* GetEnumerator();
-    // public System.Void .ctor()
-    // Offset: 0xC5219C
-    // Implemented from: System.Collections.CollectionBase
-    // Base method: System.Void CollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509CertificateCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509CertificateCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509CertificateCollection*, creationType>()));
-    }
     // public override System.Int32 GetHashCode()
     // Offset: 0xC523D0
     // Implemented from: System.Object
@@ -86,6 +83,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::S
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateCollection::AddRange
 // Il2CppName: AddRange
 template<>
@@ -103,10 +104,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::S
     return ::il2cpp_utils::FindMethod(classof(System::Security::Cryptography::X509Certificates::X509CertificateCollection*), "GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Security::Cryptography::X509Certificates::X509CertificateCollection::GetHashCode
 // Il2CppName: GetHashCode
 template<>

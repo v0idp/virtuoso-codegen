@@ -45,9 +45,9 @@ namespace Oculus::Platform::Samples::NetChat {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <packetID>k__BackingField
-    [[deprecated]] int& dyn_$packetID$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$packetID$k__BackingField();
     // Get instance field reference: private System.String <textString>k__BackingField
-    [[deprecated]] ::StringW& dyn_$textString$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$textString$k__BackingField();
     // public System.Int32 get_packetID()
     // Offset: 0x17210E4
     int get_packetID();
@@ -60,21 +60,19 @@ namespace Oculus::Platform::Samples::NetChat {
     // public System.Void set_textString(System.String value)
     // Offset: 0x17210FC
     void set_textString(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x17216F4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static chatPacket* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::NetChat::chatPacket::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<chatPacket*, creationType>()));
+    }
     // public System.Byte[] Serialize()
     // Offset: 0x1721104
     ::ArrayW<uint8_t> Serialize();
     // static public Oculus.Platform.Samples.NetChat.chatPacket Deserialize(System.Byte[] data)
     // Offset: 0x1721428
     static ::Oculus::Platform::Samples::NetChat::chatPacket* Deserialize(::ArrayW<uint8_t> data);
-    // public System.Void .ctor()
-    // Offset: 0x17216F4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static chatPacket* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::NetChat::chatPacket::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<chatPacket*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.NetChat.chatPacket
   #pragma pack(pop)
   static check_size<sizeof(chatPacket), 24 + sizeof(::StringW)> __Oculus_Platform_Samples_NetChat_chatPacketSizeCheck;
@@ -115,6 +113,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::NetChat::chatPacket*), "set_textString", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::NetChat::chatPacket::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::NetChat::chatPacket::Serialize
 // Il2CppName: Serialize
 template<>
@@ -132,7 +134,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Oculus::P
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::NetChat::chatPacket*), "Deserialize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::NetChat::chatPacket::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

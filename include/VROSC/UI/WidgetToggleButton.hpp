@@ -150,29 +150,36 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UIToggle _toggle
-    [[deprecated]] ::VROSC::UIToggle*& dyn__toggle();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__toggle();
     // Get instance field reference: private TMPro.TextMeshPro _name
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private VROSC.WidgetSettings/VROSC.Identifier _id
-    [[deprecated]] ::VROSC::WidgetSettings::Identifier& dyn__id();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetSettings::Identifier& dyn__id();
     // Get instance field reference: private UnityEngine.GameObject _isOnObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__isOnObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__isOnObject();
     // Get instance field reference: private VROSC.UI.WidgetToggleMoverRelay _mover
-    [[deprecated]] ::VROSC::UI::WidgetToggleMoverRelay*& dyn__mover();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::WidgetToggleMoverRelay*& dyn__mover();
     // Get instance field reference: private VROSC.UI.UIInteractableColoring[] _icons
-    [[deprecated]] ::ArrayW<::VROSC::UI::UIInteractableColoring*>& dyn__icons();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::UI::UIInteractableColoring*>& dyn__icons();
     // Get instance field reference: private System.Boolean _isActive
-    [[deprecated]] bool& dyn__isActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__isActive();
     // Get instance field reference: private VROSC.WidgetController _widgetController
-    [[deprecated]] ::VROSC::WidgetController*& dyn__widgetController();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetController*& dyn__widgetController();
     // Get instance field reference: private UnityEngine.Transform _parentPanel
-    [[deprecated]] ::UnityEngine::Transform*& dyn__parentPanel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__parentPanel();
     // Get instance field reference: private VROSC.TooltipData _triggerTooltipData
-    [[deprecated]] ::VROSC::TooltipData*& dyn__triggerTooltipData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__triggerTooltipData();
     // Get instance field reference: private VROSC.TooltipData _gripTooltipData
-    [[deprecated]] ::VROSC::TooltipData*& dyn__gripTooltipData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TooltipData*& dyn__gripTooltipData();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.TooltipData> _tooltipDatas
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::TooltipData*>*& dyn__tooltipDatas();
+    // public System.Void .ctor()
+    // Offset: 0x9533EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WidgetToggleButton* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::WidgetToggleButton::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WidgetToggleButton*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x952A70
     void Awake();
@@ -197,25 +204,16 @@ namespace VROSC::UI {
     // private System.Void UpdateTooltips(System.Boolean unused)
     // Offset: 0x952FDC
     void UpdateTooltips(bool unused);
-    // public System.Void .ctor()
-    // Offset: 0x9533EC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WidgetToggleButton* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::WidgetToggleButton::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WidgetToggleButton*, creationType>()));
-    }
   }; // VROSC.UI.WidgetToggleButton
   #pragma pack(pop)
   static check_size<sizeof(WidgetToggleButton), 112 + sizeof(::System::Collections::Generic::List_1<::VROSC::TooltipData*>*)> __VROSC_UI_WidgetToggleButtonSizeCheck;
   static_assert(sizeof(WidgetToggleButton) == 0x78);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UI::WidgetToggleButton::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::WidgetToggleButton::Awake
 // Il2CppName: Awake
 template<>
@@ -285,7 +283,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::WidgetToggleButton*), "UpdateTooltips", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{unused});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::WidgetToggleButton::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

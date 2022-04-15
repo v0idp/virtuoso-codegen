@@ -57,11 +57,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private UnityEngine.Vector3 centerEyePosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_centerEyePosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_centerEyePosition();
     // Get instance field reference: private UnityEngine.Quaternion centerEyeRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_centerEyeRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_centerEyeRotation();
     // Get instance field reference: private System.Single voiceAmplitude
-    [[deprecated]] float& dyn_voiceAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_voiceAmplitude();
     // private OvrAvatarDriver/ControllerPose GetMalibuControllerPose(OVRInput/Controller controller)
     // Offset: 0xF8B950
     ::GlobalNamespace::OvrAvatarDriver::ControllerPose GetMalibuControllerPose(::GlobalNamespace::OVRInput::Controller controller);
@@ -75,11 +75,6 @@ namespace GlobalNamespace {
     // Offset: 0xF8C0A0
     // Implemented from: OvrAvatarDriver
     // Base method: System.Void OvrAvatarDriver::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarLocalDriver* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarLocalDriver::.ctor");

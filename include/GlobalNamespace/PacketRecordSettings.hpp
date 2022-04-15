@@ -49,15 +49,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: System.Boolean RecordingFrames
-    [[deprecated]] bool& dyn_RecordingFrames();
+    [[deprecated("Use field access instead!")]] bool& dyn_RecordingFrames();
     // Get instance field reference: public System.Single UpdateRate
-    [[deprecated]] float& dyn_UpdateRate();
+    [[deprecated("Use field access instead!")]] float& dyn_UpdateRate();
     // Get instance field reference: System.Single AccumulatedTime
-    [[deprecated]] float& dyn_AccumulatedTime();
+    [[deprecated("Use field access instead!")]] float& dyn_AccumulatedTime();
     // public System.Void .ctor()
     // Offset: 0xADB234
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PacketRecordSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PacketRecordSettings::.ctor");

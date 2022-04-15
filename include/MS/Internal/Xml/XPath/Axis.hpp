@@ -153,7 +153,7 @@ namespace MS::Internal::Xml::XPath {
       // Set static field: static public MS.Internal.Xml.XPath.Axis/MS.Internal.Xml.XPath.AxisType None
       static void _set_None(::MS::Internal::Xml::XPath::Axis::AxisType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MS.Internal.Xml.XPath.Axis/MS.Internal.Xml.XPath.AxisType
     #pragma pack(pop)
     static check_size<sizeof(Axis::AxisType), 0 + sizeof(int)> __MS_Internal_Xml_XPath_Axis_AxisTypeSizeCheck;
@@ -207,19 +207,19 @@ namespace MS::Internal::Xml::XPath {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private MS.Internal.Xml.XPath.Axis/MS.Internal.Xml.XPath.AxisType axisType
-    [[deprecated]] ::MS::Internal::Xml::XPath::Axis::AxisType& dyn_axisType();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::Axis::AxisType& dyn_axisType();
     // Get instance field reference: private MS.Internal.Xml.XPath.AstNode input
-    [[deprecated]] ::MS::Internal::Xml::XPath::AstNode*& dyn_input();
+    [[deprecated("Use field access instead!")]] ::MS::Internal::Xml::XPath::AstNode*& dyn_input();
     // Get instance field reference: private System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Xml.XPath.XPathNodeType nodeType
-    [[deprecated]] ::System::Xml::XPath::XPathNodeType& dyn_nodeType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XPath::XPathNodeType& dyn_nodeType();
     // Get instance field reference: protected System.Boolean abbrAxis
-    [[deprecated]] bool& dyn_abbrAxis();
+    [[deprecated("Use field access instead!")]] bool& dyn_abbrAxis();
     // Get instance field reference: private System.String urn
-    [[deprecated]] ::StringW& dyn_urn();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_urn();
     // public MS.Internal.Xml.XPath.AstNode get_Input()
     // Offset: 0xB5C4A8
     ::MS::Internal::Xml::XPath::AstNode* get_Input();

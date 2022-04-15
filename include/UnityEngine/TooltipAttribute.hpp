@@ -43,7 +43,7 @@ namespace UnityEngine {
       return tooltip;
     }
     // Get instance field reference: public readonly System.String tooltip
-    [[deprecated]] ::StringW& dyn_tooltip();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_tooltip();
     // public System.Void .ctor(System.String tooltip)
     // Offset: 0xBD9EB8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

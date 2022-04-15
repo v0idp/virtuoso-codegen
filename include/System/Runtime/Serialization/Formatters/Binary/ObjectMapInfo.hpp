@@ -62,13 +62,13 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::ArrayW<::System::Type*>) == 0x8);
     public:
     // Get instance field reference: System.Int32 objectId
-    [[deprecated]] int& dyn_objectId();
+    [[deprecated("Use field access instead!")]] int& dyn_objectId();
     // Get instance field reference: private System.Int32 numMembers
-    [[deprecated]] int& dyn_numMembers();
+    [[deprecated("Use field access instead!")]] int& dyn_numMembers();
     // Get instance field reference: private System.String[] memberNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_memberNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_memberNames();
     // Get instance field reference: private System.Type[] memberTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_memberTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_memberTypes();
     // System.Void .ctor(System.Int32 objectId, System.Int32 numMembers, System.String[] memberNames, System.Type[] memberTypes)
     // Offset: 0x1471698
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

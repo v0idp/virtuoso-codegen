@@ -59,13 +59,13 @@ namespace Firebase {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::StringW>*>(this);
     }
     // Get instance field reference: private Firebase.StringList collectionRef
-    [[deprecated]] ::Firebase::StringList*& dyn_collectionRef();
+    [[deprecated("Use field access instead!")]] ::Firebase::StringList*& dyn_collectionRef();
     // Get instance field reference: private System.Int32 currentIndex
-    [[deprecated]] int& dyn_currentIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_currentIndex();
     // Get instance field reference: private System.Object currentObject
-    [[deprecated]] ::Il2CppObject*& dyn_currentObject();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_currentObject();
     // Get instance field reference: private System.Int32 currentSize
-    [[deprecated]] int& dyn_currentSize();
+    [[deprecated("Use field access instead!")]] int& dyn_currentSize();
     // private System.Object System.Collections.IEnumerator.get_Current()
     // Offset: 0x188C500
     ::Il2CppObject* System_Collections_IEnumerator_get_Current();

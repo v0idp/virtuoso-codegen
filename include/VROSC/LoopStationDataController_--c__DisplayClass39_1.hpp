@@ -41,13 +41,11 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::LoopStationDataController::$$c__DisplayClass39_0*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 loadedTracksCount
-    [[deprecated]] int& dyn_loadedTracksCount();
+    [[deprecated("Use field access instead!")]] int& dyn_loadedTracksCount();
     // Get instance field reference: public VROSC.LoopStationDataController/VROSC.<>c__DisplayClass39_0 CS$<>8__locals1
-    [[deprecated]] ::VROSC::LoopStationDataController::$$c__DisplayClass39_0*& dyn_CS$$$8__locals1();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationDataController::$$c__DisplayClass39_0*& dyn_CS$$$8__locals1();
     // public System.Void .ctor()
     // Offset: 0x195DD2C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopStationDataController::$$c__DisplayClass39_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationDataController::$$c__DisplayClass39_1::.ctor");

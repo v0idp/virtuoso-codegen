@@ -86,19 +86,19 @@ namespace System::IO {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String> <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::StringW>& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<::StringW>& dyn_$$t__builder();
     // Get instance field reference: private System.Text.StringBuilder <sb>5__1
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_$sb$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_$sb$5__1();
     // Get instance field reference: private System.Char[] <chars>5__2
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_$chars$5__2();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_$chars$5__2();
     // Get instance field reference: private System.Int32 <len>5__3
-    [[deprecated]] int& dyn_$len$5__3();
+    [[deprecated("Use field access instead!")]] int& dyn_$len$5__3();
     // Get instance field reference: public System.IO.TextReader <>4__this
-    [[deprecated]] ::System::IO::TextReader*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextReader*& dyn_$$4__this();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Int32> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<int>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0xE5F77C
     void MoveNext();

@@ -57,9 +57,9 @@ namespace UnityEngine {
     static_assert(sizeof(::System::Action_1<::UnityEngine::AsyncOperation*>*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private System.Action`1<UnityEngine.AsyncOperation> m_completeCallback
-    [[deprecated]] ::System::Action_1<::UnityEngine::AsyncOperation*>*& dyn_m_completeCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::AsyncOperation*>*& dyn_m_completeCallback();
     // public System.Boolean get_isDone()
     // Offset: 0x111D224
     bool get_isDone();
@@ -82,7 +82,6 @@ namespace UnityEngine {
     // Offset: 0x111D4F8
     // Implemented from: UnityEngine.YieldInstruction
     // Base method: System.Void YieldInstruction::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AsyncOperation* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AsyncOperation::.ctor");

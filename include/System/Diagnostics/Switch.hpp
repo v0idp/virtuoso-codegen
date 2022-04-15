@@ -75,13 +75,13 @@ namespace System::Diagnostics {
     // Set static field: static private System.Int32 s_LastCollectionCount
     static void _set_s_LastCollectionCount(int value);
     // Get instance field reference: private readonly System.String description
-    [[deprecated]] ::StringW& dyn_description();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_description();
     // Get instance field reference: private readonly System.String displayName
-    [[deprecated]] ::StringW& dyn_displayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_displayName();
     // Get instance field reference: private System.String switchValueString
-    [[deprecated]] ::StringW& dyn_switchValueString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_switchValueString();
     // Get instance field reference: private System.String defaultValue
-    [[deprecated]] ::StringW& dyn_defaultValue();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_defaultValue();
     // protected System.Void .ctor(System.String displayName, System.String description)
     // Offset: 0xDA7134
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -50,9 +50,9 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::ArrayW<::System::Xml::Serialization::XmlMemberMapping*>) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _hasWrapperElement
-    [[deprecated]] bool& dyn__hasWrapperElement();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasWrapperElement();
     // Get instance field reference: private System.Xml.Serialization.XmlMemberMapping[] _mapping
-    [[deprecated]] ::ArrayW<::System::Xml::Serialization::XmlMemberMapping*>& dyn__mapping();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Serialization::XmlMemberMapping*>& dyn__mapping();
     // public System.Int32 get_Count()
     // Offset: 0x128C000
     int get_Count();

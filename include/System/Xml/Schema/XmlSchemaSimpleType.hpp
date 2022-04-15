@@ -50,7 +50,7 @@ namespace System::Xml::Schema {
       return content;
     }
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleTypeContent content
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleTypeContent*& dyn_content();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleTypeContent*& dyn_content();
     // public System.Xml.Schema.XmlSchemaSimpleTypeContent get_Content()
     // Offset: 0xF36B34
     ::System::Xml::Schema::XmlSchemaSimpleTypeContent* get_Content();
@@ -63,7 +63,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaType::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaSimpleType* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSimpleType::.ctor");

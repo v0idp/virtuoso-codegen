@@ -109,17 +109,17 @@ namespace System::Xml::Schema {
     // Set static field: static private System.Xml.Schema.DtdValidator/System.Xml.Schema.NamespaceManager namespaceManager
     static void _set_namespaceManager(::System::Xml::Schema::DtdValidator::NamespaceManager* value);
     // Get instance field reference: private System.Xml.HWStack validationStack
-    [[deprecated]] ::System::Xml::HWStack*& dyn_validationStack();
+    [[deprecated("Use field access instead!")]] ::System::Xml::HWStack*& dyn_validationStack();
     // Get instance field reference: private System.Collections.Hashtable attPresence
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_attPresence();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_attPresence();
     // Get instance field reference: private System.Xml.XmlQualifiedName name
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_name();
     // Get instance field reference: private System.Collections.Hashtable IDs
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_IDs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_IDs();
     // Get instance field reference: private System.Xml.Schema.IdRefNode idRefListHead
-    [[deprecated]] ::System::Xml::Schema::IdRefNode*& dyn_idRefListHead();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::IdRefNode*& dyn_idRefListHead();
     // Get instance field reference: private System.Boolean processIdentityConstraints
-    [[deprecated]] bool& dyn_processIdentityConstraints();
+    [[deprecated("Use field access instead!")]] bool& dyn_processIdentityConstraints();
     // System.Void .ctor(System.Xml.XmlValidatingReaderImpl reader, System.Xml.IValidationEventHandling eventHandling, System.Boolean processIdentityConstraints)
     // Offset: 0xAEA764
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

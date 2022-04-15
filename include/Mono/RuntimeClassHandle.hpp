@@ -54,7 +54,7 @@ namespace Mono {
       return value;
     }
     // Get instance field reference: private Mono.RuntimeStructs/Mono.MonoClass* value
-    [[deprecated]] ::Mono::RuntimeStructs::MonoClass*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Mono::RuntimeStructs::MonoClass*& dyn_value();
     // Mono.RuntimeStructs/Mono.MonoClass* get_Value()
     // Offset: 0xCE3C58
     ::Mono::RuntimeStructs::MonoClass* get_Value();

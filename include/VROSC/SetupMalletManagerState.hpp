@@ -54,7 +54,7 @@ namespace VROSC {
       return malletManager;
     }
     // Get instance field reference: private VROSC.MalletManager _malletManager
-    [[deprecated]] ::VROSC::MalletManager*& dyn__malletManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::MalletManager*& dyn__malletManager();
     // public System.Void .ctor(VROSC.MalletManager malletManager)
     // Offset: 0x19268E4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

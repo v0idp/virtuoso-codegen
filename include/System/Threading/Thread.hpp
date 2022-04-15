@@ -168,21 +168,21 @@ namespace System::Threading {
     // Set static field: static private System.Threading.Thread current_thread
     static void _set_current_thread(::System::Threading::Thread* value);
     // Get instance field reference: private System.Threading.InternalThread internal_thread
-    [[deprecated]] ::System::Threading::InternalThread*& dyn_internal_thread();
+    [[deprecated("Use field access instead!")]] ::System::Threading::InternalThread*& dyn_internal_thread();
     // Get instance field reference: private System.Object m_ThreadStartArg
-    [[deprecated]] ::Il2CppObject*& dyn_m_ThreadStartArg();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_ThreadStartArg();
     // Get instance field reference: private System.Object pending_exception
-    [[deprecated]] ::Il2CppObject*& dyn_pending_exception();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_pending_exception();
     // Get instance field reference: private System.Security.Principal.IPrincipal principal
-    [[deprecated]] ::System::Security::Principal::IPrincipal*& dyn_principal();
+    [[deprecated("Use field access instead!")]] ::System::Security::Principal::IPrincipal*& dyn_principal();
     // Get instance field reference: private System.Int32 principal_version
-    [[deprecated]] int& dyn_principal_version();
+    [[deprecated("Use field access instead!")]] int& dyn_principal_version();
     // Get instance field reference: private System.MulticastDelegate m_Delegate
-    [[deprecated]] ::System::MulticastDelegate*& dyn_m_Delegate();
+    [[deprecated("Use field access instead!")]] ::System::MulticastDelegate*& dyn_m_Delegate();
     // Get instance field reference: private System.Threading.ExecutionContext m_ExecutionContext
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_m_ExecutionContext();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_m_ExecutionContext();
     // Get instance field reference: private System.Boolean m_ExecutionContextBelongsToOuterScope
-    [[deprecated]] bool& dyn_m_ExecutionContextBelongsToOuterScope();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ExecutionContextBelongsToOuterScope();
     // System.Boolean get_ExecutionContextBelongsToCurrentScope()
     // Offset: 0x11DA5F0
     bool get_ExecutionContextBelongsToCurrentScope();

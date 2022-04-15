@@ -84,7 +84,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRLipSyncMicInput/micActivation ConstantSpeak
       static void _set_ConstantSpeak(::GlobalNamespace::OVRLipSyncMicInput::micActivation value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRLipSyncMicInput/micActivation
     #pragma pack(pop)
     static check_size<sizeof(OVRLipSyncMicInput::micActivation), 0 + sizeof(int)> __GlobalNamespace_OVRLipSyncMicInput_micActivationSizeCheck;
@@ -185,37 +185,44 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.AudioSource audioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_audioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_audioSource();
     // Get instance field reference: public System.Boolean enableMicSelectionGUI
-    [[deprecated]] bool& dyn_enableMicSelectionGUI();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableMicSelectionGUI();
     // Get instance field reference: public UnityEngine.KeyCode micSelectionGUIKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_micSelectionGUIKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_micSelectionGUIKey();
     // Get instance field reference: private System.Single micInputVolume
-    [[deprecated]] float& dyn_micInputVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_micInputVolume();
     // Get instance field reference: private System.Int32 micFrequency
-    [[deprecated]] int& dyn_micFrequency();
+    [[deprecated("Use field access instead!")]] int& dyn_micFrequency();
     // Get instance field reference: public OVRLipSyncMicInput/micActivation micControl
-    [[deprecated]] ::GlobalNamespace::OVRLipSyncMicInput::micActivation& dyn_micControl();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRLipSyncMicInput::micActivation& dyn_micControl();
     // Get instance field reference: public UnityEngine.KeyCode micActivationKey
-    [[deprecated]] ::UnityEngine::KeyCode& dyn_micActivationKey();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::KeyCode& dyn_micActivationKey();
     // Get instance field reference: public System.String selectedDevice
-    [[deprecated]] ::StringW& dyn_selectedDevice();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_selectedDevice();
     // Get instance field reference: private System.Boolean micSelected
-    [[deprecated]] bool& dyn_micSelected();
+    [[deprecated("Use field access instead!")]] bool& dyn_micSelected();
     // Get instance field reference: private System.Int32 minFreq
-    [[deprecated]] int& dyn_minFreq();
+    [[deprecated("Use field access instead!")]] int& dyn_minFreq();
     // Get instance field reference: private System.Int32 maxFreq
-    [[deprecated]] int& dyn_maxFreq();
+    [[deprecated("Use field access instead!")]] int& dyn_maxFreq();
     // Get instance field reference: private System.Boolean focused
-    [[deprecated]] bool& dyn_focused();
+    [[deprecated("Use field access instead!")]] bool& dyn_focused();
     // Get instance field reference: private System.Boolean initialized
-    [[deprecated]] bool& dyn_initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_initialized();
     // public System.Single get_MicFrequency()
     // Offset: 0x18AC484
     float get_MicFrequency();
     // public System.Void set_MicFrequency(System.Single value)
     // Offset: 0x18AC490
     void set_MicFrequency(float value);
+    // public System.Void .ctor()
+    // Offset: 0x18ACE18
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRLipSyncMicInput* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSyncMicInput::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRLipSyncMicInput*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x18AC4E0
     void Awake();
@@ -255,19 +262,6 @@ namespace GlobalNamespace {
     // private System.Single GetAveragedVolume()
     // Offset: 0x18ACE10
     float GetAveragedVolume();
-    // public System.Void .ctor()
-    // Offset: 0x18ACE18
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRLipSyncMicInput* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSyncMicInput::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRLipSyncMicInput*, creationType>()));
-    }
   }; // OVRLipSyncMicInput
   #pragma pack(pop)
   static check_size<sizeof(OVRLipSyncMicInput), 77 + sizeof(bool)> __GlobalNamespace_OVRLipSyncMicInputSizeCheck;
@@ -293,6 +287,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRLipSyncMicInput*), "set_MicFrequency", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncMicInput::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncMicInput::Awake
 // Il2CppName: Awake
 template<>
@@ -405,7 +403,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Glob
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRLipSyncMicInput*), "GetAveragedVolume", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRLipSyncMicInput::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -78,7 +78,7 @@ namespace System::Net {
       // Set static field: static public System.Net.TimerThread/System.Net.TimerNode/System.Net.TimerState Sentinel
       static void _set_Sentinel(::System::Net::TimerThread::TimerNode::TimerState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Net.TimerThread/System.Net.TimerNode/System.Net.TimerState
     #pragma pack(pop)
     static check_size<sizeof(TimerThread::TimerNode::TimerState), 0 + sizeof(int)> __System_Net_TimerThread_TimerNode_TimerStateSizeCheck;
@@ -124,17 +124,17 @@ namespace System::Net {
     static_assert(sizeof(::System::Net::TimerThread::TimerNode*) == 0x8);
     public:
     // Get instance field reference: private System.Net.TimerThread/System.Net.TimerNode/System.Net.TimerState m_TimerState
-    [[deprecated]] ::System::Net::TimerThread::TimerNode::TimerState& dyn_m_TimerState();
+    [[deprecated("Use field access instead!")]] ::System::Net::TimerThread::TimerNode::TimerState& dyn_m_TimerState();
     // Get instance field reference: private System.Net.TimerThread/System.Net.Callback m_Callback
-    [[deprecated]] ::System::Net::TimerThread::Callback*& dyn_m_Callback();
+    [[deprecated("Use field access instead!")]] ::System::Net::TimerThread::Callback*& dyn_m_Callback();
     // Get instance field reference: private System.Object m_Context
-    [[deprecated]] ::Il2CppObject*& dyn_m_Context();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_Context();
     // Get instance field reference: private System.Object m_QueueLock
-    [[deprecated]] ::Il2CppObject*& dyn_m_QueueLock();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_QueueLock();
     // Get instance field reference: private System.Net.TimerThread/System.Net.TimerNode next
-    [[deprecated]] ::System::Net::TimerThread::TimerNode*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Net::TimerThread::TimerNode*& dyn_next();
     // Get instance field reference: private System.Net.TimerThread/System.Net.TimerNode prev
-    [[deprecated]] ::System::Net::TimerThread::TimerNode*& dyn_prev();
+    [[deprecated("Use field access instead!")]] ::System::Net::TimerThread::TimerNode*& dyn_prev();
     // System.Net.TimerThread/System.Net.TimerNode get_Next()
     // Offset: 0xA0243C
     ::System::Net::TimerThread::TimerNode* get_Next();
@@ -149,8 +149,6 @@ namespace System::Net {
     void set_Prev(::System::Net::TimerThread::TimerNode* value);
     // System.Void .ctor()
     // Offset: 0xA02400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TimerThread::TimerNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::TimerThread::TimerNode::.ctor");

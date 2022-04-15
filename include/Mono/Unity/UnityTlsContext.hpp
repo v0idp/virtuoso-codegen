@@ -172,39 +172,39 @@ namespace Mono::Unity {
     static_assert(sizeof(::System::Exception*) == 0x8);
     public:
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_tlsctx* tlsContext
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_tlsctx*& dyn_tlsContext();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_tlsctx*& dyn_tlsContext();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_x509list* requestedClientCertChain
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_x509list*& dyn_requestedClientCertChain();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_x509list*& dyn_requestedClientCertChain();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_key* requestedClientKey
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_key*& dyn_requestedClientKey();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_key*& dyn_requestedClientKey();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_tlsctx_read_callback readCallback
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_tlsctx_read_callback*& dyn_readCallback();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_tlsctx_read_callback*& dyn_readCallback();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_tlsctx_write_callback writeCallback
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_tlsctx_write_callback*& dyn_writeCallback();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_tlsctx_write_callback*& dyn_writeCallback();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_tlsctx_certificate_callback certificateCallback
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_tlsctx_certificate_callback*& dyn_certificateCallback();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_tlsctx_certificate_callback*& dyn_certificateCallback();
     // Get instance field reference: private Mono.Unity.UnityTls/Mono.Unity.unitytls_tlsctx_x509verify_callback verifyCallback
-    [[deprecated]] ::Mono::Unity::UnityTls::unitytls_tlsctx_x509verify_callback*& dyn_verifyCallback();
+    [[deprecated("Use field access instead!")]] ::Mono::Unity::UnityTls::unitytls_tlsctx_x509verify_callback*& dyn_verifyCallback();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate localClientCertificate
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_localClientCertificate();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_localClientCertificate();
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509Certificate remoteCertificate
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_remoteCertificate();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509Certificate*& dyn_remoteCertificate();
     // Get instance field reference: private Mono.Security.Interface.MonoTlsConnectionInfo connectioninfo
-    [[deprecated]] ::Mono::Security::Interface::MonoTlsConnectionInfo*& dyn_connectioninfo();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Interface::MonoTlsConnectionInfo*& dyn_connectioninfo();
     // Get instance field reference: private System.Boolean isAuthenticated
-    [[deprecated]] bool& dyn_isAuthenticated();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAuthenticated();
     // Get instance field reference: private System.Boolean hasContext
-    [[deprecated]] bool& dyn_hasContext();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasContext();
     // Get instance field reference: private System.Boolean closedGraceful
-    [[deprecated]] bool& dyn_closedGraceful();
+    [[deprecated("Use field access instead!")]] bool& dyn_closedGraceful();
     // Get instance field reference: private System.Byte[] writeBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_writeBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_writeBuffer();
     // Get instance field reference: private System.Byte[] readBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_readBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_readBuffer();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle handle
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_handle();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn_handle();
     // Get instance field reference: private System.Exception lastException
-    [[deprecated]] ::System::Exception*& dyn_lastException();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_lastException();
     // static private System.Void ExtractNativeKeyAndChainFromManagedCertificate(System.Security.Cryptography.X509Certificates.X509Certificate cert, Mono.Unity.UnityTls/Mono.Unity.unitytls_errorstate* errorState, out Mono.Unity.UnityTls/Mono.Unity.unitytls_x509list* nativeCertChain, out Mono.Unity.UnityTls/Mono.Unity.unitytls_key* nativeKey)
     // Offset: 0xDB4B3C
     static void ExtractNativeKeyAndChainFromManagedCertificate(::System::Security::Cryptography::X509Certificates::X509Certificate* cert, ::Mono::Unity::UnityTls::unitytls_errorstate* errorState, ByRef<::Mono::Unity::UnityTls::unitytls_x509list*> nativeCertChain, ByRef<::Mono::Unity::UnityTls::unitytls_key*> nativeKey);

@@ -47,9 +47,9 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: protected System.Single _fadeStartValue
-    [[deprecated]] float& dyn__fadeStartValue();
+    [[deprecated("Use field access instead!")]] float& dyn__fadeStartValue();
     // Get instance field reference: protected System.Single _fadeStopValue
-    [[deprecated]] float& dyn__fadeStopValue();
+    [[deprecated("Use field access instead!")]] float& dyn__fadeStopValue();
     // public System.Int32 GetFadeOutLength(VROSC.LoopPlaybackConfig/VROSC.FadeDuration fade, System.Int32 tailLength)
     // Offset: 0x19BD0BC
     int GetFadeOutLength(::VROSC::LoopPlaybackConfig::FadeDuration fade, int tailLength);
@@ -63,7 +63,6 @@ namespace VROSC {
     // Offset: 0x19BD310
     // Implemented from: VROSC.LoopPlayerPlaybackState
     // Base method: System.Void LoopPlayerPlaybackState::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LoopPlayerPlaybackFadeState* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerPlaybackFadeState::.ctor");

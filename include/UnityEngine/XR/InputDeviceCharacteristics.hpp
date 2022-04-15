@@ -115,7 +115,7 @@ namespace UnityEngine::XR {
     // Set static field: static public UnityEngine.XR.InputDeviceCharacteristics Simulated6DOF
     static void _set_Simulated6DOF(::UnityEngine::XR::InputDeviceCharacteristics value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // UnityEngine.XR.InputDeviceCharacteristics
   #pragma pack(pop)
   static check_size<sizeof(InputDeviceCharacteristics), 0 + sizeof(uint)> __UnityEngine_XR_InputDeviceCharacteristicsSizeCheck;

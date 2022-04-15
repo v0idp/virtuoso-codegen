@@ -99,23 +99,23 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Color) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.TextMesh _textMesh
-    [[deprecated]] ::UnityEngine::TextMesh*& dyn__textMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextMesh*& dyn__textMesh();
     // Get instance field reference: private UnityEngine.Color _onSignalColor
-    [[deprecated]] ::UnityEngine::Color& dyn__onSignalColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__onSignalColor();
     // Get instance field reference: private System.Single _zeroBrightness
-    [[deprecated]] float& dyn__zeroBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__zeroBrightness();
     // Get instance field reference: private System.Single _oneBrightness
-    [[deprecated]] float& dyn__oneBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__oneBrightness();
     // Get instance field reference: private System.Single _rampUpTime
-    [[deprecated]] float& dyn__rampUpTime();
+    [[deprecated("Use field access instead!")]] float& dyn__rampUpTime();
     // Get instance field reference: private System.Single _rampDownTime
-    [[deprecated]] float& dyn__rampDownTime();
+    [[deprecated("Use field access instead!")]] float& dyn__rampDownTime();
     // Get instance field reference: private System.Single _targetBrightness
-    [[deprecated]] float& dyn__targetBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__targetBrightness();
     // Get instance field reference: private System.Single _currentBrightness
-    [[deprecated]] float& dyn__currentBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn__currentBrightness();
     // Get instance field reference: private UnityEngine.Color _defaultColor
-    [[deprecated]] ::UnityEngine::Color& dyn__defaultColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__defaultColor();
     // protected System.Void Awake()
     // Offset: 0x1925A6C
     void Awake();
@@ -139,11 +139,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SetTextColorOnSignal* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SetTextColorOnSignal::.ctor");

@@ -39,9 +39,9 @@ namespace System::Security {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: private System.String _value
-    [[deprecated]] ::StringW& dyn__value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__value();
     // public System.String get_Name()
     // Offset: 0xE588D4
     ::StringW get_Name();

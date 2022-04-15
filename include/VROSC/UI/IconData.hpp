@@ -55,26 +55,22 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Mesh _mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__mesh();
     // Get instance field reference: private System.Boolean _colorized
-    [[deprecated]] bool& dyn__colorized();
+    [[deprecated("Use field access instead!")]] bool& dyn__colorized();
     // public UnityEngine.Mesh get_Mesh()
     // Offset: 0x1942604
     ::UnityEngine::Mesh* get_Mesh();
-    // public System.Void Resize(UnityEngine.Mesh mesh, UnityEngine.Rect rect, System.Single scale)
-    // Offset: 0x194260C
-    void Resize(::UnityEngine::Mesh* mesh, ::UnityEngine::Rect rect, float scale);
     // public System.Void .ctor()
     // Offset: 0x19427A4
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IconData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::IconData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<IconData*, creationType>()));
     }
+    // public System.Void Resize(UnityEngine.Mesh mesh, UnityEngine.Rect rect, System.Single scale)
+    // Offset: 0x194260C
+    void Resize(::UnityEngine::Mesh* mesh, ::UnityEngine::Rect rect, float scale);
   }; // VROSC.UI.IconData
   #pragma pack(pop)
   static check_size<sizeof(IconData), 32 + sizeof(bool)> __VROSC_UI_IconDataSizeCheck;
@@ -89,6 +85,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::IconData*), "get_Mesh", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UI::IconData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::IconData::Resize
 // Il2CppName: Resize
 template<>
@@ -100,7 +100,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::IconData*), "Resize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mesh, rect, scale});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::IconData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

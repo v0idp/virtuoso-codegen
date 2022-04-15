@@ -108,21 +108,21 @@ namespace VROSC {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncTaskMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncTaskMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.String filePath
-    [[deprecated]] ::StringW& dyn_filePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_filePath();
     // Get instance field reference: public System.Action`1<UnityEngine.AudioClip> onSuccess
-    [[deprecated]] ::System::Action_1<::UnityEngine::AudioClip*>*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::AudioClip*>*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequest <www>5__2
-    [[deprecated]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$www$5__2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UnityWebRequest*& dyn_$www$5__2();
     // Get instance field reference: private UnityEngine.Networking.UnityWebRequestAsyncOperation <webRequest>5__3
-    [[deprecated]] ::UnityEngine::Networking::UnityWebRequestAsyncOperation*& dyn_$webRequest$5__3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UnityWebRequestAsyncOperation*& dyn_$webRequest$5__3();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
     // private System.Void MoveNext()
     // Offset: 0x9614A8
     void MoveNext();

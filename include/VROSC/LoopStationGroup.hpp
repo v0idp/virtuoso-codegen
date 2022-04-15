@@ -202,41 +202,41 @@ namespace VROSC {
     // Set static field: static public UnityEngine.Color DefaultGroupColor
     static void _set_DefaultGroupColor(::UnityEngine::Color value);
     // Get instance field reference: private System.Int32 <RowInAutoArrange>k__BackingField
-    [[deprecated]] int& dyn_$RowInAutoArrange$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$RowInAutoArrange$k__BackingField();
     // Get instance field reference: private System.String <GroupID>k__BackingField
-    [[deprecated]] ::StringW& dyn_$GroupID$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$GroupID$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopPlayer> <LoopPlayers>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn_$LoopPlayers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopPlayer*>*& dyn_$LoopPlayers$k__BackingField();
     // Get instance field reference: private VROSC.LoopStationGroupHandler <Handler>k__BackingField
-    [[deprecated]] ::VROSC::LoopStationGroupHandler*& dyn_$Handler$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroupHandler*& dyn_$Handler$k__BackingField();
     // Get instance field reference: private UnityEngine.Collider _dropZone
-    [[deprecated]] ::UnityEngine::Collider*& dyn__dropZone();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__dropZone();
     // Get instance field reference: private UnityEngine.Transform _loopsParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__loopsParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__loopsParent();
     // Get instance field reference: private UnityEngine.RectTransform _menuRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__menuRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__menuRect();
     // Get instance field reference: private UnityEngine.RectTransform _dimensions
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__dimensions();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__dimensions();
     // Get instance field reference: private VROSC.LoopStationGroupMover _autoMover
-    [[deprecated]] ::VROSC::LoopStationGroupMover*& dyn__autoMover();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroupMover*& dyn__autoMover();
     // Get instance field reference: private VROSC.LoopListArranger _arranger
-    [[deprecated]] ::VROSC::LoopListArranger*& dyn__arranger();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopListArranger*& dyn__arranger();
     // Get instance field reference: private VROSC.LoopStationGroupUI _ui
-    [[deprecated]] ::VROSC::LoopStationGroupUI*& dyn__ui();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationGroupUI*& dyn__ui();
     // Get instance field reference: private VROSC.InteractionDisabler _disabler
-    [[deprecated]] ::VROSC::InteractionDisabler*& dyn__disabler();
+    [[deprecated("Use field access instead!")]] ::VROSC::InteractionDisabler*& dyn__disabler();
     // Get instance field reference: public System.Action`2<VROSC.LoopStationGroup,System.Boolean> OnGroupRemoved
-    [[deprecated]] ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnGroupRemoved();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnGroupRemoved();
     // Get instance field reference: public System.Action`1<VROSC.LoopPlayer> OnLoopAdded
-    [[deprecated]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopAdded();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopAdded();
     // Get instance field reference: public System.Action`1<VROSC.LoopPlayer> OnLoopRemoved
-    [[deprecated]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopRemoved();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::LoopPlayer*>*& dyn_OnLoopRemoved();
     // Get instance field reference: public System.Action OnGroupSizeChanged
-    [[deprecated]] ::System::Action*& dyn_OnGroupSizeChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnGroupSizeChanged();
     // Get instance field reference: public System.Action`2<VROSC.LoopStationGroup,System.Boolean> OnSoloChanged
-    [[deprecated]] ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnSoloChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<::VROSC::LoopStationGroup*, bool>*& dyn_OnSoloChanged();
     // Get instance field reference: protected VROSC.LoopStation _loopStation
-    [[deprecated]] ::VROSC::LoopStation*& dyn__loopStation();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStation*& dyn__loopStation();
     // public UnityEngine.RectTransform get_Dimensions()
     // Offset: 0x196E504
     ::UnityEngine::RectTransform* get_Dimensions();
@@ -288,6 +288,16 @@ namespace VROSC {
     // public System.Boolean get_LoopsCanOnlyBeRearranged()
     // Offset: 0x196E6A8
     bool get_LoopsCanOnlyBeRearranged();
+    // public System.Void .ctor()
+    // Offset: 0x196F2C4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationGroup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationGroup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroup*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x196F33C
+    static void _cctor();
     // public System.Void Setup(VROSC.LoopStation loopStation, VROSC.LoopStationGroupHandler handler, VROSC.LoopStationGroup/VROSC.SetupVariables vars)
     // Offset: 0x196E6C4
     void Setup(::VROSC::LoopStation* loopStation, ::VROSC::LoopStationGroupHandler* handler, ::VROSC::LoopStationGroup::SetupVariables vars);
@@ -348,24 +358,6 @@ namespace VROSC {
     // System.Void LoadLaunchPad(System.String padID, VROSC.TransformDataController transformData)
     // Offset: 0x196F288
     void LoadLaunchPad(::StringW padID, ::VROSC::TransformDataController* transformData);
-    // public System.Void .ctor()
-    // Offset: 0x196F2C4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationGroup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationGroup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroup*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x196F33C
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // VROSC.LoopStationGroup
   #pragma pack(pop)
   static check_size<sizeof(LoopStationGroup), 160 + sizeof(::VROSC::LoopStation*)> __VROSC_LoopStationGroupSizeCheck;
@@ -510,6 +502,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (VROSC::LoopStationGroup::*)()>(&VROSC::LoopStationGroup::get_LoopsCanOnlyBeRearranged)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroup*), "get_LoopsCanOnlyBeRearranged", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: VROSC::LoopStationGroup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: VROSC::LoopStationGroup::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::LoopStationGroup::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroup*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: VROSC::LoopStationGroup::Setup
@@ -693,17 +697,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     static auto* padID = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     static auto* transformData = &::il2cpp_utils::GetClassFromName("VROSC", "TransformDataController")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroup*), "LoadLaunchPad", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{padID, transformData});
-  }
-};
-// Writing MetadataGetter for method: VROSC::LoopStationGroup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: VROSC::LoopStationGroup::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&VROSC::LoopStationGroup::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroup*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

@@ -115,7 +115,7 @@ namespace System::Net {
       // Set static field: static public System.Net.WebConnectionTunnel/System.Net.NtlmAuthState Response
       static void _set_Response(::System::Net::WebConnectionTunnel::NtlmAuthState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Net.WebConnectionTunnel/System.Net.NtlmAuthState
     #pragma pack(pop)
     static check_size<sizeof(WebConnectionTunnel::NtlmAuthState), 0 + sizeof(int)> __System_Net_WebConnectionTunnel_NtlmAuthStateSizeCheck;
@@ -199,29 +199,29 @@ namespace System::Net {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: private readonly System.Net.HttpWebRequest <Request>k__BackingField
-    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_$Request$k__BackingField();
     // Get instance field reference: private readonly System.Uri <ConnectUri>k__BackingField
-    [[deprecated]] ::System::Uri*& dyn_$ConnectUri$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_$ConnectUri$k__BackingField();
     // Get instance field reference: private System.Net.HttpWebRequest connectRequest
-    [[deprecated]] ::System::Net::HttpWebRequest*& dyn_connectRequest();
+    [[deprecated("Use field access instead!")]] ::System::Net::HttpWebRequest*& dyn_connectRequest();
     // Get instance field reference: private System.Net.WebConnectionTunnel/System.Net.NtlmAuthState ntlmAuthState
-    [[deprecated]] ::System::Net::WebConnectionTunnel::NtlmAuthState& dyn_ntlmAuthState();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebConnectionTunnel::NtlmAuthState& dyn_ntlmAuthState();
     // Get instance field reference: private System.Boolean <Success>k__BackingField
-    [[deprecated]] bool& dyn_$Success$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Success$k__BackingField();
     // Get instance field reference: private System.Boolean <CloseConnection>k__BackingField
-    [[deprecated]] bool& dyn_$CloseConnection$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$CloseConnection$k__BackingField();
     // Get instance field reference: private System.Int32 <StatusCode>k__BackingField
-    [[deprecated]] int& dyn_$StatusCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$StatusCode$k__BackingField();
     // Get instance field reference: private System.String <StatusDescription>k__BackingField
-    [[deprecated]] ::StringW& dyn_$StatusDescription$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$StatusDescription$k__BackingField();
     // Get instance field reference: private System.String[] <Challenge>k__BackingField
-    [[deprecated]] ::ArrayW<::StringW>& dyn_$Challenge$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_$Challenge$k__BackingField();
     // Get instance field reference: private System.Net.WebHeaderCollection <Headers>k__BackingField
-    [[deprecated]] ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebHeaderCollection*& dyn_$Headers$k__BackingField();
     // Get instance field reference: private System.Version <ProxyVersion>k__BackingField
-    [[deprecated]] ::System::Version*& dyn_$ProxyVersion$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Version*& dyn_$ProxyVersion$k__BackingField();
     // Get instance field reference: private System.Byte[] <Data>k__BackingField
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_$Data$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_$Data$k__BackingField();
     // public System.Net.HttpWebRequest get_Request()
     // Offset: 0xC43C0C
     ::System::Net::HttpWebRequest* get_Request();

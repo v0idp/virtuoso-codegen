@@ -83,17 +83,17 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.EmpadDataModel> Empads
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::EmpadDataModel*>*& dyn_Empads();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::EmpadDataModel*>*& dyn_Empads();
     // Get instance field reference: public System.Single ReverbAmount
-    [[deprecated]] float& dyn_ReverbAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_ReverbAmount();
     // Get instance field reference: public System.Single ReverbLength
-    [[deprecated]] float& dyn_ReverbLength();
+    [[deprecated("Use field access instead!")]] float& dyn_ReverbLength();
     // Get instance field reference: public System.Single DryVolume
-    [[deprecated]] float& dyn_DryVolume();
+    [[deprecated("Use field access instead!")]] float& dyn_DryVolume();
     // Get instance field reference: public System.Single Compression
-    [[deprecated]] float& dyn_Compression();
+    [[deprecated("Use field access instead!")]] float& dyn_Compression();
     // Get instance field reference: public System.Boolean HasBeenOpened
-    [[deprecated]] bool& dyn_HasBeenOpened();
+    [[deprecated("Use field access instead!")]] bool& dyn_HasBeenOpened();
     // public override System.String get_Key()
     // Offset: 0xACCC5C
     // Implemented from: VROSC.BaseDataModel
@@ -109,7 +109,6 @@ namespace VROSC {
     // Implemented from: VROSC.InstrumentDataModel
     // Base method: System.Void InstrumentDataModel::.ctor()
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ModularDrumsDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ModularDrumsDataModel::.ctor");

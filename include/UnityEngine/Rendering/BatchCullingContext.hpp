@@ -78,19 +78,19 @@ namespace UnityEngine::Rendering {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly Unity.Collections.NativeArray`1<UnityEngine.Plane> cullingPlanes
-    [[deprecated]] ::Unity::Collections::NativeArray_1<::UnityEngine::Plane>& dyn_cullingPlanes();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<::UnityEngine::Plane>& dyn_cullingPlanes();
     // Get instance field reference: public Unity.Collections.NativeArray`1<UnityEngine.Rendering.BatchVisibility> batchVisibility
-    [[deprecated]] ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::BatchVisibility>& dyn_batchVisibility();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::BatchVisibility>& dyn_batchVisibility();
     // Get instance field reference: public Unity.Collections.NativeArray`1<System.Int32> visibleIndices
-    [[deprecated]] ::Unity::Collections::NativeArray_1<int>& dyn_visibleIndices();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<int>& dyn_visibleIndices();
     // Get instance field reference: public Unity.Collections.NativeArray`1<System.Int32> visibleIndicesY
-    [[deprecated]] ::Unity::Collections::NativeArray_1<int>& dyn_visibleIndicesY();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<int>& dyn_visibleIndicesY();
     // Get instance field reference: public readonly UnityEngine.Rendering.LODParameters lodParameters
-    [[deprecated]] ::UnityEngine::Rendering::LODParameters& dyn_lodParameters();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::LODParameters& dyn_lodParameters();
     // Get instance field reference: public readonly UnityEngine.Matrix4x4 cullingMatrix
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_cullingMatrix();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_cullingMatrix();
     // Get instance field reference: public readonly System.Single nearPlane
-    [[deprecated]] float& dyn_nearPlane();
+    [[deprecated("Use field access instead!")]] float& dyn_nearPlane();
     // System.Void .ctor(Unity.Collections.NativeArray`1<UnityEngine.Plane> inCullingPlanes, Unity.Collections.NativeArray`1<UnityEngine.Rendering.BatchVisibility> inOutBatchVisibility, Unity.Collections.NativeArray`1<System.Int32> outVisibleIndices, Unity.Collections.NativeArray`1<System.Int32> outVisibleIndicesY, UnityEngine.Rendering.LODParameters inLodParameters, UnityEngine.Matrix4x4 inCullingMatrix, System.Single inNearPlane)
     // Offset: 0x111DE70
     // ABORTED: conflicts with another method.  BatchCullingContext(::Unity::Collections::NativeArray_1<::UnityEngine::Plane> inCullingPlanes, ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::BatchVisibility> inOutBatchVisibility, ::Unity::Collections::NativeArray_1<int> outVisibleIndices, ::Unity::Collections::NativeArray_1<int> outVisibleIndicesY, ::UnityEngine::Rendering::LODParameters inLodParameters, ::UnityEngine::Matrix4x4 inCullingMatrix, float inNearPlane);

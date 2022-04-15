@@ -125,21 +125,21 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::Parser*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.HWStack validationStack
-    [[deprecated]] ::System::Xml::HWStack*& dyn_validationStack();
+    [[deprecated("Use field access instead!")]] ::System::Xml::HWStack*& dyn_validationStack();
     // Get instance field reference: private System.Collections.Hashtable attPresence
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_attPresence();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_attPresence();
     // Get instance field reference: private System.Xml.XmlQualifiedName name
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_name();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_name();
     // Get instance field reference: private System.Xml.XmlNamespaceManager nsManager
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn_nsManager();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn_nsManager();
     // Get instance field reference: private System.Boolean isProcessContents
-    [[deprecated]] bool& dyn_isProcessContents();
+    [[deprecated("Use field access instead!")]] bool& dyn_isProcessContents();
     // Get instance field reference: private System.Collections.Hashtable IDs
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_IDs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_IDs();
     // Get instance field reference: private System.Xml.Schema.IdRefNode idRefListHead
-    [[deprecated]] ::System::Xml::Schema::IdRefNode*& dyn_idRefListHead();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::IdRefNode*& dyn_idRefListHead();
     // Get instance field reference: private System.Xml.Schema.Parser inlineSchemaParser
-    [[deprecated]] ::System::Xml::Schema::Parser*& dyn_inlineSchemaParser();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::Parser*& dyn_inlineSchemaParser();
     // private System.Boolean get_IsInlineSchemaStarted()
     // Offset: 0x11AC654
     bool get_IsInlineSchemaStarted();

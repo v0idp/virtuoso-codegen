@@ -74,26 +74,23 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.AdjustableMesh _target
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__target();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__target();
     // Get instance field reference: public VROSC.AnimatedAppear/VROSC.Mode _mode
-    [[deprecated]] ::VROSC::AnimatedAppear::Mode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::VROSC::AnimatedAppear::Mode& dyn__mode();
     // Get instance field reference: private UnityEngine.Color _tintColor
-    [[deprecated]] ::UnityEngine::Color& dyn__tintColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__tintColor();
     // Get instance field reference: public System.Single Tint
-    [[deprecated]] float& dyn_Tint();
-    // public System.Void Setup(VROSC.AdjustableMesh target, VROSC.AnimatedAppear/VROSC.Mode mode)
-    // Offset: 0x968994
-    void Setup(::VROSC::AdjustableMesh* target, ::VROSC::AnimatedAppear::Mode mode);
+    [[deprecated("Use field access instead!")]] float& dyn_Tint();
     // public System.Void .ctor()
     // Offset: 0x968A80
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AdjustableMeshTintBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AdjustableMeshTintBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AdjustableMeshTintBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.AdjustableMesh target, VROSC.AnimatedAppear/VROSC.Mode mode)
+    // Offset: 0x968994
+    void Setup(::VROSC::AdjustableMesh* target, ::VROSC::AnimatedAppear::Mode mode);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x9689C8
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -105,6 +102,10 @@ namespace VROSC {
   static_assert(sizeof(AdjustableMeshTintBehaviour) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AdjustableMeshTintBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AdjustableMeshTintBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -115,10 +116,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AdjustableMeshTintBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, mode});
   }
 };
-// Writing MetadataGetter for method: VROSC::AdjustableMeshTintBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AdjustableMeshTintBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

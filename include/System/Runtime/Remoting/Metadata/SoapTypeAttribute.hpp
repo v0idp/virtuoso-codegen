@@ -78,19 +78,19 @@ namespace System::Runtime::Remoting::Metadata {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean _useAttribute
-    [[deprecated]] bool& dyn__useAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn__useAttribute();
     // Get instance field reference: private System.String _xmlElementName
-    [[deprecated]] ::StringW& dyn__xmlElementName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__xmlElementName();
     // Get instance field reference: private System.String _xmlNamespace
-    [[deprecated]] ::StringW& dyn__xmlNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__xmlNamespace();
     // Get instance field reference: private System.String _xmlTypeName
-    [[deprecated]] ::StringW& dyn__xmlTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__xmlTypeName();
     // Get instance field reference: private System.String _xmlTypeNamespace
-    [[deprecated]] ::StringW& dyn__xmlTypeNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__xmlTypeNamespace();
     // Get instance field reference: private System.Boolean _isType
-    [[deprecated]] bool& dyn__isType();
+    [[deprecated("Use field access instead!")]] bool& dyn__isType();
     // Get instance field reference: private System.Boolean _isElement
-    [[deprecated]] bool& dyn__isElement();
+    [[deprecated("Use field access instead!")]] bool& dyn__isElement();
     // public System.String get_XmlElementName()
     // Offset: 0x124FAD0
     ::StringW get_XmlElementName();

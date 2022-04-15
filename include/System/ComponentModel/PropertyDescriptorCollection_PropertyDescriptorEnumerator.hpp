@@ -51,9 +51,9 @@ namespace System::ComponentModel {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.ComponentModel.PropertyDescriptorCollection owner
-    [[deprecated]] ::System::ComponentModel::PropertyDescriptorCollection*& dyn_owner();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::PropertyDescriptorCollection*& dyn_owner();
     // Get instance field reference: private System.Int32 index
-    [[deprecated]] int& dyn_index();
+    [[deprecated("Use field access instead!")]] int& dyn_index();
     // public System.Object get_Current()
     // Offset: 0x9FCC5C
     ::Il2CppObject* get_Current();

@@ -55,7 +55,7 @@ namespace VROSC {
       return Favorites;
     }
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.UserFavoritesDataModel/VROSC.Favorite> Favorites
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UserFavoritesDataModel::Favorite*>*& dyn_Favorites();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UserFavoritesDataModel::Favorite*>*& dyn_Favorites();
     // public override System.String get_Key()
     // Offset: 0x191D594
     // Implemented from: VROSC.BaseDataModel
@@ -70,7 +70,6 @@ namespace VROSC {
     // Offset: 0x191C81C
     // Implemented from: VROSC.BaseDataModel
     // Base method: System.Void BaseDataModel::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UserFavoritesDataModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UserFavoritesDataModel::.ctor");

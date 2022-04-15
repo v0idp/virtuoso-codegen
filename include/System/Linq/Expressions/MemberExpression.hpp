@@ -64,7 +64,7 @@ namespace System::Linq::Expressions {
       return Expression;
     }
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Expression>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Expression$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Expression$k__BackingField();
     // public System.Reflection.MemberInfo get_Member()
     // Offset: 0xE90F0C
     ::System::Reflection::MemberInfo* get_Member();

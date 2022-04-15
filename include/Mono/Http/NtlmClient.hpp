@@ -66,6 +66,13 @@ namespace Mono::Http {
     // public System.String get_AuthenticationType()
     // Offset: 0x14077DC
     ::StringW get_AuthenticationType();
+    // public System.Void .ctor()
+    // Offset: 0x1407820
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NtlmClient* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Http::NtlmClient::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NtlmClient*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x1407828
     static void _cctor();
@@ -75,15 +82,6 @@ namespace Mono::Http {
     // public System.Net.Authorization PreAuthenticate(System.Net.WebRequest webRequest, System.Net.ICredentials credentials)
     // Offset: 0x14077D4
     ::System::Net::Authorization* PreAuthenticate(::System::Net::WebRequest* webRequest, ::System::Net::ICredentials* credentials);
-    // public System.Void .ctor()
-    // Offset: 0x1407820
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NtlmClient* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Http::NtlmClient::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NtlmClient*, creationType>()));
-    }
   }; // Mono.Http.NtlmClient
   #pragma pack(pop)
 }
@@ -96,6 +94,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Mono::Http::NtlmClient*), "get_AuthenticationType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Mono::Http::NtlmClient::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Http::NtlmClient::_cctor
 // Il2CppName: .cctor
 template<>
@@ -125,7 +127,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::N
     return ::il2cpp_utils::FindMethod(classof(Mono::Http::NtlmClient*), "PreAuthenticate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{webRequest, credentials});
   }
 };
-// Writing MetadataGetter for method: Mono::Http::NtlmClient::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

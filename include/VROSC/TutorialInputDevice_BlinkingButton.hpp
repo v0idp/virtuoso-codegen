@@ -52,9 +52,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TutorialVisualBlinking*) == 0x8);
     public:
     // Get instance field reference: private VROSC.ControllerComponent <Component>k__BackingField
-    [[deprecated]] ::VROSC::ControllerComponent*& dyn_$Component$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerComponent*& dyn_$Component$k__BackingField();
     // Get instance field reference: private VROSC.TutorialVisualBlinking <Blinking>k__BackingField
-    [[deprecated]] ::VROSC::TutorialVisualBlinking*& dyn_$Blinking$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialVisualBlinking*& dyn_$Blinking$k__BackingField();
     // public VROSC.ControllerComponent get_Component()
     // Offset: 0xE7F98C
     ::VROSC::ControllerComponent* get_Component();

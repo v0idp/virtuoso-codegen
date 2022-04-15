@@ -92,15 +92,22 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.String freshStateText
-    [[deprecated]] ::StringW& dyn_freshStateText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_freshStateText();
     // Get instance field reference: private UnityEngine.UI.Text textArea
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_textArea();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_textArea();
     // Get instance field reference: private System.Boolean showJson
-    [[deprecated]] bool& dyn_showJson();
+    [[deprecated("Use field access instead!")]] bool& dyn_showJson();
     // Get instance field reference: private Oculus.Voice.AppVoiceExperience appVoiceExperience
-    [[deprecated]] ::Oculus::Voice::AppVoiceExperience*& dyn_appVoiceExperience();
+    [[deprecated("Use field access instead!")]] ::Oculus::Voice::AppVoiceExperience*& dyn_appVoiceExperience();
     // Get instance field reference: private System.String pendingText
-    [[deprecated]] ::StringW& dyn_pendingText();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_pendingText();
+    // public System.Void .ctor()
+    // Offset: 0x1949BC0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InteractionHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::UIShapesDemo::InteractionHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InteractionHandler*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x194962C
     void OnEnable();
@@ -125,25 +132,16 @@ namespace Oculus::Voice::Demo::UIShapesDemo {
     // private System.Void <OnRequestStarted>b__7_0(System.String response)
     // Offset: 0x1949C14
     void $OnRequestStarted$b__7_0(::StringW response);
-    // public System.Void .ctor()
-    // Offset: 0x1949BC0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InteractionHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Voice::Demo::UIShapesDemo::InteractionHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InteractionHandler*, creationType>()));
-    }
   }; // Oculus.Voice.Demo.UIShapesDemo.InteractionHandler
   #pragma pack(pop)
   static check_size<sizeof(InteractionHandler), 56 + sizeof(::StringW)> __Oculus_Voice_Demo_UIShapesDemo_InteractionHandlerSizeCheck;
   static_assert(sizeof(InteractionHandler) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::InteractionHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::InteractionHandler::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -213,7 +211,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Voice::Demo::UIShapesDemo::InteractionHandler*), "<OnRequestStarted>b__7_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{response});
   }
 };
-// Writing MetadataGetter for method: Oculus::Voice::Demo::UIShapesDemo::InteractionHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

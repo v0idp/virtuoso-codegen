@@ -54,11 +54,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single ambientIntensity
-    [[deprecated]] float& dyn_ambientIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_ambientIntensity();
     // Get instance field reference: public System.UInt32 lightCount
-    [[deprecated]] uint& dyn_lightCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_lightCount();
     // Get instance field reference: public ovrAvatarLight[] lights
-    [[deprecated]] ::ArrayW<::GlobalNamespace::ovrAvatarLight>& dyn_lights();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ovrAvatarLight>& dyn_lights();
   }; // ovrAvatarLights
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarLights), 8 + sizeof(::ArrayW<::GlobalNamespace::ovrAvatarLight>)> __GlobalNamespace_ovrAvatarLightsSizeCheck;

@@ -44,25 +44,27 @@ namespace RSG {
       return seconds;
     }
     // Get instance field reference: public System.Single seconds
-    [[deprecated]] float& dyn_seconds();
-    // System.Boolean <WaitFor>b__0(RSG.TimeData t)
-    // Offset: 0x8CF7BC
-    bool $WaitFor$b__0(::RSG::TimeData t);
+    [[deprecated("Use field access instead!")]] float& dyn_seconds();
     // public System.Void .ctor()
     // Offset: 0x8CF7B4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PromiseTimer::$$c__DisplayClass3_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::RSG::PromiseTimer::$$c__DisplayClass3_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PromiseTimer::$$c__DisplayClass3_0*, creationType>()));
     }
+    // System.Boolean <WaitFor>b__0(RSG.TimeData t)
+    // Offset: 0x8CF7BC
+    bool $WaitFor$b__0(::RSG::TimeData t);
   }; // RSG.PromiseTimer/RSG.<>c__DisplayClass3_0
   #pragma pack(pop)
   static check_size<sizeof(PromiseTimer::$$c__DisplayClass3_0), 16 + sizeof(float)> __RSG_PromiseTimer_$$c__DisplayClass3_0SizeCheck;
   static_assert(sizeof(PromiseTimer::$$c__DisplayClass3_0) == 0x14);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: RSG::PromiseTimer::$$c__DisplayClass3_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: RSG::PromiseTimer::$$c__DisplayClass3_0::$WaitFor$b__0
 // Il2CppName: <WaitFor>b__0
 template<>
@@ -72,7 +74,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (RSG::
     return ::il2cpp_utils::FindMethod(classof(RSG::PromiseTimer::$$c__DisplayClass3_0*), "<WaitFor>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
   }
 };
-// Writing MetadataGetter for method: RSG::PromiseTimer::$$c__DisplayClass3_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

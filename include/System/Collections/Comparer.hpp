@@ -76,7 +76,7 @@ namespace System::Collections {
     // Set static field: static public readonly System.Collections.Comparer DefaultInvariant
     static void _set_DefaultInvariant(::System::Collections::Comparer* value);
     // Get instance field reference: private System.Globalization.CompareInfo m_compareInfo
-    [[deprecated]] ::System::Globalization::CompareInfo*& dyn_m_compareInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CompareInfo*& dyn_m_compareInfo();
     // public System.Void .ctor(System.Globalization.CultureInfo culture)
     // Offset: 0xE3BB94
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

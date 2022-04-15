@@ -45,7 +45,7 @@ namespace System::Runtime::CompilerServices {
       return m_relaxations;
     }
     // Get instance field reference: private System.Int32 m_relaxations
-    [[deprecated]] int& dyn_m_relaxations();
+    [[deprecated("Use field access instead!")]] int& dyn_m_relaxations();
     // public System.Int32 get_CompilationRelaxations()
     // Offset: 0xE3C2DC
     int get_CompilationRelaxations();

@@ -68,9 +68,9 @@ namespace System::Linq::Expressions::Interpreter {
     static_assert(sizeof(::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.Expression _operand
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn__operand();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn__operand();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariable> _hoistedVariables
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn__hoistedVariables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::Linq::Expressions::ParameterExpression*, ::System::Linq::Expressions::Interpreter::LocalVariable*>*& dyn__hoistedVariables();
     // public System.Void .ctor(System.Linq.Expressions.Expression operand, System.Collections.Generic.Dictionary`2<System.Linq.Expressions.ParameterExpression,System.Linq.Expressions.Interpreter.LocalVariable> hoistedVariables)
     // Offset: 0xE97278
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

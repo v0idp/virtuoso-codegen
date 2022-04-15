@@ -71,11 +71,11 @@ namespace System::Xml::Serialization {
     static_assert(sizeof(::System::Xml::XmlQualifiedName*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.Schema.XmlSchema _schema
-    [[deprecated]] ::System::Xml::Schema::XmlSchema*& dyn__schema();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchema*& dyn__schema();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaComplexType _schemaType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaComplexType*& dyn__schemaType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaComplexType*& dyn__schemaType();
     // Get instance field reference: private System.Xml.XmlQualifiedName _schemaTypeName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn__schemaTypeName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn__schemaTypeName();
     // System.Void .ctor(System.Xml.Serialization.XmlRootAttribute root, System.String elementName, System.String ns, System.Xml.Serialization.TypeData typeData, System.String xmlType, System.String xmlTypeNamespace)
     // Offset: 0xF4366C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

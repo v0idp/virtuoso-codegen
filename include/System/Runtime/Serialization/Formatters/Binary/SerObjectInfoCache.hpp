@@ -81,17 +81,17 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(::ArrayW<::System::Type*>) == 0x8);
     public:
     // Get instance field reference: System.String fullTypeName
-    [[deprecated]] ::StringW& dyn_fullTypeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_fullTypeName();
     // Get instance field reference: System.String assemblyString
-    [[deprecated]] ::StringW& dyn_assemblyString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_assemblyString();
     // Get instance field reference: System.Boolean hasTypeForwardedFrom
-    [[deprecated]] bool& dyn_hasTypeForwardedFrom();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasTypeForwardedFrom();
     // Get instance field reference: System.Reflection.MemberInfo[] memberInfos
-    [[deprecated]] ::ArrayW<::System::Reflection::MemberInfo*>& dyn_memberInfos();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Reflection::MemberInfo*>& dyn_memberInfos();
     // Get instance field reference: System.String[] memberNames
-    [[deprecated]] ::ArrayW<::StringW>& dyn_memberNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_memberNames();
     // Get instance field reference: System.Type[] memberTypes
-    [[deprecated]] ::ArrayW<::System::Type*>& dyn_memberTypes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Type*>& dyn_memberTypes();
     // System.Void .ctor(System.String typeName, System.String assemblyName, System.Boolean hasTypeForwardedFrom)
     // Offset: 0x1177F9C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

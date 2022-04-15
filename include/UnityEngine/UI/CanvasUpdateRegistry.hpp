@@ -103,18 +103,25 @@ namespace UnityEngine::UI {
     // Set static field: static private readonly System.Comparison`1<UnityEngine.UI.ICanvasElement> s_SortLayoutFunction
     static void _set_s_SortLayoutFunction(::System::Comparison_1<::UnityEngine::UI::ICanvasElement*>* value);
     // Get instance field reference: private System.Boolean m_PerformingLayoutUpdate
-    [[deprecated]] bool& dyn_m_PerformingLayoutUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PerformingLayoutUpdate();
     // Get instance field reference: private System.Boolean m_PerformingGraphicUpdate
-    [[deprecated]] bool& dyn_m_PerformingGraphicUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PerformingGraphicUpdate();
     // Get instance field reference: private System.String[] m_CanvasUpdateProfilerStrings
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_CanvasUpdateProfilerStrings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_CanvasUpdateProfilerStrings();
     // Get instance field reference: private readonly UnityEngine.UI.Collections.IndexedSet`1<UnityEngine.UI.ICanvasElement> m_LayoutRebuildQueue
-    [[deprecated]] ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_LayoutRebuildQueue();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_LayoutRebuildQueue();
     // Get instance field reference: private readonly UnityEngine.UI.Collections.IndexedSet`1<UnityEngine.UI.ICanvasElement> m_GraphicRebuildQueue
-    [[deprecated]] ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_GraphicRebuildQueue();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::ICanvasElement*>*& dyn_m_GraphicRebuildQueue();
     // static public UnityEngine.UI.CanvasUpdateRegistry get_instance()
     // Offset: 0xEAD858
     static ::UnityEngine::UI::CanvasUpdateRegistry* get_instance();
+    // protected System.Void .ctor()
+    // Offset: 0xEAD5EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CanvasUpdateRegistry* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::CanvasUpdateRegistry::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CanvasUpdateRegistry*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xEAF028
     static void _cctor();
@@ -166,15 +173,6 @@ namespace UnityEngine::UI {
     // static public System.Boolean IsRebuildingGraphics()
     // Offset: 0xEAEFC0
     static bool IsRebuildingGraphics();
-    // protected System.Void .ctor()
-    // Offset: 0xEAD5EC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CanvasUpdateRegistry* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::CanvasUpdateRegistry::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CanvasUpdateRegistry*, creationType>()));
-    }
   }; // UnityEngine.UI.CanvasUpdateRegistry
   #pragma pack(pop)
   static check_size<sizeof(CanvasUpdateRegistry), 40 + sizeof(::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::ICanvasElement*>*)> __UnityEngine_UI_CanvasUpdateRegistrySizeCheck;
@@ -189,6 +187,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::CanvasUpdateRegistry*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::CanvasUpdateRegistry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::CanvasUpdateRegistry::_cctor
 // Il2CppName: .cctor
 template<>
@@ -338,7 +340,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::CanvasUpdateRegistry*), "IsRebuildingGraphics", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::CanvasUpdateRegistry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

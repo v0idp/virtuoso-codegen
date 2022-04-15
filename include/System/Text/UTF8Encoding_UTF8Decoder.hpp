@@ -45,7 +45,7 @@ namespace System::Text {
       return bits;
     }
     // Get instance field reference: System.Int32 bits
-    [[deprecated]] int& dyn_bits();
+    [[deprecated("Use field access instead!")]] int& dyn_bits();
     // public System.Void .ctor(System.Text.UTF8Encoding encoding)
     // Offset: 0x189B084
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

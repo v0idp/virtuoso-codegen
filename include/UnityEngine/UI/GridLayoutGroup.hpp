@@ -92,7 +92,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Corner LowerRight
       static void _set_LowerRight(::UnityEngine::UI::GridLayoutGroup::Corner value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Corner
     #pragma pack(pop)
     static check_size<sizeof(GridLayoutGroup::Corner), 0 + sizeof(int)> __UnityEngine_UI_GridLayoutGroup_CornerSizeCheck;
@@ -134,7 +134,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Axis Vertical
       static void _set_Vertical(::UnityEngine::UI::GridLayoutGroup::Axis value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Axis
     #pragma pack(pop)
     static check_size<sizeof(GridLayoutGroup::Axis), 0 + sizeof(int)> __UnityEngine_UI_GridLayoutGroup_AxisSizeCheck;
@@ -182,7 +182,7 @@ namespace UnityEngine::UI {
       // Set static field: static public UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Constraint FixedRowCount
       static void _set_FixedRowCount(::UnityEngine::UI::GridLayoutGroup::Constraint value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Constraint
     #pragma pack(pop)
     static check_size<sizeof(GridLayoutGroup::Constraint), 0 + sizeof(int)> __UnityEngine_UI_GridLayoutGroup_ConstraintSizeCheck;
@@ -226,17 +226,17 @@ namespace UnityEngine::UI {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: protected UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Corner m_StartCorner
-    [[deprecated]] ::UnityEngine::UI::GridLayoutGroup::Corner& dyn_m_StartCorner();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::GridLayoutGroup::Corner& dyn_m_StartCorner();
     // Get instance field reference: protected UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Axis m_StartAxis
-    [[deprecated]] ::UnityEngine::UI::GridLayoutGroup::Axis& dyn_m_StartAxis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::GridLayoutGroup::Axis& dyn_m_StartAxis();
     // Get instance field reference: protected UnityEngine.Vector2 m_CellSize
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_CellSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_CellSize();
     // Get instance field reference: protected UnityEngine.Vector2 m_Spacing
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Spacing();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Spacing();
     // Get instance field reference: protected UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Constraint m_Constraint
-    [[deprecated]] ::UnityEngine::UI::GridLayoutGroup::Constraint& dyn_m_Constraint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::GridLayoutGroup::Constraint& dyn_m_Constraint();
     // Get instance field reference: protected System.Int32 m_ConstraintCount
-    [[deprecated]] int& dyn_m_ConstraintCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ConstraintCount();
     // public UnityEngine.UI.GridLayoutGroup/UnityEngine.UI.Corner get_startCorner()
     // Offset: 0xEBFFB0
     ::UnityEngine::UI::GridLayoutGroup::Corner get_startCorner();
@@ -281,11 +281,6 @@ namespace UnityEngine::UI {
     // Implemented from: UnityEngine.UI.LayoutGroup
     // Base method: System.Void LayoutGroup::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GridLayoutGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::GridLayoutGroup::.ctor");

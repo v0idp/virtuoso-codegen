@@ -48,9 +48,9 @@ namespace UnityEngine {
     static_assert(sizeof(::UnityEngine::ColorSpace) == 0x4);
     public:
     // Get instance field reference: public readonly System.Boolean hdr
-    [[deprecated]] bool& dyn_hdr();
+    [[deprecated("Use field access instead!")]] bool& dyn_hdr();
     // Get instance field reference: public readonly UnityEngine.ColorSpace colorSpace
-    [[deprecated]] ::UnityEngine::ColorSpace& dyn_colorSpace();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ColorSpace& dyn_colorSpace();
     // public System.Void .ctor(System.Boolean hdr)
     // Offset: 0x1128A08
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

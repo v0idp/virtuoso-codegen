@@ -121,9 +121,9 @@ namespace System::Numerics {
     // Set static field: static private readonly System.Byte[] s_success
     static void _set_s_success(::ArrayW<uint8_t> value);
     // Get instance field reference: readonly System.Int32 _sign
-    [[deprecated]] int& dyn__sign();
+    [[deprecated("Use field access instead!")]] int& dyn__sign();
     // Get instance field reference: readonly System.UInt32[] _bits
-    [[deprecated]] ::ArrayW<uint>& dyn__bits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn__bits();
     // static public System.Numerics.BigInteger get_Zero()
     // Offset: 0x188F254
     static ::System::Numerics::BigInteger get_Zero();

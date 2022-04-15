@@ -96,15 +96,18 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Set static field: static private System.Text.RegularExpressions.Regex valueRegex
     static void _set_valueRegex(::System::Text::RegularExpressions::Regex* value);
     // Get instance field reference: public System.String intent
-    [[deprecated]] ::StringW& dyn_intent();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_intent();
     // Get instance field reference: public System.Single confidenceThreshold
-    [[deprecated]] float& dyn_confidenceThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_confidenceThreshold();
     // Get instance field reference: public Facebook.WitAi.CallbackHandlers.ValuePathMatcher[] valueMatchers
-    [[deprecated]] ::ArrayW<::Facebook::WitAi::CallbackHandlers::ValuePathMatcher*>& dyn_valueMatchers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Facebook::WitAi::CallbackHandlers::ValuePathMatcher*>& dyn_valueMatchers();
     // Get instance field reference: private Facebook.WitAi.CallbackHandlers.FormattedValueEvents[] formattedValueEvents
-    [[deprecated]] ::ArrayW<::Facebook::WitAi::CallbackHandlers::FormattedValueEvents*>& dyn_formattedValueEvents();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Facebook::WitAi::CallbackHandlers::FormattedValueEvents*>& dyn_formattedValueEvents();
     // Get instance field reference: private Facebook.WitAi.CallbackHandlers.MultiValueEvent onMultiValueEvent
-    [[deprecated]] ::Facebook::WitAi::CallbackHandlers::MultiValueEvent*& dyn_onMultiValueEvent();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::CallbackHandlers::MultiValueEvent*& dyn_onMultiValueEvent();
+    // static private System.Void .cctor()
+    // Offset: 0x167B490
+    static void _cctor();
     // private System.Boolean ValueMatches(Facebook.WitAi.Lib.WitResponseNode response)
     // Offset: 0x167AEBC
     bool ValueMatches(::Facebook::WitAi::Lib::WitResponseNode* response);
@@ -124,21 +127,11 @@ namespace Facebook::WitAi::CallbackHandlers {
     // Offset: 0x167B424
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
     // Base method: System.Void WitResponseHandler::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitResponseMatcher* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::CallbackHandlers::WitResponseMatcher::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<WitResponseMatcher*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0x167B490
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void OnHandleResponse(Facebook.WitAi.Lib.WitResponseNode response)
     // Offset: 0x167A7DC
     // Implemented from: Facebook.WitAi.CallbackHandlers.WitResponseHandler
@@ -150,6 +143,14 @@ namespace Facebook::WitAi::CallbackHandlers {
   static_assert(sizeof(WitResponseMatcher) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Facebook::WitAi::CallbackHandlers::WitResponseMatcher::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Facebook::WitAi::CallbackHandlers::WitResponseMatcher::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::CallbackHandlers::WitResponseMatcher*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: Facebook::WitAi::CallbackHandlers::WitResponseMatcher::ValueMatches
 // Il2CppName: ValueMatches
 template<>
@@ -202,14 +203,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Faceb
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: Facebook::WitAi::CallbackHandlers::WitResponseMatcher::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Facebook::WitAi::CallbackHandlers::WitResponseMatcher::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Facebook::WitAi::CallbackHandlers::WitResponseMatcher*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: Facebook::WitAi::CallbackHandlers::WitResponseMatcher::OnHandleResponse
 // Il2CppName: OnHandleResponse
 template<>

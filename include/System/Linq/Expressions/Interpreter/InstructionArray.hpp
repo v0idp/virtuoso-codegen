@@ -92,17 +92,17 @@ namespace System::Linq::Expressions::Interpreter {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: readonly System.Int32 MaxStackDepth
-    [[deprecated]] int& dyn_MaxStackDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxStackDepth();
     // Get instance field reference: readonly System.Int32 MaxContinuationDepth
-    [[deprecated]] int& dyn_MaxContinuationDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_MaxContinuationDepth();
     // Get instance field reference: readonly System.Linq.Expressions.Interpreter.Instruction[] Instructions
-    [[deprecated]] ::ArrayW<::System::Linq::Expressions::Interpreter::Instruction*>& dyn_Instructions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Linq::Expressions::Interpreter::Instruction*>& dyn_Instructions();
     // Get instance field reference: readonly System.Object[] Objects
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_Objects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_Objects();
     // Get instance field reference: readonly System.Linq.Expressions.Interpreter.RuntimeLabel[] Labels
-    [[deprecated]] ::ArrayW<::System::Linq::Expressions::Interpreter::RuntimeLabel>& dyn_Labels();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Linq::Expressions::Interpreter::RuntimeLabel>& dyn_Labels();
     // Get instance field reference: readonly System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<System.Int32,System.Object>> DebugCookies
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<int, ::Il2CppObject*>>*& dyn_DebugCookies();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<int, ::Il2CppObject*>>*& dyn_DebugCookies();
     // System.Void .ctor(System.Int32 maxStackDepth, System.Int32 maxContinuationDepth, System.Linq.Expressions.Interpreter.Instruction[] instructions, System.Object[] objects, System.Linq.Expressions.Interpreter.RuntimeLabel[] labels, System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<System.Int32,System.Object>> debugCookies)
     // Offset: 0xF18108
     // ABORTED: conflicts with another method.  InstructionArray(int maxStackDepth, int maxContinuationDepth, ::ArrayW<::System::Linq::Expressions::Interpreter::Instruction*> instructions, ::ArrayW<::Il2CppObject*> objects, ::ArrayW<::System::Linq::Expressions::Interpreter::RuntimeLabel> labels, ::System::Collections::Generic::List_1<::System::Collections::Generic::KeyValuePair_2<int, ::Il2CppObject*>>* debugCookies);

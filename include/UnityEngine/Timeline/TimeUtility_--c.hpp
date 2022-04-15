@@ -47,21 +47,19 @@ namespace UnityEngine::Timeline {
     // static private System.Void .cctor()
     // Offset: 0x18D520C
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x18D526C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TimeUtility::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimeUtility::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TimeUtility::$$c*, creationType>()));
+    }
     // System.Boolean <ParseTimeCode>b__14_0(System.Char c)
     // Offset: 0x18D5274
     bool $ParseTimeCode$b__14_0(::Il2CppChar c);
     // System.Boolean <ParseTimeCode>b__14_1(System.Char c)
     // Offset: 0x18D52D8
     bool $ParseTimeCode$b__14_1(::Il2CppChar c);
-    // public System.Void .ctor()
-    // Offset: 0x18D526C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TimeUtility::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::TimeUtility::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TimeUtility::$$c*, creationType>()));
-    }
   }; // UnityEngine.Timeline.TimeUtility/UnityEngine.Timeline.<>c
   #pragma pack(pop)
 }
@@ -74,6 +72,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TimeUtility::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::TimeUtility::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::TimeUtility::$$c::$ParseTimeCode$b__14_0
 // Il2CppName: <ParseTimeCode>b__14_0
 template<>
@@ -92,7 +94,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::TimeUtility::$$c*), "<ParseTimeCode>b__14_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{c});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::TimeUtility::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

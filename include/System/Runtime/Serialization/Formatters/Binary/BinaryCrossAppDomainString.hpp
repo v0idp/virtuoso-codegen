@@ -48,9 +48,9 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 objectId
-    [[deprecated]] int& dyn_objectId();
+    [[deprecated("Use field access instead!")]] int& dyn_objectId();
     // Get instance field reference: System.Int32 value
-    [[deprecated]] int& dyn_value();
+    [[deprecated("Use field access instead!")]] int& dyn_value();
     // public System.Void Read(System.Runtime.Serialization.Formatters.Binary.__BinaryParser input)
     // Offset: 0xFE7888
     void Read(::System::Runtime::Serialization::Formatters::Binary::__BinaryParser* input);

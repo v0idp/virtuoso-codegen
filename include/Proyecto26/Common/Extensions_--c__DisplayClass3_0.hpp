@@ -46,25 +46,27 @@ namespace Proyecto26::Common {
       return urlParamKeys;
     }
     // Get instance field reference: public System.Collections.Generic.Dictionary`2/System.Collections.Generic.KeyCollection<System.String,System.String> urlParamKeys
-    [[deprecated]] typename ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>::KeyCollection*& dyn_urlParamKeys();
-    // System.Boolean <BuildUrl>b__0(System.Collections.Generic.KeyValuePair`2<System.String,System.String> p)
-    // Offset: 0x95F87C
-    bool $BuildUrl$b__0(::System::Collections::Generic::KeyValuePair_2<::StringW, ::StringW> p);
+    [[deprecated("Use field access instead!")]] typename ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>::KeyCollection*& dyn_urlParamKeys();
     // public System.Void .ctor()
     // Offset: 0x95F874
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Extensions::$$c__DisplayClass3_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Proyecto26::Common::Extensions::$$c__DisplayClass3_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Extensions::$$c__DisplayClass3_0*, creationType>()));
     }
+    // System.Boolean <BuildUrl>b__0(System.Collections.Generic.KeyValuePair`2<System.String,System.String> p)
+    // Offset: 0x95F87C
+    bool $BuildUrl$b__0(::System::Collections::Generic::KeyValuePair_2<::StringW, ::StringW> p);
   }; // Proyecto26.Common.Extensions/Proyecto26.Common.<>c__DisplayClass3_0
   #pragma pack(pop)
   static check_size<sizeof(Extensions::$$c__DisplayClass3_0), 16 + sizeof(typename ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>::KeyCollection*)> __Proyecto26_Common_Extensions_$$c__DisplayClass3_0SizeCheck;
   static_assert(sizeof(Extensions::$$c__DisplayClass3_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Proyecto26::Common::Extensions::$$c__DisplayClass3_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Proyecto26::Common::Extensions::$$c__DisplayClass3_0::$BuildUrl$b__0
 // Il2CppName: <BuildUrl>b__0
 template<>
@@ -74,7 +76,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Proye
     return ::il2cpp_utils::FindMethod(classof(Proyecto26::Common::Extensions::$$c__DisplayClass3_0*), "<BuildUrl>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: Proyecto26::Common::Extensions::$$c__DisplayClass3_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

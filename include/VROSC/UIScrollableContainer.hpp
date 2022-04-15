@@ -167,35 +167,35 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Transform _itemsContainer
-    [[deprecated]] ::UnityEngine::Transform*& dyn__itemsContainer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__itemsContainer();
     // Get instance field reference: private VROSC.UIScrollableItem _scrollableItemPrefab
-    [[deprecated]] ::VROSC::UIScrollableItem*& dyn__scrollableItemPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIScrollableItem*& dyn__scrollableItemPrefab();
     // Get instance field reference: private System.Single _length
-    [[deprecated]] float& dyn__length();
+    [[deprecated("Use field access instead!")]] float& dyn__length();
     // Get instance field reference: private System.Boolean _isHorizontal
-    [[deprecated]] bool& dyn__isHorizontal();
+    [[deprecated("Use field access instead!")]] bool& dyn__isHorizontal();
     // Get instance field reference: private System.Boolean _invert
-    [[deprecated]] bool& dyn__invert();
+    [[deprecated("Use field access instead!")]] bool& dyn__invert();
     // Get instance field reference: private System.Single _padding
-    [[deprecated]] float& dyn__padding();
+    [[deprecated("Use field access instead!")]] float& dyn__padding();
     // Get instance field reference: protected System.Int32 _defaultSelection
-    [[deprecated]] int& dyn__defaultSelection();
+    [[deprecated("Use field access instead!")]] int& dyn__defaultSelection();
     // Get instance field reference: private System.Boolean _supportsMultipleSelection
-    [[deprecated]] bool& dyn__supportsMultipleSelection();
+    [[deprecated("Use field access instead!")]] bool& dyn__supportsMultipleSelection();
     // Get instance field reference: private System.Boolean _supportsNoSelection
-    [[deprecated]] bool& dyn__supportsNoSelection();
+    [[deprecated("Use field access instead!")]] bool& dyn__supportsNoSelection();
     // Get instance field reference: private VROSC.UIScrollableContainerInput _selectionInput
-    [[deprecated]] ::VROSC::UIScrollableContainerInput*& dyn__selectionInput();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIScrollableContainerInput*& dyn__selectionInput();
     // Get instance field reference: private System.Int32 <SelectedItemIndex>k__BackingField
-    [[deprecated]] int& dyn_$SelectedItemIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$SelectedItemIndex$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.UIScrollableItem> <Items>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::UIScrollableItem*>*& dyn_$Items$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::UIScrollableItem*>*& dyn_$Items$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.UIScrollableItem> OnItemSelected
-    [[deprecated]] ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemSelected();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemSelected();
     // Get instance field reference: public System.Action`1<VROSC.UIScrollableItem> OnItemDeselected
-    [[deprecated]] ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemDeselected();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::UIScrollableItem*>*& dyn_OnItemDeselected();
     // Get instance field reference: protected System.Boolean _valuesSet
-    [[deprecated]] bool& dyn__valuesSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__valuesSet();
     // public System.Int32 get_SelectedItemIndex()
     // Offset: 0x19137A4
     int get_SelectedItemIndex();
@@ -226,6 +226,13 @@ namespace VROSC {
     // private System.Void set_Items(System.Collections.Generic.List`1<VROSC.UIScrollableItem> value)
     // Offset: 0x19137F0
     void set_Items(::System::Collections::Generic::List_1<::VROSC::UIScrollableItem*>* value);
+    // public System.Void .ctor()
+    // Offset: 0x1914EBC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIScrollableContainer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIScrollableContainer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIScrollableContainer*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x1913800
     void OnEnable();
@@ -298,19 +305,6 @@ namespace VROSC {
     // public System.Void SetDisabled(UnityEngine.GameObject disabler, System.Boolean state)
     // Offset: 0x1914DF0
     void SetDisabled(::UnityEngine::GameObject* disabler, bool state);
-    // public System.Void .ctor()
-    // Offset: 0x1914EBC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIScrollableContainer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIScrollableContainer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIScrollableContainer*, creationType>()));
-    }
   }; // VROSC.UIScrollableContainer
   #pragma pack(pop)
   static check_size<sizeof(UIScrollableContainer), 104 + sizeof(bool)> __VROSC_UIScrollableContainerSizeCheck;
@@ -399,6 +393,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIScrollableContainer*), "set_Items", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::UIScrollableContainer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIScrollableContainer::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -615,7 +613,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIScrollableContainer*), "SetDisabled", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{disabler, state});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIScrollableContainer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

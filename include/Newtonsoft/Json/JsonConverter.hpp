@@ -50,6 +50,13 @@ namespace Newtonsoft::Json {
     // public System.Boolean get_CanWrite()
     // Offset: 0xEF458C
     bool get_CanWrite();
+    // protected System.Void .ctor()
+    // Offset: 0xEF4594
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JsonConverter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonConverter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JsonConverter*, creationType>()));
+    }
     // public System.Void WriteJson(Newtonsoft.Json.JsonWriter writer, System.Object value, Newtonsoft.Json.JsonSerializer serializer)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void WriteJson(::Newtonsoft::Json::JsonWriter* writer, ::Il2CppObject* value, ::Newtonsoft::Json::JsonSerializer* serializer);
@@ -59,15 +66,6 @@ namespace Newtonsoft::Json {
     // public System.Boolean CanConvert(System.Type objectType)
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool CanConvert(::System::Type* objectType);
-    // protected System.Void .ctor()
-    // Offset: 0xEF4594
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JsonConverter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::JsonConverter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JsonConverter*, creationType>()));
-    }
   }; // Newtonsoft.Json.JsonConverter
   #pragma pack(pop)
 }
@@ -88,6 +86,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::JsonConverter*), "get_CanWrite", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Newtonsoft::Json::JsonConverter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::JsonConverter::WriteJson
 // Il2CppName: WriteJson
 template<>
@@ -120,7 +122,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::JsonConverter*), "CanConvert", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{objectType});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::JsonConverter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -61,19 +61,17 @@ namespace System::Threading {
     static_assert(sizeof(::System::Threading::ReaderWriterCount*) == 0x8);
     public:
     // Get instance field reference: public System.Int64 lockID
-    [[deprecated]] int64_t& dyn_lockID();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_lockID();
     // Get instance field reference: public System.Int32 readercount
-    [[deprecated]] int& dyn_readercount();
+    [[deprecated("Use field access instead!")]] int& dyn_readercount();
     // Get instance field reference: public System.Int32 writercount
-    [[deprecated]] int& dyn_writercount();
+    [[deprecated("Use field access instead!")]] int& dyn_writercount();
     // Get instance field reference: public System.Int32 upgradecount
-    [[deprecated]] int& dyn_upgradecount();
+    [[deprecated("Use field access instead!")]] int& dyn_upgradecount();
     // Get instance field reference: public System.Threading.ReaderWriterCount next
-    [[deprecated]] ::System::Threading::ReaderWriterCount*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ReaderWriterCount*& dyn_next();
     // public System.Void .ctor()
     // Offset: 0xE973A8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ReaderWriterCount* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Threading::ReaderWriterCount::.ctor");

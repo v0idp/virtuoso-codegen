@@ -127,17 +127,17 @@ namespace System::Net {
     // Set static field: static System.Int32 NumberOfLabels
     static void _set_NumberOfLabels(int value);
     // Get instance field reference: System.Int64 m_Address
-    [[deprecated]] int64_t& dyn_m_Address();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_Address();
     // Get instance field reference: System.String m_ToString
-    [[deprecated]] ::StringW& dyn_m_ToString();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_ToString();
     // Get instance field reference: private System.Net.Sockets.AddressFamily m_Family
-    [[deprecated]] ::System::Net::Sockets::AddressFamily& dyn_m_Family();
+    [[deprecated("Use field access instead!")]] ::System::Net::Sockets::AddressFamily& dyn_m_Family();
     // Get instance field reference: private System.UInt16[] m_Numbers
-    [[deprecated]] ::ArrayW<uint16_t>& dyn_m_Numbers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint16_t>& dyn_m_Numbers();
     // Get instance field reference: private System.Int64 m_ScopeId
-    [[deprecated]] int64_t& dyn_m_ScopeId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_ScopeId();
     // Get instance field reference: private System.Int32 m_HashCode
-    [[deprecated]] int& dyn_m_HashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_m_HashCode();
     // public System.Net.Sockets.AddressFamily get_AddressFamily()
     // Offset: 0x10F2534
     ::System::Net::Sockets::AddressFamily get_AddressFamily();

@@ -78,13 +78,13 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<System.Reflection.MethodInfo> m_OnSerializingMethods
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnSerializingMethods();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnSerializingMethods();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Reflection.MethodInfo> m_OnSerializedMethods
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnSerializedMethods();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnSerializedMethods();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Reflection.MethodInfo> m_OnDeserializingMethods
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnDeserializingMethods();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnDeserializingMethods();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Reflection.MethodInfo> m_OnDeserializedMethods
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnDeserializedMethods();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Reflection::MethodInfo*>*& dyn_m_OnDeserializedMethods();
     // System.Boolean get_HasOnSerializingEvents()
     // Offset: 0x1178A9C
     bool get_HasOnSerializingEvents();

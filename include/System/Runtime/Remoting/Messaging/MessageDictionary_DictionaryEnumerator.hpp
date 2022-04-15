@@ -57,11 +57,11 @@ namespace System::Runtime::Remoting::Messaging {
       return *reinterpret_cast<::System::Collections::IDictionaryEnumerator*>(this);
     }
     // Get instance field reference: private System.Runtime.Remoting.Messaging.MessageDictionary _methodDictionary
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::MessageDictionary*& dyn__methodDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::MessageDictionary*& dyn__methodDictionary();
     // Get instance field reference: private System.Collections.IDictionaryEnumerator _hashtableEnum
-    [[deprecated]] ::System::Collections::IDictionaryEnumerator*& dyn__hashtableEnum();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IDictionaryEnumerator*& dyn__hashtableEnum();
     // Get instance field reference: private System.Int32 _posMethod
-    [[deprecated]] int& dyn__posMethod();
+    [[deprecated("Use field access instead!")]] int& dyn__posMethod();
     // public System.Object get_Current()
     // Offset: 0xE53D08
     ::Il2CppObject* get_Current();

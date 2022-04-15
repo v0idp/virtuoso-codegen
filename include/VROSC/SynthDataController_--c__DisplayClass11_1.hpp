@@ -56,29 +56,31 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 patchCountToLoad
-    [[deprecated]] int& dyn_patchCountToLoad();
+    [[deprecated("Use field access instead!")]] int& dyn_patchCountToLoad();
     // Get instance field reference: public VROSC.SynthDataController/VROSC.<>c__DisplayClass11_0 CS$<>8__locals1
-    [[deprecated]] ::VROSC::SynthDataController::$$c__DisplayClass11_0*& dyn_CS$$$8__locals1();
+    [[deprecated("Use field access instead!")]] ::VROSC::SynthDataController::$$c__DisplayClass11_0*& dyn_CS$$$8__locals1();
     // Get instance field reference: public System.Action`1<System.String> <>9__1
-    [[deprecated]] ::System::Action_1<::StringW>*& dyn_$$9__1();
-    // System.Void <LoadData>b__1(System.String text)
-    // Offset: 0x8DA8EC
-    void $LoadData$b__1(::StringW text);
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::StringW>*& dyn_$$9__1();
     // public System.Void .ctor()
     // Offset: 0x8DA8E4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthDataController::$$c__DisplayClass11_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthDataController::$$c__DisplayClass11_1::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SynthDataController::$$c__DisplayClass11_1*, creationType>()));
     }
+    // System.Void <LoadData>b__1(System.String text)
+    // Offset: 0x8DA8EC
+    void $LoadData$b__1(::StringW text);
   }; // VROSC.SynthDataController/VROSC.<>c__DisplayClass11_1
   #pragma pack(pop)
   static check_size<sizeof(SynthDataController::$$c__DisplayClass11_1), 32 + sizeof(::System::Action_1<::StringW>*)> __VROSC_SynthDataController_$$c__DisplayClass11_1SizeCheck;
   static_assert(sizeof(SynthDataController::$$c__DisplayClass11_1) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::SynthDataController::$$c__DisplayClass11_1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::SynthDataController::$$c__DisplayClass11_1::$LoadData$b__1
 // Il2CppName: <LoadData>b__1
 template<>
@@ -88,7 +90,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::SynthDataController::$$c__DisplayClass11_1*), "<LoadData>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{text});
   }
 };
-// Writing MetadataGetter for method: VROSC::SynthDataController::$$c__DisplayClass11_1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

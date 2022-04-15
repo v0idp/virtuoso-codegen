@@ -67,7 +67,7 @@ namespace System::Text {
     // Set static field: static public System.Text.NormalizationForm FormKD
     static void _set_FormKD(::System::Text::NormalizationForm value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Text.NormalizationForm
   #pragma pack(pop)
   static check_size<sizeof(NormalizationForm), 0 + sizeof(int)> __System_Text_NormalizationFormSizeCheck;

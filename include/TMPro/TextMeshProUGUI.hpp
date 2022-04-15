@@ -294,45 +294,48 @@ namespace TMPro {
     // Set static field: static private Unity.Profiling.ProfilerMarker k_GenerateTextPhaseIIIMarker
     static void _set_k_GenerateTextPhaseIIIMarker(::Unity::Profiling::ProfilerMarker value);
     // Get instance field reference: private System.Boolean m_hasFontAssetChanged
-    [[deprecated]] bool& dyn_m_hasFontAssetChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_hasFontAssetChanged();
     // Get instance field reference: protected TMPro.TMP_SubMeshUI[] m_subTextObjects
-    [[deprecated]] ::ArrayW<::TMPro::TMP_SubMeshUI*>& dyn_m_subTextObjects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TMP_SubMeshUI*>& dyn_m_subTextObjects();
     // Get instance field reference: private System.Single m_previousLossyScaleY
-    [[deprecated]] float& dyn_m_previousLossyScaleY();
+    [[deprecated("Use field access instead!")]] float& dyn_m_previousLossyScaleY();
     // Get instance field reference: private UnityEngine.Vector3[] m_RectTransformCorners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_RectTransformCorners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_RectTransformCorners();
     // Get instance field reference: private UnityEngine.CanvasRenderer m_canvasRenderer
-    [[deprecated]] ::UnityEngine::CanvasRenderer*& dyn_m_canvasRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CanvasRenderer*& dyn_m_canvasRenderer();
     // Get instance field reference: private UnityEngine.Canvas m_canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_m_canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_m_canvas();
     // Get instance field reference: private System.Single m_CanvasScaleFactor
-    [[deprecated]] float& dyn_m_CanvasScaleFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CanvasScaleFactor();
     // Get instance field reference: private System.Boolean m_isFirstAllocation
-    [[deprecated]] bool& dyn_m_isFirstAllocation();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isFirstAllocation();
     // Get instance field reference: private System.Int32 m_max_characters
-    [[deprecated]] int& dyn_m_max_characters();
+    [[deprecated("Use field access instead!")]] int& dyn_m_max_characters();
     // Get instance field reference: private UnityEngine.Material m_baseMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_baseMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_baseMaterial();
     // Get instance field reference: private System.Boolean m_isScrollRegionSet
-    [[deprecated]] bool& dyn_m_isScrollRegionSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isScrollRegionSet();
     // Get instance field reference: private UnityEngine.Vector4 m_maskOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_m_maskOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_m_maskOffset();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_EnvMapMatrix
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_EnvMapMatrix();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_EnvMapMatrix();
     // Get instance field reference: private System.Boolean m_isRegisteredForEvents
-    [[deprecated]] bool& dyn_m_isRegisteredForEvents();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isRegisteredForEvents();
     // Get instance field reference: private System.Boolean m_isRebuildingLayout
-    [[deprecated]] bool& dyn_m_isRebuildingLayout();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_isRebuildingLayout();
     // Get instance field reference: private UnityEngine.Coroutine m_DelayedGraphicRebuild
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_DelayedGraphicRebuild();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_DelayedGraphicRebuild();
     // Get instance field reference: private UnityEngine.Coroutine m_DelayedMaterialRebuild
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_m_DelayedMaterialRebuild();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_m_DelayedMaterialRebuild();
     // Get instance field reference: private UnityEngine.Rect m_ClipRect
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_ClipRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_ClipRect();
     // Get instance field reference: private System.Boolean m_ValidRect
-    [[deprecated]] bool& dyn_m_ValidRect();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ValidRect();
     // Get instance field reference: private System.Action`1<TMPro.TMP_TextInfo> OnPreRenderText
-    [[deprecated]] ::System::Action_1<::TMPro::TMP_TextInfo*>*& dyn_OnPreRenderText();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::TMPro::TMP_TextInfo*>*& dyn_OnPreRenderText();
+    // public UnityEngine.CanvasRenderer get_canvasRenderer()
+    // Offset: 0x1247B58
+    ::UnityEngine::CanvasRenderer* get_canvasRenderer();
     // public UnityEngine.Vector4 get_maskOffset()
     // Offset: 0x1248330
     ::UnityEngine::Vector4 get_maskOffset();
@@ -407,11 +410,6 @@ namespace TMPro {
     // Implemented from: TMPro.TMP_Text
     // Base method: UnityEngine.Mesh TMP_Text::get_mesh()
     ::UnityEngine::Mesh* get_mesh();
-    // public UnityEngine.CanvasRenderer get_canvasRenderer()
-    // Offset: 0x1247B58
-    // Implemented from: UnityEngine.UI.Graphic
-    // Base method: UnityEngine.CanvasRenderer Graphic::get_canvasRenderer()
-    ::UnityEngine::CanvasRenderer* get_canvasRenderer();
     // public override System.Void add_OnPreRenderText(System.Action`1<TMPro.TMP_TextInfo> value)
     // Offset: 0x1248D20
     // Implemented from: TMPro.TMP_Text
@@ -426,14 +424,6 @@ namespace TMPro {
     // Offset: 0x12492E4
     // Implemented from: TMPro.TMP_Text
     // Base method: System.Void TMP_Text::.ctor()
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextMeshProUGUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TextMeshProUGUI::.ctor");
@@ -443,8 +433,6 @@ namespace TMPro {
     // Offset: 0x12493A0
     // Implemented from: TMPro.TMP_Text
     // Base method: System.Void TMP_Text::.cctor()
-    // Base method: System.Void Graphic::.cctor()
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
     // protected override System.Void Awake()
     // Offset: 0x1239164
@@ -680,6 +668,14 @@ namespace TMPro {
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: TMPro::TextMeshProUGUI::get_canvasRenderer
+// Il2CppName: get_canvasRenderer
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::CanvasRenderer* (TMPro::TextMeshProUGUI::*)()>(&TMPro::TextMeshProUGUI::get_canvasRenderer)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(TMPro::TextMeshProUGUI*), "get_canvasRenderer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: TMPro::TextMeshProUGUI::get_maskOffset
 // Il2CppName: get_maskOffset
 template<>
@@ -858,14 +854,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Mesh* (TMPro::TextMeshProUGUI::*)()>(&TMPro::TextMeshProUGUI::get_mesh)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(TMPro::TextMeshProUGUI*), "get_mesh", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: TMPro::TextMeshProUGUI::get_canvasRenderer
-// Il2CppName: get_canvasRenderer
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::CanvasRenderer* (TMPro::TextMeshProUGUI::*)()>(&TMPro::TextMeshProUGUI::get_canvasRenderer)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(TMPro::TextMeshProUGUI*), "get_canvasRenderer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: TMPro::TextMeshProUGUI::add_OnPreRenderText

@@ -198,43 +198,50 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _name
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private VROSC.ProceduralAdjustableMesh _colorDisplay
-    [[deprecated]] ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
+    [[deprecated("Use field access instead!")]] ::VROSC::ProceduralAdjustableMesh*& dyn__colorDisplay();
     // Get instance field reference: private VROSC.UI.Meshes.ColorPickerMesh _hueDisplay
-    [[deprecated]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__hueDisplay();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__hueDisplay();
     // Get instance field reference: private VROSC.UI.Meshes.ColorPickerMesh _saturationDisplay
-    [[deprecated]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__saturationDisplay();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::Meshes::ColorPickerMesh*& dyn__saturationDisplay();
     // Get instance field reference: private VROSC.UIColorPickerMiniBar _miniHue
-    [[deprecated]] ::VROSC::UIColorPickerMiniBar*& dyn__miniHue();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIColorPickerMiniBar*& dyn__miniHue();
     // Get instance field reference: private VROSC.UIColorPickerMiniBar _miniSaturation
-    [[deprecated]] ::VROSC::UIColorPickerMiniBar*& dyn__miniSaturation();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIColorPickerMiniBar*& dyn__miniSaturation();
     // Get instance field reference: private VROSC.UIColorPickerMiniBar _miniValue
-    [[deprecated]] ::VROSC::UIColorPickerMiniBar*& dyn__miniValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIColorPickerMiniBar*& dyn__miniValue();
     // Get instance field reference: private UnityEngine.Transform _saturationDot
-    [[deprecated]] ::UnityEngine::Transform*& dyn__saturationDot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__saturationDot();
     // Get instance field reference: private System.Single _saturationHeight
-    [[deprecated]] float& dyn__saturationHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__saturationHeight();
     // Get instance field reference: private UnityEngine.Transform _valueDot
-    [[deprecated]] ::UnityEngine::Transform*& dyn__valueDot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__valueDot();
     // Get instance field reference: private System.Single _valueHeight
-    [[deprecated]] float& dyn__valueHeight();
+    [[deprecated("Use field access instead!")]] float& dyn__valueHeight();
     // Get instance field reference: private System.Single _hueRange
-    [[deprecated]] float& dyn__hueRange();
+    [[deprecated("Use field access instead!")]] float& dyn__hueRange();
     // Get instance field reference: private VROSC.AdjustableMesh _valueSphere
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__valueSphere();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__valueSphere();
     // Get instance field reference: private System.Single _valueSphereScaleAdjust
-    [[deprecated]] float& dyn__valueSphereScaleAdjust();
+    [[deprecated("Use field access instead!")]] float& dyn__valueSphereScaleAdjust();
     // Get instance field reference: private UnityEngine.Vector3 _inputSensitivity
-    [[deprecated]] ::UnityEngine::Vector3& dyn__inputSensitivity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__inputSensitivity();
     // Get instance field reference: private UnityEngine.GameObject _visual
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__visual();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__visual();
     // Get instance field reference: private VROSC.UIHelperPositioning _positioning
-    [[deprecated]] ::VROSC::UIHelperPositioning*& dyn__positioning();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHelperPositioning*& dyn__positioning();
     // Get instance field reference: private UnityEngine.Color _testColor
-    [[deprecated]] ::UnityEngine::Color& dyn__testColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__testColor();
     // Get instance field reference: private VROSC.InputDevice _grabbingDevice
-    [[deprecated]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__grabbingDevice();
+    // public System.Void .ctor()
+    // Offset: 0xA34EE0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIColorPickerHelper* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPickerHelper::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIColorPickerHelper*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xA349E0
     void Awake();
@@ -253,25 +260,16 @@ namespace VROSC {
     // private System.Void SetColor(System.Single hue, System.Single saturation, System.Single value, UnityEngine.Color color)
     // Offset: 0xA34C5C
     void SetColor(float hue, float saturation, float value, ::UnityEngine::Color color);
-    // public System.Void .ctor()
-    // Offset: 0xA34EE0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIColorPickerHelper* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIColorPickerHelper::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIColorPickerHelper*, creationType>()));
-    }
   }; // VROSC.UIColorPickerHelper
   #pragma pack(pop)
   static check_size<sizeof(UIColorPickerHelper), 168 + sizeof(::VROSC::InputDevice*)> __VROSC_UIColorPickerHelperSizeCheck;
   static_assert(sizeof(UIColorPickerHelper) == 0xB0);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UIColorPickerHelper::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIColorPickerHelper::Awake
 // Il2CppName: Awake
 template<>
@@ -330,7 +328,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIColorPickerHelper*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hue, saturation, value, color});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIColorPickerHelper::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

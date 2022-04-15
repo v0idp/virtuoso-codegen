@@ -89,13 +89,13 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.UI.Text m_Text
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_Text();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_Text();
     // Get instance field reference: private UnityEngine.UI.Image m_Image
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_m_Image();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_m_Image();
     // Get instance field reference: private UnityEngine.RectTransform m_RectTransform
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_RectTransform();
     // Get instance field reference: private UnityEngine.UI.Toggle m_Toggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_m_Toggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_m_Toggle();
     // public UnityEngine.UI.Text get_text()
     // Offset: 0x16D7F7C
     ::UnityEngine::UI::Text* get_text();
@@ -120,25 +120,19 @@ namespace UnityEngine::UI {
     // public System.Void set_toggle(UnityEngine.UI.Toggle value)
     // Offset: 0x16D7FB4
     void set_toggle(::UnityEngine::UI::Toggle* value);
+    // public System.Void .ctor()
+    // Offset: 0x16D80F4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Dropdown::DropdownItem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Dropdown::DropdownItem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Dropdown::DropdownItem*, creationType>()));
+    }
     // public System.Void OnPointerEnter(UnityEngine.EventSystems.PointerEventData eventData)
     // Offset: 0x16D7FBC
     void OnPointerEnter(::UnityEngine::EventSystems::PointerEventData* eventData);
     // public System.Void OnCancel(UnityEngine.EventSystems.BaseEventData eventData)
     // Offset: 0x16D8044
     void OnCancel(::UnityEngine::EventSystems::BaseEventData* eventData);
-    // public System.Void .ctor()
-    // Offset: 0x16D80F4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Dropdown::DropdownItem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::Dropdown::DropdownItem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Dropdown::DropdownItem*, creationType>()));
-    }
   }; // UnityEngine.UI.Dropdown/UnityEngine.UI.DropdownItem
   #pragma pack(pop)
   static check_size<sizeof(Dropdown::DropdownItem), 48 + sizeof(::UnityEngine::UI::Toggle*)> __UnityEngine_UI_Dropdown_DropdownItemSizeCheck;
@@ -213,6 +207,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Dropdown::DropdownItem*), "set_toggle", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::Dropdown::DropdownItem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::Dropdown::DropdownItem::OnPointerEnter
 // Il2CppName: OnPointerEnter
 template<>
@@ -231,7 +229,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::Dropdown::DropdownItem*), "OnCancel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{eventData});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::Dropdown::DropdownItem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

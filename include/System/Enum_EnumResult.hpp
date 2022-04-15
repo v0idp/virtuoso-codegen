@@ -84,19 +84,19 @@ namespace System {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Object parsedEnum
-    [[deprecated]] ::Il2CppObject*& dyn_parsedEnum();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_parsedEnum();
     // Get instance field reference: System.Boolean canThrow
-    [[deprecated]] bool& dyn_canThrow();
+    [[deprecated("Use field access instead!")]] bool& dyn_canThrow();
     // Get instance field reference: System.Enum/System.ParseFailureKind m_failure
-    [[deprecated]] ::System::Enum::ParseFailureKind& dyn_m_failure();
+    [[deprecated("Use field access instead!")]] ::System::Enum::ParseFailureKind& dyn_m_failure();
     // Get instance field reference: System.String m_failureMessageID
-    [[deprecated]] ::StringW& dyn_m_failureMessageID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_failureMessageID();
     // Get instance field reference: System.String m_failureParameter
-    [[deprecated]] ::StringW& dyn_m_failureParameter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_failureParameter();
     // Get instance field reference: System.Object m_failureMessageFormatArgument
-    [[deprecated]] ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_failureMessageFormatArgument();
     // Get instance field reference: System.Exception m_innerException
-    [[deprecated]] ::System::Exception*& dyn_m_innerException();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_m_innerException();
     // System.Void Init(System.Boolean canMethodThrow)
     // Offset: 0xE50264
     void Init(bool canMethodThrow);

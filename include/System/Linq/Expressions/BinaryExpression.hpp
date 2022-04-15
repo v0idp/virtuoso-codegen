@@ -60,9 +60,9 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Linq::Expressions::Expression*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Right>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Right$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Right$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Left>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Left$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Left$k__BackingField();
     // public System.Linq.Expressions.Expression get_Right()
     // Offset: 0x11F277C
     ::System::Linq::Expressions::Expression* get_Right();

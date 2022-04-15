@@ -47,7 +47,7 @@ namespace VROSC::AudioReactive {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.MinMaxInt _amount
-    [[deprecated]] ::VROSC::MinMaxInt*& dyn__amount();
+    [[deprecated("Use field access instead!")]] ::VROSC::MinMaxInt*& dyn__amount();
     // public VROSC.MinMaxInt get_Amount()
     // Offset: 0x8EB6A0
     ::VROSC::MinMaxInt* get_Amount();
@@ -55,9 +55,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x8EB6A8
     // Implemented from: VROSC.AudioReactive.AudioReactiveEffectData
     // Base method: System.Void AudioReactiveEffectData::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EmitParticlesEffectData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::EmitParticlesEffectData::.ctor");

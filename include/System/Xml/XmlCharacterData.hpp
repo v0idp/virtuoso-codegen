@@ -45,7 +45,7 @@ namespace System::Xml {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String data
-    [[deprecated]] ::StringW& dyn_data();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_data();
     // public System.String get_Data()
     // Offset: 0x11905A8
     ::StringW get_Data();

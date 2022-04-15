@@ -112,29 +112,27 @@ namespace VROSC {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: public VROSC.TransformDataModel TransformData
-    [[deprecated]] ::VROSC::TransformDataModel*& dyn_TransformData();
+    [[deprecated("Use field access instead!")]] ::VROSC::TransformDataModel*& dyn_TransformData();
     // Get instance field reference: public VROSC.OctaveData OctaveData
-    [[deprecated]] ::VROSC::OctaveData*& dyn_OctaveData();
+    [[deprecated("Use field access instead!")]] ::VROSC::OctaveData*& dyn_OctaveData();
     // Get instance field reference: public VROSC.MidiData MidiData
-    [[deprecated]] ::VROSC::MidiData*& dyn_MidiData();
+    [[deprecated("Use field access instead!")]] ::VROSC::MidiData*& dyn_MidiData();
     // Get instance field reference: public System.Collections.Generic.List`1<VROSC.ScaleData> ScalesData
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::ScaleData*>*& dyn_ScalesData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::ScaleData*>*& dyn_ScalesData();
     // Get instance field reference: public System.String SelectedPatchName
-    [[deprecated]] ::StringW& dyn_SelectedPatchName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_SelectedPatchName();
     // Get instance field reference: public System.Collections.Generic.List`1<System.String> PatchesFilenames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_PatchesFilenames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_PatchesFilenames();
     // Get instance field reference: public System.Boolean Quantize
-    [[deprecated]] bool& dyn_Quantize();
+    [[deprecated("Use field access instead!")]] bool& dyn_Quantize();
     // Get instance field reference: public System.Single QuantizeTolerance
-    [[deprecated]] float& dyn_QuantizeTolerance();
+    [[deprecated("Use field access instead!")]] float& dyn_QuantizeTolerance();
     // Get instance field reference: public System.Int32 QuantizeBeatDivision
-    [[deprecated]] int& dyn_QuantizeBeatDivision();
+    [[deprecated("Use field access instead!")]] int& dyn_QuantizeBeatDivision();
     // public System.Void .ctor()
     // Offset: 0x1933614
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SynthData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SynthData::.ctor");

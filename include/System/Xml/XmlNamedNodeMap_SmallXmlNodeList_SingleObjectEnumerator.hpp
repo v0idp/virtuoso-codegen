@@ -44,9 +44,9 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Collections::IEnumerator*>(this);
     }
     // Get instance field reference: private System.Object loneValue
-    [[deprecated]] ::Il2CppObject*& dyn_loneValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_loneValue();
     // Get instance field reference: private System.Int32 position
-    [[deprecated]] int& dyn_position();
+    [[deprecated("Use field access instead!")]] int& dyn_position();
     // public System.Object get_Current()
     // Offset: 0xC27C2C
     ::Il2CppObject* get_Current();

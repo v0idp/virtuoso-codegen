@@ -30,6 +30,13 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class OVRPlugin::Ktx : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x85675C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRPlugin::Ktx* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPlugin::Ktx::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRPlugin::Ktx*, creationType>()));
+    }
     // static public System.IntPtr LoadKtxFromMemory(System.IntPtr dataPtr, System.UInt32 length)
     // Offset: 0x855BCC
     static ::System::IntPtr LoadKtxFromMemory(::System::IntPtr dataPtr, uint length);
@@ -51,19 +58,14 @@ namespace GlobalNamespace {
     // static public System.Boolean DestroyKtxTexture(System.IntPtr texture)
     // Offset: 0x8565C8
     static bool DestroyKtxTexture(::System::IntPtr texture);
-    // public System.Void .ctor()
-    // Offset: 0x85675C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRPlugin::Ktx* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPlugin::Ktx::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRPlugin::Ktx*, creationType>()));
-    }
   }; // OVRPlugin/Ktx
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRPlugin::Ktx::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRPlugin::Ktx::LoadKtxFromMemory
 // Il2CppName: LoadKtxFromMemory
 template<>
@@ -131,7 +133,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPlugin::Ktx*), "DestroyKtxTexture", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{texture});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRPlugin::Ktx::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

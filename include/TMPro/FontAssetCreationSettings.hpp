@@ -131,37 +131,37 @@ namespace TMPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String sourceFontFileName
-    [[deprecated]] ::StringW& dyn_sourceFontFileName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sourceFontFileName();
     // Get instance field reference: public System.String sourceFontFileGUID
-    [[deprecated]] ::StringW& dyn_sourceFontFileGUID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sourceFontFileGUID();
     // Get instance field reference: public System.Int32 pointSizeSamplingMode
-    [[deprecated]] int& dyn_pointSizeSamplingMode();
+    [[deprecated("Use field access instead!")]] int& dyn_pointSizeSamplingMode();
     // Get instance field reference: public System.Int32 pointSize
-    [[deprecated]] int& dyn_pointSize();
+    [[deprecated("Use field access instead!")]] int& dyn_pointSize();
     // Get instance field reference: public System.Int32 padding
-    [[deprecated]] int& dyn_padding();
+    [[deprecated("Use field access instead!")]] int& dyn_padding();
     // Get instance field reference: public System.Int32 packingMode
-    [[deprecated]] int& dyn_packingMode();
+    [[deprecated("Use field access instead!")]] int& dyn_packingMode();
     // Get instance field reference: public System.Int32 atlasWidth
-    [[deprecated]] int& dyn_atlasWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_atlasWidth();
     // Get instance field reference: public System.Int32 atlasHeight
-    [[deprecated]] int& dyn_atlasHeight();
+    [[deprecated("Use field access instead!")]] int& dyn_atlasHeight();
     // Get instance field reference: public System.Int32 characterSetSelectionMode
-    [[deprecated]] int& dyn_characterSetSelectionMode();
+    [[deprecated("Use field access instead!")]] int& dyn_characterSetSelectionMode();
     // Get instance field reference: public System.String characterSequence
-    [[deprecated]] ::StringW& dyn_characterSequence();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_characterSequence();
     // Get instance field reference: public System.String referencedFontAssetGUID
-    [[deprecated]] ::StringW& dyn_referencedFontAssetGUID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_referencedFontAssetGUID();
     // Get instance field reference: public System.String referencedTextAssetGUID
-    [[deprecated]] ::StringW& dyn_referencedTextAssetGUID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_referencedTextAssetGUID();
     // Get instance field reference: public System.Int32 fontStyle
-    [[deprecated]] int& dyn_fontStyle();
+    [[deprecated("Use field access instead!")]] int& dyn_fontStyle();
     // Get instance field reference: public System.Single fontStyleModifier
-    [[deprecated]] float& dyn_fontStyleModifier();
+    [[deprecated("Use field access instead!")]] float& dyn_fontStyleModifier();
     // Get instance field reference: public System.Int32 renderMode
-    [[deprecated]] int& dyn_renderMode();
+    [[deprecated("Use field access instead!")]] int& dyn_renderMode();
     // Get instance field reference: public System.Boolean includeFontFeatures
-    [[deprecated]] bool& dyn_includeFontFeatures();
+    [[deprecated("Use field access instead!")]] bool& dyn_includeFontFeatures();
     // System.Void .ctor(System.String sourceFontFileGUID, System.Int32 pointSize, System.Int32 pointSizeSamplingMode, System.Int32 padding, System.Int32 packingMode, System.Int32 atlasWidth, System.Int32 atlasHeight, System.Int32 characterSelectionMode, System.String characterSet, System.Int32 renderMode)
     // Offset: 0xC296B8
     FontAssetCreationSettings(::StringW sourceFontFileGUID, int pointSize, int pointSizeSamplingMode, int padding, int packingMode, int atlasWidth, int atlasHeight, int characterSelectionMode, ::StringW characterSet, int renderMode);

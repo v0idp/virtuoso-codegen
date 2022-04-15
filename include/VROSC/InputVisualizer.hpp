@@ -71,38 +71,36 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Material _restingMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__restingMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__restingMaterial();
     // Get instance field reference: private UnityEngine.Material _activeMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__activeMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__activeMaterial();
     // Get instance field reference: private VROSC.InputDevice _device
-    [[deprecated]] ::VROSC::InputDevice*& dyn__device();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__device();
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
+    // public System.Void .ctor()
+    // Offset: 0x1945EF8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InputVisualizer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputVisualizer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InputVisualizer*, creationType>()));
+    }
     // public System.Void Update()
     // Offset: 0x1945E14
     void Update();
     // public System.Void Setup(VROSC.InputDevice device)
     // Offset: 0x1943E84
     void Setup(::VROSC::InputDevice* device);
-    // public System.Void .ctor()
-    // Offset: 0x1945EF8
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InputVisualizer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::InputVisualizer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InputVisualizer*, creationType>()));
-    }
   }; // VROSC.InputVisualizer
   #pragma pack(pop)
   static check_size<sizeof(InputVisualizer), 48 + sizeof(::UnityEngine::Renderer*)> __VROSC_InputVisualizerSizeCheck;
   static_assert(sizeof(InputVisualizer) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::InputVisualizer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::InputVisualizer::Update
 // Il2CppName: Update
 template<>
@@ -120,7 +118,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::InputVisualizer*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{device});
   }
 };
-// Writing MetadataGetter for method: VROSC::InputVisualizer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

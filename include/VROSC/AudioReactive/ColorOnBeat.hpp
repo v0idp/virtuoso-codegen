@@ -46,7 +46,7 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::LerpColorEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.LerpColorEffect _colorAnimation
-    [[deprecated]] ::VROSC::AudioReactive::LerpColorEffect*& dyn__colorAnimation();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::LerpColorEffect*& dyn__colorAnimation();
     // public VROSC.AudioReactive.LerpColorEffect get_ColorAnimation()
     // Offset: 0x948590
     ::VROSC::AudioReactive::LerpColorEffect* get_ColorAnimation();
@@ -54,11 +54,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0x94860C
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColorOnBeat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ColorOnBeat::.ctor");

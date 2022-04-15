@@ -147,29 +147,29 @@ namespace TMPro {
     // Set static field: static private System.Collections.Generic.HashSet`1<System.Int32> k_searchedSpriteAssets
     static void _set_k_searchedSpriteAssets(::System::Collections::Generic::HashSet_1<int>* value);
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> m_NameLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, int>*& dyn_m_NameLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, int>*& dyn_m_NameLookup();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.UInt32,System.Int32> m_GlyphIndexLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, int>*& dyn_m_GlyphIndexLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, int>*& dyn_m_GlyphIndexLookup();
     // Get instance field reference: private System.String m_Version
-    [[deprecated]] ::StringW& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Version();
     // Get instance field reference: UnityEngine.TextCore.FaceInfo m_FaceInfo
-    [[deprecated]] ::UnityEngine::TextCore::FaceInfo& dyn_m_FaceInfo();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextCore::FaceInfo& dyn_m_FaceInfo();
     // Get instance field reference: public UnityEngine.Texture spriteSheet
-    [[deprecated]] ::UnityEngine::Texture*& dyn_spriteSheet();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture*& dyn_spriteSheet();
     // Get instance field reference: private System.Collections.Generic.List`1<TMPro.TMP_SpriteCharacter> m_SpriteCharacterTable
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_SpriteCharacter*>*& dyn_m_SpriteCharacterTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_SpriteCharacter*>*& dyn_m_SpriteCharacterTable();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.UInt32,TMPro.TMP_SpriteCharacter> m_SpriteCharacterLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_SpriteCharacter*>*& dyn_m_SpriteCharacterLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_SpriteCharacter*>*& dyn_m_SpriteCharacterLookup();
     // Get instance field reference: private System.Collections.Generic.List`1<TMPro.TMP_SpriteGlyph> m_SpriteGlyphTable
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_SpriteGlyph*>*& dyn_m_SpriteGlyphTable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_SpriteGlyph*>*& dyn_m_SpriteGlyphTable();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.UInt32,TMPro.TMP_SpriteGlyph> m_SpriteGlyphLookup
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_SpriteGlyph*>*& dyn_m_SpriteGlyphLookup();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, ::TMPro::TMP_SpriteGlyph*>*& dyn_m_SpriteGlyphLookup();
     // Get instance field reference: public System.Collections.Generic.List`1<TMPro.TMP_Sprite> spriteInfoList
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_Sprite*>*& dyn_spriteInfoList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_Sprite*>*& dyn_spriteInfoList();
     // Get instance field reference: public System.Collections.Generic.List`1<TMPro.TMP_SpriteAsset> fallbackSpriteAssets
-    [[deprecated]] ::System::Collections::Generic::List_1<::TMPro::TMP_SpriteAsset*>*& dyn_fallbackSpriteAssets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::TMPro::TMP_SpriteAsset*>*& dyn_fallbackSpriteAssets();
     // Get instance field reference: System.Boolean m_IsSpriteAssetLookupTablesDirty
-    [[deprecated]] bool& dyn_m_IsSpriteAssetLookupTablesDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsSpriteAssetLookupTablesDirty();
     // public System.String get_version()
     // Offset: 0x9B1DF4
     ::StringW get_version();
@@ -252,9 +252,6 @@ namespace TMPro {
     // Offset: 0x9B39E8
     // Implemented from: TMPro.TMP_Asset
     // Base method: System.Void TMP_Asset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SpriteAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SpriteAsset::.ctor");

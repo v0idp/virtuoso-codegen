@@ -73,17 +73,17 @@ namespace VROSC::AudioReactive {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public VROSC.AudioReactive.DrumpadEffect <>4__this
-    [[deprecated]] ::VROSC::AudioReactive::DrumpadEffect*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::DrumpadEffect*& dyn_$$4__this();
     // Get instance field reference: private System.Single <time>5__2
-    [[deprecated]] float& dyn_$time$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$time$5__2();
     // Get instance field reference: private UnityEngine.Color <startColor>5__3
-    [[deprecated]] ::UnityEngine::Color& dyn_$startColor$5__3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$startColor$5__3();
     // Get instance field reference: private UnityEngine.Color <endColor>5__4
-    [[deprecated]] ::UnityEngine::Color& dyn_$endColor$5__4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$endColor$5__4();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x95E5D8
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

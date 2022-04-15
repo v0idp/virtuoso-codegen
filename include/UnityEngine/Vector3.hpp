@@ -132,11 +132,11 @@ namespace UnityEngine {
     // Set static field: static private readonly UnityEngine.Vector3 negativeInfinityVector
     static void _set_negativeInfinityVector(::UnityEngine::Vector3 value);
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    [[deprecated]] float& dyn_z();
+    [[deprecated("Use field access instead!")]] float& dyn_z();
     // public System.Single get_Item(System.Int32 index)
     // Offset: 0x183F824
     float get_Item(int index);

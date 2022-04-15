@@ -43,7 +43,7 @@ namespace Firebase {
       return ErrorCode;
     }
     // Get instance field reference: private System.Int32 <ErrorCode>k__BackingField
-    [[deprecated]] int& dyn_$ErrorCode$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$ErrorCode$k__BackingField();
     // public System.Int32 get_ErrorCode()
     // Offset: 0x1888730
     int get_ErrorCode();

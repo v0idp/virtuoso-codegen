@@ -78,13 +78,13 @@ namespace System::Text {
       return *reinterpret_cast<::System::Runtime::Serialization::ISerializable*>(this);
     }
     // Get instance field reference: protected System.Text.Encoding m_encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_m_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_m_encoding();
     // Get instance field reference: protected System.Boolean m_mustFlush
-    [[deprecated]] bool& dyn_m_mustFlush();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_mustFlush();
     // Get instance field reference: System.Boolean m_throwOnOverflow
-    [[deprecated]] bool& dyn_m_throwOnOverflow();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_throwOnOverflow();
     // Get instance field reference: System.Int32 m_bytesUsed
-    [[deprecated]] int& dyn_m_bytesUsed();
+    [[deprecated("Use field access instead!")]] int& dyn_m_bytesUsed();
     // public System.Boolean get_MustFlush()
     // Offset: 0x12950A4
     bool get_MustFlush();

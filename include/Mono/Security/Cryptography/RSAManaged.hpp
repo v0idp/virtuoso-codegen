@@ -119,29 +119,29 @@ namespace Mono::Security::Cryptography {
     static_assert(sizeof(::Mono::Security::Cryptography::RSAManaged::KeyGeneratedEventHandler*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean isCRTpossible
-    [[deprecated]] bool& dyn_isCRTpossible();
+    [[deprecated("Use field access instead!")]] bool& dyn_isCRTpossible();
     // Get instance field reference: private System.Boolean keypairGenerated
-    [[deprecated]] bool& dyn_keypairGenerated();
+    [[deprecated("Use field access instead!")]] bool& dyn_keypairGenerated();
     // Get instance field reference: private System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // Get instance field reference: private Mono.Math.BigInteger d
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_d();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_d();
     // Get instance field reference: private Mono.Math.BigInteger p
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_p();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_p();
     // Get instance field reference: private Mono.Math.BigInteger q
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_q();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_q();
     // Get instance field reference: private Mono.Math.BigInteger dp
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_dp();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_dp();
     // Get instance field reference: private Mono.Math.BigInteger dq
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_dq();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_dq();
     // Get instance field reference: private Mono.Math.BigInteger qInv
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_qInv();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_qInv();
     // Get instance field reference: private Mono.Math.BigInteger n
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_n();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_n();
     // Get instance field reference: private Mono.Math.BigInteger e
-    [[deprecated]] ::Mono::Math::BigInteger*& dyn_e();
+    [[deprecated("Use field access instead!")]] ::Mono::Math::BigInteger*& dyn_e();
     // Get instance field reference: private Mono.Security.Cryptography.RSAManaged/Mono.Security.Cryptography.KeyGeneratedEventHandler KeyGenerated
-    [[deprecated]] ::Mono::Security::Cryptography::RSAManaged::KeyGeneratedEventHandler*& dyn_KeyGenerated();
+    [[deprecated("Use field access instead!")]] ::Mono::Security::Cryptography::RSAManaged::KeyGeneratedEventHandler*& dyn_KeyGenerated();
     // public System.Boolean get_PublicOnly()
     // Offset: 0x1644968
     bool get_PublicOnly();

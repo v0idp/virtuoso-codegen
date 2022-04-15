@@ -74,15 +74,15 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public UnityEngine.UI.Scrollbar <>4__this
-    [[deprecated]] ::UnityEngine::UI::Scrollbar*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Scrollbar*& dyn_$$4__this();
     // Get instance field reference: public UnityEngine.Vector2 screenPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_screenPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_screenPosition();
     // Get instance field reference: public UnityEngine.Camera camera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_camera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_camera();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x16DBA04
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

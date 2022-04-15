@@ -45,28 +45,30 @@ namespace Newtonsoft::Json::Utilities {
       return subTypeProperty;
     }
     // Get instance field reference: public System.Reflection.PropertyInfo subTypeProperty
-    [[deprecated]] ::System::Reflection::PropertyInfo*& dyn_subTypeProperty();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::PropertyInfo*& dyn_subTypeProperty();
+    // public System.Void .ctor()
+    // Offset: 0x15A0290
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ReflectionUtils::$$c__DisplayClass44_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::ReflectionUtils::$$c__DisplayClass44_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ReflectionUtils::$$c__DisplayClass44_0*, creationType>()));
+    }
     // System.Boolean <GetChildPrivateProperties>b__0(System.Reflection.PropertyInfo p)
     // Offset: 0x15A0298
     bool $GetChildPrivateProperties$b__0(::System::Reflection::PropertyInfo* p);
     // System.Boolean <GetChildPrivateProperties>b__1(System.Reflection.PropertyInfo p)
     // Offset: 0x15A02F8
     bool $GetChildPrivateProperties$b__1(::System::Reflection::PropertyInfo* p);
-    // public System.Void .ctor()
-    // Offset: 0x15A0290
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ReflectionUtils::$$c__DisplayClass44_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Utilities::ReflectionUtils::$$c__DisplayClass44_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ReflectionUtils::$$c__DisplayClass44_0*, creationType>()));
-    }
   }; // Newtonsoft.Json.Utilities.ReflectionUtils/Newtonsoft.Json.Utilities.<>c__DisplayClass44_0
   #pragma pack(pop)
   static check_size<sizeof(ReflectionUtils::$$c__DisplayClass44_0), 16 + sizeof(::System::Reflection::PropertyInfo*)> __Newtonsoft_Json_Utilities_ReflectionUtils_$$c__DisplayClass44_0SizeCheck;
   static_assert(sizeof(ReflectionUtils::$$c__DisplayClass44_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionUtils::$$c__DisplayClass44_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionUtils::$$c__DisplayClass44_0::$GetChildPrivateProperties$b__0
 // Il2CppName: <GetChildPrivateProperties>b__0
 template<>
@@ -85,7 +87,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Newto
     return ::il2cpp_utils::FindMethod(classof(Newtonsoft::Json::Utilities::ReflectionUtils::$$c__DisplayClass44_0*), "<GetChildPrivateProperties>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: Newtonsoft::Json::Utilities::ReflectionUtils::$$c__DisplayClass44_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

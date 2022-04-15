@@ -64,7 +64,7 @@ namespace System::Resources {
       return mediator;
     }
     // Get instance field reference: private System.Resources.ResourceManager/System.Resources.ResourceManagerMediator _mediator
-    [[deprecated]] ::System::Resources::ResourceManager::ResourceManagerMediator*& dyn__mediator();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceManager::ResourceManagerMediator*& dyn__mediator();
     // public System.Void .ctor(System.Resources.ResourceManager/System.Resources.ResourceManagerMediator mediator)
     // Offset: 0xFF95A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

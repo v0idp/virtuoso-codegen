@@ -77,15 +77,15 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::XmlNameTable*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlName[] entries
-    [[deprecated]] ::ArrayW<::System::Xml::XmlName*>& dyn_entries();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlName*>& dyn_entries();
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: private System.Int32 mask
-    [[deprecated]] int& dyn_mask();
+    [[deprecated("Use field access instead!")]] int& dyn_mask();
     // Get instance field reference: private System.Xml.XmlDocument ownerDocument
-    [[deprecated]] ::System::Xml::XmlDocument*& dyn_ownerDocument();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocument*& dyn_ownerDocument();
     // Get instance field reference: private System.Xml.XmlNameTable nameTable
-    [[deprecated]] ::System::Xml::XmlNameTable*& dyn_nameTable();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNameTable*& dyn_nameTable();
     // public System.Void .ctor(System.Xml.XmlDocument document)
     // Offset: 0x10AFFE4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

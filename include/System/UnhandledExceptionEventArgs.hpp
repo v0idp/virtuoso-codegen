@@ -44,9 +44,9 @@ namespace System {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Object _Exception
-    [[deprecated]] ::Il2CppObject*& dyn__Exception();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__Exception();
     // Get instance field reference: private System.Boolean _IsTerminating
-    [[deprecated]] bool& dyn__IsTerminating();
+    [[deprecated("Use field access instead!")]] bool& dyn__IsTerminating();
     // public System.Object get_ExceptionObject()
     // Offset: 0x12051C8
     ::Il2CppObject* get_ExceptionObject();

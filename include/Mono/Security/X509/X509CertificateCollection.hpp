@@ -46,6 +46,13 @@ namespace Mono::Security::X509 {
     // public Mono.Security.X509.X509Certificate get_Item(System.Int32 index)
     // Offset: 0x1648CB8
     ::Mono::Security::X509::X509Certificate* get_Item(int index);
+    // public System.Void .ctor()
+    // Offset: 0x163D508
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static X509CertificateCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::X509CertificateCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<X509CertificateCollection*, creationType>()));
+    }
     // public System.Int32 Add(Mono.Security.X509.X509Certificate value)
     // Offset: 0x163F68C
     int Add(::Mono::Security::X509::X509Certificate* value);
@@ -55,16 +62,6 @@ namespace Mono::Security::X509 {
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
     // Offset: 0x1648D64
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
-    // public System.Void .ctor()
-    // Offset: 0x163D508
-    // Implemented from: System.Collections.CollectionBase
-    // Base method: System.Void CollectionBase::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static X509CertificateCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Mono::Security::X509::X509CertificateCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<X509CertificateCollection*, creationType>()));
-    }
     // public override System.Int32 GetHashCode()
     // Offset: 0x1648D90
     // Implemented from: System.Object
@@ -83,6 +80,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Mono::Sec
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::X509::X509CertificateCollection*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index});
   }
 };
+// Writing MetadataGetter for method: Mono::Security::X509::X509CertificateCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::X509::X509CertificateCollection::Add
 // Il2CppName: Add
 template<>
@@ -108,10 +109,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(Mono::Security::X509::X509CertificateCollection*), "System.Collections.IEnumerable.GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Mono::Security::X509::X509CertificateCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Mono::Security::X509::X509CertificateCollection::GetHashCode
 // Il2CppName: GetHashCode
 template<>

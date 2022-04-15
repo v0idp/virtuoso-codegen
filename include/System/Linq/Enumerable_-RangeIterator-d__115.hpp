@@ -93,21 +93,21 @@ namespace System::Linq {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<int>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Int32 <>2__current
-    [[deprecated]] int& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] int& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: private System.Int32 start
-    [[deprecated]] int& dyn_start();
+    [[deprecated("Use field access instead!")]] int& dyn_start();
     // Get instance field reference: public System.Int32 <>3__start
-    [[deprecated]] int& dyn_$$3__start();
+    [[deprecated("Use field access instead!")]] int& dyn_$$3__start();
     // Get instance field reference: private System.Int32 <i>5__1
-    [[deprecated]] int& dyn_$i$5__1();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__1();
     // Get instance field reference: private System.Int32 count
-    [[deprecated]] int& dyn_count();
+    [[deprecated("Use field access instead!")]] int& dyn_count();
     // Get instance field reference: public System.Int32 <>3__count
-    [[deprecated]] int& dyn_$$3__count();
+    [[deprecated("Use field access instead!")]] int& dyn_$$3__count();
     // private System.Int32 System.Collections.Generic.IEnumerator<System.Int32>.get_Current()
     // Offset: 0xEA7C20
     int System_Collections_Generic_IEnumerator$System_Int32$_get_Current();

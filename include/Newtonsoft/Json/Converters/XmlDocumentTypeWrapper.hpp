@@ -57,7 +57,7 @@ namespace Newtonsoft::Json::Converters {
       return documentType;
     }
     // Get instance field reference: private readonly System.Xml.XmlDocumentType _documentType
-    [[deprecated]] ::System::Xml::XmlDocumentType*& dyn__documentType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocumentType*& dyn__documentType();
     // public System.String get_Name()
     // Offset: 0x1592E28
     ::StringW get_Name();

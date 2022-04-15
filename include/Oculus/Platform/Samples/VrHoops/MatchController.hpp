@@ -149,7 +149,7 @@ namespace Oculus::Platform::Samples::VrHoops {
       // Set static field: static public Oculus.Platform.Samples.VrHoops.MatchController/Oculus.Platform.Samples.VrHoops.State VIEWING_MATCH_RESULTS
       static void _set_VIEWING_MATCH_RESULTS(::Oculus::Platform::Samples::VrHoops::MatchController::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Oculus.Platform.Samples.VrHoops.MatchController/Oculus.Platform.Samples.VrHoops.State
     #pragma pack(pop)
     static check_size<sizeof(MatchController::State), 0 + sizeof(int)> __Oculus_Platform_Samples_VrHoops_MatchController_StateSizeCheck;
@@ -255,43 +255,50 @@ namespace Oculus::Platform::Samples::VrHoops {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.UI.Text m_timerText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_timerText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_timerText();
     // Get instance field reference: private UnityEngine.Camera m_camera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_m_camera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_m_camera();
     // Get instance field reference: private UnityEngine.Transform m_idleCameraTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_idleCameraTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_idleCameraTransform();
     // Get instance field reference: private UnityEngine.UI.Text m_matchmakeButtonText
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_m_matchmakeButtonText();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_m_matchmakeButtonText();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.PlayerArea[] m_playerAreas
-    [[deprecated]] ::ArrayW<::Oculus::Platform::Samples::VrHoops::PlayerArea*>& dyn_m_playerAreas();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Oculus::Platform::Samples::VrHoops::PlayerArea*>& dyn_m_playerAreas();
     // Get instance field reference: private System.UInt32 PRACTICE_WARMUP_TIME
-    [[deprecated]] uint& dyn_PRACTICE_WARMUP_TIME();
+    [[deprecated("Use field access instead!")]] uint& dyn_PRACTICE_WARMUP_TIME();
     // Get instance field reference: private System.UInt32 MATCH_WARMUP_TIME
-    [[deprecated]] uint& dyn_MATCH_WARMUP_TIME();
+    [[deprecated("Use field access instead!")]] uint& dyn_MATCH_WARMUP_TIME();
     // Get instance field reference: private System.UInt32 MATCH_TIME
-    [[deprecated]] uint& dyn_MATCH_TIME();
+    [[deprecated("Use field access instead!")]] uint& dyn_MATCH_TIME();
     // Get instance field reference: private System.UInt32 MATCH_COOLDOWN_TIME
-    [[deprecated]] uint& dyn_MATCH_COOLDOWN_TIME();
+    [[deprecated("Use field access instead!")]] uint& dyn_MATCH_COOLDOWN_TIME();
     // Get instance field reference: private UnityEngine.GameObject m_mostWinsLeaderboard
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_mostWinsLeaderboard();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_mostWinsLeaderboard();
     // Get instance field reference: private UnityEngine.GameObject m_highestScoresLeaderboard
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_highestScoresLeaderboard();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_highestScoresLeaderboard();
     // Get instance field reference: private UnityEngine.GameObject m_leaderboardEntryPrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_leaderboardEntryPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_leaderboardEntryPrefab();
     // Get instance field reference: private UnityEngine.GameObject m_flytext
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_flytext();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_flytext();
     // Get instance field reference: private Oculus.Platform.Samples.VrHoops.MatchController/Oculus.Platform.Samples.VrHoops.State m_currentState
-    [[deprecated]] ::Oculus::Platform::Samples::VrHoops::MatchController::State& dyn_m_currentState();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::Samples::VrHoops::MatchController::State& dyn_m_currentState();
     // Get instance field reference: private System.Single m_nextStateTransitionTime
-    [[deprecated]] float& dyn_m_nextStateTransitionTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_nextStateTransitionTime();
     // Get instance field reference: private System.Int32 m_localSlot
-    [[deprecated]] int& dyn_m_localSlot();
+    [[deprecated("Use field access instead!")]] int& dyn_m_localSlot();
     // public System.Single get_MatchStartTime()
     // Offset: 0xB3E8A0
     float get_MatchStartTime();
     // private System.Void set_MatchStartTime(System.Single value)
     // Offset: 0xB3E8C0
     void set_MatchStartTime(float value);
+    // public System.Void .ctor()
+    // Offset: 0xB40490
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MatchController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::MatchController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MatchController*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0xB3E040
     void Start();
@@ -346,19 +353,6 @@ namespace Oculus::Platform::Samples::VrHoops {
     // private System.Void DisplayAchievementFlytext()
     // Offset: 0xB3F390
     void DisplayAchievementFlytext();
-    // public System.Void .ctor()
-    // Offset: 0xB40490
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MatchController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::Samples::VrHoops::MatchController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MatchController*, creationType>()));
-    }
   }; // Oculus.Platform.Samples.VrHoops.MatchController
   #pragma pack(pop)
   static check_size<sizeof(MatchController), 120 + sizeof(int)> __Oculus_Platform_Samples_VrHoops_MatchControllerSizeCheck;
@@ -384,6 +378,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::MatchController*), "set_MatchStartTime", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::MatchController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::MatchController::Start
 // Il2CppName: Start
 template<>
@@ -535,7 +533,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::Samples::VrHoops::MatchController*), "DisplayAchievementFlytext", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::Samples::VrHoops::MatchController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

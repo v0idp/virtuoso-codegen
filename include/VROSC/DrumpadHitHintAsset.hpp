@@ -65,16 +65,11 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public VROSC.DrumpadHitHintBehaviour template
-    [[deprecated]] ::VROSC::DrumpadHitHintBehaviour*& dyn_template();
+    [[deprecated("Use field access instead!")]] ::VROSC::DrumpadHitHintBehaviour*& dyn_template();
     // Get instance field reference: public UnityEngine.ExposedReference`1<VROSC.DrumPadEffectOnSignal> _target
-    [[deprecated]] ::UnityEngine::ExposedReference_1<::VROSC::DrumPadEffectOnSignal*>& dyn__target();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ExposedReference_1<::VROSC::DrumPadEffectOnSignal*>& dyn__target();
     // public System.Void .ctor()
     // Offset: 0x8E8A44
-    // Implemented from: UnityEngine.Playables.PlayableAsset
-    // Base method: System.Void PlayableAsset::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DrumpadHitHintAsset* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DrumpadHitHintAsset::.ctor");

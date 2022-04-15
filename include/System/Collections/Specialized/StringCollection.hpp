@@ -62,7 +62,7 @@ namespace System::Collections::Specialized {
       return data;
     }
     // Get instance field reference: private System.Collections.ArrayList data
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_data();
     // public System.String get_Item(System.Int32 index)
     // Offset: 0xDA68CC
     ::StringW get_Item(int index);
@@ -87,6 +87,13 @@ namespace System::Collections::Specialized {
     // private System.Void System.Collections.IList.set_Item(System.Int32 index, System.Object value)
     // Offset: 0xDA6AF4
     void System_Collections_IList_set_Item(int index, ::Il2CppObject* value);
+    // public System.Void .ctor()
+    // Offset: 0xDA6E7C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StringCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::StringCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StringCollection*, creationType>()));
+    }
     // public System.Int32 Add(System.String value)
     // Offset: 0xDA69AC
     int Add(::StringW value);
@@ -132,15 +139,6 @@ namespace System::Collections::Specialized {
     // private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
     // Offset: 0xDA6E58
     ::System::Collections::IEnumerator* System_Collections_IEnumerable_GetEnumerator();
-    // public System.Void .ctor()
-    // Offset: 0xDA6E7C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StringCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Collections::Specialized::StringCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StringCollection*, creationType>()));
-    }
   }; // System.Collections.Specialized.StringCollection
   #pragma pack(pop)
   static check_size<sizeof(StringCollection), 16 + sizeof(::System::Collections::ArrayList*)> __System_Collections_Specialized_StringCollectionSizeCheck;
@@ -217,6 +215,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::StringCollection*), "System.Collections.IList.set_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index, value});
   }
 };
+// Writing MetadataGetter for method: System::Collections::Specialized::StringCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Collections::Specialized::StringCollection::Add
 // Il2CppName: Add
 template<>
@@ -354,7 +356,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Collections::Specialized::StringCollection*), "System.Collections.IEnumerable.GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Collections::Specialized::StringCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

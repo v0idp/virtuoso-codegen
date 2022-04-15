@@ -42,9 +42,9 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton m_Button
-    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData::InputButton& dyn_m_Button();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::PointerEventData::InputButton& dyn_m_Button();
     // Get instance field reference: private UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.MouseButtonEventData m_EventData
-    [[deprecated]] ::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData*& dyn_m_EventData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData*& dyn_m_EventData();
     // public UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.MouseButtonEventData get_eventData()
     // Offset: 0x16D9AD4
     ::UnityEngine::EventSystems::PointerInputModule::MouseButtonEventData* get_eventData();
@@ -59,8 +59,6 @@ namespace UnityEngine::EventSystems {
     void set_button(::UnityEngine::EventSystems::PointerEventData::InputButton value);
     // public System.Void .ctor()
     // Offset: 0x16D9AF4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PointerInputModule::ButtonState* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::PointerInputModule::ButtonState::.ctor");

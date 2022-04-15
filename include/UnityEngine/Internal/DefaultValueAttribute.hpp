@@ -43,7 +43,7 @@ namespace UnityEngine::Internal {
       return DefaultValue;
     }
     // Get instance field reference: private System.Object DefaultValue
-    [[deprecated]] ::Il2CppObject*& dyn_DefaultValue();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_DefaultValue();
     // public System.Object get_Value()
     // Offset: 0x1126618
     ::Il2CppObject* get_Value();

@@ -54,13 +54,13 @@ namespace System::Xml {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Byte[] stack
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_stack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_stack();
     // Get instance field reference: private System.Int32 growthRate
-    [[deprecated]] int& dyn_growthRate();
+    [[deprecated("Use field access instead!")]] int& dyn_growthRate();
     // Get instance field reference: private System.Int32 top
-    [[deprecated]] int& dyn_top();
+    [[deprecated("Use field access instead!")]] int& dyn_top();
     // Get instance field reference: private System.Int32 size
-    [[deprecated]] int& dyn_size();
+    [[deprecated("Use field access instead!")]] int& dyn_size();
     // public System.Void .ctor(System.Int32 growthRate)
     // Offset: 0xB63A44
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

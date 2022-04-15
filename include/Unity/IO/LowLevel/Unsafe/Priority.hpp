@@ -55,7 +55,7 @@ namespace Unity::IO::LowLevel::Unsafe {
     // Set static field: static public Unity.IO.LowLevel.Unsafe.Priority PriorityHigh
     static void _set_PriorityHigh(::Unity::IO::LowLevel::Unsafe::Priority value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Unity.IO.LowLevel.Unsafe.Priority
   #pragma pack(pop)
   static check_size<sizeof(Priority), 0 + sizeof(int)> __Unity_IO_LowLevel_Unsafe_PrioritySizeCheck;

@@ -438,7 +438,7 @@ namespace System::Xml {
     // Set static field: static public System.Xml.BinXmlToken XSD_QNAME
     static void _set_XSD_QNAME(::System::Xml::BinXmlToken value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Xml.BinXmlToken
   #pragma pack(pop)
   static check_size<sizeof(BinXmlToken), 0 + sizeof(int)> __System_Xml_BinXmlTokenSizeCheck;

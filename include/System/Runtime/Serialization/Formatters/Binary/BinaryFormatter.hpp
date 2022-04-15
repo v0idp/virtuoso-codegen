@@ -126,19 +126,19 @@ namespace System::Runtime::Serialization::Formatters::Binary {
     // Set static field: static private System.Collections.Generic.Dictionary`2<System.Type,System.Runtime.Serialization.Formatters.Binary.TypeInformation> typeNameCache
     static void _set_typeNameCache(::System::Collections::Generic::Dictionary_2<::System::Type*, ::System::Runtime::Serialization::Formatters::Binary::TypeInformation*>* value);
     // Get instance field reference: System.Runtime.Serialization.ISurrogateSelector m_surrogates
-    [[deprecated]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn_m_surrogates();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn_m_surrogates();
     // Get instance field reference: System.Runtime.Serialization.StreamingContext m_context
-    [[deprecated]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::StreamingContext& dyn_m_context();
     // Get instance field reference: System.Runtime.Serialization.SerializationBinder m_binder
-    [[deprecated]] ::System::Runtime::Serialization::SerializationBinder*& dyn_m_binder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::SerializationBinder*& dyn_m_binder();
     // Get instance field reference: System.Runtime.Serialization.Formatters.FormatterTypeStyle m_typeFormat
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::FormatterTypeStyle& dyn_m_typeFormat();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::FormatterTypeStyle& dyn_m_typeFormat();
     // Get instance field reference: System.Runtime.Serialization.Formatters.FormatterAssemblyStyle m_assemblyFormat
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle& dyn_m_assemblyFormat();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle& dyn_m_assemblyFormat();
     // Get instance field reference: System.Runtime.Serialization.Formatters.TypeFilterLevel m_securityLevel
-    [[deprecated]] ::System::Runtime::Serialization::Formatters::TypeFilterLevel& dyn_m_securityLevel();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::Formatters::TypeFilterLevel& dyn_m_securityLevel();
     // Get instance field reference: System.Object[] m_crossAppDomainArray
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn_m_crossAppDomainArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn_m_crossAppDomainArray();
     // public System.Void set_AssemblyFormat(System.Runtime.Serialization.Formatters.FormatterAssemblyStyle value)
     // Offset: 0xFE78D4
     void set_AssemblyFormat(::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle value);

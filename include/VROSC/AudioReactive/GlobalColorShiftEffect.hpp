@@ -68,11 +68,11 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private VROSC.AudioReactive.GlobalColorEffectData _data
-    [[deprecated]] ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::GlobalColorEffectData*& dyn__data();
     // Get instance field reference: private VROSC.AudioReactive.GlobalShiftColorData[] _shiftColorDatas
-    [[deprecated]] ::ArrayW<::VROSC::AudioReactive::GlobalShiftColorData*>& dyn__shiftColorDatas();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AudioReactive::GlobalShiftColorData*>& dyn__shiftColorDatas();
     // Get instance field reference: private System.Int32 _currentColorSet
-    [[deprecated]] int& dyn__currentColorSet();
+    [[deprecated("Use field access instead!")]] int& dyn__currentColorSet();
     // public VROSC.AudioReactive.GlobalColorEffectData get_Data()
     // Offset: 0x19A4438
     ::VROSC::AudioReactive::GlobalColorEffectData* get_Data();
@@ -84,7 +84,6 @@ namespace VROSC::AudioReactive {
     // Implemented from: VROSC.AudioReactive.CoroutineDrivenEffect
     // Base method: System.Void CoroutineDrivenEffect::.ctor()
     // Base method: System.Void ReactiveEffect::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GlobalColorShiftEffect* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::GlobalColorShiftEffect::.ctor");

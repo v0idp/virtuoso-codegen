@@ -84,13 +84,13 @@ namespace System::Runtime::Remoting::Messaging {
       return *reinterpret_cast<::System::Collections::IDictionary*>(this);
     }
     // Get instance field reference: private System.Collections.IDictionary _internalProperties
-    [[deprecated]] ::System::Collections::IDictionary*& dyn__internalProperties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IDictionary*& dyn__internalProperties();
     // Get instance field reference: protected System.Runtime.Remoting.Messaging.IMethodMessage _message
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMethodMessage*& dyn__message();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMethodMessage*& dyn__message();
     // Get instance field reference: private System.String[] _methodKeys
-    [[deprecated]] ::ArrayW<::StringW>& dyn__methodKeys();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__methodKeys();
     // Get instance field reference: private System.Boolean _ownProperties
-    [[deprecated]] bool& dyn__ownProperties();
+    [[deprecated("Use field access instead!")]] bool& dyn__ownProperties();
     // System.Collections.IDictionary get_InternalDictionary()
     // Offset: 0x100033C
     ::System::Collections::IDictionary* get_InternalDictionary();

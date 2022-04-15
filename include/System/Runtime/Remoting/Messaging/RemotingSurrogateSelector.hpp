@@ -79,7 +79,7 @@ namespace System::Runtime::Remoting::Messaging {
     // Set static field: static private System.Runtime.Remoting.Messaging.RemotingSurrogate _objRemotingSurrogate
     static void _set__objRemotingSurrogate(::System::Runtime::Remoting::Messaging::RemotingSurrogate* value);
     // Get instance field reference: private System.Runtime.Serialization.ISurrogateSelector _next
-    [[deprecated]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn__next();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Serialization::ISurrogateSelector*& dyn__next();
     // static private System.Void .cctor()
     // Offset: 0xCDAD94
     static void _cctor();

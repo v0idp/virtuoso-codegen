@@ -51,7 +51,7 @@ namespace Oculus::Voice::Bindings::Android {
       return configuration;
     }
     // Get instance field reference: private Facebook.WitAi.Configuration.WitRuntimeConfiguration configuration
-    [[deprecated]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_configuration();
+    [[deprecated("Use field access instead!")]] ::Facebook::WitAi::Configuration::WitRuntimeConfiguration*& dyn_configuration();
     // public System.Void .ctor(Facebook.WitAi.Configuration.WitRuntimeConfiguration config)
     // Offset: 0x18E9EA8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

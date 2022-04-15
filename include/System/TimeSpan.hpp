@@ -216,7 +216,7 @@ namespace System {
     // Set static field: static private System.Boolean _legacyMode
     static void _set__legacyMode(bool value);
     // Get instance field reference: System.Int64 _ticks
-    [[deprecated]] int64_t& dyn__ticks();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__ticks();
     // public System.Int64 get_Ticks()
     // Offset: 0x11DDC78
     int64_t get_Ticks();

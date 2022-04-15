@@ -100,19 +100,19 @@ namespace System::Xml {
       return *reinterpret_cast<::System::Xml::Schema::IXmlSchemaInfo*>(this);
     }
     // Get instance field reference: private System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: private System.String localName
-    [[deprecated]] ::StringW& dyn_localName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_localName();
     // Get instance field reference: private System.String ns
-    [[deprecated]] ::StringW& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ns();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Int32 hashCode
-    [[deprecated]] int& dyn_hashCode();
+    [[deprecated("Use field access instead!")]] int& dyn_hashCode();
     // Get instance field reference: System.Xml.XmlDocument ownerDoc
-    [[deprecated]] ::System::Xml::XmlDocument*& dyn_ownerDoc();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlDocument*& dyn_ownerDoc();
     // Get instance field reference: System.Xml.XmlName next
-    [[deprecated]] ::System::Xml::XmlName*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlName*& dyn_next();
     // public System.String get_LocalName()
     // Offset: 0x128E338
     ::StringW get_LocalName();

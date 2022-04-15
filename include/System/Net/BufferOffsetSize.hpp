@@ -48,11 +48,11 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Byte[] Buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Buffer();
     // Get instance field reference: System.Int32 Offset
-    [[deprecated]] int& dyn_Offset();
+    [[deprecated("Use field access instead!")]] int& dyn_Offset();
     // Get instance field reference: System.Int32 Size
-    [[deprecated]] int& dyn_Size();
+    [[deprecated("Use field access instead!")]] int& dyn_Size();
     // System.Void .ctor(System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Boolean copyBuffer)
     // Offset: 0x10DB188
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

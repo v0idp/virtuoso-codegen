@@ -62,10 +62,17 @@ namespace UnityEngine::Timeline {
       return m_Instance;
     }
     // Get instance field reference: private UnityEngine.GameObject m_Instance
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_Instance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_Instance();
     // public UnityEngine.GameObject get_prefabInstance()
     // Offset: 0xC7A390
     ::UnityEngine::GameObject* get_prefabInstance();
+    // public System.Void .ctor()
+    // Offset: 0xC7A8E0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PrefabControlPlayable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::PrefabControlPlayable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PrefabControlPlayable*, creationType>()));
+    }
     // static public UnityEngine.Playables.ScriptPlayable`1<UnityEngine.Timeline.PrefabControlPlayable> Create(UnityEngine.Playables.PlayableGraph graph, UnityEngine.GameObject prefabGameObject, UnityEngine.Transform parentTransform)
     // Offset: 0xC71F10
     static ::UnityEngine::Playables::ScriptPlayable_1<::UnityEngine::Timeline::PrefabControlPlayable*> Create(::UnityEngine::Playables::PlayableGraph graph, ::UnityEngine::GameObject* prefabGameObject, ::UnityEngine::Transform* parentTransform);
@@ -75,16 +82,6 @@ namespace UnityEngine::Timeline {
     // static private System.Void SetHideFlagsRecursive(UnityEngine.GameObject gameObject)
     // Offset: 0xC7A398
     static void SetHideFlagsRecursive(::UnityEngine::GameObject* gameObject);
-    // public System.Void .ctor()
-    // Offset: 0xC7A8E0
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PrefabControlPlayable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Timeline::PrefabControlPlayable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PrefabControlPlayable*, creationType>()));
-    }
     // public override System.Void OnPlayableDestroy(UnityEngine.Playables.Playable playable)
     // Offset: 0xC7A6B0
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -114,6 +111,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::PrefabControlPlayable*), "get_prefabInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Timeline::PrefabControlPlayable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::PrefabControlPlayable::Create
 // Il2CppName: Create
 template<>
@@ -144,10 +145,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Timeline::PrefabControlPlayable*), "SetHideFlagsRecursive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{gameObject});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Timeline::PrefabControlPlayable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Timeline::PrefabControlPlayable::OnPlayableDestroy
 // Il2CppName: OnPlayableDestroy
 template<>

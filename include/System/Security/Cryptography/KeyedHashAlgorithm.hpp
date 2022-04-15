@@ -45,7 +45,7 @@ namespace System::Security::Cryptography {
       return KeyValue;
     }
     // Get instance field reference: protected System.Byte[] KeyValue
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_KeyValue();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_KeyValue();
     // public System.Byte[] get_Key()
     // Offset: 0x107621C
     ::ArrayW<uint8_t> get_Key();

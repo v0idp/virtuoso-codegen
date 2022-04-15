@@ -172,41 +172,48 @@ namespace System::Text::RegularExpressions {
     // Set static field: static private System.Int32 TimeoutCheckFrequency
     static void _set_TimeoutCheckFrequency(int value);
     // Get instance field reference: protected internal System.Int32 runtextbeg
-    [[deprecated]] int& dyn_runtextbeg();
+    [[deprecated("Use field access instead!")]] int& dyn_runtextbeg();
     // Get instance field reference: protected internal System.Int32 runtextend
-    [[deprecated]] int& dyn_runtextend();
+    [[deprecated("Use field access instead!")]] int& dyn_runtextend();
     // Get instance field reference: protected internal System.Int32 runtextstart
-    [[deprecated]] int& dyn_runtextstart();
+    [[deprecated("Use field access instead!")]] int& dyn_runtextstart();
     // Get instance field reference: protected internal System.String runtext
-    [[deprecated]] ::StringW& dyn_runtext();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_runtext();
     // Get instance field reference: protected internal System.Int32 runtextpos
-    [[deprecated]] int& dyn_runtextpos();
+    [[deprecated("Use field access instead!")]] int& dyn_runtextpos();
     // Get instance field reference: protected internal System.Int32[] runtrack
-    [[deprecated]] ::ArrayW<int>& dyn_runtrack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_runtrack();
     // Get instance field reference: protected internal System.Int32 runtrackpos
-    [[deprecated]] int& dyn_runtrackpos();
+    [[deprecated("Use field access instead!")]] int& dyn_runtrackpos();
     // Get instance field reference: protected internal System.Int32[] runstack
-    [[deprecated]] ::ArrayW<int>& dyn_runstack();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_runstack();
     // Get instance field reference: protected internal System.Int32 runstackpos
-    [[deprecated]] int& dyn_runstackpos();
+    [[deprecated("Use field access instead!")]] int& dyn_runstackpos();
     // Get instance field reference: protected internal System.Int32[] runcrawl
-    [[deprecated]] ::ArrayW<int>& dyn_runcrawl();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_runcrawl();
     // Get instance field reference: protected internal System.Int32 runcrawlpos
-    [[deprecated]] int& dyn_runcrawlpos();
+    [[deprecated("Use field access instead!")]] int& dyn_runcrawlpos();
     // Get instance field reference: protected internal System.Int32 runtrackcount
-    [[deprecated]] int& dyn_runtrackcount();
+    [[deprecated("Use field access instead!")]] int& dyn_runtrackcount();
     // Get instance field reference: protected internal System.Text.RegularExpressions.Match runmatch
-    [[deprecated]] ::System::Text::RegularExpressions::Match*& dyn_runmatch();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Match*& dyn_runmatch();
     // Get instance field reference: protected internal System.Text.RegularExpressions.Regex runregex
-    [[deprecated]] ::System::Text::RegularExpressions::Regex*& dyn_runregex();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Regex*& dyn_runregex();
     // Get instance field reference: private System.Int32 timeout
-    [[deprecated]] int& dyn_timeout();
+    [[deprecated("Use field access instead!")]] int& dyn_timeout();
     // Get instance field reference: private System.Boolean ignoreTimeout
-    [[deprecated]] bool& dyn_ignoreTimeout();
+    [[deprecated("Use field access instead!")]] bool& dyn_ignoreTimeout();
     // Get instance field reference: private System.Int32 timeoutOccursAt
-    [[deprecated]] int& dyn_timeoutOccursAt();
+    [[deprecated("Use field access instead!")]] int& dyn_timeoutOccursAt();
     // Get instance field reference: private System.Int32 timeoutChecksToSkip
-    [[deprecated]] int& dyn_timeoutChecksToSkip();
+    [[deprecated("Use field access instead!")]] int& dyn_timeoutChecksToSkip();
+    // protected internal System.Void .ctor()
+    // Offset: 0x1847270
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RegexRunner* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexRunner::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RegexRunner*, creationType>()));
+    }
     // protected internal System.Text.RegularExpressions.Match Scan(System.Text.RegularExpressions.Regex regex, System.String text, System.Int32 textbeg, System.Int32 textend, System.Int32 textstart, System.Int32 prevlen, System.Boolean quick, System.TimeSpan timeout)
     // Offset: 0x1851794
     ::System::Text::RegularExpressions::Match* Scan(::System::Text::RegularExpressions::Regex* regex, ::StringW text, int textbeg, int textend, int textstart, int prevlen, bool quick, ::System::TimeSpan timeout);
@@ -279,21 +286,16 @@ namespace System::Text::RegularExpressions {
     // protected System.Int32 MatchLength(System.Int32 cap)
     // Offset: 0x1849958
     int MatchLength(int cap);
-    // protected internal System.Void .ctor()
-    // Offset: 0x1847270
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RegexRunner* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexRunner::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RegexRunner*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.RegexRunner
   #pragma pack(pop)
   static check_size<sizeof(RegexRunner), 124 + sizeof(int)> __System_Text_RegularExpressions_RegexRunnerSizeCheck;
   static_assert(sizeof(RegexRunner) == 0x80);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexRunner::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::RegexRunner::Scan
 // Il2CppName: Scan
 template<>
@@ -512,7 +514,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (System
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::RegexRunner*), "MatchLength", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{cap});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexRunner::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

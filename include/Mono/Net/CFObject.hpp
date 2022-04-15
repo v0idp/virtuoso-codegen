@@ -48,7 +48,7 @@ namespace Mono::Net {
       return Handle;
     }
     // Get instance field reference: private System.IntPtr <Handle>k__BackingField
-    [[deprecated]] ::System::IntPtr& dyn_$Handle$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_$Handle$k__BackingField();
     // public System.IntPtr get_Handle()
     // Offset: 0x10DF004
     ::System::IntPtr get_Handle();

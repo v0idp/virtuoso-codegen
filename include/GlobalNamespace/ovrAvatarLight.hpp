@@ -79,19 +79,19 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 id
-    [[deprecated]] uint& dyn_id();
+    [[deprecated("Use field access instead!")]] uint& dyn_id();
     // Get instance field reference: public ovrAvatarLightType type
-    [[deprecated]] ::GlobalNamespace::ovrAvatarLightType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarLightType& dyn_type();
     // Get instance field reference: public System.Single intensity
-    [[deprecated]] float& dyn_intensity();
+    [[deprecated("Use field access instead!")]] float& dyn_intensity();
     // Get instance field reference: public UnityEngine.Vector3 worldDirection
-    [[deprecated]] ::UnityEngine::Vector3& dyn_worldDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_worldDirection();
     // Get instance field reference: public UnityEngine.Vector3 worldPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_worldPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_worldPosition();
     // Get instance field reference: public System.Single range
-    [[deprecated]] float& dyn_range();
+    [[deprecated("Use field access instead!")]] float& dyn_range();
     // Get instance field reference: public System.Single spotAngleDeg
-    [[deprecated]] float& dyn_spotAngleDeg();
+    [[deprecated("Use field access instead!")]] float& dyn_spotAngleDeg();
   }; // ovrAvatarLight
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarLight), 40 + sizeof(float)> __GlobalNamespace_ovrAvatarLightSizeCheck;

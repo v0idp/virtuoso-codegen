@@ -54,7 +54,7 @@ namespace Newtonsoft::Json {
     // Set static field: static public Newtonsoft.Json.FloatParseHandling Decimal
     static void _set_Decimal(::Newtonsoft::Json::FloatParseHandling value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Newtonsoft.Json.FloatParseHandling
   #pragma pack(pop)
   static check_size<sizeof(FloatParseHandling), 0 + sizeof(int)> __Newtonsoft_Json_FloatParseHandlingSizeCheck;

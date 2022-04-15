@@ -71,13 +71,13 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: System.Int32 m_Size
-    [[deprecated]] int& dyn_m_Size();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Size();
     // Get instance field reference: System.Byte[] m_Buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_Buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_Buffer();
     // Get instance field reference: private System.Boolean m_changed
-    [[deprecated]] bool& dyn_m_changed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_changed();
     // Get instance field reference: private System.Int32 m_hash
-    [[deprecated]] int& dyn_m_hash();
+    [[deprecated("Use field access instead!")]] int& dyn_m_hash();
     // public System.Net.Sockets.AddressFamily get_Family()
     // Offset: 0xDA40D0
     ::System::Net::Sockets::AddressFamily get_Family();

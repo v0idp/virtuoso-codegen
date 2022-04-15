@@ -65,7 +65,7 @@ namespace System::Data::Common {
     // Set static field: static private readonly System.Decimal s_defaultValue
     static void _set_s_defaultValue(::System::Decimal value);
     // Get instance field reference: private System.Decimal[] _values
-    [[deprecated]] ::ArrayW<::System::Decimal>& dyn__values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Decimal>& dyn__values();
     // System.Void .ctor(System.Data.DataColumn column)
     // Offset: 0x12EA7D4
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

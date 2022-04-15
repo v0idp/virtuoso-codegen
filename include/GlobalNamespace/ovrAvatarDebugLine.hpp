@@ -69,15 +69,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 startPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn_startPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_startPoint();
     // Get instance field reference: public UnityEngine.Vector3 endPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn_endPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_endPoint();
     // Get instance field reference: public UnityEngine.Vector3 color
-    [[deprecated]] ::UnityEngine::Vector3& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_color();
     // Get instance field reference: public ovrAvatarDebugContext context
-    [[deprecated]] ::GlobalNamespace::ovrAvatarDebugContext& dyn_context();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ovrAvatarDebugContext& dyn_context();
     // Get instance field reference: public System.IntPtr text
-    [[deprecated]] ::System::IntPtr& dyn_text();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_text();
   }; // ovrAvatarDebugLine
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarDebugLine), 40 + sizeof(::System::IntPtr)> __GlobalNamespace_ovrAvatarDebugLineSizeCheck;

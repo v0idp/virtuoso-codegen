@@ -115,23 +115,23 @@ namespace System::IO {
     static_assert(sizeof(::System::Threading::Tasks::Task_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.Runtime.InteropServices.SafeBuffer _buffer
-    [[deprecated]] ::System::Runtime::InteropServices::SafeBuffer*& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::SafeBuffer*& dyn__buffer();
     // Get instance field reference: private System.Byte* _mem
-    [[deprecated]] uint8_t*& dyn__mem();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn__mem();
     // Get instance field reference: private System.Int64 _length
-    [[deprecated]] int64_t& dyn__length();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__length();
     // Get instance field reference: private System.Int64 _capacity
-    [[deprecated]] int64_t& dyn__capacity();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__capacity();
     // Get instance field reference: private System.Int64 _position
-    [[deprecated]] int64_t& dyn__position();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__position();
     // Get instance field reference: private System.Int64 _offset
-    [[deprecated]] int64_t& dyn__offset();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__offset();
     // Get instance field reference: private System.IO.FileAccess _access
-    [[deprecated]] ::System::IO::FileAccess& dyn__access();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileAccess& dyn__access();
     // Get instance field reference: System.Boolean _isOpen
-    [[deprecated]] bool& dyn__isOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__isOpen();
     // Get instance field reference: private System.Threading.Tasks.Task`1<System.Int32> _lastReadTask
-    [[deprecated]] ::System::Threading::Tasks::Task_1<int>*& dyn__lastReadTask();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task_1<int>*& dyn__lastReadTask();
     // public System.Byte* get_PositionPointer()
     // Offset: 0x120AE70
     uint8_t* get_PositionPointer();

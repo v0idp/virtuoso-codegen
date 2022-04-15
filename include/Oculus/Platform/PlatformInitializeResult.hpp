@@ -112,7 +112,7 @@ namespace Oculus::Platform {
     // Set static field: static public Oculus.Platform.PlatformInitializeResult NotEntitled
     static void _set_NotEntitled(::Oculus::Platform::PlatformInitializeResult value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Oculus.Platform.PlatformInitializeResult
   #pragma pack(pop)
   static check_size<sizeof(PlatformInitializeResult), 0 + sizeof(int)> __Oculus_Platform_PlatformInitializeResultSizeCheck;

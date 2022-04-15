@@ -110,13 +110,13 @@ namespace Newtonsoft::Json::Linq {
       return *reinterpret_cast<::System::ComponentModel::IBindingList*>(this);
     }
     // Get instance field reference: System.ComponentModel.ListChangedEventHandler _listChanged
-    [[deprecated]] ::System::ComponentModel::ListChangedEventHandler*& dyn__listChanged();
+    [[deprecated("Use field access instead!")]] ::System::ComponentModel::ListChangedEventHandler*& dyn__listChanged();
     // Get instance field reference: System.Collections.Specialized.NotifyCollectionChangedEventHandler _collectionChanged
-    [[deprecated]] ::System::Collections::Specialized::NotifyCollectionChangedEventHandler*& dyn__collectionChanged();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Specialized::NotifyCollectionChangedEventHandler*& dyn__collectionChanged();
     // Get instance field reference: private System.Object _syncRoot
-    [[deprecated]] ::Il2CppObject*& dyn__syncRoot();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn__syncRoot();
     // Get instance field reference: private System.Boolean _busy
-    [[deprecated]] bool& dyn__busy();
+    [[deprecated("Use field access instead!")]] bool& dyn__busy();
     // protected System.Collections.Generic.IList`1<Newtonsoft.Json.Linq.JToken> get_ChildrenTokens()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::System::Collections::Generic::IList_1<::Newtonsoft::Json::Linq::JToken*>* get_ChildrenTokens();
@@ -299,7 +299,6 @@ namespace Newtonsoft::Json::Linq {
     // Offset: 0xEDA054
     // Implemented from: Newtonsoft.Json.Linq.JToken
     // Base method: System.Void JToken::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JContainer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JContainer::.ctor");

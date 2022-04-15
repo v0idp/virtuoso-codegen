@@ -377,7 +377,7 @@ namespace System {
     // Set static field: static private System.String DateDataField
     static void _set_DateDataField(::StringW value);
     // Get instance field reference: private System.UInt64 dateData
-    [[deprecated]] uint64_t& dyn_dateData();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_dateData();
     // System.Int64 get_InternalTicks()
     // Offset: 0xFCA3EC
     int64_t get_InternalTicks();

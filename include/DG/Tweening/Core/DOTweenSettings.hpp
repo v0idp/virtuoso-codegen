@@ -100,7 +100,7 @@ namespace DG::Tweening::Core {
       // Set static field: static public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SettingsLocation DemigiantDirectory
       static void _set_DemigiantDirectory(::DG::Tweening::Core::DOTweenSettings::SettingsLocation value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SettingsLocation
     #pragma pack(pop)
     static check_size<sizeof(DOTweenSettings::SettingsLocation), 0 + sizeof(int)> __DG_Tweening_Core_DOTweenSettings_SettingsLocationSizeCheck;
@@ -288,61 +288,57 @@ namespace DG::Tweening::Core {
     // Set static field: static public System.String AssetFullFilename
     static void _set_AssetFullFilename(::StringW value);
     // Get instance field reference: public System.Boolean useSafeMode
-    [[deprecated]] bool& dyn_useSafeMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_useSafeMode();
     // Get instance field reference: public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SafeModeOptions safeModeOptions
-    [[deprecated]] ::DG::Tweening::Core::DOTweenSettings::SafeModeOptions*& dyn_safeModeOptions();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Core::DOTweenSettings::SafeModeOptions*& dyn_safeModeOptions();
     // Get instance field reference: public System.Single timeScale
-    [[deprecated]] float& dyn_timeScale();
+    [[deprecated("Use field access instead!")]] float& dyn_timeScale();
     // Get instance field reference: public System.Boolean useSmoothDeltaTime
-    [[deprecated]] bool& dyn_useSmoothDeltaTime();
+    [[deprecated("Use field access instead!")]] bool& dyn_useSmoothDeltaTime();
     // Get instance field reference: public System.Single maxSmoothUnscaledTime
-    [[deprecated]] float& dyn_maxSmoothUnscaledTime();
+    [[deprecated("Use field access instead!")]] float& dyn_maxSmoothUnscaledTime();
     // Get instance field reference: public DG.Tweening.Core.Enums.RewindCallbackMode rewindCallbackMode
-    [[deprecated]] ::DG::Tweening::Core::Enums::RewindCallbackMode& dyn_rewindCallbackMode();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Core::Enums::RewindCallbackMode& dyn_rewindCallbackMode();
     // Get instance field reference: public System.Boolean showUnityEditorReport
-    [[deprecated]] bool& dyn_showUnityEditorReport();
+    [[deprecated("Use field access instead!")]] bool& dyn_showUnityEditorReport();
     // Get instance field reference: public DG.Tweening.LogBehaviour logBehaviour
-    [[deprecated]] ::DG::Tweening::LogBehaviour& dyn_logBehaviour();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::LogBehaviour& dyn_logBehaviour();
     // Get instance field reference: public System.Boolean drawGizmos
-    [[deprecated]] bool& dyn_drawGizmos();
+    [[deprecated("Use field access instead!")]] bool& dyn_drawGizmos();
     // Get instance field reference: public System.Boolean defaultRecyclable
-    [[deprecated]] bool& dyn_defaultRecyclable();
+    [[deprecated("Use field access instead!")]] bool& dyn_defaultRecyclable();
     // Get instance field reference: public DG.Tweening.AutoPlay defaultAutoPlay
-    [[deprecated]] ::DG::Tweening::AutoPlay& dyn_defaultAutoPlay();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::AutoPlay& dyn_defaultAutoPlay();
     // Get instance field reference: public DG.Tweening.UpdateType defaultUpdateType
-    [[deprecated]] ::DG::Tweening::UpdateType& dyn_defaultUpdateType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::UpdateType& dyn_defaultUpdateType();
     // Get instance field reference: public System.Boolean defaultTimeScaleIndependent
-    [[deprecated]] bool& dyn_defaultTimeScaleIndependent();
+    [[deprecated("Use field access instead!")]] bool& dyn_defaultTimeScaleIndependent();
     // Get instance field reference: public DG.Tweening.Ease defaultEaseType
-    [[deprecated]] ::DG::Tweening::Ease& dyn_defaultEaseType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Ease& dyn_defaultEaseType();
     // Get instance field reference: public System.Single defaultEaseOvershootOrAmplitude
-    [[deprecated]] float& dyn_defaultEaseOvershootOrAmplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_defaultEaseOvershootOrAmplitude();
     // Get instance field reference: public System.Single defaultEasePeriod
-    [[deprecated]] float& dyn_defaultEasePeriod();
+    [[deprecated("Use field access instead!")]] float& dyn_defaultEasePeriod();
     // Get instance field reference: public System.Boolean defaultAutoKill
-    [[deprecated]] bool& dyn_defaultAutoKill();
+    [[deprecated("Use field access instead!")]] bool& dyn_defaultAutoKill();
     // Get instance field reference: public DG.Tweening.LoopType defaultLoopType
-    [[deprecated]] ::DG::Tweening::LoopType& dyn_defaultLoopType();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::LoopType& dyn_defaultLoopType();
     // Get instance field reference: public System.Boolean debugMode
-    [[deprecated]] bool& dyn_debugMode();
+    [[deprecated("Use field access instead!")]] bool& dyn_debugMode();
     // Get instance field reference: public System.Boolean debugStoreTargetId
-    [[deprecated]] bool& dyn_debugStoreTargetId();
+    [[deprecated("Use field access instead!")]] bool& dyn_debugStoreTargetId();
     // Get instance field reference: public System.Boolean showPreviewPanel
-    [[deprecated]] bool& dyn_showPreviewPanel();
+    [[deprecated("Use field access instead!")]] bool& dyn_showPreviewPanel();
     // Get instance field reference: public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.SettingsLocation storeSettingsLocation
-    [[deprecated]] ::DG::Tweening::Core::DOTweenSettings::SettingsLocation& dyn_storeSettingsLocation();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Core::DOTweenSettings::SettingsLocation& dyn_storeSettingsLocation();
     // Get instance field reference: public DG.Tweening.Core.DOTweenSettings/DG.Tweening.Core.ModulesSetup modules
-    [[deprecated]] ::DG::Tweening::Core::DOTweenSettings::ModulesSetup*& dyn_modules();
+    [[deprecated("Use field access instead!")]] ::DG::Tweening::Core::DOTweenSettings::ModulesSetup*& dyn_modules();
     // Get instance field reference: public System.Boolean showPlayingTweens
-    [[deprecated]] bool& dyn_showPlayingTweens();
+    [[deprecated("Use field access instead!")]] bool& dyn_showPlayingTweens();
     // Get instance field reference: public System.Boolean showPausedTweens
-    [[deprecated]] bool& dyn_showPausedTweens();
+    [[deprecated("Use field access instead!")]] bool& dyn_showPausedTweens();
     // public System.Void .ctor()
     // Offset: 0x15DCD64
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DOTweenSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::DOTweenSettings::.ctor");

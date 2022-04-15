@@ -80,7 +80,7 @@ namespace UnityEngine {
       // Set static field: static public UnityEngine.TextEditor/UnityEngine.DblClickSnapping PARAGRAPHS
       static void _set_PARAGRAPHS(::UnityEngine::TextEditor::DblClickSnapping value);
       // Get instance field reference: public System.Byte value__
-      [[deprecated]] uint8_t& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_value__();
     }; // UnityEngine.TextEditor/UnityEngine.DblClickSnapping
     #pragma pack(pop)
     static check_size<sizeof(TextEditor::DblClickSnapping), 0 + sizeof(uint8_t)> __UnityEngine_TextEditor_DblClickSnappingSizeCheck;
@@ -194,41 +194,39 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.TouchScreenKeyboard keyboardOnScreen
-    [[deprecated]] ::UnityEngine::TouchScreenKeyboard*& dyn_keyboardOnScreen();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TouchScreenKeyboard*& dyn_keyboardOnScreen();
     // Get instance field reference: public System.Int32 controlID
-    [[deprecated]] int& dyn_controlID();
+    [[deprecated("Use field access instead!")]] int& dyn_controlID();
     // Get instance field reference: public UnityEngine.GUIStyle style
-    [[deprecated]] ::UnityEngine::GUIStyle*& dyn_style();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyle*& dyn_style();
     // Get instance field reference: public System.Boolean multiline
-    [[deprecated]] bool& dyn_multiline();
+    [[deprecated("Use field access instead!")]] bool& dyn_multiline();
     // Get instance field reference: public System.Boolean hasHorizontalCursorPos
-    [[deprecated]] bool& dyn_hasHorizontalCursorPos();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasHorizontalCursorPos();
     // Get instance field reference: public System.Boolean isPasswordField
-    [[deprecated]] bool& dyn_isPasswordField();
+    [[deprecated("Use field access instead!")]] bool& dyn_isPasswordField();
     // Get instance field reference: public UnityEngine.Vector2 scrollOffset
-    [[deprecated]] ::UnityEngine::Vector2& dyn_scrollOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_scrollOffset();
     // Get instance field reference: private UnityEngine.GUIContent m_Content
-    [[deprecated]] ::UnityEngine::GUIContent*& dyn_m_Content();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIContent*& dyn_m_Content();
     // Get instance field reference: private System.Int32 m_CursorIndex
-    [[deprecated]] int& dyn_m_CursorIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_CursorIndex();
     // Get instance field reference: private System.Int32 m_SelectIndex
-    [[deprecated]] int& dyn_m_SelectIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_SelectIndex();
     // Get instance field reference: private System.Boolean m_RevealCursor
-    [[deprecated]] bool& dyn_m_RevealCursor();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_RevealCursor();
     // Get instance field reference: private System.Boolean m_MouseDragSelectsWholeWords
-    [[deprecated]] bool& dyn_m_MouseDragSelectsWholeWords();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_MouseDragSelectsWholeWords();
     // Get instance field reference: private System.Int32 m_DblClickInitPos
-    [[deprecated]] int& dyn_m_DblClickInitPos();
+    [[deprecated("Use field access instead!")]] int& dyn_m_DblClickInitPos();
     // Get instance field reference: private UnityEngine.TextEditor/UnityEngine.DblClickSnapping m_DblClickSnap
-    [[deprecated]] ::UnityEngine::TextEditor::DblClickSnapping& dyn_m_DblClickSnap();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextEditor::DblClickSnapping& dyn_m_DblClickSnap();
     // Get instance field reference: private System.Boolean m_bJustSelected
-    [[deprecated]] bool& dyn_m_bJustSelected();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_bJustSelected();
     // Get instance field reference: private System.Int32 m_iAltCursorPos
-    [[deprecated]] int& dyn_m_iAltCursorPos();
+    [[deprecated("Use field access instead!")]] int& dyn_m_iAltCursorPos();
     // public System.Void .ctor()
     // Offset: 0x1881330
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextEditor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TextEditor::.ctor");

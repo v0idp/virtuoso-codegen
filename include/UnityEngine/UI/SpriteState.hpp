@@ -70,13 +70,13 @@ namespace UnityEngine::UI {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::UI::SpriteState>*>(this);
     }
     // Get instance field reference: private UnityEngine.Sprite m_HighlightedSprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_HighlightedSprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_HighlightedSprite();
     // Get instance field reference: private UnityEngine.Sprite m_PressedSprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_PressedSprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_PressedSprite();
     // Get instance field reference: private UnityEngine.Sprite m_SelectedSprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_SelectedSprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_SelectedSprite();
     // Get instance field reference: private UnityEngine.Sprite m_DisabledSprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_DisabledSprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_DisabledSprite();
     // public UnityEngine.Sprite get_highlightedSprite()
     // Offset: 0x16CF840
     ::UnityEngine::Sprite* get_highlightedSprite();

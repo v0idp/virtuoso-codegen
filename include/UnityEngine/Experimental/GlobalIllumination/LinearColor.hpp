@@ -63,13 +63,13 @@ namespace UnityEngine::Experimental::GlobalIllumination {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Single m_red
-    [[deprecated]] float& dyn_m_red();
+    [[deprecated("Use field access instead!")]] float& dyn_m_red();
     // Get instance field reference: private System.Single m_green
-    [[deprecated]] float& dyn_m_green();
+    [[deprecated("Use field access instead!")]] float& dyn_m_green();
     // Get instance field reference: private System.Single m_blue
-    [[deprecated]] float& dyn_m_blue();
+    [[deprecated("Use field access instead!")]] float& dyn_m_blue();
     // Get instance field reference: private System.Single m_intensity
-    [[deprecated]] float& dyn_m_intensity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_intensity();
     // public System.Single get_red()
     // Offset: 0x112CB98
     float get_red();

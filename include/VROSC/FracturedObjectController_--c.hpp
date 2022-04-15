@@ -48,18 +48,16 @@ namespace VROSC {
     // static private System.Void .cctor()
     // Offset: 0x195655C
     static void _cctor();
-    // System.Single <StoreAssembledPositions>b__25_0(UnityEngine.Transform obj)
-    // Offset: 0x19565C4
-    float $StoreAssembledPositions$b__25_0(::UnityEngine::Transform* obj);
     // public System.Void .ctor()
     // Offset: 0x19565BC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FracturedObjectController::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::FracturedObjectController::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<FracturedObjectController::$$c*, creationType>()));
     }
+    // System.Single <StoreAssembledPositions>b__25_0(UnityEngine.Transform obj)
+    // Offset: 0x19565C4
+    float $StoreAssembledPositions$b__25_0(::UnityEngine::Transform* obj);
   }; // VROSC.FracturedObjectController/VROSC.<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(VROSC::FracturedObjectController::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::FracturedObjectController::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::FracturedObjectController::$$c::$StoreAssembledPositions$b__25_0
 // Il2CppName: <StoreAssembledPositions>b__25_0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::FracturedObjectController::$$c*), "<StoreAssembledPositions>b__25_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };
-// Writing MetadataGetter for method: VROSC::FracturedObjectController::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

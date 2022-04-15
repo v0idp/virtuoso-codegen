@@ -139,29 +139,29 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: protected VROSC.InstrumentController _instrument
-    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrument();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentController*& dyn__instrument();
     // Get instance field reference: private VROSC.IntField _note
-    [[deprecated]] ::VROSC::IntField*& dyn__note();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__note();
     // Get instance field reference: private VROSC.IntField _noteOffset
-    [[deprecated]] ::VROSC::IntField*& dyn__noteOffset();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__noteOffset();
     // Get instance field reference: private System.Single _pitch
-    [[deprecated]] float& dyn__pitch();
+    [[deprecated("Use field access instead!")]] float& dyn__pitch();
     // Get instance field reference: protected System.Int32 _currentPlayingNote
-    [[deprecated]] int& dyn__currentPlayingNote();
+    [[deprecated("Use field access instead!")]] int& dyn__currentPlayingNote();
     // Get instance field reference: protected System.Int32 _scheduledNote
-    [[deprecated]] int& dyn__scheduledNote();
+    [[deprecated("Use field access instead!")]] int& dyn__scheduledNote();
     // Get instance field reference: protected System.Int32 _heldNote
-    [[deprecated]] int& dyn__heldNote();
+    [[deprecated("Use field access instead!")]] int& dyn__heldNote();
     // Get instance field reference: protected System.Single _scheduledNoteHoldTime
-    [[deprecated]] float& dyn__scheduledNoteHoldTime();
+    [[deprecated("Use field access instead!")]] float& dyn__scheduledNoteHoldTime();
     // Get instance field reference: protected System.Single _heldNoteHoldTime
-    [[deprecated]] float& dyn__heldNoteHoldTime();
+    [[deprecated("Use field access instead!")]] float& dyn__heldNoteHoldTime();
     // Get instance field reference: protected System.Boolean _stopScheduled
-    [[deprecated]] bool& dyn__stopScheduled();
+    [[deprecated("Use field access instead!")]] bool& dyn__stopScheduled();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Double> _scheduledQuantizeSteps
-    [[deprecated]] ::System::Collections::Generic::List_1<double>*& dyn__scheduledQuantizeSteps();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<double>*& dyn__scheduledQuantizeSteps();
     // Get instance field reference: protected System.Single _currentVelocity
-    [[deprecated]] float& dyn__currentVelocity();
+    [[deprecated("Use field access instead!")]] float& dyn__currentVelocity();
     // public System.Int32 get_CurrentlyPlayingNote()
     // Offset: 0xC5A88C
     int get_CurrentlyPlayingNote();
@@ -191,11 +191,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NotePlayer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NotePlayer::.ctor");

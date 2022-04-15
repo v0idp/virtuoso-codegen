@@ -77,11 +77,11 @@ namespace Newtonsoft::Json::Serialization {
       return *reinterpret_cast<::Newtonsoft::Json::IJsonLineInfo*>(this);
     }
     // Get instance field reference: private readonly Newtonsoft.Json.JsonReader _innerReader
-    [[deprecated]] ::Newtonsoft::Json::JsonReader*& dyn__innerReader();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonReader*& dyn__innerReader();
     // Get instance field reference: private readonly Newtonsoft.Json.JsonTextWriter _textWriter
-    [[deprecated]] ::Newtonsoft::Json::JsonTextWriter*& dyn__textWriter();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::JsonTextWriter*& dyn__textWriter();
     // Get instance field reference: private readonly System.IO.StringWriter _sw
-    [[deprecated]] ::System::IO::StringWriter*& dyn__sw();
+    [[deprecated("Use field access instead!")]] ::System::IO::StringWriter*& dyn__sw();
     // private System.Int32 Newtonsoft.Json.IJsonLineInfo.get_LineNumber()
     // Offset: 0x158DF80
     int Newtonsoft_Json_IJsonLineInfo_get_LineNumber();

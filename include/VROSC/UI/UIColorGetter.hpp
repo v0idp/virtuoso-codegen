@@ -68,9 +68,16 @@ namespace VROSC::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected VROSC.UI.UIExplicitColor _color
-    [[deprecated]] ::VROSC::UI::UIExplicitColor*& dyn__color();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIExplicitColor*& dyn__color();
     // Get instance field reference: public System.Action OnColorChange
-    [[deprecated]] ::System::Action*& dyn_OnColorChange();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_OnColorChange();
+    // public System.Void .ctor()
+    // Offset: 0xA34030
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIColorGetter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIColorGetter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIColorGetter*, creationType>()));
+    }
     // public UnityEngine.Color GetDefaultColor(System.Boolean isDisabled)
     // Offset: 0xA33E74
     ::UnityEngine::Color GetDefaultColor(bool isDisabled);
@@ -83,23 +90,16 @@ namespace VROSC::UI {
     // public System.Void SetColor(VROSC.UI.UIExplicitColor color)
     // Offset: 0xA33FE8
     void SetColor(::VROSC::UI::UIExplicitColor* color);
-    // public System.Void .ctor()
-    // Offset: 0xA34030
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIColorGetter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UI::UIColorGetter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIColorGetter*, creationType>()));
-    }
   }; // VROSC.UI.UIColorGetter
   #pragma pack(pop)
   static check_size<sizeof(UIColorGetter), 32 + sizeof(::System::Action*)> __VROSC_UI_UIColorGetterSizeCheck;
   static_assert(sizeof(UIColorGetter) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UI::UIColorGetter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UI::UIColorGetter::GetDefaultColor
 // Il2CppName: GetDefaultColor
 template<>
@@ -137,7 +137,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UI::UIColorGetter*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
   }
 };
-// Writing MetadataGetter for method: VROSC::UI::UIColorGetter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

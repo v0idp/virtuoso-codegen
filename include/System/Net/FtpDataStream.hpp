@@ -87,15 +87,15 @@ namespace System::Net {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Net.FtpWebRequest request
-    [[deprecated]] ::System::Net::FtpWebRequest*& dyn_request();
+    [[deprecated("Use field access instead!")]] ::System::Net::FtpWebRequest*& dyn_request();
     // Get instance field reference: private System.IO.Stream networkStream
-    [[deprecated]] ::System::IO::Stream*& dyn_networkStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_networkStream();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.Boolean isRead
-    [[deprecated]] bool& dyn_isRead();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRead();
     // Get instance field reference: private System.Int32 totalRead
-    [[deprecated]] int& dyn_totalRead();
+    [[deprecated("Use field access instead!")]] int& dyn_totalRead();
     // System.Void .ctor(System.Net.FtpWebRequest request, System.IO.Stream stream, System.Boolean isRead)
     // Offset: 0xF0437C
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

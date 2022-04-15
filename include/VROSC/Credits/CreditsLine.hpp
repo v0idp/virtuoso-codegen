@@ -88,19 +88,19 @@ namespace VROSC::Credits {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private TMPro.TextMeshPro _name
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__name();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__name();
     // Get instance field reference: private TMPro.TextMeshPro _title
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__title();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__title();
     // Get instance field reference: private TMPro.TextMeshPro _singleLine
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__singleLine();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__singleLine();
     // Get instance field reference: private UnityEngine.Color _nameColor
-    [[deprecated]] ::UnityEngine::Color& dyn__nameColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__nameColor();
     // Get instance field reference: private UnityEngine.Color _titleColor
-    [[deprecated]] ::UnityEngine::Color& dyn__titleColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__titleColor();
     // Get instance field reference: private UnityEngine.Color _singleLineColor
-    [[deprecated]] ::UnityEngine::Color& dyn__singleLineColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__singleLineColor();
     // Get instance field reference: private System.Boolean _isSingleLine
-    [[deprecated]] bool& dyn__isSingleLine();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSingleLine();
     // private System.Void Awake()
     // Offset: 0x8DF5AC
     void Awake();
@@ -120,11 +120,6 @@ namespace VROSC::Credits {
     // Offset: 0x8DF898
     // Implemented from: VROSC.Credits.CreditsObject
     // Base method: System.Void CreditsObject::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreditsLine* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsLine::.ctor");

@@ -60,17 +60,15 @@ namespace System::Xml::Linq {
     static_assert(sizeof(::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration*) == 0x8);
     public:
     // Get instance field reference: public System.String prefix
-    [[deprecated]] ::StringW& dyn_prefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefix();
     // Get instance field reference: public System.Xml.Linq.XNamespace ns
-    [[deprecated]] ::System::Xml::Linq::XNamespace*& dyn_ns();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::XNamespace*& dyn_ns();
     // Get instance field reference: public System.Int32 scope
-    [[deprecated]] int& dyn_scope();
+    [[deprecated("Use field access instead!")]] int& dyn_scope();
     // Get instance field reference: public System.Xml.Linq.NamespaceResolver/System.Xml.Linq.NamespaceDeclaration prev
-    [[deprecated]] ::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration*& dyn_prev();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration*& dyn_prev();
     // public System.Void .ctor()
     // Offset: 0x18541E4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NamespaceResolver::NamespaceDeclaration* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Linq::NamespaceResolver::NamespaceDeclaration::.ctor");

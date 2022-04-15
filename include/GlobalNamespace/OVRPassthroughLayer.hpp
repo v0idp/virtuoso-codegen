@@ -114,7 +114,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPassthroughLayer/ProjectionSurfaceType UserDefined
       static void _set_UserDefined(::GlobalNamespace::OVRPassthroughLayer::ProjectionSurfaceType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRPassthroughLayer/ProjectionSurfaceType
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::ProjectionSurfaceType), 0 + sizeof(int)> __GlobalNamespace_OVRPassthroughLayer_ProjectionSurfaceTypeSizeCheck;
@@ -162,7 +162,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPassthroughLayer/ColorMapEditorType Custom
       static void _set_Custom(::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRPassthroughLayer/ColorMapEditorType
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::ColorMapEditorType), 0 + sizeof(int)> __GlobalNamespace_OVRPassthroughLayer_ColorMapEditorTypeSizeCheck;
@@ -201,11 +201,11 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.UInt64 meshHandle
-      [[deprecated]] uint64_t& dyn_meshHandle();
+      [[deprecated("Use field access instead!")]] uint64_t& dyn_meshHandle();
       // Get instance field reference: public System.UInt64 instanceHandle
-      [[deprecated]] uint64_t& dyn_instanceHandle();
+      [[deprecated("Use field access instead!")]] uint64_t& dyn_instanceHandle();
       // Get instance field reference: public System.Boolean updateTransform
-      [[deprecated]] bool& dyn_updateTransform();
+      [[deprecated("Use field access instead!")]] bool& dyn_updateTransform();
     }; // OVRPassthroughLayer/PassthroughMeshInstance
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::PassthroughMeshInstance), 16 + sizeof(bool)> __GlobalNamespace_OVRPassthroughLayer_PassthroughMeshInstanceSizeCheck;
@@ -238,9 +238,9 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.GameObject gameObject
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_gameObject();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_gameObject();
       // Get instance field reference: public System.Boolean updateTransform
-      [[deprecated]] bool& dyn_updateTransform();
+      [[deprecated("Use field access instead!")]] bool& dyn_updateTransform();
     }; // OVRPassthroughLayer/DeferredPassthroughMeshAddition
     #pragma pack(pop)
     static check_size<sizeof(OVRPassthroughLayer::DeferredPassthroughMeshAddition), 8 + sizeof(bool)> __GlobalNamespace_OVRPassthroughLayer_DeferredPassthroughMeshAdditionSizeCheck;
@@ -438,63 +438,63 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Gradient colorMapNeutralGradient
     static void _set_colorMapNeutralGradient(::UnityEngine::Gradient* value);
     // Get instance field reference: public OVRPassthroughLayer/ProjectionSurfaceType projectionSurfaceType
-    [[deprecated]] ::GlobalNamespace::OVRPassthroughLayer::ProjectionSurfaceType& dyn_projectionSurfaceType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPassthroughLayer::ProjectionSurfaceType& dyn_projectionSurfaceType();
     // Get instance field reference: public OVROverlay/OverlayType overlayType
-    [[deprecated]] ::GlobalNamespace::OVROverlay::OverlayType& dyn_overlayType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay::OverlayType& dyn_overlayType();
     // Get instance field reference: public System.Int32 compositionDepth
-    [[deprecated]] int& dyn_compositionDepth();
+    [[deprecated("Use field access instead!")]] int& dyn_compositionDepth();
     // Get instance field reference: public System.Boolean hidden
-    [[deprecated]] bool& dyn_hidden();
+    [[deprecated("Use field access instead!")]] bool& dyn_hidden();
     // Get instance field reference: public System.Boolean overridePerLayerColorScaleAndOffset
-    [[deprecated]] bool& dyn_overridePerLayerColorScaleAndOffset();
+    [[deprecated("Use field access instead!")]] bool& dyn_overridePerLayerColorScaleAndOffset();
     // Get instance field reference: public UnityEngine.Vector4 colorScale
-    [[deprecated]] ::UnityEngine::Vector4& dyn_colorScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_colorScale();
     // Get instance field reference: public UnityEngine.Vector4 colorOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_colorOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_colorOffset();
     // Get instance field reference: private OVRPassthroughLayer/ColorMapEditorType colorMapEditorType_
-    [[deprecated]] ::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType& dyn_colorMapEditorType_();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPassthroughLayer::ColorMapEditorType& dyn_colorMapEditorType_();
     // Get instance field reference: public UnityEngine.Gradient colorMapEditorGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn_colorMapEditorGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn_colorMapEditorGradient();
     // Get instance field reference: private UnityEngine.Gradient colorMapEditorGradientOld
-    [[deprecated]] ::UnityEngine::Gradient*& dyn_colorMapEditorGradientOld();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn_colorMapEditorGradientOld();
     // Get instance field reference: public System.Single colorMapEditorContrast
-    [[deprecated]] float& dyn_colorMapEditorContrast();
+    [[deprecated("Use field access instead!")]] float& dyn_colorMapEditorContrast();
     // Get instance field reference: private System.Single colorMapEditorContrast_
-    [[deprecated]] float& dyn_colorMapEditorContrast_();
+    [[deprecated("Use field access instead!")]] float& dyn_colorMapEditorContrast_();
     // Get instance field reference: public System.Single colorMapEditorBrightness
-    [[deprecated]] float& dyn_colorMapEditorBrightness();
+    [[deprecated("Use field access instead!")]] float& dyn_colorMapEditorBrightness();
     // Get instance field reference: private System.Single colorMapEditorBrightness_
-    [[deprecated]] float& dyn_colorMapEditorBrightness_();
+    [[deprecated("Use field access instead!")]] float& dyn_colorMapEditorBrightness_();
     // Get instance field reference: public System.Single colorMapEditorPosterize
-    [[deprecated]] float& dyn_colorMapEditorPosterize();
+    [[deprecated("Use field access instead!")]] float& dyn_colorMapEditorPosterize();
     // Get instance field reference: private System.Single colorMapEditorPosterize_
-    [[deprecated]] float& dyn_colorMapEditorPosterize_();
+    [[deprecated("Use field access instead!")]] float& dyn_colorMapEditorPosterize_();
     // Get instance field reference: private OVRCameraRig cameraRig
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraRig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_cameraRig();
     // Get instance field reference: private System.Boolean cameraRigInitialized
-    [[deprecated]] bool& dyn_cameraRigInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_cameraRigInitialized();
     // Get instance field reference: private UnityEngine.GameObject auxGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_auxGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_auxGameObject();
     // Get instance field reference: private OVROverlay passthroughOverlay
-    [[deprecated]] ::GlobalNamespace::OVROverlay*& dyn_passthroughOverlay();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay*& dyn_passthroughOverlay();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,OVRPassthroughLayer/PassthroughMeshInstance> surfaceGameObjects
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::GlobalNamespace::OVRPassthroughLayer::PassthroughMeshInstance>*& dyn_surfaceGameObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::GlobalNamespace::OVRPassthroughLayer::PassthroughMeshInstance>*& dyn_surfaceGameObjects();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRPassthroughLayer/DeferredPassthroughMeshAddition> deferredSurfaceGameObjects
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRPassthroughLayer::DeferredPassthroughMeshAddition>*& dyn_deferredSurfaceGameObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRPassthroughLayer::DeferredPassthroughMeshAddition>*& dyn_deferredSurfaceGameObjects();
     // Get instance field reference: private System.Single textureOpacity_
-    [[deprecated]] float& dyn_textureOpacity_();
+    [[deprecated("Use field access instead!")]] float& dyn_textureOpacity_();
     // Get instance field reference: private System.Boolean edgeRenderingEnabled_
-    [[deprecated]] bool& dyn_edgeRenderingEnabled_();
+    [[deprecated("Use field access instead!")]] bool& dyn_edgeRenderingEnabled_();
     // Get instance field reference: private UnityEngine.Color edgeColor_
-    [[deprecated]] ::UnityEngine::Color& dyn_edgeColor_();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_edgeColor_();
     // Get instance field reference: private OVRPlugin/InsightPassthroughColorMapType colorMapType
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_colorMapType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::InsightPassthroughColorMapType& dyn_colorMapType();
     // Get instance field reference: private System.Byte[] colorMapData
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_colorMapData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_colorMapData();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle colorMapDataHandle
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_colorMapDataHandle();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn_colorMapDataHandle();
     // Get instance field reference: private System.Boolean styleDirty
-    [[deprecated]] bool& dyn_styleDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_styleDirty();
     // public System.Single get_textureOpacity()
     // Offset: 0xE63980
     float get_textureOpacity();
@@ -522,6 +522,16 @@ namespace GlobalNamespace {
     // private OVROverlay/OverlayShape get_overlayShape()
     // Offset: 0xE655EC
     ::GlobalNamespace::OVROverlay::OverlayShape get_overlayShape();
+    // public System.Void .ctor()
+    // Offset: 0xE65BD0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRPassthroughLayer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPassthroughLayer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRPassthroughLayer*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xE65D54
+    static void _cctor();
     // public System.Void AddSurfaceGeometry(UnityEngine.GameObject obj, System.Boolean updateTransform)
     // Offset: 0xE631F4
     void AddSurfaceGeometry(::UnityEngine::GameObject* obj, bool updateTransform);
@@ -591,24 +601,6 @@ namespace GlobalNamespace {
     // private System.Void OnDestroy()
     // Offset: 0xE65BC8
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0xE65BD0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRPassthroughLayer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPassthroughLayer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRPassthroughLayer*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xE65D54
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // OVRPassthroughLayer
   #pragma pack(pop)
   static check_size<sizeof(OVRPassthroughLayer), 212 + sizeof(bool)> __GlobalNamespace_OVRPassthroughLayerSizeCheck;
@@ -697,6 +689,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNamespace::OVROverlay::OverlayShape (GlobalNamespace::OVRPassthroughLayer::*)()>(&GlobalNamespace::OVRPassthroughLayer::get_overlayShape)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPassthroughLayer*), "get_overlayShape", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRPassthroughLayer::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPassthroughLayer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::AddSurfaceGeometry
@@ -899,17 +903,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OVRPassthroughLayer::*)()>(&GlobalNamespace::OVRPassthroughLayer::OnDestroy)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPassthroughLayer*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVRPassthroughLayer::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRPassthroughLayer::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPassthroughLayer*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

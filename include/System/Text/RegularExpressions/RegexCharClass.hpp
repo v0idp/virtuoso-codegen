@@ -102,13 +102,13 @@ namespace System::Text::RegularExpressions {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Char _chMin
-      [[deprecated]] ::Il2CppChar& dyn__chMin();
+      [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__chMin();
       // Get instance field reference: System.Char _chMax
-      [[deprecated]] ::Il2CppChar& dyn__chMax();
+      [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn__chMax();
       // Get instance field reference: System.Int32 _lcOp
-      [[deprecated]] int& dyn__lcOp();
+      [[deprecated("Use field access instead!")]] int& dyn__lcOp();
       // Get instance field reference: System.Int32 _data
-      [[deprecated]] int& dyn__data();
+      [[deprecated("Use field access instead!")]] int& dyn__data();
       // System.Void .ctor(System.Char chMin, System.Char chMax, System.Int32 lcOp, System.Int32 data)
       // Offset: 0x9FDDEC
       // ABORTED: conflicts with another method.  LowerCaseMapping(::Il2CppChar chMin, ::Il2CppChar chMax, int lcOp, int data);
@@ -207,15 +207,15 @@ namespace System::Text::RegularExpressions {
     // Set static field: static private readonly System.Text.RegularExpressions.RegexCharClass/System.Text.RegularExpressions.LowerCaseMapping[] _lcTable
     static void _set__lcTable(::ArrayW<::System::Text::RegularExpressions::RegexCharClass::LowerCaseMapping> value);
     // Get instance field reference: private System.Collections.Generic.List`1<System.Text.RegularExpressions.RegexCharClass/System.Text.RegularExpressions.SingleRange> _rangelist
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexCharClass::SingleRange*>*& dyn__rangelist();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Text::RegularExpressions::RegexCharClass::SingleRange*>*& dyn__rangelist();
     // Get instance field reference: private System.Text.StringBuilder _categories
-    [[deprecated]] ::System::Text::StringBuilder*& dyn__categories();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn__categories();
     // Get instance field reference: private System.Boolean _canonical
-    [[deprecated]] bool& dyn__canonical();
+    [[deprecated("Use field access instead!")]] bool& dyn__canonical();
     // Get instance field reference: private System.Boolean _negate
-    [[deprecated]] bool& dyn__negate();
+    [[deprecated("Use field access instead!")]] bool& dyn__negate();
     // Get instance field reference: private System.Text.RegularExpressions.RegexCharClass _subtractor
-    [[deprecated]] ::System::Text::RegularExpressions::RegexCharClass*& dyn__subtractor();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::RegexCharClass*& dyn__subtractor();
     // System.Boolean get_CanMerge()
     // Offset: 0x1420EFC
     bool get_CanMerge();
@@ -225,6 +225,13 @@ namespace System::Text::RegularExpressions {
     // static private System.Void .cctor()
     // Offset: 0x141AD58
     static void _cctor();
+    // System.Void .ctor()
+    // Offset: 0x1420DEC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RegexCharClass* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexCharClass::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RegexCharClass*, creationType>()));
+    }
     // private System.Void .ctor(System.Boolean negate, System.Collections.Generic.List`1<System.Text.RegularExpressions.RegexCharClass/System.Text.RegularExpressions.SingleRange> ranges, System.Text.StringBuilder categories, System.Text.RegularExpressions.RegexCharClass subtraction)
     // Offset: 0x1420EA0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -334,15 +341,6 @@ namespace System::Text::RegularExpressions {
     // static private System.String SetFromProperty(System.String capname, System.Boolean invert, System.String pattern)
     // Offset: 0x1421678
     static ::StringW SetFromProperty(::StringW capname, bool invert, ::StringW pattern);
-    // System.Void .ctor()
-    // Offset: 0x1420DEC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RegexCharClass* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::RegexCharClass::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RegexCharClass*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.RegexCharClass
   #pragma pack(pop)
   static check_size<sizeof(RegexCharClass), 40 + sizeof(::System::Text::RegularExpressions::RegexCharClass*)> __System_Text_RegularExpressions_RegexCharClassSizeCheck;
@@ -376,6 +374,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::RegexCharClass*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexCharClass::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::RegexCharClass::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -710,7 +712,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::RegexCharClass*), "SetFromProperty", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{capname, invert, pattern});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::RegexCharClass::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

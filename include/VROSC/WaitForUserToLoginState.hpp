@@ -34,6 +34,13 @@ namespace VROSC {
     operator ::VROSC::IState() noexcept {
       return *reinterpret_cast<::VROSC::IState*>(this);
     }
+    // public System.Void .ctor()
+    // Offset: 0x9500EC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WaitForUserToLoginState* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WaitForUserToLoginState::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WaitForUserToLoginState*, creationType>()));
+    }
     // public System.Void OnEnter(params System.Object[] values)
     // Offset: 0x9500F4
     void OnEnter(::ArrayW<::Il2CppObject*> values);
@@ -46,19 +53,14 @@ namespace VROSC {
     // public System.Void UpdateData(params System.Object[] values)
     // Offset: 0x950100
     void UpdateData(::ArrayW<::Il2CppObject*> values);
-    // public System.Void .ctor()
-    // Offset: 0x9500EC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WaitForUserToLoginState* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WaitForUserToLoginState::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WaitForUserToLoginState*, creationType>()));
-    }
   }; // VROSC.WaitForUserToLoginState
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::WaitForUserToLoginState::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::WaitForUserToLoginState::OnEnter
 // Il2CppName: OnEnter
 template<>
@@ -93,7 +95,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WaitForUserToLoginState*), "UpdateData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{values});
   }
 };
-// Writing MetadataGetter for method: VROSC::WaitForUserToLoginState::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -55,11 +55,11 @@ namespace System {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Type target_type
-    [[deprecated]] ::System::Type*& dyn_target_type();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_target_type();
     // Get instance field reference: public System.String method_name
-    [[deprecated]] ::StringW& dyn_method_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_method_name();
     // Get instance field reference: public System.Boolean curried_first_arg
-    [[deprecated]] bool& dyn_curried_first_arg();
+    [[deprecated("Use field access instead!")]] bool& dyn_curried_first_arg();
     // public System.Void .ctor()
     // Offset: 0x129B388
     // Implemented from: System.Object

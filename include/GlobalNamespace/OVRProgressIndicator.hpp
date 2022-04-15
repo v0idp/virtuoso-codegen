@@ -53,34 +53,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.MeshRenderer progressImage
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_progressImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn_progressImage();
     // Get instance field reference: public System.Single currentProgress
-    [[deprecated]] float& dyn_currentProgress();
+    [[deprecated("Use field access instead!")]] float& dyn_currentProgress();
+    // public System.Void .ctor()
+    // Offset: 0xE78700
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRProgressIndicator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRProgressIndicator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRProgressIndicator*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xE78670
     void Awake();
     // private System.Void Update()
     // Offset: 0xE78690
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0xE78700
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRProgressIndicator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRProgressIndicator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRProgressIndicator*, creationType>()));
-    }
   }; // OVRProgressIndicator
   #pragma pack(pop)
   static check_size<sizeof(OVRProgressIndicator), 32 + sizeof(float)> __GlobalNamespace_OVRProgressIndicatorSizeCheck;
   static_assert(sizeof(OVRProgressIndicator) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRProgressIndicator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRProgressIndicator::Awake
 // Il2CppName: Awake
 template<>
@@ -97,7 +95,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRProgressIndicator*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRProgressIndicator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

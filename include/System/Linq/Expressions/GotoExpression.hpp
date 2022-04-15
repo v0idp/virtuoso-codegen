@@ -74,13 +74,13 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Linq::Expressions::GotoExpressionKind) == 0x4);
     public:
     // Get instance field reference: private readonly System.Type <Type>k__BackingField
-    [[deprecated]] ::System::Type*& dyn_$Type$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_$Type$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.Expression <Value>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::Expression*& dyn_$Value$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::Expression*& dyn_$Value$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.LabelTarget <Target>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::LabelTarget*& dyn_$Target$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::LabelTarget*& dyn_$Target$k__BackingField();
     // Get instance field reference: private readonly System.Linq.Expressions.GotoExpressionKind <Kind>k__BackingField
-    [[deprecated]] ::System::Linq::Expressions::GotoExpressionKind& dyn_$Kind$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Linq::Expressions::GotoExpressionKind& dyn_$Kind$k__BackingField();
     // public System.Linq.Expressions.Expression get_Value()
     // Offset: 0xF14DD4
     ::System::Linq::Expressions::Expression* get_Value();

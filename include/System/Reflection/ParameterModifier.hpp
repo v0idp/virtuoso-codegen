@@ -45,7 +45,7 @@ namespace System::Reflection {
       return byRef;
     }
     // Get instance field reference: private System.Boolean[] _byRef
-    [[deprecated]] ::ArrayW<bool>& dyn__byRef();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn__byRef();
   }; // System.Reflection.ParameterModifier
   #pragma pack(pop)
   static check_size<sizeof(ParameterModifier), 0 + sizeof(::ArrayW<bool>)> __System_Reflection_ParameterModifierSizeCheck;

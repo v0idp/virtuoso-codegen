@@ -27,10 +27,6 @@ namespace TMPro {
     public:
     // public System.Void .ctor()
     // Offset: 0x1820F28
-    // Implemented from: UnityEngine.Events.UnityEvent`3
-    // Base method: System.Void UnityEvent_3::.ctor()
-    // Base method: System.Void UnityEventBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_InputField::TextSelectionEvent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_InputField::TextSelectionEvent::.ctor");

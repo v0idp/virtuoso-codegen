@@ -113,7 +113,7 @@ namespace VROSC {
       // Set static field: static public VROSC.VRPlayer/VROSC.ControllerType ValveIndex
       static void _set_ValveIndex(::VROSC::VRPlayer::ControllerType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // VROSC.VRPlayer/VROSC.ControllerType
     #pragma pack(pop)
     static check_size<sizeof(VRPlayer::ControllerType), 0 + sizeof(int)> __VROSC_VRPlayer_ControllerTypeSizeCheck;
@@ -233,41 +233,41 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Camera _camera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__camera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__camera();
     // Get instance field reference: private VROSC.ScreenFade _screenFade
-    [[deprecated]] ::VROSC::ScreenFade*& dyn__screenFade();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScreenFade*& dyn__screenFade();
     // Get instance field reference: private System.Boolean _isDebugPlayer
-    [[deprecated]] bool& dyn__isDebugPlayer();
+    [[deprecated("Use field access instead!")]] bool& dyn__isDebugPlayer();
     // Get instance field reference: private VROSC.InputDevice _right
-    [[deprecated]] ::VROSC::InputDevice*& dyn__right();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__right();
     // Get instance field reference: private VROSC.InputDevice _left
-    [[deprecated]] ::VROSC::InputDevice*& dyn__left();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__left();
     // Get instance field reference: private UnityEngine.Transform _keyboardAnchor
-    [[deprecated]] ::UnityEngine::Transform*& dyn__keyboardAnchor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__keyboardAnchor();
     // Get instance field reference: private VROSC.HandPlacedDashboardHelper _handPlacedDashboardHelper
-    [[deprecated]] ::VROSC::HandPlacedDashboardHelper*& dyn__handPlacedDashboardHelper();
+    [[deprecated("Use field access instead!")]] ::VROSC::HandPlacedDashboardHelper*& dyn__handPlacedDashboardHelper();
     // Get instance field reference: private VROSC.HighlightControllerComponentsManager _highlighting
-    [[deprecated]] ::VROSC::HighlightControllerComponentsManager*& dyn__highlighting();
+    [[deprecated("Use field access instead!")]] ::VROSC::HighlightControllerComponentsManager*& dyn__highlighting();
     // Get instance field reference: private VROSC.TutorialInputDeviceManager _tutorialInputDeviceManager
-    [[deprecated]] ::VROSC::TutorialInputDeviceManager*& dyn__tutorialInputDeviceManager();
+    [[deprecated("Use field access instead!")]] ::VROSC::TutorialInputDeviceManager*& dyn__tutorialInputDeviceManager();
     // Get instance field reference: private UnityEngine.Transform _leftControllerParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__leftControllerParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__leftControllerParent();
     // Get instance field reference: private UnityEngine.Transform _rightControllerParent
-    [[deprecated]] ::UnityEngine::Transform*& dyn__rightControllerParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__rightControllerParent();
     // Get instance field reference: private VROSC.InputDevice _leftControllerPrefab
-    [[deprecated]] ::VROSC::InputDevice*& dyn__leftControllerPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__leftControllerPrefab();
     // Get instance field reference: private VROSC.InputDevice _rightControllerPrefab
-    [[deprecated]] ::VROSC::InputDevice*& dyn__rightControllerPrefab();
+    [[deprecated("Use field access instead!")]] ::VROSC::InputDevice*& dyn__rightControllerPrefab();
     // Get instance field reference: private VROSC.UIHelpers _leftUIHelpers
-    [[deprecated]] ::VROSC::UIHelpers*& dyn__leftUIHelpers();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHelpers*& dyn__leftUIHelpers();
     // Get instance field reference: private VROSC.UIHelpers _rightUIHelpers
-    [[deprecated]] ::VROSC::UIHelpers*& dyn__rightUIHelpers();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIHelpers*& dyn__rightUIHelpers();
     // Get instance field reference: private VROSC.VRPlayer/VROSC.OverrideControllerPrefab[] _overrideControllerPrefabs
-    [[deprecated]] ::ArrayW<::VROSC::VRPlayer::OverrideControllerPrefab*>& dyn__overrideControllerPrefabs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::VRPlayer::OverrideControllerPrefab*>& dyn__overrideControllerPrefabs();
     // Get instance field reference: private System.String _connectedControllerName
-    [[deprecated]] ::StringW& dyn__connectedControllerName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__connectedControllerName();
     // Get instance field reference: private VROSC.VRPlayer/VROSC.ControllerType <Controllers>k__BackingField
-    [[deprecated]] ::VROSC::VRPlayer::ControllerType& dyn_$Controllers$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::VROSC::VRPlayer::ControllerType& dyn_$Controllers$k__BackingField();
     // public VROSC.InputDevice get_Right()
     // Offset: 0x1921334
     ::VROSC::InputDevice* get_Right();
@@ -304,6 +304,13 @@ namespace VROSC {
     // private System.Void set_Controllers(VROSC.VRPlayer/VROSC.ControllerType value)
     // Offset: 0x1921438
     void set_Controllers(::VROSC::VRPlayer::ControllerType value);
+    // public System.Void .ctor()
+    // Offset: 0x192184C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VRPlayer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VRPlayer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VRPlayer*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x1921440
     void Awake();
@@ -322,19 +329,6 @@ namespace VROSC {
     // public System.Void ShowControllers(System.Boolean show)
     // Offset: 0x19217EC
     void ShowControllers(bool show);
-    // public System.Void .ctor()
-    // Offset: 0x192184C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VRPlayer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::VRPlayer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VRPlayer*, creationType>()));
-    }
   }; // VROSC.VRPlayer
   #pragma pack(pop)
   static check_size<sizeof(VRPlayer), 160 + sizeof(::VROSC::VRPlayer::ControllerType)> __VROSC_VRPlayerSizeCheck;
@@ -440,6 +434,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::VRPlayer*), "set_Controllers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::VRPlayer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::VRPlayer::Awake
 // Il2CppName: Awake
 template<>
@@ -491,7 +489,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::VRPlayer*), "ShowControllers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{show});
   }
 };
-// Writing MetadataGetter for method: VROSC::VRPlayer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

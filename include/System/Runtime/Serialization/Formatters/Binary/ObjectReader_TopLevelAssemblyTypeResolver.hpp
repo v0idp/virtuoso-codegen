@@ -49,7 +49,7 @@ namespace System::Runtime::Serialization::Formatters::Binary {
       return m_topLevelAssembly;
     }
     // Get instance field reference: private System.Reflection.Assembly m_topLevelAssembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn_m_topLevelAssembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn_m_topLevelAssembly();
     // public System.Void .ctor(System.Reflection.Assembly topLevelAssembly)
     // Offset: 0xE55924
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

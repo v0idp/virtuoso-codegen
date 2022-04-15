@@ -83,27 +83,25 @@ namespace TMPro {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Int32 id
-    [[deprecated]] int& dyn_id();
+    [[deprecated("Use field access instead!")]] int& dyn_id();
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single width
-    [[deprecated]] float& dyn_width();
+    [[deprecated("Use field access instead!")]] float& dyn_width();
     // Get instance field reference: public System.Single height
-    [[deprecated]] float& dyn_height();
+    [[deprecated("Use field access instead!")]] float& dyn_height();
     // Get instance field reference: public System.Single xOffset
-    [[deprecated]] float& dyn_xOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_xOffset();
     // Get instance field reference: public System.Single yOffset
-    [[deprecated]] float& dyn_yOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_yOffset();
     // Get instance field reference: public System.Single xAdvance
-    [[deprecated]] float& dyn_xAdvance();
+    [[deprecated("Use field access instead!")]] float& dyn_xAdvance();
     // Get instance field reference: public System.Single scale
-    [[deprecated]] float& dyn_scale();
+    [[deprecated("Use field access instead!")]] float& dyn_scale();
     // public System.Void .ctor()
     // Offset: 0xD0FD10
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_TextElement_Legacy* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_TextElement_Legacy::.ctor");

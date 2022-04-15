@@ -117,21 +117,21 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_2<int, bool>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.GrabMalletButton _grabSticksButton
-    [[deprecated]] ::VROSC::GrabMalletButton*& dyn__grabSticksButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::GrabMalletButton*& dyn__grabSticksButton();
     // Get instance field reference: private VROSC.UI.DrumSampleSwitcherUI _switcher
-    [[deprecated]] ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::DrumSampleSwitcherUI*& dyn__switcher();
     // Get instance field reference: private VROSC.UISlideToggle _useVelocity
-    [[deprecated]] ::VROSC::UISlideToggle*& dyn__useVelocity();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlideToggle*& dyn__useVelocity();
     // Get instance field reference: private VROSC.IntNode _pitch
-    [[deprecated]] ::VROSC::IntNode*& dyn__pitch();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntNode*& dyn__pitch();
     // Get instance field reference: private System.Boolean _spinnerPressed
-    [[deprecated]] bool& dyn__spinnerPressed();
+    [[deprecated("Use field access instead!")]] bool& dyn__spinnerPressed();
     // Get instance field reference: public System.Action`1<System.Boolean> OnUseVelocityChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnUseVelocityChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnUseVelocityChanged();
     // Get instance field reference: public System.Action`1<System.Int32> OnPitchChanged
-    [[deprecated]] ::System::Action_1<int>*& dyn_OnPitchChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<int>*& dyn_OnPitchChanged();
     // Get instance field reference: public System.Action`2<System.Int32,System.Boolean> OnSwitcherChanged
-    [[deprecated]] ::System::Action_2<int, bool>*& dyn_OnSwitcherChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<int, bool>*& dyn_OnSwitcherChanged();
     // public System.Void Setup(UnityEngine.Transform parent, System.Int32 empadId, System.Int32 groupId, VROSC.ModularDrumsDataController controller, System.Boolean useVelocity, System.Int32 pitch)
     // Offset: 0x8E7B28
     void Setup(::UnityEngine::Transform* parent, int empadId, int groupId, ::VROSC::ModularDrumsDataController* controller, bool useVelocity, int pitch);
@@ -154,11 +154,6 @@ namespace VROSC {
     // Offset: 0x8EA3E0
     // Implemented from: VROSC.PadUI
     // Base method: System.Void PadUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DrumpadUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::DrumpadUI::.ctor");

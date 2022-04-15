@@ -45,7 +45,7 @@ namespace System::Runtime::InteropServices {
       return val;
     }
     // Get instance field reference: System.Runtime.InteropServices.ComInterfaceType _val
-    [[deprecated]] ::System::Runtime::InteropServices::ComInterfaceType& dyn__val();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::ComInterfaceType& dyn__val();
     // public System.Void .ctor(System.Runtime.InteropServices.ComInterfaceType interfaceType)
     // Offset: 0x106CE90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

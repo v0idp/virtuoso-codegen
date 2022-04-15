@@ -73,13 +73,13 @@ namespace UnityEngine::Rendering {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::Rendering::VertexAttributeDescriptor>*>(this);
     }
     // Get instance field reference: private UnityEngine.Rendering.VertexAttribute <attribute>k__BackingField
-    [[deprecated]] ::UnityEngine::Rendering::VertexAttribute& dyn_$attribute$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::VertexAttribute& dyn_$attribute$k__BackingField();
     // Get instance field reference: private UnityEngine.Rendering.VertexAttributeFormat <format>k__BackingField
-    [[deprecated]] ::UnityEngine::Rendering::VertexAttributeFormat& dyn_$format$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::VertexAttributeFormat& dyn_$format$k__BackingField();
     // Get instance field reference: private System.Int32 <dimension>k__BackingField
-    [[deprecated]] int& dyn_$dimension$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$dimension$k__BackingField();
     // Get instance field reference: private System.Int32 <stream>k__BackingField
-    [[deprecated]] int& dyn_$stream$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$stream$k__BackingField();
     // public UnityEngine.Rendering.VertexAttribute get_attribute()
     // Offset: 0x184127C
     ::UnityEngine::Rendering::VertexAttribute get_attribute();

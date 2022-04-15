@@ -64,21 +64,19 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String Id
-    [[deprecated]] ::StringW& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Id();
     // Get instance field reference: public System.String DisplayName
-    [[deprecated]] ::StringW& dyn_DisplayName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DisplayName();
     // Get instance field reference: public System.String Description
-    [[deprecated]] ::StringW& dyn_Description();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Description();
     // Get instance field reference: public System.String[] Tags
-    [[deprecated]] ::ArrayW<::StringW>& dyn_Tags();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_Tags();
     // Get instance field reference: public System.Boolean IsCloud
-    [[deprecated]] bool& dyn_IsCloud();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsCloud();
     // Get instance field reference: public System.Boolean IsShared
-    [[deprecated]] bool& dyn_IsShared();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsShared();
     // public System.Void .ctor()
     // Offset: 0x8D520C
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionsLibraryUI::SessionSaveData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SessionsLibraryUI::SessionSaveData::.ctor");

@@ -46,7 +46,7 @@ namespace VROSC::AudioReactive {
     static_assert(sizeof(::VROSC::AudioReactive::TranslateEffect*) == 0x8);
     public:
     // Get instance field reference: private VROSC.AudioReactive.TranslateEffect _transformAnimation
-    [[deprecated]] ::VROSC::AudioReactive::TranslateEffect*& dyn__transformAnimation();
+    [[deprecated("Use field access instead!")]] ::VROSC::AudioReactive::TranslateEffect*& dyn__transformAnimation();
     // public VROSC.AudioReactive.TranslateEffect get_TranslateAnimation()
     // Offset: 0xA2C954
     ::VROSC::AudioReactive::TranslateEffect* get_TranslateAnimation();
@@ -54,11 +54,6 @@ namespace VROSC::AudioReactive {
     // Offset: 0xA2C9D0
     // Implemented from: VROSC.AudioReactive.AudioReactiveBehaviour
     // Base method: System.Void AudioReactiveBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TransformOnBeat* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::TransformOnBeat::.ctor");

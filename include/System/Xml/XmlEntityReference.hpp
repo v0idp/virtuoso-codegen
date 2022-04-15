@@ -55,9 +55,9 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::XmlLinkedNode*) == 0x8);
     public:
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Xml.XmlLinkedNode lastChild
-    [[deprecated]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlLinkedNode*& dyn_lastChild();
     // System.String get_ChildBaseURI()
     // Offset: 0x1283514
     ::StringW get_ChildBaseURI();

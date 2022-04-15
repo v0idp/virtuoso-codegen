@@ -52,16 +52,14 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::PlayBehaviourNode*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.NoteBoardPlayer/VROSC.PlayBehaviour EnteredValue
-    [[deprecated]] ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn_EnteredValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoardPlayer::PlayBehaviour& dyn_EnteredValue();
     // Get instance field reference: protected VROSC.PlayBehaviourNode ConnectedValue
-    [[deprecated]] ::VROSC::PlayBehaviourNode*& dyn_ConnectedValue();
+    [[deprecated("Use field access instead!")]] ::VROSC::PlayBehaviourNode*& dyn_ConnectedValue();
     // public System.Int32 get_Value()
     // Offset: 0xADFE34
     int get_Value();
     // public System.Void .ctor()
     // Offset: 0xADFEC4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PlayBehaviourField* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::PlayBehaviourField::.ctor");

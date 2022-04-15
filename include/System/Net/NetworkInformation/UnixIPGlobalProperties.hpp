@@ -33,7 +33,6 @@ namespace System::Net::NetworkInformation {
     // Implemented from: System.Net.NetworkInformation.CommonUnixIPGlobalProperties
     // Base method: System.Void CommonUnixIPGlobalProperties::.ctor()
     // Base method: System.Void IPGlobalProperties::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UnixIPGlobalProperties* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::NetworkInformation::UnixIPGlobalProperties::.ctor");

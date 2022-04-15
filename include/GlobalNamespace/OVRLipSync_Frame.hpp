@@ -51,34 +51,36 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Int32 frameNumber
-    [[deprecated]] int& dyn_frameNumber();
+    [[deprecated("Use field access instead!")]] int& dyn_frameNumber();
     // Get instance field reference: public System.Int32 frameDelay
-    [[deprecated]] int& dyn_frameDelay();
+    [[deprecated("Use field access instead!")]] int& dyn_frameDelay();
     // Get instance field reference: public System.Single[] Visemes
-    [[deprecated]] ::ArrayW<float>& dyn_Visemes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_Visemes();
     // Get instance field reference: public System.Single laughterScore
-    [[deprecated]] float& dyn_laughterScore();
+    [[deprecated("Use field access instead!")]] float& dyn_laughterScore();
+    // public System.Void .ctor()
+    // Offset: 0x18AAC48
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRLipSync::Frame* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSync::Frame::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRLipSync::Frame*, creationType>()));
+    }
     // public System.Void CopyInput(OVRLipSync/Frame input)
     // Offset: 0x18AAE64
     void CopyInput(::GlobalNamespace::OVRLipSync::Frame* input);
     // public System.Void Reset()
     // Offset: 0x18AABBC
     void Reset();
-    // public System.Void .ctor()
-    // Offset: 0x18AAC48
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRLipSync::Frame* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRLipSync::Frame::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRLipSync::Frame*, creationType>()));
-    }
   }; // OVRLipSync/Frame
   #pragma pack(pop)
   static check_size<sizeof(OVRLipSync::Frame), 32 + sizeof(float)> __GlobalNamespace_OVRLipSync_FrameSizeCheck;
   static_assert(sizeof(OVRLipSync::Frame) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRLipSync::Frame::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRLipSync::Frame::CopyInput
 // Il2CppName: CopyInput
 template<>
@@ -96,7 +98,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRLipSync::Frame*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRLipSync::Frame::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

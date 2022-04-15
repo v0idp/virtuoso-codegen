@@ -163,19 +163,19 @@ namespace System::Xml::Serialization {
     // Set static field: static private System.Text.Encoding DefaultEncoding
     static void _set_DefaultEncoding(::System::Text::Encoding* value);
     // Get instance field reference: private System.Boolean customSerializer
-    [[deprecated]] bool& dyn_customSerializer();
+    [[deprecated("Use field access instead!")]] bool& dyn_customSerializer();
     // Get instance field reference: private System.Xml.Serialization.XmlMapping typeMapping
-    [[deprecated]] ::System::Xml::Serialization::XmlMapping*& dyn_typeMapping();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlMapping*& dyn_typeMapping();
     // Get instance field reference: private System.Xml.Serialization.XmlSerializer/System.Xml.Serialization.SerializerData serializerData
-    [[deprecated]] ::System::Xml::Serialization::XmlSerializer::SerializerData*& dyn_serializerData();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlSerializer::SerializerData*& dyn_serializerData();
     // Get instance field reference: private System.Xml.Serialization.UnreferencedObjectEventHandler onUnreferencedObject
-    [[deprecated]] ::System::Xml::Serialization::UnreferencedObjectEventHandler*& dyn_onUnreferencedObject();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::UnreferencedObjectEventHandler*& dyn_onUnreferencedObject();
     // Get instance field reference: private System.Xml.Serialization.XmlAttributeEventHandler onUnknownAttribute
-    [[deprecated]] ::System::Xml::Serialization::XmlAttributeEventHandler*& dyn_onUnknownAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlAttributeEventHandler*& dyn_onUnknownAttribute();
     // Get instance field reference: private System.Xml.Serialization.XmlElementEventHandler onUnknownElement
-    [[deprecated]] ::System::Xml::Serialization::XmlElementEventHandler*& dyn_onUnknownElement();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlElementEventHandler*& dyn_onUnknownElement();
     // Get instance field reference: private System.Xml.Serialization.XmlNodeEventHandler onUnknownNode
-    [[deprecated]] ::System::Xml::Serialization::XmlNodeEventHandler*& dyn_onUnknownNode();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::XmlNodeEventHandler*& dyn_onUnknownNode();
     // System.Xml.Serialization.XmlMapping get_Mapping()
     // Offset: 0x132C118
     ::System::Xml::Serialization::XmlMapping* get_Mapping();

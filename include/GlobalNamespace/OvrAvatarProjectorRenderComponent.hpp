@@ -55,7 +55,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Material material
-    [[deprecated]] ::UnityEngine::Material*& dyn_material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_material();
     // System.Void InitializeProjectorRender(ovrAvatarRenderPart_ProjectorRender render, UnityEngine.Shader shader, OvrAvatarRenderComponent target)
     // Offset: 0xF8F9DC
     void InitializeProjectorRender(::GlobalNamespace::ovrAvatarRenderPart_ProjectorRender render, ::UnityEngine::Shader* shader, ::GlobalNamespace::OvrAvatarRenderComponent* target);
@@ -69,11 +69,6 @@ namespace GlobalNamespace {
     // Offset: 0xF90338
     // Implemented from: OvrAvatarRenderComponent
     // Base method: System.Void OvrAvatarRenderComponent::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarProjectorRenderComponent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarProjectorRenderComponent::.ctor");

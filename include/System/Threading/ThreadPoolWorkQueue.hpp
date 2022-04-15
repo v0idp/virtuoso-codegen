@@ -67,11 +67,11 @@ namespace System::Threading {
     // Set static field: static System.Threading.ThreadPoolWorkQueue/System.Threading.SparseArray`1<System.Threading.ThreadPoolWorkQueue/System.Threading.WorkStealingQueue> allThreadQueues
     static void _set_allThreadQueues(::System::Threading::ThreadPoolWorkQueue::SparseArray_1<::System::Threading::ThreadPoolWorkQueue::WorkStealingQueue*>* value);
     // Get instance field reference: System.Threading.ThreadPoolWorkQueue/System.Threading.QueueSegment queueHead
-    [[deprecated]] ::System::Threading::ThreadPoolWorkQueue::QueueSegment*& dyn_queueHead();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ThreadPoolWorkQueue::QueueSegment*& dyn_queueHead();
     // Get instance field reference: System.Threading.ThreadPoolWorkQueue/System.Threading.QueueSegment queueTail
-    [[deprecated]] ::System::Threading::ThreadPoolWorkQueue::QueueSegment*& dyn_queueTail();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ThreadPoolWorkQueue::QueueSegment*& dyn_queueTail();
     // Get instance field reference: private System.Int32 numOutstandingThreadRequests
-    [[deprecated]] int& dyn_numOutstandingThreadRequests();
+    [[deprecated("Use field access instead!")]] int& dyn_numOutstandingThreadRequests();
     // static private System.Void .cctor()
     // Offset: 0x11DCD38
     static void _cctor();

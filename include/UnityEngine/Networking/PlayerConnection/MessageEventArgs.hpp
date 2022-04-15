@@ -44,13 +44,11 @@ namespace UnityEngine::Networking::PlayerConnection {
     static_assert(sizeof(::ArrayW<uint8_t>) == 0x8);
     public:
     // Get instance field reference: public System.Int32 playerId
-    [[deprecated]] int& dyn_playerId();
+    [[deprecated("Use field access instead!")]] int& dyn_playerId();
     // Get instance field reference: public System.Byte[] data
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_data();
     // public System.Void .ctor()
     // Offset: 0xBBF2E4
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static MessageEventArgs* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::PlayerConnection::MessageEventArgs::.ctor");

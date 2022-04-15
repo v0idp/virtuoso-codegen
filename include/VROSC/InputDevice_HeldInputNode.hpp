@@ -47,9 +47,9 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::TriggerButton) == 0x4);
     public:
     // Get instance field reference: public VROSC.ControllerInputNode InputNode
-    [[deprecated]] ::VROSC::ControllerInputNode*& dyn_InputNode();
+    [[deprecated("Use field access instead!")]] ::VROSC::ControllerInputNode*& dyn_InputNode();
     // Get instance field reference: public VROSC.TriggerButton HoldingButton
-    [[deprecated]] ::VROSC::TriggerButton& dyn_HoldingButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::TriggerButton& dyn_HoldingButton();
     // public System.Void .ctor(VROSC.ControllerInputNode inputNode, VROSC.TriggerButton holdingButton)
     // Offset: 0x1958944
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

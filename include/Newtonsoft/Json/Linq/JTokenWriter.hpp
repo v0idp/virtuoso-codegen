@@ -87,13 +87,13 @@ namespace Newtonsoft::Json::Linq {
     static_assert(sizeof(::Newtonsoft::Json::Linq::JToken*) == 0x8);
     public:
     // Get instance field reference: private Newtonsoft.Json.Linq.JContainer _token
-    [[deprecated]] ::Newtonsoft::Json::Linq::JContainer*& dyn__token();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JContainer*& dyn__token();
     // Get instance field reference: private Newtonsoft.Json.Linq.JContainer _parent
-    [[deprecated]] ::Newtonsoft::Json::Linq::JContainer*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JContainer*& dyn__parent();
     // Get instance field reference: private Newtonsoft.Json.Linq.JValue _value
-    [[deprecated]] ::Newtonsoft::Json::Linq::JValue*& dyn__value();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JValue*& dyn__value();
     // Get instance field reference: private Newtonsoft.Json.Linq.JToken _current
-    [[deprecated]] ::Newtonsoft::Json::Linq::JToken*& dyn__current();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Linq::JToken*& dyn__current();
     // public Newtonsoft.Json.Linq.JToken get_Token()
     // Offset: 0xEE9534
     ::Newtonsoft::Json::Linq::JToken* get_Token();
@@ -113,7 +113,6 @@ namespace Newtonsoft::Json::Linq {
     // Offset: 0xEE94D0
     // Implemented from: Newtonsoft.Json.JsonWriter
     // Base method: System.Void JsonWriter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static JTokenWriter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Newtonsoft::Json::Linq::JTokenWriter::.ctor");

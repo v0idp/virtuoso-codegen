@@ -42,9 +42,9 @@ namespace VROSC::Credits {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: private System.String _title
-    [[deprecated]] ::StringW& dyn__title();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__title();
     // public System.String get_Name()
     // Offset: 0x8DFB78
     ::StringW get_Name();
@@ -53,8 +53,6 @@ namespace VROSC::Credits {
     ::StringW get_Title();
     // public System.Void .ctor()
     // Offset: 0x8DFB88
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreditsNameData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::Credits::CreditsNameData::.ctor");

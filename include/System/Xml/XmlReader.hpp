@@ -171,6 +171,13 @@ namespace System::Xml {
     // System.Xml.IDtdInfo get_DtdInfo()
     // Offset: 0x1026C48
     ::System::Xml::IDtdInfo* get_DtdInfo();
+    // protected System.Void .ctor()
+    // Offset: 0x1019378
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XmlReader* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlReader::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XmlReader*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x102750C
     static void _cctor();
@@ -279,15 +286,6 @@ namespace System::Xml {
     // static System.Int32 CalcBufferSize(System.IO.Stream input)
     // Offset: 0x102739C
     static int CalcBufferSize(::System::IO::Stream* input);
-    // protected System.Void .ctor()
-    // Offset: 0x1019378
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XmlReader* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::XmlReader::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XmlReader*, creationType>()));
-    }
   }; // System.Xml.XmlReader
   #pragma pack(pop)
 }
@@ -500,6 +498,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::X
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlReader*), "get_DtdInfo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Xml::XmlReader::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Xml::XmlReader::_cctor
 // Il2CppName: .cctor
 template<>
@@ -818,7 +820,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::S
     return ::il2cpp_utils::FindMethod(classof(System::Xml::XmlReader*), "CalcBufferSize", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{input});
   }
 };
-// Writing MetadataGetter for method: System::Xml::XmlReader::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

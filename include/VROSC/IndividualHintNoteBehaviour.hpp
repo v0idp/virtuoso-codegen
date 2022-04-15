@@ -66,24 +66,21 @@ namespace VROSC {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private VROSC.TouchableObject _touchable
-    [[deprecated]] ::VROSC::TouchableObject*& dyn__touchable();
+    [[deprecated("Use field access instead!")]] ::VROSC::TouchableObject*& dyn__touchable();
     // Get instance field reference: public VROSC.NoteBoard/VROSC.PlayAxis Axis
-    [[deprecated]] ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteBoard::PlayAxis& dyn_Axis();
     // Get instance field reference: public System.Single Pressed
-    [[deprecated]] float& dyn_Pressed();
-    // public System.Void Setup(VROSC.TouchableObject touchable)
-    // Offset: 0x1943308
-    void Setup(::VROSC::TouchableObject* touchable);
+    [[deprecated("Use field access instead!")]] float& dyn_Pressed();
     // public System.Void .ctor()
     // Offset: 0x19433B8
-    // Implemented from: UnityEngine.Playables.PlayableBehaviour
-    // Base method: System.Void PlayableBehaviour::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IndividualHintNoteBehaviour* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::IndividualHintNoteBehaviour::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<IndividualHintNoteBehaviour*, creationType>()));
     }
+    // public System.Void Setup(VROSC.TouchableObject touchable)
+    // Offset: 0x1943308
+    void Setup(::VROSC::TouchableObject* touchable);
     // public override System.Void ProcessFrame(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info, System.Object playerData)
     // Offset: 0x1943310
     // Implemented from: UnityEngine.Playables.PlayableBehaviour
@@ -95,6 +92,10 @@ namespace VROSC {
   static_assert(sizeof(IndividualHintNoteBehaviour) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::IndividualHintNoteBehaviour::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::IndividualHintNoteBehaviour::Setup
 // Il2CppName: Setup
 template<>
@@ -104,10 +105,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::IndividualHintNoteBehaviour*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{touchable});
   }
 };
-// Writing MetadataGetter for method: VROSC::IndividualHintNoteBehaviour::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::IndividualHintNoteBehaviour::ProcessFrame
 // Il2CppName: ProcessFrame
 template<>

@@ -82,7 +82,7 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Type listValueType
     static void _set_listValueType(::System::Type* value);
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType[] types
-    [[deprecated]] ::ArrayW<::System::Xml::Schema::XmlSchemaSimpleType*>& dyn_types();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::Schema::XmlSchemaSimpleType*>& dyn_types();
     // System.Xml.Schema.XmlSchemaSimpleType[] get_BaseMemberTypes()
     // Offset: 0x10AD228
     ::ArrayW<::System::Xml::Schema::XmlSchemaSimpleType*> get_BaseMemberTypes();

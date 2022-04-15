@@ -112,23 +112,23 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.UI.UIColorGetter _baseColor
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__baseColor();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__baseColor();
     // Get instance field reference: private VROSC.UI.UIColorGetter _mutedColor
-    [[deprecated]] ::VROSC::UI::UIColorGetter*& dyn__mutedColor();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIColorGetter*& dyn__mutedColor();
     // Get instance field reference: private VROSC.UI.UIColorGetter[] _loopPlayerColors
-    [[deprecated]] ::ArrayW<::VROSC::UI::UIColorGetter*>& dyn__loopPlayerColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::UI::UIColorGetter*>& dyn__loopPlayerColors();
     // Get instance field reference: private VROSC.AdjustableMesh[] _adjustableMeshes
-    [[deprecated]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__adjustableMeshes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::VROSC::AdjustableMesh*>& dyn__adjustableMeshes();
     // Get instance field reference: private VROSC.UIColorPicker _colorPicker
-    [[deprecated]] ::VROSC::UIColorPicker*& dyn__colorPicker();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIColorPicker*& dyn__colorPicker();
     // Get instance field reference: private UnityEngine.Color <CurrentColor>k__BackingField
-    [[deprecated]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$CurrentColor$k__BackingField();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnColorChanged
-    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorChanged();
     // Get instance field reference: private UnityEngine.Color _muteColor
-    [[deprecated]] ::UnityEngine::Color& dyn__muteColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__muteColor();
     // Get instance field reference: private System.Boolean _isMuted
-    [[deprecated]] bool& dyn__isMuted();
+    [[deprecated("Use field access instead!")]] bool& dyn__isMuted();
     // public VROSC.UIColorPicker get_UIColorPicker()
     // Offset: 0x19BAF60
     ::VROSC::UIColorPicker* get_UIColorPicker();
@@ -138,6 +138,13 @@ namespace VROSC {
     // private System.Void set_CurrentColor(UnityEngine.Color value)
     // Offset: 0x19BAF68
     void set_CurrentColor(::UnityEngine::Color value);
+    // public System.Void .ctor()
+    // Offset: 0x19BB40C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopPlayerColorizer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerColorizer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerColorizer*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x19BAF80
     void Awake();
@@ -162,19 +169,6 @@ namespace VROSC {
     // public System.Void SetMuted(System.Boolean isMuted)
     // Offset: 0x19BB400
     void SetMuted(bool isMuted);
-    // public System.Void .ctor()
-    // Offset: 0x19BB40C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopPlayerColorizer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopPlayerColorizer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopPlayerColorizer*, creationType>()));
-    }
   }; // VROSC.LoopPlayerColorizer
   #pragma pack(pop)
   static check_size<sizeof(LoopPlayerColorizer), 104 + sizeof(bool)> __VROSC_LoopPlayerColorizerSizeCheck;
@@ -206,6 +200,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerColorizer*), "set_CurrentColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopPlayerColorizer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopPlayerColorizer::Awake
 // Il2CppName: Awake
 template<>
@@ -273,7 +271,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopPlayerColorizer*), "SetMuted", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isMuted});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopPlayerColorizer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

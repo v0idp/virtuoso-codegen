@@ -77,15 +77,15 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchemaAnyAttribute*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlQualifiedName baseTypeName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_baseTypeName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_baseTypeName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaSimpleType baseType
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_baseType();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaSimpleType*& dyn_baseType();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection facets
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_facets();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_facets();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection attributes
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_attributes();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_attributes();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaAnyAttribute anyAttribute
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaAnyAttribute*& dyn_anyAttribute();
     // public System.Xml.XmlQualifiedName get_BaseTypeName()
     // Offset: 0xF36904
     ::System::Xml::XmlQualifiedName* get_BaseTypeName();
@@ -119,7 +119,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaContent::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaSimpleContentRestriction* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSimpleContentRestriction::.ctor");

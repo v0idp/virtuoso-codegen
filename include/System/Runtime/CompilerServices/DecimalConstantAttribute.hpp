@@ -45,7 +45,7 @@ namespace System::Runtime::CompilerServices {
       return dec;
     }
     // Get instance field reference: private System.Decimal dec
-    [[deprecated]] ::System::Decimal& dyn_dec();
+    [[deprecated("Use field access instead!")]] ::System::Decimal& dyn_dec();
     // public System.Decimal get_Value()
     // Offset: 0x12929FC
     ::System::Decimal get_Value();

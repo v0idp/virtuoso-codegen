@@ -56,9 +56,9 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::UnityEngine::Color>*) == 0x8);
     public:
     // Get instance field reference: protected VROSC.AdjustableMesh _adjustableMesh
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__adjustableMesh();
     // Get instance field reference: public System.Action`1<UnityEngine.Color> OnColorChange
-    [[deprecated]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorChange();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Color>*& dyn_OnColorChange();
     // public System.Void .ctor(VROSC.AdjustableMesh adjustableMesh)
     // Offset: 0x966E28
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

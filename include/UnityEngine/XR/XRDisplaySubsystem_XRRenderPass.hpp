@@ -81,17 +81,17 @@ namespace UnityEngine::XR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.IntPtr displaySubsystemInstance
-    [[deprecated]] ::System::IntPtr& dyn_displaySubsystemInstance();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_displaySubsystemInstance();
     // Get instance field reference: public System.Int32 renderPassIndex
-    [[deprecated]] int& dyn_renderPassIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_renderPassIndex();
     // Get instance field reference: public UnityEngine.Rendering.RenderTargetIdentifier renderTarget
-    [[deprecated]] ::UnityEngine::Rendering::RenderTargetIdentifier& dyn_renderTarget();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::RenderTargetIdentifier& dyn_renderTarget();
     // Get instance field reference: public UnityEngine.RenderTextureDescriptor renderTargetDesc
-    [[deprecated]] ::UnityEngine::RenderTextureDescriptor& dyn_renderTargetDesc();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTextureDescriptor& dyn_renderTargetDesc();
     // Get instance field reference: public System.Boolean shouldFillOutDepth
-    [[deprecated]] bool& dyn_shouldFillOutDepth();
+    [[deprecated("Use field access instead!")]] bool& dyn_shouldFillOutDepth();
     // Get instance field reference: public System.Int32 cullingPassIndex
-    [[deprecated]] int& dyn_cullingPassIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_cullingPassIndex();
   }; // UnityEngine.XR.XRDisplaySubsystem/UnityEngine.XR.XRRenderPass
   #pragma pack(pop)
   static check_size<sizeof(XRDisplaySubsystem::XRRenderPass), 112 + sizeof(int)> __UnityEngine_XR_XRDisplaySubsystem_XRRenderPassSizeCheck;

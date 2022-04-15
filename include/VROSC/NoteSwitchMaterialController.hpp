@@ -81,26 +81,21 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Renderer _renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.Material _restingOctaveMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__restingOctaveMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__restingOctaveMaterial();
     // Get instance field reference: private UnityEngine.Material _restingOddMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__restingOddMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__restingOddMaterial();
     // Get instance field reference: private UnityEngine.Material _restingEvenMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__restingEvenMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__restingEvenMaterial();
     // Get instance field reference: private UnityEngine.Material _playingMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__playingMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__playingMaterial();
     // Get instance field reference: private UnityEngine.Material _restingMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__restingMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__restingMaterial();
     // public System.Void .ctor()
     // Offset: 0xC5AE9C
     // Implemented from: VROSC.NoteBoardNoteVisualController
     // Base method: System.Void NoteBoardNoteVisualController::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NoteSwitchMaterialController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::NoteSwitchMaterialController::.ctor");

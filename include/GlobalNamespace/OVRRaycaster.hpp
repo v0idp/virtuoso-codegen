@@ -104,11 +104,11 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.UI.Graphic graphic
-      [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_graphic();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_graphic();
       // Get instance field reference: public UnityEngine.Vector3 worldPos
-      [[deprecated]] ::UnityEngine::Vector3& dyn_worldPos();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_worldPos();
       // Get instance field reference: public System.Boolean fromMouse
-      [[deprecated]] bool& dyn_fromMouse();
+      [[deprecated("Use field access instead!")]] bool& dyn_fromMouse();
     }; // OVRRaycaster/RaycastHit
     #pragma pack(pop)
     static check_size<sizeof(OVRRaycaster::RaycastHit), 20 + sizeof(bool)> __GlobalNamespace_OVRRaycaster_RaycastHitSizeCheck;
@@ -151,13 +151,26 @@ namespace GlobalNamespace {
     // Set static field: static private readonly System.Collections.Generic.List`1<OVRRaycaster/RaycastHit> s_SortedGraphics
     static void _set_s_SortedGraphics(::System::Collections::Generic::List_1<::GlobalNamespace::OVRRaycaster::RaycastHit>* value);
     // Get instance field reference: public UnityEngine.GameObject pointer
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_pointer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_pointer();
     // Get instance field reference: public System.Int32 sortOrder
-    [[deprecated]] int& dyn_sortOrder();
+    [[deprecated("Use field access instead!")]] int& dyn_sortOrder();
     // Get instance field reference: private UnityEngine.Canvas m_Canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_m_Canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_m_Canvas();
     // Get instance field reference: private System.Collections.Generic.List`1<OVRRaycaster/RaycastHit> m_RaycastResults
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRRaycaster::RaycastHit>*& dyn_m_RaycastResults();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::OVRRaycaster::RaycastHit>*& dyn_m_RaycastResults();
+    // private UnityEngine.Canvas get_canvas()
+    // Offset: 0xE787B8
+    ::UnityEngine::Canvas* get_canvas();
+    // protected System.Void .ctor()
+    // Offset: 0xE78714
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRRaycaster* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRRaycaster::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRRaycaster*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xE79CEC
+    static void _cctor();
     // private System.Void Raycast(UnityEngine.EventSystems.PointerEventData eventData, System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult> resultAppendList, UnityEngine.Ray ray, System.Boolean checkForBlocking)
     // Offset: 0xE789F8
     void Raycast(::UnityEngine::EventSystems::PointerEventData* eventData, ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::RaycastResult>* resultAppendList, ::UnityEngine::Ray ray, bool checkForBlocking);
@@ -179,11 +192,6 @@ namespace GlobalNamespace {
     // public System.Void OnPointerEnter(UnityEngine.EventSystems.PointerEventData e)
     // Offset: 0xE79BCC
     void OnPointerEnter(::UnityEngine::EventSystems::PointerEventData* e);
-    // private UnityEngine.Canvas get_canvas()
-    // Offset: 0xE787B8
-    // Implemented from: UnityEngine.UI.GraphicRaycaster
-    // Base method: UnityEngine.Canvas GraphicRaycaster::get_canvas()
-    ::UnityEngine::Canvas* get_canvas();
     // public override UnityEngine.Camera get_eventCamera()
     // Offset: 0xE78858
     // Implemented from: UnityEngine.UI.GraphicRaycaster
@@ -194,28 +202,6 @@ namespace GlobalNamespace {
     // Implemented from: UnityEngine.UI.GraphicRaycaster
     // Base method: System.Int32 GraphicRaycaster::get_sortOrderPriority()
     int get_sortOrderPriority();
-    // protected System.Void .ctor()
-    // Offset: 0xE78714
-    // Implemented from: UnityEngine.UI.GraphicRaycaster
-    // Base method: System.Void GraphicRaycaster::.ctor()
-    // Base method: System.Void BaseRaycaster::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRRaycaster* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRRaycaster::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRRaycaster*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xE79CEC
-    // Implemented from: UnityEngine.UI.GraphicRaycaster
-    // Base method: System.Void GraphicRaycaster::.cctor()
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // protected override System.Void Start()
     // Offset: 0xE78880
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
@@ -234,6 +220,26 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::OVRRaycaster::RaycastHit, "", "OVRRaycaster/RaycastHit");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::get_canvas
+// Il2CppName: get_canvas
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Canvas* (GlobalNamespace::OVRRaycaster::*)()>(&GlobalNamespace::OVRRaycaster::get_canvas)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster*), "get_canvas", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRRaycaster::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::Raycast
 // Il2CppName: Raycast
 template<>
@@ -304,14 +310,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster*), "OnPointerEnter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{e});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::get_canvas
-// Il2CppName: get_canvas
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Canvas* (GlobalNamespace::OVRRaycaster::*)()>(&GlobalNamespace::OVRRaycaster::get_canvas)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster*), "get_canvas", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::get_eventCamera
 // Il2CppName: get_eventCamera
 template<>
@@ -326,18 +324,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (GlobalNamespace::OVRRaycaster::*)()>(&GlobalNamespace::OVRRaycaster::get_sortOrderPriority)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster*), "get_sortOrderPriority", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::OVRRaycaster::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRRaycaster*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::OVRRaycaster::Start

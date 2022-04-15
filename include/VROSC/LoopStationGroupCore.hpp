@@ -95,15 +95,15 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.LoopStationBaseGroupHandler _baseGroups
-    [[deprecated]] ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroups();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationBaseGroupHandler*& dyn__baseGroups();
     // Get instance field reference: private VROSC.LoopStationUserGroupHandler _userGroups
-    [[deprecated]] ::VROSC::LoopStationUserGroupHandler*& dyn__userGroups();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopStationUserGroupHandler*& dyn__userGroups();
     // Get instance field reference: private System.Collections.Generic.List`1<VROSC.LoopStationGroup> <Groups>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn_$Groups$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::VROSC::LoopStationGroup*>*& dyn_$Groups$k__BackingField();
     // Get instance field reference: public System.Action`1<VROSC.LoopStationGroup> OnGroupCreated
-    [[deprecated]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupCreated();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupCreated();
     // Get instance field reference: public System.Action`1<VROSC.LoopStationGroup> OnGroupRemoved
-    [[deprecated]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupRemoved();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::LoopStationGroup*>*& dyn_OnGroupRemoved();
     // public VROSC.LoopStationBaseGroupHandler get_BaseGroups()
     // Offset: 0x196F3BC
     ::VROSC::LoopStationBaseGroupHandler* get_BaseGroups();
@@ -119,6 +119,13 @@ namespace VROSC {
     // public VROSC.LoopStationGroup get_BaseGroup()
     // Offset: 0x196F3DC
     ::VROSC::LoopStationGroup* get_BaseGroup();
+    // public System.Void .ctor()
+    // Offset: 0x197018C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopStationGroupCore* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationGroupCore::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroupCore*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x196F3F8
     void Awake();
@@ -149,19 +156,6 @@ namespace VROSC {
     // public System.Void AllLoopsLoaded()
     // Offset: 0x1970054
     void AllLoopsLoaded();
-    // public System.Void .ctor()
-    // Offset: 0x197018C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopStationGroupCore* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopStationGroupCore::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopStationGroupCore*, creationType>()));
-    }
   }; // VROSC.LoopStationGroupCore
   #pragma pack(pop)
   static check_size<sizeof(LoopStationGroupCore), 56 + sizeof(::System::Action_1<::VROSC::LoopStationGroup*>*)> __VROSC_LoopStationGroupCoreSizeCheck;
@@ -209,6 +203,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::Lo
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroupCore*), "get_BaseGroup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopStationGroupCore::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopStationGroupCore::Awake
 // Il2CppName: Awake
 template<>
@@ -297,7 +295,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopStationGroupCore*), "AllLoopsLoaded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopStationGroupCore::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

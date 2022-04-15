@@ -44,7 +44,7 @@ namespace Facebook::WitAi::Data {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single equalityTolerance
-    [[deprecated]] float& dyn_equalityTolerance();
+    [[deprecated("Use field access instead!")]] float& dyn_equalityTolerance();
     // public System.Single GetFloatValue(Facebook.WitAi.Lib.WitResponseNode response)
     // Offset: 0x16750F4
     float GetFloatValue(::Facebook::WitAi::Lib::WitResponseNode* response);
@@ -52,9 +52,6 @@ namespace Facebook::WitAi::Data {
     // Offset: 0x167525C
     // Implemented from: Facebook.WitAi.Data.WitValue
     // Base method: System.Void WitValue::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WitFloatValue* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Facebook::WitAi::Data::WitFloatValue::.ctor");

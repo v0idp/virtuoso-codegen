@@ -191,39 +191,39 @@ namespace System::Xml::Schema {
     // Set static field: static private readonly System.Xml.Schema.XmlSchemaDatatype dtStringArray
     static void _set_dtStringArray(::System::Xml::Schema::XmlSchemaDatatype* value);
     // Get instance field reference: private System.Int32 startIDConstraint
-    [[deprecated]] int& dyn_startIDConstraint();
+    [[deprecated("Use field access instead!")]] int& dyn_startIDConstraint();
     // Get instance field reference: private System.Xml.HWStack validationStack
-    [[deprecated]] ::System::Xml::HWStack*& dyn_validationStack();
+    [[deprecated("Use field access instead!")]] ::System::Xml::HWStack*& dyn_validationStack();
     // Get instance field reference: private System.Collections.Hashtable attPresence
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_attPresence();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_attPresence();
     // Get instance field reference: private System.Xml.XmlNamespaceManager nsManager
-    [[deprecated]] ::System::Xml::XmlNamespaceManager*& dyn_nsManager();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlNamespaceManager*& dyn_nsManager();
     // Get instance field reference: private System.Boolean bManageNamespaces
-    [[deprecated]] bool& dyn_bManageNamespaces();
+    [[deprecated("Use field access instead!")]] bool& dyn_bManageNamespaces();
     // Get instance field reference: private System.Collections.Hashtable IDs
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_IDs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_IDs();
     // Get instance field reference: private System.Xml.Schema.IdRefNode idRefListHead
-    [[deprecated]] ::System::Xml::Schema::IdRefNode*& dyn_idRefListHead();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::IdRefNode*& dyn_idRefListHead();
     // Get instance field reference: private System.Xml.Schema.Parser inlineSchemaParser
-    [[deprecated]] ::System::Xml::Schema::Parser*& dyn_inlineSchemaParser();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::Parser*& dyn_inlineSchemaParser();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaContentProcessing processContents
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaContentProcessing& dyn_processContents();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaContentProcessing& dyn_processContents();
     // Get instance field reference: private System.String NsXmlNs
-    [[deprecated]] ::StringW& dyn_NsXmlNs();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXmlNs();
     // Get instance field reference: private System.String NsXs
-    [[deprecated]] ::StringW& dyn_NsXs();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXs();
     // Get instance field reference: private System.String NsXsi
-    [[deprecated]] ::StringW& dyn_NsXsi();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_NsXsi();
     // Get instance field reference: private System.String XsiType
-    [[deprecated]] ::StringW& dyn_XsiType();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiType();
     // Get instance field reference: private System.String XsiNil
-    [[deprecated]] ::StringW& dyn_XsiNil();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiNil();
     // Get instance field reference: private System.String XsiSchemaLocation
-    [[deprecated]] ::StringW& dyn_XsiSchemaLocation();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiSchemaLocation();
     // Get instance field reference: private System.String XsiNoNamespaceSchemaLocation
-    [[deprecated]] ::StringW& dyn_XsiNoNamespaceSchemaLocation();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsiNoNamespaceSchemaLocation();
     // Get instance field reference: private System.String XsdSchema
-    [[deprecated]] ::StringW& dyn_XsdSchema();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_XsdSchema();
     // private System.Boolean get_IsInlineSchemaStarted()
     // Offset: 0xC16620
     bool get_IsInlineSchemaStarted();

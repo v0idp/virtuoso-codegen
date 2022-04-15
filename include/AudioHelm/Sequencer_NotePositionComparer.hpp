@@ -29,22 +29,24 @@ namespace AudioHelm {
     operator ::System::Collections::Generic::IComparer_1<::AudioHelm::Sequencer::NotePosition>() noexcept {
       return *reinterpret_cast<::System::Collections::Generic::IComparer_1<::AudioHelm::Sequencer::NotePosition>*>(this);
     }
-    // public System.Int32 Compare(AudioHelm.Sequencer/AudioHelm.NotePosition left, AudioHelm.Sequencer/AudioHelm.NotePosition right)
-    // Offset: 0x8D4FD8
-    int Compare(::AudioHelm::Sequencer::NotePosition left, ::AudioHelm::Sequencer::NotePosition right);
     // public System.Void .ctor()
     // Offset: 0x8D5014
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Sequencer::NotePositionComparer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::Sequencer::NotePositionComparer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Sequencer::NotePositionComparer*, creationType>()));
     }
+    // public System.Int32 Compare(AudioHelm.Sequencer/AudioHelm.NotePosition left, AudioHelm.Sequencer/AudioHelm.NotePosition right)
+    // Offset: 0x8D4FD8
+    int Compare(::AudioHelm::Sequencer::NotePosition left, ::AudioHelm::Sequencer::NotePosition right);
   }; // AudioHelm.Sequencer/AudioHelm.NotePositionComparer
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::Sequencer::NotePositionComparer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::Sequencer::NotePositionComparer::Compare
 // Il2CppName: Compare
 template<>
@@ -55,7 +57,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (AudioH
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::Sequencer::NotePositionComparer*), "Compare", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{left, right});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::Sequencer::NotePositionComparer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

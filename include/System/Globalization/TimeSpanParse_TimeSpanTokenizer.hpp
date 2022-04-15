@@ -45,9 +45,9 @@ namespace System::Globalization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_pos
-    [[deprecated]] int& dyn_m_pos();
+    [[deprecated("Use field access instead!")]] int& dyn_m_pos();
     // Get instance field reference: private System.String m_value
-    [[deprecated]] ::StringW& dyn_m_value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_value();
     // System.Boolean get_EOL()
     // Offset: 0x18975F0
     bool get_EOL();

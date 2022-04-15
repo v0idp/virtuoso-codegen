@@ -112,21 +112,21 @@ namespace System::Text::RegularExpressions {
     // Set static field: static private System.Int32 infinite
     static void _set_infinite(int value);
     // Get instance field reference: System.Text.RegularExpressions.Regex _regex
-    [[deprecated]] ::System::Text::RegularExpressions::Regex*& dyn__regex();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Regex*& dyn__regex();
     // Get instance field reference: System.Collections.ArrayList _matches
-    [[deprecated]] ::System::Collections::ArrayList*& dyn__matches();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn__matches();
     // Get instance field reference: System.Boolean _done
-    [[deprecated]] bool& dyn__done();
+    [[deprecated("Use field access instead!")]] bool& dyn__done();
     // Get instance field reference: System.String _input
-    [[deprecated]] ::StringW& dyn__input();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__input();
     // Get instance field reference: System.Int32 _beginning
-    [[deprecated]] int& dyn__beginning();
+    [[deprecated("Use field access instead!")]] int& dyn__beginning();
     // Get instance field reference: System.Int32 _length
-    [[deprecated]] int& dyn__length();
+    [[deprecated("Use field access instead!")]] int& dyn__length();
     // Get instance field reference: System.Int32 _startat
-    [[deprecated]] int& dyn__startat();
+    [[deprecated("Use field access instead!")]] int& dyn__startat();
     // Get instance field reference: System.Int32 _prevlen
-    [[deprecated]] int& dyn__prevlen();
+    [[deprecated("Use field access instead!")]] int& dyn__prevlen();
     // public System.Int32 get_Count()
     // Offset: 0x10FA0AC
     int get_Count();
@@ -143,6 +143,13 @@ namespace System::Text::RegularExpressions {
     // static private System.Void .cctor()
     // Offset: 0x10FA350
     static void _cctor();
+    // System.Void .ctor()
+    // Offset: 0x10FA3A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MatchCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::MatchCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MatchCollection*, creationType>()));
+    }
     // System.Text.RegularExpressions.Match GetMatch(System.Int32 i)
     // Offset: 0x10F9F38
     ::System::Text::RegularExpressions::Match* GetMatch(int i);
@@ -152,15 +159,6 @@ namespace System::Text::RegularExpressions {
     // public System.Collections.IEnumerator GetEnumerator()
     // Offset: 0x10FA2C4
     ::System::Collections::IEnumerator* GetEnumerator();
-    // System.Void .ctor()
-    // Offset: 0x10FA3A0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MatchCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::MatchCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MatchCollection*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.MatchCollection
   #pragma pack(pop)
   static check_size<sizeof(MatchCollection), 60 + sizeof(int)> __System_Text_RegularExpressions_MatchCollectionSizeCheck;
@@ -195,6 +193,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::MatchCollection*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Text::RegularExpressions::MatchCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::MatchCollection::GetMatch
 // Il2CppName: GetMatch
 template<>
@@ -222,7 +224,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::MatchCollection*), "GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::MatchCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

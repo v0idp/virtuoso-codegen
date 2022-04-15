@@ -48,11 +48,11 @@ namespace System::Xml {
     static_assert(sizeof(::System::Xml::XmlSqlBinaryReader::NestedBinXml*) == 0x8);
     public:
     // Get instance field reference: public System.Xml.XmlSqlBinaryReader/System.Xml.SymbolTables symbolTables
-    [[deprecated]] ::System::Xml::XmlSqlBinaryReader::SymbolTables& dyn_symbolTables();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlSqlBinaryReader::SymbolTables& dyn_symbolTables();
     // Get instance field reference: public System.Int32 docState
-    [[deprecated]] int& dyn_docState();
+    [[deprecated("Use field access instead!")]] int& dyn_docState();
     // Get instance field reference: public System.Xml.XmlSqlBinaryReader/System.Xml.NestedBinXml next
-    [[deprecated]] ::System::Xml::XmlSqlBinaryReader::NestedBinXml*& dyn_next();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlSqlBinaryReader::NestedBinXml*& dyn_next();
     // public System.Void .ctor(System.Xml.XmlSqlBinaryReader/System.Xml.SymbolTables symbolTables, System.Int32 docState, System.Xml.XmlSqlBinaryReader/System.Xml.NestedBinXml next)
     // Offset: 0xC22660
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

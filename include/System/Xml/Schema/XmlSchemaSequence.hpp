@@ -50,7 +50,7 @@ namespace System::Xml::Schema {
       return items;
     }
     // Get instance field reference: private System.Xml.Schema.XmlSchemaObjectCollection items
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_items();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaObjectCollection*& dyn_items();
     // public override System.Xml.Schema.XmlSchemaObjectCollection get_Items()
     // Offset: 0xF2EC9C
     // Implemented from: System.Xml.Schema.XmlSchemaGroupBase
@@ -68,7 +68,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaParticle::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaSequence* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaSequence::.ctor");

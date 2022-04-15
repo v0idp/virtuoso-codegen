@@ -52,7 +52,7 @@ namespace System::Xml::Schema {
       return enumerator;
     }
     // Get instance field reference: private System.Collections.IEnumerator enumerator
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_enumerator();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_enumerator();
     // public System.Xml.Schema.XmlSchemaObject get_Current()
     // Offset: 0x1119B80
     ::System::Xml::Schema::XmlSchemaObject* get_Current();

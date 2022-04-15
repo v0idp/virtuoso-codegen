@@ -35,6 +35,13 @@ namespace VROSC::AudioReactive {
   // [TokenAttribute] Offset: FFFFFFFF
   class ReactiveEffect : public ::Il2CppObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0xB2E1CC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ReactiveEffect* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ReactiveEffect::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ReactiveEffect*, creationType>()));
+    }
     // public System.Void Update()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void Update();
@@ -47,19 +54,14 @@ namespace VROSC::AudioReactive {
     // public System.Void DrawGizmos(VROSC.AudioReactive.ReactToBeat sender)
     // Offset: 0xB2E1C8
     void DrawGizmos(::VROSC::AudioReactive::ReactToBeat* sender);
-    // protected System.Void .ctor()
-    // Offset: 0xB2E1CC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ReactiveEffect* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::AudioReactive::ReactiveEffect::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ReactiveEffect*, creationType>()));
-    }
   }; // VROSC.AudioReactive.ReactiveEffect
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::AudioReactive::ReactiveEffect::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::AudioReactive::ReactiveEffect::Update
 // Il2CppName: Update
 template<>
@@ -94,7 +96,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::AudioReactive::ReactiveEffect*), "DrawGizmos", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{sender});
   }
 };
-// Writing MetadataGetter for method: VROSC::AudioReactive::ReactiveEffect::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

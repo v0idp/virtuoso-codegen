@@ -83,17 +83,17 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<bool>*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIToggle _muteButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__muteButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__muteButton();
     // Get instance field reference: private VROSC.UIToggle _soloButton
-    [[deprecated]] ::VROSC::UIToggle*& dyn__soloButton();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__soloButton();
     // Get instance field reference: private VROSC.UISlider _volumeSlider
-    [[deprecated]] ::VROSC::UISlider*& dyn__volumeSlider();
+    [[deprecated("Use field access instead!")]] ::VROSC::UISlider*& dyn__volumeSlider();
     // Get instance field reference: public System.Action`1<System.Single> OnVolumeChanged
-    [[deprecated]] ::System::Action_1<float>*& dyn_OnVolumeChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<float>*& dyn_OnVolumeChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnMuteChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnMuteChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnMuteChanged();
     // Get instance field reference: public System.Action`1<System.Boolean> OnSoloChanged
-    [[deprecated]] ::System::Action_1<bool>*& dyn_OnSoloChanged();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<bool>*& dyn_OnSoloChanged();
     // public System.Boolean get_IsSoloToggled()
     // Offset: 0x197A130
     bool get_IsSoloToggled();
@@ -103,6 +103,13 @@ namespace VROSC {
     // public System.Single get_Volume()
     // Offset: 0x19711EC
     float get_Volume();
+    // public System.Void .ctor()
+    // Offset: 0x197A294
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoopVolumeController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopVolumeController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoopVolumeController*, creationType>()));
+    }
     // public System.Void Setup(System.String sliderHeaderText)
     // Offset: 0x1971514
     void Setup(::StringW sliderHeaderText);
@@ -127,15 +134,6 @@ namespace VROSC {
     // public System.Void SetIsSolo(System.Boolean isMuted)
     // Offset: 0x1971FD4
     void SetIsSolo(bool isMuted);
-    // public System.Void .ctor()
-    // Offset: 0x197A294
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoopVolumeController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::LoopVolumeController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoopVolumeController*, creationType>()));
-    }
   }; // VROSC.LoopVolumeController
   #pragma pack(pop)
   static check_size<sizeof(LoopVolumeController), 56 + sizeof(::System::Action_1<bool>*)> __VROSC_LoopVolumeControllerSizeCheck;
@@ -166,6 +164,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (VROS
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopVolumeController*), "get_Volume", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::LoopVolumeController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::LoopVolumeController::Setup
 // Il2CppName: Setup
 template<>
@@ -239,7 +241,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::LoopVolumeController*), "SetIsSolo", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isMuted});
   }
 };
-// Writing MetadataGetter for method: VROSC::LoopVolumeController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

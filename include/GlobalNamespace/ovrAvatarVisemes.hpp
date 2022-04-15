@@ -47,9 +47,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.UInt32 visemeParamCount
-    [[deprecated]] uint& dyn_visemeParamCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_visemeParamCount();
     // Get instance field reference: public System.Single[] visemeParams
-    [[deprecated]] ::ArrayW<float>& dyn_visemeParams();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_visemeParams();
   }; // ovrAvatarVisemes
   #pragma pack(pop)
   static check_size<sizeof(ovrAvatarVisemes), 8 + sizeof(::ArrayW<float>)> __GlobalNamespace_ovrAvatarVisemesSizeCheck;

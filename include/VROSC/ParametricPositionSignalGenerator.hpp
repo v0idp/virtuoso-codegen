@@ -72,15 +72,15 @@ namespace VROSC {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private AudioHelm.Param _paramX
-    [[deprecated]] ::AudioHelm::Param& dyn__paramX();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Param& dyn__paramX();
     // Get instance field reference: private AudioHelm.Param _paramY
-    [[deprecated]] ::AudioHelm::Param& dyn__paramY();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Param& dyn__paramY();
     // Get instance field reference: private AudioHelm.Param _paramZ
-    [[deprecated]] ::AudioHelm::Param& dyn__paramZ();
+    [[deprecated("Use field access instead!")]] ::AudioHelm::Param& dyn__paramZ();
     // Get instance field reference: private VROSC.InstrumentController _instrument
-    [[deprecated]] ::VROSC::InstrumentController*& dyn__instrument();
+    [[deprecated("Use field access instead!")]] ::VROSC::InstrumentController*& dyn__instrument();
     // Get instance field reference: private System.Boolean _setup
-    [[deprecated]] bool& dyn__setup();
+    [[deprecated("Use field access instead!")]] bool& dyn__setup();
     // public System.Void Setup(VROSC.InstrumentController instrument)
     // Offset: 0xADCC20
     void Setup(::VROSC::InstrumentController* instrument);
@@ -95,11 +95,6 @@ namespace VROSC {
     // Implemented from: VROSC.SignalNode
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ParametricPositionSignalGenerator* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ParametricPositionSignalGenerator::.ctor");

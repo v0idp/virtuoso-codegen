@@ -46,7 +46,14 @@ namespace UnityEngine::EventSystems {
       return m_TrackedButtons;
     }
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.ButtonState> m_TrackedButtons
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::PointerInputModule::ButtonState*>*& dyn_m_TrackedButtons();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::EventSystems::PointerInputModule::ButtonState*>*& dyn_m_TrackedButtons();
+    // public System.Void .ctor()
+    // Offset: 0x16D9CD8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PointerInputModule::MouseState* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::PointerInputModule::MouseState::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PointerInputModule::MouseState*, creationType>()));
+    }
     // public System.Boolean AnyPressesThisFrame()
     // Offset: 0x16D9B04
     bool AnyPressesThisFrame();
@@ -59,21 +66,16 @@ namespace UnityEngine::EventSystems {
     // public System.Void SetButtonState(UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.InputButton button, UnityEngine.EventSystems.PointerEventData/UnityEngine.EventSystems.FramePressState stateForMouseButton, UnityEngine.EventSystems.PointerEventData data)
     // Offset: 0x16D9C94
     void SetButtonState(::UnityEngine::EventSystems::PointerEventData::InputButton button, ::UnityEngine::EventSystems::PointerEventData::FramePressState stateForMouseButton, ::UnityEngine::EventSystems::PointerEventData* data);
-    // public System.Void .ctor()
-    // Offset: 0x16D9CD8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PointerInputModule::MouseState* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::PointerInputModule::MouseState::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PointerInputModule::MouseState*, creationType>()));
-    }
   }; // UnityEngine.EventSystems.PointerInputModule/UnityEngine.EventSystems.MouseState
   #pragma pack(pop)
   static check_size<sizeof(PointerInputModule::MouseState), 16 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::EventSystems::PointerInputModule::ButtonState*>*)> __UnityEngine_EventSystems_PointerInputModule_MouseStateSizeCheck;
   static_assert(sizeof(PointerInputModule::MouseState) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::EventSystems::PointerInputModule::MouseState::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::EventSystems::PointerInputModule::MouseState::AnyPressesThisFrame
 // Il2CppName: AnyPressesThisFrame
 template<>
@@ -110,7 +112,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::EventSystems::PointerInputModule::MouseState*), "SetButtonState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{button, stateForMouseButton, data});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::EventSystems::PointerInputModule::MouseState::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

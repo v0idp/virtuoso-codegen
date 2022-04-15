@@ -111,21 +111,21 @@ namespace System::Data {
       return *reinterpret_cast<::System::Data::IFilter*>(this);
     }
     // Get instance field reference: System.String _originalExpression
-    [[deprecated]] ::StringW& dyn__originalExpression();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__originalExpression();
     // Get instance field reference: private System.Boolean _parsed
-    [[deprecated]] bool& dyn__parsed();
+    [[deprecated("Use field access instead!")]] bool& dyn__parsed();
     // Get instance field reference: private System.Boolean _bound
-    [[deprecated]] bool& dyn__bound();
+    [[deprecated("Use field access instead!")]] bool& dyn__bound();
     // Get instance field reference: private System.Data.ExpressionNode _expr
-    [[deprecated]] ::System::Data::ExpressionNode*& dyn__expr();
+    [[deprecated("Use field access instead!")]] ::System::Data::ExpressionNode*& dyn__expr();
     // Get instance field reference: private System.Data.DataTable _table
-    [[deprecated]] ::System::Data::DataTable*& dyn__table();
+    [[deprecated("Use field access instead!")]] ::System::Data::DataTable*& dyn__table();
     // Get instance field reference: private readonly System.Data.Common.StorageType _storageType
-    [[deprecated]] ::System::Data::Common::StorageType& dyn__storageType();
+    [[deprecated("Use field access instead!")]] ::System::Data::Common::StorageType& dyn__storageType();
     // Get instance field reference: private readonly System.Type _dataType
-    [[deprecated]] ::System::Type*& dyn__dataType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn__dataType();
     // Get instance field reference: private System.Data.DataColumn[] _dependency
-    [[deprecated]] ::ArrayW<::System::Data::DataColumn*>& dyn__dependency();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Data::DataColumn*>& dyn__dependency();
     // System.String get_Expression()
     // Offset: 0xF983D4
     ::StringW get_Expression();

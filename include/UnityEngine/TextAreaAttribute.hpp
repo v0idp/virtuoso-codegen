@@ -44,9 +44,9 @@ namespace UnityEngine {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public readonly System.Int32 minLines
-    [[deprecated]] int& dyn_minLines();
+    [[deprecated("Use field access instead!")]] int& dyn_minLines();
     // Get instance field reference: public readonly System.Int32 maxLines
-    [[deprecated]] int& dyn_maxLines();
+    [[deprecated("Use field access instead!")]] int& dyn_maxLines();
     // public System.Void .ctor(System.Int32 minLines, System.Int32 maxLines)
     // Offset: 0xBD6FE8
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

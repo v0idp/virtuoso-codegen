@@ -47,7 +47,14 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject[] SwitchTargets
-    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn_SwitchTargets();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::GameObject*>& dyn_SwitchTargets();
+    // public System.Void .ctor()
+    // Offset: 0x18A71CC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EnableSwitch* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::EnableSwitch::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EnableSwitch*, creationType>()));
+    }
     // public System.Boolean SetActive(System.Int32 target)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -58,29 +65,16 @@ namespace GlobalNamespace {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<bool, false>(this, ___generic__method, target);
     }
-    // public System.Void .ctor()
-    // Offset: 0x18A71CC
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EnableSwitch* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::EnableSwitch::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EnableSwitch*, creationType>()));
-    }
   }; // EnableSwitch
   #pragma pack(pop)
   static check_size<sizeof(EnableSwitch), 24 + sizeof(::ArrayW<::UnityEngine::GameObject*>)> __GlobalNamespace_EnableSwitchSizeCheck;
   static_assert(sizeof(EnableSwitch) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
-// Writing MetadataGetter for method: GlobalNamespace::EnableSwitch::SetActive
-// Il2CppName: SetActive
-// Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: GlobalNamespace::EnableSwitch::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::EnableSwitch::SetActive
+// Il2CppName: SetActive
+// Cannot write MetadataGetter for generic methods!

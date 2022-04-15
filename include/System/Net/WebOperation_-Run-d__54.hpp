@@ -90,19 +90,19 @@ namespace System::Net {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: public System.Net.WebOperation <>4__this
-    [[deprecated]] ::System::Net::WebOperation*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebOperation*& dyn_$$4__this();
     // Get instance field reference: private System.Net.WebRequestStream <requestStream>5__1
-    [[deprecated]] ::System::Net::WebRequestStream*& dyn_$requestStream$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebRequestStream*& dyn_$requestStream$5__1();
     // Get instance field reference: private System.Net.WebResponseStream <stream>5__2
-    [[deprecated]] ::System::Net::WebResponseStream*& dyn_$stream$5__2();
+    [[deprecated("Use field access instead!")]] ::System::Net::WebResponseStream*& dyn_$stream$5__2();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/System.Runtime.CompilerServices.ConfiguredTaskAwaiter<System.Net.WebRequestStream> <>u__1
-    [[deprecated]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Net::WebRequestStream*>::ConfiguredTaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] typename ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1<::System::Net::WebRequestStream*>::ConfiguredTaskAwaiter& dyn_$$u__1();
     // Get instance field reference: private System.Runtime.CompilerServices.ConfiguredTaskAwaitable/System.Runtime.CompilerServices.ConfiguredTaskAwaiter <>u__2
-    [[deprecated]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__2();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter& dyn_$$u__2();
     // private System.Void MoveNext()
     // Offset: 0xA089E4
     void MoveNext();

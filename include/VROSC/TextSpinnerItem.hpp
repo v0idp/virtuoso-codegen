@@ -137,31 +137,38 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private TMPro.TextMeshPro _valueText
-    [[deprecated]] ::TMPro::TextMeshPro*& dyn__valueText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshPro*& dyn__valueText();
     // Get instance field reference: private VROSC.AdjustableMesh _background
-    [[deprecated]] ::VROSC::AdjustableMesh*& dyn__background();
+    [[deprecated("Use field access instead!")]] ::VROSC::AdjustableMesh*& dyn__background();
     // Get instance field reference: private UnityEngine.Color _selectedColor
-    [[deprecated]] ::UnityEngine::Color& dyn__selectedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__selectedColor();
     // Get instance field reference: private UnityEngine.Color _inactiveColor
-    [[deprecated]] ::UnityEngine::Color& dyn__inactiveColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__inactiveColor();
     // Get instance field reference: private UnityEngine.Color _backgroundColor
-    [[deprecated]] ::UnityEngine::Color& dyn__backgroundColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__backgroundColor();
     // Get instance field reference: private UnityEngine.AnimationCurve _alphaCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__alphaCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__alphaCurve();
     // Get instance field reference: private UnityEngine.Color _currentTextColor
-    [[deprecated]] ::UnityEngine::Color& dyn__currentTextColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__currentTextColor();
     // Get instance field reference: private UnityEngine.Color _currentBackgroundColor
-    [[deprecated]] ::UnityEngine::Color& dyn__currentBackgroundColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__currentBackgroundColor();
     // Get instance field reference: private System.Single _currentAlpha
-    [[deprecated]] float& dyn__currentAlpha();
+    [[deprecated("Use field access instead!")]] float& dyn__currentAlpha();
     // Get instance field reference: private UnityEngine.Renderer _adjustableMeshRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn__adjustableMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn__adjustableMeshRenderer();
     // Get instance field reference: private UnityEngine.Material _transparentMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__transparentMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__transparentMaterial();
     // Get instance field reference: private UnityEngine.Material _normalMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__normalMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__normalMaterial();
     // Get instance field reference: private System.Boolean _isTransparent
-    [[deprecated]] bool& dyn__isTransparent();
+    [[deprecated("Use field access instead!")]] bool& dyn__isTransparent();
+    // public System.Void .ctor()
+    // Offset: 0xA25C58
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TextSpinnerItem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TextSpinnerItem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TextSpinnerItem*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xA25A58
     void Awake();
@@ -174,25 +181,16 @@ namespace VROSC {
     // public System.Void Set(System.String text, System.Boolean selected, System.Single valueOffCenter)
     // Offset: 0xA2535C
     void Set(::StringW text, bool selected, float valueOffCenter);
-    // public System.Void .ctor()
-    // Offset: 0xA25C58
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TextSpinnerItem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TextSpinnerItem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TextSpinnerItem*, creationType>()));
-    }
   }; // VROSC.TextSpinnerItem
   #pragma pack(pop)
   static check_size<sizeof(TextSpinnerItem), 160 + sizeof(bool)> __VROSC_TextSpinnerItemSizeCheck;
   static_assert(sizeof(TextSpinnerItem) == 0xA1);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::TextSpinnerItem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::TextSpinnerItem::Awake
 // Il2CppName: Awake
 template<>
@@ -229,7 +227,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::TextSpinnerItem*), "Set", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{text, selected, valueOffCenter});
   }
 };
-// Writing MetadataGetter for method: VROSC::TextSpinnerItem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

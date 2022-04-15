@@ -54,9 +54,16 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private VROSC.WidgetHoveringController _parent
-    [[deprecated]] ::VROSC::WidgetHoveringController*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::VROSC::WidgetHoveringController*& dyn__parent();
     // Get instance field reference: private VROSC.Interactable _reactTo
-    [[deprecated]] ::VROSC::Interactable*& dyn__reactTo();
+    [[deprecated("Use field access instead!")]] ::VROSC::Interactable*& dyn__reactTo();
+    // public System.Void .ctor()
+    // Offset: 0x952504
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WidgetHoveringNode* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetHoveringNode::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WidgetHoveringNode*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x952234
     void Awake();
@@ -69,25 +76,16 @@ namespace VROSC {
     // public System.Void SetHovering(System.Boolean hovering)
     // Offset: 0x952464
     void SetHovering(bool hovering);
-    // public System.Void .ctor()
-    // Offset: 0x952504
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WidgetHoveringNode* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::WidgetHoveringNode::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WidgetHoveringNode*, creationType>()));
-    }
   }; // VROSC.WidgetHoveringNode
   #pragma pack(pop)
   static check_size<sizeof(WidgetHoveringNode), 32 + sizeof(::VROSC::Interactable*)> __VROSC_WidgetHoveringNodeSizeCheck;
   static_assert(sizeof(WidgetHoveringNode) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::WidgetHoveringNode::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::WidgetHoveringNode::Awake
 // Il2CppName: Awake
 template<>
@@ -122,7 +120,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::WidgetHoveringNode*), "SetHovering", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hovering});
   }
 };
-// Writing MetadataGetter for method: VROSC::WidgetHoveringNode::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

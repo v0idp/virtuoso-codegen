@@ -66,11 +66,11 @@ namespace System::Text {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean emitUTF32ByteOrderMark
-    [[deprecated]] bool& dyn_emitUTF32ByteOrderMark();
+    [[deprecated("Use field access instead!")]] bool& dyn_emitUTF32ByteOrderMark();
     // Get instance field reference: private System.Boolean isThrowException
-    [[deprecated]] bool& dyn_isThrowException();
+    [[deprecated("Use field access instead!")]] bool& dyn_isThrowException();
     // Get instance field reference: private System.Boolean bigEndian
-    [[deprecated]] bool& dyn_bigEndian();
+    [[deprecated("Use field access instead!")]] bool& dyn_bigEndian();
     // public System.Void .ctor(System.Boolean bigEndian, System.Boolean byteOrderMark)
     // Offset: 0x12B7684
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

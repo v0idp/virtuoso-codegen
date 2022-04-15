@@ -97,13 +97,13 @@ namespace System::Threading::Tasks {
     static_assert(sizeof(::System::Threading::Tasks::TaskContinuationOptions) == 0x4);
     public:
     // Get instance field reference: private System.Threading.CancellationToken m_defaultCancellationToken
-    [[deprecated]] ::System::Threading::CancellationToken& dyn_m_defaultCancellationToken();
+    [[deprecated("Use field access instead!")]] ::System::Threading::CancellationToken& dyn_m_defaultCancellationToken();
     // Get instance field reference: private System.Threading.Tasks.TaskScheduler m_defaultScheduler
-    [[deprecated]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_defaultScheduler();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskScheduler*& dyn_m_defaultScheduler();
     // Get instance field reference: private System.Threading.Tasks.TaskCreationOptions m_defaultCreationOptions
-    [[deprecated]] ::System::Threading::Tasks::TaskCreationOptions& dyn_m_defaultCreationOptions();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskCreationOptions& dyn_m_defaultCreationOptions();
     // Get instance field reference: private System.Threading.Tasks.TaskContinuationOptions m_defaultContinuationOptions
-    [[deprecated]] ::System::Threading::Tasks::TaskContinuationOptions& dyn_m_defaultContinuationOptions();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::TaskContinuationOptions& dyn_m_defaultContinuationOptions();
     // public System.Void .ctor(System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler)
     // Offset: 0x12756FC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

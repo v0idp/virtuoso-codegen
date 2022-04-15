@@ -49,21 +49,19 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x1771A6C
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1771ACC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ONSPPropagationMaterial::Spectrum::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationMaterial::Spectrum::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagationMaterial::Spectrum::$$c*, creationType>()));
+    }
     // System.Single <get_Item>b__3_0(ONSPPropagationMaterial/Point p)
     // Offset: 0x1771AD4
     float $get_Item$b__3_0(::GlobalNamespace::ONSPPropagationMaterial::Point* p);
     // System.Single <get_Item>b__3_1(ONSPPropagationMaterial/Point p)
     // Offset: 0x1771AEC
     float $get_Item$b__3_1(::GlobalNamespace::ONSPPropagationMaterial::Point* p);
-    // public System.Void .ctor()
-    // Offset: 0x1771ACC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ONSPPropagationMaterial::Spectrum::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ONSPPropagationMaterial::Spectrum::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ONSPPropagationMaterial::Spectrum::$$c*, creationType>()));
-    }
   }; // ONSPPropagationMaterial/Spectrum/<>c
   #pragma pack(pop)
 }
@@ -76,6 +74,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationMaterial::Spectrum::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationMaterial::Spectrum::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationMaterial::Spectrum::$$c::$get_Item$b__3_0
 // Il2CppName: <get_Item>b__3_0
 template<>
@@ -94,7 +96,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Glob
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ONSPPropagationMaterial::Spectrum::$$c*), "<get_Item>b__3_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ONSPPropagationMaterial::Spectrum::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

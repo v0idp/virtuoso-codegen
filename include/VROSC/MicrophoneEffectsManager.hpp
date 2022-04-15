@@ -65,15 +65,22 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _active
-    [[deprecated]] bool& dyn__active();
+    [[deprecated("Use field access instead!")]] bool& dyn__active();
     // Get instance field reference: private System.Single _reverbVolumeAdjustment
-    [[deprecated]] float& dyn__reverbVolumeAdjustment();
+    [[deprecated("Use field access instead!")]] float& dyn__reverbVolumeAdjustment();
     // Get instance field reference: private System.Single _preampReverb
-    [[deprecated]] float& dyn__preampReverb();
+    [[deprecated("Use field access instead!")]] float& dyn__preampReverb();
     // Get instance field reference: private System.Single _proximityReverbMultiplier
-    [[deprecated]] float& dyn__proximityReverbMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn__proximityReverbMultiplier();
     // Get instance field reference: private System.Boolean _useProximity
-    [[deprecated]] bool& dyn__useProximity();
+    [[deprecated("Use field access instead!")]] bool& dyn__useProximity();
+    // public System.Void .ctor()
+    // Offset: 0xAC745C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MicrophoneEffectsManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneEffectsManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MicrophoneEffectsManager*, creationType>()));
+    }
     // public System.Void Activate()
     // Offset: 0xAC6D64
     void Activate();
@@ -92,25 +99,16 @@ namespace VROSC {
     // System.Void SetUseProximity(System.Boolean state)
     // Offset: 0xAC7450
     void SetUseProximity(bool state);
-    // public System.Void .ctor()
-    // Offset: 0xAC745C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MicrophoneEffectsManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::MicrophoneEffectsManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MicrophoneEffectsManager*, creationType>()));
-    }
   }; // VROSC.MicrophoneEffectsManager
   #pragma pack(pop)
   static check_size<sizeof(MicrophoneEffectsManager), 40 + sizeof(bool)> __VROSC_MicrophoneEffectsManagerSizeCheck;
   static_assert(sizeof(MicrophoneEffectsManager) == 0x29);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::MicrophoneEffectsManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::MicrophoneEffectsManager::Activate
 // Il2CppName: Activate
 template<>
@@ -163,7 +161,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::MicrophoneEffectsManager*), "SetUseProximity", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{state});
   }
 };
-// Writing MetadataGetter for method: VROSC::MicrophoneEffectsManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

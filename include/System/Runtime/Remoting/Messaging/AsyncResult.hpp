@@ -177,37 +177,37 @@ namespace System::Runtime::Remoting::Messaging {
     // Set static field: static System.Threading.ContextCallback ccb
     static void _set_ccb(::System::Threading::ContextCallback* value);
     // Get instance field reference: private System.Object async_state
-    [[deprecated]] ::Il2CppObject*& dyn_async_state();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_async_state();
     // Get instance field reference: private System.Threading.WaitHandle handle
-    [[deprecated]] ::System::Threading::WaitHandle*& dyn_handle();
+    [[deprecated("Use field access instead!")]] ::System::Threading::WaitHandle*& dyn_handle();
     // Get instance field reference: private System.Object async_delegate
-    [[deprecated]] ::Il2CppObject*& dyn_async_delegate();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_async_delegate();
     // Get instance field reference: private System.IntPtr data
-    [[deprecated]] ::System::IntPtr& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_data();
     // Get instance field reference: private System.Object object_data
-    [[deprecated]] ::Il2CppObject*& dyn_object_data();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_object_data();
     // Get instance field reference: private System.Boolean sync_completed
-    [[deprecated]] bool& dyn_sync_completed();
+    [[deprecated("Use field access instead!")]] bool& dyn_sync_completed();
     // Get instance field reference: private System.Boolean completed
-    [[deprecated]] bool& dyn_completed();
+    [[deprecated("Use field access instead!")]] bool& dyn_completed();
     // Get instance field reference: private System.Boolean endinvoke_called
-    [[deprecated]] bool& dyn_endinvoke_called();
+    [[deprecated("Use field access instead!")]] bool& dyn_endinvoke_called();
     // Get instance field reference: private System.Object async_callback
-    [[deprecated]] ::Il2CppObject*& dyn_async_callback();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_async_callback();
     // Get instance field reference: private System.Threading.ExecutionContext current
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_current();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_current();
     // Get instance field reference: private System.Threading.ExecutionContext original
-    [[deprecated]] ::System::Threading::ExecutionContext*& dyn_original();
+    [[deprecated("Use field access instead!")]] ::System::Threading::ExecutionContext*& dyn_original();
     // Get instance field reference: private System.Int64 add_time
-    [[deprecated]] int64_t& dyn_add_time();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_add_time();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.MonoMethodMessage call_message
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::MonoMethodMessage*& dyn_call_message();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::MonoMethodMessage*& dyn_call_message();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessageCtrl message_ctrl
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessageCtrl*& dyn_message_ctrl();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessageCtrl*& dyn_message_ctrl();
     // Get instance field reference: private System.Runtime.Remoting.Messaging.IMessage reply_message
-    [[deprecated]] ::System::Runtime::Remoting::Messaging::IMessage*& dyn_reply_message();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::Remoting::Messaging::IMessage*& dyn_reply_message();
     // Get instance field reference: private System.Threading.WaitCallback orig_cb
-    [[deprecated]] ::System::Threading::WaitCallback*& dyn_orig_cb();
+    [[deprecated("Use field access instead!")]] ::System::Threading::WaitCallback*& dyn_orig_cb();
     // public System.Object get_AsyncState()
     // Offset: 0x1146F0C
     ::Il2CppObject* get_AsyncState();

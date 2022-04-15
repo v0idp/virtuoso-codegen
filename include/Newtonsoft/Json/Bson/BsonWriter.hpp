@@ -57,11 +57,11 @@ namespace Newtonsoft::Json::Bson {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private Newtonsoft.Json.Bson.BsonToken _root
-    [[deprecated]] ::Newtonsoft::Json::Bson::BsonToken*& dyn__root();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Bson::BsonToken*& dyn__root();
     // Get instance field reference: private Newtonsoft.Json.Bson.BsonToken _parent
-    [[deprecated]] ::Newtonsoft::Json::Bson::BsonToken*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::Newtonsoft::Json::Bson::BsonToken*& dyn__parent();
     // Get instance field reference: private System.String _propertyName
-    [[deprecated]] ::StringW& dyn__propertyName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__propertyName();
     // private System.Void AddValue(System.Object value, Newtonsoft.Json.Bson.BsonType type)
     // Offset: 0xDB83A8
     void AddValue(::Il2CppObject* value, ::Newtonsoft::Json::Bson::BsonType type);

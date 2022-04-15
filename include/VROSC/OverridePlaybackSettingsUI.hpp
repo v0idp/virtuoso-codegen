@@ -87,19 +87,19 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::LoopPlaybackConfigOverride*) == 0x8);
     public:
     // Get instance field reference: private VROSC.UIToggle _overrideOneShot
-    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideOneShot();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__overrideOneShot();
     // Get instance field reference: private VROSC.UIToggle _overrideRetrigger
-    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideRetrigger();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__overrideRetrigger();
     // Get instance field reference: private VROSC.UIToggle _overrideStart
-    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideStart();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__overrideStart();
     // Get instance field reference: private VROSC.UIToggle _overrideStop
-    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideStop();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__overrideStop();
     // Get instance field reference: private VROSC.UIToggle _overrideFadeIn
-    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideFadeIn();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__overrideFadeIn();
     // Get instance field reference: private VROSC.UIToggle _overrideFadeOut
-    [[deprecated]] ::VROSC::UIToggle*& dyn__overrideFadeOut();
+    [[deprecated("Use field access instead!")]] ::VROSC::UIToggle*& dyn__overrideFadeOut();
     // Get instance field reference: private VROSC.LoopPlaybackConfigOverride _overrideConfig
-    [[deprecated]] ::VROSC::LoopPlaybackConfigOverride*& dyn__overrideConfig();
+    [[deprecated("Use field access instead!")]] ::VROSC::LoopPlaybackConfigOverride*& dyn__overrideConfig();
     // public System.Void SetOverrideConfig(VROSC.LoopPlaybackConfigOverride config)
     // Offset: 0xF806DC
     void SetOverrideConfig(::VROSC::LoopPlaybackConfigOverride* config);
@@ -143,11 +143,6 @@ namespace VROSC {
     // Offset: 0xF80F6C
     // Implemented from: VROSC.LoopPlaybackSettingsUI
     // Base method: System.Void LoopPlaybackSettingsUI::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OverridePlaybackSettingsUI* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::OverridePlaybackSettingsUI::.ctor");

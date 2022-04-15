@@ -922,291 +922,298 @@ namespace AudioHelm {
     // Set static field: static public readonly System.String[] kShortenNames
     static void _set_kShortenNames(::ArrayW<::StringW> value);
     // Get instance field reference: public System.Single amp_attack
-    [[deprecated]] float& dyn_amp_attack();
+    [[deprecated("Use field access instead!")]] float& dyn_amp_attack();
     // Get instance field reference: public System.Single amp_decay
-    [[deprecated]] float& dyn_amp_decay();
+    [[deprecated("Use field access instead!")]] float& dyn_amp_decay();
     // Get instance field reference: public System.Single amp_release
-    [[deprecated]] float& dyn_amp_release();
+    [[deprecated("Use field access instead!")]] float& dyn_amp_release();
     // Get instance field reference: public System.Single amp_sustain
-    [[deprecated]] float& dyn_amp_sustain();
+    [[deprecated("Use field access instead!")]] float& dyn_amp_sustain();
     // Get instance field reference: public System.Single arp_frequency
-    [[deprecated]] float& dyn_arp_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_arp_frequency();
     // Get instance field reference: public System.Single arp_gate
-    [[deprecated]] float& dyn_arp_gate();
+    [[deprecated("Use field access instead!")]] float& dyn_arp_gate();
     // Get instance field reference: public System.Single arp_octaves
-    [[deprecated]] float& dyn_arp_octaves();
+    [[deprecated("Use field access instead!")]] float& dyn_arp_octaves();
     // Get instance field reference: public System.Single arp_on
-    [[deprecated]] float& dyn_arp_on();
+    [[deprecated("Use field access instead!")]] float& dyn_arp_on();
     // Get instance field reference: public System.Single arp_pattern
-    [[deprecated]] float& dyn_arp_pattern();
+    [[deprecated("Use field access instead!")]] float& dyn_arp_pattern();
     // Get instance field reference: public System.Single arp_sync
-    [[deprecated]] float& dyn_arp_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_arp_sync();
     // Get instance field reference: public System.Single arp_tempo
-    [[deprecated]] float& dyn_arp_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_arp_tempo();
     // Get instance field reference: public System.Single beats_per_minute
-    [[deprecated]] float& dyn_beats_per_minute();
+    [[deprecated("Use field access instead!")]] float& dyn_beats_per_minute();
     // Get instance field reference: public System.Single cross_modulation
-    [[deprecated]] float& dyn_cross_modulation();
+    [[deprecated("Use field access instead!")]] float& dyn_cross_modulation();
     // Get instance field reference: public System.Single cutoff
-    [[deprecated]] float& dyn_cutoff();
+    [[deprecated("Use field access instead!")]] float& dyn_cutoff();
     // Get instance field reference: public System.Single delay_dry_wet
-    [[deprecated]] float& dyn_delay_dry_wet();
+    [[deprecated("Use field access instead!")]] float& dyn_delay_dry_wet();
     // Get instance field reference: public System.Single delay_feedback
-    [[deprecated]] float& dyn_delay_feedback();
+    [[deprecated("Use field access instead!")]] float& dyn_delay_feedback();
     // Get instance field reference: public System.Single delay_frequency
-    [[deprecated]] float& dyn_delay_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_delay_frequency();
     // Get instance field reference: public System.Single delay_on
-    [[deprecated]] float& dyn_delay_on();
+    [[deprecated("Use field access instead!")]] float& dyn_delay_on();
     // Get instance field reference: public System.Single delay_sync
-    [[deprecated]] float& dyn_delay_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_delay_sync();
     // Get instance field reference: public System.Single delay_tempo
-    [[deprecated]] float& dyn_delay_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_delay_tempo();
     // Get instance field reference: public System.Single distortion_drive
-    [[deprecated]] float& dyn_distortion_drive();
+    [[deprecated("Use field access instead!")]] float& dyn_distortion_drive();
     // Get instance field reference: public System.Single distortion_mix
-    [[deprecated]] float& dyn_distortion_mix();
+    [[deprecated("Use field access instead!")]] float& dyn_distortion_mix();
     // Get instance field reference: public System.Single distortion_on
-    [[deprecated]] float& dyn_distortion_on();
+    [[deprecated("Use field access instead!")]] float& dyn_distortion_on();
     // Get instance field reference: public System.Single distortion_type
-    [[deprecated]] float& dyn_distortion_type();
+    [[deprecated("Use field access instead!")]] float& dyn_distortion_type();
     // Get instance field reference: public System.Single fil_attack
-    [[deprecated]] float& dyn_fil_attack();
+    [[deprecated("Use field access instead!")]] float& dyn_fil_attack();
     // Get instance field reference: public System.Single fil_decay
-    [[deprecated]] float& dyn_fil_decay();
+    [[deprecated("Use field access instead!")]] float& dyn_fil_decay();
     // Get instance field reference: public System.Single fil_env_depth
-    [[deprecated]] float& dyn_fil_env_depth();
+    [[deprecated("Use field access instead!")]] float& dyn_fil_env_depth();
     // Get instance field reference: public System.Single fil_release
-    [[deprecated]] float& dyn_fil_release();
+    [[deprecated("Use field access instead!")]] float& dyn_fil_release();
     // Get instance field reference: public System.Single fil_sustain
-    [[deprecated]] float& dyn_fil_sustain();
+    [[deprecated("Use field access instead!")]] float& dyn_fil_sustain();
     // Get instance field reference: public System.Single filter_blend
-    [[deprecated]] float& dyn_filter_blend();
+    [[deprecated("Use field access instead!")]] float& dyn_filter_blend();
     // Get instance field reference: public System.Single filter_drive
-    [[deprecated]] float& dyn_filter_drive();
+    [[deprecated("Use field access instead!")]] float& dyn_filter_drive();
     // Get instance field reference: public System.Single filter_on
-    [[deprecated]] float& dyn_filter_on();
+    [[deprecated("Use field access instead!")]] float& dyn_filter_on();
     // Get instance field reference: public System.Single filter_saturation
-    [[deprecated]] float& dyn_filter_saturation();
+    [[deprecated("Use field access instead!")]] float& dyn_filter_saturation();
     // Get instance field reference: public System.Single filter_shelf
-    [[deprecated]] float& dyn_filter_shelf();
+    [[deprecated("Use field access instead!")]] float& dyn_filter_shelf();
     // Get instance field reference: public System.Single filter_style
-    [[deprecated]] float& dyn_filter_style();
+    [[deprecated("Use field access instead!")]] float& dyn_filter_style();
     // Get instance field reference: public System.Single filter_type
-    [[deprecated]] float& dyn_filter_type();
+    [[deprecated("Use field access instead!")]] float& dyn_filter_type();
     // Get instance field reference: public System.Single formant_on
-    [[deprecated]] float& dyn_formant_on();
+    [[deprecated("Use field access instead!")]] float& dyn_formant_on();
     // Get instance field reference: public System.Single formant_x
-    [[deprecated]] float& dyn_formant_x();
+    [[deprecated("Use field access instead!")]] float& dyn_formant_x();
     // Get instance field reference: public System.Single formant_y
-    [[deprecated]] float& dyn_formant_y();
+    [[deprecated("Use field access instead!")]] float& dyn_formant_y();
     // Get instance field reference: public System.Single keytrack
-    [[deprecated]] float& dyn_keytrack();
+    [[deprecated("Use field access instead!")]] float& dyn_keytrack();
     // Get instance field reference: public System.Single legato
-    [[deprecated]] float& dyn_legato();
+    [[deprecated("Use field access instead!")]] float& dyn_legato();
     // Get instance field reference: public System.Single mod_attack
-    [[deprecated]] float& dyn_mod_attack();
+    [[deprecated("Use field access instead!")]] float& dyn_mod_attack();
     // Get instance field reference: public System.Single mod_decay
-    [[deprecated]] float& dyn_mod_decay();
+    [[deprecated("Use field access instead!")]] float& dyn_mod_decay();
     // Get instance field reference: public System.Single mod_release
-    [[deprecated]] float& dyn_mod_release();
+    [[deprecated("Use field access instead!")]] float& dyn_mod_release();
     // Get instance field reference: public System.Single mod_sustain
-    [[deprecated]] float& dyn_mod_sustain();
+    [[deprecated("Use field access instead!")]] float& dyn_mod_sustain();
     // Get instance field reference: public System.Single mono_lfo_1_amplitude
-    [[deprecated]] float& dyn_mono_lfo_1_amplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_1_amplitude();
     // Get instance field reference: public System.Single mono_lfo_1_frequency
-    [[deprecated]] float& dyn_mono_lfo_1_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_1_frequency();
     // Get instance field reference: public System.Single mono_lfo_1_retrigger
-    [[deprecated]] float& dyn_mono_lfo_1_retrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_1_retrigger();
     // Get instance field reference: public System.Single mono_lfo_1_sync
-    [[deprecated]] float& dyn_mono_lfo_1_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_1_sync();
     // Get instance field reference: public System.Single mono_lfo_1_tempo
-    [[deprecated]] float& dyn_mono_lfo_1_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_1_tempo();
     // Get instance field reference: public System.Single mono_lfo_1_waveform
-    [[deprecated]] float& dyn_mono_lfo_1_waveform();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_1_waveform();
     // Get instance field reference: public System.Single mono_lfo_2_amplitude
-    [[deprecated]] float& dyn_mono_lfo_2_amplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_2_amplitude();
     // Get instance field reference: public System.Single mono_lfo_2_frequency
-    [[deprecated]] float& dyn_mono_lfo_2_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_2_frequency();
     // Get instance field reference: public System.Single mono_lfo_2_retrigger
-    [[deprecated]] float& dyn_mono_lfo_2_retrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_2_retrigger();
     // Get instance field reference: public System.Single mono_lfo_2_sync
-    [[deprecated]] float& dyn_mono_lfo_2_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_2_sync();
     // Get instance field reference: public System.Single mono_lfo_2_tempo
-    [[deprecated]] float& dyn_mono_lfo_2_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_2_tempo();
     // Get instance field reference: public System.Single mono_lfo_2_waveform
-    [[deprecated]] float& dyn_mono_lfo_2_waveform();
+    [[deprecated("Use field access instead!")]] float& dyn_mono_lfo_2_waveform();
     // Get instance field reference: public System.Single noise_volume
-    [[deprecated]] float& dyn_noise_volume();
+    [[deprecated("Use field access instead!")]] float& dyn_noise_volume();
     // Get instance field reference: public System.Single num_steps
-    [[deprecated]] float& dyn_num_steps();
+    [[deprecated("Use field access instead!")]] float& dyn_num_steps();
     // Get instance field reference: public System.Single osc_1_transpose
-    [[deprecated]] float& dyn_osc_1_transpose();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_1_transpose();
     // Get instance field reference: public System.Single osc_1_tune
-    [[deprecated]] float& dyn_osc_1_tune();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_1_tune();
     // Get instance field reference: public System.Single osc_1_unison_detune
-    [[deprecated]] float& dyn_osc_1_unison_detune();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_1_unison_detune();
     // Get instance field reference: public System.Single osc_1_unison_voices
-    [[deprecated]] float& dyn_osc_1_unison_voices();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_1_unison_voices();
     // Get instance field reference: public System.Single osc_1_volume
-    [[deprecated]] float& dyn_osc_1_volume();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_1_volume();
     // Get instance field reference: public System.Single osc_1_waveform
-    [[deprecated]] float& dyn_osc_1_waveform();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_1_waveform();
     // Get instance field reference: public System.Single osc_2_transpose
-    [[deprecated]] float& dyn_osc_2_transpose();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_2_transpose();
     // Get instance field reference: public System.Single osc_2_tune
-    [[deprecated]] float& dyn_osc_2_tune();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_2_tune();
     // Get instance field reference: public System.Single osc_2_unison_detune
-    [[deprecated]] float& dyn_osc_2_unison_detune();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_2_unison_detune();
     // Get instance field reference: public System.Single osc_2_unison_voices
-    [[deprecated]] float& dyn_osc_2_unison_voices();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_2_unison_voices();
     // Get instance field reference: public System.Single osc_2_volume
-    [[deprecated]] float& dyn_osc_2_volume();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_2_volume();
     // Get instance field reference: public System.Single osc_2_waveform
-    [[deprecated]] float& dyn_osc_2_waveform();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_2_waveform();
     // Get instance field reference: public System.Single osc_feedback_amount
-    [[deprecated]] float& dyn_osc_feedback_amount();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_feedback_amount();
     // Get instance field reference: public System.Single osc_feedback_transpose
-    [[deprecated]] float& dyn_osc_feedback_transpose();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_feedback_transpose();
     // Get instance field reference: public System.Single osc_feedback_tune
-    [[deprecated]] float& dyn_osc_feedback_tune();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_feedback_tune();
     // Get instance field reference: public System.Single osc_mix
-    [[deprecated]] float& dyn_osc_mix();
+    [[deprecated("Use field access instead!")]] float& dyn_osc_mix();
     // Get instance field reference: public System.Single pitch_bend_range
-    [[deprecated]] float& dyn_pitch_bend_range();
+    [[deprecated("Use field access instead!")]] float& dyn_pitch_bend_range();
     // Get instance field reference: public System.Single poly_lfo_amplitude
-    [[deprecated]] float& dyn_poly_lfo_amplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_poly_lfo_amplitude();
     // Get instance field reference: public System.Single poly_lfo_frequency
-    [[deprecated]] float& dyn_poly_lfo_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_poly_lfo_frequency();
     // Get instance field reference: public System.Single poly_lfo_sync
-    [[deprecated]] float& dyn_poly_lfo_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_poly_lfo_sync();
     // Get instance field reference: public System.Single poly_lfo_tempo
-    [[deprecated]] float& dyn_poly_lfo_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_poly_lfo_tempo();
     // Get instance field reference: public System.Single poly_lfo_waveform
-    [[deprecated]] float& dyn_poly_lfo_waveform();
+    [[deprecated("Use field access instead!")]] float& dyn_poly_lfo_waveform();
     // Get instance field reference: public System.Single polyphony
-    [[deprecated]] float& dyn_polyphony();
+    [[deprecated("Use field access instead!")]] float& dyn_polyphony();
     // Get instance field reference: public System.Single portamento
-    [[deprecated]] float& dyn_portamento();
+    [[deprecated("Use field access instead!")]] float& dyn_portamento();
     // Get instance field reference: public System.Single portamento_type
-    [[deprecated]] float& dyn_portamento_type();
+    [[deprecated("Use field access instead!")]] float& dyn_portamento_type();
     // Get instance field reference: public System.Single resonance
-    [[deprecated]] float& dyn_resonance();
+    [[deprecated("Use field access instead!")]] float& dyn_resonance();
     // Get instance field reference: public System.Single reverb_damping
-    [[deprecated]] float& dyn_reverb_damping();
+    [[deprecated("Use field access instead!")]] float& dyn_reverb_damping();
     // Get instance field reference: public System.Single reverb_dry_wet
-    [[deprecated]] float& dyn_reverb_dry_wet();
+    [[deprecated("Use field access instead!")]] float& dyn_reverb_dry_wet();
     // Get instance field reference: public System.Single reverb_feedback
-    [[deprecated]] float& dyn_reverb_feedback();
+    [[deprecated("Use field access instead!")]] float& dyn_reverb_feedback();
     // Get instance field reference: public System.Single reverb_on
-    [[deprecated]] float& dyn_reverb_on();
+    [[deprecated("Use field access instead!")]] float& dyn_reverb_on();
     // Get instance field reference: public System.Single step_frequency
-    [[deprecated]] float& dyn_step_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_step_frequency();
     // Get instance field reference: public System.Single step_seq_00
-    [[deprecated]] float& dyn_step_seq_00();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_00();
     // Get instance field reference: public System.Single step_seq_01
-    [[deprecated]] float& dyn_step_seq_01();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_01();
     // Get instance field reference: public System.Single step_seq_02
-    [[deprecated]] float& dyn_step_seq_02();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_02();
     // Get instance field reference: public System.Single step_seq_03
-    [[deprecated]] float& dyn_step_seq_03();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_03();
     // Get instance field reference: public System.Single step_seq_04
-    [[deprecated]] float& dyn_step_seq_04();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_04();
     // Get instance field reference: public System.Single step_seq_05
-    [[deprecated]] float& dyn_step_seq_05();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_05();
     // Get instance field reference: public System.Single step_seq_06
-    [[deprecated]] float& dyn_step_seq_06();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_06();
     // Get instance field reference: public System.Single step_seq_07
-    [[deprecated]] float& dyn_step_seq_07();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_07();
     // Get instance field reference: public System.Single step_seq_08
-    [[deprecated]] float& dyn_step_seq_08();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_08();
     // Get instance field reference: public System.Single step_seq_09
-    [[deprecated]] float& dyn_step_seq_09();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_09();
     // Get instance field reference: public System.Single step_seq_10
-    [[deprecated]] float& dyn_step_seq_10();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_10();
     // Get instance field reference: public System.Single step_seq_11
-    [[deprecated]] float& dyn_step_seq_11();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_11();
     // Get instance field reference: public System.Single step_seq_12
-    [[deprecated]] float& dyn_step_seq_12();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_12();
     // Get instance field reference: public System.Single step_seq_13
-    [[deprecated]] float& dyn_step_seq_13();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_13();
     // Get instance field reference: public System.Single step_seq_14
-    [[deprecated]] float& dyn_step_seq_14();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_14();
     // Get instance field reference: public System.Single step_seq_15
-    [[deprecated]] float& dyn_step_seq_15();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_15();
     // Get instance field reference: public System.Single step_seq_16
-    [[deprecated]] float& dyn_step_seq_16();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_16();
     // Get instance field reference: public System.Single step_seq_17
-    [[deprecated]] float& dyn_step_seq_17();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_17();
     // Get instance field reference: public System.Single step_seq_18
-    [[deprecated]] float& dyn_step_seq_18();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_18();
     // Get instance field reference: public System.Single step_seq_19
-    [[deprecated]] float& dyn_step_seq_19();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_19();
     // Get instance field reference: public System.Single step_seq_20
-    [[deprecated]] float& dyn_step_seq_20();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_20();
     // Get instance field reference: public System.Single step_seq_21
-    [[deprecated]] float& dyn_step_seq_21();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_21();
     // Get instance field reference: public System.Single step_seq_22
-    [[deprecated]] float& dyn_step_seq_22();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_22();
     // Get instance field reference: public System.Single step_seq_23
-    [[deprecated]] float& dyn_step_seq_23();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_23();
     // Get instance field reference: public System.Single step_seq_24
-    [[deprecated]] float& dyn_step_seq_24();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_24();
     // Get instance field reference: public System.Single step_seq_25
-    [[deprecated]] float& dyn_step_seq_25();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_25();
     // Get instance field reference: public System.Single step_seq_26
-    [[deprecated]] float& dyn_step_seq_26();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_26();
     // Get instance field reference: public System.Single step_seq_27
-    [[deprecated]] float& dyn_step_seq_27();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_27();
     // Get instance field reference: public System.Single step_seq_28
-    [[deprecated]] float& dyn_step_seq_28();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_28();
     // Get instance field reference: public System.Single step_seq_29
-    [[deprecated]] float& dyn_step_seq_29();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_29();
     // Get instance field reference: public System.Single step_seq_30
-    [[deprecated]] float& dyn_step_seq_30();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_30();
     // Get instance field reference: public System.Single step_seq_31
-    [[deprecated]] float& dyn_step_seq_31();
+    [[deprecated("Use field access instead!")]] float& dyn_step_seq_31();
     // Get instance field reference: public System.Single step_sequencer_retrigger
-    [[deprecated]] float& dyn_step_sequencer_retrigger();
+    [[deprecated("Use field access instead!")]] float& dyn_step_sequencer_retrigger();
     // Get instance field reference: public System.Single step_sequencer_sync
-    [[deprecated]] float& dyn_step_sequencer_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_step_sequencer_sync();
     // Get instance field reference: public System.Single step_sequencer_tempo
-    [[deprecated]] float& dyn_step_sequencer_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_step_sequencer_tempo();
     // Get instance field reference: public System.Single step_smoothing
-    [[deprecated]] float& dyn_step_smoothing();
+    [[deprecated("Use field access instead!")]] float& dyn_step_smoothing();
     // Get instance field reference: public System.Single stutter_frequency
-    [[deprecated]] float& dyn_stutter_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_frequency();
     // Get instance field reference: public System.Single stutter_on
-    [[deprecated]] float& dyn_stutter_on();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_on();
     // Get instance field reference: public System.Single stutter_resample_frequency
-    [[deprecated]] float& dyn_stutter_resample_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_resample_frequency();
     // Get instance field reference: public System.Single stutter_resample_sync
-    [[deprecated]] float& dyn_stutter_resample_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_resample_sync();
     // Get instance field reference: public System.Single stutter_resample_tempo
-    [[deprecated]] float& dyn_stutter_resample_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_resample_tempo();
     // Get instance field reference: public System.Single stutter_softness
-    [[deprecated]] float& dyn_stutter_softness();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_softness();
     // Get instance field reference: public System.Single stutter_sync
-    [[deprecated]] float& dyn_stutter_sync();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_sync();
     // Get instance field reference: public System.Single stutter_tempo
-    [[deprecated]] float& dyn_stutter_tempo();
+    [[deprecated("Use field access instead!")]] float& dyn_stutter_tempo();
     // Get instance field reference: public System.Single sub_octave
-    [[deprecated]] float& dyn_sub_octave();
+    [[deprecated("Use field access instead!")]] float& dyn_sub_octave();
     // Get instance field reference: public System.Single sub_shuffle
-    [[deprecated]] float& dyn_sub_shuffle();
+    [[deprecated("Use field access instead!")]] float& dyn_sub_shuffle();
     // Get instance field reference: public System.Single sub_volume
-    [[deprecated]] float& dyn_sub_volume();
+    [[deprecated("Use field access instead!")]] float& dyn_sub_volume();
     // Get instance field reference: public System.Single sub_waveform
-    [[deprecated]] float& dyn_sub_waveform();
+    [[deprecated("Use field access instead!")]] float& dyn_sub_waveform();
     // Get instance field reference: public System.Single unison_1_harmonize
-    [[deprecated]] float& dyn_unison_1_harmonize();
+    [[deprecated("Use field access instead!")]] float& dyn_unison_1_harmonize();
     // Get instance field reference: public System.Single unison_2_harmonize
-    [[deprecated]] float& dyn_unison_2_harmonize();
+    [[deprecated("Use field access instead!")]] float& dyn_unison_2_harmonize();
     // Get instance field reference: public System.Single velocity_track
-    [[deprecated]] float& dyn_velocity_track();
+    [[deprecated("Use field access instead!")]] float& dyn_velocity_track();
     // Get instance field reference: public System.Single volume
-    [[deprecated]] float& dyn_volume();
+    [[deprecated("Use field access instead!")]] float& dyn_volume();
     // Get instance field reference: public AudioHelm.HelmModulationSetting[] modulations
-    [[deprecated]] ::ArrayW<::AudioHelm::HelmModulationSetting*>& dyn_modulations();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::AudioHelm::HelmModulationSetting*>& dyn_modulations();
+    // public System.Void .ctor()
+    // Offset: 0x193D8FC
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HelmPatchSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmPatchSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HelmPatchSettings*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x193D904
     static void _cctor();
@@ -1222,21 +1229,16 @@ namespace AudioHelm {
     // static public AudioHelm.HelmPatchSettings Clone(AudioHelm.HelmPatchSettings other)
     // Offset: 0x193D6E4
     static ::AudioHelm::HelmPatchSettings* Clone(::AudioHelm::HelmPatchSettings* other);
-    // public System.Void .ctor()
-    // Offset: 0x193D8FC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HelmPatchSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AudioHelm::HelmPatchSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HelmPatchSettings*, creationType>()));
-    }
   }; // AudioHelm.HelmPatchSettings
   #pragma pack(pop)
   static check_size<sizeof(HelmPatchSettings), 584 + sizeof(::ArrayW<::AudioHelm::HelmModulationSetting*>)> __AudioHelm_HelmPatchSettingsSizeCheck;
   static_assert(sizeof(HelmPatchSettings) == 0x250);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AudioHelm::HelmPatchSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AudioHelm::HelmPatchSettings::_cctor
 // Il2CppName: .cctor
 template<>
@@ -1281,7 +1283,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::AudioHelm
     return ::il2cpp_utils::FindMethod(classof(AudioHelm::HelmPatchSettings*), "Clone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
-// Writing MetadataGetter for method: AudioHelm::HelmPatchSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

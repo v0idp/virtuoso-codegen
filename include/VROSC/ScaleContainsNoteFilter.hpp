@@ -54,20 +54,15 @@ namespace VROSC {
     static_assert(sizeof(::VROSC::NoteField*) == 0x8);
     public:
     // Get instance field reference: private VROSC.ScaleNode _scale
-    [[deprecated]] ::VROSC::ScaleNode*& dyn__scale();
+    [[deprecated("Use field access instead!")]] ::VROSC::ScaleNode*& dyn__scale();
     // Get instance field reference: private VROSC.NoteField _note
-    [[deprecated]] ::VROSC::NoteField*& dyn__note();
+    [[deprecated("Use field access instead!")]] ::VROSC::NoteField*& dyn__note();
     // public System.Void .ctor()
     // Offset: 0xDE2618
     // Implemented from: VROSC.SignalFilter
     // Base method: System.Void SignalFilter::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ScaleContainsNoteFilter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::ScaleContainsNoteFilter::.ctor");

@@ -51,7 +51,7 @@ namespace System::Diagnostics {
       return typeName;
     }
     // Get instance field reference: private System.String typeName
-    [[deprecated]] ::StringW& dyn_typeName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_typeName();
     // public System.Void .ctor(System.Type type)
     // Offset: 0x128FC68
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

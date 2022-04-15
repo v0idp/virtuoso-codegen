@@ -104,17 +104,17 @@ namespace Microsoft::Win32 {
     // Set static field: static private System.String machine_store
     static void _set_machine_store(::StringW value);
     // Get instance field reference: public System.String Dir
-    [[deprecated]] ::StringW& dyn_Dir();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Dir();
     // Get instance field reference: private System.String ActualDir
-    [[deprecated]] ::StringW& dyn_ActualDir();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ActualDir();
     // Get instance field reference: public System.Boolean IsVolatile
-    [[deprecated]] bool& dyn_IsVolatile();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsVolatile();
     // Get instance field reference: private System.Collections.Hashtable values
-    [[deprecated]] ::System::Collections::Hashtable*& dyn_values();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn_values();
     // Get instance field reference: private System.String file
-    [[deprecated]] ::StringW& dyn_file();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_file();
     // Get instance field reference: private System.Boolean dirty
-    [[deprecated]] bool& dyn_dirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_dirty();
     // public System.Boolean get_IsMarkedForDeletion()
     // Offset: 0x10730D4
     bool get_IsMarkedForDeletion();

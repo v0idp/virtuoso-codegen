@@ -49,9 +49,9 @@ namespace System::Collections::Concurrent {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 Head
-    [[deprecated]] int& dyn_Head();
+    [[deprecated("Use field access instead!")]] int& dyn_Head();
     // Get instance field reference: public System.Int32 Tail
-    [[deprecated]] int& dyn_Tail();
+    [[deprecated("Use field access instead!")]] int& dyn_Tail();
   }; // System.Collections.Concurrent.PaddedHeadAndTail
   #pragma pack(pop)
   static check_size<sizeof(PaddedHeadAndTail), 256 + sizeof(int)> __System_Collections_Concurrent_PaddedHeadAndTailSizeCheck;

@@ -67,7 +67,7 @@ namespace UnityEngine::Analytics {
     // Set static field: static public UnityEngine.Analytics.AnalyticsSessionState kSessionResumed
     static void _set_kSessionResumed(::UnityEngine::Analytics::AnalyticsSessionState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Analytics.AnalyticsSessionState
   #pragma pack(pop)
   static check_size<sizeof(AnalyticsSessionState), 0 + sizeof(int)> __UnityEngine_Analytics_AnalyticsSessionStateSizeCheck;

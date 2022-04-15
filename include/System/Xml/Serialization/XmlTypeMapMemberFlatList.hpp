@@ -48,7 +48,7 @@ namespace System::Xml::Serialization {
     // Deleting conversion operator: operator int
     constexpr operator int() const noexcept = delete;
     // Get instance field reference: private System.Xml.Serialization.ListMap _listMap
-    [[deprecated]] ::System::Xml::Serialization::ListMap*& dyn__listMap();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Serialization::ListMap*& dyn__listMap();
     // public System.Xml.Serialization.ListMap get_ListMap()
     // Offset: 0x1088BC8
     ::System::Xml::Serialization::ListMap* get_ListMap();
@@ -61,7 +61,6 @@ namespace System::Xml::Serialization {
     // Base method: System.Void XmlTypeMapMemberExpandable::.ctor()
     // Base method: System.Void XmlTypeMapMemberElement::.ctor()
     // Base method: System.Void XmlTypeMapMember::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlTypeMapMemberFlatList* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Serialization::XmlTypeMapMemberFlatList::.ctor");

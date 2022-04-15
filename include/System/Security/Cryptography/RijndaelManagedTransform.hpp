@@ -179,41 +179,41 @@ namespace System::Security::Cryptography {
     // Set static field: static private readonly System.Int32[] s_iTF
     static void _set_s_iTF(::ArrayW<int> value);
     // Get instance field reference: private System.Security.Cryptography.CipherMode m_cipherMode
-    [[deprecated]] ::System::Security::Cryptography::CipherMode& dyn_m_cipherMode();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::CipherMode& dyn_m_cipherMode();
     // Get instance field reference: private System.Security.Cryptography.PaddingMode m_paddingValue
-    [[deprecated]] ::System::Security::Cryptography::PaddingMode& dyn_m_paddingValue();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::PaddingMode& dyn_m_paddingValue();
     // Get instance field reference: private System.Security.Cryptography.RijndaelManagedTransformMode m_transformMode
-    [[deprecated]] ::System::Security::Cryptography::RijndaelManagedTransformMode& dyn_m_transformMode();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::RijndaelManagedTransformMode& dyn_m_transformMode();
     // Get instance field reference: private System.Int32 m_blockSizeBits
-    [[deprecated]] int& dyn_m_blockSizeBits();
+    [[deprecated("Use field access instead!")]] int& dyn_m_blockSizeBits();
     // Get instance field reference: private System.Int32 m_blockSizeBytes
-    [[deprecated]] int& dyn_m_blockSizeBytes();
+    [[deprecated("Use field access instead!")]] int& dyn_m_blockSizeBytes();
     // Get instance field reference: private System.Int32 m_inputBlockSize
-    [[deprecated]] int& dyn_m_inputBlockSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_inputBlockSize();
     // Get instance field reference: private System.Int32 m_outputBlockSize
-    [[deprecated]] int& dyn_m_outputBlockSize();
+    [[deprecated("Use field access instead!")]] int& dyn_m_outputBlockSize();
     // Get instance field reference: private System.Int32[] m_encryptKeyExpansion
-    [[deprecated]] ::ArrayW<int>& dyn_m_encryptKeyExpansion();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_encryptKeyExpansion();
     // Get instance field reference: private System.Int32[] m_decryptKeyExpansion
-    [[deprecated]] ::ArrayW<int>& dyn_m_decryptKeyExpansion();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_decryptKeyExpansion();
     // Get instance field reference: private System.Int32 m_Nr
-    [[deprecated]] int& dyn_m_Nr();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Nr();
     // Get instance field reference: private System.Int32 m_Nb
-    [[deprecated]] int& dyn_m_Nb();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Nb();
     // Get instance field reference: private System.Int32 m_Nk
-    [[deprecated]] int& dyn_m_Nk();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Nk();
     // Get instance field reference: private System.Int32[] m_encryptindex
-    [[deprecated]] ::ArrayW<int>& dyn_m_encryptindex();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_encryptindex();
     // Get instance field reference: private System.Int32[] m_decryptindex
-    [[deprecated]] ::ArrayW<int>& dyn_m_decryptindex();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_decryptindex();
     // Get instance field reference: private System.Int32[] m_IV
-    [[deprecated]] ::ArrayW<int>& dyn_m_IV();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_IV();
     // Get instance field reference: private System.Int32[] m_lastBlockBuffer
-    [[deprecated]] ::ArrayW<int>& dyn_m_lastBlockBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_m_lastBlockBuffer();
     // Get instance field reference: private System.Byte[] m_depadBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_depadBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_depadBuffer();
     // Get instance field reference: private System.Byte[] m_shiftRegister
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_shiftRegister();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_shiftRegister();
     // public System.Int32 get_InputBlockSize()
     // Offset: 0xCE13FC
     int get_InputBlockSize();

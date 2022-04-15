@@ -72,17 +72,17 @@ namespace System::Runtime::Remoting::Metadata {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _responseElement
-    [[deprecated]] ::StringW& dyn__responseElement();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__responseElement();
     // Get instance field reference: private System.String _responseNamespace
-    [[deprecated]] ::StringW& dyn__responseNamespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__responseNamespace();
     // Get instance field reference: private System.String _returnElement
-    [[deprecated]] ::StringW& dyn__returnElement();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__returnElement();
     // Get instance field reference: private System.String _soapAction
-    [[deprecated]] ::StringW& dyn__soapAction();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__soapAction();
     // Get instance field reference: private System.Boolean _useAttribute
-    [[deprecated]] bool& dyn__useAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn__useAttribute();
     // Get instance field reference: private System.String _namespace
-    [[deprecated]] ::StringW& dyn__namespace();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__namespace();
     // public override System.Boolean get_UseAttribute()
     // Offset: 0x124E378
     // Implemented from: System.Runtime.Remoting.Metadata.SoapAttribute

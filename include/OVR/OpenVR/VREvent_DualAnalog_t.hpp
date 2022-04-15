@@ -65,15 +65,15 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single transformedX
-    [[deprecated]] float& dyn_transformedX();
+    [[deprecated("Use field access instead!")]] float& dyn_transformedX();
     // Get instance field reference: public System.Single transformedY
-    [[deprecated]] float& dyn_transformedY();
+    [[deprecated("Use field access instead!")]] float& dyn_transformedY();
     // Get instance field reference: public OVR.OpenVR.EDualAnalogWhich which
-    [[deprecated]] ::OVR::OpenVR::EDualAnalogWhich& dyn_which();
+    [[deprecated("Use field access instead!")]] ::OVR::OpenVR::EDualAnalogWhich& dyn_which();
   }; // OVR.OpenVR.VREvent_DualAnalog_t
   #pragma pack(pop)
   static check_size<sizeof(VREvent_DualAnalog_t), 16 + sizeof(::OVR::OpenVR::EDualAnalogWhich)> __OVR_OpenVR_VREvent_DualAnalog_tSizeCheck;

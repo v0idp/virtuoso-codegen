@@ -65,11 +65,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::System::Xml::Schema::XmlSchemaGroup*) == 0x8);
     public:
     // Get instance field reference: private System.Xml.XmlQualifiedName refName
-    [[deprecated]] ::System::Xml::XmlQualifiedName*& dyn_refName();
+    [[deprecated("Use field access instead!")]] ::System::Xml::XmlQualifiedName*& dyn_refName();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaGroupBase particle
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaGroupBase*& dyn_particle();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaGroupBase*& dyn_particle();
     // Get instance field reference: private System.Xml.Schema.XmlSchemaGroup refined
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaGroup*& dyn_refined();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaGroup*& dyn_refined();
     // public System.Xml.XmlQualifiedName get_RefName()
     // Offset: 0x110F088
     ::System::Xml::XmlQualifiedName* get_RefName();
@@ -94,7 +94,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaParticle::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaGroupRef* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaGroupRef::.ctor");

@@ -54,9 +54,9 @@ namespace System::Xml::Schema {
     static_assert(sizeof(::ArrayW<::System::Xml::XmlNode*>) == 0x8);
     public:
     // Get instance field reference: private System.String source
-    [[deprecated]] ::StringW& dyn_source();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_source();
     // Get instance field reference: private System.Xml.XmlNode[] markup
-    [[deprecated]] ::ArrayW<::System::Xml::XmlNode*>& dyn_markup();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Xml::XmlNode*>& dyn_markup();
     // public System.Void set_Source(System.String value)
     // Offset: 0x1109674
     void set_Source(::StringW value);
@@ -70,7 +70,6 @@ namespace System::Xml::Schema {
     // Offset: 0x110968C
     // Implemented from: System.Xml.Schema.XmlSchemaObject
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaAppInfo* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaAppInfo::.ctor");

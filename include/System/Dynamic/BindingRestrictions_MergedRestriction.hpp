@@ -45,9 +45,9 @@ namespace System::Dynamic {
     static_assert(sizeof(::System::Dynamic::BindingRestrictions*) == 0x8);
     public:
     // Get instance field reference: readonly System.Dynamic.BindingRestrictions Left
-    [[deprecated]] ::System::Dynamic::BindingRestrictions*& dyn_Left();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::BindingRestrictions*& dyn_Left();
     // Get instance field reference: readonly System.Dynamic.BindingRestrictions Right
-    [[deprecated]] ::System::Dynamic::BindingRestrictions*& dyn_Right();
+    [[deprecated("Use field access instead!")]] ::System::Dynamic::BindingRestrictions*& dyn_Right();
     // System.Void .ctor(System.Dynamic.BindingRestrictions left, System.Dynamic.BindingRestrictions right)
     // Offset: 0xEA5F58
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

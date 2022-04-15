@@ -63,11 +63,11 @@ namespace System::Text {
     // Deleting conversion operator: operator bool
     constexpr operator bool() const noexcept = delete;
     // Get instance field reference: System.Text.Encoding encoding
-    [[deprecated]] ::System::Text::Encoding*& dyn_encoding();
+    [[deprecated("Use field access instead!")]] ::System::Text::Encoding*& dyn_encoding();
     // Get instance field reference: System.Char[] arrayBestFit
-    [[deprecated]] ::ArrayW<::Il2CppChar>& dyn_arrayBestFit();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppChar>& dyn_arrayBestFit();
     // Get instance field reference: System.Char cReplacement
-    [[deprecated]] ::Il2CppChar& dyn_cReplacement();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar& dyn_cReplacement();
     // System.Void .ctor(System.Text.Encoding encoding)
     // Offset: 0x106CF04
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

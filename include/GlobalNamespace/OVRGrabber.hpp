@@ -189,48 +189,55 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single grabBegin
-    [[deprecated]] float& dyn_grabBegin();
+    [[deprecated("Use field access instead!")]] float& dyn_grabBegin();
     // Get instance field reference: public System.Single grabEnd
-    [[deprecated]] float& dyn_grabEnd();
+    [[deprecated("Use field access instead!")]] float& dyn_grabEnd();
     // Get instance field reference: protected System.Boolean m_parentHeldObject
-    [[deprecated]] bool& dyn_m_parentHeldObject();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_parentHeldObject();
     // Get instance field reference: protected System.Boolean m_moveHandPosition
-    [[deprecated]] bool& dyn_m_moveHandPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_moveHandPosition();
     // Get instance field reference: protected UnityEngine.Transform m_gripTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_gripTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_gripTransform();
     // Get instance field reference: protected UnityEngine.Collider[] m_grabVolumes
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn_m_grabVolumes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn_m_grabVolumes();
     // Get instance field reference: protected OVRInput/Controller m_controller
-    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_m_controller();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::Controller& dyn_m_controller();
     // Get instance field reference: protected UnityEngine.Transform m_parentTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_parentTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_parentTransform();
     // Get instance field reference: protected UnityEngine.GameObject m_player
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_player();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_player();
     // Get instance field reference: protected System.Boolean m_grabVolumeEnabled
-    [[deprecated]] bool& dyn_m_grabVolumeEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_grabVolumeEnabled();
     // Get instance field reference: protected UnityEngine.Vector3 m_lastPos
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_lastPos();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_lastPos();
     // Get instance field reference: protected UnityEngine.Quaternion m_lastRot
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_lastRot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_lastRot();
     // Get instance field reference: protected UnityEngine.Quaternion m_anchorOffsetRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_anchorOffsetRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_anchorOffsetRotation();
     // Get instance field reference: protected UnityEngine.Vector3 m_anchorOffsetPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_anchorOffsetPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_anchorOffsetPosition();
     // Get instance field reference: protected System.Single m_prevFlex
-    [[deprecated]] float& dyn_m_prevFlex();
+    [[deprecated("Use field access instead!")]] float& dyn_m_prevFlex();
     // Get instance field reference: protected OVRGrabbable m_grabbedObj
-    [[deprecated]] ::GlobalNamespace::OVRGrabbable*& dyn_m_grabbedObj();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRGrabbable*& dyn_m_grabbedObj();
     // Get instance field reference: protected UnityEngine.Vector3 m_grabbedObjectPosOff
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_grabbedObjectPosOff();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_grabbedObjectPosOff();
     // Get instance field reference: protected UnityEngine.Quaternion m_grabbedObjectRotOff
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_grabbedObjectRotOff();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_grabbedObjectRotOff();
     // Get instance field reference: protected System.Collections.Generic.Dictionary`2<OVRGrabbable,System.Int32> m_grabCandidates
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRGrabbable*, int>*& dyn_m_grabCandidates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRGrabbable*, int>*& dyn_m_grabCandidates();
     // Get instance field reference: protected System.Boolean m_operatingWithoutOVRCameraRig
-    [[deprecated]] bool& dyn_m_operatingWithoutOVRCameraRig();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_operatingWithoutOVRCameraRig();
     // public OVRGrabbable get_grabbedObject()
     // Offset: 0xFBD3EC
     ::GlobalNamespace::OVRGrabbable* get_grabbedObject();
+    // public System.Void .ctor()
+    // Offset: 0xFBF4B4
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRGrabber* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGrabber::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRGrabber*, creationType>()));
+    }
     // public System.Void ForceRelease(OVRGrabbable grabbable)
     // Offset: 0xFBD318
     void ForceRelease(::GlobalNamespace::OVRGrabbable* grabbable);
@@ -282,19 +289,6 @@ namespace GlobalNamespace {
     // private System.Void <Awake>b__23_0(OVRCameraRig r)
     // Offset: 0xFBF54C
     void $Awake$b__23_0(::GlobalNamespace::OVRCameraRig* r);
-    // public System.Void .ctor()
-    // Offset: 0xFBF4B4
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRGrabber* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRGrabber::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRGrabber*, creationType>()));
-    }
   }; // OVRGrabber
   #pragma pack(pop)
   static check_size<sizeof(OVRGrabber), 192 + sizeof(bool)> __GlobalNamespace_OVRGrabberSizeCheck;
@@ -309,6 +303,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRGrabber*), "get_grabbedObject", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::OVRGrabber::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRGrabber::ForceRelease
 // Il2CppName: ForceRelease
 template<>
@@ -459,7 +457,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRGrabber*), "<Awake>b__23_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{r});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRGrabber::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

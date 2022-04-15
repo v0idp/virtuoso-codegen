@@ -46,7 +46,7 @@ namespace DG::Tweening::Core::Easing {
       return animCurve;
     }
     // Get instance field reference: private readonly UnityEngine.AnimationCurve _animCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__animCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__animCurve();
     // public System.Void .ctor(UnityEngine.AnimationCurve animCurve)
     // Offset: 0x15DD2CC
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

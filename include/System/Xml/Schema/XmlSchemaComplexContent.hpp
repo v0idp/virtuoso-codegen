@@ -56,11 +56,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Xml.Schema.XmlSchemaContent content
-    [[deprecated]] ::System::Xml::Schema::XmlSchemaContent*& dyn_content();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::XmlSchemaContent*& dyn_content();
     // Get instance field reference: private System.Boolean isMixed
-    [[deprecated]] bool& dyn_isMixed();
+    [[deprecated("Use field access instead!")]] bool& dyn_isMixed();
     // Get instance field reference: private System.Boolean hasMixedAttribute
-    [[deprecated]] bool& dyn_hasMixedAttribute();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasMixedAttribute();
     // public System.Boolean get_IsMixed()
     // Offset: 0x110AE68
     bool get_IsMixed();
@@ -86,7 +86,6 @@ namespace System::Xml::Schema {
     // Base method: System.Void XmlSchemaContentModel::.ctor()
     // Base method: System.Void XmlSchemaAnnotated::.ctor()
     // Base method: System.Void XmlSchemaObject::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XmlSchemaComplexContent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::XmlSchemaComplexContent::.ctor");

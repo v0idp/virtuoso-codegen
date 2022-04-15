@@ -64,32 +64,34 @@ namespace VROSC {
     static_assert(sizeof(::System::Action_1<::VROSC::Error>*) == 0x8);
     public:
     // Get instance field reference: public VROSC.CloudSessionsDataController <>4__this
-    [[deprecated]] ::VROSC::CloudSessionsDataController*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::VROSC::CloudSessionsDataController*& dyn_$$4__this();
     // Get instance field reference: public System.Action onSuccess
-    [[deprecated]] ::System::Action*& dyn_onSuccess();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onSuccess();
     // Get instance field reference: public System.Action`1<VROSC.Error> onFailure
-    [[deprecated]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::VROSC::Error>*& dyn_onFailure();
+    // public System.Void .ctor()
+    // Offset: 0x9597E8
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CloudSessionsDataController::$$c__DisplayClass4_0* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CloudSessionsDataController::$$c__DisplayClass4_0::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CloudSessionsDataController::$$c__DisplayClass4_0*, creationType>()));
+    }
     // System.Void <LoadCloudData>b__0(System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>> data)
     // Offset: 0x9597F0
     void $LoadCloudData$b__0(::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::Dictionary_2<::StringW, ::Il2CppObject*>*>* data);
     // System.Void <LoadCloudData>b__1(VROSC.Error error)
     // Offset: 0x95A5EC
     void $LoadCloudData$b__1(::VROSC::Error error);
-    // public System.Void .ctor()
-    // Offset: 0x9597E8
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CloudSessionsDataController::$$c__DisplayClass4_0* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::CloudSessionsDataController::$$c__DisplayClass4_0::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CloudSessionsDataController::$$c__DisplayClass4_0*, creationType>()));
-    }
   }; // VROSC.CloudSessionsDataController/VROSC.<>c__DisplayClass4_0
   #pragma pack(pop)
   static check_size<sizeof(CloudSessionsDataController::$$c__DisplayClass4_0), 32 + sizeof(::System::Action_1<::VROSC::Error>*)> __VROSC_CloudSessionsDataController_$$c__DisplayClass4_0SizeCheck;
   static_assert(sizeof(CloudSessionsDataController::$$c__DisplayClass4_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::CloudSessionsDataController::$$c__DisplayClass4_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::CloudSessionsDataController::$$c__DisplayClass4_0::$LoadCloudData$b__0
 // Il2CppName: <LoadCloudData>b__0
 template<>
@@ -108,7 +110,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::CloudSessionsDataController::$$c__DisplayClass4_0*), "<LoadCloudData>b__1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{error});
   }
 };
-// Writing MetadataGetter for method: VROSC::CloudSessionsDataController::$$c__DisplayClass4_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

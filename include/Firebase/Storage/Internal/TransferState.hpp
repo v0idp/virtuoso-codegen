@@ -78,15 +78,15 @@ namespace Firebase::Storage::Internal {
     static_assert(sizeof(::Firebase::Storage::StorageReference*) == 0x8);
     public:
     // Get instance field reference: private System.Int64 <BytesTransferred>k__BackingField
-    [[deprecated]] int64_t& dyn_$BytesTransferred$k__BackingField();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_$BytesTransferred$k__BackingField();
     // Get instance field reference: private System.Int64 <TotalByteCount>k__BackingField
-    [[deprecated]] int64_t& dyn_$TotalByteCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_$TotalByteCount$k__BackingField();
     // Get instance field reference: private System.Uri <UploadSessionUri>k__BackingField
-    [[deprecated]] ::System::Uri*& dyn_$UploadSessionUri$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_$UploadSessionUri$k__BackingField();
     // Get instance field reference: private Firebase.Storage.StorageMetadata <Metadata>k__BackingField
-    [[deprecated]] ::Firebase::Storage::StorageMetadata*& dyn_$Metadata$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageMetadata*& dyn_$Metadata$k__BackingField();
     // Get instance field reference: private Firebase.Storage.StorageReference <Reference>k__BackingField
-    [[deprecated]] ::Firebase::Storage::StorageReference*& dyn_$Reference$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Firebase::Storage::StorageReference*& dyn_$Reference$k__BackingField();
     // public System.Int64 get_BytesTransferred()
     // Offset: 0x1839778
     int64_t get_BytesTransferred();

@@ -112,21 +112,28 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Single _directionOffset
-    [[deprecated]] float& dyn__directionOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__directionOffset();
     // Get instance field reference: private System.Single _verticalOffset
-    [[deprecated]] float& dyn__verticalOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__verticalOffset();
     // Get instance field reference: private System.Boolean _moveTowardsFace
-    [[deprecated]] bool& dyn__moveTowardsFace();
+    [[deprecated("Use field access instead!")]] bool& dyn__moveTowardsFace();
     // Get instance field reference: private System.Single _minDistance
-    [[deprecated]] float& dyn__minDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__minDistance();
     // Get instance field reference: private System.Single _lookAtCamera
-    [[deprecated]] float& dyn__lookAtCamera();
+    [[deprecated("Use field access instead!")]] float& dyn__lookAtCamera();
     // Get instance field reference: private UnityEngine.Transform _targetBone
-    [[deprecated]] ::UnityEngine::Transform*& dyn__targetBone();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__targetBone();
     // Get instance field reference: private System.Single _moveDuration
-    [[deprecated]] float& dyn__moveDuration();
+    [[deprecated("Use field access instead!")]] float& dyn__moveDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve _moveCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn__moveCurve();
+    // public System.Void .ctor()
+    // Offset: 0x190FB7C
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIHelperPositioning* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIHelperPositioning::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIHelperPositioning*, creationType>()));
+    }
     // public System.Collections.IEnumerator MoveOutObject(UnityEngine.Transform target, UnityEngine.Vector3 endPosition, UnityEngine.Vector3 size)
     // Offset: 0x190F614
     ::System::Collections::IEnumerator* MoveOutObject(::UnityEngine::Transform* target, ::UnityEngine::Vector3 endPosition, ::UnityEngine::Vector3 size);
@@ -136,25 +143,16 @@ namespace VROSC {
     // public System.Void PlaceTargetBone(UnityEngine.Transform target, UnityEngine.Vector3 size)
     // Offset: 0x190FA80
     void PlaceTargetBone(::UnityEngine::Transform* target, ::UnityEngine::Vector3 size);
-    // public System.Void .ctor()
-    // Offset: 0x190FB7C
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIHelperPositioning* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UIHelperPositioning::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIHelperPositioning*, creationType>()));
-    }
   }; // VROSC.UIHelperPositioning
   #pragma pack(pop)
   static check_size<sizeof(UIHelperPositioning), 64 + sizeof(::UnityEngine::AnimationCurve*)> __VROSC_UIHelperPositioningSizeCheck;
   static_assert(sizeof(UIHelperPositioning) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: VROSC::UIHelperPositioning::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UIHelperPositioning::MoveOutObject
 // Il2CppName: MoveOutObject
 template<>
@@ -186,7 +184,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UIHelperPositioning*), "PlaceTargetBone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{target, size});
   }
 };
-// Writing MetadataGetter for method: VROSC::UIHelperPositioning::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

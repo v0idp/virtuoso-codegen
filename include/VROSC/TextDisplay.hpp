@@ -47,7 +47,7 @@ namespace VROSC {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.TextMesh _textMesh
-    [[deprecated]] ::UnityEngine::TextMesh*& dyn__textMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::TextMesh*& dyn__textMesh();
     // protected System.Void Start()
     // Offset: 0xA24C2C
     void Start();
@@ -61,11 +61,6 @@ namespace VROSC {
     // Offset: 0xA24D30
     // Implemented from: VROSC.Node
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TextDisplay* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::TextDisplay::.ctor");

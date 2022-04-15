@@ -66,11 +66,11 @@ namespace System::Xml::Schema {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Xml.Schema.ConstraintStruct cs
-    [[deprecated]] ::System::Xml::Schema::ConstraintStruct*& dyn_cs();
+    [[deprecated("Use field access instead!")]] ::System::Xml::Schema::ConstraintStruct*& dyn_cs();
     // Get instance field reference: private System.Collections.ArrayList KSs
-    [[deprecated]] ::System::Collections::ArrayList*& dyn_KSs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ArrayList*& dyn_KSs();
     // Get instance field reference: private System.Int32 KSpointer
-    [[deprecated]] int& dyn_KSpointer();
+    [[deprecated("Use field access instead!")]] int& dyn_KSpointer();
     // public System.Int32 get_lastDepth()
     // Offset: 0xF6CEE4
     int get_lastDepth();

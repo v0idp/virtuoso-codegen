@@ -182,6 +182,13 @@ namespace DG::Tweening::Core::Easing {
     // static private System.Void .cctor()
     // Offset: 0x1863524
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1863584
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EaseManager::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::Easing::EaseManager::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EaseManager::$$c*, creationType>()));
+    }
     // System.Single <ToEaseFunction>b__4_0(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
     // Offset: 0x186358C
     float $ToEaseFunction$b__4_0(float time, float duration, float overshootOrAmplitude, float period);
@@ -290,15 +297,6 @@ namespace DG::Tweening::Core::Easing {
     // System.Single <ToEaseFunction>b__4_35(System.Single time, System.Single duration, System.Single overshootOrAmplitude, System.Single period)
     // Offset: 0x1864354
     float $ToEaseFunction$b__4_35(float time, float duration, float overshootOrAmplitude, float period);
-    // public System.Void .ctor()
-    // Offset: 0x1863584
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EaseManager::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::DG::Tweening::Core::Easing::EaseManager::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EaseManager::$$c*, creationType>()));
-    }
   }; // DG.Tweening.Core.Easing.EaseManager/DG.Tweening.Core.Easing.<>c
   #pragma pack(pop)
 }
@@ -311,6 +309,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::Core::Easing::EaseManager::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: DG::Tweening::Core::Easing::EaseManager::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: DG::Tweening::Core::Easing::EaseManager::$$c::$ToEaseFunction$b__4_0
 // Il2CppName: <ToEaseFunction>b__4_0
 template<>
@@ -743,7 +745,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (DG::
     return ::il2cpp_utils::FindMethod(classof(DG::Tweening::Core::Easing::EaseManager::$$c*), "<ToEaseFunction>b__4_35", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{time, duration, overshootOrAmplitude, period});
   }
 };
-// Writing MetadataGetter for method: DG::Tweening::Core::Easing::EaseManager::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

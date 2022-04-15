@@ -79,15 +79,15 @@ namespace VROSC {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private VROSC.Axis _slideAxis
-    [[deprecated]] ::VROSC::Axis& dyn__slideAxis();
+    [[deprecated("Use field access instead!")]] ::VROSC::Axis& dyn__slideAxis();
     // Get instance field reference: private VROSC.IntField _sensitivity
-    [[deprecated]] ::VROSC::IntField*& dyn__sensitivity();
+    [[deprecated("Use field access instead!")]] ::VROSC::IntField*& dyn__sensitivity();
     // Get instance field reference: private UnityEngine.Vector3 _startPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startPosition();
     // Get instance field reference: private System.Int32 _startValue
-    [[deprecated]] int& dyn__startValue();
+    [[deprecated("Use field access instead!")]] int& dyn__startValue();
     // Get instance field reference: private UnityEngine.Transform _affectingTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__affectingTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__affectingTransform();
     // protected override System.Boolean get_RequireOrigin()
     // Offset: 0x1928A48
     // Implemented from: VROSC.SignalNode
@@ -99,11 +99,6 @@ namespace VROSC {
     // Base method: System.Void IntChanger::.ctor()
     // Base method: System.Void SignalNode::.ctor()
     // Base method: System.Void Node::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SlideValueByController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::SlideValueByController::.ctor");

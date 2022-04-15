@@ -89,23 +89,23 @@ namespace OVR::OpenVR {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Boolean bActive
-    [[deprecated]] bool& dyn_bActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_bActive();
     // Get instance field reference: public System.UInt64 activeOrigin
-    [[deprecated]] uint64_t& dyn_activeOrigin();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_activeOrigin();
     // Get instance field reference: public System.Single x
-    [[deprecated]] float& dyn_x();
+    [[deprecated("Use field access instead!")]] float& dyn_x();
     // Get instance field reference: public System.Single y
-    [[deprecated]] float& dyn_y();
+    [[deprecated("Use field access instead!")]] float& dyn_y();
     // Get instance field reference: public System.Single z
-    [[deprecated]] float& dyn_z();
+    [[deprecated("Use field access instead!")]] float& dyn_z();
     // Get instance field reference: public System.Single deltaX
-    [[deprecated]] float& dyn_deltaX();
+    [[deprecated("Use field access instead!")]] float& dyn_deltaX();
     // Get instance field reference: public System.Single deltaY
-    [[deprecated]] float& dyn_deltaY();
+    [[deprecated("Use field access instead!")]] float& dyn_deltaY();
     // Get instance field reference: public System.Single deltaZ
-    [[deprecated]] float& dyn_deltaZ();
+    [[deprecated("Use field access instead!")]] float& dyn_deltaZ();
     // Get instance field reference: public System.Single fUpdateTime
-    [[deprecated]] float& dyn_fUpdateTime();
+    [[deprecated("Use field access instead!")]] float& dyn_fUpdateTime();
   }; // OVR.OpenVR.InputAnalogActionData_t
   #pragma pack(pop)
   static check_size<sizeof(InputAnalogActionData_t), 40 + sizeof(float)> __OVR_OpenVR_InputAnalogActionData_tSizeCheck;

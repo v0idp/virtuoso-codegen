@@ -54,7 +54,7 @@ namespace System::Linq::Expressions {
     static_assert(sizeof(::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> _arguments
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__arguments();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyList_1<::System::Linq::Expressions::Expression*>*& dyn__arguments();
     // public System.Void .ctor(System.Reflection.MethodInfo method, System.Linq.Expressions.Expression instance, System.Collections.Generic.IReadOnlyList`1<System.Linq.Expressions.Expression> args)
     // Offset: 0xF17E50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

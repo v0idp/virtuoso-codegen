@@ -83,19 +83,19 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private OVRControllerTest/BoolMonitor/BoolGenerator m_generator
-    [[deprecated]] ::GlobalNamespace::OVRControllerTest::BoolMonitor::BoolGenerator*& dyn_m_generator();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRControllerTest::BoolMonitor::BoolGenerator*& dyn_m_generator();
     // Get instance field reference: private System.Boolean m_prevValue
-    [[deprecated]] bool& dyn_m_prevValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_prevValue();
     // Get instance field reference: private System.Boolean m_currentValue
-    [[deprecated]] bool& dyn_m_currentValue();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_currentValue();
     // Get instance field reference: private System.Boolean m_currentValueRecentlyChanged
-    [[deprecated]] bool& dyn_m_currentValueRecentlyChanged();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_currentValueRecentlyChanged();
     // Get instance field reference: private System.Single m_displayTimeout
-    [[deprecated]] float& dyn_m_displayTimeout();
+    [[deprecated("Use field access instead!")]] float& dyn_m_displayTimeout();
     // Get instance field reference: private System.Single m_displayTimer
-    [[deprecated]] float& dyn_m_displayTimer();
+    [[deprecated("Use field access instead!")]] float& dyn_m_displayTimer();
     // public System.Void .ctor(System.String name, OVRControllerTest/BoolMonitor/BoolGenerator generator, System.Single displayTimeout)
     // Offset: 0x84CBA0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -53,7 +53,6 @@ namespace System::Xml::Schema {
     // Implemented from: System.Xml.Schema.InteriorNode
     // Base method: System.Void InteriorNode::.ctor()
     // Base method: System.Void SyntaxTreeNode::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ChoiceNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Xml::Schema::ChoiceNode::.ctor");

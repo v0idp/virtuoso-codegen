@@ -46,22 +46,20 @@ namespace VROSC {
       return uIScheme;
     }
     // Get instance field reference: private VROSC.UI.UIScheme _uIScheme
-    [[deprecated]] ::VROSC::UI::UIScheme*& dyn__uIScheme();
+    [[deprecated("Use field access instead!")]] ::VROSC::UI::UIScheme*& dyn__uIScheme();
     // public VROSC.UI.UIScheme get_UIScheme()
     // Offset: 0x191373C
     ::VROSC::UI::UIScheme* get_UIScheme();
-    // System.Void Setup()
-    // Offset: 0x1913744
-    void Setup();
     // public System.Void .ctor()
     // Offset: 0x1913794
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UISchemeController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::VROSC::UISchemeController::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UISchemeController*, creationType>()));
     }
+    // System.Void Setup()
+    // Offset: 0x1913744
+    void Setup();
   }; // VROSC.UISchemeController
   #pragma pack(pop)
   static check_size<sizeof(UISchemeController), 16 + sizeof(::VROSC::UI::UIScheme*)> __VROSC_UISchemeControllerSizeCheck;
@@ -76,6 +74,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::VROSC::UI
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISchemeController*), "get_UIScheme", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: VROSC::UISchemeController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: VROSC::UISchemeController::Setup
 // Il2CppName: Setup
 template<>
@@ -84,7 +86,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (VROSC
     return ::il2cpp_utils::FindMethod(classof(VROSC::UISchemeController*), "Setup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: VROSC::UISchemeController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -69,23 +69,21 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public System.String access_token
-    [[deprecated]] ::StringW& dyn_access_token();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_access_token();
     // Get instance field reference: public System.String expires_in
-    [[deprecated]] ::StringW& dyn_expires_in();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_expires_in();
     // Get instance field reference: public System.String token_type
-    [[deprecated]] ::StringW& dyn_token_type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_token_type();
     // Get instance field reference: public System.String refresh_token
-    [[deprecated]] ::StringW& dyn_refresh_token();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_refresh_token();
     // Get instance field reference: public System.String id_token
-    [[deprecated]] ::StringW& dyn_id_token();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_id_token();
     // Get instance field reference: public System.String user_id
-    [[deprecated]] ::StringW& dyn_user_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_user_id();
     // Get instance field reference: public System.String project_id
-    [[deprecated]] ::StringW& dyn_project_id();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_project_id();
     // public System.Void .ctor()
     // Offset: 0x19528CC
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FirebaseHelper::RefreshedUser* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FirebaseHelper::RefreshedUser::.ctor");
